@@ -18,4 +18,5 @@ KL-MNT, MNT-QRATOR-LIR, MNT-NETBRIDGE, VKONTAKTE-NET-MNT та MNT-M100.
 містять посилання на "yandex", "kaspersky", "drweb", "dr-web",
 "webmoney", "odnoklassniki", "sharij", "strana" та "wildberries".
 
-* fraud.list
+* fraud.list - список доменів Response Policy Zones для fraud-rpz.ua.db,
+що блокуються на рівні DNS, на виконання Розпорядження НЦУ №67/850.
