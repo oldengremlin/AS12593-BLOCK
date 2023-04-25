@@ -10,8 +10,12 @@ KL-MNT, MNT-QRATOR-LIR, MNT-NETBRIDGE, VKONTAKTE-NET-MNT та MNT-M100.
 Мухосранську терористичної федерації).
 
 * networks.list - мережі, які однозначно відносяться до автономних систем
-в AS.list.
+в AS.list, визначаються з whois ключами -K -r -i origin AS. Трафік до цих
+мереж блокується на транзиті.
 
-* domains.list
+* domains.list - список доменів які блокуються на рівні DNS, рекурсивними
+серверами. Окрім цих доменів рекурсивними серверами блокуються домені, що
+містять посилання на "yandex", "kaspersky", "drweb", "dr-web",
+"webmoney", "odnoklassniki", "sharij", "strana" та "wildberries".
 
 * fraud.list
