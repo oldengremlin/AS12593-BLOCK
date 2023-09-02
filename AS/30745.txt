@@ -1,0 +1,109 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS30720 - AS30895'
+
+as-block:       AS30720 - AS30895
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:33Z
+last-modified:  2018-11-22T15:27:33Z
+source:         RIPE
+
+% Information related to 'AS30745'
+
+% Abuse contact for 'AS30745' is 'lir@sitenetwork.ru'
+
+aut-num:        AS30745
+as-name:        SITENETWORK-AS
+descr:          Sakhalin, Russia
+org:            ORG-SL98-RIPE
+remarks:        -----------------------------------------------------------------
+remarks:        Upstreams
+remarks:        -----------------------------------------------------------------
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS21103 action pref=100; accept ANY
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS12389 announce AS-SVTC
+export:         to AS21103 announce AS-SVTC
+export:         to AS8359 announce AS-SVTC
+remarks:        -----------------------------------------------------------------
+remarks:        -----------------------------------------------------------------
+remarks:        Customers
+remarks:        -----------------------------------------------------------------
+import:         from AS47407 action pref=1000; accept AS47407
+export:         to AS47407 announce ANY
+import:         from AS29567 action pref=1000; accept AS-BGT
+export:         to AS29567 announce ANY
+import:         from AS43746 action pref=1000; accept AS43746
+export:         to AS43746 announce ANY
+remarks:        -----------------------------------------------------------------
+remarks:        Default routes:
+default:        to AS21103 action pref=100; networks ANY
+default:        to AS8359 action pref=100; networks ANY
+remarks:        -----------------------------------------------------------------
+admin-c:        SMM5-RIPE
+tech-c:         SMM5-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+admin-c:        IAP22-RIPE
+tech-c:         IAP22-RIPE
+mnt-by:         AS30745-MNT
+created:        2003-11-25T10:47:50Z
+last-modified:  2023-01-09T01:30:46Z
+source:         RIPE # Filtered
+
+organisation:   ORG-SL98-RIPE
+org-name:       Site LLC
+country:        RU
+org-type:       LIR
+address:        Dzerzhinskogo st. 40, office 411
+address:        693000
+address:        Yuzhno-Sakhalinsk
+address:        RUSSIAN FEDERATION
+phone:          +7 4242 300003
+fax-no:         +7 4242 425741
+abuse-c:        AR16928-RIPE
+admin-c:        SMM5-RIPE
+tech-c:         IAP22-RIPE
+tech-c:         OS6174-RIPE
+mnt-ref:        AS30745-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         AS30745-MNT
+created:        2006-02-13T13:49:38Z
+last-modified:  2022-01-20T23:06:48Z
+source:         RIPE # Filtered
+
+person:         Igor A Prokopiev
+address:        SITE ISP LLC
+address:        Russia, 693000, Yuzhno-Sakhalinsk, Dzerzhinskogo st., 40, 412
+phone:          +7 914 084 3333
+nic-hdl:        IAP22-RIPE
+mnt-by:         AS30745-MNT
+created:        2003-10-30T09:37:36Z
+last-modified:  2022-01-20T23:10:01Z
+source:         RIPE # Filtered
+
+person:         Sergei Markelov
+address:        SITE ISP LLC
+address:        Russia, 693000, Yuzhno-Sakhalinsk, Dzerzhinskogo st., 40, 411
+phone:          +7 914 0857777
+phone:          +7 924 2807777
+fax-no:         +7 4242 425741
+nic-hdl:        SMM5-RIPE
+mnt-by:         AS30745-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2019-03-10T23:28:04Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (ABERDEEN)
+
+

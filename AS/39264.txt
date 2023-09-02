@@ -1,0 +1,128 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS38912 - AS39599'
+
+as-block:       AS38912 - AS39599
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2023-08-29T07:47:54Z
+last-modified:  2023-08-29T07:47:54Z
+source:         RIPE
+
+% Information related to 'AS39264'
+
+% Abuse contact for 'AS39264' is 'noc@metromax.ru'
+
+aut-num:        AS39264
+org:            ORG-SKL7-RIPE
+as-name:        METROMAX-AS
+remarks:        --- Upstreams ---
+remarks:        MTS (Samara)
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS8359 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS8359 announce AS-METROMAX;
+remarks:        Ertelecom (Samara)
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS9049 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS9049 announce AS-METROMAX;
+remarks:        TTK (Samara)
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS20485 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS20485 announce AS-METROMAX;
+remarks:        Rostelecom (Samara)
+mp-import:      afi ipv4.unicast from AS12389 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast to AS12389 announce AS-METROMAX;
+remarks:        Variant-TV (Dimitrovgrad)
+mp-import:      afi ipv4.unicast from AS57079 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast to AS57079 announce AS-METROMAX;
+remarks:        Variant-TV (Dimitrovgrad NEW-AS)
+mp-import:      afi ipv4.unicast from AS9049 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast to AS9049 announce AS-METROMAX;
+remarks:        STM-NVR (Novorossisk)
+mp-import:      afi ipv4.unicast from AS200513 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast to AS200513 announce AS-METROMAX;
+remarks:        SMR-IX (Samara)
+mp-import:      afi ipv4.unicast from AS47882 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast to AS47882 announce AS-METROMAX;
+remarks:        --- Peering on IX points ---
+remarks:        iHome-wix (Samara)
+mp-import:      afi ipv4.unicast from AS39264:AS-PEERS action pref=50; accept <^PeerAS+$> AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS39264:AS-PEERS announce AS-METROMAX
+mp-import:      afi ipv4.unicast from AS50384 action pref=50; accept ANY AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS50384 announce AS-METROMAX
+remarks:        --- Direct peers ---
+mp-import:      afi ipv4.unicast from AS16043 action pref=50; accept AS-SMRTLC AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS16043 announce AS-METROMAX
+mp-import:      afi ipv4.unicast from AS57629 action pref=50; accept AS57629 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS57629 announce AS-METROMAX
+mp-import:      afi ipv4.unicast from AS44436 action pref=50; accept AS-EFFORTEL-SAM AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS44436 announce AS-METROMAX
+remarks:        Transmedia
+mp-import:      afi ipv4.unicast from AS58290 action pref=50; accept AS58290 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS58290 announce ANY
+remarks:        Avantel
+mp-import:      afi ipv4.unicast from AS197235 action pref=50; accept AS197235 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS197235 announce ANY
+mp-import:      afi ipv4.unicast from AS16064 action pref=100; accept AS16064 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS16064 announce AS-METROMAX
+remarks:        Smotreshka-TV
+mp-import:      afi ipv4.unicast from AS200976 action pref=50; accept AS200976 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS200976 announce AS-METROMAX
+remarks:        TolyattiHimbank
+mp-import:      afi ipv4.unicast from AS48236 action pref=50; accept AS48236 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS48236 announce ANY
+remarks:        MTT
+mp-import:      afi ipv4.unicast from AS41338 action pref=50; accept AS41338 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS41338 announce ANY
+remarks:        New-Networks
+mp-import:      afi ipv4.unicast from AS212600 action pref=50; accept AS212600 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS212600 announce ANY
+remarks:        -----------------
+admin-c:        EZ1918-RIPE
+tech-c:         EZ1918-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-rsk-1-mnt
+created:        2006-01-20T10:45:24Z
+last-modified:  2022-03-31T08:32:16Z
+source:         RIPE
+
+organisation:   ORG-SKL7-RIPE
+org-name:       "Region Svyaz Konsalt" LLC
+country:        RU
+org-type:       LIR
+address:        6, Karla Marksa ave.
+address:        443030
+address:        Samara
+address:        RUSSIAN FEDERATION
+phone:          +78469934030
+admin-c:        EZ1918-RIPE
+tech-c:         EZ1918-RIPE
+abuse-c:        AR46185-RIPE
+mnt-ref:        ru-rsk-1-mnt
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ru-rsk-1-mnt
+created:        2018-04-24T08:17:52Z
+last-modified:  2020-12-16T12:35:38Z
+source:         RIPE # Filtered
+
+person:         Evgeny Zavershinsky
+address:        6, Karla Marksa ave.
+address:        443030
+address:        Samara
+address:        RUSSIAN FEDERATION
+phone:          +78469934030
+nic-hdl:        EZ1918-RIPE
+mnt-by:         ru-rsk-1-mnt
+created:        2018-04-24T08:17:50Z
+last-modified:  2018-04-26T10:58:15Z
+source:         RIPE
+
+% This query was served by the RIPE Database Query Service version 1.107 (SHETLAND)
+
+

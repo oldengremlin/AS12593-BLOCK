@@ -1,0 +1,158 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS31066 - AS31244'
+
+as-block:       AS31066 - AS31244
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:33Z
+last-modified:  2018-11-22T15:27:33Z
+source:         RIPE
+
+% Information related to 'AS31214'
+
+% Abuse contact for 'AS31214' is 'abuse@tis-dialog.ru'
+
+aut-num:        AS31214
+org:            ORG-TDL1-RIPE
+as-name:        TIS-DIALOG-AS
+remarks:        -----------------------------------------------------------
+remarks:        Upstream
+remarks:        -----------------------------------------------------------
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-TISDIALOG
+import:         from AS5518 accept ANY
+export:         to AS5518 announce AS-TISDIALOG
+import:         from AS1299 accept ANY
+export:         to AS1299 announce AS-TISDIALOG
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-TISDIALOG
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-TISDIALOG
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-TISDIALOG
+import:         from AS50817 accept as-piter-ix
+export:         to AS50817 announce AS-TISDIALOG
+import:         from AS47541 accept as-vkontakte
+export:         to AS47541 announce AS-TISDIALOG
+remarks:        -----------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-TISDIALOG
+mp-import:      afi ipv6.unicast from AS1299 accept ANY
+mp-export:      afi ipv6.unicast to AS1299 announce AS-TISDIALOG
+mp-import:      afi ipv6.unicast from AS9002 accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-TISDIALOG
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-TISDIALOG
+mp-import:      afi ipv6.unicast from AS50817 accept as-piter-ix
+mp-export:      afi ipv6.unicast to AS50817 announce AS-TISDIALOG
+remarks:        -----------------------------------------------------------
+remarks:        Peering
+remarks:        -----------------------------------------------------------
+import:         from AS21480 accept AS-KANET
+export:         to AS21480 announce AS-TISDIALOG
+import:         from AS20632 accept AS-KANET
+export:         to AS20632 announce AS-TISDIALOG
+import:         from AS8774 accept AS-KANET
+export:         to AS8774 announce AS-TISDIALOG
+import:         from AS12389 accept AS-ROSTELECOM
+export:         to AS12389 announce AS-TISDIALOG
+import:         from AS57629 accept AS57629
+export:         to AS57629 announce AS-TISDIALOG
+import:         from AS24589 accept AS-TELENET-LATVIA
+export:         to AS24589 announce AS-TISDIALOG
+remarks:        -----------------------------------------------------------
+remarks:        Customer
+remarks:        -----------------------------------------------------------
+import:         from AS41975 accept AS41975
+export:         to AS41975 announce ANY
+import:         from AS50358 accept AS50358
+export:         to AS50358 announce ANY
+import:         from AS196786 accept AS196786
+export:         to AS196786 announce ANY
+import:         from AS42151 accept AS42151
+export:         to AS42151 announce ANY
+import:         from AS202765 accept as-asnet
+export:         to AS202765 announce ANY
+remarks:        -----------------------------------------------------------
+remarks:        BGP COMMUNITY SUPPORT FOR TRANSIT CUSTOMERS:
+remarks:        -----------------------------------------------------------
+remarks:        Community Action
+remarks:        --------- ------
+remarks:        31214:50 Set local pref 50 within AS31214 (lowest possible, backup)
+remarks:        31214:666 RTBH RFC5635
+remarks:        Upstream control:
+remarks:        Community Action
+remarks:        --------- ------
+remarks:        31214:100x All upstreams
+remarks:        31214:101x TeliaSonera (AS1299)
+remarks:        31214:102x ROSTELECOM (AS12389)
+remarks:        31214:103x PITER-IX (AS50817)
+remarks:        31214:104x Data-IX (AS50952)
+remarks:        31214:106x RETN (AS9002)
+remarks:        31214:107x MSK-IX (AS8631)
+remarks:        31214:110x FIORD (AS28917)
+remarks:        Where x is number of prepends (x=1,2,3) or do NOT announce (x=0)
+remarks:        -----------------------------------------------------------
+admin-c:        RADM8-RIPE
+tech-c:         TECH18-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TIS-DIALOG-MNT
+created:        2004-03-23T14:22:49Z
+last-modified:  2023-08-29T08:49:56Z
+source:         RIPE
+
+organisation:   ORG-TDL1-RIPE
+org-name:       TIS Dialog LLC
+country:        RU
+org-type:       LIR
+address:        Zarayskaya 17a
+address:        236006
+address:        Kaliningrad
+address:        RUSSIAN FEDERATION
+phone:          +74012705705
+fax-no:         +74012705706
+admin-c:        RADM8-RIPE
+tech-c:         TECH18-RIPE
+abuse-c:        SFAB3-RU
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        TIS-DIALOG-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         TIS-DIALOG-MNT
+created:        2004-04-17T11:59:53Z
+last-modified:  2022-05-20T08:39:22Z
+source:         RIPE # Filtered
+
+role:           TIS-DIALOG admin-c role
+address:        75 Tolstikova, Kaliningrad, Russia
+nic-hdl:        RADM8-RIPE
+mnt-by:         TIS-DIALOG-MNT
+created:        2022-05-17T12:57:36Z
+last-modified:  2022-05-17T12:57:36Z
+source:         RIPE # Filtered
+admin-c:        IP46-RU
+admin-c:        AMR80-RU
+
+role:           TIS-DIALOG tech-c role
+address:        75 Tolstikova, Kaliningrad, Russia
+nic-hdl:        TECH18-RIPE
+mnt-by:         TIS-DIALOG-MNT
+created:        2022-05-18T07:41:37Z
+last-modified:  2022-05-18T07:44:01Z
+source:         RIPE # Filtered
+tech-c:         IP46-RU
+tech-c:         AMR80-RU
+tech-c:         AVM13-RIPE
+
+% This query was served by the RIPE Database Query Service version 1.107 (SHETLAND)
+
+

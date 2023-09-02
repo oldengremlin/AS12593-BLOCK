@@ -1,0 +1,90 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS44170 - AS45055'
+
+as-block:       AS44170 - AS45055
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2023-06-14T15:02:10Z
+last-modified:  2023-06-14T15:02:10Z
+source:         RIPE
+
+% Information related to 'AS44882'
+
+% Abuse contact for 'AS44882' is 'tech@vsevnet.ru'
+
+aut-num:        AS44882
+as-name:        VSEVNET-AS
+org:            ORG-VL71-RIPE
+remarks:        ----- Uplinks -----
+remarks:        Global-net
+import:         from AS31500 action pref=100; accept ANY
+export:         to AS31500 announce AS-VSEVNET
+remarks:        WestCall
+import:         from AS25408 action pref=100; accept ANY
+export:         to AS25408 announce AS-VSEVNET
+remarks:        ----- IXes -----
+remarks:        CLOUD-IX ROUTE SERVER
+import:         from AS29076 action pref=150; accept AS-CLOUD-IX
+export:         to AS29076 announce AS-VSEVNET
+remarks:        DATA.IX ROUTE SERVER
+import:         from AS50952 action pref=150; accept AS-DATAIX
+export:         to AS50952 announce AS-VSEVNET
+remarks:        PIRIX ROUTE SERVER
+import:         from AS48625 action pref=150; accept AS-PIRIX
+export:         to AS48625 announce AS-VSEVNET
+remarks:        PITER-IX ROUTE SERVER
+import:         from AS50817 action pref=100; accept as-piter-ix
+export:         to AS50817 announce AS-VSEVNET
+remarks:        ----- Private peers -----
+admin-c:        SK4004-RIPE
+tech-c:         SK4004-RIPE
+status:         ASSIGNED
+mnt-by:         VSEVNET-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2008-03-26T15:53:54Z
+last-modified:  2021-01-27T13:59:16Z
+source:         RIPE # Filtered
+
+organisation:   ORG-VL71-RIPE
+org-name:       Vsevnet Ltd.
+country:        RU
+org-type:       LIR
+address:        Pushkinskaya 61
+address:        188640
+address:        Vsevolozhsk
+address:        RUSSIAN FEDERATION
+phone:          +78137043500
+fax-no:         +78137043501
+admin-c:        KS677-RIPE
+admin-c:        SK4004-RIPE
+mnt-ref:        VSEVNET-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         VSEVNET-MNT
+abuse-c:        VN1701-RIPE
+created:        2010-01-06T14:08:27Z
+last-modified:  2020-12-16T12:22:31Z
+source:         RIPE # Filtered
+
+person:         Sergey Kudriavtsev
+address:        Russia,188640, Vsevolozhsk, Pushkinskaya st., 61
+phone:          +7 81370  43-506
+fax-no:         +7 81370  43-501
+nic-hdl:        SK4004-RIPE
+mnt-by:         VSEVNET-MNT
+created:        2008-03-03T15:58:55Z
+last-modified:  2011-01-21T10:38:03Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (BUSA)
+
+

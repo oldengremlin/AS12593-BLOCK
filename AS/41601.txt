@@ -1,0 +1,81 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS40960 - AS42381'
+
+as-block:       AS40960 - AS42381
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:34Z
+last-modified:  2018-11-22T15:27:34Z
+source:         RIPE
+
+% Information related to 'AS41601'
+
+% Abuse contact for 'AS41601' is 'abuse@obltelecom.ru'
+
+aut-num:        AS41601
+as-name:        OBLTEL-AS
+org:            ORG-OL18-RIPE
+import:         from AS20764 accept any
+import:         from AS13215 accept AS-EQUALINK
+import:         from AS25515 accept any
+import:         from AS41842 accept any
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS25515 announce AS-OBLTELECOM
+export:         to AS41842 announce AS-OBLTELECOM
+export:         to AS8631 announce AS-OBLTELECOM
+export:         to AS20764 announce ANY
+export:         to AS13215 announce ANY
+mp-import:      afi ipv6.unicast from AS9002 action pref=100; accept AS-RETN6
+mp-import:      afi ipv6.unicast from AS8631 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-OBLTELECOM
+mp-export:      afi ipv6.unicast to AS8631 announce AS-OBLTELECOM
+admin-c:        IF543-RIPE
+tech-c:         IF543-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-OBL
+created:        2006-09-21T12:05:05Z
+last-modified:  2018-09-04T10:18:49Z
+source:         RIPE # Filtered
+
+organisation:   ORG-OL18-RIPE
+org-name:       NEO Print Ltd.
+country:        RU
+org-type:       LIR
+address:        office 101, 9 block 2, Rogova str.
+address:        123098
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +7 495 7847636
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-OBL
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-OBL
+abuse-c:        OBL123
+created:        2006-02-03T11:11:10Z
+last-modified:  2020-12-16T12:48:08Z
+source:         RIPE # Filtered
+
+person:         Feldman Ilya
+address:        UL  ROGOVA  D  9  KORP  2
+address:        123098  MOSCOW
+address:        RUSSIAN FEDERATION
+phone:          +74957847636
+nic-hdl:        IF543-RIPE
+mnt-by:         MNT-OBL
+created:        2006-09-11T13:18:54Z
+last-modified:  2006-09-21T12:41:28Z
+source:         RIPE
+
+% This query was served by the RIPE Database Query Service version 1.107 (DEXTER)
+
+

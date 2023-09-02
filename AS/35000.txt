@@ -1,0 +1,572 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS34986 - AS35007'
+
+as-block:       AS34986 - AS35007
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2023-06-30T06:35:17Z
+last-modified:  2023-06-30T06:35:17Z
+source:         RIPE
+
+% Information related to 'AS35000'
+
+% Abuse contact for 'AS35000' is 'abuse@severen.net'
+
+aut-num:        AS35000
+org:            ORG-SL18-RIPE
+as-name:        SEVEREN-TELECOM_TRANSIT
+descr:          SEVEREN-TELECOM
+remarks:
+remarks:        ------
+remarks:        AS-SET: AS-PROMETEY
+remarks:        AS-SET V6: AS-PROMETEY-V6
+remarks:        ------
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        ---------------- UPLINKS (LocalPref 100) --------------
+remarks:        -------------------------------------------------------
+remarks:
+descr:          ---------------------- RASCOM -------------------------
+import:         from AS20764 accept ANY
+export:         to AS20764 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS20764 accept ANY
+mp-export:      afi ipv6.unicast to AS20764 announce AS-PROMETEY-V6
+remarks:
+descr:          --------------------- ROSTELECOM ----------------------
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-PROMETEY-V6
+remarks:
+descr:          ------------------------ TTK --------------------------
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS20485 accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-PROMETEY-V6
+remarks:
+descr:          ---------------------- RETN -------------------------
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS9002 accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-PROMETEY-V6
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        ----------------- IXES (LocalPref 300) ----------------
+remarks:        -------------------------------------------------------
+remarks:
+descr:          ---------------------- MSK-IX -------------------------
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-PROMETEY-V6
+remarks:
+descr:          ---------------------- SPB-IX -------------------------
+import:         from AS43690 accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS43690 accept AS-SPBROUTESERVER
+mp-export:      afi ipv6.unicast to AS43690 announce AS-PROMETEY-V6
+remarks:
+descr:          ---------------------- DTEL-IX ------------------------
+import:         from AS31210 accept AS-DTEL-IX
+export:         to AS31210 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS31210 accept AS-DTEL-IX-V6
+mp-export:      afi ipv6.unicast to AS31210 announce AS-PROMETEY-V6
+remarks:
+descr:          ---------------------- DATA-IX ------------------------
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX
+mp-export:      afi ipv6.unicast to AS50952 announce AS-PROMETEY-V6
+remarks:
+descr:          ----------------------- W-IX --------------------------
+import:         from AS50384 accept AS-W-IX
+export:         to AS50384 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX
+mp-export:      afi ipv6.unicast to AS50384 announce AS-PROMETEY-V6
+remarks:
+descr:          ----------------------- PITER-IX --------------------------
+import:         from AS50817 accept AS-PITER-IX
+export:         to AS50817 announce AS-PROMETEY
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        ------------- DIRECT PEERS (LocalPref 500) ------------
+remarks:        -------------------------------------------------------
+remarks:
+descr:          ---------------------- MAIL.RU ------------------------
+import:         from AS47764 accept AS-MAILRU
+export:         to AS47764 announce AS-PROMETEY
+remarks:
+descr:          ----------------------- YANDEX ------------------------
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-PROMETEY
+remarks:
+descr:          ----------------------- GOOGLE ------------------------
+import:         from AS15169 accept AS-GOOGLE
+export:         to AS15169 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS15169 accept AS-GOOGLE
+mp-export:      afi ipv6.unicast to AS15169 announce AS-PROMETEY-V6
+remarks:
+descr:          ---------------------- VKONTAKTE-----------------------
+import:         from AS47541 accept AS-VKONTAKTE
+export:         to AS47541 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS47541 accept AS-VKONTAKTE
+mp-export:      afi ipv6.unicast to AS47541 announce AS-PROMETEY-V6
+remarks:
+descr:          --------------------- MICROSOFT -----------------------
+import:         from AS8075 accept AS-MICROSOFT
+export:         to AS8075 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS8075 accept AS-MICROSOFT
+mp-export:      afi ipv6.unicast to AS8075 announce AS-PROMETEY-V6
+remarks:
+descr:          --------------------- FACEBOOK -----------------------
+import:         from AS32934 accept AS-FACEBOOK
+export:         to AS32934 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS32934 accept AS-FACEBOOK
+mp-export:      afi ipv6.unicast to AS32934 announce AS-PROMETEY-V6
+remarks:
+descr:          -------------------- MEGAFON-AS -----------------------
+import:         from AS31133 accept AS-MF-MGSM
+export:         to AS31133 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS31133 accept AS-MF-MGSM
+mp-export:      afi ipv6.unicast to AS31133 announce AS-PROMETEY-V6
+remarks:
+descr:          -------------------- GLOBAL-NET -----------------------
+import:         from AS31500 accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-PROMETEY
+remarks:
+descr:          ---------------------- RUNNET -------------------------
+import:         from AS3267 accept AS-RUNNET
+export:         to AS3267 announce AS-PROMETEY
+remarks:
+descr:          ----------------------- FIORD -------------------------
+import:         from AS28917 accept AS-FIORD
+export:         to AS28917 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS28917 accept AS-FIORD
+mp-export:      afi ipv6.unicast to AS28917 announce AS-PROMETEY-V6
+remarks:
+descr:          ----------------------- OBIT --------------------------
+import:         from AS8492 accept AS-OBIT
+export:         to AS8492 announce AS-PROMETEY
+remarks:
+descr:          ---------------------- SEVEREN ------------------------
+import:         from AS24739 accept AS-SEVEREN-TELECOM
+export:         to AS24739 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS24739 accept AS-SEVEREN-TELECOM-V6
+mp-export:      afi ipv6.unicast to AS24739 announce AS-PROMETEY-V6
+remarks:
+descr:          --------------------- ERTELECOM -----------------------
+import:         from AS9049 accept AS-ERTELECOM
+export:         to AS9049 announce AS-PROMETEY
+remarks:
+descr:          -------------------- CLOUDFLARE -----------------------
+import:         from AS13335 accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS13335 accept AS-CLOUDFLARE
+mp-export:      afi ipv6.unicast to AS13335 announce AS-PROMETEY-V6
+remarks:
+descr:          ----------------------- OVH ---------------------------
+import:         from AS16276 accept AS-OVH
+export:         to AS16276 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS16276 accept AS-OVH
+mp-export:      afi ipv6.unicast to AS16276 announce AS-PROMETEY-V6
+remarks:
+descr:          -------------------- HURRICANE ------------------------
+import:         from AS6939 accept AS-HURRICANE
+export:         to AS6939 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS6939 accept AS-HURRICANEv6
+mp-export:      afi ipv6.unicast to AS6939 announce AS-PROMETEY-V6
+remarks:
+descr:          ---------------------- VILTEL -------------------------
+import:         from AS62432 accept AS-VILTEL
+export:         to AS62432 announce AS-PROMETEY
+remarks:
+descr:          ------------------- NETSOLUTIONS ----------------------
+import:         from AS50418 accept AS50418
+export:         to AS50418 announce AS-PROMETEY
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        -------------- CUSTOMERS (LocalPref 700) --------------
+remarks:        -------------------------------------------------------
+remarks:
+descr:          -------------------- ISP Delfa ------------------------
+import:         from AS8915 accept AS-DELFA
+export:         to AS8915 announce ANY
+remarks:
+descr:          -------------------- OR-TERMINAL ----------------------
+import:         from AS200643 accept AS200643
+export:         to AS200643 announce ANY
+remarks:
+descr:          ---------------------- SEB-BANK -----------------------
+import:         from AS41067 accept AS41067
+export:         to AS41067 announce ANY
+remarks:
+descr:          ------------------- LADOGA TELECOM --------------------
+import:         from AS44067 accept AS-SET-LADOGATELECOM
+export:         to AS44067 announce AS-PROMETEY
+mp-import:      afi ipv6.unicast from AS44067 accept AS-SET-LADOGATELECOM
+mp-export:      afi ipv6.unicast to AS44067 announce ANY
+remarks:
+descr:          --------------------- KATHARSIS -----------------------
+import:         from AS30924 accept AS30924
+export:         to AS30924 announce ANY
+remarks:
+descr:          --------------------- AB-SYSTEMS ----------------------
+import:         from AS201022 accept AS201022
+export:         to AS201022 announce ANY
+remarks:
+descr:          ----------------------- SP-LINE -----------------------
+import:         from AS49722 accept AS49722
+export:         to AS49722 announce ANY
+remarks:
+descr:          ----------------------- ATCOM -------------------------
+import:         from AS60623 accept AS60623
+export:         to AS60623 announce ANY
+remarks:
+descr:          ---------------------- RCS-SPB ------------------------
+import:         from AS34836 accept AS34836
+export:         to AS34836 announce ANY
+remarks:
+descr:          ---------------------- LSI-NET ------------------------
+import:         from AS35595 accept AS35595
+export:         to AS35595 announce ANY
+remarks:
+descr:          --------------------- INTERMEDIA ----------------------
+import:         from AS25188 accept AS25188
+export:         to AS25188 announce ANY
+remarks:
+descr:          --------------------- SPRINTHOST ----------------------
+import:         from AS35278 accept AS35278
+export:         to AS35278 announce ANY
+mp-import:      afi ipv6.unicast from AS35278 accept AS35278
+mp-export:      afi ipv6.unicast to AS35278 announce ANY
+remarks:
+descr:          ---------------------- FUTURES ------------------------
+import:         from AS25520 accept AS-FUTURES
+export:         to AS25520 announce ANY
+mp-import:      afi ipv6.unicast from AS25520 accept AS-FUTURES
+mp-export:      afi ipv6.unicast to AS25520 announce ANY
+remarks:
+descr:          ---------------------- ITGRAD -------------------------
+import:         from AS48096 accept AS-ITGRAD
+export:         to AS48096 announce ANY
+mp-import:      afi ipv6.unicast from AS48096 accept AS-ITGRAD
+mp-export:      afi ipv6.unicast to AS48096 announce ANY
+remarks:
+descr:          ----------------------- TTC ---------------------------
+import:         from AS48308 accept AS48308
+export:         to AS48308 announce ANY
+remarks:
+descr:          --------------------- GRIZABLE ------------------------
+import:         from AS49304 accept AS49304
+export:         to AS49304 announce ANY
+remarks:
+descr:          --------------------- KASSIRRU ------------------------
+import:         from AS21314 accept AS21314
+export:         to AS21314 announce ANY
+remarks:
+descr:          -------------------- VASH-DOHOD -----------------------
+import:         from AS205717 accept AS205717
+export:         to AS205717 announce ANY
+remarks:
+descr:          ---------------------- BEFREE -------------------------
+import:         from AS39749 accept AS39749
+export:         to AS39749 announce ANY
+remarks:
+descr:          ---------------------- BT First Line LINETEL ----------
+import:         from AS43267 accept AS-LINETEL
+export:         to AS43267 announce ANY
+remarks:
+descr:          ------------------ KRIOL-TECHNOLOGY -------------------
+import:         from AS201190 accept AS201190
+export:         to AS201190 announce ANY
+remarks:
+descr:          ------------------- PETERSERVICE ----------------------
+import:         from AS48102 accept AS-PETERSERVICE
+export:         to AS48102 announce ANY
+mp-import:      afi ipv6.unicast from AS48102 accept AS-PETERSERVICE
+mp-export:      afi ipv6.unicast to AS48102 announce ANY
+remarks:
+descr:          ---------------------- M-STYLE ------------------------
+import:         from AS50230 accept AS50230
+export:         to AS50230 announce ANY
+remarks:
+descr:          ----------------------- NKS ---------------------------
+import:         from AS50306 accept AS50306
+export:         to AS50306 announce ANY
+remarks:
+descr:          ---------------------- PIK-TV -------------------------
+import:         from AS60952 accept AS60952
+export:         to AS60952 announce ANY
+remarks:
+descr:          ---------------------- DATA-IX ------------------------
+import:         from AS50952 accept AS50952
+export:         to AS50952 announce ANY
+mp-import:      afi ipv6.unicast from AS50952 accept AS50952
+mp-export:      afi ipv6.unicast to AS50952 announce ANY
+remarks:
+descr:          ---------------------- FAUBEHA ------------------------
+import:         from AS206357 accept AS50306
+export:         to AS206357 announce ANY
+mp-import:      afi ipv6.unicast from AS206357 accept AS50952
+mp-export:      afi ipv6.unicast to AS206357 announce ANY
+remarks:
+descr:          ----------------------- TEYLA -------------------------
+import:         from AS50258 accept AS-TEYLA
+export:         to AS50258 announce ANY
+remarks:
+descr:          --------------------- PETROSVYAZ ----------------------
+import:         from AS50538 accept AS50538
+export:         to AS50538 announce ANY
+remarks:
+descr:          ----------------------- EMBRIA ------------------------
+import:         from AS50453 accept AS-FOTOSTRANA
+export:         to AS50453 announce ANY
+mp-import:      afi ipv6.unicast from AS50453 accept AS-FOTOSTRANA
+mp-export:      afi ipv6.unicast to AS50453 announce ANY
+remarks:
+descr:          ----------------------- AINET -------------------------
+import:         from AS34268 accept AS34268
+export:         to AS34268 announce ANY
+remarks:
+descr:          --------------------- VC-JILHOZ -----------------------
+import:         from AS57557 accept AS57557
+export:         to AS57557 announce ANY
+remarks:
+descr:          ------------------------ NKS --------------------------
+import:         from AS50306 accept AS50306
+export:         to AS50306 announce ANY
+remarks:
+descr:          ----------------------- FORTIS ------------------------
+import:         from AS50717 accept AS-FORTIS
+export:         to AS50717 announce ANY
+mp-import:      afi ipv6.unicast from AS50717 accept AS-FORTIS
+mp-export:      afi ipv6.unicast to AS50717 announce ANY
+remarks:
+descr:          ------------------- NBFCMOBILECARD --------------------
+import:         from AS200847 accept AS200847
+export:         to AS200847 announce ANY
+remarks:
+descr:          ---------------------- SPBEX-AS -----------------------
+import:         from AS50674 accept AS50674
+export:         to AS50674 announce ANY
+remarks:
+descr:          --------------------- VKONTAKTE -----------------------
+import:         from AS62243 accept AS62243
+export:         to AS62243 announce ANY
+remarks:
+descr:          ------------------- ULTRATELECOM ----------------------
+import:         from AS62218 accept AS-ULTRATELECOM
+export:         to AS62218 announce ANY
+remarks:
+descr:          ----------------------- BEGET -------------------------
+import:         from AS198610 accept AS-BEGET
+export:         to AS198610 announce ANY
+remarks:
+descr:          ----------------------- BONCH -------------------------
+import:         from AS58042 accept AS58042
+export:         to AS58042 announce ANY
+mp-import:      afi ipv6.unicast from AS58042 accept AS58042
+mp-export:      afi ipv6.unicast to AS58042 announce ANY
+remarks:
+descr:          -------------------- FONTANKA.RU ----------------------
+import:         from AS207056 accept AS-BONCH-IT
+export:         to AS207056 announce ANY
+mp-import:      afi ipv6.unicast from AS207056 accept AS-BONCH-IT
+mp-export:      afi ipv6.unicast to AS207056 announce ANY
+remarks:
+descr:          ---------------------- ADRIVER ------------------------
+import:         from AS52007 accept AS52007
+export:         to AS52007 announce ANY
+remarks:
+descr:          --------------------- MOBIDENGI -----------------------
+import:         from AS51376 accept AS51376
+export:         to AS51376 announce ANY
+remarks:
+descr:          -------------------- DNEVNIK-RU -----------------------
+import:         from AS199866 accept AS199866
+export:         to AS199866 announce ANY
+remarks:
+descr:          --------------------- MOBICON -------------------------
+import:         from AS200935 accept AS200935
+export:         to AS200935 announce ANY
+remarks:
+descr:          -------------------- CONSORTIUM -----------------------
+import:         from AS59454 accept AS59454
+export:         to AS59454 announce ANY
+remarks:
+descr:          ------------------------ M52 --------------------------
+import:         from AS48558 accept AS48558
+export:         to AS48558 announce ANY
+remarks:
+descr:          ------------------- AUCTIONHOUSE ----------------------
+import:         from AS59434 accept AS59434
+export:         to AS59434 announce ANY
+remarks:
+descr:          --------------------- ETERSOFT ------------------------
+import:         from AS198324 accept AS198324
+export:         to AS198324 announce ANY
+remarks:
+descr:          --------------------- TRICOLOR ------------------------
+import:         from AS56846 accept AS56846
+export:         to AS56846 announce ANY
+remarks:
+descr:          ------------------ DANSKEBANKRUSSIA -------------------
+import:         from AS201431 accept AS201431
+export:         to AS201431 announce ANY
+remarks:
+descr:          ----------------------- SATS --------------------------
+import:         from AS57334 accept AS57334
+export:         to AS57334 announce ANY
+remarks:
+descr:          ---------------------- PUDLINK ------------------------
+import:         from AS198070 accept AS-PUDLINK
+export:         to AS198070 announce ANY
+mp-import:      afi ipv6.unicast from AS198070 accept AS-PUDLINK
+mp-export:      afi ipv6.unicast to AS198070 announce ANY
+remarks:
+descr:          ----------------------- ESTP --------------------------
+import:         from AS48277 accept AS48277
+export:         to AS48277 announce ANY
+remarks:
+descr:          ---------------------- LINTEX -------------------------
+import:         from AS49426 accept AS49426
+export:         to AS49426 announce ANY
+remarks:
+descr:          ---------------------- EMBANK-AS ----------------------
+import:         from AS15455 accept AS15455
+export:         to AS15455 announce ANY
+remarks:
+descr:          -------------------- BALTBANK-AS --------------------
+import:         from AS59840 accept AS59840
+export:         to AS59840 announce ANY
+remarks:
+descr:          ---------------------- DERFIT2-AS --------------------
+import:         from AS199247 accept AS199247
+export:         to AS199247 announce ANY
+remarks:
+descr:          --------------------- Laguna -------------------------
+import:         from AS202976 accept AS202976
+export:         to AS202976 announce ANY
+remarks:
+descr:          ---------------------- CristalService-AS --------------
+import:         from AS204891 accept AS204891
+export:         to AS204891 announce ANY
+remarks:
+descr:          --------------------- OSS-SPB-AS ----------------------
+import:         from AS207665 accept AS207665
+export:         to AS207665 announce ANY
+mp-import:      afi ipv6.unicast from AS207665 accept AS207665
+mp-export:      afi ipv6.unicast to AS207665 announce ANY
+remarks:
+descr:          --------------------- Barnius -------------------------
+import:         from AS208100 accept AS208100
+export:         to AS208100 announce ANY
+remarks:
+descr:          ------------------------ RNB --------------------------
+import:         from AS208178 accept AS208178
+export:         to AS208178 announce ANY
+mp-import:      afi ipv6.unicast from AS208178 accept AS208178
+mp-export:      afi ipv6.unicast to AS208178 announce ANY
+remarks:
+descr:          --------------------- MEDLINX-MedinDeks ----------------
+import:         from AS208411 accept AS208411
+export:         to AS208411 announce ANY
+remarks:
+descr:          ----------------------- EMBRIA ------------------------
+import:         from AS208415 accept AS-FOTOSTRANA
+export:         to AS208415 announce ANY
+mp-import:      afi ipv6.unicast from AS208415 accept AS-FOTOSTRANA
+mp-export:      afi ipv6.unicast to AS208415 announce ANY
+remarks:
+descr:          ------------------- Smart Office ----------------------
+import:         from AS209667 accept AS209667
+export:         to AS209667 announce ANY
+remarks:
+descr:          ------------------ ROKSON VEROLINE --------------------
+import:         from AS5433 accept AS-ROKSON
+export:         to AS5433 announce ANY
+remarks:
+descr:          ------------------- GRID DYNAMICS ---------------------
+import:         from AS57031 accept AS57031
+export:         to AS57031 announce ANY
+remarks:
+descr:          ------------------- BROADRIDGE-33166 ------------------
+import:         from AS33166 accept AS33166
+export:         to AS33166 announce ANY
+remarks:
+descr:          ------------------- T-SYSTEMS-RUS ---------------------
+import:         from AS210540 accept AS210540
+export:         to AS210540 announce ANY
+remarks:
+descr:          ------------------- Transmost -------------------------
+import:         from AS209636 accept AS209636
+export:         to AS209636 announce ANY
+remarks:
+descr:          ------------------- Trans-Missia ----------------------
+import:         from AS202795 accept AS202795
+export:         to AS202795 announce ANY
+remarks:
+descr:          ------------------- Fabrika-Kukhnya -------------------
+import:         from AS200215 accept AS200215
+export:         to AS200215 announce ANY
+remarks:
+remarks:        -------------------------------------------------------
+admin-c:        SPEC1-RIPE
+tech-c:         SPEC1-RIPE
+remarks:        -------------------------------------------------------
+remarks:        -------------------------------------------------------
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         PROMETEY-MNT
+mnt-by:         SEVEREN-MNT
+created:        2005-05-17T06:58:36Z
+last-modified:  2023-04-10T08:00:14Z
+source:         RIPE
+
+organisation:   ORG-SL18-RIPE
+org-name:       JSC "Severen-Telecom"
+country:        RU
+org-type:       LIR
+address:        Respublikanskaya str., h.28, Lit. A
+address:        195112
+address:        Saint-Petersburg
+address:        RUSSIAN FEDERATION
+phone:          +7 812 740-7070
+fax-no:         +7 812 740-7071
+admin-c:        STKM1-RIPE
+tech-c:         STKM1-RIPE
+mnt-ref:        SEVEREN-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         SEVEREN-MNT
+abuse-c:        STKM1-RIPE
+created:        2004-04-17T11:58:16Z
+last-modified:  2021-12-14T13:46:25Z
+source:         RIPE # Filtered
+
+role:           SEVEREN-TELECOM NOC ROLE
+address:        Russia
+org:            ORG-SL18-RIPE
+admin-c:        DJK7-RIPE
+admin-c:        MNB29-RIPE
+tech-c:         DJK7-RIPE
+tech-c:         MNB29-RIPE
+nic-hdl:        SPEC1-RIPE
+abuse-mailbox:  abuse@severen.ru
+mnt-by:         PROMETEY-MNT
+created:        2007-04-25T12:46:43Z
+last-modified:  2022-08-22T15:01:20Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (SHETLAND)
+
+

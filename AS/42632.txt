@@ -1,0 +1,200 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS42383 - AS42959'
+
+as-block:       AS42383 - AS42959
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2021-08-19T06:50:17Z
+last-modified:  2021-08-19T06:50:17Z
+source:         RIPE
+
+% Information related to 'AS42632'
+
+% Abuse contact for 'AS42632' is 'noc@mnogobyte.ru'
+
+aut-num:        AS42632
+as-name:        MNOGOBYTE-AS
+descr:          Moscow, Russia
+org:            ORG-ML74-RIPE
+remarks:        ==========================================================
+remarks:        Peers in Moscow, Russia
+remarks:        ==========================================================
+import:         from AS3267 action pref=200; accept AS-RUNNET
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+import:         from AS8744 action pref=200; accept AS-WIMAX
+import:         from AS8905 action pref=200; accept AS-DIGIT1
+import:         from AS9002 action pref=200; accept AS-RETN
+import:         from AS9049 action pref=200; accept AS-ERTH
+import:         from AS12714 action pref=200; accept AS-TI
+import:         from AS20764 action pref=200; accept AS-RASCOM
+import:         from AS21414 action pref=200; accept AS-RCNET
+import:         from AS25308 action pref=200; accept AS-CITYLAN
+import:         from AS28917 action pref=200; accept AS-FIORD
+import:         from AS29076 action pref=200; accept AS-CITYTELECOM
+import:         from AS29226 action pref=200; accept AS-MASTERTEL
+import:         from AS29651 action pref=200; accept AS-CTCS
+import:         from AS31500 action pref=200; accept AS-GLOBAL-NET
+import:         from AS34123 action pref=200; accept AS-NETORN
+import:         from AS34456 action pref=200; accept AS-RCPEERS
+import:         from AS35641 action pref=200; accept AS-ELECTROCOM
+import:         from AS39792 action pref=200; accept AS-ANDERS
+import:         from AS42861 action pref=200; accept AS-PRIME-LINE
+import:         from AS47775 action pref=200; accept AS-UBN
+import:         from AS48061 action pref=200; accept AS48061
+import:         from AS50952 action pref=200; accept AS-DATAIX
+export:         to AS3267 announce AS-MNOGOBYTE
+export:         to AS8631 announce AS-MNOGOBYTE
+mp-export:      afi ipv6.unicast to AS8631 announce AS-MNOGOBYTE
+export:         to AS8744 announce AS-MNOGOBYTE
+export:         to AS8905 announce AS-MNOGOBYTE
+export:         to AS9002 announce AS-MNOGOBYTE
+export:         to AS9049 announce AS-MNOGOBYTE
+export:         to AS12714 announce AS-MNOGOBYTE
+export:         to AS20764 announce AS-MNOGOBYTE
+export:         to AS21414 announce AS-MNOGOBYTE
+export:         to AS25308 announce AS-MNOGOBYTE
+export:         to AS28917 announce AS-MNOGOBYTE
+export:         to AS29076 announce AS-MNOGOBYTE
+export:         to AS29226 announce AS-MNOGOBYTE
+export:         to AS29651 announce AS-MNOGOBYTE
+export:         to AS31500 announce AS-MNOGOBYTE
+export:         to AS34123 announce AS-MNOGOBYTE
+export:         to AS34456 announce AS-MNOGOBYTE
+export:         to AS35641 announce AS-MNOGOBYTE
+export:         to AS39792 announce AS-MNOGOBYTE
+export:         to AS42861 announce AS-MNOGOBYTE
+export:         to AS47775 announce AS-MNOGOBYTE
+export:         to AS48061 announce AS-MNOGOBYTE
+export:         to AS50952 announce AS-MNOGOBYTE
+remarks:        ==========================================================
+remarks:        Peers in Saint Petersburg, Russia
+remarks:        ==========================================================
+import:         from AS50952 action pref=200; accept AS-DATAIX
+export:         to AS50952 announce AS-MNOGOBYTE
+remarks:        ==========================================================
+remarks:        Upstreams
+remarks:        ==========================================================
+import:         from AS3216 action pref=200; accept ANY
+import:         from AS8359 action pref=100; accept ANY
+import:         from AS9002 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS3216 announce AS-MNOGOBYTE
+export:         to AS8359 announce AS-MNOGOBYTE
+export:         to AS9002 announce AS-MNOGOBYTE
+export:         to AS20485 announce AS-MNOGOBYTE
+remarks:        ==========================================================
+remarks:        Downstreams
+remarks:        ==========================================================
+import:         from AS6679 action pref=200; accept AS-SKADI
+import:         from AS6697 action pref=200; accept AS-BELPAK
+import:         from AS31415 action pref=700; accept AS-SVSCOMM
+import:         from AS33902 action pref=700; accept AS-STARNETWORKS
+import:         from AS34221 action pref=700; accept AS-QL
+import:         from AS35526 action pref=700; accept AS-MASTERBIT
+import:         from AS41349 action pref=700; accept AS41349
+import:         from AS43896 action pref=700; accept AS43896
+import:         from AS44020 action pref=700; accept AS-CLN
+import:         from AS47251 action pref=700; accept AS47251
+import:         from AS47328 action pref=700; accept AS-TRI
+import:         from AS48347 action pref=700; accept AS-MTW
+import:         from AS50277 action pref=700; accept AS-WEBTV
+import:         from AS50384 action pref=700; accept AS-W-IX
+import:         from AS57728 action pref=700; accept AS57728
+import:         from AS58059 action pref=700; accept AS58059
+import:         from AS199251 action pref=700; accept AS-MNOGOBYTE-CDN
+export:         to AS6679 announce ANY
+export:         to AS6697 announce ANY
+export:         to AS31415 announce ANY
+export:         to AS33902 announce ANY
+export:         to AS34221 announce ANY
+export:         to AS35526 announce ANY
+export:         to AS41349 announce ANY
+export:         to AS43896 announce ANY
+export:         to AS44020 announce ANY
+export:         to AS47251 announce ANY
+export:         to AS47328 announce ANY
+export:         to AS48347 announce ANY
+export:         to AS50277 announce ANY
+export:         to AS50384 announce ANY
+export:         to AS57728 announce ANY
+export:         to AS58059 announce ANY
+export:         to AS199251 announce ANY
+admin-c:        ASV33-RIPE
+tech-c:         MN3482-RIPE
+status:         ASSIGNED
+mnt-by:         MNT-MBNET
+mnt-by:         RIPE-NCC-END-MNT
+created:        2007-03-23T14:30:57Z
+last-modified:  2018-09-04T10:22:57Z
+source:         RIPE # Filtered
+
+organisation:   ORG-ML74-RIPE
+org-name:       MnogoByte LLC
+country:        RU
+org-type:       LIR
+address:        Boulevard Yana-Rainesa, 43k1,
+                Compartment II, room 4, 2 fl., office 2/4D
+address:        125373
+address:        MOSCOW
+address:        RUSSIAN FEDERATION
+phone:          +74957392551
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-MBNET
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-MBNET
+admin-c:        ASV33-RIPE
+abuse-c:        MN3482-RIPE
+created:        2007-03-12T06:11:05Z
+last-modified:  2021-09-03T14:41:58Z
+source:         RIPE # Filtered
+
+role:           MnogoByte NOC
+address:        1st Magistralny blind alley, 11, BC "The Yard"
+address:        Moscow. Russia
+remarks:        ################################
+remarks:        ##
+remarks:        #Attention!          #
+remarks:        ##
+remarks:        #DO NOT            #
+remarks:        #call and write e-mail     #
+remarks:        ##
+remarks:        #If you do not understand   #
+remarks:        #these contacts!!!       #
+remarks:        ##
+remarks:        ################################
+phone:          +74957392551
+fax-no:         +74956269784
+abuse-mailbox:  noc@mnogobyte.ru
+admin-c:        ASV33-RIPE
+tech-c:         ASV33-RIPE
+nic-hdl:        MN3482-RIPE
+mnt-by:         MNT-MBNET
+created:        2007-03-23T07:09:15Z
+last-modified:  2013-04-04T12:04:52Z
+source:         RIPE # Filtered
+
+person:         Anatoliy S Voronin
+address:        MnogoByte ISP,
+address:        Tushinskaya str.,12
+address:        Moscow, Russia
+fax-no:         +74956269784
+phone:          +74957392551
+nic-hdl:        ASV33-RIPE
+mnt-by:         MNT-MBNET
+created:        2007-03-23T07:03:26Z
+last-modified:  2017-10-30T21:54:24Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (ABERDEEN)
+
+
