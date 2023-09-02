@@ -1,0 +1,131 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS3209 - AS3353'
+
+as-block:       AS3209 - AS3353
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:19Z
+last-modified:  2018-11-22T15:27:19Z
+source:         RIPE
+
+% Information related to 'AS3239'
+
+% Abuse contact for 'AS3239' is 'abuse@rt.ru'
+
+aut-num:        AS3239
+as-name:        RU-SUrNet
+descr:          PJSC Rostelecom (Chelyabinsk)
+import:         { from AS-ANY accept NOT { 0.0.0.0/0 }; } refine { from AS-ANY action pref=40; accept community(3239:60); from AS-ANY action pref=30; accept community(3239:70); from AS-ANY action pref=10; accept community(3239:90); from AS-ANY action pref=0; accept ANY; } refine { from AS3239:AS-CUST accept (AS3239:AS-IN:PeerAS OR PeerAS) AND (<AS3239:AS-IN:PeerAS$> OR <PeerAS$>); }
+export:         { to AS3239:AS-CUST announce AS3239:AS-OUT:PeerAS OR AS-SURNET; to AS3239:AS-OUT-FULL announce ANY; }
+import:         { from AS-ANY action community .= {3239:1000}; accept ANY; } refine { from AS8342 action community .= {3239:201}; accept ANY; from AS2118 action community .= {3239:203}; accept ANY; from AS8324 action community .= {3239:205}; accept ANY; from AS702 action community .= {3239:206}; accept ANY; from AS29304 accept NOT ANY; from AS29648 action community .= {3239:208}; accept ANY; from AS35400 action community .= {3239:209}; accept ANY; } refine { from AS3239:AS-UPSTREAM action pref=25; accept AS3239:RS-PREF:PeerAS OR <AS3239:AS-PREF:PeerAS$>; from AS35400 action pref=26; accept ANY; from AS29648 action pref=26; accept ANY; from AS8324 action pref=27; accept ANY; from AS3239:AS-UPSTREAM action pref=30; accept ANY; from AS-ANY action pref=15; accept AS3239:RS-PREF:PeerAS; from AS-ANY action pref=20; accept (<AS3239:AS-IN:PeerAS$> OR <PeerAS$>) AND NOT { 0.0.0.0/0 }; }
+export:         { to AS8342 to AS29648 to AS35400 action community .= {8342:1000, 8342:1100, 8342:1300}; announce AS3239:RS-HALFROUTES; to AS8342 to AS29648 to AS35400 action community .= {8342:1006, 8342:1106, 8342:1306}; announce AS3239; to AS2118 action community .= {NO_EXPORT}; aspath.prepend(AS3239,AS3239,AS3239) ; announce AS3239; }
+export:         { to AS-ANY announce AS-SURNET AND NOT community(3239:1000) AND NOT { 62.148.254.0/24 }; } refine { to AS8342 announce NOT community(3239:1010); to AS8324 announce NOT community(3239:1050); to AS702 announce NOT community(3239:1060); to AS29304 announce NOT community(3239:1060); to AS29648 announce NOT community(3239:1080); to AS35400 announce NOT community(3239:1090); }
+org:            ORG-JR8-RIPE
+admin-c:        SN1928-RIPE
+tech-c:         SN1928-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SURNET-MNT
+mnt-by:         MFIST-MNT
+mnt-by:         MFIST-ROUTE-MNT
+mnt-by:         ROSTELECOM-MNT
+remarks:
+remarks:        ----------------------------------------------------------
+remarks:        Local preferences in AS3239
+remarks:        100 route from customer (default)
+remarks:        90 route from customer (backup)
+remarks:        85 route from prefered peering point
+remarks:        80 route from peering point
+remarks:        75 route from prefered upstream
+remarks:        70 route from upstream
+remarks:        60 lowest LP in the AS3239
+remarks:
+remarks:        BGP community list
+remarks:
+remarks:        Control localpref in the AS3239 backbone
+remarks:        3239:NN Set localpref to NN (60,70,90)
+remarks:
+remarks:        Do not announce route to upstream or peer
+remarks:        3239:1000
+remarks:
+remarks:        Control announces to upstream NN
+remarks:        x is number of prepends (1..4) or do not announce (0)
+remarks:        3239:1NNx
+remarks:
+remarks:        Route is learned from upstream or peering point NN
+remarks:        3239:2NN
+remarks:
+remarks:        NN is
+remarks:        01 RTcomm (AS8342)
+remarks:        03 Relcom (AS2118)
+remarks:        05 URC FreeNET (AS8324)
+remarks:        06 UUNET/MCI (AS702)
+remarks:        08 Comline (AS29648)
+remarks:        09 USI (AS35400)
+remarks:
+remarks:        ----------------------------------------------------------
+created:        2002-04-16T12:40:25Z
+last-modified:  2023-04-26T03:45:59Z
+source:         RIPE
+
+organisation:   ORG-JR8-RIPE
+org-name:       PJSC Rostelecom
+country:        RU
+org-type:       LIR
+address:        14 A, Sinopskaya nabereznaya
+address:        191167
+address:        S.Peterburg
+address:        RUSSIAN FEDERATION
+phone:          +7 499 999-82-83
+fax-no:         +74999953619
+admin-c:        RTNC-RIPE
+admin-c:        EP6706-RIPE
+admin-c:        IE1277-RIPE
+admin-c:        NM7547-RIPE
+admin-c:        AA728-RIPE
+admin-c:        SVS153-RIPE
+admin-c:        ASV77-RIPE
+admin-c:        RVP-RIPE
+admin-c:        VEV57-RIPE
+admin-c:        TR4627-RIPE
+admin-c:        TL4565-RIPE
+admin-c:        DN216-RIPE
+admin-c:        DA2353-RIPE
+admin-c:        IS111-RIPE
+admin-c:        VE128-RIPE
+admin-c:        SS216-RIPE
+abuse-c:        RTNC-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        ROSTELECOM-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2005-03-22T11:11:20Z
+last-modified:  2023-01-26T10:52:42Z
+source:         RIPE # Filtered
+
+role:           SUrNet NOC
+address:        Chelyabinsk Network Informational Center
+address:        Russia
+phone:          +7 343 3791207
+admin-c:        AV8646-RIPE
+tech-c:         AV8646-RIPE
+nic-hdl:        SN1928-RIPE
+abuse-mailbox:  abuse@rt.ru
+mnt-by:         SURNET-MNT
+created:        2008-07-03T04:33:21Z
+last-modified:  2019-08-07T03:56:48Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (BUSA)
+
+

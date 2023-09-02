@@ -1,0 +1,148 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS3209 - AS3353'
+
+as-block:       AS3209 - AS3353
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:19Z
+last-modified:  2018-11-22T15:27:19Z
+source:         RIPE
+
+% Information related to 'AS3226'
+
+% Abuse contact for 'AS3226' is 'abuse@mark-itt.net'
+
+aut-num:        AS3226
+as-name:        MARK-ITT-AS
+org:            ORG-CCM1-RIPE
+remarks:        === Upstreams ===
+remarks:        --- MEGAFON ---
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-MARK-ITT
+mp-import:      afi ipv4.unicast from AS31133 accept ANY
+mp-export:      afi ipv4.unicast to AS31133 announce AS-MARK-ITT
+mp-import:      afi ipv6.unicast from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-MARK-ITT
+remarks:        ---IHOME---
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS-MARK-ITT
+mp-import:      afi ipv4.unicast from AS25478 accept ANY
+mp-export:      afi ipv4.unicast to AS25478 announce AS-MARK-ITT
+mp-import:      afi ipv6.unicast from AS25478 accept ANY
+mp-export:      afi ipv6.unicast to AS25478 announce AS-MARK-ITT
+remarks:        ---IHOME_W-IX---
+import:         from AS50384 accept ANY
+export:         to AS50384 announce AS-MARK-ITT
+mp-import:      afi ipv4.unicast from AS50384 accept ANY
+mp-export:      afi ipv4.unicast to AS50384 announce AS-MARK-ITT
+mp-import:      afi ipv6.unicast from AS50384 accept ANY
+mp-export:      afi ipv6.unicast to AS50384 announce AS-MARK-ITT
+remarks:        ---SMOTRESHKA---
+import:         from AS200976 accept AS200976
+export:         to AS200976 announce AS-MARK-ITT
+mp-import:      afi ipv4.unicast from AS200976 accept AS200976
+mp-export:      afi ipv4.unicast to AS200976 announce AS-MARK-ITT
+remarks:        === Downstreams ===
+remarks:        --- RadioLink ---
+import:         from AS38959 accept AS34983 AND NOT {0.0.0.0/0}
+export:         to AS38959 announce ANY
+remarks:        --- TangoTelecom ---
+import:         from AS43781 accept AS43781 AND NOT {0.0.0.0/0}
+export:         to AS43781 announce ANY
+remarks:        --- GarantTelecom ---
+import:         from AS52217 accept AS52217 AND NOT {0.0.0.0/0}
+export:         to AS52217 announce ANY
+remarks:        --- StroyNet ---
+import:         from AS49557 accept AS49557 AND NOT {0.0.0.0/0}
+export:         to AS49557 announce AS3226 AND {0.0.0.0/0};
+remarks:        --- OilTelecom ---
+import:         from AS196685 accept AS196685 AND NOT {0.0.0.0/0}
+export:         to AS196685 announce AS3226 AND {0.0.0.0/0}
+remarks:        --- BystroBank ---
+import:         from AS199954 accept AS199954 AND NOT {0.0.0.0/0}
+export:         to AS199954 announce ANY
+remarks:        -- TechnoTorg ---
+import:         from AS207380 accept AS207380 AND NOT {0.0.0.0/0}
+export:         to AS207380 announce ANY
+remarks:        --- Severnoe volokno ---
+import:         from AS51028 accept ANY AND NOT {0.0.0.0/0}
+export:         to AS51028 announce ANY
+admin-c:        AEAE1-RIPE
+tech-c:         MI380-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MARK-ITT-MNT
+created:        2002-09-23T15:18:59Z
+last-modified:  2020-05-18T13:21:21Z
+source:         RIPE # Filtered
+
+organisation:   ORG-CCM1-RIPE
+org-name:       OOO "NI"
+country:        RU
+org-type:       LIR
+address:        p/o box 778
+address:        426008
+address:        Izhevsk
+address:        RUSSIAN FEDERATION
+phone:          +73412918006
+fax-no:         +73412918004
+admin-c:        AVE3-RIPE
+admin-c:        WAS7-RIPE
+admin-c:        AY70-RIPE
+mnt-ref:        MARK-ITT-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MARK-ITT-MNT
+abuse-c:        MI380-RIPE
+created:        2004-04-17T11:54:54Z
+last-modified:  2021-09-23T07:03:35Z
+source:         RIPE # Filtered
+
+role:           CC MARK-ITT
+address:        p/o box 3018, Izhevsk 426008 Russia
+remarks:        trouble:  Points of contact for MARK-ITT Network Operations
+remarks:        ----------------------------------------------------------
+remarks:        Routing and peering issues: noc@mark-itt.net
+remarks:        SPAM issues:                abuse@mark-itt.net
+remarks:        Network security issues:    security@mark-itt.net
+remarks:        Mail and News issues:       postmaster@mark-itt.net
+remarks:        Customer support:           abon@mark-itt.net
+remarks:        General information:        info@mark-itt.net
+remarks:        ----------------------------------------------------------
+admin-c:        AEAE1-RIPE
+tech-c:         AEAE1-RIPE
+tech-c:         RD841-RIPE
+tech-c:         AY70-RIPE
+tech-c:         WAS7-RIPE
+nic-hdl:        MI380-RIPE
+mnt-by:         MARK-ITT-MNT
+abuse-mailbox:  abuse@mark-itt.net
+created:        2003-01-07T09:00:25Z
+last-modified:  2018-06-08T07:33:51Z
+source:         RIPE # Filtered
+
+person:         Alexander Ermolaev
+address:        pob4085
+address:        268, ul. Pushkiskaya
+                Izhevsk RU426011 Russia
+phone:          +7 3412 918033
+phone:          +7 3412 918006
+fax-no:         +7 3412 918004
+nic-hdl:        AEAE1-RIPE
+mnt-by:         MARK-ITT-MNT
+created:        2001-12-14T05:53:12Z
+last-modified:  2011-03-23T14:08:30Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (DEXTER)
+
+

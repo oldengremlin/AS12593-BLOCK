@@ -1,0 +1,186 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS47104 - AS50891'
+
+as-block:       AS47104 - AS50891
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2023-07-20T14:43:26Z
+last-modified:  2023-07-20T14:43:26Z
+source:         RIPE
+
+% Information related to 'AS50473'
+
+% Abuse contact for 'AS50473' is 'admin@ecotelecom.ru'
+
+aut-num:        AS50473
+as-name:        ECO-AS
+org:            ORG-AC64-RIPE
+remarks:        === UPLINKS START ===
+remarks:        Filanco Cloud-IX AS29076
+import:         from AS29076 action pref=105; accept ANY
+export:         to AS29076 announce AS-ECO
+remarks:        MEGAFON AS31133
+import:         from AS31133 action pref=110; accept ANY
+export:         to AS31133 announce AS-ECO
+remarks:        RASCOM AS20764
+import:         from AS20764 action pref=110; accept ANY
+export:         to AS20764 announce AS-ECO
+remarks:        iHome AS25478
+import:         from AS25478 action pref=110; accept ANY
+export:         to AS25478 announce AS-ECO
+remarks:        === UPLINKS END ===
+remarks:        === IX START ===
+remarks:        PITER-IX AS50817
+import:         from AS50817 action pref=1100; accept ANY
+export:         to AS50817 announce AS-ECO
+remarks:        DATA-IX AS50952
+import:         from AS50952 action pref=900; accept AS-DATAIX
+export:         to AS50952 announce AS-ECO
+remarks:        MSK-IX AS8631
+import:         from AS8631 action pref=1100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-ECO
+remarks:        === IX END ===
+remarks:        === BIG PTP START ===
+remarks:        YANDEX AS13238
+import:         from AS13238 action pref=2000; accept AS-YANDEX
+export:         to AS13238 announce AS-ECO
+remarks:        Google AS15169
+import:         from AS15169 action pref=2000; accept ANY
+export:         to AS15169 announce AS-ECO
+remarks:        Smotreshka AS200976
+import:         from AS200976 action pref=2000; accept AS200976
+export:         to AS200976 announce AS-ECO
+remarks:        === BIG PTP END ===
+remarks:        === PTP Downstream START ===
+remarks:        INFOSET AS47635
+import:         from AS47635 action pref=2000; accept AS47635
+export:         to AS47635 announce ANY
+remarks:        TochkaDostupa AS49608
+import:         from AS49608 action pref=2000; accept AS49608
+export:         to AS49608 announce ANY
+remarks:        RUSTEKO AS51596
+import:         from AS51596 action pref=2000; accept AS-RUSTEKO
+export:         to AS51596 announce ANY
+remarks:        DRLINE AS50092
+import:         from AS50092 action pref=2000; accept AS50092
+export:         to AS50092 announce ANY
+remarks:        === PTP Downstream END ===
+remarks:        === PTP SMALL START ===
+import:         from AS51904 action pref=2000; accept AS-UTEX
+export:         to AS51904 announce AS-ECO
+remarks:        TELERU AS42429
+import:         from AS42429 action pref=2000; accept AS42429
+export:         to AS42429 announce AS-ECO
+remarks:        RADIONET AS16143
+import:         from AS16143 action pref=2000; accept AS16143
+export:         to AS16143 announce AS-ECO
+remarks:        Prolink AS47104
+import:         from AS47104 action pref=2000; accept AS47104
+export:         to AS47104 announce AS-ECO
+remarks:        LEKSTAR AS49261
+import:         from AS49261 action pref=2000; accept AS49261
+export:         to AS49261 announce AS-ECO
+remarks:        Kvidex AS41802
+import:         from AS41802 action pref=2000; accept AS41802
+export:         to AS41802 announce AS-ECO
+remarks:        Well-Comm AS50289
+import:         from AS50289 action pref=2000; accept AS50289
+export:         to AS50289 announce AS-ECO
+remarks:        ZAGOROD-TELECOM AS60986
+import:         from AS60986 action pref=2000; accept AS60986
+export:         to AS60986 announce AS-ECO
+remarks:        FLEX AS21453
+import:         from AS21453 action pref=2000; accept AS21453
+export:         to AS21453 announce AS-ECO
+remarks:        Iflat-Uniontel AS48293
+import:         from AS48293 action pref=2000; accept AS48293
+export:         to AS48293 announce AS-ECO
+remarks:        CLN-NET AS44020
+import:         from AS44020 action pref=2000; accept AS44020
+export:         to AS44020 announce AS-ECO
+remarks:        MARYNO AS39709
+import:         from AS39709 action pref=2000; accept AS39709
+export:         to AS39709 announce AS-ECO
+remarks:        Sbor.net AS45051
+import:         from AS45051 action pref=2000; accept AS45051
+export:         to AS45051 announce AS-ECO
+remarks:        P-T-K AS51011
+import:         from AS51011 action pref=2000; accept AS51011
+export:         to AS51011 announce AS-ECO
+remarks:        WebMax AS35165
+import:         from AS35165 action pref=2000; accept AS35165
+export:         to AS35165 announce AS-ECO
+remarks:        MSM_DINET AS12695
+import:         from AS12695 action pref=2000; accept AS12695
+export:         to AS12695 announce AS-ECO
+remarks:        AVK AS48781
+import:         from AS48781 action pref=2000; accept AS48781
+export:         to AS48781 announce AS-ECO
+remarks:        OBIT AS8492
+import:         from AS8492 action pref=2000; accept AS8492
+export:         to AS8492 announce AS-ECO
+remarks:        CITYLAN AS25308
+import:         from AS25308 action pref=2000; accept AS25308
+export:         to AS25308 announce AS-ECO
+remarks:        === PTP SMALL END ===
+admin-c:        NICK6-RIPE
+admin-c:        ABR31-RIPE
+tech-c:         NICK6-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ECO-MNT
+created:        2010-01-22T10:51:54Z
+last-modified:  2022-02-18T07:26:22Z
+source:         RIPE
+
+organisation:   ORG-AC64-RIPE
+org-name:       Altagen JSC
+country:        RU
+org-type:       LIR
+address:        Davydkovskaya street, 3 block 1
+address:        121352
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74995055555
+fax-no:         +74995055555
+abuse-c:        AR16548-RIPE
+mnt-ref:        ECO-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ECO-MNT
+created:        2013-05-21T09:54:30Z
+last-modified:  2020-12-16T13:42:26Z
+source:         RIPE # Filtered
+admin-c:        MKCH1-RIPE
+admin-c:        NICK6-RIPE
+
+person:         Anton Bryznev
+address:        Altagen CJSC, 3 Davydkovskaya street, 121352, Moscow, RUSSIAN FEDERATION
+phone:          +7 499 5055555
+nic-hdl:        ABR31-RIPE
+mnt-by:         RDP-MNT
+created:        2011-08-10T19:47:55Z
+last-modified:  2016-03-15T16:38:26Z
+source:         RIPE
+
+person:         Nikolay N. Guzakov
+address:        Altagen CJSC 3 Davydkovskaya street 121352 Moscow RUSSIAN FEDERATION
+phone:          +7 499 5055555
+nic-hdl:        NICK6-RIPE
+mnt-by:         ECO-MNT
+created:        2011-08-23T19:58:16Z
+last-modified:  2016-03-15T16:21:55Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (DEXTER)
+
+

@@ -1,0 +1,107 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS12557 - AS13223'
+
+as-block:       AS12557 - AS13223
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:24Z
+last-modified:  2018-11-22T15:27:24Z
+source:         RIPE
+
+% Information related to 'AS13095'
+
+% Abuse contact for 'AS13095' is 'abuse-b2b@beeline.ru'
+
+aut-num:        AS13095
+as-name:        CTK-NET-AS
+org:            ORG-ES15-RIPE
+remarks:        -----------------------------------------------
+remarks:        UPSTREAMS
+remarks:        -----------------------------------------------
+import:         { from AS8402  action pref=50; accept ANY; } #CORBINA
+export:         { to AS8402 announce AS-CTK; }
+remarks:        -----------------------------------------------
+remarks:        PEERING
+remarks:        -----------------------------------------------
+import:         { from AS25592 action pref=100; accept AS25592; from AS43903 action pref=100; accept AS43903; from AS30881 action pref=100; accept AS30881; from AS197078 action pref=100; accept AS197078; } #NETIS MEDIAN TensorTelecom YarNET
+export:         { to AS25592 announce AS-CTK; to AS43903 announce AS-CTK; to AS197078 announce AS-CTK; to AS30881 announce AS-CTK; }
+remarks:        -----------------------------------------------
+remarks:        CUSTOMERS
+remarks:        -----------------------------------------------
+import:         { from AS31480 action pref=10; accept AS-GLOBALTS; from AS47911 action pref=10; accept AS47911; }
+export:         { to AS31480 announce ANY; to AS47911 announce ANY; }
+remarks:        -----------------------------------------------
+remarks:        DEFAULTS
+remarks:        -----------------------------------------------
+default:        to AS8402 action pref=200; networks ANY
+admin-c:        PAC30-RIPE
+admin-c:        AVN9-RIPE
+tech-c:         PAC30-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+tech-c:         AVN9-RIPE
+mnt-by:         SOVINTEL-MNT
+created:        2002-08-12T11:13:39Z
+last-modified:  2017-11-15T09:16:09Z
+source:         RIPE # Filtered
+
+organisation:   ORG-ES15-RIPE
+org-name:       PJSC "Vimpelcom"
+country:        RU
+org-type:       LIR
+remarks:        VEON Group
+address:        8 Marta str, 10, bld. 14
+address:        127083
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74999233775
+fax-no:         +74957871990
+admin-c:        SVNT1-RIPE
+admin-c:        SVNT2-RIPE
+admin-c:        IAI1-RIPE
+admin-c:        DM3740-RIPE
+admin-c:        BEE15-RIPE
+mnt-ref:        SOVINTEL-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         SOVINTEL-MNT
+abuse-c:        SVNT2-RIPE
+created:        2004-04-17T11:58:43Z
+last-modified:  2022-04-21T15:45:58Z
+source:         RIPE # Filtered
+
+person:         Alexey V. Novikov
+address:        37, Pobedy st.,
+address:        Yaroslavl, Russia, 150040
+phone:          +7 4852 584130
+fax-no:         +7 4852 580100
+nic-hdl:        AVN9-RIPE
+mnt-by:         AS13095-MNT
+created:        2002-06-10T06:48:51Z
+last-modified:  2008-08-12T06:25:51Z
+source:         RIPE # Filtered
+
+person:         Pavel A Crasotin
+address:        37, Pobedy st.,
+address:        Yaroslavl, Russia, 150040
+phone:          +7 4852 584103
+fax-no:         +7 4852 580100
+nic-hdl:        PAC30-RIPE
+mnt-by:         AS13095-MNT
+created:        2002-06-10T07:03:01Z
+last-modified:  2008-08-12T06:25:50Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (BUSA)
+
+

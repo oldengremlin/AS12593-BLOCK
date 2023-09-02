@@ -1,0 +1,160 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS21281 - AS21390'
+
+as-block:       AS21281 - AS21390
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:28Z
+last-modified:  2018-11-22T15:27:28Z
+source:         RIPE
+
+% Information related to 'AS21367'
+
+% Abuse contact for 'AS21367' is 'abuse@wiland.ru'
+
+aut-num:        AS21367
+as-name:        ZVEZDATEL-AS
+org:            ORG-WL18-RIPE
+remarks:        ====================================================
+remarks:        Upstreams :: IPv4
+remarks:        ====================================================
+remarks:        # RETN
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-ZVEZDATEL
+remarks:        # ROSTELECOM
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-ZVEZDATEL
+remarks:        # ANDERS
+import:         from AS39792 accept ANY
+export:         to AS39792 announce AS-ZVEZDATEL
+remarks:        # RUSCOMNET
+import:         from AS21414 accept ANY
+export:         to AS21414 announce AS-ZVEZDATEL
+remarks:        # BEELINE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-ZVEZDATEL
+remarks:        # TTK
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-ZVEZDATEL
+remarks:        ====================================================
+remarks:        Upstreams :: IPv6
+remarks:        ====================================================
+remarks:        # RETN IPv6
+mp-import:      afi ipv6.unicast from AS9002 accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-ZVEZDATEL
+remarks:        # ROSTELECOM IPv6
+mp-import:      afi ipv6.unicast from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-ZVEZDATEL
+remarks:        # ANDERS IPv6
+mp-import:      afi ipv6.unicast from AS39792 accept ANY
+mp-export:      afi ipv6.unicast to AS39792 announce AS-ZVEZDATEL
+remarks:        # BEELINE IPv6
+mp-import:      afi ipv6.unicast from AS3216 accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-ZVEZDATEL-V6
+remarks:        ====================================================
+remarks:        Peering :: IPv4
+remarks:        ====================================================
+remarks:        # MSK-IX
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-ZVEZDATEL
+remarks:        # W-IX iHOME
+import:         from AS50384 accept AS-W-IX
+export:         to AS50384 announce AS-ZVEZDATEL
+remarks:        ====================================================
+remarks:        Peering :: IPv6
+remarks:        ====================================================
+remarks:        # MSK-IX IPv6
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-ZVEZDATEL
+remarks:        # W-IX iHOME IPv6
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX
+mp-export:      afi ipv6.unicast to AS50384 announce AS-ZVEZDATEL
+remarks:        ====================================================
+remarks:        Customers :: IPv4
+remarks:        ====================================================
+import:         from AS38922 accept AS-WILAND
+export:         to AS38922 announce any
+remarks:        # Europa Plus
+import:         from AS31183 accept AS31183
+export:         to AS31183 announce any
+remarks:        # Morscoy Bank
+import:         from AS47976 accept AS47976
+export:         to AS47976 announce any
+remarks:        # SUP
+import:         from AS44696 accept AS44696
+export:         to AS44696 announce any
+remarks:        # Carcade
+import:         from AS41212 accept AS41212
+export:         to AS41212 announce any
+remarks:        # RBS-HOLDING
+import:         from AS199161 accept AS199161
+export:         to AS199161 announce any
+remarks:        # SPORTS.RU
+import:         from AS58045 accept AS58045
+export:         to AS58045 announce any
+remarks:        # SNG ALIANCE
+import:         from AS41802 accept AS41802
+export:         to AS41802 announce any
+admin-c:        ZVTL-RIPE
+tech-c:         ZVTL-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-WILAND
+created:        2011-06-15T09:48:03Z
+last-modified:  2017-11-15T12:21:42Z
+source:         RIPE # Filtered
+
+organisation:   ORG-WL18-RIPE
+org-name:       Wiland Ltd
+country:        RU
+org-type:       LIR
+address:        Lenina Ave., hs nr 25, room 17
+address:        144000
+address:        Moscow Elektrostal
+address:        RUSSIAN FEDERATION
+phone:          +74959812310
+fax-no:         +74959812311
+admin-c:        VG4714-RIPE
+admin-c:        SV6753-RIPE
+abuse-c:        AR17045-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-WILAND
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-WILAND
+created:        2005-10-20T11:49:49Z
+last-modified:  2020-12-16T12:20:23Z
+source:         RIPE # Filtered
+
+role:           Wiland Network Russia
+address:        Nab. Akademica Tupoleva 15 build 22
+address:        123995, Moscow, Russia
+phone:          +7 495 9812310
+fax-no:         +7 495 9812311
+remarks:        trouble: ********************************************
+remarks:        trouble: The contact information on problems:
+remarks:        trouble: ********************************************
+remarks:        trouble: Backbone/Routing: noc@wiland.ru
+remarks:        trouble: ABUSE/SPAM: abuse@wiland.ru
+remarks:        trouble: Internet Customer support: support@wiland.ru
+remarks:        trouble: ********************************************
+admin-c:        VG4714-RIPE
+admin-c:        SV6753-RIPE
+abuse-mailbox:  abuse@wiland.ru
+nic-hdl:        ZVTL-RIPE
+mnt-by:         MNT-ZVEZDATEL
+created:        2011-05-31T06:27:56Z
+last-modified:  2016-10-17T20:22:04Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (BUSA)
+
+

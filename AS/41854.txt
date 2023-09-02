@@ -1,0 +1,114 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS40960 - AS42381'
+
+as-block:       AS40960 - AS42381
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:34Z
+last-modified:  2018-11-22T15:27:34Z
+source:         RIPE
+
+% Information related to 'AS41854'
+
+% Abuse contact for 'AS41854' is 'abuse@domru.ru'
+
+aut-num:        AS41854
+as-name:        NLINK-AS
+remarks:        ;upstream
+import:         from AS9049 accept ANY;
+export:         to AS9049 announce AS-NLINK;
+import:         from AS28917 action pref=900; accept ANY
+export:         to AS28917 announce AS-NLINK AND NOT community(41854:10000)
+mp-import:      afi ipv6.unicast from AS28917 accept ANY;
+mp-export:      afi ipv6.unicast to AS28917 announce AS-NLINK-V6;
+import:         from AS31133 action pref=900; accept ANY
+export:         to AS31133 announce AS-NLINK AND NOT community(41854:10000)
+import:         from AS47659 action pref=900; accept ANY;
+export:         to AS47659 announce AS-NLINK;
+mp-import:      afi ipv6.unicast from AS47659 accept ANY;
+mp-export:      afi ipv6.unicast to AS47659 announce AS-NLINK-V6;
+import:         from AS8359 action pref=900; accept ANY;
+export:         to AS8359 announce AS-NLINK;
+remarks:        ;downstreams
+import:         from AS47124 action pref=500; accept AS47124;
+export:         to AS47124 announce ANY;
+remarks:        ;peers
+import:         from AS47659 action pref=700; accept AS-INTERTELRZN;
+export:         to AS47659 announce ANY;
+mp-import:      afi ipv6.unicast from AS47659 accept AS47659;
+mp-export:      afi ipv6.unicast to AS47659 announce ANY;
+import:         from AS44895 action pref=700; accept AS44895;
+export:         to AS44895 announce AS41854;
+import:         from AS34467 action pref=700; accept AS34467 AND AS39724;
+export:         to AS34467 announce AS41854;
+import:         from AS47313 action pref=700; accept AS-ELECTROCOM;
+export:         to AS47313 announce AS-NLINK;
+remarks:
+org:            ORG-RA21-RIPE
+admin-c:        NLNW-RIPE
+tech-c:         NLNW-RIPE
+status:         ASSIGNED
+mnt-by:         RAID-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2006-11-02T16:57:28Z
+last-modified:  2022-08-26T05:06:35Z
+source:         RIPE # Filtered
+
+organisation:   ORG-RA21-RIPE
+org-name:       JSC "ER-Telecom Holding"
+country:        RU
+org-type:       LIR
+address:        str. Shosse Kosmonavtov, 111, bldg. 43, office 509
+address:        614990
+address:        Perm
+address:        RUSSIAN FEDERATION
+phone:          +79197001771
+phone:          +7 342 2462233
+fax-no:         +7 342 2195024
+admin-c:        ERTH3-RIPE
+tech-c:         RAID1-RIPE
+abuse-c:        RAID1-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        RAID-MNT
+mnt-ref:        ENFORTA-MNT
+mnt-ref:        AS8345-MNT
+mnt-ref:        RU-NTK-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         RAID-MNT
+created:        2004-04-17T11:56:55Z
+last-modified:  2023-02-27T12:32:19Z
+source:         RIPE # Filtered
+
+role:           Nlink Telecomminications LLC NOC
+address:        11 Solotchinskoe, Ryazan
+address:        Russian Federation, 390005
+remarks:        Points of contact
+remarks:        -----------------------------------------------------------
+remarks:        Routing and peering issues: ripe@ertelecom.ru
+remarks:        SPAM issues: abuse@domru.ru
+remarks:        Network issues: ripe@ertelecom.ru
+remarks:        General information: info@domru.ru
+remarks:        -----------------------------------------------------------
+admin-c:        ALNT-RIPE
+tech-c:         MYR-RIPE
+tech-c:         ALNT-RIPE
+tech-c:         VORA-RIPE
+nic-hdl:        NLNW-RIPE
+abuse-mailbox:  abuse@domru.ru
+mnt-by:         NLINK-MNT
+created:        2012-01-08T19:14:47Z
+last-modified:  2018-10-24T04:08:15Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (SHETLAND)
+
+

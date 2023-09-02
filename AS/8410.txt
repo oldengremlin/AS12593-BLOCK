@@ -1,0 +1,116 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS8192 - AS8523'
+
+as-block:       AS8192 - AS8523
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:23Z
+last-modified:  2018-11-22T15:27:23Z
+source:         RIPE
+
+% Information related to 'AS8410'
+
+% Abuse contact for 'AS8410' is 'noc@nir-telecom.ru'
+
+aut-num:        AS8410
+as-name:        NIR-AS
+remarks:        ISP NIR-Telecom
+remarks:        http://www.nir-telecom.ru
+org:            ORG-LA157-RIPE
+remarks:        -------------------------------------------------------
+remarks:        Uplink
+remarks:        -------------------------------------------------------
+import:         from AS8359 action pref=100; accept ANY;
+import:         from AS48858 action pref=100; accept ANY;
+import:         from AS20485 action pref=100; accept ANY;
+export:         to AS8359 announce AS-NIR;
+export:         to AS48858 announce AS-NIR;
+export:         to AS20485 announce AS-NIR;
+remarks:        -------------------------------------------------------
+remarks:        Customers
+remarks:        -------------------------------------------------------
+import:         from AS35410 action pref=120; accept AS35410;
+export:         to AS35410 announce ANY;
+remarks:        -------------------------------------------------------
+remarks:        IX and Peering
+remarks:        -------------------------------------------------------
+import:         from AS42403 action pref=110; accept AS-NSKROUTESERVER;
+export:         to AS42403 announce AS-NIR;
+import:         from AS50952 action pref=110; accept AS-DATAIX;
+export:         to AS50952 announce AS-NIR;
+import:         from AS8631 action pref=110; accept AS-MSKROUTESERVER;
+export:         to AS8631 announce AS-NIR;
+import:         from AS43690 action pref=110; accept AS-SPBROUTESERVER;
+export:         to AS43690 announce AS-NIR;
+import:         from AS43213 action pref=110; accept AS-EKTROUTESERVER;
+export:         to AS43213 announce AS-NIR;
+import:         from AS30871 action pref=120; accept AS30871;
+export:         to AS30871 announce AS8410;
+remarks:        -------------------------------------------------------
+admin-c:        HAV-RIPE
+admin-c:        VK2180-RIPE
+tech-c:         HAV-RIPE
+tech-c:         VK2180-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NIR-MNT
+created:        2003-09-19T10:22:27Z
+last-modified:  2022-07-12T08:44:25Z
+source:         RIPE
+
+organisation:   ORG-LA157-RIPE
+org-name:       NovInvestRezerv, LLC
+country:        RU
+org-type:       LIR
+address:        P.O.Box 265
+address:        630001
+address:        Novosibirsk
+address:        RUSSIAN FEDERATION
+phone:          +73832205000
+fax-no:         +73832205090
+mnt-ref:        NIR-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         NIR-MNT
+admin-c:        HAV-RIPE
+admin-c:        VK2180-RIPE
+abuse-c:        NIR-RU
+created:        2008-06-02T09:58:04Z
+last-modified:  2020-12-16T13:01:59Z
+source:         RIPE # Filtered
+
+person:         Aleksey V Kharitonov
+address:        Eltcovskaya 20
+address:        630001 Novosibirsk
+address:        RUSSIA
+phone:          +7 3832 205000
+fax-no:         +7 3832 205000
+nic-hdl:        HAV-RIPE
+created:        2003-09-11T02:36:07Z
+last-modified:  2013-06-19T17:57:09Z
+source:         RIPE # Filtered
+mnt-by:         NIR-MNT
+
+person:         Valerii Kolmakov
+address:        Eltsovskaya 20
+address:        Novosibirsk
+address:        Russian Federation
+phone:          +7-383-2205080
+nic-hdl:        VK2180-RIPE
+mnt-by:         NIR-MNT
+created:        2011-05-24T05:07:03Z
+last-modified:  2018-06-14T07:04:48Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.107 (SHETLAND)
+
+
