@@ -1,0 +1,120 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to 'AS196608 - AS207419'
+
+as-block:       AS196608 - AS207419
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2022-08-23T17:19:53Z
+last-modified:  2022-08-23T17:19:53Z
+source:         RIPE
+
+% Information related to 'AS205305'
+
+% Abuse contact for 'AS205305' is 'abuse@dtln.ru'
+
+aut-num:        AS205305
+as-name:        DTLN
+org:            ORG-DL76-RIPE
+remarks:        ---------------------------------------------------------------------------
+remarks:        *************DataLine IPv4 Routing Policy**************
+remarks:        ---------------------------------------------------------------------------
+remarks:        ====================== UPSTREAMS ======================
+remarks:        RETN
+import:         from AS9002 accept ANY
+export:         to AS9002 announce as-dtln-spb
+remarks:        -------------------------------------------------------
+remarks:        Rostelecom
+import:         from AS12389 accept ANY
+export:         to AS12389 announce as-dtln-spb
+remarks:        ======================== PEERS ========================
+remarks:        ======================= CUSTOMERS =====================
+remarks:        Redit
+import:         from AS60413 accept AS60413
+export:         to AS60413 announce ANY
+remarks:        -------------------------------------------------------
+remarks:        ---------------------------------------------------------------------------
+remarks:        *************DataLine IPv6 Routing Policy**************
+remarks:        ---------------------------------------------------------------------------
+remarks:        DataLine does not accept prefixes longer than /48
+remarks:        ====================== UPSTREAMS ======================
+remarks:        RETN
+mp-import:      afi ipv6.unicast from AS9002 accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce as-dtln-spb6
+remarks:        -------------------------------------------------------
+remarks:        Rostelecom
+mp-import:      afi ipv6.unicast from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce as-dtln-spb6
+remarks:        -------------------------------------------------------
+remarks:        ======================== PEERS ========================
+remarks:        ======================= CUSTOMERS =====================
+remarks:        ---------------------------------------------------------------------------
+remarks:        ==================== Looking Glass ====================
+remarks:        lg.dtln.ru
+remarks:        ---------------------------------------------------------------------------
+admin-c:        AAB155-RIPE
+tech-c:         DTLN1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DTLN-MNT
+created:        2017-09-26T08:58:06Z
+last-modified:  2018-09-04T12:05:38Z
+source:         RIPE
+
+organisation:   ORG-DL76-RIPE
+org-name:       Dataline Ltd
+country:        RU
+org-type:       LIR
+address:        Borovaya 7/10
+address:        111020
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74957846505
+fax-no:         +74957858514
+admin-c:        DTLN1-RIPE
+admin-c:        AAB155-RIPE
+admin-c:        AVZ371-RIPE
+admin-c:        aa29945-RIPE
+admin-c:        IAT1000-RIPE
+tech-c:         DTLN1-RIPE
+abuse-c:        AR16623-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        DTLN-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         DTLN-MNT
+created:        2009-01-15T16:14:37Z
+last-modified:  2020-12-16T13:25:09Z
+source:         RIPE # Filtered
+
+role:           DataLine Ltd. NOC
+address:        Borovaya 7/10, Moscow, Russia
+admin-c:        KSS55-RIPE
+admin-c:        AAB155-RIPE
+tech-c:         KSS55-RIPE
+tech-c:         AAB155-RIPE
+nic-hdl:        DTLN1-RIPE
+mnt-by:         DTLN-MNT
+created:        2011-07-25T10:45:22Z
+last-modified:  2012-02-01T14:03:08Z
+source:         RIPE # Filtered
+
+person:         Alexey A Bagaev
+address:        Borovaya 7/10, Moscow, Russia
+phone:          +7 495 7846505
+nic-hdl:        AAB155-RIPE
+mnt-by:         DTLN-MNT
+created:        2011-03-16T12:13:13Z
+last-modified:  2011-03-16T12:13:13Z
+source:         RIPE
+
+% This query was served by the RIPE Database Query Service version 1.107 (ABERDEEN)
+
+
