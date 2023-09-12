@@ -1655,10 +1655,10 @@ import:         from AS197783 action pref=100; accept AS197783
 export:         to AS197783 announce ANY
 import:         from AS48327 action pref=100; accept AS-RAYCOM
 export:         to AS48327 announce ANY
-import:         from AS202611 action pref=100; accept AS202611
+import:         from AS202611 action pref=100; accept AS202611:AS-YCTLCDN
 export:         to AS202611 announce ANY
-mp-import:      afi ipv6 from AS202611 action pref=100; accept AS202611
-mp-export:      afi ipv6 to AS202611 announce ANY
+mp-import:      from AS202611 action pref=100; accept AS202611:AS-YCTLCDN
+mp-export:      to AS202611 announce ANY
 import:         from AS21453 action pref=100; accept AS-FLEX
 export:         to AS21453 announce AS-SOVAM
 mp-import:      afi ipv6 from AS21453 action pref=100; accept AS-FLEXV6
@@ -5412,7 +5412,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2023-09-08T12:00:23Z
+last-modified:  2023-09-11T14:34:36Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

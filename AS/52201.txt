@@ -32,21 +32,12 @@ remarks:        from IPv6 Please see as-set: AS-TCTEL-V6
 remarks:        ---------------------------------------------------------------
 remarks:        Upstreams
 remarks:        ---------------------------------------------------------------
-import:         from AS31133 accept ANY
-export:         to AS31133 announce AS-TCTEL
 import:         from AS31430 accept ANY
 export:         to AS31430 announce AS-TCTEL
 mp-import:      afi ipv6 from AS31430 accept ANY
 mp-export:      afi ipv6 to AS31430 announce ANY
 import:         from AS28917 accept ANY
 export:         to AS28917 announce AS-TCTEL
-remarks:        ---------------------------------------------------------------
-remarks:        MSK-IX peers
-remarks:        ---------------------------------------------------------------
-import:         from AS8631 accept AS-MSKROUTESERVER
-export:         to AS8631 announce AS-TCTEL
-remarks:        ---------------------------------------------------------------
-remarks:        Other IX
 remarks:        ---------------------------------------------------------------
 remarks:        Eurasia-Peering
 remarks:        ----------------------
@@ -57,10 +48,26 @@ mp-export:      afi ipv6 to AS5693 announce AS-TCTEL-V6
 remarks:        ----------------------
 remarks:        PITER-IX
 remarks:        ----------------------
+remarks:        PITER-IX Moscow
+remarks:        ----------------------
 import:         from AS49869 accept as-piter-ix
 export:         to AS49869 announce AS-TCTEL
 mp-import:      afi ipv6 from AS49869 accept as-piter-ix-msk
 mp-export:      afi ipv6 to AS49869 announce AS-TCTEL-V6
+remarks:        ----------------------------
+remarks:        PITER-IX  HELSINKI
+remarks:        ----------------------------
+import:         from AS39607 accept as-piter-ix-helsinki
+export:         to AS39607 announce AS-TCTEL
+remarks:        ----------------------------
+remarks:        PITER-IX  SPB
+remarks:        ----------------------------
+import:         from AS50817 accept as-piter-ix
+export:         to AS50817 announce AS-TCTEL
+remarks:        ----------------------------
+remarks:        PITER-IX  FRA
+import:         from AS48193 accept as-piter-ix-fra
+export:         to AS48193 announce AS-TCTEL
 remarks:        ----------------------
 remarks:        W-IX
 remarks:        ---------------------
@@ -79,7 +86,6 @@ remarks:        ----------------------------------------------------------------
 remarks:        1.Route type:
 remarks:        52201:1xxx IX peers
 remarks:        Where xxx the route from:
-remarks:        001 - MSK-IX (AS8631)
 remarks:        003 - Eurasia-Peering (AS56931)
 remarks:        004 - Piter-IX (AS50817)
 remarks:        005 - W-IX (AS50384)
@@ -88,7 +94,6 @@ remarks:        2.Route type:
 remarks:        52201:2xxx upstream
 remarks:        Where xxx the route from:
 remarks:        430 - TEL (31430)
-remarks:        926 - PJSC MegaFon (AS31133)
 remarks:        297 - FIORD (AS28917)
 remarks:        ----------------------------------------------------------------
 remarks:        BGP communities are accepted from downstream
@@ -116,7 +121,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TEL-NET-MNT
 created:        2011-01-25T13:42:24Z
-last-modified:  2023-05-17T07:22:02Z
+last-modified:  2023-09-11T14:43:27Z
 source:         RIPE
 
 organisation:   ORG-OS214-RIPE
@@ -151,6 +156,6 @@ created:        2019-09-16T16:16:09Z
 last-modified:  2019-09-16T16:16:09Z
 source:         RIPE # Filtered
 
-% This query was served by the RIPE Database Query Service version 1.107 (SHETLAND)
+% This query was served by the RIPE Database Query Service version 1.107 (DEXTER)
 
 
