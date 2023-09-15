@@ -38,10 +38,10 @@ export:         to AS1299 announce AS-VKONTAKTE
 import:         from AS1299 accept ANY
 mp-export:      afi ipv6.unicast to AS1299 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS1299 accept ANY;
-export:         to AS9002 announce AS-VKONTAKTE
-import:         from AS9002 accept ANY
-mp-export:      afi ipv6.unicast to AS9002 announce AS-VKONTAKTE;
-mp-import:      afi ipv6.unicast from AS9002 accept ANY;
+export:         to AS57304 announce AS-VKONTAKTE
+import:         from AS57304 accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS57304 accept ANY;
 export:         to AS3356 announce AS-VKONTAKTE
 import:         from AS3356 accept ANY
 mp-export:      afi ipv6.unicast to AS3356 announce AS-VKONTAKTE;
@@ -207,10 +207,10 @@ import:         from AS8402 accept AS-CORBINA
 mp-export:      afi ipv6.unicast to AS8402 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS8402 accept AS-CORBINA;
 remarks:        -- RETN
-export:         to AS9002 announce AS-VKONTAKTE
-import:         from AS9002 accept AS-RETN
-mp-export:      afi ipv6.unicast to AS9002 announce AS-VKONTAKTE;
-mp-import:      afi ipv6.unicast from AS9002 accept AS-RETN6;
+export:         to AS57304 announce AS-VKONTAKTE
+import:         from AS57304 accept AS-RETN
+mp-export:      afi ipv6.unicast to AS57304 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS57304 accept AS-RETN6;
 remarks:        -- Er-Telecom
 export:         to AS9049 announce AS-VKONTAKTE
 import:         from AS9049 accept AS-ERTH
@@ -380,7 +380,7 @@ remarks:        Community Meaning
 remarks:
 remarks:        47541:1100x When advertising to ANY domestic uplink, specifically:
 remarks:
-remarks:        47541:1101x When advertising to RETN (AS9002) uplink...
+remarks:        47541:1101x When advertising to RETN (AS57304) uplink...
 remarks:        47541:1104x When advertising to RT (AS12389) uplink...
 remarks:        47541:1105x When advertising to Megafon (AS31133) uplink...
 remarks:
@@ -411,7 +411,7 @@ remarks:
 remarks:        PeerID:NNN is:
 remarks:
 remarks:        102 Rostelecom(AS12389)
-remarks:        105 Retn(AS9002)
+remarks:        105 Retn(AS57304)
 remarks:        107 Google(AS15169)
 remarks:        108 Rostelecom(AS42610)
 remarks:        109 Fiord(AS28917)
@@ -518,7 +518,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-07-03T14:45:56Z
-last-modified:  2023-07-17T12:21:36Z
+last-modified:  2023-09-14T07:57:43Z
 source:         RIPE # Filtered
 
 organisation:   ORG-VL47-RIPE
@@ -560,6 +560,6 @@ created:        2016-09-03T22:17:42Z
 last-modified:  2022-06-20T13:25:33Z
 source:         RIPE # Filtered
 
-% This query was served by the RIPE Database Query Service version 1.107 (DEXTER)
+% This query was served by the RIPE Database Query Service version 1.107 (BUSA)
 
 
