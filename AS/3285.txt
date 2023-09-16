@@ -30,6 +30,7 @@ remarks:
 import:         from AS8915 accept ANY
 import:         from AS9002 accept ANY
 import:         from AS35807 accept ANY
+import:         from AS57304 accept ANY
 import:         from AS207056 accept ANY
 remarks:
 import:         from AS50817 accept as-piter-ix
@@ -47,6 +48,7 @@ remarks:
 export:         to AS8915 announce ANY
 export:         to AS9002 announce AS-DELFA
 export:         to AS35807 announce AS-HOMEIP
+export:         to AS57304 announce AS-DELFA
 export:         to AS207056 announce AS-DELFA
 remarks:
 export:         to AS50817 announce AS-DELFA
@@ -61,14 +63,17 @@ remarks:
 remarks:
 default:        to AS9002
 default:        to AS35807
+default:        to AS57304
 default:        to AS207056
 remarks:
 remarks:
 remarks:        --- IPV6 ---
 remarks:
-remarks:
 mp-import:      afi ipv6.unicast from AS8915 accept ANY
 mp-export:      afi ipv6.unicast to AS8915 announce ANY
+remarks:
+mp-import:      afi ipv6.unicast from AS57304 accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-HOMEIP
 remarks:
 mp-import:      afi ipv6.unicast from AS35807 accept ANY
 mp-export:      afi ipv6.unicast to AS35807 announce AS-HOMEIP
@@ -83,7 +88,7 @@ status:         ASSIGNED
 mnt-by:         DELFA-RIPE-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2015-11-11T11:54:03Z
-last-modified:  2023-04-27T16:37:28Z
+last-modified:  2023-09-15T09:47:33Z
 source:         RIPE # Filtered
 
 organisation:   ORG-FT7-RIPE
@@ -140,6 +145,6 @@ created:        2001-12-29T12:48:09Z
 last-modified:  2023-08-18T05:08:16Z
 source:         RIPE # Filtered
 
-% This query was served by the RIPE Database Query Service version 1.107 (SHETLAND)
+% This query was served by the RIPE Database Query Service version 1.107 (ABERDEEN)
 
 

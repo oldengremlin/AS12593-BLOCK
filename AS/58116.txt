@@ -25,18 +25,26 @@ aut-num:        AS58116
 as-name:        ASMAMBA
 org:            ORG-MAMB1-RIPE
 import:         from AS49063 action pref=100; accept ANY
-import:         from AS47764 action pref=120; accept ANY
+import:         from AS29226 action pref=100; accept ANY
+import:         from AS44903 action pref=100; accept AS44903
+import:         from AS42834 action pref=100; accept AS42834
+import:         from AS47764 action pref=100; accept AS-VK
 export:         to AS49063 announce AS58116
-export:         to AS47764 announce AS58116
-mp-import:      afi ipv6.unicast from AS49063 action pref=1000; accept AS49063
-mp-export:      afi ipv6.unicast to AS49063 announce ANY
+export:         to AS29226 announce AS58116
+export:         to AS44903 announce ANY
+export:         to AS42834 announce ANY
+export:         to AS47764 announce AS58116:AS-MAMBA
+mp-import:      afi ipv6.unicast from AS49063 action pref=100; accept ANY
+mp-import:      afi ipv6.unicast from AS29226 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS49063 announce AS58116
+mp-export:      afi ipv6.unicast to AS29226 announce AS58116
 admin-c:        AY1445-RIPE
 tech-c:         AK227-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ZAOMAMBA-MNT
 created:        2012-05-08T07:38:57Z
-last-modified:  2018-09-04T11:11:47Z
+last-modified:  2023-09-15T16:52:32Z
 source:         RIPE
 sponsoring-org: ORG-Vs35-RIPE
 
@@ -72,6 +80,6 @@ created:        2013-04-24T07:52:43Z
 last-modified:  2017-03-17T13:13:45Z
 source:         RIPE
 
-% This query was served by the RIPE Database Query Service version 1.107 (DEXTER)
+% This query was served by the RIPE Database Query Service version 1.107 (ABERDEEN)
 
 
