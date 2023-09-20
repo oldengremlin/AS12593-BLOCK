@@ -17,6 +17,9 @@ org:            ORG-MB213-RIPE
 remarks:        ------------------------------------------------
 remarks:        IP Transits
 remarks:        ------------------------------------------------
+remarks:        GTT
+import:         from AS3257 action pref=100; accept ANY
+export:         to AS3257 announce AS52000
 remarks:        CenturyLink / Level3 / Lumen
 import:         from AS3356 action pref=100; accept ANY
 export:         to AS3356 announce AS52000
@@ -35,6 +38,8 @@ export:         to AS9002 announce AS52000
 remarks:        StormWall
 import:         from AS59796 action pref=100; accept ANY
 export:         to AS59796 announce AS52000
+mp-import:      afi ipv6.unicast,ipv4 from AS3257 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS3257 announce AS52000
 mp-import:      afi ipv6.unicast,ipv4 from AS3356 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS3356 announce AS52000
 mp-import:      afi ipv6.unicast,ipv4 from AS50673 accept ANY
@@ -68,7 +73,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-mirhosting
 created:        2010-12-13T16:23:58Z
-last-modified:  2023-08-30T23:28:57Z
+last-modified:  2023-09-19T15:38:58Z
 source:         RIPE
 
 organisation:   ORG-MB213-RIPE
