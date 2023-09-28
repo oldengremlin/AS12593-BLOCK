@@ -583,6 +583,9 @@ mp-export:      afi ipv6.unicast to AS44477 announce ANY
 remarks:        -= SteepHost =-
 mp-import:      afi ipv6.unicast from AS47142 action pref=100; accept AS-STEEPOST
 mp-export:      afi ipv6.unicast to AS47142 announce ANY
+remarks:        -= FREACH =-
+mp-import:      afi ipv6.unicast from AS47496 action pref=100; accept AS47496
+mp-export:      afi ipv6.unicast to AS47496 announce ANY
 remarks:        -= MICZUGA =-
 mp-import:      afi ipv6.unicast from AS47924 action pref=100; accept AS-MICZUGA
 mp-export:      afi ipv6.unicast to AS47924 announce ANY
@@ -736,6 +739,9 @@ mp-export:      afi ipv6.unicast to AS151633 announce ANY
 remarks:        -= Glavnet =-
 mp-import:      afi ipv6.unicast from AS197185 action pref=100; accept AS197185
 mp-export:      afi ipv6.unicast to AS197185 announce ANY
+remarks:        -= NOAHVDAA =-
+mp-import:      afi ipv6.unicast from AS197919 action pref=100; accept AS197919
+mp-export:      afi ipv6.unicast to AS197919 announce ANY
 remarks:        -= NYANET =-
 mp-import:      afi ipv6.unicast from AS198342 action pref=100; accept AS198342
 mp-export:      afi ipv6.unicast to AS198342 announce ANY
@@ -1253,7 +1259,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEREZHA-MNT
 created:        2003-10-28T13:43:45Z
-last-modified:  2023-09-22T11:55:06Z
+last-modified:  2023-09-27T23:02:52Z
 source:         RIPE # Filtered
 
 organisation:   ORG-NL366-RIPE
