@@ -1,0 +1,86 @@
+
+
+
+as-block:       AS30720 - AS30895
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:33Z
+last-modified:  2018-11-22T15:27:33Z
+source:         RIPE
+
+
+
+aut-num:        AS30729
+as-name:        TRANSFER-AS
+org:            ORG-TL70-RIPE
+remarks:        -------------------------------
+remarks:        Uplinks
+remarks:        -------------------------------
+import:         from AS21127 action pref=100; accept ANY
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS21127 announce AS-TRANSFER
+export:         to AS8359 announce AS-TRANSFER
+remarks:        -------------------------------
+remarks:        Peers
+remarks:        -------------------------------
+import:         from AS47165 action pref=200; accept AS-OMKC-PEERING-SET
+import:         from AS47246 action pref=200; accept AS-OMTT-SET
+import:         from AS31643 action pref=200; accept AS31643:AS-IX-PEERS
+import:         from AS48858 action pref=200; accept AS-MILECOM
+export:         to AS47165 announce AS-TRANSFER
+export:         to AS47246 announce AS-TRANSFER
+export:         to AS31643 announce AS-TRANSFER
+export:         to AS48858 announce AS-TRANSFER
+remarks:        -------------------------------
+remarks:        Customers
+remarks:        -------------------------------
+import:         from AS8411 action pref=300; accept AS8411
+import:         from AS198384 action pref=300; accept AS198384
+export:         to AS8411 announce ANY
+export:         to AS198384 announce ANY
+remarks:        -------------------------------
+remarks:        Looking Glass http://lg.transfer.su
+remarks:        -------------------------------
+admin-c:        KA4368-RIPE
+tech-c:         KA4368-RIPE
+status:         ASSIGNED
+mnt-by:         TRANSFERTTK-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2009-07-21T14:24:51Z
+last-modified:  2022-02-15T16:40:07Z
+source:         RIPE
+
+organisation:   ORG-TL70-RIPE
+org-name:       TRANSFER Ltd.
+country:        RU
+org-type:       LIR
+address:        ZAVODSKAYA 2 C4
+address:        644065
+address:        OMSK
+address:        RUSSIAN FEDERATION
+phone:          +73812668658
+fax-no:         +73812668658
+abuse-c:        AR17000-RIPE
+admin-c:        KA4368-RIPE
+mnt-ref:        TRANSFERTTK-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         TRANSFERTTK-MNT
+tech-c:         KA4368-RIPE
+created:        2006-12-01T06:11:04Z
+last-modified:  2020-12-16T12:27:54Z
+source:         RIPE # Filtered
+
+person:         Egor Maksimov
+address:        644065, OMSK, RUSSIA
+address:        ZAVODSKAYA 2 C4
+phone:          +7 3812 668658
+nic-hdl:        KA4368-RIPE
+mnt-by:         TRANSFERTTK-MNT
+created:        2013-04-04T08:57:53Z
+last-modified:  2023-02-17T05:51:21Z
+source:         RIPE # Filtered
+
+
+
