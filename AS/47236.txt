@@ -16,6 +16,8 @@ as-name:        CITYLINK-AS
 org:            ORG-Llc9-RIPE
 import:         from AS20485 action pref=100; accept ANY
 export:         to AS20485 announce AS-SET-CL
+import:         from AS3216 action pref=100; accept ANY
+export:         to AS3216 announce {178.19.251.0/24}
 import:         from AS57856 action pref=100; accept AS57856
 export:         to AS57856 announce ANY
 import:         from AS31133 action pref=100; accept ANY
@@ -32,7 +34,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CTLNK-MNT
 created:        2008-05-22T09:01:33Z
-last-modified:  2023-09-19T08:58:06Z
+last-modified:  2023-10-09T14:50:01Z
 source:         RIPE
 
 organisation:   ORG-Llc9-RIPE
