@@ -17,11 +17,14 @@ org:            ORG-FT7-RIPE
 remarks:
 remarks:        --- import ---
 remarks:
-import:         from AS8915 accept ANY
 import:         from AS9002 accept ANY
-import:         from AS35807 accept ANY
 import:         from AS57304 accept ANY
+remarks:
+import:         from AS35598 accept ANY
+import:         from AS35807 accept ANY
 import:         from AS207056 accept ANY
+remarks:
+import:         from AS8915 accept ANY
 remarks:
 import:         from AS50817 accept as-piter-ix
 import:         from AS49869 accept AS-PITER-IX-MSK
@@ -30,15 +33,13 @@ remarks:
 import:         from AS25478 accept AS-IHOME
 import:         from AS50384 accept AS-W-IX
 remarks:
-import:         from AS35598 accept AS-ICNET
-remarks:
-remarks:
 remarks:        --- export ---
 remarks:
-export:         to AS8915 announce ANY
 export:         to AS9002 announce AS-DELFA
-export:         to AS35807 announce AS-HOMEIP
 export:         to AS57304 announce AS-DELFA
+remarks:
+export:         to AS35598 announce AS-DELFA
+export:         to AS35807 announce AS-HOMEIP
 export:         to AS207056 announce AS-DELFA
 remarks:
 export:         to AS50817 announce AS-DELFA
@@ -48,11 +49,11 @@ remarks:
 export:         to AS25478 announce AS-HOMEIP
 export:         to AS50384 announce AS-HOMEIP
 remarks:
-export:         to AS35598 announce AS-DELFA
-remarks:
+export:         to AS8915 announce ANY
 remarks:
 default:        to AS9002
 default:        to AS35807
+default:        to AS35598
 default:        to AS57304
 default:        to AS207056
 remarks:
@@ -78,7 +79,7 @@ status:         ASSIGNED
 mnt-by:         DELFA-RIPE-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2015-11-11T11:54:03Z
-last-modified:  2023-09-15T09:47:33Z
+last-modified:  2023-10-13T12:11:55Z
 source:         RIPE # Filtered
 
 organisation:   ORG-FT7-RIPE

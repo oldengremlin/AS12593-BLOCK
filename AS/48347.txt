@@ -250,6 +250,12 @@ export:         to AS62444 announce ANY
 mp-import:      afi ipv6.unicast from AS62444 action pref=250; accept AS62444
 mp-export:      afi ipv6.unicast to AS62444 announce ANY
 remarks:
+remarks:        -- Dialog-K --
+import:         from AS50668 action pref=250; accept AS-DIALOGK
+export:         to AS50668 announce ANY
+mp-import:      afi ipv6.unicast from AS50668 action pref=250; accept AS50668
+mp-export:      afi ipv6.unicast to AS650668 announce ANY
+remarks:
 remarks:        =============================================
 remarks:        IX
 remarks:        =============================================
@@ -418,7 +424,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTW-MNT
 mnt-by:         MNT-MTW-HOSTING
 created:        2008-11-17T11:11:49Z
-last-modified:  2023-04-20T15:58:17Z
+last-modified:  2023-10-19T16:09:44Z
 source:         RIPE # Filtered
 
 organisation:   ORG-JME1-RIPE

@@ -1619,6 +1619,18 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:
+import:         from AS208677 action pref=100; accept AS-CLOUDRU
+export:         to AS208677 announce ANY
+import:         from AS210443 action pref=100; accept AS210443
+export:         to AS210443 announce ANY
+import:         from AS56806 action pref=100; accept AS56806
+export:         to AS56806 announce ANY
+mp-import:      from AS56806 action pref=100; accept AS56806
+mp-export:      to AS56806 announce ANY
+import:         from AS43776 action pref=100; accept AS43776
+export:         to AS43776 announce ANY
+mp-import:      from AS43776 action pref=100; accept AS43776
+mp-export:      to AS43776 announce ANY
 import:         from AS41517 action pref=100; accept AS41517
 export:         to AS41517 announce ANY
 import:         from AS51880 action pref=100; accept AS51880
@@ -1639,6 +1651,8 @@ mp-import:      from AS8774 action pref=100; accept AS-ETYPE
 mp-export:      to AS8774 announce ANY
 import:         from AS50712 action pref=100; accept AS50712
 export:         to AS50712 announce ANY
+import:         from AS21087 action pref=100; accept AS21087
+export:         to AS21087 announce ANY
 import:         from AS58268 action pref=100; accept AS58268
 export:         to AS58268 announce {0.0.0.0/0}
 import:         from AS210682 action pref=100; accept AS-A3PAY
@@ -1941,6 +1955,10 @@ import:         from AS47864 action pref=100; accept AS-VNET-PEERS
 export:         to AS47864 announce ANY
 import:         from AS207353 action pref=100; accept AS207353
 export:         to AS207353 announce ANY
+import:         from AS6697 action pref=100; accept AS-BELPAK
+export:         to AS6697 announce ANY
+mp-import:      from AS6697 action pref=100; accept AS-BELPAK
+mp-export:      to AS6697 announce ANY
 import:         from AS50187 action pref=100; accept AS-BWC
 export:         to AS50187 announce ANY
 import:         from AS209030 action pref=100; accept AS-KDP-RUSSIA
@@ -2225,8 +2243,6 @@ import:         from AS39523 action pref=100; accept AS39523
 export:         to AS39523 announce ANY
 import:         from AS41775 action pref=100; accept AS41775
 export:         to AS41775 announce {0.0.0.0/0}
-import:         from AS58001 action pref=100; accept AS58001
-export:         to AS58001 announce ANY
 import:         from AS209599 action pref=100; accept AS209599
 export:         to AS209599 announce AS-SOVAM
 import:         from AS203514 action pref=100; accept AS203514
@@ -2393,8 +2409,6 @@ import:         from AS50265 action pref=100; accept AS-GT
 export:         to AS50265 announce ANY
 mp-import:      afi ipv6 from AS50265 action pref=100; accept AS-GT-IPV6
 mp-export:      afi ipv6 to AS50265 announce ANY
-import:         from AS13192 action pref=100; accept AS13192
-export:         to AS13192 announce AS-SOVAM
 import:         from AS56392 action pref=100; accept AS56392
 export:         to AS56392 announce ANY
 import:         from AS60072 action pref=100; accept AS60072
@@ -2603,8 +2617,6 @@ mp-import:      afi ipv6 from AS48176 action pref=100; accept AS-OOO-NET-V6
 mp-export:      afi ipv6 to AS48176 announce ANY
 import:         from AS43199 action pref=100; accept AS43199
 export:         to AS43199 announce ANY
-import:         from AS15707 action pref=100; accept AS15707
-export:         to AS15707 announce ANY
 import:         from AS39150 action pref=100; accept AS-TRANSITTELECOM
 export:         to AS39150 announce ANY
 import:         from AS58194 action pref=100; accept AS58194
@@ -3015,8 +3027,6 @@ import:         from AS16118 action pref=100; accept AS16118
 export:         to AS16118 announce ANY
 import:         from AS50639 action pref=100; accept AS-ARSNET
 export:         to AS50639 announce ANY
-import:         from AS50378 action pref=100; accept AS50378
-export:         to AS50378 announce ANY
 import:         from AS5572 action pref=100; accept AS5572
 export:         to AS5572 announce ANY
 mp-import:      afi ipv6 from AS5572 action pref=100; accept AS5572
@@ -3067,8 +3077,6 @@ import:         from AS51418 action pref=100; accept AS51418
 export:         to AS51418 announce ANY
 import:         from AS51360 action pref=100; accept AS51360
 export:         to AS51360 announce {0.0.0.0/0}
-import:         from AS197084 action pref=100; accept AS197084
-export:         to AS197084 announce {0.0.0.0/0}
 import:         from AS42231 action pref=100; accept AS-PSB
 export:         to AS42231 announce ANY
 import:         from AS51613 action pref=100; accept AS51613
@@ -3295,8 +3303,6 @@ import:         from AS57828 action pref=100; accept AS57828
 export:         to AS57828 announce ANY
 import:         from AS34747 action pref=100; accept AS-UD9-TRANSIT
 export:         to AS34747 announce ANY
-import:         from AS58086 action pref=100; accept AS58086
-export:         to AS58086 announce ANY
 import:         from AS30788 action pref=100; accept AS30788
 export:         to AS30788 announce ANY
 import:         from AS42766 action pref=100; accept AS-JTCOM
@@ -3748,6 +3754,8 @@ import:         from AS197878 action pref=100; accept AS197878
 export:         to AS197878 announce {0.0.0.0/0}
 import:         from AS200982 action pref=100; accept AS200982
 export:         to AS200982 announce ANY
+mp-import:      from AS200982 action pref=100; accept AS200982
+mp-export:      to AS200982 announce ANY
 import:         from AS57798 action pref=100; accept AS-IT-NET
 export:         to AS57798 announce ANY
 mp-import:      afi ipv6 from AS57798 action pref=100; accept AS57798
@@ -4220,8 +4228,6 @@ import:         from AS42895 action pref=100; accept AS42895
 export:         to AS42895 announce {0.0.0.0/0}
 import:         from AS213348 action pref=100; accept AS213348
 export:         to AS213348 announce ANY
-import:         from AS48711 action pref=100; accept AS48711
-export:         to AS48711 announce ANY
 import:         from AS57227 action pref=100; accept AS-SUBNET05
 export:         to AS57227 announce ANY
 import:         from AS204297 action pref=100; accept AS204297
@@ -5039,7 +5045,7 @@ remarks:        (3216:1008 Ekaterinburg peer) obsoleted
 remarks:        3216:1010 Arkhangelsk peer
 remarks:        (3216:1011 Ufa peer) obsoleted
 remarks:        3216:1012 Voronezh peer
-remarks:        3216:1013 Krasnoyarsk peer
+remarks:        (3216:1013 Krasnoyarsk peer) obsoleted
 remarks:        (3216:1014 Chelyabinsk peer) obsoleted
 remarks:        (3216:1015 Khabarovsk peer) obsoleted
 remarks:        (3216:1016 Samara peer) obsoleted
@@ -5047,6 +5053,7 @@ remarks:        (3216:1017 Stavropol peer) obsoleted
 remarks:        (3216:1018 Rostov-on-Don peer) obsoleted
 remarks:        (3216:1019 Krasnodar peer) obsoleted
 remarks:        3216:1023 Krasnodar peer
+remarks:        3216:1024 Krasnoyarsk peer
 remarks:        3216:1025 Vladivostok peer
 remarks:        3216:1026 Stavropol peer
 remarks:        3216:1027 Khabarovsk peer
@@ -5422,7 +5429,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2023-10-07T08:48:49Z
+last-modified:  2023-10-19T06:35:19Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

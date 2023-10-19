@@ -278,6 +278,9 @@ remarks:
 import:         from AS48600 action pref=50; accept AS48600;
 export:         to AS48600 announce {0.0.0.0/0};
 remarks:
+import:         from AS48610 action pref=50; accept AS48610:AS-OFORO;
+export:         to AS48610 announce AS-CLOUD-IX-PRO;
+remarks:
 import:         from AS48851 action pref=50; accept AS48851;
 export:         to AS48851 announce ANY;
 remarks:
@@ -1032,6 +1035,9 @@ remarks:
 mp-import:      afi ipv6.unicast from AS48600 action pref=50; accept AS48600;
 mp-export:      afi ipv6.unicast to AS48600 announce any;
 remarks:
+mp-import:      afi ipv6.unicast from AS48610 action pref=50; accept AS48610;
+mp-export:      afi ipv6.unicast to AS48610 announce any;
+remarks:
 mp-import:      afi ipv6.unicast from AS48851 action pref=50; accept AS48851;
 mp-export:      afi ipv6.unicast to AS48851 announce any;
 remarks:
@@ -1749,7 +1755,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2023-10-02T21:00:05Z
+last-modified:  2023-10-18T21:00:05Z
 source:         RIPE # Filtered
 
 organisation:   ORG-SO181-RIPE
