@@ -1619,6 +1619,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:
+import:         from AS60818 action pref=100; accept AS60818
+export:         to AS60818 announce {0.0.0.0/0}
 import:         from AS208677 action pref=100; accept AS-CLOUDRU
 export:         to AS208677 announce ANY
 import:         from AS210443 action pref=100; accept AS210443
@@ -4957,6 +4959,7 @@ remarks:        3216:518x When advertising to any Kyrgyzstan Bishkek peer...
 remarks:        3216:519x When advertising to any Tadjikistan Dushanbe peer...
 remarks:        -----------------------------------------------------------------
 remarks:        3216:550x When advertising to CDN77 private peer (Frankfurt)...
+remarks:        3216:551x When advertising to G-Core Labs private peers...
 remarks:        3216:552x When advertising to FACEBOOK private peer (Frankfurt)...
 remarks:        3216:553x When advertising to Level 3 Communications private peer...
 remarks:        3216:554x When advertising to FACEBOOK private peer (Stockholm)...
@@ -5185,6 +5188,7 @@ remarks:        3216:3224 Melbikomas UAB
 remarks:        3216:3225 Akamai (Stockholm)
 remarks:        3216:3226 Fastly (Stockholm)
 remarks:        3216:3227 LeaseWeb
+remarks:        3216:3228 G-Core Labs
 remarks:        --------- Community of our networks  ---------------------------
 remarks:        3216:4000 Originated in any region, specifically:
 remarks:        3216:4001 Originated in SPB
@@ -5429,7 +5433,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2023-10-19T06:35:19Z
+last-modified:  2023-10-23T13:56:24Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
