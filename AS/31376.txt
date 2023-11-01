@@ -65,6 +65,8 @@ remarks:        + DATA-IX +
 remarks:        - IPv4 -
 import:         from AS50952 178.18.224.100 at 178.18.224.105 action community={31376:2}; pref=100; accept AS-DATAIX
 import:         from AS50952 178.18.227.100 at 178.18.224.105 action community={31376:2}; pref=100; accept AS-DATAIX
+import:         from AS50952 178.18.224.100 at 178.18.225.34 action community={31376:2}; pref=100; accept AS-DATAIX
+import:         from AS50952 178.18.227.100 at 178.18.225.34 action community={31376:2}; pref=100; accept AS-DATAIX
 export:         to AS50952 announce AS-SMART-C
 remarks:        - IPv6 -
 mp-import:      afi ipv6.unicast from AS50952 at 2a03:5f80:4::224:100 action community={31376:2}; pref=100; accept AS-DATAIX
@@ -103,6 +105,8 @@ remarks:
 remarks:        + PITER-IX +
 import:         from AS50817 185.1.153.0 at 185.1.152.145 action community={31376:2}; pref=100; accept as-piter-ix
 import:         from AS50817 185.1.152.255 at 185.1.152.145 action community={31376:2}; pref=100; accept as-piter-ix
+import:         from AS50817 185.1.153.0 at 185.1.153.238 action community={31376:2}; pref=100; accept as-piter-ix
+import:         from AS50817 185.1.152.255 at 185.1.153.238 action community={31376:2}; pref=100; accept as-piter-ix
 export:         to AS50817 announce AS-SMART-C
 remarks:        - IPv6 -
 mp-import:      afi ipv6.unicast from AS50817 2001:7f8:e6::c681:1 action community={31376:2}; pref=100; accept as-piter-ix
@@ -114,6 +118,8 @@ remarks:
 remarks:        + PITER-IX-MSK +
 import:         from AS49869 185.1.161.0 at 185.1.161.118 action community={31376:2}; pref=100; accept as-piter-ix-msk
 import:         from AS49869 185.1.161.255 at 185.1.161.118 action community={31376:2}; pref=100; accept as-piter-ix-msk
+import:         from AS49869 185.1.161.0 at 185.0.13.26 action community={31376:2}; pref=100; accept as-piter-ix-msk
+import:         from AS49869 185.1.161.255 at 185.0.13.26 action community={31376:2}; pref=100; accept as-piter-ix-msk
 export:         to AS49869 announce AS-SMART-C
 remarks:        - IPv6 -
 mp-import:      afi ipv6.unicast from AS49869 2001:7f8:eb::c2cd:1 action community={31376:2}; pref=100; accept as-piter-ix-msk
@@ -121,9 +127,19 @@ mp-import:      afi ipv6.unicast from AS49869 2001:7f8:eb::c2cd:2 action communi
 mp-export:      afi ipv6.unicast to AS49869 announce AS-SMART-V6
 remarks:
 remarks:
+remarks:        + PITER-IX-Frankfurt
+import:         from AS48193 31.44.186.255 at 31.44.186.169 action community={31376:2}; pref=100; accept as-piter-ix-fra
+import:         from AS48193 31.44.187.0 at 31.44.186.169 action community={31376:2}; pref=100; accept as-piter-ix-fra
+import:         from AS48193 31.44.186.255 at 31.44.186.172 action community={31376:2}; pref=100; accept as-piter-ix-fra
+import:         from AS48193 31.44.187.0 at 31.44.186.172 action community={31376:2}; pref=100; accept as-piter-ix-fra
+export:         to AS39607 announce AS-SMART-C
+remarks:
+remarks:
 remarks:        + PITER-IX-Helsinki
 import:         from AS39607 193.27.37.100 at 193.27.37.197 action community={31376:2}; pref=100; accept AS-PITER-IX-HELSINKI
 import:         from AS39607 193.27.37.254 at 193.27.37.197 action community={31376:2}; pref=100; accept AS-PITER-IX-HELSINKI
+import:         from AS39607 193.27.37.100 at 193.27.37.231 action community={31376:2}; pref=100; accept AS-PITER-IX-HELSINKI
+import:         from AS39607 193.27.37.254 at 193.27.37.231 action community={31376:2}; pref=100; accept AS-PITER-IX-HELSINKI
 export:         to AS39607 announce AS-SMART-C
 remarks:
 remarks:        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -273,7 +289,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SMART-MNT
 created:        2004-04-28T10:54:21Z
-last-modified:  2023-08-21T08:26:00Z
+last-modified:  2023-10-31T10:49:38Z
 source:         RIPE # Filtered
 
 organisation:   ORG-STC2-RIPE
