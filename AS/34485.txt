@@ -29,16 +29,15 @@ remarks:        Apple via Eurasia Peering IX at msk-m9-pe1 (frozen)
 import:         from AS714 action pref=100; accept AS714
 export:         to AS714 announce AS-SS
 remarks:        -------------------------------------------
-remarks:        -------------------------------------------
-remarks:        Rostelecom at msk-croc-pe1
-import:         from AS12389 action pref=100; accept ANY
-export:         to AS12389 announce AS-SS
+remarks:        Croc Inc. at msk-croc-pe1
+import:         from AS51219 action pref=100; accept ANY
+export:         to AS51219 announce AS-SS
 remarks:        -------------------------------------------
 remarks:        LLC Svyaznoy Chain (ES)
 import:         from AS29554 action pref=100; accept ANY
 export:         to AS29554 announce ANY
 remarks:        -------------------------------------------
-default:        to AS12389
+default:        to AS51219
 default:        to AS25159
 org:            ORG-JE8-RIPE
 admin-c:        PZ14-RIPE
@@ -48,7 +47,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-ELSV-RIPE
 created:        2005-01-31T10:47:12Z
-last-modified:  2022-12-05T20:56:28Z
+last-modified:  2023-11-03T13:13:08Z
 source:         RIPE # Filtered
 
 organisation:   ORG-JE8-RIPE
