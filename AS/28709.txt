@@ -242,6 +242,11 @@ export:         to AS6789 announce AS-VKONTAKTE
 import:         from AS6789 accept AS-CRELCOM
 mp-export:      afi ipv6.unicast to AS6789 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS6789 accept AS-CRELCOM;
+remarks:        -- FREEDOM1
+export:         to AS206011 announce AS-VKONTAKTE
+import:         from AS206011 accept AS206011:AS-FREEDOM-KRD
+mp-export:      afi ipv6.unicast to AS206011 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS206011 accept AS206011:AS-FREEDOM-KRD;
 remarks:
 remarks:        =========================================
 remarks:        Partners
@@ -299,7 +304,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2009-08-05T11:34:14Z
-last-modified:  2023-10-05T13:24:11Z
+last-modified:  2023-11-09T08:07:21Z
 source:         RIPE # Filtered
 
 organisation:   ORG-VL47-RIPE
