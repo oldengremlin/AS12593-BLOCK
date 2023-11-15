@@ -1731,6 +1731,8 @@ import:         from AS41122 action pref=100; accept AS41122
 export:         to AS41122 announce {0.0.0.0/0}
 import:         from AS39493 action pref=100; accept AS-KSTV
 export:         to AS39493 announce ANY
+mp-import:      from AS39493 action pref=100; accept AS39493
+mp-export:      to AS39493 announce ANY
 import:         from AS47595 action pref=100; accept AS-RUCENTER
 export:         to AS47595 announce {0.0.0.0/0}
 import:         from AS48891 action pref=100; accept AS48891
@@ -5435,7 +5437,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2023-11-13T12:02:10Z
+last-modified:  2023-11-14T09:02:41Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
