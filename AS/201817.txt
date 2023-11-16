@@ -32,6 +32,8 @@ import:         from AS9198 accept ANY
 export:         to AS9198 announce AS201817
 import:         from AS41798 accept ANY
 export:         to AS41798 announce AS201817
+import:         from AS35104 accept ANY
+export:         to AS35104 announce AS201817
 remarks:
 remarks:        =========================================
 remarks:        BGP Policy
@@ -56,6 +58,7 @@ remarks:
 remarks:        201817:1100x When advertising to uplink, specifically:
 remarks:        201817:1101x When advertising to KAZTELECOM (AS9198) uplink...
 remarks:        201817:1102x When advertising to TTC (AS41798) uplink...
+remarks:        201817:1103x When advertising to TTC (AS35104) uplink...
 remarks:
 remarks:        ...x=0 - do not advertise
 remarks:        ...x=1, 2 - prepend 201817 1 or 2 times
@@ -96,7 +99,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NETBRIDGE
 created:        2022-10-28T08:58:45Z
-last-modified:  2023-11-09T11:36:00Z
+last-modified:  2023-11-15T12:28:56Z
 source:         RIPE
 
 organisation:   ORG-VTKL1-RIPE
