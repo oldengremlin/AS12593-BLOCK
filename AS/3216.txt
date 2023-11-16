@@ -4176,6 +4176,10 @@ import:         from AS56975 action pref=100; accept AS56975
 export:         to AS56975 announce ANY
 import:         from AS210033 action pref=100; accept AS-IMPULSTEL
 export:         to AS210033 announce ANY
+import:         from AS52091 action pref=100; accept AS-LEVEL-MSK
+export:         to AS52091 announce ANY
+mp-import:      from AS52091 action pref=100; accept AS52091
+mp-export:      to AS52091 announce ANY
 import:         from AS49063 action pref=100; accept AS-DTLN
 export:         to AS49064 announce ANY
 import:         from AS51520 action pref=100; accept AS-RH
@@ -5437,7 +5441,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2023-11-14T09:02:41Z
+last-modified:  2023-11-15T07:56:18Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
