@@ -67,9 +67,9 @@ mp-export:      afi any.unicast to AS50952 announce AS-NAUKANET
 remarks:        ===================
 remarks:        Peering at MSK-IX (+IPv6)
 remarks:        -------------------
-import:         from AS8631 accept ANY
+import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-NAUKANET
-mp-import:      afi ipv6.unicast from AS8631 accept ANY
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS-NAUKANET
 remarks:        ===================
 remarks:        Peering at DE-CIX (+IPv6)
@@ -507,7 +507,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NAUKANET-MNT
 created:        2002-01-18T15:32:43Z
-last-modified:  2023-11-20T09:33:02Z
+last-modified:  2023-11-24T12:20:14Z
 source:         RIPE # Filtered
 
 organisation:   ORG-NA41-RIPE
