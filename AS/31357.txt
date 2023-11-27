@@ -14,22 +14,26 @@ source:         RIPE
 aut-num:        AS31357
 as-name:        TOMICA-AS
 descr:          Tomsk Information and Consulting Agency
-import:         from AS49987 action pref=100; accept AS49987
+remarks:        -====== STROYPOARK ======-
+import:         from AS49987 action pref=100; accept AS49987 ;
+remarks:        -======= MEGAFON ========-
 import:         from AS31133 action pref=100; accept ANY
-import:         from AS50384 action pref=100; accept ANY
-import:         from AS25478 action pref=100; accept ANY
-import:         from AS20485 action pref=100; accept ANY
-import:         from AS48858 action pref=100; accept ANY
-import:         from AS13094 action pref=100; accept ANY
+remarks:        -======= MTS ========-
 import:         from AS8359 action pref=100; accept ANY
+remarks:        -======= ER-TELECOM ========-
+import:         from AS9049 action pref=100; accept ANY
+remarks:        -======= VIMPELCOM ========-
+import:         from AS3216 action pref=100; accept ANY
+remarks:        -====== STROYPOARK ======-
 export:         to AS49987 announce AS-TOMICA
-export:         to AS31133 announce AS-TOMICA
-export:         to AS50384 announce AS-TOMICA
-export:         to AS25478 announce AS-TOMICA
-export:         to AS20485 announce AS-TOMICA
-export:         to AS48858 announce AS-TOMICA
-export:         to AS13094 announce AS-TOMICA
+remarks:        -======= MTS ========-
 export:         to AS8359 announce AS-TOMICA
+remarks:        -======= MEGAFON ========-
+export:         to AS31133 announce AS-TOMICA
+remarks:        -======= ER-TELECOM ========-
+export:         to  AS9049 announce AS-TOMICA
+remarks:        -======= VIMPELCOM ========-
+export:         to AS3216 announce AS-TOMICA
 org:            ORG-LCIA1-RIPE
 admin-c:        TM458236-RIPE
 tech-c:         TM458236-RIPE
@@ -37,7 +41,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TOMICA-MNT
 created:        2004-04-23T13:58:34Z
-last-modified:  2020-02-16T15:17:02Z
+last-modified:  2023-11-26T15:03:23Z
 source:         RIPE
 
 organisation:   ORG-LCIA1-RIPE
