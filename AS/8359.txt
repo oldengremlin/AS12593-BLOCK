@@ -1078,10 +1078,12 @@ import:         from AS34610 action pref=105; accept AS-RIKSNET
 export:         to AS34610 announce AS-MTU
 import:         from AS34655 action pref=105; accept AS-DOCLER
 export:         to AS34655 announce AS-MTU
+import:         from AS34642 action pref=140; accept AS34642
+export:         to AS34642 announce ANY
 import:         from AS34695 action pref=105; accept AS34695:AS-TRANSIT
 export:         to AS34695 announce AS-MTU
 import:         from AS34703 action pref=105; accept AS34703
-export:         to AS34703 announce AS-ANY
+export:         to AS34703 announce ANY
 import:         from AS34757 action pref=105; accept AS-SIBSET
 export:         to AS34757 announce ANY
 import:         from AS34763 action pref=105; accept AS-VIRGINRADIO
@@ -1393,7 +1395,7 @@ export:         to AS42708 announce AS-MTU
 import:         from AS42775 action pref=105; accept AS42775
 export:         to AS42775 announce ANY
 import:         from AS42822 action pref=105; accept AS42822
-export:         to AS42822 announce AS-MTU
+export:         to AS42822 announce ANY
 import:         from AS42861 action pref=105; accept AS-PRIME-LINE
 export:         to AS42861 announce ANY
 import:         from AS42870 action pref=105; accept AS42870
@@ -1517,7 +1519,7 @@ export:         to AS46489 announce AS-MTU
 import:         from AS46786 action pref=105; accept AS-IPTRANSIT
 export:         to AS46786 announce AS-MTU
 import:         from AS47117 action pref=105; accept AS47117
-export:         to AS47117 announce AS-MTU
+export:         to AS47117 announce ANY
 import:         from AS47118 action pref=105; accept AS-MANNET
 export:         to AS47118 announce ANY
 import:         from AS47126 action pref=105; accept AS47126
@@ -1823,13 +1825,15 @@ export:         to AS51291 announce ANY
 import:         from AS51292 action pref=105; accept AS51292
 export:         to AS51292 announce ANY
 import:         from AS51317 action pref=105; accept AS51317
-export:         to AS51317 announce AS-MTU
+export:         to AS51317 announce ANY
 import:         from AS51360 action pref=105; accept AS51360
 export:         to AS51360 announce ANY
 import:         from AS51397 action pref=105; accept AS51397
 export:         to AS51397 announce ANY
 import:         from AS51428 action pref=140; accept AS51428
 export:         to AS51428 announce ANY
+import:         from AS51470 action pref=140; accept AS51470
+export:         to AS51470 announce ANY
 import:         from AS51471 action pref=105; accept AS51471
 export:         to AS51471 announce ANY
 import:         from AS51501 action pref=105; accept AS51501
@@ -1927,7 +1931,9 @@ export:         to AS57078 announce ANY
 import:         from AS57079 action pref=105; accept AS-VARIANTTV
 export:         to AS57079 announce ANY
 import:         from AS57108 action pref=105; accept AS57108
-export:         to AS57108 announce AS-MTU
+export:         to AS57108 announce ANY
+import:         from AS57149 action pref=140; accept AS-IT-KGN
+export:         to AS57149 announce ANY
 import:         from AS57153 action pref=105; accept AS-TELESYSTEM
 export:         to AS57153 announce ANY
 import:         from AS57227 action pref=105; accept AS-SUBNET05
@@ -1965,7 +1971,7 @@ export:         to AS57681 announce ANY
 import:         from AS57753 action pref=105; accept AS-RADIST
 export:         to AS57753 announce ANY
 import:         from AS57781 action pref=105; accept AS57781
-export:         to AS57781 announce AS-MTU
+export:         to AS57781 announce ANY
 import:         from AS57808 action pref=105; accept AS57808:AS-SATDV-AMK
 export:         to AS57808 announce ANY
 import:         from AS57871 action pref=105; accept AS57871
@@ -2083,7 +2089,7 @@ export:         to AS60936 announce ANY
 import:         from AS60988 action pref=105; accept AS60988
 export:         to AS60988 announce ANY
 import:         from AS60942 action pref=105; accept AS60942
-export:         to AS60942 announce AS-MTU
+export:         to AS60942 announce ANY
 import:         from AS61016 action pref=105; accept AS61016
 export:         to AS61016 announce ANY
 import:         from AS61118 action pref=105; accept AS61118
@@ -2577,7 +2583,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:20:57Z
-last-modified:  2023-11-28T15:04:20Z
+last-modified:  2023-11-29T08:38:56Z
 source:         RIPE
 
 organisation:   ORG-ZM1-RIPE

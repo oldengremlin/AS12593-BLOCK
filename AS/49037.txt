@@ -15,11 +15,39 @@ aut-num:        AS49037
 as-name:        PG19
 org:            ORG-PRL15-RIPE
 remarks:        ****************** Routing Policy *******************
+remarks:        ********** RETN
+import:         from AS57304 action pref=100; accept ANY
+export:         to AS57304 announce AS-PG19
+mp-import:      afi ipv6.unicast from AS57304 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-PG19
 remarks:        ********** DI-DI
-import:         from AS51200 action pref=700; accept AS-DIDI
+import:         from AS51200 action pref=200; accept AS-DI-DI
 export:         to AS51200 announce AS-PG19
-mp-import:      afi ipv6.unicast from AS51200 action pref=700; accept AS-DIDI
+mp-import:      afi ipv6.unicast from AS51200 action pref=30; accept AS-DI-DI
 mp-export:      afi ipv6.unicast to AS51200 announce AS-PG19
+remarks:        ********** MSK-IX
+import:         from AS8631 action pref=100; accept ANY
+export:         to AS8631 announce AS-PG19
+mp-import:      afi ipv6.unicast from AS8631 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS8631 announce AS-PG19
+remarks:        ********** RND-IX
+import:         from AS48216 action pref=100; accept ANY
+export:         to AS48216 announce AS-PG19
+mp-import:      afi ipv6.unicast from AS48216 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS48216 announce AS-PG19
+remarks:        ********** SEA-IX
+import:         from AS59428 action pref=100; accept ANY
+export:         to AS59428 announce AS-PG19
+mp-import:      afi ipv6.unicast from AS59428 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS59428 announce AS-PG19
+remarks:        ********** GBL
+import:         from AS207490 action pref=200; accept AS207490
+export:         to AS207490 announce ANY
+mp-import:      afi ipv6.unicast from AS207490 action pref=200; accept AS207490
+mp-export:      afi ipv6.unicast to AS207490 announce ANY
+remarks:        **********
+remarks:        **********
+remarks:        **********
 remarks:        ********** DOM.RU
 import:         from AS9049 action pref=700; accept AS-ERTH
 export:         to AS9049 announce AS-PG19
@@ -28,41 +56,16 @@ mp-export:      afi ipv6.unicast to AS9049 announce AS-PG19
 remarks:        ********** MEDIASETI
 import:         from AS43429 action pref=700; accept AS43429
 export:         to AS43429 announce AS-PG19
-remarks:        ********** RETN
-import:         from AS9002 action pref=400; accept ANY
-export:         to AS9002 announce AS-PG19
-mp-import:      afi ipv6.unicast from AS9002 action pref=400; accept ANY
-mp-export:      afi ipv6.unicast to AS9002 announce AS-PG19
 remarks:        ********** LEVEL-MSK
 import:         from AS48276 action pref=550; accept AS-SVCOM
 export:         to AS48276 announce AS-PG19
 mp-import:      afi ipv6.unicast from AS48276 action pref=550; accept AS-SVCOM
 mp-export:      afi ipv6.unicast to AS48276 announce AS-PG19
-remarks:        ********** RND-IX
-import:         from AS48216 action pref=500; accept AS-RNDROUTESERVER
-export:         to AS48216 announce AS-PG19
-mp-import:      afi ipv6.unicast from AS48216 action pref=500; accept AS-RNDROUTESERVER
-mp-export:      afi ipv6.unicast to AS48216 announce AS-PG19
-remarks:        ********** SEA-IX
-import:         from AS59428 action pref=500; accept AS-KRD-RS
-export:         to AS59428 announce AS-PG19
-mp-import:      afi ipv6.unicast from AS59428 action pref=500; accept AS-KRD-RS
-mp-export:      afi ipv6.unicast to AS59428 announce AS-PG19
 remarks:        ********** VK.COM
 import:         from AS28709 action pref=700; accept AS-VKONTAKTE
 export:         to AS28709 announce AS-PG19
 mp-import:      afi ipv6.unicast from AS28709 action pref=700; accept AS-VKONTAKTE
 mp-export:      afi ipv6.unicast to AS28709 announce AS-PG19
-remarks:        ********** MEGAFON
-import:         from AS31133 action pref=400; accept ANY
-export:         to AS31133 announce AS-PG19
-mp-import:      afi ipv6.unicast from AS31133 action pref=400; accept ANY
-mp-export:      afi ipv6.unicast to AS31133 announce AS-PG19
-remarks:        ********** Eurasia Peering
-import:         from AS56931 action pref=500; accept AS-EURASIAPEERING_RS
-export:         to AS56931 announce AS-PG19
-mp-import:      afi ipv6.unicast from AS56931 action pref=500; accept AS-EURASIAPEERING_RS
-mp-export:      afi ipv6.unicast to AS56931 announce AS-PG19
 remarks:        ********** APPLE
 import:         from AS714 action pref=550; accept AS-APPLE
 export:         to AS714 announce AS-PG19
@@ -105,11 +108,6 @@ import:         from AS32934 action pref=550; accept AS-FACEBOOK
 export:         to AS32934 announce AS-PG19
 mp-import:      afi ipv6.unicast from AS32934 action pref=550; accept AS-FACEBOOK
 mp-export:      afi ipv6.unicast to AS32934 announce AS-PG19
-remarks:        ********** MSK-IX
-import:         from AS8631 action pref=500; accept AS-MSKROUTESERVER
-export:         to AS8631 announce AS-PG19
-mp-import:      afi ipv6.unicast from AS8631 action pref=500; accept AS-MSKROUTESERVER
-mp-export:      afi ipv6.unicast to AS8631 announce AS-PG19
 remarks:        ********** PITER-IX MSK
 import:         from AS49869 action pref=500; accept ANY
 export:         to AS49869 announce AS-PG19
@@ -135,11 +133,6 @@ import:         from AS57936 action pref=500; accept ANY
 export:         to AS57936 announce AS-PG19
 mp-import:      afi ipv6.unicast from AS57936 action pref=500; accept ANY
 mp-export:      afi ipv6.unicast to AS57936 announce AS-PG19
-remarks:        ********** PITER-IX UA
-import:         from AS61376 action pref=500; accept ANY
-export:         to AS61376 announce AS-PG19
-mp-import:      afi ipv6.unicast from AS61376 action pref=500; accept ANY
-mp-export:      afi ipv6.unicast to AS61376 announce AS-PG19
 remarks:        ********** GBL
 import:         from AS207490 action pref=800; accept AS207490
 export:         to AS207490 announce ANY
@@ -161,7 +154,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         WEBROCKET-MNT
 created:        2009-03-31T07:49:08Z
-last-modified:  2023-07-04T07:07:32Z
+last-modified:  2023-11-29T09:58:35Z
 source:         RIPE
 
 organisation:   ORG-PRL15-RIPE
