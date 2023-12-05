@@ -1,4 +1,224 @@
 
 
 
+as-block:       AS34438 - AS34984
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2023-04-20T14:54:28Z
+last-modified:  2023-04-20T14:54:28Z
+source:         RIPE
+
+
+
+aut-num:        AS34602
+as-name:        STARLINK-AS
+descr:          Moscow, Russia
+descr:          http://www.starlink.ru
+org:            ORG-ML423-RIPE
+remarks:        ======================================================
+remarks:
+remarks:
+remarks:
+remarks:        Uplinks
+remarks:        ------------------------------------------------------
+import:         from AS43727 action pref=100; accept ANY;
+export:         to AS43727 announce AS-STARLNK;
+import:         from AS25478 action pref=100; accept ANY;
+export:         to AS25478 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS25478 accept ANY;
+mp-export:      afi ipv6.unicast to AS25478 announce AS-STARLNK;
+import:         from AS49063 action pref=100; accept ANY;
+export:         to AS49063 announce AS-STARLNK;
+import:         from AS42861 action pref=100; accept ANY;
+mp-import:      afi ipv6.unicast from AS42861 accept ANY;
+export:         to AS42861 announce AS-STARLNK;
+mp-export:      afi ipv6.unicast to AS42861 announce AS-STARLNK;
+import:         from AS28917 action pref=100; accept ANY;
+export:         to AS28917 announce AS-STARLNK;
+import:         from AS201706 action pref=100; accept ANY;
+export:         to AS201706 announce AS-STARLNK;
+remarks:        ======================================================
+remarks:        DATALINE Peers
+remarks:        ------------------------------------------------------
+import:         from AS203921 action pref=200; accept AS-ELBA-IX-ROUTESERVER;
+export:         to AS203921 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS203921 accept AS-ELBA-IX-ROUTESERVER;
+mp-export:      afi ipv6.unicast to AS203921 announce AS-STARLNK;
+remarks:        ======================================================
+remarks:        MSK-IX Peers
+remarks:        ------------------------------------------------------
+import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER;
+export:         to AS8631 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER;
+mp-export:      afi ipv6.unicast to AS8631 announce AS-STARLNK;
+import:         from AS8470 action pref=200; accept AS-MACOMNET;
+export:         to AS8470 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS8470 accept AS-MACOMNET;
+mp-export:      afi ipv6.unicast to AS8470 announce AS-STARLNK;
+import:         from AS42610 action pref=200; accept AS-NCNET;
+export:         to AS42610 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS42610 accept AS-NCNET-IPV6;
+mp-export:      afi ipv6.unicast to AS42610 announce AS-STARLNK;
+import:         from AS28917 action pref=200; accept AS-FIORD;
+export:         to AS28917 announce AS-STARLNK;
+import:         from AS3267 action pref=200; accept AS-RUNNET;
+export:         to AS3267 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS3267 accept AS3267;
+mp-export:      afi ipv6.unicast to AS3267 announce AS-STARLNK;
+import:         from AS20632 action pref=200; accept AS-PETERSTAR;
+export:         to AS20632 announce AS-STARLNK;
+import:         from AS31500 action pref=200; accept AS-GLOBAL-NET;
+export:         to AS31500 announce AS-STARLNK;
+import:         from AS41095 action pref=200; accept AS-IPTP;
+export:         to AS41095 announce AS-STARLNK;
+import:         from AS30124 action pref=200; accept AS30124:AS-SET;
+export:         to AS30124 announce AS-STARLNK;
+import:         from AS31261 action pref=200; accept AS-GARS;
+export:         to AS31261 announce AS-STARLNK;
+import:         from AS6903 action pref=200; accept AS-ZENON;
+export:         to AS6903 announce AS-STARLNK;
+import:         from AS41802 action pref=200; accept AS-KVIDEX;
+export:         to AS41802 announce AS-STARLNK;
+import:         from AS9031 action pref=200; accept AS-EDPNET;
+export:         to AS9031 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS9031 accept AS-EDPNET-V6;
+mp-export:      afi ipv6.unicast to AS9031 announce AS-STARLNK;
+import:         from AS47764 action pref=200; accept AS-MAILRU;
+export:         to AS47764 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS47764 accept AS-MAILRU6;
+mp-export:      afi ipv6.unicast to AS47764 announce AS-STARLNK;
+import:         from AS13238 action pref=200; accept AS-YANDEX;
+export:         to AS13238 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS13238 accept AS-YANDEX;
+mp-export:      afi ipv6.unicast to AS13238 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS8359 accept AS-MTU;
+mp-export:      afi ipv6.unicast to AS8359 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS13105 accept AS-LUKOIL;
+mp-export:      afi ipv6.unicast to AS13105 announce AS-STARLNK;
+import:         from AS714 action pref=200; accept AS714;
+export:         to AS714 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS714 accept AS714;
+mp-export:      afi ipv6.unicast to AS714 announce AS-STARLNK;
+remarks:        ======================================================
+remarks:        Peering at W-IX
+remarks:        ------------------------------------------------------
+import:         from AS50384 accept AS-W-IX;
+export:         to AS50384 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX;
+mp-export:      afi ipv6.unicast to AS50384 announce AS-STARLNK;
+remarks:        ======================================================
+remarks:        Peering at DATA-IX
+remarks:        ------------------------------------------------------
+import:         from AS50952 accept AS-DATAIX;
+export:         to AS50952 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX;
+mp-export:      afi ipv6.unicast to AS50952 announce AS-STARLNK;
+import:         from AS6939 accept AS-HURRICANE;
+export:         to AS6939 announce AS-STARLNK;
+remarks:        ======================================================
+remarks:        Peering at Eurasia Peering IX
+remarks:        ------------------------------------------------------
+import:         from AS56931 accept AS-EURASIAPEERING_RS;
+export:         to AS56931 announce AS-STARLNK;
+remarks:        ======================================================
+remarks:        Private Peers
+remarks:        ------------------------------------------------------
+import:         from AS15169 accept AS-GOOGLE;
+export:         to AS15169 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS15169 accept AS-GOOGLE;
+mp-export:      afi ipv6.unicast to AS15169 announce AS-STARLNK;
+remarks:        ======================================================
+remarks:        Clients
+remarks:        ------------------------------------------------------
+import:         from AS203117 action pref=100; accept AS203117;
+export:         to AS203117 announce ANY;
+import:         from AS59829 action pref=100; accept AS59829;
+export:         to AS59829 announce ANY;
+import:         from AS61261 action pref=100; accept AS61261;
+export:         to AS61261 announce ANY;
+import:         from AS60954 action pref=100; accept AS60954;
+export:         to AS60954 announce ANY;
+import:         from AS39922 action pref=100; accept AS-NLN;
+export:         to AS39922 announce ANY;
+import:         from AS58319 action pref=100; accept AS58319;
+export:         to AS58319 announce ANY;
+import:         from AS58020 action pref=100; accept AS58020;
+export:         to AS58020 announce ANY;
+import:         from AS35026 action pref=100; accept AS35026;
+export:         to AS35026 announce ANY;
+import:         from AS56755 action pref=100; accept AS56755;
+export:         to AS56755 announce ANY;
+import:         from AS59679 action pref=100; accept AS59679;
+export:         to AS59679 announce ANY;
+import:         from AS57848 action pref=100; accept AS57848;
+export:         to AS57848 announce ANY;
+import:         from AS59454 action pref=100; accept AS59454;
+export:         to AS59454 announce ANY;
+import:         from AS39266 action pref=100; accept AS39266;
+export:         to AS39266 announce ANY;
+import:         from AS58072 action pref=100; accept AS58072;
+export:         to AS58072 announce ANY;
+import:         from AS203831 action pref=100; accept AS203831;
+export:         to AS203831 announce ANY;
+import:         from AS51716 action pref=100; accept AS51716;
+export:         to AS51716 announce ANY;
+import:         from AS49060 action pref=100; accept AS49060;
+export:         to AS49060 announce ANY;
+import:         from AS205595 action pref=100; accept AS205595;
+export:         to AS205595 announce ANY;
+import:         from AS57085 action pref=100; accept AS57085;
+export:         to AS57085 announce ANY;
+remarks:        ======================================================
+remarks:        BGP COMMUNITIES SUPPORTED FROM OUR TRANSIT CUSTOMERS
+remarks:        ------------------------------------------------------
+remarks:        Community Meaning
+remarks:        34602:601x When advertising to Foton AS42861
+remarks:        34602:602x When advertising to Dataline AS49063
+remarks:        ...x=0 - do not advertise
+admin-c:        STNO4-RIPE
+tech-c:         STNO4-RIPE
+status:         ASSIGNED
+mnt-by:         MNT-STRL
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-megasvyaz-1-mnt
+created:        2005-02-22T14:10:38Z
+last-modified:  2022-07-26T08:11:22Z
+source:         RIPE # Filtered
+
+organisation:   ORG-ML423-RIPE
+org-name:       MEGASVYAZ LLC
+country:        RU
+org-type:       LIR
+address:        Postbox 798, Megasvyaz LLC
+address:        127549
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74996827394
+admin-c:        AT13823-RIPE
+admin-c:        IK4306-RIPE
+tech-c:         IK4306-RIPE
+abuse-c:        AR38915-RIPE
+mnt-ref:        ru-megasvyaz-1-mnt
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ru-megasvyaz-1-mnt
+created:        2017-01-12T10:01:56Z
+last-modified:  2020-12-16T12:56:16Z
+source:         RIPE # Filtered
+
+role:           StarLink Network Operations Center
+address:        Russian Federation
+address:        Moscow
+address:        Bibirevskaya 8k1
+phone:          +7 (495) 290-3-999
+admin-c:        IK4306-RIPE
+tech-c:         IK4306-RIPE
+abuse-mailbox:  abuse@starlink.ru
+nic-hdl:        STNO4-RIPE
+mnt-by:         ru-megasvyaz-1-mnt
+created:        2007-06-04T19:41:18Z
+last-modified:  2019-10-04T07:25:42Z
+source:         RIPE # Filtered
+
+
 

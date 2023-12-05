@@ -1,4 +1,103 @@
 
 
 
+as-block:       AS33792 - AS34436
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2023-04-20T14:54:28Z
+last-modified:  2023-04-20T14:54:28Z
+source:         RIPE
+
+
+
+aut-num:        AS33934
+as-name:        VolgogradEC-AS
+descr:          PJSC Rostelecom (Volga)
+org:            ORG-JR8-RIPE
+remarks:        Upstreams
+import:         from AS8342 action pref=200; accept ANY;
+import:         from AS20485 action pref=100; accept ANY;
+import:         from AS12389 action pref=100; accept ANY;
+remarks:        Customers
+import:         from AS-VES action pref=100; accept PeerAS;
+remarks:        Upstreams
+export:         to AS8342 announce AS-VES;
+export:         to AS20485 announce AS-VES;
+export:         to AS12389 announce AS-VES;
+remarks:        Customers
+export:         to AS-VES announce ANY;
+admin-c:        VPS3-RIPE
+tech-c:         AAK91-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         STC-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2004-09-09T10:13:39Z
+last-modified:  2022-12-26T10:34:44Z
+source:         RIPE
+
+organisation:   ORG-JR8-RIPE
+org-name:       PJSC Rostelecom
+country:        RU
+org-type:       LIR
+address:        14 A, Sinopskaya nabereznaya
+address:        191167
+address:        S.Peterburg
+address:        RUSSIAN FEDERATION
+phone:          +7 499 999-82-83
+fax-no:         +74999953619
+admin-c:        RTNC-RIPE
+admin-c:        EP6706-RIPE
+admin-c:        IE1277-RIPE
+admin-c:        NM7547-RIPE
+admin-c:        AA728-RIPE
+admin-c:        SVS153-RIPE
+admin-c:        ASV77-RIPE
+admin-c:        RVP-RIPE
+admin-c:        VEV57-RIPE
+admin-c:        TR4627-RIPE
+admin-c:        TL4565-RIPE
+admin-c:        DN216-RIPE
+admin-c:        DA2353-RIPE
+admin-c:        IS111-RIPE
+admin-c:        VE128-RIPE
+admin-c:        SS216-RIPE
+abuse-c:        RTNC-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        ROSTELECOM-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2005-03-22T11:11:20Z
+last-modified:  2023-01-26T10:52:42Z
+source:         RIPE # Filtered
+
+person:         Aleksey A. Kalinovsky
+address:        PJSC "Southern Telecommunications Company",
+address:        branch "Volgogradelectrosviaz",
+address:        9, Mira str.,
+address:        Volgograd, 400066,
+address:        Russia
+phone:          +7 8442 389751
+nic-hdl:        AAK91-RIPE
+mnt-by:         STC-MNT
+created:        2004-10-20T11:31:57Z
+last-modified:  2006-09-28T12:10:10Z
+source:         RIPE # Filtered
+
+person:         Viktor P Shirinsky
+address:        Filial JSC "ELECTROSVIAZ" Volgograd Telegraph
+address:        Mira str. 9
+address:        400066 Volgograd
+address:        Russia
+phone:          +7 8442 325492
+fax-no:         +7 8442 936205
+nic-hdl:        VPS3-RIPE
+created:        1970-01-01T00:00:00Z
+last-modified:  2016-04-05T21:17:51Z
+mnt-by:         RIPE-NCC-LOCKED-MNT
+source:         RIPE # Filtered
+
+
 
