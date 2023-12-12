@@ -1617,6 +1617,9 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:
++
+import:         from AS21143 action pref=100; accept AS21143
+export:         to AS21143 announce ANY
 import:         from AS34896 action pref=100; accept AS34896
 export:         to AS34896 announce ANY
 import:         from AS43849 action pref=100; accept AS-SEVER-SVYAZ
@@ -3886,8 +3889,6 @@ import:         from AS34381 action pref=100; accept AS34381
 export:         to AS34381 announce ANY
 import:         from AS33819 action pref=100; accept AS33819
 export:         to AS33819 announce ANY
-import:         from AS196925 action pref=100; accept AS-AZRT-AZ
-export:         to AS196925 announce AS-SOVAM
 mp-import:      afi ipv6 from AS196925 action pref=100; accept AS-AZRT-AZ
 mp-export:      afi ipv6 to AS196925 announce ANY
 import:         from AS8684 action pref=100; accept AS8684
@@ -5451,7 +5452,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2023-12-04T11:22:10Z
+last-modified:  2023-12-11T14:07:59Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
