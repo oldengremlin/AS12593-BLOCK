@@ -765,9 +765,6 @@ remarks:
 import:         from AS62241 action pref=50; accept AS62241;
 export:         to AS62241 announce AS-CLOUD-IX-PRO;
 remarks:
-import:         from AS8492 action pref=50; accept AS8492;
-export:         to AS8492 announce AS-CLOUD-IX-LOCAL;
-remarks:
 import:         from AS51178 action pref=50; accept AS-AVANTEL-SPB;
 export:         to AS51178 announce ANY;
 remarks:
@@ -806,6 +803,9 @@ export:         to AS59482 announce AS-CLOUD-IX-LOCAL;
 remarks:
 import:         from AS42668 action pref=50; accept AS-NEVALINK;
 export:         to AS42668 announce ANY;
+remarks:
+import:         from AS8492 action pref=50; accept AS-OBIT;
+export:         to AS8492 announce AS-CLOUD-IX-LOCAL;
 remarks:
 import:         from AS39087 action pref=50; accept AS-PAKT;
 export:         to AS39087 announce AS-CLOUD-IX-PRO;
@@ -1531,9 +1531,6 @@ remarks:
 mp-import:      afi ipv6.unicast from AS62241 action pref=50; accept AS62241;
 mp-export:      afi ipv6.unicast to AS62241 announce any;
 remarks:
-mp-import:      afi ipv6.unicast from AS8492 action pref=50; accept AS8492;
-mp-export:      afi ipv6.unicast to AS8492 announce any;
-remarks:
 mp-import:      afi ipv6.unicast from AS51178 action pref=50; accept AS-AVANTEL-SPB;
 mp-export:      afi ipv6.unicast to AS51178 announce any;
 remarks:
@@ -1572,6 +1569,9 @@ mp-export:      afi ipv6.unicast to AS59482 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS42668 action pref=50; accept AS-NEVALINK;
 mp-export:      afi ipv6.unicast to AS42668 announce any;
+remarks:
+mp-import:      afi ipv6.unicast from AS8492 action pref=50; accept AS-OBIT;
+mp-export:      afi ipv6.unicast to AS8492 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS39087 action pref=50; accept AS39087;
 mp-export:      afi ipv6.unicast to AS39087 announce any;
@@ -1773,7 +1773,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2023-12-15T21:00:05Z
+last-modified:  2023-12-16T21:00:04Z
 source:         RIPE # Filtered
 
 organisation:   ORG-SO181-RIPE
