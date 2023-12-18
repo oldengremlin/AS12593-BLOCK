@@ -34,6 +34,8 @@ import:         from AS1741 action pref=100; accept AS-FUNET
 export:         to AS1741 announce AS-RUNNET
 import:         from AS15169 action pref=102; accept AS-GOOGLE
 export:         to AS15169 announce AS-RUNNET
+mp-import:      afi any.unicast from AS15169 action pref=102; accept AS-GOOGLE
+mp-export:      afi any.unicast to AS15169 announce AS-RUNNET
 export:         to AS9049 announce AS-RUNNET
 import:         from AS9049 action pref=102; accept AS-ERTH
 import:         from AS2875 action pref=50; accept AS2875
@@ -689,7 +691,7 @@ mnt-by:         AS3058-MNT
 mnt-by:         INFR-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2002-09-09T08:24:32Z
-last-modified:  2023-12-15T09:04:04Z
+last-modified:  2023-12-17T12:10:42Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CR1-RIPE
