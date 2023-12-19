@@ -50,9 +50,9 @@ export:         to AS6695 announce AS-NETASSIST
 mp-import:      afi ipv6.unicast from AS6695 accept AS-DECIX
 mp-export:      afi ipv6.unicast to AS6695 announce AS-NETASSIST
 remarks:        -= AMS-IX =-
-import:         from AS6777 action pref=100; accept ANY
+import:         from AS6777 action pref=100; accept AS6777:AS-AMS-IX-RS-SETS AS6777:AS-AMS-IX-RS
 export:         to AS6777 announce AS-NETASSIST
-mp-import:      afi ipv6.unicast from AS6777 accept ANY
+mp-import:      afi ipv6.unicast from AS6777 accept AS6777:AS-AMS-IX-RS-SETS-V6 AS6777:AS-AMS-IX-RS-V6
 mp-export:      afi ipv6.unicast to AS6777 announce AS-NETASSIST
 remarks:        -= PL-IX routeserver =-
 import:         from AS8545 action pref=100; accept AS-PLIX
@@ -1292,7 +1292,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEREZHA-MNT
 created:        2003-10-28T13:43:45Z
-last-modified:  2023-12-14T16:08:05Z
+last-modified:  2023-12-18T21:25:27Z
 source:         RIPE # Filtered
 
 organisation:   ORG-NL366-RIPE
