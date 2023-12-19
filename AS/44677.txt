@@ -12,32 +12,21 @@ source:         RIPE
 
 
 aut-num:        AS44677
-as-name:        MTS-KRV-AS
+as-name:        MTS-NGCLOUD-AS
 org:            ORG-ZM1-RIPE
 remarks:        --- Uplinks ---
-import:         from AS42358 accept ANY
-import:         from AS24626 accept ANY
 import:         from AS8359 accept ANY
-export:         to AS42358 announce AS-VKTV
-export:         to AS24626 announce AS-VKTV
-export:         to AS8359 announce AS-VKTV
-remarks:        --- Customers ---
-import:         from AS199080 accept AS199080
-import:         from AS197856 accept AS197856
-import:         from AS197668 accept AS197668
-import:         from AS59420 accept AS59420
-import:         from AS61382 accept AS61382
-import:         from AS61382 accept AS-KSINVEST
-import:         from AS42104 accept AS-CENTRLAN
-import:         from AS47552 accept AS47552
+export:         to AS8359 announce AS44677
+import:         from AS209024 accept ANY
+export:         to AS209024 announce AS44677
+remarks:        ---------------
 admin-c:        MTU1-RIPE
 tech-c:         MTU1-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         VKTV-MNT
 mnt-by:         MTU-NOC
 created:        2008-02-22T12:02:14Z
-last-modified:  2018-09-04T10:30:42Z
+last-modified:  2023-12-18T08:56:56Z
 source:         RIPE
 
 organisation:   ORG-ZM1-RIPE

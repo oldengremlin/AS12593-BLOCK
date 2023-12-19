@@ -738,6 +738,9 @@ remarks:
 import:         from AS47541 action pref=50; accept AS47541;
 export:         to AS47541 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
+import:         from AS47613 action pref=50; accept AS47613;
+export:         to AS47613 announce ANY;
+remarks:
 import:         from AS47968 action pref=50; accept AS47968;
 export:         to AS47968 announce ANY;
 remarks:
@@ -1504,6 +1507,9 @@ remarks:
 mp-import:      afi ipv6.unicast from AS47541 action pref=50; accept AS47541;
 mp-export:      afi ipv6.unicast to AS47541 announce any;
 remarks:
+mp-import:      afi ipv6.unicast from AS47613 action pref=50; accept AS47613;
+mp-export:      afi ipv6.unicast to AS47613 announce any;
+remarks:
 mp-import:      afi ipv6.unicast from AS47968 action pref=50; accept AS47968;
 mp-export:      afi ipv6.unicast to AS47968 announce any;
 remarks:
@@ -1773,7 +1779,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2023-12-16T21:00:04Z
+last-modified:  2023-12-18T21:00:04Z
 source:         RIPE # Filtered
 
 organisation:   ORG-SO181-RIPE
