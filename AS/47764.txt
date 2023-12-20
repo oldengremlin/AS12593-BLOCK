@@ -334,6 +334,8 @@ mp-export:      afi ipv6.unicast to AS41625 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS41625 accept AS41625;
 export:         to AS207353 announce AS-VK
 import:         from AS207353 accept AS207353
+export:         to AS35539 announce AS-VK
+import:         from AS35539 accept AS-INFOLINK
 remarks:
 remarks:        =========================================
 remarks:        MSK-IX Peers
@@ -576,7 +578,7 @@ remarks:        142 RINET (AS8331)
 remarks:        143 RIALCOM (AS34456)
 remarks:        144 IVSTAR (AS29588)
 remarks:        145 Bigtelecom (AS35810)
-remarks:        146 FREE
+remarks:        146 INFOLINK (AS35539)
 remarks:        147 DDOS-GUARD (AS57724)
 remarks:        148 ERTELECOM (AS9049)
 remarks:        149 SOFTVIDEO (AS57712)
@@ -700,7 +702,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2023-12-06T10:42:26Z
+last-modified:  2023-12-19T14:13:48Z
 source:         RIPE # Filtered
 
 organisation:   ORG-LLCn4-RIPE
