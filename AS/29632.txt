@@ -604,6 +604,9 @@ mp-export:      afi ipv6.unicast to AS48191 announce ANY
 remarks:        -= IP Space Limited =-
 mp-import:      afi ipv6.unicast from AS48682 action pref=100; accept AS48682
 mp-export:      afi ipv6.unicast to AS48682 announce ANY
+remarks:        -= OpenLaboratory Network =-
+mp-import:      afi ipv6.unicast from AS48752 action pref=100; accept AS-LAB2
+mp-export:      afi ipv6.unicast to AS48752 announce ANY
 remarks:        -= MAOBUNI =-
 mp-import:      afi ipv6.unicast from AS49105 action pref=100; accept AS49105
 mp-export:      afi ipv6.unicast to AS49105 announce ANY
@@ -1168,6 +1171,9 @@ mp-export:      afi ipv6.unicast to AS213343 announce ANY
 remarks:        -= trivisonno network =-
 mp-import:      afi ipv6.unicast from AS213361 action pref=100; accept AS-TRIVI
 mp-export:      afi ipv6.unicast to AS213361 announce ANY
+remarks:        -= Tizian Maxime Weigt =-
+mp-import:      afi ipv6.unicast from AS215828 action pref=100; accept AS215828
+mp-export:      afi ipv6.unicast to AS215828 announce ANY
 remarks:        -= BARAGOON =-
 mp-import:      afi ipv6.unicast from AS215887 action pref=100; accept AS215887
 mp-export:      afi ipv6.unicast to AS215887 announce ANY
@@ -1292,7 +1298,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEREZHA-MNT
 created:        2003-10-28T13:43:45Z
-last-modified:  2023-12-18T21:25:27Z
+last-modified:  2023-12-20T15:32:42Z
 source:         RIPE # Filtered
 
 organisation:   ORG-NL366-RIPE
