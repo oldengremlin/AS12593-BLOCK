@@ -1677,8 +1677,6 @@ import:         from AS210682 action pref=100; accept AS-A3PAY
 export:         to AS210682 announce ANY
 import:         from AS57214 action pref=100; accept AS57214
 export:         to AS57214 announce ANY
-import:         from AS34550 action pref=100; accept AS-INTERCON
-export:         to AS34550 announce ANY
 import:         from AS43330 action pref=100; accept AS43330
 export:         to AS43330 announce ANY
 import:         from AS58006 action pref=100; accept AS58006
@@ -1739,6 +1737,10 @@ import:         from AS47740 action pref=100; accept AS47740
 export:         to AS47740 announce {0.0.0.0/0}
 import:         from AS199940 action pref=100; accept AS199940
 export:         to AS199940 announce ANY
+import:         from AS49392 action pref=100; accept AS-BXS
+export:         to AS49392 announce {0.0.0.0/0}
+mp-import:      from AS49392 action pref=100; accept AS-BXS
+mp-export:      to AS49392 announce {::/0}
 import:         from AS212206 action pref=100; accept AS212206
 export:         to AS212206 announce ANY
 import:         from AS49648 action pref=100; accept AS49648
@@ -3922,6 +3924,8 @@ import:         from AS47737 action pref=100; accept AS47737
 export:         to AS47737 announce ANY
 import:         from AS34464 action pref=100; accept AS-MEDIASOUZ
 export:         to AS34464 announce {0.0.0.0/0}
+import:         from AS42001 action pref=100; accept AS42001
+export:         to AS42001 announce ANY
 import:         from AS56724 action pref=100; accept AS56724
 export:         to AS56724 announce ANY
 mp-import:      afi ipv6 from AS56724 action pref=100; accept AS56724
@@ -4494,6 +4498,8 @@ import:         from AS207501 action pref=100; accept AS207501
 export:         to AS207501 announce {0.0.0.0/0}
 import:         from AS51372 action pref=100; accept AS51372
 export:         to AS51372 announce {0.0.0.0/0}
+import:         from AS34550 action pref=100; accept AS-INTERCON
+export:         to AS34550 announce ANY
 remarks:
 remarks:        endof(Full-transit customers)
 remarks:
@@ -5451,7 +5457,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2023-12-18T10:55:46Z
+last-modified:  2023-12-20T14:06:04Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
