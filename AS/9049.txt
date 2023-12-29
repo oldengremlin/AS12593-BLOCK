@@ -454,9 +454,6 @@ remarks:        -PEERING-MegaFon-
 import:         from AS60068 accept AS60068
 export:         to AS60068 announce AS-ERTH
 remarks:        -PEERING-CDN77-
-import:         from AS50509 accept AS-TRANSROUTE
-export:         to AS50509 announce AS-ERTH
-remarks:        -PEERING-TRANSROUTE-
 import:         from AS48531 accept AS-VLVROUTESERVER
 export:         to AS48531 announce AS-ERTH
 remarks:        -PEERING-TRANSROUTE-
@@ -502,6 +499,9 @@ remarks:        -PEERING-TISDIALOG-
 import:         from AS50477 accept AS-SET-SVEN
 export:         to AS50477 announce AS-ERTH
 remarks:        -PEERING-SVYAZ-ENERGO-
+import:         from AS212236 accept AS212236
+export:         to AS212236 announce AS-ERTH
+remarks:        -PEERING-KINESCOPE-
 remarks:
 remarks:
 remarks:
@@ -992,9 +992,6 @@ remarks:        -DOWNSTREAM-IT-GROUP-
 import:         from AS47842 accept AS47842
 export:         to AS47842 announce ANY
 remarks:        -DOWNSTREAM-TEPLOPRIBOR-
-import:         from AS42822 accept AS42822
-export:         to AS42822 announce ANY
-remarks:        -DOWNSTREAM-PERM-MFC-
 import:         from AS60299 accept AS-MMTS
 export:         to AS60299 announce ANY
 remarks:        -DOWNSTREAM-MMTS-
@@ -1978,6 +1975,12 @@ remarks:        -DOWNSTREAM-SIBINTEK-
 import:         from AS60655 accept AS60655
 export:         to AS60655 announce ANY
 remarks:        -DOWNSTREAM-INTEGRAL-
+import:         from AS49411 accept AS49411
+export:         to AS49411 announce AS-ERTH-CITIES AND {0.0.0.0/0}
+remarks:        -DOWNSTREAM-SEDNA-
+import:         from AS59641 accept AS59641
+export:         to AS59641 announce ANY
+remarks:        -DOWNSTREAM-GALION-
 remarks:        ========================================================
 remarks:        Control community for Customers
 remarks:
@@ -2134,7 +2137,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ERTH-MAGISTR
 created:        2011-10-13T07:43:18Z
-last-modified:  2023-12-27T11:23:50Z
+last-modified:  2023-12-29T04:11:34Z
 source:         RIPE
 
 organisation:   ORG-RA21-RIPE
