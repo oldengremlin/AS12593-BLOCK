@@ -1165,7 +1165,7 @@ import:         from AS201774 action pref=200; accept AS201774;
 export:         to AS201774 announce ANY
 remarks:
 remarks:        MASTER TELECOM LIMITED LIABILITY COMPANY
-import:         from AS210471 action pref=200; accept AS210471;
+import:         from AS210471 action pref=200; accept AS210471:AS-MASTERTELECOM;
 export:         to AS210471 announce ANY
 remarks:
 remarks:        Cherkizovo Group PJSC
@@ -1263,6 +1263,18 @@ remarks:
 remarks:        EUROJAY LIMITED
 import:         from AS209382 action pref=200; accept as-sportlevel;
 export:         to AS209382 announce {0.0.0.0/0}
+remarks:
+remarks:        Limited Liability company MOEX Information Security
+import:         from AS35021 action pref=200; accept {85.118.176.0/21};
+export:         to AS35021 announce ANY
+remarks:
+remarks:        Limited Liability company MOEX Information Security
+import:         from AS48009 action pref=200; accept {91.208.232.0/24};
+export:         to AS48009 announce ANY
+remarks:
+remarks:        AIRBYTES COMMUNICATIONS SRL
+import:         from AS198373 action pref=200; accept {193.232.39.0/24};
+export:         to AS198373 announce ANY
 remarks:
 remarks:        =========================
 remarks:
@@ -1404,8 +1416,8 @@ mp-import:      afi ipv6 from AS47728 action pref=200; accept AS47728;
 mp-export:      afi ipv6 to AS47728 announce {0.0.0.0/0}
 remarks:
 remarks:        EUROJAY LIMITED
-mp-import:      afi ipv6 from AS209382  action pref=200; accept as-sportlevel
-mp-export:      afi ipv6 to AS209382  announce {0.0.0.0/0}
+mp-import:      afi ipv6 from AS209382 action pref=200; accept as-sportlevel
+mp-export:      afi ipv6 to AS209382 announce {0.0.0.0/0}
 remarks:
 remarks:        ========================================================
 remarks:        BGP community accepted only from customers
@@ -1493,7 +1505,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2023-12-25T09:51:18Z
+last-modified:  2023-12-28T14:28:01Z
 source:         RIPE
 
 organisation:   ORG-JM2-RIPE
