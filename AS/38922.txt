@@ -1,4 +1,93 @@
 
 
 
+as-block:       AS38912 - AS39599
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2023-08-29T07:47:54Z
+last-modified:  2023-08-29T07:47:54Z
+source:         RIPE
+
+
+
+aut-num:        AS38922
+as-name:        WILAND-AS
+org:            ORG-WL18-RIPE
+remarks:        ======================================================
+remarks:        Upstreams :: IPv4
+remarks:        ======================================================
+import:         from AS21367 accept ANY
+export:         to AS21367 announce AS-WILAND
+remarks:        ======================================================
+remarks:        Upstreams :: IPv6
+remarks:        ======================================================
+mp-import:      afi ipv6.unicast from AS21367 accept ANY
+mp-export:      afi ipv6.unicast to AS21367 announce AS-WILAND
+remarks:        =====================================================
+remarks:        MSK-IX Peering :: IPv4
+remarks:        =====================================================
+import:         { from AS8631 accept AS-MSKROUTESERVER; from AS20632 at 193.232.244.193 accept AS-PETERSTAR; }
+export:         { to AS8631 announce AS-WILAND; to AS20632 at 193.232.244.193 announce AS-WILAND; }
+remarks:        =====================================================
+remarks:        MSK-IX Peering :: IPv6
+remarks:        =====================================================
+mp-import:      afi ipv6.unicast from AS13062 accept AS13062
+mp-export:      afi ipv6.unicast to AS13062 announce AS-WILAND
+remarks:        =====================================================
+remarks:        Customers :: IPv4
+remarks:        =====================================================
+import:         { from AS44802 accept AS44802; from AS44696 accept AS44696; from AS41212 accept AS41212; from AS49745 accept AS49745; from AS31183 accept AS31183; from AS31192 accept AS31192; from AS59528 accept AS59528; from AS61285 accept AS61285; from AS61989 accept AS61989; from AS62108 accept AS62108; from AS199185 accept AS199185;}
+export:         { to AS44802 announce { 0.0.0.0/0 }; to AS44696 announce ANY; to AS41212 announce ANY; to AS49745 announce ANY; to AS31183 announce ANY; to AS31192 announce ANY; to AS59528 announce { 0.0.0.0/0 }; to AS61285 announce ANY; to AS61989 announce ANY; to AS62108 announce ANY; to AS199185 announce ANY;}
+admin-c:        WLND-RIPE
+tech-c:         WLND-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-WILAND
+created:        2005-11-15T09:53:18Z
+last-modified:  2018-09-04T10:12:28Z
+source:         RIPE
+
+organisation:   ORG-WL18-RIPE
+org-name:       Wiland Ltd
+country:        RU
+org-type:       LIR
+address:        Lenina Ave., hs nr 25, room 17
+address:        144000
+address:        Moscow Elektrostal
+address:        RUSSIAN FEDERATION
+phone:          +74959812310
+fax-no:         +74959812311
+admin-c:        VG4714-RIPE
+admin-c:        SV6753-RIPE
+abuse-c:        AR17045-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-WILAND
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-WILAND
+created:        2005-10-20T11:49:49Z
+last-modified:  2020-12-16T12:20:23Z
+source:         RIPE # Filtered
+
+role:           Wiland Network Russia
+address:        Nab. Akademica Tupoleva 15 build 22
+address:        123995, Moscow, Russia
+phone:          +7 495 9812310
+fax-no:         +7 495 9812311
+remarks:        trouble: ********************************************
+remarks:        trouble: The contact information on problems:
+remarks:        trouble: ********************************************
+remarks:        trouble: Backbone/Routing: noc@wiland.ru
+remarks:        trouble: ABUSE/SPAM: abuse@wiland.ru
+remarks:        trouble: Internet Customer support: support@wiland.ru
+remarks:        trouble: ********************************************
+admin-c:        VG4714-RIPE
+admin-c:        SV6753-RIPE
+nic-hdl:        WLND-RIPE
+mnt-by:         MNT-WILAND
+created:        2007-02-22T13:49:22Z
+last-modified:  2016-10-17T20:40:19Z
+source:         RIPE # Filtered
+
+
 
