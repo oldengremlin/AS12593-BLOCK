@@ -1,4 +1,181 @@
 
 
 
+as-block:       AS39601 - AS39935
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2023-08-29T07:47:54Z
+last-modified:  2023-08-29T07:47:54Z
+source:         RIPE
+
+
+
+aut-num:        AS39811
+as-name:        MTSNET-FAR-EAST-AS
+org:            ORG-ZM1-RIPE
+descr:          An Autonomous System for the Far East divisions
+descr:          of Mobile TeleSystems PJSC
+remarks:        --- Upstreams ---
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-MTSDV
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-MTSDV
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-MTSDV
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-MTSDV
+remarks:        -- Peering --
+remarks:        -- MTS --
+import:         from AS21103 accept AS-MTS-SAKH
+export:         to AS21103 announce ANY
+remarks:        -- Clients --
+remarks:        - Vladivostok -
+import:         from AS213117 accept AS213117
+export:         to AS213117 announce ANY
+import:         from AS56437 accept AS56437
+export:         to AS56437 announce ANY
+import:         from AS57898 accept AS57898
+export:         to AS57898 announce ANY
+import:         from AS52166 accept AS52166
+export:         to AS52166 announce ANY
+import:         from AS8749 accept AS8749
+export:         to AS8749 announce ANY
+import:         from AS198182 accept AS198182
+export:         to AS198182 announce ANY
+import:         from AS62413 accept AS62413
+export:         to AS62413 announce ANY
+import:         from AS42038 accept AS-VLADLINK
+export:         to AS42038 announce ANY
+import:         from AS59960 accept AS59960
+export:         to AS59960 announce ANY
+import:         from AS204112 accept AS204112
+export:         to AS204112 announce ANY
+import:         from AS50248 accept AS50248
+export:         to AS50248 announce ANY
+import:         from AS203533 accept AS203533
+export:         to AS203533 announce ANY
+import:         from AS59672 accept AS59672
+export:         to AS59672 announce ANY
+import:         from AS56720 accept AS56720
+export:         to AS56720 announce ANY
+import:         from AS56845 accept AS56845
+export:         to AS56845 announce ANY
+import:         from AS209217 accept AS209217
+export:         to AS209217 announce ANY
+import:         from AS213304 accept AS213304
+export:         to AS213304 announce ANY
+remarks:        -Irkutsk-
+import:         from AS13155 accept AS-SIBRON-TELECOM
+export:         to AS13155 announce ANY
+import:         from AS56959 accept AS56959
+export:         to AS56959 announce ANY
+import:         from AS12772 accept AS-ENFORTA
+export:         to AS12772 announce ANY
+import:         from AS47397 accept AS-BASE
+export:         to AS47397 announce ANY
+import:         from AS2854 accept AS-ROSPRINT
+export:         to AS2854 announce ANY
+import:         from AS48035 accept AS48035
+export:         to AS48035 announce ANY
+import:         from AS60452 accept AS60452
+export:         to AS60452 announce ANY
+import:         from AS57737 accept AS57737
+export:         to AS57737 announce ANY
+descr:          -Blagoveshenks-
+import:         from AS200764 accept AS200764
+export:         to AS200764 announce ANY
+import:         from AS57038 accept AS57038
+export:         to AS57038 announce ANY
+import:         from AS59515 accept AS59515
+export:         to AS59515 announce ANY
+import:         from AS41789 accept AS41789
+export:         to AS41789 announce ANY
+import:         from AS56879 accept AS56879
+export:         to AS56879 announce ANY
+import:         from AS56581 accept AS56581
+export:         to AS56581 announce ANY
+descr:          -Buryatia-
+import:         from AS206134 accept AS206134
+export:         to AS206134 announce ANY
+remarks:        ---Yakutiya(Sakha)---
+import:         from AS196648 accept AS196648
+export:         to AS196648 announce ANY
+remarks:        - Kamchatka -
+import:         from AS47375 accept AS47375
+export:         to AS47375 announce ANY
+admin-c:        MTSA
+admin-c:        PZ2049-RIPE
+tech-c:         PZ2049-RIPE
+remarks:        -----------------------------------------------------------
+remarks:        Communities
+remarks:        -----------------------------------------------------------
+remarks:        39811:1000 - do not advertise to all upstreams
+remarks:        39811:201x - MTS
+remarks:        39822:202x - TTK
+remarks:        39811:203x - RTK
+remarks:        x:
+remarks:        0 - do not advertise
+remarks:        1..6 - prepend N times
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MR-DV-MTS-MNT
+mnt-by:         MTU-NOC
+created:        2006-04-27T12:23:32Z
+last-modified:  2023-06-08T08:14:50Z
+source:         RIPE # Filtered
+
+organisation:   ORG-ZM1-RIPE
+org-name:       MTS PJSC
+country:        RU
+org-type:       LIR
+address:        Petrovsky blvd 12, bldg 3
+address:        127051
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74957213499
+fax-no:         +74992318129
+admin-c:        LAP-RIPE
+admin-c:        TABY-RIPE
+admin-c:        LMUR-RIPE
+admin-c:        YUF-RIPE
+admin-c:        RPS-RIPE
+abuse-c:        MAB8359-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MTU-NOC
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MTU-NOC
+created:        2004-04-17T11:55:44Z
+last-modified:  2022-06-24T12:14:16Z
+source:         RIPE # Filtered
+
+role:           MTSNET Administration
+address:        MTS PJSC
+address:        4, Marksistskaya str., 109147 Moscow, Russia
+remarks:        **************************************
+remarks:        Contact addresses:
+remarks:        routing & peering noc@mtu.ru
+remarks:        spam & security abuse@mtu.ru
+remarks:        mail postmaster@mtu.ru
+remarks:        ddos reports ddos-reports@mtu.ru
+remarks:        **************************************
+mnt-by:         MTSNET-MNT
+admin-c:        YUF-RIPE
+tech-c:         YUF-RIPE
+nic-hdl:        MTSA
+created:        2004-04-03T10:05:17Z
+last-modified:  2019-05-29T08:19:05Z
+source:         RIPE # Filtered
+
+person:         Black Hat
+address:        Mobile TeleSystems PJSC
+address:        Some street, 690000, Vladivostok City Russia
+phone:          +7 914 703 87 38
+nic-hdl:        PZ2049-RIPE
+mnt-by:         PZ630-MNT
+created:        2011-12-23T06:24:28Z
+last-modified:  2016-02-20T01:53:15Z
+source:         RIPE
+
+
 
