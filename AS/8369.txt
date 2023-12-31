@@ -1,4 +1,138 @@
 
 
 
+as-block:       AS8192 - AS8523
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:23Z
+last-modified:  2018-11-22T15:27:23Z
+source:         RIPE
+
+
+
+aut-num:        AS8369
+org:            ORG-IJ7-RIPE
+as-name:        INTERSVYAZ-AS
+descr:          38-B, Komsomolsky prospekt,
+descr:          Chelyabinsk, 454138, Russia
+import:         from AS8631 accept ANY;
+import:         from AS57304 action pref=100; accept ANY;
+import:         from AS28917 action pref=100; accept ANY;
+import:         from AS12389 action pref=100; accept ANY;
+import:         from AS9049 action pref=130; accept ANY;
+import:         from AS20485 action pref=100; accept ANY;
+import:         from AS31133 action pref=100; accept ANY;
+import:         from AS34291 action pref=250; accept ANY;
+import:         from AS39775 action pref=100; accept ANY;
+import:         from AS43213 action pref=130; accept ANY;
+import:         from AS47842 action pref=150; accept AS47842;
+import:         from AS50384 action pref=100; accept ANY;
+import:         from AS50952 action pref=130; accept ANY;
+import:         from AS51028 action pref=130; accept ANY;
+import:         from AS51690 action pref=150; accept AS51690;
+import:         from AS57418 action pref=150; accept AS57418;
+import:         from AS57425 accept AS57425;
+import:         from AS59712 action pref=130; accept ANY;
+import:         from AS198683 action pref=150; accept AS198683;
+import:         from AS198856 action pref=150; accept AS198856;
+import:         from AS199153 action pref=150; accept AS199153;
+import:         from AS202800 action pref=150; accept AS202800;
+import:         from AS204713 action pref=150; accept AS204713;
+import:         from AS207124 action pref=150; accept AS207124;
+import:         from AS202423 action pref=100 ; accept AS202423;
+import:         from AS49869 action pref=100 ; accept ANY;
+export:         to AS8631 announce AS-INTERSVYAZ;
+export:         to AS57304 announce AS-INTERSVYAZ;
+export:         to AS9049 announce AS-INTERSVYAZ;
+export:         to AS20485 announce AS-INTERSVYAZ;
+export:         to AS31133 announce AS-INTERSVYAZ;
+export:         to AS12389 announce AS-INTERSVYAZ;
+export:         to AS34291 announce ANY;
+export:         to AS39775 announce AS-INTERSVYAZ;
+export:         to AS43213 announce AS-INTERSVYAZ;
+export:         to AS47842 announce {0.0.0.0/0};
+export:         to AS50384 announce AS-INTERSVYAZ;
+export:         to AS50952 announce AS-INTERSVYAZ;
+export:         to AS51028 announce AS-INTERSVYAZ;
+export:         to AS51690 announce ANY;
+export:         to AS57418 announce ANY;
+export:         to AS57425 announce ANY;
+export:         to AS59712 announce AS-INTERSVYAZ;
+export:         to AS199153 announce {0.0.0.0/0};
+export:         to AS198683 announce ANY;
+export:         to AS198856 announce ANY;
+export:         to AS202800 announce ANY;
+export:         to AS204713 announce {0.0.0.0/0};
+export:         to AS207124 announce ANY;
+export:         to AS202423 announce {0.0.0.0/0};
+export:         to AS28917 announce AS-INTERSVYAZ;
+export:         to AS49869 announce AS-INTERSVYAZ;
+remarks:        ---------------------------------------
+remarks:        Community for customers:
+remarks:        ---------------------------------------
+remarks:        8369:399x - prepend AS8369
+remarks:        x = 0 - advertise without prepends
+remarks:        x = 1,2,3,4 - prepend AS8369 X times
+remarks:        x = 5 - do not advertise
+remarks:        ---------------------------------------
+remarks:        8369:y - set local-preference
+remarks:        y = 50,200
+remarks:        default local-preference = 150
+remarks:        ---------------------------------------
+remarks:        0:Z - do not advertise to Z AS
+remarks:        ---------------------------------------
+remarks:        other community - action strip
+remarks:        ---------------------------------------
+admin-c:        IS-RIPE
+tech-c:         IS-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INTERSVYAS-MNT
+created:        2002-08-21T15:26:00Z
+last-modified:  2023-08-24T06:19:36Z
+source:         RIPE
+
+organisation:   ORG-IJ7-RIPE
+org-name:       Intersvyaz-2 JSC
+country:        RU
+org-type:       LIR
+address:        KOMSOMOLSKY PROSPEKT 38B
+address:        454138
+address:        CHELYABINSK
+address:        RUSSIAN FEDERATION
+phone:          +73517929745
+fax-no:         +73512656520
+admin-c:        MC29184-RIPE
+admin-c:        AV2001-RIPE
+admin-c:        EK204-RIPE
+abuse-c:        IS-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        INTERSVYAS-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         INTERSVYAS-MNT
+created:        2005-12-05T12:47:21Z
+last-modified:  2021-03-17T06:00:51Z
+source:         RIPE # Filtered
+
+role:           Intersvyaz JSC Network Operation Center
+address:        38-B, Komsomolsky prospekt, Chelyabinsk, 454138, Russia
+remarks:        SPAM and Network security issues: abuse@chelcom.ru
+remarks:        Address, name and routing issues: hostmaster@chelcom.ru
+remarks:        Mail issues: postmaster@chelcom.ru
+remarks:        News issues: newsmaster@chelcom.ru
+remarks:        FTP issues: ftp@chelcom.ru
+remarks:        Web issues: webmaster@chelcom.ru
+remarks:        Proxy issues: cachemaster@chelcom.ru
+abuse-mailbox:  abuse@is74.ru
+admin-c:        EK204-RIPE
+tech-c:         AV2001-RIPE
+tech-c:         YK1586-RIPE
+mnt-by:         INTERSVYAS-MNT
+nic-hdl:        IS-RIPE
+created:        2004-08-30T16:11:45Z
+last-modified:  2021-03-17T06:00:07Z
+source:         RIPE # Filtered
+
+
 

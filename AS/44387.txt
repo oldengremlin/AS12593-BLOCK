@@ -1,4 +1,77 @@
 
 
 
+as-block:       AS44170 - AS45055
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2023-06-14T15:02:10Z
+last-modified:  2023-06-14T15:02:10Z
+source:         RIPE
+
+
+
+aut-num:        AS44387
+as-name:        REEDLAN-AS
+remarks:        ISP REEDLAN
+org:            ORG-PRS4-RIPE
+remarks:        ------------------- PEERS -------------------
+import:         from AS201776 action pref=100; accept ANY
+export:         to AS201776 announce AS-REEDLAN
+import:         from AS6789 action pref=100; accept ANY
+export:         to AS6789 announce AS-REEDLAN
+remarks:        ------------------- IX -------------------
+import:         from AS43222 action pref=200; accept AS-CRIMEA-IX
+export:         to AS43222 announce AS-REEDLAN
+import:         from AS39751 action pref=100; accept ANY
+export:         to AS39751 announce AS-REEDLAN
+remarks:        ------------------- PEERING -------------------
+import:         from AS41762 action pref=20; accept AS41762
+export:         to AS41762 announce ANY
+remarks:        ------------------- -------------------
+admin-c:        IRN5-RIPE
+tech-c:         IRN5-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         REEDLAN-MNT
+created:        2008-01-14T14:09:29Z
+last-modified:  2020-04-09T11:18:58Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-LKP1-RIPE
+
+organisation:   ORG-PRS4-RIPE
+org-name:       PE Radashevsky Sergiy Oleksandrovich
+country:        UA
+descr:          ISP ReedLan
+org-type:       OTHER
+address:        Korchagin str 52, office 40,
+address:        Sevastopol 299059, Russia
+phone:          +7 8692 950210
+phone:          +7 8692 950211
+admin-c:        IRN5-RIPE
+tech-c:         IRN5-RIPE
+abuse-c:        AC29096-RIPE
+created:        2008-01-09T08:36:49Z
+last-modified:  2022-12-01T16:43:48Z
+source:         RIPE # Filtered
+mnt-by:         REEDLAN-MNT
+mnt-ref:        REEDLAN-MNT
+remarks:        ISP ReedLan
+remarks:        http://www.reedlan.com
+
+role:           ISP REEDLAN NOC
+address:        Korchagin str 52, office 40,
+address:        Sevastopol 299059, Russia
+phone:          +7 8692 950210
+admin-c:        RS3979-RIPE
+tech-c:         RA1205-RIPE
+abuse-mailbox:  abuse-mail@reedlan.com
+nic-hdl:        IRN5-RIPE
+created:        2008-01-09T08:18:00Z
+last-modified:  2015-06-10T17:09:36Z
+source:         RIPE # Filtered
+mnt-by:         REEDLAN-MNT
+remarks:        http://www.reedlan.com
+
+
 

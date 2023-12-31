@@ -1,4 +1,171 @@
 
 
 
+as-block:       AS31246 - AS31618
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:33Z
+last-modified:  2018-11-22T15:27:33Z
+source:         RIPE
+
+
+
+aut-num:        AS31257
+as-name:        ORIONNET-KRK
+remarks:        Orion Telecom LLC AS
+org:            ORG-MNL1-RIPE
+remarks:        ----------------------------------------------------
+remarks:        UPSTREAMS
+remarks:        ----------------------------------------------------
+import:         from AS20485 accept ANY
+import:         from AS31133 accept ANY
+import:         from as48858 accept ANY
+import:         from AS3216 accept ANY
+import:         from AS9049 accept ANY
+import:         from AS12389 accept ANY
+export:         to AS20485 announce AS-ORIONNET
+export:         to AS9049 announce AS-ORIONNET
+export:         to AS31133 announce AS-ORIONNET
+export:         to AS48858 announce AS-ORIONNET
+export:         to AS3216 announce AS-ORIONNET
+export:         to AS12389 announce AS-ORIONNET
+remarks:        ----------------------------------------------------
+remarks:        IX
+remarks:        ----------------------------------------------------
+import:         from AS13094 accept ANY
+import:         from AS60430 accept AS-RED-IX-PEERS
+import:         from AS60763 accept AS-SIBIR-IX
+export:         to AS13094 announce AS-ORIONNET
+export:         to AS60430 announce AS-ORIONNET
+export:         to AS60763 announce AS-ORIONNET
+remarks:        ----------------------------------------------------
+remarks:        CUSTOMERS
+remarks:        ----------------------------------------------------
+import:         from AS50439 accept AS50439
+import:         from AS50427 accept AS-ABAKANNET
+import:         from AS204137 accept AS-ORIONNET-IRK
+import:         from AS201970 accept AS201970
+import:         from AS209867 accept AS209867
+import:         from AS51756 accept AS51756
+import:         from AS60980 accept AS60980
+export:         to AS50439 announce ANY
+export:         to AS50427 announce ANY
+export:         to AS201970 announce ANY
+export:         to AS209867 announce ANY
+export:         to AS51756 announce ANY
+export:         to AS204137 announce ANY
+export:         to AS60980 announce ANY
+import:         from AS48699 accept AS48699
+export:         to AS48699 announce ANY
+remarks:        ====================================================
+remarks:        BGP COMMUNITIES
+remarks:        ----------------------------------------------------
+remarks:        Communities for prefix classification
+remarks:        ----------------------------------------------------
+remarks:        All inbound prefixes are marked with BGP communities
+remarks:        which describe their source and geographical region.
+remarks:        The format for the second component of community
+remarks:        (number after 31257:) is set at five digits.
+remarks:        This format is 31257:SNNRR, where the fields are:
+remarks:        S - source of the prefix:
+remarks:        1 - Customer
+remarks:        2 - Upstream
+remarks:        3 - International peer
+remarks:        4 - Russian peer
+remarks:        NN - Upstream, peer or customer:
+remarks:        Customers:
+remarks:        01 - BGP with Russian Internet Access
+remarks:        11 - BGP with Global Internet Access
+remarks:        Upstreams:
+remarks:        05 - TTK (AS20485)
+remarks:        10 - Megafon (AS31133)
+remarks:        99 - All Upstreams
+remarks:        Russian peers:
+remarks:        99 - All Russian Peers
+remarks:        RR - Geographical region code:
+remarks:        01 - Krasnoyarsk
+remarks:        02 - Irkutsk
+remarks:        03 - Kansk
+remarks:        ----------------------------------------------------
+remarks:        Communities for prefix control
+remarks:        ----------------------------------------------------
+remarks:        Customers may control prefixes that they announce
+remarks:        to Orion telecom by eBGP.
+remarks:        You can use communities that prepend prefix path
+remarks:        with additional AS hops or deny it announcement to
+remarks:        any Upstream or Peer. To prepand or deny prefix
+remarks:        use 31257:5DNNA, where:
+remarks:        D - destination of the prepend or deny action:
+remarks:        2 - Upstreams
+remarks:        3 - International peers
+remarks:        4 - Russian peers
+remarks:        9 - Upstreams and Peers
+remarks:        NN - Upstream or peer number:
+remarks:        Upstreams:
+remarks:        05 - TTK (AS20485)
+remarks:        10 - Megafon (AS31133)
+remarks:        99 - All Upstreams
+remarks:        Russian peers:
+remarks:        99 - All Russian Peers
+remarks:        A - action:
+remarks:        0 - don't announce prefix
+remarks:        1 - announce with one prepend
+remarks:        2 - announce with two times prepend
+remarks:        3 - announce with three times prepend
+remarks:        4 - announce with four times prepend
+remarks:        5 - announce with five times prepend
+remarks:        ----------------------------------------------------
+remarks:        We filter inbound prefixes smaller than /24
+remarks:        Looking-glass: https://lg.orionnet.ru/
+remarks:        ----------------------------------------------------
+remarks:        ====================================================
+admin-c:        ORNN2-RIPE
+tech-c:         ORNN2-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MORNING-MNT
+created:        2004-03-31T12:46:47Z
+last-modified:  2022-04-12T03:38:36Z
+source:         RIPE
+
+organisation:   ORG-MNL1-RIPE
+org-name:       Orion Telecom LLC
+country:        RU
+org-type:       LIR
+address:        Murmanskaja, 54
+address:        654002
+address:        Novokuznetsk
+address:        RUSSIAN FEDERATION
+phone:          +73912000000
+fax-no:         +73912000000
+abuse-c:        ORNN2-RIPE
+admin-c:        ORNN2-RIPE
+mnt-ref:        MORNING-MNT
+mnt-ref:        IP-RIPE
+mnt-ref:        mnt-ru-scorpion-1
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MORNING-MNT
+created:        2004-04-17T11:55:20Z
+last-modified:  2023-12-13T02:18:05Z
+source:         RIPE # Filtered
+tech-c:         ORNN2-RIPE
+
+role:           Orion telecom NOC
+address:        LLC Orion telecom
+address:        660017, Russian Federation, Krasnoyarsk city
+address:        Lenina street 113, office 100
+nic-hdl:        ORNN2-RIPE
+mnt-by:         MORNING-MNT
+created:        2021-02-12T05:47:56Z
+last-modified:  2021-02-12T05:54:34Z
+source:         RIPE # Filtered
+fax-no:         +73912000000
+admin-c:        HOT777
+tech-c:         HOT777
+abuse-mailbox:  hostmanager@orionnet.ru
+phone:          +73912000000
+
+
 
