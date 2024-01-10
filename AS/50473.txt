@@ -16,21 +16,24 @@ as-name:        ECO-AS
 org:            ORG-AC64-RIPE
 remarks:        === UPLINKS START ===
 remarks:        Filanco Cloud-IX AS29076
-import:         from AS29076 action pref=105; accept ANY
+import:         from AS29076 action pref=109; accept ANY
 export:         to AS29076 announce AS-ECO
+remarks:        INETCOM AS35598
+import:         from AS35598 action pref=110; accept ANY
+export:         to AS35598  announce AS-ECO
 remarks:        MEGAFON AS31133
 import:         from AS31133 action pref=110; accept ANY
 export:         to AS31133 announce AS-ECO
 remarks:        RASCOM AS20764
 import:         from AS20764 action pref=110; accept ANY
 export:         to AS20764 announce AS-ECO
-remarks:        iHome AS25478
-import:         from AS25478 action pref=110; accept ANY
-export:         to AS25478 announce AS-ECO
+remarks:        WIX AS50384
+import:         from AS50384 action pref=900; accept ANY
+export:         to AS50384 announce AS-ECO
 remarks:        === UPLINKS END ===
 remarks:        === IX START ===
 remarks:        PITER-IX AS50817
-import:         from AS50817 action pref=1100; accept ANY
+import:         from AS50817 action pref=900; accept ANY
 export:         to AS50817 announce AS-ECO
 remarks:        DATA-IX AS50952
 import:         from AS50952 action pref=900; accept AS-DATAIX
@@ -135,7 +138,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ECO-MNT
 created:        2010-01-22T10:51:54Z
-last-modified:  2023-11-10T12:48:46Z
+last-modified:  2024-01-09T13:14:01Z
 source:         RIPE
 
 organisation:   ORG-AC64-RIPE
