@@ -16,8 +16,8 @@ as-name:        UCARU-AS
 remarks:        ISP UCA Networks
 remarks:
 remarks:        RETN
-import:         from AS9002 accept ANY;
-export:         to AS9002 announce AS-UCANET;
+import:         from AS57304 accept ANY;
+export:         to AS57304 announce AS-UCANET;
 remarks:
 remarks:        TTK
 import:         from AS20485 accept ANY;
@@ -115,8 +115,8 @@ remarks:        IPv6 Routing Policy
 remarks:        ---------------------------------------------
 remarks:
 remarks:        Retn
-mp-import:      afi ipv6.unicast from AS9002 accept ANY
-mp-export:      afi ipv6.unicast to AS9002 announce AS-UCANETv6
+mp-import:      afi ipv6.unicast from AS57304 accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-UCANETv6
 remarks:
 remarks:        CITYTELECOM (Filanco)
 mp-import:      afi ipv6.unicast from AS29076 accept ANY
@@ -251,7 +251,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         UCARU-MNT
 created:        2007-07-26T11:43:21Z
-last-modified:  2023-05-11T11:12:55Z
+last-modified:  2024-01-11T09:08:13Z
 source:         RIPE # Filtered
 
 organisation:   ORG-KL26-RIPE
