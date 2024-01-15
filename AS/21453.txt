@@ -53,9 +53,6 @@ export:         to AS50952 announce AS-FLEX
 remarks:        GLOBAL-IX
 import:         from AS31500 action pref=250; accept ANY
 export:         to AS31500 announce AS-FLEX
-remarks:        W-IX
-import:         from AS25478 action pref=250; accept ANY
-export:         to AS25478 announce AS-FLEX
 remarks:        PITER-IX
 import:         from AS49869 action pref=250; accept ANY
 export:         to AS49869 announce AS-FLEX
@@ -134,18 +131,12 @@ export:         to AS34975 announce ANY
 remarks:        WELLCOMM
 import:         from AS50289 action pref=300; accept AS-WELLCOMM
 export:         to AS50289 announce ANY
-remarks:        T4D
-import:         from AS49608 action pref=300; accept AS49608
-export:         to AS49608 announce ANY
 remarks:        Telekom Uslugi
 import:         from AS57489 action pref=300; accept AS57489
 export:         to AS57489 announce ANY
 remarks:        Cifrabar
 import:         from AS51230 action pref=300; accept AS-ROSINTEH
 export:         to AS51230 announce ANY
-remarks:        RRS Ltd
-import:         from AS50626 action pref=300; accept AS50626
-export:         to AS50626 announce ANY
 remarks:        Bitrace
 import:         from AS49893 action pref=300; accept AS-BITRACE
 export:         to AS49893 announce ANY
@@ -194,9 +185,6 @@ mp-export:      afi ipv6.unicast to AS49869 announce AS-FLEXV6;
 remarks:        Piter IX SPB
 mp-import:      afi ipv6.unicast from AS50817 action pref=250; accept AS-PITER-IX;
 mp-export:      afi ipv6.unicast to AS50817 announce AS-FLEXV6;
-remarks:        W-IX
-mp-import:      afi ipv6.unicast from AS25478 action pref=250; accept ANY
-mp-export:      afi ipv6.unicast to AS25478 announce AS-FLEX
 remarks:        ------------------------------------------------
 remarks:        = IPv6 Peering routing policy
 remarks:        ------------------------------------------------
@@ -250,7 +238,6 @@ remarks:        21453:110x When advertising to Beeline
 remarks:        21453:120x When advertising to Rascom
 remarks:        21453:130x When advertising to Filanco
 remarks:        21453:140x When advertising to NSV
-remarks:        21453:170x When advertising to W-IX
 remarks:        21453:180x When advertising to DataIX
 remarks:        21453:190x When advertising to RETN-RU
 remarks:        21453:200x When advertising to GlobalIX
@@ -271,7 +258,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FLEX-MNT
 created:        2002-06-26T09:03:58Z
-last-modified:  2023-07-24T06:54:14Z
+last-modified:  2024-01-15T05:52:23Z
 source:         RIPE
 
 organisation:   ORG-FI3-RIPE
