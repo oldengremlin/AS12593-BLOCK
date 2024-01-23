@@ -14,25 +14,45 @@ source:         RIPE
 aut-num:        AS9123
 as-name:        TimeWeb-AS
 org:            ORG-TL188-RIPE
-import:         from AS3267 action pref=100; accept AS-PRIMEREG
-import:         from AS20764 action pref=100; accept ANY
-import:         from AS9002 action pref=100; accept ANY
-import:         from AS43690 action pref=100; accept AS-SPBROUTESERVER
-import:         from AS57724 action pref=100; accept ANY
 import:         from AS12389 action pref=100; accept ANY
-export:         to AS3267 announce AS-TIMEWEB
-export:         to AS20764 announce AS-TIMEWEB
-export:         to AS9002 announce AS-TIMEWEB
-export:         to AS43690 announce AS-TIMEWEB
-export:         to AS57724 announce AS-TIMEWEB
+import:         from AS20764 action pref=100; accept ANY
+import:         from AS57304 action pref=100; accept ANY
+import:         from AS57724 action pref=100; accept ANY
+import:         from AS174 action pref=100; accept ANY
+import:         from AS1299 action pref=100; accept ANY
+import:         from AS48716 action pref=100; accept ANY
+import:         from AS3267 action pref=200; accept AS-RUNNET
+import:         from AS35598 action pref=200; accept AS-INETCOM
+import:         from AS6695 action pref=150; accept ANY
+import:         from AS6777 action pref=150; accept ANY
+import:         from AS29076 action pref=150; accept ANY
+import:         from AS31500 action pref=150; accept ANY
+import:         from AS50952 action pref=150; accept ANY
+import:         from AS51789 action pref=300; accept AS51789
+import:         from AS215796 action pref=300; accept AS215796
 export:         to AS12389 announce AS-TIMEWEB
+export:         to AS20764 announce AS-TIMEWEB
+export:         to AS57304 announce AS-TIMEWEB
+export:         to AS57724 announce AS-TIMEWEB
+export:         to AS174 announce AS-TIMEWEB
+export:         to AS1299 announce AS-TIMEWEB
+export:         to AS31500 announce AS-TIMEWEB
+export:         to AS48716 announce AS-TIMEWEB
+export:         to AS3267 announce AS-TIMEWEB
+export:         to AS35598 announce AS-TIMEWEB
+export:         to AS6695 announce AS-TIMEWEB
+export:         to AS6777 announce AS-TIMEWEB
+export:         to AS29076 announce AS-TIMEWEB
+export:         to AS50952 announce AS-TIMEWEB
+export:         to AS51789 announce ANY
+export:         to AS215796 announce ANY
 admin-c:        TMWB-RIPE
 tech-c:         TMWB-RIPE
 status:         ASSIGNED
 mnt-by:         TIMEWEB-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2008-04-01T10:36:48Z
-last-modified:  2020-03-05T08:30:42Z
+last-modified:  2024-01-22T16:11:01Z
 source:         RIPE
 
 organisation:   ORG-TL188-RIPE

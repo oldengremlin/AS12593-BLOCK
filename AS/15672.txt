@@ -60,8 +60,10 @@ remarks:        Belgorod Upstreams
 remarks:        =============================================
 import:         { from AS29456 action pref=98; accept ANY; }
 import:         { from AS20485 action pref=100; accept ANY; }
+import:         { from AS8641 action pref=100; accept ANY; }
 export:         { to AS29456 announce AS-TZTELECOM; }
 export:         { to AS20485 announce AS-TZTELECOM; }
+export:         { to AS8641 announce AS-TZTELECOM; }
 remarks:        ========= COMMUNITY =========
 remarks:        actions for upstream:
 remarks:        set prepend x times: x=1,2,3,5
@@ -89,7 +91,7 @@ remarks:        x=9 - don't advertise; x=5 set prepend 5 times
 remarks:        15672:307x -MSK peer
 remarks:        informational:
 remarks:        15672:2010 - from COMCOR
-remarks:        15672:2020 - not used now
+remarks:        15672:2020 - from Nauka
 remarks:        15672:2030 - from Global IX
 remarks:        15672:2040 - from TRANS-TELECOM
 remarks:        15672:2050 - from CENTER-TELECOM
@@ -113,7 +115,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TZ-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2023-12-05T08:02:21Z
+last-modified:  2024-01-22T08:46:09Z
 source:         RIPE
 
 organisation:   ORG-TT4-RIPE
