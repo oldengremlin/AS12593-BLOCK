@@ -1,0 +1,287 @@
+
+
+
+
+aut-num:        AS29329
+as-name:        NODEX-AS
+org:            ORG-RL428-RIPE
+descr:          NODEX Fiber Optic Network Saint-Petersburg, Russia
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        Upstream Peers
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        Retn.net Peer
+remarks:        ---------------------------------------------------------
+import:         from AS9002 action pref=150; med=8; accept ANY
+export:         to AS9002 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Megafon Peer
+remarks:        ---------------------------------------------------------
+import:         from AS31133 action pref=150; med=8; accept ANY
+export:         to AS31133 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        IPV6 Upstream Peers
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        Retn.net Peer
+remarks:        ---------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS9002 action pref=150; med=8; accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Megafon Peer
+remarks:        ---------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS31133 action pref=150; med=8; accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        MSK-IX peers
+remarks:        ---------------------------------------------------------
+remarks:        Macomnet Peer
+remarks:        ---------------------------------------------------------
+import:         from AS8470 action pref=130; med=7; accept AS-MACOMNET
+export:         to AS8470 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        MSK-IX RS Peer
+remarks:        ---------------------------------------------------------
+import:         from AS8631 action pref=140; med=7; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Google Peer
+remarks:        ---------------------------------------------------------
+import:         from AS15169 action pref=130; med=7; accept AS-GOOGLE
+export:         to AS15169 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        HE Peer
+remarks:        ---------------------------------------------------------
+import:         from AS6939 action pref=130; med=7; accept AS-HURRICANE
+export:         to AS6939 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Apple Peer
+remarks:        ---------------------------------------------------------
+import:         from AS714 action pref=130; med=7; accept AS-APPLE
+export:         to AS714 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Microsoft Corporation Peer
+remarks:        ---------------------------------------------------------
+import:         from AS8075 action pref=130; med=7; accept AS-MICROSOFT
+export:         to AS8075 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Cloudflare Peer
+remarks:        ---------------------------------------------------------
+import:         from AS13335 action pref=130; med=7; accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        MSK-IX IPV6 peers
+remarks:        ---------------------------------------------------------
+remarks:        Macomnet Peer
+remarks:        ---------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS8470 action pref=130; med=7; accept AS-MACOMNET
+mp-export:      afi ipv6.unicast to AS8470 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        MSK-IX RS Peer
+remarks:        ---------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS8631 action pref=140; med=7; accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Google Peer
+remarks:        ---------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS15169 action pref=130; med=7; accept AS-GOOGLE
+mp-export:      afi ipv6.unicast to AS15169 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        HE Peer
+remarks:        ---------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS6939 action pref=130; med=7; accept AS-HURRICANE
+mp-export:      afi ipv6.unicast to AS6939 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Apple Peer
+remarks:        ---------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS714 action pref=130; med=7; accept AS-APPLE
+export:         to AS714 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Microsoft Corporation Peer
+remarks:        ---------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS8075 action pref=130; med=7; accept AS-MICROSOFT
+mp-export:      afi ipv6.unicast to AS8075 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Cloudflare Peer
+remarks:        ---------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS13335 action pref=130; med=7; accept AS-CLOUDFLARE
+mp-export:      afi ipv6.unicast to AS13335 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        SPB-IX peers
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        Relcom D.C Peer
+remarks:        ---------------------------------------------------------
+import:         from AS2118 action pref=130; med=6; accept AS-RELSPBSCUST
+export:         to AS2118 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        RusNet Peer
+remarks:        ---------------------------------------------------------
+import:         from AS3277 action pref=130; med=6; accept AS-RUSNETIX
+export:         to AS3277 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        SpbNit Peer
+remarks:        ---------------------------------------------------------
+import:         from AS8997 action pref=130; med=6; accept AS-SPBNIT
+export:         to AS8997 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Linkey Peer
+remarks:        ---------------------------------------------------------
+import:         from AS13002 action pref=130; med=6; accept AS-LINKEY
+export:         to AS13002 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        yandex Peer
+remarks:        ---------------------------------------------------------
+import:         from AS13238 action pref=130; med=6; accept AS-YANDEX
+export:         to AS13238 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Google Peer
+remarks:        ---------------------------------------------------------
+import:         from AS15169 action pref=130; med=6; accept AS-GOOGLE
+export:         to AS15169 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        CREDOLINK Peer
+remarks:        ---------------------------------------------------------
+import:         from AS20807 action pref=130; med=6; accept AS-CREDOLINK
+export:         to AS20807 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        WestCall Peer
+remarks:        ---------------------------------------------------------
+import:         from AS25408 action pref=130; med=6; accept AS-WestCallSPB
+export:         to AS25408 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        E-Telecom Peer
+remarks:        ---------------------------------------------------------
+import:         from AS31500 action pref=130; med=6; accept AS-ETELECOM-2
+export:         to AS31500 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Closed Joint Stock Company "Nienschanz" Peer
+remarks:        ---------------------------------------------------------
+import:         from AS39102 action pref=130; med=6; accept AS39102
+export:         to AS39102 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        ANDRES Peer
+remarks:        ---------------------------------------------------------
+import:         from AS39792 action pref=130; med=6; accept AS-ANDERS
+export:         to AS39792 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Nevalink Peer
+remarks:        ---------------------------------------------------------
+import:         from AS42668 action pref=130; med=6; accept AS42668
+export:         to AS42668 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        SPB-IX RS Peer
+remarks:        ---------------------------------------------------------
+import:         from AS43690 action pref=140; med=6; accept ANY
+export:         to AS43690 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        SPB-IX IPV6 peers
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        SPB-IX RS Peer
+remarks:        ---------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS43690 action pref=140; med=6; accept AS-SPBROUTESERVER
+mp-export:      afi ipv6.unicast to AS43690 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        SPB private peers
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        Runnet Peer
+remarks:        ---------------------------------------------------------
+import:         from AS3267 action pref=120; med=6; accept ANY
+export:         to AS3267 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        DataIx Peer
+remarks:        ---------------------------------------------------------
+import:         from AS50952 action pref=120; med=6; accept ANY
+export:         to AS50952 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        Google Peer
+remarks:        ---------------------------------------------------------
+import:         from AS15169 action pref=120; med=6; accept AS-GOOGLE
+export:         to AS15169 announce AS-NODEX
+mp-import:      afi ipv6.unicast from AS15169 action pref=120; med=6; accept AS-GOOGLE
+mp-export:      afi ipv6.unicast to AS15169 announce AS-NODEX
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        CUSTOMERS
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        Upitertelecom Ltd. Peer
+remarks:        ---------------------------------------------------------
+import:         from AS208954 action pref=50; accept AS-UPITERTELECOM
+export:         to AS208954 announce ANY
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        This Autonomous System is present at SPB-IX AND MSK-IX.
+remarks:        Peering Requests: peering@nodex.ru
+remarks:        Prefs:
+remarks:        50 - customers
+remarks:        120 - private peers
+remarks:        130 - direct sessions
+remarks:        140 - RS
+remarks:        150 - upsreams
+remarks:        ---------------------------------------------------------
+remarks:        BGP COMMUNITY SUPPORT FOR AS29329 TRANSIT CUSTOMERS:
+remarks:
+remarks:
+remarks:        Community Action
+remarks:        --------- ------------------------
+remarks:        --------- ANY---------------------
+remarks:        --------- ------------------------
+remarks:        29329:400x To all transit operators
+remarks:        29329:401x To all peers
+remarks:        --------- ------------------------
+remarks:        --------- Peers---------------
+remarks:        --------- ------------------------
+remarks:        29329:500x Peers at SPB-IX
+remarks:        29329:501x Private peers in SPB
+remarks:        29329:502x Peers at MSK-IX
+remarks:        29329:503x Private peers in MSK
+remarks:        29329:504x Peers at DATA-IX
+remarks:        29329:505x Peers at PITER-IX SPB
+remarks:        --------- ------------------------
+remarks:        --------- Upstreams---------------
+remarks:        --------- ------------------------
+remarks:        29329:800x Retn.net/9002
+remarks:        29329:801x Megafon/31133
+remarks:
+remarks:        Where x is number of prepends (x=1,2,3) and x=0 for not announce
+remarks:        ---------------------------------------------------------
+remarks:        Any other communities from 29329:* will be dropped on input.
+remarks:        Other communities sent from customer links will be transmitted transparently.
+remarks:        RPKI validation processed at any input. Invalid routes are dropped.
+remarks:        ---------------------------------------------------------
+remarks:        BGP COMMUNITY MEANING:
+remarks:
+remarks:        29329:500 Recived from SPB-IX peers
+remarks:        29329:510 Recived from DATA-IX peers
+remarks:        29329:520 Recived from PITER-IX SPB peers
+remarks:        29329:550 Recived from SPB private peers
+remarks:        29329:777 Route originated by NODEX
+remarks:        29329:800 Recived from MSK-IX peers
+remarks:        29329:850 Recived from MSK private peers
+remarks:        29329:2000 Full Transit Customer
+remarks:        29329:3000 RPKI valid
+remarks:        29329:3001 RPKI invalid
+remarks:        29329:3002 RPKI unknown
+remarks:
+remarks:        ---------------------------------------------------------
+admin-c:        AM46272-RIPE
+tech-c:         PK9341-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NODEX-NCC
+created:        2003-08-01T12:50:48Z
+last-modified:  2021-09-01T13:59:35Z
+source:         RIPE
+
+
+

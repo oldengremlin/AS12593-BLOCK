@@ -1,0 +1,68 @@
+
+
+
+
+aut-num:        AS197078
+as-name:        YARNET-AS
+org:            ORG-YL6-RIPE
+remarks:        UPSTREAMS
+import:         from AS20485 accept ANY
+import:         from AS28917 accept ANY
+import:         from AS8359 accept ANY
+export:         to AS28917 announce AS-YARNET
+export:         to AS20485 announce AS-YARNET
+export:         to AS8359  announce AS-YARNET
+remarks:        PEERS
+import:         from AS25592 action pref=150; accept AS25592
+import:         from AS197298 action pref=150; accept AS197298
+import:         from AS50384 accept any
+import:         from AS64600 action pref=150; accept AS8402 AS21191 AS9049 AS51819 AS45005 AS49558 AS43517 AS47911 AS59656 AS13095
+export:         to AS25592 announce AS197078
+export:         to AS21191 announce AS197078
+export:         to AS197298 announce AS197078
+export:         to AS28917 announce AS197078
+export:         to AS64600 announce AS197078
+remarks:        CUSTOMERS
+import:         from AS58112 accept AS58112
+import:         from AS52118 accept AS52118
+import:         from AS44425 accept AS44425 AS59656
+import:         from AS59656 accept AS59656
+import:         from AS48228 accept AS48228
+export:         to AS58112 announce ANY
+export:         to AS52118 announce ANY
+export:         to AS44425 announce ANY
+export:         to AS59656 announce ANY
+export:         to AS48228 announce ANY
+admin-c:        BXXL-RIPE
+tech-c:         BXXL-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         YARNET-MNT
+created:        2010-05-20T13:47:30Z
+last-modified:  2023-11-03T07:35:13Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS60172
+as-name:        YARNET-KALUGA
+org:            ORG-YL35-RIPE
+import:         from AS3216 accept ANY
+import:         from AS31133 accept ANY
+import:         from AS59924 accept ANY
+export:         to AS3216 announce AS60172
+export:         to AS31133 announce AS60172
+export:         to AS59924 announce AS60172
+import:         from AS15468 accept ANY
+export:         to AS15468 announce AS60172
+admin-c:        DS15007-RIPE
+tech-c:         DS15007-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         YARNET-MNT
+created:        2013-09-10T13:02:47Z
+last-modified:  2017-12-25T13:50:08Z
+source:         RIPE
+
+
+

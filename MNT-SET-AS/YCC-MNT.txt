@@ -1,0 +1,197 @@
+
+
+
+
+aut-num:        AS202058
+as-name:        PTK-AS
+org:            ORG-EL8-RIPE
+descr:          +-------------------------------------------------------
+descr:          | Upstream
+descr:          +-------------------------------------------------------
+descr:          -- GetNet-PermiX --
+import:         from AS205702 action pref=100; accept any
+export:         to AS205702 announce AS-PERMTK
+descr:          -- GetNet-Main --
+import:         from AS196691 action pref=100; accept any
+export:         to AS196691 announce AS-PERMTK
+descr:          -- DomRu --
+import:         from AS9049 action pref=100; accept any
+export:         to AS9049 announce AS-PERMTK
+admin-c:        EB159-RIPE
+tech-c:         EB159-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         YCC-MNT
+created:        2014-04-24T06:54:07Z
+last-modified:  2020-08-31T10:43:45Z
+source:         RIPE
+
+
+
+aut-num:        AS31499
+as-name:        YCC-AS
+descr:          +-------------------------------------------------------
+descr:          | Upstream
+descr:          +-------------------------------------------------------
+descr:          -- iHome --
+import:         from AS25478 action pref=100; accept any
+export:         to AS25478 announce AS-MOTIV
+descr:          -- Vimpelcom --
+import:         from AS3216 action pref=100; accept any
+export:         to AS3216 announce AS-MOTIV
+descr:          --GLOBAL-NET--
+import:         from AS31500 action pref=100; accept any
+export:         to AS31500 announce AS-MOTIV
+descr:          -- Rostelecom --
+import:         from AS12389 action pref=100; accept any
+export:         to AS12389 announce AS-MOTIV
+descr:          -- SVOLS --
+import:         from AS51028 action pref=100; accept any
+export:         to AS51028 announce AS-MOTIV
+descr:          +-------------------------------------------------------
+descr:          | Peering
+descr:          +-------------------------------------------------------
+remarks:        -- Uralwes --
+import:         from AS5563 action pref=100; accept AS-URAL
+export:         to AS5563 announce AS-MOTIV
+remarks:        -- MSK-IX --
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-MOTIV
+remarks:        -- Yandex --
+import:         from AS13238 action pref=100; accept AS-YANDEX
+export:         to AS13238 announce AS-MOTIV
+remarks:        -- TELENET --
+import:         from AS35154 action pref=100; accept AS-KABINET
+export:         to AS35154 announce AS-MOTIV
+remarks:        -- NSK-IX --
+import:         from AS42403 action pref=100; accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-MOTIV
+remarks:        -- RIPN-RU-EKT --
+import:         from AS42728 action pref=100; accept AS-NS9_RIPN_NET
+export:         to AS42728 announce AS-MOTIV
+remarks:        -- EKT-IX --
+import:         from AS43213 action pref=100; accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS-MOTIV
+remarks:        -- SPB-IX --
+import:         from AS43690 action pref=100; accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-MOTIV
+remarks:        -- W-IX --
+import:         from AS50384 action pref=100; accept ANY
+export:         to AS50384 announce AS-MOTIV
+remarks:        -- GoogleGC-main --
+import:         from AS15169 action pref=100; accept AS15169
+export:         to AS15169 announce AS-MOTIV
+remarks:        -- VKontakte --
+import:         from AS28709 action pref=100; accept AS28709
+export:         to AS28709 announce AS-MOTIV
+remarks:        -- Extrim-it --
+import:         from AS12668 action pref=100; accept AS12668
+export:         to AS12668 announce AS-MOTIV
+remarks:        -- DATA-IX --
+import:         from AS50952 action pref=100; accept AS50952
+export:         to AS50952 announce AS-MOTIV
+remarks:        -- K-Telecom --
+import:         from AS48642 action pref=100; accept AS48642
+export:         to AS48642 announce AS-MOTIV
+descr:          +-------------------------------------------------------
+descr:          | Clients
+descr:          +-------------------------------------------------------
+descr:          -- NETKOM --
+import:         from AS47974 action pref=100; accept AS47974
+export:         to AS47974 announce any
+descr:          -- IZHTELEPORT --
+import:         from AS58310 action pref=100; accept{ 91.109.226.0/23 }
+export:         to AS58310 announce any
+descr:          -- N-Telecom --
+import:         from AS60067 action pref=100; accept AS60067
+export:         to AS60067 announce any
+remarks:        +--------------------------------------------------------
+remarks:        | Motiv Telecom Community
+remarks:        +--------------------------------------------------------
+remarks:        | 31499:xxxy When advertising to UPSTREAM
+remarks:        +--------------------------------------------------------
+remarks:        | 31499:111y When advertising to Rostelecom (AS12389)
+remarks:        | 31499:114y When advertising to SVOLS (AS51028)
+remarks:        | 31499:115y When advertising to Vimpelcom (AS3216)
+remarks:        | 31499:117y When advertising to GLOBAL-NET (AS31500)
+remarks:        | 31499:118y When advertising to iHome (AS25478)
+remarks:        | ...
+remarks:        | 31499:106y When advertising to any UPSTREAM
+remarks:        | ...y=9 - do not advertise
+remarks:        | ...y=1,2,3 or 5 - prepend 31499 (1,2,3 or 5) times
+remarks:        | ...y=0 - no prepend 31499
+remarks:        +--------------------------------------------------------
+remarks:        | 31499:xxxy When advertising to PEER
+remarks:        +--------------------------------------------------------
+remarks:        | 31499:201y When advertising to EKT-IX (AS43213)
+remarks:        | 31499:203y When advertising to Uralwes (AS5563)
+remarks:        | 31499:204y When advertising to Yandex (AS13238)
+remarks:        | 31499:205y When advertising to Extrim-IT (AS12668)
+remarks:        | 31499:206y When advertising to GoogleGC-main (AS15169)
+remarks:        | 31499:207y When advertising to W-IX (AS50384)
+remarks:        | 31499:208y When advertising to VKontakte (AS28709)
+remarks:        | 31499:209y When advertising to TELENET (AS35154)
+remarks:        | 31499:214y When advertising to MSK-IX (AS8631)
+remarks:        | 31499:215y When advertising to NSK-IX (AS42403)
+remarks:        | 31499:216y When advertising to SPB-IX (AS43690)
+remarks:        | 31499:217y When advertising to DATA-IX (AS50952)
+remarks:        | 31499:218y When advertising to K-Telecom (AS48642)
+remarks:        | ...
+remarks:        | 31499:102y When advertising to any PEER
+remarks:        | ...y=9 - do not advertise
+remarks:        | ...y=1,2,3 or 5 - prepend 31499 (1,2,3 or 5) times
+remarks:        | ...y=0 - no prepend 31499
+remarks:        +--------------------------------------------------------
+remarks:        | 31499:xxxy When advertising to CLIENTS
+remarks:        +--------------------------------------------------------
+remarks:        | 31499:101y When advertising to any CLIENTS
+remarks:        | ...y=9 - do not advertise
+remarks:        | ...y=1,2,3 or 5 - prepend 31499 (1,2,3 or 5) times
+remarks:        | ...y=0 - no prepend 31499
+remarks:        +--------------------------------------------------------
+remarks:        | Communities for prefix classification
+remarks:        +--------------------------------------------------------
+remarks:        | All inbound prefixes are marked with BGP communities
+remarks:        | which describe their source and geographical region.
+remarks:        |
+remarks:        | Internet Upstream:
+remarks:        | 31499:9102 - Prefix from Rostelecom
+remarks:        | 31499:9104 - Prefix from SVOLS
+remarks:        | 31499:9105 - Prefix from Vimpelcom
+remarks:        | 31499:9107 - Prefix from GLOBAL-NET
+remarks:        | 31499:9108 - Prefix from iHome
+remarks:        | 31499:9006 - Prefix from All Upstream
+remarks:        |
+remarks:        | Internet Peers:
+remarks:        | 31499:9002 - Prefix from All Peers
+remarks:        | 31499:9201 - Prefix from EKT-IX
+remarks:        | 31499:9203 - Prefix from Uralwes
+remarks:        | 31499:9204 - Prefix from Yandex
+remarks:        | 31499:9205 - Prefix from Extrim-IT
+remarks:        | 31499:9206 - Prefix from GoogleGC-main
+remarks:        | 31499:9207 - Prefix from W-IX
+remarks:        | 31499:9208 - Prefix from VKontakte
+remarks:        | 31499:9209 - Prefix from TELENET
+remarks:        | 31499:9214 - Prefix from MSK-IX
+remarks:        | 31499:9215 - Prefix from NSK-IX
+remarks:        | 31499:9216 - Prefix from SPB-IX
+remarks:        | 31499:9217 - Prefix from DATA-IX
+remarks:        | 31499:9218 - Prefix from K-Telecom
+remarks:        |
+remarks:        | Internet Clients:
+remarks:        | 31499:9001 - Prefix from All Clients
+remarks:        |
+remarks:        +--------------------------------------------------------
+org:            ORG-EL8-RIPE
+admin-c:        EB159-RIPE
+tech-c:         EB159-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         YCC-MNT
+mnt-by:         MNT-GENE1
+created:        2004-05-28T13:22:52Z
+last-modified:  2022-09-23T11:34:09Z
+source:         RIPE
+
+
+

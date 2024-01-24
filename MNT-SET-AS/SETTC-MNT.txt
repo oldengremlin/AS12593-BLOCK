@@ -1,0 +1,90 @@
+
+
+
+
+aut-num:        AS24923
+as-name:        SETTC
+org:            ORG-CJSC19-RIPE
+remarks:        +[AS24923 AS-SETTC AS-SETTC-V6]--------------[_][o][X]
+remarks:        | ________________________________________________ |
+remarks:        | / _____/\_ _____/\__ ___/\__ ___/\_ ___ \ |
+remarks:        | \_____ \ | __)_ | | | | / \ \/ |
+remarks:        | / \ | \ | | | | \ \____|
+remarks:        |/_______ //______ / |___| |___| \______ /|
+remarks:        | \/ \/ \/ |
+remarks:        |----------------------------------------------------|
+remarks:        | General questions: noc@uvttk.ru |
+remarks:        | Spam & Abuse: abuse@uvttk.ru |
+remarks:        | Looking glass: http://lg.as24923.net |
+remarks:        |----------------------------------------------------|
+remarks:        |Use abuse@uvttk.ru e-mail address for spam and abuse|
+remarks:        |complaints.Mails for other addresses will be ignored|
+remarks:        +----------------------------------------------------
+remarks:        -----------UP Stream------------
+import:         from AS20485 action pref=100 ; accept ANY
+export:         to AS20485 announce AS-SETTC
+remarks:        -----------PEER Stream------------
+import:         from AS43727 action pref=100 ; accept AS-SETKT
+export:         to AS43727 announce AS-SETTC
+remarks:        -----------DOWN Stream------------
+import:         from AS49963 action pref=100; accept AS-BELRTS
+export:         to AS49963 announce ANY
+import:         from AS42368 action pref=100; accept AS42368
+export:         to AS42368 announce ANY
+import:         from AS12772 action pref=100; accept AS12772
+export:         to AS12772 announce ANY
+import:         from AS56557 action pref=100; accept AS56557
+export:         to AS56557 announce ANY
+import:         from AS197955 action pref=100; accept AS197955
+export:         to AS197955 announce ANY
+import:         from AS196991 action pref=100; accept AS196991
+export:         to AS196991 announce ANY
+import:         from AS197693 action pref=100; accept AS197693
+export:         to AS197693 announce ANY
+import:         from AS5553 action pref=100; accept AS5553
+export:         to AS5553 announce ANY
+import:         from AS198456 action pref=100; accept AS198456
+export:         to AS198456 announce ANY
+import:         from AS57609 action pref=100; accept AS57609
+export:         to AS57609 announce ANY
+import:         from AS57620 action pref=100; accept AS57620
+export:         to AS57620 announce ANY
+import:         from AS198764 action pref=100; accept AS198764
+export:         to AS198764 announce ANY
+import:         from AS52104 action pref=100; accept AS52104
+export:         to AS52104 announce ANY
+import:         from AS60591 action pref=100; accept AS60591
+export:         to AS60591 announce ANY
+import:         from AS60682 action pref=100; accept AS60682
+export:         to AS60682 announce ANY
+import:         from AS59557 action pref=100; accept AS59557
+export:         to AS59557 announce ANY
+import:         from AS199427 action pref=100; accept AS199427
+export:         to AS199427 announce ANY
+import:         from AS196991 action pref=100; accept AS196991
+export:         to AS196991 announce ANY
+import:         from AS198076 action pref=100; accept AS-LITEGROUP
+export:         to AS198076 announce ANY
+import:         from AS197349 action pref=100; accept AS197349
+export:         to AS197349 announce ANY
+import:         from AS62130 action pref=100; accept AS162130
+export:         to AS62130 announce ANY
+remarks:        -----------IPv6 Stream------------
+mp-import:      afi ipv6.unicast from AS20485 accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-SETTC-V6
+mp-import:      afi ipv6.unicast from AS43727 accept ANY
+mp-export:      afi ipv6.unicast to AS43727 announce AS-SETTC-V6
+mp-import:      afi ipv6.unicast from AS60591 accept AS60591
+mp-export:      afi ipv6.unicast to AS60591 announce ANY
+admin-c:        SENC-RIPE
+tech-c:         SENC-RIPE
+status:         ASSIGNED
+mnt-by:         TRANSTELECOM-MNT
+mnt-by:         SETTC-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2002-05-23T11:27:05Z
+last-modified:  2018-10-31T08:47:17Z
+source:         RIPE # Filtered
+
+
+

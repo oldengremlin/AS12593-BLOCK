@@ -1,0 +1,124 @@
+
+
+
+
+aut-num:        AS31357
+as-name:        TOMICA-AS
+descr:          Tomsk Information and Consulting Agency
+remarks:        -====== STROYPOARK ======-
+import:         from AS49987 action pref=100; accept AS49987 ;
+remarks:        -======= MEGAFON ========-
+import:         from AS31133 action pref=100; accept ANY
+remarks:        -======= MTS ========-
+import:         from AS8359 action pref=100; accept ANY
+remarks:        -======= ER-TELECOM ========-
+import:         from AS9049 action pref=100; accept ANY
+remarks:        -======= VIMPELCOM ========-
+import:         from AS3216 action pref=100; accept ANY
+remarks:        -====== STROYPOARK ======-
+export:         to AS49987 announce AS-TOMICA
+remarks:        -======= MTS ========-
+export:         to AS8359 announce AS-TOMICA
+remarks:        -======= MEGAFON ========-
+export:         to AS31133 announce AS-TOMICA
+remarks:        -======= ER-TELECOM ========-
+export:         to  AS9049 announce AS-TOMICA
+remarks:        -======= VIMPELCOM ========-
+export:         to AS3216 announce AS-TOMICA
+org:            ORG-LCIA1-RIPE
+admin-c:        TM458236-RIPE
+tech-c:         TM458236-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TOMICA-MNT
+created:        2004-04-23T13:58:34Z
+last-modified:  2023-11-26T15:03:23Z
+source:         RIPE
+
+
+
+aut-num:        AS49414
+descr:          AS Tomsk Internet Exchange
+as-name:        TSK-IX-AS
+org:            ORG-LT19-RIPE
+remarks:        -= FROM CLIENT Tomsk Internet Exchange =-
+remarks:        === TOMICA AS31357 ===
+import:         from AS31357 action pref=50; accept ANY
+remarks:        === TOMGATE ==
+import:         from AS39701 action pref=50; accept AS39701;
+export:         to AS39701 announce as-tomica-ix;
+remarks:        === TGPU ===
+import:         from AS50433 action pref=50; accept AS50433;
+export:         to AS50433 announce as-tomica-ix;
+remarks:        === TPU ===
+import:         from AS5567 action pref=50; accept AS5567;
+export:         to AS5567 announce as-tomica-ix;
+remarks:        === NEOTELECOM ===
+import:         from AS44417 action pref=50; accept AS44417;
+export:         to AS44417 announce as-tomica-ix;
+remarks:        === TUSUR ===
+import:         from AS41566 action pref=50; accept AS41566;
+export:         to AS41566 announce as-tomica-ix;
+remarks:        === DIGITAL SERVICE ===
+import:         from AS31314 action pref=50; accept AS31314;
+export:         to AS31314 announce as-tomica-ix;
+remarks:        === ROSTELECOM ===
+import:         from AS12389 action pref=50; accept AS12389;
+export:         to AS12389 announce as-tomica-ix;
+remarks:        === KAPITAL SVYAZ ===
+import:         from AS51456 action pref=50; accept AS51456;
+export:         to AS51456 announce as-tomica-ix;
+remarks:        === ALLIANCE TELECOM
+import:         from AS49293 action pref=50; accept AS49293;
+export:         to AS49293 announce as-tomica-ix;
+remarks:        === ERTELECOM ===
+import:         from AS9049 action pref=50; accept AS-TOMSK;
+export:         to AS9049 announce as-tomica-ix;
+remarks:        === NETCOM ===
+import:         from AS56707 action pref=50; accept AS56707;
+export:         to AS56707 announce as-tomica-ix;
+remarks:        === TRANSTELECOM ===
+import:         from AS21127 action pref=50; accept AS21127;
+export:         to AS21127 announce as-tomica-ix;
+remarks:        === OCAIR ===
+import:         from AS48316 action pref=50; accept AS48316;
+export:         to AS48316 announce as-tomica-ix;
+remarks:        === SIBINET ===
+import:         from AS35411 action pref=50; accept AS35411;
+export:         to AS35411 announce as-tomica-ix;
+remarks:        === NETPOINT ===
+import:         from AS51740 action pref=50; accept AS51740;
+export:         to AS51740 announce as-tomica-ix;
+admin-c:        TM458236-RIPE
+tech-c:         TM458236-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TOMICA-MNT
+created:        2009-06-04T08:54:56Z
+last-modified:  2022-02-28T10:18:45Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-LCIA1-RIPE
+
+
+
+aut-num:        AS50694
+as-name:        WETNET-AS
+org:            ORG-WN12-RIPE
+import:         from AS31357 action pref=100; accept ANY
+export:         to AS31357 announce AS50694
+import:         from AS29047 action pref=90; accept ANY
+export:         to AS29047 announce AS50694
+import:         from AS51190 action pref=80; accept ANY
+export:         to AS51190 announce AS50694
+admin-c:        PZ1755-RIPE
+tech-c:         PZ1755-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TOMICA-MNT
+created:        2010-03-10T12:59:14Z
+last-modified:  2018-09-04T10:49:10Z
+source:         RIPE
+sponsoring-org: ORG-LCIA1-RIPE
+
+
+

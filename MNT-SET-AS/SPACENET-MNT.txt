@@ -1,0 +1,34 @@
+
+
+
+
+aut-num:        AS34300
+as-name:        SPACENET-AS
+descr:          Internet Service Provider
+descr:          Moscow, Russia
+descr:          *** Imports ***
+import:         from AS28917 action pref=150; accept ANY
+import:         from AS8595 action pref=150; accept ANY
+import:         from AS8631 action pref=150; accept AS-MSKROUTESERVER
+import:         from AS50384 action pref=150; accept ANY
+import:         from AS50817 action pref=190; accept ANY
+import:         from AS25478 action pref=150; accept ANY
+descr:          *** Exports ***
+export:         to AS28917 announce AS-RU-SPACENET
+export:         to AS50817 announce AS-RU-SPACENET
+export:         to AS8595 announce AS-RU-SPACENET
+export:         to AS8631 announce AS-RU-SPACENET
+export:         to AS50384 announce AS-RU-SPACENET
+export:         to AS25478 announce AS-RU-SPACENET
+admin-c:        ICC2-RIPE
+tech-c:         ICC2-RIPE
+org:            ORG-JI6-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SPACENET-MNT
+created:        2004-12-10T17:40:44Z
+last-modified:  2019-10-15T13:40:14Z
+source:         RIPE
+
+
+

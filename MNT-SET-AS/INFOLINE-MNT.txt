@@ -1,0 +1,73 @@
+
+
+
+
+aut-num:        AS31514
+as-name:        INF-NET-AS
+org:            ORG-OTN1-RIPE
+remarks:        --- Upstreams ---
+remarks:        Comcor
+import:         from AS8732 action pref=100; accept ANY
+export:         to AS8732 announce as-set-INFOLINE
+remarks:        INETCOM
+import:         from AS35598 action pref=100; accept ANY
+export:         to AS35598 announce as-set-INFOLINE
+remarks:        --- Peers ---
+remarks:        MSK-IX
+import:         from AS8631 action pref=150; accept AS8631
+export:         to AS8631 announce as-set-INFOLINE
+remarks:        Piter-IX
+import:         from AS49869 action pref=150; accept AS49869
+export:         to AS49869 announce as-set-INFOLINE
+remarks:        Eurasia Peering IX
+import:         from AS56931 action pref=150; accept AS56931
+export:         to AS56931 announce as-set-INFOLINE
+remarks:        Goooooooooooogle
+import:         from AS15169 action pref=150; accept AS15169
+export:         to AS15169 announce as-set-INFOLINE
+remarks:        --- Customers ---
+remarks:        Speedyline
+import:         from AS49342 action pref=150; accept AS-SPEEDYLINE
+export:         to AS49342 announce ANY
+remarks:        UNITLINE_MSK
+import:         from AS34580 action pref=100; accept AS34580
+export:         to AS34580 announce ANY
+admin-c:        IFLN-RIPE
+tech-c:         IFLN-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INFOLINE-MNT
+created:        2004-06-03T13:10:07Z
+last-modified:  2023-04-24T10:21:12Z
+source:         RIPE
+
+
+
+aut-num:        AS47240
+as-name:        TRIVON-AS
+org:            ORG-OTN1-RIPE
+remarks:        Upstreams
+remarks:        -----PJSC Rostelecom-----
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS47240
+remarks:        -----BELSVYAZ-----
+import:         from AS29456 accept ANY
+export:         to AS29456 announce AS47240
+remarks:        -----Regional TeleSystem-----
+import:         from AS49963 accept ANY
+export:         to AS49963 announce AS47240
+remarks:        -----COMLINK-----
+import:         from AS47594 action pref=85; accept ANY
+export:         to AS47594 announce AS47240
+admin-c:        SB9080-RIPE
+tech-c:         SB9080-RIPE
+status:         ASSIGNED
+mnt-by:         TRIVON-MNT
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INFOLINE-MNT
+created:        2008-05-22T10:46:18Z
+last-modified:  2023-03-14T12:55:41Z
+source:         RIPE # Filtered
+
+
+

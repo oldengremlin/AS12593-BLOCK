@@ -1,0 +1,70 @@
+
+
+
+
+aut-num:        AS3226
+as-name:        MARK-ITT-AS
+org:            ORG-CCM1-RIPE
+remarks:        === Upstreams ===
+remarks:        --- MEGAFON ---
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-MARK-ITT
+mp-import:      afi ipv4.unicast from AS31133 accept ANY
+mp-export:      afi ipv4.unicast to AS31133 announce AS-MARK-ITT
+mp-import:      afi ipv6.unicast from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-MARK-ITT
+remarks:        ---IHOME---
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS-MARK-ITT
+mp-import:      afi ipv4.unicast from AS25478 accept ANY
+mp-export:      afi ipv4.unicast to AS25478 announce AS-MARK-ITT
+mp-import:      afi ipv6.unicast from AS25478 accept ANY
+mp-export:      afi ipv6.unicast to AS25478 announce AS-MARK-ITT
+remarks:        ---IHOME_W-IX---
+import:         from AS50384 accept ANY
+export:         to AS50384 announce AS-MARK-ITT
+mp-import:      afi ipv4.unicast from AS50384 accept ANY
+mp-export:      afi ipv4.unicast to AS50384 announce AS-MARK-ITT
+mp-import:      afi ipv6.unicast from AS50384 accept ANY
+mp-export:      afi ipv6.unicast to AS50384 announce AS-MARK-ITT
+remarks:        ---SMOTRESHKA---
+import:         from AS200976 accept AS200976
+export:         to AS200976 announce AS-MARK-ITT
+mp-import:      afi ipv4.unicast from AS200976 accept AS200976
+mp-export:      afi ipv4.unicast to AS200976 announce AS-MARK-ITT
+remarks:        === Downstreams ===
+remarks:        --- RadioLink ---
+import:         from AS38959 accept AS34983 AND NOT {0.0.0.0/0}
+export:         to AS38959 announce ANY
+remarks:        --- TangoTelecom ---
+import:         from AS43781 accept AS43781 AND NOT {0.0.0.0/0}
+export:         to AS43781 announce ANY
+remarks:        --- GarantTelecom ---
+import:         from AS52217 accept AS52217 AND NOT {0.0.0.0/0}
+export:         to AS52217 announce ANY
+remarks:        --- StroyNet ---
+import:         from AS49557 accept AS49557 AND NOT {0.0.0.0/0}
+export:         to AS49557 announce AS3226 AND {0.0.0.0/0};
+remarks:        --- OilTelecom ---
+import:         from AS196685 accept AS196685 AND NOT {0.0.0.0/0}
+export:         to AS196685 announce AS3226 AND {0.0.0.0/0}
+remarks:        --- BystroBank ---
+import:         from AS199954 accept AS199954 AND NOT {0.0.0.0/0}
+export:         to AS199954 announce ANY
+remarks:        -- TechnoTorg ---
+import:         from AS207380 accept AS207380 AND NOT {0.0.0.0/0}
+export:         to AS207380 announce ANY
+remarks:        --- Severnoe volokno ---
+import:         from AS51028 accept ANY AND NOT {0.0.0.0/0}
+export:         to AS51028 announce ANY
+admin-c:        AEAE1-RIPE
+tech-c:         MI380-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MARK-ITT-MNT
+created:        2002-09-23T15:18:59Z
+last-modified:  2020-05-18T13:21:21Z
+source:         RIPE # Filtered
+
+
+

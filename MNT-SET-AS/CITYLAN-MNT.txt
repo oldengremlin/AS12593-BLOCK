@@ -1,0 +1,67 @@
+
+
+
+
+aut-num:        AS204076
+as-name:        citylan-east
+org:            ORG-CA33-RIPE
+import:         from AS25308 accept ANY
+export:         to AS25308 announce AS204076
+import:         from AS56806 accept ANY
+export:         to AS56806 announce AS204076
+admin-c:        ssg21-ripe
+tech-c:         ssg21-ripe
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CITYLAN-MNT
+created:        2022-07-06T14:02:33Z
+last-modified:  2022-07-06T14:02:33Z
+source:         RIPE
+
+
+
+aut-num:        AS208219
+as-name:        ROSTRANSMODERNIZATSIYA-AS
+org:            ORG-FA1007-RIPE
+import:         from as25308 accept ANY
+export:         to as25308 announce AS208219
+import:         from as28917 accept ANY
+export:         to as28917 announce AS208219
+admin-c:        AK20895-RIPE
+tech-c:         AK20895-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CITYLAN-MNT
+created:        2019-09-13T06:24:55Z
+last-modified:  2020-11-16T17:54:43Z
+source:         RIPE
+sponsoring-org: ORG-CA33-RIPE
+
+
+
+aut-num:        AS25308
+as-name:        CITYLAN-AS
+org:            ORG-CA33-RIPE
+remarks:        CityLanCom, ISP, Moscow, Russia
+import:         from AS28917 action pref=900; accept ANY
+import:         from AS35598 action pref=900; accept ANY
+export:         to AS28197 announce AS-CITYLAN
+export:         to AS35598 announce AS-CITYLAN
+import:         from AS208219 action pref=500; accept AS208219
+export:         to AS208219 announce ANY
+import:         from AS57268 action pref=500; accept AS57268
+export:         to AS57268 announce ANY
+import:         from AS198523 action pref=500; accept AS198523
+export:         to AS198523 announce ANY
+admin-c:        AD15965-RIPE
+tech-c:         AK20895-RIPE
+tech-c:         KK8216-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CITYLAN-MNT
+created:        2002-09-26T13:46:09Z
+last-modified:  2023-09-02T13:03:11Z
+source:         RIPE
+
+
+

@@ -1,0 +1,690 @@
+
+
+
+
+aut-num:        AS199424
+as-name:        GRANDCAPITAL
+org:            ORG-GC333-RIPE
+sponsoring-org: ORG-TL254-RIPE
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS199424
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS199424
+admin-c:        AG26977-RIPE
+tech-c:         MS55453-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2023-03-15T13:01:16Z
+last-modified:  2023-03-15T13:01:16Z
+source:         RIPE
+
+
+
+aut-num:        AS199599
+as-name:        CIREX
+org:            ORG-TL254-RIPE
+remarks:        Telecom Birzha, LLC
+remarks:        Moscow, Russia
+remarks:        =============================================
+remarks:        ************ IPv4 Routing Policy ************
+remarks:        =============================================
+remarks:        UPLINKS
+remarks:        ---------------------------------------------
+import:         from AS174 accept ANY
+import:         from AS3216 accept ANY
+import:         from AS12389 accept ANY
+import:         from AS20485 accept ANY
+import:         from AS3356 accept ANY
+import:         from AS9002 accept ANY
+import:         from AS201706 accept ANY
+export:         to AS174 announce AS-CIREX
+export:         to AS3216 announce AS-CIREX
+export:         to AS12389 announce AS-CIREX
+export:         to AS20485 announce AS-CIREX
+export:         to AS3356 announce AS-CIREX
+export:         to AS9002 announce AS-CIREX
+export:         to AS201706 announce AS-CIREX
+remarks:        ---------------------------------------------
+remarks:        PEERS
+remarks:        ---------------------------------------------
+import:         from AS6695 accept AS-DECIX
+import:         from AS8631 accept AS-MSKROUTESERVER
+import:         from AS203921 accept AS-ELBA-IX-ROUTESERVER
+export:         to AS6695 announce AS-CIREX
+export:         to AS8631 announce AS-CIREX
+export:         to AS203921 announce AS-CIREX
+remarks:        ---------------------------------------------
+remarks:        CUSTOMERS
+remarks:        ---------------------------------------------
+import:         from AS209119 accept AS209119
+import:         from AS207344 accept AS207344
+import:         from AS58207 accept AS58207
+import:         from AS57906 accept AS57906
+import:         from AS60944 accept AS60944
+import:         from AS209351 accept AS209351
+import:         from AS209382 accept AS209382
+import:         from AS208777 accept AS208777
+import:         from AS208047 accept AS208047
+import:         from AS207055 accept AS207055
+import:         from AS205750 accept AS205750
+import:         from AS202164 accept AS202164
+import:         from AS201138 accept AS201138
+import:         from AS201752 accept AS201752
+import:         from AS202801 accept AS202801
+import:         from AS202880 accept AS202880
+import:         from AS208453 accept AS208453
+import:         from AS60826 accept AS60826
+import:         from AS58342 accept AS58342
+import:         from AS57596 accept AS57596
+import:         from AS56627 accept AS56627
+import:         from AS51219 accept AS51219
+import:         from AS58229 accept AS58229
+import:         from AS50254 accept AS50254
+import:         from AS199444 accept AS199444
+import:         from AS197986 accept AS197986
+import:         from AS197695 accept AS197695
+import:         from AS61285 accept AS61285
+import:         from AS60379 accept AS60379
+import:         from AS51186 accept AS51186
+import:         from AS199126 accept AS199126
+import:         from AS61324 accept AS61324
+import:         from AS56364 accept AS56364
+import:         from AS50822 accept AS50822
+import:         from AS56975 accept AS56975
+import:         from AS57570 accept AS57570
+import:         from AS49729 accept AS49729
+import:         from AS49476 accept AS49476
+import:         from AS48282 accept AS48282
+import:         from AS47723 accept AS47723
+import:         from AS44704 accept AS44704
+import:         from AS42481 accept AS42481
+import:         from AS42762 accept AS42762
+import:         from AS42231 accept AS42231
+import:         from AS201916 accept AS201916
+import:         from AS199361 accept AS-CITYCONNECT
+import:         from AS61400 accept AS-NETRACK
+import:         from AS207692 accept AS207692
+import:         from AS205616 accept AS205616
+import:         from AS200122 accept AS200122
+import:         from AS202768 accept AS202768
+import:         from AS43226 accept AS-SAFEDATA
+import:         from AS201726 accept AS201726
+import:         from AS201848 accept AS201848
+import:         from AS49644 accept AS49644
+import:         from AS34485 accept AS34485
+import:         from AS20848 accept AS-RBC
+import:         from AS8846 accept AS8846
+import:         from AS60363 accept AS60363
+import:         from AS57645 accept AS57645
+import:         from AS201097 accept AS201097
+import:         from AS48287 accept AS-RUCENTER
+import:         from AS60216 accept AS-FAITID
+import:         from AS50040 accept AS50040
+import:         from AS49352 accept AS-LOGOL
+import:         from AS201265 accept AS201265
+import:         from AS200928 accept AS200928
+import:         from AS203749 accept AS203749
+import:         from AS200976 accept AS200976
+import:         from AS49675 accept AS49675
+import:         from AS205442 accept AS205442
+import:         from AS204315 accept AS204315
+import:         from AS43527 accept AS43527
+import:         from AS35083 accept AS35083
+import:         from AS50448 accept AS50448
+import:         from AS41775 accept AS41775
+import:         from AS56631 accept AS56631
+import:         from AS41815 accept AS41815
+import:         from AS59467 accept AS-WEZZET
+import:         from AS50339 accept AS50339
+import:         from AS202649 accept AS202649
+import:         from AS59811 accept AS59811
+import:         from AS49335 accept AS49335
+import:         from AS196641 accept AS196641
+import:         from AS205971 accept AS205971
+import:         from AS205963 accept AS205963
+import:         from AS211724 accept AS211724
+import:         from AS206968 accept AS206968
+import:         from AS206932 accept AS206932
+import:         from AS205853 accept AS205853
+import:         from AS212441 accept AS212441
+import:         from AS19551 accept AS-INCAPSULA
+import:         from AS60988 accept AS60988
+import:         from AS58341 accept AS58341
+import:         from AS43042 accept AS43042
+import:         from AS212016 accept AS212016
+import:         from AS203203 accept AS203203
+import:         from AS49002 accept AS49002
+import:         from AS47354 accept AS47354
+import:         from AS49675 accept AS49675
+import:         from AS200637 accept AS200637
+import:         from AS61378 accept AS61378
+import:         from AS60544 accept AS60544
+import:         from AS201804 accept AS201804
+import:         from AS48197 accept AS48197
+import:         from AS43399 accept AS43399
+import:         from AS205502 accept AS205502
+import:         from AS61280 accept AS61280
+import:         from AS209520 accept AS209520
+import:         from AS56842 accept AS56842
+import:         from AS210359 accept AS210359
+import:         from AS211247 accept AS211247
+export:         to AS58207 announce ANY
+export:         to AS57906 announce ANY
+export:         to AS202164 announce ANY
+export:         to AS201138 announce ANY
+export:         to AS201752 announce ANY
+export:         to AS201265 announce ANY
+export:         to AS209351 announce ANY
+export:         to AS208777 announce ANY
+export:         to AS207344 announce ANY
+export:         to AS207055 announce ANY
+export:         to AS208453 announce ANY
+export:         to AS208047 announce ANY
+export:         to AS207692 announce ANY
+export:         to AS205750 announce ANY
+export:         to AS205616 announce ANY
+export:         to AS202801 announce ANY
+export:         to AS60826 announce ANY
+export:         to AS212441 announce ANY
+export:         to AS202880 announce ANY
+export:         to AS58342 announce ANY
+export:         to AS57596 announce ANY
+export:         to AS56627 announce ANY
+export:         to AS51219 announce ANY
+export:         to AS58229 announce ANY
+export:         to AS199444 announce ANY
+export:         to AS197986 announce ANY
+export:         to AS197695 announce ANY
+export:         to AS60379 announce ANY
+export:         to AS60363 announce ANY
+export:         to AS199126 announce ANY
+export:         to AS211724 announce ANY
+export:         to AS212016 announce ANY
+export:         to AS61324 announce ANY
+export:         to AS61285 announce ANY
+export:         to AS60988 announce ANY
+export:         to AS56364 announce ANY
+export:         to AS43042 announce ANY
+export:         to AS50822 announce ANY
+export:         to AS50040 announce ANY
+export:         to AS50339 announce ANY
+export:         to AS56975 announce ANY
+export:         to AS57570 announce ANY
+export:         to AS49729 announce ANY
+export:         to AS49476 announce ANY
+export:         to AS48282 announce ANY
+export:         to AS47723 announce ANY
+export:         to AS44704 announce ANY
+export:         to AS43399 announce ANY
+export:         to AS42481 announce ANY
+export:         to AS42762 announce ANY
+export:         to AS42231 announce ANY
+export:         to AS34485 announce ANY
+export:         to AS201848 announce ANY
+export:         to AS201916 announce ANY
+export:         to AS199361 announce ANY
+export:         to AS61400 announce ANY
+export:         to AS60944 announce ANY
+export:         to AS60544 announce ANY
+export:         to AS203749 announce ANY
+export:         to AS200122 announce ANY
+export:         to AS200976 announce ANY
+export:         to AS202768 announce ANY
+export:         to AS209382 announce ANY
+export:         to AS43226 announce ANY
+export:         to AS201726 announce ANY
+export:         to AS49644 announce ANY
+export:         to AS20848 announce ANY
+export:         to AS8846 announce ANY
+export:         to AS51186 announce ANY
+export:         to AS57645 announce ANY
+export:         to AS201097 announce ANY
+export:         to AS48287 announce ANY
+export:         to AS60216 announce ANY
+export:         to AS50254 announce ANY
+export:         to AS49352 announce ANY
+export:         to AS49335 announce ANY
+export:         to AS200928 announce ANY
+export:         to AS49675 announce ANY
+export:         to AS205442 announce ANY
+export:         to AS204315 announce ANY
+export:         to AS43527 announce ANY
+export:         to AS35083 announce ANY
+export:         to AS50448 announce ANY
+export:         to AS41775 announce ANY
+export:         to AS56631 announce ANY
+export:         to AS41815 announce ANY
+export:         to AS59467 announce ANY
+export:         to AS202649 announce ANY
+export:         to AS59811 announce ANY
+export:         to AS196641 announce ANY
+export:         to AS206968 announce ANY
+export:         to AS206932 announce ANY
+export:         to AS205971 announce ANY
+export:         to AS205963 announce ANY
+export:         to AS205853 announce ANY
+export:         to AS19551 announce ANY
+export:         to AS58341 announce ANY
+export:         to AS203203 announce ANY
+export:         to AS49002 announce ANY
+export:         to AS47354 announce ANY
+export:         to AS49675 announce ANY
+export:         to AS200637 announce ANY
+export:         to AS61378 announce ANY
+export:         to AS48197 announce ANY
+export:         to AS209119 announce ANY
+export:         to AS201804 announce ANY
+export:         to AS205502 announce ANY
+export:         to AS61280 announce ANY
+export:         to AS209520 announce ANY
+export:         to AS56842 announce ANY
+export:         to AS210359 announce ANY
+export:         to AS211247 announce ANY
+remarks:        ============================================================
+remarks:        ******************** IPv6 Routing Policy *******************
+remarks:        ============================================================
+remarks:        UPSTREAMS
+remarks:        ------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS3216 action pref=50; accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-CIREX-IPV6
+mp-import:      afi ipv6.unicast from AS20485 action pref=50; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-CIREX-IPV6
+mp-import:      afi ipv6.unicast from AS20485 action pref=50; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-CIREX-IPV6
+mp-import:      afi ipv6.unicast from AS8359 action pref=50; accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-CIREX-IPV6
+remarks:        --------------------------------------------------------------
+remarks:        PEERS
+remarks:        --------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS6695 action pref=90; accept AS-DECIX-IPV6
+mp-export:      afi ipv6.unicast to AS6695 announce AS-CIREX-IPV6
+mp-import:      afi ipv6.unicast from AS203921 action pref=80; accept AS-ELBA-IX-ROUTESERVER
+mp-export:      afi ipv6.unicast to AS203921 announce AS-CIREX-IPV6
+mp-import:      afi ipv6.unicast from AS8631 action pref=120; accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-CIREX-IPV6
+remarks:        --------------------------------------------------------------
+remarks:        CUSTOMERS
+remarks:        --------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS44704 action pref=200; accept AS44704
+mp-export:      afi ipv6.unicast to AS44704 announce ANY
+mp-import:      afi ipv6.unicast from AS48757 action pref=200; accept AS48757
+mp-export:      afi ipv6.unicast to AS48757 announce ANY
+remarks:        --------------------------------------------------------------
+remarks:        ===================================================
+remarks:        Looking glass - http://lg.cirex.ru
+remarks:        ===================================================
+remarks:        ===================================================
+remarks:        Community for prefix classification
+remarks:        ===================================================
+remarks:        64000:XYYZZ
+remarks:        ---------------------------------------
+remarks:        X - type of prexif
+remarks:        ---------------------------------------
+remarks:        1 - UPSTREAM
+remarks:        2 - RUSSIAN PEER
+remarks:        3 - INTERNATIONAL PEER
+remarks:        4 - DOWNSTREAM (CUSTOMER)
+remarks:        ---------------------------------------
+remarks:        YY - 1st LEVEL DESCRIPTION
+remarks:        ---------------------------------------
+remarks:        UPSTREAM:
+remarks:        01 - Rostelecom (AS12389)
+remarks:        02 - BEELINE (AS3216)
+remarks:        03 - Rascom (AS20764)
+remarks:        04 - TransTeleKom (AS20485)
+remarks:        05 - Retn (AS9002)
+remarks:        06 - Cogent (AS174)
+remarks:        07 - Filanco (AS29076)
+remarks:        08 - ServicePipe (AS201706)
+remarks:        RUSSIAN PEERS:
+remarks:        02 - MSK-IX ROUTESERVER (8631)
+remarks:        04 - ELBAIX (AS203921)
+remarks:        INTERNATIONAL PEERS:
+remarks:        01 - DE-CIX (AS6695)
+remarks:        02 - NL-IX (AS34307)
+remarks:        DOWNSTREAM (CUSTOMER)
+remarks:        00 - Static routes from CIREX allocations
+remarks:        01 - BGP customer
+remarks:        ---------------------------------------
+remarks:        ZZ - REGIONAL CODE
+remarks:        ---------------------------------------
+remarks:        00 - Moscow
+remarks:        ===================================================
+remarks:        Community for prefix control
+remarks:        ===================================================
+remarks:        Prepend or deny 64000:5DNNA
+remarks:        ---------------------------------------
+remarks:        D - type of prexif
+remarks:        ---------------------------------------
+remarks:        1 - UPSTREAM
+remarks:        2 - RUSSIAN PEER
+remarks:        3 - INTERNATIONAL PEER
+remarks:        4 - EURASIA
+remarks:        ---------------------------------------
+remarks:        NN - 1st LEVEL DESCRIPTION
+remarks:        ---------------------------------------
+remarks:        UPSTREAM:
+remarks:        01 - Rostelecom (AS12389)
+remarks:        02 - BEELINE (AS3216)
+remarks:        03 - Rascom (AS20764)
+remarks:        04 - TransTeleKom (AS20485)
+remarks:        05 - Retn (AS9002)
+remarks:        06 - Cogent (AS174)
+remarks:        07 - Filanco (AS29076)
+remarks:        08 - ServicePipe (AS201706)
+remarks:        RUSSIAN PEERS:
+remarks:        02 - MSK-IX ROUTESERVER (AS8631)
+remarks:        04 - ELBAIX (AS203921)
+remarks:        INTERNATIONAL PEERS:
+remarks:        01 - DE-CIX (AS6695)
+remarks:        02 - NL-IX (AS34307)
+remarks:        EURASIA:
+remarks:        01 - EURASIA-IX
+remarks:        ---------------------------------------
+remarks:        A - action
+remarks:        ---------------------------------------
+remarks:        0 - don't announce prefix
+remarks:        1 - announce with one prepend
+remarks:        2 - announce with two times prepend
+remarks:        3 - announce with three times prepend
+remarks:        ===================================================
+remarks:        Community for blackhole
+remarks:        ===================================================
+remarks:        64000:666
+admin-c:        LURO-RIPE
+tech-c:         LURO-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2012-11-12T09:44:39Z
+last-modified:  2024-01-22T08:14:29Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS200928
+as-name:        RTTV
+org:            ORG-RTTV1-RIPE
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS200928
+admin-c:        ZAAL-RIPE
+tech-c:         ZAAL-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+mnt-by:         RTTV-MNT
+created:        2015-03-10T14:18:25Z
+last-modified:  2023-10-23T10:01:25Z
+source:         RIPE
+sponsoring-org: ORG-TL254-RIPE
+
+
+
+aut-num:        AS201752
+as-name:        NCA
+org:            ORG-BA1589-RIPE
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS201752
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS201752
+sponsoring-org: ORG-TL254-RIPE
+admin-c:        KE2667-RIPE
+tech-c:         ZS1939-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2022-11-01T11:39:08Z
+last-modified:  2023-08-30T12:14:02Z
+source:         RIPE
+
+
+
+aut-num:        AS202824
+as-name:        ATS-AS
+org:            ORG-OA775-RIPE
+remarks:        ============CIREX=============
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS202824
+remarks:        ==========MASTERTEL==========
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS202824
+import:         from AS3312 accept ANY
+export:         to AS3312 announce AS202824
+admin-c:        DI1642-RIPE
+tech-c:         AH11272-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2016-05-25T11:53:04Z
+last-modified:  2020-11-16T17:51:18Z
+source:         RIPE
+sponsoring-org: ORG-TL254-RIPE
+
+
+
+aut-num:        AS203749
+as-name:        O2Cloud
+org:            ORG-OCL37-RIPE
+sponsoring-org: ORG-TL254-RIPE
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS203749
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS203749
+admin-c:        EM14102-RIPE
+tech-c:         TY775-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2022-10-24T07:41:17Z
+last-modified:  2022-10-24T07:41:17Z
+source:         RIPE
+
+
+
+aut-num:        AS203870
+as-name:        AngloAmericanSchool
+org:            ORG-AASO2-RIPE
+sponsoring-org: ORG-TL254-RIPE
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS203870
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS203870
+admin-c:        DL10909-RIPE
+tech-c:         MK25327-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+mnt-by:         AASchool-MNT
+created:        2022-07-14T13:41:59Z
+last-modified:  2022-07-14T13:41:59Z
+source:         RIPE
+
+
+
+aut-num:        AS208047
+as-name:        Inservicecenter
+org:            ORG-AL807-RIPE
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS208047
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS208047
+sponsoring-org: ORG-TL254-RIPE
+admin-c:        AA37312-RIPE
+tech-c:         AP30287-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2019-10-11T09:09:02Z
+last-modified:  2021-05-20T08:56:38Z
+source:         RIPE
+
+
+
+aut-num:        AS211446
+as-name:        A-GROUP
+org:            ORG-GL451-RIPE
+sponsoring-org: ORG-TL254-RIPE
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS211446
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS211446
+admin-c:        IN1860-RIPE
+tech-c:         PN5282-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2021-04-20T14:11:24Z
+last-modified:  2021-04-20T14:59:31Z
+source:         RIPE
+
+
+
+aut-num:        AS211530
+as-name:        Cloudstack
+org:            ORG-TL254-RIPE
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS211530
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS211530
+admin-c:        LURO-RIPE
+tech-c:         LURO-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2021-03-31T14:34:30Z
+last-modified:  2022-06-28T09:21:59Z
+source:         RIPE
+
+
+
+aut-num:        AS211724
+as-name:        Systematica
+org:            ORG-SL1024-RIPE
+sponsoring-org: ORG-TL254-RIPE
+import:         from AS199599 accept ANY
+import:         from AS47440 accept ANY
+export:         to AS199599 announce AS211724
+export:         to AS47440  announce AS211724
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS211724
+admin-c:        KD4127-RIPE
+tech-c:         KD4127-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2021-02-26T11:58:36Z
+last-modified:  2022-10-24T13:27:07Z
+source:         RIPE
+
+
+
+aut-num:        AS212277
+as-name:        NPFF
+org:            ORG-NPFJ1-RIPE
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS212277
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS212277
+remarks:        ISP DTLN
+import:         from AS49063 accept ANY
+export:         to AS49063 announce AS212277
+remarks:        ISP RT
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS212277
+remarks:        ISP MT
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS212277
+admin-c:        DD14790-RIPE
+tech-c:         DD14790-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NPFFUTURE-MNT
+mnt-by:         CIREX-MNT
+created:        2020-11-26T08:37:55Z
+last-modified:  2022-03-03T14:03:27Z
+source:         RIPE
+sponsoring-org: ORG-TL254-RIPE
+
+
+
+aut-num:        AS216317
+as-name:        TRUBNAYASIV
+org:            ORG-TSL70-RIPE
+sponsoring-org: ORG-TL254-RIPE
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS216317
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS216317
+admin-c:        FI2086-RIPE
+tech-c:         MA26522-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2023-09-13T06:19:22Z
+last-modified:  2023-09-13T06:19:22Z
+source:         RIPE
+
+
+
+aut-num:        AS50040
+as-name:        RUSSIA_TODAY
+org:            ORG-ATN1-RIPE
+import:         from AS201706 accept ANY
+import:         from AS12389 accept ANY
+export:         to AS201706 announce AS50040
+export:         to AS12389 announce AS50040
+admin-c:        SI2757-RIPE
+tech-c:         SE3418-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         GARS-MNT
+mnt-by:         CIREX-MNT
+created:        2009-10-30T14:52:37Z
+last-modified:  2023-10-23T09:59:48Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-TL254-RIPE
+
+
+
+aut-num:        AS58229
+as-name:        Equifax
+org:            ORG-OCS8-RIPE
+remarks:        =======CIREX============
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS58229
+remarks:        =======Mastertel========
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS58229
+admin-c:        VAKO-RIPE
+tech-c:         VAKO-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         GARS-MNT
+mnt-by:         CIREX-MNT
+created:        2012-05-30T12:00:25Z
+last-modified:  2021-11-29T11:53:08Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-OM1-RIPE
+
+
+
+aut-num:        AS59673
+as-name:        EETP
+org:            ORG-EJ43-RIPE
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS59673
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS59673
+admin-c:        AB37725-RIPE
+tech-c:         AB37725-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CIREX-MNT
+created:        2018-06-06T15:23:58Z
+last-modified:  2020-11-16T18:04:33Z
+source:         RIPE
+sponsoring-org: ORG-TL254-RIPE
+
+
+

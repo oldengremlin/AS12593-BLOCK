@@ -1,0 +1,78 @@
+
+
+
+
+aut-num:        AS42827
+as-name:        COMPLEXTELESYS-AS
+org:            ORG-KA162-RIPE
+import:         from AS47211 accept ANY
+export:         to AS47211 announce AS42827
+admin-c:        TA2679-RIPE
+tech-c:         PA5270-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-COMPLEXTELESYS
+mnt-by:         KIS-SPB-MNT
+created:        2007-04-24T11:46:28Z
+last-modified:  2019-03-21T10:53:55Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-FL139-RIPE
+
+
+
+aut-num:        AS47211
+as-name:        KOLPINONET-AS
+org:            ORG-KA162-RIPE
+remarks:        ---------------- IPv4 ----------------
+import:         from AS9031 action pref=100; accept ANY
+export:         to AS9031 announce AS-KOLPINONET
+import:         from AS31500 action pref=100; accept ANY
+export:         to AS31500 announce AS-KOLPINONET
+import:         from AS39792 action pref=100; accept ANY
+export:         to AS39792 announce AS-KOLPINONET
+import:         from AS29076 accept AS-CLOUD-IX-PRO
+export:         to AS29076 announce AS-KOLPINONET
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-KOLPINONET
+import:         from AS43690 accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-KOLPINONET
+import:         from AS31500 accept AS-GLOBAL-IX
+export:         to AS31500 announce AS-KOLPINONET
+import:         from AS3267 accept AS-RUNNET
+export:         to AS3267 announce AS-KOLPINONET
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-KOLPINONET
+import:         from AS5433 accept AS-ROKSON
+export:         to AS5433 announce AS-KOLPINONET
+import:         from AS12418 accept AS-QUANTUM
+export:         to AS12418 announce AS-KOLPINONET
+import:         from AS25520 accept AS-FUTURES
+export:         to AS25520 announce AS-KOLPINONET
+import:         from AS39102 accept AS-NNZ
+export:         to AS39102 announce AS-KOLPINONET
+import:         from AS44050 accept AS-PIN-SPBIX
+export:         to AS44050 announce AS-KOLPINONET
+remarks:        ---------------- IPv6 ----------------
+mp-import:      afi ipv6.unicast from AS9031 accept ANY
+mp-export:      afi ipv6.unicast to AS9031 announce AS-KOLPINONET
+mp-import:      afi ipv6.unicast from AS31500 accept ANY
+mp-export:      afi ipv6.unicast to AS31500 announce AS-KOLPINONET
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-KOLPINONET
+mp-import:      afi ipv6.unicast from AS43690 accept AS-SPBROUTESERVER
+mp-export:      afi ipv6.unicast to AS43690 announce AS-KOLPINONET
+remarks:        ----------------downstream----------------
+import:         from AS42827 accept AS42827
+export:         to AS42827 announce ANY
+admin-c:        TA2679-RIPE
+tech-c:         PA5270-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         KIS-SPB-MNT
+created:        2008-05-16T09:36:58Z
+last-modified:  2019-03-21T10:53:55Z
+source:         RIPE
+sponsoring-org: ORG-FL139-RIPE
+
+
+

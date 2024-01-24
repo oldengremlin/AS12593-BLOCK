@@ -1,0 +1,108 @@
+
+
+
+
+aut-num:        AS28890
+as-name:        INSYS-AS
+descr:          INSYS ISP
+descr:          INSYS Ekaterinburg,N-Tagil,Pervouralsk,Asbest,V-Pyshma,Sredneuralsk
+descr:          -------------------------------------------------------------
+descr:          EKATERINBURG UPLINKS
+descr:          -------------------------------------------------------------
+org:            ORG-IJ1-RIPE
+import:         from AS12389 action pref=75; accept ANY
+export:         to AS12389 announce AS-INSYS-EKB
+import:         from AS57304 action pref=75; accept ANY
+export:         to AS57304 announce AS-INSYS-EKB
+import:         from AS25478 action pref=75; accept ANY
+export:         to AS25478 announce AS-INSYS-EKB
+import:         from AS20485 action pref=75; accept ANY
+export:         to AS20485 announce AS-INSYS-EKB
+import:         from AS3216 action pref=75; accept ANY
+export:         to AS3216 announce AS-INSYS-EKB
+descr:          --------------------------------------------------------------
+descr:          INTERNET EXCHANGE
+descr:          --------------------------------------------------------------
+import:         from AS43213 action pref=100; accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS-INSYS-EKB
+descr:          ---------------------------------------------------------
+descr:          DIRECT PROVIDER EXCHANGE
+descr:          ---------------------------------------------------------
+import:         from AS9049 action pref=100; accept AS9049;
+descr:          ---------------------------------------------------------
+descr:          Customers
+descr:          ---------------------------------------------------------
+import:         from AS34869 action pref=500; accept AS34869;
+import:         from AS44528 action pref=500; accept AS44528;
+import:         from AS16230 action pref=500; accept AS16230;
+descr:          +-------------------------------------------------------
+descr:          | FOR MORE INFO OF BGP
+descr:          | CONNECTIONS IN EKATERINBURG
+descr:          | CONTACT NOC
+descr:          | 911@profintel.ru
+descr:          +-------------------------------------------------------
+admin-c:        DP5432-RIPE
+tech-c:         DS23668-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INSYS-MNT
+created:        2003-03-27T14:53:11Z
+last-modified:  2023-08-03T11:11:34Z
+source:         RIPE
+
+
+
+aut-num:        AS34869
+as-name:        EKANET-AS
+import:         from AS28890 accept ANY
+export:         to AS28890 announce AS34869
+org:            ORG-IJ1-RIPE
+status:         ASSIGNED
+admin-c:        DP5432-RIPE
+tech-c:         DS23668-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INSYS-MNT
+created:        2005-04-21T09:36:08Z
+last-modified:  2023-05-10T10:57:16Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS44528
+as-name:        PKF-AZIMUT-AS
+org:            ORG-IJ1-RIPE
+import:         from AS28890 accept ANY
+export:         to AS28890 announce AS44528
+admin-c:        DP5432-RIPE
+tech-c:         DS23668-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INSYS-MNT
+created:        2008-02-01T10:40:06Z
+last-modified:  2023-05-10T10:58:19Z
+source:         RIPE
+
+
+
+aut-num:        AS57123
+as-name:        Garant-AS
+org:            ORG-OG27-RIPE
+import:         from AS16285 action pref=100; accept ANY
+import:         from AS56495 action pref=100; accept ANY
+import:         from AS31499 action pref=100; accept ANY
+export:         to AS16285 announce AS57123
+export:         to AS56495 announce AS57123
+export:         to AS31499 announce AS57123
+admin-c:        DP5432-RIPE
+tech-c:         DS23668-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INSYS-MNT
+mnt-by:         OOOGarant-mnt
+created:        2011-07-25T14:33:09Z
+last-modified:  2020-04-17T10:38:05Z
+source:         RIPE
+sponsoring-org: ORG-IJ1-RIPE
+
+
+

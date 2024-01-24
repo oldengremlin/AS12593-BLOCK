@@ -1,0 +1,80 @@
+
+
+
+
+aut-num:        AS47844
+as-name:        POWERNET
+org:            ORG-LP174-RIPE
+import:         from AS39422 action pref=20; accept ANY
+import:         from AS34804 action pref=20; accept ANY
+import:         from AS47844 action pref=20; accept ANY
+export:         to AS39422 announce AS47844
+export:         to AS34804 announce AS47844
+export:         to AS47844 announce AS47844
+admin-c:        AM11666-RIPE
+tech-c:         AM11666-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TOWERTEL-MNT
+mnt-by:         MNT-NEVOD
+created:        2008-09-02T12:20:39Z
+last-modified:  2022-08-15T12:59:52Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS51032
+as-name:        NEVOD-AS
+org:            ORG-LP174-RIPE
+remarks:        +----------------------------------------------+
+remarks:        ******** Upstreams IPv4 Routing Policy *********
+remarks:        +----------------------------------------------+
+import:         from AS31133 action pref=90;community={51032:11}; accept ANY
+export:         to AS31133 announce AS-NEVOD
+import:         from AS41344 action pref=90;community={51032:12}; accept ANY
+export:         to AS41344 announce AS-NEVOD
+import:         from AS9049 action pref=90;community={51032:13}; accept ANY
+export:         to AS9049 announce AS-NEVOD
+import:         from AS3216 action pref=90;community={51032:14}; accept ANY
+export:         to AS3216 announce AS-NEVOD
+remarks:        +----------------------------------------------+
+remarks:        ******** Upstreams IPv6 Routing Policy *********
+remarks:        +----------------------------------------------+
+mp-import:      afi ipv6.unicast from AS31133 action pref=90;community={51032:11}; accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS51032
+mp-import:      afi ipv6.unicast from AS9049 action pref=90;community={51032:13}; accept ANY
+mp-export:      afi ipv6.unicast to AS9049 announce AS51032
+mp-import:      afi ipv6.unicast from AS3216 action pref=90;community={51032:14}; accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS51032
+remarks:        +----------------------------------------------+
+remarks:        ******** Peers IPv4 Routing Policy *************
+remarks:        +----------------------------------------------+
+import:         from AS43801 action pref=110;community={51032:24}; accept AS-COMRISE
+export:         to AS43801 announce AS-NEVOD
+import:         from AS50952 action pref=110;community={51032:23}; accept ANY
+export:         to AS50952 announce AS-NEVOD
+remarks:        +----------------------------------------------+
+remarks:        ******** Peers IPv6 Routing Policy *************
+remarks:        +----------------------------------------------+
+mp-import:      afi ipv6.unicast from AS50952 action pref=110;community={51032:23}; accept ANY
+mp-export:      afi ipv6.unicast to AS50952 announce AS-NEVOD
+remarks:        +----------------------------------------------+
+remarks:        ******** Clients IPv4 Routing Policy ***********
+remarks:        +----------------------------------------------+
+import:         from AS47844 action pref=110;community={51032:31}; accept AS-STARNET-VLZ
+export:         to AS47844 announce ANY
+import:         from AS34804 action pref=110;community={51032:30}; accept AS34804
+export:         to AS34804 announce ANY
+remarks:        +----------------------------------------------+
+admin-c:        AAK30-RIPE
+tech-c:         NPI7-RIPE
+tech-c:         AAK30-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-NEVOD
+created:        2010-05-20T08:08:45Z
+last-modified:  2024-01-23T13:45:54Z
+source:         RIPE # Filtered
+
+
+
