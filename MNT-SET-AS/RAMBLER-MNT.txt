@@ -1,0 +1,225 @@
+
+
+
+
+aut-num:        AS24638
+as-name:        RAMBLER-TELECOM-AS
+remarks:        =============
+remarks:        UPSTREAMS ===
+remarks:        =============
+remarks:        --- MTS ---
+import:         from AS8359 action pref=950; accept ANY
+export:         to AS8359 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS8359 action pref=950; accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-RAMTEL
+remarks:        --- ReTN ---
+import:         from AS57304 action pref=950; accept ANY
+export:         to AS57304 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS57304 action pref=950; accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-RAMTEL
+remarks:        --- Arelion ---
+import:         from AS1299 action pref=950; accept ANY
+export:         to AS1299 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS1299 action pref=950; accept ANY
+mp-export:      afi ipv6.unicast to AS1299 announce AS-RAMTEL
+remarks:        --- Rostelecom ---
+import:         from AS12389 action pref=950; accept ANY
+export:         to AS12389 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS12389 action pref=950; accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-RAMTEL
+remarks:        --- Rascom ---
+import:         from AS20764 action pref=950; accept ANY
+export:         to AS20764 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS20764 action pref=950; accept ANY
+mp-export:      afi ipv6.unicast to AS20764 announce AS-RAMTEL
+remarks:        --- Beeline ---
+import:         from AS3216 action pref=950; accept ANY
+export:         to AS3216 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS3216 action pref=950; accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-RAMTEL
+remarks:        --- Megafon ---
+import:         from AS31133 action pref=950; accept ANY
+export:         to AS31133 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS31133 action pref=950; accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-RAMTEL
+remarks:        --- TTK ---
+import:         from AS20485 action pref=950; accept ANY
+export:         to AS20485 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS20485 action pref=950; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-RAMTEL
+remarks:        --- GlobalNet ---
+import:         from AS31500 action pref=950; accept ANY
+export:         to AS31500 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS31500 action pref=950; accept ANY
+mp-export:      afi ipv6.unicast to AS31500 announce AS-RAMTEL
+remarks:        --- Fiord ---
+import:         from AS28917 action pref=950; accept ANY
+export:         to AS28917 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS28917 action pref=950; accept ANY
+mp-export:      afi ipv6.unicast to AS28917 announce AS-RAMTEL
+remarks:        =============
+remarks:        IX ==========
+remarks:        =============
+remarks:        --- W-IX ---
+import:         from AS50384 action pref=970; accept ANY
+export:         to AS50384 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS50384 action pref=970; accept ANY
+mp-export:      afi ipv6.unicast to AS50384 announce AS-RAMTEL
+remarks:        --- Data-IX ---
+import:         from AS50952 action pref=970; accept ANY
+export:         to AS50952 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS50952 action pref=970; accept ANY
+mp-export:      afi ipv6.unicast to AS50952 announce AS-RAMTEL
+remarks:        --- Cloud-IX ---
+import:         from AS29076 action pref=970; accept ANY
+export:         to AS29076 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS29076 action pref=970; accept ANY
+mp-export:      afi ipv6.unicast to AS29076 announce AS-RAMTEL
+remarks:        --- SFO-IX ---
+import:         from AS13094 action pref=970; accept ANY
+export:         to AS13094 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS13094 action pref=970; accept ANY
+mp-export:      afi ipv6.unicast to AS13094 announce AS-RAMTEL
+remarks:        --- Piter-IX ---
+import:         from AS49869 action pref=970; accept ANY
+export:         to AS49869 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS49869 action pref=970; accept ANY
+mp-export:      afi ipv6.unicast to AS49869 announce AS-RAMTEL
+remarks:        --- Eurasia Peering ---
+import:         from AS56931 action pref=970; accept ANY
+export:         to AS56931 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS56931 action pref=970; accept ANY
+mp-export:      afi ipv6.unicast to AS56931 announce AS-RAMTEL
+remarks:        --- MSK-IX ---
+import:         from AS8631 action pref=970; accept ANY
+export:         to AS8631 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS8631 action pref=970; accept ANY
+mp-export:      afi ipv6.unicast to AS8631 announce AS-RAMTEL
+remarks:        =============
+remarks:        PEERS =======
+remarks:        =============
+remarks:        --- RUNNet ---
+import:         from AS3267 action pref=970; accept AS-RUNNET
+export:         to AS3267 announce AS-RAMTEL
+remarks:        --- Credo-Telecom ---
+import:         from AS5523 action pref=970; accept AS-RMT
+export:         to AS5523 announce AS-RAMTEL
+remarks:        --- Hurricane ---
+import:         from AS6939 action pref=970; accept AS-HURRICANE
+export:         to AS6939 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS6939 action pref=970; accept AS-HURRICANE
+mp-export:      afi ipv6.unicast to AS6939 announce AS-RAMTEL
+remarks:        --- MAComnet ---
+import:         from AS8470 action pref=970; accept AS-MACOMNET
+export:         to AS8470 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS8470 action pref=970; accept AS-MACOMNET
+mp-export:      afi ipv6.unicast to AS8470 announce AS-RAMTEL
+remarks:        --- DiNET ---
+import:         from AS12695 action pref=970; accept AS-DINET
+export:         to AS12695 announce AS-RAMTEL
+remarks:        --- Yandex ---
+import:         from AS13238 action pref=970; accept AS-YANDEX
+export:         to AS13238 announce AS-RAMTEL
+remarks:        --- Cloudflare ---
+import:         from AS13335 action pref=970; accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS13335 action pref=970; accept AS-CLOUDFLARE
+mp-export:      afi ipv6.unicast to AS13335 announce AS-RAMTEL
+remarks:        --- Akamai ---
+import:         from AS20940 action pref=970; accept AS-AKAMAI
+export:         to AS20940 announce AS-RAMTEL
+mp-import:      afi ipv6.unicast from AS20940 action pref=970; accept AS-AKAMAI
+mp-export:      afi ipv6.unicast to AS20940 announce AS-RAMTEL
+remarks:        --- Eurasia Telecom ---
+import:         from AS28968 action pref=970; accept AS-EUT
+export:         to AS28968 announce AS-RAMTEL
+remarks:        --- Sberbank ---
+import:         from AS35237 action pref=970; accept AS-SBRF
+export:         to AS35237 announce AS-RAMTEL
+remarks:        --- Fiord ---
+import:         from AS28917 action pref=970; accept AS-FIORD
+export:         to AS28917 announce AS-RAMTEL
+remarks:        =============
+remarks:        DOWNSTREAMS =
+remarks:        =============
+import:         from AS42481 action pref=970; accept AS42481
+export:         to AS42481 announce ANY
+import:         from AS44696 action pref=970; accept AS44696
+export:         to AS44696 announce ANY
+import:         from AS57306 action pref=970; accept AS57306
+export:         to AS57306 announce ANY
+import:         from AS60692 action pref=970; accept AS60692
+export:         to AS60692 announce ANY
+remarks:        --------------------------------------------
+remarks:        Contacts and URLs:
+remarks:        --------------------------------------------
+remarks:        Routing and Peering issues: noc@rambler-co.ru
+remarks:        SPAM and Security issues: abuse@rambler-co.ru
+remarks:        Web Site: http://www.ramtel.ru
+remarks:        Looking Glass: http://lg.ramtel.ru/
+remarks:        --------------------------------------------
+org:            ORG-RT4-RIPE
+admin-c:        VP2246-RIPE
+tech-c:         RAMB-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RAMBLER-MNT
+created:        2002-08-15T08:08:53Z
+last-modified:  2023-10-23T22:03:05Z
+source:         RIPE
+
+
+
+aut-num:        AS42481
+as-name:        BEGUN-AS
+remarks:        Moscow, Russia
+org:            ORG-RT4-RIPE
+remarks:        ------------------------------------------
+remarks:        Uplinks
+remarks:        ------------------------------------------
+import:         from AS24638 accept ANY
+export:         to AS24638 announce AS42481
+remarks:        ------------------------------------------
+admin-c:        RAMB-RIPE
+tech-c:         RAMB-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RAMBLER-MNT
+created:        2007-02-28T13:32:40Z
+last-modified:  2020-06-15T12:36:04Z
+source:         RIPE
+
+
+
+aut-num:        AS44696
+as-name:        SUP-AS
+org:            ORG-RT4-RIPE
+import:         from AS24638 accept ANY
+export:         to AS24638 announce AS44696
+admin-c:        VP2246-RIPE
+tech-c:         RAMB-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RAMBLER-MNT
+created:        2008-02-26T08:59:39Z
+last-modified:  2021-06-21T11:32:53Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS57306
+as-name:        WEBPRIMEGROUP-AS
+org:            ORG-RT4-RIPE
+import:         from AS24638 accept ANY
+export:         to AS24638 announce AS-WEBPRIMEGROUP
+admin-c:        RAMB-RIPE
+tech-c:         RAMB-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RAMBLER-MNT
+created:        2011-09-19T12:18:34Z
+last-modified:  2018-10-11T09:47:53Z
+source:         RIPE # Filtered
+
+
+

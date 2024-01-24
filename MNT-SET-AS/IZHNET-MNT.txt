@@ -1,0 +1,29 @@
+
+
+
+
+aut-num:        AS35558
+as-name:        IZHNET-AS
+remarks:        ---------------Uplinks---------------
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS3216 announce AS-IZHNET
+export:         to AS31133 announce AS-IZHNET
+remarks:        ----------------Clients----------------
+import:         from AS51494 action pref=100; accept AS51494 AND NOT {0.0.0.0/0};
+export:         to AS51494 announce ANY
+remarks:        -------------------------------------
+org:            ORG-INTL2-RIPE
+admin-c:        INT11-RIPE
+admin-c:        II121-RIPE
+tech-c:         INT11-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+tech-c:         II121-RIPE
+mnt-by:         IZHNET-MNT
+created:        2005-09-05T11:38:48Z
+last-modified:  2022-05-17T08:32:10Z
+source:         RIPE # Filtered
+
+
+

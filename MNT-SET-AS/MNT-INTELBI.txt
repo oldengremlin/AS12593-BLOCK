@@ -1,0 +1,52 @@
+
+
+
+
+aut-num:        AS31364
+as-name:        INTELBI-AS
+org:            ORG-CJSC19-RIPE
+remarks:
+remarks:        Uplinks
+remarks:        ---------------------------
+import:         from AS21127 accept ANY
+import:         from AS49451 accept ANY
+export:         to AS21127 announce AS-INTELBI-SET
+export:         to AS49451 announce AS-INTELBI-SET
+default:        to AS21127
+remarks:        ---------------------------
+remarks:
+remarks:        Local IX peering
+remarks:        ---------------------------
+import:         from AS43314 accept AS43314
+import:         from AS29581 accept AS29581
+import:         from AS30911 accept AS30911
+export:         to AS29581 announce AS-INTELBI-SET AS43314 AS30911
+export:         to AS43314 announce AS-INTELBI-SET AS29581 AS30911
+export:         to AS30911 announce AS-INTELBI-SET AS29581 AS43314
+remarks:        ---------------------------
+remarks:
+remarks:        Customers
+remarks:        ---------------------------
+import:         from AS51245 accept AS51245
+export:         to AS51245 announce ANY
+remarks:        ---------------------------
+remarks:
+remarks:        IPv6 uplinks
+remarks:        ---------------------------
+mp-import:      afi ipv6.unicast from AS6939                action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS6939                announce AS31364
+mp-import:      afi ipv6.unicast from AS21127                action pref=105; accept ANY
+mp-export:      afi ipv6.unicast to AS21127                announce AS21127
+remarks:        ---------------------------
+admin-c:        TN1646-RIPE
+tech-c:         TN1646-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TRANSTELECOM-MNT
+mnt-by:         MNT-INTELBI
+created:        2004-04-26T12:53:27Z
+last-modified:  2021-04-28T07:05:21Z
+source:         RIPE # Filtered
+
+
+

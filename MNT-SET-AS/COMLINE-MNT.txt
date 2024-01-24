@@ -1,0 +1,74 @@
+
+
+
+
+aut-num:        AS29648
+as-name:        COMLINE-AS
+org:            ORG-OM1-RIPE
+remarks:        ------------------------------------------------------------------
+remarks:        Upstreams:
+remarks:        ------------------------------------------------------------------
+remarks:        *** RtComm ***
+import:         { from AS8342 action pref=50; accept NOT AS29648:RS-MARTIANS; } refine { from AS8342 action community .= {29648:200, 29648:101}; accept NOT AS29648:RS-MARTIANS; }
+export:         { to AS8342 announce AS-COMLINE AND NOT community(29648:200) AND NOT community(29648:201); }
+remarks:        *** RosTelecom ***
+import:         { from AS12389 action pref=50; accept NOT AS29648:RS-MARTIANS; } refine { from AS12389 action community .= {29648:200, 29648:102}; accept NOT AS29648:RS-MARTIANS; }
+export:         { to AS12389 announce AS-COMLINE AND NOT community(29648:200) AND NOT community(29648:202); }
+remarks:        *** Synterra ***
+import:         { from AS6854 action pref=50; accept NOT AS29648:RS-MARTIANS; } refine { from AS6854 action community .= {29648:200, 29648:103}; accept NOT AS29648:RS-MARTIANS; }
+export:         { to AS6854 announce AS-COMLINE AND NOT community(29648:200) AND NOT community(29648:203); }
+remarks:        *** TransTelecom ***
+import:         { from AS28745 action pref=50; accept NOT AS29648:RS-MARTIANS; } refine { from AS28745 action community .= {29648:200, 29648:104}; accept NOT AS29648:RS-MARTIANS; }
+export:         { to AS28745 announce AS-COMLINE AND NOT community(29648:200) AND NOT community(29648:204); }
+remarks:        *** Megafon ***
+import:         { from AS31133 action pref=50; accept NOT AS29648:RS-MARTIANS; } refine { from AS31133 action community .= {29648:200, 29648:105}; accept NOT AS29648:RS-MARTIANS; }
+export:         { to AS31133 announce AS-COMLINE-NEW AND NOT community(29648:200) AND NOT community(29648:205); }
+remarks:        ------------------------------------------------------------------
+remarks:        Customers:
+remarks:        ------------------------------------------------------------------
+import:         { from AS-ANY accept NOT {0.0.0.0/0}; } refine { from AS-ANY action pref=0; accept ANY; } refine { from AS29648:AS-CUST accept (AS29648:AS-IN:PeerAS OR PeerAS) AND (<AS29648:AS-IN:PeerAS$> OR <PeerAS$>); }
+export:         { to AS29648:AS-CUST-FULL announce NOT AS29648:RS-MARTIANS; }
+remarks:
+remarks:        +-----------------------------------------------------------------
+remarks:        | Community Meaning
+remarks:        +-----------------------------------------------------------------
+remarks:        | 29648:10x -- Learned from UPSTREAM....
+remarks:        | ....x=1 -- RTComm (AS8342)
+remarks:        | ....x=2 -- RosTelecom (AS12389)
+remarks:        | ....x=3 -- Synterra (AS6854)
+remarks:        | ....x=4 -- TransTelecom (AS28745)
+remarks:        | ....x=5 -- Megafon (AS31133)
+remarks:        |
+remarks:        | 29648:20x -- When advertising to UPSTREAM...
+remarks:        | ....x=0 -- do not advertising to any upstream
+remarks:        | ....x=1 -- do not advertising to RTComm (AS8342)
+remarks:        | ....x=2 -- do not advertising to RosTelecom (AS12389)
+remarks:        | ....x=3 -- do not advertising to Synterra (AS6854)
+remarks:        | ....x=4 -- do not advertising to TransTelecom (AS28745)
+remarks:        | ....x=5 -- do not advertising to Megafon (AS31133)
+remarks:        |
+remarks:        | 29648:30x -- When advertising to RTComm... (AS8342)
+remarks:        | ....x=0 -- do not advertising to FIRST (F) Interface
+remarks:        | ....x=1 -- do not advertising to SECOND (P) Interface
+remarks:        |
+remarks:        | Any routes received from connected customers has localpref=150
+remarks:        | Any routes received from UPSTREAMS has localperf=50
+remarks:        | Any other routes has default localpref=100
+remarks:        |
+remarks:        | 29648:nn -- To change localpref of received route....
+remarks:        | ....nn=60,70,80,90 -- set localpref to selected value
+remarks:        +-----------------------------------------------------------------
+remarks:
+admin-c:        MFON-RIPE
+tech-c:         MFON-RIPE
+mnt-by:         MEGAFON-RIPE-MNT
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         COMLINE-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2003-10-31T11:36:21Z
+last-modified:  2023-06-01T10:43:31Z
+source:         RIPE # Filtered
+
+
+
