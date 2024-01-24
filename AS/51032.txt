@@ -18,7 +18,7 @@ remarks:        +----------------------------------------------+
 remarks:        ******** Upstreams IPv4 Routing Policy *********
 remarks:        +----------------------------------------------+
 import:         from AS31133 action pref=90;community={51032:11}; accept ANY
-export:         to AS31133 announce AS-NEVOD-U
+export:         to AS31133 announce AS-NEVOD
 import:         from AS41344 action pref=90;community={51032:12}; accept ANY
 export:         to AS41344 announce AS-NEVOD
 import:         from AS9049 action pref=90;community={51032:13}; accept ANY
@@ -37,19 +37,13 @@ mp-export:      afi ipv6.unicast to AS3216 announce AS51032
 remarks:        +----------------------------------------------+
 remarks:        ******** Peers IPv4 Routing Policy *************
 remarks:        +----------------------------------------------+
-import:         from AS34804 action pref=110;community={51032:22}; accept AS34804
-export:         to AS34804 announce AS-NEVOD
 import:         from AS43801 action pref=110;community={51032:24}; accept AS-COMRISE
 export:         to AS43801 announce AS-NEVOD
-import:         from AS9049 action pref=110;community={51032:25}; accept AS-EVLD
-export:         to AS9049 announce AS-NEVOD
 import:         from AS50952 action pref=110;community={51032:23}; accept ANY
 export:         to AS50952 announce AS-NEVOD
 remarks:        +----------------------------------------------+
 remarks:        ******** Peers IPv6 Routing Policy *************
 remarks:        +----------------------------------------------+
-mp-import:      afi ipv6.unicast from AS9049 action pref=110;community={51032:25}; accept AS-EVLD
-mp-export:      afi ipv6.unicast to AS9049 announce AS51032
 mp-import:      afi ipv6.unicast from AS50952 action pref=110;community={51032:23}; accept ANY
 mp-export:      afi ipv6.unicast to AS50952 announce AS-NEVOD
 remarks:        +----------------------------------------------+
@@ -67,7 +61,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NEVOD
 created:        2010-05-20T08:08:45Z
-last-modified:  2023-09-29T09:38:35Z
+last-modified:  2024-01-23T13:45:54Z
 source:         RIPE # Filtered
 
 organisation:   ORG-LP174-RIPE
