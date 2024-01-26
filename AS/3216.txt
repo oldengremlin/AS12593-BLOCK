@@ -1378,6 +1378,10 @@ import:         from AS2906 action pref=87; accept AS-NFLX
 export:         to AS2906 announce AS-SOVAM
 mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
 mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
+import:         from AS46489 action pref=87; accept AS-TWITCH
+export:         to AS46489 announce AS-SOVAM
+mp-import:      afi ipv6 from AS46489 action pref=87; accept AS-TWITCH
+mp-export:      afi ipv6 to AS46489 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(Equinix Hong Kong)
 remarks:
@@ -1408,6 +1412,10 @@ import:         from AS2906 action pref=87; accept AS-NFLX
 export:         to AS2906 announce AS-SOVAM
 mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
 mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
+import:         from AS46489 action pref=87; accept AS-TWITCH
+export:         to AS46489 announce AS-SOVAM
+mp-import:      afi ipv6 from AS46489 action pref=87; accept AS-TWITCH
+mp-export:      afi ipv6 to AS46489 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(HKIX Hong Kong)
 remarks:
@@ -1523,6 +1531,17 @@ mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
 mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(BBIX Tokyo)
+remarks:
+remarks:
+remarks:
+remarks:        Peering at BBIX HK
+remarks:
+import:         from AS46489 action pref=87; accept AS-TWITCH
+export:         to AS46489 announce AS-SOVAM
+mp-import:      afi ipv6 from AS46489 action pref=87; accept AS-TWITCH
+mp-export:      afi ipv6 to AS46489 announce AS-SOVAM-V6
+remarks:
+remarks:        endof(BBIX HK)
 remarks:
 remarks:
 remarks:
@@ -3239,8 +3258,6 @@ import:         from AS204991 action pref=100; accept AS204991
 export:         to AS204991 announce ANY
 import:         from AS216185 action pref=100; accept AS216185
 export:         to AS216185 announce ANY
-import:         from AS203054 action pref=100; accept AS203054
-export:         to AS203054 announce ANY
 import:         from AS43696 action pref=100; accept AS43696
 export:         to AS43696 announce ANY
 import:         from AS31500 action pref=100; accept AS-GLOBAL-NET
@@ -5456,7 +5473,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-01-21T08:02:51Z
+last-modified:  2024-01-26T05:53:31Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

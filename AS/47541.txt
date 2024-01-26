@@ -165,6 +165,15 @@ mp-export:      afi ipv6.unicast to AS13094 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS13094 accept as-milecom-rs;
 remarks:
 remarks:        =========================================
+remarks:        DVO-IX Peers
+remarks:        -----------------------------------------
+remarks:
+export:         to AS20730 announce AS-VKONTAKTE
+import:         from AS20730 accept AS20730:AS-DVO-IX
+mp-export:      afi ipv6.unicast to AS13094 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS13094 accept AS20730:AS-DVO-IX;
+remarks:
+remarks:        =========================================
 remarks:        direct Peers
 remarks:        -----------------------------------------
 remarks:
@@ -384,6 +393,7 @@ remarks:        47541:2104x When advertising to DATA-IX...
 remarks:        47541:2105x When advertising to SPB-IX...
 remarks:        47541:2108x When advertising to GLOBAL-IX...
 remarks:        47541:2111x When advertising to CLOUD-IX...
+remarks:        47541:2113x When advertising to DVO-IX...
 remarks:        47541:2114x When advertising to W-IX...
 remarks:        47541:2115x When advertising to PITER-IX...
 remarks:        47541:2118x When advertising to MEGAFON-IX...
@@ -476,6 +486,7 @@ remarks:        47541:42104 - DataIX
 remarks:        47541:42105 - SPBIX
 remarks:        47541:42108 - GlobalnetIX
 remarks:        47541:42111 - CloudIX
+remarks:        47541:42113 - DVO-IX
 remarks:        47541:42114 - W-IX
 remarks:        47541:42115 - PITERIX
 remarks:        47541:42116 - FREE
@@ -507,7 +518,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-07-03T14:45:56Z
-last-modified:  2024-01-16T10:23:43Z
+last-modified:  2024-01-25T09:55:25Z
 source:         RIPE # Filtered
 
 organisation:   ORG-VL47-RIPE
