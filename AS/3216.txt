@@ -1638,6 +1638,8 @@ remarks:        Full-transit customers
 remarks:
 +
 +
+import:         from AS52141 action pref=100; accept AS52141
+export:         to AS52141 announce AS-SOVAM
 import:         from AS13029 action pref=100; accept AS13029
 export:         to AS13029 announce {0.0.0.0/0}
 import:         from AS203883 action pref=100; accept AS203883
@@ -3945,8 +3947,6 @@ mp-import:      afi ipv6 from AS56724 action pref=100; accept AS56724
 mp-export:      afi ipv6 to AS56724 announce ANY
 import:         from AS50690 action pref=100; accept AS50690
 export:         to AS50690 announce ANY
-import:         from AS202768 action pref=100; accept AS202768
-export:         to AS202768 announce ANY
 import:         from AS202760 action pref=100; accept AS202760
 export:         to AS202760 announce {0.0.0.0/0}
 import:         from AS203697 action pref=100; accept AS203697
@@ -4443,9 +4443,9 @@ import:         from AS208977 action pref=100; accept AS208977
 export:         to AS208977 announce ANY
 import:         from AS42269 action pref=100; accept AS42269
 export:         to AS42269 announce ANY
-import:         from AS39143 action pref=100; accept AS39143
+import:         from AS39143 action pref=100; accept AS-BSH2
 export:         to AS39143 announce ANY
-mp-import:      afi ipv6 from AS39143 action pref=100; accept AS39143
+mp-import:      afi ipv6 from AS39143 action pref=100; accept AS-BSH2
 mp-export:      afi ipv6 to AS39143 announce ANY
 import:         from AS42033 action pref=100; accept AS42033
 export:         to AS42033 announce ANY
@@ -5473,7 +5473,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-01-26T05:53:31Z
+last-modified:  2024-01-27T06:00:35Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

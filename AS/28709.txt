@@ -139,6 +139,15 @@ mp-export:      afi ipv6.unicast to AS13094 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS13094 accept AS-MILECOM-RS;
 remarks:
 remarks:        =========================================
+remarks:        DVO-IX Peers
+remarks:        -----------------------------------------
+remarks:
+export:         to AS20730 announce AS-VKONTAKTE
+import:         from AS20730 accept AS-DVO-IX
+mp-export:      afi ipv6.unicast to AS20730 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS20730 accept AS-DVO-IX;
+remarks:
+remarks:        =========================================
 remarks:        PITER-IX Peers
 remarks:        -----------------------------------------
 remarks:
@@ -313,7 +322,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2009-08-05T11:34:14Z
-last-modified:  2023-12-29T08:14:36Z
+last-modified:  2024-01-26T16:56:09Z
 source:         RIPE # Filtered
 
 organisation:   ORG-VL47-RIPE
