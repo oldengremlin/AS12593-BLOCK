@@ -32,6 +32,9 @@ import:         from AS8365 action pref=150; accept AS-MANDA
 import:         from AS13335 action pref=150; accept AS-CLOUDFLARE
 import:         from AS51789 action pref=300; accept AS51789
 import:         from AS215796 action pref=300; accept AS215796
+import:         from AS714 action pref=150; accept AS-APPLE
+import:         from AS6939 action pref=150; accept AS-HURRICANE
+import:         from AS6939 action pref=150; accept AS-HURRICANEV6
 export:         to AS12389 announce AS-TIMEWEB
 export:         to AS20764 announce AS-TIMEWEB
 export:         to AS57304 announce AS-TIMEWEB
@@ -50,13 +53,15 @@ export:         to AS8365 announce AS-TIMEWEB
 export:         to AS13335 announce AS-TIMEWEB
 export:         to AS51789 announce ANY
 export:         to AS215796 announce ANY
+export:         to AS714 announce AS-TIMEWEB
+export:         to AS6939 announce AS-TIMEWEB
 admin-c:        TMWB-RIPE
 tech-c:         TMWB-RIPE
 status:         ASSIGNED
 mnt-by:         TIMEWEB-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2008-04-01T10:36:48Z
-last-modified:  2024-01-24T16:50:02Z
+last-modified:  2024-01-31T10:04:02Z
 source:         RIPE
 
 organisation:   ORG-TL188-RIPE

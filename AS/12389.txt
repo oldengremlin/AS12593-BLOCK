@@ -25,7 +25,6 @@ remarks:        | 12389:614y When advertising to Vodafone (AS1273) |
 remarks:        | 12389:617y When advertising to Telecom-Italia Sparkle (AS6762) |
 remarks:        | 12389:618y When advertising to Orange (AS5511) |
 remarks:        | 12389:619y When advertising to Cogent (AS174)|
-remarks:        | 12389:620y When advertising to CHINA MOBILE INTERNATIONAL (AS58453)|
 remarks:        | 12389:699y When advertising to any UPSTREAM |
 remarks:        | ...y=9 - advertise without prepends |
 remarks:        | ...y=0 - do not advertise |
@@ -33,7 +32,6 @@ remarks:        | ...y=1,2,3 or 5 - prepend 12389 (1,2,3 or 5) times |
 remarks:        +------------------------------------------------------------------------+
 remarks:        | 12389:7xxy When advertising to INTERNATIONAL peer |
 remarks:        +------------------------------------------------------------------------+
-remarks:        | 12389:701y When advertising to LINX (AS8714) and any private peers |
 remarks:        | 12389:702y When advertising to China Telecom (AS4134) |
 remarks:        | 12389:703y When advertising to China NetCom (AS4837) |
 remarks:        | 12389:705y When advertising to any BTC-Bolgaria peer (AS8866) |
@@ -44,14 +42,8 @@ remarks:        | 12389:711y When advertising to DE-CIX and any private peers |
 remarks:        | 12389:712y When advertising to any CloudFlare (AS13335) |
 remarks:        | 12389:713y When advertising to Google (AS15169) |
 remarks:        | 12389:714y When advertising to Netnod and any private peers |
-remarks:        | 12389:716y When4 advertising to EuroTransTelecom (AS35320) |
-remarks:        | 12389:717y When advertising to AMS-IX and any private peers |
-remarks:        | 12389:719y When advertising to IPTRANSIT (AS46786) |
-remarks:        | 12389:721y When advertising to Netflix (AS2906) |
 remarks:        | 12389:722y When advertising to Hetzner Online AG (AS24940) |
-remarks:        | 12389:723y When advertising to HIGHWINDS (AS12989) |
 remarks:        | 12389:724y When advertising to Singtel (AS7473) |
-remarks:        | 12389:726y When advertising to UPC Broadband (AS6830) |
 remarks:        | 12389:727y When advertising to HURRICANE (AS6939) |
 remarks:        | 12389:729y When advertising to LEASEWEB (AS16265)|
 remarks:        | 12389:731y When advertising to JUSTINTV (AS46489)|
@@ -61,12 +53,10 @@ remarks:        | 12389:735y When advertising to Valve at Europe (AS32590) |
 remarks:        | 12389:736y When advertising to FlagTel (AS15412)|
 remarks:        | 12389:737y When advertising to EdgeCast Networks (AS15133)|
 remarks:        | 12389:738y When advertising to Microsoft (AS8075)|
-remarks:        | 12389:739y When advertising to Hibernia/Atrato IP Networks (AS5580)|
 remarks:        | 12389:740y When advertising to INIT7 (AS13030)|
 remarks:        | 12389:742y When advertising to CoreBackbone (AS33891)|
 remarks:        | 12389:743y When advertising to Facebook (AS32934)|
 remarks:        | 12389:744y When advertising to Riot Games (AS6507)|
-remarks:        | 12389:745y When advertising to Young Internet Service Provider (AS58073)|
 remarks:        | 12389:746y When advertising to HKIX (AS4635) and any private peers |
 remarks:        | 12389:747y When advertising to Blizzard (AS57976)|
 remarks:        | 12389:748y When advertising to Apple (AS714)|
@@ -149,8 +139,6 @@ import:         from AS5511 accept ANY
 export:         to AS5511 announce AS-ROSTELECOM
 import:         from AS6453 accept ANY
 export:         to AS6453 announce AS-ROSTELECOM
-import:         from AS58453 accept ANY
-export:         to AS58453 announce AS-ROSTELECOM
 remarks:        +
 remarks:        + Peers:
 remarks:        +
@@ -204,8 +192,6 @@ import:         from AS8804 accept AS-REGIONET
 export:         to AS8804 announce AS-ROSTELECOM
 import:         from AS8068 accept AS-MICROSOFT
 export:         to AS8068 announce AS-ROSTELECOM
-import:         from AS35320 accept AS-ETT
-export:         to AS35320 announce AS-ROSTELECOM
 import:         from AS13189 accept AS-LIDERO
 export:         to AS13189 announce AS-ROSTELECOM
 import:         from AS6667 accept AS-EUNETIP
@@ -222,8 +208,6 @@ import:         from AS8365 accept AS-MANDA
 export:         to AS8365 announce AS-ROSTELECOM
 import:         from AS5430 accept AS-FREENETDE
 export:         to AS5430 announce AS-ROSTELECOM
-import:         from AS5580 accept AS-HIBERNIA
-export:         to AS5580 announce AS-ROSTELECOM
 import:         from AS13030 accept AS-INIT7
 export:         to AS13030 announce AS-ROSTELECOM
 import:         from AS29208 accept AS-DIALTELECOM
@@ -244,14 +228,10 @@ import:         from AS24940 accept AS-HETZNER
 export:         to AS24940 announce AS-ROSTELECOM
 import:         from AS32934 accept AS32934
 export:         to AS32934 announce AS-ROSTELECOM
-import:         from AS35320 accept AS-ETT
-export:         to AS35320 announce AS-ROSTELECOM
 import:         from AS31122 accept AS-DIGIWEB
 export:         to AS31122 announce AS-ROSTELECOM
 import:         from AS31133 accept AS-MF-MGSM
 export:         to AS31133 announce AS-ROSTELECOM
-import:         from AS46786 accept AS-IPTRANSIT
-export:         to AS46786 announce AS-ROSTELECOM
 import:         from AS8359 accept AS-MTU
 export:         to AS8359 announce AS-ROSTELECOM
 import:         from AS3216 accept AS-SOVAM
@@ -266,12 +246,8 @@ import:         from AS8402 accept AS-CORBINA
 export:         to AS8402 announce AS-ROSTELECOM
 import:         from AS20764 accept AS-RASCOM
 export:         to AS20764 announce AS-ROSTELECOM
-import:         from AS6830 accept AS-AORTA
-export:         to AS6830 announce AS-ROSTELECOM
 import:         from AS46489 accept AS46489
 export:         to AS46489 announce AS-ROSTELECOM
-import:         from AS58073 accept AS58073
-export:         to AS58073 announce AS-ROSTELECOM
 import:         from AS22822 accept AS-LLNW
 export:         to AS22822 announce AS-ROSTELECOM
 import:         from AS47541 accept AS-VKONTAKTE
@@ -294,8 +270,6 @@ import:         from AS4766 accept AS-KORNETBGP
 export:         to AS4766 announce AS-ROSTELECOM
 import:         from AS3786 accept AS-DACOM
 export:         to AS3786 announce AS-ROSTELECOM
-import:         from AS2906 accept AS-NFLX
-export:         to AS2906 announce AS-ROSTELECOM
 import:         from AS6507 accept AS-RIOT
 export:         to AS6507 announce AS-ROSTELECOM
 import:         from AS7473 accept AS7473
@@ -6138,7 +6112,7 @@ mnt-by:         ROSTELECOM-MNT
 mnt-by:         RIPE-NCC-END-MNT
 status:         ASSIGNED
 created:        2005-07-01T14:26:50Z
-last-modified:  2024-01-24T06:52:43Z
+last-modified:  2024-01-31T07:46:19Z
 source:         RIPE # Filtered
 
 organisation:   ORG-JR8-RIPE

@@ -170,6 +170,8 @@ mp-import:      afi ipv6.unicast from AS60763 accept AS-SIBIR-IX
 mp-export:      afi ipv6.unicast to AS43097 announce AS57629
 mp-import:      afi ipv6.unicast from AS43097 accept {::/0}
 remarks:        ------------KRD----------------
+import:         from AS43530 accept AS-IRTELCOM-SET
+export:         to AS43530 announce AS57629
 import:         from AS59428 accept AS-KRD-RS
 export:         to AS59428 announce AS57629
 import:         from AS8359 accept AS-MTU {0.0.0.0/0}
@@ -189,8 +191,6 @@ import:         from AS44724 accept AS44724
 export:         to AS44724 announce AS57629
 import:         from AS8359 accept AS-MTU {0.0.0.0/0}
 export:         to AS8359 announce AS57629
-import:         from AS43530 accept AS-IRTELCOM-SET
-export:         to AS43530 announce AS57629
 mp-export:      afi ipv6.unicast to AS8359 announce AS57629
 mp-import:      afi ipv6.unicast from AS8359 accept AS-MTU {::/0}
 mp-export:      afi ipv6.unicast to AS48531 announce AS57629
@@ -301,6 +301,9 @@ export:         to AS29076 announce AS57629
 remarks:        ----SevenSky----
 import:         from AS29124 accept AS-7SKY
 export:         to AS29124 announce AS57629
+remarks:        ----IVSTAR----
+import:         from AS29588 accept AS-IVSTAR
+export:         to AS29588 announce AS57629
 remarks:        ----Megafon----
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS57629
@@ -337,6 +340,9 @@ export:         to AS47775 announce AS57629
 remarks:        ----MTW----
 import:         from AS48347 accept AS-MTW
 export:         to AS48347 announce AS57629
+remarks:        ----PG19----
+import:         from AS49037 accept AS-PG19
+export:         to AS49037 announce AS57629
 remarks:        ----Piter-IX Route Server----
 import:         from AS49869 accept AS-PITER-IX-MSK
 export:         to AS49869 announce AS57629
@@ -355,6 +361,9 @@ export:         to AS56340 announce AS57629
 remarks:        ----CDNVideo----
 import:         from AS57363 accept AS-CDNVIDEO
 export:         to AS57363 announce AS57629
+remarks:        ----SOFTVIDEO----
+import:         from AS57712 accept AS-SOFTVIDEONET
+export:         to AS57712 announce AS57629
 remarks:        ----MMTSaratov----
 import:         from AS60299 accept AS-MMTS
 export:         to AS60299 announce AS57629
@@ -491,7 +500,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-ivi-1-mnt
 created:        2011-12-19T11:32:01Z
-last-modified:  2023-12-14T12:58:58Z
+last-modified:  2024-01-31T09:36:04Z
 source:         RIPE # Filtered
 
 
