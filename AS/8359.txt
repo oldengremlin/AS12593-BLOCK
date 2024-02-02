@@ -22,6 +22,8 @@ remarks:        ipv4
 remarks:        -----------------------------------------------------------
 import:         from AS42 action pref=105; accept AS-PCH
 export:         to AS42 announce AS-MTU
+import:         from AS72 action pref=105; accept AS72
+export:         to AS72 announce ANY
 import:         from AS293 action pref=105; accept AS-ESNET
 export:         to AS293 announce AS-MTU
 import:         from AS553 action pref=105; accept AS-BELWUE
@@ -2595,7 +2597,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:20:57Z
-last-modified:  2024-01-29T07:34:50Z
+last-modified:  2024-02-01T07:17:54Z
 source:         RIPE
 
 organisation:   ORG-ZM1-RIPE
