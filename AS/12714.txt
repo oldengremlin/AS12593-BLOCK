@@ -64,12 +64,6 @@ remarks:        === VLV-IX ===
 import:         from AS48531 action pref=400; accept AS-VLVROUTESERVER
 export:         to AS48531 announce AS-TI^+
 remarks:        ==============
-import:         from AS3216 action pref=400; accept AS-SOVAM
-export:         to AS3216 announce AS-TI^+
-import:         from AS8402 action pref=400; accept AS-CORBINA
-export:         to AS8402 announce AS-TI^+
-import:         from AS8732 action pref=400; accept AS-COMCOR
-export:         to AS8732 announce AS-TI^+
 import:         from AS9002 action pref=400; accept AS-RETN
 export:         to AS9002 announce AS-TI^+
 import:         from AS13238 action pref=400; accept AS-YANDEX
@@ -102,9 +96,6 @@ export:         to AS262254 announce AS-TI^+
 remarks:        --- G-Core Labs S.A. ---
 import:         from AS199524 action pref=400; accept AS-GCORE
 export:         to AS199524 announce AS-TI^+
-remarks:        --- NaukaNet ---
-import:         from AS8641 action pref=400; accept AS-NAUKANET
-export:         to AS8641 announce AS-TI^+
 remarks:        --- INSYS Ekaterinburg ---
 import:         from AS28890 action pref=400; accept AS-INSYS-EKB
 export:         to AS28890 announce AS-TI^+
@@ -130,15 +121,9 @@ mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS-TI
 mp-import:      afi ipv6.unicast from AS48216 accept AS-RNDROUTESERVER
 mp-export:      afi ipv6.unicast to AS48216 announce AS-TI
-remarks:        --- Corbina ipv6 peering ---
-mp-import:      afi ipv6.unicast from AS8402 accept AS8402
-mp-export:      afi ipv6.unicast to AS8402 announce AS-TI
 remarks:        --- Google ipv6 peering ---
 mp-import:      afi ipv6.unicast from AS15169 accept AS15169
 mp-export:      afi ipv6.unicast to AS15169 announce AS-TI
-remarks:        --- Golden Telecom ---
-mp-import:      afi ipv6.unicast from AS3216 accept AS3216
-mp-export:      afi ipv6.unicast to AS3216 announce AS-TI
 remarks:        --- RETN.Net ---
 mp-import:      afi ipv6.unicast from AS9002 accept AS9002
 mp-export:      afi ipv6.unicast to AS9002 announce AS-TI
@@ -326,11 +311,6 @@ remarks:        18 - Sea-ix
 remarks:        ==================
 remarks:        Valid peers <ASN>:
 remarks:        ==================
-remarks:        3216 - Golden Telecom
-remarks:        8732 - AKADO
-remarks:        8402 - Corbina Telecom
-remarks:        8641 - NaukaNet
-remarks:        8732 - COMCOR
 remarks:        9002 - RETN
 remarks:        9049 - ER-Telecom
 remarks:        13238 - Yandex
@@ -338,7 +318,6 @@ remarks:        15169 - Google
 remarks:        20764 - Rascom
 remarks:        28917 - FIORD
 remarks:        30855 - Tele-plus
-remarks:        31500 - GlobalNet
 remarks:        34879 - Ngenix
 remarks:        34892 - INFOLINK
 remarks:        47764 - Mail.ru
@@ -408,7 +387,7 @@ mnt-by:         MEGAFON-RIPE-MNT
 mnt-by:         TI-NOC-MNT
 mnt-by:         TI-MNT
 created:        2002-07-18T12:38:14Z
-last-modified:  2023-08-07T13:08:22Z
+last-modified:  2024-02-07T10:07:55Z
 source:         RIPE # Filtered
 
 organisation:   ORG-OM1-RIPE

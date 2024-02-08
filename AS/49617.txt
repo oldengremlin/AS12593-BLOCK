@@ -12,11 +12,11 @@ source:         RIPE
 
 
 aut-num:        AS49617
-as-name:        IZMV
+as-name:        IZMV-AS
 org:            ORG-CSL28-RIPE
-import:         from AS196705 accept ANY
-export:         to AS196705 announce AS49617
-import:         from AS28761 accept ANY
+import:         from AS43222 accept AS-CRIMEA-IX
+export:         to AS43222 announce AS49617
+import:         from AS28761 accept {0.0.0.0/0}
 export:         to AS28761 announce AS49617
 admin-c:        VL7777-RIPE
 tech-c:         VL7777-RIPE
@@ -24,8 +24,9 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CRIMEA-MNT
 created:        2009-07-14T12:07:59Z
-last-modified:  2024-02-07T08:09:51Z
+last-modified:  2024-02-07T08:27:35Z
 source:         RIPE
+descr:          For https://inkerman.ru
 
 organisation:   ORG-CSL28-RIPE
 org-name:       CrimeaCom South LLC
