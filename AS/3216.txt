@@ -1638,6 +1638,8 @@ remarks:
 +
 import:         from AS198780 action pref=100; accept AS198780
 export:         to AS198780 announce {0.0.0.0/0}
+import:         from AS44300 action pref=100; accept AS44300
+export:         to AS44300 announce ANY
 import:         from AS57003 action pref=100; accept AS57003
 export:         to AS57003 announce {0.0.0.0/0}
 import:         from AS52141 action pref=100; accept AS52141
@@ -1682,6 +1684,8 @@ import:         from AS207883 action pref=100; accept AS207883
 export:         to AS207883 announce ANY
 import:         from AS60566 action pref=100; accept AS60566
 export:         to AS60566 announce ANY
+import:         from AS210267 action pref=100; accept AS210267
+export:         to AS210267 announce ANY
 import:         from AS209307 action pref=100; accept AS-CNX-EKB
 export:         to AS209307 announce ANY
 mp-import:      from AS60566 action pref=100; accept AS60566
@@ -2904,6 +2908,10 @@ import:         from AS28910 action pref=100; accept AS-INTAL
 export:         to AS28910 announce ANY
 mp-import:      afi ipv6 from AS28910 action pref=100; accept AS28910
 mp-export:      afi ipv6 to AS28910 announce ANY
+import:         from AS43298 action pref=100; accept AS-STORMWALL-SET
+export:         to AS43298 announce ANY
+mp-import:      from AS43298 action pref=100; accept AS43298
+mp-export:      to AS43298 announce ANY
 import:         from AS47761 action pref=100; accept AS47761
 export:         to AS47761 announce ANY
 import:         from AS47764 action pref=100; accept AS-MAILRU
@@ -5473,7 +5481,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-02-03T09:36:47Z
+last-modified:  2024-02-07T10:57:55Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
