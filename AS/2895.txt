@@ -31,7 +31,7 @@ remarks:        ---GPNTB---
 mp-import:      afi ipv4.unicast from AS2587 action pref=80; accept AS2587
 mp-export:      afi ipv4.unicast to AS2587 announce ANY
 remarks:        ---RFBR---
-import:         from AS201842 action pref=80; accept {193.233.79.0/24}
+import:         from AS201842 action pref=80; accept {147.45.206.0/24, 193.233.79.0/24}
 export:         to AS201842 announce AS-FREENET {0.0.0.0/0}
 remarks:        --- Filanco-CL ---
 mp-import:      afi ipv4.unicast from AS204039 action pref=80; accept {31.28.22.0/24}
@@ -123,7 +123,7 @@ mnt-by:         RIPE-NCC-LEGACY-MNT
 mnt-by:         AS2895-MNT
 mnt-by:         FREENET-MNT
 created:        2002-09-10T15:26:09Z
-last-modified:  2023-09-25T15:12:57Z
+last-modified:  2024-02-10T19:01:46Z
 source:         RIPE
 
 organisation:   ORG-FG2-RIPE
