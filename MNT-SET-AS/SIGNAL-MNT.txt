@@ -15,6 +15,8 @@ import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-SIGNALTV
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS-SIGNALTV
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS8359 announce AS-SIGNALTV
 remarks:
 remarks:        --- Clients ---
 remarks:
@@ -29,6 +31,7 @@ remarks:        +-------------------------------------------------------+
 remarks:        | 42514:2146 - TransTeleCom (AS20485)
 remarks:        | 42514:2246 - Megafon (AS31133)
 remarks:        | 42514:2446 - Rostelecom (AS12389)
+remarks:        | 42514:2546 - MTS (AS8359)
 remarks:        +-------------------------------------------------------+
 remarks:
 remarks:        +-------------------------------------------------------+
@@ -37,6 +40,7 @@ remarks:        +-------------------------------------------------------+
 remarks:        | 42514:921x - TransTeleCom (AS20485)
 remarks:        | 42514:922x - Megafon (AS31133)
 remarks:        | 42514:924x - Rostelecom (AS12389)
+remarks:        | 42514:925x - MTS (AS8359)
 remarks:        | 42514:929x - All upstreams
 remarks:        |
 remarks:        | x - action:
@@ -64,7 +68,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIGNAL-MNT
 created:        2007-03-05T15:16:39Z
-last-modified:  2022-12-26T21:13:24Z
+last-modified:  2024-02-13T14:53:41Z
 source:         RIPE
 
 
