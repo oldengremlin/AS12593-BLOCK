@@ -197,6 +197,8 @@ import:         from AS8630 accept AS8630
 export:         to AS8630 announce ANY
 import:         from AS8641 accept AS-NAUKANET
 export:         to AS8641 announce ANY
+import:         from AS8749 accept AS-REDCOM
+export:         to AS8749 announce ANY
 import:         from AS8790 accept AS8790
 export:         to AS8790 announce ANY
 import:         from AS9049 accept AS-ERTH
@@ -1098,7 +1100,7 @@ export:         to AS57227 announce ANY
 import:         from AS57233 accept AS57233
 export:         to AS57233 announce ANY
 import:         from AS57250 accept AS57250
-export:         to AS57250 announce ANY
+export:         to AS57250  announce ANY
 import:         from AS57320 accept AS57320
 export:         to AS57320 announce ANY
 import:         from AS57328 accept AS57328
@@ -1829,7 +1831,7 @@ remarks:        | 31133:2101x - DE-CIX Frankfurt (AS6695)
 remarks:        | 31133:2102x - DE-CIX-DIRECT Frankfurt
 remarks:        | 31133:2104x - Netnod (AS52005)
 remarks:        | 31133:2105x - NetNod-DIRECT
-remarks:        | 31133:2106x - OVHCloud (AS16276)
+remarks:        | 31133:2106x - OVHCloud  (AS16276)
 remarks:        | 31133:2108x - Hetzner (AS24940)
 remarks:        | 31133:2109x - Softlayer (AS36351)
 remarks:        | 31133:2201x - AMS-IX (AS1200)
@@ -1855,7 +1857,7 @@ remarks:        | 31133:2317x - GTHost (AS63023)
 remarks:        | 31133:2321x - Telegram (AS62041)
 remarks:        | 31133:2322x - Akamai (AS20940)
 remarks:        | 31133:2323x - G-Core (AS199524)
-remarks:        | 31133:2324x - Stackpath (AS33438)
+remarks:        | 31133:2324x - Stackpath  (AS33438)
 remarks:        | 31133:2325x - Melbicom (AS56630)
 remarks:        | x = 0 - advertise to this only (don't advertise to any other Peer)
 remarks:        | x = 1,2,3 or 5 - prepend 31133 (1,2,3 or 5) times
@@ -1916,7 +1918,7 @@ remarks:        | 31133:40060 - NetNod (AS52005)
 remarks:        | 31133:40061 - NetNod-DIRECT
 remarks:        | 31133:40090 - Hetzner (AS24940)
 remarks:        | 31133:40120 - Scaleway (AS12876)
-remarks:        | 31133:40150 - Twitch (AS46489)
+remarks:        | 31133:40150 - Twitch  (AS46489)
 remarks:        | 31133:40170 - CloudFlare (AS13335)
 remarks:        | 31133:40190 - Apple (AS714)
 remarks:        | 31133:40200 - EdgeCast (AS15133)
@@ -1924,7 +1926,7 @@ remarks:        | 31133:40210 - LimeLight (AS22822)
 remarks:        | 31133:40220 - IOMART (AS20860)
 remarks:        | 31133:40230 - Valve (AS32590)
 remarks:        | 31133:40240 - RETN (AS9002)
-remarks:        | 31133:40250 - Facebook (AS32934)
+remarks:        | 31133:40250 - Facebook  (AS32934)
 remarks:        | 31133:40260 - DE-CIX-DIRECT New-York
 remarks:        | 31133:40270 - Core-BackBone (AS33891)
 remarks:        | 31133:40280 - Amazon (AS16509)
@@ -1932,8 +1934,8 @@ remarks:        | 31133:40300 - Hurricane Electric (AS6939)
 remarks:        | 31133:40310 - China Telecom (AS4134)
 remarks:        | 31133:40330 - Aofei (AS135391)
 remarks:        | 31133:40340 - Telegram (AS62041)
-remarks:        | 31133:40350 - Akamai (AS20940)
-remarks:        | 31133:40360 - OVHCloud (AS16276)
+remarks:        | 31133:40350 - Akamai  (AS20940)
+remarks:        | 31133:40360 - OVHCloud  (AS16276)
 remarks:        | 31133:40370 - GTHost (AS63023)
 remarks:        | 31133:40380 - G-Core (AS199524)
 remarks:        | 31133:40390 - Stackpath (AS33438)
@@ -1976,13 +1978,13 @@ remarks:        | Peering Policy peering@megafon.ru
 remarks:        +-------------------------------------------------------------------------------+
 remarks:
 admin-c:        MFON-RIPE
-tech-c:         MFPF-RIPE
+tech-c:         MFON-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-ENd-MNT
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2004-03-05T14:46:40Z
-last-modified:  2024-02-13T09:43:26Z
+last-modified:  2024-02-14T07:39:30Z
 source:         RIPE
 
 organisation:   ORG-OM1-RIPE
@@ -2034,29 +2036,6 @@ nic-hdl:        MFON-RIPE
 mnt-by:         MEGAFON-RIPE-MNT
 created:        2013-03-27T07:19:58Z
 last-modified:  2023-11-01T07:01:58Z
-source:         RIPE # Filtered
-
-role:           Volga Branch of OJSC MegaFon Technical Department
-address:        443080, Russia, Samara, Moskovskoe shosse, 15
-abuse-mailbox:  abuse-mailbox@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        Customer Service Center, is available at 24 x 7
-remarks:        -----------------------------------------------------------
-remarks:        Technical questions: gnocwest_tr@megafon.ru
-remarks:        Routing and peering: gnoceast_backbone@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        SPAM and Network security: abuse-mailbox@megafon.ru
-remarks:        Please use abuse-mailbox@megafon.ru e-mail address for complaints.
-remarks:        All messages to any other our address, relative to SPAM
-remarks:        or security issues, will not be concerned.
-remarks:        -----------------------------------------------------------
-remarks:        Information: http://www.megafon.ru
-remarks:        -----------------------------------------------------------
-admin-c:        MA25605-RIPE
-nic-hdl:        MFPF-RIPE
-mnt-by:         MGSM-MNT
-created:        2013-02-11T09:17:34Z
-last-modified:  2022-07-16T04:43:00Z
 source:         RIPE # Filtered
 
 
