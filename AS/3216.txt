@@ -409,14 +409,6 @@ import:         from AS19551 action pref=87; accept AS-INCAPSULA
 export:         to AS19551 announce AS-SOVAM
 mp-import:      afi ipv6 from AS19551 action pref=87; accept AS-INCAPSULA
 mp-export:      afi ipv6 to AS19551 announce AS-SOVAM-V6
-import:         from AS201229 action pref=87; accept AS201229
-export:         to AS201229 announce AS-SOVAM
-mp-import:      afi ipv6 from AS201229 action pref=87; accept AS201229
-mp-export:      afi ipv6 to AS201229 announce AS-SOVAM-V6
-import:         from AS200130 action pref=87; accept AS200130
-export:         to AS200130 announce AS-SOVAM
-mp-import:      afi ipv6 from AS200130 action pref=87; accept AS200130
-mp-export:      afi ipv6 to AS200130 announce AS-SOVAM-V6
 import:         from AS59605 action pref=87; accept AS-ZAINGP
 export:         to AS59605 announce AS-SOVAM
 mp-import:      afi ipv6 from AS59605 action pref=87; accept AS-ZAINGP
@@ -762,10 +754,6 @@ import:         from AS60171 action pref=87; accept AS-SET-AFRIX
 export:         to AS60171 announce AS-SOVAM
 mp-import:      afi ipv6 from AS60171 action pref=87; accept AS-SET-AFRIX
 mp-export:      afi ipv6 to AS60171 announce AS-SOVAM-V6
-import:         from AS202109 action pref=87; accept AS202109
-export:         to AS202109 announce AS-SOVAM
-mp-import:      afi ipv6 from AS202109 action pref=87; accept AS202109
-mp-export:      afi ipv6 to AS202109 announce AS-SOVAM-V6
 import:         from AS20860 action pref=87; accept AS-IOMART_8-24
 export:         to AS20860 announce AS-SOVAM
 mp-import:      afi ipv6 from AS20860 action pref=87; accept AS-IOMART
@@ -1155,10 +1143,6 @@ import:         from AS19551 action pref=87; accept AS-INCAPSULA
 export:         to AS19551 announce AS-SOVAM
 mp-import:      afi ipv6 from AS19551 action pref=87; accept AS-INCAPSULA
 mp-export:      afi ipv6 to AS19551 announce AS-SOVAM-V6
-import:         from AS202018 action pref=87; accept AS202018
-export:         to AS202018 announce AS-SOVAM
-mp-import:      afi ipv6 from AS202018 action pref=87; accept AS202018
-mp-export:      afi ipv6 to AS202018 announce AS-SOVAM-V6
 import:         from AS54113 action pref=87; accept AS-FASTLY
 export:         to AS54113 announce AS-SOVAM
 import:         from AS59605 action pref=87; accept AS-ZAINGP
@@ -1636,6 +1620,8 @@ remarks:        Full-transit customers
 remarks:
 +
 +
+import:         from as65003 action pref=100; accept AS65003
+export:         to AS65003 announce ANY
 import:         from AS21023 action pref=100; accept AS21023
 export:         to AS21023 announce ANY
 import:         from AS198780 action pref=100; accept AS198780
@@ -5481,7 +5467,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-02-15T09:54:11Z
+last-modified:  2024-02-22T15:26:21Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
