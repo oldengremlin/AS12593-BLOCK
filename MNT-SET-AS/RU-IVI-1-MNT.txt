@@ -244,6 +244,17 @@ mp-import:      afi ipv6.unicast from AS28761 accept {::/0}
 remarks:        ----UZ----
 import:         from AS202660 accept ANY
 export:         to AS202660 announce AS57629
+remarks:        ------------MHK----------------
+import:         from AS47895 accept as-rline
+export:         to AS47895 announce AS57629
+import:         from AS57227 accept AS-SUBNET05
+export:         to AS57227 announce AS57629
+import:         from AS57333 accept AS57333
+export:         to AS57333 announce AS57629
+import:         from AS47626 accept AS-ARPNET61
+export:         to AS47626 announce AS57629
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS57629
 remarks:        -------------MSK---------------
 remarks:        ----Beeline----
 import:         from AS3216 accept ANY
@@ -490,10 +501,6 @@ remarks:        57629:1050 - Backup route (localpref=50)
 remarks:        -------------------------------
 remarks:        Default localpref=100
 remarks:        -------------------------------
-remarks:        Looking glass (email NOC for an account)
-remarks:        http://noc.ivi.ru/lg
-remarks:        http://noc.digitalaccess.ru/lg
-remarks:        -------------------------------
 remarks:        Please note that we drop any and all IP-fragments.
 remarks:        Longest prefixes accepted are /24 for IPv4 and /48 for IPv6.
 remarks:        -------------------------------
@@ -504,7 +511,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-ivi-1-mnt
 created:        2011-12-19T11:32:01Z
-last-modified:  2024-02-21T07:54:13Z
+last-modified:  2024-02-26T14:14:35Z
 source:         RIPE # Filtered
 
 
