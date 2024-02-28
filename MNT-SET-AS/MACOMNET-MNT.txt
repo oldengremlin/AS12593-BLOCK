@@ -203,8 +203,6 @@ import:         from AS3316 action pref=120; accept AS-RELARN
 export:         to AS3316 announce AS-MACOMNET
 import:         from AS2683 action pref=120; accept AS-RADIOMSU
 export:         to AS2683 announce AS-MACOMNET
-import:         from AS2854 action pref=120; accept AS-ROSPRINT
-export:         to AS2854 announce AS-MACOMNET
 import:         from AS3267 action pref=120; accept AS-RUNNET
 export:         to AS3267 announce AS-MACOMNET
 import:         from AS28917 action pref=120; accept AS-FIORD
@@ -253,6 +251,8 @@ import:         from AS15599 action pref=120; accept AS15599
 export:         to AS15599 announce AS-MACOMNET
 import:         from AS49037 action pref=120; accept AS-PG19
 export:         to AS49037 announce AS-MACOMNET
+import:         from AS13002 action pref=120; accept AS-ISIX
+export:         to AS13002 announce AS-MACOMNET
 remarks:        -------------------cust-----------------------------
 import:         from AS39688 action pref=120; accept AS39688
 export:         to AS39688 announce ANY
@@ -381,6 +381,8 @@ mp-import:      afi ipv6.unicast from AS49544 action pref=120; accept AS-INTERAC
 mp-export:      afi ipv6.unicast to AS49544 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS54994 action pref=120; accept AS54994
 mp-export:      afi ipv6.unicast to AS54994 announce AS-MACOMNET
+mp-import:      afi ipv6.unicast from AS13002 action pref=120; accept AS-ISIX
+mp-export:      afi ipv6.unicast to AS13002 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS136907 action pref=120; accept AS136907
 mp-export:      afi ipv6.unicast to AS136907 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS12297 action pref=120; accept AS-TELARM
@@ -399,8 +401,6 @@ mp-import:      afi ipv6.unicast from AS25091 action pref=120; accept AS-IP-MAX
 mp-export:      afi ipv6.unicast to AS25091 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS21011 action pref=120; accept AS21011:AS-EXT
 mp-export:      afi ipv6.unicast to AS21011 announce AS-MACOMNET
-mp-import:      afi ipv6.unicast from AS2854 action pref=120; accept AS-OBSRUSSIA6
-mp-export:      afi ipv6.unicast to AS2854 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS13238 action pref=120; accept AS-YANDEX
 mp-export:      afi ipv6.unicast to AS13238 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS43404 action pref=120; accept AS-UCANETv6
@@ -475,7 +475,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MACOMNET-MNT
 created:        2002-09-10T13:31:17Z
-last-modified:  2024-02-01T09:30:46Z
+last-modified:  2024-02-27T11:51:10Z
 source:         RIPE
 
 

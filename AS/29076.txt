@@ -263,9 +263,6 @@ remarks:
 import:         from AS43502 action pref=50; accept AS43502;
 export:         to AS43502 announce ANY;
 remarks:
-import:         from AS43912 action pref=50; accept AS43912;
-export:         to AS43912 announce ANY;
-remarks:
 import:         from AS44670 action pref=50; accept AS44670;
 export:         to AS44670 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
@@ -795,6 +792,9 @@ remarks:
 import:         from AS200976 action pref=50; accept AS-LIFESTREAM;
 export:         to AS200976 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
+import:         from AS200015 action pref=50; accept AS-LIVETEX;
+export:         to AS200015 announce ANY;
+remarks:
 import:         from AS56630 action pref=50; accept AS-MELBICOM;
 export:         to AS56630 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
@@ -1028,9 +1028,6 @@ mp-export:      afi ipv6.unicast to AS43102 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS43502 action pref=50; accept AS43502;
 mp-export:      afi ipv6.unicast to AS43502 announce any;
-remarks:
-mp-import:      afi ipv6.unicast from AS43912 action pref=50; accept AS43912;
-mp-export:      afi ipv6.unicast to AS43912 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS44670 action pref=50; accept AS44670;
 mp-export:      afi ipv6.unicast to AS44670 announce any;
@@ -1561,6 +1558,9 @@ remarks:
 mp-import:      afi ipv6.unicast from AS200976 action pref=50; accept AS-LIFESTREAM;
 mp-export:      afi ipv6.unicast to AS200976 announce any;
 remarks:
+mp-import:      afi ipv6.unicast from AS200015 action pref=50; accept AS-LIVETEX;
+mp-export:      afi ipv6.unicast to AS200015 announce any;
+remarks:
 mp-import:      afi ipv6.unicast from AS56630 action pref=50; accept AS-MELBICOM;
 mp-export:      afi ipv6.unicast to AS56630 announce any;
 remarks:
@@ -1773,7 +1773,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2024-02-21T21:00:04Z
+last-modified:  2024-02-27T21:00:05Z
 source:         RIPE # Filtered
 
 organisation:   ORG-SO181-RIPE
