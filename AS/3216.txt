@@ -4307,10 +4307,10 @@ mp-import:      afi ipv6 from AS21859 action pref=100; accept AS-ZENLAYER
 mp-export:      afi ipv6 to AS21859 announce ANY
 import:         from AS49813 action pref=100; accept AS-INN
 export:         to AS49813 announce ANY
-import:         from AS202486 action pref=100; accept AS202486
+import:         from AS202486 action pref=100; accept AS-SKYTELECOM_TSK
 export:         to AS202486 announce ANY
-mp-import:      afi ipv6 from AS202486 action pref=100; accept AS202486
-mp-export:      afi ipv6 to AS202486 announce ANY
+mp-import:      from AS202486 action pref=100; accept AS-SKYTELECOM_TSK
+mp-export:      to AS202486 announce ANY
 import:         from AS196695 action pref=100; accept AS-NETONERUS
 export:         to AS196695 announce ANY
 import:         from AS49218 action pref=100; accept AS49218
@@ -5467,7 +5467,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-02-22T15:26:21Z
+last-modified:  2024-02-27T09:29:41Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
