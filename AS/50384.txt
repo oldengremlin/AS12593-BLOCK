@@ -266,10 +266,6 @@ import:         from AS197482 action pref=100; accept ANY # 2gis
 mp-import:      afi ipv6.unicast from AS197482 accept ANY
 export:         to AS197482 announce AS-W-IX
 mp-export:      afi ipv6.unicast to AS197482 announce AS-W-IX-IPVSIX
-import:         from AS50473 action pref=130; accept AS-ECO # ecotelecom
-mp-import:      afi ipv6.unicast from AS50473 accept AS-ECO
-export:         to AS50473 announce ANY
-mp-export:      afi ipv6.unicast to AS50473 announce ANY
 import:         from AS60720 action pref=130; accept AS-POLYCOMM # polycomm
 mp-import:      afi ipv6.unicast from AS60720 accept AS-POLYCOMM
 export:         to AS60720 announce ANY
@@ -578,6 +574,10 @@ import:         from AS35000 action pref=130; accept AS-PROMETEY # prometey
 mp-import:      afi ipv6.unicast from AS35000 accept AS-PROMETEY-V6
 export:         to AS35000 announce ANY
 mp-export:      afi ipv6.unicast to AS35000 announce ANY
+import:         from AS43660 action pref=130; accept AS43660 # etherway
+mp-import:      afi ipv6.unicast from AS43660 accept AS43660
+export:         to AS43660 announce ANY
+mp-export:      afi ipv6.unicast to AS43660 announce ANY
 import:         from AS24739 action pref=130; accept AS-SEVEREN-TELECOM # severen
 mp-import:      afi ipv6.unicast from AS24739 accept AS-SEVEREN-TELECOM-V6
 export:         to AS24739 announce ANY
@@ -678,14 +678,14 @@ import:         from AS31200 action pref=130; accept AS-RUNTK-SET # novotelecom
 mp-import:      afi ipv6.unicast from AS31200 accept AS-RUNTK-SET
 export:         to AS31200 announce ANY
 mp-export:      afi ipv6.unicast to AS31200 announce ANY
-import:         from AS201706 action pref=130; accept AS-SERVICEPIPE # servicepipe
-mp-import:      afi ipv6.unicast from AS201706 accept AS-SERVICEPIPE
-export:         to AS201706 announce ANY
-mp-export:      afi ipv6.unicast to AS201706 announce ANY
 import:         from AS48061 action pref=130; accept AS-RUTUBE # rutube
 mp-import:      afi ipv6.unicast from AS48061 accept AS-RUTUBE
 export:         to AS48061 announce ANY
 mp-export:      afi ipv6.unicast to AS48061 announce ANY
+import:         from AS201706 action pref=130; accept AS-SERVICEPIPE # servicepipe
+mp-import:      afi ipv6.unicast from AS201706 accept AS-SERVICEPIPE
+export:         to AS201706 announce ANY
+mp-export:      afi ipv6.unicast to AS201706 announce ANY
 import:         from AS51178 action pref=130; accept AS-AVANTEL-SPB # avantel-spb
 mp-import:      afi ipv6.unicast from AS51178 accept AS-AVANTEL-SPB
 export:         to AS51178 announce ANY
@@ -698,10 +698,10 @@ import:         from AS30855 action pref=130; accept AS30855 # tele-plus
 mp-import:      afi ipv6.unicast from AS30855 accept AS30855
 export:         to AS30855 announce ANY
 mp-export:      afi ipv6.unicast to AS30855 announce ANY
-import:         from AS210756 action pref=100; accept ANY # edgecenter
-mp-import:      afi ipv6.unicast from AS210756 accept ANY
-export:         to AS210756 announce AS-W-IX
-mp-export:      afi ipv6.unicast to AS210756 announce AS-W-IX-IPVSIX
+import:         from AS48642 action pref=130; accept AS-KT-RU # k-telecom
+mp-import:      afi ipv6.unicast from AS48642 accept AS-KT-RU-6
+export:         to AS48642 announce ANY
+mp-export:      afi ipv6.unicast to AS48642 announce ANY
 import:         from AS42916 action pref=130; accept AS42916 # it
 mp-import:      afi ipv6.unicast from AS42916 accept AS42916
 export:         to AS42916 announce ANY
@@ -710,10 +710,6 @@ import:         from AS38934 action pref=130; accept AS-PRIDE # pride
 mp-import:      afi ipv6.unicast from AS38934 accept AS-PRIDE
 export:         to AS38934 announce ANY
 mp-export:      afi ipv6.unicast to AS38934 announce ANY
-import:         from AS48642 action pref=130; accept AS-KT-RU # k-telecom
-mp-import:      afi ipv6.unicast from AS48642 accept AS-KT-RU-6
-export:         to AS48642 announce ANY
-mp-export:      afi ipv6.unicast to AS48642 announce ANY
 import:         from AS44670 action pref=130; accept AS44670 # tvigle
 mp-import:      afi ipv6.unicast from AS44670 accept AS44670
 export:         to AS44670 announce ANY
@@ -846,6 +842,18 @@ import:         from AS31430 action pref=130; accept AS-TEL-NET # firma-tel
 mp-import:      afi ipv6.unicast from AS31430 accept AS-TEL-NET
 export:         to AS31430 announce ANY
 mp-export:      afi ipv6.unicast to AS31430 announce ANY
+import:         from AS57214 action pref=130; accept AS57214 # vidikon
+mp-import:      afi ipv6.unicast from AS57214 accept AS57214
+export:         to AS57214 announce ANY
+mp-export:      afi ipv6.unicast to AS57214 announce ANY
+import:         from AS61992 action pref=130; accept AS61992 # tci
+mp-import:      afi ipv6.unicast from AS61992 accept AS61992
+export:         to AS61992 announce ANY
+mp-export:      afi ipv6.unicast to AS61992 announce ANY
+import:         from AS47457 action pref=130; accept AS47457 # sberbank
+mp-import:      afi ipv6.unicast from AS47457 accept AS47457
+export:         to AS47457 announce ANY
+mp-export:      afi ipv6.unicast to AS47457 announce ANY
 import:         from AS8369 action pref=130; accept AS-INTERSVYAZ # intersvyaz
 mp-import:      afi ipv6.unicast from AS8369 accept AS-INTERSVYAZ
 export:         to AS8369 announce ANY
@@ -854,6 +862,10 @@ import:         from AS12714 action pref=100; accept ANY # netbynet
 mp-import:      afi ipv6.unicast from AS12714 accept ANY
 export:         to AS12714 announce AS-W-IX
 mp-export:      afi ipv6.unicast to AS12714 announce AS-W-IX-IPVSIX
+import:         from AS31257 action pref=130; accept AS-ORIONNET # orionnet
+mp-import:      afi ipv6.unicast from AS31257 accept AS-ORIONNET
+export:         to AS31257 announce ANY
+mp-export:      afi ipv6.unicast to AS31257 announce ANY
 import:         from AS198826 action pref=130; accept AS-ISTELECOM # istelecom
 mp-import:      afi ipv6.unicast from AS198826 accept AS-ISTELECOM
 export:         to AS198826 announce ANY
@@ -943,35 +955,35 @@ remarks:        50384:3052 ams-ix
 remarks:
 remarks:
 remarks:        Cities:
-remarks:        50384:4001 Moscow
-remarks:        50384:4002 Leningrad
-remarks:        50384:4011 Novosibirsk
-remarks:        50384:4010 Ekaterinburg
-remarks:        50384:4006 Ufa
-remarks:        50384:4017 Tumen
-remarks:        50384:4008 Chelabinsk
-remarks:        50384:4013 Vladimir
-remarks:        50384:4016 Samara
-remarks:        50384:4007 Cheboksari
-remarks:        50384:4014 Voronezh
-remarks:        50384:4003 Frankfurt
-remarks:        50384:4012 Perm
-remarks:        50384:4009 Kazan
-remarks:        50384:4005 Kiev
-remarks:        50384:4015 Kurgan
 remarks:        50384:4004 Amsterdam
-remarks:        50384:4018 Tomsk
-remarks:        50384:4019 Kemerovo
-remarks:        50384:4020 Omsk
-remarks:        50384:4021 Kostroma
-remarks:        50384:4022 Tambov
-remarks:        50384:4024 Saratov
-remarks:        50384:4025 Nijnii Novgorod
-remarks:        50384:4026 Rostov-on-Don
-remarks:        50384:4027 Krasnoyarsk
-remarks:        50384:4103 Ulanude
 remarks:        50384:4123 Vladivostok
+remarks:        50384:4013 Vladimir
+remarks:        50384:4014 Voronezh
+remarks:        50384:4010 Ekaterinburg
+remarks:        50384:4009 Kazan
+remarks:        50384:4019 Kemerovo
+remarks:        50384:4005 Kiev
+remarks:        50384:4021 Kostroma
+remarks:        50384:4027 Krasnoyarsk
+remarks:        50384:4015 Kurgan
+remarks:        50384:4001 Moscow
+remarks:        50384:4025 Nijnii Novgorod
+remarks:        50384:4011 Novosibirsk
+remarks:        50384:4020 Omsk
+remarks:        50384:4012 Perm
+remarks:        50384:4026 Rostov-on-Don
+remarks:        50384:4016 Samara
+remarks:        50384:4002 Leningrad
+remarks:        50384:4024 Saratov
+remarks:        50384:4022 Tambov
+remarks:        50384:4018 Tomsk
+remarks:        50384:4017 Tumen
+remarks:        50384:4103 Ulanude
+remarks:        50384:4006 Ufa
+remarks:        50384:4003 Frankfurt
 remarks:        50384:4127 Khabarovsk
+remarks:        50384:4007 Cheboksari
+remarks:        50384:4008 Chelabinsk
 remarks:
 remarks:        RS accepts:
 remarks:        50384:6666 blackhole
@@ -1006,7 +1018,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2009-12-30T16:24:09Z
-last-modified:  2023-12-27T08:53:12Z
+last-modified:  2024-02-29T09:16:08Z
 source:         RIPE
 
 organisation:   ORG-IJ5-RIPE
