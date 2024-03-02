@@ -4181,6 +4181,10 @@ import:         from AS204507 action pref=100; accept AS204507
 export:         to AS204507 announce ANY
 import:         from AS50228 action pref=100; accept AS50228
 export:         to AS50228 announce {0.0.0.0/0}
+import:         from AS199933 action pref=100; accept AS-ELEKTRANET
+export:         to AS199933 announce ANY
+mp-import:      from AS199933 action pref=100; accept AS199933
+mp-export:      to AS199933 announce ANY
 import:         from AS3573 action pref=100; accept AS3573
 export:         to AS3573 announce {0.0.0.0/0}
 mp-import:      afi ipv6 from AS3573 action pref=100; accept AS3573
@@ -5469,7 +5473,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-02-28T08:21:45Z
+last-modified:  2024-03-01T11:45:11Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
