@@ -18,13 +18,11 @@ org:            ORG-MNL1-RIPE
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        | UPSTREAMS
 remarks:        +-------------------------------------------------------------------------------+
-import:         from AS20485 accept ANY
 import:         from AS31133 accept ANY
 import:         from as48858 accept ANY
 import:         from AS3216 accept ANY
 import:         from AS9049 accept ANY
 import:         from AS12389 accept ANY
-export:         to AS20485 announce AS-ORIONNET
 export:         to AS9049 announce AS-ORIONNET
 export:         to AS31133 announce AS-ORIONNET
 export:         to AS48858 announce AS-ORIONNET
@@ -61,32 +59,42 @@ export:         to AS48699 announce ANY
 remarks:        ====================================================
 remarks:        BGP COMMUNITIES
 remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix classification
+remarks:        | Communities for prefix classification (Intro)
 remarks:        +-------------------------------------------------------------------------------+
-remarks:        All inbound prefixes are marked with BGP communities
-remarks:        which describe their source and geographical region.
-remarks:        The format for the second component of community
-remarks:        (number after 31257:) is set at five digits.
-remarks:        This format is 31257:SNNRR, where the fields are:
-remarks:        S - source of the prefix:
-remarks:        1 - Customer
-remarks:        2 - Upstream
-remarks:        3 - International peer
-remarks:        4 - Russian peer
-remarks:        NN - Upstream, peer or customer:
-remarks:        Customers:
-remarks:        01 - BGP with Russian Internet Access
-remarks:        11 - BGP with Global Internet Access
-remarks:        Upstreams:
-remarks:        05 - TTK (AS20485)
-remarks:        10 - Megafon (AS31133)
-remarks:        99 - All Upstreams
-remarks:        Russian peers:
-remarks:        99 - All Russian Peers
-remarks:        RR - Geographical region code:
-remarks:        01 - Krasnoyarsk
-remarks:        02 - Irkutsk
-remarks:        03 - Kansk
+remarks:        | Classification prefix (Upstream, IX, Clients and Others)
+remarks:        | 1 - Upstreams
+remarks:        | 2 - IX
+remarks:        | 3 - Clients
+remarks:        | 5 - Orionnet Cites
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Communities for prefix classification from UPSTREAMS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 31257:1001 - ERTH (AS9049)
+remarks:        | 31257:1002 - Megafon (AS31133)
+remarks:        | 31257:1003 - RTK (AS12389)
+remarks:        | 31257:1004 - Beeline (AS3216)
+remarks:        | 31257:1005 - Milecom (AS48858)
+remarks:        | 31257:1000 - All Upstreams
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Communities for prefix classification from IX
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 31257:2001 - RED-IX (AS60430)
+remarks:        | 31257:2002 - SIBIR-IX (AS60763)
+remarks:        | 31257:2003 - SFO-IX (AS13094)
+remarks:        | 31257:2004 - W-IX (AS50384)
+remarks:        | 31257:2000 - All IX
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Communities for prefix classification from Orion Cites
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 31257:5001 - Abakan (AS50427)
+remarks:        | 31257:5002 - Irkutsk (AS204137)
+remarks:        | 31257:5003 - Bratsk (AS208221)
+remarks:        | 31257:5004 - Zelenogorsk (AS60980)
+remarks:        | 31257:5005 - Minusinsk (AS50022)
+remarks:        | 31257:5000 - All Cites
+remarks:        +-------------------------------------------------------------------------------+
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        | Communities for prefix control (Intro)
 remarks:        +-------------------------------------------------------------------------------+
@@ -133,7 +141,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MORNING-MNT
 created:        2004-03-31T12:46:47Z
-last-modified:  2024-02-01T04:05:16Z
+last-modified:  2024-03-05T08:37:50Z
 source:         RIPE
 
 organisation:   ORG-MNL1-RIPE

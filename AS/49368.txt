@@ -19,8 +19,6 @@ import:         from AS29076 action pref=100; accept ANY
 export:         to AS29076 announce AS-DOMOLAN
 import:         from AS50509 action pref=100; accept ANY
 export:         to AS50509 announce AS-DOMOLAN
-import:         from AS31500 action pref=100; accept ANY
-export:         to AS31500 announce AS-DOMOLAN
 import:         from AS35598 action pref=100; accept ANY
 export:         to AS35598 announce AS-DOMOLAN
 remarks:        +=======+ PEERING TABLE +=======+
@@ -40,6 +38,14 @@ import:         from AS32934 action pref=300; accept AS-FACEBOOK
 export:         to AS32934 announce AS-DOMOLAN
 import:         from AS50817 action pref=200; accept as-piter-ix
 export:         to AS50817 announce AS-DOMOLAN
+import:         from AS48193 action pref=200; accept as-piter-ix-fra
+export:         to AS48193 announce AS-DOMOLAN
+import:         from AS39607 action pref=200; accept as-piter-ix-helsinki
+export:         to AS39607 announce AS-DOMOLAN
+import:         from AS57936 action pref=200; accept as-piter-ix-tll
+export:         to AS57936 announce AS-DOMOLAN
+import:         from AS49634 action pref=200; accept as-piter-ix-riga
+export:         to AS49634 announce AS-DOMOLAN
 import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-DOMOLAN
 import:         from AS46489 action pref=300; accept AS-TWITCH
@@ -53,7 +59,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-DML
 created:        2009-05-27T12:37:46Z
-last-modified:  2023-02-27T12:39:42Z
+last-modified:  2024-03-05T12:18:27Z
 source:         RIPE # Filtered
 
 organisation:   ORG-DL83-RIPE
