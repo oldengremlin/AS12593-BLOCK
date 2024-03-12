@@ -870,10 +870,6 @@ import:         from AS198826 action pref=130; accept AS-ISTELECOM # istelecom
 mp-import:      afi ipv6.unicast from AS198826 accept AS-ISTELECOM
 export:         to AS198826 announce ANY
 mp-export:      afi ipv6.unicast to AS198826 announce ANY
-import:         from AS35320 action pref=100; accept ANY # ett
-mp-import:      afi ipv6.unicast from AS35320 accept ANY
-export:         to AS35320 announce AS-W-IX
-mp-export:      afi ipv6.unicast to AS35320 announce AS-W-IX-IPVSIX
 import:         from AS47764 action pref=130; accept AS-MAILRU # mailru
 mp-import:      afi ipv6.unicast from AS47764 accept AS-MAILRU
 export:         to AS47764 announce ANY
@@ -1018,7 +1014,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2009-12-30T16:24:09Z
-last-modified:  2024-02-29T09:16:08Z
+last-modified:  2024-03-11T09:41:48Z
 source:         RIPE
 
 organisation:   ORG-IJ5-RIPE
