@@ -462,10 +462,6 @@ import:         from AS43399 action pref=130; accept AS-TINKOFF # tinkoff
 mp-import:      afi ipv6.unicast from AS43399 accept AS-TINKOFF
 export:         to AS43399 announce ANY
 mp-export:      afi ipv6.unicast to AS43399 announce ANY
-import:         from AS207457 action pref=130; accept AS-AT-TELECOM # attelecom
-mp-import:      afi ipv6.unicast from AS207457 accept AS-AT-TELECOM
-export:         to AS207457 announce ANY
-mp-export:      afi ipv6.unicast to AS207457 announce ANY
 import:         from AS208936 action pref=130; accept AS208936 # comvip
 mp-import:      afi ipv6.unicast from AS208936 accept AS208936
 export:         to AS208936 announce ANY
@@ -510,6 +506,10 @@ import:         from AS50889 action pref=130; accept AS50889 # gfn
 mp-import:      afi ipv6.unicast from AS50889 accept AS50889
 export:         to AS50889 announce ANY
 mp-export:      afi ipv6.unicast to AS50889 announce ANY
+import:         from AS35237 action pref=130; accept AS-SBRF # sberbank
+mp-import:      afi ipv6.unicast from AS35237 accept AS-SBRF
+export:         to AS35237 announce ANY
+mp-export:      afi ipv6.unicast to AS35237 announce ANY
 import:         from AS44964 action pref=130; accept AS-DATAPLANET # dapl
 mp-import:      afi ipv6.unicast from AS44964 accept AS-DATAPLANET
 export:         to AS44964 announce ANY
@@ -814,6 +814,10 @@ import:         from AS42104 action pref=130; accept AS-CENTRLAN # maxima
 mp-import:      afi ipv6.unicast from AS42104 accept AS-CENTRLAN
 export:         to AS42104 announce ANY
 mp-export:      afi ipv6.unicast to AS42104 announce ANY
+import:         from AS29319 action pref=130; accept AS-IMSYS # mosnet
+mp-import:      afi ipv6.unicast from AS29319 accept AS-IMSYS
+export:         to AS29319 announce ANY
+mp-export:      afi ipv6.unicast to AS29319 announce ANY
 import:         from AS49106 action pref=130; accept AS49106 # opticom
 mp-import:      afi ipv6.unicast from AS49106 accept AS49106
 export:         to AS49106 announce ANY
@@ -916,7 +920,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2002-12-04T16:28:40Z
-last-modified:  2024-02-29T09:12:31Z
+last-modified:  2024-03-14T14:16:45Z
 source:         RIPE
 
 organisation:   ORG-IJ5-RIPE

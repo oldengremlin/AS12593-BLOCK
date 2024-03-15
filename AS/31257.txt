@@ -34,9 +34,11 @@ remarks:        +---------------------------------------------------------------
 import:         from AS13094 accept ANY
 import:         from AS60430 accept AS-RED-IX-PEERS
 import:         from AS60763 accept AS-SIBIR-IX
+import:         from AS50384 accept AS-W-IX
 export:         to AS13094 announce AS-ORIONNET
 export:         to AS60430 announce AS-ORIONNET
 export:         to AS60763 announce AS-ORIONNET
+export:         to AS50384 announce AS-ORIONNET
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        | CUSTOMERS
 remarks:        +-------------------------------------------------------------------------------+
@@ -45,13 +47,11 @@ import:         from AS50427 accept AS-ABAKANNET
 import:         from AS204137 accept AS-ORIONNET-IRK
 import:         from AS201970 accept AS201970
 import:         from AS209867 accept AS209867
-import:         from AS51756 accept AS51756
 import:         from AS60980 accept AS60980
 export:         to AS50439 announce ANY
 export:         to AS50427 announce ANY
 export:         to AS201970 announce ANY
 export:         to AS209867 announce ANY
-export:         to AS51756 announce ANY
 export:         to AS204137 announce ANY
 export:         to AS60980 announce ANY
 import:         from AS48699 accept AS48699
@@ -111,6 +111,7 @@ remarks:        | 31257:5009 - GTS (AS50439)
 remarks:        | 31257:5010 - Lesproekt (AS51838)
 remarks:        | 31257:5011 - Afontovo (AS57440)
 remarks:        | 31257:5012 - KrasGMU (AS57438)
+remarks:        | 31257:5013 - Smotreshka (AS200976)
 remarks:        | 31257:5000 - All Customers
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        +-------------------------------------------------------------------------------+
@@ -155,6 +156,7 @@ remarks:        +---------------------------------------------------------------
 remarks:        | 31257:201X - RED-IX (AS60430)
 remarks:        | 31257:202X - SIBIR-IX (AS60763)
 remarks:        | 31257:203X - SFO-IX (AS13094)
+remarks:        | 31257:204X - W-IX (AS50384)
 remarks:        | 31257:299X - All IX
 remarks:        | x = 0 - do not announce
 remarks:        | x = 1 to 6 - prepend 31257 (1 to 6) times
@@ -186,6 +188,7 @@ remarks:        | 31257:559X - GTS (AS50439)
 remarks:        | 31257:560X - Lesproekt (AS51838)
 remarks:        | 31257:561X - Afontovo (AS57440)
 remarks:        | 31257:562X - KrasGMU (AS57438)
+remarks:        | 31257:563X - Smotreshka (AS200976)
 remarks:        | 31257:599X - All Customers
 remarks:        | x = 0 - do not announce
 remarks:        | x = 1,2,4,6 - prepend 31257 (1,2,4 or 6) times
@@ -210,7 +213,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MORNING-MNT
 created:        2004-03-31T12:46:47Z
-last-modified:  2024-03-13T08:33:17Z
+last-modified:  2024-03-14T10:32:06Z
 source:         RIPE
 
 organisation:   ORG-MNL1-RIPE
