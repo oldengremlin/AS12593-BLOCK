@@ -623,10 +623,12 @@ export:         to AS48084 announce AS-FARLINE
 remarks:        +-------------------+
 remarks:        | IX`s |
 remarks:        +-------------------+
-import:         from AS39751 action pref=50; accept AS-CRIMEAIX
+import:         from AS43222 action pref=50; accept AS-CRIMEAIX
 import:         from AS50952 action pref=50; accept AS-DATAIX
-export:         to AS39751 announce AS-FARLINE
+import:         from AS39751 action pref=50; accept AS-M-IX
+export:         to AS43222 announce AS-FARLINE
 export:         to AS50952 announce AS-FARLINE
+export:         to AS39751 announce AS-FARLINE
 admin-c:        FNOC7-RIPE
 tech-c:         FNOC7-RIPE
 status:         ASSIGNED
@@ -634,7 +636,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-FARLINE
 mnt-by:         IPADDRESS-RU
 created:        2007-01-22T11:10:29Z
-last-modified:  2022-05-25T14:02:41Z
+last-modified:  2024-03-18T12:40:12Z
 source:         RIPE
 sponsoring-org: ORG-IL432-RIPE
 
