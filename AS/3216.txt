@@ -4123,6 +4123,10 @@ import:         from AS207228 action pref=100; accept AS207228
 export:         to AS207228 announce ANY
 mp-import:      afi ipv6 from AS207228 action pref=100; accept AS207228
 mp-export:      afi ipv6 to AS207228 announce ANY
+import:         from AS51655 action pref=100; accept AS51655:AS-ILIMTELECOM
+export:         to AS51655 announce ANY
+mp-import:      from AS51655 action pref=100; accept AS51655
+mp-export:      to AS51655 announce ANY
 import:         from AS57380 action pref=100; accept AS57380
 export:         to AS57380 announce ANY
 import:         from AS49736 action pref=100; accept AS49736
@@ -5110,9 +5114,9 @@ remarks:        3216:1061 Rostov-on-Don peer
 remarks:        3216:1063 Samara peer
 remarks:        3216:1066 Ekaterinburg peer
 remarks:        3216:1074 Chelyabinsk peer
+remarks:        3216:1076 Yaroslavl peer
 remarks:        3216:1077 Moscow peer
 remarks:        3216:1078 SPb peer
-remarks:        3216:1079 Yaroslavl peer
 remarks:        ---
 remarks:        3216:1101 Rostelecom AS12389 private peering
 remarks:        3216:1102 MTS (MTU) AS8359 private peering
@@ -5475,7 +5479,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-03-15T08:01:41Z
+last-modified:  2024-03-20T06:22:57Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
