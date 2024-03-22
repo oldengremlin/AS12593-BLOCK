@@ -130,8 +130,6 @@ mp-export:      afi ipv6.unicast to AS31261 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS31261 accept AS-GARS;
 export:         to AS47181 announce AS-VK
 import:         from AS47181 accept AS47181
-export:         to AS8331 announce AS-VK
-import:         from AS8331 accept AS-RURINET
 export:         to AS34456 announce AS-VK
 import:         from AS34456 accept AS-RCPEERS
 export:         to AS35810 announce AS-VK
@@ -578,7 +576,7 @@ remarks:        137 TRANCOM (AS47181)
 remarks:        139 YANDEXCLOUD (AS200350)
 remarks:        140 Inetcom (AS35598)
 remarks:        141 KVANT (AS43727)
-remarks:        142 RINET (AS8331)
+remarks:        142 unused
 remarks:        143 RIALCOM (AS34456)
 remarks:        144 IVSTAR (AS29588)
 remarks:        145 Bigtelecom (AS35810)
@@ -708,7 +706,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2024-01-19T14:32:44Z
+last-modified:  2024-03-21T09:51:50Z
 source:         RIPE # Filtered
 
 organisation:   ORG-LLCn4-RIPE
