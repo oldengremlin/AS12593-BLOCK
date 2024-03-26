@@ -32,9 +32,9 @@ remarks:        ------------------------------------------------------------
 remarks:        PEERS
 remarks:        ------------------------------------------------------------
 remarks:        DataIX:
-import:         from AS50952 action pref=80; accept ANY
+import:         from AS50952 action pref=40; accept ANY
 export:         to AS50952 announce AS-HYPERNET
-mp-import:      afi ipv6.unicast from AS50952 action pref=80; accept ANY
+mp-import:      afi ipv6.unicast from AS50952 action pref=40; accept ANY
 mp-export:      afi ipv6.unicast to AS50952 announce AS-HYPERNET-V6
 remarks:
 remarks:        Piter-IX MSK:
@@ -82,7 +82,6 @@ remarks:        | 05 - RETN (AS57304)
 remarks:        |
 remarks:        | Peer:
 remarks:        | 01 - Piter-IX MSK (AS49869)
-remarks:        | 02 - DataIX (AS50952)
 remarks:        | 03 - Piter-IX SPB (AS50817)
 remarks:        | 06 - Intersvyaz (AS8369)
 remarks:        |
@@ -109,7 +108,6 @@ remarks:        | 99 - All upstreams
 remarks:        |
 remarks:        | Peer:
 remarks:        | 01 - Piter-IX MSK (AS49869)
-remarks:        | 02 - DataIX (AS50952)
 remarks:        | 03 - Piter-IX SPB (AS50817)
 remarks:        | 06 - Intersvyaz (AS8369)
 remarks:        | 99 - All peers
@@ -149,7 +147,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         HYPERNET-MNT
 created:        2006-04-24T08:36:49Z
-last-modified:  2024-03-15T16:42:41Z
+last-modified:  2024-03-25T13:10:07Z
 source:         RIPE
 
 organisation:   ORG-LLCH2-RIPE
