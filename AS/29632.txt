@@ -409,9 +409,15 @@ export:         to AS50392 announce AS-DTEL-IX
 remarks:        -= Proton =-
 import:         from AS51250 action pref=100; accept AS51250
 export:         to AS51250 announce ANY
+remarks:        -= eVPS =-
+import:         from AS51264 action pref=100; accept AS51264
+export:         to AS51264 announce ANY
 remarks:        -= Webconnect =-
 import:         from AS51611 action pref=100; accept AS51611
 export:         to AS51611 announce ANY
+remarks:        -= NETLIFE ISP =-
+import:         from AS51742 action pref=100; accept AS51742
+export:         to AS51742 announce ANY
 remarks:        -= NetAssist AS52095 =-
 import:         from AS52095 action pref=100; accept AS52095
 export:         to AS52095 announce ANY
@@ -427,9 +433,6 @@ export:         to AS57347 announce ANY
 remarks:        -= LAGIDCOM =-
 import:         from AS56394 action pref=100; accept AS56394
 export:         to AS56394 announce ANY
-remarks:        -= NETLIFE ISP =-
-import:         from AS51742 action pref=100; accept AS51742
-export:         to AS51742 announce ANY
 remarks:        -= INETCOM INVEST =-
 import:         from AS52212 action pref=100; accept AS-INETINVEST
 export:         to AS52212 announce ANY
@@ -1325,7 +1328,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEREZHA-MNT
 created:        2003-10-28T13:43:45Z
-last-modified:  2024-02-29T23:48:48Z
+last-modified:  2024-03-26T15:21:18Z
 source:         RIPE # Filtered
 
 organisation:   ORG-NL366-RIPE
