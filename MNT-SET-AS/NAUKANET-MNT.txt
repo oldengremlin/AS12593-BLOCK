@@ -462,6 +462,11 @@ remarks:        PCCW
 remarks:        -------------------
 import:         from AS3491 accept ANY
 export:         to AS3491 announce AS-NAUKANET
+remarks:        ===================
+remarks:        DATALAHTI
+remarks:        -------------------
+import:         from AS199231 accept ANY
+export:         to AS199231 announce AS-NAUKANET
 remarks:
 remarks:        +++++++++++++++++++
 remarks:        IX PEERINGS
@@ -520,10 +525,6 @@ remarks:        Akamai Cache
 remarks:        -------------------
 export:         to AS21357 announce AS-NAUKANET
 remarks:        ===================
-remarks:        CDNvideo Cache
-remarks:        -------------------
-import:         from AS57363 accept AS57363
-export:         to AS57363 announce AS-NAUKANET
 remarks:
 remarks:        +++++++++++++++++++
 remarks:        PRIVATE PEERS
@@ -590,11 +591,6 @@ remarks:        MnogoByte
 remarks:        -------------------
 import:         from AS42632 accept AS-MNOGOBYTE
 export:         to AS42632 announce AS-NAUKANET
-remarks:        ===================
-remarks:        NetByNet
-remarks:        -------------------
-import:         from AS12714 accept AS-TI
-export:         to AS12714 announce AS-NAUKANET
 remarks:        ===================
 remarks:        Asympto Networks Kft.
 remarks:        -------------------
@@ -743,6 +739,7 @@ remarks:        8641:5208y - When advertising to Megafon (AS31133)
 remarks:        8641:5210y - When advertising to TTK (AS20485)
 remarks:        8641:5211y - When advertising to Telia (AS1299)
 remarks:        8641:5212y - When advertising to PCCW (AS3491)
+remarks:        8641:5215y - When advertising to DATALAHTI (AS199231)
 remarks:
 remarks:        ...y=0 - do not advertise
 remarks:        ...y=1,2,4 or 8 - prepend 8641 (1,2,4 or 8) times
@@ -913,7 +910,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NAUKANET-MNT
 created:        2002-01-18T15:32:43Z
-last-modified:  2023-11-24T12:20:14Z
+last-modified:  2024-03-28T13:43:30Z
 source:         RIPE # Filtered
 
 
