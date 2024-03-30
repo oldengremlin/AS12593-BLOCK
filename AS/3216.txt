@@ -1364,6 +1364,10 @@ import:         from AS46489 action pref=87; accept AS-TWITCH
 export:         to AS46489 announce AS-SOVAM
 mp-import:      afi ipv6 from AS46489 action pref=87; accept AS-TWITCH
 mp-export:      afi ipv6 to AS46489 announce AS-SOVAM-V6
+import:         from AS199524 action pref=87; accept AS-GCORE
+export:         to AS199524 announce AS-SOVAM
+mp-import:      afi ipv6 from AS199524 action pref=87; accept AS-GCORE
+mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(Equinix Hong Kong)
 remarks:
@@ -1398,6 +1402,10 @@ import:         from AS46489 action pref=87; accept AS-TWITCH
 export:         to AS46489 announce AS-SOVAM
 mp-import:      afi ipv6 from AS46489 action pref=87; accept AS-TWITCH
 mp-export:      afi ipv6 to AS46489 announce AS-SOVAM-V6
+import:         from AS199524 action pref=87; accept AS-GCORE
+export:         to AS199524 announce AS-SOVAM
+mp-import:      afi ipv6 from AS199524 action pref=87; accept AS-GCORE
+mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(HKIX Hong Kong)
 remarks:
@@ -1511,6 +1519,10 @@ import:         from AS2906 action pref=87; accept AS-NFLX
 export:         to AS2906 announce AS-SOVAM
 mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
 mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
+import:         from AS199524 action pref=87; accept AS-GCORE
+export:         to AS199524 announce AS-SOVAM
+mp-import:      afi ipv6 from AS199524 action pref=87; accept AS-GCORE
+mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(BBIX Tokyo)
 remarks:
@@ -1522,6 +1534,10 @@ import:         from AS46489 action pref=87; accept AS-TWITCH
 export:         to AS46489 announce AS-SOVAM
 mp-import:      afi ipv6 from AS46489 action pref=87; accept AS-TWITCH
 mp-export:      afi ipv6 to AS46489 announce AS-SOVAM-V6
+import:         from AS199524 action pref=87; accept AS-GCORE
+export:         to AS199524 announce AS-SOVAM
+mp-import:      afi ipv6 from AS199524 action pref=87; accept AS-GCORE
+mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(BBIX HK)
 remarks:
@@ -1620,6 +1636,8 @@ remarks:        Full-transit customers
 remarks:
 +
 +
+import:         from AS215244 action pref=100; accept AS215244
+export:         to AS215244 announce {0.0.0.0/0}
 import:         from AS50317 action pref=100; accept AS50317
 export:         to AS50317 announce ANY
 mp-import:      from AS50317 action pref=100; accept AS50317
@@ -1744,8 +1762,6 @@ import:         from AS57812 action pref=100; accept AS57812
 export:         to AS57812 announce ANY
 import:         from AS50473 action pref=100; accept AS-ECO
 export:         to AS50473 announce {0.0.0.0/0}
-import:         from AS56619 action pref=100; accept AS56619
-export:         to AS56619 announce {0.0.0.0/0}
 import:         from AS8749 action pref=100; accept AS-REDCOM
 export:         to AS8749 announce ANY
 mp-import:      from AS8749 action pref=100; accept AS-REDCOM
@@ -4819,6 +4835,8 @@ import:         from AS59549 action pref=100; accept AS59549
 export:         to AS59549 announce ANY
 import:         from AS41034 action pref=100; accept AS-IMPULS
 export:         to AS41034 announce ANY
+mp-import:      from AS41034 action pref=100; accept AS-IMPULS
+mp-export:      to AS41034 announce ANY
 import:         from AS202700 action pref=100; accept AS202700
 export:         to AS202700 announce ANY
 import:         from AS34322 action pref=100; accept AS34322
@@ -5483,7 +5501,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-03-27T07:19:03Z
+last-modified:  2024-03-30T07:12:36Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
