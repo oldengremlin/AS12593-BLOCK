@@ -1368,6 +1368,10 @@ import:         from AS199524 action pref=87; accept AS-GCORE
 export:         to AS199524 announce AS-SOVAM
 mp-import:      afi ipv6 from AS199524 action pref=87; accept AS-GCORE
 mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
+import:         from AS63199 action pref=87; accept AS-CAPITALONLINEDATA
+export:         to AS63199 announce AS-SOVAM
+mp-import:      afi ipv6 from AS63199 action pref=87; accept AS-CAPITALONLINEDATA
+mp-export:      afi ipv6 to AS63199 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(Equinix Hong Kong)
 remarks:
@@ -5497,7 +5501,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-04-01T12:43:16Z
+last-modified:  2024-04-02T13:44:34Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
