@@ -454,10 +454,6 @@ import:         from AS51255 action pref=130; accept AS51255 # shmyak
 mp-import:      afi ipv6.unicast from AS51255 accept AS51255
 export:         to AS51255 announce ANY
 mp-export:      afi ipv6.unicast to AS51255 announce ANY
-import:         from AS62142 action pref=130; accept AS-KONNEKTIKARU # konnektikaru
-mp-import:      afi ipv6.unicast from AS62142 accept AS-KONNEKTIKARU
-export:         to AS62142 announce ANY
-mp-export:      afi ipv6.unicast to AS62142 announce ANY
 import:         from AS50923 action pref=130; accept AS-METRO-SET # metroset
 mp-import:      afi ipv6.unicast from AS50923 accept AS-METRO-SET6
 export:         to AS50923 announce ANY
@@ -478,10 +474,6 @@ import:         from AS34959 action pref=130; accept AS-KVIKTEL # polycomm
 mp-import:      afi ipv6.unicast from AS34959 accept AS-KVIKTEL
 export:         to AS34959 announce ANY
 mp-export:      afi ipv6.unicast to AS34959 announce ANY
-import:         from AS8595 action pref=130; accept AS-WESTCALL-MSK # westcall
-mp-import:      afi ipv6.unicast from AS8595 accept AS-WESTCALL-MSK
-export:         to AS8595 announce ANY
-mp-export:      afi ipv6.unicast to AS8595 announce ANY
 import:         from AS48293 action pref=130; accept AS-UNIONTEL-RU # uniontel
 mp-import:      afi ipv6.unicast from AS48293 accept AS-UNIONTEL-RU
 export:         to AS48293 announce ANY
@@ -882,10 +874,10 @@ import:         from AS42104 action pref=130; accept AS-CENTRLAN # maxima
 mp-import:      afi ipv6.unicast from AS42104 accept AS-CENTRLAN
 export:         to AS42104 announce ANY
 mp-export:      afi ipv6.unicast to AS42104 announce ANY
-import:         from AS29319 action pref=130; accept AS-IMSYS # mosnet
-mp-import:      afi ipv6.unicast from AS29319 accept AS-IMSYS
-export:         to AS29319 announce ANY
-mp-export:      afi ipv6.unicast to AS29319 announce ANY
+import:         from AS29319 action pref=100; accept ANY # mosnet
+mp-import:      afi ipv6.unicast from AS29319 accept ANY
+export:         to AS29319 announce AS-W-IX
+mp-export:      afi ipv6.unicast to AS29319 announce AS-W-IX-IPVSIX
 import:         from AS21219 action pref=100; accept ANY # datagroup
 mp-import:      afi ipv6.unicast from AS21219 accept ANY
 export:         to AS21219 announce AS-W-IX
@@ -1014,7 +1006,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2009-12-30T16:24:09Z
-last-modified:  2024-03-11T09:41:48Z
+last-modified:  2024-04-09T14:08:01Z
 source:         RIPE
 
 organisation:   ORG-IJ5-RIPE
