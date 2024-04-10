@@ -50,6 +50,15 @@ import:         from AS29114 accept AS29114
 export:         to AS29114 announce {0.0.0.0/0}
 import:         from AS51525 accept AS51525
 export:         to AS51525 announce {0.0.0.0/0}
+remarks:        ------------------------------------------------------------------------------
+remarks:        38917:1X0N When advertising to any uplink...
+remarks:        ...N=0 - do not advertise
+remarks:        ...N=1,2,3,4 - prepend most recent AS 1,2,3 or 4 times
+remarks:        ...X=1 TRANSTELECOM (AS20485)
+remarks:        ...X=2 PAO VimpelCom (AS3216)
+remarks:        ...X=3 PJSC MegaFon (AS31133)
+remarks:        ...X=4 ROSTELECOM (AS12389)
+remarks:        ------------------------------------------------------------------------------
 org:            ORG-OC8-RIPE
 admin-c:        AR4565-RIPE
 admin-c:        IV6524-RIPE
@@ -60,7 +69,7 @@ mnt-by:         RIPE-NCC-END-MNT
 tech-c:         IV6524-RIPE
 mnt-by:         KOMTEL-MNT
 created:        2005-11-14T10:54:43Z
-last-modified:  2024-02-29T13:30:44Z
+last-modified:  2024-04-09T10:33:26Z
 source:         RIPE
 
 
