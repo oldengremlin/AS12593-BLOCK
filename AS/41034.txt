@@ -33,7 +33,7 @@ import:         from AS8359 action pref=100; accept ANY
 import:         from AS31692 action pref=100; accept AS31692
 import:         from AS198774 action pref=100; accept AS198774
 import:         from AS60856 action pref=100; accept AS60856
-import:         from AS9049 action pref=100; accept AS9049
+import:         from AS9049 action pref=100; accept ANY
 import:         from AS3216 action pref=100; accept ANY
 import:         from AS48441 action pref=100; accept AS48441
 import:         from AS42597 action pref=100; accept AS42597
@@ -62,7 +62,8 @@ export:         to AS8359 announce AS-IMPULS;
 export:         to AS31692 announce AS-IMPULS;
 export:         to AS198774 announce ANY;
 export:         to AS60856 announce ANY;
-export:         to AS9049 announce AS41034;
+export:         to AS9049 announce AS-IMPULS;
+export:         to AS9049 announce AS-IMPULS-V6;
 export:         to AS3216 announce AS-IMPULS;
 export:         to AS3216 announce AS41034:AS-IMPULS-V6;
 export:         to AS48441 announce ANY;
@@ -82,7 +83,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IMPULS-RIPE-MNT
 created:        2006-06-02T10:23:52Z
-last-modified:  2024-04-10T05:13:59Z
+last-modified:  2024-04-10T08:56:13Z
 source:         RIPE
 
 organisation:   ORG-IL85-RIPE
