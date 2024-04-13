@@ -27,6 +27,7 @@ import:         from AS49373 action pref=150; accept ANY
 import:         from AS42861 action pref=150; accept ANY
 import:         from AS31500 action pref=150; accept ANY
 import:         from AS8641 action pref=150; accept ANY
+import:         from AS202984 action pref=150; accept ANY
 remarks:        --- Accept announces from MSK-IX RS ---
 import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
 remarks:        --- Accept announces from MSK-IX Peering ---
@@ -67,6 +68,7 @@ export:         to AS49373 announce AS-IMSYS
 export:         to AS42861 announce AS-IMSYS
 export:         to AS31500 announce AS-IMSYS
 export:         to AS8641 announce AS-IMSYS
+export:         to AS202984 announce AS-IMSYS
 remarks:        --- Annouce our network to MSK-IX ---
 export:         to AS8631 announce AS-IMSYS
 export:         to AS35422 announce AS-IMSYS
@@ -111,7 +113,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IMSYS-MNT
 created:        2003-07-30T13:31:55Z
-last-modified:  2022-01-19T09:42:10Z
+last-modified:  2024-04-12T13:41:52Z
 source:         RIPE # Filtered
 
 organisation:   ORG-sL14-RIPE
