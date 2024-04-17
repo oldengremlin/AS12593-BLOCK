@@ -1648,6 +1648,10 @@ remarks:        Full-transit customers
 remarks:
 +
 +
+import:         from AS57449 action pref=100; accept AS57449
+export:         to AS57449 announce {0.0.0.0/0}
+mp-import:      from AS57449 action pref=100; accept AS57449
+mp-export:      to AS57449 announce {::/0}
 import:         from AS200593 action pref=100; accept AS200593
 export:         to AS200593 announce ANY
 import:         from AS198953 action pref=100; accept AS198953
@@ -5519,7 +5523,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-04-12T10:33:59Z
+last-modified:  2024-04-17T09:32:02Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
