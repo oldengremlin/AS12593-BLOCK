@@ -452,8 +452,8 @@ remarks:
 import:         from AS49124 action pref=50; accept AS-CENTROSET;
 export:         to AS49124 announce ANY;
 remarks:
-import:         from AS57191 action pref=50; accept AS-CHUDOTEL;
-export:         to AS57191 announce ANY;
+import:         from AS215116 action pref=50; accept AS-CHUDOTEL;
+export:         to AS215116 announce ANY;
 remarks:
 import:         from AS61325 action pref=50; accept AS-CIFRATELECOM;
 export:         to AS61325 announce AS-CLOUD-IX-PRO;
@@ -471,7 +471,7 @@ import:         from AS24663 action pref=50; accept AS-COMPLAT;
 export:         to AS24663 announce ANY;
 remarks:
 import:         from AS62429 action pref=50; accept AS-CSTNET;
-export:         to AS62429 announce {0.0.0.0/0};
+export:         to AS62429 announce ANY;
 remarks:
 import:         from AS3175 action pref=50; accept AS-DATAHOUSE;
 export:         to AS3175 announce ANY;
@@ -1218,8 +1218,8 @@ remarks:
 mp-import:      afi ipv6.unicast from AS49124 action pref=50; accept AS-CENTROSET;
 mp-export:      afi ipv6.unicast to AS49124 announce any;
 remarks:
-mp-import:      afi ipv6.unicast from AS57191 action pref=50; accept AS57191;
-mp-export:      afi ipv6.unicast to AS57191 announce any;
+mp-import:      afi ipv6.unicast from AS215116 action pref=50; accept AS215116;
+mp-export:      afi ipv6.unicast to AS215116 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS61325 action pref=50; accept AS61325;
 mp-export:      afi ipv6.unicast to AS61325 announce any;
@@ -1884,7 +1884,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2024-04-18T21:00:05Z
+last-modified:  2024-04-19T21:00:05Z
 source:         RIPE # Filtered
 
 
