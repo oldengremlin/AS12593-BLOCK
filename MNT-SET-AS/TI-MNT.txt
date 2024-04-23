@@ -400,7 +400,6 @@ mp-import:      afi ipv6.unicast from AS29329 accept AS-NODEX
 mp-export:      afi ipv6.unicast to AS29329 announce AS-GARSV6
 mp-import:      afi ipv6.unicast from AS34602 accept AS-STARLNK
 mp-export:      afi ipv6.unicast to AS34602 announce AS-GARSV6
-mp-export:      afi ipv6.unicast to AS209456 announce AS-GARSV6
 remarks:        ---- IPV6 DOWNLINKS ------------------------------
 mp-import:      afi ipv6.unicast from AS51219 action pref=250; accept AS-CROC
 mp-export:      afi ipv6.unicast to AS51219 announce ANY
@@ -416,7 +415,6 @@ mp-export:      afi ipv6.unicast to AS204117 announce ANY
 mp-export:      afi ipv6.unicast to AS202344 announce ANY
 mp-import:      afi ipv6.unicast from AS60388 action pref=250; accept AS-SIGMA-TELECOM
 mp-export:      afi ipv6.unicast to AS60388 announce ANY
-mp-export:      afi ipv6.unicast to AS209456 announce ANY
 remarks:        RAMBLER
 mp-import:      afi ipv6.unicast from AS24638 action pref=250; accept AS24638
 mp-export:      afi ipv6.unicast to AS24638 announce ANY
@@ -610,7 +608,6 @@ import:         from AS60773 action pref=250; accept AS60773
 import:         from AS60388 action pref=250; accept AS-SIGMA-TELECOM
 import:         from AS209639 action pref=250; accept AS209639
 import:         from AS209701 action pref=250; accept AS209701
-import:         from AS209456 action pref=250; accept AS209456
 import:         from AS201745 action pref=250; accept AS201745
 import:         from AS35119 action pref=250; accept AS35119
 import:         from AS49729 action pref=250; accept AS49729
@@ -784,7 +781,6 @@ export:         to AS60773 announce ANY
 export:         to AS60388 announce ANY
 export:         to AS209639 announce ANY
 export:         to AS209701 announce ANY
-export:         to AS209456 announce ANY
 export:         to AS201745 announce ANY
 export:         to AS35119 announce ANY
 export:         to AS49729 announce ANY
@@ -851,7 +847,7 @@ mnt-by:         MEGAFON-RIPE-MNT
 mnt-by:         GARS-MNT
 mnt-by:         TI-MNT
 created:        2004-04-01T09:50:34Z
-last-modified:  2024-04-18T09:46:04Z
+last-modified:  2024-04-22T12:04:05Z
 source:         RIPE # Filtered
 
 
