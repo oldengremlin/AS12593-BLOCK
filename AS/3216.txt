@@ -2776,12 +2776,8 @@ import:         from AS62040 action pref=100; accept AS-ITK
 export:         to AS62040 announce ANY
 mp-import:      afi ipv6 from AS62040 action pref=100; accept AS-ITK-V6
 mp-export:      afi ipv6 to AS62040 announce ANY
-import:         from AS61131 action pref=100; accept AS61131
-export:         to AS61131 announce ANY
 import:         from AS61111 action pref=100; accept AS-RTCLOUD-MSK
 export:         to AS61111 announce ANY
-mp-import:      afi ipv6 from AS61131 action pref=100; accept AS-ZTLC-V6
-mp-export:      afi ipv6 to AS61131 announce ANY
 import:         from AS39711 action pref=100; accept AS39711
 export:         to AS39711 announce ANY
 import:         from AS199862 action pref=100; accept AS199862
@@ -4201,8 +4197,6 @@ import:         from AS47569 action pref=100; accept AS-ERLANG
 export:         to AS47569 announce ANY
 import:         from AS25880 action pref=100; accept AS25880
 export:         to AS25880 announce ANY
-import:         from AS204238 action pref=100; accept AS204238
-export:         to AS204238 announce {0.0.0.0/0}
 import:         from AS205125 action pref=100; accept AS-NTX32
 export:         to AS205125 announce ANY
 mp-import:      afi ipv6 from AS205125 action pref=100; accept AS-NTX32
@@ -5525,7 +5519,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-04-17T13:53:07Z
+last-modified:  2024-04-22T07:55:56Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
