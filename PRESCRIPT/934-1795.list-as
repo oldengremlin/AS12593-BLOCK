@@ -1,0 +1,10 @@
+#!/bin/sh
+
+for N in $( cat 934-1795 ); do
+    CF=$( echo ${N} | tr / . | sed "s/^/..\/NET\//;s/$/.txt/" )
+    if [ -r ${CF} ]; then
+        cat ${CF}
+    else
+        echo ${N}
+    fi
+done
