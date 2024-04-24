@@ -296,17 +296,11 @@ remarks:        -- Piter-IX-Kiev --
 import:         from AS61376 action pref=200; accept ANY
 export:         to AS61376 announce AS-MTW
 remarks:
-remarks:        -- AMS-IX --
-import:         from AS1200 action pref=200; accept ANY
-export:         to AS1200 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS1200 action pref=200; accept ANY
-mp-export:      to AS1200 announce AS-MTW6
-remarks:
-remarks:        -- Giganet.UA --
-import:         from AS59613 action pref=200; accept ANY
-export:         to AS59613 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS59613 action pref=200; accept ANY
-mp-export:      to AS59613 announce AS-MTW6
+remarks:        -- MSK-IX --
+import:         from AS8631 action pref=200; accept ANY
+export:         to AS8631 announce AS-MTW
+mp-import:      afi ipv6.unicast from AS8631 action pref=200; accept ANY
+mp-export:      to AS8631 announce AS-MTW6
 remarks:
 remarks:        =============================================
 remarks:        Peering and other
@@ -434,7 +428,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTW-MNT
 mnt-by:         MNT-MTW-HOSTING
 created:        2008-11-17T11:11:49Z
-last-modified:  2023-12-07T15:29:24Z
+last-modified:  2024-04-23T14:11:33Z
 source:         RIPE # Filtered
 
 organisation:   ORG-JME1-RIPE
