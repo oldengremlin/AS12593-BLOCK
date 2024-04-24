@@ -1,10 +1,21 @@
 #!/bin/sh
 
 for N in $( cat 934-1795 ); do
+    echo ${N}
     CF=$( echo ${N} | tr / . | sed "s/^/..\/NET\//;s/$/.txt/" )
     if [ -r ${CF} ]; then
-        cat ${CF}
+        for O in $( awk '{ print $2 }' ${CF} | sed "s/[Aa][Ss]//" ); do
+            awk '$1~/^'${O}'$/' ../AS.list
+        done
     else
-        echo ${N}
+        echo ${N} > /dev/stderr
+        AS=$( whois 213.59.166.0/24 | sed '/^route:/,/^$/!d;/^$/,$d' | awk '$1~/^origin:$/ { print $2 }' )
+        echo ${AS} | egrep "^AS" &&
+            whois ${AS} | sed '/^organisation:/,/^$/!d;/^$/,$d' | \
+            awk '$1~/^(org-name|address):/ { print }' | \
+            sed "s/org-name: *//;s/address: *//" | \
+            awk '{ printf("%s, ", $_) }' | \
+            sed "s/, $/\n/"
     fi
+    echo
 done
