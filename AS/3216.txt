@@ -4207,6 +4207,8 @@ import:         from AS51538 action pref=100; accept AS-TEKCOM
 export:         to AS51538 announce ANY
 import:         from AS29196 action pref=100; accept AS-UCSNET
 export:         to AS29196 announce ANY
+mp-import:      from AS29196 action pref=100; accept AS-UCSNET
+mp-export:      to AS29196 announce ANY
 import:         from AS20866 action pref=100; accept AS-INTELECOM
 export:         to AS20866 announce ANY
 import:         from AS35168 action pref=100; accept AS-SET_TNSPLUS
@@ -4885,6 +4887,8 @@ import:         from AS58197 action pref=100; accept AS58197
 export:         to AS58197 announce {0.0.0.0/0}
 import:         from AS198826 action pref=100; accept AS-ISTELECOM
 export:         to AS198826 announce ANY
+mp-import:      from AS198826 action pref=100; accept AS-ISTELECOM
+mp-export:      to AS198826 announce ANY
 import:         from AS52007 action pref=100; accept AS52007
 export:         to AS52007 announce ANY
 import:         from AS206631 action pref=100; accept AS206631
@@ -5519,7 +5523,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-04-22T07:55:56Z
+last-modified:  2024-04-24T10:36:24Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
