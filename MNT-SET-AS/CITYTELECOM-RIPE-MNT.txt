@@ -569,9 +569,6 @@ remarks:
 import:         from AS200976 action pref=50; accept AS-LIFESTREAM;
 export:         to AS200976 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
-import:         from AS43267 action pref=50; accept AS-LINETEL;
-export:         to AS43267 announce ANY;
-remarks:
 import:         from AS48940 action pref=50; accept AS-LINK-NET;
 export:         to AS48940 announce ANY;
 remarks:
@@ -703,9 +700,6 @@ export:         to AS47723 announce {0.0.0.0/0};
 remarks:
 import:         from AS57712 action pref=50; accept AS-SOFTVIDEO;
 export:         to AS57712 announce ANY;
-remarks:
-import:         from AS42149 action pref=50; accept AS-ST;
-export:         to AS42149 announce ANY;
 remarks:
 import:         from AS34602 action pref=50; accept AS-STARLNK;
 export:         to AS34602 announce AS-CLOUD-IX-PRO;
@@ -1323,9 +1317,6 @@ remarks:
 mp-import:      afi ipv6.unicast from AS200976 action pref=50; accept AS-LIFESTREAM;
 mp-export:      afi ipv6.unicast to AS200976 announce any;
 remarks:
-mp-import:      afi ipv6.unicast from AS43267 action pref=50; accept AS-LINETEL;
-mp-export:      afi ipv6.unicast to AS43267 announce any;
-remarks:
 mp-import:      afi ipv6.unicast from AS48940 action pref=50; accept AS-LINK-NET;
 mp-export:      afi ipv6.unicast to AS48940 announce any;
 remarks:
@@ -1457,9 +1448,6 @@ mp-export:      afi ipv6.unicast to AS47723 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS57712 action pref=50; accept AS-SOFTVIDEO;
 mp-export:      afi ipv6.unicast to AS57712 announce any;
-remarks:
-mp-import:      afi ipv6.unicast from AS42149 action pref=50; accept AS42149;
-mp-export:      afi ipv6.unicast to AS42149 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS34602 action pref=50; accept AS-STARLNK;
 mp-export:      afi ipv6.unicast to AS34602 announce any;
@@ -1860,7 +1848,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2024-04-25T21:00:05Z
+last-modified:  2024-05-03T21:00:09Z
 source:         RIPE # Filtered
 
 
