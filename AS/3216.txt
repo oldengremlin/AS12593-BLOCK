@@ -497,6 +497,10 @@ import:         from AS15895 action pref=87; accept AS-KYIVSTAR
 export:         to AS15895 announce AS-SOVAM
 mp-import:      afi ipv6 from AS15895 action pref=87; accept AS-KYIVSTAR
 mp-export:      afi ipv6 to AS15895 announce AS-SOVAM-V6
+import:         from AS137409 action pref=87; accept AS137409:AS-ALL
+export:         to AS137409 announce AS-SOVAM
+mp-import:      afi ipv6 from AS137409 action pref=87; accept AS137409:AS-ALL
+mp-export:      afi ipv6 to AS137409 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(DE-CIX)
 remarks:
@@ -1535,6 +1539,10 @@ import:         from AS199524 action pref=87; accept AS-GCORE
 export:         to AS199524 announce AS-SOVAM
 mp-import:      afi ipv6 from AS199524 action pref=87; accept AS-GCORE
 mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
+import:         from AS137409 action pref=87; accept AS137409:AS-ALL
+export:         to AS137409 announce AS-SOVAM
+mp-import:      afi ipv6 from AS137409 action pref=87; accept AS137409:AS-ALL
+mp-export:      afi ipv6 to AS137409 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(BBIX Tokyo)
 remarks:
@@ -1649,9 +1657,7 @@ remarks:
 remarks:
 remarks:
 remarks:        Full-transit customers
-remarks:
-+
-+
+remarks:        ++
 import:         from AS12494 action pref=100; accept AS-POSTLTD
 export:         to AS12494 announce ANY
 import:         from AS57449 action pref=100; accept AS57449
@@ -5144,7 +5150,7 @@ remarks:        (3216:1012 Voronezh peer) obsoleted
 remarks:        (3216:1013 Krasnoyarsk peer) obsoleted
 remarks:        (3216:1014 Chelyabinsk peer) obsoleted
 remarks:        (3216:1015 Khabarovsk peer) obsoleted
-remarks:        (3216:1016 Samara peer) obsoleted
+remarks:        3216:1016 Tatarstan peer
 remarks:        (3216:1017 Stavropol peer) obsoleted
 remarks:        (3216:1018 Rostov-on-Don peer) obsoleted
 remarks:        (3216:1019 Krasnodar peer) obsoleted
@@ -5153,18 +5159,28 @@ remarks:        3216:1024 Krasnoyarsk peer
 remarks:        3216:1025 Vladivostok peer
 remarks:        3216:1026 Stavropol peer
 remarks:        3216:1027 Khabarovsk peer
+remarks:        3216:1030 Astrakhan peer
+remarks:        3216:1031 Belgorod peer
 remarks:        3216:1034 Volgograd peer
+remarks:        3216:1036 Voronezh peer
 remarks:        3216:1038 Irkutsk peer
+remarks:        3216:1042 Kemerovo peer
+remarks:        3216:1046 Kursk peer
 remarks:        3216:1052 N.Novgorod peer
 remarks:        3216:1054 Novosibirsk peer
 remarks:        3216:1055 Omsk peer
+remarks:        3216:1059 Perm peer
 remarks:        3216:1061 Rostov-on-Don peer
 remarks:        3216:1063 Samara peer
+remarks:        3216:1064 Saratov peer
+remarks:        3216:1065 Sakhalin peer
 remarks:        3216:1066 Ekaterinburg peer
+remarks:        3216:1072 Tyumen peer
 remarks:        3216:1074 Chelyabinsk peer
 remarks:        3216:1076 Yaroslavl peer
 remarks:        3216:1077 Moscow peer
 remarks:        3216:1078 SPb peer
+remarks:        3216:1086 Surgut peer
 remarks:        ---
 remarks:        3216:1101 Rostelecom AS12389 private peering
 remarks:        3216:1102 MTS (MTU) AS8359 private peering
@@ -5527,7 +5543,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-05-03T10:35:49Z
+last-modified:  2024-05-07T15:36:56Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
