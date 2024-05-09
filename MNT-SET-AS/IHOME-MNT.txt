@@ -1574,14 +1574,14 @@ import:         from AS3285 action pref=130; accept AS-HOMEIP # home-ip
 mp-import:      afi ipv6.unicast from AS3285 accept AS-HOMEIP
 export:         to AS3285 announce ANY
 mp-export:      afi ipv6.unicast to AS3285 announce ANY
+import:         from AS57363 action pref=130; accept AS-CDNVIDEO # cdnvideo
+mp-import:      afi ipv6.unicast from AS57363 accept AS-CDNVIDEO
+export:         to AS57363 announce ANY
+mp-export:      afi ipv6.unicast to AS57363 announce ANY
 import:         from AS50477 action pref=130; accept AS-SET-SVEN # sven
 mp-import:      afi ipv6.unicast from AS50477 accept AS-SET-SVEN
 export:         to AS50477 announce ANY
 mp-export:      afi ipv6.unicast to AS50477 announce ANY
-import:         from AS57363 action pref=100; accept ANY # cdnvideo
-mp-import:      afi ipv6.unicast from AS57363 accept ANY
-export:         to AS57363 announce AS-W-IX
-mp-export:      afi ipv6.unicast to AS57363 announce AS-W-IX-IPVSIX
 import:         from AS211609 action pref=130; accept AS211609 # okko
 mp-import:      afi ipv6.unicast from AS211609 accept AS211609
 export:         to AS211609 announce ANY
@@ -1834,10 +1834,14 @@ import:         from AS47457 action pref=130; accept AS47457 # sberbank
 mp-import:      afi ipv6.unicast from AS47457 accept AS47457
 export:         to AS47457 announce ANY
 mp-export:      afi ipv6.unicast to AS47457 announce ANY
-import:         from AS9123 action pref=130; accept AS9123 # timeweb
-mp-import:      afi ipv6.unicast from AS9123 accept AS9123
+import:         from AS9123 action pref=130; accept AS-TIMEWEB # timeweb
+mp-import:      afi ipv6.unicast from AS9123 accept AS-TIMEWEB
 export:         to AS9123 announce ANY
 mp-export:      afi ipv6.unicast to AS9123 announce ANY
+import:         from AS61979 action pref=130; accept AS61979 # mediakvant
+mp-import:      afi ipv6.unicast from AS61979 accept AS61979
+export:         to AS61979 announce ANY
+mp-export:      afi ipv6.unicast to AS61979 announce ANY
 import:         from AS8369 action pref=130; accept AS-INTERSVYAZ # intersvyaz
 mp-import:      afi ipv6.unicast from AS8369 accept AS-INTERSVYAZ
 export:         to AS8369 announce ANY
@@ -1998,7 +2002,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2009-12-30T16:24:09Z
-last-modified:  2024-04-23T09:53:09Z
+last-modified:  2024-05-08T08:56:31Z
 source:         RIPE
 
 
