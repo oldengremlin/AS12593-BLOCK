@@ -23,113 +23,9 @@ remarks:        --- Megafon ---
 import:         from AS31133 action pref=200; accept ANY
 export:         to AS31133 announce AS-TI^+
 remarks:        ----------------------------
-remarks:        === NL-IX Public Peering ===
-remarks:        --- NL-IX ---
-import:         from AS34307 action pref=400; accept AS34307
-export:         to AS34307 announce AS-TI^+
-remarks:        --- LeaseWeb B.V. ---
-import:         from AS16265 action pref=400; accept AS-LEASEWEB
-export:         to AS16265 announce AS-TI^+
-remarks:        --- Akamai Technologies ---
-import:         from AS20940 action pref=400; accept AS-AKAMAI
-export:         to AS20940 announce AS-TI^+
-remarks:        --- Hurricane Electric, Inc. ---
-import:         from AS6939 action pref=400; accept AS-HURRICANE
-export:         to AS6939 announce AS-TI^+
-remarks:        --- Limelight Networks ---
-import:         from AS22822 action pref=400; accept AS-LLNW
-export:         to AS22822 announce AS-TI^+
-remarks:        --- Linkedin ---
-import:         from AS14413 action pref=400; accept AS14413
-export:         to AS14413 announce AS-TI^+
-remarks:        ==============
-remarks:        National peers
-remarks:        ==============
-remarks:        === MSK-IX ===
-import:         from AS8631 action pref=400; accept AS-MSKROUTESERVER
-export:         to AS8631 announce AS-TI^+
-remarks:        === RND-IX ===
-import:         from AS48216 action pref=400; accept AS-RNDROUTESERVER
-export:         to AS48216 action community .= { 0:52041 }; announce AS-TI^+
-remarks:        === W-IX ===
-import:         from AS50384 action pref=400; accept AS-W-IX
-export:         to AS50384 announce AS-TI^+
-remarks:        === Data-IX ===
-import:         from AS50952 action pref=400; accept AS-DATAIX
-export:         to AS50952 announce AS-TI^+
 remarks:        === Megafon-IX ===
 import:         from AS31133 action pref=400; accept AS-MF-IX
 export:         to AS31133 announce AS-TI^+
-remarks:        === VLV-IX ===
-import:         from AS48531 action pref=400; accept AS-VLVROUTESERVER
-export:         to AS48531 announce AS-TI^+
-remarks:        ==============
-import:         from AS9002 action pref=400; accept AS-RETN
-export:         to AS9002 announce AS-TI^+
-import:         from AS13238 action pref=400; accept AS-YANDEX
-export:         to AS13238 announce AS-TI^+
-import:         from AS15169 action pref=400; accept AS-GOOGLE
-export:         to AS15169 announce AS-TI^+
-import:         from AS47764 action pref=400; accept AS-MAILRU
-export:         to AS47764 announce AS-TI^+
-import:         from AS48061 action pref=400; accept AS48061
-export:         to AS48061 announce AS-TI^+
-import:         from AS28917 action pref=400; accept AS-FIORD
-export:         to AS28917 announce AS-TI^+
-import:         from AS57629 action pref=400; accept AS57629
-export:         to AS57629 announce AS-TI^+
-import:         from AS9049 action pref=400; accept AS-ERTH
-export:         to AS9049 announce AS-TI^+
-import:         from AS29076 action pref=400; accept AS-CITYTELECOM
-export:         to AS29076 announce AS-TI^+
-import:         from AS57363 action pref=400; accept AS-CDNVIDEO
-export:         to AS57363 announce AS-TI^+
-import:         from AS3326 action pref=400; accept AS3326:AS-EXT
-export:         to AS3326 announce AS-TI^+
-import:         from AS21011 action pref=400; accept AS21011:AS-EXT
-export:         to AS21011 announce AS-TI^+
-import:         from AS34879 action pref=400; accept AS-NGENIX
-export:         to AS34879 announce AS-TI^+
-remarks:        --- DDoS-Guard.net ---
-import:         from AS262254 action pref=400; accept AS-DANCOM
-export:         to AS262254 announce AS-TI^+
-remarks:        --- G-Core Labs S.A. ---
-import:         from AS199524 action pref=400; accept AS-GCORE
-export:         to AS199524 announce AS-TI^+
-remarks:        --- Tele-plus ---
-import:         from AS30855 action pref=400; accept AS30855
-export:         to AS30855 announce AS-TI^+
-remarks:        --- Akamai Technologies ---
-import:         from AS20940 action pref=400; accept AS-AKAMAI
-export:         to AS20940 announce AS-TI^+
-remarks:        --- MnogoByte CDN ---
-import:         from AS48158 action pref=400; accept AS-DIGITALONE
-export:         to AS48158 announce AS-TI^+
-remarks:        --- CDN77 ---
-import:         from AS60068 action pref=400; accept AS-CDN77
-export:         to AS60068 announce AS-TI^+
-remarks:        ===================
-remarks:        National IPv6 peers
-remarks:        ===================
-mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
-mp-export:      afi ipv6.unicast to AS8631 announce AS-TI
-mp-import:      afi ipv6.unicast from AS48216 accept AS-RNDROUTESERVER
-mp-export:      afi ipv6.unicast to AS48216 announce AS-TI
-remarks:        --- Google ipv6 peering ---
-mp-import:      afi ipv6.unicast from AS15169 accept AS15169
-mp-export:      afi ipv6.unicast to AS15169 announce AS-TI
-remarks:        --- RETN.Net ---
-mp-import:      afi ipv6.unicast from AS9002 accept AS9002
-mp-export:      afi ipv6.unicast to AS9002 announce AS-TI
-remarks:        --- RUTube (peer) ---
-mp-import:      afi ipv6.unicast from AS48061 accept AS48061
-mp-export:      afi ipv6.unicast to AS48061 announce AS-TI
-remarks:        --- Citytelecom (Filanco) ---
-mp-import:      afi ipv6.unicast from AS29076 accept AS29076
-mp-export:      afi ipv6.unicast to AS29076 announce AS-TI
-remarks:        --- CDN77 ---
-mp-import:      afi ipv6.unicast from AS60068 accept AS-CDN77
-mp-export:      afi ipv6.unicast to AS60068 announce AS-TI
 remarks:        ===========
 remarks:        Downstreams ( Customers V6 )
 remarks:        ===========
@@ -299,21 +195,6 @@ remarks:        18 - Sea-ix
 remarks:        ==================
 remarks:        Valid peers <ASN>:
 remarks:        ==================
-remarks:        9002 - RETN
-remarks:        9049 - ER-Telecom
-remarks:        13238 - Yandex
-remarks:        15169 - Google
-remarks:        28917 - FIORD
-remarks:        30855 - Tele-plus
-remarks:        34879 - Ngenix
-remarks:        34892 - INFOLINK
-remarks:        47764 - Mail.ru
-remarks:        47775 - ufanet
-remarks:        48061 - RUTube
-remarks:        48158 - MnogoByte CDN
-remarks:        57363 - CDNVideo
-remarks:        57629 - IVI
-remarks:        60068 - CDN77
 remarks:        ==========================
 remarks:        Valid europen peers <ASN>:
 remarks:        ==========================
@@ -373,7 +254,7 @@ mnt-by:         MEGAFON-RIPE-MNT
 mnt-by:         TI-NOC-MNT
 mnt-by:         TI-MNT
 created:        2002-07-18T12:38:14Z
-last-modified:  2024-03-25T10:21:21Z
+last-modified:  2024-05-13T13:32:28Z
 source:         RIPE # Filtered
 
 organisation:   ORG-OM1-RIPE
