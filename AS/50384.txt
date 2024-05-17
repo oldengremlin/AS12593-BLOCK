@@ -218,10 +218,6 @@ import:         from AS15886 action pref=130; accept AS-KONNEKTIKA # konnektika
 mp-import:      afi ipv6.unicast from AS15886 accept AS-KONNEKTIKA
 export:         to AS15886 announce ANY
 mp-export:      afi ipv6.unicast to AS15886 announce ANY
-import:         from AS42574 action pref=130; accept AS42574 # nsplus
-mp-import:      afi ipv6.unicast from AS42574 accept AS42574
-export:         to AS42574 announce ANY
-mp-export:      afi ipv6.unicast to AS42574 announce ANY
 import:         from AS197275 action pref=130; accept AS197275 # linktelecomnn
 mp-import:      afi ipv6.unicast from AS197275 accept AS197275
 export:         to AS197275 announce ANY
@@ -854,6 +850,10 @@ import:         from AS61979 action pref=130; accept AS61979 # mediakvant
 mp-import:      afi ipv6.unicast from AS61979 accept AS61979
 export:         to AS61979 announce ANY
 mp-export:      afi ipv6.unicast to AS61979 announce ANY
+import:         from AS50766 action pref=130; accept AS50766 # zamkov
+mp-import:      afi ipv6.unicast from AS50766 accept AS50766
+export:         to AS50766 announce ANY
+mp-export:      afi ipv6.unicast to AS50766 announce ANY
 import:         from AS8369 action pref=130; accept AS-INTERSVYAZ # intersvyaz
 mp-import:      afi ipv6.unicast from AS8369 accept AS-INTERSVYAZ
 export:         to AS8369 announce ANY
@@ -938,10 +938,6 @@ import:         from AS48166 action pref=130; accept AS-FORTEX # fortex
 mp-import:      afi ipv6.unicast from AS48166 accept AS-FORTEX
 export:         to AS48166 announce ANY
 mp-export:      afi ipv6.unicast to AS48166 announce ANY
-import:         from AS59666 action pref=130; accept AS59666 # zettaline
-mp-import:      afi ipv6.unicast from AS59666 accept AS59666
-export:         to AS59666 announce ANY
-mp-export:      afi ipv6.unicast to AS59666 announce ANY
 remarks:
 remarks:        communities
 remarks:        50384:3001 msk-ix
@@ -1014,7 +1010,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2009-12-30T16:24:09Z
-last-modified:  2024-05-08T08:56:31Z
+last-modified:  2024-05-16T15:05:01Z
 source:         RIPE
 
 organisation:   ORG-IJ5-RIPE
