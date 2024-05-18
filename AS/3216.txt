@@ -2320,6 +2320,8 @@ import:         from AS42027 action pref=100; accept AS42027
 export:         to AS42027 announce {0.0.0.0/0}
 import:         from AS198873 action pref=100; accept AS198873
 export:         to AS198873 announce AS-SOVAM
+import:         from AS60967 action pref=100; accept AS60967
+export:         to AS60967 announce {0.0.0.0/0}
 import:         from AS62115 action pref=100; accept AS62115
 export:         to AS62115 announce ANY
 import:         from AS44378 action pref=100; accept AS44378
@@ -4547,7 +4549,7 @@ import:         from AS21226 action pref=100; accept AS-4LINE
 export:         to AS21226 announce ANY
 import:         from AS207984 action pref=100; accept AS207984
 export:         to AS207984 announce {0.0.0.0/0}
-import:         from AS57073 action pref=100; accept AS57073
+import:         from AS57073 action pref=100; accept AS57073:AS-WILDBERRIES
 export:         to AS57073 announce ANY
 mp-import:      afi ipv6 from AS57073 action pref=100; accept AS57073
 mp-export:      afi ipv6 to AS57073 announce ANY
@@ -5553,7 +5555,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-05-15T10:15:07Z
+last-modified:  2024-05-17T12:58:37Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
