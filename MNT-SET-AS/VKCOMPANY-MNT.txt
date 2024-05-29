@@ -599,9 +599,9 @@ mp-export:      afi ipv6.unicast to AS31133 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS31133 accept AS-MF-MGSM;
 remarks:        -- Rascom
 export:         to AS20764 announce AS-VKONTAKTE
-import:         from AS20764 accept AS-RASCOM
+import:         from AS20764 accept AS20764:AS-RASCOM
 mp-export:      afi ipv6.unicast to AS20764 announce AS-VKONTAKTE;
-mp-import:      afi ipv6.unicast from AS20764 accept AS-RASCOM;
+mp-import:      afi ipv6.unicast from AS20764 accept AS20764:AS-RASCOM;
 remarks:        -- Rostelecom
 export:         to AS12389 announce AS-VKONTAKTE
 import:         from AS12389 accept AS-ROSTELECOM
@@ -891,7 +891,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-07-03T14:45:56Z
-last-modified:  2024-05-02T14:05:57Z
+last-modified:  2024-05-28T11:23:51Z
 source:         RIPE # Filtered
 
 
@@ -1173,9 +1173,9 @@ import:         from AS13238 accept AS-YANDEX
 mp-export:      afi ipv6.unicast to AS13238 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS13238 accept AS-YANDEX;
 export:         to AS20764 announce AS-VK
-import:         from AS20764 accept AS-RASCOM
+import:         from AS20764 accept AS20764:AS-RASCOM
 mp-export:      afi ipv6.unicast to AS20764 announce AS-VK;
-mp-import:      afi ipv6.unicast from AS20764 accept AS-RASCOM;
+mp-import:      afi ipv6.unicast from AS20764 accept AS20764:AS-RASCOM;
 export:         to AS31133 announce AS-VK
 import:         from AS31133 accept AS-MF-MGSM
 mp-export:      afi ipv6.unicast to AS31133 announce AS-VK;
@@ -1788,7 +1788,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2024-05-23T10:43:57Z
+last-modified:  2024-05-28T11:25:32Z
 source:         RIPE # Filtered
 
 
