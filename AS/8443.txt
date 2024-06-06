@@ -1,4 +1,153 @@
 
 
 
+as-block:       AS8192 - AS8523
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:23Z
+last-modified:  2018-11-22T15:27:23Z
+source:         RIPE
+
+
+
+aut-num:        AS8443
+org:            ORG-JR8-RIPE
+as-name:        SKHDSV-AS
+descr:          PJSC "Rostelecom". Sakhalin branch
+descr:          PJSC Rostelecom (Irkutsk)
+remarks:        ===============================================
+remarks:        UPSTREAMS
+remarks:        -----------------------------------------------
+import:         from AS12389 action pref=115; accept ANY
+export:         to AS12389 announce AS-SAKHALIN
+remarks:
+remarks:        -----------------------------------------------
+remarks:        CUSTOMERS
+remarks:        -----------------------------------------------
+import:         from AS49166 action pref=1000; accept AS49166
+export:         to AS49166 announce AS8443 AND {0.0.0.0/0}
+import:         from AS48566 action pref=1000; accept AS48566
+export:         to AS48566 announce AS8443 AND {0.0.0.0/0}
+import:         from AS198960 action pref=1000; accept AS198960
+export:         to AS198960 announce AS8443 AND {0.0.0.0/0}
+import:         from AS198973 action pref=1000; accept AS198973
+export:         to AS198973 announce AS8443 AND {0.0.0.0/0}
+import:         from AS198974 action pref=1000; accept AS198974
+export:         to AS198974 announce AS8443 AND {0.0.0.0/0}
+import:         from AS29425 action pref=1000; accept AS29425
+export:         to AS29425 announce ANY
+import:         from AS199261 action pref=2000; accept AS199261
+export:         to AS199261 announce ANY
+import:         from AS199992 action pref=1000; accept AS199992
+export:         to AS199992 announce ANY
+remarks:
+remarks:        -----------------------------------------------
+remarks:
+remarks:        AS8443 does not accept or announce
+remarks:        prefixes longer than /24 (included)
+remarks:
+remarks:        ===============================================
+remarks:
+remarks:        RU.SAKHALIN - Network Operation Center
+remarks:
+remarks:        phone: +7 4242 720303
+remarks:        fax: +7 4242 720906
+remarks:        mail: noc@sakhalin.ru
+remarks:
+remarks:        Abuse contact: abuse@sakhalin.ru
+remarks:
+remarks:        ===============================================
+remarks:
+admin-c:        AGRL1-RIPE
+tech-c:         TGRL1-RIPE
+status:         ASSIGNED
+mnt-by:         AS8443-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2001-10-02T07:00:34Z
+last-modified:  2024-05-27T05:34:52Z
+source:         RIPE
+
+organisation:   ORG-JR8-RIPE
+org-name:       PJSC Rostelecom
+country:        RU
+org-type:       LIR
+address:        14 A, Sinopskaya nabereznaya
+address:        191167
+address:        S.Peterburg
+address:        RUSSIAN FEDERATION
+phone:          +7 499 999-82-83
+fax-no:         +74999953619
+admin-c:        RTNC-RIPE
+admin-c:        EP6706-RIPE
+admin-c:        IE1277-RIPE
+admin-c:        NM7547-RIPE
+admin-c:        AA728-RIPE
+admin-c:        SVS153-RIPE
+admin-c:        ASV77-RIPE
+admin-c:        RVP-RIPE
+admin-c:        VEV57-RIPE
+admin-c:        TR4627-RIPE
+admin-c:        TL4565-RIPE
+admin-c:        DN216-RIPE
+admin-c:        DA2353-RIPE
+admin-c:        IS111-RIPE
+admin-c:        VE128-RIPE
+admin-c:        SS216-RIPE
+abuse-c:        RTNC-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        ROSTELECOM-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2005-03-22T11:11:20Z
+last-modified:  2023-01-26T10:52:42Z
+source:         RIPE # Filtered
+
+role:           Administrative Group of RU.SAKHALIN LIR
+address:        220, Lenina str., CIT, OST
+address:        693000 Yuzhno-Sakhalinsk, Russia
+phone:          +7 4242 721269
+admin-c:        AVI13-RIPE
+admin-c:        VEV39-RIPE
+tech-c:         AVI13-RIPE
+tech-c:         VEV39-RIPE
+nic-hdl:        AGRL1-RIPE
+mnt-by:         AS8443-MNT
+created:        2002-02-28T12:23:20Z
+last-modified:  2018-10-04T03:48:15Z
+source:         RIPE # Filtered
+
+role:           Technical Group of RU.SAKHALIN LIR
+address:        220, Lenina str., GTD
+address:        693000 Yuzhno-Sakhalinsk, Russia
+phone:          +7 4242 721269
+remarks:        trouble: ---------------------------------------------------------
+remarks:        trouble: Points of contact for SAKHALIN.RU Network Operations
+remarks:        trouble: ---------------------------------------------------------
+remarks:        trouble: SPAM and Network security issues: abuse@sakhalin.ru
+remarks:        trouble: Routing issues: noc@sakhalin.ru
+remarks:        trouble: Mail issues: postmaster@sakhalin.ru
+remarks:        trouble: ---------------------------------------------------------
+remarks:        trouble:
+remarks:        trouble: ___________________A T T E N T I O N!____________________
+remarks:        trouble:
+remarks:        trouble: Please use abuse@sakhalin.ru e-mail address for complaints.
+remarks:        trouble: All messages to any other our address, relative to SPAM
+remarks:        trouble: or security issues, will not be concerned.
+remarks:        trouble:
+remarks:        trouble: ---------------------------------------------------------
+admin-c:        AVI13-RIPE
+admin-c:        VEV39-RIPE
+tech-c:         AVI13-RIPE
+tech-c:         VEV39-RIPE
+nic-hdl:        TGRL1-RIPE
+mnt-by:         AS8443-MNT
+created:        2002-02-28T12:25:13Z
+last-modified:  2018-10-04T03:47:14Z
+source:         RIPE # Filtered
+abuse-mailbox:  abuse@sakhalin.ru
+
+
 
