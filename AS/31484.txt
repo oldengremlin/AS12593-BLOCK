@@ -1,4 +1,1269 @@
 
 
 
+as-block:       AS31246 - AS31618
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:33Z
+last-modified:  2018-11-22T15:27:33Z
+source:         RIPE
+
+
+
+aut-num:        AS31484
+as-name:        Westcall-AS
+remarks:        -----------------
+remarks:        --- Uplinks ---
+remarks:        -----------------
+import:         from AS25408 action pref=120; accept ANY
+export:         to AS25408 announce AS-Direct-Telecom
+import:         from AS3267 action pref=85; accept ANY
+export:         to AS3267 announce AS-Direct-Telecom
+import:         from AS20764 action pref=85; accept ANY
+export:         to AS20764 announce AS-Direct-Telecom
+import:         from AS9002 action pref=85; accept ANY
+export:         to AS9002 announce AS-Direct-Telecom
+remarks:        ------------------------------------
+remarks:        --- Customers-BGP-peers ---
+remarks:        ------------------------------------
+import:         from AS60252 action pref=120; accept AS-OST-LLC
+export:         to AS60252 announce ANY
+import:         from AS196931 action pref=120; accept AS196931
+export:         to AS196931 announce ANY
+import:         from AS61259 action pref=120; accept AS61259
+export:         to AS61259 announce ANY
+import:         from AS29450 action pref=120; accept AS29450
+export:         to AS29450 announce ANY
+import:         from AS197905 action pref=120; accept AS197905
+export:         to AS197905 announce ANY
+import:         from AS203395 action pref=120; accept AS203395
+export:         to AS203395 announce ANY
+import:         from AS56353 action pref=120; accept AS56353
+export:         to AS56353 announce ANY
+remarks:        --------------------------
+remarks:        --- MSK-IX peering ---
+import:         from AS8631 action pref=110; accept AS-MSKROUTESERVER;
+export:         to AS8631 announce AS-Direct-Telecom;
+remarks:        --------------------------
+remarks:        --- SPB-IX peering ---
+remarks:        --------------------------
+import:         from AS43690 action pref=110; accept AS-SPBROUTESERVER;
+import:         from AS47395 action pref=110; accept AS-SCARTEL;
+import:         from AS5568 action pref=110; accept AS-RBNET;
+import:         from AS8377 action pref=110; accept AS-PETERLINK;
+import:         from AS2118 action pref=110; accept AS-RELCOM;
+import:         from AS3267 action pref=110; accept AS-RUNNETIX;
+import:         from AS41733 action pref=110; accept AS41733;
+import:         from AS5433 action pref=110; accept AS5433;
+import:         from AS5495 action pref=110; accept AS5495 AS6857;
+import:         from AS2820 action pref=110; accept AS-ELVISPEERS;
+import:         from AS2854 action pref=110; accept AS-ROSPRINT;
+import:         from AS8402 action pref=110; accept AS-CORBINA;
+import:         from AS3277 action pref=110; accept AS-RUSNETIX;
+import:         from AS31353 action pref=110; accept AS-PTT;
+import:         from AS13302 action pref=110; accept AS-LINKEYCUS;
+import:         from AS20663 action pref=110; accept AS-INAR-SPB AS-INAR-MSK;
+import:         from AS12418 action pref=110; accept AS-QUANTUM;
+import:         from AS13062 action pref=110; accept AS-LANCK;
+import:         from AS8482 action pref=110; accept AS-DPBSPBIX;
+import:         from AS25520 action pref=110; accept AS-FUTURES;
+import:         from AS20903 action pref=110; accept AS-VMB-SERVICE;
+import:         from AS24739 action pref=110; accept AS-SEVEREN-TELECOM;
+import:         from AS20764 action pref=110; accept AS-RASCOM;
+import:         from AS30968 action pref=110; accept AS-INFOBOX;
+import:         from AS35807 action pref=110; accept AS35807;
+import:         from AS29329 action pref=110; accept AS-NODEX;
+import:         from AS28968 action pref=110; accept AS-EUT;
+import:         from AS31191 action pref=110; accept AS31191;
+import:         from AS6858 action pref=110; accept AS-COMLINK-IX;
+import:         from AS30943 action pref=110; accept AS-UTRANSIT-PG-EU;
+import:         from AS21295 action pref=110; accept AS21295;
+import:         from AS39598 action pref=110; accept AS-TIERA;
+import:         from AS21353 action pref=110; accept AS-ARTCOMS;
+import:         from AS34102 action pref=110; accept AS-AWANTI;
+import:         from AS25408 action pref=110; accept AS-WESTCALLSPB;
+import:         from AS35511 action pref=110; accept AS-IWAN;
+import:         from AS31501 action pref=110; accept AS-SPBTELEPORT;
+import:         from AS35616 action pref=110; accept AS-SILVERNET;
+import:         from AS31376 action pref=110; accept AS-SMART-C;
+import:         from AS39390 action pref=110; accept AS39390;
+import:         from AS39102 action pref=110; accept AS-NNZ;
+import:         from AS31500 action pref=110; accept AS-ETELECOM-2;
+import:         from AS35000 action pref=110; accept AS-PROMETEY-SPBIX;
+import:         from AS31444 action pref=110; accept AS31444;
+import:         from AS13215 action pref=110; accept AS-CONVEYPLUS;
+import:         from AS8492 action pref=110; accept AS-OBIT;
+import:         from AS38951 action pref=110; accept AS38951;
+import:         from AS8634 action pref=110; accept AS-SOLARIS;
+import:         from AS41025 action pref=110; accept AS-CIFRA-SPBIX;
+import:         from AS45029 action pref=110; accept AS45029;
+import:         from AS44050 action pref=110; accept AS44050;
+import:         from AS43898 action pref=110; accept AS-RUATCOM;
+import:         from AS42668 action pref=110; accept AS42668;
+import:         from AS13238 action pref=110; accept AS-YANDEX;
+import:         from AS8997 action pref=110; accept AS-SPBNIT;
+import:         from AS43690 action pref=110; accept AS-SPBROUTESERVER;
+import:         from AS43926 action pref=110; accept AS43926;
+import:         from AS8744 action pref=110; accept AS-WIMAX;
+import:         from AS20597 action pref=110; accept AS-ELTEL;
+import:         from AS34879 action pref=110; accept AS-NGENIX;
+import:         from AS12555 action pref=110; accept AS-CUBIO-RUS;
+import:         from AS39087 action pref=110; accept AS-PAKT;
+import:         from AS6820 action pref=110; accept AS-LEIVO;
+import:         from AS42518 action pref=110; accept AS42518;
+import:         from AS15169 action pref=110; accept AS-GOOGLE;
+import:         from AS28702 action pref=110; accept AS-DELTATELECOM;
+import:         from AS6690 action pref=110; accept AS-WEBPLUS;
+import:         from AS6850 action pref=110; accept AS-METROCOM;
+import:         from AS20632 action pref=110; accept AS-PETERSTAR;
+import:         from AS48076 action pref=110; accept AS-Olymp-Telecom;
+remarks:
+export:         to AS43690 announce AS-Direct-Telecom;
+export:         to AS47395 announce AS-Direct-Telecom;
+export:         to AS5568 announce AS-Direct-Telecom;
+export:         to AS8377 announce AS-Direct-Telecom;
+export:         to AS2118 announce AS-Direct-Telecom;
+export:         to AS3267 announce AS-Direct-Telecom;
+export:         to AS41733 announce AS-Direct-Telecom;
+export:         to AS5433 announce AS-Direct-Telecom;
+export:         to AS5495 announce AS-Direct-Telecom;
+export:         to AS2820 announce AS-Direct-Telecom;
+export:         to AS2854 announce AS-Direct-Telecom;
+export:         to AS8402 announce AS-Direct-Telecom;
+export:         to AS3277 announce AS-Direct-Telecom;
+export:         to AS31353 announce AS-Direct-Telecom;
+export:         to AS13302 announce AS-Direct-Telecom;
+export:         to AS20663 announce AS-Direct-Telecom;
+export:         to AS12418 announce AS-Direct-Telecom;
+export:         to AS13062 announce AS-Direct-Telecom;
+export:         to AS8482 announce AS-Direct-Telecom;
+export:         to AS25520 announce AS-Direct-Telecom;
+export:         to AS20903 announce AS-Direct-Telecom;
+export:         to AS24739 announce AS-Direct-Telecom;
+export:         to AS20764 announce AS-Direct-Telecom;
+export:         to AS30968 announce AS-Direct-Telecom;
+export:         to AS35807 announce AS-Direct-Telecom;
+export:         to AS29329 announce AS-Direct-Telecom;
+export:         to AS28968 announce AS-Direct-Telecom;
+export:         to AS31191 announce AS-Direct-Telecom;
+export:         to AS6858 announce AS-Direct-Telecom;
+export:         to AS30943 announce AS-Direct-Telecom;
+export:         to AS21295 announce AS-Direct-Telecom;
+export:         to AS39598 announce AS-Direct-Telecom;
+export:         to AS21353 announce AS-Direct-Telecom;
+export:         to AS34102 announce AS-Direct-Telecom;
+export:         to AS25408 announce AS-Direct-Telecom;
+export:         to AS35511 announce AS-Direct-Telecom;
+export:         to AS31501 announce AS-Direct-Telecom;
+export:         to AS35616 announce AS-Direct-Telecom;
+export:         to AS31376 announce AS-Direct-Telecom;
+export:         to AS39390 announce AS-Direct-Telecom;
+export:         to AS39102 announce AS-Direct-Telecom;
+export:         to AS31500 announce AS-Direct-Telecom;
+export:         to AS35000 announce AS-Direct-Telecom;
+export:         to AS31444 announce AS-Direct-Telecom;
+export:         to AS13215 announce AS-Direct-Telecom;
+export:         to AS8492 announce AS-Direct-Telecom;
+export:         to AS38951 announce AS-Direct-Telecom;
+export:         to AS8634 announce AS-Direct-Telecom;
+export:         to AS41025 announce AS-Direct-Telecom;
+export:         to AS45029 announce AS-Direct-Telecom;
+export:         to AS44050 announce AS-Direct-Telecom;
+export:         to AS43898 announce AS-Direct-Telecom;
+export:         to AS42668 announce AS-Direct-Telecom;
+export:         to AS13238 announce AS-Direct-Telecom;
+export:         to AS8997 announce AS-Direct-Telecom;
+export:         to AS43690 announce AS-Direct-Telecom;
+export:         to AS43926 announce AS-Direct-Telecom;
+export:         to AS8744 announce AS-Direct-Telecom;
+export:         to AS20597 announce AS-Direct-Telecom;
+export:         to AS34879 announce AS-Direct-Telecom;
+export:         to AS12555 announce AS-Direct-Telecom;
+export:         to AS39087 announce AS-Direct-Telecom;
+export:         to AS6820 announce AS-Direct-Telecom;
+export:         to AS42518 announce AS-Direct-Telecom;
+export:         to AS15169 announce AS-Direct-Telecom;
+export:         to AS28702 announce AS-Direct-Telecom;
+export:         to AS6690 announce AS-Direct-Telecom;
+export:         to AS6850 announce AS-Direct-Telecom;
+export:         to AS20632 announce AS-Direct-Telecom;
+remarks:
+remarks:
+remarks:        ---------------------------------------------
+remarks:        -------------------DATA-IX-------------------
+remarks:        ---------------------------------------------
+import:         from AS8749 action pref=110; accept AS-REDCOM
+export:         TO AS8749 announce AS-Direct-Telecom
+remarks:
+import:         from AS28709 action pref=110; accept AS28709
+export:         TO AS28709 announce AS-Direct-Telecom
+remarks:
+import:         from AS8369 action pref=110; accept AS-INTERSVYAZ
+export:         TO AS8369 announce AS-Direct-Telecom
+remarks:
+import:         from AS5563 action pref=110; accept AS-URAL
+export:         TO AS5563 announce AS-Direct-Telecom
+remarks:
+import:         from AS49218 action pref=110; accept AS-NTKS
+export:         TO AS49218 announce AS-Direct-Telecom
+remarks:
+import:         from AS28890 action pref=110; accept AS-INSYS-EKB
+export:         TO AS28890 announce AS-Direct-Telecom
+remarks:
+import:         from AS12668 action pref=110; accept AS-EXTRIM
+export:         TO AS12668 announce AS-Direct-Telecom
+remarks:
+import:         from AS42676 action pref=110; accept AS-SMARTKOM
+export:         TO AS42676 announce AS-Direct-Telecom
+remarks:
+import:         from AS31200 action pref=110; accept AS31200
+export:         TO AS31200 announce AS-Direct-Telecom
+remarks:
+import:         from AS9107 action pref=110; accept AS9107
+export:         TO AS9107 announce AS-Direct-Telecom
+remarks:
+import:         from AS57494 action pref=110; accept AS-ADMAN
+export:         TO AS57494 announce AS-Direct-Telecom
+remarks:
+import:         from AS8410 action pref=110; accept AS-NIR
+export:         TO AS8410 announce AS-Direct-Telecom
+remarks:
+import:         from AS16300 action pref=110; accept AS-INTERTAX
+export:         TO AS16300 announce AS-Direct-Telecom
+remarks:
+import:         from AS44587 action pref=110; accept AS-MEGACOM
+export:         TO AS44587 announce AS-Direct-Telecom
+remarks:
+import:         from AS42187 action pref=110; accept AS-NOVTEL
+export:         TO AS42187 announce AS-Direct-Telecom
+remarks:
+import:         from AS9107 action pref=110; accept AS-NOVTEL
+export:         TO AS9107 announce AS-Direct-Telecom
+remarks:
+import:         from AS60600 action pref=110; accept AS-E1RU
+export:         TO AS60600 announce AS-Direct-Telecom
+remarks:
+import:         from AS199728 action pref=110; accept AS199728
+export:         TO AS199728 announce AS-Direct-Telecom
+remarks:
+import:         from AS199524 action pref=110; accept AS199524
+export:         TO AS199524 announce AS-Direct-Telecom
+remarks:
+import:         from AS13094 action pref=110; accept AS-MILECOM-RS
+export:         TO AS13094 announce AS-Direct-Telecom
+remarks:
+import:         from AS47872 action pref=110; accept AS-SOFIA-CONNECT
+export:         TO AS47872 announce AS-Direct-Telecom
+remarks:
+import:         from AS20771 action pref=110; accept AS-DELTA
+export:         TO AS20771 announce AS-Direct-Telecom
+remarks:
+import:         from AS47541 action pref=110; accept AS-VKONTAKTE
+export:         TO AS47541 announce AS-Direct-Telecom
+remarks:
+import:         from AS47542 action pref=110; accept AS-VKONTAKTE
+export:         TO AS47542 announce AS-Direct-Telecom
+remarks:
+import:         from AS35362 action pref=110; accept AS-35362
+export:         TO AS35362 announce AS-Direct-Telecom
+remarks:
+import:         from AS39608 action pref=110; accept AS-LANETUA
+export:         TO AS39608 announce AS-Direct-Telecom
+remarks:
+import:         from AS25133 action pref=110; accept AS-MCLAUT
+export:         TO AS25133 announce AS-Direct-Telecom
+remarks:
+import:         from AS28761 action pref=110; accept AS28761:AS-CUSTOMERS
+export:         TO AS28761 announce AS-Direct-Telecom
+remarks:
+import:         from AS6789 action pref=110; accept AS-CRELCOM
+export:         TO AS6789 announce AS-Direct-Telecom
+remarks:
+import:         from AS6712 action pref=110; accept AS-FORMAT
+export:         TO AS6712 announce AS-Direct-Telecom
+remarks:
+import:         from AS15772 action pref=110; accept AS-WNET
+export:         TO AS15772 announce AS-Direct-Telecom
+remarks:
+import:         from AS6849 action pref=110; accept AS-UKRTELBT
+export:         TO AS6849 announce AS-Direct-Telecom
+remarks:
+import:         from AS43554 action pref=110; accept AS-MYTRINITY
+export:         TO AS43554 announce AS-Direct-Telecom
+remarks:
+import:         from AS59815 action pref=110; accept AS-TRKMETRO
+export:         TO AS59815 announce AS-Direct-Telecom
+remarks:
+import:         from AS34867 action pref=110; accept AS-COSMONOVA
+export:         TO AS34867 announce AS-Direct-Telecom
+remarks:
+import:         from AS28773 action pref=110; accept AS-MASTER
+export:         TO AS28773 announce AS-Direct-Telecom
+remarks:
+import:         from AS8779 action pref=110; accept AS-IC
+export:         TO AS8779 announce AS-Direct-Telecom
+remarks:
+import:         from AS25372 action pref=110; accept AS-ITCON
+export:         TO AS25372 announce AS-Direct-Telecom
+remarks:
+import:         from AS31725 action pref=110; accept AS-SHTORM
+export:         TO AS31725 announce AS-Direct-Telecom
+remarks:
+import:         from AS39047 action pref=110; accept AS39047
+export:         TO AS39047 announce AS-Direct-Telecom
+remarks:
+import:         from AS15497 action pref=110; accept AS-COLOCALL
+export:         TO AS15497 announce AS-Direct-Telecom
+remarks:
+import:         from AS47702 action pref=110; accept AS-DISCOVERY
+export:         TO AS47702 announce AS-Direct-Telecom
+remarks:
+import:         from AS13121 action pref=110; accept AS-NAVIGATOR-UA
+export:         TO AS13121 announce AS-Direct-Telecom
+remarks:
+import:         from AS12883 action pref=110; accept AS-UCOMLINE
+export:         TO AS12883 announce AS-Direct-Telecom
+remarks:
+import:         from AS34700 action pref=110; accept AS-KHMAXNET
+export:         TO AS34700 announce AS-Direct-Telecom
+remarks:
+import:         from AS6846 action pref=110; accept AS-UKRPACK-EXT
+export:         TO AS6846 announce AS-Direct-Telecom
+remarks:
+import:         from AS21488 action pref=110; accept AS-EMPLOT
+export:         TO AS21488 announce AS-Direct-Telecom
+remarks:
+import:         from AS43668 action pref=110; accept AS-ELHIM
+export:         TO AS43668 announce AS-Direct-Telecom
+remarks:
+import:         from AS47694 action pref=110; accept AS-DIDAN
+export:         TO AS47694 announce AS-Direct-Telecom
+remarks:
+import:         from AS16066 action pref=110; accept AS-TESTUA
+export:         TO AS16066 announce AS-Direct-Telecom
+remarks:
+import:         from AS39399 action pref=110; accept AS-FENIXVT
+export:         TO AS39399 announce AS-Direct-Telecom
+remarks:
+import:         from AS48239 action pref=110; accept AS-INFTECH
+export:         TO AS48239 announce AS-Direct-Telecom
+remarks:
+import:         from AS6723 action pref=110; accept AS-SKIF
+export:         TO AS6723 announce AS-Direct-Telecom
+remarks:
+import:         from AS8343 action pref=110; accept AS-DORIS
+export:         TO AS8343 announce AS-Direct-Telecom
+remarks:
+import:         from AS6886 action pref=110; accept AS-INTS
+export:         TO AS6886 announce AS-Direct-Telecom
+remarks:
+import:         from AS35144 action pref=110; accept AS-DREAM
+export:         TO AS35144 announce AS-Direct-Telecom
+remarks:
+import:         from AS6876 action pref=110; accept AS-TENET-UA
+export:         TO AS6876 announce AS-Direct-Telecom
+remarks:
+import:         from AS24703 action pref=110; accept AS-UNITED
+export:         TO AS24703 announce AS-Direct-Telecom
+remarks:
+import:         from AS12773 action pref=110; accept AS-MIXMEDIA
+export:         TO AS12773 announce AS-Direct-Telecom
+remarks:
+import:         from AS31343 action pref=110; accept AS-INTERTELECOM
+export:         TO AS31343 announce AS-Direct-Telecom
+remarks:
+import:         from AS8359 action pref=110; accept AS8359:AS-UKRAINE
+export:         TO AS8359 announce AS-Direct-Telecom
+remarks:
+import:         from AS49125 action pref=110; accept AS49125
+export:         TO AS49125 announce AS-Direct-Telecom
+remarks:
+import:         from AS33991 action pref=110; accept AS-SKALA
+export:         TO AS33991 announce AS-Direct-Telecom
+remarks:
+import:         from AS44310 action pref=110; accept AS44310
+export:         TO AS44310 announce AS-Direct-Telecom
+remarks:
+import:         from AS62206 action pref=110; accept AS-PITLINE AS-PITLINE-V6
+export:         TO AS62206 announce AS-Direct-Telecom
+remarks:
+import:         from AS41691 action pref=110; accept AS-SUMTEL
+export:         TO AS41691 announce AS-Direct-Telecom
+remarks:
+import:         from AS20807 action pref=110; accept AS-CREDOLINK
+export:         TO AS20807 announce AS-Direct-Telecom
+remarks:
+import:         from AS47438 action pref=110; accept AS-PSKOVLINE
+export:         TO AS47438 announce AS-Direct-Telecom
+remarks:
+import:         from AS42518 action pref=110; accept AS-UNETCOMRU
+export:         TO AS42518 announce AS-Direct-Telecom
+remarks:
+import:         from AS43267 action pref=110; accept AS-LINETEL
+export:         TO AS43267 announce AS-Direct-Telecom
+remarks:
+import:         from AS31444 action pref=110; accept AS31444
+export:         TO AS31444 announce AS-Direct-Telecom
+remarks:
+import:         from AS58042 action pref=110; accept AS58042
+export:         TO AS58042 announce AS-Direct-Telecom
+remarks:
+import:         from AS29329 action pref=110; accept AS-NODEX
+export:         TO AS29329 announce AS-Direct-Telecom
+remarks:
+import:         from AS44843 action pref=110; accept AS-AMSTEL
+export:         TO AS44843 announce AS-Direct-Telecom
+remarks:
+import:         from AS42775 action pref=110; accept AS-CELLMEDIA
+export:         TO AS42775 announce AS-Direct-Telecom
+remarks:
+import:         from AS50258 action pref=110; accept AS-TEYLA
+export:         TO AS50258 announce AS-Direct-Telecom
+remarks:
+import:         from AS25408 action pref=110; accept AS-WESTCALLSPB
+export:         TO AS25408 announce AS-Direct-Telecom
+remarks:
+import:         from AS8595 action pref=110; accept AS-WESTCALL-MSK
+export:         TO AS8595 announce AS-Direct-Telecom
+remarks:
+import:         from AS45051 action pref=110; accept AS-WESTCALLSPB
+export:         TO AS45051 announce AS-Direct-Telecom
+remarks:
+import:         from AS47111 action pref=110; accept AS-R2TV
+export:         TO AS47111 announce AS-Direct-Telecom
+remarks:
+import:         from AS41733 action pref=110; accept AS41733
+export:         TO AS41733 announce AS-Direct-Telecom
+remarks:
+import:         from AS39046 action pref=110; accept AS-THEOREMA
+export:         TO AS39046 announce AS-Direct-Telecom
+remarks:
+import:         from AS35000 action pref=110; accept AS-PROMETEY AS-PROMETEY-V6
+export:         TO AS35000 announce AS-Direct-Telecom
+remarks:
+import:         from AS49505 action pref=110; accept AS-SELECTEL
+export:         TO AS49505 announce AS-Direct-Telecom
+remarks:
+import:         from AS12418 action pref=110; accept AS-QUANTUM
+export:         TO AS12418 announce AS-Direct-Telecom
+remarks:
+import:         from AS49542 action pref=110; accept AS-ARTPLANET
+export:         TO AS49542 announce AS-Direct-Telecom
+remarks:
+import:         from AS30968 action pref=110; accept AS30968
+export:         TO AS30968 announce AS-Direct-Telecom
+remarks:
+import:         from AS13238 action pref=110; accept AS-YANDEX
+export:         TO AS13238 announce AS-Direct-Telecom
+remarks:
+import:         from AS42668 action pref=110; accept AS-NEVALINK
+export:         TO AS42668 announce AS-Direct-Telecom
+remarks:
+import:         from AS39087 action pref=110; accept AS-PAKT
+export:         TO AS39087 announce AS-Direct-Telecom
+remarks:
+import:         from AS39102 action pref=110; accept AS-NNZ
+export:         TO AS39102 announce AS-Direct-Telecom
+remarks:
+import:         from AS196750 action pref=110; accept AS196750
+export:         TO AS196750 announce AS-Direct-Telecom
+remarks:
+import:         from AS34232 action pref=110; accept AS-PULNET
+export:         TO AS34232 announce AS-Direct-Telecom
+remarks:
+import:         from AS196739 action pref=110; accept AS196739
+export:         TO AS196739 announce AS-Direct-Telecom
+remarks:
+import:         from AS44068 action pref=110; accept AS-ARBITAL
+export:         TO AS44068 announce AS-Direct-Telecom
+remarks:
+import:         from AS31484 action pref=110; accept AS-TELROS
+export:         TO AS31484 announce AS-Direct-Telecom
+remarks:
+import:         from AS44380 action pref=110; accept AS44380
+export:         TO AS44380 announce AS-Direct-Telecom
+remarks:
+import:         from AS31277 action pref=110; accept AS-NEWLINESPB
+export:         TO AS31277 announce AS-Direct-Telecom
+remarks:
+import:         from AS48416 action pref=110; accept AS-INFOLAN
+export:         TO AS48416 announce AS-Direct-Telecom
+remarks:
+import:         from AS8492 action pref=110; accept AS-OBIT
+export:         TO AS8492 announce AS-Direct-Telecom
+remarks:
+import:         from AS6858 action pref=110; accept AS-COMLINK
+export:         TO AS6858 announce AS-Direct-Telecom
+remarks:
+import:         from AS24955 action pref=110; accept AS-UBN
+export:         TO AS24955 announce AS-Direct-Telecom
+remarks:
+import:         from AS44882 action pref=110; accept AS-VSEVNET
+export:         TO AS44882 announce AS-Direct-Telecom
+remarks:
+import:         from AS44030 action pref=110; accept AS-LENTEL AS-LENTEL-IPV6
+export:         TO AS44030 announce AS-Direct-Telecom
+remarks:
+import:         from AS31376 action pref=110; accept AS-SMART-C AS-SMART-V6
+export:         TO AS31376 announce AS-Direct-Telecom
+remarks:
+import:         from AS57629 action pref=110; accept AS57629
+export:         TO AS57629 announce AS-Direct-Telecom
+remarks:
+import:         from AS43362 action pref=110; accept AS43362
+export:         TO AS43362 announce AS-Direct-Telecom
+remarks:
+import:         from AS48370 action pref=110; accept AS-WESTCOM
+export:         TO AS48370 announce AS-Direct-Telecom
+remarks:
+import:         from AS2854 action pref=110; accept AS-ROSPRINT
+export:         TO AS2854 announce AS-Direct-Telecom
+remarks:
+import:         from AS44050 action pref=110; accept AS-PIN
+export:         TO AS44050 announce AS-Direct-Telecom
+remarks:
+import:         from AS50538 action pref=110; accept AS50538
+export:         TO AS50538 announce AS-Direct-Telecom
+remarks:
+import:         from AS59440 action pref=110; accept AS-LIGHTPORT
+export:         TO AS59440 announce AS-Direct-Telecom
+remarks:
+import:         from AS5433 action pref=110; accept AS-ROKSON
+export:         TO AS5433 announce AS-Direct-Telecom
+remarks:
+import:         from AS197888 action pref=110; accept AS197888
+export:         TO AS197888 announce AS-Direct-Telecom
+remarks:
+import:         from AS198610 action pref=110; accept AS-BEGET
+export:         TO AS198610 announce AS-Direct-Telecom
+remarks:
+import:         from AS28917 action pref=110; accept AS-FIORD
+export:         TO AS28917 announce AS-Direct-Telecom
+remarks:
+import:         from AS41446 action pref=110; accept AS41446
+export:         TO AS41446 announce AS-Direct-Telecom
+remarks:
+import:         from AS34879 action pref=110; accept AS-NGENIX
+export:         TO AS34879 announce AS-Direct-Telecom
+remarks:
+import:         from AS57091 action pref=110; accept AS-MSNET
+export:         TO AS57091 announce AS-Direct-Telecom
+remarks:
+import:         from AS50453 action pref=110; accept AS50453
+export:         TO AS50453 announce AS-Direct-Telecom
+remarks:
+import:         from AS42339 action pref=110; accept AS-CHTP
+export:         TO AS42339 announce AS-Direct-Telecom
+remarks:
+import:         from AS199805 action pref=110; accept AS199805
+export:         TO AS199805 announce AS-Direct-Telecom
+remarks:
+import:         from AS57246 action pref=110; accept AS57246
+export:         TO AS57246 announce AS-Direct-Telecom
+remarks:
+import:         from AS199860 action pref=110; accept AS-SDN
+export:         TO AS199860 announce AS-Direct-Telecom
+remarks:
+import:         from AS199948 action pref=110; accept AS199948
+export:         TO AS199948 announce AS-Direct-Telecom
+remarks:
+import:         from AS52201 action pref=110; accept AS-TCTEL
+export:         TO AS52201 announce AS-Direct-Telecom
+remarks:
+import:         from AS25532 action pref=110; accept AS25532
+export:         TO AS25532 announce AS-Direct-Telecom
+remarks:
+import:         from AS42368 action pref=110; accept AS-LKS
+export:         TO AS42368 announce AS-Direct-Telecom
+remarks:
+import:         from AS43727 action pref=110; accept AS-SETKT
+export:         TO AS43727 announce AS-Direct-Telecom
+remarks:
+import:         from AS34456 action pref=110; accept AS-RCPEERS
+export:         TO AS34456 announce AS-Direct-Telecom
+remarks:
+import:         from AS6679 action pref=110; accept AS-SKADI-VK AS-SKADI
+export:         TO AS6679 announce AS-Direct-Telecom
+remarks:
+import:         from AS34123 action pref=110; accept AS-NETORN
+export:         TO AS34123 announce AS-Direct-Telecom
+remarks:
+import:         from AS42511 action pref=110; accept AS-STATION
+export:         TO AS42511 announce AS-Direct-Telecom
+remarks:
+import:         from AS35539 action pref=110; accept AS-INFOLINK
+export:         TO AS35539 announce AS-Direct-Telecom
+remarks:
+import:         from AS39153 action pref=110; accept AS-SETEL
+export:         TO AS39153 announce AS-Direct-Telecom
+remarks:
+import:         from AS42632 action pref=110; accept AS-MNOGOBYTE
+export:         TO AS42632 announce AS-Direct-Telecom
+remarks:
+import:         from AS47764 action pref=110; accept AS-MAILRU
+export:         TO AS47764 announce AS-Direct-Telecom
+remarks:
+import:         from AS48061 action pref=110; accept AS48061
+export:         TO AS48061 announce AS-Direct-Telecom
+remarks:
+import:         from AS31261 action pref=110; accept AS-GARS
+export:         TO AS31261 announce AS-Direct-Telecom
+remarks:
+import:         from AS8641 action pref=110; accept AS-NAUKANET
+export:         TO AS8641 announce AS-Direct-Telecom
+remarks:
+import:         from AS21453 action pref=110; accept AS-FLEX
+export:         TO AS21453 announce AS-Direct-Telecom
+remarks:
+import:         from AS49342 action pref=110; accept AS-SPEEDYLINE
+export:         TO AS49342 announce AS-Direct-Telecom
+remarks:
+import:         from AS16083 action pref=110; accept AS-STACK
+export:         TO AS16083 announce AS-Direct-Telecom
+remarks:
+import:         from AS5537 action pref=110; accept AS-GPT
+export:         TO AS5537 announce AS-Direct-Telecom
+remarks:
+import:         from AS35297 action pref=110; accept AS-DL-WORLD
+export:         TO AS35297 announce AS-Direct-Telecom
+remarks:
+import:         from AS12695 action pref=110; accept AS-DINET
+export:         TO AS12695 announce AS-Direct-Telecom
+remarks:
+import:         from AS28968 action pref=110; accept AS-EUT
+export:         TO AS28968 announce AS-Direct-Telecom
+remarks:
+import:         from AS58002 action pref=110; accept AS-SI
+export:         TO AS58002 announce AS-Direct-Telecom
+remarks:
+import:         from AS8331 action pref=110; accept AS-RINET
+export:         TO AS8331 announce AS-Direct-Telecom
+remarks:
+import:         from AS48293 action pref=110; accept AS-UNIONTEL-RU
+export:         TO AS48293 announce AS-Direct-Telecom
+remarks:
+import:         from AS41802 action pref=110; accept AS-KVIDEX
+export:         TO AS41802 announce AS-Direct-Telecom
+remarks:
+import:         from AS49063 action pref=110; accept AS-DTLN
+export:         TO AS49063 announce AS-Direct-Telecom
+remarks:
+import:         from AS49813 action pref=110; accept AS-INN
+export:         TO AS49813 announce AS-Direct-Telecom
+remarks:
+import:         from AS30833 action pref=110; accept AS-TNC
+export:         TO AS30833 announce AS-Direct-Telecom
+remarks:
+import:         from AS44927 action pref=110; accept AS-TMPK
+export:         TO AS44927 announce AS-Direct-Telecom
+remarks:
+import:         from AS9049 action pref=110; accept AS-ERTH
+export:         TO AS9049 announce AS-Direct-Telecom
+remarks:
+import:         from AS198459 action pref=110; accept AS198459
+export:         TO AS198459 announce AS-Direct-Telecom
+remarks:
+import:         from AS50009 action pref=110; accept AS-QUARTZ AS-QUARTZ-V6
+export:         TO AS50009 announce AS-Direct-Telecom
+remarks:
+import:         from AS35598 action pref=110; accept AS-ICNET
+export:         TO AS35598 announce AS-Direct-Telecom
+remarks:
+import:         from AS50473 action pref=110; accept AS-ECO
+export:         TO AS50473 announce AS-Direct-Telecom
+remarks:
+import:         from AS34221 action pref=110; accept AS-QL
+export:         TO AS34221 announce AS-Direct-Telecom
+remarks:
+import:         from AS15756 action pref=110; accept AS-CARAVANRUS
+export:         TO AS15756 announce AS-Direct-Telecom
+remarks:
+import:         from AS51028 action pref=110; accept AS-SVOLS
+export:         TO AS51028 announce AS-Direct-Telecom
+remarks:
+import:         from AS50169 action pref=110; accept AS50169
+export:         TO AS50169 announce AS-Direct-Telecom
+remarks:
+import:         from AS47119 action pref=110; accept AS47119
+export:         TO AS47119 announce AS-Direct-Telecom
+remarks:
+import:         from AS25189 action pref=110; accept AS-NLINE
+export:         TO AS25189 announce AS-Direct-Telecom
+remarks:
+import:         from AS47645 action pref=110; accept AS-SET-STC-NET
+export:         TO AS47645 announce AS-Direct-Telecom
+remarks:
+import:         from AS13249 action pref=110; accept AS-ITS-WORLD
+export:         TO AS13249 announce AS-Direct-Telecom
+remarks:
+import:         from AS48166 action pref=110; accept AS-FORTEX
+export:         TO AS48166 announce AS-Direct-Telecom
+remarks:
+import:         from AS41268 action pref=110; accept AS-LANTA
+export:         TO AS41268 announce AS-Direct-Telecom
+remarks:
+import:         from AS49060 action pref=110; accept AS-UNIONLINE
+export:         TO AS49060 announce AS-Direct-Telecom
+remarks:
+import:         from AS34602 action pref=110; accept AS-STARLNK
+export:         TO AS34602 announce AS-Direct-Telecom
+remarks:
+import:         from AS43404 action pref=110; accept AS-UCANET AS-UCANETV6
+export:         TO AS43404 announce AS-Direct-Telecom
+remarks:
+import:         from AS44943 action pref=110; accept AS-RAMNET
+export:         TO AS44943 announce AS-Direct-Telecom
+remarks:
+import:         from AS20655 action pref=110; accept AS-EST
+export:         TO AS20655 announce AS-Direct-Telecom
+remarks:
+import:         from AS20731 action pref=110; accept AS-MEGATON
+export:         TO AS20731 announce AS-Direct-Telecom
+remarks:
+import:         from AS57363 action pref=110; accept AS-CDNVIDEO
+export:         TO AS57363 announce AS-Direct-Telecom
+remarks:
+import:         from AS24638 action pref=110; accept AS-RAMTEL
+export:         TO AS24638 announce AS-Direct-Telecom
+remarks:
+import:         from AS44436 action pref=110; accept AS44436
+export:         TO AS44436 announce AS-Direct-Telecom
+remarks:
+import:         from AS51408 action pref=110; accept AS-DNX
+export:         TO AS51408 announce AS-Direct-Telecom
+remarks:
+import:         from AS6903 action pref=110; accept AS-ZENON
+export:         TO AS6903 announce AS-Direct-Telecom
+remarks:
+import:         from AS24689 action pref=110; accept AS-ROSINTEL
+export:         TO AS24689 announce AS-Direct-Telecom
+remarks:
+import:         from AS44670 action pref=110; accept AS44670
+export:         TO AS44670 announce AS-Direct-Telecom
+remarks:
+import:         from AS44053 action pref=110; accept AS-UNILINK
+export:         TO AS44053 announce AS-Direct-Telecom
+remarks:
+import:         from AS51596 action pref=110; accept AS51596
+export:         TO AS51596 announce AS-Direct-Telecom
+remarks:
+import:         from AS42690 action pref=110; accept AS42690
+export:         TO AS42690 announce AS-Direct-Telecom
+remarks:
+import:         from AS15895 action pref=110; accept AS15895:AS-ALL
+export:         TO AS15895 announce AS-Direct-Telecom
+remarks:
+import:         from AS60299 action pref=110; accept AS-MMTS
+export:         TO AS60299 announce AS-Direct-Telecom
+remarks:
+import:         from AS39134 action pref=110; accept AS-UNITEDNET
+export:         TO AS39134 announce AS-Direct-Telecom
+remarks:
+import:         from AS35032 action pref=110; accept AS35032
+export:         TO AS35032 announce AS-Direct-Telecom
+remarks:
+import:         from AS25308 action pref=110; accept AS-CITYLAN
+export:         TO AS25308 announce AS-Direct-Telecom
+remarks:
+import:         from AS47542 action pref=110; accept AS47542
+export:         TO AS47542 announce AS-Direct-Telecom
+remarks:
+import:         from AS43146 action pref=110; accept AS-AGAVA
+export:         TO AS43146 announce AS-Direct-Telecom
+remarks:
+import:         from AS47655 action pref=110; accept AS-SET-LINKINTEL
+export:         TO AS47655 announce AS-Direct-Telecom
+remarks:
+import:         from AS49830 action pref=110; accept AS49830
+export:         TO AS49830 announce AS-Direct-Telecom
+remarks:
+import:         from AS47196 action pref=110; accept AS47196
+export:         TO AS47196 announce AS-Direct-Telecom
+remarks:
+import:         from AS42429 action pref=110; accept AS-TELERU
+export:         TO AS42429 announce AS-Direct-Telecom
+remarks:
+import:         from AS48347 action pref=110; accept AS-MTW
+export:         TO AS48347 announce AS-Direct-Telecom
+remarks:
+import:         from AS60388 action pref=110; accept AS-SIGMA-TELECOM
+export:         TO AS60388 announce AS-Direct-Telecom
+remarks:
+import:         from AS15377 action pref=110; accept AS-FREGAT
+export:         TO AS15377 announce AS-Direct-Telecom
+remarks:
+import:         from AS57174 action pref=110; accept AS-SSERV-RU
+export:         TO AS57174 announce AS-Direct-Telecom
+remarks:
+import:         from AS61400 action pref=110; accept AS-NETRACK
+export:         TO AS61400 announce AS-Direct-Telecom
+remarks:
+import:         from AS39264 action pref=110; accept AS-METROMAX
+export:         TO AS39264 announce AS-Direct-Telecom
+remarks:
+import:         from AS61170 action pref=110; accept AS-MOYO
+export:         TO AS61170 announce AS-Direct-Telecom
+remarks:
+import:         from AS9198 action pref=110; accept AS-KAZTELECOMPEERS
+export:         TO AS9198 announce AS-Direct-Telecom
+remarks:
+import:         from AS48654 action pref=110; accept AS-BALNET
+export:         TO AS48654 announce AS-Direct-Telecom
+remarks:
+import:         from AS31059 action pref=110; accept AS-AVELACOM
+export:         TO AS31059 announce AS-Direct-Telecom
+remarks:
+import:         from AS21135 action pref=110; accept AS-MTT
+export:         TO AS21135 announce AS-Direct-Telecom
+remarks:
+import:         from AS42239 action pref=110; accept AS-FARLINE
+export:         TO AS42239 announce AS-Direct-Telecom
+remarks:
+import:         from AS29226 action pref=110; accept AS-MASTERTEL
+export:         TO AS29226 announce AS-Direct-Telecom
+remarks:
+import:         from AS1547 action pref=110; accept AS-IDK
+export:         TO AS1547 announce AS-Direct-Telecom
+remarks:
+import:         from AS3261 action pref=110; accept AS-DIPT
+export:         TO AS3261 announce AS-Direct-Telecom
+remarks:
+import:         from AS60764 action pref=110; accept AS-TKTEL
+export:         TO AS60764 announce AS-Direct-Telecom
+remarks:
+import:         from AS197235 action pref=110; accept AS-SEVEREN-VOLGA
+export:         TO AS197235 announce AS-Direct-Telecom
+remarks:
+import:         from AS28709 action pref=110; accept AS-VKONTAKTE
+export:         TO AS28709 announce AS-Direct-Telecom
+remarks:
+import:         from AS35816 action pref=110; accept AS-LANCOM
+export:         TO AS35816 announce AS-Direct-Telecom
+remarks:
+import:         from AS29076 action pref=110; accept AS29076
+export:         TO AS29076 announce AS-Direct-Telecom
+remarks:
+import:         from AS200000 action pref=110; accept AS-DELTAX
+export:         TO AS200000 announce AS-Direct-Telecom
+remarks:
+import:         from AS60280 action pref=110; accept AS-NTEC
+export:         TO AS60280 announce AS-Direct-Telecom
+remarks:
+import:         from AS41625 action pref=110; accept AS41625
+export:         TO AS41625 announce AS-Direct-Telecom
+remarks:
+import:         from AS44020 action pref=110; accept AS-CLN
+export:         TO AS44020 announce AS-Direct-Telecom
+remarks:
+import:         from AS12998 action pref=110; accept AS-BGN
+export:         TO AS12998 announce AS-Direct-Telecom
+remarks:
+import:         from AS43139 action pref=110; accept AS-MAXIMUM
+export:         TO AS43139 announce AS-Direct-Telecom
+remarks:
+import:         from AS13335 action pref=110; accept AS13335
+export:         TO AS13335 announce AS-Direct-Telecom
+remarks:
+import:         from AS49183 action pref=110; accept AS49183:AS-CUSTOMERS
+export:         TO AS49183 announce AS-Direct-Telecom
+remarks:
+import:         from AS20764 action pref=110; accept AS-RASCOM
+export:         TO AS20764 announce AS-Direct-Telecom
+remarks:
+import:         from AS48964 action pref=110; accept AS-ENTERRA
+export:         TO AS48964 announce AS-Direct-Telecom
+remarks:
+import:         from AS16094 action pref=110; accept AS-ROILCOM
+export:         TO AS16094 announce AS-Direct-Telecom
+remarks:
+import:         from AS29182 action pref=110; accept AS-ISPSYSTEM
+export:         TO AS29182 announce AS-Direct-Telecom
+remarks:
+import:         from AS51343 action pref=110; accept AS-FORCELINE
+export:         TO AS51343 announce AS-Direct-Telecom
+remarks:
+import:         from AS21257 action pref=110; accept AS-XUA
+export:         TO AS21257 announce AS-Direct-Telecom
+remarks:
+import:         from AS6697 action pref=110; accept AS-BELPAK
+export:         TO AS6697 announce AS-Direct-Telecom
+remarks:
+import:         from AS25292 action pref=110; accept AS25292
+export:         TO AS25292 announce AS-Direct-Telecom
+remarks:
+import:         from AS50581 action pref=110; accept AS-UTG-UA AS-UTG-V6
+export:         TO AS50581 announce AS-Direct-Telecom
+remarks:
+import:         from AS51380 action pref=110; accept AS-GREY
+export:         TO AS51380 announce AS-Direct-Telecom
+remarks:
+import:         from AS31415 action pref=110; accept AS-SVSCOMM
+export:         TO AS31415 announce AS-Direct-Telecom
+remarks:
+import:         from AS202103 action pref=110; accept AS202103
+export:         TO AS202103 announce AS-Direct-Telecom
+remarks:
+import:         from AS3252 action pref=110; accept AS-FBRX
+export:         TO AS3252 announce AS-Direct-Telecom
+remarks:
+import:         from AS196879 action pref=110; accept AS196879
+export:         TO AS196879 announce AS-Direct-Telecom
+remarks:
+import:         from AS61316 action pref=110; accept AS-IPROSRV
+export:         TO AS61316 announce AS-Direct-Telecom
+remarks:
+import:         from AS201499 action pref=110; accept AS201499
+export:         TO AS201499 announce AS-Direct-Telecom
+remarks:
+import:         from AS50222 action pref=110; accept AS50222
+export:         TO AS50222 announce AS-Direct-Telecom
+remarks:
+import:         from AS56886 action pref=110; accept AS56886
+export:         TO AS56886 announce AS-Direct-Telecom
+remarks:
+import:         from AS47211 action pref=110; accept AS47211
+export:         TO AS47211 announce AS-Direct-Telecom
+remarks:
+import:         from AS51478 action pref=110; accept AS51478
+export:         TO AS51478 announce AS-Direct-Telecom
+remarks:
+import:         from AS47363 action pref=110; accept AS47363
+export:         TO AS47363 announce AS-Direct-Telecom
+remarks:
+import:         from AS43314 action pref=110; accept AS-DIANET
+export:         TO AS43314 announce AS-Direct-Telecom
+remarks:
+import:         from AS31257 action pref=110; accept AS-ORIONNET
+export:         TO AS31257 announce AS-Direct-Telecom
+remarks:
+import:         from AS33871 action pref=110; accept AS-NORCOM-KRSK
+export:         TO AS33871 announce AS-Direct-Telecom
+remarks:
+import:         from AS41560 action pref=110; accept AS-UT-SVR
+export:         TO AS41560 announce AS-Direct-Telecom
+remarks:
+import:         from AS62228 action pref=110; accept AS-DECISIONMARKETING
+export:         TO AS62228 announce AS-Direct-Telecom
+remarks:
+import:         from AS48235 action pref=110; accept AS48235
+export:         TO AS48235 announce AS-Direct-Telecom
+remarks:
+import:         from AS21353 action pref=110; accept AS-ARTCOMS
+export:         TO AS21353 announce AS-Direct-Telecom
+remarks:
+import:         from AS42893 action pref=110; accept AS42893
+export:         TO AS42893 announce AS-Direct-Telecom
+remarks:
+import:         from AS3255 action pref=110; accept AS-UARNET
+export:         TO AS3255 announce AS-Direct-Telecom
+remarks:
+import:         from AS8926 action pref=110; accept AS-MOLDTELECOM
+export:         TO AS8926 announce AS-Direct-Telecom
+remarks:
+import:         from AS200161 action pref=110; accept AS-DATAPRO
+export:         TO AS200161 announce AS-Direct-Telecom
+remarks:
+import:         from AS56592 action pref=110; accept AS-TELEWEST-INET
+export:         TO AS56592 announce AS-Direct-Telecom
+remarks:
+import:         from AS57073 action pref=110; accept AS57073
+export:         TO AS57073 announce AS-Direct-Telecom
+remarks:
+import:         from AS52041 action pref=110; accept AS-IRIDA
+export:         TO AS52041 announce AS-Direct-Telecom
+remarks:
+import:         from AS39442 action pref=110; accept AS-UNICO
+export:         TO AS39442 announce AS-Direct-Telecom
+remarks:
+import:         from AS12714 action pref=110; accept AS-TI
+export:         TO AS12714 announce AS-Direct-Telecom
+remarks:
+import:         from AS45051 action pref=110; accept AS45051
+export:         TO AS45051 announce AS-Direct-Telecom
+remarks:
+import:         from AS199599 action pref=110; accept AS-CIREX
+export:         TO AS199599 announce AS-Direct-Telecom
+remarks:
+import:         from AS200912 action pref=110; accept AS-SET-RIGHTSIDE
+export:         TO AS200912 announce AS-Direct-Telecom
+remarks:
+import:         from AS21030 action pref=110; accept AS-CDNNOW
+export:         TO AS21030 announce AS-Direct-Telecom
+remarks:
+import:         from AS201008 action pref=110; accept AS201008
+export:         TO AS201008 announce AS-Direct-Telecom
+remarks:
+import:         from AS48223 action pref=110; accept AS-SENATOR
+export:         TO AS48223 announce AS-Direct-Telecom
+remarks:
+import:         from AS197080 action pref=110; accept AS197080
+export:         TO AS197080 announce AS-Direct-Telecom
+remarks:
+import:         from AS43022 action pref=110; accept AS-UASEECH
+export:         TO AS43022 announce AS-Direct-Telecom
+remarks:
+import:         from AS200015 action pref=110; accept AS-LIVETEX
+export:         TO AS200015 announce AS-Direct-Telecom
+remarks:
+import:         from AS60165 action pref=110; accept AS60165
+export:         TO AS60165 announce AS-Direct-Telecom
+remarks:
+import:         from AS3202 action pref=110; accept AS3202
+export:         TO AS3202 announce AS-Direct-Telecom
+remarks:
+import:         from AS31585 action pref=110; accept AS-SET-COLTEL
+export:         TO AS31585 announce AS-Direct-Telecom
+remarks:
+import:         from AS60357 action pref=110; accept AS60357
+export:         TO AS60357 announce AS-Direct-Telecom
+remarks:
+import:         from AS43222 action pref=110; accept AS-CRIMEA-IX
+export:         TO AS43222 announce AS-Direct-Telecom
+remarks:
+import:         from AS49588 action pref=110; accept AS-SDS
+export:         TO AS49588 announce AS-Direct-Telecom
+remarks:
+import:         from AS50643 action pref=110; accept AS-LU
+export:         TO AS50643 announce AS-Direct-Telecom
+remarks:
+import:         from AS41798 action pref=110; accept AS-TRANSKZ
+export:         TO AS41798 announce AS-Direct-Telecom
+remarks:
+import:         from AS41059 action pref=110; accept AS-T-CIX-INT AS-T-CIX-V6-INT
+export:         TO AS41059 announce AS-Direct-Telecom
+remarks:
+import:         from AS201229 action pref=110; accept AS201229
+export:         TO AS201229 announce AS-Direct-Telecom
+remarks:
+import:         from AS197556 action pref=110; accept AS-SET_TNSPLUS
+export:         TO AS197556 announce AS-Direct-Telecom
+remarks:
+import:         from AS201469 action pref=110; accept AS201469
+export:         TO AS201469 announce AS-Direct-Telecom
+remarks:
+import:         from AS34866 action pref=110; accept AS34866
+export:         TO AS34866 announce AS-Direct-Telecom
+remarks:
+import:         from AS41722 action pref=110; accept AS-MIRAN
+export:         TO AS41722 announce AS-Direct-Telecom
+remarks:
+import:         from AS29069 action pref=110; accept AS-TRANSLINECOM
+export:         TO AS29069 announce AS-Direct-Telecom
+remarks:
+import:         from AS31040 action pref=110; accept AS-CIBERTELPEER
+export:         TO AS31040 announce AS-Direct-Telecom
+remarks:
+import:         from AS57864 action pref=110; accept AS-MEGABIT
+export:         TO AS57864 announce AS-Direct-Telecom
+remarks:
+import:         from AS31252 action pref=110; accept AS-STARNET
+export:         TO AS31252 announce AS-Direct-Telecom
+remarks:
+import:         from AS8342 action pref=110; accept AS-RT
+export:         TO AS8342 announce AS-Direct-Telecom
+remarks:
+import:         from AS42331 action pref=110; accept AS-FREEHOST
+export:         TO AS42331 announce AS-Direct-Telecom
+remarks:
+import:         from AS43660 action pref=110; accept AS-ETHERWAY
+export:         TO AS43660 announce AS-Direct-Telecom
+remarks:
+import:         from AS13188 action pref=110; accept AS13188
+export:         TO AS13188 announce AS-Direct-Telecom
+remarks:
+import:         from AS25591 action pref=110; accept AS-BCLAN
+export:         TO AS25591 announce AS-Direct-Telecom
+remarks:
+import:         from AS62066 action pref=110; accept AS62066
+export:         TO AS62066 announce AS-Direct-Telecom
+remarks:
+import:         from AS56528 action pref=110; accept AS56528
+export:         TO AS56528 announce AS-Direct-Telecom
+remarks:
+import:         from AS60771 action pref=110; accept AS-COMITEN
+export:         TO AS60771 announce AS-Direct-Telecom
+remarks:
+import:         from AS200487 action pref=110; accept AS200487
+export:         TO AS200487 announce AS-Direct-Telecom
+remarks:
+import:         from AS25251 action pref=110; accept AS-ABCNET-ALPHA
+export:         TO AS25251 announce AS-Direct-Telecom
+remarks:
+import:         from AS62356 action pref=110; accept AS62356
+export:         TO AS62356 announce AS-Direct-Telecom
+remarks:
+import:         from AS198227 action pref=110; accept AS-NEWTELECOM
+export:         TO AS198227 announce AS-Direct-Telecom
+remarks:
+import:         from AS35640 action pref=110; accept AS-MIGRAPH
+export:         TO AS35640 announce AS-Direct-Telecom
+remarks:
+import:         from AS34056 action pref=110; accept AS-KIEVNET
+export:         TO AS34056 announce AS-Direct-Telecom
+remarks:
+import:         from AS29442 action pref=110; accept AS-INETCOM
+export:         TO AS29442 announce AS-Direct-Telecom
+remarks:
+import:         from AS35213 action pref=110; accept AS-PCN
+export:         TO AS35213 announce AS-Direct-Telecom
+remarks:
+import:         from AS52191 action pref=110; accept AS-LOCALKA AS-LOCALKA6
+export:         TO AS52191 announce AS-Direct-Telecom
+remarks:
+import:         from AS48524 action pref=110; accept AS48524
+export:         TO AS48524 announce AS-Direct-Telecom
+remarks:
+import:         from AS42396 action pref=110; accept AS-PPLNET
+export:         TO AS42396 announce AS-Direct-Telecom
+remarks:
+import:         from AS15848 action pref=110; accept AS15848
+export:         TO AS15848 announce AS-Direct-Telecom
+remarks:
+import:         from AS59600 action pref=110; accept AS59600
+export:         TO AS59600 announce AS-Direct-Telecom
+remarks:
+import:         from AS60731 action pref=110; accept AS60731
+export:         TO AS60731 announce AS-Direct-Telecom
+remarks:
+import:         from AS47522 action pref=110; accept AS-NETFORT
+export:         TO AS47522 announce AS-Direct-Telecom
+remarks:
+import:         from AS48287 action pref=110; accept AS-RUCENTER
+export:         TO AS48287 announce AS-Direct-Telecom
+remarks:
+import:         from AS49963 action pref=110; accept AS-BELRTS
+export:         TO AS49963 announce AS-Direct-Telecom
+remarks:
+import:         from AS47513 action pref=110; accept AS47513
+export:         TO AS47513 announce AS-Direct-Telecom
+remarks:
+import:         from AS13188 action pref=110; accept AS-BANKINFORM
+export:         TO AS13188 announce AS-Direct-Telecom
+remarks:
+import:         from AS24700 action pref=110; accept AS24700
+export:         TO AS24700 announce AS-Direct-Telecom
+remarks:
+import:         from AS196709 action pref=110; accept AS-GNC
+export:         TO AS196709 announce AS-Direct-Telecom
+remarks:
+import:         from AS197482 action pref=110; accept AS-2GIS
+export:         TO AS197482 announce AS-Direct-Telecom
+remarks:
+import:         from AS57724 action pref=110; accept AS-DDOS-GUARD
+export:         TO AS57724 announce AS-Direct-Telecom
+remarks:
+import:         from AS50581 action pref=110; accept AS-UTG-UA
+export:         TO AS50581 announce AS-Direct-Telecom
+remarks:
+import:         from AS44128 action pref=110; accept AS44128
+export:         TO AS44128 announce AS-Direct-Telecom
+remarks:
+import:         from AS56694 action pref=110; accept AS-DHUB
+export:         TO AS56694 announce AS-Direct-Telecom
+remarks:
+import:         from AS3327 action pref=110; accept AS-LINXTELECOM
+export:         TO AS3327 announce AS-Direct-Telecom
+remarks:
+import:         from AS8449 action pref=110; accept AS-ELCAT AS-ELCAT-V6
+export:         TO AS8449 announce AS-Direct-Telecom
+remarks:
+import:         from AS6939 action pref=110; accept ANY
+export:         TO AS6939 announce AS-Direct-Telecom
+remarks:
+import:         from AS199254 action pref=110; accept AS199254
+export:         TO AS199254 announce AS-Direct-Telecom
+remarks:
+import:         from AS50060 action pref=110; accept AS50060
+export:         TO AS50060 announce AS-Direct-Telecom
+remarks:
+import:         from AS24589 action pref=110; accept AS-TELENET-LATVIA
+export:         TO AS24589 announce AS-Direct-Telecom
+remarks:
+import:         from AS31214 action pref=110; accept AS-TISDIALOG
+export:         TO AS31214 announce AS-Direct-Telecom
+remarks:
+import:         from AS12555 action pref=110; accept AS-CUBIO-RUS
+export:         TO AS12555 announce AS-Direct-Telecom
+remarks:
+import:         from AS41096 action pref=110; accept AS41096
+export:         TO AS41096 announce AS-Direct-Telecom
+remarks:
+import:         from AS56689 action pref=110; accept AS-ELITEL
+export:         TO AS56689 announce AS-Direct-Telecom
+remarks:
+import:         from AS202058 action pref=110; accept AS-PERMTK
+export:         TO AS202058 announce AS-Direct-Telecom
+remarks:
+import:         from AS7979 action pref=110; accept AS7979
+export:         TO AS7979 announce AS-Direct-Telecom
+remarks:
+import:         from AS35810 action pref=110; accept AS-BIGTELECOM
+export:         TO AS35810 announce AS-Direct-Telecom
+org:            ORG-RA21-RIPE
+admin-c:        ERTH3-RIPE
+tech-c:         RAID1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RAID-MNT
+created:        2004-05-26T14:49:52Z
+last-modified:  2023-12-28T12:36:03Z
+source:         RIPE # Filtered
+
+organisation:   ORG-RA21-RIPE
+org-name:       JSC "ER-Telecom Holding"
+country:        RU
+org-type:       LIR
+address:        Shosse Kosmonavtov, 111i, bldg. 2, office 509
+address:        614066
+address:        Perm
+address:        RUSSIAN FEDERATION
+phone:          +79197001771
+phone:          +7 342 2462233
+fax-no:         +7 342 2195024
+admin-c:        ERTH3-RIPE
+tech-c:         RAID1-RIPE
+abuse-c:        RAID1-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        RAID-MNT
+mnt-ref:        ENFORTA-MNT
+mnt-ref:        AS8345-MNT
+mnt-ref:        RU-NTK-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         RAID-MNT
+created:        2004-04-17T11:56:55Z
+last-modified:  2024-01-18T14:09:09Z
+source:         RIPE # Filtered
+
+role:           ER-Telecom ISP General Contact Role
+address:        111, str. Shosse Kosmonavtov
+address:        614000 Perm
+address:        Russian Federation
+nic-hdl:        ERTH3-RIPE
+mnt-by:         ERTH-MAGISTR
+mnt-by:         RAID-MNT
+created:        2019-04-29T09:26:35Z
+last-modified:  2019-04-29T09:26:35Z
+source:         RIPE # Filtered
+
+role:           ER-Telecom ISP Contact Role
+address:        JSC "ER-Telecom"
+address:        111, str. Shosse Kosmonavtov
+address:        614000 Perm
+address:        Russian Federation
+phone:          +7 342 2462233
+fax-no:         +7 342 2463344
+abuse-mailbox:  abuse@domru.ru
+remarks:        24/7 phone number: +7-342-2362233
+admin-c:        AAP113-RIPE
+admin-c:        GRIF59-RIPE
+tech-c:         AAP113-RIPE
+tech-c:         GRIF59-RIPE
+nic-hdl:        RAID1-RIPE
+mnt-by:         RAID-MNT
+created:        2005-02-11T12:50:50Z
+last-modified:  2022-04-20T04:54:39Z
+source:         RIPE # Filtered
+
+
 
