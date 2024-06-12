@@ -356,6 +356,41 @@ source:         RIPE
 
 
 
+aut-num:        AS42484
+as-name:        GPTEL-AS
+org:            ORG-NA41-RIPE
+remarks:        -----------------------------------
+remarks:        -- Uplinks
+remarks:        -------------------------------------
+import:         from AS42861 action pref=210; accept any
+export:         to AS42861 announce AS-GPTEL
+import:         from AS44020 action pref=210; accept any
+export:         to AS44020 announce AS-GPTEL
+remarks:        -------------------------------------
+remarks:        -- Customers
+remarks:        -------------------------------------
+import:         from AS28800 action pref=280; accept AS28800
+export:         to AS28800 announce ANY
+export:         to AS8592 announce {77.73.31.0/24}
+remarks:        -------------------------------------
+remarks:        Contacts and URLs:
+remarks:        -------------------------------------
+remarks:        Routing issues noc@gptel.ru
+remarks:        SPAM and security issues abuse@gptel.ru
+remarks:        Web Site http://www.gptel.ru
+remarks:        Looking Glass http://lg.gptel.ru
+remarks:        -------------------------------------
+admin-c:        NTnN1-RIPE
+tech-c:         NTnN1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NAUKANET-MNT
+created:        2007-03-01T12:33:46Z
+last-modified:  2024-06-11T06:54:54Z
+source:         RIPE
+
+
+
 aut-num:        AS47183
 as-name:        ExpertRAnet-AS
 org:            ORG-EGj1-RIPE
