@@ -658,6 +658,9 @@ mp-export:      afi ipv6.unicast to AS56662 announce ANY
 remarks:        -= Information networks =-
 mp-import:      afi ipv6.unicast from AS56727 action pref=100; accept AS-INFORMNET
 mp-export:      afi ipv6.unicast to AS56727 announce ANY
+remarks:        -= YOHAN-FRESNEAU =-
+mp-import:      afi ipv6.unicast from AS57080 action pref=100; accept AS57080
+mp-export:      afi ipv6.unicast to AS57080 announce ANY
 remarks:        -= NITAET =-
 mp-import:      afi ipv6.unicast from AS57883 action pref=100; accept AS-NITAET
 mp-export:      afi ipv6.unicast to AS57883 announce ANY
@@ -808,6 +811,9 @@ mp-export:      afi ipv6.unicast to AS200021 announce ANY
 remarks:        -= Alptekin Sunnetci =-
 mp-import:      afi ipv6.unicast from AS200334 action pref=100; accept AS-Ofis-Link
 mp-export:      afi ipv6.unicast to AS200334 announce ANY
+remarks:        -= DORFHOSTER =-
+mp-import:      afi ipv6.unicast from AS200372 action pref=100; accept AS200372
+mp-export:      afi ipv6.unicast to AS200372 announce ANY
 remarks:        -= Q11NET =-
 mp-import:      afi ipv6.unicast from AS200426 action pref=100; accept AS200426
 mp-export:      afi ipv6.unicast to AS200426 announce ANY
@@ -817,6 +823,9 @@ mp-export:      afi ipv6.unicast to AS200455 announce ANY
 remarks:        -= Felix Annen =-
 mp-import:      afi ipv6.unicast from AS200490 action pref=100; accept AS-BODEMS
 mp-export:      afi ipv6.unicast to AS200490 announce ANY
+remarks:        -= INFOPRO =-
+mp-import:      afi ipv6.unicast from AS200529 action pref=100; accept AS200529
+mp-export:      afi ipv6.unicast to AS200529 announce ANY
 remarks:        -= PATP3 =-
 mp-import:      afi ipv6.unicast from AS200566 action pref=100; accept AS200566
 mp-export:      afi ipv6.unicast to AS200566 announce ANY
@@ -853,6 +862,9 @@ mp-export:      afi ipv6.unicast to AS201938 announce ANY
 remarks:        -= OpenLaboratory =-
 mp-import:      afi ipv6.unicast from AS202197 action pref=100; accept AS-LAB2
 mp-export:      afi ipv6.unicast to AS202197 announce ANY
+remarks:        -= Jacek Kowalski trading as SI.pl =-
+mp-import:      afi ipv6.unicast from AS202572 action pref=100; accept AS-SI-PL-CLOUD
+mp-export:      afi ipv6.unicast to AS202572 announce ANY
 remarks:        -= AggrosOperations =-
 mp-import:      afi ipv6.unicast from AS202685 action pref=100; accept AS202685
 mp-export:      afi ipv6.unicast to AS202685 announce ANY
@@ -862,9 +874,9 @@ mp-export:      afi ipv6.unicast to AS202827 announce ANY
 remarks:        -= HHY =-
 mp-import:      afi ipv6.unicast from AS202828 action pref=100; accept AS202828
 mp-export:      afi ipv6.unicast to AS202828 announce ANY
-remarks:        -= Jacek Kowalski trading as SI.pl =-
-mp-import:      afi ipv6.unicast from AS202572 action pref=100; accept AS-SI-PL-CLOUD
-mp-export:      afi ipv6.unicast to AS202572 announce ANY
+remarks:        -= Kyle-Mueller =-
+mp-import:      afi ipv6.unicast from AS202941 action pref=100; accept AS202941
+mp-export:      afi ipv6.unicast to AS202941 announce ANY
 remarks:        -= BANDURA-COMMUNICATIONS-AS =-
 mp-import:      afi ipv6.unicast from AS202952 action pref=100; accept AS-BANDURA-COMMUNICATIONS-SET
 mp-export:      afi ipv6.unicast to AS202952 announce ANY
@@ -1183,12 +1195,27 @@ mp-export:      afi ipv6.unicast to AS213343 announce ANY
 remarks:        -= trivisonno network =-
 mp-import:      afi ipv6.unicast from AS213361 action pref=100; accept AS-TRIVI
 mp-export:      afi ipv6.unicast to AS213361 announce ANY
+remarks:        -= Akshay-Revankar =-
+mp-import:      afi ipv6.unicast from AS214763 action pref=100; accept AS214763
+mp-export:      afi ipv6.unicast to AS214763 announce ANY
+remarks:        -= YJP-AS =-
+mp-import:      afi ipv6.unicast from AS214871 action pref=100; accept AS214871
+mp-export:      afi ipv6.unicast to AS214871 announce ANY
+remarks:        -= WYS =-
+mp-import:      afi ipv6.unicast from AS214921 action pref=100; accept AS214921
+mp-export:      afi ipv6.unicast to AS214921 announce ANY
+remarks:        -= nodesty =-
+mp-import:      afi ipv6.unicast from AS215039 action pref=100; accept AS215039
+mp-export:      afi ipv6.unicast to AS215039 announce ANY
 remarks:        -= SILVIO-SILVA =-
 mp-import:      afi ipv6.unicast from AS215153 action pref=100; accept AS215153
 mp-export:      afi ipv6.unicast to AS215153 announce ANY
 remarks:        -= IT-GARAGE-Hosting =-
-mp-import:      afi ipv6.unicast from AS215232 action pref=100; accept AS215232
+mp-import:      afi ipv6.unicast from AS215232 action pref=100; accept AS215232:AS-CORE
 mp-export:      afi ipv6.unicast to AS215232 announce ANY
+remarks:        -= Raoul Brouns =-
+mp-import:      afi ipv6.unicast from AS215296 action pref=100; accept AS215296
+mp-export:      afi ipv6.unicast to AS215296 announce ANY
 remarks:        -= Xing_Qingyu =-
 mp-import:      afi ipv6.unicast from AS215502 action pref=100; accept AS215502
 mp-export:      afi ipv6.unicast to AS215502 announce ANY
@@ -1347,7 +1374,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEREZHA-MNT
 created:        2003-10-28T13:43:45Z
-last-modified:  2024-06-03T17:43:29Z
+last-modified:  2024-06-12T10:25:28Z
 source:         RIPE # Filtered
 
 organisation:   ORG-NL366-RIPE
