@@ -348,7 +348,7 @@ remarks:        ************ CLIENTS *******************
 remarks:        *****
 import:         from AS50793 accept AS50793
 export:         to AS50793 announce ANY
-import:         from AS31133 accept AS31133
+import:         from AS31133 accept ANY
 export:         to AS31133 announce ANY
 import:         from AS21446 accept AS-ALMAZTELECOM
 export:         to AS21446 announce ANY
@@ -735,6 +735,8 @@ mp-import:      afi ipv6 from AS33873 accept AS-ARVATO-V6
 mp-export:      afi ipv6 to AS33873 announce AS-OBSRUSSIA6
 mp-import:      afi ipv6 from AS8359 accept ANY
 mp-export:      afi ipv6 to AS8359 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS31133 accept ANY
+mp-export:      afi ipv6 to AS31133 announce AS-OBSRUSSIA6
 mp-import:      afi ipv6 from AS57304 accept ANY
 mp-export:      afi ipv6 to AS57304 announce AS-OBSRUSSIA6
 mp-import:      afi ipv6 from AS8631 accept AS-MSKROUTESERVER
@@ -782,7 +784,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSPRINT-NCC
 created:        2002-07-25T12:28:38Z
-last-modified:  2024-06-05T12:20:20Z
+last-modified:  2024-06-15T06:52:26Z
 source:         RIPE
 
 organisation:   ORG-GORC1-RIPE
