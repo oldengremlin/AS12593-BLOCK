@@ -68,7 +68,8 @@ remarks:        +-----------------------------------------------------------+
 remarks:        | 12389:6xxy When advertising to UPSTREAM |
 remarks:        +-----------------------------------------------------------+
 remarks:        | 12389:607y When advertising to Level3 (AS3356) |
-remarks:        | 12389:608y When advertising to PCCW Global (AS3491) |
+remarks:        | 12389:608y When advertising to PCCW Global Asia (AS3491) |
+remarks:        | 12389:609y When advertising to PCCW Global Europe (AS3491)  |
 remarks:        | 12389:612y When advertising to Telia Sonera (AS1299) |
 remarks:        | 12389:614y When advertising to Vodafone (AS1273) |
 remarks:        | 12389:617y When advertising to Telecom-Italia Sparkle (AS6762) |
@@ -6411,6 +6412,8 @@ import:         from AS197695 accept AS197695
 export:         to AS197695 announce ANY
 import:         from AS50804 accept AS-BESTLINE
 export:         to AS50804 announce ANY
+import:         from AS215115 accept AS215115
+export:         to AS215115 announce ANY
 org:            ORG-JR8-RIPE
 admin-c:        RTNC-RIPE
 tech-c:         RTNC-RIPE
@@ -6419,7 +6422,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SAVRI-MNT
 status:         ASSIGNED
 created:        2005-07-01T14:26:50Z
-last-modified:  2024-06-04T12:20:23Z
+last-modified:  2024-06-18T21:26:02Z
 source:         RIPE
 
 organisation:   ORG-JR8-RIPE
