@@ -2,3 +2,218 @@
 
 
 
+aut-num:        AS197695
+as-name:        AS-REGRU
+org:            ORG-nrRL1-RIPE
+import:         from AS39792 accept ANY
+import:         from AS12695 accept ANY
+import:         from AS262254 accept ANY
+import:         from AS200457 accept AS200457
+import:         from AS202696 accept AS202696
+import:         from AS201956 accept AS201956
+import:         from AS29043 accept AS29043
+import:         from AS7979 accept ANY
+import:         from AS199599 accept ANY
+import:         from AS43146 accept AS-AGAVA
+import:         from AS205952 accept AS-CARAVANAERO
+import:         from AS205442 accept AS205442
+import:         from AS8849 accept AS8849
+import:         from AS202423 accept AS202423
+import:         from AS204311 accept AS204311
+import:         from AS209672 accept AS209672
+export:         to AS39792 announce AS197695
+export:         to AS12695 announce AS197695
+export:         to AS262254 announce AS197695
+export:         to AS200457 announce ANY
+export:         to AS202696 announce ANY
+export:         to AS201956 announce ANY
+export:         to AS29043 announce ANY
+export:         to AS59796 announce AS-REGRU
+export:         to AS205952 announce ANY
+export:         to AS7979 announce AS-REGRU
+export:         to AS199599 announce AS-REGRU
+export:         to AS43146 announce ANY
+export:         to AS205442 announce ANY
+export:         to AS8849 announce ANY
+export:         to AS205264 announce ANY
+export:         to AS202423 announce ANY
+export:         to AS204311 announce ANY
+export:         to AS209672 announce ANY
+export:         to AS34277 announce ANY
+admin-c:        RGRU-RIPE
+tech-c:         RGRU-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         REGRU-MNT
+created:        2011-03-28T14:57:03Z
+last-modified:  2022-03-21T10:41:27Z
+source:         RIPE
+
+
+
+aut-num:        AS201972
+as-name:        LOGL-AS
+org:            ORG-nrRL1-RIPE
+import:         from AS47764 accept ANY
+import:         from AS50009 accept ANY
+export:         to AS47764 announce AS201972
+export:         to AS50009 announce AS201972
+admin-c:        LOGL-RIPE
+tech-c:         LOGL-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         REGRU-MNT
+mnt-by:         LOGL-RIPE-MNT
+created:        2014-05-15T11:44:44Z
+last-modified:  2018-09-04T11:26:36Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS206812
+as-name:        Reddock
+org:            ORG-nrRL1-RIPE
+import:         from AS41722 accept ANY
+export:         to AS41722 announce AS206812
+import:         from AS56534 accept ANY
+export:         to AS56534 announce AS206812
+admin-c:        RGRU-RIPE
+tech-c:         RGRU-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         REGRU-MNT
+created:        2016-11-01T13:22:36Z
+last-modified:  2024-04-08T16:43:02Z
+source:         RIPE
+
+
+
+aut-num:        AS35718
+as-name:        NAUNET-AS
+descr:          Moscow, Russia
+org:            ORG-NS43-RIPE
+admin-c:        ARP-RIPE
+tech-c:         ARP-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         REGRU-MNT
+created:        2005-10-11T15:39:38Z
+last-modified:  2022-04-13T11:01:42Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-nrRL1-RIPE
+
+
+
+aut-num:        AS39561
+as-name:        AS-REGRU
+org:            ORG-nrRL1-RIPE
+import:         from AS197695 accept AS-REGRU
+export:         to AS197695 announce ANY
+admin-c:        RGRU-RIPE
+tech-c:         ARP-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         REGRU-MNT
+created:        2006-03-20T13:59:39Z
+last-modified:  2020-02-26T09:28:22Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS43146
+as-name:        AGAVA3
+org:            ORG-nrRL1-RIPE
+admin-c:        RGRU-RIPE
+tech-c:         ARP-RIPE
+remarks:        http://hosting.agava.ru, http://servers.agava.ru
+remarks:
+remarks:        ----------------------------------------------
+remarks:        IPv4 Routing Policy
+remarks:        ----------------------------------------------
+remarks:
+remarks:        Upstreams
+remarks:        ----------------------------------------------
+import:         from AS3216 action pref=100; accept ANY
+export:         to AS3216 announce AS-AGAVA
+import:         from AS197695 accept ANY
+export:         to AS197695 announce AS-AGAVA
+import:         from AS12695 action pref=100; accept ANY
+export:         to AS12695 announce AS-AGAVA
+import:         from AS9002 action pref=100; accept ANY
+export:         to AS9002 announce AS-AGAVA
+import:         from AS49063 action pref=90; accept ANY
+export:         to AS49063 announce AS43146
+import:         from AS57494 action pref=100; accept ANY
+export:         to AS57494 announce AS43146
+remarks:
+remarks:        Peers
+remarks:        ----------------------------------------------
+import:         from AS8631 action pref=300; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-AGAVA
+import:         from AS50952 action pref=400; accept AS-DATAIX
+export:         to AS50952 announce AS-AGAVA
+remarks:
+remarks:        Clients
+remarks:        ----------------------------------------------
+import:         from AS8849 action pref=100; accept AS8849
+export:         to AS8849 announce AS43146
+import:         from AS197561 action pref=100; accept AS197561
+export:         to AS197561 announce ANY
+import:         from AS49992 action pref=100; accept AS-KRUKOVER
+export:         to AS49992 announce AS43146
+import:         from AS60592 action pref=100; accept AS60592
+export:         to AS60592 announce AS43146
+import:         from AS50798 action pref=100; accept AS50798
+export:         to AS50798 announce AS43146
+remarks:
+remarks:        ----------------------------------------------
+remarks:        IPv6 Routing Policy
+remarks:        ----------------------------------------------
+remarks:
+remarks:        Upstreams
+remarks:        ----------------------------------------------
+mp-import:      afi ipv6.unicast from AS3216 action pref=200; accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-AGAVA
+mp-import:      afi ipv6.unicast from AS12695 action pref=200; accept ANY
+mp-export:      afi ipv6.unicast to AS12695 announce AS-AGAVA
+mp-import:      afi ipv6.unicast from AS49063 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS49063 announce AS-AGAVA
+remarks:
+remarks:
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         REGRU-MNT
+created:        2007-06-14T11:39:56Z
+last-modified:  2019-02-26T09:52:32Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS49352
+as-name:        LOGOL-AS
+org:            ORG-nrRL1-RIPE
+import:         from AS12695 accept ANY
+import:         from AS39134 accept ANY
+import:         from AS199599 accept ANY
+export:         to AS12695 announce AS-LOGOL
+import:         from AS49281 accept ANY
+export:         to AS49281 announce AS-LOGOL
+export:         to AS39134 announce AS-LOGOL
+export:         to AS199599 announce AS-LOGOL
+admin-c:        ARP-RIPE
+import:         from AS61977 action pref=150; accept AS61977
+export:         to AS61977 announce ANY
+import:         from AS49782 action pref=150; accept AS49782
+export:         to AS49782 announce ANY
+import:         from AS48361 action pref=150; accept AS-GLOBATEL
+export:         to AS48361 announce ANY
+tech-c:         ARP-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         REGRU-MNT
+created:        2009-05-25T11:25:39Z
+last-modified:  2022-03-21T10:39:38Z
+source:         RIPE
+
+
+
