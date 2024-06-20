@@ -2,3 +2,77 @@
 
 
 
+aut-num:        AS200551
+as-name:        TORGRYADY-AS
+org:            ORG-ZTR1-RIPE
+import:         from AS43567 accept ANY
+export:         to AS43567 announce AS200551
+import:         from AS34456 accept ANY
+import:         from AS50804 accept ANY
+export:         to AS34456 announce AS200551
+export:         to AS50804 announce AS200551
+admin-c:        GAR177-RIPE
+tech-c:         GAR177-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SOUTHTEL-MNT
+created:        2015-06-08T16:22:02Z
+last-modified:  2023-09-05T05:37:37Z
+source:         RIPE
+sponsoring-org: ORG-UL22-RIPE
+
+
+
+aut-num:        AS216335
+as-name:        Kalibr-SB-AS
+org:            ORG-OKS5-RIPE
+sponsoring-org: ORG-UL22-RIPE
+import:         from AS43567 accept ANY
+export:         to AS43567 announce AS216335
+import:         from AS21453 accept ANY
+export:         to AS21453 announce AS216335
+admin-c:        VL13425-RIPE
+tech-c:         DN4855-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SOUTHTEL-MNT
+created:        2023-09-08T06:32:10Z
+last-modified:  2023-09-08T06:32:10Z
+source:         RIPE
+
+
+
+aut-num:        AS43567
+as-name:        SOUTHTEL-AS
+org:            ORG-UL22-RIPE
+import:         from AS43727 accept ANY
+import:         from AS31500 accept ANY
+import:         from AS15169 accept ANY
+import:         from AS35598 accept ANY
+import:         from AS50952 accept ANY
+import:         from AS49869 accept ANY
+import:         from AS21453 accept ANY
+import:         from AS200551 accept AS200551
+import:         from AS216335 accept AS216335
+export:         to AS43727 announce AS-SOUTHTEL
+export:         to AS31500 announce AS-SOUTHTEL
+export:         to AS35598 announce AS-SOUTHTEL
+export:         to AS50952 announce AS-SOUTHTEL
+export:         to AS49869 announce AS-SOUTHTEL
+export:         to AS15169 announce AS-SOUTHTEL
+export:         to AS21453 announce AS-SOUTHTEL
+export:         to AS200551 announce ANY
+export:         to AS216335  announce ANY
+admin-c:        VK5441-RIPE
+admin-c:        PA8270-RIPE
+tech-c:         PA8270-RIPE
+tech-c:         VK5441-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SOUTHTEL-MNT
+created:        2007-08-23T13:45:05Z
+last-modified:  2023-09-08T07:39:03Z
+source:         RIPE
+
+
+

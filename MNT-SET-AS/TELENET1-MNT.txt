@@ -2,3 +2,84 @@
 
 
 
+aut-num:        AS35154
+as-name:        TELENET-AS
+org:            ORG-JR8-RIPE
+descr:          Teleset Service LLC
+remarks:        --------------------------------------
+remarks:        == Uplinks ==
+remarks:        --------------------------------------
+import:         from AS12389 action pref=95; accept ANY
+export:         to AS12389 announce AS-KABINET
+remarks:        --------------------------------------
+remarks:        == Peers ==
+remarks:        --------------------------------------
+import:         from AS5563 action pref=200; accept AS-URAL
+import:         from AS6828 action pref=200; accept AS-USI
+import:         from AS12668 action pref=200; accept AS12668
+import:         from AS13238 action pref=200; accept AS-YANDEX
+import:         from AS16179 action pref=200; accept AS16179
+import:         from AS16230 action pref=200; accept AS16230
+import:         from AS16285 action pref=200; accept AS-UMN
+import:         from AS25086 action pref=200; accept AS-UTC-RU
+import:         from AS28890 action pref=200; accept AS28890 AS39073 AS43025
+import:         from AS30868 action pref=200; accept AS30868
+import:         from AS31359 action pref=200; accept AS-FORATEC
+import:         from AS31363 action pref=200; accept AS31363
+import:         from AS34879 action pref=200; accept AS-NGENIX
+import:         from AS41082 action pref=200; accept AS41082 AS42776
+import:         from AS41560 action pref=200; accept AS41560
+export:         to AS5563 announce AS-KABINET
+export:         to AS6828 announce AS-KABINET
+export:         to AS12668 announce AS-KABINET
+export:         to AS13248 announce AS-KABINET
+export:         to AS16230 announce AS-KABINET
+export:         to AS16179 announce AS-KABINET
+export:         to AS16285 announce AS-KABINET
+export:         to AS25086 announce AS-KABINET
+export:         to AS28890 announce AS-KABINET
+export:         to AS30868 announce AS-KABINET
+export:         to AS31359 announce AS-KABINET
+export:         to AS31363 announce AS-KABINET
+export:         to AS34879 announce AS-KABINET
+export:         to AS41082 announce AS-KABINET
+export:         to AS41560 announce AS-KABINET
+remarks:        --------------------------------------
+remarks:        == EKT-IX ==
+remarks:        --------------------------------------
+import:         from AS43213 action pref=190; accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS-KABINET
+remarks:        --------------------------------------
+admin-c:        TLNT-RIPE
+tech-c:         TLNT-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TELENET1-MNT
+created:        2005-06-14T09:54:12Z
+last-modified:  2024-05-13T10:47:23Z
+source:         RIPE
+
+
+
+aut-num:        AS56350
+as-name:        TELENET2-AS
+org:            ORG-JR8-RIPE
+remarks:        Branch of Teleset-servis Ltd. in the city of Kurgan
+import:         from AS20485 accept ANY
+import:         from AS29648 accept ANY
+export:         to AS29648 announce AS56350
+export:         to AS20485 announce AS56350
+default:        to AS29648
+admin-c:        DMVY-RIPE
+admin-c:        IL154-RIPE
+tech-c:         DMVY-RIPE
+tech-c:         IL154-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TELENET1-MNT
+created:        2011-02-09T13:48:17Z
+last-modified:  2018-09-04T10:58:34Z
+source:         RIPE # Filtered
+
+
+
