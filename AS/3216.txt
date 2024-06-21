@@ -1661,6 +1661,8 @@ remarks:        ++
 import:         from AS207978 action pref=100; accept AS-KSC-SB-RAS
 export:         to AS207978 announce ANY
 import:         from AS44751 action pref=100; accept AS44751
+import:         from AS205652 action pref=100; accept AS205652
+export:         to AS205652 announce AS-SOVAM
 export:         to AS44751 announce ANY
 import:         from AS49675 action pref=100; accept AS49675
 export:         to AS49675 announce ANY
@@ -5041,8 +5043,6 @@ remarks:        3216:504x When advertising to Telia Global uplink...
 remarks:        3216:508x When advertising to Orange uplink...
 remarks:        3216:509x When advertising to Cogent uplink...
 remarks:        -----------------------------------------------------------------
-remarks:        (3216:505x When advertising to any M9-IX peer...) obsoleted
-remarks:        (3216:506x When advertising to any SPB peer...) obsoleted
 remarks:        3216:507x When advertising to any NSK-IX peer...
 remarks:        3216:510x When advertising to any DE-CIX peer...
 remarks:        3216:511x When advertising to any LINX peer...
@@ -5050,8 +5050,6 @@ remarks:        3216:512x When advertising to any AMS-IX peer...
 remarks:        3216:513x When advertising to any Equinix Ashrburn peer...
 remarks:        3216:514x When advertising to any Netnod Stockholm peer...
 remarks:        3216:570x When advertising to DATAIX (EU) peers...
-remarks:        (3216:571x When advertising to any VIX Vienna peer...) obsoleted
-remarks:        (3216:572x When advertising to any RoNIX Bucharest peer...) obsoleted
 remarks:        3216:573x When advertising to any JPNAP Tokyo peer...
 remarks:        3216:574x When advertising to any Equinix Hong Kong peer...
 remarks:        3216:575x When advertising to any HKIX peer...
@@ -5090,12 +5088,10 @@ remarks:        3216:530x When advertising to Vkontakte (AS47542) private peer..
 remarks:        3216:531x When advertising to DATAIX (RU) peers...
 remarks:        3216:533x When advertising to DALSATKOM AS43550 private peer...
 remarks:        3216:534x When advertising to RetnNet private peer...
-remarks:        (3216:535x When advertising to Netbynet private peer (SPB)...) obsoleted
 remarks:        3216:536x When advertising to Rascom private peer...
 remarks:        3216:537x When advertising to SOLNTCETELEKOM private peer...
 remarks:        3216:538x When advertising to Er-telecom private peer...
 remarks:        3216:539x When advertising to Mail.ru private peer...
-remarks:        (3216:541x When advertising to Transtelekom private peer (SPB)...) obsoleted
 remarks:        3216:542x When advertising to Roblox private peer...
 remarks:        3216:543x When advertising to Verizon Digital Media Services (EdgeCast) private peer...
 remarks:        3216:544x When advertising to Melbikomas AS56630 private peer...
@@ -5147,21 +5143,7 @@ remarks:        Community Meaning
 remarks:        ---
 remarks:        3216:1000 Russian peer (receieved from IX or private peer)
 remarks:        3216:1002 Ufa peer
-remarks:        (3216:1003 SPB peer) obsoleted
-remarks:        (3216:1004 Moscow peer) obsoleted
-remarks:        (3216:1005 NSK peer) obsoleted
-remarks:        (3216:1007 Vladivostok peer) obsoleted
-remarks:        (3216:1008 Ekaterinburg peer) obsoleted
-remarks:        (3216:1010 Arkhangelsk peer) obsoleted
-remarks:        (3216:1011 Ufa peer) obsoleted
-remarks:        (3216:1012 Voronezh peer) obsoleted
-remarks:        (3216:1013 Krasnoyarsk peer) obsoleted
-remarks:        (3216:1014 Chelyabinsk peer) obsoleted
-remarks:        (3216:1015 Khabarovsk peer) obsoleted
 remarks:        3216:1016 Tatarstan peer
-remarks:        (3216:1017 Stavropol peer) obsoleted
-remarks:        (3216:1018 Rostov-on-Don peer) obsoleted
-remarks:        (3216:1019 Krasnodar peer) obsoleted
 remarks:        3216:1023 Krasnodar peer
 remarks:        3216:1024 Krasnoyarsk peer
 remarks:        3216:1025 Vladivostok peer
@@ -5201,25 +5183,17 @@ remarks:        3216:1109 Yandex AS13238 private peering
 remarks:        3216:1110 Corbina AS8402 private peering
 remarks:        3216:1111 Comcor AS8732 private peering
 remarks:        3216:1112 Netbynet AS12714 private peering
-remarks:        (3216:1113 MTU private peering (SPB)) obsoleted
-remarks:        (3216:1114 Corbina private peering (SPB)) obsoleted
-remarks:        (3216:1115 Rostelecom private peering (Moscow)) obsoleted
 remarks:        3216:1116 Vkontakte AS47541 private peering (SPB)
-remarks:        (3216:1117 Rostelecom private peering (SPB)) obsoleted
 remarks:        3216:1118 Google AS15169 Russia private peering
 remarks:        3216:1119 Mail.ru private peering (Moscow)
 remarks:        3216:1120 Megafon AS31133 private peering
 remarks:        3216:1121 Vkontakte AS47542 private peering (Moscow)
 remarks:        3216:1122 RetnNet private peering (Moscow)
-remarks:        (3216:1123 Netbynet private peering (SPB)) obsoleted
 remarks:        3216:1124 Rascom AS20764 private peering
 remarks:        3216:1125 Er-telecom AS9049 private peering
 remarks:        3216:1126 Vkontakte AS28709 private peering (Region)
-remarks:        (3216:1127 Transtelekom private peering (SPB)) obsoleted
-remarks:        (3216:1128 Google Russia private peering (SPB)) obsoleted
 remarks:        3216:1129 Google AS36040 private peering
 remarks:        3216:1130 Wargaming private peering (Krasnoyarsk)
-remarks:        (3216:1132 Megafon private peering (SPB)) obsoleted
 remarks:        3216:1133 China Mobile private peering
 remarks:        3216:1135 DDOS-GUARD AS57724 private peering
 remarks:        3216:1136 SOLNTCETELEKOM AS51004 private peering
@@ -5264,17 +5238,7 @@ remarks:        3216:3102 LINX
 remarks:        3216:3103 AMS-IX
 remarks:        3216:3104 Equinix Ashburn
 remarks:        3216:3105 Netnod (Stockholm)
-remarks:        (3216:3106 France-IX (Paris)) obsoleted
-remarks:        (3216:3107 NIX.CZ (Prague)) obsoleted
-remarks:        3216:3108 BCIX (Berlin)
-remarks:        (3216:3109 ESPANIX (Madrid)) obsoleted
-remarks:        (3216:3110 MIX-IT (Milan)) obsoleted
-remarks:        (3216:3111 PLIX (Warsaw)) obsoleted
-remarks:        3216:3112 BIXBG (Sofia)
-remarks:        (3216:3113 BIX (Budapest)) obsoleted
 remarks:        3216:3114 DATAIX (EU) peering
-remarks:        (3216:3115 VIX (Vienna)) obsoleted
-remarks:        (3216:3116 RoNIX (Bucharest)) obsoleted
 remarks:        3216:3117 JPNAP Tokyo
 remarks:        3216:3118 Equinix Hong Kong
 remarks:        3216:3119 HKIX (Hong Kong)
@@ -5553,7 +5517,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-06-12T07:13:25Z
+last-modified:  2024-06-21T07:25:56Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
