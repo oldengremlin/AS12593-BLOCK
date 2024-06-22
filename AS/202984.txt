@@ -17,10 +17,10 @@ as-name:        team-host
 org:            ORG-CAA36-RIPE
 import:         from AS57724 action pref=80; accept ANY
 export:         to AS57724 announce AS-TEAM-HOST
-import:         from AS9002 action pref=80; accept ANY
+import:         from AS6762 action pref=80; accept ANY
+export:         to AS6762 announce AS-TEAM-HOST
 import:         from AS174 action pref=80; accept ANY
 export:         to AS174 announce AS-TEAM-HOST
-export:         to AS9002 announce AS-TEAM-HOST
 import:         from as31500 action pref=80; accept ANY
 export:         to as31500 announce AS-TEAM-HOST
 export:         to AS50952 announce AS-TEAM-HOST
@@ -90,7 +90,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-team-host-1
 created:        2016-04-21T12:27:40Z
-last-modified:  2024-06-08T18:32:04Z
+last-modified:  2024-06-21T18:11:13Z
 source:         RIPE
 remarks:        Community meaning
 remarks:        0:666 - Blackhole
