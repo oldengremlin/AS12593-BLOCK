@@ -358,10 +358,10 @@ export:         to AS55329 announce AS-MYCOM
 import:         from AS55329 accept AS-TELCOTECH-LTD-KH
 mp-export:      afi ipv6.unicast to AS55329 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS55329 accept AS-TELCOTECH-LTD-KH;
-export:         to AS45629 announce AS-MYCOM
-import:         from AS45629 accept AS45629
-mp-export:      afi ipv6.unicast to AS45629 announce AS-MYCOM;
-mp-import:      afi ipv6.unicast from AS45629 accept AS45629;
+export:         to AS45758 announce AS-MYCOM
+import:         from AS45758 accept AS-TRIPLETNET
+mp-export:      afi ipv6.unicast to AS45758 announce AS-MYCOM;
+mp-import:      afi ipv6.unicast from AS45758 accept AS-TRIPLETNET;
 export:         to AS20562 announce AS-MYCOM
 import:         from AS20562 accept AS-OPENPEERING-EU
 mp-export:      afi ipv6.unicast to AS20562 announce AS-MYCOM;
@@ -452,7 +452,7 @@ remarks:
 remarks:        PeerID:NNN is:
 remarks:
 remarks:        161 ROMTEL (AS9050)
-remarks:        165 Jastel (AS45758)
+remarks:        165 Triplnet (AS45758)
 remarks:        169 FPT (AS18403)
 remarks:        184 RDSNET (AS8708)
 remarks:        198 True International Gateway aka TIG (AS38082)
@@ -501,7 +501,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-07-12T09:26:04Z
-last-modified:  2023-06-21T16:53:27Z
+last-modified:  2024-06-24T14:50:20Z
 source:         RIPE # Filtered
 
 organisation:   ORG-DTPL1-RIPE
