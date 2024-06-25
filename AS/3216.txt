@@ -1658,6 +1658,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS9123 action pref=100; accept AS-TIMEWEB
+export:         to AS9123 announce AS-SOVAM
 import:         from AS207978 action pref=100; accept AS-KSC-SB-RAS
 export:         to AS207978 announce ANY
 import:         from AS44751 action pref=100; accept AS44751
@@ -1716,6 +1718,8 @@ import:         from AS21143 action pref=100; accept AS21143
 export:         to AS21143 announce ANY
 import:         from AS34896 action pref=100; accept AS34896
 export:         to AS34896 announce ANY
+import:         from AS8755 action pref=100; accept AS8755
+export:         to AS8755 announce {0.0.0.0/0}
 import:         from AS43849 action pref=100; accept AS-SEVER-SVYAZ
 export:         to AS43849 announce ANY
 import:         from AS43900 action pref=100; accept AS43900
@@ -5515,7 +5519,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-06-22T09:25:29Z
+last-modified:  2024-06-25T05:34:10Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
