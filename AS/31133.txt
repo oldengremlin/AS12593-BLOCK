@@ -128,6 +128,8 @@ import:         from AS21011 accept AS21011:AS-EXT
 export:         to AS21011 announce AS-MF-MGSM
 import:         from AS21219 accept AS-FF-TRANSIT
 export:         to AS21219 announce AS-MF-MGSM
+import:         from AS22697 accept AS-ROBLOX
+export:         to AS22697 announce AS-MF-MGSM
 import:         from AS22822 accept AS-LLNW
 export:         to AS22822 announce AS-MF-MGSM
 import:         from AS24940 accept AS-HETZNER
@@ -158,6 +160,8 @@ import:         from AS47764 accept AS-MAILRU
 export:         to AS47764 announce AS-MF-MGSM
 import:         from AS48268 accept AS-INTERFIBER
 export:         to AS48268 announce AS-MF-MGSM
+import:         from AS49453 accept AS-49453
+export:         to AS49453 announce AS-MF-MGSM
 import:         from AS56630 accept AS-MELBICOM
 export:         to AS56630 announce AS-MF-MGSM
 import:         from AS58073 accept AS-YISP
@@ -1920,6 +1924,8 @@ remarks:        | 31133:2624x - Akamai (AS20940)
 remarks:        | 31133:2625x - TTK (AS20485)
 remarks:        | 31133:2626x - VimpelCom (AS3216)
 remarks:        | 31133:2627x - CDN77 (AS60068)
+remarks:        | 31133:2628x - Global Layer (AS49453)
+remarks:        | 31133:2629x - Roblox (AS22697)
 remarks:        | 31133:2901x - Vkontakte Regional (AS28709)
 remarks:        |
 remarks:        | x = 0 - advertise to this only (don't advertise to any other Peer)
@@ -1998,6 +2004,8 @@ remarks:        | 31133:46200 - Akado (AS8732)
 remarks:        | 31133:46230 - WarFace (AS21051)
 remarks:        | 31133:46240 - Akamai (AS20940)
 remarks:        | 31133:46250 - CDN77 (AS60068)
+remarks:        | 31133:46260 - Global Layer (AS49453)
+remarks:        | 31133:46270 - Roblox (AS22697)
 remarks:        | 31133:46320 - RETN (AS9002)
 remarks:        +-------------------------------------------------------------------------------+
 remarks:
@@ -2017,7 +2025,7 @@ mnt-by:         RIPE-NCC-ENd-MNT
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2004-03-05T14:46:40Z
-last-modified:  2024-06-21T06:31:56Z
+last-modified:  2024-06-25T10:02:59Z
 source:         RIPE
 
 organisation:   ORG-OM1-RIPE
