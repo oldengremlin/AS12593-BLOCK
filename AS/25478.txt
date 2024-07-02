@@ -14,10 +14,6 @@ source:         RIPE
 aut-num:        AS25478
 as-name:        IHOME-AS
 descr:          iHome LLC
-import:         from AS57304 action pref=100; accept ANY # retn
-mp-import:      afi ipv6.unicast from AS57304 accept ANY
-export:         to AS57304 announce AS-IHOME
-mp-export:      afi ipv6.unicast to AS57304 announce AS-IHOME6
 import:         from AS50775 action pref=130; accept AS50775 # h24tv
 mp-import:      afi ipv6.unicast from AS50775 accept AS50775
 export:         to AS50775 announce ANY
@@ -722,18 +718,14 @@ import:         from AS13238 action pref=100; accept ANY # yandex
 mp-import:      afi ipv6.unicast from AS13238 accept ANY
 export:         to AS13238 announce AS-IHOME
 mp-export:      afi ipv6.unicast to AS13238 announce AS-IHOME6
-import:         from AS48600 action pref=130; accept AS48600 # intercom
-mp-import:      afi ipv6.unicast from AS48600 accept AS48600
-export:         to AS48600 announce ANY
-mp-export:      afi ipv6.unicast to AS48600 announce ANY
-import:         from AS57712 action pref=130; accept AS-SOFTVIDEO # softvideo
-mp-import:      afi ipv6.unicast from AS57712 accept AS-SOFTVIDEO
-export:         to AS57712 announce ANY
-mp-export:      afi ipv6.unicast to AS57712 announce ANY
 import:         from AS29588 action pref=130; accept AS-IVSTAR # ivstar
 mp-import:      afi ipv6.unicast from AS29588 accept AS-IVSTAR
 export:         to AS29588 announce ANY
 mp-export:      afi ipv6.unicast to AS29588 announce ANY
+import:         from AS57712 action pref=130; accept AS-SOFTVIDEO # softvideo
+mp-import:      afi ipv6.unicast from AS57712 accept AS-SOFTVIDEO
+export:         to AS57712 announce ANY
+mp-export:      afi ipv6.unicast to AS57712 announce ANY
 import:         from AS30960 action pref=130; accept AS-TETRA # tetra
 mp-import:      afi ipv6.unicast from AS30960 accept AS-TETRA
 export:         to AS30960 announce ANY
@@ -786,6 +778,10 @@ import:         from AS50766 action pref=130; accept AS50766 # zamkov
 mp-import:      afi ipv6.unicast from AS50766 accept AS50766
 export:         to AS50766 announce ANY
 mp-export:      afi ipv6.unicast to AS50766 announce ANY
+import:         from AS57304 action pref=130; accept AS57304 # retnnet
+mp-import:      afi ipv6.unicast from AS57304 accept AS57304
+export:         to AS57304 announce ANY
+mp-export:      afi ipv6.unicast to AS57304 announce ANY
 import:         from AS8369 action pref=130; accept AS-INTERSVYAZ # intersvyaz
 mp-import:      afi ipv6.unicast from AS8369 accept AS-INTERSVYAZ
 export:         to AS8369 announce ANY
@@ -838,10 +834,6 @@ import:         from AS41475 action pref=130; accept AS-SDK # sdk
 mp-import:      afi ipv6.unicast from AS41475 accept AS-SDK
 export:         to AS41475 announce ANY
 mp-export:      afi ipv6.unicast to AS41475 announce ANY
-import:         from AS50966 action pref=130; accept AS-INTERCOM-TECHNOLOGY # intercom
-mp-import:      afi ipv6.unicast from AS50966 accept AS-INTERCOM-TECHNOLOGY
-export:         to AS50966 announce ANY
-mp-export:      afi ipv6.unicast to AS50966 announce ANY
 import:         from AS28890 action pref=130; accept AS-INSYS-EKB # insys
 mp-import:      afi ipv6.unicast from AS28890 accept AS-INSYS-EKB
 export:         to AS28890 announce ANY
@@ -916,7 +908,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2002-12-04T16:28:40Z
-last-modified:  2024-05-31T05:26:55Z
+last-modified:  2024-07-02T05:24:31Z
 source:         RIPE
 
 organisation:   ORG-IJ5-RIPE
