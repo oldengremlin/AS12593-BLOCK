@@ -14,26 +14,16 @@ source:         RIPE
 aut-num:        AS3267
 as-name:        RUNNET
 org:            ORG-CR1-RIPE
-import:         from AS174 action pref=50; accept ANY
-export:         to AS174 announce AS-RUNNET
-import:         from AS1299 action pref=50; accept ANY
-export:         to AS1299 announce AS-RUNNET
-import:         from AS2603 action pref=50; accept ANY
-export:         to AS2603 announce AS-RUNNET
-import:         from AS3216 action pref=50; accept ANY
-export:         to AS3216 announce AS-RUNNET
-import:         from AS3356 action pref=50; accept ANY
-export:         to AS3356 announce AS-RUNNET
-import:         from AS8359 action pref=50; accept ANY
-export:         to AS8359 announce AS-RUNNET
-import:         from AS31133 action pref=50; accept ANY
-export:         to AS31133 announce AS-RUNNET
-import:         from AS43797 action pref=50; accept ANY
-export:         to AS43797 announce AS-RUNNETCORE
-import:         from AS1741 action pref=100; accept AS-FUNET
-export:         to AS1741 announce AS-RUNNET
-import:         from AS15169 action pref=102; accept AS-GOOGLE
-export:         to AS15169 announce AS-RUNNET
+mp-import:      afi any.unicast from AS1299 action pref=50; accept ANY
+mp-export:      afi any.unicast to AS1299 announce AS-RUNNET
+mp-import:      afi any.unicast from AS2603 action pref=50; accept ANY
+mp-export:      afi any.unicast to AS2603 announce AS-RUNNET
+mp-import:      afi any.unicast from AS3216 action pref=50; accept ANY
+mp-export:      afi any.unicast to AS3216 announce AS-RUNNET
+mp-import:      afi any.unicast from AS8359 action pref=50; accept ANY
+mp-export:      afi any.unicast to AS8359 announce AS-RUNNET
+mp-import:      afi any.unicast from AS31133 action pref=102; accept AS-MF-MGSM
+mp-export:      afi any.unicast to AS31133 announce AS-RUNNET
 mp-import:      afi any.unicast from AS15169 action pref=102; accept AS-GOOGLE
 mp-export:      afi any.unicast to AS15169 announce AS-RUNNET
 export:         to AS9049 announce AS-RUNNET
@@ -167,7 +157,6 @@ import:         from AS9124 action pref=50; accept AS9124
 import:         from AS196879 action pref=50; accept AS196879
 import:         from AS199879 action pref=50; accept AS199879
 import:         from AS200686 action pref=50; accept AS200686
-import:         from AS3216 action pref=100; accept AS-SOVAM
 import:         from AS262254 action pref=100; accept AS-DANCOM
 remarks:        --- SPB-IX ---
 import:         from AS6672 action pref=100; accept AS-RELCOMSPB
@@ -478,7 +467,6 @@ export:         to AS9124 announce ANY
 export:         to AS196879 announce ANY
 export:         to AS199879 announce ANY
 export:         to AS200686 announce ANY
-export:         to AS3216 announce AS-RUNNET
 export:         to AS262254 announce AS-RUNNET
 remarks:        --- MSK-IX ---
 export:         to AS43832 announce AS-RUNNETIX
@@ -689,7 +677,7 @@ mnt-by:         AS3058-MNT
 mnt-by:         INFR-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2002-09-09T08:24:32Z
-last-modified:  2023-12-25T08:39:41Z
+last-modified:  2024-07-02T12:56:46Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CR1-RIPE
