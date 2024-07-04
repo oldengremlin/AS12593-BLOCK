@@ -32,8 +32,6 @@ export:         to AS12389 announce AS-CMFT
 remarks:        --- PEERS ---
 import:         from AS31210 action pref=110; accept AS-DTEL-IX
 export:         to AS31210 announce AS-CMFT
-import:         from AS48625 action pref=110; accept AS-PIRIX
-export:         to AS48625 announce AS-CMFT
 import:         from AS3267 action pref=110; accept AS-RUNNET
 export:         to AS3267 announce AS-CMFT
 import:         from AS43690 action pref=110; accept AS-SPBROUTESERVER
@@ -52,6 +50,10 @@ import:         from AS61376 action pref=110; accept AS-PITER-IX-KYEV
 export:         to AS61376 announce AS-CMFT
 import:         from AS39607 action pref=110; accept AS-PITER-IX-HELSINKI
 export:         to AS39607 announce AS-CMFT
+import:         from AS15169 action pref=111; accept AS-GOOGLE
+export:         to AS15169 announce AS-CMFT
+import:         from AS51178 action pref=111; accept AS-AVANTEL-SPB
+export:         to AS51178 announce AS-CMFT
 remarks:        --- DOWNSTREAMS ---
 import:         from AS3227 action pref=130; accept AS3227
 export:         to AS3227 announce ANY
@@ -353,7 +355,7 @@ remarks:        56534:1040x When advertising to RASCOM
 remarks:        56534:1050x When advertising to GlobalNet
 remarks:        56534:1060x When advertising to TTK
 remarks:        56534:1070x When advertising to ERTH
-remarks:        56534:2000x When advertising to any PIRIX peer
+remarks:        56534:2000x When advertising to any GOOGLE peer
 remarks:        56534:2010x When advertising to any SPB-IX peer
 remarks:        56534:2020x When advertising to any MSK-IX peer
 remarks:        56534:2030x When advertising to any G-CORE peer
@@ -377,7 +379,7 @@ remarks:        56534:1040 Receieved from RASCOM
 remarks:        56534:1050 Receieved from GlobalNet
 remarks:        56534:1060 Receieved from TTK
 remarks:        56534:1070 Receieved from ERTH
-remarks:        56534:2000 Receieved from PIRIX
+remarks:        56534:2000 Receieved from GOOGLE
 remarks:        56534:2010 Receieved from SPB-IX
 remarks:        56534:2020 Receieved from MSK-IX
 remarks:        56534:2030 Receieved from G-CORE
@@ -403,7 +405,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
 created:        2011-03-11T14:49:01Z
-last-modified:  2024-07-02T08:44:19Z
+last-modified:  2024-07-03T08:59:28Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CL253-RIPE
