@@ -115,10 +115,10 @@ import:         from AS31133 accept AS-MF-MGSM
 mp-export:      afi ipv6.unicast to AS31133 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS31133 accept AS-MF-MGSM;
 remarks:        -- RETN
-export:         to AS9002 announce AS-VKONTAKTE
-import:         from AS9002 accept AS-RETN AS-RETN6
-mp-export:      afi ipv6.unicast to AS9002 announce AS-VKONTAKTE;
-mp-import:      afi ipv6.unicast from AS9002 accept AS-RETN6;
+export:         to AS57304 announce AS-VKONTAKTE
+import:         from AS57304 accept AS-RETN
+mp-export:      afi ipv6.unicast to AS57304 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS57304 accept AS-RETN6;
 remarks:        -- Rostelecom
 export:         to AS12389 announce AS-VKONTAKTE
 import:         from AS12389 accept AS-ROSTELECOM
@@ -213,7 +213,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-07-03T14:47:28Z
-last-modified:  2024-03-19T09:28:16Z
+last-modified:  2024-07-03T07:51:30Z
 source:         RIPE # Filtered
 
 organisation:   ORG-VL47-RIPE
