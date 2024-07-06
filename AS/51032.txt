@@ -19,8 +19,6 @@ remarks:        ******** Upstreams IPv4 Routing Policy *********
 remarks:        +----------------------------------------------+
 import:         from AS31133 action pref=90;community={51032:11}; accept ANY
 export:         to AS31133 announce AS-NEVOD
-import:         from AS41344 action pref=90;community={51032:12}; accept ANY
-export:         to AS41344 announce AS-NEVOD
 import:         from AS9049 action pref=90;community={51032:13}; accept ANY
 export:         to AS9049 announce AS-NEVOD
 import:         from AS3216 action pref=90;community={51032:14}; accept ANY
@@ -43,6 +41,8 @@ import:         from AS50952 action pref=110;community={51032:23}; accept ANY
 export:         to AS50952 announce AS-NEVOD
 import:         from AS8631 action pref=110;community={51032:22}; accept ANY
 export:         to AS8631 announce AS-NEVOD
+import:         from AS41344 action pref=90;community={51032:25}; accept AS41344:AS-VISTCOM
+export:         to AS41344 announce AS-NEVOD
 remarks:        +----------------------------------------------+
 remarks:        ******** Peers IPv6 Routing Policy *************
 remarks:        +----------------------------------------------+
@@ -65,7 +65,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NEVOD
 created:        2010-05-20T08:08:45Z
-last-modified:  2024-07-04T15:01:07Z
+last-modified:  2024-07-05T13:37:31Z
 source:         RIPE # Filtered
 
 organisation:   ORG-LP174-RIPE
