@@ -14,17 +14,17 @@ source:         RIPE
 aut-num:        AS3267
 as-name:        RUNNET
 org:            ORG-CR1-RIPE
-mp-import:      afi any.unicast from AS1299 action pref=50; accept ANY
+mp-import:      afi any.unicast from AS1299 accept ANY
 mp-export:      afi any.unicast to AS1299 announce AS-RUNNET
-mp-import:      afi any.unicast from AS2603 action pref=50; accept ANY
+mp-import:      afi any.unicast from AS2603 accept ANY
 mp-export:      afi any.unicast to AS2603 announce AS-RUNNET
-mp-import:      afi any.unicast from AS3216 action pref=50; accept ANY
+mp-import:      afi any.unicast from AS3216 accept ANY
 mp-export:      afi any.unicast to AS3216 announce AS-RUNNET
-mp-import:      afi any.unicast from AS8359 action pref=50; accept ANY
+mp-import:      afi any.unicast from AS8359 accept ANY
 mp-export:      afi any.unicast to AS8359 announce AS-RUNNET
-mp-import:      afi any.unicast from AS31133 action pref=102; accept AS-MF-MGSM
+mp-import:      afi any.unicast from AS31133 accept AS-MF-MGSM
 mp-export:      afi any.unicast to AS31133 announce AS-RUNNET
-mp-import:      afi any.unicast from AS15169 action pref=102; accept AS-GOOGLE
+mp-import:      afi any.unicast from AS15169 accept AS-GOOGLE
 mp-export:      afi any.unicast to AS15169 announce AS-RUNNET
 export:         to AS9049 announce AS-RUNNET
 import:         from AS9049 action pref=102; accept AS-ERTH
@@ -677,7 +677,7 @@ mnt-by:         AS3058-MNT
 mnt-by:         INFR-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2002-09-09T08:24:32Z
-last-modified:  2024-07-02T12:56:46Z
+last-modified:  2024-07-09T15:09:25Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CR1-RIPE
