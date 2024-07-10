@@ -31,6 +31,10 @@ import:         from AS3356 action pref=200; accept ANY
 export:         to AS3356 announce AS-MYCOM
 mp-export:      afi ipv6.unicast to AS3356 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS3356 accept ANY;
+import:         from AS6762 action pref=200; accept ANY
+export:         to AS6762 announce AS-MYCOM
+mp-export:      afi ipv6.unicast to AS6762 announce AS-MYCOM;
+mp-import:      afi ipv6.unicast from AS6762 accept ANY;
 import:         from AS9002 action pref=200; accept ANY
 export:         to AS9002 announce AS-MYCOM
 mp-export:      afi ipv6.unicast to AS9002 announce AS-MYCOM;
@@ -433,7 +437,8 @@ remarks:
 remarks:        60476:1100x When advertising to ANY uplink, specifically:
 remarks:
 remarks:        60476:1101x When advertising to RETN (AS9002) uplink...
-remarks:        60476:1108x When advertising to Orange (AS5511) uplink...
+remarks:        60476:1106x When advertising to Telecom Italia (AS6762) uplink...
+remarks:        60476:1107x When advertising to Orange (AS5511) uplink...
 remarks:        60476:1108x When advertising to Telia (AS1299) uplink...
 remarks:        60476:1109x When advertising to Level3 (AS3356) uplink...
 remarks:
@@ -480,7 +485,8 @@ remarks:
 remarks:        60476:40000 Our own routes
 remarks:
 remarks:        60476:41101 Receieved from RETN
-remarks:        60476:41108 Receieved from Orange
+remarks:        60476:41106 Receieved from Telecom Italia
+remarks:        60476:41107 Receieved from Orange
 remarks:        60476:41108 Receieved from Telia
 remarks:        60476:41109 Receieved from Level3
 remarks:
@@ -501,7 +507,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-07-12T09:26:04Z
-last-modified:  2024-06-25T14:07:50Z
+last-modified:  2024-07-09T09:47:16Z
 source:         RIPE # Filtered
 
 organisation:   ORG-DTPL1-RIPE
