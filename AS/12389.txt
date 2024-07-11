@@ -67,6 +67,7 @@ remarks:        | Community |
 remarks:        +-----------------------------------------------------------+
 remarks:        | 12389:6xxy When advertising to UPSTREAM |
 remarks:        +-----------------------------------------------------------+
+remarks:        | 12389:601y When advertising to GTT (AS3257) |
 remarks:        | 12389:607y When advertising to Level3 (AS3356) |
 remarks:        | 12389:608y When advertising to PCCW Global Asia (AS3491) |
 remarks:        | 12389:609y When advertising to PCCW Global Europe (AS3491) |
@@ -181,6 +182,8 @@ import:         from AS1299 accept ANY
 export:         to AS1299 announce AS-ROSTELECOM
 import:         from AS1273 accept ANY
 export:         to AS1273 announce AS-ROSTELECOM
+import:         from AS3257 accept ANY
+export:         to AS3257 announce AS-ROSTELECOM
 import:         from AS3356 accept ANY
 export:         to AS3356 announce AS-ROSTELECOM
 import:         from AS6762 accept ANY
@@ -6436,7 +6439,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SAVRI-MNT
 status:         ASSIGNED
 created:        2005-07-01T14:26:50Z
-last-modified:  2024-07-04T12:20:23Z
+last-modified:  2024-07-10T09:00:56Z
 source:         RIPE
 
 organisation:   ORG-JR8-RIPE
