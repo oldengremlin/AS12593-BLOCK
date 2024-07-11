@@ -96,13 +96,13 @@ import:         from AS29076 accept ANY
 export:         to AS29076 announce AS216366:AS-SMART-TEL
 import:         from AS12695 accept ANY
 export:         to AS12695 announce AS216366:AS-SMART-TEL
-admin-c:        ZA2111-RIPE
-tech-c:         VS11892-RIPE
+admin-c:        STG61-RIPE
+tech-c:         STG61-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2023-08-31T10:03:49Z
-last-modified:  2024-04-11T12:44:51Z
+last-modified:  2024-07-10T13:13:34Z
 source:         RIPE
 
 
@@ -505,9 +505,6 @@ export:         to AS50473 announce ANY;
 remarks:
 import:         from AS210756 action pref=50; accept AS-EDGECENTER;
 export:         to AS210756 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
-remarks:
-import:         from AS9032 action pref=50; accept AS-EDUNET;
-export:         to AS9032 announce {0.0.0.0/0};
 remarks:
 import:         from AS9049 action pref=50; accept AS-ERTH;
 export:         to AS9049 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
@@ -1248,9 +1245,6 @@ remarks:
 mp-import:      afi ipv6.unicast from AS210756 action pref=50; accept AS-EDGECENTER;
 mp-export:      afi ipv6.unicast to AS210756 announce any;
 remarks:
-mp-import:      afi ipv6.unicast from AS9032 action pref=50; accept AS-EDUNET;
-mp-export:      afi ipv6.unicast to AS9032 announce any;
-remarks:
 mp-import:      afi ipv6.unicast from AS9049 action pref=50; accept AS-ERTH;
 mp-export:      afi ipv6.unicast to AS9049 announce any;
 remarks:
@@ -1836,7 +1830,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2024-07-01T21:00:05Z
+last-modified:  2024-07-10T21:00:06Z
 source:         RIPE # Filtered
 
 
