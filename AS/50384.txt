@@ -170,10 +170,6 @@ import:         from AS20848 action pref=130; accept AS-RBC # rbc
 mp-import:      afi ipv6.unicast from AS20848 accept AS-RBC
 export:         to AS20848 announce ANY
 mp-export:      afi ipv6.unicast to AS20848 announce ANY
-import:         from AS36040 action pref=100; accept ANY # google
-mp-import:      afi ipv6.unicast from AS36040 accept ANY
-export:         to AS36040 announce AS-W-IX
-mp-export:      afi ipv6.unicast to AS36040 announce AS-W-IX-IPVSIX
 import:         from AS16323 action pref=130; accept AS-INFOSYSTEMS # infosystech
 mp-import:      afi ipv6.unicast from AS16323 accept AS-INFOSYSTEMS
 export:         to AS16323 announce ANY
@@ -850,6 +846,10 @@ import:         from AS50766 action pref=130; accept AS50766 # zamkov
 mp-import:      afi ipv6.unicast from AS50766 accept AS50766
 export:         to AS50766 announce ANY
 mp-export:      afi ipv6.unicast to AS50766 announce ANY
+import:         from AS48084 action pref=130; accept AS-UMLC # umlc
+mp-import:      afi ipv6.unicast from AS48084 accept AS-UMLC
+export:         to AS48084 announce ANY
+mp-export:      afi ipv6.unicast to AS48084 announce ANY
 import:         from AS8369 action pref=130; accept AS-INTERSVYAZ # intersvyaz
 mp-import:      afi ipv6.unicast from AS8369 accept AS-INTERSVYAZ
 export:         to AS8369 announce ANY
@@ -1006,7 +1006,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2009-12-30T16:24:09Z
-last-modified:  2024-06-26T04:54:41Z
+last-modified:  2024-07-17T02:15:58Z
 source:         RIPE
 
 organisation:   ORG-IJ5-RIPE
