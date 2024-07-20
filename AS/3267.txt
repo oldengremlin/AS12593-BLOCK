@@ -11,674 +11,359 @@ source:         RIPE
 
 
 
-aut-num:        AS3267
-as-name:        RUNNET
-org:            ORG-CR1-RIPE
-mp-import:      afi any.unicast from AS1299 accept ANY
-mp-export:      afi any.unicast to AS1299 announce AS-RUNNET
-mp-import:      afi any.unicast from AS2603 accept ANY
-mp-export:      afi any.unicast to AS2603 announce AS-RUNNET
-mp-import:      afi any.unicast from AS3216 accept ANY
-mp-export:      afi any.unicast to AS3216 announce AS-RUNNET
-mp-import:      afi any.unicast from AS8359 accept ANY
-mp-export:      afi any.unicast to AS8359 announce AS-RUNNET
-mp-import:      afi any.unicast from AS31133 accept AS-MF-MGSM
-mp-export:      afi any.unicast to AS31133 announce AS-RUNNET
-mp-import:      afi any.unicast from AS15169 accept AS-GOOGLE
-mp-export:      afi any.unicast to AS15169 announce AS-RUNNET
-export:         to AS9049 announce AS-RUNNET
-import:         from AS9049 action pref=102; accept AS-ERTH
-import:         from AS2875 action pref=50; accept AS2875
-import:         from AS8592 action pref=50; accept AS-MSUNET
-import:         from AS5467 action pref=50; accept AS-MIPT
-import:         from AS5495 action pref=50; accept AS-SPBU
-import:         from AS5568 action pref=50; accept AS-RBNET
-import:         from AS6857 action pref=50; accept AS-PTC
-import:         from AS28800 action pref=50; accept AS28800
-import:         from AS2895 action pref=50; accept AS-FREENET
-import:         from AS8325 action pref=50; accept AS8325
-import:         from AS5468 action pref=50; accept AS5468 AS44868
-import:         from AS8324 action pref=50; accept AS8324
-import:         from AS8480 action pref=50; accept AS8480
-import:         from AS3351 action pref=50; accept AS3351
-import:         from AS9206 action pref=50; accept AS-MAI
-import:         from AS5433 action pref=50; accept AS-ROKSON
-import:         from AS29493 action pref=50; accept AS29493
-import:         from AS42035 action pref=50; accept AS42035
-import:         from AS48625 action pref=50; accept AS-PIRIX-LIMTRANSIT
-import:         from AS51352 action pref=50; accept AS51352
-import:         from AS6868 action pref=50; accept AS6868
-import:         from AS8630 action pref=50; accept AS8630
-import:         from AS8941 action pref=50; accept AS8941
-import:         from AS31575 action pref=50; accept AS31575
-import:         from AS49929 action pref=50; accept AS-MISIS
-import:         from AS6874 action pref=50; accept AS6874 AS201302 AS-SATURNNET
-import:         from AS8684 action pref=50; accept AS8684
-import:         from AS8790 action pref=50; accept AS8790
-import:         from AS9162 action pref=50; accept AS9162
-import:         from AS5480 action pref=50; accept AS5480 AS16308
-import:         from AS8663 action pref=50; accept AS8663
-import:         from AS13077 action pref=50; accept AS-NCFU
-import:         from AS56374 action pref=50; accept AS56374
-import:         from AS29632 action pref=50; accept AS-UKRAINE
-import:         from AS8623 action pref=50; accept AS8623
-import:         from AS9111 action pref=50; accept AS9111
-import:         from AS8599 action pref=50; accept AS8599
-import:         from AS33819 action pref=50; accept AS-VVSU
-import:         from AS12999 action pref=50; accept AS12999
-import:         from AS39131 action pref=50; accept AS39131
-import:         from AS39866 action pref=50; accept AS39866
-import:         from AS29581 action pref=50; accept AS29581
-import:         from AS29147 action pref=50; accept AS-NSTU
-import:         from AS197768 action pref=50; accept AS197768
-import:         from AS8411 action pref=50; accept AS8411
-import:         from AS8491 action pref=50; accept AS-BSH
-import:         from AS5567 action pref=50; accept AS5567
-import:         from AS41566 action pref=50; accept AS41566
-import:         from AS34707 action pref=50; accept AS34707
-import:         from AS30911 action pref=50; accept AS30911
-import:         from AS35335 action pref=50; accept AS35335
-import:         from AS8510 action pref=50; accept AS8510
-import:         from AS42289 action pref=50; accept AS-VUZTC
-import:         from AS42317 action pref=50; accept AS42317
-import:         from AS35764 action pref=50; accept AS35764
-import:         from AS20549 action pref=50; accept AS20549
-import:         from AS21143 action pref=50; accept AS21143
-import:         from AS60928 action pref=50; accept AS60928
-import:         from AS6671 action pref=50; accept AS6671
-import:         from AS197467 action pref=50; accept AS197467
-import:         from AS57011 action pref=50; accept AS57011
-import:         from AS56679 action pref=50; accept AS56679
-import:         from AS12770 action pref=50; accept AS12770
-import:         from AS34017 action pref=50; accept AS34017
-import:         from AS8398 action pref=50; accept AS8398
-import:         from AS28870 action pref=50; accept AS-PLUS
-import:         from AS5537 action pref=50; accept AS-GPT
-import:         from AS25519 action pref=50; accept AS-REIC
-import:         from AS3058 action pref=50; accept AS-RASNET
-import:         from AS34862 action pref=50; accept AS34862
-import:         from AS34866 action pref=50; accept AS34866
-import:         from AS3218 action pref=50; accept AS-COSMOS
-import:         from AS5429 action pref=50; accept AS-IIPNET
-import:         from AS29233 action pref=50; accept AS-UMOS-MSU
-import:         from AS35511 action pref=50; accept AS-IWAN
-import:         from AS21482 action pref=50; accept AS-SCT
-import:         from AS50488 action pref=50; accept AS50488
-import:         from AS31484 action pref=50; accept AS-DIRECT-TELECOM
-import:         from AS3277 action pref=50; accept AS-RUSNET
-import:         from AS198588 action pref=50; accept AS-PROSTODNS-ANYCAST-1
-import:         from AS198685 action pref=50; accept AS198685
-import:         from AS198444 action pref=50; accept AS198444
-import:         from AS13078 action pref=50; accept AS-CTINET
-import:         from AS42775 action pref=100; accept AS-CELLMEDIA
-import:         from AS44843 action pref=50; accept AS-AMSTEL
-import:         from AS197080 action pref=50; accept AS197080
-import:         from AS41337 action pref=50; accept AS-PROSERV
-import:         from AS48670 action pref=50; accept AS48670
-import:         from AS47541 action pref=50; accept AS-VKONTAKTE
-import:         from AS198295 action pref=50; accept AS-RU-BCI
-import:         from AS44882 action pref=50; accept AS-VSEVNET
-import:         from AS56534 action pref=50; accept AS-PIRIXINET
-import:         from AS48604 action pref=50; accept AS48604
-import:         from AS31321 action pref=50; accept AS-STARTELECOMSPB
-import:         from AS57010 action pref=50; accept AS57010
-import:         from AS61040 action pref=50; accept AS61040
-import:         from AS34574 action pref=50; accept AS34574
-import:         from AS39101 action pref=50; accept AS39101
-import:         from AS48235 action pref=50; accept AS48235
-import:         from AS50167 action pref=50; accept AS50167
-import:         from AS198070 action pref=50; accept AS-PUDLINK
-import:         from AS8219 action pref=50; accept AS8219
-import:         from AS31444 action pref=50; accept AS-SEANET
-import:         from AS49304 action pref=50; accept AS49304
-import:         from AS44899 action pref=50; accept AS44899
-import:         from AS48416 action pref=50; accept AS-INFOLAN
-import:         from AS198610 action pref=50; accept AS-BEGET
-import:         from AS6820 action pref=50; accept AS-LEIVO
-import:         from AS50568 action pref=50; accept AS-CCI
-import:         from AS21353 action pref=50; accept AS21353
-import:         from AS49505 action pref=100; accept AS49505
-import:         from AS58042 action pref=100; accept AS58042
-import:         from AS9123 action pref=50; accept AS-TIMEWEB
-import:         from AS49186 action pref=50; accept AS49186
-import:         from AS16020 action pref=50; accept AS-TASCOM
-import:         from AS38984 action pref=50; accept AS-M9COM
-import:         from AS42339 action pref=50; accept AS-CHTP
-import:         from AS60643 action pref=50; accept AS60643
-import:         from AS198384 action pref=50; accept AS198384
-import:         from AS6801 action pref=100; accept AS6801
-import:         from AS59624 action pref=50; accept AS59624
-import:         from AS20597 action pref=100; accept AS-ELTEL
-import:         from AS8997 action pref=100; accept AS-SPBNIT
-import:         from AS24739 action pref=100; accept AS-SEVEREN-TELECOM
-import:         from AS31323 action pref=100; accept AS-UNNET
-import:         from AS25532 action pref=100; accept AS-MASTERHOST
-import:         from AS9124 action pref=50; accept AS9124
-import:         from AS196879 action pref=50; accept AS196879
-import:         from AS199879 action pref=50; accept AS199879
-import:         from AS200686 action pref=50; accept AS200686
-import:         from AS262254 action pref=100; accept AS-DANCOM
-remarks:        --- SPB-IX ---
-import:         from AS6672 action pref=100; accept AS-RELCOMSPB
-import:         from AS12418 action pref=150; accept AS-QUANTUM
-import:         from AS13302 action pref=100; accept AS-LINKEYCUS
-import:         from AS20632 action pref=100; accept AS-PETERSTAR
-import:         from AS20764 action pref=100; accept AS-RASCOM
-import:         from AS30968 action pref=100; accept AS-INFOBOX
-import:         from AS35807 action pref=100; accept AS-SKYNET-SPB
-import:         from AS29329 action pref=100; accept AS-NODEX
-import:         from AS28968 action pref=100; accept AS-EUT
-import:         from AS31191 action pref=100; accept AS-NAUKANET2
-import:         from AS6858 action pref=100; accept AS-COMLINK-IX
-import:         from AS30943 action pref=100; accept AS-UTRANSIT-PG-EU
-import:         from AS39598 action pref=100; accept AS-TIERA
-import:         from AS34102 action pref=100; accept AS-AWANTI
-import:         from AS31501 action pref=100; accept AS-SPBTELEPORT
-import:         from AS35616 action pref=100; accept AS-SILVERNET
-import:         from AS39390 action pref=100; accept AS39390
-import:         from AS39102 action pref=100; accept AS39102
-import:         from AS13215 action pref=100; accept AS-CONVEYPLUS
-import:         from AS8492 action pref=100; accept AS-OBIT
-import:         from AS41025 action pref=100; accept AS-CIFRA-SPBIX
-import:         from AS45029 action pref=100; accept AS-NS9_RIPN_NET
-import:         from AS44050 action pref=100; accept AS-PIN
-import:         from AS43898 action pref=100; accept AS-RUATCOM
-import:         from AS42668 action pref=100; accept AS42668
-import:         from AS44030 action pref=100; accept AS-LENTEL
-import:         from AS42518 action pref=100; accept AS-UNETCOMRU
-import:         from AS47211 action pref=100; accept AS47211
-import:         from AS44727 action pref=100; accept AS44727
-import:         from AS16321 action pref=100; accept AS-AICONET
-import:         from AS8755 action pref=100; accept AS8755
-import:         from AS12478 action pref=100; accept AS12478
-import:         from AS34879 action pref=100; accept AS-NGENIX
-remarks:        --- SPB-IX ---
-export:         to AS6672 announce AS-RUNNET
-export:         to AS12418 announce ANY
-export:         to AS13302 announce AS-RUNNETIX
-export:         to AS20632 announce AS-RUNNET
-export:         to AS20764 announce AS-RUNNETIX
-export:         to AS30968 announce AS-RUNNETIX
-export:         to AS35807 announce AS-RUNNET
-export:         to AS29329 announce AS-RUNNET
-export:         to AS28968 announce AS-RUNNETIX
-export:         to AS39598 announce AS-RUNNET
-export:         to AS6858 announce AS-RUNNETIX
-export:         to AS30943 announce AS-RUNNETIX
-export:         to AS30943 announce AS-RUNNET
-export:         to AS34102 announce AS-RUNNETIX
-export:         to AS31501 announce AS-RUNNETIX
-export:         to AS35616 announce AS-RUNNETIX
-export:         to AS39390 announce AS-RUNNETIX
-export:         to AS39102 announce AS-RUNNETIX
-export:         to AS13215 announce AS-RUNNETIX
-export:         to AS8492 announce AS-RUNNETIX
-export:         to AS41025 announce AS-RUNNETIX
-export:         to AS45029 announce AS-RUNNET
-export:         to AS44050 announce AS-RUNNETIX
-export:         to AS43898 announce AS-RUNNETIX
-export:         to AS42668 announce AS-RUNNETIX
-export:         to AS44030 announce AS-RUNNET
-export:         to AS42518 announce AS-RUNNET
-export:         to AS47211 announce AS-RUNNET
-export:         to AS44727 announce AS-RUNNET
-export:         to AS16321 announce AS-RUNNET
-export:         to AS8755 announce AS-RUNNETIX
-export:         to AS12478 announce AS-RUNNETIX
-export:         to AS34879 announce AS-RUNNET
-remarks:        --- MSK-IX ---
-import:         from AS43832 action pref=100; accept AS-NS5_RIPN_NET
-import:         from AS41601 action pref=100; accept AS-OBLTELECOM
-import:         from AS39821 action pref=100; accept AS-CANMOS
-import:         from AS39709 action pref=100; accept AS-MARYNONET
-import:         from AS6854 action pref=100; accept AS-SYNTERRA
-import:         from AS2118 action pref=100; accept AS-RELCOM
-import:         from AS3316 action pref=100; accept AS-RELARN
-import:         from AS2578 action pref=100; accept AS-DEMOS AS-RUDEMOS
-remarks:        --- spb-ix also ---
-import:         from AS2854 action pref=100; accept AS-ROSPRINT
-import:         from AS13105 action pref=100; accept AS-LUKOIL
-import:         from AS2766 action pref=100; accept AS-GLASNET
-import:         from AS6863 action pref=100; accept AS-ROSNET
-import:         from AS6903 action pref=100; accept AS-ZENON
-import:         from AS29388 action pref=100; accept AS-BESTCOM
-import:         from AS3235 action pref=100; accept AS-UTNET
-import:         from AS8241 action pref=100; accept AS-RELLINE
-import:         from AS8470 action pref=100; accept AS-MACOMNET
-remarks:        --- spb-ix also ---
-import:         from AS8395 action pref=100; accept AS-EAST
-import:         from AS6880 action pref=100; accept AS-ORBITA
-import:         from AS29277 action pref=100; accept AS-XXLINE
-import:         from AS8299 action pref=100; accept AS-INFOTELRU
-import:         from AS8615 action pref=100; accept AS-CNTPEERS
-import:         from AS9110 action pref=100; accept AS-AGTEL-RUS
-import:         from AS9039 action pref=100; accept AS-IIAT
-import:         from AS8515 action pref=100; accept AS-DATAFORCE
-import:         from AS29651 action pref=100; accept AS-CTCS
-import:         from AS20483 action pref=100; accept AS-ECNET
-import:         from AS12314 action pref=100; accept AS-ROPNET
-import:         from AS8557 action pref=100; accept AS-ELKATEL
-import:         from AS12695 action pref=100; accept AS-DINET
-import:         from AS5523 action pref=100; accept AS-RMT
-import:         from AS13174 action pref=100; accept AS-MTSNET
-import:         from AS13238 action pref=100; accept AS-COMPTEK
-import:         from AS12690 action pref=100; accept AS-MKSNET
-import:         from AS25032 action pref=100; accept AS-TLIC
-import:         from AS12958 action pref=100; accept AS-MCC
-import:         from AS12979 action pref=100; accept AS-TSINET
-import:         from AS8641 action pref=100; accept AS-TELECORE
-import:         from AS8331 action pref=100; accept AS-RURINET
-import:         from AS12654 action pref=100; accept AS12654
-import:         from AS15934 action pref=100; accept AS-ZEBRA
-import:         from AS13230 action pref=100; accept AS-NCPORT
-import:         from AS24638 action pref=100; accept AS-RAMTEL
-import:         from AS25478 action pref=100; accept AS-IHOME
-import:         from AS21156 action pref=100; accept AS-DATAGRUPARU
-import:         from AS31430 action pref=100; accept AS-TEL-NET
-import:         from AS28809 action pref=100; accept AS-NAUKANET
-import:         from AS39792 action pref=100; accept AS-ANDERS
-import:         from AS28895 action pref=100; accept AS28895
-import:         from AS30124 action pref=100; accept AS30124
-import:         from AS21353 action pref=100; accept AS-ARTCOMS
-import:         from AS24936 action pref=100; accept AS-RIM2000M
-import:         from AS30833 action pref=100; accept AS30833
-import:         from AS29053 action pref=100; accept AS-JSC-TELENET
-import:         from AS28917 action pref=100; accept AS-FIORD
-import:         from AS3327 action pref=100; accept AS-CITICTEL-CPC-MSK-IX
-import:         from AS34456 action pref=100; accept AS-RCPEERS
-import:         from AS31261 action pref=100; accept AS-GARS
-import:         from AS8744 action pref=100; accept AS-WIMAX
-import:         from AS34352 action pref=100; accept AS-MCN
-import:         from AS29226 action pref=100; accept AS-MASTERTEL
-import:         from AS8905 action pref=100; accept AS-DIGIT1
-import:         from AS34300 action pref=100; accept AS34300
-import:         from AS39143 action pref=100; accept AS-BSB-RUS
-import:         from AS29319 action pref=100; accept AS-IMSYS
-import:         from AS15835 action pref=100; accept AS-MAP
-import:         from AS8241 action pref=100; accept AS-RELLINE
-import:         from AS15658 action pref=100; accept AS-INETCOMM
-import:         from AS15756 action pref=100; accept AS-CARAVANRUS
-import:         from AS12976 action pref=100; accept AS-CWSVYAZ
-import:         from AS33902 action pref=100; accept AS-STARNETWORKS
-import:         from AS20655 action pref=100; accept AS-EST
-import:         from AS15757 action pref=100; accept AS-GASCOM
-import:         from AS21453 action pref=100; accept AS-FLEX
-import:         from AS42861 action pref=100; accept AS-FOTONTELECOM
-import:         from AS43727 action pref=100; accept AS-SETKT
-import:         from AS25308 action pref=100; accept AS-CITYLAN
-import:         from AS35641 action pref=100; accept AS-ELECTROCOM
-import:         from AS12389 action pref=100; accept AS-ROSTELECOM
-import:         from AS20985 action pref=100; accept AS-ARTX
-import:         from AS41206 action pref=100; accept AS-COMMSOL-CLI
-import:         from AS34602 action pref=100; accept AS-STARLNK
-import:         from AS42610 action pref=100; accept AS-NCNET
-import:         from AS31514 action pref=100; accept AS31514
-import:         from AS44436 action pref=100; accept AS-EFFORTEL-MSK-IX
-import:         from AS44237 action pref=100; accept AS-CTC-CORE
-import:         from AS31370 action pref=100; accept AS-MOSLINE
-import:         from AS41349 action pref=100; accept AS-41349
-import:         from AS43973 action pref=100; accept AS-OSMP
-import:         from AS39922 action pref=100; accept AS-NLN
-remarks:        --- NSK-IX ---
-import:         from AS21127 action pref=100; accept AS-ZSTTK-SET
-import:         from AS30871 action pref=100; accept AS30871
-import:         from AS8691 action pref=100; accept AS-RISP
-import:         from AS9107 action pref=100; accept AS-CIS
-import:         from AS5387 action pref=100; accept AS-NSC-SET
-import:         from AS8711 action pref=100; accept AS-MAGTEL
-import:         from AS12499 action pref=100; accept AS12499
-import:         from AS13238 action pref=100; accept AS-YANDEX
-import:         from AS31002 action pref=100; accept AS31002
-import:         from AS20803 action pref=100; accept AS-RISS
-import:         from AS29175 action pref=100; accept AS29175
-import:         from AS25152 action pref=100; accept AS25152
-import:         from AS21311 action pref=100; accept AS21311
-import:         from AS8410 action pref=100; accept AS-NIR
-import:         from AS42139 action pref=100; accept AS-NS9_RIPN_NET
-import:         from AS35410 action pref=100; accept AS35410
-export:         to AS2848 announce ANY
-export:         to AS2875 announce ANY
-export:         to AS8592 announce ANY
-export:         to AS5467 announce ANY
-export:         to AS5495 announce ANY
-export:         to AS5568 announce ANY
-export:         to AS6857 announce ANY
-export:         to AS28800 announce ANY
-export:         to AS2895 announce ANY
-export:         to AS8325 announce ANY
-export:         to AS5468 announce ANY
-export:         to AS8324 announce ANY
-export:         to AS8480 announce ANY
-export:         to AS3351 announce ANY
-export:         to AS9206 announce ANY
-export:         to AS5433 announce ANY
-export:         to AS29493 announce ANY
-export:         to AS42035 announce ANY
-export:         to AS48625 announce ANY
-export:         to AS51352 announce ANY
-export:         to AS6868 announce ANY
-export:         to AS8630 announce ANY
-export:         to AS8941 announce ANY
-export:         to AS15620 announce ANY
-export:         to AS31575 announce ANY
-export:         to AS49929 announce ANY
-export:         to AS6874 announce ANY
-export:         to AS8684 announce ANY
-export:         to AS8790 announce ANY
-export:         to AS9162 announce ANY
-export:         to AS5480 announce ANY
-export:         to AS8663 announce ANY
-export:         to AS13077 announce ANY
-export:         to AS56374 announce ANY
-export:         to AS29632 announce ANY
-export:         to AS8623 announce ANY
-export:         to AS9111 announce ANY
-export:         to AS8599 announce ANY
-export:         to AS33819 announce ANY
-export:         to AS12999 announce ANY
-export:         to AS39131 announce ANY
-export:         to AS39866 announce ANY
-export:         to AS29581 announce ANY
-export:         to AS29147 announce ANY
-export:         to AS197768 announce ANY
-export:         to AS8411 announce ANY
-export:         to AS8491 announce ANY
-export:         to AS5567 announce ANY
-export:         to AS41566 announce ANY
-export:         to AS34707 announce ANY
-export:         to AS30911 announce ANY
-export:         to AS35335 announce ANY
-export:         to AS8510 announce ANY
-export:         to AS42289 announce ANY
-export:         to AS42317 announce AS-RUNNET
-export:         to AS35764 announce ANY
-export:         to AS20549 announce ANY
-export:         to AS21143 announce ANY
-export:         to AS60928 announce ANY
-export:         to AS6671 announce ANY
-export:         to AS197467 announce ANY
-export:         to AS57011 announce ANY
-export:         to AS56679 announce ANY
-export:         to AS12770 announce ANY
-export:         to AS34017 announce ANY
-export:         to AS8398 announce ANY
-export:         to AS28870 announce ANY
-export:         to AS5537 announce ANY
-export:         to AS25519 announce ANY
-export:         to AS3058 announce ANY
-export:         to AS34862 announce ANY
-export:         to AS34866 announce ANY
-export:         to AS3218 announce ANY
-export:         to AS5429 announce ANY
-export:         to AS29233 announce ANY
-export:         to AS35511 announce ANY
-export:         to AS21482 announce ANY
-export:         to AS50488 announce ANY
-export:         to AS31484 announce ANY
-export:         to AS3277 announce ANY
-export:         to AS198588 announce ANY
-export:         to AS198685 announce ANY
-export:         to AS198444 announce ANY
-export:         to AS13078 announce ANY
-export:         to AS42775 announce AS-RUNNET
-export:         to AS44843 announce ANY
-export:         to AS197080 announce ANY
-export:         to AS41337 announce ANY
-export:         to AS48670 announce ANY
-export:         to AS47541 announce ANY
-export:         to AS198295 announce ANY
-export:         to AS44882 announce ANY
-export:         to AS56534 announce ANY
-export:         to AS48604 announce ANY
-export:         to AS31321 announce ANY
-export:         to AS57010 announce ANY
-export:         to AS61040 announce ANY
-export:         to AS34574 announce ANY
-export:         to AS39101 announce ANY
-export:         to AS48235 announce ANY
-export:         to AS50167 announce ANY
-export:         to AS198070 announce ANY
-export:         to AS8219 announce ANY
-export:         to AS31444 announce ANY
-export:         to AS49304 announce ANY
-export:         to AS44899 announce ANY
-export:         to AS48416 announce ANY
-export:         to AS198610 announce ANY
-export:         to AS6820 announce ANY
-export:         to AS50568 announce ANY
-export:         to AS21353 announce ANY
-export:         to AS49505 announce AS-RUNNET
-export:         to AS58042 announce AS-RUNNET
-export:         to AS9123 announce ANY
-export:         to AS49186 announce ANY
-export:         to AS16020 announce ANY
-export:         to AS38984 announce ANY
-export:         to AS42339 announce ANY
-export:         to AS60643 announce ANY
-export:         to AS198384 announce ANY
-export:         to AS6801 announce AS-RUNNET
-export:         to AS59624 announce ANY
-export:         to AS20597 announce AS-RUNNET
-export:         to AS8997 announce AS-RUNNET
-export:         to AS24739 announce AS-RUNNET
-export:         to AS31323 announce AS-RUNNET
-export:         to AS25532 announce AS-RUNNET
-export:         to AS9124 announce ANY
-export:         to AS196879 announce ANY
-export:         to AS199879 announce ANY
-export:         to AS200686 announce ANY
-export:         to AS262254 announce AS-RUNNET
-remarks:        --- MSK-IX ---
-export:         to AS43832 announce AS-RUNNETIX
-export:         to AS41601 announce AS-RUNNET
-export:         to AS39821 announce AS-RUNNET
-export:         to AS39709 announce AS-RUNNETIX
-export:         to AS6854 announce AS-RUNNET
-export:         to AS2118 announce AS-RUNNETIX
-export:         to AS3316 announce AS-RUNNETIX
-export:         to AS2578 announce AS-RUNNETIX
-remarks:        --- spb-ix also ---
-export:         to AS2854 announce AS-RUNNETIX
-export:         to AS13105 announce AS-RUNNETIX
-export:         to AS2766 announce AS-RUNNETIX
-export:         to AS6863 announce AS-RUNNETIX
-export:         to AS6903 announce AS-RUNNETIX
-export:         to AS29388 announce AS-RUNNETIX
-export:         to AS3235 announce AS-RUNNETIX
-export:         to AS8241 announce AS-RUNNETIX
-export:         to AS8470 announce AS-RUNNET
-remarks:        --- spb-ix also ---
-export:         to AS8395 announce AS-RUNNETIX
-export:         to AS6880 announce AS-RUNNETIX
-export:         to AS29277 announce AS-RUNNETIX
-export:         to AS8299 announce AS-RUNNETIX
-export:         to AS8615 announce AS-RUNNETIX
-export:         to AS9110 announce AS-RUNNETIX
-export:         to AS9039 announce AS-RUNNETIX
-export:         to AS8515 announce AS-RUNNETIX
-export:         to AS29651 announce AS-RUNNETIX
-export:         to AS8955 announce AS-RUNNETIX
-export:         to AS20483 announce AS-RUNNETIX
-export:         to AS12314 announce AS-RUNNETIX
-export:         to AS8557 announce AS-RUNNETIX
-export:         to AS12695 announce AS-RUNNETIX
-export:         to AS5523 announce AS-RUNNETIX
-export:         to AS13174 announce AS-RUNNETIX
-export:         to AS13238 announce AS-RUNNETIX
-export:         to AS12690 announce AS-RUNNETIX
-export:         to AS25032 announce AS-RUNNETIX
-export:         to AS12958 announce AS-RUNNETIX
-export:         to AS12979 announce AS-RUNNETIX
-export:         to AS8641 announce AS-RUNNETIX
-export:         to AS8331 announce AS-RUNNETIX
-export:         to AS12654 announce AS-RUNNET
-export:         to AS15934 announce AS-RUNNETIX
-export:         to AS13230 announce AS-RUNNET
-export:         to AS24638 announce AS-RUNNETIX
-export:         to AS25478 announce AS-RUNNETIX
-export:         to AS21156 announce AS-RUNNETIX
-export:         to AS31430 announce AS-RUNNETIX
-export:         to AS28809 announce AS-RUNNET
-export:         to AS39792 announce AS-RUNNETIX
-export:         to AS28895 announce AS-RUNNETIX
-export:         to AS30124 announce AS-RUNNETIX
-export:         to AS21353 announce AS-RUNNETIX
-export:         to AS24936 announce AS-RUNNETIX
-export:         to AS30833 announce AS-RUNNETIX
-export:         to AS29053 announce AS-RUNNETIX
-export:         to AS28917 announce AS-RUNNETIX
-export:         to AS3327 announce AS-RUNNETIX
-export:         to AS34456 announce AS-RUNNET
-export:         to AS31261 announce AS-RUNNETIX
-export:         to AS8744 announce AS-RUNNET
-export:         to AS34352 announce AS-RUNNETIX
-export:         to AS29226 announce AS-RUNNETIX
-export:         to AS8905 announce AS-RUNNET
-export:         to AS34300 announce AS-RUNNETIX
-export:         to AS39143 announce AS-RUNNETIX
-export:         to AS29319 announce AS-RUNNETIX
-export:         to AS15835 announce AS-RUNNETIX
-export:         to AS8241 announce AS-RUNNETIX
-export:         to AS15658 announce AS-RUNNETIX
-export:         to AS15756 announce AS-RUNNETIX
-export:         to AS12976 announce AS-RUNNET
-export:         to AS33902 announce AS-RUNNET
-export:         to AS20655 announce AS-RUNNETIX
-export:         to AS15757 announce AS-RUNNETIX
-export:         to AS21453 announce AS-RUNNETIX
-export:         to AS42861 announce AS-RUNNET
-export:         to AS43727 announce AS-RUNNET
-export:         to AS25308 announce AS-RUNNETIX
-export:         to AS35641 announce AS-RUNNETIX
-export:         to AS12389 announce AS-RUNNET
-export:         to AS20985 announce AS-RUNNETIX
-export:         to AS41206 announce AS-RUNNETIX
-export:         to AS34602 announce AS-RUNNETIX
-export:         to AS42610 announce AS-RUNNET
-export:         to AS31514 announce AS-RUNNETIX
-export:         to AS44436 announce AS-RUNNET
-export:         to AS44237 announce AS-RUNNET
-export:         to AS31370 announce AS-RUNNET
-export:         to AS41349 announce AS-RUNNET
-export:         to AS43973 announce AS-RUNNET
-export:         to AS39922 announce AS-RUNNET
-remarks:        --- NSK-IX ---
-export:         to AS21127 announce AS-RUNNET
-export:         to AS30871 announce AS-RUNNET
-export:         to AS8691 announce AS-RUNNET
-export:         to AS9107 announce AS-RUNNET
-export:         to AS5387 announce AS-RUNNET
-export:         to AS8711 announce AS-RUNNET
-export:         to AS12499 announce AS-RUNNET
-export:         to AS13238 announce AS-RUNNET
-export:         to AS31002 announce AS-RUNNET
-export:         to AS20803 announce AS-RUNNET
-export:         to AS29175 announce AS-RUNNET
-export:         to AS25152 announce AS-RUNNET
-export:         to AS21311 announce AS-RUNNET
-export:         to AS8410 announce AS-RUNNET
-export:         to AS42139 announce AS-RUNNET
-export:         to AS35410 announce AS-RUNNET
-import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
-export:         to AS8631 announce AS-RUNNET
-import:         from AS43690 action pref=100; accept AS-SPBROUTESERVER
-export:         to AS43690 announce AS-RUNNET
-import:         from AS42403 action pref=100; accept AS-NSKROUTESERVER
-export:         to AS42403 announce AS-RUNNET
-import:         from AS199599 action pref=150; accept AS-CIREX
-export:         to AS199599 announce ANY
-import:         from AS198297 action pref=150; accept AS-UL-COM-Media
-export:         to AS198297 announce ANY
-import:         from AS12724 action pref=150; accept AS12724
-export:         to AS12724 announce ANY
-import:         from AS60764 action pref=150; accept AS-TKTEL
-export:         to AS60764 announce ANY
-import:         from AS207056 action pref=150; accept AS207056
-export:         to AS207056 announce ANY
-import:         from AS60252 action pref=150; accept AS-OST-LLC
-export:         to AS60252 announce ANY
-import:         from AS52146 action pref=150; accept AS52146
-export:         to AS52146 announce ANY
-import:         from AS39503 action pref=150; accept AS39503
-export:         to AS39503 announce ANY
-import:         from AS57867 action pref=150; accept AS57867
-export:         to AS57867 announce ANY
-import:         from AS51562 action pref=150; accept AS51562
-export:         to AS51562 announce ANY
-import:         from AS200679 action pref=150; accept AS200679
-export:         to AS200679 announce ANY
-import:         from AS204576 action pref=150; accept AS204576
-export:         to AS204576 announce ANY
-import:         from AS62415 action pref=150; accept AS-MARKTEL
-export:         to AS62415 announce ANY
-import:         from AS62142 action pref=150; accept AS-KONNEKTIKARU
-export:         to AS62142 announce ANY
-import:         from AS59714 action pref=150; accept AS59714
-export:         to AS59714 announce ANY
-import:         from AS208178 action pref=150; accept AS208178
-export:         to AS208178 announce ANY
-import:         from AS207373 action pref=150; accept AS207373
-export:         to AS207373 announce ANY
-import:         from AS49554 action pref=150; accept AS49554
-export:         to AS49554 announce ANY
-import:         from AS2148 action pref=150; accept AS2148
-export:         to AS2148 announce ANY
-import:         from AS2683 action pref=100; accept AS-SINP-RM
-export:         to AS2683 announce ANY
-import:         from AS8409 action pref=150; accept AS8409
-export:         to AS8409 announce ANY
-import:         from AS206337 action pref=150; accept AS206337
-export:         to AS206337 announce ANY
-import:         from AS209698 action pref=150; accept AS209698
-export:         to AS209698 announce ANY
-import:         from AS3343 action pref=150; accept AS3343
-export:         to AS3343 announce ANY
-import:         from AS6699 action pref=150; accept AS6699
-export:         to AS6699 announce ANY
-import:         from AS12938 action pref=150; accept AS12938
-export:         to AS12938 announce ANY
-import:         from AS25371 action pref=150; accept AS25371
-export:         to AS25371 announce ANY
-import:         from AS58255 action pref=150; accept AS58255
-export:         to AS58255 announce ANY
-import:         from AS50276 action pref=150; accept AS50276
-export:         to AS50276 announce ANY
-import:         from AS9113 action pref=150; accept AS-VLANT
-export:         to AS9113 announce ANY
-import:         from AS212899 action pref=150; accept AS212899
-export:         to AS212899 announce ANY
-import:         from AS15913 action pref=125; accept AS15913
-export:         to AS15913 announce ANY
-import:         from AS60722 action pref=125; accept AS60722
-export:         to AS60722 announce ANY
-import:         from AS5387 action pref=125; accept AS-NSC-SET
-export:         to AS5387 announce ANY
-import:         from AS12828 action pref=125; accept AS12828
-export:         to AS12828 announce ANY
-remarks:        ---- NSK ----
-remarks:        ---- PEER ----
-import:         from AS13094 action pref=100; accept AS-MILECOM-RS
-export:         to AS13094 announce AS-RUNNET
-remarks:        ---- SAMARA ----
-import:         from AS197235 action pref=150; accept AS197235
-export:         to AS197235 announce ANY
-remarks:        ---- AMS ----
-import:         from AS56567 action pref=100; accept AS56567
-export:         to AS56567 announce ANY
-import:         from AS203816 action pref=100; accept AS-CMTL
-export:         to AS203816 announce ANY
-import:         from AS25369 action pref=100; accept AS25369
-export:         to AS25369 announce ANY
-remarks:        -------------
-admin-c:        RUN3-RIPE
-tech-c:         RUN3-RIPE
+aut-num:        as3267
+as-name:        niks
+org:            org-cr1-ripe
+mp-import:      afi any.unicast from as1299 accept any
+mp-export:      afi any.unicast to as1299 announce as3267:as-cust:as-gov:as-full as3267:as-cust:as-biz:as-full
+mp-import:      afi any.unicast from as2603 accept any
+mp-export:      afi any.unicast to as2603 announce as3267:as-cust:as-gov:as-full <^as8491 .* as200264$>
+mp-import:      afi any.unicast from as2683 accept as-sinp-rm
+mp-export:      afi any.unicast to as2683 announce any {0.0.0.0/0}
+mp-import:      afi any.unicast from as2848 accept as-msu
+mp-export:      afi any.unicast to as2848 announce any {0.0.0.0/0}
+mp-import:      afi any.unicast from as2875 accept as2875
+mp-export:      afi any.unicast to as2875 announce as3267:as-nren
+mp-import:      afi any.unicast from as2895 accept as-freenet
+mp-export:      afi any.unicast to as2895 announce any
+mp-import:      afi any.unicast from as3216 accept any
+mp-export:      afi any.unicast to as3216 announce as3267:as-cust:as-gov:as-full as3267:as-cust:as-biz:as-full
+mp-import:      afi ipv4.unicast from as3218 accept as-cosmos
+mp-export:      afi ipv4.unicast to as3218 announce any {0.0.0.0/0}
+mp-import:      afi any.unicast from as3249 accept as-estpak
+mp-export:      afi any.unicast to as3249 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as3316 accept as-relarn
+mp-export:      afi ipv4.unicast to as3316 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as3325 accept as3325
+mp-export:      afi ipv4.unicast to as3325 announce as3267:as-nren
+mp-import:      afi any.unicast from as3327 accept as-citictel-cpc-msk-ix
+mp-export:      afi any.unicast to as3327 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as3351 accept as3351
+mp-export:      afi ipv4.unicast to as3351 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as5387 accept as-nsc-set
+mp-export:      afi ipv4.unicast to as5387 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as5433 accept as-rokson
+mp-export:      afi ipv4.unicast to as5433 announce any
+mp-import:      afi ipv4.unicast from as5467 accept as-mipt
+mp-export:      afi ipv4.unicast to as5467 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as5468 accept as-urfu
+mp-export:      afi ipv4.unicast to as5468 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as5480 accept as5480
+mp-export:      afi ipv4.unicast to as5480 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as5495 accept as5495
+mp-export:      afi ipv4.unicast to as5495 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as5567 accept as5567
+mp-export:      afi ipv4.unicast to as5567 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as5568 accept as-rbnet
+mp-export:      afi ipv4.unicast to as5568 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as6699 accept as6699
+mp-export:      afi ipv4.unicast to as6699 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as6820 accept as-leivo
+mp-export:      afi ipv4.unicast to as6820 announce as3267:as-cust as3267:as-peer as3267:as-prov {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as6868 accept as6868
+mp-export:      afi ipv4.unicast to as6868 announce any
+mp-import:      afi ipv4.unicast from as6874 accept as6874
+mp-export:      afi ipv4.unicast to as6874 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as6939 accept as-hurricane as-hurricanev6
+mp-export:      afi ipv4.unicast to as6939 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as8241 accept as-relline
+mp-export:      afi ipv4.unicast to as8241 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as8324 accept as8324
+mp-export:      afi ipv4.unicast to as8324 announce as3267:as-nren
+mp-import:      afi any.unicast from as8359 accept any
+mp-export:      afi any.unicast to as8359 announce as3267:as-cust:as-gov:as-full as3267:as-cust:as-biz:as-full
+mp-import:      afi ipv4.unicast from as8398 accept as8398
+mp-export:      afi ipv4.unicast to as8398 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as8409 accept as8409
+mp-export:      afi ipv4.unicast to as8409 announce as3267:as-customers {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as8411 accept as8411
+mp-export:      afi ipv4.unicast to as8411 announce {0.0.0.0/0}
+mp-import:      afi any.unicast from as8470 accept as-macomnet
+mp-export:      afi any.unicast to as8470 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as8480 accept as8480
+mp-export:      afi ipv4.unicast to as8480 announce as3267:as-customers {0.0.0.0/0}
+mp-import:      afi any.unicast from as8491 accept as-bsh
+mp-export:      afi any.unicast to as8491 announce any
+mp-import:      afi ipv4.unicast from as8492 accept as-obit
+mp-export:      afi ipv4.unicast to as8492 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as8506 accept as8506
+mp-export:      afi ipv4.unicast to as8506 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as8510 accept as8510
+mp-export:      afi ipv4.unicast to as8510 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as8630 accept as8630
+mp-export:      afi ipv4.unicast to as8630 announce {0.0.0.0/0}
+mp-import:      afi any.unicast from as8631 accept as-mskrouteserver
+mp-export:      afi any.unicast to as8631 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as8641 accept as-naukanet
+mp-export:      afi ipv4.unicast to as8641 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as8663 accept as8663
+mp-export:      afi ipv4.unicast to as8663 announce as3267:as-customers {0.0.0.0/0}
+mp-import:      afi any.unicast from as8684 accept as8684
+mp-export:      afi any.unicast to as8684 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as8775 accept as8775
+mp-export:      afi ipv4.unicast to as8775 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as8790 accept as8790
+mp-export:      afi ipv4.unicast to as8790 announce as3267:as-customers {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as8941 accept as8941
+mp-export:      afi ipv4.unicast to as8941 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as8985 accept as-msk-ix-services
+mp-export:      afi ipv4.unicast to as8985 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as9039 accept as-iiat
+mp-export:      afi ipv4.unicast to as9039 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as9049 accept as-erth
+mp-export:      afi ipv4.unicast to as9049 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as9077 accept as9077
+mp-export:      afi ipv4.unicast to as9077 announce as3267:as-nren
+mp-import:      afi any.unicast from as9113 accept as-vlant
+mp-export:      afi any.unicast to as9113 announce {0.0.0.0/0}
+mp-import:      afi any.unicast from as9123 accept as-timeweb
+mp-export:      afi any.unicast to as9123 announce as3267:as-customers
+mp-import:      afi any.unicast from as9162 accept as9162
+mp-export:      afi any.unicast to as9162 announce any
+mp-import:      afi ipv4.unicast from as12389 accept as-rostelecom
+mp-export:      afi ipv4.unicast to as12389 announce as3267:as-customers
+mp-import:      afi any.unicast from as12654 accept as12654
+mp-export:      afi any.unicast to as12654 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as12724 accept as12724
+mp-export:      afi ipv4.unicast to as12724 announce any
+mp-import:      afi ipv4.unicast from as12770 accept as12770
+mp-export:      afi ipv4.unicast to as12770 announce as3267:as-customers {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as12828 accept as12828
+mp-export:      afi ipv4.unicast to as12828 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as12938 accept as12938
+mp-export:      afi ipv4.unicast to as12938 announce any
+mp-import:      afi ipv4.unicast from as12999 accept as12999
+mp-export:      afi ipv4.unicast to as12999 announce as3267:as-nren
+mp-import:      afi any.unicast from as13077 accept as-ncfu
+mp-export:      afi any.unicast to as13077 announce any {0.0.0.0/0}
+mp-import:      afi any.unicast from as13094 accept as-milecom-rs
+mp-export:      afi any.unicast to as13094 announce as3267:as-customers
+mp-import:      afi any.unicast from as13238 accept as-yandex
+mp-export:      afi any.unicast to as13238 announce as3267:as-customers
+mp-import:      afi any.unicast from as13335 accept as13335 as3557
+mp-export:      afi any.unicast to as13335 announce as3267:as-customers
+mp-import:      afi any.unicast from as15169 accept as-google
+mp-export:      afi any.unicast to as15169 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as15913 accept as15913
+mp-export:      afi ipv4.unicast to as15913 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as16509 accept as16509:as-amazon
+mp-export:      afi ipv4.unicast to as16509 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as20485 accept as-ttk
+mp-export:      afi ipv4.unicast to as20485 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as20549 accept as20549
+mp-export:      afi ipv4.unicast to as20549 announce any {0.0.0.0/0}
+mp-import:      afi any.unicast from as20965 accept as-geantnrn
+mp-export:      afi any.unicast to as20965 announce as3267:as-cust:as-gov
+mp-import:      afi ipv4.unicast from as20985 accept as-artx
+mp-export:      afi ipv4.unicast to as20985 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as21453 accept as-flex
+mp-export:      afi ipv4.unicast to as21453 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as24638 accept as-ramtel
+mp-export:      afi ipv4.unicast to as24638 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as24955 accept as-ubn
+mp-export:      afi ipv4.unicast to as24955 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as25371 accept as25371
+mp-export:      afi ipv4.unicast to as25371 announce as3267:as-nren
+mp-import:      afi any.unicast from as25478 accept as-ihome as-ihome6
+mp-export:      afi any.unicast to as25478 announce as3267:as-customers
+mp-import:      afi any.unicast from as26415 accept as396737
+mp-export:      afi any.unicast to as26415 announce as3267:as-customers
+mp-import:      afi any.unicast from as28800 accept as28800
+mp-export:      afi any.unicast to as28800 announce any
+mp-import:      afi ipv4.unicast from as28917 accept as-fiord
+mp-export:      afi ipv4.unicast to as28917 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as29076 accept as-citytelecom as-citytelecomv6
+mp-export:      afi ipv4.unicast to as29076 announce as3267:as-customers
+mp-import:      afi any.unicast from as29147 accept as-nstu
+mp-export:      afi any.unicast to as29147 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as29226 accept as-mastertel
+mp-export:      afi ipv4.unicast to as29226 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as29329 accept as-nodex
+mp-export:      afi ipv4.unicast to as29329 announce as3267:as-customers
+mp-import:      afi any.unicast from as29581 accept as29581
+mp-export:      afi any.unicast to as29581 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as30833 accept as30833 as42636 as49160
+mp-export:      afi ipv4.unicast to as30833 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as30853 accept as30853
+mp-export:      afi ipv4.unicast to as30853 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as30911 accept as30911
+mp-export:      afi ipv4.unicast to as30911 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as31059 accept as-avelacom
+mp-export:      afi ipv4.unicast to as31059 announce as3267:as-customers
+mp-import:      afi any.unicast from as31133 accept as-mf-mgsm
+mp-export:      afi any.unicast to as31133 announce as3267:as-customers
+mp-import:      afi any.unicast from as31430 accept as-tel-net as-tel-net-v6
+mp-export:      afi any.unicast to as31430 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as31484 accept as31484
+mp-export:      afi ipv4.unicast to as31484 announce {0.0.0.0/0}
+mp-import:      afi any.unicast from as31500 accept as-global-net as-global-net-v6
+mp-export:      afi any.unicast to as31500 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as31575 accept as31575
+mp-export:      afi ipv4.unicast to as31575 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as32934 accept as32934 as54115
+mp-export:      afi ipv4.unicast to as32934 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as34017 accept as34017
+mp-export:      afi ipv4.unicast to as34017 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as34102 accept as-awanti
+mp-export:      afi ipv4.unicast to as34102 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as34352 accept as-mcn
+mp-export:      afi ipv4.unicast to as34352 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as34707 accept as34707
+mp-export:      afi ipv4.unicast to as34707 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as34849 accept as34849
+mp-export:      afi ipv4.unicast to as34849 announce as3267:as-customers {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as34862 accept as34862
+mp-export:      afi ipv4.unicast to as34862 announce any
+mp-import:      afi ipv4.unicast from as35000 accept as-prometey
+mp-export:      afi ipv4.unicast to as35000 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as35598 accept as-icnet
+mp-export:      afi ipv4.unicast to as35598 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as35764 accept as35764
+mp-export:      afi ipv4.unicast to as35764 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as35807 accept as-skynet-spb
+mp-export:      afi ipv4.unicast to as35807 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as39131 accept as39131
+mp-export:      afi ipv4.unicast to as39131 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as39153 accept as-setel
+mp-export:      afi ipv4.unicast to as39153 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as39503 accept as39503
+mp-export:      afi ipv4.unicast to as39503 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as39821 accept as-canmos
+mp-export:      afi ipv4.unicast to as39821 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as41566 accept as41566
+mp-export:      afi ipv4.unicast to as41566 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as41601 accept as41601
+mp-export:      afi ipv4.unicast to as41601 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as42048 accept as42048
+mp-export:      afi ipv4.unicast to as42048 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as42139 accept as-ns9_ripn_net
+mp-export:      afi ipv4.unicast to as42139 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as42289 accept as42289
+mp-export:      afi ipv4.unicast to as42289 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as42377 accept as42377
+mp-export:      afi ipv4.unicast to as42377 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as42403 accept as-nskrouteserver
+mp-export:      afi ipv4.unicast to as42403 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as42632 accept as-mnogobyte
+mp-export:      afi ipv4.unicast to as42632 announce as3267:as-customers
+mp-import:      afi any.unicast from as43690 accept as-spbrouteserver
+mp-export:      afi any.unicast to as43690 announce as3267:as-customers
+mp-import:      afi any.unicast from as43727 accept as-setkt
+mp-export:      afi any.unicast to as43727 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as43973 accept as-osmp
+mp-export:      afi ipv4.unicast to as43973 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as44030 accept as-lentel
+mp-export:      afi ipv4.unicast to as44030 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as45102 accept as45102
+mp-export:      afi ipv4.unicast to as45102 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as46489 accept as46489
+mp-export:      afi ipv4.unicast to as46489 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as47211 accept as-kolpinonet
+mp-export:      afi ipv4.unicast to as47211 announce as3267:as-customers
+mp-import:      afi any.unicast from as47541 accept as-vkontakte
+mp-export:      afi any.unicast to as47541 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as47764 accept as-vk
+mp-export:      afi ipv4.unicast to as47764 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as48158 accept as48158
+mp-export:      afi ipv4.unicast to as48158 announce as3267:as-customers
+mp-import:      afi any.unicast from as48166 accept as-fortex
+mp-export:      afi any.unicast to as48166 announce as3267:as-customers
+mp-import:      afi any.unicast from as48670 accept as48670
+mp-export:      afi any.unicast to as48670 announce as3267:as-cust as3267:as-peer as3267:as-prov
+mp-import:      afi ipv4.unicast from as49450 accept as49450
+mp-export:      afi ipv4.unicast to as49450 announce as3267:as-nren
+mp-import:      afi any.unicast from as49544 accept as49544
+mp-export:      afi any.unicast to as49544 announce as3267:as-customers
+mp-import:      afi any.unicast from as49554 accept as49554
+mp-export:      afi any.unicast to as49554 announce any
+mp-import:      afi any.unicast from as49869 accept as-piter-ix-msk
+mp-export:      afi any.unicast to as49869 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as49929 accept as-misis
+mp-export:      afi ipv4.unicast to as49929 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as50276 accept as50276
+mp-export:      afi ipv4.unicast to as50276 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as50483 accept as50483
+mp-export:      afi ipv4.unicast to as50483 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as50568 accept as50568
+mp-export:      afi ipv4.unicast to as50568 announce as3267:as-cust as3267:as-peer as3267:as-prov {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as50571 accept as50571
+mp-export:      afi ipv4.unicast to as50571 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as50703 accept as50703
+mp-export:      afi ipv4.unicast to as50703 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as50707 accept as50707
+mp-export:      afi ipv4.unicast to as50707 announce as3267:as-nren
+mp-import:      afi any.unicast from as50817 accept as-piter-ix
+mp-export:      afi any.unicast to as50817 announce as3267:as-customers
+mp-import:      afi any.unicast from as51178 accept as-avantel-spb
+mp-export:      afi any.unicast to as51178 announce as3267:as-customers
+mp-import:      afi any.unicast from as51352 accept as51352
+mp-export:      afi any.unicast to as51352 announce any
+mp-import:      afi ipv4.unicast from as51562 accept as51562
+mp-export:      afi ipv4.unicast to as51562 announce {0.0.0.0/0}
+mp-import:      afi any.unicast from as52146 accept as52146
+mp-export:      afi any.unicast to as52146 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as56374 accept as56374
+mp-export:      afi ipv4.unicast to as56374 announce as3267:as-customers {0.0.0.0/0}
+mp-import:      afi any.unicast from as56534 accept as-cmft as-cmft6
+mp-export:      afi any.unicast to as56534 announce as3267:as-cust as3267:as-peer
+mp-import:      afi ipv4.unicast from as56679 accept as56679
+mp-export:      afi ipv4.unicast to as56679 announce as3267:as-cust as3267:as-peer as3267:as-prov
+mp-import:      afi ipv4.unicast from as57438 accept as57438
+mp-export:      afi ipv4.unicast to as57438 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as57629 accept as57629
+mp-export:      afi ipv4.unicast to as57629 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as57724 accept as-ddos-guard
+mp-export:      afi ipv4.unicast to as57724 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as57867 accept as57867
+mp-export:      afi ipv4.unicast to as57867 announce any
+mp-import:      afi ipv4.unicast from as58255 accept as58255
+mp-export:      afi ipv4.unicast to as58255 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as59624 accept as-kiae-grid
+mp-export:      afi ipv4.unicast to as59624 announce as3267:as-customers
+mp-import:      afi any.unicast from as59714 accept as59714
+mp-export:      afi any.unicast to as59714 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as60643 accept as60643
+mp-export:      afi ipv4.unicast to as60643 announce any
+mp-import:      afi ipv4.unicast from as60722 accept as60722
+mp-export:      afi ipv4.unicast to as60722 announce {0.0.0.0/0}
+mp-import:      afi any.unicast from as197467 accept as197467
+mp-export:      afi any.unicast to as197467 announce as3267:as-customers {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as197768 accept as197768
+mp-export:      afi ipv4.unicast to as197768 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as198297 accept as-ul-com-media
+mp-export:      afi ipv4.unicast to as198297 announce as3267:as-cust as3267:as-peer
+mp-import:      afi ipv4.unicast from as200323 accept as200323
+mp-export:      afi ipv4.unicast to as200323 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as200679 accept as200679
+mp-export:      afi ipv4.unicast to as200679 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as200686 accept as200686
+mp-export:      afi ipv4.unicast to as200686 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as203784 accept as203784
+mp-export:      afi ipv4.unicast to as203784 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as206337 accept as206337
+mp-export:      afi ipv4.unicast to as206337 announce any {0.0.0.0/0}
+mp-import:      afi any.unicast from as207056 accept as-bonch-it
+mp-export:      afi any.unicast to as207056 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as207373 accept as207373
+mp-export:      afi ipv4.unicast to as207373 announce {0.0.0.0/0}
+mp-import:      afi any.unicast from as208178 accept as208178
+mp-export:      afi any.unicast to as208178 announce as3267:as-customers {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as209698 accept as209698
+mp-export:      afi ipv4.unicast to as209698 announce any {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as210276 accept as210276
+mp-export:      afi ipv4.unicast to as210276 announce {0.0.0.0/0}
+mp-import:      afi any.unicast from as212899 accept as212899
+mp-export:      afi any.unicast to as212899 announce any
+mp-import:      afi ipv4.unicast from as215098 accept as215098
+mp-export:      afi ipv4.unicast to as215098 announce as3267:as-cust as3267:as-peer as3267:as-prov
+tech-c:         run3-ripe
+admin-c:        run3-ripe
 status:         ASSIGNED
-mnt-by:         AS3058-MNT
-mnt-by:         INFR-MNT
-mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ripe-ncc-end-mnt
+mnt-by:         infr-mnt
 created:        2002-09-09T08:24:32Z
-last-modified:  2024-07-09T15:09:25Z
-source:         RIPE # Filtered
+last-modified:  2024-07-19T10:41:50Z
+source:         RIPE
 
 organisation:   ORG-CR1-RIPE
 org-name:       Federal State Institution "Federal Scientific Research Institute for System Analysis of the Russian Academy of Sciences"
