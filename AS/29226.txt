@@ -1306,7 +1306,11 @@ export:         to AS50820 announce ANY
 remarks:
 remarks:        LASNET TECHNO LLC
 import:         from AS206724 action pref=200; accept AS206724;
-export:         to AS206724 announce  {0.0.0.0/0}
+export:         to AS206724 announce {0.0.0.0/0}
+remarks:
+remarks:        LLC "LORD"
+import:         from AS208503 action pref=200; accept AS208503;
+export:         to AS208503 announce ANY
 remarks:
 remarks:        =========================
 remarks:        IPv6 routing policy
@@ -1536,7 +1540,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2024-07-18T07:18:57Z
+last-modified:  2024-07-23T04:41:29Z
 source:         RIPE
 
 organisation:   ORG-JM2-RIPE
