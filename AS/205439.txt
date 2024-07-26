@@ -14,22 +14,25 @@ source:         RIPE
 aut-num:        AS205439
 as-name:        ippark-as
 org:            ORG-IPL17-RIPE
+remarks:        # backup
 import:         from AS28917 accept ANY
 export:         to AS28917 announce AS205439
+remarks:        # main
 import:         from AS42291 accept ANY
 export:         to AS42291 announce AS205439
-admin-c:        MD24384-RIPE
-tech-c:         MD24384-RIPE
+admin-c:        IPNA1-RIPE
+tech-c:         IPNA1-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IP-PARK-MNT
 created:        2017-08-24T07:13:35Z
-last-modified:  2018-09-04T12:04:32Z
+last-modified:  2024-07-25T10:03:54Z
 source:         RIPE
 
 organisation:   ORG-IPL17-RIPE
 org-name:       IP PARK LLC
 country:        RU
+geoloc:         55.860337 37.121388
 org-type:       LIR
 address:        Gagarina str, 10, ste 7
 address:        143530
@@ -47,17 +50,22 @@ mnt-ref:        IP-PARK-MNT
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         IP-PARK-MNT
 created:        2017-08-21T13:04:09Z
-last-modified:  2024-07-23T16:14:14Z
+last-modified:  2024-07-25T13:44:52Z
 source:         RIPE # Filtered
 
-person:         Mikhail Davydov
-address:        2 Adasko str 143500 Istra Russian Federation
-phone:          +74983164444
-nic-hdl:        MD24384-RIPE
+role:           IP Park NOC Administrators
+org:            ORG-IPL17-RIPE
+address:        IP Park LLC
+address:        Gagarina str, 10, ste 7
+address:        143530 Moscow region, Dedovsk
+address:        RU
+admin-c:        PKV48-RIPE
+nic-hdl:        IPNA1-RIPE
 mnt-by:         IP-PARK-MNT
-created:        2017-08-04T07:48:01Z
-last-modified:  2017-08-04T07:48:01Z
-source:         RIPE
+mnt-by:         C-IP-PARK-MNT
+created:        2024-07-11T05:33:34Z
+last-modified:  2024-07-23T14:46:41Z
+source:         RIPE # Filtered
 
 
 
