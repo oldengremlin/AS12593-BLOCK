@@ -665,6 +665,8 @@ import:         from  AS57073 action pref=100; accept   AS57073:AS-WILDBERRIES
 export:         to    AS57073                  announce ANY
 import:         from  AS57107 action pref=100; accept   AS57107
 export:         to    AS57107                  announce ANY
+import:         from  AS57354 action pref=100; accept   AS-SYSTEMA
+export:         to    AS57354                  announce ANY
 import:         from  AS57364 action pref=100; accept   AS-KMARUDA
 export:         to    AS57364                  announce ANY
 import:         from  AS57503 action pref=100; accept   AS57503
@@ -1456,6 +1458,8 @@ mp-import:      afi ipv6.unicast from  AS56864 action pref=100; accept   AS-WELL
 mp-export:      afi ipv6.unicast to    AS56864                  announce ANY
 mp-import:      afi ipv6.unicast from  AS57073 action pref=100; accept   AS57073:AS-WILDBERRIES
 mp-export:      afi ipv6.unicast to    AS57073                  announce ANY
+mp-import:      afi ipv6.unicast from  AS57354 action pref=100; accept   AS-SYSTEMA
+mp-export:      afi ipv6.unicast to    AS57354                  announce ANY
 mp-import:      afi ipv6.unicast from  AS57503 action pref=100; accept   AS57503
 mp-export:      afi ipv6.unicast to    AS57503                  announce ANY
 mp-import:      afi ipv6.unicast from  AS57578 action pref=100; accept   AS-MISAKA
@@ -1650,7 +1654,7 @@ remarks:        SPAM and security issues         abuse at retn.ru
 remarks:        Web Site                         http://retn.ru
 remarks:        Looking Glass                    http://lg.retn.ru
 remarks:        BGP communities list             http://retn.ru/bgp-communities
-remarks:        or http://lg.retn.ru/bgp-communities.html
+remarks:        or                       http://lg.retn.ru/bgp-communities.html
 remarks:        ---------------------------------------------------------------
 remarks:
 admin-c:        JRN32-RIPE
@@ -1659,7 +1663,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2024-07-28T12:29:55Z
+last-modified:  2024-07-29T17:26:47Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE
