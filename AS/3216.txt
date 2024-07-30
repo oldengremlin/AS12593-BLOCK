@@ -1656,6 +1656,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS207056 action pref=100; accept AS-BONCH-IT
+export:         to AS207056 announce ANY
 import:         from AS212114 action pref=100; accept AS212114
 export:         to AS212114 announce AS-SOVAM
 import:         from AS197596 action pref=100; accept AS197596
@@ -2908,8 +2910,6 @@ import:         from AS41681 action pref=100; accept AS41681
 export:         to AS41681 announce ANY
 mp-import:      afi ipv6 from AS41681 action pref=90; accept AS41681
 mp-export:      afi ipv6 to AS41681 announce AS-SOVAM-V6
-import:         from AS41257 action pref=100; accept AS41257
-export:         to AS41257 announce {0.0.0.0/0}
 import:         from AS39058 action pref=100; accept AS39058
 export:         to AS39058 announce AS-SOVAM
 import:         from AS6747 action pref=100; accept AS-LATTELEKOM
@@ -5054,10 +5054,10 @@ remarks:        3216:501x When advertising to Vodafone (Cable&Wireless) uplink..
 remarks:        3216:502x When advertising to Telecom Italia Sparkle uplink...
 remarks:        3216:503x When advertising to PCCW Global uplink...
 remarks:        3216:504x When advertising to Telia Global uplink...
+remarks:        3216:505x When advertising to Turk Telekom uplink...
 remarks:        3216:508x When advertising to Orange uplink...
 remarks:        3216:509x When advertising to Cogent uplink...
 remarks:        -----------------------------------------------------------------
-remarks:        3216:507x When advertising to any NSK-IX peer...
 remarks:        3216:510x When advertising to any DE-CIX peer...
 remarks:        3216:511x When advertising to any LINX peer...
 remarks:        3216:512x When advertising to any AMS-IX peer...
@@ -5457,7 +5457,7 @@ remarks:        3216:4446 External prefixes originated in Kursk Region
 remarks:        3216:4447 External prefixes originated in Leningrad Region
 remarks:        3216:4448 External prefixes originated in Lipetsk Region
 remarks:        3216:4449 External prefixes originated in Magadan Region
-remarks:        3216:4450 External prefixes originated in Moscow Region
+remarks:        (3216:4450 External prefixes originated in Moscow Region) Obsoleted
 remarks:        3216:4451 External prefixes originated in Murmansk Region
 remarks:        3216:4452 External prefixes originated in Nizhny Novgorod Region
 remarks:        3216:4453 External prefixes originated in Novgorod Region
@@ -5531,7 +5531,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-07-24T12:03:21Z
+last-modified:  2024-07-30T05:29:43Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
