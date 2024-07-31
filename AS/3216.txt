@@ -1666,6 +1666,8 @@ import:         from AS48033 action pref=100; accept AS48033
 export:         to AS48033 announce ANY
 import:         from AS10122 action pref=100; accept AS-BIGO-10122
 export:         to AS10122 announce ANY
+mp-import:      from AS10122 action pref=100; accept AS-BIGO-10122
+mp-export:      to AS10122 announce ANY
 import:         from AS57842 action pref=100; accept AS57842:AS-UCS-BEELINE
 export:         to AS57842 announce ANY
 mp-import:      from AS57842 action pref=100; accept AS57842:AS-UCS-BEELINE-V6
@@ -2302,8 +2304,6 @@ import:         from AS62440 action pref=100; accept AS62440
 export:         to AS62440 announce ANY
 mp-import:      afi ipv6 from AS62440 action pref=100; accept AS62440
 mp-export:      afi ipv6 to AS62440 announce ANY
-import:         from AS64493 action pref=100; accept AS64493
-export:         to AS64493 announce ANY
 import:         from AS50509 action pref=100; accept AS-TRANSROUTE
 export:         to AS50509 announce ANY
 mp-import:      afi ipv6 from AS50509 action pref=100; accept AS-TRANSROUTE
@@ -5531,7 +5531,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-07-30T05:29:43Z
+last-modified:  2024-07-30T09:58:14Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

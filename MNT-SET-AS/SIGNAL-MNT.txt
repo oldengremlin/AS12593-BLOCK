@@ -8,14 +8,22 @@ org:            ORG-SL188-RIPE
 remarks:
 remarks:        --- Upstreams ---
 remarks:
-import:         from AS20485 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY AND NOT {0.0.0.0/0}
 export:         to AS20485 announce AS-SIGNALTV
-import:         from AS31133 action pref=100; accept ANY
+mp-import:      from AS20485 action pref=100; accept ANY AND NOT {::/0}
+mp-export:      to AS20485 announce AS-SIGNALTV
+import:         from AS31133 action pref=100; accept ANY AND NOT {0.0.0.0/0}
 export:         to AS31133 announce AS-SIGNALTV
-import:         from AS12389 action pref=100; accept ANY
+mp-import:      from AS31133 action pref=100; accept ANY AND NOT {::/0}
+mp-export:      to AS31133 announce AS-SIGNALTV
+import:         from AS12389 action pref=100; accept ANY AND NOT {0.0.0.0/0}
 export:         to AS12389 announce AS-SIGNALTV
-import:         from AS8359 action pref=100; accept ANY
+mp-import:      from AS12389 action pref=100; accept ANY AND NOT {::/0}
+mp-export:      to AS12389 announce AS-SIGNALTV
+import:         from AS8359 action pref=100; accept ANY AND NOT {0.0.0.0/0}
 export:         to AS8359 announce AS-SIGNALTV
+mp-import:      from AS8359 action pref=100; accept ANY AND NOT {::/0}
+mp-export:      to AS8359 announce AS-SIGNALTV
 remarks:
 remarks:        --- Clients ---
 remarks:
@@ -67,7 +75,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIGNAL-MNT
 created:        2007-03-05T15:16:39Z
-last-modified:  2024-03-29T18:41:58Z
+last-modified:  2024-07-30T22:11:41Z
 source:         RIPE
 
 
