@@ -1954,6 +1954,8 @@ import:         from AS39442 action pref=100; accept AS-UNICO
 export:         to AS39442 announce ANY
 import:         from AS199161 action pref=100; accept AS199161
 export:         to AS199161 announce {0.0.0.0/0}
+import:         from AS197150 action pref=100; accept AS197150
+export:         to AS197150 announce ANY
 import:         from AS49551 action pref=100; accept AS49551
 export:         to AS49551 announce ANY
 import:         from AS201193 action pref=100; accept AS201193
@@ -2184,8 +2186,6 @@ mp-import:      afi ipv6 from AS206673 action pref=100; accept AS206673
 mp-export:      afi ipv6 to AS206673 announce {::/0}
 import:         from AS206673 action pref=100; accept AS206673
 export:         to AS206673 announce {0.0.0.0/0}
-import:         from AS48399 action pref=100; accept AS-LINXDATACENTER
-export:         to AS48399 announce ANY
 import:         from AS43444 action pref=100; accept AS43444
 export:         to AS43444 announce ANY
 import:         from AS35830 action pref=100; accept AS35830
@@ -5531,7 +5531,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-07-30T09:58:14Z
+last-modified:  2024-07-31T12:54:04Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
