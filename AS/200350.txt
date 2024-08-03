@@ -14,18 +14,27 @@ source:         RIPE
 aut-num:        AS200350
 as-name:        YandexCloud
 org:            ORG-YL62-RIPE
-remarks:        YANDEX
-import:         from AS13238 accept AS-YANDEX
-export:         to AS13238 announce AS-YACLOUD
+remarks:        -----------------------------------
+remarks:        #             UPLINKS             #
+remarks:        -----------------------------------
+remarks:        RUBY-AS
+import:         from AS57304 accept ANY
+export:         to AS57304 announce AS-YACLOUD
 remarks:        TELIA
 import:         from AS1299 accept ANY
 export:         to AS1299 announce AS-YACLOUD
-remarks:        MEGAFON
-import:         from AS31133 accept ANY
-export:         to AS31133 announce AS-YACLOUD
 remarks:        ROSTELECOM
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-YACLOUD
+remarks:        -----------------------------------
+remarks:        #              PEERS              #
+remarks:        -----------------------------------
+remarks:        YANDEX
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-YACLOUD
+remarks:        MEGAFON
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-YACLOUD
 remarks:        TTK
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-YACLOUD
@@ -35,39 +44,6 @@ export:         to AS8359 announce AS-YACLOUD
 remarks:        BEELINE
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-YACLOUD
-remarks:        MSK-IX
-import:         from AS8631 accept AS-MSKROUTESERVER
-export:         to AS8631 announce AS-YACLOUD
-remarks:        CLOUD-IX
-import:         from AS29076 accept AS-CITYTELECOM
-export:         to AS29076 announce AS-YACLOUD
-remarks:        RETN
-import:         from AS9002 accept ANY
-export:         to AS9002 announce AS-YACLOUD
-remarks:        PITER-IX-MSK
-import:         from AS49869 accept AS-PITER-IX-MSK
-export:         to AS49869 announce AS-YACLOUD
-remarks:        PITER-IX-SPB
-import:         from AS50817 accept AS-PITER-IX-SPB
-export:         to AS50817 announce AS-YACLOUD
-remarks:        PITER-IX-TLL
-import:         from AS57936 accept AS-PITER-IX-TLL
-export:         to AS57936 announce AS-YACLOUD
-remarks:        PITER-IX-HEL
-import:         from AS39607 accept AS-PITER-IX-HEL
-export:         to AS39607 announce AS-YACLOUD
-remarks:        PITER-IX-RIX
-import:         from AS49634 accept AS-PITER-IX-RIGA
-export:         to AS49634 announce AS-YACLOUD
-remarks:        PITER-IX-FRA
-import:         from AS48193 accept AS-PITER-IX-FRA
-export:         to AS48193 announce AS-YACLOUD
-remarks:        GLOBALIX
-import:         from AS31500 accept AS-GLOBAL-NET
-export:         to AS31500 announce AS-YACLOUD
-remarks:        DATAIX
-import:         from AS50952 accept AS-DATAIX
-export:         to AS50952 announce AS-YACLOUD
 remarks:        GOOGLE
 import:         from AS15169 accept AS-GOOGLE
 export:         to AS15169 announce AS-YACLOUD
@@ -83,9 +59,6 @@ export:         to AS210656 announce ANY
 remarks:        DDOS-GUARD
 import:         from AS57724 accept AS-DDOS-GUARD
 export:         to AS57724 announce AS-YACLOUD
-remarks:        RUBY-AS
-import:         from AS57304 accept ANY
-export:         to AS57304 announce AS-YACLOUD
 remarks:        VMCITY
 import:         from AS51093 accept AS-VMCITY
 export:         to AS51093 announce AS-YACLOUD
@@ -119,9 +92,6 @@ export:         to AS24940 announce AS-YACLOUD
 remarks:        TELEGRAM
 import:         from AS62041 accept AS62041
 export:         to AS62041 announce AS-YACLOUD
-remarks:        Eurasia-Peering
-import:         from AS56931 accept AS-EURASIAPEERING_RS
-export:         to AS56931 announce AS-YACLOUD
 remarks:        MaxNet
 import:         from AS8636 accept AS-MAX
 export:         to AS8636 announce AS-YACLOUD
@@ -134,13 +104,49 @@ export:         to AS12695 announce AS-YACLOUD
 remarks:        MNOGOBYTE
 import:         from AS42632 accept AS-MNOGOBYTE
 export:         to AS42632 announce AS-YACLOUD
+remarks:        -----------------------------------
+remarks:        #                IX               #
+remarks:        -----------------------------------
+remarks:        MSK-IX
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-YACLOUD
+remarks:        CLOUD-IX
+import:         from AS29076 accept AS-CITYTELECOM
+export:         to AS29076 announce AS-YACLOUD
+remarks:        PITER-IX-MSK
+import:         from AS49869 accept AS-PITER-IX-MSK
+export:         to AS49869 announce AS-YACLOUD
+remarks:        PITER-IX-SPB
+import:         from AS50817 accept AS-PITER-IX-SPB
+export:         to AS50817 announce AS-YACLOUD
+remarks:        PITER-IX-TLL
+import:         from AS57936 accept AS-PITER-IX-TLL
+export:         to AS57936 announce AS-YACLOUD
+remarks:        PITER-IX-HEL
+import:         from AS39607 accept AS-PITER-IX-HEL
+export:         to AS39607 announce AS-YACLOUD
+remarks:        PITER-IX-RIX
+import:         from AS49634 accept AS-PITER-IX-RIGA
+export:         to AS49634 announce AS-YACLOUD
+remarks:        PITER-IX-FRA
+import:         from AS48193 accept AS-PITER-IX-FRA
+export:         to AS48193 announce AS-YACLOUD
+remarks:        GLOBALIX
+import:         from AS31500 accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-YACLOUD
+remarks:        DATAIX
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-YACLOUD
+remarks:        Eurasia-Peering
+import:         from AS56931 accept AS-EURASIAPEERING_RS
+export:         to AS56931 announce AS-YACLOUD
 admin-c:        YCNO1-RIPE
 tech-c:         YCNO1-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-yandexcloud-1
 created:        2018-08-02T07:20:49Z
-last-modified:  2024-07-29T13:36:36Z
+last-modified:  2024-08-02T14:58:28Z
 source:         RIPE
 
 organisation:   ORG-YL62-RIPE

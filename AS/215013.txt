@@ -14,22 +14,28 @@ source:         RIPE
 aut-num:        AS215013
 as-name:        YACLOUDCDN
 org:            ORG-YL62-RIPE
-remarks:        Yandex Cloud
-import:         from AS200350 accept AS-YACLOUD
-export:         to AS200350 announce AS215013
+remarks:        -----------------------------------
+remarks:        #             UPLINKS             #
+remarks:        -----------------------------------
 remarks:        Yandex Cloud Telecom
 import:         from AS202611 accept ANY
 export:         to AS202611 announce AS215013
 remarks:        Megafon
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS215013
+remarks:        -----------------------------------
+remarks:        #              PEERS              #
+remarks:        -----------------------------------
+remarks:        Yandex Cloud
+import:         from AS200350 accept AS-YACLOUD
+export:         to AS200350 announce AS215013
 admin-c:        YCNO1-RIPE
 tech-c:         YCNO1-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-yandexcloud-1
 created:        2024-04-29T10:52:25Z
-last-modified:  2024-07-23T16:46:32Z
+last-modified:  2024-08-02T15:00:18Z
 source:         RIPE
 
 organisation:   ORG-YL62-RIPE
