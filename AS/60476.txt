@@ -73,18 +73,6 @@ export:         to AS6695 announce AS-MYCOM
 import:         from AS6695 accept AS-DECIX
 mp-export:      afi ipv6.unicast to AS6695 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS6695 accept AS-DECIX-V6;
-export:         to AS43252 announce AS-MYCOM
-import:         from AS43252 accept AS-DECIX-HAM
-mp-export:      afi ipv6.unicast to AS43252 announce AS-MYCOM;
-mp-import:      afi ipv6.unicast from AS43252 accept AS-DECIX-HAM-V6;
-export:         to AS47228 announce AS-MYCOM
-import:         from AS47228 accept AS-DECIX-MUC
-mp-export:      afi ipv6.unicast to AS47228 announce AS-MYCOM;
-mp-import:      afi ipv6.unicast from AS47228 accept AS-DECIX-MUC-V6;
-export:         to AS56890 announce AS-MYCOM
-import:         from AS56890 accept AS-DECIX-DUS
-mp-export:      afi ipv6.unicast to AS56890 announce AS-MYCOM;
-mp-import:      afi ipv6.unicast from AS56890 accept AS-DECIX-DUS-V6;
 export:         to AS21385 announce AS-MYCOM
 import:         from AS21385 accept AS-TNIB
 export:         to AS39912 announce AS-MYCOM
@@ -502,7 +490,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-07-12T09:26:04Z
-last-modified:  2024-07-17T13:47:52Z
+last-modified:  2024-08-05T14:19:36Z
 source:         RIPE # Filtered
 
 organisation:   ORG-DTPL1-RIPE

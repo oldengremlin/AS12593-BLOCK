@@ -618,20 +618,10 @@ remarks:        SPB: SPB-IX RS & DIRECT PEERS
 remarks:        ============================================
 import:         from AS43690 action pref=250; accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-PIN-SPBIX
-import:         from AS35422 action pref=300; accept AS-PETERSTAR
-export:         to AS35422 announce AS-PIN-SPBIX
-import:         from AS39598 action pref=300; accept AS-TIERA
-export:         to AS39598 announce AS-PIN-SPBIX
-import:         from AS3277 action pref=300; accept AS-RUSNETIX
-export:         to AS3277 announce AS-PIN-SPBIX
-import:         from AS25520 action pref=300; accept AS-FUTURES
-export:         to AS25520 announce AS-PIN-SPBIX
 import:         from AS41025 action pref=300; accept AS-CIFRA-SPBIX
 export:         to AS41025 announce AS-PIN-SPBIX
 import:         from AS13302 action pref=300; accept AS-LINKEYCUS
 export:         to AS13302 announce AS-PIN-SPBIX
-import:         from AS39102 action pref=300; accept AS-NNZ
-export:         to AS39102 announce AS-PIN-SPBIX
 import:         from AS29329 action pref=300; accept AS-NODEX
 export:         to AS29329 announce AS-PIN-SPBIX
 import:         from AS35616 action pref=300; accept AS-SILVERNET
@@ -646,16 +636,10 @@ import:         from AS42668 action pref=300; accept AS42668
 export:         to AS42668 announce AS-PIN-SPBIX
 import:         from AS20903 action pref=300; accept AS-VMB-SERVICE
 export:         to AS20903 announce AS-PIN-SPBIX
-import:         from AS8402 action pref=300; accept AS-CORBINA
-export:         to AS8402 announce AS-PIN-SPBIX
 import:         from AS3267 action pref=300; accept AS-RUNNETIX
 export:         to AS3267 announce AS-PIN-SPBIX
 import:         from AS6690 action pref=300; accept AS-WEBPLUS
 export:         to AS6690 announce AS-PIN-SPBIX
-import:         from AS34102 action pref=300; accept AS-AWANTI
-export:         to AS34102 announce AS-PIN-SPBIX
-import:         from AS12418 action pref=300; accept AS-QUANTUM
-export:         to AS12418 announce AS-PIN-SPBIX
 import:         from AS28968 action pref=300; accept AS-EUT
 export:         to AS28968 announce AS-PIN-SPBIX
 import:         from AS45029 action pref=300; accept AS45029
@@ -698,6 +682,8 @@ remarks:        SPB: DIRECT PEERS
 remarks:        ============================================
 import:         from AS44068 action pref=300; accept ANY
 export:         to AS44068 announce AS-PIN
+import:         from AS34665 accept AS34665
+export:         to AS34665 announce AS-PIN
 remarks:        ============================================
 remarks:        MSK: MSK-IX RS & DIRECT PEERS
 remarks:        ============================================
@@ -806,7 +792,7 @@ mnt-by:         RIPE-NCC-END-MNT
 tech-c:         PIN44050-RIPE
 mnt-by:         MNT-PIN
 created:        2007-11-09T12:08:55Z
-last-modified:  2020-06-30T04:28:50Z
+last-modified:  2024-08-06T05:33:50Z
 source:         RIPE
 
 
@@ -1855,6 +1841,8 @@ import:         from AS64289 action pref=100; accept AS64289
 export:         to AS64289 announce as-piter-ix-msk
 import:         from AS41082 action pref=100; accept AS-URALTRANSCOM
 export:         to AS41082 announce as-piter-ix-msk
+import:         from AS56893 action pref=100; accept AS56893
+export:         to AS56893 announce as-piter-ix-msk
 remarks:
 remarks:        ~~~~~~~~~~~~~~ BGP communities ~~~~~~~~~~~~~~
 remarks:        * see whois for RIPE/AS50817
@@ -1868,7 +1856,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2024-06-11T13:07:57Z
+last-modified:  2024-08-07T16:37:25Z
 source:         RIPE
 
 
