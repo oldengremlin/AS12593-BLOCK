@@ -70,6 +70,10 @@ remarks:        Intersvyaz:
 import:         from AS8369 action pref=80; accept AS-INTERSVYAZ
 export:         to AS8369 announce AS-HYPERNET
 remarks:
+remarks:        K-Telecom:
+import:         from AS48642 action pref=80; accept AS-KT-RU
+export:         to AS48642 announce AS-HYPERNET
+remarks:
 remarks:        ------------------------------------------------------------
 remarks:        CUSTOMERS
 remarks:        ------------------------------------------------------------
@@ -104,6 +108,7 @@ remarks:        |
 remarks:        | Peer:
 remarks:        | 05 - DataIX (AS50952)
 remarks:        | 06 - Intersvyaz (AS8369)
+remarks:        | 07 - K-Telecom (AS48642)
 remarks:        |
 remarks:        | Customer:
 remarks:        | 10 - Static routes
@@ -129,6 +134,7 @@ remarks:        |
 remarks:        | Peer:
 remarks:        | 05 - DataIX (AS50952)
 remarks:        | 06 - Intersvyaz (AS8369)
+remarks:        | 07 - K-Telecom (AS48642)
 remarks:        | 99 - All peers
 remarks:        |
 remarks:        | A - action:
@@ -166,7 +172,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         HYPERNET-MNT
 created:        2006-04-24T08:36:49Z
-last-modified:  2024-05-07T08:44:30Z
+last-modified:  2024-08-05T12:09:29Z
 source:         RIPE
 
 

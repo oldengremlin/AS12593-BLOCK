@@ -340,9 +340,6 @@ remarks:        -PEERING-FIBERSIDE-
 import:         from AS49037 accept  AS-PG19
 export:         to AS49037 announce AS-ERTH
 remarks:        -PEERING-PG19-
-import:         from AS201512 accept AS201512
-export:         to AS201512 announce AS-ERTH
-remarks:        -PEERING-WILDBERRIES-
 import:         from AS50477 accept AS-SET-SVEN
 export:         to AS50477 announce AS-ERTH
 remarks:        -PEERING-SVYAZ-ENERGO-
@@ -1922,6 +1919,12 @@ remarks:        -DOWNSTREAM-CATTECHNOLOGIES-
 import:         from AS208312 accept AS208312
 export:         to AS208312 announce ANY
 remarks:        -DOWNSTREAM-REDBYTES-
+import:         from AS201512 accept AS201512
+export:         to AS201512 announce any
+remarks:        -DOWNSTREAM-WILDBERRIES-
+import:         from AS209885 accept AS209885
+export:         to AS209885 announce any
+remarks:        -DOWNSTREAM-AICTIOKO-
 remarks:        ========================================================
 remarks:        Control community for Customers
 remarks:
@@ -2079,7 +2082,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ERTH-MAGISTR
 created:        2011-10-13T07:43:18Z
-last-modified:  2024-08-02T06:55:44Z
+last-modified:  2024-08-06T09:51:54Z
 source:         RIPE
 
 organisation:   ORG-RA21-RIPE

@@ -15,47 +15,12 @@ aut-num:        AS3058
 as-name:        RAS-AS
 descr:          Joint SuperComputer Center of the Russian Academy of Sciences
 org:            ORG-CR1-RIPE
-import:         from AS12724 action pref=100; accept AS12724
-import:         from AS2148 action pref=100; accept AS2148
-import:         from AS2683 action pref=100; accept AS-RADIOMSU
-import:         from AS2848 action pref=100; accept AS-MSURUNNET
-import:         from AS3218 action pref=100; accept AS-COSMOS
-import:         from AS3267 action pref=100; accept ANY
-import:         from AS34862 action pref=100; accept AS34862
-import:         from AS41892 action pref=100; accept AS41892
-import:         from AS2895 action pref=100; accept AS-FREENET
-import:         from AS8409 action pref=200; accept AS8409
-import:         from AS34862 action pref=200; accept AS34862
-import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
-import:         from AS49458 accept ANY
-import:         from AS12938 action pref=100; accept AS12938
-import:         from AS34017 action pref=150; accept AS34017
-import:         from AS5387 action pref=150; accept AS-NSC-IX-SET
-import:         from AS59624 accept AS-KIAE-GRID
-import:         from AS49554 action pref=200; accept AS49554
-export:         to AS12724 announce ANY
-export:         to AS2148 announce ANY
-export:         to AS2683 announce AS-RASNET
-export:         to AS2848 announce AS-RASNET
-export:         to AS3218 announce AS-RASNET AND AS-NSC-IX-SET AND AS34017
-export:         to AS3267 announce AS-RASNET
-export:         to AS41892 announce ANY
-export:         to AS2895 announce AS3058
-export:         to AS34862 announce ANY
-export:         to AS12938 announce ANY
-export:         to AS8631 announce AS-RASNET-COM
-export:         to AS49458 announce AS-ACNETRU
-export:         to AS34017 announce AS-RASNET AND AS-NSC-IX-SET AND AS-COSMOS
-export:         to AS5387 announce AS-RASNET AND AS34017 AND AS-COSMOS
-export:         to AS59624 announce AS-RASNET
-export:         to AS49554 announce ANY
-default:        to AS3267 action pref=100; networks ANY
-admin-c:        RN3336-RIPE
-tech-c:         RN3336-RIPE
+admin-c:        RUN3-RIPE
+tech-c:         RUN3-RIPE
 status:         LEGACY
-mnt-by:         AS3058-MNT
+mnt-by:         INFR-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2020-11-13T12:07:14Z
+last-modified:  2024-08-05T09:48:46Z
 source:         RIPE
 
 organisation:   ORG-CR1-RIPE
@@ -79,16 +44,22 @@ created:        2004-04-17T11:57:00Z
 last-modified:  2024-04-08T12:23:53Z
 source:         RIPE # Filtered
 
-role:           RASNET NOC
-address:        Leninskii 32a,
-address:        119991 Moscow, Russia
-abuse-mailbox:  abuse@rasnet.ru
-nic-hdl:        RN3336-RIPE
-admin-c:        AG20
-tech-c:         AS10629-RIPE
-mnt-by:         AS3058-MNT
-created:        2014-07-07T11:06:59Z
-last-modified:  2020-10-08T14:06:10Z
+role:           NIKS NOC
+remarks:        Russian Federal University Network
+address:        Brusov per., 21-2,
+address:        125009
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74959692617
+fax-no:         +74959692617
+nic-hdl:        RUN3-RIPE
+org:            ORG-CR1-RIPE
+tech-c:         VM5808-RIPE
+tech-c:         sag150-RIPE
+abuse-mailbox:  incident@runnet.ru
+mnt-by:         INFR-MNT
+created:        2018-08-07T20:09:51Z
+last-modified:  2024-02-11T08:48:02Z
 source:         RIPE # Filtered
 
 

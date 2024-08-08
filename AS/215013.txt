@@ -17,25 +17,22 @@ org:            ORG-YL62-RIPE
 remarks:        -----------------------------------
 remarks:        #             UPLINKS             #
 remarks:        -----------------------------------
+remarks:        Yandex Cloud
+import:         from AS200350 accept ANY
+export:         to AS200350 announce AS215013:AS-YCCDN
 remarks:        Yandex Cloud Telecom
 import:         from AS202611 accept ANY
-export:         to AS202611 announce AS215013
+export:         to AS202611 announce AS215013:AS-YCCDN
 remarks:        Megafon
 import:         from AS31133 accept ANY
-export:         to AS31133 announce AS215013
-remarks:        -----------------------------------
-remarks:        #              PEERS              #
-remarks:        -----------------------------------
-remarks:        Yandex Cloud
-import:         from AS200350 accept AS-YACLOUD
-export:         to AS200350 announce AS215013
+export:         to AS31133 announce AS215013:AS-YCCDN
 admin-c:        YCNO1-RIPE
 tech-c:         YCNO1-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-yandexcloud-1
 created:        2024-04-29T10:52:25Z
-last-modified:  2024-08-02T15:00:18Z
+last-modified:  2024-08-07T08:24:46Z
 source:         RIPE
 
 organisation:   ORG-YL62-RIPE

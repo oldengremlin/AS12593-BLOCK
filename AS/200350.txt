@@ -29,6 +29,9 @@ export:         to AS12389 announce AS-YACLOUD
 remarks:        -----------------------------------
 remarks:        #              PEERS              #
 remarks:        -----------------------------------
+remarks:        Yandex Telecom
+import:         from AS202611 accept AS202611:AS-YCTL
+export:         to AS202611 announce AS-YACLOUD
 remarks:        YANDEX
 import:         from AS13238 accept AS-YANDEX
 export:         to AS13238 announce AS-YACLOUD
@@ -50,12 +53,6 @@ export:         to AS15169 announce AS-YACLOUD
 remarks:        VK
 import:         from AS47764 accept AS-MAILRU
 export:         to AS47764 announce AS-YACLOUD
-remarks:        Yandex Telecom
-import:         from AS202611 accept AS202611:AS-YCTL
-export:         to AS202611 announce AS-YACLOUD
-remarks:        Yandex Cloud BMS
-import:         from AS210656 accept AS-YACLOUD
-export:         to AS210656 announce ANY
 remarks:        DDOS-GUARD
 import:         from AS57724 accept AS-DDOS-GUARD
 export:         to AS57724 announce AS-YACLOUD
@@ -140,13 +137,22 @@ export:         to AS50952 announce AS-YACLOUD
 remarks:        Eurasia-Peering
 import:         from AS56931 accept AS-EURASIAPEERING_RS
 export:         to AS56931 announce AS-YACLOUD
+remarks:        -----------------------------------
+remarks:        #            DOWNLINKS            #
+remarks:        -----------------------------------
+remarks:        Yandex Cloud CDN
+import:         from AS215013 accept AS215013:AS-YCCDN
+export:         to AS215013 announce ANY
+remarks:        Yandex Cloud BMS
+import:         from AS210656 accept AS210656:AS-YACLOUDBMS
+export:         to AS210656 announce ANY
 admin-c:        YCNO1-RIPE
 tech-c:         YCNO1-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-yandexcloud-1
 created:        2018-08-02T07:20:49Z
-last-modified:  2024-08-02T14:58:28Z
+last-modified:  2024-08-07T08:25:39Z
 source:         RIPE
 
 organisation:   ORG-YL62-RIPE

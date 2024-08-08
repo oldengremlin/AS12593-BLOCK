@@ -24,6 +24,8 @@ remarks:        -======= ER-TELECOM ========-
 import:         from AS9049 action pref=100; accept ANY
 remarks:        -======= VIMPELCOM ========-
 import:         from AS3216 action pref=100; accept ANY
+remarks:        -======= ROSTELECOM ========-
+import:         from AS12389 action pref=100; accept ANY
 remarks:        -====== STROYPOARK ======-
 export:         to AS49987 announce AS-TOMICA
 remarks:        -======= MTS ========-
@@ -31,9 +33,11 @@ export:         to AS8359 announce AS-TOMICA
 remarks:        -======= MEGAFON ========-
 export:         to AS31133 announce AS-TOMICA
 remarks:        -======= ER-TELECOM ========-
-export:         to  AS9049 announce AS-TOMICA
+export:         to AS9049 announce AS-TOMICA
 remarks:        -======= VIMPELCOM ========-
 export:         to AS3216 announce AS-TOMICA
+remarks:        -======= ROSTELECOM ========-
+export:         to AS12389 announce AS-TOMICA
 org:            ORG-LCIA1-RIPE
 admin-c:        TM458236-RIPE
 tech-c:         TM458236-RIPE
@@ -41,7 +45,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TOMICA-MNT
 created:        2004-04-23T13:58:34Z
-last-modified:  2023-11-26T15:03:23Z
+last-modified:  2024-08-05T08:43:51Z
 source:         RIPE
 
 organisation:   ORG-LCIA1-RIPE
