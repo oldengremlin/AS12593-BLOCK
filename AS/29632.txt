@@ -146,6 +146,9 @@ export:         to AS44042 announce AS-NETASSIST
 remarks:        -= DTEL-IX PINSpb private peer =-
 import:         from AS44050 action pref=100; accept any
 export:         to AS44050 announce any
+remarks:        -= Hetzner mutual PNI =-
+import:         from AS24940 action pref=100; accept AS-HETZNER
+export:         to AS24940 announce AS-NETASSIST
 remarks:        ---------------------------------------------
 remarks:        IPv4 Peering
 remarks:        ---------------------------------------------
@@ -268,6 +271,9 @@ export:         to AS21411 announce ANY
 remarks:        -= Status =-
 import:         from AS25482 action pref=100; accept AS25482:AS-CUSTOMERS
 export:         to AS25482 announce ANY
+remarks:        -= GlobalTechUkraine =-
+import:         from AS28773 action pref=100; accept AS-MASTER
+export:         to AS28773 announce ANY
 remarks:        -= Synapse =-
 import:         from AS29107 action pref=100; accept AS-SYNAPSE
 export:         to AS29107 announce ANY
@@ -541,6 +547,9 @@ mp-export:      afi ipv6.unicast to AS16628 announce ANY
 remarks:        -= PT Cakra Lintas Nusantara =-
 mp-import:      afi ipv6.unicast from AS24206 action pref=100; accept AS24206
 mp-export:      afi ipv6.unicast to AS24206 announce ANY
+remarks:        -= GlobalTechUkraine =-
+mp-import:      afi ipv6.unicast from AS28773 action pref=100; accept AS-GTU-v6
+mp-export:      afi ipv6.unicast to AS28773 announce ANY
 remarks:        -= CableTV =-
 mp-import:      afi ipv6.unicast from AS30779 action pref=100; accept AS-INET-UA
 mp-export:      afi ipv6.unicast to AS30779 announce ANY
@@ -1380,7 +1389,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEREZHA-MNT
 created:        2003-10-28T13:43:45Z
-last-modified:  2024-07-08T15:31:42Z
+last-modified:  2024-08-09T16:06:53Z
 source:         RIPE # Filtered
 
 organisation:   ORG-NL366-RIPE
