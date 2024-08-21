@@ -2,3 +2,34 @@
 
 
 
+aut-num:        AS34139
+as-name:        TSINET-AS
+remarks:
+remarks:        Upstream
+remarks:
+import:         from AS34123 action pref=0; accept ANY
+export:         to AS34123 announce AS-TSI
+import:         from AS31133 action pref=0; accept ANY
+export:         to AS31133 announce AS-TSI
+import:         from AS20485 action pref=0; accept ANY
+export:         to AS20485 announce AS-TSI
+import:         from AS8631 action pref=50; accept ANY
+export:         to AS863 announce AS-TSI
+remarks:
+remarks:        Peering
+remarks:
+import:         from AS8631 action pref=100; accept ANY
+export:         to AS8631 announce AS-TSI
+org:            ORG-CS24-RIPE
+admin-c:        BEL13-RIPE
+tech-c:         BEL13-RIPE
+tech-c:         MKS69-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TSINET-MNT
+created:        2004-11-03T14:48:03Z
+last-modified:  2024-08-20T16:09:33Z
+source:         RIPE
+
+
+

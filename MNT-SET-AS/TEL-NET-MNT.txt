@@ -2,3 +2,304 @@
 
 
 
+aut-num:        AS206630
+as-name:        STD-TLC-NET
+org:            ORG-CJCT2-RIPE
+import:         from AS31430 accept ANY
+export:         to AS31430 announce AS206630
+admin-c:        AMB98-RIPE
+tech-c:         AMB98-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TEL-NET-MNT
+created:        2016-12-07T08:50:22Z
+last-modified:  2020-12-15T09:14:40Z
+source:         RIPE
+sponsoring-org: ORG-OS214-RIPE
+
+
+
+aut-num:        AS31430
+as-name:        TEL-NET-AS
+org:            ORG-OS214-RIPE
+remarks:        --------------------------------------------------------------
+remarks:        **** IPv4 & IPv6 Routing Policy ****
+remarks:        from IPv4 Please see as-set: AS-TEL-NET
+remarks:        from IPv6 Please see as-set: AS-TEL-NET-V6
+remarks:        ---------------------------------------------------------------
+remarks:        Upstreams
+remarks:        ---------------------------------------------------------------
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS3216 accept ANY
+mp-export:      afi ipv6 to AS3216 announce AS-TEL-NET-V6
+import:         from AS8732 accept ANY
+export:         to AS8732 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS8732 accept ANY
+mp-export:      afi ipv6 to AS8732 announce AS-TEL-NET-V6
+import:         from AS20764 accept ANY
+export:         to AS20764 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS20764 accept ANY
+mp-export:      afi ipv6 to AS20764 announce AS-TEL-NET-V6
+import:         from AS52201 accept ANY
+export:         to AS52201 announce ANY
+mp-import:      afi ipv6 from AS52201 accept ANY
+mp-export:      afi ipv6 to AS52201 announce ANY
+import:         from AS28917 accept ANY
+export:         to AS28917 announce AS-TEL-NET
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-TEL-NET
+remarks:        ---------------------------------------------------------------
+remarks:        MSK-IX peers
+remarks:        ---------------------------------------------------------------
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6 to AS8631 announce AS-TEL-NET-V6
+remarks:        --------  RUNNET -----------
+import:         from AS3267 accept AS-RUNNETIX
+export:         to AS3267 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS3267 accept AS-RUNNETIX
+mp-export:      afi ipv6 to AS3267 announce AS-TEL-NET-V6
+remarks:        -------  YANDEX -------
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-TEL-NET
+import:         from AS5467 accept AS-MIPT
+export:         to AS5467 announce AS-TEL-NET
+remarks:        ------- Amazon IVS / Twitch -------
+import:         from AS46489 accept AS-TWITCH
+export:         to AS46489 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS46489 accept AS-TWITCH
+mp-export:      afi ipv6 to AS46489 announce AS-TEL-NET-V6
+remarks:        ---------------------------------------------------------------
+remarks:        Other IX
+remarks:        ---------------------------------------------------------------
+remarks:        W-IX
+remarks:        ----------------------------
+import:         from AS50384 accept ANY
+export:         to AS50384 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS50384 accept ANY
+mp-export:      afi ipv6 to AS50384 announce AS-TEL-NET-V6
+remarks:        ----------------------------
+remarks:        PITER-IX
+remarks:        ----------------------------
+remarks:        PITER-IX Moscow
+remarks:        ----------------------------
+import:         from AS49869 accept as-piter-ix
+export:         to AS49869 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS49869 accept as-piter-ix-msk
+mp-export:      afi ipv6 to AS49869 announce AS-TEL-NET-V6
+remarks:        ------- Amazon IVS / Twitch -------
+import:         from AS46489 accept AS-TWITCH
+export:         to AS46489 announce AS-TEL-NET
+remarks:        ------- Hurricane Electric  -------
+import:         from AS6939 accept AS-HURRICANE
+export:         to AS6939 announce AS-TEL-NET
+remarks:        ----------------------------
+remarks:        PITER-IX  HELSINKI
+remarks:        ----------------------------
+import:         from AS39607 accept as-piter-ix-helsinki
+export:         to AS39607 announce AS-TEL-NET
+remarks:        ----------------------------
+remarks:        PITER-IX  SPB
+remarks:        ----------------------------
+import:         from AS50817 accept as-piter-ix
+export:         to AS50817 announce AS-TEL-NET
+remarks:        ----------------------------
+remarks:        Eurasia-Peering
+remarks:        ----------------------------
+import:         from AS56931 accept AS-EURASIAPEERING_RS
+export:         to AS56931 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS56931 accept AS-EURASIAPEERING_RS
+mp-export:      afi ipv6 to AS5693 announce AS-TEL-NET-V6
+remarks:        ---------  Apple Inc. -------
+import:         from AS714 accept AS-APPLE
+export:         to AS714 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS714 accept AS-APPLE
+mp-export:      afi ipv6 to AS714 announce AS-TEL-NET-V6
+remarks:        ----------------------------
+remarks:        LINXDATACENTER-IX
+remarks:        ----------------------------
+import:         from AS207362 accept AS207362
+export:         to AS207362 announce AS-TEL-NET
+remarks:        ---------------------------------------------------------------
+remarks:        Peers
+remarks:        ---------------------------------------------------------------
+import:         from AS8331 accept AS-RINET
+export:         to AS8331 announce AS-TEL-NET
+import:         from AS8641 accept AS-NAUKANET
+export:         to AS8641 announce AS-TEL-NET
+import:         from AS200976 accept AS-LIFESTREAM
+export:         to AS200976 announce AS-TEL-NET
+remarks:        ----------------------------------------------------------------------------
+remarks:        BGP communities in advertisements forwards downstream
+remarks:        ----------------------------------------------------------------------------
+remarks:        1.Route type:
+remarks:        31430:1xxx IX peers
+remarks:        Where xxx the route from:
+remarks:        001 - MSK-IX (AS8631)
+remarks:        002 - W-IX (AS50384)
+remarks:        004 - PITER-IX (AS50817)
+remarks:        005 - Eurasia-Peering (AS56931)
+remarks:        006 - LINXDATACENTER-IX (AS207362)
+remarks:        2.Route type:
+remarks:        31430:2xxx upstream
+remarks:        Where xxx the route from:
+remarks:        201 - TKTEL (52201)
+remarks:        903 - BEELINE (AS3216)
+remarks:        732 - COMCOR (AS8732)
+remarks:        764 - RASCOM (AS20764)
+remarks:        297 - FIORD (AS28917)
+remarks:        123 -  ROSTELECOM (AS12389)
+remarks:        -----------------------------------------------------------------
+remarks:        BGP communities are accepted from downstream
+remarks:        -----------------------------------------------------------------
+remarks:        31430:50 Backup Community
+remarks:        31430:666 Blackhole Community ( netmask /32 only )
+remarks:        31430:1xxxy Common, prepending to IX peers, where
+remarks:        xxx the route has been received IX peers
+remarks:        y = 0 do not advertise to 1xxx
+remarks:        y = 1,2,3 prepend a times 31430
+remarks:        31430:2xxxy Common, prepending to upstream , where
+remarks:        xxx the route has been received upstream
+remarks:        y = 0 do not advertise to 2xxx
+remarks:        y = 1,2,3 prepend a times 31430
+remarks:        ----------------------------------------------------------------
+remarks:        Contacts and URLs:
+remarks:        ---------------------------------------------------------------
+remarks:        Web Site http://www.tel.ru
+remarks:        Looking Glass http://lg.tel.ru
+remarks:        Routing issues noc@tel.ru
+remarks:        ---------------------------------------------------------------
+admin-c:        SC22313-RIPE
+tech-c:         SC22313-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TEL-NET-MNT
+created:        2010-09-29T10:52:42Z
+last-modified:  2023-12-04T13:53:58Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS50739
+as-name:        ITTIT-AS
+org:            ORG-OS214-RIPE
+import:         from AS31430 accept ANY
+export:         to AS31430 announce AS50739
+admin-c:        SC22313-RIPE
+tech-c:         SC22313-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TEL-NET-MNT
+created:        2010-03-18T08:49:00Z
+last-modified:  2020-12-16T08:43:17Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS52201
+as-name:        TCTEL
+remarks:        Closed joint-stock company "Telecommunication company TEL"
+org:            ORG-OS214-RIPE
+remarks:        ---------------------------------------------------------------
+remarks:        **** IPv4 Routing Policy ****
+remarks:        from IPv4 Please see as-set: AS-TCTEL
+remarks:        from IPv6 Please see as-set: AS-TCTEL-V6
+remarks:        ---------------------------------------------------------------
+remarks:        Upstreams
+remarks:        ---------------------------------------------------------------
+import:         from AS31430 accept ANY
+export:         to AS31430 announce AS-TCTEL
+mp-import:      afi ipv6 from AS31430 accept ANY
+mp-export:      afi ipv6 to AS31430 announce ANY
+import:         from AS28917 accept ANY
+export:         to AS28917 announce AS-TCTEL
+remarks:        ---------------------------------------------------------------
+remarks:        Eurasia-Peering
+remarks:        ----------------------
+import:         from AS56931 accept AS-EURASIAPEERING_RS
+export:         to AS56931 announce AS-TCTEL
+mp-import:      afi ipv6 from AS56931 accept AS-EURASIAPEERING_RS
+mp-export:      afi ipv6 to AS5693 announce AS-TCTEL-V6
+remarks:        ----------------------
+remarks:        PITER-IX
+remarks:        ----------------------
+remarks:        PITER-IX Moscow
+remarks:        ----------------------
+import:         from AS49869 accept as-piter-ix
+export:         to AS49869 announce AS-TCTEL
+mp-import:      afi ipv6 from AS49869 accept as-piter-ix-msk
+mp-export:      afi ipv6 to AS49869 announce AS-TCTEL-V6
+remarks:        ----------------------------
+remarks:        PITER-IX  HELSINKI
+remarks:        ----------------------------
+import:         from AS39607 accept as-piter-ix-helsinki
+export:         to AS39607 announce AS-TCTEL
+remarks:        ----------------------------
+remarks:        PITER-IX  SPB
+remarks:        ----------------------------
+import:         from AS50817 accept as-piter-ix
+export:         to AS50817 announce AS-TCTEL
+remarks:        ----------------------------
+remarks:        PITER-IX  FRA
+import:         from AS48193 accept as-piter-ix-fra
+export:         to AS48193 announce AS-TCTEL
+remarks:        ----------------------
+remarks:        W-IX
+remarks:        ---------------------
+import:         from AS50384 accept ANY
+export:         to AS50384 announce AS-TCTEL
+mp-import:      afi ipv6 from AS50384 accept ANY
+mp-export:      afi ipv6 to AS50384 announce AS-TCTEL-V6
+remarks:        ----------------------------
+remarks:        LINXDATACENTER-IX
+remarks:        ----------------------------
+import:         from AS207362 accept AS207362
+export:         to AS207362 announce AS-TEL-NET
+remarks:        ---------------------------------------------------------------------------
+remarks:        BGP communities in advertisements fowrards downstream
+remarks:        ----------------------------------------------------------------------------
+remarks:        1.Route type:
+remarks:        52201:1xxx IX peers
+remarks:        Where xxx the route from:
+remarks:        003 - Eurasia-Peering (AS56931)
+remarks:        004 - Piter-IX (AS50817)
+remarks:        005 - W-IX (AS50384)
+remarks:        006 - LINXDATACENTER-IX (AS207362)
+remarks:        2.Route type:
+remarks:        52201:2xxx upstream
+remarks:        Where xxx the route from:
+remarks:        430 - TEL (31430)
+remarks:        297 - FIORD (AS28917)
+remarks:        ----------------------------------------------------------------
+remarks:        BGP communities are accepted from downstream
+remarks:        ----------------------------------------------------------------
+remarks:        52201:50 Backup Community
+remarks:        52201:666 Blackhole Community ( /32 only )
+remarks:        52201:1xxxy Common, prepending to IX peers, where
+remarks:        xxx the route has been received IX peers
+remarks:        y = 0 do not advertise to 1xxx
+remarks:        y = 1,2,3 prepend a times 52201
+remarks:        52201:2xxxy Common, prepending to upstream , where
+remarks:        xxx the route has been received upstream
+remarks:        y = 0 do not advertise to 2xxx
+remarks:        y = 1,2,3 prepend a times 52201
+remarks:        ---------------------------------------------------------------
+remarks:        Contacts and URLs:
+remarks:        ---------------------------------------------------------------
+remarks:        Web Site http://hosting.tel.ru
+remarks:        Looking Glass http://lg.tel.ru
+remarks:        Routing issues noc@tel.ru
+remarks:        ---------------------------------------------------------------
+admin-c:        SC22313-RIPE
+tech-c:         SC22313-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TEL-NET-MNT
+created:        2011-01-25T13:42:24Z
+last-modified:  2023-09-11T14:43:27Z
+source:         RIPE
+
+
+

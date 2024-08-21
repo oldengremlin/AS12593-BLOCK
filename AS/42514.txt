@@ -34,6 +34,13 @@ export:         to AS8359 announce AS-SIGNALTV
 mp-import:      from AS8359 action pref=100; accept ANY AND NOT {::/0}
 mp-export:      to AS8359 announce AS-SIGNALTV
 remarks:
+remarks:        --- Peers ---
+remarks:
+import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-SIGNALTV
+mp-import:      from AS8631 action pref=200; accept AS-MSKROUTESERVER
+mp-export:      to AS8631 announce AS-SIGNALTV
+remarks:
 remarks:        --- Clients ---
 remarks:
 import:         from AS197717 action pref=300; accept AS197717
@@ -64,11 +71,30 @@ remarks:        | x = 0 - don't advertise
 remarks:        | x = 1,2,3,4 or 5 - prepend 42514 (1,2,3,4 or 5) times
 remarks:        +-------------------------------------------------------+
 remarks:
+remarks:
+remarks:        +-------------------------------------------------------+
+remarks:        | Community from PEERS
+remarks:        +-------------------------------------------------------+
+remarks:        | 42514:3146 - MSK-IX (AS8631)
+remarks:        +-------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------+
+remarks:        | Community to PEERS
+remarks:        +-------------------------------------------------------+
+remarks:        | 42514:931x - MSK (AS8631)
+remarks:        |
+remarks:        | x - action:
+remarks:        | x = 0 - don't advertise
+remarks:        | x = 1,2,3,4 or 5 - prepend 42514 (1,2,3,4 or 5) times
+remarks:        +-------------------------------------------------------+
+remarks:
+remarks:
 remarks:        +-------------------------------------------------------+
 remarks:        | Community from CLIENTS
 remarks:        +-------------------------------------------------------+
 remarks:        | 42514:4146 - MGOK (AS197717)
 remarks:        +-------------------------------------------------------+
+remarks:
 remarks:
 remarks:        +-------------------------------------------------------+
 remarks:        | Contacts
@@ -78,13 +104,14 @@ remarks:        | NOC noc@signaltv.net
 remarks:        | Customer Support support@signaltv.net
 remarks:        +-------------------------------------------------------+
 remarks:
+remarks:
 admin-c:        SLLC-RIPE
 tech-c:         SLLC-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIGNAL-MNT
 created:        2007-03-05T15:16:39Z
-last-modified:  2024-07-30T22:11:41Z
+last-modified:  2024-08-20T11:30:41Z
 source:         RIPE
 
 organisation:   ORG-SL188-RIPE
