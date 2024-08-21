@@ -501,6 +501,10 @@ import:         from AS137409 action pref=87; accept AS137409:AS-ALL
 export:         to AS137409 announce AS-SOVAM
 mp-import:      afi ipv6 from AS137409 action pref=87; accept AS137409:AS-ALL
 mp-export:      afi ipv6 to AS137409 announce AS-SOVAM-V6
+import:         from AS13213 action pref=87; accept AS-UK2NET
+export:         to AS13213 announce AS-SOVAM
+mp-import:      afi ipv6 from AS13213 action pref=87; accept AS-UK2NET
+mp-export:      afi ipv6 to AS13213 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(DE-CIX)
 remarks:
@@ -544,10 +548,6 @@ mp-import:      afi ipv6 from AS7342 action pref=90; accept AS-GTLD
 mp-export:      afi ipv6 to AS7342 announce AS-SOVAM-V6
 import:         from AS7342 action pref=90; accept AS-GTLD
 export:         to AS7342 announce AS-SOVAM
-mp-import:      afi ipv6 from AS13213 action pref=90; accept AS-UK2NET
-mp-export:      afi ipv6 to AS13213 announce AS-SOVAM-V6
-import:         from AS13213 action pref=90; accept AS-UK2NET
-export:         to AS13213 announce AS-SOVAM
 import:         from AS46489 action pref=90; accept AS46489
 export:         to AS46489 announce AS-SOVAM
 import:         from AS39743 action pref=90; accept AS-VOXILITY-SET
@@ -792,6 +792,10 @@ import:         from AS2906 action pref=87; accept AS-NFLX
 export:         to AS2906 announce AS-SOVAM
 mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
 mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
+import:         from AS13213 action pref=87; accept AS-UK2NET
+export:         to AS13213 announce AS-SOVAM
+mp-import:      afi ipv6 from AS13213 action pref=87; accept AS-UK2NET
+mp-export:      afi ipv6 to AS13213 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(LINX)
 remarks:
@@ -1225,6 +1229,14 @@ import:         from AS213035 action pref=87; accept AS-SERVERION
 export:         to AS213035 announce AS-SOVAM
 mp-import:      afi ipv6 from AS213035 action pref=87; accept AS-SERVERION
 mp-export:      afi ipv6 to AS213035 announce AS-SOVAM-V6
+import:         from AS48925 action pref=87; accept AS48925:AS-VIBEGAMES
+export:         to AS48925 announce AS-SOVAM
+mp-import:      afi ipv6 from AS48925 action pref=87; accept AS48925:AS-VIBEGAMES
+mp-export:      afi ipv6 to AS48925 announce AS-SOVAM-V6
+import:         from AS13213 action pref=87; accept AS-UK2NET
+export:         to AS13213 announce AS-SOVAM
+mp-import:      afi ipv6 from AS13213 action pref=87; accept AS-UK2NET
+mp-export:      afi ipv6 to AS13213 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(AMS-IX)
 remarks:
@@ -1656,9 +1668,13 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS41148 action pref=100; accept AS-ZL
+export:         to AS41148 announce ANY
+import:         from AS13105 action pref=100; accept AS13105
+export:         to AS13105 announce ANY
 import:         from AS198842 action pref=100; accept AS198842
 export:         to AS198842 announce ANY
-import:         from AS196750 action pref=100; accept AS196750
+import:         from AS196750 action pref=100; accept AS-WEBA
 export:         to AS196750 announce AS-SOVAM
 import:         from AS207056 action pref=100; accept AS-BONCH-IT
 export:         to AS207056 announce ANY
@@ -5539,7 +5555,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-08-14T12:57:47Z
+last-modified:  2024-08-20T13:52:03Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

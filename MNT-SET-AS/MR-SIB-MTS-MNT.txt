@@ -2,3 +2,138 @@
 
 
 
+aut-num:        AS28884
+as-name:        MR-SIB-MTSAS
+descr:          MR Sibir
+remarks:        --- Upstreams ---
+import:         from AS8359 action pref=200; accept ANY
+export:         to AS8359 announce AS-SIBMTS
+mp-import:      afi ipv6.unicast from AS8359 action pref=200; accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-SIBMTS-V6
+remarks:        --- Peering ---
+import:         from AS8848 action pref=500; accept AS8848
+export:         to AS8848 announce AS-SIBMTS
+remarks:        --- Clients ---
+import:         from AS41771 action pref=1000; accept AS-MKC-OMSK
+export:         to AS41771 announce ANY
+import:         from AS49154 action pref=1000; accept AS-STRKEM
+export:         to AS49154 announce ANY
+import:         from AS48541 action pref=1000; accept AS48541
+export:         to AS48541 announce ANY
+import:         from AS21365 action pref=1000; accept AS-inteleca
+export:         to AS21365 announce ANY
+import:         from AS30922 action pref=1000; accept AS-SIBELTELECOM
+export:         to AS30922 announce ANY
+import:         from AS51086 action pref=1000; accept AS-Scatplus
+export:         to AS51086 announce ANY
+mp-import:      afi ipv6.unicast from AS51086 action pref=1000; accept AS-Scatplus
+mp-export:      afi ipv6.unicast to AS51086 announce ANY
+import:         from AS12772 action pref=1000; accept AS-ENFORTA
+export:         to AS12772 announce ANY
+import:         from AS61118 action pref=1000; accept AS61118
+export:         to AS61118 announce ANY
+import:         from AS196986 action pref=1000; accept AS196986
+export:         to AS196986 announce ANY
+import:         from AS41311 action pref=1000; accept AS-CSIT
+export:         to AS41311 announce ANY
+import:         from AS5473 action pref=1000; accept AS5473
+export:         to AS5473 announce ANY
+import:         from AS42087 action pref=1000; accept AS42087 AS212275
+export:         to AS42087 announce ANY
+import:         from AS201786 action pref=1000; accept AS201786
+export:         to AS201786 announce ANY
+import:         from AS39121 action pref=1000; accept AS-TPTUS
+export:         to AS39121 announce ANY
+import:         from AS57552 action pref=1000; accept AS57552
+export:         to AS57552 announce ANY
+import:         from AS198021 action pref=1000; accept AS198021
+export:         to AS198021 announce ANY
+import:         from AS29147 action pref=1000; accept AS-NSTU
+export:         to AS29147 announce ANY
+mp-import:      afi ipv6.unicast from AS29147 action pref=1000; accept AS29147
+mp-export:      afi ipv6.unicast to AS29147 announce ANY
+import:         from AS15850 action pref=1000; accept AS15850
+export:         to AS15850 announce ANY
+import:         from AS34671 action pref=1000; accept AS34671
+export:         to AS34671 announce ANY
+import:         from AS34490 action pref=1000; accept AS34490
+export:         to AS34490 announce ANY
+import:         from AS202999 action pref=1000; accept AS202999
+export:         to AS202999 announce ANY
+import:         from AS43552 action pref=1000; accept AS43552
+export:         to AS43552 announce ANY
+import:         from AS50567 action pref=1000; accept AS50567
+export:         to AS50567 announce ANY
+import:         from AS206871 action pref=1000; accept AS206871
+export:         to AS206871 announce ANY
+import:         from AS50860 action pref=1000; accept AS50860
+export:         to AS50860 announce ANY
+import:         from AS197880 action pref=1000; accept AS197880
+export:         to AS197880 announce ANY
+import:         from AS34336 action pref=1000; accept AS34336
+export:         to AS34336 announce ANY
+import:         from AS9006 action pref=1000; accept AS9006
+export:         to AS9006 announce ANY
+import:         from AS205076 action pref=1000; accept AS205076
+export:         to AS205076 announce ANY
+mp-import:      afi ipv6.unicast from AS205076 action pref=1000; accept AS205076
+mp-export:      afi ipv6.unicast to AS205076 announce ANY
+import:         from AS59591 action pref=1000; accept AS59591
+export:         to AS59591 announce ANY
+import:         from AS206427 action pref=1000; accept AS206427
+export:         to AS206427 announce ANY
+import:         from AS35783 action pref=1000; accept AS35783
+export:         to AS35783 announce ANY
+import:         from AS60081 action pref=1000; accept AS60081
+export:         to AS60081 announce ANY
+import:         from AS60360 action pref=1000; accept AS60360
+export:         to AS60360 announce ANY
+import:         from AS42524 action pref=1000; accept AS42524
+export:         to AS42524 announce ANY
+import:         from AS198384 action pref=1000; accept AS198384
+export:         to AS198384 announce ANY
+import:         from AS212264 action pref=1000; accept AS212264
+export:         to AS212264 announce ANY
+import:         from AS49932 action pref=1000; accept AS49932
+export:         to AS49932 announce ANY
+import:         from AS210889 action pref=1000; accept AS210889
+export:         to AS210889 announce ANY
+import:         from AS42558 action pref=1000; accept AS42558
+export:         to AS42558 announce ANY
+remarks:        ---------------------------------------------------
+org:            ORG-ZM1-RIPE
+admin-c:        MA14315-RIPE
+tech-c:         MN9513-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MR-SIB-MTS-MNT
+mnt-by:         MTU-NOC
+created:        2003-03-26T12:23:40Z
+last-modified:  2022-04-29T09:56:20Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS30922
+as-name:        MTS-FBN-Siberia-AS
+org:            ORG-ZM1-RIPE
+remarks:        ---
+import:         from AS28884 accept ANY
+export:         to AS28884 announce AS-SIBELTELECOM
+import:         from AS43318 accept AS43318
+export:         to AS43318 announce ANY
+import:         from AS48100 accept AS48100
+export:         to AS48100 announce ANY
+remarks:        ---
+admin-c:        MA14315-RIPE
+tech-c:         MN9513-RIPE
+status:         ASSIGNED
+mnt-by:         MTU-NOC
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MR-SIB-MTS-MNT
+created:        2004-01-16T12:27:53Z
+last-modified:  2020-10-15T10:54:27Z
+source:         RIPE
+
+
+

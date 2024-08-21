@@ -2,3 +2,96 @@
 
 
 
+aut-num:        AS21135
+org:            ORG-MTT1-RIPE
+as-name:        MTT-AS
+descr:          MTT AS (Russia)
+remarks:        === Own AS ===
+import:         from AS49476 action pref=100; accept ANY
+export:         to AS49476 announce AS21135
+import:         from AS49789 action pref=100; accept ANY
+export:         to AS49789 announce AS21135
+admin-c:        MTT-RIPE
+tech-c:         MTT-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MTT-RIPE-MNT
+created:        2001-11-02T08:10:13Z
+last-modified:  2018-09-04T09:51:34Z
+source:         RIPE
+
+
+
+aut-num:        AS49476
+as-name:        MTT-AS
+org:            ORG-MTT1-RIPE
+remarks:        === Garant-Park-Internet Ltd (IPv4 peering) ===
+export:         to AS47196 announce AS-MTT
+import:         from AS47196 action pref=100; accept AS-GPI
+remarks:        === Garant-Park-Internet Ltd (IPv6 peering) ===
+export:         to AS47196 announce ANY
+import:         from AS47196 action pref=100; accept AS-GPI
+remarks:        === AUDIOTELE LLC (IPv4 peering) ===
+export:         to AS59667 announce ANY
+import:         from AS59667 action pref=200; accept AS59667
+remarks:        === Own AS ===
+export:         to AS21135 announce AS49476
+import:         from AS21135 action pref=100; accept ANY
+export:         to AS49789 announce AS49476
+import:         from AS49789 action pref=100; accept ANY
+remarks:        === MSK-IX ===
+import:         from AS8631 action pref=100; accept ANY
+export:         to AS8631 announce AS-MTT
+remarks:        === iHome LLC (IPv4 peering) ===
+export:         to AS25478 announce AS-MTT
+import:         from AS25478 action pref=100; accept AS25478
+remarks:        === iHome LLC (IPv6 peering) ===
+export:         to AS25478 announce ANY
+import:         from AS25478 action pref=100; accept AS25478
+remarks:        === PJSC MegaFon ===
+export:         to AS31133 announce as-mtt
+import:         from AS31133 action pref=100; accept ANY
+remarks:        === Mastertel CJSC ===
+export:         to AS29226 announce as-mtt
+import:         from AS29226 action pref=100; accept ANY
+remarks:        LLC "Nauka-Svyaz"
+import:         from AS8641 action pref=100; accept ANY
+export:         to AS8641 announce as-mtt
+remarks:        PJSC Rostelecom
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce as-mtt
+remarks:        === Company Mail.Ru ===
+import:         from AS47764 action pref=100; accept ANY
+export:         to AS47764 announce AS-MTT
+remarks:        === LLC Beta Voip (AS 200662) ===
+export:         to AS200662 announce ANY
+import:         from AS200662 action pref=100; accept AS200662
+admin-c:        MTT-RIPE
+tech-c:         MTT-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MTT-RIPE-MNT
+created:        2009-06-16T08:29:01Z
+last-modified:  2023-03-14T13:04:43Z
+source:         RIPE
+
+
+
+aut-num:        AS49789
+as-name:        MTT-AS
+org:            ORG-MTT1-RIPE
+import:         from AS21135 accept ANY
+export:         to AS21135 announce AS49789
+import:         from AS49476 accept ANY
+export:         to AS49476 announce AS49789
+admin-c:        RAA2016-RIPE
+tech-c:         RAA2016-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MTT-RIPE-MNT
+created:        2017-07-24T10:35:49Z
+last-modified:  2018-09-04T12:03:34Z
+source:         RIPE
+
+
+

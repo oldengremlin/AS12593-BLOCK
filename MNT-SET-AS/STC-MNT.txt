@@ -2,3 +2,375 @@
 
 
 
+aut-num:        AS25490
+org:            ORG-JR8-RIPE
+as-name:        STC-AS
+remarks:        |--------------------------------------------
+descr:          OJSC "Southern Telecommunications Company"
+remarks:        | AS12389 - ROSTELECOM
+remarks:        | AS8342 - RTComm
+remarks:        | AS20485 - Transtelecom
+remarks:        | AS6854 - SYNTERRA JSC
+remarks:        | AS44467 - Inter Regional Network (IRN) STC
+remarks:        | AS31133 - OJSC MegaFon Network
+remarks:        | -------------------------------------------
+remarks:        | Import, Upstreams
+remarks:        |--------------------------------------------
+import:         from AS12389 action pref=10; accept ANY
+import:         from AS8342 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS44467 action pref=100; accept ANY
+import:         from AS6854 action pref=100; accept ANY
+import:         from AS31133 action pref=100; accept ANY
+remarks:        |--------------------------------------------
+remarks:        | Export
+remarks:        |--------------------------------------------
+export:         to AS8342 announce AS-STC
+export:         to AS20485 announce AS-STC
+export:         to AS12389 announce AS-STC
+export:         to AS44467 announce AS-STC
+export:         to AS6854 announce AS-STC
+export:         to AS31133 announce AS-STC
+remarks:        |-------------------------------------------
+default:        to AS12389 action pref=10; networks ANY
+admin-c:        AUM1-RIPE
+tech-c:         GAZ3-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         STC-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2002-12-09T12:44:11Z
+last-modified:  2024-05-13T10:51:21Z
+source:         RIPE
+
+
+
+aut-num:        AS25510
+as-name:        rostelecom-AS
+org:            ORG-JR8-RIPE
+import:         from AS34287 action pref=100; accept ANY
+import:         from AS33934 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS34287 announce  AS-ATRICOM
+export:         to AS33934 announce  AS-ATRICOM
+export:         to AS20485 announce  AS-ATRICOM
+export:         to AS12389 announce  AS-ATRICOM
+default:        to AS20485 action pref=100; networks ANY
+admin-c:        AB9355-RIPE
+tech-c:         ABUR-RIPE
+tech-c:         BI377-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         STC-MNT
+created:        2002-12-17T07:59:58Z
+last-modified:  2018-09-04T09:56:07Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS28802
+as-name:        KALMYKIA-AS
+org:            ORG-JR8-RIPE
+import:         from AS8342  action pref=10; accept ANY
+import:         from AS25490 action pref=100; accept ANY
+export:         to AS25490 announce AS28802
+export:         to AS8342  announce AS28802
+default:        to AS8342 action pref=10; networks ANY
+admin-c:        AUM1-RIPE
+admin-c:        GAZ3-RIPE
+tech-c:         AUM1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+tech-c:         GAZ3-RIPE
+mnt-by:         STC-MNT
+created:        2003-02-28T09:47:27Z
+last-modified:  2018-09-04T09:56:42Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS33934
+as-name:        VolgogradEC-AS
+descr:          OJSC "Volgogradelectrosviaz"
+org:            ORG-JR8-RIPE
+remarks:        Upstreams
+import:         from AS8342 action pref=200; accept ANY;
+import:         from AS20485 action pref=100; accept ANY;
+import:         from AS12389 action pref=100; accept ANY;
+remarks:        Customers
+import:         from AS-VES action pref=100; accept PeerAS;
+remarks:        Upstreams
+export:         to AS8342 announce AS-VES;
+export:         to AS20485 announce AS-VES;
+export:         to AS12389 announce AS-VES;
+remarks:        Customers
+export:         to AS-VES announce ANY;
+admin-c:        VPS3-RIPE
+tech-c:         AAK91-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         STC-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2004-09-09T10:13:39Z
+last-modified:  2024-05-13T10:52:12Z
+source:         RIPE
+
+
+
+aut-num:        AS35177
+as-name:        ASI-AS
+descr:          PJSC "Rostelecom". Astrakhan branch
+remarks:        Astrakhan division of "Rostelecom" PJSC
+org:            ORG-JR8-RIPE
+remarks:        +----------------------------
+remarks:        | Upstreams
+remarks:        +----------------------------
+remarks:        PJSC Rostelecom
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-ASI
+remarks:        +----------------------------
+remarks:        | Customers
+remarks:        +----------------------------
+import:         from AS41259 accept AS41259
+export:         to AS41259 announce ANY
+import:         from AS58084 accept AS58084
+export:         to AS58084 announce ANY
+import:         from AS8305 accept AS8305
+export:         to AS8305 announce ANY
+import:         from AS50863 accept AS50863
+export:         to AS50863 announce ANY
+import:         from AS49718 accept AS-REAL
+export:         to AS49718 announce ANY
+import:         from AS44941 accept AS-ADTV
+export:         to AS44941 announce ANY
+remarks:        +----------------------------
+remarks:        | Phone: +7 851 232 19 17
+remarks:        | EMail: smena@astranet.ru
+remarks:        | Last Update: 03.05.2017
+remarks:        +----------------------------
+admin-c:        DR3332-RIPE
+tech-c:         AK3762-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         STC-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2005-06-16T11:09:34Z
+last-modified:  2024-05-13T10:52:52Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS42362
+as-name:        ALANIA-AS
+descr:          PJSC "Rostelecom". North Ossetion branch
+descr:          Branch, former Sevosetinelectrosvyaz
+org:            ORG-JR8-RIPE
+import:         from AS44467 action pref=100; accept ANY
+import:         from AS12683 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS6854 action pref=100; accept ANY
+import:         from AS56798 action pref=100; accept ANY
+export:         to AS12683 announce AS-ALANIA
+export:         to AS6854 announce AS-ALANIA
+export:         to AS12389 announce AS-ALANIA
+export:         to AS56798 announce AS-ALANIA
+export:         to AS44467 announce AS-ALANIA
+default:        to AS44467 action pref=50; networks ANY
+admin-c:        BVV292-RIPE
+tech-c:         BVV292-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         STC-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2007-02-08T14:43:48Z
+last-modified:  2024-05-13T10:53:31Z
+source:         RIPE
+
+
+
+aut-num:        AS42448
+as-name:        ERA-AS
+descr:          Branch, former JSC "Electrosvyaz of Adygheia Republic"
+org:            ORG-JR8-RIPE
+import:         from AS12389 action pref=10; accept ANY
+import:         from AS8342 action pref=100; accept ANY
+export:         to AS12389 announce AS42448
+export:         to AS8342 announce AS42448
+default:        to AS12389 action pref=10; networks ANY
+admin-c:        AHP3-RIPE
+admin-c:        AAN21-RIPE
+tech-c:         AAN21-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         STC-MNT
+created:        2007-02-22T10:25:44Z
+last-modified:  2018-09-04T10:22:17Z
+source:         RIPE
+
+
+
+aut-num:        AS42548
+as-name:        KCHR-AS
+descr:          PJSC "Rostelecom". Karachaevo-Cherkess branch
+remarks:        Karachaevo-Cherkessya branch
+org:            ORG-JR8-RIPE
+remarks:        |--------------------------------------
+remarks:        | Import, Upstreams
+remarks:        | Upstream: AS12389 Rostelecom
+remarks:        | Upstream: AS44467 IRN-STC-AS(MTSS)
+remarks:        |--------------------------------------
+import:         from AS12389 accept ANY
+import:         from AS44467 accept ANY
+remarks:        |-------------------------------------------------
+remarks:        | Export, Upstream
+remarks:        | AS-SET include(MICROCOMPONENT-MNT, SAO-RAN, NESTER-NET, KCHR)
+remarks:        | Client: AS42394 MICROCOMPONENT anons KCHR
+remarks:        | Client: AS9157 SAO-RAN anons KCHR
+remarks:        | Client: AS52008 NESTER-NET anons KCHR
+remarks:        |-------------------------------------------------
+export:         to AS12389 announce AS-KCHR
+export:         to AS44467 announce AS-KCHR
+admin-c:        KNO7-RIPE
+tech-c:         KNO7-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         STC-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2007-03-09T09:23:07Z
+last-modified:  2024-05-13T10:54:18Z
+source:         RIPE
+
+
+
+aut-num:        AS43132
+as-name:        KBT-AS
+descr:          OJSC "Kabbalktelekom"
+descr:          Branch, former Kabbalktelecom
+org:            ORG-JR8-RIPE
+import:         from AS8342 action pref=100; accept ANY
+export:         to AS8342 announce AS43132
+import:         from AS12683 action pref=200; accept ANY
+export:         to AS12683 announce AS43132
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS43132
+admin-c:        AV1485-RIPE
+tech-c:         AS9825-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+tech-c:         YD217-RIPE
+mnt-by:         STC-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2007-06-12T11:49:40Z
+last-modified:  2024-05-13T10:54:59Z
+source:         RIPE
+
+
+
+aut-num:        AS44467
+org:            ORG-JR8-RIPE
+as-name:        IRN-STC-AS
+remarks:        |--------------------------------------
+remarks:        | Import, Upstreams
+remarks:        | Upstreams: AS6854 SYNTERRA JSC
+remarks:        | Upstreams: AS20485 TRANSTELECOM, JSC Company TransTeleCom
+remarks:        | Upstreams: AS12389 ROSTELECOM
+remarks:        | Upstreams: AS8342 RTComm
+remarks:        | Upstreams: AS12683 STATEL, JSC "Electrosviaz", Stavropol
+remarks:        | Upstreams: AS2854 Equant Russia
+remarks:        | Upstreams: AS8744 STARTELECOM, Moscow, startelecom.ru
+remarks:        | Upstreams: AS31133 MegaFon
+remarks:        |---------------------------------------
+import:         from AS2854 action pref=100; accept ANY
+import:         from AS12683 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS6854 action pref=100; accept ANY
+import:         from AS8342 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS8744 action pref=100; accept ANY
+import:         from AS31133 action pref=100; accept ANY
+remarks:        | --------------------------------------
+remarks:        | Import
+remarks:        | Regional peering partners:
+remarks:        | AS12683 - Stavropol;
+remarks:        | AS21289 - Rostov;
+remarks:        | AS33934 - Volgograd;
+remarks:        | AS42548 - Karachaevo - Cherkessiya
+remarks:        | AS42362 - Nother Osetiya - Alaniya
+remarks:        | AS35177 - Astrakhan
+remarks:        | AS43132 - Kabardino - Balkariya
+remarks:        | --------------------------------------
+import:         from AS12683 action pref=100; accept ANY
+import:         from AS21289 action pref=100; accept ANY
+import:         from AS33934 action pref=100; accept ANY
+import:         from AS42548 action pref=100; accept ANY
+import:         from AS42362 action pref=100; accept ANY
+import:         from AS35177 action pref=100; accept ANY
+import:         from AS43132 action pref=100; accept ANY
+remarks:        |---------------------------------------
+remarks:        | Export, Upstream
+remarks:        | Upstreams: AS6854 SYNTERRA JSC
+remarks:        | Upstreams: AS20485 TRANSTELECOM, JSC Company TransTeleCom
+remarks:        | Upstreams: AS12389 ROSTELECOM
+remarks:        | Upstreams: AS8342 RTComm
+remarks:        | Upstreams: AS12683 STATEL, JSC "Electrosviaz", Stavropol
+remarks:        | Upstreams: AS2854 Equant Russia
+remarks:        | Upstreams: AS8744 STARTELECOM, Moscow, startelecom.ru
+remarks:        | Upstreams: AS31133 MegaFon
+remarks:        |---------------------------------------
+export:         to AS2854 announce AS44467
+export:         to AS12683 announce AS44467
+export:         to AS20485 announce AS44467
+export:         to AS6854 announce AS44467
+export:         to AS12389 announce AS44467
+export:         to AS8342 announce AS44467
+export:         to AS8744 announce AS44467
+export:         to AS31133 announce AS44467
+remarks:        | --------------------------------------
+remarks:        | Export to Clients AS's InterRegional Network STC
+remarks:        | ( AS-IRNSTC )
+remarks:        |
+remarks:        | Import, Upstreams
+remarks:        | Upstreams: AS6854 SYNTERRA JSC
+remarks:        | Upstreams: AS20485 TRANSTELECOM, JSC Company TransTeleCom
+remarks:        | Upstreams: AS12389 ROSTELECOM
+remarks:        | Upstreams: AS8342 RTComm
+remarks:        | Upstreams: AS8744 STARTELECOM, Moscow, startelecom.ru
+remarks:        | --------------------------------------
+export:         to AS6854 announce AS-IRNSTC
+export:         to AS20485 announce AS-IRNSTC
+export:         to AS12389 announce AS-IRNSTC
+export:         to AS8342 announce AS-IRNSTC
+export:         to AS8744 announce AS-IRNSTC
+remarks:        | --------------------------------------
+remarks:        | Export
+remarks:        | Regional peering partners:
+remarks:        | AS12683 - Stavropol;
+remarks:        | AS21289 - Rostov;
+remarks:        | AS33934 - Volgograd;
+remarks:        | AS42548 - Karachaevo - Cherkessiya
+remarks:        | AS42362 - Nother Osetiya - Alaniya
+remarks:        | AS35177 - Astrakhan
+remarks:        | AS43132 - Kabardino - Balkariya
+remarks:        | --------------------------------------
+export:         to AS12683 announce AS44467
+export:         to AS21289 announce AS44467
+export:         to AS33934 announce AS44467
+export:         to AS42548 announce AS44467
+export:         to AS42362 announce AS44467
+export:         to AS35177 announce AS44467
+export:         to AS43132 announce AS44467
+admin-c:        KAP23-RIPE
+admin-c:        AUM1-RIPE
+tech-c:         KAP23-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+tech-c:         AUM1-RIPE
+mnt-by:         STC-MNT
+created:        2008-01-24T09:54:23Z
+last-modified:  2018-09-04T10:29:52Z
+source:         RIPE # Filtered
+
+
+

@@ -2,3 +2,66 @@
 
 
 
+aut-num:        AS34166
+as-name:        ELECOM-AS
+org:            ORG-NCTS2-RIPE
+import:         from AS28745 action pref=120; accept ANY
+import:         from AS3239 action pref=120; accept ANY
+export:         to AS28745 announce AS-ELECOM
+export:         to AS3239 announce AS-ELECOM
+admin-c:        IT2431-RIPE
+tech-c:         IT2431-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NCT-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2004-11-09T15:14:40Z
+last-modified:  2020-12-01T15:48:35Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-CJSC19-RIPE
+
+
+
+aut-num:        AS34241
+as-name:        NCT-AS
+org:            ORG-NCTS2-RIPE
+import:         from AS20485 action pref=100; accept ANY
+mp-import:      afi ipv6 from AS20485 action pref=100; accept ANY
+import:         from AS3216 action pref=100; accept ANY
+mp-import:      afi ipv6 from AS3216 action pref=100; accept ANY
+import:         from AS9002 action pref=100; accept ANY
+mp-import:      afi ipv6 from AS9002 action pref=100; accept ANY
+import:         from AS9049 action pref=100; accept ANY
+import:         from AS34166 action pref=120; accept AS34166
+import:         from AS47842 action pref=120; accept AS47842
+import:         from AS197044 action pref=120; accept AS197044
+import:         from AS43085 action pref=120; accept AS43085
+import:         from AS57418 action pref=120; accept AS57418
+import:         from AS59404 action pref=120; accept AS59404
+import:         from AS197044 action pref=120; accept AS197044
+export:         to AS20485 announce AS-NCT
+mp-export:      afi ipv6 to AS20485 announce AS-NCT-IPV6
+export:         to AS3216 announce AS-NCT
+mp-export:      afi ipv6 to AS3216 announce AS-NCT-IPV6
+export:         to AS9002 announce AS-NCT
+mp-export:      afi ipv6 to AS9002 announce AS-NCT-IPV6
+export:         to AS9049 announce AS-NCT
+export:         to AS34166 announce ANY
+export:         to AS47842 announce ANY
+export:         to AS197044 announce ANY
+export:         to AS43085 announce ANY
+export:         to AS57418 announce ANY
+export:         to AS59404 announce ANY
+export:         to AS197044 announce ANY
+admin-c:        IT2431-RIPE
+tech-c:         IT2431-RIPE
+status:         ASSIGNED
+mnt-by:         NCT-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2004-11-25T11:35:57Z
+last-modified:  2023-04-26T05:39:32Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-CJSC19-RIPE
+
+
+

@@ -2,3 +2,113 @@
 
 
 
+aut-num:        AS202765
+as-name:        ANTSERV-NET
+org:            ORG-TDL1-RIPE
+import:         from AS31214 accept { 0.0.0.0/0 }
+export:         to AS31214 announce AS202765
+admin-c:        RADM8-RIPE
+tech-c:         TECH18-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TIS-DIALOG-MNT
+created:        2016-06-07T15:02:12Z
+last-modified:  2022-05-30T12:48:56Z
+source:         RIPE
+
+
+
+aut-num:        AS31214
+org:            ORG-TDL1-RIPE
+as-name:        TIS-DIALOG-AS
+remarks:        -----------------------------------------------------------
+remarks:        Upstream
+remarks:        -----------------------------------------------------------
+remarks:        -ER-Telecom-
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS-TISDIALOG
+remarks:        -Telia Russia-
+import:         from AS1299 accept ANY
+export:         to AS1299 announce AS-TISDIALOG
+remarks:        -ReTN.net-
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-TISDIALOG
+remarks:        -Fiord-
+import:         from AS28917 accept ANY
+export:         to AS28917 announce AS-TISDIALOG
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-TISDIALOG
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-TISDIALOG
+import:         from AS50817 accept as-piter-ix
+export:         to AS50817 announce AS-TISDIALOG
+import:         from AS47541 accept as-vkontakte
+export:         to AS47541 announce AS-TISDIALOG
+remarks:        -----------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS1299 accept ANY
+mp-export:      afi ipv6.unicast to AS1299 announce AS-TISDIALOG
+mp-import:      afi ipv6.unicast from AS9002 accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-TISDIALOG
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-TISDIALOG
+mp-import:      afi ipv6.unicast from AS50817 accept as-piter-ix
+mp-export:      afi ipv6.unicast to AS50817 announce AS-TISDIALOG
+remarks:        -----------------------------------------------------------
+remarks:        Peering
+remarks:        -----------------------------------------------------------
+remarks:        -WBT-
+import:         from AS21480 accept AS-KANET
+export:         to AS21480 announce AS-TISDIALOG
+remarks:        -MEGAFON(exPETERSTAR)-
+import:         from AS20632 accept AS-KANET
+export:         to AS20632 announce AS-TISDIALOG
+remarks:        -IVI-RU-
+import:         from AS57629 accept AS57629
+export:         to AS57629 announce AS-TISDIALOG
+remarks:        -EType-
+import:         from AS8774 accept AS-KANET
+export:         to AS8774 announce AS-TISDIALOG
+mp-import:      afi ipv6.unicast from AS8774 accept AS-KANET
+mp-export:      afi ipv6.unicast to AS8774 announce AS-TISDIALOG
+remarks:        -----------------------------------------------------------
+remarks:        Customer
+remarks:        -----------------------------------------------------------
+import:         from AS41975 accept AS41975
+export:         to AS41975 announce ANY
+import:         from AS196786 accept AS196786
+export:         to AS196786 announce ANY
+import:         from AS42151 accept AS42151
+export:         to AS42151 announce ANY
+import:         from AS202765 accept as-asnet
+export:         to AS202765 announce ANY
+remarks:        -----------------------------------------------------------
+remarks:        BGP COMMUNITY SUPPORT FOR TRANSIT CUSTOMERS:
+remarks:        -----------------------------------------------------------
+remarks:        Community Action
+remarks:        --------- ------
+remarks:        31214:50 Set local pref 50 within AS31214 (lowest possible, backup)
+remarks:        31214:666 RTBH RFC5635
+remarks:        Upstream control:
+remarks:        Community Action
+remarks:        --------- ------
+remarks:        31214:100x All upstreams
+remarks:        31214:101x TeliaSonera (AS1299)
+remarks:        31214:102x ROSTELECOM (AS12389)
+remarks:        31214:103x PITER-IX (AS50817)
+remarks:        31214:104x Data-IX (AS50952)
+remarks:        31214:106x RETN (AS9002)
+remarks:        31214:107x MSK-IX (AS8631)
+remarks:        31214:110x FIORD (AS28917)
+remarks:        Where x is number of prepends (x=1,2,3) or do NOT announce (x=0)
+remarks:        -----------------------------------------------------------
+admin-c:        RADM8-RIPE
+tech-c:         TECH18-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TIS-DIALOG-MNT
+created:        2004-03-23T14:22:49Z
+last-modified:  2024-08-08T09:11:39Z
+source:         RIPE
+
+
+
