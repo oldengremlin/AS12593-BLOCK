@@ -12,17 +12,19 @@ source:         RIPE
 
 
 aut-num:        AS59815
-as-name:        TRK-METRO-AS
+as-name:        TRINITY-AS
 org:            ORG-KL262-RIPE
 admin-c:        AR50535-RIPE
 tech-c:         AR50535-RIPE
 status:         ASSIGNED
-import:         from AS48276 accept ANY
-export:         to AS48276 announce AS-TRKMETRO
-import:         from AS52091 accept ANY
-export:         to AS52091 announce AS-TRKMETRO
+import:         from AS25299 accept AS25299
+export:         to AS25299 announce ANY
+import:         from AS34786 accept AS-DN-VNET
+export:         to AS34786 announce AS-TRKMETRO
 import:         from AS60429 accept AS-DNIX
 export:         to AS60429 announce AS-TRKMETRO
+import:         from AS52091 accept ANY
+export:         to AS52091 announce AS-TRKMETRO
 import:         from AS206810 accept ANY
 export:         to AS206810 announce AS-TRKMETRO
 import:         from AS201776 accept ANY
@@ -30,7 +32,7 @@ export:         to AS201776 announce AS-TRKMETRO
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-KOMPEATELECOM
 created:        2014-09-18T13:04:03Z
-last-modified:  2023-05-02T12:34:48Z
+last-modified:  2024-08-21T11:19:12Z
 source:         RIPE
 
 organisation:   ORG-KL262-RIPE

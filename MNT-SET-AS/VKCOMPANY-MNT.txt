@@ -1424,6 +1424,10 @@ mp-export:      afi ipv6.unicast to AS47914 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS47914 accept AS-IPHOME;
 export:         to AS48610 announce AS-VK
 import:         from AS48610 accept AS48610:AS-OFORO
+export:         to AS56814 announce AS-VK
+import:         from AS56814 accept AS56814
+mp-export:      afi ipv6.unicast to AS56814 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS56814 accept AS56814;
 remarks:
 remarks:        =========================================
 remarks:        MSK-IX Peers
@@ -1721,6 +1725,7 @@ remarks:        198 True International Gateway aka TIG (AS38082)
 remarks:        199 Lovit (AS41275)
 remarks:        201 Iphome (AS47914)
 remarks:        202 Oforo (AS48610)
+remarks:        203 T2Telecom (AS56814)
 remarks:        209 Mamba (AS58116)
 remarks:        210 Lancktelecom(AS41625)
 remarks:        212 Rutube(AS207353)
@@ -1793,7 +1798,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2024-08-16T07:54:17Z
+last-modified:  2024-08-21T07:57:31Z
 source:         RIPE # Filtered
 
 
