@@ -306,6 +306,10 @@ import:         from AS200976 action pref=100; accept ANY # smotreshka
 mp-import:      afi ipv6.unicast from AS200976 accept ANY
 export:         to AS200976 announce AS-W-IX
 mp-export:      afi ipv6.unicast to AS200976 announce AS-W-IX-IPVSIX
+import:         from AS6789 action pref=130; accept AS-CRELCOM # ihome
+mp-import:      afi ipv6.unicast from AS6789 accept AS-CRELCOM
+export:         to AS6789 announce ANY
+mp-export:      afi ipv6.unicast to AS6789 announce ANY
 import:         from AS50313 action pref=130; accept AS-TESLATEL # teslatel
 mp-import:      afi ipv6.unicast from AS50313 accept AS-TESLATEL
 export:         to AS50313 announce ANY
@@ -1002,7 +1006,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2009-12-30T16:24:09Z
-last-modified:  2024-07-17T10:18:25Z
+last-modified:  2024-08-22T12:26:16Z
 source:         RIPE
 
 organisation:   ORG-IJ5-RIPE

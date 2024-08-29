@@ -263,9 +263,9 @@ import:         from AS211914 accept AS-DFW
 export:         to AS211963 announce AS-VK
 import:         from AS211963 accept AS211963
 export:         to AS42291 announce AS-VK
-import:         from AS42291 accept AS-ISTANET
+import:         from AS42291 accept AS42291:AS-ISTRANET
 mp-export:      afi ipv6.unicast to AS42291 announce AS-VK;
-mp-import:      afi ipv6.unicast from AS42291 accept AS-ISTANET;
+mp-import:      afi ipv6.unicast from AS42291 accept AS-ISTRANET6;
 export:         to AS60280 announce AS-VK
 import:         from AS60280 accept AS-NTEC
 mp-export:      afi ipv6.unicast to AS60280 announce AS-VK;
@@ -332,6 +332,12 @@ export:         to AS56814 announce AS-VK
 import:         from AS56814 accept AS56814
 mp-export:      afi ipv6.unicast to AS56814 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS56814 accept AS56814;
+export:         to AS9123 announce AS-VK
+import:         from AS9123 accept AS-TIMEWEB
+mp-export:      afi ipv6.unicast to AS9123 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS9123 accept AS-TIMEWEB;
+export:         to AS58096 announce AS-VK
+import:         from AS58096 accept AS58096
 remarks:
 remarks:        =========================================
 remarks:        MSK-IX Peers
@@ -607,7 +613,7 @@ remarks:        176 NTKS (AS49218)
 remarks:        177 MAILRUIS (AS211963)
 remarks:        178 IRIDA (AS47626)
 remarks:        179 MTW (AS48347)
-remarks:        180 ISTRATELECOM (AS42291)
+remarks:        180 ISTRANET (AS42291)
 remarks:        181 MCC(TELE2) (AS12958)
 remarks:        182 UNIONTEL (AS48293)
 remarks:        183 VK (AS47542 , AS47541)
@@ -630,9 +636,11 @@ remarks:        199 Lovit (AS41275)
 remarks:        201 Iphome (AS47914)
 remarks:        202 Oforo (AS48610)
 remarks:        203 T2Telecom (AS56814)
+remarks:        204 ElitTV (AS58096)
 remarks:        209 Mamba (AS58116)
-remarks:        210 Lancktelecom(AS41625)
-remarks:        212 Rutube(AS207353)
+remarks:        210 Lancktelecom (AS41625)
+remarks:        212 Rutube (AS207353)
+remarks:        215 TimeWeb (AS9123)
 remarks:        -------------------------------------------------------------
 remarks:
 remarks:        Other 47764:* communities are deleted.
@@ -702,7 +710,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2024-08-21T07:57:31Z
+last-modified:  2024-08-26T12:16:23Z
 source:         RIPE # Filtered
 
 organisation:   ORG-LLCn4-RIPE
