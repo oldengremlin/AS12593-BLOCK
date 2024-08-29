@@ -153,9 +153,6 @@ export:         to AS21314 announce ANY
 remarks:        K-ROOT-SERVER
 import:         from AS25152 accept RS-KROOT-ANYCAST
 export:         to AS25152 announce ANY
-remarks:        Internet Tekhnologii
-import:         from AS35751 accept AS35751
-export:         to AS35751 announce ANY
 remarks:        STD Petrovich
 import:         from AS44661 accept AS44661
 export:         to AS44661 announce ANY
@@ -188,17 +185,14 @@ tech-c:         SA32710-RIPE
 remarks:        ---------------------------------------------------------------
 remarks:        ---------- BGP communities accepted from downstream: ----------
 remarks:        ---------------------------------------------------------------
-remarks:
 remarks:        1. Prepending to all peers
 remarks:        49505:100X, where
 remarks:        X < 5 prepend X times to all peers
 remarks:        X = 5 do not advertise to all peers
-remarks:
 remarks:        2. Specific, prepending to peer ASN:
 remarks:        49505:ASNX, where
 remarks:        X < 5 prepend X times to peer ASN
 remarks:        X = 5 do not advertise to peer ASN
-remarks:
 remarks:        IPv4 peers:
 remarks:        101 RETN
 remarks:        102 Rascom
@@ -225,14 +219,13 @@ remarks:        194 Google
 remarks:        195 W-IX
 remarks:        197 Atom86
 remarks:        199 Testing sessions
-remarks:
 remarks:        3. Blackhole:
 remarks:        49505:666
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-SELECTEL
 created:        2009-06-18T15:53:26Z
-last-modified:  2024-04-18T13:43:07Z
+last-modified:  2024-08-28T10:13:50Z
 source:         RIPE # Filtered
 
 

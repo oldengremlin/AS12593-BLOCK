@@ -1668,6 +1668,10 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS214336 action pref=100; accept AS214336
+export:         to AS214336 announce ANY
+import:         from AS50951 action pref=100; accept AS50951
+export:         to AS50951 announce ANY
 import:         from AS196812 action pref=100; accept AS196812
 export:         to AS196812 announce ANY
 import:         from AS2567 action pref=100; accept AS2567
@@ -4477,6 +4481,10 @@ import:         from AS44192 action pref=100; accept AS44192
 export:         to AS44192 announce ANY
 import:         from AS197756 action pref=100; accept AS197756
 export:         to AS197756 announce ANY
+import:         from AS216365 action pref=100; accept AS216365
+export:         to AS216365 announce ANY
+mp-import:      from AS216365 action pref=100; accept AS216365
+mp-export:      to AS216365 announce ANY
 import:         from AS51193 action pref=100; accept AS51193
 export:         to AS51193 announce ANY
 import:         from AS197068 action pref=100; accept AS-QRATOR
@@ -4651,7 +4659,7 @@ import:         from AS21180 action pref=100; accept AS21180
 export:         to AS21180 announce ANY
 import:         from AS12695 action pref=100; accept AS-DINET^+
 export:         to AS12695 announce ANY
-import:         from AS30943 action pref=100; accept AS-UTRANSIT-T
+import:         from AS30943 action pref=100; accept AS30943:AS-BIGWEB
 export:         to AS30943 announce ANY
 import:         from AS215394 action pref=100; accept AS215394
 export:         to AS215394 announce ANY
@@ -5559,7 +5567,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-08-22T06:04:56Z
+last-modified:  2024-08-28T11:20:45Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

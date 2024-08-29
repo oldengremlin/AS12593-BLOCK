@@ -314,6 +314,10 @@ export:         to AS60280 announce AS-VKONTAKTE
 import:         from AS60280 accept AS-NTEC
 mp-export:      afi ipv6.unicast to AS60280 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS60280 accept AS-NTEC;
+export:         to AS9123 announce AS-VKONTAKTE
+import:         from AS9123 accept AS-TIMEWEB
+mp-export:      afi ipv6.unicast to AS9123 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS9123 accept AS-TIMEWEB;
 remarks:
 remarks:        =========================================
 remarks:        Other
@@ -456,6 +460,7 @@ remarks:        210 Fticom (AS41039)
 remarks:        211 FREEDOM1 (AS206011)
 remarks:        213 Insys (AS28890)
 remarks:        214 UGMKTelecom (AS41560)
+remarks:        215 TimeWeb (AS9123)
 remarks:        286 Convex (AS209307)
 remarks:        287 Ugletelecom (LEVEL-MSK) (AS48276,AS52091)
 remarks:        288 Nevalink (AS42668)
@@ -511,7 +516,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-07-03T14:45:56Z
-last-modified:  2024-08-06T07:48:01Z
+last-modified:  2024-08-23T08:29:23Z
 source:         RIPE # Filtered
 
 organisation:   ORG-VL47-RIPE
