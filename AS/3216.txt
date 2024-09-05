@@ -1696,6 +1696,8 @@ import:         from AS10122 action pref=100; accept AS-BIGO-10122
 export:         to AS10122 announce ANY
 mp-import:      from AS10122 action pref=100; accept AS-BIGO-10122
 mp-export:      to AS10122 announce ANY
+import:         from AS214317 action pref=100; accept AS214317
+export:         to AS214317 announce ANY
 import:         from AS57842 action pref=100; accept AS57842:AS-UCS-BEELINE
 export:         to AS57842 announce ANY
 mp-import:      from AS57842 action pref=100; accept AS57842:AS-UCS-BEELINE-V6
@@ -1888,6 +1890,8 @@ import:         from AS212206 action pref=100; accept AS212206
 export:         to AS212206 announce ANY
 import:         from AS49648 action pref=100; accept AS49648
 export:         to AS49648 announce {0.0.0.0/0}
+import:         from AS58347 action pref=100; accept AS58347
+export:         to AS58347 announce {0.0.0.0/0}
 import:         from AS41122 action pref=100; accept AS41122
 export:         to AS41122 announce {0.0.0.0/0}
 import:         from AS39493 action pref=100; accept AS-KSTV
@@ -2455,6 +2459,8 @@ export:         to AS33991 announce ANY
 mp-import:      afi ipv6 from AS33991 action pref=100; accept AS-SKALA-V6
 mp-export:      afi ipv6 to AS33991 announce ANY
 import:         from AS57363 action pref=100; accept AS57363
+export:         to AS57363 announce ANY
+import:         from AS57363 action pref=100; accept AS-CDNETWORKSRU
 export:         to AS57363 announce ANY
 mp-import:      afi ipv6 from AS57363 action pref=100; accept AS57363
 mp-export:      afi ipv6 to AS57363 announce {::/0}
@@ -4387,6 +4393,8 @@ import:         from AS204297 action pref=100; accept AS204297
 export:         to AS204297 announce ANY
 import:         from AS204720 action pref=100; accept AS204720
 export:         to AS204720 announce ANY
+import:         from AS204720 action pref=100; accept AS-CDNETWORKSRU
+export:         to AS204720 announce ANY
 mp-import:      afi ipv6 from AS204720 action pref=100; accept AS204720
 mp-export:      afi ipv6 to AS204720 announce ANY
 import:         from AS203599 action pref=100; accept AS203599
@@ -5567,7 +5575,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-08-28T11:20:45Z
+last-modified:  2024-09-02T08:48:18Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

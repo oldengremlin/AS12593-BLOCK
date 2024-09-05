@@ -37,6 +37,9 @@ export:         to AS50952 announce AS-NETONERUS
 remarks:        --RETN--
 import:         from AS57304 accept ANY
 export:         to AS57304 announce AS-NETONERUS
+remarks:        --MSK-IX--ip-tranzit
+import:         from AS8985 accept ANY
+export:         to AS8985 announce AS-NETONERUS
 remarks:        ==================================================
 remarks:        Customers:
 import:         from AS56991 accept AS56991
@@ -106,6 +109,7 @@ import:         from AS206827 accept AS206827
 import:         from AS215121 accept AS215121
 import:         from AS214535 accept AS214535
 import:         from AS207064 accept AS207064
+import:         from AS214348  accept AS214348
 export:         to AS56991 announce ANY
 export:         to AS49017 announce ANY
 export:         to AS201794 announce ANY
@@ -173,13 +177,14 @@ export:         to AS206827 announce ANY
 export:         to AS215121 announce ANY
 export:         to AS214535 announce ANY
 export:         to AS207064 announce ANY
+export:         to AS214348 announce ANY
 admin-c:        NA2852-RIPE
 tech-c:         NA2852-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NETONERUS-MNT
 created:        2009-08-10T13:48:47Z
-last-modified:  2024-08-08T05:47:55Z
+last-modified:  2024-09-05T07:01:37Z
 source:         RIPE
 
 
@@ -262,7 +267,7 @@ source:         RIPE
 
 
 aut-num:        AS207376
-as-name:        IKANOBANK
+as-name:        CEB-AS
 org:            ORG-IBL11-RIPE
 import:         from AS196695 accept ANY
 export:         to AS196695 announce AS207376
@@ -274,7 +279,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NETONERUS-MNT
 created:        2020-02-14T10:52:04Z
-last-modified:  2020-11-16T17:54:08Z
+last-modified:  2024-09-04T08:33:33Z
 source:         RIPE
 sponsoring-org: ORG-NRC2-RIPE
 
