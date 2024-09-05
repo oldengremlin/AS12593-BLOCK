@@ -105,6 +105,8 @@ import:         from AS28917 action pref=100; accept ANY
 export:         to AS28917 announce AS-CRELCOM
 import:         from AS48084 action pref=100; accept ANY
 export:         to AS48084 announce AS-CRELCOM
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-CRELCOM
 remarks:        -=-= IXs =-=-
 import:         from AS39751 accept AS-M-IX
 export:         to AS39751 announce AS-CRELCOM
@@ -127,6 +129,8 @@ mp-import:      afi ipv6.unicast from AS6939 accept AS-HURRICANE
 mp-export:      afi ipv6.unicast to AS6939 announce AS-CRELCOM-V6
 mp-import:      afi ipv6.unicast from AS207979 accept AS207979
 mp-export:      afi ipv6.unicast to AS207979 announce ANY
+mp-import:      afi ipv6.unicast from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-CRELCOM-V6
 remarks:        -=-= PEERS =-=-
 import:         from AS205515 accept AS205515
 export:         to AS205515 announce AS-CRELCOM
@@ -304,7 +308,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS6789-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2024-06-03T04:48:30Z
+last-modified:  2024-09-04T06:52:04Z
 source:         RIPE # Filtered
 
 

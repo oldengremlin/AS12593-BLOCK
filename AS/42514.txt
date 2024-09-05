@@ -17,92 +17,82 @@ org:            ORG-SL188-RIPE
 remarks:
 remarks:        --- Upstreams ---
 remarks:
-import:         from AS20485 action pref=100; accept ANY AND NOT {0.0.0.0/0}
+import:         from AS20485 action pref=100; accept ANY
 export:         to AS20485 announce AS-SIGNALTV
-mp-import:      from AS20485 action pref=100; accept ANY AND NOT {::/0}
+mp-import:      from AS20485 action pref=100; accept ANY
 mp-export:      to AS20485 announce AS-SIGNALTV
-import:         from AS31133 action pref=100; accept ANY AND NOT {0.0.0.0/0}
+import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-SIGNALTV
-mp-import:      from AS31133 action pref=100; accept ANY AND NOT {::/0}
+mp-import:      from AS31133 action pref=100; accept ANY
 mp-export:      to AS31133 announce AS-SIGNALTV
-import:         from AS12389 action pref=100; accept ANY AND NOT {0.0.0.0/0}
+import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS-SIGNALTV
-mp-import:      from AS12389 action pref=100; accept ANY AND NOT {::/0}
+mp-import:      from AS12389 action pref=100; accept ANY
 mp-export:      to AS12389 announce AS-SIGNALTV
-import:         from AS8359 action pref=100; accept ANY AND NOT {0.0.0.0/0}
+import:         from AS8359 action pref=100; accept ANY
 export:         to AS8359 announce AS-SIGNALTV
-mp-import:      from AS8359 action pref=100; accept ANY AND NOT {::/0}
+mp-import:      from AS8359 action pref=100; accept ANY
 mp-export:      to AS8359 announce AS-SIGNALTV
 remarks:
-remarks:        --- Peers ---
+remarks:        --- Peers and IX ---
 remarks:
 import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-SIGNALTV
 mp-import:      from AS8631 action pref=200; accept AS-MSKROUTESERVER
 mp-export:      to AS8631 announce AS-SIGNALTV
 remarks:
-remarks:        --- Clients ---
+remarks:        --- Customers ---
 remarks:
 import:         from AS197717 action pref=300; accept AS197717
 export:         to AS197717 announce ANY
 remarks:
 remarks:        ---
 remarks:
-remarks:        +-------------------------------------------------------+
-remarks:        | Community from UPSTREAMS
-remarks:        +-------------------------------------------------------+
-remarks:        | 42514:2146 - TransTeleCom (AS20485)
-remarks:        | 42514:2246 - Megafon (AS31133)
-remarks:        | 42514:2446 - Rostelecom (AS12389)
-remarks:        | 42514:2546 - MTS (AS8359)
-remarks:        +-------------------------------------------------------+
+remarks:        -----------------------------------------------------------
+remarks:        Community classificator
+remarks:        -----------------------------------------------------------
 remarks:
-remarks:        +-------------------------------------------------------+
-remarks:        | Community to UPSTREAMS
-remarks:        +-------------------------------------------------------+
-remarks:        | 42514:921x - TransTeleCom (AS20485)
-remarks:        | 42514:922x - Megafon (AS31133)
-remarks:        | 42514:924x - Rostelecom (AS12389)
-remarks:        | 42514:925x - MTS (AS8359)
-remarks:        | 42514:929x - All upstreams
-remarks:        |
-remarks:        | x - action:
-remarks:        | x = 0 - don't advertise
-remarks:        | x = 1,2,3,4 or 5 - prepend 42514 (1,2,3,4 or 5) times
-remarks:        +-------------------------------------------------------+
+remarks:        Upstreams:
+remarks:        42514:201 - TransTeleCom (AS20485)
+remarks:        42514:202 - Megafon (AS31133)
+remarks:        42514:203 - Rostelecom (AS12389)
+remarks:        42514:204 - MTS (AS8359)
 remarks:
+remarks:        Peers and IX:
+remarks:        42514:301 - MSK-IX (AS8631)
 remarks:
-remarks:        +-------------------------------------------------------+
-remarks:        | Community from PEERS
-remarks:        +-------------------------------------------------------+
-remarks:        | 42514:3146 - MSK-IX (AS8631)
-remarks:        +-------------------------------------------------------+
+remarks:        Customers:
+remarks:        42514:401 - MGOK (AS197717)
 remarks:
-remarks:        +-------------------------------------------------------+
-remarks:        | Community to PEERS
-remarks:        +-------------------------------------------------------+
-remarks:        | 42514:931x - MSK (AS8631)
-remarks:        |
-remarks:        | x - action:
-remarks:        | x = 0 - don't advertise
-remarks:        | x = 1,2,3,4 or 5 - prepend 42514 (1,2,3,4 or 5) times
-remarks:        +-------------------------------------------------------+
+remarks:        -----------------------------------------------------------
+remarks:        Community to control
+remarks:        -----------------------------------------------------------
+remarks:
+remarks:        Upstreams:
+remarks:        42514:201x - TransTeleCom (AS20485)
+remarks:        42514:202x - Megafon (AS31133)
+remarks:        42514:203x - Rostelecom (AS12389)
+remarks:        42514:204x - MTS (AS8359)
+remarks:        42514:299x - All Upstreams
+remarks:
+remarks:        Peers and IX:
+remarks:        42514:301x - MSK-IX (AS8631)
+remarks:        42514:399x - All IX and Peers
+remarks:
+remarks:        All:
+remarks:        42514:999x - All (Upstreams, IX and Peers)
+remarks:
+remarks:        x - action:
+remarks:        x = 0 - don't advertise
+remarks:        x = 1,2,3,4 or 5 - prepend 42514 (1,2,3,4 or 5) times
 remarks:
 remarks:
-remarks:        +-------------------------------------------------------+
-remarks:        | Community from CLIENTS
-remarks:        +-------------------------------------------------------+
-remarks:        | 42514:4146 - MGOK (AS197717)
-remarks:        +-------------------------------------------------------+
+remarks:        Contacts:
 remarks:
-remarks:
-remarks:        +-------------------------------------------------------+
-remarks:        | Contacts
-remarks:        +-------------------------------------------------------+
-remarks:        | Web Site http://www.signaltv.net
-remarks:        | NOC noc@signaltv.net
-remarks:        | Customer Support support@signaltv.net
-remarks:        +-------------------------------------------------------+
+remarks:        Web Site https://www.signaltv.net
+remarks:        Looking Glass https://www.signaltv.net/lg/
+remarks:        NOC noc@signaltv.net
+remarks:        Customer Support support@signaltv.net
 remarks:
 remarks:
 admin-c:        SLLC-RIPE
@@ -111,7 +101,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIGNAL-MNT
 created:        2007-03-05T15:16:39Z
-last-modified:  2024-08-20T11:30:41Z
+last-modified:  2024-09-03T13:13:37Z
 source:         RIPE
 
 organisation:   ORG-SL188-RIPE

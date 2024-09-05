@@ -53,6 +53,10 @@ export:         to AS3216 announce AS-HYPERNET
 mp-import:      afi ipv6.unicast from AS3216 action pref=40; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS-HYPERNET-V6
 remarks:
+remarks:        ER-Telecom:
+import:         from AS9049 action pref=40; accept ANY
+export:         to AS9049 announce AS-HYPERNET
+remarks:
 remarks:        RETN:
 import:         from AS57304 action pref=40; accept ANY
 export:         to AS57304 announce AS-HYPERNET
@@ -104,6 +108,7 @@ remarks:        | NN - source of the prefix:
 remarks:        | Upstream:
 remarks:        | 04 - Beeline (AS3216)
 remarks:        | 05 - RETN (AS57304)
+remarks:        | 06 - ER-Telecom (AS9049)
 remarks:        |
 remarks:        | Peer:
 remarks:        | 05 - DataIX (AS50952)
@@ -129,6 +134,7 @@ remarks:        |
 remarks:        | Upstreams:
 remarks:        | 04 - Beeline (AS3216)
 remarks:        | 05 - RETN (AS57304)
+remarks:        | 06 - ER-Telecom (AS9049)
 remarks:        | 99 - All upstreams
 remarks:        |
 remarks:        | Peer:
@@ -172,7 +178,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         HYPERNET-MNT
 created:        2006-04-24T08:36:49Z
-last-modified:  2024-08-05T12:09:29Z
+last-modified:  2024-09-03T09:48:21Z
 source:         RIPE
 
 
