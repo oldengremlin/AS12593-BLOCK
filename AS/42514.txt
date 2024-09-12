@@ -40,6 +40,10 @@ import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-SIGNALTV
 mp-import:      from AS8631 action pref=200; accept AS-MSKROUTESERVER
 mp-export:      to AS8631 announce AS-SIGNALTV
+import:         from AS31133 action pref=200; accept AS-MF-IX
+export:         to AS31133 announce AS-SIGNALTV
+mp-import:      from AS31133 action pref=200; accept AS-MF-IX
+mp-export:      to AS31133 announce AS-SIGNALTV
 remarks:
 remarks:        --- Customers ---
 remarks:
@@ -60,6 +64,7 @@ remarks:        42514:204 - MTS (AS8359)
 remarks:
 remarks:        Peers and IX:
 remarks:        42514:301 - MSK-IX (AS8631)
+remarks:        42514:302 - MegaFon IX (AS31133)
 remarks:
 remarks:        Customers:
 remarks:        42514:401 - MGOK (AS197717)
@@ -77,6 +82,7 @@ remarks:        42514:299x - All Upstreams
 remarks:
 remarks:        Peers and IX:
 remarks:        42514:301x - MSK-IX (AS8631)
+remarks:        42514:302x - MegaFon IX (AS31133)
 remarks:        42514:399x - All IX and Peers
 remarks:
 remarks:        All:
@@ -101,7 +107,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIGNAL-MNT
 created:        2007-03-05T15:16:39Z
-last-modified:  2024-09-03T13:13:37Z
+last-modified:  2024-09-09T15:50:48Z
 source:         RIPE
 
 organisation:   ORG-SL188-RIPE

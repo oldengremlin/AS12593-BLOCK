@@ -327,8 +327,6 @@ import:         from AS31334 action pref=90; accept AS-KDG
 export:         to AS31334 announce AS-SOVAM
 mp-import:      afi ipv6 from AS31334 action pref=90; accept AS-KDG
 mp-export:      afi ipv6 to AS31334 announce AS-SOVAM-V6
-import:         from AS48268 action pref=90; accept AS-INTERFIBER
-export:         to AS48268 announce AS-SOVAM
 import:         from AS39912 action pref=90; accept AS-I3B
 export:         to AS39912 announce AS-SOVAM
 import:         from AS5577 action pref=90; accept AS-ROOT
@@ -1079,8 +1077,6 @@ mp-import:      afi ipv6 from AS15133 action pref=90; accept AS-EDGECAST
 mp-export:      afi ipv6 to AS15133 announce AS-SOVAM-V6
 import:         from AS2914 action pref=90; accept AS2914:AS-GLOBAL
 export:         to AS2914 announce AS-SOVAM
-import:         from AS48268 action pref=90; accept AS-INTERFIBER
-export:         to AS48268 announce AS-SOVAM
 import:         from AS34419 action pref=90; accept AS-VODAFONE
 export:         to AS34419 announce AS-SOVAM
 import:         from AS5583 action pref=87; accept AS-OBS-BENELUX
@@ -1668,6 +1664,10 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+mp-import:      from AS201512 action pref=100; accept AS201512
+mp-export:      to AS201512 announce ANY
+import:         from AS200627 action pref=100; accept AS200627
+export:         to AS200627 announce ANY
 import:         from AS214336 action pref=100; accept AS214336
 export:         to AS214336 announce ANY
 import:         from AS50951 action pref=100; accept AS50951
@@ -1780,7 +1780,7 @@ import:         from AS60818 action pref=100; accept AS60818
 export:         to AS60818 announce {0.0.0.0/0}
 import:         from AS208677 action pref=100; accept AS-CLOUDRU
 export:         to AS208677 announce ANY
-import:         from AS201851 action pref=100; accept AS-SET-AS51668
+import:         from AS201851 action pref=100; accept AS201851:AS-PIK
 export:         to AS201851 announce ANY
 import:         from AS43170 action pref=100; accept AS43170
 export:         to AS43170 announce {0.0.0.0/0}
@@ -2240,6 +2240,8 @@ import:         from AS41719 action pref=100; accept AS41719
 export:         to AS41719 announce ANY
 import:         from AS42574 action pref=100; accept as-nsplus
 export:         to AS42574 announce ANY
+mp-import:      from AS42574 action pref=100; accept as-nsplus
+mp-export:      to AS42574 announce ANY
 import:         from AS47397 action pref=100; accept AS-BASE
 export:         to AS47397 announce ANY
 mp-import:      from AS47397 action pref=100; accept AS-BASE
@@ -4877,6 +4879,8 @@ import:         from AS34682 action pref=100; accept AS-NPOSERT
 export:         to AS34682 announce ANY
 import:         from AS200515 action pref=100; accept AS200515
 export:         to AS200515 announce ANY
+import:         from AS198712 action pref=100; accept AS198712
+export:         to AS198712 announce AS-SOVAM
 import:         from AS61259 action pref=100; accept AS61259
 export:         to AS61259 announce ANY
 import:         from AS21030 action pref=100; accept AS21030
@@ -5099,6 +5103,7 @@ remarks:        3216:502x When advertising to Telecom Italia Sparkle uplink...
 remarks:        3216:503x When advertising to PCCW Global uplink...
 remarks:        3216:504x When advertising to Telia Global uplink...
 remarks:        3216:505x When advertising to Turk Telekom uplink...
+remarks:        3216:506x When advertising to TATA Communications uplink...
 remarks:        3216:508x When advertising to Orange uplink...
 remarks:        3216:509x When advertising to Cogent uplink...
 remarks:        -----------------------------------------------------------------
@@ -5575,7 +5580,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-09-02T08:48:18Z
+last-modified:  2024-09-12T04:38:28Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
