@@ -1257,10 +1257,6 @@ export:         to AS44843 announce AS-VK
 import:         from AS44843 accept AS-OBTEL
 mp-export:      afi ipv6.unicast to AS44843 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS44843 accept AS-OBTEL;
-export:         to AS43404 announce AS-VK
-import:         from AS43404 accept AS-UCANET
-mp-export:      afi ipv6.unicast to AS43404 announce AS-VK;
-mp-import:      afi ipv6.unicast from AS43404 accept AS-UCANETV6;
 export:         to AS8402 announce AS-VK
 import:         from AS8402 accept AS-CORBINA
 mp-export:      afi ipv6.unicast to AS8402 announce AS-VK;
@@ -1695,7 +1691,7 @@ remarks:        156 FORCELINE (AS51343)
 remarks:        157 SELECTEL (AS50340)
 remarks:        158 NCOT (AS60280)
 remarks:        159 MSS (aka OBTEL aka AMSTEL) (AS44843)
-remarks:        160 UCANET (AS43404)
+remarks:        160 unused
 remarks:        161 ROMTEL (AS9050)
 remarks:        162 UFANET (AS47775)
 remarks:        163 OPERA (AS39832)
@@ -1811,7 +1807,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2024-08-26T12:16:23Z
+last-modified:  2024-09-09T16:13:52Z
 source:         RIPE # Filtered
 
 

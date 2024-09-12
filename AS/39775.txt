@@ -32,6 +32,10 @@ export:         to AS57304 announce AS-HYPERNET
 mp-import:      afi ipv6.unicast from AS57304 action pref=40; accept ANY
 mp-export:      afi ipv6.unicast to AS57304 announce AS-HYPERNET-V6
 remarks:
+remarks:        Zummer:
+import:         from AS51028 action pref=40; accept ANY
+export:         to AS51028 announce AS-HYPERNET
+remarks:
 remarks:        ------------------------------------------------------------
 remarks:        PEERS
 remarks:        ------------------------------------------------------------
@@ -75,6 +79,7 @@ remarks:        | 3 - Customer
 remarks:        |
 remarks:        | NN - source of the prefix:
 remarks:        | Upstream:
+remarks:        | 03 - Zummer (AS51028)
 remarks:        | 04 - Beeline (AS3216)
 remarks:        | 05 - RETN (AS57304)
 remarks:        | 06 - ER-Telecom (AS9049)
@@ -101,6 +106,7 @@ remarks:        | 2 - Peers
 remarks:        | NN - Upstream or peer number:
 remarks:        |
 remarks:        | Upstreams:
+remarks:        | 03 - Zummer (AS51028)
 remarks:        | 04 - Beeline (AS3216)
 remarks:        | 05 - RETN (AS57304)
 remarks:        | 06 - ER-Telecom (AS9049)
@@ -147,7 +153,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         HYPERNET-MNT
 created:        2006-04-24T08:36:49Z
-last-modified:  2024-09-03T09:48:21Z
+last-modified:  2024-09-11T10:20:08Z
 source:         RIPE
 
 organisation:   ORG-LLCH2-RIPE
