@@ -17,9 +17,6 @@ remarks:        Mobile TeleSystems PJSC
 remarks:        Marksistskaya street, 4
 remarks:        109147 Moscow, Russia
 org:            ORG-ZM1-RIPE
-remarks:        -----------------------------------------------------------
-remarks:        ipv4
-remarks:        -----------------------------------------------------------
 import:         from AS42 action pref=105; accept AS-PCH
 export:         to AS42 announce AS-MTU
 import:         from AS72 action pref=105; accept AS72
@@ -224,8 +221,8 @@ import:         from AS6767 action pref=105; accept AS-CTSRND
 export:         to AS6767 announce ANY
 import:         from AS6774 action pref=105; accept AS-BELBONETOPEERS
 export:         to AS6774 announce AS-MTU
-import:         from  AS6777 action  pref=105; accept ANY AND NOT <^[AS714 AS2854 AS3255 AS3267 AS8075 AS8369 AS8732 AS9002 AS9031 AS12389 AS12714 AS12883 AS13238 AS15169 AS15772 AS16265 AS20485 AS20764 AS20940 AS21011 AS21219 AS25229 AS28917 AS31133 AS31500 AS35320 AS35662 AS44050 AS44053 AS47764 AS50384 AS50923 AS50968]>
-export:         to  AS6777 action  community .= { 6777:6777, 6777:714, 6777:2854, 6777:3255, 6777:3267, 6777:8075, 6777:8369, 6777:8732, 6777:9002, 6777:9031, 6777:12389, 6777:12714, 6777:12883, 6777:13238, 6777:15169, 6777:15772, 6777:16265, 6777:20485, 6777:20764, 6777:20940, 6777:21011, 6777:21219, 6777:25229, 6777:28917, 6777:31133, 6777:31500, 6777:35320, 6777:35662, 6777:39792, 6777:44050, 6777:44053, 6777:47764, 6777:50384, 6777:50923, 6777:50968, 6777:51092 }; announce AS-MTU
+import:         from AS6777 action pref=105; accept ANY AND NOT <^[AS714 AS2854 AS3255 AS3267 AS8075 AS8369 AS8732 AS9002 AS9031 AS12389 AS12714 AS12883 AS13238 AS15169 AS15772 AS16265 AS20485 AS20764 AS20940 AS21011 AS21219 AS25229 AS28917 AS31133 AS31500 AS35320 AS35662 AS44050 AS44053 AS47764 AS50384 AS50923 AS50968]>
+export:         to AS6777 action community .= { 6777:6777, 6777:714, 6777:2854, 6777:3255, 6777:3267, 6777:8075, 6777:8369, 6777:8732, 6777:9002, 6777:9031, 6777:12389, 6777:12714, 6777:12883, 6777:13238, 6777:15169, 6777:15772, 6777:16265, 6777:20485, 6777:20764, 6777:20940, 6777:21011, 6777:21219, 6777:25229, 6777:28917, 6777:31133, 6777:31500, 6777:35320, 6777:35662, 6777:39792, 6777:44050, 6777:44053, 6777:47764, 6777:50384, 6777:50923, 6777:50968, 6777:51092 }; announce AS-MTU
 import:         from AS6805 action pref=105; accept AS-TDDE
 export:         to AS6805 announce AS-MTU
 import:         from AS6849 action pref=105; accept AS-UKRTELBT
@@ -1490,7 +1487,7 @@ import:         from AS44386 action pref=105; accept AS44386
 export:         to AS44386 announce ANY
 import:         from AS44405 action pref=105; accept AS-MELEUZ
 export:         to AS44405 announce ANY
-import:         from AS44534  action pref=140; accept AS44534
+import:         from AS44534 action pref=140; accept AS44534
 export:         to AS44534 announce ANY
 import:         from AS44579 action pref=105; accept AS-COMSTAR-SIB-FARNORTH
 export:         to AS44579 announce ANY
@@ -1604,6 +1601,8 @@ import:         from AS48124 action pref=105; accept AS-COMSTAR-TVER
 export:         to AS48124 announce ANY
 import:         from AS48129 action pref=105; accept AS-IRBISTELECOM
 export:         to AS48129 announce ANY
+import:         from AS48176 action pref=105; accept AS-OOO-NET
+export:         to AS48176 announce ANY
 import:         from AS48212 action pref=105; accept AS-MKS
 export:         to AS48212 announce ANY
 import:         from AS48216 action pref=120; accept AS-RNDROUTESERVER
@@ -1714,6 +1713,8 @@ import:         from AS49642 action pref=105; accept AS49642
 export:         to AS49642 announce ANY
 import:         from AS49665 action pref=105; accept AS-MKS-KISLOVODSK
 export:         to AS49665 announce ANY
+import:         from AS49675 action pref=105; accept AS49675
+export:         to AS49675 announce ANY
 import:         from AS49701 action pref=105; accept AS49701
 export:         to AS49701 announce ANY
 import:         from AS49712 action pref=105; accept AS49712
@@ -2286,6 +2287,8 @@ import:         from AS201008 action pref=105; accept AS201008
 export:         to AS201008 announce ANY
 import:         from AS201244 action pref=105; accept AS201244
 export:         to AS201244 announce ANY
+import:         from AS201250 action pref=105; accept AS201250
+export:         to AS201250 announce ANY
 import:         from AS201270 action pref=140; accept AS-ZTBELGOROD
 export:         to AS201270 announce ANY
 import:         from AS201275 action pref=105; accept AS201275
@@ -2430,6 +2433,8 @@ import:         from AS215897 action pref=105; accept AS215897
 export:         to AS215897 announce ANY
 import:         from AS216214 action pref=105; accept AS216214
 export:         to AS216214 announce ANY
+import:         from AS201123 action pref=105; accept AS201123
+export:         to AS201123 announce ANY
 remarks:        -----------------------------------------------------------
 remarks:        Please send spam and abuse reports to abuse@mtu.ru
 remarks:        -----------------------------------------------------------
@@ -2617,7 +2622,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:20:57Z
-last-modified:  2024-09-03T11:33:10Z
+last-modified:  2024-09-18T07:26:43Z
 source:         RIPE
 
 organisation:   ORG-ZM1-RIPE

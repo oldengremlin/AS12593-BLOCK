@@ -12,14 +12,25 @@ source:         RIPE
 
 
 aut-num:        AS204272
-as-name:        ASARTA
+as-name:        ASARTA-SPB-AS
+descr:          St.Petersburg
 org:            ORG-AL369-RIPE
-import:         from AS25227 accept ANY
-export:         to AS25227 announce AS204272
-import:         from AS51178 accept ANY
+remarks:        ----------------------------------------------
+import:         from AS51178 action pref=300; accept AS-AVANTEL-SPB
 export:         to AS51178 announce AS204272
-import:         from AS50817 action pref=150; accept as-piter-ix
+import:         from AS35598 accept AS-ICNET
+export:         to AS35598 announce AS204272
+import:         from AS29076 accept ANY
+export:         to AS29076 announce AS204272
+import:         from AS50817 action pref=200; accept AS-PITER-IX
 export:         to AS50817 announce AS204272
+import:         from AS49869 action pref=200; accept AS-PITER-IX-MSK
+export:         to AS49869 announce AS204272
+import:         from AS48193 action pref=200; accept AS-PITER-IX-FRA
+export:         to AS48193 announce AS204272
+import:         from AS15169 action pref=250; accept AS-GOOGLE
+export:         to AS15169 announce AS204272
+remarks:        ----------------------------------------------
 admin-c:        AS35456-RIPE
 admin-c:        ASRT812-RIPE
 tech-c:         AS35456-RIPE
@@ -28,7 +39,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-ltdasarta-1-mnt
 created:        2015-07-13T11:20:55Z
-last-modified:  2019-06-07T07:23:35Z
+last-modified:  2024-09-17T11:46:16Z
 source:         RIPE
 
 organisation:   ORG-AL369-RIPE
