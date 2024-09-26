@@ -1664,6 +1664,16 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS34545 action pref=100; accept AS34545
+export:         to AS34545 announce {0.0.0.0/0}
+import:         from AS214540 action pref=100; accept AS214540
+export:         to AS214540 announce {0.0.0.0/0}
+import:         from AS35645 action pref=100; accept AS35645
+export:         to AS35645 announce ANY
+import:         from AS51601 action pref=100; accept AS-IPTP
+export:         to AS51601 announce ANY
+mp-import:      from AS51601 action pref=100; accept AS-51601-RU
+mp-export:      to AS51601 announce ANY
 import:         from AS197868 action pref=100; accept AS197868
 export:         to AS197868 announce ANY
 import:         from AS57494 action pref=100; accept AS-ADMAN
@@ -1910,10 +1920,6 @@ import:         from AS48891 action pref=100; accept AS48891
 export:         to AS48891 announce ANY
 import:         from AS209657 action pref=100; accept AS209657
 export:         to AS209657 announce ANY
-import:         from AS42260 action pref=100; accept AS42260
-export:         to AS42260 announce ANY
-mp-import:      afi ipv6 from AS42260 action pref=100; accept AS42260
-mp-export:      afi ipv6 to AS42260 announce ANY
 import:         from AS44802 action pref=100; accept AS44802
 export:         to AS44802 announce {0.0.0.0/0}
 import:         from AS44039 action pref=100; accept AS44039
@@ -4173,8 +4179,6 @@ import:         from AS51583 action pref=100; accept AS51583
 export:         to AS51583 announce ANY
 import:         from AS202934 action pref=100; accept AS202934
 export:         to AS202934 announce ANY
-import:         from AS200764 action pref=100; accept AS200764
-export:         to AS200764 announce ANY
 import:         from AS206323 action pref=100; accept AS206323
 export:         to AS206323 announce {0.0.0.0/0}
 import:         from AS56383 action pref=100; accept AS56383
@@ -5584,7 +5588,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-09-18T12:34:52Z
+last-modified:  2024-09-25T12:23:58Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

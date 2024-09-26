@@ -29,6 +29,12 @@ export:         to AS3216 announce AS-BAZA35
 mp-import:      afi ipv6.unicast from AS3216 accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS-BAZA35
 remarks:        ----------------
+remarks:        Rostelecom
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-BAZA35
+mp-import:      afi ipv6.unicast from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-BAZA35
+remarks:        ----------------
 remarks:
 remarks:        ----------------
 remarks:        - IX -
@@ -51,8 +57,6 @@ remarks:
 remarks:        ----------------
 remarks:        - Clients -
 remarks:        ----------------
-import:         from AS196688 accept AS196688
-export:         to AS196688 announce any
 remarks:        ----------------
 admin-c:        DB683-RIPE
 tech-c:         DB683-RIPE
@@ -61,7 +65,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         BAZA-MNT
 created:        2009-09-24T13:01:46Z
-last-modified:  2023-02-02T09:17:32Z
+last-modified:  2024-09-23T10:43:05Z
 source:         RIPE # Filtered
 
 organisation:   ORG-EL305-RIPE
