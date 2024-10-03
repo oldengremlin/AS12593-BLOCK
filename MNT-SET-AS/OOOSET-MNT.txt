@@ -225,6 +225,7 @@ remarks:        +---------------------------------------------------------------
 remarks:        | 48176:100x - Megafon (AS3133)
 remarks:        | 48176:200x - BeeLine (AS3216)
 remarks:        | 48176:400x - Google Global Cache
+remarks:        | 48176:500x - MTS (AS8359)
 remarks:        |
 remarks:        | x = 0 - don't advertise
 remarks:        | x = 1 - advertise
@@ -244,6 +245,8 @@ import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-OOO-NET
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-OOO-NET
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-OOO-NET
 remarks:
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        | DOWNLINKS
@@ -266,8 +269,6 @@ remarks:
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        | LOCAL PEERs
 remarks:        +-------------------------------------------------------------------------------+
-import:         from AS15868 accept AS15868
-export:         to AS15868 announce AS-OOO-NET
 import:         from AS49325 accept AS49325
 export:         to AS49325 announce AS-OOO-NET
 import:         from AS13077 accept AS13077
@@ -289,7 +290,7 @@ status:         ASSIGNED
 mnt-by:         OOOSET-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2008-10-22T08:59:01Z
-last-modified:  2023-02-09T09:41:58Z
+last-modified:  2024-09-26T17:40:01Z
 source:         RIPE
 
 

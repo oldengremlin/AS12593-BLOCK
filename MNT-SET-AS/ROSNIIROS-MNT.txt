@@ -2569,8 +2569,19 @@ sponsoring-org: ORG-RRIf1-RIPE
 aut-num:        AS59665
 as-name:        ULTRATEL-AS
 org:            ORG-UL78-RIPE
+remarks:        --------------------------------------------------------------------------------
+remarks:        UNIONTEL Upstream
 import:         from AS48293 accept ANY
 export:         to AS48293 announce AS59665
+remarks:        --------------------------------------------------------------------------------
+remarks:        PITER-IX (MSK) RouteServer
+import:         from AS49869 accept AS-PITER-IX-MSK
+export:         to AS49869 announce AS59665
+remarks:        --------------------------------------------------------------------------------
+remarks:        PITER-IX (SPB) RouteServer
+import:         from AS50817 accept AS-PITER-IX-SPB
+export:         to AS50817 announce AS59665
+remarks:        --------------------------------------------------------------------------------
 admin-c:        PVB156-RIPE
 tech-c:         AEV1978-RIPE
 tech-c:         MCH81-RIPE
@@ -2579,7 +2590,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ULTRATEL-MNT
 mnt-by:         ROSNIIROS-MNT
 created:        2012-09-14T09:45:15Z
-last-modified:  2022-08-02T13:22:16Z
+last-modified:  2024-10-01T12:22:11Z
 source:         RIPE # Filtered
 sponsoring-org: ORG-LT104-RIPE
 
