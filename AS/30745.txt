@@ -28,14 +28,8 @@ remarks:        ----------------------------------------------------------------
 remarks:        -----------------------------------------------------------------
 remarks:        Customers
 remarks:        -----------------------------------------------------------------
-import:         from AS47407 action pref=1000; accept AS47407
-export:         to AS47407 announce ANY
-import:         from AS29567 action pref=1000; accept AS-BGT
-export:         to AS29567 announce ANY
-import:         from AS43746 action pref=1000; accept AS43746
-export:         to AS43746 announce ANY
 import:         from AS202501 action pref=1000; accept AS202501
-export:         to AS202501 announce AS30745
+export:         to AS202501 announce ANY
 remarks:        -----------------------------------------------------------------
 remarks:        Default routes:
 default:        to AS21103 action pref=100; networks ANY
@@ -49,7 +43,7 @@ admin-c:        IAP22-RIPE
 tech-c:         IAP22-RIPE
 mnt-by:         AS30745-MNT
 created:        2003-11-25T10:47:50Z
-last-modified:  2024-03-18T23:47:06Z
+last-modified:  2024-10-01T02:22:19Z
 source:         RIPE # Filtered
 
 organisation:   ORG-SL98-RIPE

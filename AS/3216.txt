@@ -503,6 +503,10 @@ import:         from AS13213 action pref=87; accept AS-UK2NET
 export:         to AS13213 announce AS-SOVAM
 mp-import:      afi ipv6 from AS13213 action pref=87; accept AS-UK2NET
 mp-export:      afi ipv6 to AS13213 announce AS-SOVAM-V6
+import:         from AS49581 action pref=87; accept AS-TUBE
+export:         to AS49581 announce AS-SOVAM
+mp-import:      afi ipv6 from AS49581 action pref=87; accept AS-TUBE
+mp-export:      afi ipv6 to AS49581 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(DE-CIX)
 remarks:
@@ -1664,6 +1668,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS214283 action pref=100; accept AS214283
+export:         to AS214283 announce ANY
 import:         from AS34545 action pref=100; accept AS34545
 export:         to AS34545 announce {0.0.0.0/0}
 import:         from AS214540 action pref=100; accept AS214540
@@ -1992,6 +1998,8 @@ import:         from AS203794 action pref=100; accept AS203794
 export:         to AS203794 announce ANY
 import:         from AS59475 action pref=100; accept AS59475
 export:         to AS59475 announce ANY
+mp-import:      from AS59475 action pref=100; accept AS59475
+mp-export:      to AS59475 announce ANY
 import:         from AS61324 action pref=100; accept AS61324
 export:         to AS61324 announce ANY
 import:         from AS39442 action pref=100; accept AS-UNICO
@@ -2994,8 +3002,6 @@ import:         from AS12772 action pref=100; accept AS12772
 export:         to AS12772 announce ANY
 import:         from AS43087 action pref=100; accept AS43087
 export:         to AS43087 announce ANY
-import:         from AS28989 action pref=100; accept AS28989
-export:         to AS28989 announce AS-SOVAM
 import:         from AS42758 action pref=100; accept AS42758
 export:         to AS42758 announce ANY
 import:         from AS43787 action pref=100; accept AS43787
@@ -5588,7 +5594,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-09-25T12:23:58Z
+last-modified:  2024-10-01T09:20:55Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
