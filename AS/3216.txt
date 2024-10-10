@@ -1668,13 +1668,17 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS40966 action pref=100; accept AS40966:AS-L7GUARD
+export:         to AS40966 announce ANY
+import:         from AS61140 action pref=100; accept AS61140
+export:         to AS61140 announce {0.0.0.0/0}
 import:         from AS214283 action pref=100; accept AS214283
 export:         to AS214283 announce ANY
 import:         from AS34545 action pref=100; accept AS34545
 export:         to AS34545 announce {0.0.0.0/0}
 import:         from AS214540 action pref=100; accept AS214540
 export:         to AS214540 announce {0.0.0.0/0}
-import:         from AS35645 action pref=100; accept AS35645
+import:         from AS35645 action pref=100; accept AS-INFOCENTER
 export:         to AS35645 announce ANY
 import:         from AS51601 action pref=100; accept AS-IPTP
 export:         to AS51601 announce ANY
@@ -2972,8 +2976,6 @@ import:         from AS61372 action pref=100; accept AS-AZIMUT
 export:         to AS61372 announce ANY
 import:         from AS42690 action pref=100; accept AS42690
 export:         to AS42690 announce ANY
-import:         from AS42941 action pref=100; accept AS42941
-export:         to AS42941 announce ANY
 import:         from AS39612 action pref=100; accept AS39612
 export:         to AS39612 announce ANY
 import:         from AS42972 action pref=100; accept AS42972
@@ -4439,6 +4441,8 @@ import:         from AS15632 action pref=100; accept AS15632
 export:         to AS15632 announce ANY
 import:         from AS206054 action pref=100; accept AS206054
 export:         to AS206054 announce ANY
+import:         from AS50435 action pref=100; accept AS50435
+export:         to AS50435 announce {0.0.0.0/0}
 import:         from AS47709 action pref=100; accept AS47709
 export:         to AS47709 announce ANY
 import:         from AS208912 action pref=100; accept AS-STARTELECOMTEL
@@ -5045,6 +5049,8 @@ import:         from AS210284 action pref=100; accept AS210284
 export:         to AS210284 announce {0.0.0.0/0}
 import:         from AS8492 action pref=100; accept AS-OBIT
 export:         to AS8492 announce ANY
+mp-import:      from AS8492 action pref=100; accept AS-OBIT
+mp-export:      to AS8492 announce ANY
 remarks:        ---------------------------------------------
 remarks:        End of Saint-Petersburg zone
 remarks:        ---------------------------------------------
@@ -5594,7 +5600,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-10-01T09:20:55Z
+last-modified:  2024-10-08T06:45:57Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
