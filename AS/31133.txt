@@ -43,6 +43,8 @@ export:         to AS6695 announce AS-MF-MGSM
 remarks:
 remarks:        --- MSK-IX ---
 remarks:
+import:         from AS7195 accept AS-EDGEUNO
+export:         to AS7195 announce AS-MF-MGSM
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-CDN-MEGAFON
 import:         from AS8631 accept AS-MSKROUTESERVER
@@ -134,6 +136,8 @@ import:         from AS22822 accept AS-LLNW
 export:         to AS22822 announce AS-MF-MGSM
 import:         from AS24940 accept AS-HETZNER
 export:         to AS24940 announce AS-MF-MGSM
+import:         from AS24961 accept AS-MYLOC
+export:         to AS24961 announce AS-MF-MGSM
 import:         from AS28917 accept AS28917
 export:         to AS28917 announce AS-MF-MGSM
 import:         from AS29076 accept AS-CITYTELECOM
@@ -431,6 +435,8 @@ import:         from AS35104 accept AS-KTCPEERS
 export:         to AS35104 announce ANY
 import:         from AS35165 accept AS35165
 export:         to AS35165 announce ANY
+import:         from AS35168 accept AS-SET_TNSPLUS
+export:         to AS35168 announce ANY
 import:         from AS35177 accept AS-ASI
 export:         to AS35177 announce ANY
 import:         from AS35239 accept AS-BALTTELECOM
@@ -500,6 +506,8 @@ export:         to AS40995 announce ANY
 import:         from AS41034 accept AS-IMPULS
 export:         to AS41034 announce ANY
 import:         from AS41034 accept AS41034:AS-IMPULS-V6
+export:         to AS41034 announce ANY
+import:         from AS41034 accept AS-DON
 export:         to AS41034 announce ANY
 import:         from AS41106 accept AS41106
 export:         to AS41106 announce ANY
@@ -1876,6 +1884,7 @@ remarks:        | 31133:2102x - DE-CIX-DIRECT Frankfurt
 remarks:        | 31133:2104x - Netnod (AS52005)
 remarks:        | 31133:2105x - NetNod-DIRECT
 remarks:        | 31133:2106x - OVHCloud (AS16276)
+remarks:        | 31133:2107x - myLoc (AS24961)
 remarks:        | 31133:2108x - Hetzner (AS24940)
 remarks:        | 31133:2109x - Softlayer (AS36351)
 remarks:        | 31133:2201x - AMS-IX (AS1200)
@@ -1963,6 +1972,7 @@ remarks:        | 31133:40050 - NL-IX-RS (AS34307)
 remarks:        | 31133:40051 - NL-IX-DIRECT
 remarks:        | 31133:40060 - NetNod (AS52005)
 remarks:        | 31133:40061 - NetNod-DIRECT
+remarks:        | 31133:40089 - myLoc (AS24961)
 remarks:        | 31133:40090 - Hetzner (AS24940)
 remarks:        | 31133:40120 - Scaleway (AS12876)
 remarks:        | 31133:40150 - Twitch (AS46489)
@@ -2034,7 +2044,7 @@ mnt-by:         RIPE-NCC-ENd-MNT
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2004-03-05T14:46:40Z
-last-modified:  2024-10-08T12:02:55Z
+last-modified:  2024-10-16T13:51:24Z
 source:         RIPE
 
 organisation:   ORG-OM1-RIPE

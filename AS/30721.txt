@@ -14,47 +14,9 @@ source:         RIPE
 aut-num:        AS30721
 as-name:        SatGate
 descr:          Vilnius, Lithuania
-import:         from AS8764 accept ANY
-import:         from AS174 accept ANY
-import:         from AS3327 accept ANY
-import:         from AS1299 accept ANY
-import:         from AS9002 accept ANY
-import:         from AS39045 accept ANY
-import:         from AS8997 accept ANY
-import:         from AS21166 accept ANY
-import:         from AS21141 accept ANY
-import:         from AS6939 accept ANY
-import:         from AS51259 accept ANY
-import:         from AS24244 accept AS24244 AS45178
-import:         from AS24634 accept AS24634
-import:         from AS29520 accept AS29520
-import:         from AS31126 accept AS-SODPATH
-import:         from AS328614 accept AS328614
-import:         from AS37584 accept AS37584
-import:         from AS39010 accept AS39010 AS12812 AS38999 AS34160 AS44189
-import:         from AS41833 accept AS41833
-import:         from AS48087 accept AS48087
-import:         from AS48411 accept AS48411
-import:         from AS48629 accept AS48629
-import:         from AS56699 accept AS56699
-import:         from AS59796 accept AS59796
-import:         from AS13044 accept AS13044
-import:         from AS328535 accept AS328535
-export:         to AS8764 announce AS-SATGATE-LT
-export:         to AS174 announce AS-SATGATE-LT
-export:         to AS3327 announce AS-SATGATE-LT
-export:         to AS9002 announce AS-SATGATE-LT
-export:         to AS1299 announce AS-SATGATE-LT
-export:         to AS21141 announce AS-SATGATE-LT
-export:         to AS6939 announce AS-SATGATE-LT
-export:         to AS51259 announce AS-SATGATE-LT
-export:         to AS39045 announce AS30721
-export:         to AS59796 announce AS-SATGATE-LT
-export:         to AS8997 announce AS30721
-export:         to AS21166 announce AS30721
-export:         to AS13044 announce AS30721
-export:         to AS328535 announce AS30721
-default:        to AS8764 action pref=100; networks any
+import:         from  AS51259 accept ANY
+export:         to  AS51259 announce AS3021
+default:        to  AS51259 action pref=100; networks any
 remarks:
 remarks:        --------------------------------------
 remarks:        General questions: noc@satgate.net
@@ -75,7 +37,7 @@ status:         ASSIGNED
 mnt-by:         SATGATE-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-11-17T12:03:24Z
-last-modified:  2022-07-03T11:15:46Z
+last-modified:  2024-10-16T09:25:57Z
 source:         RIPE
 
 organisation:   ORG-SN6-RIPE

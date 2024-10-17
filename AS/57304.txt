@@ -353,6 +353,8 @@ import:         from  AS43660 action pref=100; accept   AS-ETHERWAY
 export:         to    AS43660                  announce ANY
 import:         from  AS43670 action pref=100; accept   AS-NEW-TC
 export:         to    AS43670                  announce ANY
+import:         from  AS43776 action pref=100; accept   AS43776
+export:         to    AS43776                  announce ANY
 import:         from  AS43805 action pref=100; accept   AS43805
 export:         to    AS43805                  announce ANY
 import:         from  AS43886 action pref=100; accept   AS-UTEL-K
@@ -543,8 +545,6 @@ import:         from  AS49813 action pref=200; accept   AS-INN
 export:         to    AS49813                  announce AS57304:AS-RETN-RU
 import:         from  AS49892 action pref=100; accept   AS-TETATELECOM
 export:         to    AS49892                  announce ANY
-import:         from  AS49943 action pref=100; accept   AS49943
-export:         to    AS49943                  announce ANY
 import:         from  AS49951 action pref=100; accept   AS-DFW
 export:         to    AS49951                  announce ANY
 import:         from  AS49988 action pref=100; accept   AS49988
@@ -655,6 +655,8 @@ import:         from  AS56694 action pref=100; accept   AS-DHUB
 export:         to    AS56694                  announce ANY
 import:         from  AS56701 action pref=100; accept   AS-AVANTA
 export:         to    AS56701                  announce ANY
+import:         from  AS56806 action pref=100; accept   AS56806
+export:         to    AS56806                  announce ANY
 import:         from  AS56864 action pref=100; accept   AS-WELLSERVER
 export:         to    AS56864                  announce ANY
 import:         from  AS56923 action pref=100; accept   AS56923
@@ -1280,6 +1282,8 @@ mp-import:      afi ipv6.unicast from  AS42339 action pref=100; accept   AS-CHTP
 mp-export:      afi ipv6.unicast to    AS42339                  announce ANY
 mp-import:      afi ipv6.unicast from  AS42473 action pref=100; accept   AS-ANEXIA
 mp-export:      afi ipv6.unicast to    AS42473                  announce ANY
+mp-import:      afi ipv6.unicast from  AS42498 action pref=100; accept   AS-GERCON
+mp-export:      afi ipv6.unicast to    AS42498                  announce ANY
 mp-import:      afi ipv6.unicast from  AS42610 action pref=200; accept   AS-NCNET-IPV6
 mp-export:      afi ipv6.unicast to    AS42610                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS42668 action pref=100; accept   AS-NEVALINK-IPV6
@@ -1300,6 +1304,8 @@ mp-import:      afi ipv6.unicast from  AS43465 action pref=100; accept   AS-REIN
 mp-export:      afi ipv6.unicast to    AS43465                  announce ANY
 mp-import:      afi ipv6.unicast from  AS43670 action pref=100; accept   AS-NEW-TC
 mp-export:      afi ipv6.unicast to    AS43670                  announce ANY
+mp-import:      afi ipv6.unicast from  AS43776 action pref=100; accept   AS43776
+mp-export:      afi ipv6.unicast to    AS43776                  announce ANY
 mp-import:      afi ipv6.unicast from  AS43886 action pref=100; accept   AS-UTEL-K
 mp-export:      afi ipv6.unicast to    AS43886                  announce ANY
 mp-import:      afi ipv6.unicast from  AS44030 action pref=100; accept   AS-LENTEL-IPV6
@@ -1683,7 +1689,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2024-10-09T16:27:54Z
+last-modified:  2024-10-16T17:26:20Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE

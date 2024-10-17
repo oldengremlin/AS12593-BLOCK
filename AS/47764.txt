@@ -47,10 +47,6 @@ export:         to AS5511 announce AS-VK
 import:         from AS5511 accept ANY
 mp-export:      afi ipv6.unicast to AS5511 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS5511 accept ANY;
-export:         to AS3356 announce AS-MYCOM
-import:         from AS3356 accept ANY
-mp-export:      afi ipv6.unicast to AS3356 announce AS-MYCOM;
-mp-import:      afi ipv6.unicast from AS3356 accept ANY;
 remarks:
 remarks:        =========================================
 remarks:        direct Peers
@@ -510,7 +506,6 @@ remarks:        47764:1110x When advertising to ANY International uplink, specif
 remarks:
 remarks:        47764:1111x When advertising to Telia (AS1299) uplink...
 remarks:        47764:1113x When advertising to Orange (AS5511) uplink...
-remarks:        47764:1114x When advertising to Level3 (AS3356) uplink...
 remarks:
 remarks:        47764:2100x When advertising to ANY peer or IX, specifically:
 remarks:
@@ -706,13 +701,13 @@ remarks:
 remarks:        Last Update: June 2024
 remarks:        -------------------------------------------------------------
 remarks:
-admin-c:        EY1327-RIPE
+admin-c:        VKA14-RIPE
 tech-c:         VKNC
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2024-10-09T09:16:55Z
+last-modified:  2024-10-15T08:43:54Z
 source:         RIPE # Filtered
 
 organisation:   ORG-LLCn4-RIPE
@@ -734,6 +729,35 @@ created:        2008-07-24T10:46:43Z
 last-modified:  2022-06-20T09:32:31Z
 source:         RIPE # Filtered
 
+role:           VK ADM
+address:        Limited liability company VK
+address:        Leningradskiy prospect, 39/79
+address:        125167 Moscow Russia
+phone:          +7 495 7256357
+fax-no:         +7 495 7256359
+remarks:        ------------------------------------------
+admin-c:        AK4799-RIPE
+tech-c:         DBF3-RIPE
+tech-c:         IS13
+remarks:        -----------------------------------------
+remarks:        General questions: noc@corp.mail.ru
+remarks:        Spam & Abuse: abuse@corp.mail.ru
+remarks:        Search Abuse: search-abuse@corp.mail.ru
+remarks:        Routing inquiries: ncc@corp.mail.ru
+remarks:        Peering issues: ncc@corp.mail.ru
+remarks:        -----------------------------------------
+remarks:        --------- A T T E N T I O N !!! ---------
+remarks:        Please use abuse@corp.mail.ru e-mail
+remarks:        address for spam and abuse complaints.
+remarks:        Mails for other addresses will be ignored!
+remarks:        -----------------------------------------
+mnt-by:         VKCOMPANY-MNT
+abuse-mailbox:  abuse@corp.mail.ru
+nic-hdl:        VKA14-RIPE
+created:        2024-10-09T15:37:58Z
+last-modified:  2024-10-11T10:19:09Z
+source:         RIPE # Filtered
+
 role:           VK NOC
 address:        Limited liability company VK
 address:        Leningradskiy prospect, 39/79
@@ -741,7 +765,7 @@ address:        125167 Moscow Russia
 phone:          +7 495 7256357
 fax-no:         +7 495 7256359
 remarks:        ------------------------------------------
-admin-c:        EY1327-RIPE
+admin-c:        AK4799-RIPE
 tech-c:         DBF3-RIPE
 tech-c:         IS13
 remarks:        -----------------------------------------
@@ -760,17 +784,7 @@ mnt-by:         VKCOMPANY-MNT
 abuse-mailbox:  abuse@corp.mail.ru
 nic-hdl:        VKNC
 created:        2022-06-16T11:43:06Z
-last-modified:  2022-06-16T12:36:06Z
-source:         RIPE # Filtered
-
-person:         Elena Yakupova
-address:        39/79, Leningradsky prospect
-address:        Moscow, Russia,125167
-phone:          +7 495 725 6357
-nic-hdl:        EY1327-RIPE
-mnt-by:         VKCOMPANY-MNT
-created:        2018-11-14T11:06:34Z
-last-modified:  2022-06-20T10:02:20Z
+last-modified:  2024-10-11T10:19:09Z
 source:         RIPE # Filtered
 
 
