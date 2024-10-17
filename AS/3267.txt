@@ -73,7 +73,7 @@ mp-export:      afi ipv4.unicast to as8241 announce as3267:as-customers
 mp-import:      afi ipv4.unicast from as8324 accept as8324
 mp-export:      afi ipv4.unicast to as8324 announce as3267:as-nren
 mp-import:      afi any.unicast from as8359 accept any
-mp-export:      afi any.unicast to as8359 announce as3267:as-cust:as-gov:as-full as3267:as-cust:as-biz:as-full
+mp-export:      afi any.unicast to as8359 announce as3267:as-cust:as-gov:as-full
 mp-import:      afi ipv4.unicast from as8398 accept as8398
 mp-export:      afi ipv4.unicast to as8398 announce {0.0.0.0/0}
 mp-import:      afi ipv4.unicast from as8409 accept as8409
@@ -120,6 +120,8 @@ mp-import:      afi any.unicast from as9113 accept as-vlant
 mp-export:      afi any.unicast to as9113 announce {0.0.0.0/0}
 mp-import:      afi any.unicast from as9123 accept as-timeweb
 mp-export:      afi any.unicast to as9123 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as9124 accept as9124
+mp-export:      afi ipv4.unicast to as9124 announce as3267:as-nren
 mp-import:      afi any.unicast from as9162 accept as9162
 mp-export:      afi any.unicast to as9162 announce any
 mp-import:      afi ipv4.unicast from as12389 accept as-rostelecom
@@ -348,6 +350,8 @@ mp-import:      afi any.unicast from as207056 accept as-bonch-it
 mp-export:      afi any.unicast to as207056 announce as3267:as-customers
 mp-import:      afi ipv4.unicast from as207373 accept as207373
 mp-export:      afi ipv4.unicast to as207373 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as207698 accept as207698
+mp-export:      afi ipv4.unicast to as207698 announce as3267:as-nren
 mp-import:      afi any.unicast from as208178 accept as208178
 mp-export:      afi any.unicast to as208178 announce as3267:as-customers {0.0.0.0/0}
 mp-import:      afi ipv4.unicast from as209698 accept as209698
@@ -364,7 +368,7 @@ status:         ASSIGNED
 mnt-by:         ripe-ncc-end-mnt
 mnt-by:         infr-mnt
 created:        2002-09-09T08:24:32Z
-last-modified:  2024-08-05T10:01:48Z
+last-modified:  2024-10-16T13:26:21Z
 source:         RIPE
 
 organisation:   ORG-CR1-RIPE

@@ -27,10 +27,6 @@ import:         from AS1299 action pref=200; accept ANY
 export:         to AS1299 announce AS-MYCOM
 mp-export:      afi ipv6.unicast to AS1299 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS1299 accept ANY;
-import:         from AS3356 action pref=200; accept ANY
-export:         to AS3356 announce AS-MYCOM
-mp-export:      afi ipv6.unicast to AS3356 announce AS-MYCOM;
-mp-import:      afi ipv6.unicast from AS3356 accept ANY;
 import:         from AS6762 action pref=200; accept ANY
 export:         to AS6762 announce AS-MYCOM
 mp-export:      afi ipv6.unicast to AS6762 announce AS-MYCOM;
@@ -429,10 +425,9 @@ remarks:
 remarks:        60476:1100x When advertising to ANY uplink, specifically:
 remarks:
 remarks:        60476:1101x When advertising to RETN (AS9002) uplink...
-remarks:        60476:1106x When advertising to Telecom Italia (AS6762) uplink...
+remarks:        60476:1106x When advertising to Seabone (AS6762) uplink...
 remarks:        60476:1107x When advertising to Orange (AS5511) uplink...
 remarks:        60476:1108x When advertising to Telia (AS1299) uplink...
-remarks:        60476:1109x When advertising to Level3 (AS3356) uplink...
 remarks:
 remarks:        60476:2100x When advertising to ANY peer or IX, specifically:
 remarks:
@@ -498,7 +493,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-07-12T09:26:04Z
-last-modified:  2024-08-13T14:58:27Z
+last-modified:  2024-10-15T08:45:20Z
 source:         RIPE # Filtered
 
 organisation:   ORG-DTPL1-RIPE

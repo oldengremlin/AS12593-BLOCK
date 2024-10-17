@@ -343,9 +343,6 @@ remarks:        -PEERING-FIBERSIDE-
 import:         from AS49037 accept  AS-PG19
 export:         to AS49037 announce AS-ERTH
 remarks:        -PEERING-PG19-
-import:         from AS50477 accept AS-SET-SVEN
-export:         to AS50477 announce AS-ERTH
-remarks:        -PEERING-SVYAZ-ENERGO-
 import:         from AS212236 accept AS212236
 export:         to AS212236 announce AS-ERTH
 remarks:        -PEERING-KINESCOPE-
@@ -1931,15 +1928,24 @@ remarks:        -DOWNSTREAM-IP_BYKOV-
 import:         from AS39775 accept AS-HYPERNET
 export:         to AS39775 announce any
 remarks:        -DOWNSTREAM-HYPERNET-
-import:         from AS39631 accept AS39631
-export:         to AS39631 announce AS-ERTH-CITIES AND {0.0.0.0/0}
-remarks:        -DOWNSTREAM_OMD-OM-GROUP-
 import:         from AS44192 accept AS44192
 export:         to AS44192 announce any
 remarks:        -DOWNSTREAM-TOCHKA-
 import:         from AS214283 accept AS214283
 export:         to AS214283 announce any
 remarks:        -DOWNSTREAM-TOCHKA-
+import:         from AS39631 accept AS39631
+export:         to AS39631 announce any
+remarks:        -DOWNSTREAM_OMD-OM-Group-
+import:         from AS206572 accept AS206572
+export:         to AS206572 announce any
+remarks:        -FROM_DOWNSTREAM_DSB-
+import:         from AS50477 accept AS-SET-SVEN
+export:         to AS50477 announce any
+remarks:        -DOWNSTREAM_SVYAZ_ENERGO-
+import:         from AS202306 accept AS-HOSTGLOBALPLUS
+export:         to AS202306 announce any
+remarks:        -HOSTGLOBAL_PLUS-
 remarks:        ========================================================
 remarks:        Control community for Customers
 remarks:
@@ -2097,7 +2103,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ERTH-MAGISTR
 created:        2011-10-13T07:43:18Z
-last-modified:  2024-09-19T08:42:51Z
+last-modified:  2024-10-14T21:28:22Z
 source:         RIPE
 
 organisation:   ORG-RA21-RIPE

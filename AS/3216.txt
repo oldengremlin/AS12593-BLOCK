@@ -1668,6 +1668,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS197078 action pref=100; accept AS-YARNET
+export:         to AS197078 announce ANY
 import:         from AS40966 action pref=100; accept AS40966:AS-L7GUARD
 export:         to AS40966 announce ANY
 import:         from AS61140 action pref=100; accept AS61140
@@ -1702,8 +1704,14 @@ import:         from AS2567 action pref=100; accept AS2567
 export:         to AS2567 announce {0.0.0.0/0}
 import:         from AS41148 action pref=100; accept AS-ZL
 export:         to AS41148 announce ANY
+import:         from AS61406 action pref=100; accept AS-RTATELECOM
+export:         to AS61406 announce ANY
 import:         from AS13105 action pref=100; accept AS13105
 export:         to AS13105 announce ANY
+import:         from AS41798 action pref=100; accept AS-TRANSKZ
+export:         to AS41798 announce ANY
+mp-import:      from AS41798 action pref=100; accept AS-TRANSKZ
+mp-export:      to AS41798 announce ANY
 import:         from AS198842 action pref=100; accept AS198842
 export:         to AS198842 announce ANY
 import:         from AS196750 action pref=100; accept AS-WEBA
@@ -1734,8 +1742,12 @@ import:         from AS35140 action pref=100; accept AS-SET-ALTEGROSKY
 export:         to AS35140 announce ANY
 import:         from AS214804 action pref=100; accept AS214804
 export:         to AS214804 announce {0.0.0.0/0}
+import:         from AS33987 action pref=100; accept AS33987
+export:         to AS33987 announce ANY
 import:         from AS9123 action pref=100; accept AS-TIMEWEB
 export:         to AS9123 announce AS-SOVAM
+mp-import:      from AS9123 action pref=100; accept AS-TIMEWEB
+mp-export:      to AS9123 announce ANY
 import:         from AS207978 action pref=100; accept AS-KSC-SB-RAS
 export:         to AS207978 announce ANY
 import:         from AS44751 action pref=100; accept AS44751
@@ -3466,6 +3478,8 @@ import:         from AS57923 action pref=100; accept AS57923
 export:         to AS57923 announce {0.0.0.0/0}
 import:         from AS57876 action pref=100; accept AS57876
 export:         to AS57876 announce ANY
+import:         from AS50716 action pref=100; accept AS-TELECOMRU
+export:         to AS50716 announce ANY
 import:         from AS42110 action pref=100; accept AS42110
 export:         to AS42110 announce ANY
 import:         from AS57123 action pref=100; accept AS57123
@@ -5600,7 +5614,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-10-08T06:45:57Z
+last-modified:  2024-10-17T06:11:36Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
