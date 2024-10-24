@@ -1668,6 +1668,10 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS214066 action pref=100; accept AS214066
+export:         to AS214066 announce ANY
+import:         from AS48763 action pref=100; accept AS48763
+export:         to AS48763 announce ANY
 import:         from AS197078 action pref=100; accept AS-YARNET
 export:         to AS197078 announce ANY
 import:         from AS40966 action pref=100; accept AS40966:AS-L7GUARD
@@ -1770,8 +1774,6 @@ import:         from AS204137 action pref=100; accept AS-ORIONNET-IRK
 export:         to AS204137 announce ANY
 import:         from AS198953 action pref=100; accept AS198953
 export:         to AS198953 announce ANY
-import:         from AS49943 action pref=100; accept AS49943
-export:         to AS49943 announce ANY
 import:         from AS56619 action pref=100; accept AS56619
 export:         to AS56619 announce {0.0.0.0/0}
 import:         from AS215244 action pref=100; accept AS215244
@@ -2392,6 +2394,8 @@ mp-import:      from AS35810 action pref=100; accept AS-BIGTELECOM
 mp-export:      to AS35810 announce ANY
 import:         from AS41560 action pref=100; accept AS-UT-SVR
 export:         to AS41560 announce ANY
+import:         from AS52090 action pref=100; accept AS52090
+export:         to AS52090 announce {0.0.0.0/0}
 import:         from AS209005 action pref=100; accept AS209005
 export:         to AS209005 announce ANY
 import:         from AS198086 action pref=100; accept AS198086
@@ -3034,6 +3038,8 @@ import:         from AS12739 action pref=100; accept AS-NETLINE
 export:         to AS12739 announce ANY
 import:         from AS44315 action pref=100; accept AS44315
 export:         to AS44315 announce ANY
+import:         from AS29503 action pref=100; accept AS29503
+export:         to AS29503 announce ANY
 import:         from AS13227 action pref=100; accept AS-KRAFT-S
 export:         to AS13227 announce ANY
 import:         from AS49136 action pref=100; accept AS-TNSAM
@@ -4323,12 +4329,8 @@ import:         from AS28812 action pref=100; accept AS-JSCBIS
 export:         to AS28812 announce ANY
 mp-import:      afi ipv6 from AS28812 action pref=100; accept AS-JSCBIS
 mp-export:      afi ipv6 to AS28812 announce ANY
-import:         from AS51156 action pref=100; accept AS51156
-export:         to AS51156 announce ANY
 import:         from AS201123 action pref=100; accept AS-ZT-UFA
 export:         to AS201123 announce ANY
-import:         from AS44158 action pref=100; accept AS-ALTURA
-export:         to AS44158 announce ANY
 import:         from AS204507 action pref=100; accept AS204507
 export:         to AS204507 announce ANY
 import:         from AS199933 action pref=100; accept AS-ELEKTRANET
@@ -4663,8 +4665,6 @@ import:         from AS43270 action pref=100; accept AS43270
 export:         to AS43270 announce ANY
 import:         from AS51136 action pref=100; accept AS51136
 export:         to AS51136 announce ANY
-import:         from AS202734 action pref=100; accept AS202734
-export:         to AS202734 announce {0.0.0.0/0}
 import:         from AS207501 action pref=100; accept AS207501
 export:         to AS207501 announce {0.0.0.0/0}
 import:         from AS51372 action pref=100; accept AS51372
@@ -4708,7 +4708,7 @@ export:         to AS215394 announce ANY
 import:         from AS25408 action pref=100; accept AS-WestCallSPB^+
 export:         to AS25408 announce ANY
 import:         from AS30924 action pref=100; accept AS30924
-export:         to AS30924 announce ANY
+export:         to AS30924 announce AS-SOVAM
 import:         from AS34042 action pref=100; accept AS34042
 export:         to AS34042 announce ANY
 import:         from AS41377 action pref=100; accept AS41377^+
@@ -5614,7 +5614,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-10-17T06:11:36Z
+last-modified:  2024-10-23T07:36:51Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
