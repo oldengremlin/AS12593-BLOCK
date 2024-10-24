@@ -28,6 +28,8 @@ import:         from AS3356 accept ANY
 export:         to AS3356 announce AS-MF-MGSM
 import:         from AS6762 accept ANY
 export:         to AS6762 announce AS-MF-MGSM
+import:         from AS23764 accept ANY
+export:         to AS23764 announce AS-MF-MGSM
 remarks:
 remarks:        --- AMS-IX ---
 remarks:
@@ -693,6 +695,8 @@ import:         from AS44849 accept AS44849
 export:         to AS44849 announce ANY
 import:         from AS44882 accept AS44882
 export:         to AS44882 announce ANY
+import:         from AS44923 accept AS-TMPK
+export:         to AS44923 announce ANY
 import:         from AS44927 accept AS-TMPK
 export:         to AS44927 announce ANY
 import:         from AS44963 accept AS-POTOK
@@ -1868,6 +1872,7 @@ remarks:        | 31133:1101x - TeliaSonera (AS1299)
 remarks:        | 31133:1102x - Telecom Italia (AS6762)
 remarks:        | 31133:1104x - Lumen (AS3356)
 remarks:        | 31133:1107x - Cogent (AS174)
+remarks:        | 31133:1108x - China Telecom (AS23764)
 remarks:        |
 remarks:        | x = 0 - advertise to this only (don't advertise to any Upstream)
 remarks:        | x = 1,2,3 or 5 - prepend 31133 (1,2,3 or 5) times
@@ -1958,6 +1963,7 @@ remarks:        | 31133:30010 - TeliaSonera (AS1299)
 remarks:        | 31133:30020 - Telecom Italia (AS6762)
 remarks:        | 31133:30040 - Lumen (AS3356)
 remarks:        | 31133:30070 - Cogent (AS174)
+remarks:        | 31133:30080 - China Telecom (AS23764)
 remarks:        +-------------------------------------------------------------------------------+
 remarks:
 remarks:        +-------------------------------------------------------------------------------+
@@ -1972,8 +1978,8 @@ remarks:        | 31133:40050 - NL-IX-RS (AS34307)
 remarks:        | 31133:40051 - NL-IX-DIRECT
 remarks:        | 31133:40060 - NetNod (AS52005)
 remarks:        | 31133:40061 - NetNod-DIRECT
-remarks:        | 31133:40089 - myLoc (AS24961)
 remarks:        | 31133:40090 - Hetzner (AS24940)
+remarks:        | 31133:40110 - myLoc (AS24961)
 remarks:        | 31133:40120 - Scaleway (AS12876)
 remarks:        | 31133:40150 - Twitch (AS46489)
 remarks:        | 31133:40170 - CloudFlare (AS13335)
@@ -2044,7 +2050,7 @@ mnt-by:         RIPE-NCC-ENd-MNT
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2004-03-05T14:46:40Z
-last-modified:  2024-10-16T13:51:24Z
+last-modified:  2024-10-22T10:32:59Z
 source:         RIPE
 
 organisation:   ORG-OM1-RIPE
