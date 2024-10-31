@@ -351,7 +351,7 @@ import:         from AS197309 action pref=100; accept AS-RSMEDIA
 export:         to AS197309 announce as-piter-ix-msk
 import:         from AS207353 action pref=100; accept AS207353
 export:         to AS207353 announce as-piter-ix-msk
-import:         from AS3267 action pref=100; accept AS-RUNNET
+import:         from AS3267 action pref=100; accept AS3267:AS-CUSTOMERS
 export:         to AS3267 announce as-piter-ix-msk
 import:         from AS51596 action pref=100; accept AS-RUSTEKO
 export:         to AS51596 announce as-piter-ix-msk
@@ -961,6 +961,10 @@ import:         from AS41082 action pref=100; accept AS-URALTRANSCOM
 export:         to AS41082 announce as-piter-ix-msk
 import:         from AS56893 action pref=100; accept AS56893
 export:         to AS56893 announce as-piter-ix-msk
+import:         from AS6856 action pref=100; accept AS-SETICCUS
+export:         to AS6856 announce as-piter-ix-msk
+import:         from AS56493 action pref=100; accept AS56493
+export:         to AS56493 announce as-piter-ix-msk
 remarks:        ~~~~~~~~~~~~~~ BGP communities ~~~~~~~~~~~~~~
 remarks:        * see whois for RIPE/AS50817
 remarks:        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -973,7 +977,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2024-09-20T19:57:29Z
+last-modified:  2024-10-29T13:54:08Z
 source:         RIPE
 
 organisation:   ORG-PCL30-RIPE

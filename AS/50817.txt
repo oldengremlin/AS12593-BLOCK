@@ -231,7 +231,7 @@ import:         from AS12314 action pref=100; accept AS-ROPNET
 export:         to AS12314 announce as-piter-ix
 import:         from AS197309 action pref=100; accept AS-RSMEDIA
 export:         to AS197309 announce as-piter-ix
-import:         from AS3267 action pref=100; accept AS-RUNNET
+import:         from AS3267 action pref=100; accept AS3267:AS-CUSTOMERS
 export:         to AS3267 announce as-piter-ix
 import:         from AS51596 action pref=100; accept AS51596
 export:         to AS51596 announce as-piter-ix
@@ -1015,6 +1015,10 @@ import:         from AS59665 action pref=100; accept AS59665
 export:         to AS59665 announce as-piter-ix
 import:         from AS137409 action pref=100; accept AS137409
 export:         to AS137409 announce as-piter-ix
+import:         from AS6856 action pref=100; accept AS-SETICCUS
+export:         to AS6856 announce as-piter-ix
+import:         from AS56493 action pref=100; accept AS56493
+export:         to AS56493 announce as-piter-ix
 remarks:
 remarks:        --------------- PiterIXPs ASNs --------------
 remarks:        spb 50817 msk 49869 rnd 59539 hls 39607
@@ -1079,7 +1083,7 @@ remarks:        214729 64649 138915 64650 206803 64651
 remarks:        209030 64652 202999 64653 197868 64654
 remarks:        201593 64655 204564 64656 214173 64657
 remarks:        137409 64658 214173 64659 215174 64660
-remarks:        211134 64661
+remarks:        211134 64661 212128 64662
 remarks:        }
 remarks:        [65300-65535] GID - group id
 remarks:        {
@@ -1118,7 +1122,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2024-10-21T00:28:14Z
+last-modified:  2024-10-29T13:52:24Z
 source:         RIPE
 
 organisation:   ORG-PCL30-RIPE

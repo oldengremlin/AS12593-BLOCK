@@ -38,6 +38,7 @@ as-name:        ARTX-AS
 org:            ORG-AJ2-RIPE
 import:         from AS20485 action pref=50; accept ANY
 import:         from AS8631 action pref=50; accept ANY
+import:         from AS49869 action pref=50; accept ANY
 import:         from AS3216 action pref=50; accept ANY
 import:         from AS25513 action pref=50; accept ANY
 import:         from AS28917 action pref=50; accept ANY
@@ -69,11 +70,11 @@ import:         from AS8491 action pref=50; accept AS-BSH
 import:         from AS44050 action pref=50; accept AS-PIN-MSKIX
 import:         from AS43798 action pref=50; accept AS43798
 import:         from AS34879 action pref=50; accept AS-NGENIX-MSK
-import:         from AS50219 action pref=50; accept AS50219
 import:         from AS48939 action pref=50; accept AS-NTK
 import:         from AS28917 action pref=50; accept AS-FLEX
 import:         from AS203699 action pref=50; accept AS203699
 export:         to AS8631 announce AS-ARTX
+export:         to AS49869  announce AS-ARTX
 export:         to AS3216 announce AS-ARTX
 export:         to AS20485 announce AS-ARTX
 export:         to AS25513 announce AS-ARTX
@@ -106,7 +107,6 @@ export:         to AS8491 announce AS-ARTX
 export:         to AS44050 announce AS-ARTX
 export:         to AS43798 announce AS-ARTX
 export:         to AS34879 announce AS-ARTX
-export:         to AS50219 announce ANY
 export:         to AS48939 announce ANY
 export:         to AS28917 announce AS-ARTX
 export:         to AS203699 announce ANY
@@ -116,7 +116,7 @@ status:         ASSIGNED
 mnt-by:         ARTX-RIPE-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2024-10-08T15:18:58Z
+last-modified:  2024-10-29T14:57:24Z
 source:         RIPE
 
 

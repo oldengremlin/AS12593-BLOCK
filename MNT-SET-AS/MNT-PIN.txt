@@ -756,8 +756,6 @@ import:         from AS6327 action pref=300; accept AS-BIGPIPE
 export:         to AS6327 announce AS-PIN-AMSIX
 import:         from AS29017 action pref=300; accept AS-GYRON
 export:         to AS29017 announce AS-PIN-AMSIX
-import-via:     AS6777 from AS-ANY EXCEPT AS24940 accept ANY
-export-via:     AS6777 to AS-ANY EXCEPT AS24940 announce AS-PIN-AMSIX
 remarks:        ============================================
 remarks:        KIEV: DTEL-IX RS & DIRECT PEERS
 remarks:        ============================================
@@ -791,10 +789,6 @@ import:         from AS62241 action pref=300; accept AS-FORESTNET
 export:         to AS62241 announce ANY
 import:         from as-skytel_as-set action pref=300; accept as-skytel_as-set
 export:         to AS205998 announce ANY
-import:         from AS-WAVEACCESS action pref=300; accept AS-WAVEACCESS
-export:         to AS-WAVEACCESS announce ANY
-mp-import:      from AS-WAVEACCESS action pref=300; accept AS-WAVEACCESS
-mp-export:      to AS-WAVEACCESS announce ANY
 import:         from AS207822 action pref=500; accept AS-SET-NPKMSA
 export:         to AS207822 announce ANY
 import:         from AS207853 action pref=300; accept AS-SET-UNIMACH
@@ -811,7 +805,7 @@ mnt-by:         RIPE-NCC-END-MNT
 tech-c:         PIN44050-RIPE
 mnt-by:         MNT-PIN
 created:        2007-11-09T12:08:55Z
-last-modified:  2024-08-06T05:33:50Z
+last-modified:  2024-10-29T09:45:32Z
 source:         RIPE
 
 
@@ -1252,7 +1246,7 @@ import:         from AS197309 action pref=100; accept AS-RSMEDIA
 export:         to AS197309 announce as-piter-ix-msk
 import:         from AS207353 action pref=100; accept AS207353
 export:         to AS207353 announce as-piter-ix-msk
-import:         from AS3267 action pref=100; accept AS-RUNNET
+import:         from AS3267 action pref=100; accept AS3267:AS-CUSTOMERS
 export:         to AS3267 announce as-piter-ix-msk
 import:         from AS51596 action pref=100; accept AS-RUSTEKO
 export:         to AS51596 announce as-piter-ix-msk
@@ -1862,6 +1856,10 @@ import:         from AS41082 action pref=100; accept AS-URALTRANSCOM
 export:         to AS41082 announce as-piter-ix-msk
 import:         from AS56893 action pref=100; accept AS56893
 export:         to AS56893 announce as-piter-ix-msk
+import:         from AS6856 action pref=100; accept AS-SETICCUS
+export:         to AS6856 announce as-piter-ix-msk
+import:         from AS56493 action pref=100; accept AS56493
+export:         to AS56493 announce as-piter-ix-msk
 remarks:        ~~~~~~~~~~~~~~ BGP communities ~~~~~~~~~~~~~~
 remarks:        * see whois for RIPE/AS50817
 remarks:        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1874,7 +1872,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2024-09-20T19:57:29Z
+last-modified:  2024-10-29T13:54:08Z
 source:         RIPE
 
 
@@ -2099,7 +2097,7 @@ import:         from AS12314 action pref=100; accept AS-ROPNET
 export:         to AS12314 announce as-piter-ix
 import:         from AS197309 action pref=100; accept AS-RSMEDIA
 export:         to AS197309 announce as-piter-ix
-import:         from AS3267 action pref=100; accept AS-RUNNET
+import:         from AS3267 action pref=100; accept AS3267:AS-CUSTOMERS
 export:         to AS3267 announce as-piter-ix
 import:         from AS51596 action pref=100; accept AS51596
 export:         to AS51596 announce as-piter-ix
@@ -2883,6 +2881,10 @@ import:         from AS59665 action pref=100; accept AS59665
 export:         to AS59665 announce as-piter-ix
 import:         from AS137409 action pref=100; accept AS137409
 export:         to AS137409 announce as-piter-ix
+import:         from AS6856 action pref=100; accept AS-SETICCUS
+export:         to AS6856 announce as-piter-ix
+import:         from AS56493 action pref=100; accept AS56493
+export:         to AS56493 announce as-piter-ix
 remarks:
 remarks:        --------------- PiterIXPs ASNs --------------
 remarks:        spb 50817 msk 49869 rnd 59539 hls 39607
@@ -2947,7 +2949,7 @@ remarks:        214729 64649 138915 64650 206803 64651
 remarks:        209030 64652 202999 64653 197868 64654
 remarks:        201593 64655 204564 64656 214173 64657
 remarks:        137409 64658 214173 64659 215174 64660
-remarks:        211134 64661
+remarks:        211134 64661 212128 64662
 remarks:        }
 remarks:        [65300-65535] GID - group id
 remarks:        {
@@ -2986,7 +2988,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2024-10-21T00:28:14Z
+last-modified:  2024-10-29T13:52:24Z
 source:         RIPE
 
 

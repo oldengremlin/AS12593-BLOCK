@@ -45,8 +45,6 @@ export:         to AS56931 announce AS-TEAM-HOST
 import:         from AS56931 action pref=100; accept ANY
 import:         from AS49869 action pref=100; accept ANY
 export:         to AS49869 announce AS-TEAM-HOST
-import:         from AS200019 accept AS-ALEXHOST
-export:         to AS200019 announce ANY
 import:         from AS57073 accept AS57073
 export:         to AS57073 announce ANY
 export:         to AS51464 announce ANY
@@ -81,13 +79,15 @@ import:         from AS198539 accept AS-UNITEDNETS
 export:         to AS198539 announce ANY
 import:         from AS39709 accept AS-MARYNONET
 export:         to AS39709 announce ANY
+import:         from AS8985 accept AS-MSK-IX-SERVICES
+export:         to AS8985 announce ANY
 admin-c:        AC38370-RIPE
 tech-c:         AC38370-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-team-host-1
 created:        2016-04-21T12:27:40Z
-last-modified:  2024-10-07T23:51:58Z
+last-modified:  2024-10-30T14:31:54Z
 source:         RIPE
 remarks:        Community meaning
 remarks:        0:666 - Blackhole

@@ -16,13 +16,13 @@ as-name:        NASSIST-AS
 remarks:        The NetAssist autonomous system
 org:            ORG-NL366-RIPE
 remarks:        ---------------------------------------------
-remarks:        For network information, see http://www.29632.as/
-remarks:        For network services and IP transit see
-remarks:        http://www.netassist.ua/
-remarks:        For home connection, see http://www.alfa-inet.net/
-remarks:        or http://www.kuzia.ua/
+remarks:        For network information, look at https://www.29632.as/
+remarks:        For network services and IP transit - look at
+remarks:        https://www.netassist.ua/
+remarks:        For home connection, see https://www.alfa-inet.net/
+remarks:        or https://www.kuzia.ua/
 remarks:        AS29632 uses community to mark and drive announcements.
-remarks:        The list of BGP communities is at the bottom.
+remarks:        The list of BGP communities is located at the bottom.
 remarks:        ---------------------------------------------
 remarks:        IPv4 and IPv6 Transit
 remarks:        ---------------------------------------------
@@ -544,6 +544,9 @@ mp-export:      afi ipv6.unicast to AS15696 announce ANY
 remarks:        -= Dedicated fiber =-
 mp-import:      afi ipv6.unicast from AS16628 action pref=100; accept AS16628
 mp-export:      afi ipv6.unicast to AS16628 announce ANY
+remarks:        -= LNK SYSTEMS MUNTENIA SRL =-
+mp-import:      afi ipv6.unicast from AS17818 action pref=100; accept AS17818
+mp-export:      afi ipv6.unicast to AS17818 announce ANY
 remarks:        -= PT Cakra Lintas Nusantara =-
 mp-import:      afi ipv6.unicast from AS24206 action pref=100; accept AS24206
 mp-export:      afi ipv6.unicast to AS24206 announce ANY
@@ -1099,6 +1102,9 @@ mp-export:      afi ipv6.unicast to AS210464 announce ANY
 remarks:        -= EDGENET =-
 mp-import:      afi ipv6.unicast from AS210481 action pref=100; accept AS-GOOD
 mp-export:      afi ipv6.unicast to AS210481 announce ANY
+remarks:        -= EuroNet =-
+mp-import:      afi ipv6.unicast from AS210490 action pref=100; accept AS210490
+mp-export:      afi ipv6.unicast to AS210490 announce ANY
 remarks:        -= Nikolaus Hammler =-
 mp-import:      afi ipv6.unicast from AS210623 action pref=100; accept AS210623
 mp-export:      afi ipv6.unicast to AS210623 announce ANY
@@ -1407,7 +1413,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEREZHA-MNT
 created:        2003-10-28T13:43:45Z
-last-modified:  2024-10-10T20:47:11Z
+last-modified:  2024-10-24T15:55:05Z
 source:         RIPE # Filtered
 
 organisation:   ORG-NL366-RIPE
