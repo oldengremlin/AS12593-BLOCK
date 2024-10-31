@@ -1629,6 +1629,8 @@ import:         from AS13238 action pref=95; accept AS-YANDEX
 export:         to AS13238 announce AS-SOVAM
 import:         from AS13238 action pref=100; accept AS13238
 export:         to AS13238 announce ANY
+mp-import:      from AS13238 action pref=100; accept AS13238
+mp-export:      to AS13238 announce AS-SOVAM-V6
 import:         from AS8402 action pref=95; accept AS-CORBINA
 export:         to AS8402 announce AS-SOVAM
 import:         from AS12714 action pref=95; accept AS-TI
@@ -1668,6 +1670,14 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS215013 action pref=100; accept AS215013
+export:         to AS215013 announce ANY
+mp-import:      from AS215013 action pref=100; accept AS215013
+mp-export:      to AS215013 announce ANY
+import:         from AS205641 action pref=100; accept AS-ELCOM-KNA
+export:         to AS205641 announce ANY
+import:         from AS51156 action pref=100; accept AS51156
+export:         to AS51156 announce ANY
 import:         from AS214066 action pref=100; accept AS214066
 export:         to AS214066 announce ANY
 import:         from AS48763 action pref=100; accept AS48763
@@ -1820,6 +1830,10 @@ import:         from AS60818 action pref=100; accept AS60818
 export:         to AS60818 announce {0.0.0.0/0}
 import:         from AS208677 action pref=100; accept AS-CLOUDRU
 export:         to AS208677 announce ANY
+import:         from AS215796 action pref=100; accept AS215796
+export:         to AS215796 announce {0.0.0.0/0}
+mp-import:      from AS215796 action pref=100; accept AS215796
+mp-export:      to AS215796 announce {::/0}
 import:         from AS201851 action pref=100; accept AS201851:AS-PIK
 export:         to AS201851 announce ANY
 import:         from AS43170 action pref=100; accept AS43170
@@ -1932,8 +1946,6 @@ import:         from AS49648 action pref=100; accept AS49648
 export:         to AS49648 announce {0.0.0.0/0}
 import:         from AS58347 action pref=100; accept AS58347
 export:         to AS58347 announce {0.0.0.0/0}
-import:         from AS41122 action pref=100; accept AS41122
-export:         to AS41122 announce {0.0.0.0/0}
 import:         from AS39493 action pref=100; accept AS-KSTV
 export:         to AS39493 announce ANY
 mp-import:      from AS39493 action pref=100; accept AS39493
@@ -1998,8 +2010,6 @@ import:         from AS209059 action pref=100; accept AS-GCOM
 export:         to AS209059 announce ANY
 mp-import:      afi ipv6 from AS209059 action pref=100; accept AS209059
 mp-export:      afi ipv6 to AS209059 announce ANY
-import:         from AS205641 action pref=100; accept AS-ELCOM-KNA
-export:         to AS205641 announce ANY
 import:         from AS51334 action pref=100; accept AS51334
 export:         to AS51334 announce ANY
 import:         from AS42916 action pref=100; accept AS42916
@@ -2426,6 +2436,8 @@ import:         from AS44378 action pref=100; accept AS44378
 export:         to AS44378 announce {0.0.0.0/0}
 import:         from AS62019 action pref=100; accept AS62019
 export:         to AS62019 announce {0.0.0.0/0}
+import:         from AS25381 action pref=100; accept AS-STRANZIT
+export:         to AS25381 announce ANY
 import:         from AS198062 action pref=100; accept AS198062
 export:         to AS198062 announce {0.0.0.0/0}
 import:         from AS208629 action pref=100; accept AS208629
@@ -3080,6 +3092,8 @@ import:         from AS28890 action pref=100; accept AS-INSYS-EKB
 export:         to AS28890 announce ANY
 mp-import:      afi ipv6 from AS28890 action pref=100; accept AS28890
 mp-export:      afi ipv6 to AS28890 announce ANY
+import:         from AS49860 action pref=100; accept AS49860:AS-INTERNET96
+export:         to AS49860 announce ANY
 import:         from AS28709 action pref=100; accept AS-MAILRU
 export:         to AS28709 announce ANY
 import:         from AS48642 action pref=100; accept AS-KT-RU
@@ -3829,8 +3843,6 @@ import:         from AS199020 action pref=100; accept AS-AVANTRU
 export:         to AS199020 announce ANY
 import:         from AS197360 action pref=100; accept AS197360
 export:         to AS197360 announce ANY
-import:         from AS201191 action pref=100; accept AS201191
-export:         to AS201191 announce ANY
 import:         from AS52194 action pref=100; accept AS52194
 export:         to AS52194 announce ANY
 import:         from AS48320 action pref=100; accept AS-KETIS
@@ -4521,8 +4533,6 @@ import:         from AS44963 action pref=100; accept AS-POTOK
 export:         to AS44963 announce ANY
 import:         from AS42478 action pref=100; accept AS-YUG-LINK
 export:         to AS42478 announce ANY
-import:         from AS44192 action pref=100; accept AS44192
-export:         to AS44192 announce ANY
 import:         from AS197756 action pref=100; accept AS197756
 export:         to AS197756 announce ANY
 import:         from AS216365 action pref=100; accept AS216365
@@ -5614,7 +5624,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-10-23T07:36:51Z
+last-modified:  2024-10-30T11:59:47Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

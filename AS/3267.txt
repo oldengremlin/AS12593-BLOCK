@@ -15,7 +15,7 @@ aut-num:        as3267
 as-name:        niks
 org:            org-cr1-ripe
 mp-import:      afi any.unicast from as1299 accept any
-mp-export:      afi any.unicast to as1299 announce as3267:as-cust:as-gov:as-full as3267:as-cust:as-biz:as-full
+mp-export:      afi any.unicast to as1299 announce as3267:as-customers:as-full
 mp-import:      afi any.unicast from as2603 accept any
 mp-export:      afi any.unicast to as2603 announce as3267:as-cust:as-gov:as-full <^as8491 .* as200264$>
 mp-import:      afi any.unicast from as2683 accept as-sinp-rm
@@ -27,7 +27,7 @@ mp-export:      afi any.unicast to as2875 announce as3267:as-nren
 mp-import:      afi any.unicast from as2895 accept as-freenet
 mp-export:      afi any.unicast to as2895 announce any
 mp-import:      afi any.unicast from as3216 accept any
-mp-export:      afi any.unicast to as3216 announce as3267:as-cust:as-gov:as-full as3267:as-cust:as-biz:as-full
+mp-export:      afi any.unicast to as3216 announce as3267:as-customers:as-full
 mp-import:      afi ipv4.unicast from as3218 accept as-cosmos
 mp-export:      afi ipv4.unicast to as3218 announce any {0.0.0.0/0}
 mp-import:      afi any.unicast from as3249 accept as-estpak
@@ -54,6 +54,8 @@ mp-import:      afi ipv4.unicast from as5480 accept as5480
 mp-export:      afi ipv4.unicast to as5480 announce {0.0.0.0/0}
 mp-import:      afi ipv4.unicast from as5495 accept as5495
 mp-export:      afi ipv4.unicast to as5495 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as5548 accept as5548
+mp-export:      afi ipv4.unicast to as5548 announce as3267:as-nren
 mp-import:      afi ipv4.unicast from as5567 accept as5567
 mp-export:      afi ipv4.unicast to as5567 announce any {0.0.0.0/0}
 mp-import:      afi ipv4.unicast from as5568 accept as-rbnet
@@ -204,8 +206,8 @@ mp-import:      afi any.unicast from as31500 accept as-global-net as-global-net-
 mp-export:      afi any.unicast to as31500 announce as3267:as-customers
 mp-import:      afi ipv4.unicast from as31575 accept as31575
 mp-export:      afi ipv4.unicast to as31575 announce {0.0.0.0/0}
-mp-import:      afi ipv4.unicast from as32934 accept as32934 as54115
-mp-export:      afi ipv4.unicast to as32934 announce as3267:as-customers
+mp-import:      afi any.unicast from as32934 accept as32934 as54115
+mp-export:      afi any.unicast to as32934 announce as3267:as-customers
 mp-import:      afi ipv4.unicast from as34017 accept as34017
 mp-export:      afi ipv4.unicast to as34017 announce as3267:as-nren
 mp-import:      afi ipv4.unicast from as34102 accept as-awanti
@@ -274,6 +276,8 @@ mp-import:      afi any.unicast from as48166 accept as-fortex
 mp-export:      afi any.unicast to as48166 announce as3267:as-customers
 mp-import:      afi any.unicast from as48670 accept as48670
 mp-export:      afi any.unicast to as48670 announce as3267:as-cust as3267:as-peer as3267:as-prov
+mp-import:      afi ipv4.unicast from as49199 accept as49199
+mp-export:      afi ipv4.unicast to as49199 announce as3267:as-cust as3267:as-peer as3267:as-prov
 mp-import:      afi ipv4.unicast from as49450 accept as49450
 mp-export:      afi ipv4.unicast to as49450 announce as3267:as-nren
 mp-import:      afi any.unicast from as49544 accept as49544
@@ -330,6 +334,8 @@ mp-import:      afi ipv4.unicast from as60643 accept as60643
 mp-export:      afi ipv4.unicast to as60643 announce any
 mp-import:      afi ipv4.unicast from as60722 accept as60722
 mp-export:      afi ipv4.unicast to as60722 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from as196648 accept as196648
+mp-export:      afi ipv4.unicast to as196648 announce as3267:as-nren
 mp-import:      afi any.unicast from as197467 accept as197467
 mp-export:      afi any.unicast to as197467 announce as3267:as-customers {0.0.0.0/0}
 mp-import:      afi ipv4.unicast from as197768 accept as197768
@@ -368,7 +374,7 @@ status:         ASSIGNED
 mnt-by:         ripe-ncc-end-mnt
 mnt-by:         infr-mnt
 created:        2002-09-09T08:24:32Z
-last-modified:  2024-10-16T13:26:21Z
+last-modified:  2024-10-29T13:23:20Z
 source:         RIPE
 
 organisation:   ORG-CR1-RIPE
