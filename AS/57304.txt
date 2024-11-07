@@ -827,8 +827,6 @@ import:         from AS198947 action pref=100; accept   AS-RETN-RU
 export:         to   AS198947                  announce ANY
 import:         from AS198953 action pref=100; accept   AS198953
 export:         to   AS198953                  announce ANY
-import:         from AS199078 action pref=100; accept   AS199078
-export:         to   AS199078                  announce ANY
 import:         from AS199274 action pref=100; accept   AS199274
 export:         to   AS199274                  announce ANY
 import:         from AS199361 action pref=100; accept   AS-CITYCONNECT
@@ -949,6 +947,8 @@ import:         from AS205412 action pref=100; accept   AS205412
 export:         to   AS205412                  announce ANY
 import:         from AS205495 action pref=100; accept   AS-LT
 export:         to   AS205495                  announce ANY
+import:         from AS205638 action pref=100; accept   AS205638
+export:         to   AS205638                  announce ANY
 import:         from AS205646 action pref=100; accept   AS205646
 export:         to   AS205646                  announce ANY
 import:         from AS205675 action pref=100; accept   AS205675
@@ -1053,7 +1053,7 @@ import:         from AS211697 action pref=100; accept   AS211697
 export:         to   AS211697                  announce ANY
 import:         from AS211796 action pref=100; accept   AS211796
 export:         to   AS211796                  announce ANY
-import:         from AS211914 action pref=100; accept   AS-AERU
+import:         from AS211914 action pref=100; accept   AS211914:AS-AERCA
 export:         to   AS211914                  announce ANY
 import:         from AS212075 action pref=100; accept   AS212075
 export:         to   AS212075                  announce ANY
@@ -1101,8 +1101,6 @@ import:         from AS273045 action pref=100; accept   AS273045
 export:         to   AS273045                  announce ANY
 import:         from AS396986 action pref=100; accept   AS396986
 export:         to   AS396986                  announce ANY
-import:         from AS396998 action pref=100; accept   AS-PATH
-export:         to   AS396998                  announce ANY
 remarks:
 remarks:        ---------------------------------------------------------------
 remarks:        ****************** ReTN IPv6 Routing Policy *******************
@@ -1650,8 +1648,6 @@ mp-import:      afi ipv6.unicast from AS215601 action pref=100; accept   AS21560
 mp-export:      afi ipv6.unicast to   AS215601                  announce ANY
 mp-import:      afi ipv6.unicast from AS396986 action pref=100; accept   AS396986
 mp-export:      afi ipv6.unicast to   AS396986                  announce ANY
-mp-import:      afi ipv6.unicast from AS396998 action pref=100; accept   AS-PATH
-mp-export:      afi ipv6.unicast to   AS396998                  announce ANY
 remarks:
 remarks:        ---------------------------------------------------------------
 remarks:        ****************** ReTN bgp confederation *********************
@@ -1691,7 +1687,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2024-10-24T16:32:28Z
+last-modified:  2024-11-05T16:01:04Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE
