@@ -73,4 +73,4 @@ yandex, kaspersky, drweb, dr-web, webmoney, odnoklassniki, sharij, strana
 
 Копії розпоряджень НЦУ щодо блокування та розблокування ресурсів, тощо…
 
-[Актуальні розпорядження НЦУ](https://cip.gov.ua/ua/filter?tagId=60751)
+Подивитися [актуальні розпорядження НЦУ](https://cip.gov.ua/ua/filter?tagId=60751)
