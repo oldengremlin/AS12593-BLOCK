@@ -24,11 +24,12 @@ import:         from AS50817 accept ANY
 import:         from AS15169 accept ANY
 import:         from AS13238 accept ANY
 import:         from AS49869 accept ANY
-import:         from AS43690 accept ANY
+import:         from AS43690 accept AS-SPBROUTESERVER
 import:         from AS48234 accept AS-ILCA
 import:         from AS50741 accept AS50741
 import:         from AS50870 accept AS50870
 import:         from AS29493 accept AS29493
+import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS12380 announce AS-ITREGION
 export:         to AS12389 announce AS-ITREGION
 export:         to AS44843 announce AS-ITREGION
@@ -40,6 +41,7 @@ export:         to AS15169 announce AS-ITREGION
 export:         to AS13238 announce AS-ITREGION
 export:         to AS49869 announce AS-ITREGION
 export:         to AS43690 announce AS-ITREGION
+export:         to AS8631 announce AS-ITREGION
 export:         to AS48324 announce ANY
 export:         to AS50741 announce ANY
 export:         to AS50870 announce ANY
@@ -50,7 +52,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ITREGION-MNT
 created:        2007-10-29T08:53:51Z
-last-modified:  2024-09-27T12:46:23Z
+last-modified:  2024-11-02T14:23:53Z
 source:         RIPE # Filtered
 
 organisation:   ORG-OA780-RIPE
