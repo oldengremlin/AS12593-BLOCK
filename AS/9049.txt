@@ -349,9 +349,6 @@ remarks:        -PEERING-KINESCOPE-
 import:         from AS47122 accept AS47122:AS-CYBERFIRST
 export:         to AS47122 announce AS-ERTH
 remarks:        -PEERING-CYBERFIRST-
-import:         from AS48084 accept AS-UMLC
-export:         to AS48084 announce AS-ERTH
-remarks:        -PEERING-UMLC-
 import:         from AS9123 accept AS-TIMEWEB
 export:         to AS9123 announce AS-ERTH
 remarks:        -PEERING-TIMEWEB-
@@ -999,7 +996,7 @@ import:         from AS44417 accept AS44417
 export:         to AS44417 announce ANY
 remarks:        -DOWNSTREAM-NEOTELECOM-
 import:         from AS209303 accept AS209303
-export:         to AS209303 announce ANY
+export:         to AS209303 announce AS-ERTH-CITIES AND {0.0.0.0/0}
 remarks:        -DOWNSTREAM-ALKOTORG-
 import:         from AS31257 accept AS-ORIONNET
 export:         to AS31257 announce ANY
@@ -1747,6 +1744,12 @@ remarks:        -DOWNSTREAM-ENGINEER-NETWORKS-TELECOM-
 import:         from AS47247 accept AS47247
 export:         to AS47247 announce ANY
 remarks:        -DOWNSTREAM-SPRINT-
+import:         from AS47247 accept AS47247
+export:         to AS47247 announce ANY
+remarks:        -DOWNSTREAM-SPRINT-
+import:         from AS212234 accept AS212234
+export:         to AS212234 announce ANY
+remarks:        -DOWNSTREAM POTOK-TELECOM-
 import:         from AS204049 accept AS204049:AS-3DATA-BA81
 export:         to AS204049 announce ANY
 remarks:        -DOWNSTREAM-3DATA-BA81-
@@ -1946,6 +1949,12 @@ remarks:        -DOWNSTREAM_SVYAZ_ENERGO-
 import:         from AS202306 accept AS-HOSTGLOBALPLUS
 export:         to AS202306 announce any
 remarks:        -HOSTGLOBAL_PLUS-
+import:         from AS200364 accept AS200364
+export:         to AS200364 announce AS-ERTH-CITIES AND {0.0.0.0/0}
+remarks:        -FROM_DOWNSTREAM_DialogSibir-
+import:         from AS198258 accept AS198258
+export:         to AS198258 announce any
+remarks:        -FROM_DOWNSTREAM_NAU-
 remarks:        ========================================================
 remarks:        Control community for Customers
 remarks:
@@ -2103,7 +2112,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ERTH-MAGISTR
 created:        2011-10-13T07:43:18Z
-last-modified:  2024-10-14T21:28:22Z
+last-modified:  2024-11-13T11:50:11Z
 source:         RIPE
 
 organisation:   ORG-RA21-RIPE

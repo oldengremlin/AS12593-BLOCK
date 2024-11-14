@@ -35,6 +35,10 @@ import:         from AS9002 action pref=200; accept ANY
 export:         to AS9002 announce AS-MYCOM
 mp-export:      afi ipv6.unicast to AS9002 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS9002 accept ANY;
+import:         from AS6453 action pref=200; accept ANY
+export:         to AS6453 announce AS-MYCOM
+mp-export:      afi ipv6.unicast to AS6453 announce AS-MYCOM;
+mp-import:      afi ipv6.unicast from AS6453 accept ANY;
 remarks:
 remarks:        =========================================
 remarks:        direct Peers
@@ -471,10 +475,10 @@ remarks:
 remarks:        60476:40000 Our own routes
 remarks:
 remarks:        60476:41101 Receieved from RETN
+remarks:        60476:41105 Receieved from Tata
 remarks:        60476:41106 Receieved from Telecom Italia
 remarks:        60476:41107 Receieved from Orange
 remarks:        60476:41108 Receieved from Telia
-remarks:        60476:41109 Receieved from Level3
 remarks:
 remarks:        60476:42100 Received from IX, specifically:
 remarks:        60476:42102 Received from DE-CIX
@@ -493,7 +497,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-07-12T09:26:04Z
-last-modified:  2024-10-15T08:45:20Z
+last-modified:  2024-11-13T14:20:32Z
 source:         RIPE # Filtered
 
 organisation:   ORG-DTPL1-RIPE
