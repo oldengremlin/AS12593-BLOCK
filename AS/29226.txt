@@ -1312,6 +1312,10 @@ remarks:        DATARU OBLAKO LLC
 import:         from AS215037 action pref=200; accept AS215037;
 export:         to AS215037 announce ANY
 remarks:
+remarks:        DATAPRO Limited Liability Company
+import:         from AS200161 action pref=200; accept AS-DATAPRO;
+export:         to AS200161 announce ANY
+remarks:
 remarks:        =========================
 remarks:        IPv6 routing policy
 remarks:        =========================
@@ -1450,6 +1454,10 @@ remarks:        EUROJAY LIMITED
 mp-import:      afi ipv6 from AS209382 action pref=200; accept as-sportlevel
 mp-export:      afi ipv6 to AS209382 announce {0.0.0.0/0}
 remarks:
+remarks:        DATAPRO Limited Liability Company
+mp-import:      afi ipv6 from AS200161 action pref=200; accept AS200161
+mp-export:      afi ipv6 to AS200161 announce ANY
+remarks:
 remarks:        ========================================================
 remarks:        BGP community accepted only from customers
 remarks:        ========================================================
@@ -1536,7 +1544,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2024-10-29T12:31:10Z
+last-modified:  2024-11-08T13:16:01Z
 source:         RIPE
 
 organisation:   ORG-JM2-RIPE
