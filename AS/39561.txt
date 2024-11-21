@@ -14,15 +14,25 @@ source:         RIPE
 aut-num:        AS39561
 as-name:        AS-REGRU
 org:            ORG-nrRL1-RIPE
+import:         from AS205952 accept AS-CARAVANAERO
 import:         from AS197695 accept AS-REGRU
+import:         from AS49352 accept AS49352
+import:         from AS39134 accept ANY
+import:         from AS57724 accept ANY
+import:         from AS59796  accept ANY
+export:         to AS205952 announce ANY
 export:         to AS197695 announce ANY
+export:         to AS49352  announce ANY
+export:         to AS39134 announce AS-REGRU
+export:         to AS57724 announce AS-REGRU
+export:         to AS59796 announce AS-REGRU
 admin-c:        RGRU-RIPE
 tech-c:         ARP-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         REGRU-MNT
 created:        2006-03-20T13:59:39Z
-last-modified:  2020-02-26T09:28:22Z
+last-modified:  2024-11-14T08:13:44Z
 source:         RIPE # Filtered
 
 organisation:   ORG-nrRL1-RIPE

@@ -1670,6 +1670,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS214257 action pref=100; accept AS214257
+export:         to AS214257 announce ANY
 import:         from AS215013 action pref=100; accept AS215013
 export:         to AS215013 announce ANY
 mp-import:      from AS215013 action pref=100; accept AS215013
@@ -1684,6 +1686,8 @@ import:         from AS48763 action pref=100; accept AS48763
 export:         to AS48763 announce ANY
 import:         from AS197078 action pref=100; accept AS-YARNET
 export:         to AS197078 announce ANY
+mp-import:      from AS39927 action pref=100; accept AS-ELIGHT
+mp-export:      to AS39927 announce ANY
 import:         from AS40966 action pref=100; accept AS40966:AS-L7GUARD
 export:         to AS40966 announce ANY
 import:         from AS61140 action pref=100; accept AS61140
@@ -1776,6 +1780,10 @@ import:         from AS49675 action pref=100; accept AS49675
 export:         to AS49675 announce ANY
 import:         from AS49854 action pref=100; accept AS49854
 export:         to AS49854 announce {0.0.0.0/0}
+import:         from AS213883 action pref=100; accept AS213883
+export:         to AS213883 announce ANY
+mp-import:      from AS213883 action pref=100; accept AS213883
+mp-export:      to AS213883 announce ANY
 import:         from AS12494 action pref=100; accept AS-POSTLTD
 export:         to AS12494 announce ANY
 import:         from AS57449 action pref=100; accept AS57449
@@ -1918,6 +1926,8 @@ import:         from AS51488 action pref=100; accept AS51488
 export:         to AS51488 announce ANY
 import:         from AS57812 action pref=100; accept AS57812
 export:         to AS57812 announce ANY
+import:         from AS214525 action pref=100; accept AS214525
+export:         to AS214525 announce ANY
 import:         from AS8749 action pref=100; accept AS-REDCOM
 export:         to AS8749 announce ANY
 mp-import:      from AS8749 action pref=100; accept AS-REDCOM
@@ -2860,6 +2870,10 @@ import:         from AS58190 action pref=100; accept AS58190
 export:         to AS58190 announce {0.0.0.0/0}
 import:         from AS198502 action pref=100; accept AS198502
 export:         to AS198502 announce ANY
+import:         from AS60040 action pref=100; accept AS60040
+export:         to AS60040 announce ANY
+import:         from AS213926 action pref=100; accept AS213926
+export:         to AS213926 announce ANY
 import:         from AS58306 action pref=100; accept AS58306
 export:         to AS58306 announce ANY
 import:         from AS199085 action pref=100; accept AS199085
@@ -5628,7 +5642,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-11-11T13:13:30Z
+last-modified:  2024-11-20T06:19:46Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
