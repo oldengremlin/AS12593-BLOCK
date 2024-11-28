@@ -139,6 +139,8 @@ import:         from AS5605 action pref=90; accept AS-NETUSE
 export:         to AS5605 announce AS-SOVAM
 import:         from AS20940 action pref=90; accept AS-AKAMAI
 export:         to AS20940 announce AS-SOVAM
+mp-import:      from AS20940 action pref=100; accept AS-AKAMAI
+mp-export:      to AS20940 announce AS-SOVAM-V6
 import:         from AS5430 action pref=90; accept AS-FREENETDE
 export:         to AS5430 announce AS-SOVAM
 import:         from AS5588 action pref=90; accept AS-GTS-CE
@@ -1670,6 +1672,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS40995 action pref=100; accept AS-CNLTD
+export:         to AS40995 announce ANY
 import:         from AS214257 action pref=100; accept AS214257
 export:         to AS214257 announce ANY
 import:         from AS215013 action pref=100; accept AS215013
@@ -2542,6 +2546,8 @@ import:         from AS198821 action pref=100; accept AS198821
 export:         to AS198821 announce ANY
 import:         from AS198877 action pref=100; accept AS198877
 export:         to AS198877 announce ANY
+import:         from AS44584 action pref=100; accept AS44584
+export:         to AS44584 announce {0.0.0.0/0}
 import:         from AS6788 action pref=100; accept AS-ORC-EXT
 export:         to AS6788 announce AS-SOVAM
 import:         from AS2820 action pref=100; accept AS-ETTVER
@@ -5642,7 +5648,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-11-20T06:19:46Z
+last-modified:  2024-11-25T12:29:25Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

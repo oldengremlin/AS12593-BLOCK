@@ -20,12 +20,16 @@ import:         from AS202984 accept ANY
 export:         to AS202984 announce AS-MITIGATOR-CLOUD
 import:         from AS8732 accept ANY
 export:         to AS8732 announce AS-MITIGATOR-CLOUD
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-MITIGATOR-CLOUD
 import:         from AS207104 accept AS207104
 export:         to AS207104 announce ANY
 import:         from AS56537 accept AS56537
 export:         to AS56537 announce ANY
 import:         from AS52016 accept AS52016
 export:         to AS52016 announce ANY
+import:         from AS15632 accept AS15632
+export:         to AS15632 announce ANY
 import:         from AS2854 accept AS-ROSPRINT
 export:         to AS2854 announce ANY
 import:         from AS51464 accept AS-IBANK2RU
@@ -38,7 +42,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-IBANK2RU
 created:        2017-02-21T15:41:40Z
-last-modified:  2024-10-04T08:53:30Z
+last-modified:  2024-11-22T12:50:21Z
 source:         RIPE
 
 organisation:   ORG-IL186-RIPE

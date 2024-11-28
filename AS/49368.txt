@@ -24,6 +24,8 @@ export:         to AS31500 announce AS-DOMOLAN
 remarks:        +=======+ PEERING TABLE +=======+
 import:         from AS47764 action pref=300; accept AS-MAILRU
 export:         to AS47764 announce AS-DOMOLAN
+import:         from AS211609 action pref=300; accept AS-OKKO
+export:         to AS211609 announce AS-DOMOLAN
 import:         from AS13238 action pref=300; accept AS-YANDEX
 export:         to AS13238 announce AS-DOMOLAN
 import:         from AS15169 action pref=300; accept AS-GOOGLE
@@ -36,6 +38,8 @@ import:         from AS49869 action pref=200; accept as-piter-ix-msk
 export:         to AS49869 announce AS-DOMOLAN
 import:         from AS32934 action pref=300; accept AS-FACEBOOK
 export:         to AS32934 announce AS-DOMOLAN
+import:         from AS13335 action pref=300; accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-DOMOLAN
 import:         from AS50817 action pref=200; accept as-piter-ix
 export:         to AS50817 announce AS-DOMOLAN
 import:         from AS48193 action pref=200; accept as-piter-ix-fra
@@ -59,7 +63,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-DML
 created:        2009-05-27T12:37:46Z
-last-modified:  2024-10-24T13:40:20Z
+last-modified:  2024-11-21T13:08:47Z
 source:         RIPE # Filtered
 
 organisation:   ORG-DL83-RIPE

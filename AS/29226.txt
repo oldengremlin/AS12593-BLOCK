@@ -1297,7 +1297,7 @@ import:         from AS214956 action pref=200; accept AS214956;
 export:         to AS214956 announce ANY
 remarks:
 remarks:        Systematica LLC
-import:         from AS211724 action pref=200; accept AS211724;
+import:         from AS211724 action pref=200; accept AS211724:AS-SYS;
 export:         to AS211724 announce ANY
 remarks:
 remarks:        Kod Bezopasnosti LLC
@@ -1315,6 +1315,10 @@ remarks:
 remarks:        DATAPRO Limited Liability Company
 import:         from AS200161 action pref=200; accept AS-DATAPRO;
 export:         to AS200161 announce ANY
+remarks:
+remarks:        PJSC Kalibr
+import:         from AS39167 action pref=200; accept AS39167
+export:         to AS39167 announce {0.0.0.0/0}
 remarks:
 remarks:        =========================
 remarks:        IPv6 routing policy
@@ -1544,16 +1548,16 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2024-11-08T13:16:01Z
+last-modified:  2024-11-26T11:18:40Z
 source:         RIPE
 
 organisation:   ORG-JM2-RIPE
 org-name:       JSC Mastertel
 country:        RU
 org-type:       LIR
-address:        89, contr. 1, Krasnobogatyrskaya street
-address:        107076
-address:        Moscow
+address:        office 15, building 3A, Stroitelnaya street
+address:        143405
+address:        Krasnogorsk, Krasnogorsk district, Moscow region
 address:        RUSSIAN FEDERATION
 phone:          +7 495 787 0777
 fax-no:         +7 495 787 0788
@@ -1564,7 +1568,7 @@ mnt-ref:        RIPE-NCC-HM-MNT
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MASTERTEL-MNT
 created:        2004-04-17T11:54:57Z
-last-modified:  2024-07-10T20:34:47Z
+last-modified:  2024-11-21T12:40:21Z
 source:         RIPE # Filtered
 
 role:           Mastertel Admins
