@@ -1,0 +1,155 @@
+
+
+
+as-block:       AS47870 - AS50218
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-07-08T14:18:48Z
+last-modified:  2024-07-08T14:18:48Z
+source:         RIPE
+
+
+
+aut-num:        AS49418
+as-name:        AS-NETSHIELD
+org:            ORG-NL628-RIPE
+remarks:        +---------------------------------------------
+remarks:        | Outbound communities (customers peers)
+remarks:        |
+remarks:        | Action BGP communities
+remarks:        |
+remarks:        | 49418:666 - blackhole (RFC7999)
+remarks:        |
+remarks:        | all action communities do have following format
+remarks:        | 49418:YYYYZ
+remarks:        |-----------
+remarks:        |YYYY - destination network
+remarks:        |
+remarks:        |4001 - inetcom (AS35598)
+remarks:        |4002 - VirtualDC (AS48108)
+remarks:        |4003 - inetcom protected (AS35598)
+remarks:        |4004 - Castles (AS43278)
+remarks:        |4005 - DDoS-Guard (AS49612)
+remarks:        |4006 - StormWall (AS59796)
+remarks:        |4007 - GlobalNet (AS31500)
+remarks:        |
+remarks:        |5001 - DataIX
+remarks:        |5002 - GlobalIX
+remarks:        |5003 - Piter-IX
+remarks:        |
+remarks:        |6001 - Google private peer (AS15169)
+remarks:        |6002 - CloudFlare private peer (AS13335)
+remarks:        |-----------
+remarks:        |Z - action tag
+remarks:        |
+remarks:        |0 - no-export
+remarks:        |1 - prepend once
+remarks:        |2 - prepend twice
+remarks:        |3 - prepend thrice
+remarks:        |
+remarks:        +---------------------------------------------
+remarks:        | External comminuties (for global routing)
+remarks:        |
+remarks:        |-----------
+remarks:        | 49418:100 - Prefix announced in Frankfurt, Germany
+remarks:        | 49418:200 - Prefix announced in Stockholm, Sweden
+remarks:        |-----------
+remarks:        |
+remarks:        +---------------------------------------------
+remarks:        Uplinks (local pref 100-120):
+remarks:        +---------------------------------------------
+remarks:        aurologic:
+import:         from AS30823 accept AS-COMBAHTON
+export:         to AS30823 announce AS49418:AS-NETSHIELD
+remarks:        |
+remarks:        StormWall:
+import:         from AS43298 accept AS-STORMWALL-SET
+export:         to AS43298 announce AS49418:AS-NETSHIELD
+remarks:        |
+remarks:        GlobalNet:
+import:         from AS31500 accept AS-GLOBAL-NET
+import:         from AS31500 accept AS-GLOBAL-NET-V6
+export:         to AS31500 announce AS49418:AS-NETSHIELD
+remarks:        |
+remarks:        inetcom:
+import:         from AS35598 accept AS-ICNET
+export:         to AS35598 announce AS49418:AS-NETSHIELD
+remarks:        |
+remarks:        VirtualDC:
+import:         from AS48108 accept AS48108:AS-VIRTUALDC-RU-DDOS
+import:         from AS48108 accept AS-VIRTUALDC-LV
+export:         to AS48108 announce AS49418:AS-NETSHIELD
+remarks:        +---------------------------------------------
+remarks:        IX (local pref 150-200):
+remarks:        +---------------------------------------------
+remarks:        MSK-IX:
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS49418:AS-NETSHIELD
+remarks:        |
+remarks:        DataIX:
+import:         from AS50952 accept AS-DATAIX
+import:         from AS50952 accept AS-DATAIX-UA
+export:         to AS50952 announce AS49418:AS-NETSHIELD
+remarks:        |
+remarks:        GlobalIX:
+import:         from AS31500 accept AS-GLOBAL-IX
+export:         to AS31500 announce AS49418:AS-NETSHIELD
+remarks:        +---------------------------------------------
+remarks:        Private peering (local pref 300-350):
+remarks:        +---------------------------------------------
+remarks:        Hetzner:
+import:         from AS24940 accept AS-HETZNER
+export:         to AS24940 announce AS49418:AS-NETSHIELD
+remarks:        |
+remarks:        CloudFlare:
+import:         from AS13335 accept AS13335:AS-CLOUDFLARE
+export:         to AS13335 announce AS49418:AS-NETSHIELD
+remarks:        +---------------------------------------------
+remarks:        Customers (local pref 500):
+remarks:        +---------------------------------------------
+remarks:        customer not found :((
+remarks:        +---------------------------------------------
+admin-c:        SHLD5-RIPE
+tech-c:         SHLD5-RIPE
+status:         ASSIGNED
+mnt-by:         netshield-mnt
+mnt-by:         RIPE-NCC-END-MNT
+created:        2023-12-29T14:01:03Z
+last-modified:  2024-10-25T03:45:21Z
+source:         RIPE
+
+organisation:   ORG-NL628-RIPE
+org-name:       NETSHIELD LTD
+country:        GB
+org-type:       LIR
+address:        71-75 Shelton Street
+address:        WC2H 9JQ
+address:        London
+address:        UNITED KINGDOM
+phone:          +79029519859
+admin-c:        SHLD5-RIPE
+tech-c:         SHLD5-RIPE
+abuse-c:        SHLD5-RIPE
+mnt-ref:        netshield-mnt
+mnt-ref:        MNT-NETERRA
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         netshield-mnt
+created:        2024-10-10T17:20:15Z
+last-modified:  2024-11-14T17:18:11Z
+source:         RIPE # Filtered
+
+role:           NETSHIELD LTD
+address:        71-75, Shelton Street
+address:        WC2H 9JQ
+address:        London
+address:        UNITED KINGDOM
+abuse-mailbox:  abuse@netshield.ltd
+nic-hdl:        SHLD5-RIPE
+mnt-by:         netshield-mnt
+created:        2023-03-29T02:33:34Z
+last-modified:  2023-04-03T05:29:05Z
+source:         RIPE # Filtered
+
+
+

@@ -156,6 +156,7 @@ remarks:        | 12389:848y When advertising to SPB-IX (AS43690) |
 remarks:        | 12389:849y When advertising to Amazon (AS16509) |
 remarks:        | 12389:852y When advertising to VKontakte (AS28709) |
 remarks:        | 12389:853y When advertising to Telegram (AS211157) |
+remarks:        | 12389:854y When advertising to Yandex.Cloud(AS200350) |
 remarks:        | 12389:899y When advertising to any RUSSIAN peer |
 remarks:        | ...y=9 - advertise without prepends |
 remarks:        | ...y=0 - do not advertise |
@@ -344,6 +345,8 @@ import:         from AS42139 accept AS-NS9_RIPN_NET
 export:         to AS42139 announce AS-ROSTELECOM
 import:         from AS42403 accept AS25152
 export:         to AS42403 announce AS-ROSTELECOM
+import:         from AS200350 accept AS200350
+export:         to AS200350 announce AS-ROSTELECOM
 remarks:        +
 remarks:        + Customers:
 remarks:        +
@@ -4217,8 +4220,6 @@ import:         from AS12958 accept AS12958
 export:         to AS12958 announce ANY
 import:         from AS15428 accept AS-DAGNET
 export:         to AS15428 announce ANY
-import:         from AS200350 accept AS200350
-export:         to AS200350 announce ANY
 import:         from AS200778 accept AS200778
 export:         to AS200778 announce ANY
 import:         from AS48078 accept AS-DAGOMYS-AS
@@ -6475,7 +6476,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SAVRI-MNT
 status:         ASSIGNED
 created:        2005-07-01T14:26:50Z
-last-modified:  2024-11-21T04:09:06Z
+last-modified:  2024-11-28T10:41:59Z
 source:         RIPE
 
 organisation:   ORG-JR8-RIPE

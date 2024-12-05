@@ -17,15 +17,27 @@ org:            ORG-TL499-RIPE
 remarks:        --------------------------
 remarks:        UPLINKS
 remarks:        --------------------------
-remarks:        ----------MSK-IX---------
-import:         from AS8631 accept AS-MSKROUTESERVER
-export:         to AS8631 announce as-set-tele-matika
-remarks:        ----------Sprint---------
-import:         from AS56875 accept ANY
-export:         to AS56875 announce as-set-tele-matika
 remarks:        -------INETCOM----------
 import:         from AS35598 accept ANY
 export:         to AS35598 announce as-set-tele-matika
+remarks:        ----------MSK-IX---------
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce as-set-tele-matika
+remarks:        ----------Piter-ix---------
+import:         from AS50817 accept ANY
+export:         to AS50817 announce as-set-tele-matika
+remarks:        ----------Piter-ix-msk---------
+import:         from AS49869 accept ANY
+export:         to AS49869 announce as-set-tele-matika
+remarks:        ----------Piter-ix-rov---------
+import:         from AS59539 accept ANY
+export:         to AS59539 announce as-set-tele-matika
+remarks:        ----------Piter-ix-fra---------
+import:         from AS48193 accept ANY
+export:         to AS48193 announce as-set-tele-matika
+remarks:        ----------Piter-ix-tll---------
+import:         from AS57936 accept ANY
+export:         to AS57936 announce as-set-tele-matika
 remarks:        -----------------------------
 admin-c:        AG22643-RIPE
 admin-c:        VB5576-RIPE
@@ -39,7 +51,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-tele-matika-1-mnt
 created:        2018-07-19T13:14:32Z
-last-modified:  2024-09-05T10:53:34Z
+last-modified:  2024-12-04T10:47:30Z
 source:         RIPE
 
 organisation:   ORG-TL499-RIPE
