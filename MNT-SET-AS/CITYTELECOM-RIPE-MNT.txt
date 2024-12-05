@@ -400,9 +400,6 @@ remarks:
 import:         from AS47655 action pref=50; accept AS47655;
 export:         to AS47655 announce ANY;
 remarks:
-import:         from AS48600 action pref=50; accept AS48600;
-export:         to AS48600 announce {0.0.0.0/0};
-remarks:
 import:         from AS48610 action pref=50; accept AS48610:AS-OFORO;
 export:         to AS48610 announce ANY;
 remarks:
@@ -497,9 +494,6 @@ import:         from AS3175 action pref=50; accept AS-DATAHOUSE;
 export:         to AS3175 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
 import:         from AS200161 action pref=50; accept AS-DATAPRO;
-export:         to AS200161 announce ANY;
-remarks:
-import:         from AS200161 action pref=50; accept AS-DATAPRO;
 export:         to AS200161 announce {0.0.0.0/0};
 remarks:
 import:         from AS56694 action pref=50; accept AS-DHUB;
@@ -513,9 +507,6 @@ export:         to AS12695 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
 import:         from AS8563 action pref=50; accept AS-DIRECTNET;
 export:         to AS8563 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
-remarks:
-import:         from AS51408 action pref=50; accept AS-DNX;
-export:         to AS51408 announce AS-CLOUD-IX-LOCAL;
 remarks:
 import:         from AS49368 action pref=50; accept AS-DOMOLAN;
 export:         to AS49368 announce ANY;
@@ -543,9 +534,6 @@ export:         to AS25189 announce ANY;
 remarks:
 import:         from AS21453 action pref=50; accept AS-FLEX;
 export:         to AS21453 announce ANY;
-remarks:
-import:         from AS51343 action pref=50; accept AS-FORCELINE;
-export:         to AS51343 announce AS-CLOUD-IX-LOCAL;
 remarks:
 import:         from AS48166 action pref=50; accept AS-FORTEX;
 export:         to AS48166 announce AS-CLOUD-IX-PRO;
@@ -1109,9 +1097,6 @@ remarks:
 mp-import:      afi ipv6.unicast from AS47655 action pref=50; accept AS47655;
 mp-export:      afi ipv6.unicast to AS47655 announce any;
 remarks:
-mp-import:      afi ipv6.unicast from AS48600 action pref=50; accept AS48600;
-mp-export:      afi ipv6.unicast to AS48600 announce any;
-remarks:
 mp-import:      afi ipv6.unicast from AS48610 action pref=50; accept AS48610:AS-OFORO;
 mp-export:      afi ipv6.unicast to AS48610 announce any;
 remarks:
@@ -1208,9 +1193,6 @@ remarks:
 mp-import:      afi ipv6.unicast from AS200161 action pref=50; accept AS-DATAPRO;
 mp-export:      afi ipv6.unicast to AS200161 announce any;
 remarks:
-mp-import:      afi ipv6.unicast from AS200161 action pref=50; accept AS-DATAPRO;
-mp-export:      afi ipv6.unicast to AS200161 announce any;
-remarks:
 mp-import:      afi ipv6.unicast from AS56694 action pref=50; accept AS-DHUB;
 mp-export:      afi ipv6.unicast to AS56694 announce any;
 remarks:
@@ -1222,9 +1204,6 @@ mp-export:      afi ipv6.unicast to AS12695 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS8563 action pref=50; accept AS-DIRECTNET;
 mp-export:      afi ipv6.unicast to AS8563 announce any;
-remarks:
-mp-import:      afi ipv6.unicast from AS51408 action pref=50; accept AS51408;
-mp-export:      afi ipv6.unicast to AS51408 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS49368 action pref=50; accept AS-DOMOLAN;
 mp-export:      afi ipv6.unicast to AS49368 announce any;
@@ -1252,9 +1231,6 @@ mp-export:      afi ipv6.unicast to AS25189 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS21453 action pref=50; accept AS21453;
 mp-export:      afi ipv6.unicast to AS21453 announce any;
-remarks:
-mp-import:      afi ipv6.unicast from AS51343 action pref=50; accept AS51343;
-mp-export:      afi ipv6.unicast to AS51343 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS48166 action pref=50; accept AS-FORTEX;
 mp-export:      afi ipv6.unicast to AS48166 announce any;
@@ -1790,7 +1766,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2024-11-19T21:00:03Z
+last-modified:  2024-12-04T21:00:03Z
 source:         RIPE # Filtered
 
 

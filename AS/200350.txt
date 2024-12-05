@@ -23,6 +23,9 @@ export:         to AS57304 announce AS-YACLOUD
 remarks:        TELIA
 import:         from AS1299 accept ANY
 export:         to AS1299 announce AS-YACLOUD
+remarks:        RASCOM
+import:         from AS20764 accept ANY
+export:         to AS20764 announce AS-YACLOUD
 remarks:        -----------------------------------
 remarks:        #              PEERS              #
 remarks:        -----------------------------------
@@ -36,7 +39,7 @@ remarks:        ROSTELECOM
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-YACLOUD
 remarks:        MEGAFON
-import:         from AS31133 accept ANY
+import:         from AS31133 accept AS-MF-MGSM
 export:         to AS31133 announce AS-YACLOUD
 remarks:        TTK
 import:         from AS20485 accept ANY
@@ -45,7 +48,7 @@ remarks:        MTS
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-YACLOUD
 remarks:        BEELINE
-import:         from AS3216 accept ANY
+import:         from AS3216 accept AS-SOVAM
 export:         to AS3216 announce AS-YACLOUD
 remarks:        GOOGLE
 import:         from AS15169 accept AS-GOOGLE
@@ -155,7 +158,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-yandexcloud-1
 created:        2018-08-02T07:20:49Z
-last-modified:  2024-10-14T10:18:55Z
+last-modified:  2024-12-04T17:14:55Z
 source:         RIPE
 
 organisation:   ORG-YL62-RIPE

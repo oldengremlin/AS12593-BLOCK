@@ -1623,6 +1623,8 @@ remarks:
 remarks:
 remarks:        private peering in Moscow
 remarks:
+import:         from AS197406 action pref=100; accept AS197406
+export:         to AS197406 announce ANY
 import:         from AS20764 action pref=100; accept AS-RASCOM
 export:         to AS20764 announce AS-SOVAM
 import:         from AS8359 action pref=95; accept AS-MTU
@@ -1672,6 +1674,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS34503 action pref=100; accept AS34503
+export:         to AS34503 announce AS-SOVAM
 import:         from AS40995 action pref=100; accept AS-CNLTD
 export:         to AS40995 announce ANY
 import:         from AS214257 action pref=100; accept AS214257
@@ -1720,6 +1724,8 @@ mp-import:      from AS57494 action pref=100; accept AS-ADMAN
 mp-export:      to AS57494 announce ANY
 import:         from AS200627 action pref=100; accept AS200627
 export:         to AS200627 announce ANY
+import:         from AS9177 action pref=100; accept AS9177
+export:         to AS9177 announce ANY
 import:         from AS214336 action pref=100; accept AS214336
 export:         to AS214336 announce ANY
 import:         from AS50951 action pref=100; accept AS50951
@@ -1850,6 +1856,8 @@ import:         from AS215796 action pref=100; accept AS215796
 export:         to AS215796 announce {0.0.0.0/0}
 mp-import:      from AS215796 action pref=100; accept AS215796
 mp-export:      to AS215796 announce {::/0}
+import:         from AS24689 action pref=100; accept AS-ROSINTEL
+export:         to AS24689 announce ANY
 import:         from AS201851 action pref=100; accept AS201851:AS-PIK
 export:         to AS201851 announce ANY
 import:         from AS43170 action pref=100; accept AS43170
@@ -1932,6 +1940,8 @@ import:         from AS57812 action pref=100; accept AS57812
 export:         to AS57812 announce ANY
 import:         from AS214525 action pref=100; accept AS214525
 export:         to AS214525 announce ANY
+mp-import:      from AS214525 action pref=100; accept AS214525
+mp-export:      to AS214525 announce ANY
 import:         from AS8749 action pref=100; accept AS-REDCOM
 export:         to AS8749 announce ANY
 mp-import:      from AS8749 action pref=100; accept AS-REDCOM
@@ -4057,6 +4067,8 @@ import:         from AS208388 action pref=100; accept AS208388
 export:         to AS208388 announce {0.0.0.0/0}
 import:         from AS204231 action pref=100; accept AS204231
 export:         to AS204231 announce ANY
+import:         from AS61326 action pref=100; accept AS61326
+export:         to AS61326 announce ANY
 import:         from AS56877 action pref=100; accept AS56877
 export:         to AS56877 announce {0.0.0.0/0}
 import:         from AS197888 action pref=100; accept AS197888
@@ -5021,6 +5033,8 @@ import:         from AS39740 action pref=100; accept AS39740
 export:         to AS39740 announce {0.0.0.0/0}
 import:         from AS41311 action pref=100; accept AS41311
 export:         to AS41311 announce ANY
+import:         from AS50427 action pref=100; accept AS-ABAKANNET
+export:         to AS50427 announce ANY
 import:         from AS56689 action pref=100; accept AS-ELITEL
 export:         to AS56689 announce ANY
 import:         from AS39586 action pref=100; accept AS39586
@@ -5648,7 +5662,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-11-25T12:29:25Z
+last-modified:  2024-12-04T09:00:05Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
