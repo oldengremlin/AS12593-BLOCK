@@ -371,33 +371,16 @@ remarks:        ----- Our BGP communities for managing traffic
 remarks:        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 remarks:        FOR FULL LIST SUPPORTED BGP COMMUNITY
 remarks:        PLEASE USE whois as47541
-remarks:        or read
-remarks:        AS47541 OBJECT IN RIPE DATABASE
+remarks:        or read AS47541 OBJECT IN RIPE DATABASE
 remarks:        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-remarks:        -- CDN vk
-remarks:        47541:20<CDN_NUM> - deny import
-remarks:        47541:21<CDN_NUM> - prepend last AS to AS-PATH 1 time
-remarks:        47541:22<CDN_NUM> - prepend last AS to AS-PATH 2 times
-remarks:        47541:23<CDN_NUM> - prepend last AS to AS-PATH 3 times
-remarks:        where <CDN_NUM> is
-remarks:        01 - Russia, Moscow
-remarks:        02 - Russia, Rostov on Don
-remarks:        03 - Russia, Ekaterinburg
-remarks:        04 - Russia, Novosibirsk
-remarks:        05 - Russia, Khabarovsk
-remarks:        06 - Netherlands, Amsterdam
-remarks:        07 - Russia, Samara
-remarks:        08 - Kazahstan, Akkol
-remarks:
-remarks:        Other CDN bgp communities
 remarks:        <AS_NUM>:20 - deny import
 remarks:        <AS_NUM>:21 - prepend last AS to AS-PATH 1 time
 remarks:        <AS_NUM>:22 - prepend last AS to AS-PATH 2 times
 remarks:        <AS_NUM>:23 - prepend last AS to AS-PATH 3 times
 remarks:        where <AS_NUM> is
 remarks:        47541 - main VK in St.Petersburg (not cdn)
-remarks:        47542 - Russia, Moscow
-remarks:        28709 - Other CDNs
+remarks:        47542 - Russia, Moscow CDN node
+remarks:        28709 - Other CDN nodes
 remarks:
 remarks:        **********************************************************************
 remarks:        Abuse, Security issues noc@vk.com
@@ -411,7 +394,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2009-08-05T11:34:14Z
-last-modified:  2024-08-06T07:46:43Z
+last-modified:  2024-12-11T10:15:36Z
 source:         RIPE # Filtered
 
 
@@ -727,38 +710,19 @@ remarks:        BGP Policy
 remarks:        -----------------------------------------
 remarks:
 remarks:        ----- Our BGP communities for managing traffic
-remarks:
-remarks:        -- AS47541 community (Russia, St.Petersburg main vk)
-remarks:        WARNING! These communities are applicable to entire VK.com network
-remarks:        please use it carefully
-remarks:        47541:20 - deny import
-remarks:        47541:21 - prepend last AS to AS-PATH 1 time
-remarks:        47541:22 - prepend last AS to AS-PATH 2 times
-remarks:        47541:23 - prepend last AS to AS-PATH 3 times
-remarks:
-remarks:        -- CDN vk
-remarks:        47541:20<CDN_NUM> - deny import
-remarks:        47541:21<CDN_NUM> - prepend last AS to AS-PATH 1 time
-remarks:        47541:22<CDN_NUM> - prepend last AS to AS-PATH 2 times
-remarks:        47541:23<CDN_NUM> - prepend last AS to AS-PATH 3 times
-remarks:        where <CDN_NUM> is
-remarks:        01 - Russia, Moscow
-remarks:        02 - Russia, Rostov on Don
-remarks:        03 - Russia, Ekaterinburg
-remarks:        04 - Russia, Novosibirsk
-remarks:        05 - Russia, Khabarovsk
-remarks:        06 - Netherlands, Amsterdam
-remarks:        07 - Russia, Samara
-remarks:
-remarks:        Other CDN bgp communities
+remarks:        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+remarks:        FOR FULL LIST SUPPORTED BGP COMMUNITY
+remarks:        PLEASE USE whois as47541
+remarks:        or read AS47541 OBJECT IN RIPE DATABASE
+remarks:        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 remarks:        <AS_NUM>:20 - deny import
 remarks:        <AS_NUM>:21 - prepend last AS to AS-PATH 1 time
 remarks:        <AS_NUM>:22 - prepend last AS to AS-PATH 2 times
 remarks:        <AS_NUM>:23 - prepend last AS to AS-PATH 3 times
 remarks:        where <AS_NUM> is
 remarks:        47541 - main VK in St.Petersburg (not cdn)
-remarks:        47542 - Russia, Moscow
-remarks:        28709 - Other CDNs
+remarks:        47542 - Russia, Moscow CDN node
+remarks:        28709 - Other CDN nodes
 remarks:
 remarks:        The following control communities are accepted only from
 remarks:        partners:
@@ -910,7 +874,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-07-03T14:45:56Z
-last-modified:  2024-12-02T07:50:31Z
+last-modified:  2024-12-11T10:17:42Z
 source:         RIPE # Filtered
 
 
@@ -1429,6 +1393,8 @@ mp-export:      afi ipv6.unicast to AS47914 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS47914 accept AS-IPHOME;
 export:         to AS48610 announce AS-VK
 import:         from AS48610 accept AS48610:AS-OFORO
+mp-export:      afi ipv6.unicast to AS48610 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS48610 accept AS48610:AS-OFORO;
 export:         to AS56814 announce AS-VK
 import:         from AS56814 accept AS56814
 mp-export:      afi ipv6.unicast to AS56814 announce AS-VK;
@@ -1455,6 +1421,16 @@ export:         to AS41039 announce AS-VK
 import:         from AS41039 accept AS-DON
 export:         to AS201706 announce AS-VK
 import:         from AS201706 accept NOT ANY
+export:         to AS8563 announce AS-VK
+import:         from AS8563 accept AS-DIRECTNET
+export:         to AS43404 announce AS-VK
+import:         from AS43404 accept AS-UCANET
+mp-export:      afi ipv6.unicast to AS43404 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS43404 accept AS-UCANET;
+export:         to AS47895 announce AS-VK
+import:         from AS47895 accept AS47895
+export:         to AS61308 announce AS-VK
+import:         from AS61308 accept AS-SKYNETCOM
 remarks:
 remarks:        =========================================
 remarks:        MSK-IX Peers
@@ -1562,6 +1538,13 @@ export:         to AS8631 announce AS-VK
 import:         from AS8631 accept AS-MSKROUTESERVER
 remarks:
 remarks:        =========================================
+remarks:        DIRECT-IX Peers
+remarks:        -----------------------------------------
+remarks:
+export:         to AS8563 announce AS-VK
+import:         from AS8563 accept AS-DIRECTNET
+remarks:
+remarks:        =========================================
 remarks:        Partners
 remarks:        -----------------------------------------
 remarks:
@@ -1643,6 +1626,7 @@ remarks:        47764:2114x Not used
 remarks:        47764:2115x When advertising to PITER-IX...
 remarks:        47764:2116x When advertising to Eurasia peering IX...
 remarks:        47764:2117x When advertising to BANK-IX...
+remarks:        47764:2118x When advertising to DIRECT-IX...
 remarks:
 remarks:        47764:3NNNx When advertising to direct peer PeerID:NNN
 remarks:        (see below)...
@@ -1710,7 +1694,7 @@ remarks:        156 FORCELINE (AS51343)
 remarks:        157 SELECTEL (AS50340)
 remarks:        158 NCOT (AS60280)
 remarks:        159 MSS (aka OBTEL aka AMSTEL) (AS44843)
-remarks:        160 unused
+remarks:        160 UCANET (AS43404)
 remarks:        161 ROMTEL (AS9050)
 remarks:        162 UFANET (AS47775)
 remarks:        163 OPERA (AS39832)
@@ -1763,6 +1747,8 @@ remarks:        218 Reconn (AS12722)
 remarks:        219 Sky-en (AS50254)
 remarks:        220 Fticom (AS41039)
 remarks:        221 ServicePipe (AS201706)
+remarks:        222 RLine (AS47895)
+remarks:        223 Skynetcom (AS61308)
 remarks:        -------------------------------------------------------------
 remarks:
 remarks:        Other 47764:* communities are deleted.
@@ -1814,6 +1800,7 @@ remarks:        47764:42114 Not used
 remarks:        47764:42115 Received from PITER-IX
 remarks:        47764:42116 Received from Eurasia peering IX
 remarks:        47764:42117 Received from BANK-IX
+remarks:        47764:42118 Received from DIRECT-IX
 remarks:
 remarks:        47764:43100 Receieved from private peer, specifically:
 remarks:        47764:43NNN Received from private peer PeerID:NNN
@@ -1832,7 +1819,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2024-11-06T08:32:44Z
+last-modified:  2024-12-11T11:23:09Z
 source:         RIPE # Filtered
 
 

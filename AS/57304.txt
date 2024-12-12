@@ -613,8 +613,6 @@ import:         from  AS51538 action pref=100; accept   AS-TEKCOM
 export:         to    AS51538                  announce ANY
 import:         from  AS51552 action pref=100; accept   AS51552
 export:         to    AS51552                  announce ANY
-import:         from  AS51665 action pref=100; accept   AS-TELEDISCOUNT
-export:         to    AS51665                  announce ANY
 import:         from  AS51698 action pref=100; accept   AS51698
 export:         to    AS51698                  announce ANY
 import:         from  AS51700 action pref=100; accept   AS51700
@@ -983,8 +981,6 @@ import:         from AS207207 action pref=100; accept   AS207207
 export:         to   AS207207                  announce ANY
 import:         from AS207240 action pref=100; accept   AS207240
 export:         to   AS207240                  announce ANY
-import:         from AS207350 action pref=100; accept   AS207350
-export:         to   AS207350                  announce ANY
 import:         from AS207353 action pref=100; accept   AS207353
 export:         to   AS207353                  announce ANY
 import:         from AS207490 action pref=100; accept   AS207490
@@ -1073,6 +1069,8 @@ import:         from AS212964 action pref=100; accept   AS212964
 export:         to   AS212964                  announce ANY
 import:         from AS213348 action pref=100; accept   AS213348
 export:         to   AS213348                  announce ANY
+import:         from AS214051 action pref=100; accept   AS214051
+export:         to   AS214051                  announce ANY
 import:         from AS214367 action pref=100; accept   AS214367
 export:         to   AS214367                  announce ANY
 import:         from AS214429 action pref=100; accept   AS214429
@@ -1081,8 +1079,6 @@ import:         from AS214524 action pref=100; accept   AS214524
 export:         to   AS214524                  announce ANY
 import:         from AS214573 action pref=100; accept   AS214573
 export:         to   AS214573                  announce ANY
-import:         from AS214697 action pref=100; accept   AS214697
-export:         to   AS214697                  announce ANY
 import:         from AS214822 action pref=100; accept   AS214822
 export:         to   AS214822                  announce ANY
 import:         from AS215037 action pref=100; accept   AS215037
@@ -1426,8 +1422,6 @@ mp-import:      afi ipv6.unicast from  AS51297 action pref=100; accept   AS-ONED
 mp-export:      afi ipv6.unicast to    AS51297                  announce ANY
 mp-import:      afi ipv6.unicast from  AS51352 action pref=100; accept   AS51352
 mp-export:      afi ipv6.unicast to    AS51352                  announce ANY
-mp-import:      afi ipv6.unicast from  AS51665 action pref=100; accept   AS-TELEDISCOUNT
-mp-export:      afi ipv6.unicast to    AS51665                  announce ANY
 mp-import:      afi ipv6.unicast from  AS51698 action pref=100; accept   AS51698
 mp-export:      afi ipv6.unicast to    AS51698                  announce ANY
 mp-import:      afi ipv6.unicast from  AS52016 action pref=100; accept   AS52016
@@ -1634,8 +1628,6 @@ mp-import:      afi ipv6.unicast from AS212421 action pref=100; accept   AS-LIVE
 mp-export:      afi ipv6.unicast to   AS212421                  announce ANY
 mp-import:      afi ipv6.unicast from AS212748 action pref=100; accept   AS-HELIX-RU
 mp-export:      afi ipv6.unicast to   AS212748                  announce ANY
-mp-import:      afi ipv6.unicast from AS214697 action pref=100; accept   AS214697
-mp-export:      afi ipv6.unicast to   AS214697                  announce ANY
 mp-import:      afi ipv6.unicast from AS215307 action pref=100; accept   AS215307
 mp-export:      afi ipv6.unicast to   AS215307                  announce ANY
 mp-import:      afi ipv6.unicast from AS215455 action pref=100; accept   AS215455
@@ -1683,7 +1675,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2024-11-26T16:18:26Z
+last-modified:  2024-12-10T17:12:02Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE
