@@ -1336,6 +1336,10 @@ import:         from AS2906 action pref=87; accept AS-NFLX
 export:         to AS2906 announce AS-SOVAM
 mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
 mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
+import:         from AS396986 action pref=87; accept AS-BYTEDANCE
+export:         to AS396986 announce AS-SOVAM
+mp-import:      afi ipv6 from AS396986 action pref=87; accept AS-BYTEDANCE
+mp-export:      afi ipv6 to AS396986 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(Equinix Ashburn)
 remarks:
@@ -1688,6 +1692,8 @@ import:         from AS205641 action pref=100; accept AS-ELCOM-KNA
 export:         to AS205641 announce ANY
 import:         from AS51156 action pref=100; accept AS51156
 export:         to AS51156 announce ANY
+import:         from AS64423 action pref=100; accept AS64423
+export:         to AS64423 announce ANY
 import:         from AS214066 action pref=100; accept AS214066
 export:         to AS214066 announce ANY
 import:         from AS48763 action pref=100; accept AS48763
@@ -3683,8 +3689,6 @@ mp-import:      afi ipv6 from AS213381 action pref=100; accept AS213381
 mp-export:      afi ipv6 to AS213381 announce ANY
 import:         from AS21184 action pref=100; accept AS21184
 export:         to AS21184 announce ANY
-import:         from AS206115 action pref=100; accept AS206115
-export:         to AS206115 announce ANY
 import:         from AS30767 action pref=100; accept AS-TAGILTELECOM
 export:         to AS30767 announce ANY
 import:         from AS28825 action pref=100; accept AS-T21V
@@ -4933,8 +4937,6 @@ import:         from AS34329 action pref=100; accept AS34329
 export:         to AS34329 announce {0.0.0.0/0}
 mp-import:      afi ipv6 from AS34329 action pref=100; accept AS34329
 mp-export:      afi ipv6 to AS34329 announce {::/0}
-import:         from AS203436 action pref=100; accept AS203436
-export:         to AS203436 announce {0.0.0.0/0}
 import:         from AS43727 action pref=100; accept AS-SETKT
 export:         to AS43727 announce ANY
 import:         from AS43728 action pref=100; accept AS43728
@@ -5244,6 +5246,7 @@ remarks:        3216:545x When advertising to Akamai private peer (Stockholm)...
 remarks:        3216:546x When advertising to Fastly private peer (Stockholm)...
 remarks:        3216:547x When advertising to DDOS-GUARD private peer...
 remarks:        3216:548x When advertising to LeaseWeb private peer...
+remarks:        3216:549x When advertising to ByteDance...
 remarks:        3216:560x When advertising to Wargaming private peer (Krasnoyarsk) ...
 remarks:        3216:561x When advertising to LLNW private peer (Stockholm) ...
 remarks:        3216:562x When advertising to FACEBOOK private peer (Helsingfors)...
@@ -5418,6 +5421,7 @@ remarks:        3216:3226 Fastly (Stockholm)
 remarks:        3216:3227 LeaseWeb
 remarks:        3216:3228 G-Core Labs
 remarks:        3216:3229 ReTN
+remarks:        3216:3230 ByteDance(Frankfurt)
 remarks:        --------- Community of our networks  ---------------------------
 remarks:        3216:4000 Originated in any region, specifically:
 remarks:        3216:4001 Originated in SPB
@@ -5662,7 +5666,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-12-04T09:00:05Z
+last-modified:  2024-12-12T00:17:09Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

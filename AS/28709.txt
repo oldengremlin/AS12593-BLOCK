@@ -285,33 +285,16 @@ remarks:        ----- Our BGP communities for managing traffic
 remarks:        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 remarks:        FOR FULL LIST SUPPORTED BGP COMMUNITY
 remarks:        PLEASE USE whois as47541
-remarks:        or read
-remarks:        AS47541 OBJECT IN RIPE DATABASE
+remarks:        or read AS47541 OBJECT IN RIPE DATABASE
 remarks:        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-remarks:        -- CDN vk
-remarks:        47541:20<CDN_NUM> - deny import
-remarks:        47541:21<CDN_NUM> - prepend last AS to AS-PATH 1 time
-remarks:        47541:22<CDN_NUM> - prepend last AS to AS-PATH 2 times
-remarks:        47541:23<CDN_NUM> - prepend last AS to AS-PATH 3 times
-remarks:        where <CDN_NUM> is
-remarks:        01 - Russia, Moscow
-remarks:        02 - Russia, Rostov on Don
-remarks:        03 - Russia, Ekaterinburg
-remarks:        04 - Russia, Novosibirsk
-remarks:        05 - Russia, Khabarovsk
-remarks:        06 - Netherlands, Amsterdam
-remarks:        07 - Russia, Samara
-remarks:        08 - Kazahstan, Akkol
-remarks:
-remarks:        Other CDN bgp communities
 remarks:        <AS_NUM>:20 - deny import
 remarks:        <AS_NUM>:21 - prepend last AS to AS-PATH 1 time
 remarks:        <AS_NUM>:22 - prepend last AS to AS-PATH 2 times
 remarks:        <AS_NUM>:23 - prepend last AS to AS-PATH 3 times
 remarks:        where <AS_NUM> is
 remarks:        47541 - main VK in St.Petersburg (not cdn)
-remarks:        47542 - Russia, Moscow
-remarks:        28709 - Other CDNs
+remarks:        47542 - Russia, Moscow CDN node
+remarks:        28709 - Other CDN nodes
 remarks:
 remarks:        **********************************************************************
 remarks:        Abuse, Security issues noc@vk.com
@@ -325,7 +308,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2009-08-05T11:34:14Z
-last-modified:  2024-08-06T07:46:43Z
+last-modified:  2024-12-11T10:15:36Z
 source:         RIPE # Filtered
 
 organisation:   ORG-VL47-RIPE
