@@ -1960,9 +1960,16 @@ export:         to AS198258 announce any
 remarks:        -FROM_DOWNSTREAM_NAU-
 import:         from AS49675 accept AS49675
 export:         to AS49675 announce any
+remarks:        -FROM_DOWNSTREAM_SKB_KONTUR-
+import:         from AS3191 accept AS-SET-AS3191
+export:         to AS3191 announce AS-ERTH-CITIES AND {0.0.0.0/0}
 remarks:        -DOWNSTREAM_CENTRINFORM-
-import:         from AS3191 accept AS3191
-export:         to AS3191 announce any
+import:         from AS9130 accept AS9130
+export:         to AS9130 announce any
+remarks:        -DOWNSTREAM_GMS_GROUP-
+import:         from AS61151 accept AS61151
+export:         to AS61151 announce any
+remarks:        -DOWNSTREAM_ASIA_PACIFICK_BANK-
 remarks:        ========================================================
 remarks:        Control community for Customers
 remarks:
@@ -2120,7 +2127,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ERTH-MAGISTR
 created:        2011-10-13T07:43:18Z
-last-modified:  2024-12-10T11:49:13Z
+last-modified:  2024-12-13T11:25:58Z
 source:         RIPE
 
 organisation:   ORG-RA21-RIPE

@@ -75,7 +75,7 @@ remarks:        | 12389:612y When advertising to Telia Sonera (AS1299) |
 remarks:        | 12389:614y When advertising to Vodafone (AS1273) |
 remarks:        | 12389:617y When advertising to Telecom-Italia Sparkle (AS6762) |
 remarks:        | 12389:618y When advertising to Orange (AS5511) |
-remarks:        | 12389:619y When advertising to Cogent (AS174)|
+remarks:        | 12389:619y When advertising to Cogent (AS174) |
 remarks:        | 12389:699y When advertising to any UPSTREAM |
 remarks:        | ...y=9 - advertise without prepends |
 remarks:        | ...y=0 - do not advertise |
@@ -88,7 +88,7 @@ remarks:        | 12389:703y When advertising to China NetCom (AS4837) |
 remarks:        | 12389:705y When advertising to any BTC-Bolgaria peer (AS8866) |
 remarks:        | 12389:707y When advertising to Korea Telecom (AS4766) |
 remarks:        | 12389:709y When advertising to KDDI (AS2516) |
-remarks:        | 12389:710y When advertising to Akamai (AS20940)|
+remarks:        | 12389:710y When advertising to Akamai (AS20940) |
 remarks:        | 12389:711y When advertising to DE-CIX and any private peers |
 remarks:        | 12389:712y When advertising to any CloudFlare (AS13335) |
 remarks:        | 12389:713y When advertising to Google (AS15169) |
@@ -96,35 +96,37 @@ remarks:        | 12389:714y When advertising to Netnod and any private peers |
 remarks:        | 12389:722y When advertising to Hetzner Online AG (AS24940) |
 remarks:        | 12389:724y When advertising to Singtel (AS7473) |
 remarks:        | 12389:727y When advertising to HURRICANE (AS6939) |
-remarks:        | 12389:729y When advertising to LEASEWEB (AS16265)|
-remarks:        | 12389:731y When advertising to JUSTINTV (AS46489)|
-remarks:        | 12389:733y When advertising to Limelight Networks (AS22822)|
+remarks:        | 12389:729y When advertising to LEASEWEB (AS16265) |
+remarks:        | 12389:731y When advertising to JUSTINTV (AS46489) |
+remarks:        | 12389:733y When advertising to Limelight Networks (AS22822) |
 remarks:        | 12389:734y When advertising to Valve at Asia (AS32590) |
 remarks:        | 12389:735y When advertising to Valve at Europe (AS32590) |
-remarks:        | 12389:736y When advertising to FlagTel (AS15412)|
-remarks:        | 12389:737y When advertising to EdgeCast Networks (AS15133)|
-remarks:        | 12389:738y When advertising to Microsoft (AS8075)|
-remarks:        | 12389:740y When advertising to INIT7 (AS13030)|
-remarks:        | 12389:742y When advertising to CoreBackbone (AS33891)|
-remarks:        | 12389:743y When advertising to Facebook (AS32934)|
-remarks:        | 12389:744y When advertising to Riot Games (AS6507)|
+remarks:        | 12389:736y When advertising to FlagTel (AS15412) |
+remarks:        | 12389:737y When advertising to EdgeCast Networks (AS15133) |
+remarks:        | 12389:738y When advertising to Microsoft (AS8075) |
+remarks:        | 12389:740y When advertising to INIT7 (AS13030) |
+remarks:        | 12389:742y When advertising to CoreBackbone (AS33891) |
+remarks:        | 12389:743y When advertising to Facebook (AS32934) |
+remarks:        | 12389:744y When advertising to Riot Games (AS6507) |
 remarks:        | 12389:746y When advertising to HKIX (AS4635) and any private peers |
-remarks:        | 12389:747y When advertising to Blizzard (AS57976)|
-remarks:        | 12389:748y When advertising to Apple (AS714)|
-remarks:        | 12389:749y When advertising to Amazon at Europe (AS16509)|
+remarks:        | 12389:747y When advertising to Blizzard (AS57976) |
+remarks:        | 12389:748y When advertising to Apple (AS714) |
+remarks:        | 12389:749y When advertising to Amazon at Europe (AS16509) |
 remarks:        | 12389:750y When advertising to NL-IX (AS34307) and any private peers |
 remarks:        | 12389:751y When advertising to Equinix (AS24115) and any private peers |
 remarks:        | 12389:752y When advertising to BBIX (AS23640) and any private peers |
-remarks:        | 12389:753y When advertising to LG UPLUS (AS3786)|
-remarks:        | 12389:754y When advertising to DE-CIX-NYC (AS63034)|
+remarks:        | 12389:753y When advertising to LG UPLUS (AS3786) |
+remarks:        | 12389:754y When advertising to DE-CIX-NYC (AS63034) |
 remarks:        | 12389:755y When advertising to DATA-IX (AS50952) and any private peers |
-remarks:        | 12389:756y When advertising to IIJ (AS2497)|
+remarks:        | 12389:756y When advertising to IIJ (AS2497) |
 remarks:        | 12389:757y When advertising to JNAP (AS45686) and any private peers |
-remarks:        | 12389:759y When advertising to CDN77(AS60068)|
-remarks:        | 12389:761y When advertising to Telegram (AS62041)|
-remarks:        | 12389:762y When advertising to Amazon at Asia (AS16509)|
-remarks:        | 12389:763y When advertising to Roblox (AS22697)|
-remarks:        | 12389:764y When advertising to OVH Cloud(AS16276)|
+remarks:        | 12389:759y When advertising to CDN77(AS60068) |
+remarks:        | 12389:761y When advertising to Telegram (AS62041) |
+remarks:        | 12389:762y When advertising to Amazon at Asia (AS16509) |
+remarks:        | 12389:763y When advertising to Roblox (AS22697) |
+remarks:        | 12389:764y When advertising to OVH Cloud(AS16276) |
+remarks:        | 12389:765y When advertising to Fastly (AS54113) |
+remarks:        | 12389:766y When advertising to FDC Servers (AS30058) |
 remarks:        | 12389:799y When advertising to any INTERNATIONAL peer |
 remarks:        | ...y=9 - advertise without prepends |
 remarks:        | ...y=0 - do not advertise |
@@ -205,6 +207,10 @@ import:         from AS22697 accept AS22697
 export:         to AS22697 announce AS-ROSTELECOM
 import:         from AS16276 accept AS16276
 export:         to AS16276 announce AS-ROSTELECOM
+import:         from AS54113 accept AS54113
+export:         to AS54113 announce AS-ROSTELECOM
+import:         from AS30058 accept AS30058
+export:         to AS30058 announce AS-ROSTELECOM
 import:         from AS13215 accept AS-CONVEYPLUS
 export:         to AS13215 announce ANY
 import:         from AS8631 accept AS-MSKROUTESERVER
@@ -6476,7 +6482,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SAVRI-MNT
 status:         ASSIGNED
 created:        2005-07-01T14:26:50Z
-last-modified:  2024-11-28T10:41:59Z
+last-modified:  2024-12-16T09:26:22Z
 source:         RIPE
 
 organisation:   ORG-JR8-RIPE

@@ -983,6 +983,8 @@ import:         from AS207240 action pref=100; accept   AS207240
 export:         to   AS207240                  announce ANY
 import:         from AS207353 action pref=100; accept   AS207353
 export:         to   AS207353                  announce ANY
+import:         from AS207354 action pref=100; accept   AS207354
+export:         to   AS207354                  announce ANY
 import:         from AS207490 action pref=100; accept   AS207490
 export:         to   AS207490                  announce ANY
 import:         from AS207496 action pref=100; accept   AS207496
@@ -1085,10 +1087,14 @@ import:         from AS215037 action pref=100; accept   AS215037
 export:         to   AS215037                  announce ANY
 import:         from AS215307 action pref=100; accept   AS215307
 export:         to   AS215307                  announce ANY
+import:         from AS215376 action pref=100; accept   AS206728:AS-MEDIALANDTECHNOLOGY
+export:         to   AS215376                  announce ANY
 import:         from AS215455 action pref=100; accept   AS215455
 export:         to   AS215455                  announce ANY
 import:         from AS215601 action pref=100; accept   AS215601:AS-ALLHOSTINGS
 export:         to   AS215601                  announce ANY
+import:         from AS216246 action pref=100; accept   AS-AEZA
+export:         to   AS216246                  announce ANY
 import:         from AS273045 action pref=100; accept   AS273045
 export:         to   AS273045                  announce ANY
 import:         from AS396986 action pref=100; accept   AS396986
@@ -1630,10 +1636,14 @@ mp-import:      afi ipv6.unicast from AS212748 action pref=100; accept   AS-HELI
 mp-export:      afi ipv6.unicast to   AS212748                  announce ANY
 mp-import:      afi ipv6.unicast from AS215307 action pref=100; accept   AS215307
 mp-export:      afi ipv6.unicast to   AS215307                  announce ANY
+mp-import:      afi ipv6.unicast from AS215376 action pref=100; accept   AS206728:AS-MEDIALANDTECHNOLOGY
+mp-export:      afi ipv6.unicast to   AS215376                  announce ANY
 mp-import:      afi ipv6.unicast from AS215455 action pref=100; accept   AS215455
 mp-export:      afi ipv6.unicast to   AS215455                  announce ANY
 mp-import:      afi ipv6.unicast from AS215601 action pref=100; accept   AS215601:AS-ALLHOSTINGS
 mp-export:      afi ipv6.unicast to   AS215601                  announce ANY
+mp-import:      afi ipv6.unicast from AS216246 action pref=100; accept   AS-AEZA
+mp-export:      afi ipv6.unicast to   AS216246                  announce ANY
 mp-import:      afi ipv6.unicast from AS396986 action pref=100; accept   AS396986
 mp-export:      afi ipv6.unicast to   AS396986                  announce ANY
 remarks:
@@ -1675,7 +1685,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2024-12-10T17:12:02Z
+last-modified:  2024-12-18T16:16:53Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE
