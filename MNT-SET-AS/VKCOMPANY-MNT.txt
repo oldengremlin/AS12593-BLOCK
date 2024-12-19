@@ -699,6 +699,14 @@ mp-export:      afi ipv6.unicast to AS9123 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS9123 accept AS-TIMEWEB;
 remarks:
 remarks:        =========================================
+remarks:        VK deps
+remarks:        -----------------------------------------
+export:         to AS207581 announce ANY
+import:         from AS207581 accept AS207581
+export:         to AS62243 announce ANY
+import:         from AS62243 accept AS62243
+remarks:
+remarks:        =========================================
 remarks:        Other
 remarks:        -----------------------------------------
 remarks:
@@ -874,7 +882,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-07-03T14:45:56Z
-last-modified:  2024-12-11T10:17:42Z
+last-modified:  2024-12-17T16:09:41Z
 source:         RIPE # Filtered
 
 
@@ -1450,6 +1458,8 @@ mp-export:      afi ipv6.unicast to AS16509 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS16509 accept AS-AMAZON;
 export:         to AS49476 announce AS-VK
 import:         from AS49476 accept AS-MTT
+export:         to AS25292 announce AS-VK
+import:         from AS25292 accept AS25292
 remarks:
 remarks:        =========================================
 remarks:        SPB-IX Peers
@@ -1819,7 +1829,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2024-12-11T11:23:09Z
+last-modified:  2024-12-19T07:25:18Z
 source:         RIPE # Filtered
 
 
