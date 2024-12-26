@@ -125,10 +125,9 @@ admin-c:        RCR3-RIPE
 tech-c:         RCR3-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         AS8997-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2024-05-13T10:21:37Z
+last-modified:  2024-12-19T11:36:32Z
 source:         RIPE
 
 
@@ -6655,10 +6654,9 @@ admin-c:        SAM18-RIPE
 tech-c:         YBK1-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         INECO-MNT-RIPE
 mnt-by:         ROSTELECOM-MNT
 created:        2002-09-25T10:52:01Z
-last-modified:  2024-05-13T10:45:08Z
+last-modified:  2024-12-20T11:36:42Z
 source:         RIPE
 
 
@@ -6680,9 +6678,8 @@ tech-c:         ASD18-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
-mnt-by:         ALTAITELECOM-RIPE-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2024-06-19T10:27:03Z
+last-modified:  2024-12-23T04:23:15Z
 source:         RIPE
 
 
@@ -6722,9 +6719,8 @@ tech-c:         VAK75-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
-mnt-by:         TEC-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2024-06-19T06:05:32Z
+last-modified:  2024-12-20T11:37:31Z
 source:         RIPE
 
 
@@ -6769,11 +6765,10 @@ default:        to AS44237 action pref=100; networks ANY
 admin-c:        AAV26-RIPE
 tech-c:         AAV26-RIPE
 status:         ASSIGNED
-mnt-by:         YARTEL-MNT
 mnt-by:         ROSTELECOM-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2002-02-06T09:36:57Z
-last-modified:  2022-12-23T05:43:59Z
+last-modified:  2024-12-20T11:34:49Z
 source:         RIPE
 
 
@@ -6943,10 +6938,9 @@ tech-c:         NP3221-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 admin-c:        SYG1-RIPE
-mnt-by:         NOVGOROD-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2002-09-05T12:10:53Z
-last-modified:  2024-06-19T10:24:48Z
+last-modified:  2024-12-19T11:23:07Z
 source:         RIPE
 
 
@@ -7252,10 +7246,9 @@ admin-c:        RCR3-RIPE
 tech-c:         RCR3-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         AS8997-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2002-06-27T08:28:00Z
-last-modified:  2024-05-13T10:24:32Z
+last-modified:  2024-12-19T11:33:03Z
 source:         RIPE
 
 
@@ -7336,10 +7329,9 @@ mp-export:      afi ipv4.unicast to AS9049 announce AS-VSI-CLNT
 tech-c:         VSI8-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         VSI-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2024-06-19T07:24:39Z
+last-modified:  2024-12-20T11:33:15Z
 source:         RIPE
 
 
@@ -7382,6 +7374,47 @@ mnt-by:         ROSTOVTELECOM-MNT
 created:        2001-10-18T09:53:55Z
 last-modified:  2024-06-19T06:05:32Z
 source:         RIPE
+
+
+
+aut-num:        AS21378
+org:            ORG-JR8-RIPE
+as-name:        CTCTVER
+import:         from AS44237 action pref=10; accept ANY
+import:         from AS29651 action pref=10; accept ANY
+import:         from AS43761 action pref=10; accept ANY
+import:         from AS58178 action pref=10; accept ANY
+import:         from AS211716 action pref=10; accept ANY
+import:         from AS211221 action pref=10; accept ANY
+import:         from AS47763 action pref=100; accept AS47763
+import:         from AS48466 action pref=100; accept AS48466
+import:         from AS56685 action pref=10; accept AS56685
+import:         from AS201576 action pref=10; accept AS201576
+import:         from AS58178 action pref=10; accept AS58178
+import:         from AS211716 accept AS211716
+import:         from AS211221 accept AS211221
+export:         to AS44237 announce AS-CTCTVER
+export:         to AS29651 announce AS-CTCTVER
+export:         to AS43761 announce AS-CTCTVER
+export:         to AS56685 announce AS-CTCTVER
+export:         to AS58178 announce AS-CTCTVER
+export:         to AS211716 announce AS-CTCTVER
+export:         to AS211221 announce AS-CTCTVER
+export:         to AS47763 announce ANY
+export:         to AS48466 announce ANY
+export:         to AS56685 announce ANY
+export:         to AS201576 announce ANY
+export:         to AS58178 announce ANY
+export:         to AS211716 announce ANY
+export:         to AS211221 announce ANY
+admin-c:        VEV57-RIPE
+tech-c:         VEV57-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2001-11-20T14:18:30Z
+last-modified:  2024-12-20T11:38:24Z
+source:         RIPE # Filtered
 
 
 
@@ -7542,10 +7575,9 @@ tech-c:         AM49798-RIPE
 remarks:        "PJSC Rostelecom Ivanovo branch"
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         IVTELECOM-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2002-02-25T14:51:01Z
-last-modified:  2022-12-23T05:57:02Z
+last-modified:  2024-12-20T11:33:43Z
 source:         RIPE
 
 
@@ -7568,6 +7600,25 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2002-04-17T08:22:50Z
 last-modified:  2024-12-19T07:43:33Z
+source:         RIPE
+
+
+
+aut-num:        AS24789
+org:            ORG-JR8-RIPE
+as-name:        NOVGORODTELECOM-AS
+descr:          TELESET LLC
+import:         from AS8997 action pref=100; accept ANY
+import:         from AS16301 action pref=150; accept AS16301
+export:         to AS8997 announce AS24789
+export:         to AS16301 announce ANY
+admin-c:        VS2208-RIPE
+tech-c:         NCC114-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2002-03-28T14:38:02Z
+last-modified:  2024-12-19T08:56:58Z
 source:         RIPE
 
 
@@ -7913,10 +7964,9 @@ admin-c:        RCR3-RIPE
 tech-c:         RCR3-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         AS8997-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2003-03-20T09:04:07Z
-last-modified:  2024-06-19T10:25:28Z
+last-modified:  2024-12-19T11:43:00Z
 source:         RIPE
 
 
@@ -7951,6 +8001,22 @@ mnt-by:         ROSTELECOM-MNT
 created:        2003-05-26T11:05:59Z
 last-modified:  2024-07-01T10:31:39Z
 source:         RIPE
+
+
+
+aut-num:        AS29456
+org:            ORG-JR8-RIPE
+as-name:        BELSVYAZ-AS
+import:         from AS44237 action pref=100; accept ANY
+export:         to AS44237 announce AS29456
+admin-c:        VJP2-RIPE
+tech-c:         AN4591-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2003-09-15T13:49:10Z
+last-modified:  2024-12-20T11:22:55Z
+source:         RIPE # Filtered
 
 
 
@@ -8038,10 +8104,9 @@ admin-c:        RCR3-RIPE
 tech-c:         RCR3-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         AS8997-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2004-04-22T15:48:58Z
-last-modified:  2024-05-13T12:57:27Z
+last-modified:  2024-12-19T11:45:09Z
 source:         RIPE
 
 
@@ -8200,9 +8265,8 @@ tech-c:         EC2368-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
-mnt-by:         ELCOM-ISP-MNT
 created:        2004-11-10T10:14:58Z
-last-modified:  2024-06-19T06:05:30Z
+last-modified:  2024-12-20T11:30:02Z
 source:         RIPE # Filtered
 
 
@@ -8554,9 +8618,8 @@ tech-c:         NI501-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
-mnt-by:         SMOLENSK-MNT
 created:        2005-06-07T15:48:31Z
-last-modified:  2024-06-19T06:05:33Z
+last-modified:  2024-12-20T11:37:06Z
 source:         RIPE
 
 
@@ -8639,9 +8702,8 @@ tech-c:         IGGR-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
-mnt-by:         KURSKNET-MNT
 created:        2005-08-24T13:41:54Z
-last-modified:  2024-06-19T06:05:31Z
+last-modified:  2024-12-20T11:35:15Z
 source:         RIPE # Filtered
 
 
@@ -8819,10 +8881,9 @@ admin-c:        AVB12-RIPE
 tech-c:         DNT16-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         CTC-OREL
 mnt-by:         ROSTELECOM-MNT
 created:        2006-06-20T09:50:52Z
-last-modified:  2023-02-01T05:14:11Z
+last-modified:  2024-12-20T11:36:17Z
 source:         RIPE
 
 
@@ -10309,10 +10370,9 @@ admin-c:        HKST1-RIPE
 tech-c:         HKST1-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         AS5573-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2024-05-13T10:36:00Z
+last-modified:  2024-12-23T05:41:52Z
 source:         RIPE # Filtered
 
 
@@ -10542,10 +10602,9 @@ admin-c:        ICT2-RIPE
 tech-c:         ICT2-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         IRTEL-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2001-11-27T09:24:09Z
-last-modified:  2024-05-13T10:36:45Z
+last-modified:  2024-12-23T05:47:37Z
 source:         RIPE
 
 
@@ -10703,6 +10762,24 @@ source:         RIPE
 
 
 
+aut-num:        AS8570
+org:            ORG-JR8-RIPE
+as-name:        LES
+descr:          Public Data Network of Lipetsk region
+descr:          Lipetsk, Russia
+import:         from AS44237 action pref=100; accept ANY
+export:         to AS44237 announce AS-LES
+admin-c:        AVY6-RIPE
+tech-c:         AVY6-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2024-12-20T11:35:47Z
+source:         RIPE
+
+
+
 aut-num:        AS8594
 org:            ORG-JR8-RIPE
 descr:          PJSC "Rostelecom". Omsk branch
@@ -10773,10 +10850,9 @@ admin-c:        KLG6-RIPE
 tech-c:         KLG6-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         KLGELECS-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2023-02-01T05:05:13Z
+last-modified:  2024-12-20T11:34:05Z
 source:         RIPE
 
 
