@@ -257,6 +257,8 @@ import:         from  AS39578 action pref=100; accept   AS39578
 export:         to    AS39578                  announce ANY
 import:         from  AS39612 action pref=100; accept   AS-TEVIA
 export:         to    AS39612                  announce ANY
+import:         from  AS39631 action pref=100; accept   AS39631
+export:         to    AS39631                  announce ANY
 import:         from  AS39684 action pref=100; accept   AS39684
 export:         to    AS39684                  announce ANY
 import:         from  AS39688 action pref=100; accept   AS39688
@@ -337,8 +339,6 @@ import:         from  AS43045 action pref=100; accept   AS-SVHOLDING
 export:         to    AS43045                  announce ANY
 import:         from  AS43048 action pref=100; accept   AS-MITIGATOR-CLOUD
 export:         to    AS43048                  announce ANY
-import:         from  AS43247 action pref=100; accept   AS43247
-export:         to    AS43247                  announce ANY
 import:         from  AS43299 action pref=100; accept   AS-TELECONTACT
 export:         to    AS43299                  announce ANY
 import:         from  AS43399 action pref=100; accept   AS-TINKOFF
@@ -983,8 +983,6 @@ import:         from AS207240 action pref=100; accept   AS207240
 export:         to   AS207240                  announce ANY
 import:         from AS207353 action pref=100; accept   AS207353
 export:         to   AS207353                  announce ANY
-import:         from AS207354 action pref=100; accept   AS207354
-export:         to   AS207354                  announce ANY
 import:         from AS207490 action pref=100; accept   AS207490
 export:         to   AS207490                  announce ANY
 import:         from AS207496 action pref=100; accept   AS207496
@@ -1053,6 +1051,8 @@ import:         from AS212075 action pref=100; accept   AS212075
 export:         to   AS212075                  announce ANY
 import:         from AS212136 action pref=100; accept   AS212136
 export:         to   AS212136                  announce ANY
+import:         from AS212165 action pref=100; accept   AS212165
+export:         to   AS212165                  announce ANY
 import:         from AS212213 action pref=100; accept   AS212213
 export:         to   AS212213                  announce ANY
 import:         from AS212278 action pref=100; accept   AS212278
@@ -1630,6 +1630,8 @@ mp-import:      afi ipv6.unicast from AS211796 action pref=100; accept   AS21179
 mp-export:      afi ipv6.unicast to   AS211796                  announce ANY
 mp-import:      afi ipv6.unicast from AS212136 action pref=100; accept   AS212136
 mp-export:      afi ipv6.unicast to   AS212136                  announce ANY
+mp-import:      afi ipv6.unicast from AS212165 action pref=100; accept   AS212165
+mp-export:      afi ipv6.unicast to   AS212165                  announce ANY
 mp-import:      afi ipv6.unicast from AS212421 action pref=100; accept   AS-LIVECOMM-CORE
 mp-export:      afi ipv6.unicast to   AS212421                  announce ANY
 mp-import:      afi ipv6.unicast from AS212748 action pref=100; accept   AS-HELIX-RU
@@ -1685,7 +1687,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2024-12-18T16:16:53Z
+last-modified:  2024-12-25T14:21:43Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE

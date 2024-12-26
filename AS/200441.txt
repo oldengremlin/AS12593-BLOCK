@@ -14,17 +14,41 @@ source:         RIPE
 aut-num:        AS200441
 as-name:        CRIMEADC-NET
 org:            ORG-NS573-RIPE
+remarks:        !-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        ! UPSTREAMS
+remarks:        ! contact: <noc> <noc@crimeadc.net>
+remarks:        !-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
 import:         from AS28761 accept ANY
-export:         to AS28761 announce AS200441
-import:         from AS49617 accept ANY
-export:         to AS49617 announce AS200441
+export:         to   AS28761 announce AS200441
+remarks:
+import:         from AS43222  accept ANY
+export:         to   AS43222  announce AS200441
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        IPv6 Routing Policy
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
+mp-import:      afi ipv6.unicast from AS28761  accept   ANY
+mp-export:      afi ipv6.unicast to   AS28761  announce AS200441
+remarks:
+mp-import:      afi ipv6.unicast from AS43222  accept   ANY
+mp-export:      afi ipv6.unicast to   AS43222  announce AS200441
+remarks:
+remarks:        Other contacts
+remarks:        --------------
+remarks:        Routing and MAN ops.........: noc@crimeadc.net
+remarks:        E-Mail abuse, spam reports..: abuse@crimeadc.net
+remarks:        Peering requests............: peering@crimeadc.net
+remarks:
+remarks:        - + - + - + - + - + - + - + - + - + - + - + - + - + -
 admin-c:        AA38707-RIPE
 tech-c:         AA38707-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lir-ru-sergienko-1-MNT
 created:        2015-07-02T09:29:22Z
-last-modified:  2024-12-18T15:18:38Z
+last-modified:  2024-12-23T08:12:27Z
 source:         RIPE
 
 organisation:   ORG-NS573-RIPE

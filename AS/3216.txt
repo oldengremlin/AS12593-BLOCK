@@ -1678,6 +1678,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS42260 action pref=100; accept AS42260
+export:         to AS42260 announce {0.0.0.0/0}
 import:         from AS208777 action pref=100; accept AS208777
 export:         to AS208777 announce ANY
 import:         from AS34503 action pref=100; accept AS34503
@@ -1732,6 +1734,10 @@ mp-import:      from AS57494 action pref=100; accept AS-ADMAN
 mp-export:      to AS57494 announce ANY
 import:         from AS200627 action pref=100; accept AS200627
 export:         to AS200627 announce ANY
+import:         from AS21403 action pref=100; accept AS21403
+export:         to AS21403 announce ANY
+mp-import:      from AS21403 action pref=100; accept AS21403
+mp-export:      to AS21403 announce ANY
 import:         from AS9177 action pref=100; accept AS9177
 export:         to AS9177 announce ANY
 import:         from AS214336 action pref=100; accept AS214336
@@ -1864,6 +1870,8 @@ import:         from AS215796 action pref=100; accept AS215796
 export:         to AS215796 announce {0.0.0.0/0}
 mp-import:      from AS215796 action pref=100; accept AS215796
 mp-export:      to AS215796 announce {::/0}
+import:         from AS213810 action pref=100; accept AS213810
+export:         to AS213810 announce {0.0.0.0/0}
 import:         from AS24689 action pref=100; accept AS-ROSINTEL
 export:         to AS24689 announce ANY
 import:         from AS201851 action pref=100; accept AS201851:AS-PIK
@@ -2010,6 +2018,8 @@ import:         from AS57107 action pref=100; accept AS57107
 export:         to AS57107 announce ANY
 import:         from AS41275 action pref=100; accept AS-TUT
 export:         to AS41275 announce ANY
+mp-import:      from AS41275 action pref=100; accept AS-TUT6
+mp-export:      to AS41275 announce ANY
 import:         from AS198718 action pref=100; accept AS198718
 export:         to AS198718 announce {0.0.0.0/0}
 import:         from AS35032 action pref=100; accept AS-TAHION
@@ -2496,8 +2506,8 @@ import:         from AS204738 action pref=100; accept AS204738
 export:         to AS204738 announce ANY
 import:         from AS201786 action pref=100; accept AS201786
 export:         to AS201786 announce ANY
-import:         from AS200350 action pref=100; accept AS200350
-export:         to AS200350 announce ANY
+import:         from AS200350 action pref=100; accept AS-YACLOUD
+export:         to AS200350 announce AS-SOVAM
 import:         from AS16143 action pref=100; accept AS-RATEL
 export:         to AS16143 announce ANY
 mp-import:      afi ipv6 from AS16143 action pref=100; accept AS-RATEL
@@ -2860,6 +2870,8 @@ import:         from AS34698 action pref=100; accept AS34698
 export:         to AS34698 announce AS-SOVAM
 import:         from AS44056 action pref=100; accept AS-TRYTEK
 export:         to AS44056 announce ANY
+mp-import:      from AS44056 action pref=100; accept AS-TRYTER
+mp-export:      to AS44056 announce ANY
 import:         from AS34838 action pref=100; accept AS34838
 export:         to AS34838 announce ANY
 import:         from AS56674 action pref=100; accept AS56674
@@ -4927,6 +4939,8 @@ import:         from AS203517 action pref=100; accept AS203517
 export:         to AS203517 announce ANY
 import:         from AS203549 action pref=100; accept AS203549
 export:         to AS203549 announce ANY
+import:         from AS208838 action pref=100; accept AS-DOMSET
+export:         to AS208838 announce ANY
 mp-import:      afi ipv6 from AS203517 action pref=100; accept AS203517
 mp-export:      afi ipv6 to AS203517 announce ANY
 import:         from AS52006 action pref=100; accept AS52006
@@ -5237,6 +5251,7 @@ remarks:        3216:530x When advertising to Vkontakte (AS47542) private peer..
 remarks:        3216:531x When advertising to DATAIX (RU) peers...
 remarks:        3216:533x When advertising to DALSATKOM AS43550 private peer...
 remarks:        3216:534x When advertising to RetnNet private peer...
+remarks:        3216:535x When advertising to FDCServers...
 remarks:        3216:536x When advertising to Rascom private peer...
 remarks:        3216:537x When advertising to SOLNTCETELEKOM private peer...
 remarks:        3216:538x When advertising to Er-telecom private peer...
@@ -5424,6 +5439,7 @@ remarks:        3216:3227 LeaseWeb
 remarks:        3216:3228 G-Core Labs
 remarks:        3216:3229 ReTN
 remarks:        3216:3230 ByteDance(Frankfurt)
+remarks:        3216:3231 FDC Servers
 remarks:        --------- Community of our networks  ---------------------------
 remarks:        3216:4000 Originated in any region, specifically:
 remarks:        3216:4001 Originated in SPB
@@ -5668,7 +5684,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-12-16T06:55:00Z
+last-modified:  2024-12-26T07:29:01Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

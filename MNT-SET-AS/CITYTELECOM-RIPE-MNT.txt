@@ -595,9 +595,6 @@ remarks:
 import:         from AS42632 action pref=50; accept AS-MNOGOBYTE;
 export:         to AS42632 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
-import:         from AS44622 action pref=50; accept AS-MOSINTER;
-export:         to AS44622 announce AS-CLOUD-IX-PRO;
-remarks:
 import:         from AS31370 action pref=50; accept AS-MOSLINE;
 export:         to AS31370 announce ANY;
 remarks:
@@ -684,9 +681,6 @@ export:         to AS47379 announce ANY;
 remarks:
 import:         from AS50254 action pref=50; accept AS-SKY-EN;
 export:         to AS50254 announce ANY;
-remarks:
-import:         from AS61308 action pref=50; accept AS-SKYNETCOM;
-export:         to AS61308 announce AS-CLOUD-IX-PRO;
 remarks:
 import:         from AS47723 action pref=50; accept AS-SLCLOUD;
 export:         to AS47723 announce AS-CLOUD-IX-PRO;
@@ -1289,9 +1283,6 @@ remarks:
 mp-import:      afi ipv6.unicast from AS42632 action pref=50; accept AS-MNOGOBYTE;
 mp-export:      afi ipv6.unicast to AS42632 announce any;
 remarks:
-mp-import:      afi ipv6.unicast from AS44622 action pref=50; accept AS-MOSINTER;
-mp-export:      afi ipv6.unicast to AS44622 announce any;
-remarks:
 mp-import:      afi ipv6.unicast from AS31370 action pref=50; accept AS31370;
 mp-export:      afi ipv6.unicast to AS31370 announce any;
 remarks:
@@ -1378,9 +1369,6 @@ mp-export:      afi ipv6.unicast to AS47379 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS50254 action pref=50; accept AS-SKY-EN;
 mp-export:      afi ipv6.unicast to AS50254 announce any;
-remarks:
-mp-import:      afi ipv6.unicast from AS61308 action pref=50; accept AS-SKYNETCOM;
-mp-export:      afi ipv6.unicast to AS61308 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS47723 action pref=50; accept AS-SLCLOUD;
 mp-export:      afi ipv6.unicast to AS47723 announce any;
@@ -1760,7 +1748,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2024-12-09T21:00:03Z
+last-modified:  2024-12-20T21:00:04Z
 source:         RIPE # Filtered
 
 
