@@ -1641,8 +1641,6 @@ mp-import:      from AS13238 action pref=100; accept AS13238
 mp-export:      to AS13238 announce AS-SOVAM-V6
 import:         from AS8402 action pref=95; accept AS-CORBINA
 export:         to AS8402 announce AS-SOVAM
-import:         from AS12714 action pref=95; accept AS-TI
-export:         to AS12714 announce AS-SOVAM
 import:         from AS12389 action pref=95; accept AS-ROSTELECOM
 export:         to AS12389 announce AS-SOVAM
 import:         from AS9049 action pref=95; accept AS-ERTH
@@ -1700,6 +1698,8 @@ import:         from AS64423 action pref=100; accept AS64423
 export:         to AS64423 announce ANY
 import:         from AS214066 action pref=100; accept AS214066
 export:         to AS214066 announce ANY
+import:         from AS47822 action pref=100; accept AS47822
+export:         to AS47822 announce {0.0.0.0/0}
 import:         from AS48763 action pref=100; accept AS48763
 export:         to AS48763 announce ANY
 import:         from AS197078 action pref=100; accept AS-YARNET
@@ -4027,8 +4027,6 @@ import:         from AS208345 action pref=100; accept AS208345
 export:         to AS208345 announce {0.0.0.0/0}
 import:         from AS57018 action pref=100; accept AS57018
 export:         to AS57018 announce ANY
-import:         from AS200875 action pref=100; accept AS200875
-export:         to AS200875 announce ANY
 import:         from AS39321 action pref=100; accept AS39321
 export:         to AS39321 announce ANY
 import:         from AS58108 action pref=100; accept AS58108
@@ -5166,7 +5164,7 @@ export:         to AS56699 announce {0.0.0.0/0}
 import:         from AS199022 action pref=100; accept AS199022
 export:         to AS199022 announce {0.0.0.0/0}
 import:         from AS61416 action pref=100; accept AS61416
-export:         to AS61416 announce ANY
+export:         to AS61416 announce {0.0.0.0/0}
 remarks:        ---------------------------------------------
 remarks:        Cherepovets zone
 remarks:        ---------------------------------------------
@@ -5245,7 +5243,6 @@ remarks:        3216:524x When advertising to TransTelecom private peer...
 remarks:        3216:525x When advertising to Yandex private peer...
 remarks:        3216:526x When advertising to Corbina private peer...
 remarks:        3216:527x When advertising to Comcor private peer...
-remarks:        3216:528x When advertising to Netbynet private peer...
 remarks:        3216:529x When advertising to Rostelecom private peer...
 remarks:        3216:530x When advertising to Vkontakte (AS47542) private peer...
 remarks:        3216:531x When advertising to DATAIX (RU) peers...
@@ -5347,7 +5344,6 @@ remarks:        3216:1108 TransTelecom AS20485 private peering
 remarks:        3216:1109 Yandex AS13238 private peering
 remarks:        3216:1110 Corbina AS8402 private peering
 remarks:        3216:1111 Comcor AS8732 private peering
-remarks:        3216:1112 Netbynet AS12714 private peering
 remarks:        3216:1116 Vkontakte AS47541 private peering (SPB)
 remarks:        3216:1118 Google AS15169 Russia private peering
 remarks:        3216:1119 Mail.ru private peering (Moscow)
@@ -5684,7 +5680,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2024-12-26T07:29:01Z
+last-modified:  2024-12-28T08:48:50Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

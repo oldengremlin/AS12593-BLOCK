@@ -677,6 +677,8 @@ import:         from  AS57712 action pref=100; accept   AS-SOFTVIDEO
 export:         to    AS57712                  announce ANY
 import:         from  AS57824 action pref=100; accept   AS-METRONET-MSK
 export:         to    AS57824                  announce ANY
+import:         from  AS58002 action pref=100; accept   AS-SI
+export:         to    AS58002                  announce ANY
 import:         from  AS58084 action pref=100; accept   AS58084
 export:         to    AS58084                  announce ANY
 import:         from  AS58096 action pref=100; accept   AS-ELIT-TV
@@ -1462,6 +1464,8 @@ mp-import:      afi ipv6.unicast from  AS57629 action pref=200; accept   AS57629
 mp-export:      afi ipv6.unicast to    AS57629                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS57712 action pref=100; accept   AS-SOFTVIDEO
 mp-export:      afi ipv6.unicast to    AS57712                  announce ANY
+mp-import:      afi ipv6.unicast from  AS58002 action pref=100; accept   AS-SI-V6
+mp-export:      afi ipv6.unicast to    AS58002                  announce ANY
 mp-import:      afi ipv6.unicast from  AS58314 action pref=100; accept   AS-B2BTELECOM-V6
 mp-export:      afi ipv6.unicast to    AS58314                  announce ANY
 mp-import:      afi ipv6.unicast from  AS59516 action pref=100; accept   AS-LANAMAR
@@ -1687,7 +1691,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2024-12-25T14:21:43Z
+last-modified:  2024-12-29T10:18:39Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE
