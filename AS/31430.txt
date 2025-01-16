@@ -41,6 +41,10 @@ import:         from AS28917 accept ANY
 export:         to AS28917 announce AS-TEL-NET
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-TEL-NET
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS31500 accept ANY
+mp-export:      afi ipv6 to AS31500 announce AS-TEL-NET-V6
 remarks:        ---------------------------------------------------------------
 remarks:        MSK-IX peers
 remarks:        ---------------------------------------------------------------
@@ -114,6 +118,17 @@ remarks:        LINXDATACENTER-IX
 remarks:        ----------------------------
 import:         from AS207362 accept AS207362
 export:         to AS207362 announce AS-TEL-NET
+remarks:        ----------------------------
+remarks:        GNM-IX
+remarks:        ----------------------------
+import:         from AS50952 accept ANY
+export:         to AS50952 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS50952 accept ANY
+mp-export:      afi ipv6 to AS50952 announce AS-TEL-NET-V6
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS31500 accept ANY
+mp-export:      afi ipv6 to AS31500 announce AS-TEL-NET-V6
 remarks:        ---------------------------------------------------------------
 remarks:        Peers
 remarks:        ---------------------------------------------------------------
@@ -134,6 +149,8 @@ remarks:        002 - W-IX (AS50384)
 remarks:        004 - PITER-IX (AS50817)
 remarks:        005 - Eurasia-Peering (AS56931)
 remarks:        006 - LINXDATACENTER-IX (AS207362)
+remarks:        007 - GNM-IX (DATA-IX AS50952)
+remarks:        008 - GNM-IX (AS31500)
 remarks:        2.Route type:
 remarks:        31430:2xxx upstream
 remarks:        Where xxx the route from:
@@ -143,6 +160,7 @@ remarks:        732 - COMCOR (AS8732)
 remarks:        764 - RASCOM (AS20764)
 remarks:        297 - FIORD (AS28917)
 remarks:        123 -  ROSTELECOM (AS12389)
+remarks:        315 - GNM-IP (AS31500)
 remarks:        -----------------------------------------------------------------
 remarks:        BGP communities are accepted from downstream
 remarks:        -----------------------------------------------------------------
@@ -169,7 +187,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TEL-NET-MNT
 created:        2010-09-29T10:52:42Z
-last-modified:  2023-12-04T13:53:58Z
+last-modified:  2025-01-13T15:13:20Z
 source:         RIPE # Filtered
 
 organisation:   ORG-OS214-RIPE

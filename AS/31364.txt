@@ -42,19 +42,18 @@ remarks:        ---------------------------
 remarks:
 remarks:        IPv6 uplinks
 remarks:        ---------------------------
-mp-import:      afi ipv6.unicast from AS6939                action pref=100; accept ANY
-mp-export:      afi ipv6.unicast to AS6939                announce AS31364
-mp-import:      afi ipv6.unicast from AS21127                action pref=105; accept ANY
-mp-export:      afi ipv6.unicast to AS21127                announce AS21127
+mp-import:      afi ipv6.unicast from AS6939 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS6939 announce AS31364
+mp-import:      afi ipv6.unicast from AS21127 action pref=105; accept ANY
+mp-export:      afi ipv6.unicast to AS21127 announce AS21127
 remarks:        ---------------------------
 admin-c:        TN1646-RIPE
 tech-c:         TN1646-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TRANSTELECOM-MNT
-mnt-by:         MNT-INTELBI
 created:        2004-04-26T12:53:27Z
-last-modified:  2021-04-28T07:05:21Z
+last-modified:  2025-01-13T21:16:51Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CJSC19-RIPE
@@ -75,7 +74,7 @@ mnt-ref:        TRANSTELECOM-MNT
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         TRANSTELECOM-MNT
 created:        2009-03-11T13:07:47Z
-last-modified:  2023-11-20T12:20:41Z
+last-modified:  2025-01-13T21:17:10Z
 source:         RIPE # Filtered
 
 role:           TTK-INTELBI NOC
