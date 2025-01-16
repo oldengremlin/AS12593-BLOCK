@@ -23,18 +23,18 @@ remarks:        IPv4 Routing Policy
 remarks:        ---------------------------------------------------------
 remarks:
 remarks:        Uplinks
-import:         from AS20485   action pref=100; accept ANY
-export:         to AS20485     announce AS-ZSTTK-SET
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS-ZSTTK-SET
 remarks:        Customers
-import:         from AS8711  action pref=110; accept AS-MAGTEL;
+import:         from AS8711 action pref=110; accept AS-MAGTEL;
 import:         from AS21311 action pref=110; accept AS21311;
 import:         from AS21365 action pref=110; accept AS21365;
 import:         from AS25001 action pref=110; accept AS25001;
 import:         from AS25549 action pref=110; accept AS-AVANTEL;
-import:         from AS9107  action pref=110; accept AS-CIS;
+import:         from AS9107 action pref=110; accept AS-CIS;
 import:         from AS28884 action pref=110; accept AS-SIBMTS-UPLINK;
 import:         from AS29072 action pref=110; accept AS29072;
-import:         from AS8410  action pref=110; accept AS8410 AS34833 AS47905 AS41712;
+import:         from AS8410 action pref=110; accept AS8410 AS34833 AS47905 AS41712;
 import:         from AS30788 action pref=110; accept AS30788;
 import:         from AS30922 action pref=110; accept AS-SIBELTELECOM;
 import:         from AS30797 action pref=110; accept AS30797 AS15508 AS20803 AS25549 AS35410 AS39258 AS49547;
@@ -47,7 +47,7 @@ import:         from AS31364 action pref=110; accept AS-INTELBI-SET;
 import:         from AS30928 action pref=110; accept AS30928;
 import:         from AS33892 action pref=110; accept AS33892;
 import:         from AS34389 action pref=110; accept as-its1;
-import:         from AS8848  action pref=110; accept AS8848;
+import:         from AS8848 action pref=110; accept AS8848;
 import:         from AS31738 action pref=110; accept AS31738;
 import:         from AS34757 action pref=110; accept AS34757;
 import:         from AS50567 action pref=110; accept AS50567 AS60678;
@@ -68,7 +68,7 @@ import:         from AS44310 action pref=110; accept AS44310;
 import:         from AS34479 action pref=110; accept AS34479;
 import:         from AS42323 action pref=110; accept AS42323;
 import:         from AS44587 action pref=110; accept AS-MEGACOM;
-import:         from AS9006  action pref=110; accept AS9006;
+import:         from AS9006 action pref=110; accept AS9006;
 import:         from AS44420 action pref=110; accept AS44420;
 import:         from AS47280 action pref=110; accept AS47280;
 import:         from AS35025 action pref=110; accept AS35025;
@@ -77,12 +77,12 @@ import:         from AS44436 action pref=110; accept AS-EFFORTEL-KEM;
 import:         from AS35711 action pref=110; accept AS35711;
 import:         from AS47651 action pref=110; accept AS47651;
 import:         from AS48032 action pref=110; accept AS48032 AS61407;
-import:         from AS9177  action pref=110; accept AS9177;
-import:         from AS8510  action pref=110; accept AS8510;
+import:         from AS9177 action pref=110; accept AS9177;
+import:         from AS8510 action pref=110; accept AS8510;
 import:         from AS47165 action pref=110; accept AS-OMKC-SET;
 import:         from AS48472 action pref=110; accept AS48472;
 import:         from AS29175 action pref=110; accept AS29175;
-import:         from AS5567  action pref=110; accept AS5567;
+import:         from AS5567 action pref=110; accept AS5567;
 import:         from AS43552 action pref=110; accept AS43552;
 import:         from AS47955 action pref=110; accept AS-KTSCOM-SET;
 import:         from AS43859 action pref=110; accept AS43859 AS25446 AS31314;
@@ -218,50 +218,50 @@ import:         from AS207340 action pref=110; accept AS207340;
 import:         from AS62382 action pref=110; accept AS62382;
 import:         from AS62382 action pref=110; accept AS-KDV-SET;
 remarks:        IX
-import:         from AS2854  action pref=105; accept AS-ROSPRINT;
-import:         from AS3267  action pref=105; accept AS-RUNNET;
-import:         from AS5387  action pref=105; accept AS5387 AS3335 AS8506 AS12828;
+import:         from AS2854 action pref=105; accept AS-ROSPRINT;
+import:         from AS3267 action pref=105; accept AS-RUNNET;
+import:         from AS5387 action pref=105; accept AS5387 AS3335 AS8506 AS12828;
 import:         from AS31200 action pref=105; accept AS-RUNTK-SET;
 import:         from AS3216 action pref=105; accept AS-SOVAM;
 import:         from AS49414 action pref=105; accept AS-TOMICA-IX;
-export:         to AS2854   announce AS-ZSTTK-SET;
-export:         to AS3267   announce AS-ZSTTK-SET;
-export:         to AS5387   announce AS-ZSTTK-SET;
-export:         to AS31200  announce AS-ZSTTK-SET;
+export:         to AS2854 announce AS-ZSTTK-SET;
+export:         to AS3267 announce AS-ZSTTK-SET;
+export:         to AS5387 announce AS-ZSTTK-SET;
+export:         to AS31200 announce AS-ZSTTK-SET;
 export:         to AS3216 announce AS-ZSTTK-SET;
 export:         to AS49414 announce AS-ZSTTK-SET;
 remarks:        Customers
-export:         to AS8711   announce ANY;
-export:         to AS21311  announce ANY;
-export:         to AS21365  announce ANY;
-export:         to AS25001  announce ANY;
-export:         to AS25549  announce ANY;
-export:         to AS9107   announce ANY;
-export:         to AS28884  announce ANY;
-export:         to AS29072  announce ANY;
-export:         to AS8410   announce ANY;
-export:         to AS30788  announce ANY;
-export:         to AS30922  announce ANY;
-export:         to AS30797  announce ANY;
-export:         to AS29407  announce ANY;
-export:         to AS31357  announce ANY;
-export:         to AS31036  announce ANY;
-export:         to AS31643  announce ANY;
-export:         to AS33894  announce ANY;
-export:         to AS31364  announce ANY;
-export:         to AS30928  announce ANY;
-export:         to AS33892  announce ANY;
-export:         to AS34389  announce ANY;
-export:         to AS8848   announce ANY;
-export:         to AS31738  announce ANY;
-export:         to AS34757  announce ANY;
-export:         to AS50567  announce ANY;
-export:         to AS35018  announce ANY;
-export:         to AS34490  announce ANY;
-export:         to AS39258  announce ANY;
-export:         to AS12772  announce ANY;
-export:         to AS206871  announce ANY;
-export:         to AS41787  announce ANY;
+export:         to AS8711 announce ANY;
+export:         to AS21311 announce ANY;
+export:         to AS21365 announce ANY;
+export:         to AS25001 announce ANY;
+export:         to AS25549 announce ANY;
+export:         to AS9107 announce ANY;
+export:         to AS28884 announce ANY;
+export:         to AS29072 announce ANY;
+export:         to AS8410 announce ANY;
+export:         to AS30788 announce ANY;
+export:         to AS30922 announce ANY;
+export:         to AS30797 announce ANY;
+export:         to AS29407 announce ANY;
+export:         to AS31357 announce ANY;
+export:         to AS31036 announce ANY;
+export:         to AS31643 announce ANY;
+export:         to AS33894 announce ANY;
+export:         to AS31364 announce ANY;
+export:         to AS30928 announce ANY;
+export:         to AS33892 announce ANY;
+export:         to AS34389 announce ANY;
+export:         to AS8848 announce ANY;
+export:         to AS31738 announce ANY;
+export:         to AS34757 announce ANY;
+export:         to AS50567 announce ANY;
+export:         to AS35018 announce ANY;
+export:         to AS34490 announce ANY;
+export:         to AS39258 announce ANY;
+export:         to AS12772 announce ANY;
+export:         to AS206871 announce ANY;
+export:         to AS41787 announce ANY;
 export:         to AS42187 announce ANY;
 export:         to AS42558 announce ANY;
 export:         to AS30729 announce ANY;
@@ -273,7 +273,7 @@ export:         to AS44310 announce ANY;
 export:         to AS34479 announce ANY;
 export:         to AS42323 announce ANY;
 export:         to AS44587 announce ANY;
-export:         to AS9006  announce ANY;
+export:         to AS9006 announce ANY;
 export:         to AS44420 announce ANY;
 export:         to AS47280 announce ANY;
 export:         to AS35025 announce ANY;
@@ -283,8 +283,8 @@ export:         to AS35711 announce ANY;
 export:         to AS47651 announce ANY;
 export:         to AS31357 announce ANY;
 export:         to AS48032 announce ANY;
-export:         to AS9177  announce ANY;
-export:         to AS8510  announce ANY;
+export:         to AS9177 announce ANY;
+export:         to AS8510 announce ANY;
 export:         to AS47165 announce ANY;
 export:         to AS48472 announce ANY;
 export:         to AS29175 announce ANY;
@@ -435,48 +435,48 @@ remarks:
 remarks:        ----------------------------------------------------------
 remarks:        Upstreams
 remarks:        ----------------------------------------------------------
-mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept   ANY
-mp-export:      afi ipv6.unicast to   AS20485 announce AS-ZSTTK6-SET
+mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-ZSTTK6-SET
 remarks:
 remarks:        ----------------------------------------------------------
 remarks:        Peers
 remarks:        ----------------------------------------------------------
-mp-import:      afi ipv6.unicast from AS13238 action pref=105; accept   AS-YANDEX
-mp-export:      afi ipv6.unicast to   AS13238 announce AS-ZSTTK6-SET
-mp-import:      afi ipv6.unicast from AS3267 action pref=105; accept   AS-RUNNET
-mp-export:      afi ipv6.unicast to   AS3267 announce AS-ZSTTK6-SET
-mp-import:      afi ipv6.unicast from AS5387 action pref=105; accept   AS5387
-mp-export:      afi ipv6.unicast to   AS5387 announce AS-ZSTTK6-SET
-mp-import:      afi ipv6.unicast from AS48818 action pref=105; accept   AS48818
-mp-export:      afi ipv6.unicast to   AS48818 announce AS-ZSTTK6-SET
+mp-import:      afi ipv6.unicast from AS13238 action pref=105; accept AS-YANDEX
+mp-export:      afi ipv6.unicast to AS13238 announce AS-ZSTTK6-SET
+mp-import:      afi ipv6.unicast from AS3267 action pref=105; accept AS-RUNNET
+mp-export:      afi ipv6.unicast to AS3267 announce AS-ZSTTK6-SET
+mp-import:      afi ipv6.unicast from AS5387 action pref=105; accept AS5387
+mp-export:      afi ipv6.unicast to AS5387 announce AS-ZSTTK6-SET
+mp-import:      afi ipv6.unicast from AS48818 action pref=105; accept AS48818
+mp-export:      afi ipv6.unicast to AS48818 announce AS-ZSTTK6-SET
 remarks:
 remarks:        ---------------------------------------------------------
 remarks:        Customers
 remarks:        ---------------------------------------------------------
-mp-import:      afi ipv6.unicast from AS8510 action pref=110; accept   AS8510
-mp-export:      afi ipv6.unicast to   AS8510 announce ANY
-mp-import:      afi ipv6.unicast from AS47530 action pref=110; accept   AS47530
-mp-export:      afi ipv6.unicast to   AS47530 announce ANY
-mp-import:      afi ipv6.unicast from AS29072 action pref=110; accept   AS29072
-mp-export:      afi ipv6.unicast to   AS29072 announce ANY
-mp-import:      afi ipv6.unicast from AS31364 action pref=110; accept   AS31364
-mp-export:      afi ipv6.unicast to   AS31364 announce ANY
-mp-import:      afi ipv6.unicast from AS8711 action pref=110; accept   AS-MAGTEL6
-mp-export:      afi ipv6.unicast to   AS8711 announce ANY
-mp-import:      afi ipv6.unicast from AS39586 action pref=110; accept   AS39586
-mp-export:      afi ipv6.unicast to   AS39586 announce ANY
-mp-import:      afi ipv6.unicast from AS41066 action pref=110; accept   AS41066
-mp-export:      afi ipv6.unicast to   AS41066 announce ANY
-mp-import:      afi ipv6.unicast from AS62152 action pref=110; accept   AS62152
-mp-export:      afi ipv6.unicast to   AS62152 announce ANY
-mp-import:      afi ipv6.unicast from AS42187 action pref=110; accept   AS-REGIT-SET
-mp-export:      afi ipv6.unicast to   AS42187 announce ANY
-mp-import:      afi ipv6.unicast from AS199901 action pref=110; accept   AS199901
-mp-export:      afi ipv6.unicast to   AS199901 announce ANY
-mp-import:      afi ipv6.unicast from AS49673 action pref=110; accept   AS-TRUENETWORK
-mp-export:      afi ipv6.unicast to   AS49673 announce ANY
-mp-import:      afi ipv6.unicast from AS35029 action pref=110; accept   AS-DNSTREE-SET
-mp-export:      afi ipv6.unicast to   AS35029 announce ANY
+mp-import:      afi ipv6.unicast from AS8510 action pref=110; accept AS8510
+mp-export:      afi ipv6.unicast to AS8510 announce ANY
+mp-import:      afi ipv6.unicast from AS47530 action pref=110; accept AS47530
+mp-export:      afi ipv6.unicast to AS47530 announce ANY
+mp-import:      afi ipv6.unicast from AS29072 action pref=110; accept AS29072
+mp-export:      afi ipv6.unicast to AS29072 announce ANY
+mp-import:      afi ipv6.unicast from AS31364 action pref=110; accept AS31364
+mp-export:      afi ipv6.unicast to AS31364 announce ANY
+mp-import:      afi ipv6.unicast from AS8711 action pref=110; accept AS-MAGTEL6
+mp-export:      afi ipv6.unicast to AS8711 announce ANY
+mp-import:      afi ipv6.unicast from AS39586 action pref=110; accept AS39586
+mp-export:      afi ipv6.unicast to AS39586 announce ANY
+mp-import:      afi ipv6.unicast from AS41066 action pref=110; accept AS41066
+mp-export:      afi ipv6.unicast to AS41066 announce ANY
+mp-import:      afi ipv6.unicast from AS62152 action pref=110; accept AS62152
+mp-export:      afi ipv6.unicast to AS62152 announce ANY
+mp-import:      afi ipv6.unicast from AS42187 action pref=110; accept AS-REGIT-SET
+mp-export:      afi ipv6.unicast to AS42187 announce ANY
+mp-import:      afi ipv6.unicast from AS199901 action pref=110; accept AS199901
+mp-export:      afi ipv6.unicast to AS199901 announce ANY
+mp-import:      afi ipv6.unicast from AS49673 action pref=110; accept AS-TRUENETWORK
+mp-export:      afi ipv6.unicast to AS49673 announce ANY
+mp-import:      afi ipv6.unicast from AS35029 action pref=110; accept AS-DNSTREE-SET
+mp-export:      afi ipv6.unicast to AS35029 announce ANY
 remarks:
 remarks:        +==============================================================+
 remarks:        BGP COMMUNITIES
@@ -505,10 +505,10 @@ remarks:        05 - Pleksor-Telecom (AS56957)
 remarks:        06 - Tomica (AS49414)
 remarks:        99 - All Peers
 remarks:
-remarks:        C  - Internal or Global:
+remarks:        C - Internal or Global:
 remarks:
-remarks:        0  - Internal
-remarks:        9  - Zapadnaya-Sibir
+remarks:        0 - Internal
+remarks:        9 - Zapadnaya-Sibir
 remarks:
 remarks:        +--------------------------------------------------------------+
 remarks:        Communities for prefix control
@@ -573,9 +573,9 @@ admin-c:        DVV20-RIPE
 tech-c:         ZTTK-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         ZSTTK-MNT
+mnt-by:         TRANSTELECOM-MNT
 created:        2002-08-01T05:43:11Z
-last-modified:  2022-08-17T08:16:13Z
+last-modified:  2025-01-13T21:16:50Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CJSC19-RIPE
@@ -596,7 +596,7 @@ mnt-ref:        TRANSTELECOM-MNT
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         TRANSTELECOM-MNT
 created:        2009-03-11T13:07:47Z
-last-modified:  2023-11-20T12:20:41Z
+last-modified:  2025-01-13T21:17:10Z
 source:         RIPE # Filtered
 
 role:           ZSTTK NOC

@@ -440,15 +440,15 @@ export:         to AS56603 announce AS-YACOLO
 remarks:        --- Aofy ---
 import:         from AS51628 accept ANY
 export:         to AS51628 announce AS-YACOLO
-remarks:        --- Spacecore ---
-import:         from AS210993 accept ANY
-export:         to AS210993 announce AS-YACOLO
 remarks:        --- Milecom ---
 import:         from AS48858 accept ANY
 export:         to AS48858 announce AS-YACOLO
 remarks:        --- SFO-IX ---
 import:         from AS13094 accept AS-MILECOM-RS
 export:         to AS13094 announce AS-YACOLO
+remarks:        --- INETCOM ---
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS-YACOLO
 remarks:        ---Customers---
 import:         from AS207713 action pref=200; accept AS207713
 export:         to AS207713 announce ANY
@@ -459,7 +459,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NETART
 mnt-by:         Yacolo-MNT
 created:        2015-12-30T14:32:36Z
-last-modified:  2024-01-21T11:18:15Z
+last-modified:  2025-01-09T17:35:15Z
 source:         RIPE
 sponsoring-org: ORG-NGs2-RIPE
 
@@ -1758,6 +1758,9 @@ export:         to AS3216 announce AS-AZIMUT
 descr:          -- Telecom Center --
 import:         from AS62423 action pref=150; accept ANY
 export:         to AS62423 announce AS-AZIMUT
+descr:          -- Mastertel--
+import:         from AS29226 action pref=200; accept ANY
+export:         to AS29226 announce AS-AZIMUT
 admin-c:        SV5424-RIPE
 tech-c:         SV5424-RIPE
 status:         ASSIGNED
@@ -1765,7 +1768,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NETART
 mnt-by:         MNT-AZIMUT
 created:        2012-11-06T13:29:25Z
-last-modified:  2023-09-07T14:03:39Z
+last-modified:  2025-01-13T12:18:19Z
 source:         RIPE
 sponsoring-org: ORG-NGs2-RIPE
 

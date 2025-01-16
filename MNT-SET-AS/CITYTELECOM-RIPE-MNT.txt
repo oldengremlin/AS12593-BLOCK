@@ -289,9 +289,6 @@ remarks:
 import:         from AS199599 action pref=50; accept AS199599;
 export:         to AS199599 announce ANY;
 remarks:
-import:         from AS200350 action pref=50; accept AS200350;
-export:         to AS200350 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
-remarks:
 import:         from AS200430 action pref=50; accept AS200430;
 export:         to AS200430 announce {0.0.0.0/0};
 remarks:
@@ -733,6 +730,9 @@ remarks:
 import:         from AS50289 action pref=50; accept AS-WELLCOMM;
 export:         to AS50289 announce ANY;
 remarks:
+import:         from AS200350 action pref=50; accept AS-YACLOUD;
+export:         to AS200350 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
+remarks:
 import:         from AS13238 action pref=50; accept AS-YANDEX;
 export:         to AS13238 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
@@ -976,9 +976,6 @@ mp-export:      afi ipv6.unicast to AS198255 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS199599 action pref=50; accept AS199599;
 mp-export:      afi ipv6.unicast to AS199599 announce any;
-remarks:
-mp-import:      afi ipv6.unicast from AS200350 action pref=50; accept AS200350;
-mp-export:      afi ipv6.unicast to AS200350 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS200430 action pref=50; accept AS-EMPTY;
 mp-export:      afi ipv6.unicast to AS200430 announce any;
@@ -1421,6 +1418,9 @@ remarks:
 mp-import:      afi ipv6.unicast from AS50289 action pref=50; accept AS-WELLCOMM;
 mp-export:      afi ipv6.unicast to AS50289 announce any;
 remarks:
+mp-import:      afi ipv6.unicast from AS200350 action pref=50; accept AS-YACLOUD;
+mp-export:      afi ipv6.unicast to AS200350 announce any;
+remarks:
 mp-import:      afi ipv6.unicast from AS13238 action pref=50; accept AS-YANDEX;
 mp-export:      afi ipv6.unicast to AS13238 announce any;
 remarks:
@@ -1748,7 +1748,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2024-12-20T21:00:04Z
+last-modified:  2025-01-09T21:00:04Z
 source:         RIPE # Filtered
 
 
