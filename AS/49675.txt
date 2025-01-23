@@ -15,24 +15,50 @@ aut-num:        AS49675
 as-name:        SKBKONTUR-AS
 org:            ORG-zpsk1-RIPE
 remarks:        ==================================
+remarks:        UPLINKS
+remarks:        ==================================
+remarks:        MTS
+import:         from AS8359 accept any
+export:         to AS8359 announce AS49675
+remarks:        MTS
 import:         from AS25086 accept any
-import:         from AS2854 action pref=150; accept any
-import:         from AS43213 accept any
-import:         from AS8631 accept any
-import:         from AS47440 accept any
-import:         from AS56931 accept any
-import:         from AS201706 accept any
-import:         from AS12668 accept any
-import:         from AS201268 accept AS201268
 export:         to AS25086 announce AS49675
+remarks:        ORANGE
+import:         from AS2854 accept any
 export:         to AS2854 announce AS49675
-export:         to AS43213 announce AS-SET-LIR
-export:         to AS8631 announce AS49675
+remarks:        Business System Telehouse
+import:         from AS47440 accept any
 export:         to AS47440 announce AS49675
-export:         to AS56931 announce AS49675
+remarks:        SERVICEPIPE LLC
+import:         from AS201706 accept any
 export:         to AS201706 announce AS49675
+remarks:        LLC "KomTehCentr"
+import:         from AS12668 accept any
 export:         to AS12668 announce AS49675
+remarks:        INFOTECH-AS
+import:         from AS201268 accept AS201268
 export:         to AS201268 announce any
+remarks:        RTC
+import:         from AS12389 accept any
+export:         to AS12389 announce AS49675
+remarks:        ER-Telecom
+import:         from AS9049 accept AS9049
+export:         to AS9049 announce AS49675
+remarks:        BEELINE
+import:         from AS3216 accept any
+export:         to AS3216 announce AS49675
+remarks:        ==================================
+remarks:        IX
+remarks:        ==================================
+remarks:        EKT-IX
+import:         from AS43213 accept any
+export:         to AS43213 announce AS-SET-LIR
+remarks:        MSK-IX
+import:         from AS8631 accept any
+export:         to AS8631 announce AS49675
+remarks:        EU-IX
+import:         from AS56931 accept any
+export:         to AS56931 announce AS49675
 admin-c:        KNTR-RIPE
 tech-c:         KNTR-RIPE
 status:         ASSIGNED
@@ -40,7 +66,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NO9784-MNT
 mnt-by:         AL56526-MNT
 created:        2009-08-17T15:26:46Z
-last-modified:  2023-05-10T15:46:44Z
+last-modified:  2025-01-21T08:15:04Z
 source:         RIPE # Filtered
 
 organisation:   ORG-zpsk1-RIPE

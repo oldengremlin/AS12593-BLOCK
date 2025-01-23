@@ -183,8 +183,6 @@ import:         from  AS31192 action pref=100; accept   AS31192
 export:         to    AS31192                  announce ANY
 import:         from  AS31214 action pref=100; accept   AS-TISDIALOG
 export:         to    AS31214                  announce ANY
-import:         from  AS31225 action pref=100; accept   AS-OBLCOM
-export:         to    AS31225                  announce ANY
 import:         from  AS31376 action pref=100; accept   AS-SMART-C
 export:         to    AS31376                  announce ANY
 import:         from  AS31444 action pref=100; accept   AS-SEANET
@@ -365,8 +363,6 @@ import:         from  AS43966 action pref=100; accept   AS-ITREGION
 export:         to    AS43966                  announce ANY
 import:         from  AS43973 action pref=100; accept   AS-OSMP
 export:         to    AS43973                  announce ANY
-import:         from  AS44030 action pref=100; accept   AS-LENTEL
-export:         to    AS44030                  announce ANY
 import:         from  AS44041 action pref=100; accept   AS44041
 export:         to    AS44041                  announce ANY
 import:         from  AS44128 action pref=100; accept   AS-NETANGELS
@@ -677,8 +673,6 @@ import:         from  AS57712 action pref=100; accept   AS-SOFTVIDEO
 export:         to    AS57712                  announce ANY
 import:         from  AS57824 action pref=100; accept   AS-METRONET-MSK
 export:         to    AS57824                  announce ANY
-import:         from  AS58002 action pref=100; accept   AS-SI
-export:         to    AS58002                  announce ANY
 import:         from  AS58084 action pref=100; accept   AS58084
 export:         to    AS58084                  announce ANY
 import:         from  AS58096 action pref=100; accept   AS-ELIT-TV
@@ -843,8 +837,6 @@ import:         from AS199805 action pref=100; accept   AS-UGO
 export:         to   AS199805                  announce ANY
 import:         from AS199820 action pref=100; accept   AS199820
 export:         to   AS199820                  announce ANY
-import:         from AS199858 action pref=100; accept   AS199858
-export:         to   AS199858                  announce ANY
 import:         from AS199860 action pref=100; accept   AS-XELENT
 export:         to   AS199860                  announce ANY
 import:         from AS199866 action pref=100; accept   AS199866
@@ -1091,6 +1083,8 @@ import:         from AS215601 action pref=100; accept   AS215601:AS-ALLHOSTINGS
 export:         to   AS215601                  announce ANY
 import:         from AS216246 action pref=100; accept   AS-AEZA
 export:         to   AS216246                  announce ANY
+import:         from AS216262 action pref=100; accept   AS216262
+export:         to   AS216262                  announce ANY
 import:         from AS273045 action pref=100; accept   AS273045
 export:         to   AS273045                  announce ANY
 import:         from AS396986 action pref=100; accept   AS396986
@@ -1302,8 +1296,6 @@ mp-import:      afi ipv6.unicast from  AS43776 action pref=100; accept   AS43776
 mp-export:      afi ipv6.unicast to    AS43776                  announce ANY
 mp-import:      afi ipv6.unicast from  AS43886 action pref=100; accept   AS-UTEL-K
 mp-export:      afi ipv6.unicast to    AS43886                  announce ANY
-mp-import:      afi ipv6.unicast from  AS44030 action pref=100; accept   AS-LENTEL-IPV6
-mp-export:      afi ipv6.unicast to    AS44030                  announce ANY
 mp-import:      afi ipv6.unicast from  AS44041 action pref=100; accept   AS44041
 mp-export:      afi ipv6.unicast to    AS44041                  announce ANY
 mp-import:      afi ipv6.unicast from  AS44128 action pref=100; accept   AS-NETANGELS
@@ -1458,8 +1450,6 @@ mp-import:      afi ipv6.unicast from  AS57629 action pref=200; accept   AS57629
 mp-export:      afi ipv6.unicast to    AS57629                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS57712 action pref=100; accept   AS-SOFTVIDEO
 mp-export:      afi ipv6.unicast to    AS57712                  announce ANY
-mp-import:      afi ipv6.unicast from  AS58002 action pref=100; accept   AS-SI-V6
-mp-export:      afi ipv6.unicast to    AS58002                  announce ANY
 mp-import:      afi ipv6.unicast from  AS58314 action pref=100; accept   AS-B2BTELECOM-V6
 mp-export:      afi ipv6.unicast to    AS58314                  announce ANY
 mp-import:      afi ipv6.unicast from  AS59516 action pref=100; accept   AS-LANAMAR
@@ -1642,6 +1632,8 @@ mp-import:      afi ipv6.unicast from AS215601 action pref=100; accept   AS21560
 mp-export:      afi ipv6.unicast to   AS215601                  announce ANY
 mp-import:      afi ipv6.unicast from AS216246 action pref=100; accept   AS-AEZA
 mp-export:      afi ipv6.unicast to   AS216246                  announce ANY
+mp-import:      afi ipv6.unicast from AS216262 action pref=100; accept   AS216262
+mp-export:      afi ipv6.unicast to   AS216262                  announce ANY
 mp-import:      afi ipv6.unicast from AS396986 action pref=100; accept   AS396986
 mp-export:      afi ipv6.unicast to   AS396986                  announce ANY
 remarks:
@@ -1683,7 +1675,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-01-10T15:09:57Z
+last-modified:  2025-01-22T17:25:47Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE

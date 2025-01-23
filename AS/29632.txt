@@ -403,12 +403,15 @@ export:         to AS49746 announce ANY
 remarks:        -= D-CONEKT =-
 import:         from AS48899 action pref=100; accept AS48899
 export:         to AS48899 announce ANY
-remarks:        -= SIT =-
-import:         from AS50375 action pref=100; accept AS50375
-export:         to AS50375 announce ANY
 remarks:        -= Adamov =-
 import:         from AS50210 action pref=100; accept AS50210
 export:         to AS50210 announce ANY
+remarks:        -= SIT =-
+import:         from AS50375 action pref=100; accept AS50375
+export:         to AS50375 announce ANY
+remarks:        -= Freeway Zhytomyr =-
+import:         from AS50576 action pref=100; accept AS50576
+export:         to AS50576 announce ANY
 remarks:        -= Campus Rivne =-
 import:         from AS50392 action pref=100; accept AS-CAMPUS-RV
 export:         to AS50392 announce AS-DTEL-IX
@@ -676,6 +679,9 @@ mp-export:      afi ipv6.unicast to AS56662 announce ANY
 remarks:        -= Information networks =-
 mp-import:      afi ipv6.unicast from AS56727 action pref=100; accept AS-INFORMNET
 mp-export:      afi ipv6.unicast to AS56727 announce ANY
+remarks:        -= Aria Jahangiri Far =-
+mp-import:      afi ipv6.unicast from AS57027 action pref=100; accept AS57027
+mp-export:      afi ipv6.unicast to AS57027 announce ANY
 remarks:        -= YOHAN-FRESNEAU =-
 mp-import:      afi ipv6.unicast from AS57080 action pref=100; accept AS57080
 mp-export:      afi ipv6.unicast to AS57080 announce ANY
@@ -763,6 +769,9 @@ mp-export:      afi ipv6.unicast to AS151334 announce ANY
 remarks:        -=  Archon Network and Data Solution =-
 mp-import:      afi ipv6.unicast from AS151633 action pref=100; accept AS151633
 mp-export:      afi ipv6.unicast to AS151633 announce ANY
+remarks:        -=  SYICT-AS-KR =-
+mp-import:      afi ipv6.unicast from AS152911 action pref=100; accept AS152911
+mp-export:      afi ipv6.unicast to AS152911 announce ANY
 remarks:        -= Glavnet =-
 mp-import:      afi ipv6.unicast from AS197185 action pref=100; accept AS197185
 mp-export:      afi ipv6.unicast to AS197185 announce ANY
@@ -880,6 +889,9 @@ mp-export:      afi ipv6.unicast to AS201938 announce ANY
 remarks:        -= OpenLaboratory =-
 mp-import:      afi ipv6.unicast from AS202197 action pref=100; accept AS-LAB2
 mp-export:      afi ipv6.unicast to AS202197 announce ANY
+remarks:        -= Joan-Cirer =-
+mp-import:      afi ipv6.unicast from AS202222 action pref=100; accept AS202222
+mp-export:      afi ipv6.unicast to AS202222 announce ANY
 remarks:        -= Jacek Kowalski trading as SI.pl =-
 mp-import:      afi ipv6.unicast from AS202572 action pref=100; accept AS-SI-PL-CLOUD
 mp-export:      afi ipv6.unicast to AS202572 announce ANY
@@ -958,6 +970,9 @@ mp-export:      afi ipv6.unicast to AS204693 announce ANY
 remarks:        -= KWAN =-
 mp-import:      afi ipv6.unicast from AS204842 action pref=100; accept AS204842
 mp-export:      afi ipv6.unicast to AS204842 announce ANY
+remarks:        -= IS-GUNNAR =-
+mp-import:      afi ipv6.unicast from AS204926 action pref=100; accept AS204926
+mp-export:      afi ipv6.unicast to AS204926 announce ANY
 remarks:        -= GREENFLOID =-
 mp-import:      afi ipv6.unicast from AS204957 action pref=100; accept AS204957
 mp-export:      afi ipv6.unicast to AS204957 announce ANY
@@ -1225,6 +1240,9 @@ mp-export:      afi ipv6.unicast to AS214763 announce ANY
 remarks:        -= NANCYANDSYSROM =-
 mp-import:      afi ipv6.unicast from AS213774 action pref=100; accept AS213774
 mp-export:      afi ipv6.unicast to AS213774 announce ANY
+remarks:        -= VIRTNET =-
+mp-import:      afi ipv6.unicast from AS214022 action pref=100; accept as214022:as-virtnet
+mp-export:      afi ipv6.unicast to AS214022 announce ANY
 remarks:        -= YJP-AS =-
 mp-import:      afi ipv6.unicast from AS214871 action pref=100; accept AS214871
 mp-export:      afi ipv6.unicast to AS214871 announce ANY
@@ -1413,7 +1431,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEREZHA-MNT
 created:        2003-10-28T13:43:45Z
-last-modified:  2024-12-09T10:44:12Z
+last-modified:  2025-01-20T16:36:49Z
 source:         RIPE # Filtered
 
 organisation:   ORG-NL366-RIPE

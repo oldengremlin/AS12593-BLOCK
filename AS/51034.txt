@@ -15,6 +15,8 @@ aut-num:        AS51034
 as-name:        DSI-EAS
 descr:          DSI Edge AS
 org:            ORG-RA21-RIPE
+import:         from AS197911 accept AS197911
+export:         to AS197911 announce ANY
 import:         from AS12389 accept ANY
 import:         from AS20485 accept ANY
 import:         from AS31133 accept ANY
@@ -47,7 +49,6 @@ import:         from AS47397 accept AS-BASE
 import:         from AS202806 accept AS-SKA
 import:         from AS43274 accept AS-TELEOS-1
 import:         from AS42574 accept AS-NSPLUS
-import:         from AS29182 accept AS29182
 import:         from AS198086 accept AS198086
 import:         from AS42971 accept AS42971
 import:         from AS57737 accept AS-AECC
@@ -95,7 +96,6 @@ export:         to AS42574 announce AS-WEACOMIX
 export:         to AS43274 announce AS-WEACOMIX
 export:         to AS3216 announce AS-SOVAM
 export:         to AS61122 announce AS61122
-export:         to AS29182 announce ANY
 export:         to AS198086 announce ANY
 export:         to AS42971 announce ANY
 export:         to AS8506 announce ANY
@@ -110,7 +110,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RAID-MNT
 created:        2010-05-20T10:31:55Z
-last-modified:  2024-10-28T13:00:59Z
+last-modified:  2025-01-22T05:42:43Z
 source:         RIPE # Filtered
 
 organisation:   ORG-RA21-RIPE

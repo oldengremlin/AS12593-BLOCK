@@ -63,25 +63,9 @@ remarks:        ******* PITER-IX FRA *******
 import:         from AS48193 action pref=100; accept ANY
 export:         to AS48193 announce AS-THEFIRST
 remarks:
-remarks:        ******* BAIKAL-IX *******
-import:         from AS48586 action pref=100; accept ANY
-export:         to AS48586 announce AS29182
-remarks:
 remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 remarks:        *** Uplinks ***
 remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:
-remarks:        ******* DSI/Weacom Ltd *******
-import:         from AS51034 action pref=100; accept ANY
-export:         to AS51034 announce AS29182
-remarks:
-remarks:        ******* BaikalTeleCom *******
-import:         from AS57277 action pref=100; accept ANY
-export:         to AS57277 announce AS29182
-remarks:
-remarks:        ******* TTK ************
-import:         from AS20485 action pref=100; accept ANY
-export:         to AS20485 announce AS29182
 remarks:
 remarks:        ******* Digital Network *******
 import:         from AS12695 action pref=100; accept ANY
@@ -94,10 +78,6 @@ remarks:
 remarks:        ******* Mastertel *******
 import:         from AS29226 action pref=100; accept ANY
 export:         to AS29226 announce AS-THEFIRST
-remarks:
-remarks:        ******* FORTEX *******
-import:         from AS48166 action pref=100; accept ANY
-export:         to AS48166 announce AS-THEFIRST
 remarks:
 remarks:        ******* Retn.net *******
 import:         from AS9002 action pref=100; accept ANY
@@ -127,8 +107,6 @@ mp-import:      afi ipv6.unicast,ipv4 from AS50952 accept AS-DATAIX
 mp-export:      afi ipv6.unicast,ipv4 to AS50952 announce AS-THEFIRST
 mp-import:      afi ipv6.unicast,ipv4 from AS12695 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS12695 announce AS-THEFIRST
-mp-import:      afi ipv6.unicast,ipv4 from AS57277 accept ANY
-mp-export:      afi ipv6.unicast,ipv4 to AS57277 announce AS-THEFIRST
 mp-import:      afi ipv6.unicast,ipv4 from AS50817 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS50817 announce AS-THEFIRST
 mp-import:      afi ipv6.unicast,ipv4 from AS49869 accept ANY
@@ -145,18 +123,10 @@ mp-import:      afi ipv6.unicast,ipv4 from AS56931 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS56931 announce AS-THEFIRST
 mp-import:      afi ipv6.unicast,ipv4 from AS48193 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS48193 announce AS-THEFIRST
-mp-import:      afi ipv6.unicast,ipv4 from AS48586 accept ANY
-mp-export:      afi ipv6.unicast,ipv4 to AS48586 announce AS-THEFIRST
-mp-import:      afi ipv6.unicast,ipv4 from AS51034 accept ANY
-mp-export:      afi ipv6.unicast,ipv4 to AS51034 announce AS-THEFIRST
-mp-import:      afi ipv6.unicast,ipv4 from AS20485 accept ANY
-mp-export:      afi ipv6.unicast,ipv4 to AS20485 announce AS-THEFIRST
 mp-import:      afi ipv6.unicast,ipv4 from AS57724 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS57724 announce AS-THEFIRST
 mp-import:      afi ipv6.unicast,ipv4 from AS29226 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS29226 announce AS-THEFIRST
-mp-import:      afi ipv6.unicast,ipv4 from AS48166 accept ANY
-mp-export:      afi ipv6.unicast,ipv4 to AS48166 announce AS-THEFIRST
 mp-import:      afi ipv6.unicast,ipv4 from AS9002 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS9002 announce AS-THEFIRST
 mp-import:      afi ipv6.unicast,ipv4 from AS20764 accept ANY
@@ -172,7 +142,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-jsciot-1
 created:        2003-06-23T14:25:12Z
-last-modified:  2022-05-19T07:05:52Z
+last-modified:  2025-01-20T04:00:01Z
 source:         RIPE
 
 organisation:   ORG-JI50-RIPE
