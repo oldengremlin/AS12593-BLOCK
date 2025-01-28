@@ -1,0 +1,192 @@
+
+
+
+
+aut-num:        AS197911
+as-name:        RU-JSCIOT
+org:            ORG-JI50-RIPE
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        *** eXchange Points ***
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
+remarks:        ******* BAIKAL-IX *******
+import:         from AS48586 action pref=100; accept ANY
+export:         to AS48586 announce AS197911
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        *** Uplinks ***
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
+remarks:        ******* DSI/Weacom Ltd *******
+import:         from AS51034 action pref=100; accept ANY
+export:         to AS51034 announce AS197911
+remarks:
+remarks:        ******* BaikalTeleCom *******
+import:         from AS57277 action pref=100; accept ANY
+export:         to AS57277 announce AS197911
+remarks:
+remarks:        ******* TTK ************
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS197911
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        *** IPv6 neighbors, rpsl migrate ***
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
+mp-import:      afi ipv6.unicast,ipv4 from AS57277 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS57277 announce AS197911
+mp-import:      afi ipv6.unicast,ipv4 from AS48586 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS48586 announce AS197911
+mp-import:      afi ipv6.unicast,ipv4 from AS51034 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS51034 announce AS197911
+mp-import:      afi ipv6.unicast,ipv4 from AS20485 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS20485 announce AS197911
+remarks:
+admin-c:        INO22-RIPE
+tech-c:         INO22-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-jsciot-1
+created:        2023-07-05T13:01:44Z
+last-modified:  2025-01-20T04:09:28Z
+source:         RIPE
+
+
+
+aut-num:        AS29182
+as-name:        RU-JSCIOT
+org:            ORG-JI50-RIPE
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        *** eXchange Points ***
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
+remarks:        ******* MSK-IX *******
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-THEFIRST
+remarks:
+remarks:        ******* GlobalNet *******
+import:         from AS31500 action pref=100; accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-THEFIRST
+remarks:
+remarks:        ******* DataIX *******
+import:         from AS50952 action pref=100; accept AS-DATAIX
+export:         to AS50952 announce AS-THEFIRST
+remarks:
+remarks:        ******* Eurasia-Peering *******
+import:         from AS56931 action pref=100; accept ANY
+export:         to AS56931 announce AS-THEFIRST
+remarks:
+remarks:        ******* PITER-IX SPB *******
+import:         from AS50817 action pref=100; accept ANY
+export:         to AS50817 announce AS-THEFIRST
+remarks:
+remarks:        ******* PITER-IX MSK *******
+import:         from AS49869 action pref=100; accept ANY
+export:         to AS49869 announce AS-THEFIRST
+remarks:
+remarks:        ******* PITER-IX TLL *******
+import:         from AS57936 action pref=100; accept ANY
+export:         to AS57936 announce AS-THEFIRST
+remarks:
+remarks:        ******* PITER-IX RIX *******
+import:         from AS49634 action pref=100; accept ANY
+export:         to AS49634 announce AS-THEFIRST
+remarks:
+remarks:        ******* PITER-IX HEL *******
+import:         from AS39607 action pref=100; accept ANY
+export:         to AS39607 announce AS-THEFIRST
+remarks:
+remarks:        ******* PITER-IX AU *******
+import:         from AS61376 action pref=100; accept ANY
+export:         to AS61376 announce AS-THEFIRST
+remarks:
+remarks:        ******* PITER-IX FRA *******
+import:         from AS48193 action pref=100; accept ANY
+export:         to AS48193 announce AS-THEFIRST
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        *** Uplinks ***
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
+remarks:        ******* Digital Network *******
+import:         from AS12695 action pref=100; accept ANY
+export:         to AS12695 announce AS-THEFIRST
+remarks:
+remarks:        ******* DDOS-GUARD *******
+import:         from AS57724 action pref=100; accept ANY
+export:         to AS57724 announce AS-THEFIRST
+remarks:
+remarks:        ******* Mastertel *******
+import:         from AS29226 action pref=100; accept ANY
+export:         to AS29226 announce AS-THEFIRST
+remarks:
+remarks:        ******* Retn.net *******
+import:         from AS9002 action pref=100; accept ANY
+export:         to AS9002 announce AS-THEFIRST
+remarks:
+remarks:        ******* Rascom *******
+import:         from AS20764 action pref=100; accept ANY
+export:         to AS20764 announce AS-THEFIRST
+remarks:
+remarks:        ******* Inetcom *******
+import:         from AS35598 action pref=100; accept ANY
+export:         to AS35598 announce AS-THEFIRST
+remarks:
+remarks:        ******* Telia ********
+import:         from AS1299 action pref=100; accept ANY
+export:         to AS1299 announce AS-THEFIRST
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        *** IPv6 neighbors, rpsl migrate ***
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
+mp-import:      afi ipv6.unicast,ipv4 from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast,ipv4 to AS8631 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS31500 accept AS-GLOBAL-NET
+mp-export:      afi ipv6.unicast,ipv4 to AS31500 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS50952 accept AS-DATAIX
+mp-export:      afi ipv6.unicast,ipv4 to AS50952 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS12695 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS12695 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS50817 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS50817 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS49869 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS49869 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS57936 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS57936 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS49634 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS49634 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS39607 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS39607 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS61376 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS61376 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS56931 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS56931 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS48193 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS48193 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS57724 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS57724 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS29226 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS29226 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS9002 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS9002 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS20764 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS20764 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS35598 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS35598 announce AS-THEFIRST
+mp-import:      afi ipv6.unicast,ipv4 from AS1299 accept ANY
+mp-export:      afi ipv6.unicast,ipv4 to AS1299 announce AS-THEFIRST
+remarks:
+admin-c:        INO22-RIPE
+tech-c:         INO22-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-jsciot-1
+created:        2003-06-23T14:25:12Z
+last-modified:  2025-01-20T04:00:01Z
+source:         RIPE
+
+
+
