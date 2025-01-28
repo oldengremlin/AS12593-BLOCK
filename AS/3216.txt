@@ -1684,10 +1684,16 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS57861 action pref=100; accept AS57861
+export:         to AS57861 announce ANY
+mp-import:      from AS57861 action pref=100; accept AS57861
+mp-export:      to AS57861 announce ANY
 import:         from AS44050 action pref=100; accept AS-PIN
 export:         to AS44050 announce ANY
 mp-import:      from AS44050 action pref=100; accept AS-PIN
 mp-export:      to AS44050 announce ANY
+import:         from AS47118 action pref=100; accept AS47118
+export:         to AS47118 announce {0.0.0.0/0}
 import:         from AS34665 action pref=100; accept AS-PINDC
 export:         to AS34665 announce ANY
 mp-import:      from AS34665 action pref=100; accept AS-PINDC
@@ -5702,7 +5708,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-01-22T06:59:35Z
+last-modified:  2025-01-24T09:45:33Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

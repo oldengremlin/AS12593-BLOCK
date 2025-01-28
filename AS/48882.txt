@@ -17,14 +17,21 @@ org:            ORG-OL270-RIPE
 remarks:        ------------------------
 remarks:        Upstreams
 remarks:        ------------------------
-import:         from AS9002 accept ANY
-export:         to AS9002 announce AS-IPCOM-NET
-import:         from AS50581 accept ANY
-export:         to AS50581 announce AS-IPCOM-NET
+remarks:        ----------Optima-Telecom---------
 import:         from AS47502 accept ANY
 export:         to AS47502 announce AS-IPCOM-NET
-import:         from AS35297 accept ANY
-export:         to AS35297 announce AS-IPCOM-NET
+remarks:        ----------Miranda---------
+import:         from AS201776 accept ANY
+export:         to AS201776 announce AS-IPCOM-NET
+remarks:        ----------Luganet---------
+import:         from AS39728 accept ANY
+export:         to AS39728 announce AS-IPCOM-NET
+remarks:        ----------TransRoute---------
+import:         from AS50509 accept ANY
+export:         to AS50509 announce AS-IPCOM-NET
+remarks:        ----------MSK-IX---------
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-IPCOM-NET
 remarks:        ------------------------
 remarks:        Customers move to AS-IPCOM-NET
 remarks:        ------------------------
@@ -35,7 +42,7 @@ abuse-c:        AR24333-RIPE
 mnt-by:         MNT-IPCOM
 mnt-by:         RIPE-NCC-END-MNT
 created:        2009-02-23T17:22:03Z
-last-modified:  2024-11-28T09:44:59Z
+last-modified:  2025-01-27T12:31:05Z
 source:         RIPE # Filtered
 sponsoring-org: ORG-OAN1-RIPE
 
