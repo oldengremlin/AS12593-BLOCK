@@ -313,6 +313,8 @@ export:         to AS9123 announce AS-VKONTAKTE
 import:         from AS9123 accept AS-TIMEWEB
 mp-export:      afi ipv6.unicast to AS9123 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS9123 accept AS-TIMEWEB;
+export:         to AS31376 announce AS-VKONTAKTE
+import:         from AS31376 accept AS-SMART
 remarks:
 remarks:        =========================================
 remarks:        VK deps
@@ -443,6 +445,7 @@ remarks:        211 FREEDOM1 (AS206011)
 remarks:        213 Insys (AS28890)
 remarks:        214 UGMKTelecom (AS41560)
 remarks:        215 TimeWeb (AS9123)
+remarks:        216 Smartspb (AS31376)
 remarks:        286 Convex (AS209307)
 remarks:        287 Ugletelecom (LEVEL-MSK) (AS48276,AS52091)
 remarks:        288 Nevalink (AS42668)
@@ -458,7 +461,6 @@ remarks:        47541:41104 - received from RT
 remarks:        47541:41105 - received from Megafon
 remarks:        47541:41111 - received from Telia
 remarks:        47541:41113 - received from Telecom Italia (Seabone)
-remarks:        47541:41114 - received from Lumen
 remarks:
 remarks:        47541:42100 - received from public (ix) peer
 remarks:        47541:42101 - MSKIX
@@ -498,7 +500,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-07-03T14:45:56Z
-last-modified:  2025-01-27T08:46:06Z
+last-modified:  2025-01-29T15:20:19Z
 source:         RIPE # Filtered
 
 organisation:   ORG-VL47-RIPE

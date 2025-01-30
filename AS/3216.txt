@@ -1692,6 +1692,10 @@ import:         from AS44050 action pref=100; accept AS-PIN
 export:         to AS44050 announce ANY
 mp-import:      from AS44050 action pref=100; accept AS-PIN
 mp-export:      to AS44050 announce ANY
+import:         from AS43197 action pref=100; accept AS-TT-Mobile
+export:         to AS43197 announce ANY
+mp-import:      from AS43197 action pref=100; accept AS-TT-Mobile
+mp-export:      to AS43197 announce ANY
 import:         from AS47118 action pref=100; accept AS47118
 export:         to AS47118 announce {0.0.0.0/0}
 import:         from AS34665 action pref=100; accept AS-PINDC
@@ -3528,7 +3532,7 @@ import:         from AS197394 action pref=100; accept AS-T21V
 export:         to AS197394 announce ANY
 mp-import:      afi ipv6 from AS197394 action pref=100; accept AS-T21V-V6
 mp-export:      afi ipv6 to AS197394 announce ANY
-import:         from AS35021 action pref=100; accept AS35021
+import:         from AS35021 action pref=100; accept AS-MBTECH
 export:         to AS35021 announce ANY
 import:         from AS35237 action pref=100; accept as-sbrf
 export:         to AS35237 announce ANY
@@ -5708,7 +5712,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-01-24T09:45:33Z
+last-modified:  2025-01-28T13:26:15Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
