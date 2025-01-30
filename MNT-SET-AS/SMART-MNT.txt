@@ -347,6 +347,16 @@ remarks:        - IPv6 -
 mp-import:      afi ipv6.unicast from AS15169 action community={31376:4}; pref=150; accept ANY
 mp-export:      afi ipv6.unicast to AS15169 announce AS-SMART-V6
 remarks:
+remarks:        + YANDEX +
+remarks:        - IPv4 -
+import:         from AS13238 action community={31376:4}; pref=150; accept AS-YANDEX
+export:         to AS13238 announce AS-SMART-C
+remarks:
+remarks:        + VK-MAIL +
+remarks:        - IPv4 -
+import:         from AS47541 action community={31376:4}; pref=150; accept AS-VK
+export:         to AS47541 announce AS-SMART-C
+remarks:
 remarks:        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 remarks:
 remarks:        ++ DOWNSTREAMS ++
@@ -488,7 +498,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SMART-MNT
 created:        2004-04-28T10:54:21Z
-last-modified:  2025-01-20T14:57:01Z
+last-modified:  2025-01-29T08:13:10Z
 source:         RIPE # Filtered
 
 
