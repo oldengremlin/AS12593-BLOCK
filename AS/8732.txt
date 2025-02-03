@@ -49,27 +49,6 @@ export:         to AS3327 announce AS-COMCOR
 remarks:        *** AMS-IX peers ***
 import:         from AS6777 action pref=290; accept ANY
 export:         to AS6777 action community .= { 6777:6777, 6777:8492, 6777:8744, 6777:9002, 6777:20764, 6777:42861, 6777:13002, 6777:28917}; announce AS-COMCOR
-remarks:        *** DE-CIX peers ***
-import:         from AS6695 action pref=290; accept AS-DECIX
-export:         to AS6695 announce AS-COMCOR
-import:         from AS6724 action pref=290; accept AS-STRATORZ
-export:         to AS6724 announce AS-COMCOR
-import:         from AS8365 action pref=290; accept AS-MANDA
-export:         to AS8365 announce AS-COMCOR
-import:         from AS12859 action pref=290; accept AS-BIT
-export:         to AS12859 announce AS-COMCOR
-import:         from AS15772 action pref=290; accept AS-WNET
-export:         to AS15772 announce AS-COMCOR
-import:         from AS15830 action pref=290; accept AS-TELECITYLON
-export:         to AS15830 announce AS-COMCOR
-import:         from AS29208 action pref=290; accept AS-DIALTELECOM
-export:         to AS29208 announce AS-COMCOR
-import:         from AS31334 action pref=290; accept AS31334
-export:         to AS31334 announce AS-COMCOR
-import:         from AS39912 action pref=290; accept AS-I3B
-export:         to AS39912 announce AS-COMCOR
-import:         from AS44042 action pref=290; accept AS-ROOT
-export:         to AS44042 announce AS-COMCOR
 remarks:        *** NETNOD peers ***
 import:         from AS16509 action pref=290; accept AS-AMAZON
 export:         to AS16509 announce AS-COMCOR
@@ -116,8 +95,6 @@ import:         from AS2895 action pref=400; accept AS-FREENET
 export:         to AS2895 announce ANY
 import:         from AS5467 action pref=400; accept AS-MIPT
 export:         to AS5467 announce ANY
-import:         from AS8595 action pref=400; accept AS-WESTCALL-MSK
-export:         to AS8595 announce ANY
 import:         from AS8744 action pref=400; accept AS-WIMAX
 export:         to AS8744 announce ANY
 import:         from AS8853 action pref=400; accept AS8853
@@ -448,6 +425,8 @@ import:         from AS57843 action pref=400; accept AS-INTERLOGICA-LTD
 export:         to AS57843 announce ANY
 import:         from AS57906 action pref=400; accept AS57906
 export:         to AS57906 announce ANY
+import:         from AS57918 action pref=400; accept AS57918
+export:         to AS57918 announce ANY
 import:         from AS57940 action pref=400; accept AS57940
 export:         to AS57940 announce ANY
 import:         from AS57941 action pref=400; accept AS57941
@@ -655,10 +634,10 @@ remarks:        8732:1011 GlobalCrossing
 remarks:        8732:1012 Level3
 remarks:        8732:1013 Telia Sonera
 remarks:        8732:1200 international private peers
-remarks:        8732:1250 DEC-IX peers
 remarks:        8732:1260 AMS-IX peers
 remarks:        8732:1270 LINX peers
 remarks:        8732:1280 NETNOD peers
+remarks:        8732:1290 DATA-IX peers
 remarks:        8732:1500 all national peers
 remarks:        8732:1501 MSK-IX peers
 remarks:        8732:1511 MTU peer
@@ -679,10 +658,10 @@ remarks:        8732:313x advertise to Telia Sonera
 remarks:        ----------------------------------------------------------
 remarks:        International peers
 remarks:        8732:340x advertise to International peers
-remarks:        8732:341x advertise to DEC-IX peers
 remarks:        8732:342x advertise to AMS-IX peers
 remarks:        8732:343x advertise to LINX peers
 remarks:        8732:344x advertise to NETNOD peers
+remarks:        8732:345x advertise to DATA-IX peers
 remarks:        ----------------------------------------------------------
 remarks:        National Peers
 remarks:        8732:350x advertise to all National peers
@@ -714,7 +693,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS8732-MNT
 created:        2002-08-01T12:18:18Z
-last-modified:  2025-01-15T11:32:03Z
+last-modified:  2025-01-31T11:52:37Z
 source:         RIPE
 
 organisation:   ORG-CA35-RIPE
