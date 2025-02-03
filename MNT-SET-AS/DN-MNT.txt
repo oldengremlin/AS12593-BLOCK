@@ -1,0 +1,602 @@
+
+
+
+
+aut-num:        AS12695
+as-name:        DINET-AS
+org:            ORG-DNJ1-RIPE
+remarks:        Moscow, Russia
+remarks:        http://www.di-net.ru
+remarks:
+remarks:        ---------------------------------------------
+remarks:
+remarks:        IPv4 Routing Policy
+remarks:        ---------------------------------------------
+remarks:
+remarks:        ============================================
+remarks:        Upstreams
+remarks:        --------------------------------------------
+import:         { from AS3216 action pref=200; from AS8359 action pref=200; from AS8732 action pref=200; from AS31133 action pref=200; accept ANY; }
+export:         { to AS3216 to AS8359 to AS8732 to AS31133 announce AS-DINET^+; }
+remarks:
+remarks:        =============================================
+remarks:        MSK-IX Peers
+remarks:        ---------------------------------------------
+import:         { from AS12695:PRNG-MSK-IX action pref=400; accept AS12695:FLTR-PEERS-IN; }
+export:         { to AS8631 announce AS-DINET; to AS12695:PRNG-MSK-IX announce AS-DINET^+; }
+remarks:
+remarks:        =============================================
+remarks:        PITER-IX Peers
+remarks:        ---------------------------------------------
+import:         { from AS12695:PRNG-PITER-IX action pref=400; accept AS12695:FLTR-PEERS-IN; }
+export:         { to AS49869 announce AS-DINET; to AS12695:PRNG-PITER-IX announce AS-DINET^+; }
+remarks:
+remarks:        =============================================
+remarks:
+remarks:        ===============================================
+remarks:        Peers
+remarks:        -----------------------------------------------
+remarks:
+import:         from AS6777 action pref=390; accept ANY AND NOT <^[AS21414]>
+export:         to AS6777 action community .= { 6777:6777, 6777:21414, 6777:20485 }; announce AS-DINET
+remarks:
+remarks:        ==============================================
+remarks:        IPv6 Routing Policy
+remarks:        ----------------------------------------------
+remarks:
+remarks:        ===============================================
+remarks:        Upstreams
+remarks:        -----------------------------------------------
+mp-import:      afi ipv6.unicast from AS9002 action pref=340; accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS6939 action pref=340; accept ANY
+mp-export:      afi ipv6.unicast to AS6939 announce AS-DINET-V6
+remarks:
+remarks:        ===============================================
+remarks:        Peers
+remarks:        -----------------------------------------------
+mp-import:      afi ipv6.unicast from AS13030 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS13030 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS1764 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS1764 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS2857 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS2857 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS5577 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS5577 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS6724 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS6724 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS8365 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS8365 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS8763 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS8763 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS8767 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS8767 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS9063 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS9063 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS24724 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS24724 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS25279 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS25279 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS39912 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS39912 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS44654 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS44654 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS8631 action pref=400; accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS43690 action pref=400; accept AS-SPBROUTESERVER
+mp-export:      afi ipv6.unicast to AS43690 announce AS-DINET-V6
+remarks:
+remarks:        ==============================================
+remarks:        Downstreams
+remarks:        ----------------------------------------------
+mp-import:      afi ipv6.unicast from AS29182 action pref=700; accept AS29182
+mp-export:      afi ipv6.unicast to AS29182 announce ANY
+mp-import:      afi ipv6.unicast from AS34123 action pref=700; accept AS-NETORN
+mp-export:      afi ipv6.unicast to AS34123 announce ANY
+remarks:        ===============================================
+remarks:
+remarks:        Communities are accepted only to customers
+remarks:
+remarks:        ----------------------------------------------
+remarks:        Advertisement scope control
+remarks:        ----------------------------------------------
+remarks:
+remarks:        6550x:<ASN> - do action 'x' for AS<ASN>
+remarks:        6551x:<z> - do action 'x' for zone<z>
+remarks:
+remarks:        here 'x' may be:
+remarks:        x=0 - advertise with no changes
+remarks:        x=1,2,3,5 - advertise with 1,2,3,5 prepends
+remarks:        x=7 - advertise with no-export community
+remarks:        x=9 - do not advertise
+remarks:
+remarks:        Valid zones:
+remarks:        0 - the whole world
+remarks:        1 - all customers
+remarks:        2 - all upstreams
+remarks:        3 - all peers
+remarks:        4 - MSK-IX RS/peers
+remarks:        5 - DE-CIX RS/peers
+remarks:        6 - AMS-IX RS/peers
+remarks:        7 - DATA-IX RS
+remarks:
+remarks:        Valid<ASN>
+remarks:        Upstreams:
+remarks:        3216 - Beeline
+remarks:        8732 - COMCOR
+remarks:        8359 - MTS
+remarks:        31133 - MEGAFON
+remarks:        12389 - ROSTELECOM
+remarks:        Peers:
+remarks:        50952 - DATA-IX RS
+remarks:        47764 - Mail.ru
+remarks:        47541 - VKontakte
+remarks:        42861 - Prime Line
+remarks:        31500 - GlobalNet
+remarks:        29076 - Filanko
+remarks:        13238 - Yandex
+remarks:        200350 - Yandex.Cloud (use 64815 for community)
+remarks:        200976 - Smotreshka (use 65100 for community)
+remarks:        9049 - ER-Telecom
+remarks:        15169 - Google
+remarks:        48347 - MTW
+remarks:        28917 - Fiord
+remarks:        41722 - Miran
+remarks:        21011 - TopNet
+remarks:        20392 - DataLine (AS203921)
+remarks:        29124 - Iskratelecom
+remarks:        8641 - Nauka Svyaz
+remarks:        50473 - Eco Telecom
+remarks:        210756 - G-CORE (use 64769 for community)
+remarks:        39153 - ALMATEL
+remarks:        35598-INETCOM
+remarks:        200976 - SMOTRESHKA
+remarks:        57629 - IVI.RU
+remarks:        29319 - IMSYS
+remarks:        49869 - PITER-IX (one community for all PITER-IX RS's [MSK,SPb,HEL,FRA]
+remarks:
+remarks:        ----------------------------------------------
+remarks:        Local preference control
+remarks:        ----------------------------------------------
+remarks:
+remarks:        12695:11 - decrease local preference by 100
+remarks:        12695:13 - decrease local preference by 300
+remarks:        12695:14 - decrease local preference by 400
+remarks:        12695:16 - decrease local preference by 600
+remarks:        12695:666 - blackhole
+remarks:
+remarks:        ----------------------------------------------
+remarks:        Local preference used within AS12695
+remarks:        ----------------------------------------------
+remarks:
+remarks:        1000 - locally originated aggregate route
+remarks:        900 - locally originated specific route
+remarks:        800 - more preferred customer route
+remarks:        700 - regular customer route
+remarks:        600 - customer backup # 1 route
+remarks:        400 - customer backup # 2 route
+remarks:        400 - peer route
+remarks:        300 - customer fallback
+remarks:        200 - transit route
+remarks:        100 - backup route
+remarks:        1 - bogus route
+remarks:
+remarks:        ----------------------------------------------
+remarks:        Advertised route type coloring
+remarks:        ----------------------------------------------
+remarks:
+remarks:        12695:701 - bogus route
+remarks:        12695:702 - aggregate route
+remarks:        12695:703 - traffic-engineering aggregate route
+remarks:        12695:707 - local
+remarks:        12695:710 - customer route
+remarks:        12695:711 - aggregatable
+remarks:        12695:720 - peer route
+remarks:        12695:730 - transit route
+remarks:
+remarks:        ----------------------------------------------
+remarks:        Advertised route origin coloring
+remarks:        ----------------------------------------------
+remarks:        12695:20zz
+remarks:        Upstreams:
+remarks:        zz=01 - Beeline AS3216
+remarks:        zz=30 - COMCOR AS8732
+remarks:        zz=02 - MTS AS8359
+remarks:        zz=03 - Megafon AS31133
+remarks:        zz=40-Rostelecom AS12389
+remarks:        Peers:
+remarks:        zz=04 - MSK-IX Main RS
+remarks:        zz=06 - MSK-IX Peers
+remarks:        zz=10 - Mail.ru
+remarks:        zz=11 - Prime Line
+remarks:        zz=12 - GlobalNet
+remarks:        zz=13 - Filanko
+remarks:        zz=14 - Yandex
+remarks:        zz=15 - Ecotelecom
+remarks:        zz=16 - Nauka-Svyaz
+remarks:        zz=17 - DATA-IX
+remarks:        zz=18 - FIORD
+remarks:        zz=20 - ER-Telecom
+remarks:        zz=22 - Mnogobyte/MIRAN
+remarks:        zz=24 - Google
+remarks:        zz=26 - TAFFI-TV
+remarks:        zz=28 - SEVENSKY/ISKRATELECOM
+remarks:        zz=29 - EURASIA IX
+remarks:        zz=31 - INETCOM
+remarks:        zz=32-IMSYS
+remarks:        zz=38 - SMOTRESHKA
+remarks:        zz=41 - PITER-IX
+remarks:        zz=42 - YANDEX.CLOUD
+remarks:        zz=43 - G-CORE
+remarks:        zz=44 - IVI.RU
+remarks:        zz=45 - ALMATEL
+remarks:        12695:21zz - international peers
+remarks:        12695:2100 - All international peers
+remarks:        zz=01 - DE-CIX
+remarks:        zz=17 - DATA-IX
+remarks:        ----------------------------------------------
+remarks:        Notes
+remarks:        ----------------------------------------------
+remarks:
+remarks:        Any other 12695:*, 6540x:*, 6541x:*, 6550x:* and 6551x:*
+remarks:        communities are removed on input.
+remarks:        All other *:* communities are passed intact.
+remarks:        None of own communities are accepted to peers/upstreams
+remarks:        We do accept MED attribute.
+remarks:
+remarks:        ===============================================
+admin-c:        DNO-RIPE
+tech-c:         DNO-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2002-08-06T10:41:40Z
+last-modified:  2024-10-18T10:34:54Z
+source:         RIPE
+
+
+
+aut-num:        AS197468
+as-name:        NETPLUS-AS
+org:            ORG-NA386-RIPE
+import:         from AS12695 accept ANY
+import:         from AS34123 accept ANY
+export:         to AS12695 announce AS197468
+export:         to AS34123 announce AS197468
+admin-c:        KSR77-RIPE
+tech-c:         SKB77-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2010-12-14T09:36:24Z
+last-modified:  2022-05-05T15:35:02Z
+source:         RIPE
+
+
+
+aut-num:        AS200524
+as-name:        NETPLUS2-AS
+org:            ORG-NA386-RIPE
+import:         from AS57639 accept ANY
+export:         to AS57639 announce AS200524
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS200524
+import:         from AS8732 accept ANY
+export:         to AS8732 announce AS200524
+import:         from AS208503 accept ANY
+export:         to AS208503 announce AS200524
+admin-c:        ARTK83-RIPE
+admin-c:        NETP-RIPE
+tech-c:         NETP-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2015-06-16T09:06:24Z
+last-modified:  2022-05-05T15:35:02Z
+source:         RIPE
+
+
+
+aut-num:        AS201186
+as-name:        DINET-PROTECT-AS
+org:            ORG-DNJ1-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS201186
+admin-c:        ARTK83-RIPE
+tech-c:         OE784-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2015-01-02T08:39:18Z
+last-modified:  2021-06-28T11:59:44Z
+source:         RIPE
+
+
+
+aut-num:        AS201564
+as-name:        STG
+org:            ORG-CA1490-RIPE
+admin-c:        DNO-RIPE
+tech-c:         DNO-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+admin-c:        OE784-RIPE
+tech-c:         OE784-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS201564
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS201564
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS201564
+import:         from AS31430 accept ANY
+export:         to AS31430 announce AS201564
+status:         ASSIGNED
+created:        2014-09-22T09:57:39Z
+last-modified:  2018-09-04T11:28:56Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS201974
+as-name:        CLOUD_SOLUTIONS
+org:            ORG-LLCC8-RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS201974
+import:         from AS28891 accept ANY
+export:         to AS28891 announce AS201974
+admin-c:        AR16635-RIPE
+admin-c:        KD4378-RIPE
+tech-c:         KD4378-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CLOUDSOLUTIONS-MNT
+mnt-by:         DN-MNT
+created:        2022-10-21T14:36:53Z
+last-modified:  2022-11-03T12:20:34Z
+source:         RIPE
+
+
+
+aut-num:        AS202432
+as-name:        LINKLINE2-AS
+org:            ORG-ISPO1-RIPE
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS202432
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS202432
+admin-c:        AS19089-RIPE
+admin-c:        ARTK83-RIPE
+tech-c:         AS19089-RIPE
+tech-c:         ARTK83-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-UNICOMLAB
+mnt-by:         DN-MNT
+created:        2018-05-17T08:29:09Z
+last-modified:  2025-01-28T17:24:11Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS203747
+as-name:        BURANTEL-AS
+remarks:        Moscow, Russia
+remarks:        ***************** Upstreams *****************
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS203747
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS203747
+remarks:        *********************************************
+org:            ORG-DNJ1-RIPE
+admin-c:        DNO-RIPE
+tech-c:         DNO-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2015-11-09T14:06:13Z
+last-modified:  2023-12-27T13:13:01Z
+source:         RIPE
+
+
+
+aut-num:        AS204217
+as-name:        SLAVIA-AS
+org:            ORG-LA933-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS204217
+import:         from AS8732 accept ANY
+export:         to AS8732 announce AS204217
+import:         from AS33842 accept ANY
+export:         to AS33842 announce AS204217
+admin-c:        ARTK83-RIPE
+tech-c:         ILK236-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2016-02-08T10:03:45Z
+last-modified:  2020-11-16T17:52:05Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS204525
+as-name:        DIGITALLAB-AS
+org:            ORG-LD101-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS204525
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS204525
+admin-c:        DNO-RIPE
+tech-c:         DNO-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2018-02-23T08:45:34Z
+last-modified:  2020-11-16T17:52:16Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS204941
+as-name:        TGS-AS
+org:            ORG-TGS20-RIPE
+remarks:        TGS uplinks/connected-ixs/customers:
+remarks:        -------------------------------------------------------
+remarks:
+remarks:        ---------------- UPLINKS: -----------------------------
+remarks:        -------------------------------------------------------
+remarks:        .................NAUKANET..............................
+import:         from AS8641 action pref=210; accept ANY
+export:         to AS8641 announce AS-CGNET
+remarks:        .................GLOBALNET.............................
+import:         from AS31500 action pref=180; accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-CGNET
+remarks:        .................TRANSROUTE............................
+import:         from AS50509 action pref=140; accept ANY
+export:         to AS50509 announce AS-CGNET
+remarks:        -------------------------------------------------------
+remarks:        ----------------- IXs: --------------------------------
+remarks:        -------------------------------------------------------
+remarks:        .................msk-piterix...........................
+import:         from AS49869 action pref=300; accept ANY
+export:         to AS49869 announce AS-CGNET
+remarks:        -------------------------------------------------------
+remarks:        -------------- CUSTOMERS: -----------------------------
+remarks:        -------------------------------------------------------
+remarks:        TELEMEDNET
+import:         from AS41109 accept AS41109
+export:         to AS41109 announce ANY
+remarks:        EPL
+import:         from AS43714 accept AS43714
+export:         to AS41109 announce ANY
+remarks:        INET-RU
+import:         from AS59734 accept AS59734
+remarks:        INET-TELECOM-AS
+import:         from AS197971 accept AS197971
+remarks:        LINKLINE2
+import:         from AS202432 accept AS202432
+remarks:        BEST-LINE
+import:         from AS207676 accept AS207676
+remarks:        COMPANY-TELECOM
+import:         from AS210063 accept AS210063
+admin-c:        AF14211-RIPE
+tech-c:         AF14211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+mnt-by:         CGNET-MNT
+created:        2017-12-04T10:57:56Z
+last-modified:  2023-08-22T11:22:14Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS210725
+as-name:        GLAVKINO-AS
+org:            ORG-GA1015-RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS210725
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS210725
+import:         from AS12739 accept ANY
+export:         to AS12739 announce AS210725
+import:         from AS39153 accept ANY
+export:         to AS39153 announce AS210725
+admin-c:        DP16105-RIPE
+tech-c:         DP16105-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         GLAVKINO-MNT
+mnt-by:         DN-MNT
+created:        2021-09-23T08:16:56Z
+last-modified:  2021-09-29T13:37:57Z
+source:         RIPE
+
+
+
+aut-num:        AS24684
+as-name:        IPPORT-NET
+org:            ORG-IZ8-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS24684
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS24684
+admin-c:        ARTK83-RIPE
+tech-c:         ARTK83-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2005-07-20T11:52:06Z
+last-modified:  2017-11-15T09:44:02Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS29572
+as-name:        GIMAX-AS
+org:            ORG-IZ8-RIPE
+descr:          129366, Moscow, Yaroslavskaya, 13A, IPPort ZAO
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS29572
+admin-c:        DNO-RIPE
+tech-c:         DNO-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2003-10-14T12:19:24Z
+last-modified:  2018-09-04T09:58:54Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS48946
+as-name:        KOMF
+org:            ORG-KA182-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS48946
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS48946
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS48946
+import:         from AS60347 accept ANY
+export:         to AS60347 announce AS48946
+admin-c:        PPP9992-RIPE
+tech-c:         PPP9992-RIPE
+status:         ASSIGNED
+mnt-by:         DN-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2009-03-04T10:54:16Z
+last-modified:  2021-03-19T07:02:26Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS57639
+as-name:        NETPLUS-AS
+org:            ORG-NA386-RIPE
+import:         from AS12695 accept ANY
+import:         from AS8732 accept ANY
+export:         to AS12695 announce AS57639
+export:         to AS8372 announce AS57639
+admin-c:        NETP-RIPE
+tech-c:         NETP-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+mnt-by:         MNT-NTP
+created:        2011-12-22T12:37:37Z
+last-modified:  2022-05-05T15:35:02Z
+source:         RIPE
+
+
+

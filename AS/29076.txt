@@ -411,10 +411,10 @@ import:         from AS201477 action pref=50; accept AS-HIMKISMI;
 export:         to AS201477 announce ANY;
 remarks:
 import:         from AS50966 action pref=50; accept AS-INTERCOM-TECHNOLOGY;
-export:         to AS50966 announce ANY;
+export:         to AS50966 announce {0.0.0.0/0};
 remarks:
 import:         from AS50966 action pref=50; accept AS-INTERCOM-TECHNOLOGY;
-export:         to AS50966 announce {0.0.0.0/0};
+export:         to AS50966 announce ANY;
 remarks:
 import:         from AS41095 action pref=50; accept AS-IPTP;
 export:         to AS41095 announce AS-CLOUD-IX-LOCAL;
@@ -772,7 +772,7 @@ import:         from AS1299 action pref=50; accept AS-TELIANET;
 export:         to AS1299 announce AS-CLOUD-IX-LOCAL;
 remarks:
 import:         from AS9123 action pref=50; accept AS-TIMEWEB;
-export:         to AS9123 announce AS-CLOUD-IX-LOCAL;
+export:         to AS9123 announce AS-CLOUD-IX-PRO;
 remarks:
 import:         from AS51093 action pref=50; accept AS-VMCITY;
 export:         to AS51093 announce ANY;
@@ -1617,7 +1617,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-01-29T21:00:04Z
+last-modified:  2025-02-01T21:00:03Z
 source:         RIPE # Filtered
 
 organisation:   ORG-SO181-RIPE
