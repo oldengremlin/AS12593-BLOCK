@@ -829,8 +829,6 @@ import:         from AS199599 action pref=100; accept   AS-CIREX
 export:         to   AS199599                  announce ANY
 import:         from AS199669 action pref=100; accept   AS-ATLEX
 export:         to   AS199669                  announce ANY
-import:         from AS199669 action pref=200; accept   AS-ATLEX
-export:         to   AS199669                  announce AS57304:AS-RETN-RU
 import:         from AS199805 action pref=100; accept   AS-UGO
 export:         to   AS199805                  announce ANY
 import:         from AS199820 action pref=100; accept   AS199820
@@ -1055,6 +1053,8 @@ import:         from AS212964 action pref=100; accept   AS212964
 export:         to   AS212964                  announce ANY
 import:         from AS213348 action pref=100; accept   AS213348
 export:         to   AS213348                  announce ANY
+import:         from AS213478 action pref=100; accept   AS213478
+export:         to   AS213478                  announce ANY
 import:         from AS213508 action pref=100; accept   AS213508
 export:         to   AS213508                  announce ANY
 import:         from AS213789 action pref=100; accept   AS213789
@@ -1526,8 +1526,6 @@ mp-import:      afi ipv6.unicast from AS199361 action pref=100; accept   AS-CITY
 mp-export:      afi ipv6.unicast to   AS199361                  announce ANY
 mp-import:      afi ipv6.unicast from AS199669 action pref=100; accept   AS-ATLEX
 mp-export:      afi ipv6.unicast to   AS199669                  announce ANY
-mp-import:      afi ipv6.unicast from AS199669 action pref=200; accept   AS-ATLEX
-mp-export:      afi ipv6.unicast to   AS199669                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from AS199785 action pref=100; accept   AS199785
 mp-export:      afi ipv6.unicast to   AS199785                  announce ANY
 mp-import:      afi ipv6.unicast from AS199805 action pref=100; accept   AS-UGO
@@ -1675,7 +1673,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-01-31T17:59:36Z
+last-modified:  2025-02-05T17:33:24Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE
