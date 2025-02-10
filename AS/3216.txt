@@ -3707,8 +3707,6 @@ mp-import:      afi ipv6 from AS211625 action pref=100; accept AS211625
 mp-export:      afi ipv6 to AS211625 announce ANY
 import:         from AS210357 action pref=100; accept AS210357
 export:         to AS210357 announce ANY
-import:         from AS49736 action pref=100; accept AS49736
-export:         to AS49736 announce ANY
 import:         from AS202078 action pref=100; accept AS202078
 export:         to AS202078 announce ANY
 import:         from AS8440 action pref=100; accept AS-SNC
@@ -4375,10 +4373,8 @@ import:         from AS51655 action pref=100; accept AS51655:AS-ILIMTELECOM
 export:         to AS51655 announce ANY
 mp-import:      from AS51655 action pref=100; accept AS51655
 mp-export:      to AS51655 announce ANY
-import:         from AS57380 action pref=100; accept AS57380
+import:         from AS57380 action pref=100; accept AS-TELENET-CHITA
 export:         to AS57380 announce ANY
-import:         from AS49736 action pref=100; accept AS49736
-export:         to AS49736 announce ANY
 import:         from AS41704 action pref=100; accept AS-UBN
 export:         to AS41704 announce ANY
 mp-import:      afi ipv6 from AS41704 action pref=100; accept AS-UBN-V6
@@ -5714,7 +5710,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-01-30T13:04:38Z
+last-modified:  2025-02-06T14:22:47Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
