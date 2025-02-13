@@ -2040,7 +2040,6 @@ import:         from AS29076 accept ANY
 import:         from AS15169 accept ANY
 import:         from AS44484 accept ANY
 export:         to AS29076 announce AS-MNT
-export:         to AS15169 announce AS-XTRIM-NET47
 export:         to AS44484 announce ANY
 import:         from AS50817 accept ANY
 export:         to AS50817 announce AS-MNT
@@ -2051,6 +2050,8 @@ export:         to AS12389 announce AS-MNT
 import:         from AS8997 accept ANY
 export:         to AS208380 announce ANY
 import:         from AS208380 accept AS208380
+export:         to AS49869 announce AS-MNT
+import:         from AS49869 accept ANY
 admin-c:        AA32735-RIPE
 admin-c:        AGA777-RIPE
 tech-c:         AA32735-RIPE
@@ -2062,7 +2063,7 @@ mnt-by:         LIDERTELECOM-mnt
 mnt-by:         NET47-MNT
 mnt-by:         RZT-MNT
 created:        2017-10-12T07:35:56Z
-last-modified:  2021-02-06T14:39:56Z
+last-modified:  2025-02-10T23:00:54Z
 source:         RIPE
 sponsoring-org: ORG-LL38-RIPE
 
@@ -3314,9 +3315,11 @@ aut-num:        AS49381
 as-name:        Com-Site
 org:            ORG-CL115-RIPE
 import:         from AS42861 action pref=200; accept ANY
-import:         from AS50092 action pref=250; accept ANY
 export:         to AS42861 announce AS-COMSITE
-export:         to AS50092 announce ANY
+import:         from AS50092 action pref=250; accept ANY
+export:         to AS50092 announce AS-COMSITE
+import:         from AS56888 action pref=300; accept AS56888
+export:         to AS56888 announce ANY
 admin-c:        AR24107-RIPE
 tech-c:         AR24107-RIPE
 status:         ASSIGNED
@@ -3324,7 +3327,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         Com-Site-mnt
 mnt-by:         LIDERTELECOM-mnt
 created:        2009-05-28T16:05:18Z
-last-modified:  2019-04-03T07:24:44Z
+last-modified:  2025-02-12T08:38:48Z
 source:         RIPE # Filtered
 sponsoring-org: ORG-LL38-RIPE
 
