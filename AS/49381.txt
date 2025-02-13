@@ -15,9 +15,11 @@ aut-num:        AS49381
 as-name:        Com-Site
 org:            ORG-CL115-RIPE
 import:         from AS42861 action pref=200; accept ANY
-import:         from AS50092 action pref=250; accept ANY
 export:         to AS42861 announce AS-COMSITE
-export:         to AS50092 announce ANY
+import:         from AS50092 action pref=250; accept ANY
+export:         to AS50092 announce AS-COMSITE
+import:         from AS56888 action pref=300; accept AS56888
+export:         to AS56888 announce ANY
 admin-c:        AR24107-RIPE
 tech-c:         AR24107-RIPE
 status:         ASSIGNED
@@ -25,7 +27,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         Com-Site-mnt
 mnt-by:         LIDERTELECOM-mnt
 created:        2009-05-28T16:05:18Z
-last-modified:  2019-04-03T07:24:44Z
+last-modified:  2025-02-12T08:38:48Z
 source:         RIPE # Filtered
 sponsoring-org: ORG-LL38-RIPE
 
