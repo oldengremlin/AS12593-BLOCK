@@ -40,10 +40,6 @@ import:         from AS8631 action pref=200; accept ANY
 export:         to AS8631 announce AS-SIGNALTV
 mp-import:      from AS8631 action pref=200; accept ANY
 mp-export:      to AS8631 announce AS-SIGNALTV
-import:         from AS31133 action pref=200; accept ANY
-export:         to AS31133 announce AS-SIGNALTV
-mp-import:      from AS31133 action pref=200; accept ANY
-mp-export:      to AS31133 announce AS-SIGNALTV
 import:         from AS50817 action pref=200; accept ANY
 export:         to AS50817 announce AS-SIGNALTV
 mp-import:      from AS50817 action pref=200; accept ANY
@@ -52,14 +48,18 @@ import:         from AS49869 action pref=200; accept ANY
 export:         to AS49869 announce AS-SIGNALTV
 mp-import:      from AS49869 action pref=200; accept ANY
 mp-export:      to AS49869 announce AS-SIGNALTV
-import:         from AS13335 action pref=200; accept AS-CloudFLARE
-export:         to AS13335 announce AS-SIGNALTV
-mp-import:      from AS13335 action pref=200; accept AS-CloudFLARE
-mp-export:      to AS13335 announce AS-SIGNALTV
 import:         from AS39607 action pref=200; accept ANY
 export:         to AS39607 announce AS-SIGNALTV
 import:         from AS48193 action pref=200; accept ANY
 export:         to AS48193 announce AS-SIGNALTV
+import:         from AS13335 action pref=200; accept AS-CloudFLARE
+export:         to AS13335 announce AS-SIGNALTV
+mp-import:      from AS13335 action pref=200; accept AS-CloudFLARE
+mp-export:      to AS13335 announce AS-SIGNALTV
+import:         from AS16509 action pref=200; accept ANY
+export:         to AS16509 announce AS-SIGNALTV
+mp-import:      from AS16509 action pref=200; accept ANY
+mp-export:      to AS16509 announce AS-SIGNALTV
 remarks:
 remarks:        --- Customers ---
 remarks:
@@ -80,7 +80,7 @@ remarks:        42514:204 - MTS (AS8359)
 remarks:
 remarks:        Peers and IX:
 remarks:        42514:301 - MSK-IX (AS8631)
-remarks:        42514:302 - MegaFon IX (AS31133)
+remarks:        42514:302 - Amazon (AS16509)
 remarks:        42514:303 - Piter-IX SPB (AS50817)
 remarks:        42514:304 - Piter-IX MSK (AS49869)
 remarks:        42514:305 - Cloudflare (AS13335)
@@ -103,7 +103,7 @@ remarks:        42514:299x - All Upstreams
 remarks:
 remarks:        Peers and IX:
 remarks:        42514:301x - MSK-IX (AS8631)
-remarks:        42514:302x - MegaFon IX (AS31133)
+remarks:        42514:302x - Amazon (AS16509)
 remarks:        42514:303x - Piter-IX SPB (AS50817)
 remarks:        42514:304x - Piter-IX MSK (AS49869)
 remarks:        42514:305x - Cloudflare (AS13335)
@@ -133,7 +133,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIGNAL-MNT
 created:        2007-03-05T15:16:39Z
-last-modified:  2024-12-13T15:29:42Z
+last-modified:  2025-02-14T12:44:26Z
 source:         RIPE
 
 organisation:   ORG-SL188-RIPE
