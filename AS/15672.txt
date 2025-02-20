@@ -20,14 +20,12 @@ remarks:        ----------------------------------------------------------
 import:         { from AS8631 action pref=400; accept AS-MSKROUTESERVER; }
 import:         { from AS8732 action pref=100; accept ANY; }
 import:         { from AS57304 action pref=100; accept ANY; }
-import:         { from AS20764 action pref=100; accept ANY; }
 import:         { from AS31500 action pref=400; accept AS-GLOBAL-NET; }
 import:         { from AS50952 action pref=400; accept AS-DATAIX; }
 import:         { from AS35598 action pref=100; accept ANY; }
 export:         { to AS8631 announce AS-TZTELECOM; }
 export:         { to AS8732 announce AS-TZTELECOM; }
 export:         { to AS57304 announce AS-TZTELECOM; }
-export:         { to AS20764 announce AS-TZTELECOM; }
 export:         { to AS31500 announce AS-TZTELECOM; }
 export:         { to AS50952 announce AS-TZTELECOM; }
 export:         { to AS35598 announce AS-TZTELECOM; }
@@ -65,12 +63,8 @@ remarks:        15672:100x - to ANY UPLINK
 remarks:        15672:101x - to COMCOR
 remarks:        15672:102x - to INETCOM
 remarks:        15672:103x - to Global-IX
-remarks:        15672:104x - to TRANS-TELECOM (Belgorod only)
-remarks:        15672:105x - to CENTER-TELECOM (Belgorod only)
 remarks:        15672:106x - to MSK-IX RS
-remarks:        15672:107x - to SYNTERRA (Lipetsk only)
 remarks:        15672:109x - to RETN.NET ( AS9002 )
-remarks:        15672:111x - to RASCOM
 remarks:        15672:121x - to RT
 remarks:        15672:131x - not used now
 remarks:        15672:141x - to DATAIX
@@ -82,21 +76,15 @@ remarks:        x=9 - don't advertise; x=5 set prepend 5 times
 remarks:        15672:307x -MSK peer
 remarks:        informational:
 remarks:        15672:2010 - from COMCOR
-remarks:        15672:2020 - from Nauka
 remarks:        15672:2030 - from Global IX
-remarks:        15672:2040 - from TRANS-TELECOM
-remarks:        15672:2050 - from CENTER-TELECOM
 remarks:        15672:2060 - from MSK-IX RS
-remarks:        15672:2070 - from SYNTERRA
-remarks:        15672:2090 - from RETN.NET (AS9002)
-remarks:        15672:2110 - from RASCOM
+remarks:        15672:2090 - from RETN.NET (AS57304)
 remarks:        15672:2210 - from RT
 remarks:        15672:2310 - from INETCOM
 remarks:        15672:2320 - from DATAIX
 remarks:        15672:3077 - from MSK private peer
 remarks:        15672:39792 - from Anders Telecom peer (AS39792)
 remarks:        15672:42861 - from PRIME LINE peer (AS42861)
-remarks:        15672:714 - From APPLE (AS714)
 remarks:        =============================
 remarks:        Looking Glass http://lg.tzmsk.ru
 admin-c:        SN2303-RIPE
@@ -106,7 +94,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TZ-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2024-09-02T07:41:16Z
+last-modified:  2025-02-17T07:56:05Z
 source:         RIPE
 
 organisation:   ORG-TT4-RIPE
