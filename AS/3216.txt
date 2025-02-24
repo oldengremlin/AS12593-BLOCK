@@ -1635,6 +1635,8 @@ remarks:
 remarks:
 remarks:        private peering in Moscow
 remarks:
+import:         from AS202234 action pref=100; accept AS202234
+export:         to AS202234 announce {0.0.0.0/0}
 import:         from AS197406 action pref=100; accept AS197406
 export:         to AS197406 announce ANY
 import:         from AS20764 action pref=100; accept AS-RASCOM
@@ -1684,6 +1686,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+mp-import:      from AS202234 action pref=100; accept AS202234
+mp-export:      to AS202234 announce {::/0}
 import:         from AS57861 action pref=100; accept AS57861
 export:         to AS57861 announce ANY
 mp-import:      from AS57861 action pref=100; accept AS57861
@@ -3044,8 +3048,6 @@ import:         from AS197461 action pref=100; accept AS197461
 export:         to AS197461 announce AS-SOVAM
 import:         from AS9130 action pref=100; accept AS9130
 export:         to AS9130 announce AS-SOVAM
-import:         from AS57432 action pref=100; accept AS57432
-export:         to AS57432 announce AS-SOVAM
 import:         from AS207382 action pref=100; accept AS207382
 export:         to AS207382 announce ANY
 mp-import:      afi ipv6 from AS207382 action pref=100; accept AS207382
@@ -4221,8 +4223,6 @@ import:         from AS198415 action pref=100; accept AS-Komplex-Info
 export:         to AS198415 announce ANY
 import:         from AS207104 action pref=100; accept AS207104
 export:         to AS207104 announce {0.0.0.0/0}
-import:         from AS204910 action pref=100; accept AS204910
-export:         to AS204910 announce ANY
 import:         from AS206756 action pref=100; accept AS206756
 export:         to AS206756 announce ANY
 import:         from AS202611 action pref=100; accept AS-YCTLCDN
@@ -5287,6 +5287,7 @@ remarks:        3216:536x When advertising to Rascom private peer...
 remarks:        3216:537x When advertising to SOLNTCETELEKOM private peer...
 remarks:        3216:538x When advertising to Er-telecom private peer...
 remarks:        3216:539x When advertising to Mail.ru private peer...
+remarks:        3216:540x When advertising to DigitalOcean private peer...
 remarks:        3216:542x When advertising to Roblox private peer...
 remarks:        3216:543x When advertising to Verizon Digital Media Services (EdgeCast) private peer...
 remarks:        3216:544x When advertising to Melbikomas AS56630 private peer...
@@ -5470,6 +5471,7 @@ remarks:        3216:3228 G-Core Labs
 remarks:        3216:3229 ReTN
 remarks:        3216:3230 ByteDance(Frankfurt)
 remarks:        3216:3231 FDC Servers
+remarks:        3216:3232 DigitalOcean
 remarks:        --------- Community of our networks  ---------------------------
 remarks:        3216:4000 Originated in any region, specifically:
 remarks:        3216:4001 Originated in SPB
@@ -5714,7 +5716,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-02-19T07:52:37Z
+last-modified:  2025-02-22T07:19:46Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
