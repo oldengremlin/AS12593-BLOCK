@@ -16,14 +16,17 @@ as-name:        ASVT-NETWORK
 descr:          Russia
 descr:          Moscow
 descr:          Yablochkova 19b
-import:         from AS8631 action pref=90; accept AS-MSKROUTESERVER
-import:         from AS6777 action pref=90; accept ANY
-import:         from AS49869 action pref=90; accept ANY
-import:         from AS50817 action pref=90; accept ANY
+import:         from AS8631 action pref=80; accept AS-MSKROUTESERVER
+import:         from AS6777 action pref=90; accept AS6777:AS-AMS-IX-RS
+import:         from AS49869 action pref=80; accept AS-PITER-IX-MSK
+import:         from AS50817 action pref=90; accept as-piter-ix
 import:         from AS48166 action pref=110; accept ANY
-import:         from AS48193 action pref=90; accept ANY
-import:         from AS39607 action pref=90; accept ANY
-import:         from AS57304 action pref=90; accept ANY
+import:         from AS48193 action pref=90; accept AS-PITER-IX-FRA
+import:         from AS39607 action pref=90; accept AS-PITER-IX-HELSINKI
+import:         from AS57304 action pref=100; accept ANY
+import:         from AS32934 action pref=90; accept ANY
+import:         from AS1200 action pref=90; accept ANY
+import:         from AS46489 action pref=90; accept ANY
 export:         to AS8631 announce AS-ASVT
 export:         to AS6777 announce AS-ASVT
 export:         to AS49869 announce AS-ASVT
@@ -32,16 +35,19 @@ export:         to AS48166 announce AS-ASVT
 export:         to AS48193 announce AS-ASVT
 export:         to AS39607 announce AS-ASVT
 export:         to AS57304 announce AS-ASVT
+export:         to AS32934 announce AS-ASVT
+export:         to AS1200 announce AS-ASVT
+export:         to AS46489 announce AS-ASVT
 org:            ORG-ZA2-RIPE
-admin-c:        BSV72-RIPE
+admin-c:        VV5059-RIPE
 admin-c:        SK5441-RIPE
-tech-c:         BSV72-RIPE
 tech-c:         SK5441-RIPE
+tech-c:         VV5059-RIPE
 status:         ASSIGNED
 mnt-by:         AS8752-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2002-06-03T07:32:24Z
-last-modified:  2024-02-05T11:07:41Z
+last-modified:  2025-02-25T10:04:45Z
 source:         RIPE
 
 organisation:   ORG-ZA2-RIPE
@@ -56,26 +62,15 @@ phone:          +7 (495) 744 5577
 fax-no:         +7 (495) 913 4025
 admin-c:        OVP-RIPE
 admin-c:        SK5441-RIPE
-admin-c:        BSV72-RIPE
+admin-c:        VV5059-RIPE
 mnt-ref:        AS8752-MNT
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         AS8752-MNT
 abuse-c:        AC23925-RIPE
 created:        2004-04-17T11:53:43Z
-last-modified:  2021-12-29T14:43:24Z
+last-modified:  2025-02-24T15:39:34Z
 source:         RIPE # Filtered
-
-person:         Serge V. Britoff
-address:        OAO ASVT
-address:        127322, Yablochcova str., 19b
-address:        Moscow, Russia
-phone:          +7 (495) 744 5577
-nic-hdl:        BSV72-RIPE
-created:        2008-11-26T14:02:51Z
-last-modified:  2010-10-12T11:55:52Z
-source:         RIPE
-mnt-by:         BSV72-MNT
 
 person:         Sergey Khitrovo
 address:        OJSC  "ASVT"
@@ -85,6 +80,18 @@ nic-hdl:        SK5441-RIPE
 mnt-by:         SK5441-MNT
 created:        2010-10-11T06:04:29Z
 last-modified:  2011-02-10T12:36:07Z
+source:         RIPE # Filtered
+
+person:         Vladimir Vorontsov
+org:            ORG-ZA2-RIPE
+remarks:        JSC ASVT
+address:        127322, Russia, Moscow
+address:        Yablochcova str., 19b
+phone:          +7 (495) 744 5577
+nic-hdl:        VV5059-RIPE
+mnt-by:         AS8752-MNT
+created:        2025-02-24T15:26:43Z
+last-modified:  2025-02-24T15:40:49Z
 source:         RIPE # Filtered
 
 

@@ -467,7 +467,7 @@ remarks:
 import:         from AS51077 action pref=50; accept AS51077;
 export:         to AS51077 announce AS-CLOUD-IX-LOCAL;
 remarks:
-import:         from AS51219 action pref=50; accept AS51219;
+import:         from AS51219 action pref=50; accept AS51219:AS-K2int;
 export:         to AS51219 announce ANY;
 remarks:
 import:         from AS51444 action pref=50; accept AS51444;
@@ -532,9 +532,6 @@ export:         to AS50448 announce ANY;
 remarks:
 import:         from AS24663 action pref=50; accept AS-COMPLAT;
 export:         to AS24663 announce ANY;
-remarks:
-import:         from AS214524 action pref=50; accept AS-CROC;
-export:         to AS214524 announce ANY;
 remarks:
 import:         from AS62429 action pref=50; accept AS-CSTNET;
 export:         to AS62429 announce ANY;
@@ -821,9 +818,6 @@ export:         to AS204600 announce ANY;
 remarks:
 import:         from AS205264 action pref=50; accept AS205264;
 export:         to AS205264 announce ANY;
-remarks:
-import:         from AS209655 action pref=50; accept AS209655;
-export:         to AS209655 announce ANY;
 remarks:
 import:         from AS21030 action pref=50; accept AS21030;
 export:         to AS21030 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
@@ -1152,7 +1146,7 @@ remarks:
 mp-import:      afi ipv6.unicast from AS51077 action pref=50; accept AS51077;
 mp-export:      afi ipv6.unicast to AS51077 announce any;
 remarks:
-mp-import:      afi ipv6.unicast from AS51219 action pref=50; accept AS51219;
+mp-import:      afi ipv6.unicast from AS51219 action pref=50; accept AS51219:AS-K2int;
 mp-export:      afi ipv6.unicast to AS51219 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS51444 action pref=50; accept AS51444;
@@ -1217,9 +1211,6 @@ mp-export:      afi ipv6.unicast to AS50448 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS24663 action pref=50; accept AS-COMPLAT;
 mp-export:      afi ipv6.unicast to AS24663 announce any;
-remarks:
-mp-import:      afi ipv6.unicast from AS214524 action pref=50; accept AS-CROC;
-mp-export:      afi ipv6.unicast to AS214524 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS62429 action pref=50; accept AS-CSTNET;
 mp-export:      afi ipv6.unicast to AS62429 announce any;
@@ -1506,9 +1497,6 @@ mp-export:      afi ipv6.unicast to AS204600 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS205264 action pref=50; accept AS205264;
 mp-export:      afi ipv6.unicast to AS205264 announce any;
-remarks:
-mp-import:      afi ipv6.unicast from AS209655 action pref=50; accept AS209655;
-mp-export:      afi ipv6.unicast to AS209655 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS21030 action pref=50; accept AS21030;
 mp-export:      afi ipv6.unicast to AS21030 announce any;
@@ -1797,7 +1785,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-02-20T21:00:02Z
+last-modified:  2025-02-26T21:00:02Z
 source:         RIPE # Filtered
 
 

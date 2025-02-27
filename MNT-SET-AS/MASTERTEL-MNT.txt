@@ -343,10 +343,6 @@ remarks:        ----- "Elcom Telecom" Limited -----
 import:         from AS47231 action pref=200; accept AS47231;
 export:         to AS47231 announce ANY;
 remarks:
-remarks:        ----- Amayama Auto Co -----
-import:         from AS62221 action pref=200; accept AS62221;
-export:         to AS62221 announce {0.0.0.0/0} AND AS-MASTERTEL;
-remarks:
 remarks:        ----- Gruppa ABSOLUT LLC -----
 import:         from AS199798 action pref=200; accept AS199798;
 export:         to AS199798 announce ANY;
@@ -1450,9 +1446,6 @@ remarks:        ----- Softline Trade CJSC -----
 mp-import:      afi ipv6 from AS48839 accept AS48839;
 mp-export:      afi ipv6 to AS48839 announce {0.0.0.0/0};
 remarks:
-remarks:        ----- Amayama Auto Co -----
-mp-import:      afi ipv6 from AS62221 accept AS62221;
-mp-export:      afi ipv6 to AS62221 announce {0.0.0.0/0};
 remarks:
 remarks:        ----- LTD Santekhkomplekt -----
 mp-import:      afi ipv6 from AS8742 accept AS8742;
@@ -1644,7 +1637,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2025-02-21T20:36:54Z
+last-modified:  2025-02-26T07:12:51Z
 source:         RIPE
 
 
