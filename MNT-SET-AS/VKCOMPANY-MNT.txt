@@ -653,9 +653,6 @@ mp-import:      afi ipv6.unicast from AS49505 accept AS-SELECTEL;
 remarks:        -- Olymp Telecom(SkyNet)
 export:         to AS35807 announce AS-VKONTAKTE
 import:         from AS35807 accept AS-OLYMP-TELECOM
-remarks:        -- WestCall
-export:         to AS425408 announce AS-VKONTAKTE
-import:         from AS25408 accept AS25408
 remarks:        -- Nevalink
 export:         to AS42668 announce AS-VKONTAKTE
 import:         from AS42668 accept AS-NEVALINK
@@ -822,7 +819,7 @@ remarks:        197 Ufanet (AS24955,AS47775)
 remarks:        198 Miranda (AS201776)
 remarks:        201 Skynet (AS35807)
 remarks:        202 Motiv (AS31499)
-remarks:        203 WestCall (AS25408)
+remarks:        203 unused
 remarks:        204 unused
 remarks:        205 TIS-DIALOG (AS31214)
 remarks:        206 CHITATEKHENERGO (AS58067)
@@ -888,7 +885,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-07-03T14:45:56Z
-last-modified:  2025-02-11T07:46:37Z
+last-modified:  2025-02-25T09:27:47Z
 source:         RIPE # Filtered
 
 
@@ -1329,10 +1326,10 @@ mp-export:      afi ipv6.unicast to AS57724 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS57724 accept AS-DDOS-GUARD;
 export:         to AS198354 announce AS-VK
 import:         from AS198354 accept AS-SISTELECOM
-export:         to AS49037 announce AS-VK
-import:         from AS49037 accept AS-PG19
-mp-export:      afi ipv6.unicast to AS49037 announce AS-VK;
-mp-import:      afi ipv6.unicast from AS49037 accept AS-PG19;
+export:         to AS60246 announce AS-VK
+import:         from AS60246 accept AS-PG19
+mp-export:      afi ipv6.unicast to AS60246 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS60246 accept AS-PG19;
 export:         to AS199599 announce AS-VK
 import:         from AS199599 accept AS-CIREX
 export:         to AS35598 announce AS-VK
@@ -1748,7 +1745,7 @@ remarks:        192 CLN (AS44020)
 remarks:        193 unused
 remarks:        194 SISTelecom (AS198354)
 remarks:        195 Maxnet (AS8636)
-remarks:        196 PG19 (AS49037)
+remarks:        196 PG19 (AS60246)
 remarks:        197 CIREX (AS199599)
 remarks:        198 True International Gateway aka TIG (AS38082)
 remarks:        199 Lovit (AS41275)
@@ -1839,7 +1836,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2025-02-21T13:27:18Z
+last-modified:  2025-02-25T09:54:13Z
 source:         RIPE # Filtered
 
 
