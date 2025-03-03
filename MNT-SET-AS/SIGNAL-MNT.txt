@@ -43,14 +43,18 @@ import:         from AS39607 action pref=200; accept ANY
 export:         to AS39607 announce AS-SIGNALTV
 import:         from AS48193 action pref=200; accept ANY
 export:         to AS48193 announce AS-SIGNALTV
-import:         from AS13335 action pref=200; accept AS-CloudFLARE
+import:         from AS13335 action pref=200; accept ANY
 export:         to AS13335 announce AS-SIGNALTV
-mp-import:      from AS13335 action pref=200; accept AS-CloudFLARE
+mp-import:      from AS13335 action pref=200; accept ANY
 mp-export:      to AS13335 announce AS-SIGNALTV
 import:         from AS16509 action pref=200; accept ANY
 export:         to AS16509 announce AS-SIGNALTV
 mp-import:      from AS16509 action pref=200; accept ANY
 mp-export:      to AS16509 announce AS-SIGNALTV
+import:         from AS15169 action pref=200; accept ANY
+export:         to AS15169 announce AS-SIGNALTV
+mp-import:      from AS15169 action pref=200; accept ANY
+mp-export:      to AS15169 announce AS-SIGNALTV
 remarks:
 remarks:        --- Customers ---
 remarks:
@@ -77,6 +81,7 @@ remarks:        42514:304 - Piter-IX MSK (AS49869)
 remarks:        42514:305 - Cloudflare (AS13335)
 remarks:        42514:306 - Piter-IX HEL (AS39607)
 remarks:        42514:307 - Piter-IX FRA (AS48193)
+remarks:        42514:308 - Google (AS15169)
 remarks:
 remarks:        Customers:
 remarks:        42514:401 - MGOK (AS197717)
@@ -100,6 +105,7 @@ remarks:        42514:304x - Piter-IX MSK (AS49869)
 remarks:        42514:305x - Cloudflare (AS13335)
 remarks:        42514:306x - Piter-IX HEL (AS39607)
 remarks:        42514:307x - Piter-IX FRA (AS48193)
+remarks:        42514:308x - Google (AS15169)
 remarks:        42514:399x - All IX and Peers
 remarks:
 remarks:        All:
@@ -124,7 +130,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIGNAL-MNT
 created:        2007-03-05T15:16:39Z
-last-modified:  2025-02-14T12:44:26Z
+last-modified:  2025-02-27T04:45:27Z
 source:         RIPE
 
 
