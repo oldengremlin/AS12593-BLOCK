@@ -591,7 +591,7 @@ import:         from  AS51186 action pref=100; accept   AS-TASS
 export:         to    AS51186                  announce ANY
 import:         from  AS51193 action pref=100; accept   AS51193
 export:         to    AS51193                  announce ANY
-import:         from  AS51219 action pref=100; accept   AS-CROC AS51219:AS-K2INT
+import:         from  AS51219 action pref=100; accept   AS51219:AS-K2INT
 export:         to    AS51219                  announce ANY
 import:         from  AS51297 action pref=100; accept   AS-ONEDIRECT
 export:         to    AS51297                  announce ANY
@@ -883,8 +883,6 @@ import:         from AS201916 action pref=100; accept   AS201916
 export:         to   AS201916                  announce ANY
 import:         from AS202079 action pref=100; accept   AS202079
 export:         to   AS202079                  announce ANY
-import:         from AS202446 action pref=100; accept   AS202446
-export:         to   AS202446                  announce ANY
 import:         from AS202498 action pref=100; accept   AS202498
 export:         to   AS202498                  announce ANY
 import:         from AS202619 action pref=100; accept   AS-DOVECOM-RU
@@ -1408,7 +1406,7 @@ mp-import:      afi ipv6.unicast from  AS51092 action pref=200; accept   AS-TVIP
 mp-export:      afi ipv6.unicast to    AS51092                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS51178 action pref=100; accept   AS-AVANTEL-SPB
 mp-export:      afi ipv6.unicast to    AS51178                  announce ANY
-mp-import:      afi ipv6.unicast from  AS51219 action pref=100; accept   AS-CROC
+mp-import:      afi ipv6.unicast from  AS51219 action pref=100; accept   AS51219:AS-K2INT
 mp-export:      afi ipv6.unicast to    AS51219                  announce ANY
 mp-import:      afi ipv6.unicast from  AS51297 action pref=100; accept   AS-ONEDIRECT
 mp-export:      afi ipv6.unicast to    AS51297                  announce ANY
@@ -1671,7 +1669,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-02-28T17:43:14Z
+last-modified:  2025-03-05T16:52:54Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE

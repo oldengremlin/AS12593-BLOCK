@@ -16,14 +16,16 @@ as-name:        R-LINE-AS
 org:            ORG-LA640-RIPE
 remarks:        ======== Uplinks ========
 import:         from AS12389 action pref=100; accept ANY
-export:         to AS12389 announce as-rline
+export:         to AS12389 announce AS-R-LINE
 import:         from AS20485 action pref=100; accept ANY
-export:         to AS20485 announce as-rline
+export:         to AS20485 announce AS-R-LINE
 import:         from AS31133 action pref=100; accept ANY
-export:         to AS31133 announce as-rline
+export:         to AS31133 announce AS-R-LINE
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-R-LINE
 remarks:        ======== Peers ========
 import:         from AS57227 action pref=100; accept AS57227
-export:         to AS57227 announce as-rline
+export:         to AS57227 announce AS-R-LINE
 import:         from AS48369 action pref=100; accept AS48369
 export:         to AS48369 announce AS47895
 import:         from AS58134 action pref=100; accept AS58134
@@ -34,7 +36,7 @@ remarks:        ======== Customers ========
 import:         from AS39131 action pref=100; accept AS39131
 export:         to AS39131 announce {0.0.0.0/0}
 import:         from AS201147 action pref=100; accept AS201147
-export:         to AS201147 announce {0.0.0.0/0}
+export:         to AS201147 announce ANY
 import:         from AS56667 action pref=100; accept AS56667
 export:         to AS56667 announce {0.0.0.0/0}
 import:         from AS60936 action pref=100; accept AS60936
@@ -57,7 +59,7 @@ tech-c:         GEA24-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RLINE-MNT
 created:        2008-09-11T13:36:49Z
-last-modified:  2024-05-27T08:25:40Z
+last-modified:  2025-03-03T08:26:38Z
 source:         RIPE # Filtered
 
 organisation:   ORG-LA640-RIPE

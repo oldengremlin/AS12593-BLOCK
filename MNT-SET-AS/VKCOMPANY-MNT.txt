@@ -337,14 +337,14 @@ export:         to AS6789 announce AS-VKONTAKTE
 import:         from AS6789 accept AS-CRELCOM
 mp-export:      afi ipv6.unicast to AS6789 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS6789 accept AS-CRELCOM;
+remarks:        -- ElitTV
+export:         to AS58096 announce AS-VKONTAKTE
+import:         from AS58096 accept AS58096
 remarks:        -- FREEDOM1
 export:         to AS206011 announce AS-VKONTAKTE
 import:         from AS206011 accept AS206011:AS-FREEDOM-KRD
 mp-export:      afi ipv6.unicast to AS206011 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS206011 accept AS206011:AS-FREEDOM-KRD;
-remarks:        -- ElitTV
-export:         to AS58096 announce AS-VKONTAKTE
-import:         from AS58096 accept AS58096
 remarks:        -- Fticom
 export:         to AS41039 announce AS-VKONTAKTE
 import:         from AS41039 accept AS-DON
@@ -394,7 +394,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2009-08-05T11:34:14Z
-last-modified:  2025-02-11T07:45:26Z
+last-modified:  2025-03-04T08:26:12Z
 source:         RIPE # Filtered
 
 
@@ -1444,6 +1444,10 @@ export:         to AS61308 announce AS-VK
 import:         from AS61308 accept AS-SKYNETCOM
 export:         to AS25292 announce AS-VK
 import:         from AS25292 accept AS25292
+export:         to AS206011 announce AS-VKONTAKTE
+import:         from AS206011 accept AS206011:AS-FREEDOM-KRD
+mp-export:      afi ipv6.unicast to AS206011 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS206011 accept AS206011:AS-FREEDOM-KRD;
 remarks:
 remarks:        =========================================
 remarks:        MSK-IX Peers
@@ -1755,6 +1759,7 @@ remarks:        203 T2Telecom (AS56814)
 remarks:        204 ElitTV (AS58096)
 remarks:        209 Mamba (AS58116)
 remarks:        210 Lancktelecom (AS41625)
+remarks:        211 Freedom1 (AS206011)
 remarks:        212 Rutube (AS207353)
 remarks:        215 TimeWeb (AS9123)
 remarks:        216 Tatneft (AS50164)
@@ -1836,7 +1841,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2025-02-25T09:54:13Z
+last-modified:  2025-03-04T08:33:09Z
 source:         RIPE # Filtered
 
 
