@@ -316,9 +316,11 @@ mp-export:      afi ipv6.unicast to AS48757 announce ANY
 remarks:        --------------------------------------------------------------
 remarks:        ===================================================
 remarks:        Looking glass - http://lg.cirex.ru
+remarks:        Peeringdb - https://www.peeringdb.com/net/8506
 remarks:        ===================================================
 remarks:        ===================================================
-remarks:        Community for prefix classification
+remarks:        Marking community for prefix classification
+remarks:        Communities we send to customers
 remarks:        ===================================================
 remarks:        64000:XYYZZ
 remarks:        ---------------------------------------
@@ -335,7 +337,7 @@ remarks:        UPSTREAM:
 remarks:        01 - Rostelecom (AS12389)
 remarks:        02 - BEELINE (AS3216)
 remarks:        03 - Rascom (AS20764)
-remarks:        04 - TransTeleKom (AS20485)
+remarks:        04 - TransTelecom (AS20485)
 remarks:        05 - Retn (AS9002)
 remarks:        06 - Cogent (AS174)
 remarks:        07 - Filanco (AS29076)
@@ -343,9 +345,15 @@ remarks:        08 - ServicePipe (AS201706)
 remarks:        RUSSIAN PEERS:
 remarks:        02 - MSK-IX ROUTESERVER (8631)
 remarks:        04 - ELBAIX (AS203921)
+remarks:        05 - DATAIX (AS50952)
+remarks:        06 - GLOBALIX (AS31500)
+remarks:        07 - PITERIX (AS49869)
 remarks:        INTERNATIONAL PEERS:
 remarks:        01 - DE-CIX (AS6695)
 remarks:        02 - NL-IX (AS34307)
+remarks:        03 - AMS-IX (AS6777)
+remarks:        04 - PITERIX-HELSINKY (AS39607)
+remarks:        05 - PITERIX-FRANKFURT (AS48193)
 remarks:        DOWNSTREAM (CUSTOMER)
 remarks:        00 - Static routes from CIREX allocations
 remarks:        01 - BGP customer
@@ -354,7 +362,8 @@ remarks:        ZZ - REGIONAL CODE
 remarks:        ---------------------------------------
 remarks:        00 - Moscow
 remarks:        ===================================================
-remarks:        Community for prefix control
+remarks:        Control communities
+remarks:        Communities customers can use to control the behavior of our network
 remarks:        ===================================================
 remarks:        Prepend or deny 64000:5DNNA
 remarks:        ---------------------------------------
@@ -371,7 +380,7 @@ remarks:        UPSTREAM:
 remarks:        01 - Rostelecom (AS12389)
 remarks:        02 - BEELINE (AS3216)
 remarks:        03 - Rascom (AS20764)
-remarks:        04 - TransTeleKom (AS20485)
+remarks:        04 - TransTelecom (AS20485)
 remarks:        05 - Retn (AS9002)
 remarks:        06 - Cogent (AS174)
 remarks:        07 - Filanco (AS29076)
@@ -379,11 +388,15 @@ remarks:        08 - ServicePipe (AS201706)
 remarks:        RUSSIAN PEERS:
 remarks:        02 - MSK-IX ROUTESERVER (AS8631)
 remarks:        04 - ELBAIX (AS203921)
+remarks:        05 - DATAIX (AS50952)
+remarks:        06 - GLOBALIX (AS31500)
+remarks:        07 - PITERIX (AS49869)
 remarks:        INTERNATIONAL PEERS:
 remarks:        01 - DE-CIX (AS6695)
 remarks:        02 - NL-IX (AS34307)
-remarks:        EURASIA:
-remarks:        01 - EURASIA-IX
+remarks:        03 - AMS-IX (AS6777)
+remarks:        04 - PITERIX-HELSINKY (AS39607)
+remarks:        05 - PITERIX-FRANKFURT (AS48193)
 remarks:        ---------------------------------------
 remarks:        A - action
 remarks:        ---------------------------------------
@@ -393,15 +406,24 @@ remarks:        2 - announce with two times prepend
 remarks:        3 - announce with three times prepend
 remarks:        ===================================================
 remarks:        Community for blackhole
+remarks:        Drop all packets destined to the prefix (/32 IPv4 and /128 IPv6 only)
 remarks:        ===================================================
 remarks:        64000:666
+remarks:        ===================================================
+remarks:        Backup local-preference community
+remarks:        Allow to set local-preference for customer prefixes on Providers Edge lower than upstreams and peerings.
+remarks:        Available by request and requires configuration changes for import policy on Provider Edge
+remarks:        ===================================================
+remarks:        65000:XXXX
+remarks:        XXXX - Customer AS number
+remarks:        ---------------------------------------
 admin-c:        LURO-RIPE
 tech-c:         LURO-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CIREX-MNT
 created:        2012-11-12T09:44:39Z
-last-modified:  2024-05-06T11:51:20Z
+last-modified:  2025-03-09T18:05:48Z
 source:         RIPE # Filtered
 
 
