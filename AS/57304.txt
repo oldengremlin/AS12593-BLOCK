@@ -1053,10 +1053,10 @@ import:         from AS213478 action pref=100; accept   AS213478
 export:         to   AS213478                  announce ANY
 import:         from AS213508 action pref=100; accept   AS213508
 export:         to   AS213508                  announce ANY
+import:         from AS213630 action pref=100; accept   AS213630
+export:         to   AS213630                  announce ANY
 import:         from AS213789 action pref=100; accept   AS213789
 export:         to   AS213789                  announce ANY
-import:         from AS214051 action pref=100; accept   AS214051
-export:         to   AS214051                  announce ANY
 import:         from AS214367 action pref=100; accept   AS214367
 export:         to   AS214367                  announce ANY
 import:         from AS214429 action pref=100; accept   AS214429
@@ -1083,8 +1083,6 @@ import:         from AS216262 action pref=100; accept   AS216262
 export:         to   AS216262                  announce ANY
 import:         from AS273045 action pref=100; accept   AS273045
 export:         to   AS273045                  announce ANY
-import:         from AS396986 action pref=100; accept   AS396986
-export:         to   AS396986                  announce ANY
 remarks:
 remarks:        ---------------------------------------------------------------
 remarks:        ****************** ReTN IPv6 Routing Policy *******************
@@ -1628,8 +1626,6 @@ mp-import:      afi ipv6.unicast from AS216246 action pref=100; accept   AS-AEZA
 mp-export:      afi ipv6.unicast to   AS216246                  announce ANY
 mp-import:      afi ipv6.unicast from AS216262 action pref=100; accept   AS216262
 mp-export:      afi ipv6.unicast to   AS216262                  announce ANY
-mp-import:      afi ipv6.unicast from AS396986 action pref=100; accept   AS396986
-mp-export:      afi ipv6.unicast to   AS396986                  announce ANY
 remarks:
 remarks:        ---------------------------------------------------------------
 remarks:        ****************** ReTN bgp confederation *********************
@@ -1669,7 +1665,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-03-05T16:52:54Z
+last-modified:  2025-03-08T14:57:27Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE
