@@ -1,0 +1,98 @@
+
+
+
+as-block:       AS203889 - AS205662
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-11-12T15:22:00Z
+last-modified:  2024-11-12T15:22:00Z
+source:         RIPE
+
+
+
+aut-num:        AS204941
+as-name:        TGS-AS
+org:            ORG-TGS20-RIPE
+remarks:        TGS uplinks/connected-ixs/customers:
+remarks:        -------------------------------------------------------
+remarks:
+remarks:        ---------------- UPLINKS: -----------------------------
+remarks:        -------------------------------------------------------
+remarks:        .................NAUKANET..............................
+import:         from AS8641 action pref=210; accept ANY
+export:         to AS8641 announce AS-CGNET
+remarks:        .................GLOBALNET.............................
+import:         from AS31500 action pref=180; accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-CGNET
+remarks:        .................TRANSROUTE............................
+import:         from AS50509 action pref=140; accept ANY
+export:         to AS50509 announce AS-CGNET
+remarks:        -------------------------------------------------------
+remarks:        ----------------- IXs: --------------------------------
+remarks:        -------------------------------------------------------
+remarks:        .................msk-piterix...........................
+import:         from AS49869 action pref=300; accept ANY
+export:         to AS49869 announce AS-CGNET
+remarks:        -------------------------------------------------------
+remarks:        -------------- CUSTOMERS: -----------------------------
+remarks:        -------------------------------------------------------
+remarks:        TELEMEDNET
+import:         from AS41109 accept AS41109
+export:         to AS41109 announce ANY
+remarks:        EPL
+import:         from AS43714 accept AS43714
+export:         to AS41109 announce ANY
+remarks:        RU-SHARK-AS
+import:         from AS49371 accept AS49371
+export:         to AS49371 announce ANY
+remarks:        INET-RU
+import:         from AS59734 accept AS59734
+remarks:        INET-TELECOM-AS
+import:         from AS197971 accept AS197971
+remarks:        LINKLINE2
+import:         from AS202432 accept AS202432
+remarks:        BEST-LINE
+import:         from AS207676 accept AS207676
+remarks:        COMPANY-TELECOM
+import:         from AS210063 accept AS210063
+admin-c:        AF14211-RIPE
+tech-c:         AF14211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+mnt-by:         CGNET-MNT
+created:        2017-12-04T10:57:56Z
+last-modified:  2025-03-11T17:31:05Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+organisation:   ORG-TGS20-RIPE
+org-name:       LLC "Tsentralnaya Gorodskaya Set"
+country:        RU
+org-type:       OTHER
+address:        Grokholskiy lane, 10/5, floor 1, space 4N, room 2
+address:        129090
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +7 495 012 0000
+fax-no:         +7 495 012 0000
+abuse-c:        TGS59-RIPE
+admin-c:        AF14211-RIPE
+mnt-ref:        DN-MNT
+mnt-by:         DN-MNT
+created:        2017-11-29T14:03:47Z
+last-modified:  2023-02-13T10:05:10Z
+source:         RIPE # Filtered
+
+person:         Kiselev Anton
+address:        Kolomyajskiy proezd dom 18
+phone:          +79858908253
+nic-hdl:        AF14211-RIPE
+mnt-by:         CGNET-MNT
+created:        2017-11-27T10:19:51Z
+last-modified:  2018-01-30T14:38:50Z
+source:         RIPE
+
+
+

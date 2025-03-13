@@ -1,0 +1,117 @@
+
+
+
+
+aut-num:        AS12976
+as-name:        AS-CWSVYAZ
+remarks:        Russia
+org:            ORG-LL250-RIPE
+remarks:        ----------------------------------------------------
+remarks:        ========== Customers ========================
+remarks:        -----------------------------------------------------
+remarks:        name: Triumvirat
+import:         from AS47652 action pref=120; accept AS-SUPERJOB
+export:         to AS47652 announce ANY
+remarks:        ---------------------------------------
+remarks:        name: Incoma
+import:         from AS6673 action pref=120; accept AS6673
+export:         to AS6673 announce ANY
+remarks:        ----------------------------------------
+remarks:        name: Telecontact
+import:         from AS43299 action pref=120; accept AS43299
+export:         to AS43299 announce ANY
+remarks:        -------------------------------------------------------
+remarks:        name: Svyaz VSD
+import:         from AS48399 action pref=120; accept AS-LINXDATACENTER
+export:         to AS48399 announce ANY
+mp-import:      afi ipv6.unicast from AS48399 action pref=140; accept AS-LINXDATACENTER
+mp-export:      afi ipv6.unicast to AS48399 announce ANY
+remarks:        -------------------------------------------------------
+remarks:        ============== PEERS ============================
+remarks:        -------------------------------------------------------
+remarks:        name: MSK-IX RS
+import:         from AS8631 action pref=140; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-RUCWSVYAZ
+mp-import:      afi ipv6.unicast from AS8631 action pref=140; accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-RUCWSVYAZ
+remarks:        -------------------------------------------------------
+remarks:        ============== UPSTREAMS =======================
+import:         from AS3327 action pref=120; accept ANY
+export:         to AS3327 announce AS-CWSVYAZ
+mp-import:      afi ipv6.unicast from AS3327 action pref=103; accept ANY
+mp-export:      afi ipv6.unicast to AS3327 announce AS-CWSVYAZ
+admin-c:        CNOC24-RIPE
+tech-c:         CNOC24-RIPE
+remarks:        +-------------------------------------------------------
+remarks:        | NOTE - Filtering on /29 boundary is applied
+remarks:        | in AS12976 -
+remarks:        | we do not accept any route more specific than a /29.
+remarks:        | Filtering on /24 boundary is applied in AS3327.
+remarks:        | They do not reannounce any route more specific
+remarks:        | than a /24.
+remarks:        +-------------------------------------------------------
+remarks:        | MACROS IN USE
+remarks:        |
+remarks:        | as-set AS-CWSVYAZ
+remarks:        |
+remarks:        +-------------------------------------------------------
+remarks:        | MANAGEMENT COMMUNITIES
+remarks:        |
+remarks:        | New-style communities
+remarks:        |
+remarks:        | 12976:2XXY
+remarks:        |
+remarks:        | XX - Where to manage
+remarks:        | Y - Action
+remarks:        |
+remarks:        | XX =
+remarks:        | 00 - inside AS12976 (Y=9 is only applicable value)
+remarks:        | 01 - M9-IX route-server
+remarks:        | 05 - AKADO
+remarks:        | 08 - AS3327, CITIC Telecom CPC
+remarks:        | 20 - All russian upstreams, MSK-IX
+remarks:        | 30 - All foreign upstreams
+remarks:        |
+remarks:        | Y =
+remarks:        | 0 - Don't announce
+remarks:        | 1,2,3,4 - Set AS path prepend 1,2,3,4 times
+remarks:        | 9 - set the lowest Localpref inside AS12976,AS3327,AS8732
+remarks:        +-------------------------------------------------------
+remarks:        | ROUTE ORIGIN TAGGING COMMUNITIES
+remarks:        |
+remarks:        | New-style communities
+remarks:        |
+remarks:        | 12976:11XX - AS12976 and BGP customer routes
+remarks:        |
+remarks:        | XX =
+remarks:        | 00 - All customer and AS12976 routes
+remarks:        | 01 - Originated from AS12976
+remarks:        | 02 - Obtained from BGP customer
+remarks:        |-------------------------------------------------------
+remarks:        |
+remarks:        | 12976:12XX - Russia nets
+remarks:        |
+remarks:        | XX =
+remarks:        | 00 - All Russian nets
+remarks:        | 49 - Other
+remarks:        | 53 - Received from M9-IX route-server
+remarks:        | 54 - Received from AKADO
+remarks:        |
+remarks:        |------------------------------------------------------
+remarks:        |
+remarks:        | 12976:13XX - Foreign nets
+remarks:        |
+remarks:        | XX =
+remarks:        | 00 - All foreign nets
+remarks:        | 03 - Received from AS3327, CITIC Telecom CPC
+remarks:        +-------------------------------------------------------
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS3327-MNT
+mnt-by:         CWSVYAZ-MNT
+created:        2002-09-24T14:12:08Z
+last-modified:  2023-11-29T15:10:01Z
+source:         RIPE
+
+
+

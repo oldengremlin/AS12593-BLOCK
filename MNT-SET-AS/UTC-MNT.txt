@@ -1,0 +1,205 @@
+
+
+
+
+aut-num:        AS201582
+as-name:        ICS-AS
+org:            ORG-ICS25-RIPE
+admin-c:        DP3-RIPE
+tech-c:         DP3-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         UTC-MNT
+mnt-by:         ICS-PERM-MNT
+import:         from AS9049 accept ANY
+import:         from AS15640 accept ANY
+import:         from AS8359 accept ANY
+export:         to AS9049 announce AS201582
+export:         to AS15640 announce AS201582
+export:         to AS8359 announce AS201582
+status:         ASSIGNED
+created:        2014-09-16T15:25:46Z
+last-modified:  2024-11-08T06:28:06Z
+source:         RIPE
+sponsoring-org: ORG-ZM1-RIPE
+
+
+
+aut-num:        AS25086
+as-name:        URALTC-AS
+remarks:        Ural Branch of Mobile TeleSystems PJSC Ekaterinburg
+remarks:        AUTONOMUS SYSTEM EKATERINBURG, RUSSIA
+remarks:        --- UPSTREAM ---
+import:         from AS8359 action pref=101; accept ANY
+export:         to AS8359 announce AS-UTC-RU
+remarks:        --- UPSTREAM - MAGNITOGORSK ---
+import:         from AS8359 action pref=101; accept ANY
+export:         to AS8359 announce AS-MTS-MGN
+remarks:        --- PEERING ---
+import:         from AS12668 action pref=100; accept AS-MIRALOGIC
+export:         to AS12668 announce AS-UTC-RU
+import:         from AS43213 action pref=100; accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS-UTC-RU
+remarks:        --- CUSTOMER ---
+import:         from AS35013 action pref=50; accept PeerAS
+export:         to AS35013 announce ANY
+import:         from AS42276 action pref=50; accept PeerAS
+export:         to AS42276 announce ANY
+import:         from AS49675 action pref=50; accept PeerAS
+export:         to AS49675 announce ANY
+import:         from AS47740 action pref=50; accept PeerAS
+export:         to AS47740 announce AS-UTC-RU
+import:         from AS59641 action pref=50; accept PeerAS
+export:         to AS59641 announce ANY
+import:         from AS51883 action pref=50; accept PeerAS
+export:         to AS51883 announce AS-UTC-RU
+import:         from AS198544 action pref=50; accept PeerAS
+export:         to AS198544 announce AS-UTC-RU
+import:         from AS199619 action pref=50; accept PeerAS
+export:         to AS199619 announce ANY
+import:         from AS28832 action pref=50; accept AS-MTS-CHEL
+export:         to AS28832 announce ANY
+import:         from AS48429 action pref=50; accept PeerAS
+export:         to AS48429 announce AS-UTC-RU
+import:         from AS41217 action pref=50; accept PeerAS
+export:         to AS41217 announce ANY
+import:         from AS44039 action pref=50; accept PeerAS
+export:         to AS44039 announce ANY
+import:         from AS41460 action pref=50; accept PeerAS
+export:         to AS41460 announce ANY
+import:         from AS202290 action pref=50; accept PeerAS
+export:         to AS202290 announce {0.0.0.0/0}
+import:         from AS51952 action pref=50; accept PeerAS
+export:         to AS51952 announce ANY
+import:         from AS48827 action pref=50; accept PeerAS
+export:         to AS48827 announce ANY
+import:         from AS208629 action pref=50; accept PeerAS
+export:         to AS208629 announce {0.0.0.0/0}
+import:         from AS43721 action pref=50; accept PeerAS
+export:         to AS43721 announce {0.0.0.0/0}
+import:         from AS201643 action pref=50; accept PeerAS
+export:         to AS201643 announce ANY
+import:         from AS203407 action pref=50; accept PeerAS
+export:         to AS203407 announce ANY
+import:         from AS197331 action pref=50; accept PeerAS
+export:         to AS197331 announce {0.0.0.0/0}
+import:         from AS41928 action pref=50; accept PeerAS
+export:         to AS41928 announce ANY
+import:         from AS30856 action pref=50; accept PeerAS
+export:         to AS30856 announce ANY
+org:            ORG-ZM1-RIPE
+admin-c:        CCUB1-RIPE
+tech-c:         CCUB1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         UTC-MNT
+created:        2002-07-22T15:56:00Z
+last-modified:  2022-05-04T04:28:52Z
+source:         RIPE
+
+
+
+aut-num:        AS28832
+as-name:        MKS-CHEL-AS
+org:            ORG-ZM1-RIPE
+remarks:        ---------------------------------------------------------------
+remarks:        Upstreams:
+remarks:        ---------------------------------------------------------------
+remarks:        ... OJSC MTS ...
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-MTS-CHEL
+remarks:        ---------------------------------------------------------------
+remarks:        ... CJSC COMSTAR-Region ...
+import:         from AS25086 accept ANY
+export:         to AS25086 announce AS-MTS-CHEL
+remarks:        ---------------------------------------------------------------
+remarks:        Customers:
+remarks:        ---------------------------------------------------------------
+remarks:        ... -ENFORTA- ...
+import:         from AS24588 accept AS24588
+export:         to AS24588 announce ANY
+remarks:        ---------------------------------------------------------------
+admin-c:        CCUB1-RIPE
+tech-c:         CCUB1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MTU-NOC
+mnt-by:         UTC-MNT
+created:        2008-01-22T12:14:23Z
+last-modified:  2018-09-04T10:29:45Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS43148
+as-name:        MTS-KURGAN-AS
+remarks:        Kurgan, Lenina str. 6
+remarks:        640000, Russian Federation
+org:            ORG-ZM1-RIPE
+remarks:        --- Uplinks ---
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-INFOCENTR
+remarks:        --- Peering ---
+import:         from AS56330 accept AS56330
+export:         to AS56330 announce AS-INFOCENTR
+remarks:        --- Clients ---
+import:         from AS51882 accept AS51882
+import:         from AS57041 accept AS57041
+import:         from AS212395 accept AS212395
+export:         to AS51882 announce ANY
+export:         to AS57041 announce ANY
+export:         to AS212395 announce ANY
+admin-c:        CCUB1-RIPE
+tech-c:         CCUB1-RIPE
+status:         ASSIGNED
+mnt-by:         UTC-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2007-06-14T12:53:32Z
+last-modified:  2020-11-10T11:46:29Z
+source:         RIPE
+
+
+
+aut-num:        AS44257
+as-name:        TNGS-SOUTH
+org:            ORG-ZM1-RIPE
+import:         from AS31359 accept ANY
+import:         from AS31094 accept ANY
+import:         from AS48873 accept AS48873
+import:         from AS43093 accept AS43093
+import:         from AS16285 accept ANY
+export:         to AS31359 announce AS44257
+export:         to AS31094 announce AS44257
+export:         to AS48873 announce ANY
+export:         to AS43093 announce ANY
+export:         to AS16285 announce AS-COMSTAR-SIB
+admin-c:        CCUB1-RIPE
+tech-c:         CCUB1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MTU-NOC
+mnt-by:         UTC-MNT
+created:        2007-12-13T08:51:42Z
+last-modified:  2024-06-07T13:34:29Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS49637
+as-name:        Surgutneftegas-AS
+org:            ORG-OA735-RIPE
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS49637
+import:         from AS29648 accept ANY
+export:         to AS29648 announce AS49637
+admin-c:        AVP147-RIPE
+tech-c:         IP2872-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         UTC-MNT
+created:        2015-05-11T08:06:56Z
+last-modified:  2020-11-16T18:02:21Z
+source:         RIPE
+sponsoring-org: ORG-ZM1-RIPE
+
+
+

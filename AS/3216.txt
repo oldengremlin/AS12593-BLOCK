@@ -90,6 +90,10 @@ mp-import:      afi ipv6 from AS50245 action pref=90; accept AS-SERVEREL
 mp-export:      afi ipv6 to AS50245 announce AS-SOVAM-V6
 import:         from AS50245 action pref=90; accept AS-SERVEREL
 export:         to AS50245 announce AS-SOVAM
+import:         from AS197068 action pref=100; accept AS197068:AS-SET
+export:         to AS197068 announce ANY
+mp-import:      from AS197068 action pref=100; accept AS197068:AS-SET-V6
+mp-export:      to AS197068 announce ANY
 import:         from AS50241 action pref=100; accept AS-UNITTEL
 export:         to AS50241 announce ANY
 mp-import:      from AS50241 action pref=100; accept AS-UNITTEL
@@ -2229,6 +2233,10 @@ import:         from AS34959 action pref=100; accept AS-KVIKTEL
 export:         to AS34959 announce ANY
 mp-import:      afi ipv6 from AS34959 action pref=100; accept AS-KVIKTEL
 mp-export:      afi ipv6 to AS34959 announce ANY
+import:         from AS34959 action pref=100; accept AS34959:AS-PROCLOUD
+export:         to AS34959 announce ANY
+mp-import:      from AS34959 action pref=100; accept AS34959:AS-PROCLOUD
+mp-export:      to AS34959 announce ANY
 import:         from AS49326 action pref=100; accept AS49326
 export:         to AS49326 announce AS-SOVAM
 mp-import:      from AS49326 action pref=100; accept AS49326
@@ -4624,8 +4632,6 @@ mp-import:      from AS216365 action pref=100; accept AS216365
 mp-export:      to AS216365 announce ANY
 import:         from AS51193 action pref=100; accept AS51193
 export:         to AS51193 announce ANY
-import:         from AS197068 action pref=100; accept AS-QRATOR
-export:         to AS197068 announce AS-SOVAM
 import:         from AS196949 action pref=100; accept AS-PODRYAD
 export:         to AS196949 announce ANY
 import:         from AS208541 action pref=100; accept AS208541
@@ -5249,12 +5255,6 @@ remarks:        3216:576x When advertising to any NL-ix peer...
 remarks:        3216:577x When advertising to any BBIX Tokyo peer...
 remarks:        3216:578x When advertising to any BBIX Hong Kong peer...
 remarks:        -----------------------------------------------------------------
-remarks:        3216:515x When advertising to any Armenia Yerevan peer...
-remarks:        3216:516x When advertising to any Kazakhstan Almaty peer...
-remarks:        3216:517x When advertising to any Kazakhstan Shymkent peer...
-remarks:        3216:518x When advertising to any Kyrgyzstan Bishkek peer...
-remarks:        3216:519x When advertising to any Tadjikistan Dushanbe peer...
-remarks:        -----------------------------------------------------------------
 remarks:        3216:550x When advertising to CDN77 private peer (Frankfurt)...
 remarks:        3216:551x When advertising to G-Core Labs private peers...
 remarks:        3216:552x When advertising to FACEBOOK private peer (Frankfurt)...
@@ -5713,7 +5713,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-03-08T05:29:56Z
+last-modified:  2025-03-11T09:18:35Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

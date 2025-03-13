@@ -1,0 +1,300 @@
+
+
+
+
+aut-num:        AS200546
+as-name:        RU-CITYNET-AS
+org:            ORG-CNL7-RIPE
+import:         from AS34757 accept ANY
+export:         to AS34757 announce AS200546
+admin-c:        NOC211-RIPE
+tech-c:         NOC211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBSET-MNT
+created:        2015-06-09T10:00:44Z
+last-modified:  2021-09-22T08:09:01Z
+source:         RIPE
+
+
+
+aut-num:        AS202871
+as-name:        SFERA-AS
+org:            ORG-CNL7-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS202871
+admin-c:        NOC211-RIPE
+tech-c:         NOC211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBSET-MNT
+created:        2016-05-17T07:27:05Z
+last-modified:  2023-09-01T07:29:08Z
+source:         RIPE
+
+
+
+aut-num:        AS21496
+as-name:        RU-CITYNET-AS
+org:            ORG-CNL7-RIPE
+import:         from AS34757 accept ANY
+export:         to AS34757 announce AS21496
+import:         from  AS31133 accept ANY
+export:         to AS31133 announce AS21496
+admin-c:        NOC211-RIPE
+tech-c:         NOC211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBSET-MNT
+created:        2002-01-02T15:29:10Z
+last-modified:  2019-12-04T07:40:10Z
+source:         RIPE
+
+
+
+aut-num:        AS33871
+as-name:        Norilsk-Telecom-AS
+remarks:        ----- Upstreams -----
+import:         from AS31133 accept any
+export:         to AS31133 announce AS-NORCOM-KRSK
+import:         from AS3216 accept any
+export:         to AS3216 announce AS-NORCOM-KRSK
+import:         from AS44206 accept any
+export:         to AS44206 announce AS33871
+import:         from AS8359 accept any
+export:         to AS8359 announce AS-NORCOM-KRSK
+remarks:        -----Customers-----
+import:         from AS35018 accept AS35018
+export:         to AS35018 announce ANY
+import:         from AS58037 accept AS58037
+export:         to AS58037 announce ANY
+remarks:        ----Peering----
+import:         from AS5473 accept AS5473
+export:         to AS5473 announce AS33871
+remarks:        ------------------------------------
+org:            ORG-NL23-RIPE
+admin-c:        NOC211-RIPE
+tech-c:         NOC211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-NTK
+mnt-by:         SIBSET-MNT
+created:        2004-08-25T10:50:33Z
+last-modified:  2025-02-20T03:10:50Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS34757
+as-name:        SIBSET-NSK-AS
+org:            ORG-CNL7-RIPE
+remarks:        ----- Upstreams -----
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS31133 announce AS-SIBSET
+import:         from AS3216 action pref=100; accept ANY
+export:         to AS3216 announce AS-SIBSET
+import:         from AS9049 action pref=100; accept ANY
+export:         to AS9049 announce AS-SIBSET
+remarks:        ------ Customers -------
+import:         from AS15508 action pref=200; accept AS15508
+export:         to AS15508 announce ANY
+import:         from AS200546 action pref=200; accept AS200546
+export:         to AS200546 announce ANY
+import:         from AS60119 action pref=200; accept AS60119
+export:         to AS60119 announce ANY
+import:         from AS42408 action pref=200; accept AS42408
+export:         to AS42408 announce ANY
+import:         from AS207005 action pref=200; accept AS207005
+export:         to AS207005 announce ANY
+import:         from AS44634 action pref=200; accept AS44634
+export:         to AS44634 announce ANY
+remarks:        ------ Peers -------
+import:         from AS28709 action pref=200; accept AS-VKONTAKTE
+export:         to AS28709 announce AS-SIBSET
+remarks:        ------ NSK-IX -------
+import:         from AS42403 action pref=200; accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-SIBSET
+import:         from AS5387 action pref=200; accept AS-NSC-NSKIX-SET
+export:         to AS5387 announce AS-SIBSET
+import:         from AS41787 action pref=200; accept AS-ONLINECITY
+export:         to AS41787 announce AS-SIBSET
+import:         from AS30871 action pref=200; accept AS30871
+export:         to AS30871 announce AS-SIBSET
+import:         from AS31738 action pref=200; accept AS-NSTU
+export:         to AS31738 announce AS-SIBSET
+import:         from AS31200 action pref=200; accept AS-RUNTK-SET
+export:         to AS31200 announce AS-SIBSET
+remarks:        ------ IPv6 -------
+remarks:        ----- Upstreams -----
+mp-import:      afi ipv6.unicast from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-SIBSET
+remarks:        ------ Peers -------
+mp-import:      afi ipv6.unicast from as42403 action pref=200; accept AS-NSKROUTESERVER
+mp-export:      afi ipv6.unicast to as42403 announce AS-SIBSET
+remarks:        ----- BGP communities -----
+remarks:        34757:65535 blackhole community
+remarks:        Export your blackhole prefixes from /24 to /32
+remarks:        --------------------------------------
+admin-c:        NOC211-RIPE
+tech-c:         NOC211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBSET-MNT
+created:        2005-03-30T11:11:43Z
+last-modified:  2024-08-22T06:28:30Z
+source:         RIPE
+
+
+
+aut-num:        AS35018
+as-name:        RU-IGARKA-NORCOM
+org:            ORG-CNL7-RIPE
+import:         from AS33871 action pref=100; accept ANY
+export:         to AS33871 announce AS-IGARKA
+import:         from AS3216 action pref=100; accept ANY
+export:         to AS3216 announce AS-IGARKA
+admin-c:        NOC211-RIPE
+tech-c:         NOC211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBSET-MNT
+created:        2005-05-18T11:07:47Z
+last-modified:  2021-06-08T07:58:15Z
+source:         RIPE
+
+
+
+aut-num:        AS40995
+as-name:        SIBSET-NKZ-AS
+org:            ORG-CNL7-RIPE
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-CNLTD
+import:         from AS48858 accept ANY
+export:         to AS48858 announce AS-CNLTD
+import:         from AS13094 accept ANY
+export:         to AS13094 announce AS-CNLTD
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-CNLTD
+remarks:        ------ Customers -------
+import:         from AS214525 accept AS214525
+export:         to AS214525 announce any
+import:         from AS29072 accept AS-RDTC
+export:         to AS29072 announce any
+remarks:        ------ NSK-IX -------
+import:         from AS42403 action pref=900; accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-CNLTD
+admin-c:        NOC211-RIPE
+tech-c:         NOC211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBSET-MNT
+created:        2006-05-29T12:25:13Z
+last-modified:  2025-02-25T06:16:31Z
+source:         RIPE
+
+
+
+aut-num:        AS41794
+as-name:        SIBSET-BARN-AS
+remarks:        ----- Upstreams -----
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-SIBSET-BARN
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-SIBSET-BARN
+remarks:        ------ Customers -------
+import:         from AS209067 accept AS-AVIVA-TELECOM
+export:         to AS209067 announce ANY
+remarks:        ------ NSK-IX -------
+import:         from AS42403 action pref=900; accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-SIBSET-BARN
+remarks:        ------ KRS-IX -------
+import:         from AS60430 action pref=900; accept AS-RED-IX-PEERS
+export:         to AS60430 announce AS-SIBSET-BARN
+org:            ORG-CNL7-RIPE
+admin-c:        NOC211-RIPE
+tech-c:         NOC211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBSET-MNT
+created:        2006-10-25T15:08:09Z
+last-modified:  2025-02-04T02:15:35Z
+source:         RIPE
+
+
+
+aut-num:        AS44206
+as-name:        SIBSET-KRS-AS
+org:            ORG-CNL7-RIPE
+remarks:        ----- Upstreams -----
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-SIBSET-KRS
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-SIBSET-KRS
+remarks:        ------ Peers -------
+import:         from AS42403 accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-SIBSET-KRS
+import:         from AS60763 accept AS-SIBIR-IX
+export:         to AS60763 announce AS-SIBSET-KRS
+import:         from AS42773 accept ANY
+export:         to AS42773 announce AS-SIBSET-KRS
+remarks:        -------Norilsk_Reserve -------
+import:         from AS33871 accept AS33871
+export:         to AS33871 announce any
+remarks:        ------ Customers -------
+import:         from AS56326 accept AS56326
+export:         to AS56326 announce any
+import:         from AS51416 accept AS51416
+export:         to AS51416 announce any
+import:         from AS207978 accept AS-KSC-SB-RAS
+export:         to AS207978 announce any
+import:         from AS48302 accept AS48302
+export:         to AS48302 announce any
+import:         from AS209687 accept AS209687
+export:         to AS209687 announce any
+remarks:        ----- BGB Communities -----
+remarks:        44206:5020 don't announce prefix to Milecom AS48858
+remarks:        44206:502x x - 1, 2, 3 is count prepend announce to Milecom AS48858
+remarks:        44206:5030 don't announce prefix to Milecom AS13094
+remarks:        44206:503x x - 1, 2, 3 is count prepend announce to Milecom AS13094
+remarks:        44206:5040 don't announce prefix to RED-IX AS60430
+remarks:        44206:504x x - 1, 2, 3 is count prepend announce to RED-IX AS60430
+remarks:        44206:5050 don't announce prefix to SIBIR-IX AS60763
+remarks:        44206:505x x - 1, 2, 3 is count prepend announce to SIBIR-IX AS60763
+remarks:        ---------------------------
+admin-c:        NOC211-RIPE
+tech-c:         NOC211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBSET-MNT
+created:        2007-12-04T08:15:19Z
+last-modified:  2025-02-20T03:07:16Z
+source:         RIPE
+
+
+
+aut-num:        AS47433
+as-name:        SIBSET-KEM-AS
+org:            ORG-CNL7-RIPE
+remarks:        ----- Upstreams -----
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-SIBSET-KEM
+import:         from AS13094 accept ANY
+export:         to AS13094 announce AS-SIBSET-KEM
+import:         from AS48858 accept ANY
+export:         to AS48858 announce AS-SIBSET-KEM
+remarks:        ----- Peers -----
+remarks:        ------ NSK-IX -------
+import:         from AS42403 action pref=900; accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-SIBSET-KEM
+remarks:        ------ Customers -------
+admin-c:        NOC211-RIPE
+tech-c:         NOC211-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBSET-MNT
+created:        2008-06-19T10:33:12Z
+last-modified:  2024-09-30T06:32:17Z
+source:         RIPE
+
+
+

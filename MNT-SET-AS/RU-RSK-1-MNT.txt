@@ -1,0 +1,198 @@
+
+
+
+
+aut-num:        AS16064
+as-name:        Infopac-AS
+descr:          Togliatti, RUSSIA
+org:            ORG-SKL7-RIPE
+import:         from AS8342 action pref=100; accept ANY
+export:         to AS8342 announce AS16064
+import:         from AS20485 action pref=200; accept ANY
+export:         to AS20485 announce AS16064
+default:        to AS8342 action pref=100; networks ANY
+admin-c:        EZ1918-RIPE
+tech-c:         EZ1918-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-rsk-1-mnt
+created:        2001-10-24T05:06:59Z
+last-modified:  2019-09-20T07:36:14Z
+source:         RIPE
+
+
+
+aut-num:        AS202951
+as-name:        rsk
+org:            ORG-SKL7-RIPE
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS202951
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS202951
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS202951
+import:         from AS50384 accept ANY
+export:         to AS50384 announce AS202951
+admin-c:        EZ1918-RIPE
+tech-c:         EZ1918-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-rsk-1-mnt
+created:        2018-04-25T13:32:20Z
+last-modified:  2018-09-04T12:13:25Z
+source:         RIPE
+
+
+
+aut-num:        AS39264
+org:            ORG-SKL7-RIPE
+as-name:        METROMAX-AS
+remarks:        --- Upstreams ---
+remarks:        MTS (Samara)
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS8359 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS8359 announce AS-METROMAX;
+remarks:        Ertelecom (Samara)
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS9049 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS9049 announce AS-METROMAX;
+remarks:        TTK (Samara)
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS20485 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS20485 announce AS-METROMAX;
+remarks:        Rostelecom (Samara)
+mp-import:      afi ipv4.unicast from AS12389 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast to AS12389 announce AS-METROMAX;
+remarks:        Variant-TV (Dimitrovgrad)
+mp-import:      afi ipv4.unicast from AS57079 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast to AS57079 announce AS-METROMAX;
+remarks:        Variant-TV (Dimitrovgrad NEW-AS)
+mp-import:      afi ipv4.unicast from AS9049 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast to AS9049 announce AS-METROMAX;
+remarks:        STM-NVR (Novorossisk)
+mp-import:      afi ipv4.unicast from AS200513 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast to AS200513 announce AS-METROMAX;
+remarks:        SMR-IX (Samara)
+mp-import:      afi ipv4.unicast from AS47882 action pref=100; accept ANY AND NOT fltr-bogons;
+mp-export:      afi ipv4.unicast to AS47882 announce AS-METROMAX;
+remarks:        --- Peering on IX points ---
+remarks:        iHome-wix (Samara)
+mp-import:      afi ipv4.unicast from AS39264:AS-PEERS action pref=50; accept <^PeerAS+$> AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS39264:AS-PEERS announce AS-METROMAX
+mp-import:      afi ipv4.unicast from AS50384 action pref=50; accept ANY AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS50384 announce AS-METROMAX
+remarks:        --- Direct peers ---
+mp-import:      afi ipv4.unicast from AS16043 action pref=50; accept AS-SMRTLC AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS16043 announce AS-METROMAX
+mp-import:      afi ipv4.unicast from AS57629 action pref=50; accept AS57629 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS57629 announce AS-METROMAX
+mp-import:      afi ipv4.unicast from AS44436 action pref=50; accept AS-EFFORTEL-SAM AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS44436 announce AS-METROMAX
+remarks:        Transmedia
+mp-import:      afi ipv4.unicast from AS58290 action pref=50; accept AS58290 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS58290 announce ANY
+remarks:        Avantel
+mp-import:      afi ipv4.unicast from AS197235 action pref=50; accept AS197235 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS197235 announce ANY
+mp-import:      afi ipv4.unicast from AS16064 action pref=100; accept AS16064 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS16064 announce AS-METROMAX
+remarks:        Smotreshka-TV
+mp-import:      afi ipv4.unicast from AS200976 action pref=50; accept AS200976 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS200976 announce AS-METROMAX
+remarks:        TolyattiHimbank
+mp-import:      afi ipv4.unicast from AS48236 action pref=50; accept AS48236 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS48236 announce ANY
+remarks:        MTT
+mp-import:      afi ipv4.unicast from AS41338 action pref=50; accept AS41338 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS41338 announce ANY
+remarks:        New-Networks
+mp-import:      afi ipv4.unicast from AS212600 action pref=50; accept AS212600 AND NOT fltr-bogons
+mp-export:      afi ipv4.unicast to AS212600 announce ANY
+remarks:        -----------------
+admin-c:        EZ1918-RIPE
+tech-c:         EZ1918-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-rsk-1-mnt
+created:        2006-01-20T10:45:24Z
+last-modified:  2022-03-31T08:32:16Z
+source:         RIPE
+
+
+
+aut-num:        AS41101
+as-name:        IntellCom
+org:            ORG-SKL7-RIPE
+import:         from AS60764 accept ANY
+export:         to AS60764 announce AS-OPTITELECOM
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-OPTITELECOM
+import:         from AS42996 accept AS42996
+export:         to AS42996 announce ANY
+import:         from AS43675 accept ANY
+export:         to AS43675 announce {81.200.216.0/24, 77.245.213.0/24}
+import:         from AS48753 accept ANY
+export:         to AS48753 announce ANY
+admin-c:        EZ1918-RIPE
+tech-c:         EZ1918-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-rsk-1-mnt
+created:        2006-06-14T12:07:53Z
+last-modified:  2018-09-04T10:16:43Z
+source:         RIPE
+
+
+
+aut-num:        AS42690
+as-name:        SI-AS
+org:            ORG-JA52-RIPE
+import:         from AS3216 accept ANY
+import:         from AS30960 accept ANY
+import:         from AS39264 accept ANY
+export:         to AS3216 announce AS42690
+export:         to AS30960 announce AS42690
+export:         to AS39264 announce AS42690
+admin-c:        GVA10-RIPE
+tech-c:         GVA10-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-rsk-1-mnt
+mnt-by:         MNT-SVYAZINVEST
+created:        2007-04-02T11:47:26Z
+last-modified:  2018-11-20T17:12:27Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-SKL7-RIPE
+
+
+
+aut-num:        AS42766
+as-name:        JTCOM-AS
+org:            ORG-AA2231-RIPE
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS42766
+import:         from AS39264 accept AS39264
+export:         to AS39264 announce AS42766
+import:         from AS41209 accept AS41209
+export:         to AS41209 announce AS42766
+import:         from AS30960 accept ANY
+export:         to AS30960 announce AS42766
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS42766
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS42766
+import:         from AS43975 accept AS43975
+export:         to AS43975 announce AS42766
+import:         from AS47882 accept ANY
+export:         to AS47882 announce AS-JTCOM
+admin-c:        AL5607-RIPE
+tech-c:         AL5607-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         JIGULI-MNT
+mnt-by:         METROMAX-MNT
+mnt-by:         ru-rsk-1-mnt
+created:        2007-04-12T14:57:03Z
+last-modified:  2020-11-16T18:00:21Z
+source:         RIPE
+sponsoring-org: ORG-SKL7-RIPE
+
+
+
