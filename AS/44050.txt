@@ -158,25 +158,16 @@ import:         from AS174 action pref=50; accept ANY
 export:         to AS174 announce AS-PIN
 remarks:        ============================================
 remarks:        ============================================
-remarks:        ============================================
-remarks:        CUSTOMERS
-remarks:        ============================================
-import:         from AS44283 action pref=300; accept AS44283
-export:         to AS42692 announce ANY
-import:         from as42149 action pref=300; accept as42149
-export:         to AS42692 announce ANY
-import:         from AS44068 action pref=300; accept AS-ARBITAL
+import:         from AS44068 accept AS-ARBITAL
 export:         to AS44068 announce ANY
-import:         from AS62241 action pref=300; accept AS-FORESTNET
-export:         to AS62241 announce ANY
-import:         from as-skytel_as-set action pref=300; accept as-skytel_as-set
-export:         to AS205998 announce ANY
-import:         from AS207822 action pref=500; accept AS-SET-NPKMSA
+import:         from AS207822 accept AS-SET-NPKMSA
 export:         to AS207822 announce ANY
-import:         from AS207853 action pref=300; accept AS-SET-UNIMACH
+import:         from AS207853 accept AS-SET-UNIMACH
 export:         to AS207853 announce ANY
-import:         from AS49304 action pref=300; accept AS49304
-export:         to AS49304 announce ANY
+import:         from AS35764 accept AS35764
+export:         to AS35764 announce ANY
+import:         from AS25073 accept AS25073
+export:         to AS25073 announce any
 remarks:        ============================================
 remarks:        ============================================
 org:            ORG-PINl1-RIPE
@@ -187,7 +178,7 @@ mnt-by:         RIPE-NCC-END-MNT
 tech-c:         PIN44050-RIPE
 mnt-by:         MNT-PIN
 created:        2007-11-09T12:08:55Z
-last-modified:  2024-10-29T09:45:32Z
+last-modified:  2025-03-10T11:15:09Z
 source:         RIPE
 
 organisation:   ORG-PINl1-RIPE

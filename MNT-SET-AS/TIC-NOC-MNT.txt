@@ -1,0 +1,47 @@
+
+
+
+
+aut-num:        AS29125
+as-name:        TATINT-AS
+status:         ASSIGNED
+org:            ORG-ES15-RIPE
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS8342 action pref=100; accept ANY
+import:         from AS2854 action pref=100; accept ANY
+export:         to AS2854 announce AS-TIC
+export:         to AS8342 announce AS-TIC
+export:         to AS20485 announce AS-TIC
+default:        to AS2854 action pref=110; networks ANY
+default:        to AS8342 action pref=100; networks ANY
+default:        to AS20485 action pref=105; networks ANY
+admin-c:        AMA50-RIPE
+admin-c:        ark16-ripe
+tech-c:         AMA50-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TIC-NOC-MNT
+created:        2003-06-11T08:07:39Z
+last-modified:  2018-09-04T09:57:37Z
+source:         RIPE
+
+
+
+aut-num:        AS42062
+as-name:        TRSKZN-AS
+org:            ORG-TTCK1-RIPE
+import:         from AS29125 accept ANY
+import:         from AS24810 accept ANY
+export:         to AS29125 announce AS42062
+export:         to AS24810 announce AS42062
+admin-c:        ARK16-RIPE
+tech-c:         ARK16-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TIC-NOC-MNT
+created:        2006-12-13T10:44:24Z
+last-modified:  2018-09-04T10:20:48Z
+source:         RIPE
+sponsoring-org: ORG-RTL7-RIPE
+
+
+
