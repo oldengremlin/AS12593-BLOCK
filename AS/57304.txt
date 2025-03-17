@@ -299,7 +299,7 @@ import:         from  AS42144 action pref=100; accept   AS42144
 export:         to    AS42144                  announce ANY
 import:         from  AS42289 action pref=100; accept   AS-VUZTC
 export:         to    AS42289                  announce ANY
-import:         from  AS42291 action pref=100; accept   AS-ISTANET
+import:         from  AS42291 action pref=100; accept   AS42291:AS-ISTRANET
 export:         to    AS42291                  announce ANY
 import:         from  AS42339 action pref=100; accept   AS-CHTP
 export:         to    AS42339                  announce ANY
@@ -765,8 +765,6 @@ import:         from  AS63139 action pref=100; accept   AS63139:AS-CUSTOMER
 export:         to    AS63139                  announce ANY
 import:         from  AS64432 action pref=100; accept   AS-VARITI
 export:         to    AS64432                  announce ANY
-import:         from  AS64433 action pref=100; accept   AS-RSLINK
-export:         to    AS64433                  announce ANY
 import:         from AS138915 action pref=100; accept   AS138915:AS-CUSTOMER
 export:         to   AS138915                  announce ANY
 import:         from AS139057 action pref=100; accept   AS139057:AS-CONE
@@ -811,8 +809,6 @@ import:         from AS198770 action pref=100; accept   AS198770
 export:         to   AS198770                  announce ANY
 import:         from AS198947 action pref=100; accept   AS-RETN-RU
 export:         to   AS198947                  announce ANY
-import:         from AS198953 action pref=100; accept   AS198953
-export:         to   AS198953                  announce ANY
 import:         from AS199274 action pref=100; accept   AS199274
 export:         to   AS199274                  announce ANY
 import:         from AS199361 action pref=100; accept   AS-CITYCONNECT
@@ -851,8 +847,6 @@ import:         from AS200487 action pref=100; accept   AS200487
 export:         to   AS200487                  announce ANY
 import:         from AS200563 action pref=100; accept   AS200563
 export:         to   AS200563                  announce ANY
-import:         from AS200593 action pref=100; accept   AS200593
-export:         to   AS200593                  announce ANY
 import:         from AS200847 action pref=100; accept   AS200847:AS-MOBILECARD
 export:         to   AS200847                  announce ANY
 import:         from AS200976 action pref=100; accept   AS-LIFESTREAM
@@ -881,8 +875,6 @@ import:         from AS201800 action pref=100; accept   AS201800
 export:         to   AS201800                  announce ANY
 import:         from AS201916 action pref=100; accept   AS201916
 export:         to   AS201916                  announce ANY
-import:         from AS202079 action pref=100; accept   AS202079
-export:         to   AS202079                  announce ANY
 import:         from AS202498 action pref=100; accept   AS202498
 export:         to   AS202498                  announce ANY
 import:         from AS202619 action pref=100; accept   AS-DOVECOM-RU
@@ -1490,8 +1482,6 @@ mp-import:      afi ipv6.unicast from  AS63139 action pref=100; accept   AS63139
 mp-export:      afi ipv6.unicast to    AS63139                  announce ANY
 mp-import:      afi ipv6.unicast from  AS64432 action pref=100; accept   AS-VARITI
 mp-export:      afi ipv6.unicast to    AS64432                  announce ANY
-mp-import:      afi ipv6.unicast from  AS64433 action pref=100; accept   AS-RSLINK
-mp-export:      afi ipv6.unicast to    AS64433                  announce ANY
 mp-import:      afi ipv6.unicast from AS138915 action pref=100; accept   AS138915:AS-CUSTOMER
 mp-export:      afi ipv6.unicast to   AS138915                  announce ANY
 mp-import:      afi ipv6.unicast from AS139057 action pref=100; accept   AS139057:AS-CONE
@@ -1665,7 +1655,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-03-10T17:05:15Z
+last-modified:  2025-03-14T17:06:26Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE
