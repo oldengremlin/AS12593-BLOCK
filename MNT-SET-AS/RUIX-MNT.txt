@@ -1734,7 +1734,7 @@ export:         to AS211609
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2024-12-12T14:09:03Z
+last-modified:  2025-03-14T14:11:42Z
 source:         RIPE
 
 
@@ -2983,6 +2983,9 @@ import:         from AS20985
 import:         from AS21030
                 action pref=100;
                 accept AS21030
+import:         from AS21135
+                action pref=100;
+                accept AS-MTT
 import:         from AS21367
                 action pref=100;
                 accept AS-WILAND
@@ -3082,9 +3085,6 @@ import:         from AS29226
 import:         from AS29303
                 action pref=100;
                 accept AS-PERMINTERCOM
-import:         from AS29319
-                action pref=100;
-                accept AS-IMSYS
 import:         from AS29329
                 action pref=100;
                 accept AS-NODEX
@@ -3130,9 +3130,6 @@ import:         from AS31499
 import:         from AS31500
                 action pref=100;
                 accept AS-GLOBAL-NET
-import:         from AS31514
-                action pref=100;
-                accept as-set-INFOLINE
 import:         from AS32590
                 action pref=100;
                 accept AS-VALVE
@@ -3628,9 +3625,6 @@ import:         from AS49418
 import:         from AS49458
                 action pref=100;
                 accept AS-INTELLIN
-import:         from AS49476
-                action pref=100;
-                accept AS-MTT
 import:         from AS49505
                 action pref=100;
                 accept AS-SELECTEL
@@ -4373,6 +4367,8 @@ export:         to AS20985
                 announce AS-MSKROUTESERVER
 export:         to AS21030
                 announce AS-MSKROUTESERVER
+export:         to AS21135
+                announce AS-MSKROUTESERVER
 export:         to AS21367
                 announce AS-MSKROUTESERVER
 export:         to AS21416
@@ -4439,8 +4435,6 @@ export:         to AS29226
                 announce AS-MSKROUTESERVER
 export:         to AS29303
                 announce AS-MSKROUTESERVER
-export:         to AS29319
-                announce AS-MSKROUTESERVER
 export:         to AS29329
                 announce AS-MSKROUTESERVER
 export:         to AS29388
@@ -4470,8 +4464,6 @@ export:         to AS31430
 export:         to AS31499
                 announce AS-MSKROUTESERVER
 export:         to AS31500
-                announce AS-MSKROUTESERVER
-export:         to AS31514
                 announce AS-MSKROUTESERVER
 export:         to AS32590
                 announce AS-MSKROUTESERVER
@@ -4802,8 +4794,6 @@ export:         to AS49403
 export:         to AS49418
                 announce AS-MSKROUTESERVER
 export:         to AS49458
-                announce AS-MSKROUTESERVER
-export:         to AS49476
                 announce AS-MSKROUTESERVER
 export:         to AS49505
                 announce AS-MSKROUTESERVER
@@ -5190,7 +5180,7 @@ export:         to AS213624
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-03-11T09:43:03Z
+last-modified:  2025-03-14T13:40:43Z
 source:         RIPE
 
 
