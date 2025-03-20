@@ -14,47 +14,98 @@ source:         RIPE
 aut-num:        AS42385
 as-name:        RIPN-RU
 org:            ORG-JCE1-RIPE
-import:         from AS2854 action pref=100; accept AS-ROSPRINT
-import:         from AS6695 action pref=100; accept AS-DECIX
-import:         from AS6939 action pref=100; accept AS-HURRICANE
-import:         from AS8365 action pref=100; accept AS-MANDA
-import:         from AS8657 action pref=100; accept AS-CPRM
-import:         from AS12859 action pref=100; accept AS-BIT6
-import:         from AS13030 action pref=100; accept AS-INIT7
-import:         from AS16276 action pref=100; accept AS-OVH
-import:         from AS21385 action pref=100; accept AS-TNIB
-import:         from AS31252 action pref=100; accept AS-STARNET6
-import:         from AS36408 action pref=100; accept AS36408
-import:         from AS41412 action pref=100; accept AS-MIVITEC
-import:         from AS41692 action pref=100; accept AS-OPENCARRIER6
-import:         from AS42416 action pref=100; accept AS-COMNET
-import:         from AS44654 action pref=100; accept AS-MNS
-import:         from AS50706 action pref=100; accept AS-KZNROUTESERVER
-import:         from AS57056 action pref=100; accept AS-STWROUTESERVER
-export:         to AS2854 announce AS-NS9_RIPN_NET
-export:         to AS6695 announce AS-NS9_RIPN_NET
-export:         to AS6939 announce AS-NS9_RIPN_NET
-export:         to AS8365 announce AS-NS9_RIPN_NET
-export:         to AS8657 announce AS-NS9_RIPN_NET
-export:         to AS12859 announce AS-NS9_RIPN_NET
-export:         to AS13030 announce AS-NS9_RIPN_NET
-export:         to AS16276 announce AS-NS9_RIPN_NET
-export:         to AS21385 announce AS-NS9_RIPN_NET
-export:         to AS31252 announce AS-NS9_RIPN_NET
-export:         to AS36408 announce AS-NS9_RIPN_NET
-export:         to AS41412 announce AS-NS9_RIPN_NET
-export:         to AS41692 announce AS-NS9_RIPN_NET
-export:         to AS42416 announce AS-NS9_RIPN_NET
-export:         to AS44654 announce AS-NS9_RIPN_NET
-export:         to AS50706 announce AS-NS9_RIPN_NET
-export:         to AS57056 announce AS-NS9_RIPN_NET
-admin-c:        RN1863-RIPE
-tech-c:         RN1863-RIPE
+import:         from AS2854
+                action pref=100;
+                accept AS-ROSPRINT
+import:         from AS6695
+                action pref=100;
+                accept AS-DECIX
+import:         from AS6939
+                action pref=100;
+                accept AS-HURRICANE
+import:         from AS8365
+                action pref=100;
+                accept AS-MANDA
+import:         from AS8657
+                action pref=100;
+                accept AS-CPRM
+import:         from AS12859
+                action pref=100;
+                accept AS-BIT6
+import:         from AS13030
+                action pref=100;
+                accept AS-INIT7
+import:         from AS16276
+                action pref=100;
+                accept AS-OVH
+import:         from AS21385
+                action pref=100;
+                accept AS-TNIB
+import:         from AS31252
+                action pref=100;
+                accept AS-STARNET6
+import:         from AS36408
+                action pref=100;
+                accept AS36408
+import:         from AS41412
+                action pref=100;
+                accept AS-MIVITEC
+import:         from AS41692
+                action pref=100;
+                accept AS-OPENCARRIER6
+import:         from AS42416
+                action pref=100;
+                accept AS-COMNET
+import:         from AS44654
+                action pref=100;
+                accept AS-MNS
+import:         from AS50706
+                action pref=100;
+                accept AS-KZNROUTESERVER
+import:         from AS57056
+                action pref=100;
+                accept AS-STWROUTESERVER
+export:         to AS2854
+                announce AS-NS9_RIPN_NET
+export:         to AS6695
+                announce AS-NS9_RIPN_NET
+export:         to AS6939
+                announce AS-NS9_RIPN_NET
+export:         to AS8365
+                announce AS-NS9_RIPN_NET
+export:         to AS8657
+                announce AS-NS9_RIPN_NET
+export:         to AS12859
+                announce AS-NS9_RIPN_NET
+export:         to AS13030
+                announce AS-NS9_RIPN_NET
+export:         to AS16276
+                announce AS-NS9_RIPN_NET
+export:         to AS21385
+                announce AS-NS9_RIPN_NET
+export:         to AS31252
+                announce AS-NS9_RIPN_NET
+export:         to AS36408
+                announce AS-NS9_RIPN_NET
+export:         to AS41412
+                announce AS-NS9_RIPN_NET
+export:         to AS41692
+                announce AS-NS9_RIPN_NET
+export:         to AS42416
+                announce AS-NS9_RIPN_NET
+export:         to AS44654
+                announce AS-NS9_RIPN_NET
+export:         to AS50706
+                announce AS-NS9_RIPN_NET
+export:         to AS57056
+                announce AS-NS9_RIPN_NET
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-02-13T16:16:56Z
-last-modified:  2023-10-02T12:34:12Z
+last-modified:  2025-03-18T13:50:53Z
 source:         RIPE
 
 organisation:   ORG-JCE1-RIPE
@@ -76,22 +127,23 @@ created:        2018-11-16T14:06:09Z
 last-modified:  2022-12-02T12:04:03Z
 source:         RIPE # Filtered
 
-role:           MSK-IX NOC
-address:        JSC "MSK-IX"
-address:        8 Marta Street 1, bld. 12, office XXXV, room 19
-address:        Moscow 127083, Russian Federation
-phone:          +7 495 7370685
-phone:          +7 499 1929179
-fax-no:         +7 499 1964984
-admin-c:        IA5224-RIPE
-tech-c:         IA5224-RIPE
-tech-c:         MAGR-RIPE
-tech-c:         DYK9-RIPE
-nic-hdl:        RN1863-RIPE
-mnt-by:         RUIX-MNT
-created:        2009-03-26T15:52:51Z
-last-modified:  2023-09-25T09:56:47Z
-source:         RIPE # Filtered
+person:         Placeholder Person Object
+address:        RIPE Network Coordination Centre
+address:        P.O. Box 10096
+address:        1001 EB Amsterdam
+address:        The Netherlands
+phone:          +31 20 535 4444
+nic-hdl:        DUMY-RIPE
+mnt-by:         RIPE-DBM-MNT
+remarks:        **********************************************************
+remarks:        * This is a placeholder object to protect personal data.
+remarks:        * To view the original object, please query the RIPE
+remarks:        * Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        **********************************************************
+created:        2009-11-11T16:36:07Z
+last-modified:  2009-11-11T16:36:07Z
+source:         RIPE
 
 
 

@@ -72,9 +72,6 @@ import:         from AS5431
 import:         from AS5467
                 action pref=100;
                 accept AS-MIPT
-import:         from AS5518
-                action pref=100;
-                accept AS-TELIANETLV
 import:         from AS5523
                 action pref=100;
                 accept AS-RMT
@@ -1170,9 +1167,6 @@ import:         from AS59693
 import:         from AS59883
                 action pref=100;
                 accept AS59883
-import:         from AS60067
-                action pref=100;
-                accept AS60067
 import:         from AS60068
                 action pref=100;
                 accept AS-CDN77
@@ -1326,6 +1320,9 @@ import:         from AS198076
 import:         from AS198297
                 action pref=100;
                 accept AS-UL-COM-Media
+import:         from AS198310
+                action pref=100;
+                accept AS198310:AS-MOLNIYA
 import:         from AS198367
                 action pref=100;
                 accept AS-INKOTELECOM
@@ -1335,9 +1332,6 @@ import:         from AS198539
 import:         from AS198610
                 action pref=100;
                 accept AS-BEGET
-import:         from AS199008
-                action pref=100;
-                accept AS199008:AS-TVSPUTNIK
 import:         from AS199020
                 action pref=100;
                 accept AS-AVANTRU
@@ -1413,9 +1407,6 @@ import:         from AS205530
 import:         from AS205638
                 action pref=100;
                 accept AS205638
-import:         from AS206011
-                action pref=100;
-                accept AS206011:AS-FREEDOM-KRD
 import:         from AS206295
                 action pref=100;
                 accept AS206295
@@ -1526,8 +1517,6 @@ export:         to AS5429
 export:         to AS5431
                 announce AS-MSKROUTESERVER
 export:         to AS5467
-                announce AS-MSKROUTESERVER
-export:         to AS5518
                 announce AS-MSKROUTESERVER
 export:         to AS5523
                 announce AS-MSKROUTESERVER
@@ -2259,8 +2248,6 @@ export:         to AS59693
                 announce AS-MSKROUTESERVER
 export:         to AS59883
                 announce AS-MSKROUTESERVER
-export:         to AS60067
-                announce AS-MSKROUTESERVER
 export:         to AS60068
                 announce AS-MSKROUTESERVER
 export:         to AS60072
@@ -2363,13 +2350,13 @@ export:         to AS198076
                 announce AS-MSKROUTESERVER
 export:         to AS198297
                 announce AS-MSKROUTESERVER
+export:         to AS198310
+                announce AS-MSKROUTESERVER
 export:         to AS198367
                 announce AS-MSKROUTESERVER
 export:         to AS198539
                 announce AS-MSKROUTESERVER
 export:         to AS198610
-                announce AS-MSKROUTESERVER
-export:         to AS199008
                 announce AS-MSKROUTESERVER
 export:         to AS199020
                 announce AS-MSKROUTESERVER
@@ -2420,8 +2407,6 @@ export:         to AS205063
 export:         to AS205530
                 announce AS-MSKROUTESERVER
 export:         to AS205638
-                announce AS-MSKROUTESERVER
-export:         to AS206011
                 announce AS-MSKROUTESERVER
 export:         to AS206295
                 announce AS-MSKROUTESERVER
@@ -2482,7 +2467,7 @@ export:         to AS213624
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-03-14T13:40:43Z
+last-modified:  2025-03-19T13:55:25Z
 source:         RIPE
 
 organisation:   ORG-JCE1-RIPE

@@ -493,47 +493,98 @@ source:         RIPE
 aut-num:        AS42385
 as-name:        RIPN-RU
 org:            ORG-JCE1-RIPE
-import:         from AS2854 action pref=100; accept AS-ROSPRINT
-import:         from AS6695 action pref=100; accept AS-DECIX
-import:         from AS6939 action pref=100; accept AS-HURRICANE
-import:         from AS8365 action pref=100; accept AS-MANDA
-import:         from AS8657 action pref=100; accept AS-CPRM
-import:         from AS12859 action pref=100; accept AS-BIT6
-import:         from AS13030 action pref=100; accept AS-INIT7
-import:         from AS16276 action pref=100; accept AS-OVH
-import:         from AS21385 action pref=100; accept AS-TNIB
-import:         from AS31252 action pref=100; accept AS-STARNET6
-import:         from AS36408 action pref=100; accept AS36408
-import:         from AS41412 action pref=100; accept AS-MIVITEC
-import:         from AS41692 action pref=100; accept AS-OPENCARRIER6
-import:         from AS42416 action pref=100; accept AS-COMNET
-import:         from AS44654 action pref=100; accept AS-MNS
-import:         from AS50706 action pref=100; accept AS-KZNROUTESERVER
-import:         from AS57056 action pref=100; accept AS-STWROUTESERVER
-export:         to AS2854 announce AS-NS9_RIPN_NET
-export:         to AS6695 announce AS-NS9_RIPN_NET
-export:         to AS6939 announce AS-NS9_RIPN_NET
-export:         to AS8365 announce AS-NS9_RIPN_NET
-export:         to AS8657 announce AS-NS9_RIPN_NET
-export:         to AS12859 announce AS-NS9_RIPN_NET
-export:         to AS13030 announce AS-NS9_RIPN_NET
-export:         to AS16276 announce AS-NS9_RIPN_NET
-export:         to AS21385 announce AS-NS9_RIPN_NET
-export:         to AS31252 announce AS-NS9_RIPN_NET
-export:         to AS36408 announce AS-NS9_RIPN_NET
-export:         to AS41412 announce AS-NS9_RIPN_NET
-export:         to AS41692 announce AS-NS9_RIPN_NET
-export:         to AS42416 announce AS-NS9_RIPN_NET
-export:         to AS44654 announce AS-NS9_RIPN_NET
-export:         to AS50706 announce AS-NS9_RIPN_NET
-export:         to AS57056 announce AS-NS9_RIPN_NET
-admin-c:        RN1863-RIPE
-tech-c:         RN1863-RIPE
+import:         from AS2854
+                action pref=100;
+                accept AS-ROSPRINT
+import:         from AS6695
+                action pref=100;
+                accept AS-DECIX
+import:         from AS6939
+                action pref=100;
+                accept AS-HURRICANE
+import:         from AS8365
+                action pref=100;
+                accept AS-MANDA
+import:         from AS8657
+                action pref=100;
+                accept AS-CPRM
+import:         from AS12859
+                action pref=100;
+                accept AS-BIT6
+import:         from AS13030
+                action pref=100;
+                accept AS-INIT7
+import:         from AS16276
+                action pref=100;
+                accept AS-OVH
+import:         from AS21385
+                action pref=100;
+                accept AS-TNIB
+import:         from AS31252
+                action pref=100;
+                accept AS-STARNET6
+import:         from AS36408
+                action pref=100;
+                accept AS36408
+import:         from AS41412
+                action pref=100;
+                accept AS-MIVITEC
+import:         from AS41692
+                action pref=100;
+                accept AS-OPENCARRIER6
+import:         from AS42416
+                action pref=100;
+                accept AS-COMNET
+import:         from AS44654
+                action pref=100;
+                accept AS-MNS
+import:         from AS50706
+                action pref=100;
+                accept AS-KZNROUTESERVER
+import:         from AS57056
+                action pref=100;
+                accept AS-STWROUTESERVER
+export:         to AS2854
+                announce AS-NS9_RIPN_NET
+export:         to AS6695
+                announce AS-NS9_RIPN_NET
+export:         to AS6939
+                announce AS-NS9_RIPN_NET
+export:         to AS8365
+                announce AS-NS9_RIPN_NET
+export:         to AS8657
+                announce AS-NS9_RIPN_NET
+export:         to AS12859
+                announce AS-NS9_RIPN_NET
+export:         to AS13030
+                announce AS-NS9_RIPN_NET
+export:         to AS16276
+                announce AS-NS9_RIPN_NET
+export:         to AS21385
+                announce AS-NS9_RIPN_NET
+export:         to AS31252
+                announce AS-NS9_RIPN_NET
+export:         to AS36408
+                announce AS-NS9_RIPN_NET
+export:         to AS41412
+                announce AS-NS9_RIPN_NET
+export:         to AS41692
+                announce AS-NS9_RIPN_NET
+export:         to AS42416
+                announce AS-NS9_RIPN_NET
+export:         to AS44654
+                announce AS-NS9_RIPN_NET
+export:         to AS50706
+                announce AS-NS9_RIPN_NET
+export:         to AS57056
+                announce AS-NS9_RIPN_NET
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-02-13T16:16:56Z
-last-modified:  2023-10-02T12:34:12Z
+last-modified:  2025-03-18T13:50:53Z
 source:         RIPE
 
 
@@ -1018,9 +1069,6 @@ import:         from AS31499
 import:         from AS34879
                 action pref=100;
                 accept AS-NGENIX-EKT
-import:         from AS35154
-                action pref=100;
-                accept AS-KABINET
 import:         from AS36040
                 action pref=100;
                 accept AS-GOOGLE
@@ -1147,8 +1195,6 @@ export:         to AS31499
                 announce AS-EKTROUTESERVER
 export:         to AS34879
                 announce AS-EKTROUTESERVER
-export:         to AS35154
-                announce AS-EKTROUTESERVER
 export:         to AS36040
                 announce AS-EKTROUTESERVER
 export:         to AS39684
@@ -1230,7 +1276,7 @@ remarks:        * -------------------------------------------------------------
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-02-17T12:09:23Z
+last-modified:  2025-03-19T12:12:23Z
 source:         RIPE # Filtered
 
 
@@ -2770,9 +2816,6 @@ import:         from AS5431
 import:         from AS5467
                 action pref=100;
                 accept AS-MIPT
-import:         from AS5518
-                action pref=100;
-                accept AS-TELIANETLV
 import:         from AS5523
                 action pref=100;
                 accept AS-RMT
@@ -3868,9 +3911,6 @@ import:         from AS59693
 import:         from AS59883
                 action pref=100;
                 accept AS59883
-import:         from AS60067
-                action pref=100;
-                accept AS60067
 import:         from AS60068
                 action pref=100;
                 accept AS-CDN77
@@ -4024,6 +4064,9 @@ import:         from AS198076
 import:         from AS198297
                 action pref=100;
                 accept AS-UL-COM-Media
+import:         from AS198310
+                action pref=100;
+                accept AS198310:AS-MOLNIYA
 import:         from AS198367
                 action pref=100;
                 accept AS-INKOTELECOM
@@ -4033,9 +4076,6 @@ import:         from AS198539
 import:         from AS198610
                 action pref=100;
                 accept AS-BEGET
-import:         from AS199008
-                action pref=100;
-                accept AS199008:AS-TVSPUTNIK
 import:         from AS199020
                 action pref=100;
                 accept AS-AVANTRU
@@ -4111,9 +4151,6 @@ import:         from AS205530
 import:         from AS205638
                 action pref=100;
                 accept AS205638
-import:         from AS206011
-                action pref=100;
-                accept AS206011:AS-FREEDOM-KRD
 import:         from AS206295
                 action pref=100;
                 accept AS206295
@@ -4224,8 +4261,6 @@ export:         to AS5429
 export:         to AS5431
                 announce AS-MSKROUTESERVER
 export:         to AS5467
-                announce AS-MSKROUTESERVER
-export:         to AS5518
                 announce AS-MSKROUTESERVER
 export:         to AS5523
                 announce AS-MSKROUTESERVER
@@ -4957,8 +4992,6 @@ export:         to AS59693
                 announce AS-MSKROUTESERVER
 export:         to AS59883
                 announce AS-MSKROUTESERVER
-export:         to AS60067
-                announce AS-MSKROUTESERVER
 export:         to AS60068
                 announce AS-MSKROUTESERVER
 export:         to AS60072
@@ -5061,13 +5094,13 @@ export:         to AS198076
                 announce AS-MSKROUTESERVER
 export:         to AS198297
                 announce AS-MSKROUTESERVER
+export:         to AS198310
+                announce AS-MSKROUTESERVER
 export:         to AS198367
                 announce AS-MSKROUTESERVER
 export:         to AS198539
                 announce AS-MSKROUTESERVER
 export:         to AS198610
-                announce AS-MSKROUTESERVER
-export:         to AS199008
                 announce AS-MSKROUTESERVER
 export:         to AS199020
                 announce AS-MSKROUTESERVER
@@ -5118,8 +5151,6 @@ export:         to AS205063
 export:         to AS205530
                 announce AS-MSKROUTESERVER
 export:         to AS205638
-                announce AS-MSKROUTESERVER
-export:         to AS206011
                 announce AS-MSKROUTESERVER
 export:         to AS206295
                 announce AS-MSKROUTESERVER
@@ -5180,7 +5211,7 @@ export:         to AS213624
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-03-14T13:40:43Z
+last-modified:  2025-03-19T13:55:25Z
 source:         RIPE
 
 
