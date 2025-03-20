@@ -1713,6 +1713,8 @@ import:         from AS34665 action pref=100; accept AS-PINDC
 export:         to AS34665 announce ANY
 mp-import:      from AS34665 action pref=100; accept AS-PINDC
 mp-export:      to AS34665 announce ANY
+import:         from AS57742 action pref=100; accept AS57742
+export:         to AS57742 announce ANY
 import:         from AS42260 action pref=100; accept AS42260
 export:         to AS42260 announce {0.0.0.0/0}
 mp-import:      from AS42260 action pref=100; accept AS42260
@@ -2693,6 +2695,10 @@ import:         from AS199179 action pref=100; accept AS199179
 export:         to AS199179 announce {0.0.0.0/0}
 import:         from AS201394 action pref=100; accept AS201394
 export:         to AS201394 announce {0.0.0.0/0}
+import:         from AS49395 action pref=100; accept AS49395:AS-RTCLOUD-3RD
+export:         to AS49395 announce ANY
+mp-import:      from AS49395 action pref=100; accept AS49395:AS-RTCLOUD-3RD
+mp-export:      to AS49395 announce ANY
 import:         from AS15848 action pref=100; accept AS15848
 export:         to AS15848 announce ANY
 import:         from AS44915 action pref=100; accept AS44915
@@ -3451,6 +3457,8 @@ import:         from AS50341 action pref=100; accept AS50341
 export:         to AS50341 announce ANY
 import:         from AS50342 action pref=100; accept AS50342
 export:         to AS50342 announce ANY
+import:         from AS213435 action pref=100; accept AS213435
+export:         to AS213435 announce {0.0.0.0/0}
 import:         from AS56480 action pref=100; accept AS-PWRS
 export:         to AS56480 announce ANY
 import:         from AS56686 action pref=100; accept AS56686
@@ -5715,7 +5723,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-03-14T10:26:45Z
+last-modified:  2025-03-19T12:02:27Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
