@@ -31,29 +31,35 @@ remarks:        ************ IPv4 Routing Policy ************
 remarks:        =============================================
 remarks:        UPLINKS
 remarks:        ---------------------------------------------
-import:         from AS174 accept ANY
 import:         from AS3216 accept ANY
 import:         from AS12389 accept ANY
 import:         from AS20485 accept ANY
-import:         from AS3356 accept ANY
 import:         from AS9002 accept ANY
 import:         from AS201706 accept ANY
-export:         to AS174 announce AS-CIREX
+import:         from AS20764 accept ANY
 export:         to AS3216 announce AS-CIREX
 export:         to AS12389 announce AS-CIREX
 export:         to AS20485 announce AS-CIREX
-export:         to AS3356 announce AS-CIREX
 export:         to AS9002 announce AS-CIREX
 export:         to AS201706 announce AS-CIREX
+export:         to AS20764 announce AS-CIREX
 remarks:        ---------------------------------------------
 remarks:        PEERS
 remarks:        ---------------------------------------------
-import:         from AS6695 accept AS-DECIX
-import:         from AS8631 accept AS-MSKROUTESERVER
-import:         from AS203921 accept AS-ELBA-IX-ROUTESERVER
-export:         to AS6695 announce AS-CIREX
+import:         from AS3216 accept AS-GLOBAL-IX
+import:         from AS50952 accept AS-DATA-IX
+import:         from AS8631 accept AS-MSK-IX
+import:         from AS49869 accept AS-PITER-IX-MSK
+import:         from AS50817 accept AS-PITER-IX-SPB
+import:         from AS48193 accept AS-PITER-IX-FRA
+import:         from AS39607 accept AS-PITER-IX-HEL
+export:         to AS31500 announce AS-CIREX
+export:         to AS50952 announce AS-CIREX
 export:         to AS8631 announce AS-CIREX
-export:         to AS203921 announce AS-CIREX
+export:         to AS49869 announce AS-CIREX
+export:         to AS50817 announce AS-CIREX
+export:         to AS48193 announce AS-CIREX
+export:         to AS39607 announce AS-CIREX
 remarks:        ---------------------------------------------
 remarks:        CUSTOMERS
 remarks:        ---------------------------------------------
@@ -293,18 +299,12 @@ mp-import:      afi ipv6.unicast from AS3216 action pref=50; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS-CIREX-IPV6
 mp-import:      afi ipv6.unicast from AS20485 action pref=50; accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-CIREX-IPV6
-mp-import:      afi ipv6.unicast from AS20485 action pref=50; accept ANY
-mp-export:      afi ipv6.unicast to AS20485 announce AS-CIREX-IPV6
-mp-import:      afi ipv6.unicast from AS8359 action pref=50; accept ANY
-mp-export:      afi ipv6.unicast to AS8359 announce AS-CIREX-IPV6
+mp-import:      afi ipv6.unicast from AS20764 action pref=50; accept ANY
+mp-export:      afi ipv6.unicast to AS20764 announce AS-CIREX-IPV6
 remarks:        --------------------------------------------------------------
 remarks:        PEERS
 remarks:        --------------------------------------------------------------
-mp-import:      afi ipv6.unicast from AS6695 action pref=90; accept AS-DECIX-IPV6
-mp-export:      afi ipv6.unicast to AS6695 announce AS-CIREX-IPV6
-mp-import:      afi ipv6.unicast from AS203921 action pref=80; accept AS-ELBA-IX-ROUTESERVER
-mp-export:      afi ipv6.unicast to AS203921 announce AS-CIREX-IPV6
-mp-import:      afi ipv6.unicast from AS8631 action pref=120; accept AS-MSKROUTESERVER
+mp-import:      afi ipv6.unicast from AS8631 action pref=120; accept AS-MSK-IX
 mp-export:      afi ipv6.unicast to AS8631 announce AS-CIREX-IPV6
 remarks:        --------------------------------------------------------------
 remarks:        CUSTOMERS
@@ -423,7 +423,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CIREX-MNT
 created:        2012-11-12T09:44:39Z
-last-modified:  2025-03-09T18:05:48Z
+last-modified:  2025-03-21T11:03:51Z
 source:         RIPE # Filtered
 
 
