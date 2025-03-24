@@ -15,12 +15,16 @@ aut-num:        AS213787
 as-name:        CLOUDRACK
 org:            ORG-IEMG1-RIPE
 sponsoring-org: ORG-SO181-RIPE
+remarks:        Uplinks:
+remarks:        === INETCOM ===
 import:         from AS35598 accept ANY
-export:         to AS35598 announce AS213787
-import:         from AS29076 accept ANY
-export:         to AS29076 announce AS213787
+export:         to AS35598 announce AS213787:AS-CLOUDRACK
+remarks:        === TEAM-HOST ===
+import:         from AS202984 accept ANY
+export:         to AS202984 announce AS213787:AS-CLOUDRACK
+remarks:        === DINET ===
 import:         from AS12695 accept ANY
-export:         to AS12695 announce AS213787
+export:         to AS12695 announce AS213787:AS-CLOUDRACK
 admin-c:        AIMG1-RIPE
 admin-c:        AIMG1-RIPE
 tech-c:         AIMG1-RIPE
@@ -28,7 +32,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CLOUDRACK-MNT
 created:        2024-11-29T13:12:27Z
-last-modified:  2025-02-03T08:42:56Z
+last-modified:  2025-03-22T10:03:41Z
 source:         RIPE
 
 organisation:   ORG-IEMG1-RIPE

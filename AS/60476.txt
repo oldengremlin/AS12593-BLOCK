@@ -44,10 +44,6 @@ remarks:        =========================================
 remarks:        direct Peers
 remarks:        -----------------------------------------
 remarks:
-export:         to AS38082 announce AS-MYCOM
-import:         from AS38082 accept AS-MAINT-AP-TRUEINTERNET
-mp-export:      afi ipv6.unicast to AS38082 announce AS-MYCOM;
-mp-import:      afi ipv6.unicast from AS38082 accept AS-MAINT-AP-TRUEINTERNET;
 export:         to AS45758 announce AS-MYCOM
 import:         from AS45758 accept AS-TRIPLETNET
 mp-export:      afi ipv6.unicast to AS45758 announce AS-MYCOM;
@@ -217,6 +213,10 @@ export:         to AS10122 announce AS-MYCOM
 import:         from AS10122 accept AS10122
 mp-export:      afi ipv6.unicast to AS10122 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS10122 accept AS10122;
+export:         to AS8551 announce AS-MYCOM
+import:         from AS8551 accept AS-BEZEQINT
+mp-export:      afi ipv6.unicast to AS8551 announce AS-MYCOM;
+mp-import:      afi ipv6.unicast from AS8551 accept AS-BEZEQINT;
 remarks:
 remarks:        =========================================
 remarks:        AMS-IX Peers
@@ -272,10 +272,6 @@ export:         to AS16298 announce AS-MYCOM
 import:         from AS16298 accept AS-INTERBOX
 mp-export:      afi ipv6.unicast to AS16298 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS16298 accept AS-INTERBOX;
-export:         to AS8551 announce AS-MYCOM
-import:         from AS8551 accept AS-BEZEQINT
-mp-export:      afi ipv6.unicast to AS8551 announce AS-MYCOM;
-mp-import:      afi ipv6.unicast from AS8551 accept AS-BEZEQINT;
 export:         to AS714 announce AS-MYCOM
 import:         from AS714 accept AS-APPLE
 mp-export:      afi ipv6.unicast to AS714 announce AS-MYCOM;
@@ -447,7 +443,6 @@ remarks:        161 ROMTEL (AS9050)
 remarks:        165 Tripletnet (AS45758)
 remarks:        169 FPT (AS18403)
 remarks:        184 RDSNET (AS8708)
-remarks:        198 True International Gateway aka TIG (AS38082)
 remarks:        -------------------------------------------------------------
 remarks:
 remarks:        Other 60476:* communities are deleted.
@@ -493,7 +488,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-07-12T09:26:04Z
-last-modified:  2025-03-19T11:08:55Z
+last-modified:  2025-03-20T08:55:15Z
 source:         RIPE # Filtered
 
 organisation:   ORG-DTPL1-RIPE

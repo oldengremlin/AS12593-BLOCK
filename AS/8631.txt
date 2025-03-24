@@ -579,9 +579,6 @@ import:         from AS41338
 import:         from AS41446
                 action pref=100;
                 accept AS41446
-import:         from AS41475
-                action pref=100;
-                accept AS-SDK
 import:         from AS41601
                 action pref=100;
                 accept AS-OBLTELECOM
@@ -840,9 +837,6 @@ import:         from AS48287
 import:         from AS48293
                 action pref=100;
                 accept AS-UNIONTEL-RU
-import:         from AS48347
-                action pref=100;
-                accept AS-MTW
 import:         from AS48349
                 action pref=100;
                 accept AS48349
@@ -1059,9 +1053,6 @@ import:         from AS52048
 import:         from AS52091
                 action pref=100;
                 accept AS-LEVEL-MSK
-import:         from AS52193
-                action pref=100;
-                accept AS-EVROKONTAKT
 import:         from AS54994
                 action pref=100;
                 accept AS54994:AS-ALL
@@ -1338,6 +1329,9 @@ import:         from AS199020
 import:         from AS199599
                 action pref=100;
                 accept AS-CIREX
+import:         from AS199624
+                action pref=100;
+                accept AS199624:AS-DKTEL
 import:         from AS199669
                 action pref=100;
                 accept AS-ATLEX
@@ -1491,6 +1485,9 @@ import:         from AS213499
 import:         from AS213624
                 action pref=100;
                 accept AS213624
+import:         from AS216334
+                action pref=100;
+                accept AS216334
 import:         from AS266925
                 action pref=100;
                 accept AS-UPIX
@@ -1856,8 +1853,6 @@ export:         to AS41338
                 announce AS-MSKROUTESERVER
 export:         to AS41446
                 announce AS-MSKROUTESERVER
-export:         to AS41475
-                announce AS-MSKROUTESERVER
 export:         to AS41601
                 announce AS-MSKROUTESERVER
 export:         to AS41617
@@ -2030,8 +2025,6 @@ export:         to AS48287
                 announce AS-MSKROUTESERVER
 export:         to AS48293
                 announce AS-MSKROUTESERVER
-export:         to AS48347
-                announce AS-MSKROUTESERVER
 export:         to AS48349
                 announce AS-MSKROUTESERVER
 export:         to AS48366
@@ -2175,8 +2168,6 @@ export:         to AS52008
 export:         to AS52048
                 announce AS-MSKROUTESERVER
 export:         to AS52091
-                announce AS-MSKROUTESERVER
-export:         to AS52193
                 announce AS-MSKROUTESERVER
 export:         to AS54994
                 announce AS-MSKROUTESERVER
@@ -2362,6 +2353,8 @@ export:         to AS199020
                 announce AS-MSKROUTESERVER
 export:         to AS199599
                 announce AS-MSKROUTESERVER
+export:         to AS199624
+                announce AS-MSKROUTESERVER
 export:         to AS199669
                 announce AS-MSKROUTESERVER
 export:         to AS200044
@@ -2464,10 +2457,12 @@ export:         to AS213499
                 announce AS-MSKROUTESERVER
 export:         to AS213624
                 announce AS-MSKROUTESERVER
+export:         to AS216334
+                announce AS-MSKROUTESERVER
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-03-19T13:55:25Z
+last-modified:  2025-03-21T13:53:29Z
 source:         RIPE
 
 organisation:   ORG-JCE1-RIPE
