@@ -1011,6 +1011,9 @@ import:         from AS51092
 import:         from AS51178
                 action pref=100;
                 accept AS-AVANTEL-SPB
+import:         from AS51200
+                action pref=100;
+                accept AS-DI-DI
 import:         from AS51218
                 action pref=100;
                 accept AS51218
@@ -1485,6 +1488,9 @@ import:         from AS213499
 import:         from AS213624
                 action pref=100;
                 accept AS213624
+import:         from AS216262
+                action pref=100;
+                accept AS216262
 import:         from AS216334
                 action pref=100;
                 accept AS216334
@@ -2141,6 +2147,8 @@ export:         to AS51092
                 announce AS-MSKROUTESERVER
 export:         to AS51178
                 announce AS-MSKROUTESERVER
+export:         to AS51200
+                announce AS-MSKROUTESERVER
 export:         to AS51218
                 announce AS-MSKROUTESERVER
 export:         to AS51297
@@ -2457,12 +2465,14 @@ export:         to AS213499
                 announce AS-MSKROUTESERVER
 export:         to AS213624
                 announce AS-MSKROUTESERVER
+export:         to AS216262
+                announce AS-MSKROUTESERVER
 export:         to AS216334
                 announce AS-MSKROUTESERVER
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-03-21T13:53:29Z
+last-modified:  2025-03-26T09:55:03Z
 source:         RIPE
 
 organisation:   ORG-JCE1-RIPE
