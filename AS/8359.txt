@@ -1865,6 +1865,8 @@ import:         from AS51397 action pref=105; accept AS51397
 export:         to AS51397 announce ANY
 import:         from AS51428 action pref=140; accept AS51428
 export:         to AS51428 announce ANY
+import:         from AS51437 action pref=105; accept AS51437
+export:         to AS51437 announce ANY
 import:         from AS51470 action pref=140; accept AS51470
 export:         to AS51470 announce ANY
 import:         from AS51471 action pref=105; accept AS51471
@@ -2367,6 +2369,8 @@ import:         from AS203968 action pref=105; accept AS-AITICON
 export:         to AS203968 announce ANY
 import:         from AS204231 action pref=105; accept AS204231
 export:         to AS204231 announce ANY
+import:         from AS204049 action pref=140; accept AS204049:AS-3DATA-BA81
+export:         to AS204049 announce ANY
 import:         from AS204292 action pref=140; accept AS204292
 export:         to AS204292 announce ANY
 import:         from AS204297 action pref=105; accept AS204297
@@ -2512,6 +2516,7 @@ remarks:        8359:236x when announcing to Limelight Networks (AS22822)
 remarks:        8359:237x when announcing to Valve Corp (AS32590)
 remarks:        8359:238x when announcing to Facebook (AS32934)
 remarks:        8359:239x when announcing to Verizon Digital Media (EdgeCast)
+remarks:        8359:240x when announcing to G-Core (AS199524)
 remarks:        8359:250x when announcing to Amazon (AS16509)
 remarks:        8359:251x when announcing to China Telecom (AS4134)
 remarks:        8359:252x when announcing to Akamai (AS20940)
@@ -2522,7 +2527,7 @@ remarks:        8359:256x when announcing to Fastly (AS54113)
 remarks:        8359:257x when announcing to Telegram (AS62041)
 remarks:        8359:258x when announcing to Roblox (AS22697)
 remarks:        8359:259x when announcing to CDN77 (AS60068)
-remarks:        8359:209x when announcing to any of the above (8359:20xx,8359:22xx, 8359:23xx, 8359:25xx)(International peers)
+remarks:        8359:209x when announcing to any of the above (8359:20xx,8359:22xx, 8359:23xx, 8359:24xx, 8359:25xx)(International peers)
 remarks:        8359:210x when announcing to MSK-IX peers
 remarks:        8359:211x when announcing to Rostelecom (AS12389)
 remarks:        8359:212x when announcing to Beeline (AS3216)
@@ -2554,6 +2559,7 @@ remarks:        5005 - Ukrtelecom
 remarks:        5006 - DE-CIX, Frankfurt
 remarks:        5007 - Lumen (CenturyLink / Level3)
 remarks:        5008 - AMS-IX, Amsterdam
+remarks:        5009 - G-Core (AS199524)
 remarks:        5020 - reserved
 remarks:        5021 - Netnod, Stockholm
 remarks:        5022 - LINX, London
@@ -2664,7 +2670,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:20:57Z
-last-modified:  2025-03-14T14:58:32Z
+last-modified:  2025-03-25T12:02:56Z
 source:         RIPE
 
 organisation:   ORG-ZM1-RIPE

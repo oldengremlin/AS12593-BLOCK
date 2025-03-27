@@ -342,9 +342,6 @@ remarks:
 import:         from AS12418 action pref=50; accept AS-QUANTUM;
 export:         to AS12418 announce AS-CLOUD-IX-PRO;
 remarks:
-import:         from AS51028 action pref=50; accept AS-SVOLS;
-export:         to AS51028 announce AS-CLOUD-IX-LOCAL;
-remarks:
 import:         from AS24955 action pref=50; accept AS-UBN;
 export:         to AS24955 announce AS-CLOUD-IX-LOCAL;
 remarks:
@@ -734,7 +731,7 @@ import:         from AS43727 action pref=50; accept AS-SETKT;
 export:         to AS43727 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
 import:         from AS62410 action pref=50; accept AS-SET-LN;
-export:         to AS62410 announce ANY;
+export:         to AS62410 announce AS-CLOUD-IX-PRO;
 remarks:
 import:         from AS30953 action pref=50; accept AS-SET-PROCENTER;
 export:         to AS30953 announce ANY;
@@ -840,7 +837,7 @@ import:         from AS21030 action pref=50; accept AS21030;
 export:         to AS21030 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 remarks:
 import:         from AS210447 action pref=50; accept AS210447;
-export:         to AS210447 announce ANY;
+export:         to AS210447 announce {0.0.0.0/0};
 remarks:
 import:         from AS210494 action pref=50; accept AS210494;
 export:         to AS210494 announce {0.0.0.0/0};
@@ -1017,9 +1014,6 @@ mp-export:      afi ipv6.unicast to AS49218 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS12418 action pref=50; accept AS-QUANTUM;
 mp-export:      afi ipv6.unicast to AS12418 announce any;
-remarks:
-mp-import:      afi ipv6.unicast from AS51028 action pref=50; accept AS-SVOLS;
-mp-export:      afi ipv6.unicast to AS51028 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS24955 action pref=50; accept AS-UBN;
 mp-export:      afi ipv6.unicast to AS24955 announce any;
@@ -1799,7 +1793,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-03-20T21:00:03Z
+last-modified:  2025-03-26T21:00:03Z
 source:         RIPE # Filtered
 
 

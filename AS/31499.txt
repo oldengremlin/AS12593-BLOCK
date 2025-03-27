@@ -40,12 +40,6 @@ export:         to AS5563 announce AS-MOTIV
 remarks:        -- MSK-IX --
 import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-MOTIV
-remarks:        -- Yandex --
-import:         from AS13238 action pref=100; accept AS-YANDEX
-export:         to AS13238 announce AS-MOTIV
-remarks:        -- TELENET --
-import:         from AS35154 action pref=100; accept AS-KABINET
-export:         to AS35154 announce AS-MOTIV
 remarks:        -- NSK-IX --
 import:         from AS42403 action pref=100; accept AS-NSKROUTESERVER
 export:         to AS42403 announce AS-MOTIV
@@ -76,6 +70,9 @@ export:         to AS50952 announce AS-MOTIV
 remarks:        -- K-Telecom --
 import:         from AS48642 action pref=100; accept AS48642
 export:         to AS48642 announce AS-MOTIV
+remarks:        -- OKKO --
+import:         from AS211609 action pref=100; accept AS-Okko
+export:         to AS211609 announce AS-MOTIV
 descr:          +-------------------------------------------------------
 descr:          | Clients
 descr:          +-------------------------------------------------------
@@ -173,7 +170,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         YCC-MNT
 mnt-by:         MNT-GENE1
 created:        2004-05-28T13:22:52Z
-last-modified:  2022-09-23T11:34:09Z
+last-modified:  2025-03-24T10:20:01Z
 source:         RIPE
 
 organisation:   ORG-EL8-RIPE

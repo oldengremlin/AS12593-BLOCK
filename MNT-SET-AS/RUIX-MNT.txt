@@ -3755,6 +3755,9 @@ import:         from AS51092
 import:         from AS51178
                 action pref=100;
                 accept AS-AVANTEL-SPB
+import:         from AS51200
+                action pref=100;
+                accept AS-DI-DI
 import:         from AS51218
                 action pref=100;
                 accept AS51218
@@ -4229,6 +4232,9 @@ import:         from AS213499
 import:         from AS213624
                 action pref=100;
                 accept AS213624
+import:         from AS216262
+                action pref=100;
+                accept AS216262
 import:         from AS216334
                 action pref=100;
                 accept AS216334
@@ -4885,6 +4891,8 @@ export:         to AS51092
                 announce AS-MSKROUTESERVER
 export:         to AS51178
                 announce AS-MSKROUTESERVER
+export:         to AS51200
+                announce AS-MSKROUTESERVER
 export:         to AS51218
                 announce AS-MSKROUTESERVER
 export:         to AS51297
@@ -5201,12 +5209,14 @@ export:         to AS213499
                 announce AS-MSKROUTESERVER
 export:         to AS213624
                 announce AS-MSKROUTESERVER
+export:         to AS216262
+                announce AS-MSKROUTESERVER
 export:         to AS216334
                 announce AS-MSKROUTESERVER
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-03-21T13:53:29Z
+last-modified:  2025-03-26T09:55:03Z
 source:         RIPE
 
 
@@ -5310,7 +5320,7 @@ import:         from AS45046 action pref=130; accept AS45046
 export:         to AS45046 announce ANY
 import:         from AS199009 action pref=130; accept AS199009
 export:         to AS199009 announce ANY
-import:         from AS61992 action pref=130; accept AS61992
+import:         from AS61992 action pref=130; accept AS61992:AS-UCI
 export:         to AS61992 announce ANY
 import:         from AS44554 action pref=130; accept AS44554
 export:         to AS44554 announce ANY
@@ -5326,6 +5336,8 @@ import:         from AS207207 action pref=130; accept AS207207
 export:         to AS207207 announce ANY
 import:         from AS214612 action pref=130; accept AS214612
 export:         to AS214612 announce ANY
+import:         from AS50687 action pref=130; accept AS50687
+export:         to AS50687 announce ANY
 admin-c:        RA-ORG
 tech-c:         RN1863-RIPE
 status:         ASSIGNED
@@ -5333,7 +5345,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2024-12-11T13:44:54Z
+last-modified:  2025-03-25T10:12:04Z
 source:         RIPE # Filtered
 
 
