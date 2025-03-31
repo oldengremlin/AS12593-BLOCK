@@ -155,6 +155,8 @@ import:         from AS49037 action pref=120; accept AS-PG19
 export:         to AS49037 announce AS-MACOMNET
 import:         from AS13002 action pref=120; accept AS-ISIX
 export:         to AS13002 announce AS-MACOMNET
+import:         from AS216262 action pref=120; accept AS216262
+export:         to AS216262 announce AS-MACOMNET
 remarks:        -------------------cust-----------------------------
 import:         from  AS213478 action pref=120; accept  AS213478
 export:         to  AS213478 announce ANY
@@ -329,6 +331,8 @@ mp-import:      afi ipv6.unicast from AS15599 action pref=120; accept AS15599
 mp-export:      afi ipv6.unicast to AS15599 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS49037 action pref=120; accept AS-PG19
 mp-export:      afi ipv6.unicast to AS49037 announce AS-MACOMNET
+mp-import:      afi ipv6.unicast from AS216262 action pref=120; accept AS216262
+mp-export:      afi ipv6.unicast to AS216262 announce AS-MACOMNET
 remarks:        -------------------------------------------------------
 remarks:        ipv6 customers
 remarks:        -------------------------------------------------------
@@ -375,7 +379,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MACOMNET-MNT
 created:        2002-09-10T13:31:17Z
-last-modified:  2025-02-26T07:06:46Z
+last-modified:  2025-03-28T13:42:40Z
 source:         RIPE
 
 organisation:   ORG-MTC3-RIPE

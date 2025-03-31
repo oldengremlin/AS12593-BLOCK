@@ -1343,6 +1343,10 @@ import:         from AS2906 action pref=87; accept AS-NFLX
 export:         to AS2906 announce AS-SOVAM
 mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
 mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
+import:         from AS63023 action pref=87; accept AS-GTHOST
+export:         to AS63023 announce AS-SOVAM
+mp-import:      afi ipv6 from AS63023 action pref=87; accept AS-GTHOST
+mp-export:      afi ipv6 to AS63023 announce AS-SOVAM-V6
 import:         from AS396986 action pref=87; accept AS-BYTEDANCE
 export:         to AS396986 announce AS-SOVAM
 mp-import:      afi ipv6 from AS396986 action pref=87; accept AS-BYTEDANCE
@@ -1783,6 +1787,8 @@ mp-import:      from AS57494 action pref=100; accept AS-ADMAN
 mp-export:      to AS57494 announce ANY
 import:         from AS200627 action pref=100; accept AS200627
 export:         to AS200627 announce ANY
+import:         from AS207340 action pref=100; accept AS207340
+export:         to AS207340 announce ANY
 import:         from AS39578 action pref=100; accept AS39578
 export:         to AS39578 announce ANY
 import:         from AS21403 action pref=100; accept AS21403
@@ -2311,6 +2317,8 @@ import:         from AS209206 action pref=100; accept AS209206
 export:         to AS209206 announce ANY
 import:         from AS49673 action pref=100; accept AS-TRUENETWORK
 export:         to AS49673 announce ANY
+import:         from AS214780 action pref=100; accept AS214780
+export:         to AS214780 announce ANY
 import:         from AS56340 action pref=100; accept AS56340
 export:         to AS56340 announce ANY
 import:         from AS41388 action pref=100; accept AS41388
@@ -5292,6 +5300,7 @@ remarks:        3216:524x When advertising to TransTelecom private peer...
 remarks:        3216:525x When advertising to Yandex private peer...
 remarks:        3216:526x When advertising to Corbina private peer...
 remarks:        3216:527x When advertising to Comcor private peer...
+remarks:        3216:528x When advertising to GlobalTelehost...
 remarks:        3216:529x When advertising to Rostelecom private peer...
 remarks:        3216:530x When advertising to Vkontakte (AS47542) private peer...
 remarks:        3216:531x When advertising to DATAIX (RU) peers...
@@ -5303,6 +5312,7 @@ remarks:        3216:537x When advertising to SOLNTCETELEKOM private peer...
 remarks:        3216:538x When advertising to Er-telecom private peer...
 remarks:        3216:539x When advertising to Mail.ru private peer...
 remarks:        3216:540x When advertising to DigitalOcean private peer...
+remarks:        3216:541x When advertising to AEZA private peer...
 remarks:        3216:542x When advertising to Roblox private peer...
 remarks:        3216:543x When advertising to Verizon Digital Media Services (EdgeCast) private peer...
 remarks:        3216:544x When advertising to Melbikomas AS56630 private peer...
@@ -5488,6 +5498,7 @@ remarks:        3216:3230 ByteDance(Frankfurt)
 remarks:        3216:3231 FDC Servers
 remarks:        3216:3232 DigitalOcean
 remarks:        3216:3233 AEZA
+remarks:        3216:3234 GlobalTelehost(Frankfurt)
 remarks:        --------- Community of our networks  ---------------------------
 remarks:        3216:4000 Originated in any region, specifically:
 remarks:        3216:4001 Originated in SPB
@@ -5732,7 +5743,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-03-26T14:04:38Z
+last-modified:  2025-03-28T08:32:43Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE
