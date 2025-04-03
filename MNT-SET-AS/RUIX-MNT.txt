@@ -2960,9 +2960,6 @@ import:         from AS13002
 import:         from AS13094
                 action pref=100;
                 accept AS-MILECOM-RS
-import:         from AS13178
-                action pref=100;
-                accept AS-DIGCOMM
 import:         from AS13215
                 action pref=100;
                 accept AS-CONVEYPLUS
@@ -3850,7 +3847,7 @@ import:         from AS57164
                 accept AS-HELITELE
 import:         from AS57233
                 action pref=100;
-                accept AS57233
+                accept AS57233:AS-KOMPA
 import:         from AS57304
                 action pref=100;
                 accept AS-RETN6
@@ -3896,9 +3893,6 @@ import:         from AS58715
 import:         from AS59533
                 action pref=100;
                 accept AS59533
-import:         from AS59600
-                action pref=100;
-                accept AS-ATLASTELECOM
 import:         from AS59624
                 action pref=100;
                 accept AS-KIAE-GRID
@@ -4363,8 +4357,6 @@ export:         to AS12993
 export:         to AS13002
                 announce AS-MSKROUTESERVER
 export:         to AS13094
-                announce AS-MSKROUTESERVER
-export:         to AS13178
                 announce AS-MSKROUTESERVER
 export:         to AS13215
                 announce AS-MSKROUTESERVER
@@ -4988,8 +4980,6 @@ export:         to AS58715
                 announce AS-MSKROUTESERVER
 export:         to AS59533
                 announce AS-MSKROUTESERVER
-export:         to AS59600
-                announce AS-MSKROUTESERVER
 export:         to AS59624
                 announce AS-MSKROUTESERVER
 export:         to AS59693
@@ -5221,7 +5211,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-03-28T13:54:12Z
+last-modified:  2025-04-02T09:54:49Z
 source:         RIPE
 
 
