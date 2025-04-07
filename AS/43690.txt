@@ -139,6 +139,9 @@ import:         from AS34879
 import:         from AS35000
                 action pref=100;
                 accept AS-PROMETEY AS-PROMETEY-V6
+import:         from AS35271
+                action pref=100;
+                accept AS35271
 import:         from AS35807
                 action pref=100;
                 accept AS-SKYNET-SPB
@@ -387,6 +390,8 @@ export:         to AS34879
                 announce AS-SPBROUTESERVER
 export:         to AS35000
                 announce AS-SPBROUTESERVER
+export:         to AS35271
+                announce AS-SPBROUTESERVER
 export:         to AS35807
                 announce AS-SPBROUTESERVER
 export:         to AS39087
@@ -510,7 +515,7 @@ export:         to AS211609
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-03-14T14:11:42Z
+last-modified:  2025-04-03T10:18:21Z
 source:         RIPE
 
 organisation:   ORG-JCE1-RIPE

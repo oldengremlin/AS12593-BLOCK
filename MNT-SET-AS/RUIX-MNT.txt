@@ -697,9 +697,6 @@ import:         from AS40995
 import:         from AS41082
                 action pref=100;
                 accept AS-URALTRANSCOM
-import:         from AS41143
-                action pref=100;
-                accept AS41143
 import:         from AS41794
                 action pref=100;
                 accept AS-SIBSET-BARN
@@ -793,9 +790,6 @@ import:         from AS201119
 import:         from AS202498
                 action pref=100;
                 accept AS202498
-import:         from AS203784
-                action pref=100;
-                accept AS203784
 import:         from AS204720
                 action pref=100;
                 accept AS-CDNETWORKSRU
@@ -880,8 +874,6 @@ export:         to AS40995
                 announce AS-NSKROUTESERVER
 export:         to AS41082
                 announce AS-NSKROUTESERVER
-export:         to AS41143
-                announce AS-NSKROUTESERVER
 export:         to AS41794
                 announce AS-NSKROUTESERVER
 export:         to AS42139
@@ -944,8 +936,6 @@ export:         to AS201119
                 announce AS-NSKROUTESERVER
 export:         to AS202498
                 announce AS-NSKROUTESERVER
-export:         to AS203784
-                announce AS-NSKROUTESERVER
 export:         to AS204720
                 announce AS-NSKROUTESERVER
 export:         to AS205063
@@ -977,7 +967,7 @@ remarks:        for more information on the NSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-03-11T05:41:57Z
+last-modified:  2025-04-04T05:44:48Z
 source:         RIPE # Filtered
 
 
@@ -1409,6 +1399,9 @@ import:         from AS34879
 import:         from AS35000
                 action pref=100;
                 accept AS-PROMETEY AS-PROMETEY-V6
+import:         from AS35271
+                action pref=100;
+                accept AS35271
 import:         from AS35807
                 action pref=100;
                 accept AS-SKYNET-SPB
@@ -1657,6 +1650,8 @@ export:         to AS34879
                 announce AS-SPBROUTESERVER
 export:         to AS35000
                 announce AS-SPBROUTESERVER
+export:         to AS35271
+                announce AS-SPBROUTESERVER
 export:         to AS35807
                 announce AS-SPBROUTESERVER
 export:         to AS39087
@@ -1780,7 +1775,7 @@ export:         to AS211609
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-03-14T14:11:42Z
+last-modified:  2025-04-03T10:18:21Z
 source:         RIPE
 
 
@@ -3479,6 +3474,9 @@ import:         from AS44943
 import:         from AS44964
                 action pref=100;
                 accept AS-DATAPLANET
+import:         from AS45055
+                action pref=100;
+                accept AS45055
 import:         from AS45102
                 action pref=100;
                 accept AS45102
@@ -4704,6 +4702,8 @@ export:         to AS44943
                 announce AS-MSKROUTESERVER
 export:         to AS44964
                 announce AS-MSKROUTESERVER
+export:         to AS45055
+                announce AS-MSKROUTESERVER
 export:         to AS45102
                 announce AS-MSKROUTESERVER
 export:         to AS47104
@@ -5211,7 +5211,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-04-02T09:54:49Z
+last-modified:  2025-04-04T09:53:53Z
 source:         RIPE
 
 
