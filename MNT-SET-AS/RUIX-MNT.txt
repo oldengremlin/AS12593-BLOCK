@@ -748,9 +748,6 @@ import:         from AS49814
 import:         from AS50166
                 action pref=100;
                 accept AS-RTCLOUD-NSK
-import:         from AS50187
-                action pref=100;
-                accept AS-BWC
 import:         from AS50776
                 action pref=100;
                 accept AS50776
@@ -908,8 +905,6 @@ export:         to AS49814
                 announce AS-NSKROUTESERVER
 export:         to AS50166
                 announce AS-NSKROUTESERVER
-export:         to AS50187
-                announce AS-NSKROUTESERVER
 export:         to AS50776
                 announce AS-NSKROUTESERVER
 export:         to AS50923
@@ -967,7 +962,7 @@ remarks:        for more information on the NSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-04-04T05:44:48Z
+last-modified:  2025-04-09T05:43:24Z
 source:         RIPE # Filtered
 
 
@@ -1399,9 +1394,6 @@ import:         from AS34879
 import:         from AS35000
                 action pref=100;
                 accept AS-PROMETEY AS-PROMETEY-V6
-import:         from AS35271
-                action pref=100;
-                accept AS35271
 import:         from AS35807
                 action pref=100;
                 accept AS-SKYNET-SPB
@@ -1650,8 +1642,6 @@ export:         to AS34879
                 announce AS-SPBROUTESERVER
 export:         to AS35000
                 announce AS-SPBROUTESERVER
-export:         to AS35271
-                announce AS-SPBROUTESERVER
 export:         to AS35807
                 announce AS-SPBROUTESERVER
 export:         to AS39087
@@ -1775,7 +1765,7 @@ export:         to AS211609
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-04-03T10:18:21Z
+last-modified:  2025-04-09T10:17:29Z
 source:         RIPE
 
 
@@ -2937,9 +2927,6 @@ import:         from AS12668
 import:         from AS12695
                 action pref=100;
                 accept AS-DINET AS-DINET-V6
-import:         from AS12714
-                action pref=100;
-                accept AS-TI
 import:         from AS12741
                 action pref=100;
                 accept AS-NETIA-MSK-IX
@@ -3699,9 +3686,6 @@ import:         from AS50060
 import:         from AS50157
                 action pref=100;
                 accept AS50157
-import:         from AS50187
-                action pref=100;
-                accept AS-BWC
 import:         from AS50241
                 action pref=100;
                 accept AS-UNITTEL
@@ -4344,8 +4328,6 @@ export:         to AS12668
                 announce AS-MSKROUTESERVER
 export:         to AS12695
                 announce AS-MSKROUTESERVER
-export:         to AS12714
-                announce AS-MSKROUTESERVER
 export:         to AS12741
                 announce AS-MSKROUTESERVER
 export:         to AS12976
@@ -4852,8 +4834,6 @@ export:         to AS50060
                 announce AS-MSKROUTESERVER
 export:         to AS50157
                 announce AS-MSKROUTESERVER
-export:         to AS50187
-                announce AS-MSKROUTESERVER
 export:         to AS50241
                 announce AS-MSKROUTESERVER
 export:         to AS50254
@@ -5211,7 +5191,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-04-04T09:53:53Z
+last-modified:  2025-04-08T13:48:06Z
 source:         RIPE
 
 

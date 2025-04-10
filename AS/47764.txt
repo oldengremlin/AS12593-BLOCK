@@ -360,6 +360,10 @@ mp-export:      afi ipv6.unicast to AS206011 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS206011 accept AS206011:AS-FREEDOM-KRD;
 export:         to AS43530 announce AS-VKONTAKTE
 import:         from AS43530 accept AS-IRTELCOM-SET
+export:         to AS31214 announce AS-VKONTAKTE
+import:         from AS31214 accept AS-TISDIALOG
+mp-export:      afi ipv6.unicast to AS31214 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31214 accept AS-TISDIALOG;
 remarks:
 remarks:        =========================================
 remarks:        MSK-IX Peers
@@ -684,6 +688,7 @@ remarks:        222 RLine (AS47895)
 remarks:        223 Skynetcom (AS61308)
 remarks:        224 Vgtrk (AS25292)
 remarks:        225 Irtelecom (AS43530)
+remarks:        226 TIS-Dialog (AS31214)
 remarks:        -------------------------------------------------------------
 remarks:
 remarks:        Other 47764:* communities are deleted.
@@ -754,7 +759,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2025-03-20T13:00:37Z
+last-modified:  2025-04-09T16:32:33Z
 source:         RIPE # Filtered
 
 organisation:   ORG-LLCn4-RIPE
