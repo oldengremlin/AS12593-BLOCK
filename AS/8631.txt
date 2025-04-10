@@ -198,9 +198,6 @@ import:         from AS12668
 import:         from AS12695
                 action pref=100;
                 accept AS-DINET AS-DINET-V6
-import:         from AS12714
-                action pref=100;
-                accept AS-TI
 import:         from AS12741
                 action pref=100;
                 accept AS-NETIA-MSK-IX
@@ -960,9 +957,6 @@ import:         from AS50060
 import:         from AS50157
                 action pref=100;
                 accept AS50157
-import:         from AS50187
-                action pref=100;
-                accept AS-BWC
 import:         from AS50241
                 action pref=100;
                 accept AS-UNITTEL
@@ -1605,8 +1599,6 @@ export:         to AS12668
                 announce AS-MSKROUTESERVER
 export:         to AS12695
                 announce AS-MSKROUTESERVER
-export:         to AS12714
-                announce AS-MSKROUTESERVER
 export:         to AS12741
                 announce AS-MSKROUTESERVER
 export:         to AS12976
@@ -2113,8 +2105,6 @@ export:         to AS50060
                 announce AS-MSKROUTESERVER
 export:         to AS50157
                 announce AS-MSKROUTESERVER
-export:         to AS50187
-                announce AS-MSKROUTESERVER
 export:         to AS50241
                 announce AS-MSKROUTESERVER
 export:         to AS50254
@@ -2472,7 +2462,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-04-04T09:53:53Z
+last-modified:  2025-04-08T13:48:06Z
 source:         RIPE
 
 organisation:   ORG-JCE1-RIPE

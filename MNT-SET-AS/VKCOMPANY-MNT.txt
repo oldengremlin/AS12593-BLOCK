@@ -242,8 +242,8 @@ remarks:
 remarks:        -- PITER-IX
 export:         to AS59539 announce AS-VKONTAKTE
 import:         from AS59539 accept AS-PITER-IX-ROV
-export:         to AS59539 announce AS-VKONTAKTE
-import:         from AS59539 accept AS-PITER-IX-ROV
+export:         to AS39304 announce AS-VKONTAKTE
+import:         from AS39304 accept AS-DV-IX
 remarks:
 remarks:        =========================================
 remarks:        direct Peers
@@ -351,6 +351,9 @@ import:         from AS28890 accept AS-INSYS-EKB
 remarks:        -- UGMKTelecom
 export:         to AS41560 announce AS-VKONTAKTE
 import:         from AS41560 accept AS41560
+remarks:        -- Meshnet
+export:         to AS12773 announce AS-VKONTAKTE
+import:         from AS12773 accept AS-MESHNET
 remarks:
 remarks:        =========================================
 remarks:        Partners
@@ -391,7 +394,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2009-08-05T11:34:14Z
-last-modified:  2025-03-11T13:03:14Z
+last-modified:  2025-04-07T14:22:02Z
 source:         RIPE # Filtered
 
 
@@ -1444,6 +1447,10 @@ mp-export:      afi ipv6.unicast to AS206011 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS206011 accept AS206011:AS-FREEDOM-KRD;
 export:         to AS43530 announce AS-VKONTAKTE
 import:         from AS43530 accept AS-IRTELCOM-SET
+export:         to AS31214 announce AS-VKONTAKTE
+import:         from AS31214 accept AS-TISDIALOG
+mp-export:      afi ipv6.unicast to AS31214 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31214 accept AS-TISDIALOG;
 remarks:
 remarks:        =========================================
 remarks:        MSK-IX Peers
@@ -1768,6 +1775,7 @@ remarks:        222 RLine (AS47895)
 remarks:        223 Skynetcom (AS61308)
 remarks:        224 Vgtrk (AS25292)
 remarks:        225 Irtelecom (AS43530)
+remarks:        226 TIS-Dialog (AS31214)
 remarks:        -------------------------------------------------------------
 remarks:
 remarks:        Other 47764:* communities are deleted.
@@ -1838,7 +1846,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2025-03-20T13:00:37Z
+last-modified:  2025-04-09T16:32:33Z
 source:         RIPE # Filtered
 
 
