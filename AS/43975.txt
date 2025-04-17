@@ -14,7 +14,7 @@ source:         RIPE
 aut-num:        AS43975
 org:            ORG-JR8-RIPE
 as-name:        VTK-AS
-descr:          Macro region "Volga"
+descr:          OJSC  "VolgaTelecom"
 remarks:
 remarks:        ===========================================
 remarks:        External uplinks
@@ -242,7 +242,7 @@ export:         to AS-MeraNN announce ANY
 remarks:
 remarks:        Intel Ltd.
 import:         from AS43724 accept AS43724
-export:         to AS43724 announce  {0.0.0.0/0}
+export:         to AS43724 announce {0.0.0.0/0}
 remarks:
 remarks:        OOO MediaKvant Ltd.
 import:         from AS198616 accept AS198616
@@ -446,12 +446,8 @@ import:         from AS57079 accept AS-VARIANTTV
 export:         to AS57079 announce ANY
 remarks:
 remarks:        JSC Sakha-Belkom
-import:         {
-                from AS39264 178.45.248.10 at 79.126.127.7 accept AS-METROMAX;
-                }
-export:         {
-                to AS39264 178.45.248.10 at 79.126.127.7 announce ANY;
-                }
+import:         { from AS39264 178.45.248.10 at 79.126.127.7 accept AS-METROMAX; }
+export:         { to AS39264 178.45.248.10 at 79.126.127.7 announce ANY; }
 remarks:
 remarks:        LLC Volga-Dnepr Airlines
 import:         from AS8706 accept AS8706
@@ -470,42 +466,12 @@ import:         from AS44408 accept AS44408
 export:         to AS44408 announce {0.0.0.0/0}
 remarks:
 remarks:        CJSC Nizhegorodskaya Cellular Communications
-import:         {
-                from AS48092 79.126.122.134 at 79.126.127.55 accept AS48092;
-                from AS48092 79.126.122.162 at 79.126.127.36 accept AS48092;
-                from AS48092 79.126.122.166 at 79.126.127.37 accept AS48092;
-                from AS48092 79.126.122.154 at 79.126.127.58 accept AS48092;
-                from AS48092 79.126.122.158 at 79.126.127.59 accept AS48092;
-                from AS48092 79.126.122.150 at 79.126.127.34 accept AS48092;
-                from AS48092 79.126.122.146 at 79.126.127.35 accept AS48092;
-                from AS44711 79.126.122.106 at 79.126.127.42 accept AS44711;
-                from AS44711 79.126.122.170 at 79.126.127.43 accept AS44711;
-                from AS44711 79.126.122.138 at 79.126.127.50 accept AS48092;
-                from AS44711 79.126.122.142 at 79.126.127.51 accept AS48092;
-                }
-export:         {
-                to AS48092 79.126.122.134 at 79.126.127.55 announce {0.0.0.0/0};
-                to AS48092 79.126.122.162 at 79.126.127.36 announce {0.0.0.0/0};
-                to AS48092 79.126.122.166 at 79.126.127.37 announce {0.0.0.0/0};
-                to AS48092 79.126.122.154 at 79.126.127.58 announce {0.0.0.0/0};
-                to AS48092 79.126.122.158 at 79.126.127.59 announce {0.0.0.0/0};
-                to AS48092 79.126.122.150 at 79.126.127.34 announce {0.0.0.0/0};
-                to AS48092 79.126.122.146 at 79.126.127.35 announce {0.0.0.0/0};
-                to AS48092 79.126.122.138 at 79.126.127.50 announce {0.0.0.0/0};
-                to AS48092 79.126.122.142 at 79.126.127.51 announce {0.0.0.0/0};
-                to AS44711 79.126.122.106 at 79.126.127.42 announce ANY;
-                to AS44711 79.126.122.170 at 79.126.127.43 announce ANY;
-                }
+import:         { from AS48092 79.126.122.134 at 79.126.127.55 accept AS48092; from AS48092 79.126.122.162 at 79.126.127.36 accept AS48092; from AS48092 79.126.122.166 at 79.126.127.37 accept AS48092; from AS48092 79.126.122.154 at 79.126.127.58 accept AS48092; from AS48092 79.126.122.158 at 79.126.127.59 accept AS48092; from AS48092 79.126.122.150 at 79.126.127.34 accept AS48092; from AS48092 79.126.122.146 at 79.126.127.35 accept AS48092; from AS44711 79.126.122.106 at 79.126.127.42 accept AS44711; from AS44711 79.126.122.170 at 79.126.127.43 accept AS44711; from AS44711 79.126.122.138 at 79.126.127.50 accept AS48092; from AS44711 79.126.122.142 at 79.126.127.51 accept AS48092; }
+export:         { to AS48092 79.126.122.134 at 79.126.127.55 announce {0.0.0.0/0}; to AS48092 79.126.122.162 at 79.126.127.36 announce {0.0.0.0/0}; to AS48092 79.126.122.166 at 79.126.127.37 announce {0.0.0.0/0}; to AS48092 79.126.122.154 at 79.126.127.58 announce {0.0.0.0/0}; to AS48092 79.126.122.158 at 79.126.127.59 announce {0.0.0.0/0}; to AS48092 79.126.122.150 at 79.126.127.34 announce {0.0.0.0/0}; to AS48092 79.126.122.146 at 79.126.127.35 announce {0.0.0.0/0}; to AS48092 79.126.122.138 at 79.126.127.50 announce {0.0.0.0/0}; to AS48092 79.126.122.142 at 79.126.127.51 announce {0.0.0.0/0}; to AS44711 79.126.122.106 at 79.126.127.42 announce ANY; to AS44711 79.126.122.170 at 79.126.127.43 announce ANY; }
 remarks:
 remarks:        JSC RT Center
-import:         {
-                from AS39293 178.45.248.110 at 79.126.127.43 accept AS-RTCENTER;
-                from AS39293 178.45.248.170 at 79.126.127.57 accept AS-TLT-RTCENTER;
-                }
-export:         {
-                to AS39293 178.45.248.110 at 79.126.127.43 announce ANY;
-                to AS39293 178.45.248.170 at 79.126.127.57 announce ANY;
-                }
+import:         { from AS39293 178.45.248.110 at 79.126.127.43 accept AS-RTCENTER; from AS39293 178.45.248.170 at 79.126.127.57 accept AS-TLT-RTCENTER; }
+export:         { to AS39293 178.45.248.110 at 79.126.127.43 announce ANY; to AS39293 178.45.248.170 at 79.126.127.57 announce ANY; }
 remarks:
 remarks:        Infanet CJSC
 import:         from AS48089 accept AS48089
@@ -586,9 +552,9 @@ remarks:
 remarks:        43975:5LMMN When advertise to Rostelecom (AS12389) from
 remarks:        exact Gateways in Samara and N.Novgorod
 remarks:
-remarks:        L  - Last octet of IP Loopback of Gateway
+remarks:        L - Last octet of IP Loopback of Gateway
 remarks:        MM - Upstream number on Gateway
-remarks:        N  - Community meaning
+remarks:        N - Community meaning
 remarks:
 remarks:        N=0 - no advertise prefix to upstream
 remarks:        N=1 - set one prepend
@@ -627,7 +593,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
 mnt-by:         MNT-VOLGATELECOM
 created:        2007-10-30T08:17:34Z
-last-modified:  2024-06-19T06:05:32Z
+last-modified:  2025-04-15T11:47:45Z
 source:         RIPE # Filtered
 
 organisation:   ORG-JR8-RIPE

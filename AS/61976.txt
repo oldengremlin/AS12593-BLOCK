@@ -19,26 +19,32 @@ remarks:        *** UPLINKS: ***
 remarks:        ---------------------------------------------------------------
 remarks:        TTK
 import:         from AS20485 accept ANY
-export:         to AS20485 announce AS61976
+export:         to AS20485 announce  AS61976:AS-SELECTEL-NSK
 remarks:        Milecom
 import:         from AS48858 accept ANY
-export:         to AS48858 announce AS61976
+export:         to AS48858 announce AS61976:AS-SELECTEL-NSK
 remarks:        EdgeCenter
 import:         from AS210756 accept ANY
-export:         to AS210756 announce AS61976
+export:         to AS210756 announce AS61976:AS-SELECTEL-NSK
 remarks:        ---------------------------------------------------------------
 remarks:        *** PEERINGs at IXes and direct PNI links: ***
 remarks:        ---------------------------------------------------------------
 remarks:        NSK-IX
 import:         from AS42403 accept AS-NSKROUTESERVER
-export:         to AS42403 announce AS61976
+export:         to AS42403 announce AS61976:AS-SELECTEL-NSK
+remarks:        ---------------------------------------------------------------
+remarks:        -------------------- CLIENTS (CUSTOMERS): ---------------------
+remarks:        ---------------------------------------------------------------
+remarks:        Digital-Solutions
+import:         from AS213633 accept AS213633
+export:         to AS213633 announce ANY
 admin-c:        SA32710-RIPE
 tech-c:         SA32710-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-SELECTEL
 created:        2019-09-19T09:12:12Z
-last-modified:  2024-06-14T09:38:43Z
+last-modified:  2025-04-16T12:53:32Z
 source:         RIPE
 
 organisation:   ORG-SL223-RIPE
@@ -81,10 +87,11 @@ tech-c:         EN5675-RIPE
 tech-c:         NS8369-RIPE
 tech-c:         AD16782-RIPE
 tech-c:         AN33480-RIPE
+tech-c:         AN33869-RIPE
 nic-hdl:        SA32710-RIPE
 mnt-by:         mnt-selectel
 created:        2015-01-19T15:40:16Z
-last-modified:  2024-03-05T10:10:36Z
+last-modified:  2025-04-16T12:45:12Z
 source:         RIPE # Filtered
 
 

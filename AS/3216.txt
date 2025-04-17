@@ -82,6 +82,10 @@ import:         from AS202984 action pref=100; accept AS-TEAM-HOST
 export:         to AS202984 announce ANY
 mp-import:      afi ipv6 from AS202984 action pref=100; accept AS-TEAM-HOST
 mp-export:      afi ipv6 to AS202984 announce ANY
+import:         from AS49281 action pref=100; accept AS-M100
+export:         to AS49281 announce ANY
+mp-import:      from AS49281 action pref=100; accept AS-M100v6
+mp-export:      to AS49281 announce ANY
 mp-import:      afi ipv6 from AS26496 action pref=90; accept AS-GDG
 mp-export:      afi ipv6 to AS26496 announce AS-SOVAM-V6
 import:         from AS26496 action pref=90; accept AS-GDG
@@ -512,6 +516,10 @@ import:         from AS49581 action pref=87; accept AS-TUBE
 export:         to AS49581 announce AS-SOVAM
 mp-import:      afi ipv6 from AS49581 action pref=87; accept AS-TUBE
 mp-export:      afi ipv6 to AS49581 announce AS-SOVAM-V6
+import:         from AS5405 action pref=87; accept AS5405:AS-INTERDOTLINK
+export:         to AS5405 announce AS-SOVAM
+mp-import:      afi ipv6 from AS5405 action pref=87; accept AS5405:AS-INTERDOTLINK
+mp-export:      afi ipv6 to AS5405 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(DE-CIX)
 remarks:
@@ -4346,8 +4354,6 @@ import:         from AS40977 action pref=100; accept AS40977
 export:         to AS40977 announce ANY
 import:         from AS51583 action pref=100; accept AS51583
 export:         to AS51583 announce ANY
-import:         from AS202934 action pref=100; accept AS202934
-export:         to AS202934 announce ANY
 import:         from AS206323 action pref=100; accept AS206323
 export:         to AS206323 announce {0.0.0.0/0}
 import:         from AS56383 action pref=100; accept AS56383
@@ -5757,7 +5763,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-04-11T06:41:06Z
+last-modified:  2025-04-16T12:52:51Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

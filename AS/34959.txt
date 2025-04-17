@@ -1,0 +1,201 @@
+
+
+
+as-block:       AS34554 - AS34984
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-07-03T14:03:00Z
+last-modified:  2024-07-03T14:03:00Z
+source:         RIPE
+
+
+
+aut-num:        AS34959
+as-name:        PROCLOUD
+descr:          PROCLOUD MSK
+org:            ORG-KL294-RIPE
+remarks:        =========
+remarks:        UPLINKS
+remarks:        =========
+remarks:        --- CJSC RASCOM ISP ---
+mp-import:      afi ipv4.unicast from AS20764 at 80.64.101.187 action pref=90; community .= {34959:100}; accept { 222.253.144.0/21 }
+mp-import:      afi ipv4.unicast from AS20764 at 80.64.101.187 action pref=100; community .= {34959:100}; accept NOT fltr-martian AND ANY
+mp-export:      afi ipv4.unicast to AS20764 at 80.64.101.187 action aspath.prepend (AS34959); community .= {20764:1600}; announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100,34959:700) AND NOT {5.59.244.0/22};
+mp-import:      afi ipv6.unicast from AS20764 at 2a00:1c28:2:2534:0:6:720:2 action pref=100; community .= {34959:100}; accept NOT fltr-martian-v6 AND ANY
+mp-export:      afi ipv6.unicast to AS20764 at 2a00:1c28:2:2534:0:6:720:2 action aspath.prepend (AS34959); community .= {20764:1600}; announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100,34959:700);
+remarks:        --- COMCOR ---
+mp-import:      afi ipv4.unicast from AS8732 at 212.100.132.220 action pref=95; community .= {34959:100}; accept <AS24940$>
+mp-import:      afi ipv4.unicast from AS8732 at 212.100.132.220 action pref=100; community .= {34959:100}; accept NOT fltr-martian AND NOT {0.0.0.0/0} AND ANY
+mp-export:      afi ipv4.unicast to AS8732 at 212.100.132.220 action aspath.prepend (AS34959); announce AS-KVIKTEL AND NOT community(34959:100,49791:100);
+mp-import:      afi ipv6.unicast from AS8732 at 2a02:290:2::1f:4 action pref=95; community .= {34959:100}; accept <AS24940$>
+mp-import:      afi ipv6.unicast from AS8732 at 2a02:290:2::1f:4 action pref=100; community .= {34959:100}; accept NOT fltr-martian-v6 AND NOT <AS32934> AND NOT {::/0} AND ANY
+mp-export:      afi ipv6.unicast to AS8732 at 2a02:290:2::1f:4 action aspath.prepend (AS34959); announce AS-KVIKTEL AND NOT community(34959:100,49791:100);
+remarks:        ---  ER-Telecon ---
+mp-import:      afi ipv4.unicast from AS9049 at 31.131.196.81 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-export:      afi ipv4.unicast to AS9049 at 31.131.196.81 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
+mp-import:      afi ipv4.unicast from AS9049 at 188.234.157.179 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-export:      afi ipv4.unicast to AS9049 at 188.234.157.179 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
+mp-import:      afi ipv6.unicast from AS9049 at 2a02:2698:a100:da:1:3:4959:6 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
+mp-import:      afi ipv6.unicast from AS9049 at 2a02:2698:a100:da:1:3:4959:2 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
+mp-export:      afi ipv6.unicast to AS9049 at 2a02:2698:a100:da:1:3:4959:6 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv6.unicast to AS9049 at 2a02:2698:a100:da:1:3:4959:2 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
+remarks:        ---  Vympelcom ---
+mp-import:      afi ipv4.unicast from AS3216 at 195.239.99.194 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-export:      afi ipv4.unicast to AS3216 at 195.239.99.194 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100) AND NOT {5.59.244.0/22}
+mp-import:      afi ipv4.unicast from AS3216 at 212.44.158.222 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-export:      afi ipv4.unicast to AS3216 at 212.44.158.222 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100) AND NOT {5.59.244.0/22}
+mp-import:      afi ipv6.unicast from AS3216 at 2a00:1248:5021:2::142 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
+mp-export:      afi ipv6.unicast to AS3216 at 2a00:1248:5021:2::142 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
+mp-import:      afi ipv6.unicast from AS3216 at 2a00:1248:5021:2::152 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
+mp-export:      afi ipv6.unicast to AS3216 at 2a00:1248:5021:2::152 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
+remarks:        --- W-IX ---
+mp-import:      afi ipv4.unicast from AS50384 at 193.106.113.54 action pref=100; aspath.prepend (AS50384); community .= {34959:100}; accept NOT fltr-martian AND NOT {0.0.0.0/0} AND ANY
+mp-export:      afi ipv4.unicast to AS50384 at 193.106.113.54 action aspath.prepend (AS34959); community .= {65504:13335, 65504:54113, 0:15169}; announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100,34959:700) AND NOT {5.59.244.0/22};
+mp-import:      afi ipv6.unicast from AS50384 at 2a00:1b30::a54 action pref=100; aspath.prepend (AS50384); community .= {34959:100};  accept NOT fltr-martian-v6 AND NOT {::/0} AND ANY
+mp-export:      afi ipv6.unicast to AS50384 at 2a00:1b30::a54 action aspath.prepend (AS34959); community .= {65504:13335, 65504:54113}; announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100,34959:700);
+remarks:        --- PITER-IX MSK ---
+mp-import:      afi ipv4.unicast from AS49869 at 185.0.13.15 action pref=90; community .= {34959:100}; accept <AS24940$>
+mp-import:      afi ipv4.unicast from AS49869 at 185.0.14.34 action pref=90; community .= {34959:100}; accept <AS24940$>
+mp-import:      afi ipv4.unicast from AS49869 at 185.0.13.15 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-import:      afi ipv4.unicast from AS49869 at 185.0.14.34 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-export:      afi ipv4.unicast to AS49869 185.0.12.255 at 185.0.13.15 announce  NOT ANY
+mp-export:      afi ipv4.unicast to AS49869 185.0.13.0 at 185.0.13.15 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv4.unicast to AS49869 185.0.13.0 at 185.0.14.34 announce NOT ANY
+mp-export:      afi ipv4.unicast to AS49869 185.0.12.255 at 185.0.14.34 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-import:      afi ipv6.unicast from AS49869 at 2001:7f8:eb::888f:1 action pref=90; community .= {34959:100}; accept <AS24940$>
+mp-import:      afi ipv6.unicast from AS49869 at 2001:7f8:eb::888f:3 action pref=90; community .= {34959:100}; accept <AS24940$>
+mp-import:      afi ipv6.unicast from AS49869 at 2001:7f8:eb::888f:1 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
+mp-import:      afi ipv6.unicast from AS49869 at 2001:7f8:eb::888f:3 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
+mp-export:      afi ipv6.unicast to AS49869 at 2001:7f8:eb::888f:1 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv6.unicast to AS49869 at 2001:7f8:eb::888f:3 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+remarks:        --- PITER-IX SPB ---
+mp-import:      afi ipv4.unicast from AS50817 at 185.1.152.204 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-import:      afi ipv4.unicast from AS50817 at 185.1.153.57 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-export:      afi ipv4.unicast to AS50817 185.1.152.255 at 185.1.152.204 announce NOT ANY
+mp-export:      afi ipv4.unicast to AS50817 185.1.153.0 at 185.1.152.204 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv4.unicast to AS50817 185.1.152.255 at 185.1.153.57 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv4.unicast to AS50817 185.1.153.0 at 185.1.153.57 announce NOT ANY
+mp-import:      afi ipv6.unicast from AS50817 at 2001:7f8:e6::888f:1 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
+mp-import:      afi ipv6.unicast from AS50817 at 2001:7f8:e6::888f:2 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
+mp-export:      afi ipv6.unicast to AS50817 2001:7f8:e6::c681:1 at 2001:7f8:e6::888f:1 announce NOT ANY
+mp-export:      afi ipv6.unicast to AS50817 2001:7f8:e6::c681:2 at 2001:7f8:e6::888f:1 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv6.unicast to AS50817 2001:7f8:e6::c681:1 at 2001:7f8:e6::888f:2 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv6.unicast to AS50817 2001:7f8:e6::c681:2 at 2001:7f8:e6::888f:2 announce NOT ANY
+remarks:        --- PITER-IX HEL ---
+mp-import:      afi ipv4.unicast from AS39607 at 193.27.37.140 action pref=100; community .= {34959:100, 34959:400};aspath.prepend (AS39607); accept community (50817:65339);
+mp-import:      afi ipv4.unicast from AS39607 at 193.27.37.90 action pref=100; community .= {34959:100, 34959:400};aspath.prepend (AS39607); accept community (50817:65339);
+mp-import:      afi ipv4.unicast from AS39607 at 193.27.37.140 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-import:      afi ipv4.unicast from AS39607 at 193.27.37.90 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-import:      afi ipv4.unicast from AS39607 at 193.27.37.140 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-export:      afi ipv4.unicast to AS39607 193.27.37.100 at 193.27.37.90 announce NOT ANY
+mp-export:      afi ipv4.unicast to AS39607 193.27.37.100 at 193.27.37.140  action community .= {64515:65339}; announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv4.unicast to AS39607 193.27.37.254 at 193.27.37.90 action community .= {64515:65339}; announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv4.unicast to AS39607 193.27.37.254 at 193.27.37.140 announce NOT ANY
+remarks:        --- PITER-IX FRA ---
+mp-import:      afi ipv4.unicast from AS48193 at 31.44.186.239 action pref=100; community .= {34959:100, 34959:400};aspath.prepend (AS39607); accept community (50817:65339);
+mp-import:      afi ipv4.unicast from AS48193 at 31.44.186.248 action pref=100; community .= {34959:100, 34959:400};aspath.prepend (AS39607); accept community (50817:65339);
+mp-import:      afi ipv4.unicast from AS48193 at 31.44.186.239 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-import:      afi ipv4.unicast from AS48193 at 31.44.186.248 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
+mp-export:      afi ipv4.unicast to AS48193 31.44.186.255 at 31.44.186.239 announce NOT ANY
+mp-export:      afi ipv4.unicast to AS48193 31.44.186.255 at 31.44.186.248 action community .= {64515:65339}; announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv4.unicast to AS48193 31.44.187.0 at 31.44.186.239 action community .= {64515:65339}; announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv4.unicast to AS48193 31.44.187.0 at 31.44.186.248 announce NOT ANY
+remarks:        --- INETCOM.RU ---
+mp-import:      afi ipv4.unicast from AS35598 at 176.99.139.157 action pref=100; community .= {34959:100}; accept NOT fltr-martian AND NOT {0.0.0.0/0} AND ANY
+mp-export:      afi ipv4.unicast to AS35598 at 176.99.139.157 action aspath.prepend (AS34959,AS34959); announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100) AND NOT {5.59.244.0/22};
+mp-import:      afi ipv6.unicast from AS35598 at 2a10:3100:0:2::121 action pref=100; community .= {34959:100}; accept NOT fltr-martian-v6 AND NOT {::/0} AND ANY
+mp-export:      afi ipv6.unicast to AS35598 at 2a10:3100:0:2::121 action aspath.prepend (AS34959,AS34959); announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100);
+remarks:        --- GOOGLE PNI ---
+mp-import:      afi ipv4.unicast from AS15169 185.0.12.11 action pref=90; community .= {34959:100}; accept NOT fltr-martian AND NOT {0.0.0.0/0} AND ANY
+mp-export:      afi ipv4.unicast to AS15169 185.0.12.11 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-import:      afi ipv4.unicast from AS15169 185.0.13.212 action pref=90; community .= {34959:100}; accept NOT fltr-martian AND NOT {0.0.0.0/0} AND ANY
+mp-export:      afi ipv4.unicast to AS15169 185.0.13.212 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-import:      afi ipv6.unicast from AS15169 2001:7f8:eb::3b41:1 action pref=90; community .= {34959:100}; accept NOT fltr-martian-v6 AND NOT {::/0} AND ANY
+mp-export:      afi ipv6.unicast to AS15169 2001:7f8:eb::3b41:1 action aspath.prepend (AS34959,AS34959); announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100);
+mp-import:      afi ipv6.unicast from AS15169 2001:7f8:eb::3b41:2 action pref=90; community .= {34959:100}; accept NOT fltr-martian-v6 AND NOT {::/0} AND ANY
+mp-export:      afi ipv6.unicast to AS15169 2001:7f8:eb::3b41:2 action aspath.prepend (AS34959,AS34959); announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100);
+remarks:        CUSTOMERS
+remarks:        =========
+remarks:        --- Telent Solution ----
+mp-import:      afi ipv4.unicast from AS60720 185.26.194.11 action pref=50; accept AS-POLYCOMM
+mp-export:      afi ipv4.unicast to AS60720 185.26.194.11 announce community(34959:100) OR community (49791:100) OR AS34959:AS-PROCLOUD
+mp-import:      afi ipv6.unicast from AS60720 2a00:8d60:0:5::3 action pref=50; accept AS-POLYCOMM
+mp-export:      afi ipv6.unicast to AS60720 2a00:8d60:0:5::3 announce community(34959:100) OR community (49791:100) OR  AS34959:AS-PROCLOUD
+remarks:        --- NearMedic ---
+mp-import:      afi ipv4.unicast from AS34089 194.55.235.245 at 194.55.235.244 action pref=50; accept AS34089
+mp-export:      afi ipv4.unicast to AS34089 194.55.235.245 at 194.55.235.244 announce NOT fltr-martian AND ANY AND NOT community(34959:1)
+remarks:        --- MivoCloud Russia ---
+mp-import:      afi ipv4.unicast from AS39798 194.55.234.63 action pref=50; community .= {34959:300}; accept { 5.252.179.0/24, 5.252.176.0/24 }
+mp-export:      afi ipv4.unicast to AS39798 194.55.234.63 announce { 0.0.0.0/0 }
+mp-import:      afi ipv6.unicast from AS39798 2a0f:1140:140:68::2 action pref=50; community .= {34959:300}; accept { 2a0a:c802:4::/48 }
+mp-export:      afi ipv6.unicast to AS39798 2a0f:1140:140:68::2 announce { ::/0 }
+remarks:        --- Simons Trading ---
+mp-import:      afi ipv4.unicast from AS61326 at 194.55.235.236 action pref=50; accept AS61326
+mp-export:      afi ipv4.unicast to AS61326 at 194.55.235.236 announce NOT fltr-martian AND ANY
+remarks:        --- Privat Telecom ---
+mp-import:      afi ipv4.unicast from AS42413 at 194.55.235.234 action pref=50; accept AS-PRIVAT-TELECOM
+mp-export:      afi ipv4.unicast to AS42413 at 194.55.235.234 announce { 0.0.0.0/0 } or AS-KVIKTEL AND NOT community(34959:100,49791:100,34959:700);
+remarks:        --- AS204211 ---
+mp-import:      afi ipv4.unicast from AS204211 45.139.25.4 action pref=50; community .= {34959:300}; accept AS204211
+mp-export:      afi ipv4.unicast to AS204211 45.139.25.4 announce { 0.0.0.0/0 }
+mp-import:      afi ipv6.unicast from AS204211 2a0f:1140:140:3::9a action pref=50; community .= {34959:300}; accept AS204211
+mp-export:      afi ipv6.unicast to AS204211  2a0f:1140:140:3::9a announce { ::/0 }
+remarks:        --- AS51076 ---
+mp-import:      afi ipv4.unicast from AS51076 45.139.25.223 action pref=50; community .= {34959:300}; accept AS51076
+mp-export:      afi ipv4.unicast to AS51076 45.139.25.223 announce { 0.0.0.0/0 }
+admin-c:        KVTL-RIPE
+tech-c:         KVTL-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-kviktel-1
+created:        2019-10-28T15:15:57Z
+last-modified:  2025-03-21T21:10:59Z
+source:         RIPE
+
+organisation:   ORG-KL294-RIPE
+org-name:       KVIKTEL LLC
+country:        RU
+org-type:       LIR
+address:        57, Profsoyuznaya str.
+address:        117420
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74952867286
+admin-c:        ST12279-RIPE
+tech-c:         ST12279-RIPE
+abuse-c:        AR56330-RIPE
+mnt-ref:        mnt-ru-kviktel-1
+mnt-ref:        COPROSYS-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         mnt-ru-kviktel-1
+created:        2019-10-23T14:45:16Z
+last-modified:  2023-01-09T11:43:14Z
+source:         RIPE # Filtered
+
+role:           PROCLOUD NOC
+address:        Profsoyznaya 57
+address:        117420
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +7 495 2867286
+admin-c:        SA33410-RIPE
+admin-c:        ST12279-RIPE
+admin-c:        DLK15-RIPE
+tech-c:         SA33410-RIPE
+tech-c:         ST12279-RIPE
+tech-c:         DLK15-RIPE
+nic-hdl:        KVTL-RIPE
+remarks:        -----------------------------------------
+remarks:        General questions: noc@procloud.ru
+remarks:        Spam & Abuse: abuse@procloud.ru
+remarks:        Routing inquiries: noc@procloud.ru
+remarks:        -----------------------------------------
+abuse-mailbox:  abuse@procloud.ru
+mnt-by:         mnt-ru-kviktel-1
+created:        2020-11-20T16:30:13Z
+last-modified:  2025-01-09T06:45:56Z
+source:         RIPE # Filtered
+
+
+
