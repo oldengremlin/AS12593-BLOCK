@@ -2657,6 +2657,8 @@ mp-import:      afi ipv6 from AS48757 action pref=100; accept AS-TRUSTINFO_8-24-
 mp-export:      afi ipv6 to AS48757 announce ANY
 import:         from AS9110 action pref=100; accept AS-AGTEL-INT
 export:         to AS9110 announce AS-SOVAM
+mp-import:      from AS9110 action pref=100; accept AS9110
+mp-export:      to AS9110 announce {::/0}
 import:         from AS198821 action pref=100; accept AS198821
 export:         to AS198821 announce ANY
 import:         from AS198877 action pref=100; accept AS198877
@@ -3537,8 +3539,6 @@ import:         from AS56820 action pref=100; accept AS56820
 export:         to AS56820 announce ANY
 import:         from AS50713 action pref=100; accept AS-FWDTELECOM
 export:         to AS50713 announce ANY
-import:         from AS56952 action pref=100; accept AS56952
-export:         to AS56952 announce ANY
 import:         from AS56957 action pref=100; accept AS-PLEXOR
 export:         to AS56957 announce {0.0.0.0/0}
 import:         from AS56879 action pref=100; accept AS56879
@@ -5763,7 +5763,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-04-16T12:52:51Z
+last-modified:  2025-04-17T07:43:04Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

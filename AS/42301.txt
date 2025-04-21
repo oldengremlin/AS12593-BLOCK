@@ -1,0 +1,79 @@
+
+
+
+as-block:       AS42173 - AS42381
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-07-22T14:14:32Z
+last-modified:  2024-07-22T14:14:32Z
+source:         RIPE
+
+
+
+aut-num:        AS42301
+as-name:        RADIO-CAPRICORN-AS
+org:            ORG-RKL2-RIPE
+remarks:        ==========================================================
+remarks:        -= IPv4 Routing Policy =-
+remarks:        ----------------------------------------------------------
+remarks:        Upstreams
+remarks:        ----------------------------------------------------------
+remarks:
+remarks:        Smart Telecom Limited
+import:         from AS31376 action pref=100; accept ANY
+export:         to AS31376 announce AS-RADIO-CAPRICORN
+remarks:
+remarks:        JSC Avantel
+import:         from AS51178 action pref=100; accept ANY
+export:         to AS51178 announce AS-RADIO-CAPRICORN
+remarks:
+remarks:        Korporatsiya R-Industriya LLC
+import:         from AS208511 action pref=100; accept {0.0.0.0/0} AS208511
+export:         to AS208511 announce {193.200.239.0/24} AS42301
+remarks:        ==========================================================
+admin-c:        DS5054-RIPE
+tech-c:         DS5054-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS42301-MNT
+created:        2007-01-29T15:32:49Z
+last-modified:  2023-05-09T09:09:14Z
+source:         RIPE
+remarks:        region-id = Russia, Leningrad district, Saint-Petersburg
+sponsoring-org: ORG-IL432-RIPE
+
+organisation:   ORG-RKL2-RIPE
+org-name:       Radio Kozerog LLC
+country:        RU
+org-type:       OTHER
+address:        Butlerova Street 22-2-216
+address:        Saint-Petersburg
+address:        Russian Federation
+address:        195220
+phone:          +7 921 9818108
+phone:          +7 812 6852345
+mnt-ref:        AS42301-MNT
+mnt-by:         AS42301-MNT
+abuse-c:        RKAH2-RIPE
+created:        2013-05-16T21:46:46Z
+last-modified:  2022-12-01T16:45:21Z
+source:         RIPE # Filtered
+
+person:         Dmitriy Surov
+address:        Butlerova Street 22-2-216
+address:        Saint-Petersburg
+address:        Russian Federation
+address:        195220
+remarks:        GSM mobile phones, SMS supported
+phone:          +7 921 9818108
+remarks:        e-mail: relay1@mail.ru
+remarks:        ICQ UIN 353958741
+nic-hdl:        DS5054-RIPE
+created:        2008-03-16T07:22:05Z
+last-modified:  2015-07-02T21:57:47Z
+source:         RIPE # Filtered
+mnt-by:         AS42301-MNT
+
+
+

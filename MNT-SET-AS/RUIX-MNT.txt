@@ -777,7 +777,7 @@ import:         from AS60388
                 accept AS-SIGMA-TELECOM
 import:         from AS61976
                 action pref=100;
-                accept AS61976
+                accept AS61976:AS-SELECTEL-NSK
 import:         from AS62261
                 action pref=100;
                 accept AS-NSK-MEDIAIX
@@ -962,7 +962,7 @@ remarks:        for more information on the NSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-04-09T05:43:24Z
+last-modified:  2025-04-17T05:40:44Z
 source:         RIPE # Filtered
 
 
@@ -3646,9 +3646,6 @@ import:         from AS49368
 import:         from AS49403
                 action pref=100;
                 accept AS-AVK-WELLCOM
-import:         from AS49418
-                action pref=100;
-                accept AS49418:AS-NETSHIELD
 import:         from AS49458
                 action pref=100;
                 accept AS-INTELLIN
@@ -4809,8 +4806,6 @@ export:         to AS49368
                 announce AS-MSKROUTESERVER
 export:         to AS49403
                 announce AS-MSKROUTESERVER
-export:         to AS49418
-                announce AS-MSKROUTESERVER
 export:         to AS49458
                 announce AS-MSKROUTESERVER
 export:         to AS49505
@@ -5196,7 +5191,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-04-10T09:48:01Z
+last-modified:  2025-04-17T09:38:50Z
 source:         RIPE
 
 

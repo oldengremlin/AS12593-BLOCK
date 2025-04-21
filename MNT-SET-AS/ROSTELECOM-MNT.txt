@@ -6662,6 +6662,8 @@ import:         from AS60730 accept AS60730
 export:         to AS60730 announce ANY
 import:         from AS207501 accept AS207501
 export:         to AS207501 announce ANY
+import:         from AS208981 accept AS208981
+export:         to AS208981 announce ANY
 org:            ORG-JR8-RIPE
 admin-c:        PRTT1-RIPE
 tech-c:         RTNC-RIPE
@@ -6670,7 +6672,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SAVRI-MNT
 status:         ASSIGNED
 created:        2005-07-01T14:26:50Z
-last-modified:  2025-04-16T12:20:20Z
+last-modified:  2025-04-18T12:20:20Z
 source:         RIPE
 
 
@@ -8419,6 +8421,30 @@ mnt-by:         MRBD-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2004-11-18T15:40:56Z
 last-modified:  2024-05-27T05:41:48Z
+source:         RIPE
+
+
+
+aut-num:        AS34267
+org:            ORG-JR8-RIPE
+as-name:        DEBRYANSK-AS-1
+descr:          PJSC "Rostelecom". Bryansk branch
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-DEBRYANSK
+import:         from AS44237 accept ANY
+export:         to AS44237 announce AS-DEBRYANSK
+import:         from AS23456 accept AS23456
+export:         to AS23456 announce ANY
+import:         from AS197783 accept AS197783
+export:         to AS197783 announce ANY
+admin-c:        RTBR-RIPE
+tech-c:         RTBR-RIPE
+status:         ASSIGNED
+mnt-by:         BRSI-RU-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2004-12-02T12:28:16Z
+last-modified:  2025-04-17T06:13:05Z
 source:         RIPE
 
 
@@ -10284,6 +10310,7 @@ source:         RIPE # Filtered
 aut-num:        AS48044
 as-name:        ROSTELECOMIT-AS
 org:            ORG-RITL2-RIPE
+descr:          Rostelecom Information Technologies LLC
 import:         from AS20485 action pref=100; accept ANY
 export:         to AS20485 announce AS-CHITA-ON-LINE
 export:         to AS20485 announce AS58105
@@ -10299,7 +10326,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2008-10-02T12:49:25Z
-last-modified:  2023-11-17T15:24:55Z
+last-modified:  2025-04-17T06:51:29Z
 source:         RIPE # Filtered
 import:         from AS58105 action pref=100; accept AS58105
 export:         to AS58105 announce ANY

@@ -523,8 +523,6 @@ import:         from  AS49505 action pref=100; accept   AS-SELECTEL
 export:         to    AS49505                  announce ANY
 import:         from  AS49542 action pref=100; accept   AS-ARTPLANET
 export:         to    AS49542                  announce ANY
-import:         from  AS49544 action pref=200; accept   AS-INTERACTIVE3D
-export:         to    AS49544                  announce AS57304:AS-RETN-RU
 import:         from  AS49569 action pref=100; accept   AS49569
 export:         to    AS49569                  announce ANY
 import:         from  AS49641 action pref=100; accept   AS-ALFACOM
@@ -627,8 +625,6 @@ import:         from  AS56353 action pref=100; accept   AS56353
 export:         to    AS56353                  announce ANY
 import:         from  AS56462 action pref=100; accept   AS-DDESTINY
 export:         to    AS56462                  announce ANY
-import:         from  AS56533 action pref=100; accept   AS56533
-export:         to    AS56533                  announce ANY
 import:         from  AS56534 action pref=100; accept   AS-CMFT
 export:         to    AS56534                  announce ANY
 import:         from  AS56631 action pref=100; accept   AS56631
@@ -759,6 +755,8 @@ import:         from  AS62316 action pref=100; accept   AS-GRAN-CALL
 export:         to    AS62316                  announce ANY
 import:         from  AS62382 action pref=100; accept   AS62382
 export:         to    AS62382                  announce ANY
+import:         from  AS62404 action pref=100; accept   AS62404
+export:         to    AS62404                  announce ANY
 import:         from  AS63139 action pref=100; accept   AS63139:AS-CUSTOMER
 export:         to    AS63139                  announce ANY
 import:         from  AS64432 action pref=100; accept   AS-VARITI
@@ -839,6 +837,8 @@ import:         from AS200350 action pref=100; accept   AS-YACLOUD
 export:         to   AS200350                  announce ANY
 import:         from AS200453 action pref=100; accept   AS200453
 export:         to   AS200453                  announce ANY
+import:         from AS200457 action pref=100; accept   AS200457
+export:         to   AS200457                  announce ANY
 import:         from AS200473 action pref=100; accept   AS200473
 export:         to   AS200473                  announce ANY
 import:         from AS200487 action pref=100; accept   AS200487
@@ -1370,8 +1370,6 @@ mp-import:      afi ipv6.unicast from  AS49505 action pref=100; accept   AS-SELE
 mp-export:      afi ipv6.unicast to    AS49505                  announce ANY
 mp-import:      afi ipv6.unicast from  AS49542 action pref=100; accept   AS-ARTPLANET
 mp-export:      afi ipv6.unicast to    AS49542                  announce ANY
-mp-import:      afi ipv6.unicast from  AS49544 action pref=200; accept   AS-INTERACTIVE3D
-mp-export:      afi ipv6.unicast to    AS49544                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS49641 action pref=100; accept   AS-ALFACOM
 mp-export:      afi ipv6.unicast to    AS49641                  announce ANY
 mp-import:      afi ipv6.unicast from  AS49776 action pref=100; accept   AS49776
@@ -1653,7 +1651,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-04-16T19:59:05Z
+last-modified:  2025-04-18T19:59:04Z
 source:         RIPE # Filtered
 
 organisation:   ORG-CA1293-RIPE

@@ -14,18 +14,19 @@ source:         RIPE
 aut-num:        AS198592
 as-name:        SVIR-TELECOM-AS
 org:            ORG-OS85-RIPE
-import:         from AS12380 accept ANY
 import:         from AS20485 accept ANY
-export:         to AS12380 announce ANY
-export:         to AS20485 announce ANY
-default:        to as20485
+export:         to AS20485 announce AS198592
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS198592
+import:         from AS57304 accept ANY
+export:         to AS57304 announce AS198592
 admin-c:        ZA111-RIPE
 tech-c:         ZA111-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RAID-MNT
 created:        2012-03-19T10:38:52Z
-last-modified:  2023-10-20T09:36:00Z
+last-modified:  2025-04-18T08:47:22Z
 source:         RIPE # Filtered
 sponsoring-org: ORG-RA21-RIPE
 

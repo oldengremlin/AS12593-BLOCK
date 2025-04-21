@@ -2,3 +2,55 @@
 
 
 
+aut-num:        AS15774
+as-name:        TTK-RTL
+descr:          Retail
+org:            ORG-LLC51-RIPE
+remarks:        -Disconnected backbone (upstream)-
+import:         from AS20485 accept <^AS20485$> <^AS20485 AS15774$>
+export:         to AS20485 announce AS15774
+remarks:        -Peering with TTK-SZ and SPB-IX-
+import:         from AS31501 accept <^AS31501$> <^AS31501 AS43690 .*>
+export:         to AS31501 announce {188.168.40.0/21, 188.168.6.0/23, 188.244.132.0/22, 188.244.168.0/21, 188.168.252.0/22}
+remarks:        -Downstream with ZABCOMNET-AS Chita-
+import:         from AS28991 accept {195.39.228.0/23}
+default:        to AS28991
+remarks:        -Projected peers-
+import:         from AS8631 accept any
+export:         to AS8631 announce AS15774
+import:         from AS42403 accept any
+export:         to AS42403 announce AS15774
+admin-c:        TTKS-RIPE
+tech-c:         TTKS-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TTKS-MNT
+created:        2009-07-31T09:14:08Z
+last-modified:  2025-01-13T19:16:19Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS42323
+as-name:        CONNECT-AS
+org:            ORG-LLC51-RIPE
+admin-c:        TTKS-RIPE
+tech-c:         TTKS-RIPE
+import:         from AS21127 action pref=100; accept ANY
+import:         from AS42288 action pref=100; accept ANY
+import:         from AS44436 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS21127 announce AS42323
+export:         to AS42288 announce AS42323
+export:         to AS42288 announce AS12389
+export:         to AS44436 announce AS42323
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TTKS-MNT
+mnt-by:         ZSTTK-MNT
+created:        2008-02-21T09:57:26Z
+last-modified:  2025-01-14T10:29:18Z
+source:         RIPE # Filtered
+
+
+

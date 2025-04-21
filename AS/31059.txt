@@ -51,6 +51,8 @@ export:         to AS56931 announce AS-AVELACOM
 remarks:        ========================
 remarks:        | IPv4 Private Peering |
 remarks:        ========================
+import:         from AS16509 action pref=90; accept ANY
+export:         to AS16509 announce AS-AVELACOM
 import:         from AS1836 action pref=90; accept ANY
 export:         to AS1836 announce AS-AVELACOM
 import:         from AS132203 action pref=90; accept ANY
@@ -264,7 +266,7 @@ status:         ASSIGNED
 mnt-by:         AVELACOM_LTD-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2004-02-17T10:10:07Z
-last-modified:  2025-03-31T09:26:40Z
+last-modified:  2025-04-17T08:15:26Z
 source:         RIPE
 
 organisation:   ORG-ABL23-RIPE
