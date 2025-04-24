@@ -314,6 +314,18 @@ remarks:        ----------OTHER-REGIONS--------
 remarks:        ----BY-----
 import:         from AS56740 accept ANY
 export:         to AS56740 announce AS57629
+remarks:        ----CHL-----
+import:         from AS8369 accept ANY
+export:         to AS8369 announce AS57629
+import:         from AS9049 accept AS9049
+export:         to AS9049 announce AS57629
+mp-import:      afi ipv6.unicast from AS9049 accept ANY
+mp-export:      afi ipv6.unicast to AS9049 announce AS57629
+remarks:        ----CHL2-----
+import:         from AS8369 accept ANY
+export:         to AS8369 announce AS57629
+mp-export:      afi ipv6.unicast to AS8369 announce AS57629
+mp-import:      afi ipv6.unicast from AS8369 accept ANY
 remarks:        ----IRK-----
 import:         from AS58067 accept AS-CHTE
 export:         to AS58067 announce AS57629
@@ -572,6 +584,7 @@ remarks:        57629:114 - NN
 remarks:        57629:116 - PERM
 remarks:        57629:117 - SMR
 remarks:        57629:118 - UFA
+remarks:        57629:119 - CHL2
 remarks:        57629:122 - VLV
 remarks:        57629:124 - OMSK
 remarks:        57629:125 - BY1
@@ -600,7 +613,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-ivi-1-mnt
 created:        2011-12-19T11:32:01Z
-last-modified:  2025-04-08T18:28:18Z
+last-modified:  2025-04-22T09:24:49Z
 source:         RIPE # Filtered
 
 organisation:   ORG-LI90-RIPE

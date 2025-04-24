@@ -1132,6 +1132,9 @@ import:         from AS201119
 import:         from AS202498
                 action pref=100;
                 accept AS202498
+import:         from AS203118
+                action pref=100;
+                accept AS203118:AS-EZERDI
 import:         from AS205063
                 action pref=100;
                 accept AS-CORTEL
@@ -1232,6 +1235,8 @@ export:         to AS201119
                 announce AS-EKTROUTESERVER
 export:         to AS202498
                 announce AS-EKTROUTESERVER
+export:         to AS203118
+                announce AS-EKTROUTESERVER
 export:         to AS205063
                 announce AS-EKTROUTESERVER
 export:         to AS209307
@@ -1261,7 +1266,7 @@ remarks:        * -------------------------------------------------------------
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-03-19T12:12:23Z
+last-modified:  2025-04-21T12:10:10Z
 source:         RIPE # Filtered
 
 
@@ -1520,9 +1525,6 @@ import:         from AS57724
 import:         from AS60357
                 action pref=100;
                 accept AS60357
-import:         from AS60486
-                action pref=100;
-                accept AS-SWISSNET
 import:         from AS62205
                 action pref=100;
                 accept AS-UNITELECOM-NET
@@ -1729,8 +1731,6 @@ export:         to AS57724
                 announce AS-SPBROUTESERVER
 export:         to AS60357
                 announce AS-SPBROUTESERVER
-export:         to AS60486
-                announce AS-SPBROUTESERVER
 export:         to AS62205
                 announce AS-SPBROUTESERVER
 export:         to AS139057
@@ -1770,7 +1770,7 @@ export:         to AS211609
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-04-14T10:15:11Z
+last-modified:  2025-04-22T10:14:38Z
 source:         RIPE
 
 
@@ -3847,15 +3847,15 @@ import:         from AS57487
 import:         from AS57512
                 action pref=100;
                 accept AS57512
+import:         from AS57531
+                action pref=100;
+                accept AS57531:AS-RICTOMSKIX
 import:         from AS57629
                 action pref=100;
                 accept AS57629
 import:         from AS57724
                 action pref=100;
                 accept AS-DDOS-GUARD
-import:         from AS57906
-                action pref=100;
-                accept AS57906
 import:         from AS57918
                 action pref=100;
                 accept AS-ACOD
@@ -3916,9 +3916,6 @@ import:         from AS60388
 import:         from AS60459
                 action pref=100;
                 accept AS60459
-import:         from AS60486
-                action pref=100;
-                accept AS-SWISSNET
 import:         from AS60544
                 action pref=100;
                 accept AS60544
@@ -4940,11 +4937,11 @@ export:         to AS57487
                 announce AS-MSKROUTESERVER
 export:         to AS57512
                 announce AS-MSKROUTESERVER
+export:         to AS57531
+                announce AS-MSKROUTESERVER
 export:         to AS57629
                 announce AS-MSKROUTESERVER
 export:         to AS57724
-                announce AS-MSKROUTESERVER
-export:         to AS57906
                 announce AS-MSKROUTESERVER
 export:         to AS57918
                 announce AS-MSKROUTESERVER
@@ -4985,8 +4982,6 @@ export:         to AS60357
 export:         to AS60388
                 announce AS-MSKROUTESERVER
 export:         to AS60459
-                announce AS-MSKROUTESERVER
-export:         to AS60486
                 announce AS-MSKROUTESERVER
 export:         to AS60544
                 announce AS-MSKROUTESERVER
@@ -5191,7 +5186,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-04-17T09:38:50Z
+last-modified:  2025-04-23T09:41:10Z
 source:         RIPE
 
 

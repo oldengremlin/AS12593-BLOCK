@@ -1113,15 +1113,15 @@ import:         from AS57487
 import:         from AS57512
                 action pref=100;
                 accept AS57512
+import:         from AS57531
+                action pref=100;
+                accept AS57531:AS-RICTOMSKIX
 import:         from AS57629
                 action pref=100;
                 accept AS57629
 import:         from AS57724
                 action pref=100;
                 accept AS-DDOS-GUARD
-import:         from AS57906
-                action pref=100;
-                accept AS57906
 import:         from AS57918
                 action pref=100;
                 accept AS-ACOD
@@ -1182,9 +1182,6 @@ import:         from AS60388
 import:         from AS60459
                 action pref=100;
                 accept AS60459
-import:         from AS60486
-                action pref=100;
-                accept AS-SWISSNET
 import:         from AS60544
                 action pref=100;
                 accept AS60544
@@ -2206,11 +2203,11 @@ export:         to AS57487
                 announce AS-MSKROUTESERVER
 export:         to AS57512
                 announce AS-MSKROUTESERVER
+export:         to AS57531
+                announce AS-MSKROUTESERVER
 export:         to AS57629
                 announce AS-MSKROUTESERVER
 export:         to AS57724
-                announce AS-MSKROUTESERVER
-export:         to AS57906
                 announce AS-MSKROUTESERVER
 export:         to AS57918
                 announce AS-MSKROUTESERVER
@@ -2251,8 +2248,6 @@ export:         to AS60357
 export:         to AS60388
                 announce AS-MSKROUTESERVER
 export:         to AS60459
-                announce AS-MSKROUTESERVER
-export:         to AS60486
                 announce AS-MSKROUTESERVER
 export:         to AS60544
                 announce AS-MSKROUTESERVER
@@ -2457,7 +2452,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-04-17T09:38:50Z
+last-modified:  2025-04-23T09:41:10Z
 source:         RIPE
 
 organisation:   ORG-JCE1-RIPE

@@ -1711,6 +1711,8 @@ mp-import:      from AS57861 action pref=100; accept AS57861
 mp-export:      to AS57861 announce ANY
 import:         from AS44050 action pref=100; accept AS-PIN
 export:         to AS44050 announce ANY
+import:         from AS208981 action pref=100; accept AS-DPC24
+export:         to AS208981 announce ANY
 import:         from AS34858 action pref=100; accept AS34858
 export:         to AS34858 announce ANY
 import:         from AS207347 action pref=100; accept AS207347
@@ -1763,6 +1765,8 @@ import:         from AS205641 action pref=100; accept AS-ELCOM-KNA
 export:         to AS205641 announce ANY
 import:         from AS51156 action pref=100; accept AS51156
 export:         to AS51156 announce ANY
+import:         from AS47433 action pref=100; accept AS-SIBSET-KEM
+export:         to AS47433 announce ANY
 import:         from AS64423 action pref=100; accept AS64423
 export:         to AS64423 announce ANY
 import:         from AS214066 action pref=100; accept AS214066
@@ -2376,7 +2380,7 @@ mp-export:      afi ipv6 to AS49287 announce {::/0}
 import:         from AS43740 action pref=100; accept AS43740
 export:         to AS43740 announce ANY
 import:         from AS208177 action pref=100; accept AS208177
-export:         to AS208177 announce ANY
+export:         to AS208177 announce AS-SOVAM
 import:         from AS39709 action pref=100; accept AS-MARYNONET
 export:         to AS39709 announce ANY
 import:         from AS50644 action pref=100; accept AS50644
@@ -5763,7 +5767,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-04-17T07:43:04Z
+last-modified:  2025-04-23T12:23:36Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

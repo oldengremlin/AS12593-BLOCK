@@ -2,3 +2,148 @@
 
 
 
+aut-num:        AS196721
+as-name:        ASO-NET
+org:            ORG-AOSR1-RIPE
+import:         from AS8443 action pref=100; accept ANY
+import:         from AS43797 action pref=100; accept ANY
+import:         from AS51004 action pref=100; accept ANY
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS51004 announce AS196721
+export:         to AS8359 announce AS196721
+export:         to AS8443 announce AS196721
+export:         to AS43797 announce AS196721
+admin-c:        DK2815-RIPE
+tech-c:         DK2815-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-ASO
+mnt-by:         AS30745-MNT
+created:        2009-03-25T09:11:40Z
+last-modified:  2022-04-13T23:36:19Z
+source:         RIPE
+sponsoring-org: ORG-SL98-RIPE
+
+
+
+aut-num:        AS202501
+as-name:        SAKHALINSVYAZ
+org:            ORG-JC124-RIPE
+remarks:        JSC "Sakhalinsvyaz"
+descr:          Multimedia network
+import:         from AS30745 accept ANY
+export:         to AS30745 announce AS202501
+admin-c:        AA40002-RIPE
+admin-c:        SMM5-RIPE
+tech-c:         SMM5-RIPE
+tech-c:         AA40002-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS30745-MNT
+mnt-by:         lir-ru-non-public-1-MNT
+created:        2022-10-04T09:06:06Z
+last-modified:  2024-03-19T00:23:31Z
+source:         RIPE
+
+
+
+aut-num:        AS202542
+as-name:        MF-Sakhalin-island
+org:            ORG-MOFO5-RIPE
+sponsoring-org: ORG-SL98-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS202542
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS202542
+admin-c:        SMM5-RIPE
+tech-c:         EK6120-RIPE
+admin-c:        EK6120-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS30745-MNT
+mnt-by:         MOFO5-MNT
+created:        2022-09-30T12:30:19Z
+last-modified:  2023-04-07T12:01:05Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS29567
+as-name:        SITENETWORK-AS
+org:            ORG-SL98-RIPE
+admin-c:        SMM5-RIPE
+tech-c:         SMM5-RIPE
+status:         ASSIGNED
+mnt-by:         AS30745-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2003-10-10T09:35:51Z
+last-modified:  2024-10-08T07:37:00Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS30745
+as-name:        SITENETWORK-AS
+descr:          Sakhalin, Russia
+org:            ORG-SL98-RIPE
+remarks:        -----------------------------------------------------------------
+remarks:        Upstreams
+remarks:        -----------------------------------------------------------------
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS21103 action pref=100; accept ANY
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS12389 announce AS-SVTC
+export:         to AS21103 announce AS-SVTC
+export:         to AS8359 announce AS-SVTC
+remarks:        -----------------------------------------------------------------
+remarks:        -----------------------------------------------------------------
+remarks:        Customers
+remarks:        -----------------------------------------------------------------
+import:         from AS202501 action pref=1000; accept AS202501
+export:         to AS202501 announce ANY
+remarks:        -----------------------------------------------------------------
+remarks:        Default routes:
+default:        to AS21103 action pref=100; networks ANY
+default:        to AS8359 action pref=100; networks ANY
+remarks:        -----------------------------------------------------------------
+admin-c:        SMM5-RIPE
+tech-c:         SMM5-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+admin-c:        IAP22-RIPE
+tech-c:         IAP22-RIPE
+mnt-by:         AS30745-MNT
+created:        2003-11-25T10:47:50Z
+last-modified:  2024-10-01T02:22:19Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS35287
+as-name:        TV-ASN-SITE
+org:            ORG-SL98-RIPE
+admin-c:        SMM5-RIPE
+tech-c:         SMM5-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS30745-MNT
+created:        2005-07-11T12:05:00Z
+last-modified:  2024-10-08T07:35:37Z
+source:         RIPE
+
+
+
+aut-num:        AS43746
+as-name:        SITENETWORK
+org:            ORG-SL98-RIPE
+admin-c:        SMM5-RIPE
+tech-c:         SMM5-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS30745-MNT
+created:        2007-09-21T09:17:28Z
+last-modified:  2024-10-08T07:36:31Z
+source:         RIPE # Filtered
+
+
+

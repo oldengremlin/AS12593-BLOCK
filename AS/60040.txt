@@ -1,0 +1,75 @@
+
+
+
+as-block:       AS59392 - AS60437
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-09-03T13:31:09Z
+last-modified:  2024-09-03T13:31:09Z
+source:         RIPE
+
+
+
+aut-num:        AS60040
+as-name:        RBS-ITP
+org:            ORG-LRBS1-RIPE
+remarks:
+remarks:        ===================================
+remarks:        = RBS AS60040 IPv4 Routing Policy =
+remarks:        ===================================
+remarks:
+remarks:        ==== UPSTREAMS ====================
+export:         to AS3216 announce AS60040
+export:         to AS31133 announce AS60040:AS-LRBS2
+default:        to AS3216 action pref=200;
+import:         from AS3216 action pref=200; accept ANY
+import:         from AS31133 accept ANY
+remarks:
+remarks:        ==== DOWNSTREAMS ==================
+export:         to AS201204 announce ANY
+import:         from AS201204 accept AS201204
+remarks:
+admin-c:        RBSN3-RIPE
+tech-c:         RBSN3-RIPE
+member-of:      AS-LRBS1
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RBS-MNT
+created:        2014-06-18T12:52:01Z
+last-modified:  2025-03-31T11:26:30Z
+source:         RIPE
+sponsoring-org: ORG-RRIf1-RIPE
+
+organisation:   ORG-LRBS1-RIPE
+org-name:       LLC Runet Business Systems
+country:        RU
+org-type:       OTHER
+remarks:        1057/ROS-IP
+address:        Bld. 2, 50A/8 Zemlyanoy Val St.
+address:        109028 Moscow Russia
+geoloc:         55.750904 37.654758
+abuse-c:        RBSN3-RIPE
+admin-c:        RBSN3-RIPE
+tech-c:         RBSN3-RIPE
+mnt-ref:        RBS-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-by:         RBS-MNT
+created:        2013-04-17T05:53:46Z
+last-modified:  2024-01-20T17:39:09Z
+source:         RIPE # Filtered
+
+role:           RBS NOC
+org:            ORG-LRBS1-RIPE
+address:        Bld. 2, 50A/8 Zemlyanoy Val St.
+address:        109028 Moscow Russia
+abuse-mailbox:  rbs-it@bpcbt.com
+phone:          +7 495 780 31 65
+nic-hdl:        RBSN3-RIPE
+mnt-by:         RBS-MNT
+created:        2022-08-08T15:00:06Z
+last-modified:  2022-08-10T15:40:16Z
+source:         RIPE # Filtered
+
+
+

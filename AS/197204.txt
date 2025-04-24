@@ -1,0 +1,107 @@
+
+
+
+as-block:       AS196608 - AS197840
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-09-04T14:04:38Z
+last-modified:  2024-09-04T14:04:38Z
+source:         RIPE
+
+
+
+aut-num:        AS197204
+as-name:        Telemaks
+org:            ORG-TL175-RIPE
+descr:          --------------------- UPLINKS ---------------------------
+import:         from AS57304 accept ANY
+export:         to AS57304 announce AS-TELEMAKS
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-TELEMAKS
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-TELEMAKS
+descr:          -------------------- IPV6 UPLINKS -----------------------
+mp-import:      afi ipv6.unicast from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-TELEMAKS
+mp-import:      afi ipv6.unicast from AS8359 accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-TELEMAKS
+mp-import:      afi ipv6.unicast from AS57304 accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-TELEMAKS
+descr:          -------------------- SEA-IX -----------------------
+import:         from AS59428 action pref=1000; accept ANY
+export:         to AS59428 announce AS-TELEMAKS
+mp-import:      afi ipv6.unicast from AS59428 accept ANY
+mp-export:      afi ipv6.unicast to AS59428 announce AS-TELEMAKS
+descr:          -------------------- MSK-IX -----------------------
+import:         from AS8631 action pref=1000; accept ANY
+export:         to AS8631 announce AS-TELEMAKS
+mp-import:      afi ipv6.unicast from AS8631 accept ANY
+mp-export:      afi ipv6.unicast to AS8631 announce AS-TELEMAKS
+descr:          -------------------COMMUNITY DESCRIPTION------------------
+remarks:        AS59428 ID=1, AS12389 ID=3, AS8631 ID=4, AS57304 ID=5, AS8359 ID=6
+remarks:        1. Uplink management community have format 23456:*, where:
+remarks:        23456:9000 - announce any peer
+remarks:        23456:900X - announce only X peer. X is peer ID
+remarks:        23456:8000 - deny announce any peer
+remarks:        23456:800X - deny announce only X peer. X is peer ID
+remarks:        23456:7XYY - prepend announce to X peer by Y. X is peer ID. Y is number of prepends.
+remarks:        ----------------------------------------------------------------------
+remarks:        + Peers:
+remarks:        ----------------------------------------------------------------------
+import:         from AS51017 accept AS51017
+export:         to AS51017 announce ANY
+import:         from AS41106 accept AS41106
+export:         to AS41106 announce ANY
+import:         from AS57323 accept AS57323
+export:         to AS57323 announce ANY
+import:         from AS201389 accept AS201389
+export:         to AS201389 announce ANY
+import:         from AS59946 accept AS59946
+export:         to AS59946 announce ANY
+import:         from AS208099 accept AS208099
+export:         to AS208099 announce ANY
+admin-c:        TMNC252-RIPE
+tech-c:         TMNC252-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-TELEMAKS
+created:        2010-07-30T13:47:09Z
+last-modified:  2024-08-29T09:08:02Z
+source:         RIPE
+
+organisation:   ORG-TL175-RIPE
+org-name:       TeleMaks Ltd
+country:        RU
+org-type:       LIR
+address:        Babushkina 252, lit. T, room 3
+address:        350020
+address:        Krasnodar
+address:        RUSSIAN FEDERATION
+phone:          +78612125007
+fax-no:         +78612125010
+abuse-c:        AR16979-RIPE
+mnt-ref:        MNT-TELEMAKS
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-TELEMAKS
+admin-c:        PV4238-RIPE
+created:        2010-07-22T10:07:29Z
+last-modified:  2024-01-03T20:01:08Z
+source:         RIPE # Filtered
+
+role:           TeleMaks ltd Network Operations Center
+address:        ul. Babushkina, 252, 4th floor
+address:        Krasnodar, Russian Federation
+nic-hdl:        TMNC252-RIPE
+org:            ORG-TL175-RIPE
+mnt-by:         MNT-TELEMAKS
+created:        2024-01-03T21:17:11Z
+last-modified:  2024-01-03T21:20:26Z
+source:         RIPE # Filtered
+abuse-mailbox:  abuse@hitel.ru
+admin-c:        PV4238-RIPE
+tech-c:         PV4238-RIPE
+
+
+

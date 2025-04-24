@@ -150,6 +150,9 @@ import:         from AS201119
 import:         from AS202498
                 action pref=100;
                 accept AS202498
+import:         from AS203118
+                action pref=100;
+                accept AS203118:AS-EZERDI
 import:         from AS205063
                 action pref=100;
                 accept AS-CORTEL
@@ -250,6 +253,8 @@ export:         to AS201119
                 announce AS-EKTROUTESERVER
 export:         to AS202498
                 announce AS-EKTROUTESERVER
+export:         to AS203118
+                announce AS-EKTROUTESERVER
 export:         to AS205063
                 announce AS-EKTROUTESERVER
 export:         to AS209307
@@ -279,7 +284,7 @@ remarks:        * -------------------------------------------------------------
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-03-19T12:12:23Z
+last-modified:  2025-04-21T12:10:10Z
 source:         RIPE # Filtered
 
 organisation:   ORG-JCE1-RIPE
