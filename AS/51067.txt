@@ -14,21 +14,25 @@ source:         RIPE
 aut-num:        AS51067
 as-name:        KRAZ-AS
 org:            ORG-SL1246-RIPE
+import:         from AS50928 accept ANY
+export:         to AS50928 announce AS51067
 import:         from AS34858 accept ANY
 export:         to AS34858 announce AS51067
-import:         from AS60430 accept AS-RED-IX-PEERS
-export:         to AS60430 announce AS51067
 import:         from AS16300 accept ANY
 export:         to AS16300 announce AS51067
+import:         from AS60430 accept AS-RED-IX-PEERS
+export:         to AS60430 announce AS51067
 mp-import:      afi ipv6.unicast from AS34858 accept ANY
 mp-export:      afi ipv6.unicast to AS34858 announce AS51067
+mp-import:      afi ipv6.unicast from AS60430 accept AS-RED-IX-PEERS
+mp-export:      afi ipv6.unicast to AS60430 announce AS51067
 admin-c:        NTSL9-RIPE
 tech-c:         NTSL9-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINFOSOFT-MNT
 created:        2010-05-26T13:18:35Z
-last-modified:  2024-06-19T07:30:22Z
+last-modified:  2025-04-24T06:59:31Z
 source:         RIPE
 sponsoring-org: ORG-DNJ1-RIPE
 

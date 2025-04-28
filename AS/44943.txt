@@ -16,8 +16,8 @@ as-name:        RAMNET-AS
 descr:          Internet Service Provider "RamNet"
 org:            ORG-RL79-RIPE
 remarks:        --------- IPv4 UPSTREAMS ------------
-import:         from AS9002 action pref=100; accept ANY # RETN
-export:         to AS9002 announce AS-RAMNET
+import:         from AS57304 action pref=100; accept ANY # RETN
+export:         to AS57304 announce AS-RAMNET
 import:         from AS20485 action pref=100; accept ANY # TTK
 export:         to AS20485 announce AS-RAMNET
 import:         from AS31500 action pref=100; accept ANY # GLOBALNET
@@ -25,8 +25,8 @@ export:         to AS31500 announce AS-RAMNET
 import:         from AS3216 action pref=100; accept ANY # BeeLine
 export:         to AS3216 announce AS-RAMNET
 remarks:        -------- IPv6 UPSTREAMS ---------
-mp-import:      afi ipv6.unicast from AS9002 action pref=100; accept ANY # RETN v6
-mp-export:      afi ipv6.unicast to AS9002 announce AS-RAMNET6
+mp-import:      afi ipv6.unicast from AS57304 action pref=100; accept ANY # RETN v6
+mp-export:      afi ipv6.unicast to AS57304 announce AS-RAMNET6 # RETN v6
 remarks:        -------- IPv4 PEERINGS ----------
 import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER # MSK-IX
 export:         to AS8631 announce AS-RAMNET
@@ -41,17 +41,16 @@ export:         to AS47764 announce AS-RAMNET
 import:         from AS48061 action pref=300; accept AS48061 # Gazprom Media
 export:         to AS48061 announce AS-RAMNET
 remarks:        -------- IPv6 PEERINGS ----------
-mp-import:      afi ipv6.unicast from AS8631 action pref=300; accept ANY # MSK-IX RS
-mp-export:      afi ipv6.unicast to AS8631 announce AS-RAMNET6
+mp-import:      afi ipv6.unicast from AS8631 action pref=300; accept ANY # MSK-IX
+mp-export:      afi ipv6.unicast to AS8631 announce AS-RAMNET6 # MSK-IX
 mp-import:      afi ipv6.unicast from AS50952 action pref=300; accept AS-DATAIX # Data-IX
-mp-export:      afi ipv6.unicast to AS50952 announce AS-RAMNET6
+mp-export:      afi ipv6.unicast to AS50952 announce AS-RAMNET6 # Data-IX
 mp-import:      afi ipv6.unicast from AS15169 action pref=300; accept AS-GOOGLE # Google
-mp-export:      afi ipv6.unicast to AS15169 announce AS-RAMNET6
+mp-export:      afi ipv6.unicast to AS15169 announce AS-RAMNET6 # Google
 mp-import:      afi ipv6.unicast from AS13238 action pref=300; accept AS-YANDEX # Yandex
-mp-export:      afi ipv6.unicast to AS13238 announce AS-RAMNET6
+mp-export:      afi ipv6.unicast to AS13238 announce AS-RAMNET6 # Yandex
 mp-import:      afi ipv6.unicast from AS47764 action pref=300; accept AS-MAILRU6 # Mail.RU
-mp-export:      afi ipv6.unicast to AS47764 announce AS-RAMNET6
-remarks:        ----------- CUSTOMERS ------------
+mp-export:      afi ipv6.unicast to AS47764 announce AS-RAMNET6 # Mail.RU
 remarks:        ---------------------------------------
 admin-c:        SS344-RIPE
 admin-c:        VK5186-RIPE
@@ -62,7 +61,7 @@ status:         ASSIGNED
 mnt-by:         MNT-RAMNET
 mnt-by:         RIPE-NCC-END-MNT
 created:        2008-04-04T12:31:41Z
-last-modified:  2025-04-10T07:21:42Z
+last-modified:  2025-04-25T08:24:05Z
 source:         RIPE # Filtered
 
 organisation:   ORG-RL79-RIPE

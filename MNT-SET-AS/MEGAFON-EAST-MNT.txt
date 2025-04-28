@@ -882,7 +882,7 @@ import:         from AS50596 accept AS-ITNET33
 export:         to AS50596 announce ANY
 import:         from AS50671 accept AS-GORODTV
 export:         to AS50671 announce ANY
-import:         from AS50674 accept AS-CROSSMIX-TELECOM
+import:         from AS50674 accept AS50674
 export:         to AS50674 announce ANY
 import:         from AS50676 accept AS50676
 export:         to AS50676 announce ANY
@@ -1142,8 +1142,6 @@ import:         from AS59595 accept AS-TENTEL
 export:         to AS59595 announce ANY
 import:         from AS59600 accept AS-ATLASTELECOM
 export:         to AS59600 announce ANY
-import:         from AS59612 accept AS-DANCER
-export:         to AS59612 announce ANY
 import:         from AS59614 accept AS59614
 export:         to AS59614 announce ANY
 import:         from AS59693 accept AS59693
@@ -1154,10 +1152,6 @@ import:         from AS59796 accept AS-STORMWALL-SET
 export:         to AS59796 announce ANY
 import:         from AS59825 accept AS59825
 export:         to AS59825 announce ANY
-import:         from AS59850 accept AS59850
-export:         to AS59850 announce ANY
-import:         from AS59924 accept AS59924
-export:         to AS59924 announce ANY
 import:         from AS60028 accept AS60028
 export:         to AS60028 announce ANY
 import:         from AS60040 accept AS60040:AS-LRBS2
@@ -1206,12 +1200,8 @@ import:         from AS61011 accept AS61011
 export:         to AS61011 announce ANY
 import:         from AS61040 accept AS61040
 export:         to AS61040 announce ANY
-import:         from AS61120 accept AS61120
-export:         to AS61120 announce ANY
 import:         from AS61206 accept AS61206
 export:         to AS61206 announce ANY
-import:         from AS61264 accept AS61264
-export:         to AS61264 announce ANY
 import:         from AS61308 accept AS61308
 export:         to AS61308 announce ANY
 import:         from AS61360 accept AS61360
@@ -1226,12 +1216,8 @@ import:         from AS61433 accept AS-SFERA
 export:         to AS61433 announce ANY
 import:         from AS61964 accept AS61964
 export:         to AS61964 announce ANY
-import:         from AS61979 accept AS61979
-export:         to AS61979 announce ANY
 import:         from AS62006 accept AS62006
 export:         to AS62006 announce ANY
-import:         from AS62103 accept AS62103
-export:         to AS62103 announce ANY
 import:         from AS62130 accept AS62130
 export:         to AS62130 announce ANY
 import:         from AS62169 accept AS62169
@@ -1318,8 +1304,6 @@ import:         from AS198758 accept AS198758
 export:         to AS198758 announce ANY
 import:         from AS198778 accept AS-EROS
 export:         to AS198778 announce ANY
-import:         from AS199008 accept AS199008
-export:         to AS199008 announce ANY
 import:         from AS199096 accept AS199096
 export:         to AS199096 announce ANY
 import:         from AS199524 accept AS-GCORE
@@ -1332,12 +1316,8 @@ import:         from AS199833 accept AS199833
 export:         to AS199833 announce ANY
 import:         from AS199860 accept AS-SDN
 export:         to AS199860 announce ANY
-import:         from AS199908 accept AS199908
-export:         to AS199908 announce ANY
 import:         from AS200319 accept AS200319
 export:         to AS200319 announce ANY
-import:         from AS200557 accept AS200557
-export:         to AS200557 announce ANY
 import:         from AS200634 accept AS-RTTCOM
 export:         to AS200634 announce ANY
 import:         from AS200644 accept AS200644
@@ -1384,24 +1364,14 @@ import:         from AS201706 accept AS-SERVICEPIPE
 export:         to AS201706 announce ANY
 import:         from AS201717 accept AS201717
 export:         to AS201717 announce ANY
-import:         from AS201826 accept AS-ERATEL
-export:         to AS201826 announce ANY
-import:         from AS201861 accept AS-CROSSMIX-TELECOM
-export:         to AS201861 announce ANY
 import:         from AS201952 accept AS201952
 export:         to AS201952 announce ANY
-import:         from AS201970 accept AS201970
-export:         to AS201970 announce ANY
 import:         from AS202091 accept AS202091
 export:         to AS202091 announce ANY
 import:         from AS202173 accept AS202173
 export:         to AS202173 announce ANY
-import:         from AS202402 accept AS202402
-export:         to AS202402 announce ANY
 import:         from AS202498 accept AS202498
 export:         to AS202498 announce ANY
-import:         from AS202570 accept AS202570
-export:         to AS202570 announce ANY
 import:         from AS202611 accept AS202611:AS-YCTLCDN-IPv4
 export:         to AS202611 announce ANY
 import:         from AS202746 accept AS202746
@@ -1420,8 +1390,6 @@ import:         from AS203131 accept AS203131
 export:         to AS203131 announce ANY
 import:         from AS203163 accept AS203163
 export:         to AS203163 announce ANY
-import:         from AS203190 accept AS203190
-export:         to AS203190 announce ANY
 import:         from AS203344 accept AS203344
 export:         to AS203344 announce ANY
 import:         from AS203387 accept AS203387
@@ -1434,8 +1402,6 @@ import:         from AS203509 accept AS203509
 export:         to AS203509 announce ANY
 import:         from AS203527 accept AS203527
 export:         to AS203527 announce ANY
-import:         from AS203844 accept AS203844
-export:         to AS203844 announce ANY
 import:         from AS203492 accept AS203492
 export:         to AS203492 announce ANY
 import:         from AS203695 accept AS-DAGLINE
@@ -1618,8 +1584,8 @@ import:         from AS216140 accept AS216140
 export:         to AS216140 announce ANY
 import:         from AS216185 accept AS216185
 export:         to AS216185 announce ANY
-import:         from AS216233 accept AS216233
-export:         to AS216233 announce ANY
+import:         from AS216322 accept AS216322:AS-ADI
+export:         to AS216322 announce ANY
 remarks:
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        | Community for Prefix Control
@@ -1935,7 +1901,7 @@ mnt-by:         RIPE-NCC-ENd-MNT
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2004-03-05T14:46:40Z
-last-modified:  2025-04-17T10:32:37Z
+last-modified:  2025-04-27T08:46:01Z
 source:         RIPE
 
 
