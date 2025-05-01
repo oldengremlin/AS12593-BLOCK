@@ -13,10 +13,12 @@ source:         RIPE
 
 aut-num:        AS20619
 as-name:        ALANIT-AS
-import:         from AS31359 action pref=10; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
 import:         from AS47569 action pref=100; accept ANY
 import:         from AS3253 action pref=100; accept ANY
-export:         to AS31359 announce AS20619
+export:         to AS12389 announce AS20619
+export:         to AS20485 announce AS20619
 export:         to AS47569 announce AS20619
 export:         to AS3253 announce AS20619
 remarks:        What was the answer to the question
@@ -28,7 +30,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ALANIT-MNT
 created:        2005-09-14T08:14:31Z
-last-modified:  2020-04-14T14:51:56Z
+last-modified:  2025-04-29T12:41:14Z
 source:         RIPE
 sponsoring-org: ORG-RL441-RIPE
 

@@ -22,6 +22,46 @@ import:         from AS25227 accept ANY
 export:         to AS25227 announce AS199546
 import:         from AS196695 accept ANY
 export:         to AS196695 announce AS199546
+remarks:        ==========================================================
+remarks:        BGP community for announce control
+remarks:        ==========================================================
+remarks:        // Black Hole community //
+remarks:        19954:666
+remarks:        ==========================================================
+remarks:        // All no announce //
+remarks:        19954:00000
+remarks:        ==========================================================
+remarks:        // Customer backup community (LP=50) //
+remarks:        19954:65050
+remarks:        ==========================================================
+remarks:        // UPSTREAM //
+remarks:        !!! 19954:11XXY - TAGS !!!
+remarks:        XX - Number of Upstream
+remarks:        00 - ALL UPSTREAM
+remarks:        01 - NETONE RUS
+remarks:        02 - CITYTELECOM
+remarks:
+remarks:        Y - tag for action
+remarks:        0 - no announce
+remarks:        1 - One prepend
+remarks:        2 - Two prepend
+remarks:        4 - Four prepend
+remarks:        8 - Eight prepend
+remarks:        ==========================================================
+remarks:        // PEERS //
+remarks:        !!! 19954:12XXY - TAGS !!!
+remarks:        XX - Number of Peer
+remarks:        00 ALL PEERS
+remarks:        01 MSK-IX
+remarks:        02 CLOUD-IX
+remarks:
+remarks:        Y - tag for action
+remarks:        0 - no announce
+remarks:        1 - One prepend
+remarks:        2 - Two prepend
+remarks:        4 - Four prepend
+remarks:        8 - Eight prepend
+remarks:        ==========================================================
 admin-c:        FM18547-RIPE
 admin-c:        NM8609-RIPE
 tech-c:         FM18547-RIPE
@@ -31,7 +71,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-mostelecom-1-mnt
 mnt-by:         ru-moscomnet-2-mnt
 created:        2012-11-30T08:54:33Z
-last-modified:  2024-04-02T07:42:24Z
+last-modified:  2025-04-29T13:02:00Z
 source:         RIPE
 
 organisation:   ORG-ML464-RIPE

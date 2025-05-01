@@ -1,0 +1,103 @@
+
+
+
+as-block:       AS198305 - AS200350
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2025-02-18T15:12:58Z
+last-modified:  2025-02-18T15:12:58Z
+source:         RIPE
+
+
+
+aut-num:        AS198947
+as-name:        RETNRU-SPB-AS
+org:            ORG-CA1293-RIPE
+remarks:
+remarks:        ---------------------------------------------------------------
+remarks:        *********************** Routing Policy ************************
+remarks:        ---------------------------------------------------------------
+import:         from    AS29470 action pref=100; accept   ANY
+export:         to      AS29470                  announce ANY
+import:         from    AS43690 action pref=200; accept   AS-SPBROUTESERVER
+export:         to      AS43690                  announce AS-RETN-RU
+import:         from    AS57304 action pref=200; accept   ANY
+export:         to      AS57304                  announce AS-RETN-RU
+import:         from AS-RETN-RU action pref=100; accept   AS-RETN-RU
+export:         to   AS-RETN-RU                  announce ANY
+remarks:        ---------------------------------------------------------------
+remarks:        ****************** RETN bgp confederation *********************
+remarks:        ---------------------------------------------------------------
+remarks:        -  AS9002
+remarks:        -  AS14947
+remarks:        -  AS25462
+remarks:        -  AS28886
+remarks:        -  AS29470
+remarks:        -  AS44877
+remarks:        -  AS51327
+remarks:        -  AS57304
+remarks:        -  AS60392
+remarks:        -  AS134518
+remarks:        -  AS139903
+remarks:        -  AS150003
+remarks:        -  AS198947
+remarks:        -  AS209447
+remarks:        -  AS210203
+remarks:        -  AS214455
+remarks:        -  AS214845
+remarks:        ---------------------------------------------------------------
+remarks:        ********************* Contacts and URLs ***********************
+remarks:        ---------------------------------------------------------------
+remarks:        Routing issues                   ncc at retn.ru
+remarks:        Peering issues and requests      peering at retn.ru
+remarks:        SPAM and security issues         abuse at retn.ru
+remarks:        Web Site                         http://retn.ru
+remarks:        Looking Glass                    http://lg.retn.ru
+remarks:        BGP communities list             http://retn.ru/bgp-communities
+remarks:        or                       http://lg.retn.ru/bgp-communities.html
+remarks:        ---------------------------------------------------------------
+remarks:
+admin-c:        JRN32-RIPE
+tech-c:         JRN32-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-RETNRU
+created:        2013-04-09T10:28:25Z
+last-modified:  2024-09-12T17:24:37Z
+source:         RIPE # Filtered
+
+organisation:   ORG-CA1293-RIPE
+org-name:       JSC "RetnNet"
+country:        RU
+org-type:       LIR
+address:        NIZHNY SUSALNY PER., D. 5, STR. 19
+address:        05064
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74956631640
+fax-no:         +74956631641
+admin-c:        JRN32-RIPE
+abuse-c:        RTNT1-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-RETNRU
+mnt-ref:        MNT-GCX
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-RETNRU
+created:        2013-03-21T10:46:45Z
+last-modified:  2024-11-25T09:10:16Z
+source:         RIPE # Filtered
+
+role:           JSC Retnnet contacts data
+address:        NIZHNY SUSALNY PER., D. 5, STR. 19
+address:        05064
+address:        Moscow
+address:        RUSSIAN FEDERATION
+nic-hdl:        JRN32-RIPE
+mnt-by:         MNT-RETNRU
+created:        2022-11-28T09:23:09Z
+last-modified:  2024-11-25T09:11:37Z
+source:         RIPE # Filtered
+
+
+

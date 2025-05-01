@@ -1,0 +1,154 @@
+
+
+
+as-block:       AS47870 - AS50048
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-12-06T06:09:56Z
+last-modified:  2024-12-06T06:09:56Z
+source:         RIPE
+
+
+
+aut-num:        AS48061
+as-name:        UMA-TECH-AS
+org:            ORG-LLCG6-RIPE
+remarks:        ---------------------------------------------------------
+remarks:        | START OF ROUTING POLICY |
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        | pref = 1000 - local |
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        | UPSTREAMS |
+remarks:        ---------------------------------------------------------
+import:         from AS3216 action pref = 900; accept any
+export:         to AS3216 announce AS-UMA-TECH
+import:         from AS8359 action pref = 900; accept any
+export:         to AS8359 announce AS-UMA-TECH
+import:         from AS12389 action pref = 900; accept any
+export:         to AS12389 announce AS-UMA-TECH
+import:         from AS20485 action pref = 900; accept any
+export:         to AS20485 announce AS-UMA-TECH
+import:         from AS31133 action pref = 900; accept any
+export:         to AS31133 announce AS-UMA-TECH
+import:         from AS35598 action pref = 900; accept any
+export:         to AS35598 announce AS-UMA-TECH
+remarks:        ---------------------------------------------------------
+remarks:        | PEERS |
+remarks:        ---------------------------------------------------------
+remarks:        ---------------------------------------------------------
+remarks:        | Private |
+remarks:        ---------------------------------------------------------
+import:         from AS6697 action pref = 700; accept AS-BELPAK
+export:         to AS6697 announce AS-UMA-TECH
+import:         from AS8744 action pref = 700; accept AS-WIMAX
+export:         to AS8744 announce AS-UMA-TECH
+import:         from AS8905 action pref = 700; accept AS-DIGIT1
+export:         to AS8905 announce AS-UMA-TECH
+import:         from AS9002 action pref = 700; accept AS-RETN
+export:         to AS9002 announce AS-UMA-TECH
+import:         from AS9049 action pref = 700; accept AS-ERTH
+export:         to AS9049 announce AS-UMA-TECH
+import:         from AS12714 action pref = 700; accept AS-TI
+export:         to AS12714 announce AS-UMA-TECH
+import:         from AS20485 action pref = 700; accept AS-TTK
+export:         to AS20485 announce AS-UMA-TECH
+import:         from AS20764 action pref = 700; accept AS-RASCOM
+export:         to AS20764 announce AS-UMA-TECH
+import:         from AS25308 action pref = 700; accept AS-CITYLAN
+export:         to AS25308 announce AS-UMA-TECH
+import:         from AS28917 action pref = 700; accept AS-FIORD
+export:         to AS28917 announce AS-UMA-TECH
+import:         from AS29076 action pref = 700; accept AS-CITYTELECOM
+export:         to AS29076 announce AS-UMA-TECH
+import:         from as31059 action pref = 700; accept AS-AVELACOM
+export:         to as31059 announce AS-UMA-TECH
+import:         from AS31133 action pref = 700; accept AS-MF-MGSM
+export:         to AS31133 announce AS-UMA-TECH
+import:         from AS31415 action pref = 700; accept AS-SVSCOMM
+export:         to AS31415 announce AS-UMA-TECH
+import:         from AS34123 action pref = 700; accept AS-NETORN
+export:         to AS34123 announce AS-UMA-TECH
+import:         from AS39153 action pref = 700; accept AS-SETEL
+export:         to AS39153 announce AS-UMA-TECH
+import:         from AS42632 action pref = 700; accept AS-MNOGOBYTE
+export:         to AS42632 announce AS-UMA-TECH
+import:         from AS42861 action pref = 700; accept AS-PRIME-LINE
+export:         to AS42861 announce AS-UMA-TECH
+import:         from AS44843 action pref = 700; accept AS-AMSTEL
+export:         to AS44843 announce AS-UMA-TECH
+import:         from AS47775 action pref = 700; accept AS-UBN
+export:         to AS47775 announce AS-UMA-TECH
+import:         from AS50923 action pref = 700; accept AS-METRO-SET
+export:         to AS50923 announce AS-UMA-TECH
+import:         from AS51408 action pref = 700; accept AS-DNX
+export:         to AS51408 announce AS-UMA-TECH
+import:         from AS35810 action pref = 700; accept AS-BIGTELECOM
+export:         to AS35810 announce AS-UMA-TECH
+import:         from AS41275 action pref = 700; accept AS-TUT
+export:         to AS41275 announce AS-UMA-TECH
+import:         from AS8492 action pref = 700; accept AS-OBIT
+export:         to AS8492 announce AS-UMA-TECH
+remarks:        ---------------------------------------------------------
+remarks:        | GLOBAL-IX Route Server |
+remarks:        ---------------------------------------------------------
+import:         from AS31500 action pref = 700; accept AS-GLOBAL-IX
+export:         to AS31500 announce AS-UMA-TECH
+remarks:        ---------------------------------------------------------
+remarks:        | W-IX Route Server |
+remarks:        ---------------------------------------------------------
+import:         from AS50384 action pref = 700; accept AS-W-IX
+export:         to AS50384 announce AS-UMA-TECH
+remarks:        ---------------------------------------------------------
+remarks:        | DATA-IX Route Server |
+remarks:        ---------------------------------------------------------
+import:         from AS50952 action pref = 700; accept AS-DATAIX
+export:         to AS50952 announce AS-UMA-TECH
+remarks:        ---------------------------------------------------------
+remarks:        | MSK-IX Route Server |
+remarks:        ---------------------------------------------------------
+import:         from AS8631 action pref = 800; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-UMA-TECH
+remarks:        ---------------------------------------------------------
+remarks:        | MILECOM-IX Route Server |
+remarks:        ---------------------------------------------------------
+import:         from AS13094 action pref = 700; accept any
+export:         to AS13094 announce AS-UMA-TECH
+remarks:        ---------------------------------------------------------
+remarks:        | END OF ROUTING POLICY |
+remarks:        ---------------------------------------------------------
+sponsoring-org: ORG-RRIf1-RIPE
+admin-c:        GA12497-RIPE
+tech-c:         GA12497-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         GPM-DIGITAL-TECH-MNT
+created:        2008-10-03T15:16:03Z
+last-modified:  2023-05-24T09:24:31Z
+source:         RIPE
+
+organisation:   ORG-LLCG6-RIPE
+org-name:       Limited Liability Company GPM Digital Technologies
+country:        RU
+org-type:       OTHER
+address:        129272 Moskow st. Trifonovskaya st., 57A, fl. 4, office 4-32
+abuse-c:        RN1998-RIPE
+mnt-ref:        GPM-DIGITAL-TECH-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-by:         GPM-DIGITAL-TECH-MNT
+created:        2021-11-25T15:16:50Z
+last-modified:  2022-12-01T16:35:40Z
+source:         RIPE # Filtered
+
+role:           GPM-DIGITAL-TECH
+address:        129272 Moskow st. Trifonovskaya st., 57A, fl. 4, office 4-32
+nic-hdl:        GA12497-RIPE
+mnt-by:         GPM-DIGITAL-TECH-MNT
+created:        2021-11-25T15:14:47Z
+last-modified:  2021-11-25T15:14:47Z
+source:         RIPE # Filtered
+
+
+

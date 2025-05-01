@@ -1071,9 +1071,6 @@ import:         from AS56534
 import:         from AS56630
                 action pref=100;
                 accept AS-MELBICOM
-import:         from AS56634
-                action pref=100;
-                accept AS-FLYTECH
 import:         from AS56679
                 action pref=100;
                 accept AS56679
@@ -1470,6 +1467,9 @@ import:         from AS212236
 import:         from AS213075
                 action pref=100;
                 accept AS-STARTFILM AS213075
+import:         from AS213452
+                action pref=100;
+                accept AS213452:AS-INFRACOM
 import:         from AS213499
                 action pref=100;
                 accept AS213499
@@ -2175,8 +2175,6 @@ export:         to AS56534
                 announce AS-MSKROUTESERVER
 export:         to AS56630
                 announce AS-MSKROUTESERVER
-export:         to AS56634
-                announce AS-MSKROUTESERVER
 export:         to AS56679
                 announce AS-MSKROUTESERVER
 export:         to AS56694
@@ -2441,6 +2439,8 @@ export:         to AS212236
                 announce AS-MSKROUTESERVER
 export:         to AS213075
                 announce AS-MSKROUTESERVER
+export:         to AS213452
+                announce AS-MSKROUTESERVER
 export:         to AS213499
                 announce AS-MSKROUTESERVER
 export:         to AS213624
@@ -2452,7 +2452,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-04-23T09:41:10Z
+last-modified:  2025-04-29T09:40:12Z
 source:         RIPE
 
 organisation:   ORG-JCE1-RIPE

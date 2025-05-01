@@ -2,3 +2,36 @@
 
 
 
+aut-num:        AS49531
+as-name:        NETCOM-R-AS
+org:            ORG-LA676-RIPE
+remarks:        Uplinks
+import:         from AS29076 action pref=200; accept ANY
+export:         to AS29076 announce AS-NETCOM-R
+import:         from AS35598 action pref=200; accept ANY
+export:         to AS35598 announce AS-NETCOM-R
+remarks:        Peers
+import:         from AS8631 action pref=300; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-NETCOM-R
+remarks:        Clients
+import:         from AS20731 action pref=300; accept AS20731
+export:         to AS20731 announce AS49531
+import:         from AS202406 action pref=300; accept AS20731
+export:         to AS202406 announce AS49531
+import:         from AS16262 action pref=300; accept AS-DELTA-LTD
+export:         to AS16262 announce ANY
+import:         from AS208689 action pref=300; accept AS-DELTA-SET
+export:         to AS208689 announce ANY
+import:         from AS216334 action pref=300; accept AS208689
+export:         to AS216334 announce ANY
+admin-c:        DT6296-RIPE
+tech-c:         DT6296-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-NETCOM-R
+created:        2009-06-24T15:00:54Z
+last-modified:  2023-11-20T20:52:16Z
+source:         RIPE
+
+
+

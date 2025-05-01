@@ -1,0 +1,79 @@
+
+
+
+as-block:       AS47385 - AS47868
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-07-08T14:18:47Z
+last-modified:  2024-07-08T14:18:47Z
+source:         RIPE
+
+
+
+aut-num:        AS47569
+as-name:        ERLANG-AS
+org:            ORG-EcL10-RIPE
+remarks:        ---------------------------------------------
+remarks:        upstreams
+import:         { from AS57304 action pref=100; accept ANY; from AS31500 action pref=100; accept ANY; from AS3216 action pref=100; accept ANY; }
+export:         { to AS57304 announce as-erlang; to AS31500 announce as-erlang; to AS3216 announce as-erlang; }
+remarks:        ---------------------------------------------
+remarks:        peers
+import:         { from AS43213 action pref=100; accept AS-EKTROUTESERVER; from AS8631 action pref=100; accept AS-MSKROUTESERVER; from AS42403 action pref=100; accept AS-NSKROUTESERVER; from AS31133 action pref=100; accept AS-MF-IX; from AS203844 action pref=100; accept AS-INTOM; from AS42498 action pref=100; accept AS-GERCON; from AS8563 action pref=100; accept AS-DIRECTNET; from AS43690 action pref=100; accept AS-SPBROUTESERVER; }
+export:         { to AS43213 announce as-erlang; to AS8631 announce as-erlang; to AS42403 announce as-erlang; to AS31133 announce as-erlang; to AS203844 announce as-erlang; to AS42498 announce as-erlang; to AS8563 announce as-erlang; to AS43690 announce as-erlang; }
+remarks:        ---------------------------------------------
+remarks:        downstreams
+import:         { from AS34352 action pref=100; accept AS34352; from AS20619 action pref=100; accept AS20619; from AS6699 action pref=100; accept as-uran; }
+export:         { to AS34352 announce as-erlang; to AS20619 announce as-erlang; to AS6699 announce as-erlang; }
+remarks:        ---------------------------------------------
+status:         ASSIGNED
+mnt-by:         MNT-ERLANG
+mnt-by:         RIPE-NCC-END-MNT
+admin-c:        AI4111-RIPE
+tech-c:         SZ3712-RIPE
+created:        2008-07-10T08:57:54Z
+last-modified:  2025-04-14T06:25:16Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-CS216-RIPE
+
+organisation:   ORG-EcL10-RIPE
+geoloc:         56.823705 60.591263
+org-name:       Erlang company Ltd.
+country:        RU
+org-type:       OTHER
+address:        620144
+address:        Yekaterinburg
+address:        RUSSIAN FEDERATION
+address:        Narodnoy Voli 19a, 7floor
+admin-c:        AI4111-RIPE
+tech-c:         SZ3712-RIPE
+phone:          +7 343 2637888
+fax-no:         +7 343 2637704
+mnt-ref:        MNT-ERLANG
+abuse-c:        ACRO329-RIPE
+mnt-by:         MNT-ERLANG
+created:        2008-06-07T07:29:48Z
+last-modified:  2022-12-01T16:23:45Z
+source:         RIPE # Filtered
+
+person:         Artur Ishmurzin
+address:        Yekaterinburg, Russia, Narodnoy Voli 19a
+phone:          +7 343 2637936
+nic-hdl:        AI4111-RIPE
+mnt-by:         ARTI-MNT
+created:        2016-02-02T11:40:20Z
+last-modified:  2016-02-02T12:48:57Z
+source:         RIPE # Filtered
+
+person:         Sergey Zabaluev
+address:        Yekaterinburg, Russia, Narodnoy Voli 19a
+phone:          +7(343)3727207
+nic-hdl:        SZ3712-RIPE
+mnt-by:         SERGEYZ
+created:        2016-02-02T07:47:33Z
+last-modified:  2016-02-02T07:56:53Z
+source:         RIPE
+
+
+

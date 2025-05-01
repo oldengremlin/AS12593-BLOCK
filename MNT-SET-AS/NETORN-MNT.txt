@@ -2,3 +2,210 @@
 
 
 
+aut-num:        AS202980
+as-name:        LUBOVICH-AS
+org:            ORG-LSO6-RIPE
+import:         from AS34123 accept ANY
+export:         to AS34123 announce AS202980
+import:         from AS35297 accept ANY
+export:         to AS35297 announce AS202980
+admin-c:        AN2262-RIPE
+tech-c:         AN2262-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETORN-MNT
+created:        2016-04-21T14:24:40Z
+last-modified:  2020-11-16T17:51:24Z
+source:         RIPE
+sponsoring-org: ORG-NL73-RIPE
+
+
+
+aut-num:        AS34123
+as-name:        NETORN-AS
+remarks:        Moscow, Russia
+remarks:
+remarks:        ------------------------------------------------------
+remarks:        Uplinks:
+remarks:
+remarks:        MSM
+import:         from AS12695 action pref=200; accept ANY
+export:         to AS12695 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS12695 action pref=200; accept ANY
+mp-export:      afi ipv6.unicast to AS12695 announce AS-NETORN
+remarks:
+remarks:        NAUKANET
+import:         from AS8641 action pref=200; accept ANY
+export:         to AS8641 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS8641 action pref=200; accept ANY
+mp-export:      afi ipv6.unicast to AS8641 announce AS-NETORN
+remarks:
+remarks:        RASCOM
+import:         from AS20764 action pref=200; accept ANY
+export:         to AS20764 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS20764 action pref=200; accept ANY
+mp-export:      afi ipv6.unicast to AS20764 announce AS-NETORN
+remarks:        -------------------------------------------------------
+remarks:        IX:
+remarks:
+remarks:        MSK-IX
+import:         from AS8631 action pref=240; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS8631 action pref=240; accept ANY
+mp-export:      afi ipv6.unicast to AS8631 announce AS-NETORN
+remarks:
+remarks:        DTEL-IX
+import:         from AS31210 action pref=240; accept AS-DTEL-IX
+export:         to AS31210 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS31210 action pref=240; accept AS-DTEL-IX-V6
+mp-export:      afi ipv6.unicast to AS31210 announce AS-NETORN
+remarks:
+remarks:        NL-IX
+import:         from AS34307 action pref=240; accept ANY
+export:         to AS34307 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS34307 action pref=240; accept ANY
+mp-export:      afi ipv6.unicast to AS34307 announce AS-NETORN
+remarks:
+remarks:        DATA-IX
+import:         from AS50952 action pref=240; accept AS-DATAIX
+export:         to AS50952 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS50952 action pref=240; accept AS-DATAIX
+mp-export:      afi ipv6.unicast to AS50952 announce AS-NETORN
+remarks:
+remarks:        Eurasia-Peering
+import:         from AS56931 action pref=240; accept AS-EURASIAPEERING_RS
+export:         to AS56931 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS56931  action pref=240; accept AS-EURASIAPEERING_RS
+mp-export:      afi ipv6.unicast to AS56931 announce AS-NETORN
+remarks:
+remarks:        GLOBALNET - IX
+import:         from AS31500 action pref=240; accept AS-GLOBAL-IX
+export:         to AS31500 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS31500 action pref=240; accept AS-GLOBAL-IX
+mp-export:      afi ipv6.unicast to AS31500 announce AS-NETORN
+remarks:        -------------------------------------------------------
+remarks:        Peers:
+remarks:
+import:         from AS8075 action pref=250; accept AS8075
+export:         to AS8075 announce AS-NETORN
+import:         from AS8470 action pref=250; accept AS-MACOMNET
+export:         to AS8470 announce AS-NETORN
+import:         from AS15169 action pref=250; accept AS15169
+export:         to AS15169 announce AS-NETORN
+import:         from AS21453 action pref=250; accept AS-FLEX
+export:         to AS21453 announce AS-NETORN
+import:         from AS28917 action pref=250; accept AS-FIORD
+export:         to AS28917 announce AS-NETORN
+import:         from AS41842 action pref=250; accept AS-MEDIAL
+export:         to AS41842 announce AS-NETORN
+import:         from AS42632 action pref=250; accept AS-MNOGOBYTE
+export:         to AS42632 announce AS-NETORN
+import:         from AS46489 action pref=250; accept AS46489
+export:         to AS46489 announce AS-NETORN
+import:         from AS47764 action pref=250; accept AS-MAILRU
+export:         to AS47764 announce AS-NETORN
+import:         from AS48061 action pref=250; accept AS-M-TECH
+export:         to AS48061 announce AS-NETORN
+import:         from AS49813 action pref=250; accept AS-INN
+export:         to AS49813 announce AS-NETORN
+import:         from AS200976 action pref=250; accept AS200976
+export:         to AS200976 announce AS-NETORN
+remarks:        -------------------------------------------------------
+remarks:        Customers:
+remarks:
+import:         from AS28738 action pref=300; accept AS-INTERLAN
+export:         to AS28738 announce ANY
+import:         from AS34139 action pref=300; accept AS-TSI
+export:         to AS34139 announce ANY
+mp-import:      afi ipv6.unicast from AS34139 action pref=300; accept AS-TSI
+mp-export:      afi ipv6.unicast to AS34139 announce ANY
+import:         from AS35035 action pref=300; accept AS-OSTNET
+export:         to AS35035 announce ANY
+import:         from AS35539 action pref=300; accept AS-INFOLINK
+export:         to AS35539 announce ANY
+import:         from AS39462 action pref=300; accept AS39462
+export:         to AS39462 announce ANY
+import:         from AS42148 action pref=300; accept AS-BEIREL
+export:         to AS42148 announce ANY
+import:         from AS42998 action pref=300; accept AS42998
+export:         to AS42998 announce ANY
+import:         from AS43667 action pref=300; accept AS-VERMONT
+export:         to AS43667 announce ANY
+import:         from AS43826 action pref=300; accept AS-SPNETRU
+export:         to AS43826 announce ANY
+import:         from AS43865 action pref=300; accept AS43865
+export:         to AS43865 announce ANY
+import:         from AS44056 action pref=300; accept AS-TRYTEK
+export:         to AS44056 announce ANY
+import:         from AS47286 action pref=300; accept AS-OTSNET
+export:         to AS47286 announce ANY
+import:         from AS47711 action pref=300; accept AS47711
+export:         to AS47711 announce ANY
+import:         from AS48149 action pref=300; accept AS48149
+export:         to AS48149 announce ANY
+import:         from AS49348 action pref=300; accept AS49348
+export:         to AS49348 announce ANY
+import:         from AS49583 action pref=300; accept AS-KOMLAN
+export:         to AS49583 announce ANY
+import:         from AS49893 action pref=300; accept AS-BITRACE
+export:         to AS49893 announce ANY
+import:         from AS50553 action pref=300; accept AS50553
+export:         to AS50553 announce ANY
+import:         from AS51579 action pref=300; accept AS-VSHK
+export:         to AS51579 announce ANY
+import:         from AS52080 action pref=300; accept AS-IVLAN
+export:         to AS52080 announce ANY
+import:         from AS57368 action pref=300; accept AS57368
+export:         to AS57368 announce ANY
+import:         from AS57712 action pref=300; accept AS57712
+export:         to AS57712 announce ANY
+import:         from AS58036 action pref=300; accept AS58036
+export:         to AS58036 announce ANY
+import:         from AS59584 action pref=300; accept AS59584
+export:         to AS59584 announce ANY
+import:         from AS61380 action pref=300; accept AS61380
+export:         to AS61380 announce ANY
+import:         from AS62429 action pref=300; accept AS62429
+export:         to AS62429 announce ANY
+import:         from AS196803 action pref=300; accept AS-KOMDIV
+export:         to AS196803 announce ANY
+import:         from AS201088 action pref=300; accept AS-TECHSTANDART
+export:         to AS201088 announce ANY
+import:         from AS203051 action pref=300; accept AS203051
+export:         to AS203051 announce ANY
+import:         from AS49106 action pref=300; accept AS49106
+export:         to AS49106 announce ANY
+import:         from AS50435 action pref=300; accept AS50435 AND AS49106
+export:         to AS50435 announce ANY
+org:            ORG-NL73-RIPE
+admin-c:        NET4-RIPE
+tech-c:         NET4-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETORN-MNT
+created:        2004-10-28T13:36:39Z
+last-modified:  2023-01-17T09:14:18Z
+source:         RIPE
+
+
+
+aut-num:        AS50668
+as-name:        DIALOGK-AS
+import:         from AS34123 accept ANY
+export:         to AS34123 announce AS-DIALOGK
+import:         from AS48347 accept ANY
+export:         to AS48347 announce AS-DIALOGK
+admin-c:        IP989-RIPE
+tech-c:         AN2262-RIPE
+status:         ASSIGNED
+org:            ORG-DL43-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETORN-MNT
+mnt-by:         DIALOGK-MNT
+created:        2018-10-08T12:41:48Z
+last-modified:  2020-11-16T18:02:48Z
+source:         RIPE
+sponsoring-org: ORG-NL73-RIPE
+
+
+

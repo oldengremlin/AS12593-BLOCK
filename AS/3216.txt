@@ -1699,6 +1699,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS39113 action pref=100; accept AS39113
+export:         to AS39113 announce ANY
 import:         from AS50425 action pref=100; accept AS50425
 export:         to AS50425 announce {0.0.0.0/0}
 mp-import:      from AS202234 action pref=100; accept AS202234
@@ -1713,6 +1715,10 @@ import:         from AS44050 action pref=100; accept AS-PIN
 export:         to AS44050 announce ANY
 import:         from AS208981 action pref=100; accept AS-DPC24
 export:         to AS208981 announce ANY
+import:         from AS34757 action pref=100; accept AS-SIBSET
+export:         to AS34757 announce ANY
+mp-import:      from AS34757 action pref=100; accept AS-SIBSET
+mp-export:      to AS34757 announce ANY
 import:         from AS34858 action pref=100; accept AS34858
 export:         to AS34858 announce ANY
 import:         from AS207347 action pref=100; accept AS207347
@@ -2925,6 +2931,10 @@ import:         from AS56807 action pref=100; accept AS56807
 export:         to AS56807 announce {0.0.0.0/0}
 import:         from AS201820 action pref=100; accept AS201820
 export:         to AS201820 announce ANY
+import:         from AS2854 action pref=100; accept AS-ROSPRINT
+export:         to AS2854 announce ANY
+mp-import:      from AS2854 action pref=100; accept AS-OBSRUSSIA6
+mp-export:      to AS2854 announce ANY
 import:         from AS35102 action pref=100; accept AS35102
 export:         to AS35102 announce ANY
 import:         from AS203203 action pref=100; accept AS203203
@@ -5769,7 +5779,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-04-25T06:51:53Z
+last-modified:  2025-04-30T08:24:10Z
 source:         RIPE
 
 organisation:   ORG-ES15-RIPE

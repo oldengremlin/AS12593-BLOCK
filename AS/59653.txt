@@ -21,23 +21,9 @@ remarks:        --------------------------------------------------------
 remarks:        - Inetcom
 import:         from AS35598 action pref=100; accept ANY
 export:         to AS35598 announce AS-ALPHATEL
-remarks:        - Transroute Telecom
-import:         from AS50509 action pref=100; accept ANY
-export:         to AS50509 announce AS-ALPHATEL
-remarks:        ========================================================
-remarks:        Peering
-remarks:        --------------------------------------------------------
-remarks:        - Piter-IX MSK RS
-import:         from AS49869 action pref=400; accept ANY
-export:         to AS49869 announce AS-ALPHATEL
-remarks:        - Piter-IX SPB RS
-import:         from AS50817 action pref=400; accept ANY
-export:         to AS50817 announce AS-ALPHATEL
-remarks:        ========================================================
-remarks:        Downstreams
-remarks:        --------------------------------------------------------
+remarks:        - ArtCon
 import:         from AS25251 action pref=700; accept AS-ARTCON
-export:         to AS25251 announce ANY
+export:         to AS25251 announce AS-ALPHATEL
 remarks:        ========================================================
 admin-c:        VT4512-RIPE
 tech-c:         VT4512-RIPE
@@ -45,7 +31,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-ALPHA
 created:        2012-09-07T11:49:09Z
-last-modified:  2024-01-25T09:54:42Z
+last-modified:  2025-04-30T08:22:50Z
 source:         RIPE
 
 organisation:   ORG-AOL10-RIPE

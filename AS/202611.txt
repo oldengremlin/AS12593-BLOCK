@@ -1,0 +1,111 @@
+
+
+
+as-block:       AS200352 - AS203022
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-10-03T13:30:54Z
+last-modified:  2024-10-03T13:30:54Z
+source:         RIPE
+
+
+
+aut-num:        AS202611
+as-name:        YCTL
+org:            ORG-YCTL2-RIPE
+remarks:        -----------------------------------
+remarks:        #             UPLINKS             #
+remarks:        -----------------------------------
+remarks:        Megafon
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS202611:AS-YCTL
+remarks:        ER-Telecom Holding
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS202611:AS-YCTL
+remarks:        Beeline
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS202611:AS-YCTL
+remarks:        Rostelecom
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS202611:AS-YCTL
+remarks:        -----------------------------------
+remarks:        #              PEERS              #
+remarks:        -----------------------------------
+remarks:        Yandex Cloud
+import:         from AS200350 accept AS-YACLOUD
+export:         to AS200350 announce AS202611:AS-YCTL
+remarks:        Yandex
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS202611:AS-YCTL
+remarks:        MTS
+import:         from AS8359 accept AS-MTU
+export:         to AS8359 announce AS202611:AS-YCTL
+remarks:        -----------------------------------
+remarks:        #                IX               #
+remarks:        -----------------------------------
+remarks:        BANK-IX
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS202611:AS-YCTL
+remarks:        -----------------------------------
+remarks:        #            DOWNLINKS            #
+remarks:        -----------------------------------
+remarks:        Yandex Cloud CDN
+import:         from AS215013 accept AS215013:AS-YCCDN
+export:         to AS215013 announce ANY
+admin-c:        YCNO1-RIPE
+tech-c:         YCNO1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-yacloud-1-mnt
+created:        2016-07-13T13:39:20Z
+last-modified:  2025-04-10T12:48:22Z
+source:         RIPE
+
+organisation:   ORG-YCTL2-RIPE
+org-name:       Yandex.Telecom LLC
+country:        RU
+org-type:       LIR
+address:        16 Lva Tolstovo st.
+address:        119034
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74957397000
+admin-c:        YCNO1-RIPE
+tech-c:         YCNO1-RIPE
+abuse-c:        AR48776-RIPE
+mnt-ref:        ru-yacloud-1-mnt
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ru-yacloud-1-mnt
+created:        2017-05-31T10:59:39Z
+last-modified:  2023-05-23T09:25:53Z
+source:         RIPE # Filtered
+
+role:           Yandex Cloud Network Operations
+address:        Yandex Cloud
+address:        16 Lva Tolstogo st.
+address:        119021
+address:        Moscow
+address:        Russian Federation
+phone:          +7 495 739 7000
+fax-no:         +7 495 739 7070
+remarks:        trouble: ------------------------------------------------------
+remarks:        trouble: Points of contact for Yandex Cloud Network Operations
+remarks:        trouble: ------------------------------------------------------
+remarks:        trouble: Routing and peering issues: cloud-noc@yandex.net
+remarks:        trouble: SPAM issues: cloud-abuse@yandex-team.ru
+remarks:        trouble: Network security issues: cloud-abuse@yandex-team.ru
+remarks:        trouble: ------------------------------------------------------
+admin-c:        AG25016-RIPE
+admin-c:        MS53754-RIPE
+tech-c:         AG25016-RIPE
+tech-c:         MS53754-RIPE
+mnt-by:         mnt-ru-yandexcloud-1
+created:        2019-07-29T16:50:06Z
+last-modified:  2025-02-19T14:56:33Z
+source:         RIPE # Filtered
+nic-hdl:        YCNO1-RIPE
+abuse-mailbox:  cloud-abuse@yandex-team.ru
+
+
+

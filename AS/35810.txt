@@ -45,6 +45,34 @@ export:         to AS28917 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS28917 accept ANY
 mp-export:      afi ipv6.unicast to AS28917 announce AS-BIGTELECOM-IPV6
 remarks:
+remarks:        ---- ER-Telecom ---
+remarks:
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS-BIGTELECOM
+mp-import:      afi ipv6.unicast from AS9049 accept ANY
+mp-export:      afi ipv6.unicast to AS9049 announce AS-BIGTELECOM-IPV6
+remarks:
+remarks:        ---- Inetcom ---
+remarks:
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS-BIGTELECOM
+mp-import:      afi ipv6.unicast from AS35598 accept ANY
+mp-export:      afi ipv6.unicast to AS35598 announce AS-BIGTELECOM-IPV6
+remarks:
+remarks:        ---- Team-Host ---
+remarks:
+import:         from AS202984 accept ANY
+export:         to AS202984 announce AS-BIGTELECOM
+mp-import:      afi ipv6.unicast from AS202984 accept ANY
+mp-export:      afi ipv6.unicast to AS202984 announce AS-BIGTELECOM-IPV6
+remarks:
+remarks:        ---- GlobalNet ---
+remarks:
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS-BIGTELECOM
+mp-import:      afi ipv6.unicast from AS31500 accept ANY
+mp-export:      afi ipv6.unicast to AS31500 announce AS-BIGTELECOM-IPV6
+remarks:
 remarks:        #### PEERS ####
 remarks:
 remarks:        ---- Yandex ---
@@ -153,6 +181,13 @@ remarks:
 import:         from AS29076 accept AS-CITYTELECOM
 export:         to AS29076 announce AS-BIGTELECOM
 remarks:
+remarks:        ---- W-IX ---
+remarks:
+import:         from AS50384 accept AS-W-IX-IPVSIX
+export:         to AS50384 announce AS-BIGTELECOM
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX-IPVSIX
+mp-export:      afi ipv6.unicast to AS50384 announce AS-BIGTELECOM-IPV6
+remarks:
 remarks:        #### DOWNSTREAMS ####
 remarks:
 remarks:        ---- Interlan ---
@@ -181,13 +216,19 @@ import:         from AS50771 accept AS50771
 import:         from AS50771 accept AS197120
 import:         from AS50771 accept AS50600
 export:         to AS50771 announce ANY
+remarks:
+remarks:        ---- LKOM ---
+remarks:
+import:         from AS50806 accept AS-LKOM
+export:         to AS50806 announce ANY
+remarks:
 admin-c:        ASI27-RIPE
 tech-c:         DF1791-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         BIGTELECOM-MNT
 created:        2005-11-02T10:09:30Z
-last-modified:  2024-10-14T11:28:46Z
+last-modified:  2025-04-28T18:04:12Z
 source:         RIPE # Filtered
 
 organisation:   ORG-BCJ2-RIPE
