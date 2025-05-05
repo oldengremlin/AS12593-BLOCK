@@ -2,30 +2,3 @@
 
 
 
-aut-num:        AS48209
-as-name:        LANCRONIX-AS
-descr:          Moscow, Russia
-descr:          http://www.lancronix.ru
-org:            ORG-OL43-RIPE
-remarks:        ==========================================================
-remarks:        Upstreams
-remarks:        ----------------------------------------------------------
-import:         { from AS12695 action pref=150; accept ANY; from AS20485 action pref=150; accept ANY; }
-export:         { to AS12695 announce AS-LANCRONIX; to AS20485 announce AS-LANCRONIX; }
-remarks:        ==========================================================
-remarks:        Downstreams
-remarks:        ----------------------------------------------------------
-import:         { from AS211773 action pref=50; accept AS211773; }
-export:         { to AS211773 announce ANY; }
-remarks:        ==========================================================
-admin-c:        LNO-RIPE
-tech-c:         LNO-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         LNX-MNT
-created:        2008-10-24T10:47:25Z
-last-modified:  2021-03-25T07:39:41Z
-source:         RIPE
-
-
-

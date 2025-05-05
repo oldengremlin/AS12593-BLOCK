@@ -2,3 +2,90 @@
 
 
 
+aut-num:        AS201192
+as-name:        Dilmax
+org:            ORG-DC170-RIPE
+import:         from AS24936 accept ANY
+export:         to AS24936 announce AS201192
+import:         from AS6939 accept ANY
+export:         to AS6939 announce AS201192
+import:         from AS-ANY accept ANY
+export:         to AS-ANY announce AS201192
+admin-c:        VVT48-RIPE
+tech-c:         VVT48-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RIM2000-MNT
+created:        2018-07-09T09:30:53Z
+last-modified:  2020-11-16T17:50:32Z
+source:         RIPE
+sponsoring-org: ORG-RMl1-RIPE
+
+
+
+aut-num:        AS24936
+as-name:        RIM2000M-AS
+descr:          2, Odesskaya str.,
+descr:          Moscow, Russia
+org:            ORG-RMl1-RIPE
+remarks:        - - - - - - - - - - - Import - - - - - - - - - - - - - - -
+remarks:        - Uplinks -
+import:         from AS28917 action pref=102; accept ANY
+import:         from AS29076 action pref=102; accept ANY
+remarks:        - Peers -
+import:         from AS8631 action pref=160; accept ANY
+remarks:        - Customers -
+import:         from AS38912 action pref=550; accept AS38912
+import:         from AS211932 action pref=550; accept AS211932
+import:         from AS43235 action pref=550; accept AS43235
+import:         from AS58091 action pref=550; accept AS58091
+remarks:        - - - - - - - - - - - Export - - - - - - - - - - - - - - -
+remarks:        - Uplinks -
+export:         to AS28917 announce AS-RIM2000M
+export:         to AS29076 announce AS-RIM2000M
+remarks:        - Peers -
+export:         to AS8631 announce AS-RIM2000M
+remarks:        - Customers -
+export:         to AS38912 announce ANY
+export:         to AS211932 announce ANY
+export:         to AS58091 announce ANY
+remarks:        Routing issues: noc@rim2000.ru
+remarks:        Peering issues: noc@rim2000.ru
+remarks:        DNS issues: admin@rim2000.ru
+remarks:        Mail issues: admin@rim2000.ru
+remarks:        SPAM&SCAN issues: abuse@rim2000.ru
+remarks:        Abuse issues: abuse@rim2000.ru
+remarks:        Customer support: tech@rim2000.ru
+remarks:        - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+admin-c:        GAL10-RIPE
+tech-c:         KDO2-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RIM2000-MNT
+created:        2002-05-30T14:37:48Z
+last-modified:  2023-06-01T12:28:17Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS35824
+as-name:        COMMASTER-AS
+org:            ORG-CL62-RIPE
+descr:          Russia, Moscow, Baumanskaya str. , 58 building 16
+import:         from AS43287 action pref=100; accept ANY
+export:         to AS43287 announce AS35824
+import:         from AS8732 action pref=100; accept ANY
+export:         to AS8732 announce AS35824
+default:        to AS8732 action pref=100;
+admin-c:        SM35557-RIPE
+tech-c:         SM35557-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RIM2000-MNT
+created:        2005-11-07T15:48:27Z
+last-modified:  2019-03-11T14:12:51Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-RMl1-RIPE
+
+
+
