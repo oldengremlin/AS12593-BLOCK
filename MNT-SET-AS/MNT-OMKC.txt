@@ -2,3 +2,136 @@
 
 
 
+aut-num:        AS15870
+as-name:        BST-AS
+org:            ORG-BL169-RIPE
+import:         from AS47165 accept ANY
+export:         to AS47165 announce AS15870
+import:         from AS47246 accept ANY
+export:         to AS47246 announce AS15870
+admin-c:        BLN19-RIPE
+tech-c:         BLN19-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-OMKC
+created:        2015-08-28T11:39:56Z
+last-modified:  2020-11-16T17:56:23Z
+source:         RIPE
+sponsoring-org: ORG-OksL1-RIPE
+
+
+
+aut-num:        AS47165
+as-name:        OMKC-AS
+org:            ORG-OksL1-RIPE
+remarks:        ********************
+remarks:        Uplinks
+remarks:        ********************
+import:         from AS21127 action pref=100; accept ANY
+import:         from AS8359 action pref=100; accept ANY
+import:         from AS50928 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+mp-import:      afi ipv6.unicast from AS8359 action pref=100; accept ANY
+mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
+mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
+export:         to AS21127 announce AS-OMKC-SET
+export:         to AS8359 announce AS-OMKC-SET
+export:         to AS50928 announce AS-OMKC-SET
+export:         to AS20485 announce AS-OMKC-SET
+export:         to AS31133 announce AS-OMKC-SET
+export:         to AS12389 announce AS-OMKC-SET
+mp-export:      afi ipv6.unicast to AS8359 announce AS-OMKC-SET
+mp-export:      afi ipv6.unicast to AS20485 announce AS-OMKC-SET
+mp-export:      afi ipv6.unicast to AS31133 announce AS-OMKC-SET
+remarks:        ********************
+remarks:        Peers
+remarks:        ********************
+import:         from AS41843 action pref=200; accept AS41843
+export:         to AS41843 announce AS-OMKC-PEERING-SET
+import:         from AS42676 action pref=200; accept AS42676
+export:         to AS42676 announce AS-OMKC-PEERING-SET
+import:         from AS30729 action pref=200; accept AS-TRANSFER
+export:         to AS30729 announce AS-OMKC-PEERING-SET
+import:         from AS8411 action pref=200; accept AS8411
+export:         to AS8411 announce AS-OMKC-PEERING-SET
+import:         from AS28884 action pref=200; accept AS28884 and AS-NSKROUTESERVER
+export:         to AS28884 announce AS-OMKC-PEERING-SET
+import:         from AS31643 action pref=200; accept AS-IMASTER-SET
+export:         to AS31643 announce AS-OMKC-SET
+import:         from AS13094 action pref=150; accept any
+export:         to AS13094 announce AS-OMKC-SET
+import:         from AS50384 action pref=150; accept AS-W-IX
+export:         to AS50384 announce AS-OMKC-SET
+import:         from AS5952 action pref=150; accept AS-DATAIX
+export:         to AS50952 announce AS-OMKC-SET
+import:         from AS43213 action pref=150; accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS-OMKC-SET
+import:         from AS50923 action pref=150; accept ANY
+export:         to AS50923 announce AS-OMKC-SET
+import:         from AS8631 action pref=150; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-OMKC-SET
+import:         from AS59712 action pref=150; accept AS59712
+export:         to AS59712 announce AS-OMKC-SET
+import:         from AS36040 action pref=150; accept AS36040
+export:         to AS36040 announce AS-OMKC-SET
+import:         from AS211609 action pref=150; accept AS211609
+export:         to AS211609 announce AS-OMKC-SET
+import:         from AS207353 action pref=150; accept AS207353
+export:         to AS207353 announce ANY
+remarks:        ********************
+remarks:        Customers
+remarks:        ********************
+import:         from AS49404 action pref=300; accept AS49404 and AS61084
+export:         to AS49404 announce ANY
+import:         from AS47246 action pref=200; accept AS-OMKC-PEERING-SET
+export:         to AS47246 announce ANY
+import:         from AS15870 action pref=300; accept AS15870
+export:         to AS15870 announce ANY
+import:         from AS61228 action pref=300; accept AS61228
+export:         to AS61228 announce ANY
+import:         from AS57411 action pref=300; accept AS57411
+export:         to AS57411 announce ANY
+import:         from AS61151 action pref=300; accept AS61151
+export:         to AS61151 announce ANY
+import:         from AS49880 action pref=300; accept AS49880
+export:         to AS49880 announce ANY
+import:         from AS198384 action pref=300; accept AS198384
+export:         to AS198384 announce ANY
+mp-import:      afi ipv6.unicast from AS15870 action pref=300; accept AS15870
+mp-export:      afi ipv6.unicast to AS15870 announce ANY
+mp-import:      afi ipv6.unicast from AS47246 action pref=300; accept AS47246
+mp-export:      afi ipv6.unicast to AS47246 announce ANY
+mp-import:      afi ipv6.unicast from AS57629 action pref=300; accept AS57629
+mp-export:      afi ipv6.unicast to AS57629 announce ANY
+remarks:        +-------------------------------------------------------------+
+remarks:        | Community for Customers |
+remarks:        +-------------------------------------------------------------+
+remarks:        | 47165:xxy When advertising to Uplinks |
+remarks:        +-------------------------------------------------------------+
+remarks:        | 47165:40y When advertising to ZSTTKAS (AS21127) |
+remarks:        | 47165:50y When advertising to COMSTAR (AS8359) |
+remarks:        | 47165:60y When advertising to TTK (AS20485) |
+remarks:        | 47165:70y When advertising to MEGAFON (AS31133) |
+remarks:        | 47165:80y When advertising to RTK (AS12389) |
+remarks:        | y=9 - advertise without prepends |
+remarks:        | y=0 - do not advertise |
+remarks:        | y=1,2 or 3 - prepend 47165 (1,2, or 3) times |
+remarks:        +-------------------------------------------------------------+
+remarks:        -----------------------------------------------------
+remarks:        Contact addresses:
+remarks:        routing & peering noc@omkc.ru
+remarks:        spam & security abuse@omkc.ru
+remarks:        -----------------------------------------------------
+admin-c:        DG5568-RIPE
+tech-c:         DMF9-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-OMKC
+created:        2008-05-07T12:53:33Z
+last-modified:  2025-03-07T04:42:45Z
+source:         RIPE # Filtered
+
+
+

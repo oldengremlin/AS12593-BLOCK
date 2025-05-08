@@ -1,4 +1,205 @@
 
 
 
+as-block:       AS2895 - AS2895
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:19Z
+last-modified:  2018-11-22T15:27:19Z
+source:         RIPE
+
+
+
+aut-num:        AS2895
+as-name:        FREE-NET-AS
+descr:          FREEnet
+org:            ORG-FG2-RIPE
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Upstreams
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        --- Comcor ---
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS8732 action pref=200; accept ANY
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS8732 announce AS-FREENET
+remarks:        --- RUNNet ---
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS3267 action pref=200; accept ANY
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS3267 announce AS-FREENET
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Clients
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        ---GPNTB---
+mp-import:      afi ipv4.unicast from AS2587 action pref=80; accept AS2587
+mp-export:      afi ipv4.unicast to AS2587 announce ANY
+remarks:        ---RFBR---
+import:         from AS201842 action pref=80; accept {147.45.206.0/24, 193.233.79.0/24}
+export:         to AS201842 announce AS-FREENET {0.0.0.0/0}
+remarks:        --- Filanco-CL ---
+mp-import:      afi ipv4.unicast from AS204039 action pref=80; accept {31.28.22.0/24}
+mp-export:      afi ipv4.unicast to AS204039 announce {0.0.0.0/0}
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Peers
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+mp-import:      afi ipv4.unicast from AS3218 action pref=100; accept AS-COSMOS
+mp-export:      afi ipv4.unicast to AS3218 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS3316 action pref=100; accept AS-RELARN
+mp-export:      afi ipv4.unicast to AS3316 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS45102 action pref=100; accept AS45102
+mp-export:      afi ipv4.unicast to AS45102 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS5431 action pref=100; accept ANY
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS5431 announce AS-FREENET
+import:         from AS5467 action pref=100; accept AS-MIPT
+export:         to AS5467 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS5568 action pref=100; accept AS-RBNET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS5568 announce AS-FREENET
+import:         from AS8241 action pref=100; accept AS-RELLINE
+export:         to AS8241 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS8470 action pref=100; accept AS-MACOMNET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS8470 announce AS-FREENET
+import-via:     afi ipv4.unicast, ipv6.unicast AS8631 from AS-MSKROUTESERVER action pref=100; accept AS-MSKROUTESERVER
+export-via:     afi ipv4.unicast, ipv6.unicast AS8631 to AS-MSKROUTESERVER announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS12695 action pref=100; accept AS-DINET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS12695 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS13238 action pref=100; accept AS-YANDEX
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS13238 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS30124 action pref=90; accept {192.5.5.0/24}
+mp-import:      afi ipv6.unicast from AS30124 action pref=90; accept {2001:500:2f::/48}
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS30124 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS31059 action pref=100; accept AS-AVELACOM
+mp-import:      afi ipv6.unicast from AS31059 action pref=100; accept AS-AVELACOM6
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS31059 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS31500 action pref=100; accept AS-GLOBAL-NET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS31500 announce AS-FREENET
+import:         from AS43832 action pref=100; accept AS43832
+export:         to AS43832 announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX MSK
+remarks:        ---------------------------------------------
+import-via:     afi ipv4.unicast, ipv6.unicast AS49869 from AS-PITER-IX-MSK action pref=100; accept AS-PITER-IX-MSK
+export-via:     afi ipv4.unicast, ipv6.unicast AS49869 to AS-PITER-IX-MSK announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX SPB
+remarks:        ---------------------------------------------
+import-via:     afi ipv4.unicast, ipv6.unicast AS50817 from AS-PITER-IX action pref=100; accept AS-PITER-IX
+export-via:     afi ipv4.unicast, ipv6.unicast AS50817 to AS-PITER-IX announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX HEL
+remarks:        ---------------------------------------------
+import-via:     afi ipv4.unicast AS39607 from AS-PITER-IX-HELSINKI action pref=100; accept AS-PITER-IX-HELSINKI
+export-via:     afi ipv4.unicast AS39607 to AS-PITER-IX-HELSINKI announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX TLL
+remarks:        ---------------------------------------------
+import-via:     afi ipv4.unicast AS57936 from AS-PITER-IX-TLL action pref=100; accept AS-PITER-IX-TLL
+export-via:     afi ipv4.unicast AS57936 to AS-PITER-IX-TLL announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX RIX
+remarks:        ---------------------------------------------
+import-via:     afi ipv4.unicast AS49634 from AS-PITER-IX-RIGA action pref=100; accept AS-PITER-IX-RIGA
+export-via:     afi ipv4.unicast AS49634 to AS-PITER-IX-RIGA announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX FRA
+remarks:        ---------------------------------------------
+import-via:     afi ipv4.unicast AS48193 from AS-PITER-IX-FRA action pref=100; accept AS-PITER-IX-RIGA
+export-via:     afi ipv4.unicast AS48193 to AS-PITER-IX-FRA announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        Communities for prefix advertisement control (accepted from clients)
+remarks:        ---------------------------------------------
+remarks:        2895:50xn Controls advertisement to
+remarks:        direction "x",where directions are:
+remarks:        x=0 All upstreams
+remarks:        x=1 All peers
+remarks:        x=2 All clients
+remarks:        x=3 Upstream AS3267 (RUNNet)
+remarks:        x=4 Upstream AS8732 (COMCOR)
+remarks:        x=7 MSK-IX Peers
+remarks:        x=8 PITER-IX Peers
+remarks:        and values of "n" define possible actions:
+remarks:        n=0 do not advertise
+remarks:        n=1,2,4,6 add n prepends
+remarks:        Less specific directions take precedence
+remarks:        over more specific directions. For given "x",
+remarks:        the least value of "n" takes precedence.
+remarks:        ---------------------------------------------
+admin-c:        ASM57-RIPE
+tech-c:         DIS3-RIPE
+tech-c:         FH645-RIPE
+status:         LEGACY
+mnt-by:         RIPE-NCC-LEGACY-MNT
+mnt-by:         AS2895-MNT
+mnt-by:         FREENET-MNT
+created:        2002-09-10T15:26:09Z
+last-modified:  2024-09-16T18:39:51Z
+source:         RIPE
+
+organisation:   ORG-FG2-RIPE
+org-name:       OOO FREEnet Group
+country:        RU
+org-type:       LIR
+address:        47, Leninsky prospect
+address:        119334
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74991354133
+admin-c:        DIS3-RIPE
+admin-c:        FH645-RIPE
+admin-c:        ASM57-RIPE
+abuse-c:        FRAB1-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        FREENET-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         FREENET-MNT
+created:        2004-04-17T11:52:42Z
+last-modified:  2021-05-11T14:44:51Z
+source:         RIPE # Filtered
+
+role:           FREEnet Hostmaster
+address:        FREEnet NOC
+address:        Institute of Organic Chemistry RAS
+address:        47, Leninsky prospect
+address:        119991 GSP-1, Moscow
+address:        Russia
+phone:          +7 499 135 4133
+fax-no:         +7 499 135 5328
+admin-c:        ASM57-RIPE
+admin-c:        DIS3-RIPE
+tech-c:         DIS3-RIPE
+nic-hdl:        FH645-RIPE
+remarks:        http://www.free.net/
+mnt-by:         FREENET-MNT
+created:        2002-09-05T13:45:10Z
+last-modified:  2007-10-18T15:12:04Z
+source:         RIPE # Filtered
+
+person:         Andrei S Mendkovich
+address:        FREEnet NOC
+address:        Institute of Organic Chemistry RAS
+address:        47, Leninsky prospect
+address:        119991 GSP-1, Moscow
+address:        Russia
+phone:          +7 499 135 8824
+fax-no:         +7 499 135 5328
+nic-hdl:        ASM57-RIPE
+remarks:        Chief of CACR center, FREEnet president
+mnt-by:         FREENET-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2007-10-18T15:16:12Z
+source:         RIPE # Filtered
+
+person:         Dimitri I Sidelnikov
+address:        FREEnet NOC
+address:        Institute of Organic Chemistry RAS
+address:        47, Leninsky prospect
+address:        119991 GSP-1, Moscow
+address:        Russia
+org:            ORG-FG2-RIPE
+phone:          +7 499 135 4133
+fax-no:         +7 499 135 5328
+nic-hdl:        DIS3-RIPE
+remarks:        FREEnet Hostmaster
+mnt-by:         FREENET-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2007-10-18T15:05:35Z
+source:         RIPE # Filtered
+
+
 

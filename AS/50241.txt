@@ -1,4 +1,80 @@
 
 
 
+as-block:       AS50220 - AS50841
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-08-12T14:10:44Z
+last-modified:  2024-08-12T14:10:44Z
+source:         RIPE
+
+
+
+aut-num:        AS50241
+as-name:        UNITTEL-AS
+org:            ORG-UL51-RIPE
+descr:          ------------------------ Uplinks ------------------------
+import:         from AS8641 action pref=100; accept ANY
+export:         to AS8641 announce AS-UNITTEL
+import:         from AS8732 action pref=100; accept ANY
+export:         to AS8732 announce AS-UNITTEL
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-UNITTEL
+descr:          ------------------------ Downlinks ------------------------
+import:         from AS199024 action pref=200; accept AS199024
+export:         to AS199024 announce ANY
+import:         from AS60628 action pref=200; accept AS60628
+export:         to AS60628 announce ANY
+import:         from AS20793 action pref=200; accept AS20793
+export:         to AS20793 announce ANY
+import:         from AS41853 action pref=200; accept AS41853
+export:         to AS41853 announce ANY
+import:         from AS58163 action pref=200; accept AS58163
+export:         to AS58163 announce ANY
+import:         from AS206153 action pref=200; accept AS206153
+export:         to AS206153 announce ANY
+import:         from AS205460 action pref=200; accept as-RegionSv
+export:         to AS205460 announce ANY
+import:         from AS21414 action pref=200; accept AS-RCNET
+export:         to AS21414 announce ANY
+import:         from AS34035 action pref=200; accept AS34035
+export:         to AS34035 announce ANY
+import:         from AS20817 action pref=200; accept AS20817
+export:         to AS20817 announce ANY
+import:         from AS56690 action pref=200; accept AS56690
+export:         to AS56690 announce ANY
+admin-c:        YFIL-RIPE
+tech-c:         YFIL-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         UNIT-MNT
+created:        2009-12-08T14:49:21Z
+last-modified:  2021-03-23T19:28:46Z
+source:         RIPE
+sponsoring-org: ORG-SO127-RIPE
+
+organisation:   ORG-UL51-RIPE
+org-name:       UnitTelecom Ltd
+country:        RU
+org-type:       OTHER
+address:        Nikoloyamskiy 5/1
+address:        Moscow, 109004, Russia
+abuse-c:        AR30430-RIPE
+mnt-ref:        MNT-NETART
+mnt-by:         MNT-NETART
+created:        2009-12-07T11:30:03Z
+last-modified:  2022-12-01T16:57:15Z
+source:         RIPE # Filtered
+
+person:         Yuriy Philippov
+address:        Moscow, Nikoloyamskiy
+phone:          +7 495 514 03 11
+nic-hdl:        YFIL-RIPE
+mnt-by:         UNIT-MNT
+created:        2013-06-07T10:34:55Z
+last-modified:  2013-06-07T10:34:55Z
+source:         RIPE # Filtered
+
+
 

@@ -1,4 +1,300 @@
 
 
 
+as-block:       AS60439 - AS61261
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-09-03T13:31:09Z
+last-modified:  2024-09-03T13:31:09Z
+source:         RIPE
+
+
+
+aut-num:        AS60764
+as-name:        TK-Telecom
+org:            ORG-TSL53-RIPE
+remarks:        --------------------------------------------------------
+remarks:        UPSTREAMS
+remarks:        --------------------------------------------------------
+remarks:        -- RETN --
+import:         from AS57304 accept any
+export:         to AS57304 announce AS-TKTEL
+remarks:        -- RASCOM --
+import:         from AS20764 accept any
+export:         to AS20764 announce AS-TKTEL
+remarks:        -- Megafon --
+import:         from AS31133 accept any
+export:         to AS31133 announce AS-TKTEL
+remarks:        -- Sigma --
+import:         from AS60388 accept any
+export:         to AS60388 announce AS-TKTEL
+remarks:        -- Kvant --
+import:         from AS43727 accept any
+export:         to AS43727 announce AS-TKTEL
+remarks:        -- VympelCom --
+import:         from AS3216 accept any
+export:         to AS3216 announce AS-TKTEL
+remarks:        -- RosTelecom --
+import:         from AS12389 accept any
+export:         to AS12389 announce AS-TKTEL
+remarks:        -- TransRoute --
+import:         from AS50509 accept any
+export:         to AS50509 announce AS-TKTEL
+remarks:        -- Megafon --
+import:         from AS31133 accept any
+export:         to AS31133 announce AS-TKTEL
+remarks:        -- MTS --
+import:         from AS8359 accept any
+export:         to AS8359 announce AS-TKTEL
+remarks:        --------------------------------------------------------
+remarks:        INTERNET EXCHANGE
+remarks:        --------------------------------------------------------
+remarks:        -- DataIX --
+import:         from AS50952 accept any
+export:         to AS50952 announce AS-TKTEL
+remarks:        -- W-IX --
+import:         from AS50384 accept any
+export:         to AS50384 announce AS-TKTEL
+remarks:        -- SMR-IX --
+import:         from AS47882 accept any
+export:         to AS47882 announce AS-TKTEL
+remarks:        -- MSK-IX --
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-TKTEL
+remarks:        -- Hurricane Electric (he.net) --
+import:         from AS6939 accept any
+export:         to AS6939 announce AS-TKTEL
+remarks:        -- APPLE --
+import:         from AS714 accept AS-APPLE
+export:         to AS714 announce AS-TKTEL
+remarks:        --------------------------------------------------------
+remarks:        CUSTOMERS - SAMARA
+remarks:        --------------------------------------------------------
+remarks:        -- EGS63 --
+import:         from AS60072 accept AS60072
+export:         to AS60072 announce any
+import:         from AS201929 accept AS201929
+export:         to AS201929 announce any
+remarks:        -- Telenet --
+import:         from AS49136 accept AS-TELENET-NET
+export:         to AS49136 announce any
+remarks:        -- SamaraLan --
+import:         from AS35032 accept AS35032
+export:         to AS35032 announce any
+remarks:        -- GLOBAL63 --
+import:         from AS39042 accept AS-GLOBAL63RU
+export:         to AS39042 announce any
+remarks:        -- ION --
+import:         from AS204587 accept AS204587
+export:         to AS204587 announce any
+remarks:        -- MIRS --
+import:         from AS209821 accept AS209821
+export:         to AS209821 announce any
+remarks:        -- SMARTS --
+import:         from AS202446 accept AS202446
+export:         to AS202446 announce any
+import:         from AS43583 accept AS43583
+export:         to AS43583 announce any
+remarks:        -- Melbicom --
+import:         from AS49287 accept AS49287
+export:         to AS49287 announce AS-TKTEL
+remarks:        -- NewNet (Novaya Set OOO) --
+import:         from AS212600 accept AS212600
+export:         to AS212600 announce any
+remarks:        -- MS-Telecom LLC --
+import:         from AS199730 accept AS199730
+export:         to AS199730 announce any
+remarks:        -- AS44597 (RIPN) --
+import:         from AS44597 accept AS-NS9_RIPN_NET
+export:         to AS44597 announce any
+remarks:        -- AS41338 (ROCKTEL) --
+import:         from AS41338 accept AS41338
+export:         to AS41338 announce any
+remarks:        --------------------------------------------------------
+remarks:        CUSTOMERS - TOGLIATTI
+remarks:        --------------------------------------------------------
+remarks:        -- TvoiTelecom --
+import:         from AS201211 accept AS-DRUGOYTEL
+export:         to AS201211 announce any
+remarks:        -- ZHIGULI-NET --
+import:         from AS56407 accept AS-ZHIGULINET
+export:         to AS56407 announce any
+remarks:        --------------------------------------------------------
+remarks:        CUSTOMERS - OTHER
+remarks:        --------------------------------------------------------
+remarks:        -- ICL-KME CS --
+import:         from AS197306 accept AS197306
+export:         to AS197306 announce any
+remarks:        -- EZERDI --
+import:         from AS203118 accept AS203118:AS-EZERDI
+export:         to AS203118 announce any
+remarks:        -- Zummer --
+import:         from AS51028 accept AS-SVOLS
+export:         to AS51028 announce any
+remarks:        --------------------------------------------------------
+remarks:        DIRECT PEERING
+remarks:        --------------------------------------------------------
+remarks:        -- Google, Inc. --
+import:         from AS15169 action pref=150; accept AS15169
+export:         to AS15169 announce AS-TKTEL
+remarks:        -- CDNet --
+import:         from AS59730 action pref=150; accept AS59730
+export:         to AS59730 announce AS-TKTEL
+remarks:        -- CDNNow --
+import:         from AS21030 action pref=800; accept AS21030
+export:         to AS21030 announce AS-TKTEL
+remarks:        -- ERTH --
+import:         from AS9049 action pref=800; accept ANY
+export:         to AS9049 announce AS-TKTEL
+remarks:        -- Inetcom --
+import:         from AS35598 action pref=800; accept AS35598
+export:         to AS35598 announce AS-TKTEL
+remarks:        -- Twitch.TV --
+import:         from AS46489 action pref=800; accept AS-TWITCH
+export:         to AS46489 announce AS-TKTEL
+remarks:        --------------------------------------------------------
+default:        to AS50952
+remarks:
+remarks:        --------------------------------------------------------
+remarks:        IPv6 UPSTREAMS
+remarks:        --------------------------------------------------------
+remarks:        -- RETN (AS57304) --
+mp-import:      afi ipv6.unicast from AS57304 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-TKTEL
+remarks:        -- Kvant (AS43727) --
+mp-import:      afi ipv6.unicast from AS43727 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS43727 announce AS-TKTEL
+remarks:
+remarks:        ========================================================
+remarks:        BGP communities for customers
+remarks:        ========================================================
+remarks:        60764:500 - DNA (do not advertise) to any upstream or IX
+remarks:
+remarks:        Upstream advertising:
+remarks:        60764:151x - AS57304 RETN
+remarks:        60764:154x - AS25478 iHome
+remarks:        60764:158x - AS43727 KvantTelecom
+remarks:        60764:163x - AS31500 GlobalNet
+remarks:        60764:164x - AS12389 RosTelecom
+remarks:        60764:165x - AS50509 TransRoute
+remarks:        60764:166x - AS31133 MegaFon
+remarks:
+remarks:        Internet Exchange Networks:
+remarks:        60764:250x - AS50952 DataIX
+remarks:        60764:254x - AS50384 W-IX (iHome)
+remarks:        60764:255x - AS47882 SMR-IX
+remarks:        60764:256x - AS8631 MSK-IX
+remarks:        60764:257x - AS31500 Global-IX
+remarks:        60764:258x - VK.COM
+remarks:
+remarks:        Where "x" means:
+remarks:        x = 0 : Do Not Advertise to peer
+remarks:        X = 1 : Prepend once
+remarks:        X = 2 : Prepend twice
+remarks:        X = 4 : Prepend four times
+remarks:        X = 9 : Advertise unconditionally (even if DNA community set)
+remarks:
+remarks:        Direct peerings:
+remarks:        60764:352x - AS714 APPLE INC
+remarks:        60764:378x - AS9049 ER-Telecom
+remarks:        60764:358x - AS6939 Hurricane Electric
+remarks:        60764:359x - AS15169 Google, Inc.
+remarks:
+remarks:        Where "x" means:
+remarks:        x = 0 : Do Not Advertise to peer
+remarks:        X = 9 : Advertise unconditionally (even if DNA community set)
+remarks:
+remarks:        Received routes:
+remarks:        ================
+remarks:        60764:4001 - RETNnet
+remarks:        60764:4002 - Rascom
+remarks:        60764:4003 - DataIX
+remarks:        60764:4004 - iHome (inet2)
+remarks:        60764:4007 - W-IX
+remarks:        60764:4008 - SMR-IX
+remarks:        60764:4009 - MSK-IX
+remarks:        60764:4010 - Global-IX
+remarks:        60764:4013 - TTK
+remarks:        60764:4014 - VK.COM
+remarks:        60764:4015 - Kvant-Telecom
+remarks:        60764:4016 - AMS-IX
+remarks:        60764:4018 - APPLE INC
+remarks:        60764:4021 - Telenet Peering
+remarks:        60764:4025 - Hurricane Electric (he.net)
+remarks:        60764:4027 - Google, Inc.
+remarks:        60764:4030 - TransNeftTelecom (AS60388)
+remarks:        60764:4032 - Telecom Service Kazan (AS62067)
+remarks:        60764:4033 - Google Global Cache (GGC)
+remarks:        60764:4034 - ULN-IX (AS50125)
+remarks:        60764:4035 - Valve
+remarks:        60764:4036 - TK-Telecom IX
+remarks:        60764:4037 - CloudFlare
+remarks:        60764:4039 - Microsoft
+remarks:        60764:4041 - Piter-IX (MSK+SPb)
+remarks:        60764:4042 - VympelCom
+remarks:        60764:4043 - GlobalNet
+remarks:        60764:4046 - TransPipe
+remarks:        60764:4047 - Blizzard
+remarks:        60764:4054 - Twitch.TV
+remarks:        60764:4055 - RosTelecom
+remarks:        60764:4057 - TransRoute
+remarks:        60764:4062 - Megafon
+remarks:
+remarks:        60764:5000 - All customers
+remarks:        60764:5005 - All direct peerings
+remarks:
+remarks:        Blackhole community:
+remarks:        ====================
+remarks:        60764:666 (/32 only)
+remarks:
+remarks:        BGP Looking Glass:
+remarks:        ====================
+remarks:        http://lg.tcsmr.ru/
+remarks:
+remarks:        ========================================================
+remarks:
+admin-c:        KS10343-RIPE
+tech-c:         KS10343-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-telecomsamara-1
+created:        2013-05-16T08:29:00Z
+last-modified:  2024-12-02T11:44:36Z
+source:         RIPE # Filtered
+
+organisation:   ORG-TSL53-RIPE
+org-name:       Telecom Samara LLC
+country:        RU
+org-type:       LIR
+address:        Nevskaya st., 12
+address:        446441
+address:        Alexeevka, Kinel City District
+address:        RUSSIAN FEDERATION
+phone:          +7 846 231 05 05
+admin-c:        KS10343-RIPE
+admin-c:        VA33630-RIPE
+tech-c:         KS10343-RIPE
+abuse-c:        AR49305-RIPE
+mnt-ref:        mnt-ru-telecomsamara-1
+mnt-ref:        ROSNIIROS-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         mnt-ru-telecomsamara-1
+created:        2018-11-14T09:22:29Z
+last-modified:  2021-09-10T07:57:08Z
+source:         RIPE # Filtered
+
+person:         Kirill Shmakov
+address:        Nevskaya st., 12
+address:        446441
+address:        Alexeevka, Kinel City District
+address:        RUSSIAN FEDERATION
+phone:          +7 846 231 05 05
+nic-hdl:        KS10343-RIPE
+mnt-by:         mnt-ru-telecomsamara-1
+created:        2018-11-14T09:22:28Z
+last-modified:  2018-11-14T09:22:29Z
+source:         RIPE
+
+
 

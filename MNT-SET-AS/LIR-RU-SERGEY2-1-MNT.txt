@@ -2,3 +2,94 @@
 
 
 
+aut-num:        AS206708
+as-name:        Iris-tel
+org:            ORG-SC948-RIPE
+import:         from AS49063 action pref=110; accept ANY
+export:         to AS49063 announce AS206708
+import:         from AS44020 action pref=110; accept ANY
+import:         from AS8631 action pref=140; accept ANY
+export:         to AS8631 announce AS206708
+export:         to AS44020 announce AS206708
+default:        to AS49063 action pref=110; networks ANY
+default:        to AS44020 action pref=110; networks ANY
+default:        to AS8631 action pref=120; networks ANY
+admin-c:        SCI20-RIPE
+tech-c:         IA6903-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         lir-ru-sergey2-1-MNT
+created:        2020-03-19T10:23:08Z
+last-modified:  2023-06-02T09:53:32Z
+source:         RIPE
+
+
+
+aut-num:        AS35768
+as-name:        MSLINK-AS
+org:            ORG-SC948-RIPE
+import:         from AS42753 action pref=150; accept ANY
+import:         from AS44020 action pref=150; accept ANY
+import:         from AS205349 action pref=150; accept ANY
+import:         from AS8631 action pref=140; accept ANY
+import:         from AS49869 action pref=150; accept ANY
+import:         from AS3216 action pref=150; accept ANY
+export:         to AS42753 announce ANY
+export:         to AS44020 announce AS-MSLINK
+export:         to AS205349 announce ANY
+export:         to AS8631 announce AS-MSLINK
+export:         to AS49869 announce AS-MSLINK
+export:         to AS3216 announce AS-MSLINK
+default:        to AS44020 action pref=110; networks ANY
+default:        to AS8631 action pref=120; networks ANY
+default:        to AS49869 action pref=120; networks ANY
+default:        to AS3216 action pref=110; networks ANY
+admin-c:        SCI20-RIPE
+tech-c:         DK7052-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         lir-ru-sergey2-1-MNT
+created:        2005-10-21T13:37:24Z
+last-modified:  2025-05-05T16:28:25Z
+source:         RIPE
+
+
+
+aut-num:        AS42753
+as-name:        MTK-ERA-AS
+org:            ORG-SC948-RIPE
+import:         from AS35768 action pref=200; accept ANY
+import:         from AS52168 action pref=300; accept AS52168
+export:         to AS35768 announce AS-MTK-ERA
+export:         to AS52168 announce ANY
+default:        to AS35768 action pref=200; networks ANY
+admin-c:        SCI20-RIPE
+tech-c:         DK7052-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         lir-ru-sergey2-1-MNT
+created:        2007-04-11T13:57:05Z
+last-modified:  2025-05-05T16:23:05Z
+source:         RIPE
+
+
+
+aut-num:        AS52168
+as-name:        Artencia-AS
+org:            ORG-SC948-RIPE
+import:         from AS42753 accept ANY
+import:         from AS200084 accept ANY
+export:         to AS42753 announce AS-Artencia
+export:         to AS200084 announce ANY
+default:        to AS42753 networks ANY
+admin-c:        SCI20-RIPE
+tech-c:         SCI20-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         lir-ru-sergey2-1-MNT
+created:        2011-01-18T15:03:47Z
+last-modified:  2023-06-29T15:53:31Z
+source:         RIPE
+
+
+

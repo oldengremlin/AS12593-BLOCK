@@ -2,3 +2,62 @@
 
 
 
+aut-num:        AS49368
+as-name:        DOMOLAN-AS
+org:            ORG-DL83-RIPE
+remarks:        +=======+ UPSTREAM TABLE +=======+
+import:         from AS29076 action pref=100; accept ANY
+export:         to AS29076 announce AS-DOMOLAN
+import:         from AS50509 action pref=100; accept ANY
+export:         to AS50509 announce AS-DOMOLAN
+import:         from AS31500 action pref=100; accept ANY
+export:         to AS31500 announce AS-DOMOLAN
+remarks:        +=======+ PEERING TABLE +=======+
+import:         from AS47764 action pref=300; accept AS-MAILRU
+export:         to AS47764 announce AS-DOMOLAN
+import:         from AS209739 action pref=300; accept AS209739
+export:         to AS209739 announce AS-DOMOLAN
+import:         from AS211609 action pref=300; accept AS-OKKO
+export:         to AS211609 announce AS-DOMOLAN
+import:         from AS13238 action pref=300; accept AS-YANDEX
+export:         to AS13238 announce AS-DOMOLAN
+import:         from AS15169 action pref=300; accept AS-GOOGLE
+export:         to AS15169 announce AS-DOMOLAN
+import:         from AS50952 action pref=200; accept AS-DATAIX
+export:         to AS50952 announce AS-DOMOLAN
+import:         from AS31500 action pref=200; accept AS-GLOBAL-IX
+export:         to AS31500 announce AS-DOMOLAN
+import:         from AS49869 action pref=200; accept as-piter-ix-msk
+export:         to AS49869 announce AS-DOMOLAN
+import:         from AS32934 action pref=300; accept AS-FACEBOOK
+export:         to AS32934 announce AS-DOMOLAN
+import:         from AS13335 action pref=300; accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-DOMOLAN
+import:         from AS50817 action pref=200; accept as-piter-ix
+export:         to AS50817 announce AS-DOMOLAN
+import:         from AS48193 action pref=200; accept as-piter-ix-fra
+export:         to AS48193 announce AS-DOMOLAN
+import:         from AS39607 action pref=200; accept as-piter-ix-helsinki
+export:         to AS39607 announce AS-DOMOLAN
+import:         from AS57936 action pref=200; accept as-piter-ix-tll
+export:         to AS57936 announce AS-DOMOLAN
+import:         from AS59539 action pref=200; accept as-piter-ix-rov
+export:         to AS59539 announce AS-DOMOLAN
+import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-DOMOLAN
+import:         from AS35598 action pref=300; accept AS-ICNET
+export:         to AS35598 announce AS-DOMOLAN
+import:         from AS56931 action pref=200; accept AS-EURASIAPEERING_RS
+export:         to AS56931 announce AS-DOMOLAN
+remarks:        +=======+ TRANSIT TABLE +=======+
+admin-c:        SVM84-RIPE
+tech-c:         MM53754-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-DML
+created:        2009-05-27T12:37:46Z
+last-modified:  2025-04-04T08:46:12Z
+source:         RIPE # Filtered
+
+
+

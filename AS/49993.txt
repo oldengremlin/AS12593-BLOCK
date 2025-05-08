@@ -1,4 +1,76 @@
 
 
 
+as-block:       AS47870 - AS50048
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-12-06T06:09:56Z
+last-modified:  2024-12-06T06:09:56Z
+source:         RIPE
+
+
+
+aut-num:        AS49993
+as-name:        NOVOCOM-AS
+descr:          JSC Novocom, ISP
+remarks:        BGP Communities we accept:
+remarks:
+remarks:        49993:612y When advertising to Telia Sonera (AS1299)
+remarks:        49993:799y When advertising to any INTERNATIONAL peer
+remarks:        49993:899y When advertising to any RUSSIAN peer
+remarks:
+remarks:        y=9 - advertise without prepends
+remarks:        y=0 - do not advertise
+remarks:        y=1,2,3 or 5 - prepend 49993 (1,2,3 or 5) times
+remarks:        WARN: We don't accept prefixes longer than /24!!
+remarks:
+remarks:        49993:2800 - set local-pref=800
+remarks:        49993:2100 - set local-pref=100
+remarks:        Default local-pref:
+remarks:        850 - Customer
+remarks:        250-500 - Peer
+remarks:        200 - Upstream
+remarks:
+remarks:        49993:55555 - blackhole (RFC7999)
+remarks:
+remarks:        Peers:
+import:         from AS42187 accept ANY
+export:         to AS42187 announce AS49993
+import:         from AS212461 accept ANY
+export:         to AS212461 announce AS49993
+org:            ORG-NOVO2-RIPE
+sponsoring-org: ORG-PMAV1-RIPE
+admin-c:        NOVO2-RIPE
+tech-c:         NOVO2-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         JSC-NOVOCOM-MNT
+created:        2023-12-27T16:39:35Z
+last-modified:  2023-12-28T19:58:29Z
+source:         RIPE
+
+organisation:   ORG-NOVO2-RIPE
+org-name:       JSC Novocom
+country:        RU
+org-type:       OTHER
+address:        111024, Russian Federation, Moscow, 2-ya Entusiastov street 5 k40, room 14/3
+abuse-c:        NOVO2-RIPE
+mnt-ref:        JSC-NOVOCOM-MNT
+mnt-ref:        ru-avm-1-mnt
+mnt-by:         JSC-NOVOCOM-MNT
+created:        2023-11-26T00:16:37Z
+last-modified:  2024-10-23T07:47:41Z
+source:         RIPE # Filtered
+
+role:           Novocom NOC
+address:        111024, Russian Federation, Moscow, 2-ya Entusiastov street 5 k40, room 14/3
+abuse-mailbox:  abuse@novocom.su
+nic-hdl:        NOVO2-RIPE
+mnt-by:         JSC-NOVOCOM-MNT
+created:        2023-11-26T00:15:26Z
+last-modified:  2024-10-23T07:47:23Z
+source:         RIPE # Filtered
+
+
 

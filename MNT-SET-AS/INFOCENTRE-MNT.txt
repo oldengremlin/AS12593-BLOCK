@@ -2,3 +2,82 @@
 
 
 
+aut-num:        AS210894
+as-name:        DSKOV
+org:            ORG-JD116-RIPE
+sponsoring-org: ORG-LLC12-RIPE
+import:         from AS35645 accept ANY
+export:         to AS35645 announce AS210894
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS210894
+import:         from AS34168 accept ANY
+export:         to AS34168 announce AS210894
+admin-c:        AD17360-RIPE
+admin-c:        AC32858-RIPE
+tech-c:         AD17360-RIPE
+tech-c:         AC32858-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INFOCENTRE-MNT
+created:        2023-02-21T07:42:19Z
+last-modified:  2023-02-21T07:42:19Z
+source:         RIPE
+
+
+
+aut-num:        AS35645
+as-name:        INFOCENTER
+org:            ORG-LLC12-RIPE
+import:         from AS9002 action pref=100; accept ANY
+import:         from AS57304 action pref=100; accept ANY
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS50556 action pref=100; accept AS50556
+import:         from AS60224 action pref=100; accept AS60224
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS8359 action pref=100; accept ANY
+import:         from AS57047 action pref=100; accept AS57047
+import:         from AS210894 action pref=100; accept AS210894
+import:         from AS51352 action pref=100; accept AS51352
+export:         to AS9002 announce AS-INFOCENTER
+export:         to AS57304 announce AS-INFOCENTER
+export:         to AS50556 announce ANY
+export:         to AS60635 announce ANY
+export:         to AS60224 announce ANY
+export:         to AS31133 announce AS-INFOCENTER
+export:         to AS3216 announce AS-INFOCENTER
+export:         to AS8359 announce AS-INFOCENTER
+export:         to AS57047 announce ANY
+export:         to AS210894 announce ANY
+export:         to AS51352 announce AS35645
+admin-c:        DA3080-RIPE
+tech-c:         KM1486-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INFOCENTRE-MNT
+created:        2005-09-23T07:13:39Z
+last-modified:  2024-09-23T06:58:25Z
+source:         RIPE
+
+
+
+aut-num:        AS57047
+as-name:        ABIProduct
+org:            ORG-AP35-RIPE
+import:         from AS35645 action pref=100; accept ANY
+import:         from AS13016 action pref=100; accept ANY
+import:         from AS34168 action pref=100; accept ANY
+export:         to AS35645 announce AS57047
+export:         to AS13016 announce AS57047
+export:         to AS34168 announce AS57047
+admin-c:        IAA43-RIPE
+tech-c:         AVM203-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INFOCENTRE-MNT
+created:        2011-07-11T07:39:22Z
+last-modified:  2018-09-04T11:03:43Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-LLC12-RIPE
+
+
+

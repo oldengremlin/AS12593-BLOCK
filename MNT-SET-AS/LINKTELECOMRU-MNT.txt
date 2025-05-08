@@ -2,3 +2,64 @@
 
 
 
+aut-num:        AS197275
+as-name:        ASLINKTELECOMNN
+org:            ORG-LINK7-RIPE
+remarks:        ------------------External------------------
+remarks:        ---TRANSTELECOM---
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-LINKTELECOM
+remarks:        ---INETCOM---
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS-LINKTELECOM
+remarks:        ---------------Internet Exchange ---------------
+remarks:        ---MSK-IX---
+import:         from AS8631 accept ANY
+export:         to AS8631 announce AS-LINKTELECOM
+remarks:        ---GOOGLE---
+import:         from AS15169 accept ANY
+export:         to AS15169 announce AS-LINKTELECOM
+remarks:        ---IXNNOV---
+import:         from AS203956 accept ANY
+export:         to AS203956 announce AS-LINKTELECOM
+remarks:        ---DataIX---
+import:         from AS50952 accept ANY
+export:         to AS50952 announce AS-LINKTELECOM
+remarks:        ---GLOBALNET---
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS-LINKTELECOM
+remarks:        ------------------Paritet-------------------
+remarks:        ---AS_24h_tv---
+import:         from AS50775 action pref=100; accept AS50775
+export:         to AS50775 announce AS197275
+remarks:        ------------------Clients-------------------
+remarks:        ---ACCESSTELECOM---
+import:         from AS208314 action pref=10; accept AS208314
+export:         to AS208314 announce ANY
+remarks:        ---New_Communications---
+import:         from AS209019 action pref=160; accept AS209019
+export:         to AS209019 announce ANY
+remarks:        --FRESHCOM---
+import:         from AS215646 accept AS215646
+export:         to AS215646 announce ANY
+remarks:        ---RDBNN24---
+import:         from AS210928 accept AS210928
+export:         to AS210928 announce ANY
+remarks:        ---MEDIAKVANT---
+import:         from AS198616 accept AS198616
+export:         to AS2198616 announce ANY
+remarks:        ---SPETSSVYAZ---
+import:         from AS57045 accept AS57045
+export:         to AS57045 announce ANY
+admin-c:        KORS1-RIPE
+tech-c:         KORS1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         LINKTELECOMRU-MNT
+created:        2010-09-27T14:34:06Z
+last-modified:  2024-12-16T13:03:25Z
+source:         RIPE
+sponsoring-org: ORG-Vs35-RIPE
+
+
+

@@ -2,3 +2,28 @@
 
 
 
+aut-num:        AS15759
+org:            ORG-JR8-RIPE
+as-name:        DIN-AS
+descr:          OJSC "Tomsktelecom"
+remarks:        ==========================================
+remarks:        UPSTREAMS
+remarks:        ==========================================
+import:         { from AS41440 action pref=300; accept ANY; from AS8342 action pref=200; accept ANY; from AS21127 action pref=100; accept ANY; }
+export:         { to AS41440 announce AS-DIN; to AS8342 announce AS-DIN; to AS21127 announce AS15759; }
+remarks:        ==========================================
+remarks:        CUSTOMERS
+remarks:        ==========================================
+import:         { from AS31036 action pref=100; accept AS31036; from AS5567 action pref=100; accept AS5567; from AS29047 action pref=100; accept AS29047; from AS12879 action pref=100; accept AS12879; from AS34145 action pref=100; accept AS34145 and AS35715; from AS34490 action pref=100; accept AS34490; from AS34573 action pref=100; accept AS34573; from AS42508 action pref=100; accept AS42508; from AS51256 action pref=100; accept AS51256; }
+export:         { to AS31036 announce ANY; to AS5567 announce ANY; to AS29047 announce ANY; to AS12879 announce ANY; to AS34145 announce ANY; to AS34490 announce ANY; to AS34573 announce ANY; to AS42508 announce ANY; to AS51256 announce ANY; }
+admin-c:        DIN-RIPE
+tech-c:         DIN-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DIN-RIPE-MNT
+created:        2002-03-12T09:45:05Z
+last-modified:  2024-05-13T10:39:24Z
+source:         RIPE # Filtered
+
+
+

@@ -1,4 +1,71 @@
 
 
 
+as-block:       AS196608 - AS197840
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-09-04T14:04:38Z
+last-modified:  2024-09-04T14:04:38Z
+source:         RIPE
+
+
+
+aut-num:        AS197185
+as-name:        ASTLAN
+org:            ORG-TLAN1-RIPE
+remarks:        ---------------------------------------------------
+remarks:        Uplinks
+remarks:        ---------------------------------------------------
+remarks:        *** Innovative telecommunications ***
+import:         from AS62040 action pref=120; accept ANY
+export:         to AS62040 announce AS-FS
+remarks:
+remarks:        *** ArpNet LLC ***
+import:         from AS47626 action pref=120; accept ANY
+export:         to AS47626 announce AS-FS
+remarks:
+remarks:        ---------------------------------------------------
+remarks:        IPv6
+remarks:        ---------------------------------------------------
+remarks:        *** Innovative telecommunications ***
+mp-import:      afi ipv6.unicast from AS62040 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS62040 announce AS-FS-V6
+remarks:
+remarks:        *** ArpNet LLC ***
+mp-import:      afi ipv6.unicast from AS47626 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS47626 announce AS-FS
+remarks:
+admin-c:        TISH1-RIPE
+tech-c:         TISH1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TLANROSTOV-MNT
+created:        2010-07-16T09:54:49Z
+last-modified:  2019-06-09T21:06:09Z
+source:         RIPE
+sponsoring-org: ORG-Vs35-RIPE
+
+organisation:   ORG-TLAN1-RIPE
+org-name:       LLC T-Lan
+country:        RU
+org-type:       OTHER
+address:        Russia, Rostov-na-Donu, Malinovskogo st. 78
+abuse-c:        AR19301-RIPE
+mnt-ref:        TLANROSTOV-MNT
+mnt-by:         TLANROSTOV-MNT
+created:        2010-07-09T12:22:53Z
+last-modified:  2022-12-01T16:55:42Z
+source:         RIPE # Filtered
+
+person:         Tishenko Roman
+address:        Russia, Rostov-na-Donu, Malinovskogo st. 78
+phone:          +7(863)2239303
+nic-hdl:        TISH1-RIPE
+mnt-by:         TLANROSTOV-MNT
+created:        2010-07-09T12:19:32Z
+last-modified:  2010-07-09T13:09:42Z
+source:         RIPE
+
+
 

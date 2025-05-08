@@ -1,4 +1,82 @@
 
 
 
+as-block:       AS50220 - AS50841
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-08-12T14:10:44Z
+last-modified:  2024-08-12T14:10:44Z
+source:         RIPE
+
+
+
+aut-num:        AS50577
+as-name:        INTELSC-AS
+org:            ORG-IL193-RIPE
+remarks:        # UPSTREAM AS IPv4
+remarks:        # RETN.NET
+import:         from AS9002 action pref=100; accept ANY
+export:         to AS9002 announce AS50577
+remarks:        # NAUKANET
+import:         from AS8641 action pref=100; accept ANY
+export:         to AS8641 announce AS50577
+remarks:        # AKADO_COMCOR
+import:         from AS8732 action pref=100; accept ANY
+export:         to AS8732 announce AS50577
+remarks:        # Fist Telecom
+import:         from AS39156 action pref=100; accept ANY
+export:         to AS39156 announce AS50577
+remarks:        # Prime-Line
+import:         from AS42861 action pref=100; accept ANY
+export:         to AS42861 announce AS50577
+remarks:        -------------------------------------END-------------------------------------
+remarks:        # PEERING AS IPv4
+remarks:        # MSK-IX(M9). RouteServer
+import:         from AS8631 action pref=50; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS50577
+export:         to AS8631 announce AS59637
+remarks:        # AVK-COM
+import:         from AS48781 action pref=200; accept ANY
+export:         to AS48781 announce ANY
+remarks:        # AVK-WELLCOM
+import:         from AS49403 action pref=200; accept ANY
+export:         to AS49403 announce ANY
+remarks:        # RSI-NET
+import:         from AS59637 action pref=50; accept ANY
+export:         to AS59637 announce ANY
+remarks:        -------------------------------------END-------------------------------------
+admin-c:        KKK2-RIPE
+tech-c:         KKK2-RIPE
+remarks:
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-INTELSC
+created:        2010-02-12T14:37:34Z
+last-modified:  2019-04-24T11:54:50Z
+source:         RIPE
+sponsoring-org: ORG-RL363-RIPE
+
+organisation:   ORG-IL193-RIPE
+org-name:       Intelsc Ltd.
+country:        RU
+org-type:       OTHER
+address:        Moscovskaya obl., Ramenskiy distrist, pos.Rodniki, str.Trudovaya, 6
+abuse-c:        AR21447-RIPE
+mnt-ref:        MNT-INTELSC
+mnt-by:         MNT-INTELSC
+created:        2010-01-22T14:15:09Z
+last-modified:  2022-12-01T16:30:42Z
+source:         RIPE # Filtered
+
+person:         Konstantin K. Kulikov
+address:        Moscovskaya obl., Ramenskiy distrist, pos.Rodniki, str.Trudovaya, 6
+phone:          +7 495 5107414
+nic-hdl:        KKK2-RIPE
+created:        2010-01-22T14:15:05Z
+last-modified:  2016-04-06T19:22:12Z
+mnt-by:         RIPE-NCC-LOCKED-MNT
+source:         RIPE # Filtered
+
+
 

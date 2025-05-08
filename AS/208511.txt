@@ -1,4 +1,95 @@
 
 
 
+as-block:       AS208189 - AS215128
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2025-03-25T09:02:29Z
+last-modified:  2025-03-25T09:02:29Z
+source:         RIPE
+
+
+
+aut-num:        AS208511
+as-name:        R-INDUSTRY-AS
+org:            ORG-CRL7-RIPE
+remarks:        ===============================================================
+remarks:        -= IPv4 Routing Policy =-
+remarks:        ---------------------------------------------------------------
+remarks:        Upstreams
+remarks:        ---------------------------------------------------------------
+remarks:
+remarks:        Smart Telecom Limited
+import:         from AS31376 action pref=100; accept {0.0.0.0/0} AS31376
+export:         to AS31376 announce AS-R-INDUSTRY
+remarks:
+remarks:        JSC Avantel
+import:         from AS51178 action pref=100; accept {0.0.0.0/0} AS51178
+export:         to AS51178 announce AS-R-INDUSTRY
+remarks:        ---------------------------------------------------------------
+remarks:        Downstreams
+remarks:        ---------------------------------------------------------------
+remarks:
+remarks:        Radio Kozerog LLC
+import:         from AS42301 action pref=100; accept {193.200.239.0/24} AS42301
+export:         to AS42301 announce {0.0.0.0/0} AS208511
+remarks:        ===============================================================
+admin-c:        ZA1671-RIPE
+tech-c:         ZA1671-RIPE
+tech-c:         DS5054-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         R-INDUSTRY-MNT
+created:        2019-07-22T15:25:37Z
+last-modified:  2022-04-06T07:38:22Z
+source:         RIPE
+sponsoring-org: ORG-CL253-RIPE
+
+organisation:   ORG-CRL7-RIPE
+org-name:       Korporatsiya R-Industriya LLC
+country:        RU
+org-type:       OTHER
+address:        Serdobolskaya Street 64-1-letter A
+address:        Saint-Petersburg
+address:        Russian Federation
+address:        197342
+phone:          +7 812 4495754
+mnt-ref:        R-INDUSTRY-MNT
+mnt-by:         R-INDUSTRY-MNT
+abuse-c:        KRAH1-RIPE
+created:        2019-07-01T16:10:23Z
+last-modified:  2022-12-01T17:09:40Z
+source:         RIPE # Filtered
+
+person:         Dmitriy Surov
+address:        Butlerova Street 22-2-216
+address:        Saint-Petersburg
+address:        Russian Federation
+address:        195220
+remarks:        GSM mobile phones, SMS supported
+phone:          +7 921 9818108
+remarks:        e-mail: relay1@mail.ru
+remarks:        ICQ UIN 353958741
+nic-hdl:        DS5054-RIPE
+created:        2008-03-16T07:22:05Z
+last-modified:  2015-07-02T21:57:47Z
+source:         RIPE # Filtered
+mnt-by:         AS42301-MNT
+
+person:         Zaharov Aleksandr
+address:        Serdobolskaya Street 64-1-letter A
+address:        Saint-Petersburg
+address:        Russian Federation
+address:        197342
+remarks:        GSM mobile phones, SMS supported
+phone:          +7 921 3512876
+remarks:        e-mail: zaharov@r-industria.ru
+nic-hdl:        ZA1671-RIPE
+created:        2019-07-01T14:52:41Z
+last-modified:  2019-07-01T15:58:03Z
+source:         RIPE
+mnt-by:         R-INDUSTRY-MNT
+
+
 

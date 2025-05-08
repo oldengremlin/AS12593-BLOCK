@@ -1,4 +1,115 @@
 
 
 
+as-block:       AS20859 - AS20927
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:27Z
+last-modified:  2018-11-22T15:27:27Z
+source:         RIPE
+
+
+
+aut-num:        AS20895
+org:            ORG-Tl9-RIPE
+as-name:        UGTEL
+descr:          Granting of services Intelligent Network
+descr:          Krasnodar Russia. http://www.ugtel.ru
+remarks:
+remarks:        ----------------------------------------------
+remarks:        IPv4 UPSTREAMS:
+remarks:        ----------------------------------------------
+import:         from AS3216 action pref=100; accept ANY
+export:         to AS3216 announce AS-UGTEL
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS-UGTEL
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS-UGTEL
+import:         from AS9002 action pref=100; accept ANY
+export:         to AS9002 announce AS-UGTEL
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS8359 announce AS-UGTEL
+remarks:        ----------------------------------------------
+remarks:        IPv4 CUSTOMERS:
+remarks:        ----------------------------------------------
+import:         from AS43886 action pref=1000; accept AS43886
+export:         to AS43886 announce ANY
+import:         from AS60865 action pref=1000; accept AS60865
+export:         to AS60865 announce ANY
+remarks:        ----------------------------------------------
+remarks:
+remarks:        ----------------------------------------------
+remarks:        IPv6 UPSTREAMS:
+remarks:        ----------------------------------------------
+mp-import:      afi ipv6.unicast from AS3216 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-UGTEL
+mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-UGTEL
+mp-import:      afi ipv6.unicast from AS9002 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-UGTEL
+mp-import:      afi ipv6.unicast from AS8359 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-UGTEL
+remarks:        ----------------------------------------------
+remarks:        IPv6 CUSTOMERS:
+remarks:        ----------------------------------------------
+mp-import:      afi ipv6.unicast from AS43886 action pref=100; accept AS43886
+mp-export:      afi ipv6.unicast to AS43886 announce ANY
+remarks:        ----------------------------------------------
+remarks:
+remarks:        ----------------------------------------------
+remarks:        BGP Communities
+remarks:        ----------------------------------------------
+remarks:        20895:208x When advertising to TTK (AS20485)
+remarks:        20895:209x When advertising to RETN (AS9002)
+remarks:        20895:210x When advertising to MTS (AS8359)
+remarks:        20895:211x When advertising to Rostelecom (AS12389)
+remarks:        20895:212x When advertising to Vimpelcom (AS3216)
+remarks:        ...x=0 - do not advertise
+remarks:        ...x=1,2,4 or 6 - prepend 1,2,4 or 6 times
+remarks:        ----------------------------------------------
+remarks:        Blackhole community - 20895:666
+remarks:        ----------------------------------------------
+remarks:
+admin-c:        YAD5-RIPE
+tech-c:         YAD5-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         UGTEL-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2024-08-20T13:49:37Z
+source:         RIPE # Filtered
+
+organisation:   ORG-Tl9-RIPE
+org-name:       "Yuzhniy TELECOM" ltd.
+country:        RU
+org-type:       LIR
+address:        62 Sedina str.
+address:        350000
+address:        Krasnodar
+address:        RUSSIAN FEDERATION
+phone:          +7 8612195222
+fax-no:         +7 8612195214
+abuse-c:        AR17018-RIPE
+mnt-ref:        UGTEL-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         UGTEL-MNT
+admin-c:        YAD5-RIPE
+created:        2004-04-17T12:00:23Z
+last-modified:  2020-12-16T12:27:53Z
+source:         RIPE # Filtered
+
+person:         Yanchenko Andrey Dmitrievich
+address:        Russian Federation 350020
+address:        Krasnodar, Sedina 62
+phone:          +78612195179
+nic-hdl:        YAD5-RIPE
+mnt-by:         UGTEL-MNT
+org:            ORG-Tl9-RIPE
+created:        2011-04-04T12:41:15Z
+last-modified:  2017-05-23T05:36:20Z
+source:         RIPE
+
+
 

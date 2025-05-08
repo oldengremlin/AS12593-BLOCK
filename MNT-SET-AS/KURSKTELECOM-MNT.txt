@@ -2,3 +2,108 @@
 
 
 
+aut-num:        AS206419
+as-name:        RKURSK-AS
+org:            ORG-SUEO3-RIPE
+import:         from AS42277 accept ANY
+export:         to AS42277 announce AS206419
+import:         from as12389 accept ANY
+export:         to as12389 announce AS206419
+admin-c:        SUEO1-RIPE
+tech-c:         SUEO1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         KURSKTELECOM-MNT
+created:        2017-01-24T09:55:45Z
+last-modified:  2020-11-16T17:53:31Z
+source:         RIPE
+sponsoring-org: ORG-JSCK1-RIPE
+
+
+
+aut-num:        AS34033
+as-name:        S2116-AS
+org:            ORG-SI34-RIPE
+import:         from AS42277 action pref=100; accept ANY
+export:         to AS42277 announce AS34033
+import:         from AS199020 action pref=100; accept ANY
+export:         to AS199020 announce AS34033
+admin-c:        SLN2116-RIPE
+tech-c:         SLN2116-RIPE
+status:         ASSIGNED
+mnt-by:         KURSKTELECOM-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2008-10-16T08:02:52Z
+last-modified:  2024-10-04T06:25:23Z
+source:         RIPE
+sponsoring-org: ORG-JSCK1-RIPE
+
+
+
+aut-num:        AS42277
+as-name:        KURSKTELECOM-AS
+remarks:        UPSTREAMS:
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS8359 announce AS-KURSKTELECOM
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS-KURSKTELECOM
+remarks:        PEERING:
+import:         from AS8631 action pref=100; accept AS8631
+export:         to AS8631 announce AS-KURSKTELECOM
+descr:          CUSTOMERS:
+import:         from AS48673 action pref=200; accept AS48673
+export:         to AS48673 announce ANY
+import:         from AS34033 action pref=200; accept AS34033
+export:         to AS34033 announce ANY
+import:         from AS206419 action pref=200; accept AS206419
+export:         to AS206419 announce ANY
+org:            ORG-JscK1-RIPE
+admin-c:        KTK46-RIPE
+tech-c:         KTK46-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         KURSKTELECOM-MNT
+created:        2007-01-26T10:39:11Z
+last-modified:  2024-02-19T07:11:37Z
+source:         RIPE
+
+
+
+aut-num:        AS44011
+as-name:        TKS2000-AS
+org:            ORG-JscT5-RIPE
+import:         from AS42277 action pref=100; accept ANY
+export:         to AS42277 announce AS44011
+import:         from AS8342 action pref=100; accept ANY
+export:         to AS8342 announce AS44011
+admin-c:        TKS2000-RIPE
+tech-c:         TKS2000-RIPE
+status:         ASSIGNED
+mnt-by:         KURSKTELECOM-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2007-11-02T10:53:46Z
+last-modified:  2018-09-04T10:28:06Z
+source:         RIPE
+sponsoring-org: ORG-JSCK1-RIPE
+
+
+
+aut-num:        AS48673
+as-name:        AKO46-AS
+org:            ORG-AKO1-RIPE
+import:         from AS42277 action pref=100; accept ANY
+export:         to AS42277 announce AS48673
+import:         from AS34033 action pref=100; accept ANY
+export:         to AS34033 announce AS48673
+admin-c:        AKO46-RIPE
+tech-c:         AKO46-RIPE
+status:         ASSIGNED
+mnt-by:         KURSKTELECOM-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2008-12-30T10:08:47Z
+last-modified:  2018-09-04T10:38:34Z
+source:         RIPE
+sponsoring-org: ORG-JSCK1-RIPE
+
+
+

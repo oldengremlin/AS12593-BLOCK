@@ -1,4 +1,89 @@
 
 
 
+as-block:       AS60439 - AS61261
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-09-03T13:31:09Z
+last-modified:  2024-09-03T13:31:09Z
+source:         RIPE
+
+
+
+aut-num:        AS60691
+as-name:        GLAVSV-AS
+org:            ORG-TNDR1-RIPE
+remarks:        -------------------------------------------------------
+remarks:        UPLINKS
+import:         from AS8732 accept ANY
+export:         to AS8732 announce AS-GLAVSV-MAIN
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-GLAVSV-MAIN
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS-GLAVSV-MAIN
+remarks:        -------------------------------------------------------
+remarks:        MSK-IX
+import:         from AS8631 accept ANY
+export:         to AS8631 announce AS-GLAVSV-MAIN
+export:         to AS8631 announce AS-EUSTROSOFT
+remarks:        -------------------------------------------------------
+remarks:        PEERINGS
+export:         to AS49373 announce ANY
+import:         from AS49373 accept ANY
+export:         to AS42861 announce ANY
+import:         from AS42861 accept ANY
+remarks:        -------------------------------------------------------
+remarks:        DOWNLINKS
+export:         to AS43628 announce ANY
+import:         from AS43628 accept AS43628
+export:         to AS201575 announce ANY
+import:         from AS201575 accept AS201575
+export:         to AS43628 announce ANY
+import:         from AS43628 accept AS60691
+remarks:        -------------------------------------------------------
+remarks:        --- NETMandala http://eustrosoft.org/projects/NETMandala/
+remarks:        -------------------------------------------------------
+import:         from AS58366 accept AS-GLAVSV-MAIN
+export:         to AS58366 announce ANY
+remarks:        --- EustroSoft.org as client
+import:         from AS204406 accept AS-EUSTROSOFT
+export:         to AS204406 announce ANY
+remarks:        -------------------------------------------------------
+sponsoring-org: ORG-IML10-RIPE
+admin-c:        ASK64-RIPE
+tech-c:         ASK64-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TANDER-MNT
+created:        2013-05-28T09:03:08Z
+last-modified:  2025-04-16T08:40:55Z
+source:         RIPE
+
+organisation:   ORG-TNDR1-RIPE
+org-name:       JSC "Tander"
+country:        RU
+org-type:       OTHER
+address:        185, Levanevskogo street
+address:        Krasnodar, 350002
+address:        Russia
+abuse-c:        CT5288-RIPE
+mnt-ref:        RUIX-MNT
+mnt-by:         TANDER-MNT
+created:        2011-08-19T14:20:19Z
+last-modified:  2025-03-31T11:05:28Z
+source:         RIPE # Filtered
+
+person:         Andrey Krasnoperov
+address:        JSC "Tander" ("MAGNIT" retail chain)
+address:        15/5, Solnechnaya street, Krasnodar, 350072, Russia
+phone:          +7 861 2109810 ext. 17729
+fax-no:         +7 861 2109810
+nic-hdl:        ASK64-RIPE
+mnt-by:         TANDER-MNT
+created:        2011-08-19T13:37:09Z
+last-modified:  2017-06-16T10:14:04Z
+source:         RIPE # Filtered
+
+
 

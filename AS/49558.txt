@@ -1,4 +1,122 @@
 
 
 
+as-block:       AS47870 - AS50048
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-12-06T06:09:56Z
+last-modified:  2024-12-06T06:09:56Z
+source:         RIPE
+
+
+
+aut-num:        AS49558
+as-name:        LIVECOMM-AS
+org:            ORG-IL526-RIPE
+descr:          Volodarskogo str., 62k2, 1
+descr:          Yaroslavl, 150040, Russia
+remarks:        --- Upstreams--------------------------------------------------------
+import:         from AS31133 37.29.23.241 at 37.29.23.242 action med=50; accept {0.0.0.0/0}
+export:         to AS31133 37.29.23.241 at 37.29.23.242 announce AS-LIVECOMM
+import:         from AS3216 212.46.225.237 at 212.46.225.238 accept AS-SOVAM
+import:         from AS3216 212.46.225.237 at 212.46.225.238 action med=20; accept {0.0.0.0/0}
+export:         to AS3216 212.46.225.237 at 212.46.225.238 announce AS-LIVECOMM
+import:         from AS20485 188.43.27.86 at 188.43.27.85 accept AS-TTK
+import:         from AS20485 188.43.27.86 at 188.43.27.85 accept {0.0.0.0/0}
+export:         to AS20485 188.43.27.86 at 188.43.27.85 announce AS-LIVECOMM
+mp-import:      afi ipv6.unicast from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-LIVECOMM
+mp-import:      afi ipv6.unicast from AS3216 accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-LIVECOMM
+mp-import:      afi ipv6.unicast from AS6939 action pref=99; accept ANY
+mp-export:      afi ipv6.unicast to AS6939 announce AS-LIVECOMM
+mp-import:      afi ipv6.unicast from AS20485 accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-LIVECOMM
+remarks:        --- Customers--------------------------------------------------------
+import:         from AS43517 93.107.138.37 at 93.107.138.38 action pref=300; accept AS-YARTELNET
+export:         to AS43517 93.107.138.37 at 93.107.138.38 announce AS-LIVECOMM AND {0.0.0.0/0}
+remarks:        --- Peers------------------------------------------------------------
+import:         from AS64600 46.16.31.210 at 46.16.31.208 action pref=300; accept AS-YARROUTESERVER
+import:         from AS64600 46.16.31.213 at 46.16.31.208 action pref=300; accept AS-YARROUTESERVER
+export:         to AS64600 46.16.31.210 at 46.16.31.208 announce AS-LIVECOMM
+export:         to AS64600 46.16.31.213 at 46.16.31.208 announce AS-LIVECOMM
+import:         from AS25592 213.187.100.253 at 213.187.100.254 action pref=300; accept AS-NETIS
+export:         to AS25592 213.187.100.253 at 213.187.100.254 announce AS-LIVECOMM
+import:         from AS31480 91.213.39.150 at 91.213.39.149 action pref=300; accept AS-GLOBAL-TS
+export:         to AS31480 91.213.39.150 at 91.213.39.149 announce AS-LIVECOMM
+mp-import:      afi ipv6.unicast from AS64600 accept AS-YARROUTESERVER
+mp-export:      afi ipv6.unicast to AS64600 announce AS-LIVECOMM
+mp-import:      afi ipv6.unicast from AS25592 accept AS-NETIS
+mp-export:      afi ipv6.unicast to AS25592 announce AS-LIVECOMM
+remarks:        ---------------------------------------------------------------------
+remarks:        Upstreams communities
+remarks:        ---------------------------------------------------------------------
+remarks:        Customer traffic engineering communities - Prepending
+remarks:        ---------------------------------------------------------------------
+remarks:        49558:41x - TTK
+remarks:        49558:42x - Megafon
+remarks:        49558:43x - Vimplecom
+remarks:        49558:49x - YAR-IX
+remarks:        ---------------------------------------------------------------------
+remarks:        0 - Don't announce.
+remarks:        1 - Announce with 1 prepend
+remarks:        2 - Announce with 2 prepends
+remarks:        5 - Announce with 5 prepends
+remarks:        ---------------------------------------------------------------------
+remarks:        49558:50 - Set local pref 50 within AS49558 (lowest possible)
+remarks:        49558:150 - Set local pref 150 within AS49558 (equal to peer, backup)
+remarks:        ---------------------------------------------------------------------
+remarks:        Downstream communities
+remarks:        ---------------------------------------------------------------------
+remarks:        49558:901 - YAR-IX
+remarks:        49558:900 - Clients (AS-LIVECOMM)
+remarks:        ---------------------------------------------------------------------
+sponsoring-org: ORG-AG284-RIPE
+admin-c:        LCOM-RIPE
+status:         ASSIGNED
+tech-c:         LCOM-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         YAR-MNT
+created:        2009-07-02T11:57:27Z
+last-modified:  2022-01-11T12:20:31Z
+source:         RIPE
+
+organisation:   ORG-IL526-RIPE
+org-name:       IT-Yaroslavl Ltd.
+country:        RU
+org-type:       OTHER
+address:        Volodarskogo str., 62k2, 1
+address:        150040
+address:        Yaroslavl
+address:        RUSSIAN FEDERATION
+phone:          +74852679000
+admin-c:        SS33377-RIPE
+tech-c:         VK4811-RIPE
+abuse-c:        AR48282-RIPE
+mnt-ref:        YAR-MNT
+mnt-ref:        RIPE-DB-MNT
+mnt-ref:        MNT-GCX
+mnt-by:         YAR-MNT
+created:        2018-09-17T07:37:01Z
+last-modified:  2022-12-01T17:15:05Z
+source:         RIPE # Filtered
+
+role:           LiveComm Network Operations
+address:        Volodarskogo str., 62k2
+address:        Yaroslavl, Russia
+address:        150040
+phone:          +7 4852 690000
+fax-no:         +7 4852 679001
+admin-c:        SS33377-RIPE
+tech-c:         SS33377-RIPE
+tech-c:         VK4811-RIPE
+nic-hdl:        LCOM-RIPE
+mnt-by:         YAR-MNT
+abuse-mailbox:  abuse@livecomm.net
+created:        2011-03-06T21:01:52Z
+last-modified:  2020-10-02T13:16:35Z
+source:         RIPE # Filtered
+
+
 

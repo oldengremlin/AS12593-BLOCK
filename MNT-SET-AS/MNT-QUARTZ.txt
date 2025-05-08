@@ -2,31 +2,3 @@
 
 
 
-aut-num:        AS50009
-as-name:        QUARTZ-AS
-org:            ORG-QTL2-RIPE
-import:         from AS34456 accept ANY
-import:         from AS197826 accept ANY
-import:         from AS28917 accept ANY
-import:         from AS48494 accept AS-MKNET
-import:         from AS43020 accept AS43020
-export:         to AS34456 announce AS-QUARTZ
-export:         to AS28917 announce AS-QUARTZ
-export:         to AS48494 announce ANY
-export:         to AS43020 announce ANY
-export:         to AS197826 announce AS-QUARTZ
-mp-import:      afi ipv6.unicast from AS197826 action pref=100; accept ANY
-mp-import:      afi ipv6.unicast from AS28917 action pref=100; accept ANY
-mp-export:      afi ipv6.unicast to AS197826 announce AS-QUARTZ-V6
-mp-export:      afi ipv6.unicast to AS28917 announce AS-QUARTZ-V6
-admin-c:        AA2095-RIPE
-tech-c:         DYA2-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         MNT-QUARTZ
-created:        2009-10-26T11:43:33Z
-last-modified:  2018-09-04T10:45:35Z
-source:         RIPE
-
-
-
