@@ -2,3 +2,25 @@
 
 
 
+aut-num:        AS21289
+as-name:        ROSTOVTELECOM-AS
+org:            ORG-JR8-RIPE
+descr:          RTComm-Yug LLC
+import:         from AS8342 action pref=100; accept ANY
+import:         from AS6767 action pref=100; accept ANY
+export:         to AS8342 announce AS21289
+export:         to AS6767 announce AS21289
+default:        to AS6767 action pref=100;
+default:        to AS8342 action pref=100;
+admin-c:        AS3366-RIPE
+tech-c:         SE116-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         ROSTOVTELECOM-MNT
+created:        2001-10-18T09:53:55Z
+last-modified:  2025-04-15T11:21:36Z
+source:         RIPE
+
+
+

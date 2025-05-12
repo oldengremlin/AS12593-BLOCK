@@ -1,4 +1,229 @@
 
 
 
+as-block:       AS42173 - AS42381
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-07-22T14:14:32Z
+last-modified:  2024-07-22T14:14:32Z
+source:         RIPE
+
+
+
+aut-num:        AS42291
+as-name:        ISTRANET-AS
+member-of:      AS42291:AS-ISTRANET
+descr:          Istranet LLC AS
+org:            ORG-OI18-RIPE
+remarks:        *******************************
+remarks:        ***** IPv4 Routing Policy *****
+remarks:        *******************************
+remarks:        ------------------------------
+remarks:        DOWNLINKS
+remarks:        ------------------------------
+remarks:        JSC ESTEIT INVEST
+import:         from AS51138 accept AS51138
+export:         to AS51138 announce ANY
+remarks:        "IKA Telecom" LTD
+import:         from AS47213 accept AS47213
+export:         to AS47213 announce ANY
+remarks:        IP PARK LLC
+import:         from AS205439 accept AS205439
+export:         to AS205439 announce ANY
+remarks:        OOO Istra.net
+import:         from AS216363 accept AS216363
+export:         to AS216363 announce ANY
+remarks:        Lantek LLC
+import:         from AS49825 accept AS49825
+export:         to AS49825 announce ANY
+remarks:        JSC ESTEIT INVEST
+import:         from AS62426 accept AS62426
+export:         to AS62426 announce ANY
+remarks:        JSC ESTEIT INVEST
+import:         from AS44093 accept AS44093
+export:         to AS44093 announce ANY
+remarks:        OOO "OTC"
+import:         from AS47860 accept AS47860
+export:         to AS47860 announce ANY
+remarks:        Naitex LLC
+import:         from AS62046 accept AS62046
+export:         to AS62046 announce ANY
+remarks:        Gorset Ltd.
+import:         from AS57421 accept AS57421
+export:         to AS57421 announce ANY
+remarks:        OOO SITI LAJT
+import:         from AS216247 accept AS216247
+export:         to AS216247 announce ANY
+remarks:        TCV Ltd
+import:         from AS49510 accept AS49510
+export:         to AS49510 announce ANY
+remarks:        AirNet Ltd
+import:         from AS200022 accept AS200022
+export:         to AS200022 announce ANY
+remarks:        ------------------------------
+remarks:        UPLINKS
+remarks:        ------------------------------
+remarks:        INETCOM
+import:         from AS35598 action pref=100; accept ANY
+export:         to AS35598 announce AS42291:AS-ISTRANET
+remarks:        RETN
+remarks:        from AS57304 action pref=100; accept ANY
+remarks:        to AS57304 announce AS42291:AS-ISTRANET
+remarks:        NAUKANET
+import:         from AS8641 action pref=100; accept ANY
+export:         to AS8641 announce AS42291:AS-ISTRANET
+remarks:        RASCOM
+import:         from AS20764 action pref=100; accept ANY
+export:         to AS20764 announce AS42291:AS-ISTRANET
+remarks:        Vimpelcom
+import:         from AS3216 action pref=100; accept ANY
+export:         to AS3216 announce AS42291:AS-ISTRANET
+remarks:        RT
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS42291:AS-ISTRANET
+remarks:        TTK
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS42291:AS-ISTRANET
+remarks:        Transroute
+import:         from AS50509 action pref=100; accept ANY
+export:         to AS50509 announce AS42291:AS-ISTRANET
+remarks:        ------------------------------
+remarks:        IX
+remarks:        ------------------------------
+remarks:        PITER-IX_Riga
+import:         from AS49634 action pref=150; accept ANY
+export:         to AS49634 announce AS42291:AS-ISTRANET
+remarks:        PITER-IX_Helsinki
+import:         from AS39607 action pref=150; accept ANY
+export:         to AS39607 announce AS42291:AS-ISTRANET
+remarks:        PITER-IX_Frankfurt
+import:         from AS48193 action pref=150; accept ANY
+export:         to AS48193 announce AS42291:AS-ISTRANET
+remarks:        PITER-IX_SPB
+import:         from AS50817 action pref=150; accept ANY
+export:         to AS50817 announce AS42291:AS-ISTRANET
+remarks:        PITER-IX_MSK
+import:         from AS49869 action pref=150; accept ANY
+export:         to AS49869 announce AS42291:AS-ISTRANET
+remarks:        PITER-IX_Tallinn
+import:         from AS57936 action pref=150; accept ANY
+export:         to AS57936 announce AS42291:AS-ISTRANET
+remarks:        Data-IX
+import:         from AS50952 action pref=150; accept ANY
+export:         to AS50952 announce AS42291:AS-ISTRANET
+remarks:        Global-IX
+import:         from AS31500 action pref=150; accept ANY
+export:         to AS31500 announce AS42291:AS-ISTRANET
+remarks:        MSK-IX
+import:         from AS8631 action pref=150; accept ANY
+export:         to AS8631 announce AS42291:AS-ISTRANET
+remarks:        ------------------------------
+remarks:        PEERS
+remarks:        ------------------------------
+remarks:        Yandex
+import:         from AS13238 action pref=200; accept ANY
+export:         to AS13238 announce AS42291:AS-ISTRANET
+remarks:        VK
+import:         from AS47764 action pref=200; accept ANY
+export:         to AS47764 announce AS42291:AS-ISTRANET
+remarks:        Google
+import:         from AS15169 action pref=200; accept ANY
+export:         to AS15169 announce AS42291:AS-ISTRANET
+remarks:        *******************************
+remarks:        ***** IPv6 Routing Policy *****
+remarks:        *******************************
+remarks:        TTK
+mp-import:      afi ipv6.unicast from AS20485 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-ISTRANET6
+remarks:        MSK-IX
+mp-import:      afi ipv6.unicast from AS8631 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS8631 announce AS-ISTRANET6
+remarks:        Rostelecom
+mp-import:      afi ipv6.unicast from AS12389 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-ISTRANET6
+remarks:        RetnNet
+mp-import:      afi ipv6.unicast from AS9002 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-ISTRANET6
+remarks:        W-IX
+mp-import:      afi ipv6.unicast from AS50384 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS50384 announce AS-ISTRANET6
+remarks:        Data-IX
+mp-import:      afi ipv6.unicast from AS50952 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS50952 announce AS-ISTRANET6
+remarks:        Piter-IX
+mp-import:      afi ipv6.unicast from AS49869 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS49869 announce AS-ISTRANET6
+remarks:        Rascom
+mp-import:      afi ipv6.unicast from AS20764 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS20764 announce AS-ISTRANET6
+remarks:        Imetcom
+mp-import:      afi ipv6.unicast from AS35598 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS35598 announce AS-ISTRANET6
+remarks:        Beeline
+mp-import:      afi ipv6.unicast from AS3216 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-ISTRANET6
+remarks:        Google
+mp-import:      afi ipv6.unicast from AS15169 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS15169 announce AS-ISTRANET6
+remarks:        Yandex
+mp-import:      afi ipv6.unicast from AS13238 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS13238 announce AS-ISTRANET6
+remarks:        Mail
+mp-import:      afi ipv6.unicast from AS47764 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS447664 announce AS-ISTRANET6
+remarks:        IVI
+mp-import:      afi ipv6.unicast from AS57629 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS57629 announce AS-ISTRANET6
+remarks:        *******************************
+admin-c:        INA38-RIPE
+tech-c:         INA38-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ISTRANET-MNT
+created:        2007-01-29T11:51:57Z
+last-modified:  2025-04-18T09:52:54Z
+source:         RIPE
+
+organisation:   ORG-OI18-RIPE
+org-name:       OOO Istranet
+country:        RU
+geoloc:         55.863414 37.043037
+org-type:       LIR
+address:        Village Rozhdestveno, Sirenevy blvd, 2, ste 11
+address:        143591
+address:        Moscow region, Istra
+address:        RUSSIAN FEDERATION
+phone:          +79266761394
+phone:          +74983164444
+fax-no:         +74983164444
+admin-c:        EAV69-RIPE
+remarks:        --------------------
+remarks:        For ISP Cooperation
+remarks:        m.degtyarev@istranet.ru
+remarks:        --------------------
+abuse-c:        AR16729-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        ISTRANET-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ISTRANET-MNT
+created:        2011-05-18T13:59:28Z
+last-modified:  2024-07-25T13:43:33Z
+source:         RIPE # Filtered
+
+role:           Istranet NOC Administrators
+org:            ORG-OI18-RIPE
+address:        Istranet LLC
+address:        Village Rozhdestveno, Sirenevy blvd, 2, ste 11
+address:        143591 Moscow region, Istra
+address:        RU
+admin-c:        PKV46-RIPE
+nic-hdl:        INA38-RIPE
+mnt-by:         ISTRANET-MNT
+mnt-by:         C-ISTRANET-MNT
+created:        2024-07-11T05:22:36Z
+last-modified:  2024-07-23T14:44:50Z
+source:         RIPE # Filtered
+
+
 

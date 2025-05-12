@@ -2,3 +2,47 @@
 
 
 
+aut-num:        AS20597
+as-name:        ELTEL-AS
+org:            ORG-ES15-RIPE
+import:         from AS3216 action pref=100; accept ANY
+export:         to AS3216 announce AS-ELTEL
+import:         from AS8402 action pref=100; accept AS-CORBINA
+export:         to AS8402 announce AS-ELTEL
+import:         from AS13238 action pref=100; accept AS-YANDEX
+export:         to AS13238 announce AS-ELTEL
+import:         from AS30968 action pref=100; accept AS-INFOBOX
+export:         to AS30968 announce AS-ELTEL
+remarks:        -------------------------------
+remarks:        Communities sent to ebgp peers:
+remarks:
+remarks:        20597:10000 - All uplinks
+remarks:        20597:10002 - Sovintel uplink
+remarks:
+remarks:        20597:20597 - Direct peers
+remarks:
+remarks:        20597:30000 - Customers
+remarks:        -------------------------------
+remarks:        Communities that may be accepted from ebgp peers
+remarks:
+remarks:        20597:11000 - do not advertise to all uplinks
+remarks:        20597:11002 - do not advertise to Sovintel
+remarks:
+remarks:        20597:11X00 - prepend to all peers X times
+remarks:        20597:11X02 - prepend to Sovintel X times
+remarks:
+remarks:        X = 1, 2 or 5.
+remarks:
+remarks:        Other communities ignored.
+remarks:        -------------------------------
+admin-c:        EC2530-RIPE
+tech-c:         EC2530-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ELTEL-RIPE-MNT
+created:        2002-09-16T13:41:36Z
+last-modified:  2017-11-15T09:16:25Z
+source:         RIPE # Filtered
+
+
+

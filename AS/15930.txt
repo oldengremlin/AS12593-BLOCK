@@ -1,4 +1,97 @@
 
 
 
+as-block:       AS15835 - AS15963
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:25Z
+last-modified:  2018-11-22T15:27:25Z
+source:         RIPE
+
+
+
+aut-num:        AS15930
+as-name:        WIPLINE-AS
+org:            ORG-WC6-RIPE
+admin-c:        RUS123-RIPE
+admin-c:        ENK37-RIPE
+tech-c:         RUS123-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+tech-c:         ENK37-RIPE
+mnt-by:         WPL-MNT
+created:        2006-07-25T08:45:06Z
+last-modified:  2020-06-16T10:06:21Z
+source:         RIPE
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-SET-WPL
+import:         from AS43727 accept ANY
+export:         to AS43727 announce AS-SET-WPL
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-SET-WPL
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-SET-WPL
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-SET-WPL
+import:         from AS48366 accept AS-SETInforoom
+export:         to AS48366 announce ANY
+mp-import:      afi ipv6 from AS43727 action pref=300; accept ANY
+mp-export:      afi ipv6 to AS43727 announce AS-SET-WPL
+mp-import:      afi ipv6 from AS3216 action pref=300; accept ANY
+mp-export:      afi ipv6 to AS3216 announce AS-SET-WPL
+mp-import:      afi ipv6 from AS6939 action aspath.prepend(AS15930,AS15930); accept ANY
+mp-export:      afi ipv6 to AS6939 announce AS-SET-WPL
+
+organisation:   ORG-WC6-RIPE
+org-name:       WIPLINE, LLC
+country:        RU
+org-type:       LIR
+address:        Moskovsky Prospect 97
+address:        394077
+address:        Voronezh
+address:        RUSSIAN FEDERATION
+phone:          +7 4732 399911
+phone:          +7 4732 399912
+phone:          +7 4732 748616
+phone:          +7 4732 748854
+fax-no:         +7 4732 748616
+admin-c:        RUS123-RIPE
+admin-c:        ENK37-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        WPL-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         WPL-MNT
+abuse-c:        WD1154-RIPE
+created:        2006-07-17T10:11:05Z
+last-modified:  2020-12-16T12:21:06Z
+source:         RIPE # Filtered
+
+person:         Eugene N Khabarov
+address:        Moskovsky pr., 97, Voronezh, Russia, 394077
+phone:          +7 4732 748854
+phone:          +7 4732 748616
+phone:          +7 4732 522522
+fax-no:         +7 4732 748616
+nic-hdl:        ENK37-RIPE
+mnt-by:         WPL-MNT
+created:        2007-06-15T10:05:44Z
+last-modified:  2017-10-30T21:55:31Z
+source:         RIPE # Filtered
+
+person:         Ruslan V Denisov
+address:        Moskovsky pr., 97, Voronezh, Russia, 394077
+phone:          +7 4732 748854
+phone:          +7 4732 748616
+phone:          +7 4732 522522
+phone:          +7 4732 399911
+phone:          +7 4732 399912
+fax-no:         +7 4732 748616
+nic-hdl:        RUS123-RIPE
+mnt-by:         WPL-MNT
+created:        2009-09-14T10:55:28Z
+last-modified:  2017-10-30T22:06:31Z
+source:         RIPE # Filtered
+
+
 

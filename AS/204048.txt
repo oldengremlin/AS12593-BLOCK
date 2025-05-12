@@ -1,4 +1,91 @@
 
 
 
+as-block:       AS203889 - AS205662
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-11-12T15:22:00Z
+last-modified:  2024-11-12T15:22:00Z
+source:         RIPE
+
+
+
+aut-num:        AS204048
+as-name:        VFT-AS
+org:            ORG-JSVS1-RIPE
+remarks:        ---------------------------------------------------------------
+remarks:        *************** IPv4 Routing Policy ***************
+remarks:        ---------------------------------------------------------------
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-VOLGAFLOT
+import:         from AS12418 accept ANY
+export:         to AS12418 announce AS-VOLGAFLOT
+import:         from AS8580 accept ANY
+export:         to AS8580 announce AS-VOLGAFLOT
+import:         from AS60346 accept AS60346
+export:         to AS60346 announce ANY
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-VOLGAFLOT
+remarks:        ---------------------------------------------------------------
+remarks:        *************** IPv6 Routing Policy ***************
+remarks:        ---------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-VOLGAFLOT
+mp-import:      afi ipv6.unicast from AS8580 accept ANY
+mp-export:      afi ipv6.unicast to AS8580 announce AS-VOLGAFLOT
+mp-import:      afi ipv6.unicast from AS60346 accept AS60346
+mp-export:      afi ipv6.unicast to AS60346 announce ANY
+admin-c:        AS42721-RIPE
+admin-c:        PL13372-RIPE
+tech-c:         AS42721-RIPE
+tech-c:         PL13372-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CPLUS1-MNT
+created:        2015-09-08T06:45:47Z
+last-modified:  2022-10-13T14:12:34Z
+source:         RIPE
+sponsoring-org: ORG-CTCP2-RIPE
+
+organisation:   ORG-JSVS1-RIPE
+org-name:       Joint Stock Volga Shipping
+country:        RU
+org-type:       OTHER
+address:        Russia, 15 A, Markin Square, Nizhny Novgorod
+abuse-c:        AC32629-RIPE
+mnt-ref:        CPLUS1-MNT
+mnt-by:         CPLUS1-MNT
+created:        2015-05-28T11:43:32Z
+last-modified:  2022-12-01T17:16:27Z
+source:         RIPE # Filtered
+
+person:         Alexey Savosin
+address:        Mejevoy 5
+address:        198035
+address:        Saint-Petersburg
+address:        RUSSIAN FEDERATION
+phone:          +78127149300
+nic-hdl:        AS42721-RIPE
+mnt-by:         ru-conveyplus-1-mnt
+mnt-by:         CPLUS1-MNT
+created:        2019-06-13T14:20:50Z
+last-modified:  2019-06-13T14:20:50Z
+source:         RIPE
+
+person:         Pavel Likhatov
+address:        Mejevoy 5
+address:        198035
+address:        Saint-Petersburg
+address:        RUSSIAN FEDERATION
+phone:          +78127149300
+nic-hdl:        PL13372-RIPE
+org:            ORG-CTCP2-RIPE
+mnt-by:         ru-conveyplus-1-mnt
+mnt-by:         CPLUS1-MNT
+created:        2019-07-16T10:59:21Z
+last-modified:  2019-11-21T08:29:39Z
+source:         RIPE # Filtered
+
+
 

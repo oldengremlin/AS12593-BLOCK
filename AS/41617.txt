@@ -1,4 +1,172 @@
 
 
 
+as-block:       AS40960 - AS42171
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-07-22T14:14:32Z
+last-modified:  2024-07-22T14:14:32Z
+source:         RIPE
+
+
+
+aut-num:        AS41617
+as-name:        SOLID-IFC
+descr:          solidbroker.ru
+descr:          Moscow, Russia
+org:            ORG-SOL4-RIPE
+remarks:        -------------------------------------------------------
+remarks:        All ASes participating in AS41617 are grouped
+remarks:        into the AS-SET: AS-SOLID-IFC
+remarks:        -------------------------------------------------------
+remarks:        IPv4 Routing Policy
+remarks:        -------------------------------------------------------
+remarks:        RetnNet IPv4
+import:         from AS9002 action pref=100; accept ANY
+export:         to AS8470 announce AS-SOLID-IFC
+remarks:        GarsTelecom IPv4
+import:         from AS31261 action pref=100; accept ANY
+export:         to AS31261 announce AS-SOLID-IFC
+remarks:        COMSTAR IPv4
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS8359 announce AS-SOLID-IFC
+remarks:        -------------------------------------------------------
+remarks:        IPv4 RIS Peering
+remarks:        -------------------------------------------------------
+remarks:        RRC13 IPv4
+import:         from AS12654 action pref=100; accept ANY
+export:         to AS12654 announce ANY
+remarks:        -------------------------------------------------------
+remarks:        IPv4 ROUTE SERVERS
+remarks:        -------------------------------------------------------
+remarks:        MSK-IX RS  IPv4
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-SOLID-IFC
+import-via:     afi ipv4.unicast AS8631 from AS-ANY accept ANY
+export-via:     afi ipv4.unicast AS8631 to AS-ANY announce AS-SOLID-IFC
+remarks:        -------------------------------------------------------
+remarks:        IPv4 PEERING
+remarks:        -------------------------------------------------------
+remarks:        RIPNDNS IPv4
+mp-import:      from AS43832 action pref=100; accept AS-NS5_RIPN_NET
+mp-export:      to AS43832 announce AS-SOLID-IFC
+remarks:        RELARN IPv4
+mp-import:      from AS3316 action pref=100; accept AS-RELARN
+mp-export:      to AS3316 announce AS-SOLID-IFC
+remarks:        GOOGLE IPv4
+import:         from AS15169 action pref=100; accept AS-GOOGLE
+export:         to AS15169 announce AS-SOLID-IFC
+remarks:        MICROSOFT IPv4
+import:         from AS8075 action pref=100; accept AS-MICROSOFT
+export:         to AS8075 announce AS-SOLID-IFC
+remarks:        APPLE IPv4
+import:         from AS714 action pref=100; accept AS-APPLE
+export:         to AS714 announce AS-SOLID-IFC
+remarks:        MACOMNET IPv4
+import:         from AS8470 action pref=100; accept AS-MACOMNET
+export:         to AS8470 announce AS-SOLID-IFC
+remarks:        -------------------------------------------------------
+remarks:        IPv6 Routing Policy
+remarks:        -------------------------------------------------------
+remarks:        RetnNet IPv6
+mp-import:      afi ipv6.unicast from AS9002 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-SOLID-IFC
+remarks:        GarsTelecom IPv6
+mp-import:      afi ipv6.unicast from AS31261 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS31261 announce AS-SOLID-IFC
+remarks:        Comstar IPv6
+mp-import:      afi ipv6.unicast from AS8359 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-SOLID-IFC
+remarks:        -------------------------------------------------------
+remarks:        IPv6 RIS Peering
+remarks:        -------------------------------------------------------
+remarks:        RRC13 IPv6
+mp-import:      afi ipv6.unicast from AS12654 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS12654 announce ANY
+remarks:        -------------------------------------------------------
+remarks:        IPv6 ROUTE SERVERS
+remarks:        -------------------------------------------------------
+remarks:        MSK-IX RS IPv6
+mp-import:      afi ipv6.unicast from AS8631 action pref=100; accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-SOLID-IFC
+import-via:     afi ipv6.unicast AS8631 from AS-ANY accept ANY
+export-via:     afi ipv6.unicast AS8631 to AS-ANY announce AS-SOLID-IFC
+remarks:        -------------------------------------------------------
+remarks:        IPv6 PEERING
+remarks:        -------------------------------------------------------
+remarks:        RIPNDNS IPv6
+mp-import:      afi ipv6.unicast from AS43832 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS43832 announce AS-SOLID-IFC
+remarks:        RELARN IPv6
+mp-import:      afi ipv6.unicast from AS3316 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS3316 announce AS-SOLID-IFC
+remarks:        GOOGLE IPv6
+mp-import:      afi ipv6.unicast from AS15169 action pref=100; accept AS-GOOGLE
+mp-export:      afi ipv6.unicast to AS15169 announce AS-SOLID-IFC
+remarks:        MICROSOFT IPv6
+mp-import:      afi ipv6.unicast from AS8075 action pref=100; accept AS-MICROSOFT
+mp-export:      afi ipv6.unicast to AS8075 announce AS-SOLID-IFC
+remarks:        APPLE IPv6
+mp-import:      afi ipv6.unicast from AS714 action pref=100; accept AS-APPLE
+mp-export:      afi ipv6.unicast to AS714 announce AS-SOLID-IFC
+remarks:        MACOMNET IPv6
+mp-import:      afi ipv6.unicast from AS8470 action pref=100; accept AS-MACOMNET
+mp-export:      afi ipv6.unicast to AS8470 announce AS-SOLID-IFC
+remarks:        -------------------------------------------------------
+admin-c:        AT11467-RIPE
+tech-c:         AT11467-RIPE
+remarks:        -------------------------------------------------------
+remarks:        We filter inbound prefixes longer than /24
+remarks:        -------------------------------------------------------
+remarks:        General questions: noc@solid-ifc.ru
+remarks:        Routing inquiries: noc@solid-ifc.ru
+remarks:        Peering issues: noc@solid-ifc.ru
+remarks:        -----------------------------------------
+remarks:        --------- A T T E N T I O N !!! ----------
+remarks:        Please use abuse@solid-ifc.ru e-mail address
+remarks:        for spam and abuse complaints.
+remarks:        Mails for other addresses will be ignored!
+remarks:        -----------------------------------------
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SOLID-MNT
+mnt-by:         ROSNIIROS-MNT
+created:        2006-09-25T11:29:07Z
+last-modified:  2019-11-01T09:44:30Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-JCE1-RIPE
+
+organisation:   ORG-SOL4-RIPE
+org-name:       CJSC IFC Solid
+country:        RU
+org-type:       OTHER
+address:        Khoroshevskoe shosse, 32a
+address:        123007
+address:        Moscow
+address:        RUSSIAN FEDERATION
+geoloc:         55.776605 37.541765
+phone:          +7 495 228 70 10
+fax-no:         +7 495 228 70 11
+admin-c:        AT11467-RIPE
+abuse-c:        CIS62-RIPE
+mnt-ref:        SOLID-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-by:         SOLID-MNT
+created:        2006-09-11T13:07:30Z
+last-modified:  2022-12-01T16:52:54Z
+source:         RIPE # Filtered
+
+person:         Alexander Tomilin
+address:        Moscow, Russia
+phone:          +7 903 7834510
+nic-hdl:        AT11467-RIPE
+mnt-by:         SOLID-MNT
+mnt-by:         BUSINESS-PARTNERSHIP-MNT
+mnt-by:         AVGA-TERRA-MNT
+created:        2014-06-18T09:27:27Z
+last-modified:  2019-10-20T08:39:16Z
+source:         RIPE # Filtered
+
+
 
