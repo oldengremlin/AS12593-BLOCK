@@ -2,3 +2,120 @@
 
 
 
+aut-num:        AS197360
+as-name:        TELSYS-AS
+org:            ORG-BC2-RIPE
+import:         from AS28812 accept ANY
+export:         to AS28812 announce AS197360
+admin-c:        ORD5-RIPE
+tech-c:         SSM18-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUMS-MNT
+created:        2010-11-01T07:56:42Z
+last-modified:  2019-08-05T06:50:17Z
+source:         RIPE
+
+
+
+aut-num:        AS198486
+as-name:        YANAUL-TELSYS-AS
+org:            ORG-BC2-RIPE
+import:         from AS28812 accept ANY
+export:         to AS28812 announce AS198486
+admin-c:        ORD5-RIPE
+tech-c:         SSM18-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUMS-MNT
+created:        2012-02-14T12:54:35Z
+last-modified:  2019-08-05T06:53:50Z
+source:         RIPE
+
+
+
+aut-num:        AS208352
+as-name:        HKSY
+org:            ORG-UHCS1-RIPE
+import:         from AS28812 accept ANY
+export:         to AS28812 announce AS208352
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS208352
+admin-c:        SSM18-RIPE
+tech-c:         SSM18-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUMS-MNT
+created:        2019-08-21T08:54:07Z
+last-modified:  2020-11-16T17:54:48Z
+source:         RIPE
+sponsoring-org: ORG-BC2-RIPE
+
+
+
+aut-num:        AS28812
+as-name:        JSCBIS-AS
+org:            ORG-BC2-RIPE
+remarks:        ---------------
+remarks:        Upstreams
+remarks:        ---------------
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-JSCBIS
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-JSCBIS
+remarks:        ---------------
+remarks:        Clients
+remarks:        ---------------
+import:         from AS28881 accept AS-BASHNET
+export:         to AS28881 announce ANY
+import:         from AS35769 accept AS35769
+export:         to AS35769 announce ANY
+import:         from AS45048 accept AS45048
+export:         to AS45048 announce ANY
+import:         from AS47733 accept AS47733
+export:         to AS47733 announce ANY
+import:         from AS51153 accept AS51153
+export:         to AS51153 announce ANY
+import:         from AS61228 accept AS61228
+export:         to AS61228 announce ANY
+import:         from AS39113 accept AS39113
+export:         to AS39113 announce ANY
+import:         from AS204925 accept AS204925
+export:         to AS204925 announce ANY
+import:         from AS208352 accept AS208352
+export:         to AS208352 announce ANY
+import:         from AS13105 accept AS13105
+export:         to AS13105 announce ANY
+import:         from AS41447 accept AS41447
+import:         from AS8475 accept AS8475
+export:         to AS41447 announce ANY
+export:         to AS8475 announce ANY
+admin-c:        ORD5-RIPE
+tech-c:         SSM18-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUMS-MNT
+created:        2003-03-03T14:48:35Z
+last-modified:  2021-12-29T13:14:26Z
+source:         RIPE
+
+
+
+aut-num:        AS28881
+as-name:        BASHNET-AS
+org:            ORG-BC2-RIPE
+import:         from AS28812 action pref=100; accept ANY
+import:         from AS41447 action pref=100; accept AS41447
+export:         to AS28812 announce AS-BASHNET
+export:         to AS41447 announce ANY
+admin-c:        ORD5-RIPE
+tech-c:         ORD5-RIPE
+status:         ASSIGNED
+mnt-by:         RUMS-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2003-03-26T10:54:47Z
+last-modified:  2019-12-04T11:17:51Z
+source:         RIPE # Filtered
+
+
+

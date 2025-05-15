@@ -1,4 +1,106 @@
 
 
 
+as-block:       AS43075 - AS44168
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2023-12-11T15:09:58Z
+last-modified:  2023-12-11T15:09:58Z
+source:         RIPE
+
+
+
+aut-num:        AS44020
+as-name:        CLN-AS
+org:            ORG-CA889-RIPE
+remarks:        ---------------------------------------------
+remarks:        (( UPSTREAMS ))
+remarks:        ---------------------------------------------
+import:         from AS9002 action pref=100; accept ANY
+export:         to AS9002 announce AS-CLN
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS-CLN
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS-CLN
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS31133 announce AS-CLN
+remarks:        ---------------------------------------------
+remarks:        (( MSK-IX ))
+remarks:        ---------------------------------------------
+import:         from AS8631 action pref=120; accept ANY
+export:         to AS8631 announce AS-CLN
+remarks:        ---------------------------------------------
+remarks:        (( Data-IX ))
+remarks:        ---------------------------------------------
+import:         from AS50952 action pref=120; accept ANY
+export:         to AS50952 announce AS-CLN
+remarks:        ---------------------------------------------
+remarks:        (( Global-IX ))
+remarks:        ---------------------------------------------
+import:         from AS31500 action pref=100; accept ANY
+export:         to AS31500 announce AS-CLN
+remarks:        ---------------------------------------------
+remarks:        (( CUSTOMERS ))
+remarks:        ---------------------------------------------
+import:         from AS30833 action pref=150; accept AS-TNC
+export:         to AS30833 announce ANY
+import:         from AS35768 action pref=150; accept AS-MSLINK
+export:         to AS35768 announce ANY
+import:         from AS42484 action pref=150; accept AS-GPTEL
+export:         to AS42484 announce ANY
+import:         from AS44199 action pref=150; accept AS44199
+export:         to AS44199 announce ANY
+import:         from AS48371 action pref=150; accept AS-WESTLAN
+export:         to AS48371 announce ANY
+import:         from AS49583 action pref=150; accept AS-KOMLAN
+export:         to AS49583 announce ANY
+import:         from AS61326 action pref=150; accept AS61326
+export:         to AS61326 announce ANY
+import:         from AS62429 action pref=150; accept AS62429
+export:         to AS62429 announce ANY
+import:         from AS201138 action pref=150; accept AS201138
+export:         to AS201138 announce ANY
+remarks:        ---------------------------------------------
+admin-c:        GIZ
+tech-c:         GIZ
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         GIZ
+created:        2007-11-05T10:06:19Z
+last-modified:  2022-10-23T09:52:25Z
+source:         RIPE # Filtered
+
+organisation:   ORG-CA889-RIPE
+org-name:       Modern Solutions LTD
+country:        RU
+org-type:       LIR
+address:        Dubninskaya str., 26-1
+address:        127591
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74956405757
+admin-c:        GIZ
+mnt-ref:        GIZ
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         GIZ
+tech-c:         GIZ
+abuse-c:        AD10941-RIPE
+created:        2007-10-15T10:09:22Z
+last-modified:  2020-12-16T13:32:14Z
+source:         RIPE # Filtered
+
+person:         Vitaly Egorov
+address:        Modern Solutions LTD
+address:        127591, Russia, Moscow
+address:        Dubninskaya str. 26-1
+phone:          +7 495 6405757
+nic-hdl:        GIZ
+mnt-by:         GIZ
+created:        2013-04-03T15:10:52Z
+last-modified:  2016-05-14T19:14:40Z
+source:         RIPE # Filtered
+
+
 

@@ -2,3 +2,142 @@
 
 
 
+aut-num:        AS31359
+as-name:        FORATEC-AS
+descr:          Foratec Net
+descr:          Yekaterinburg, Russia
+org:            ORG-ES15-RIPE
+remarks:        ------------------------------------------------------------
+remarks:        Upstreams:
+remarks:        ------------------------------------------------------------
+import:         from AS3216 action pref=400; accept ANY
+export:         to AS3216 announce AS31359 AS31359:AS-CUSTOMERS-YEK AS31359:AS-CUSTOMERS-TMN
+remarks:        ------------------------------------------------------------
+remarks:        Customers:
+remarks:        ------------------------------------------------------------
+import:         from AS31359:AS-CUSTOMERS-YEK action pref=100; accept <^AS31359:AS-CUSTOMERS-YEK+$>
+import:         from AS31359:AS-CUSTOMERS-TMN action pref=100; accept <^AS31359:AS-CUSTOMERS-TMN+$>
+export:         to AS-FORATEC announce ANY
+remarks:        ------------------------------------------------------------
+remarks:        Private peers:
+remarks:        ------------------------------------------------------------
+import:         from AS31425 action pref=100; accept ANY
+export:         to AS31425 announce AS31359 AS31359:AS-CUSTOMERS-YEK AS31359:AS-CUSTOMERS-TMN AS31359:AS-PEERING
+import:         from AS3253 action pref=150; accept AS3253
+export:         to AS3253 announce AS31359:AS-PEERING
+import:         from AS34038 action pref=100; accept AS34038
+export:         to AS34038 announce AS31359:AS-PEERING
+import:         from AS31359:AS-EIX at 194.226.255.235 action pref=200; accept ANY
+export:         to AS31359:AS-EIX announce AS31359 AS31359:AS-CUSTOMERS-YEK AS31359:AS-CUSTOMERS-TMN
+remarks:        ------------------------------------------------------------
+remarks:        EKT-IX peers:
+remarks:        ------------------------------------------------------------
+import:         from AS43213 194.85.107.100 at 194.85.107.60 action pref=150; accept AS-EKTROUTESERVER
+import:         from AS43213 194.85.107.200 at 194.85.107.60 action pref=150; accept AS-EKTROUTESERVER
+import:         from AS13238 194.85.107.57 at 194.85.107.60 action pref=150; accept AS-YANDEX
+export:         to AS43213 announce AS-FORATEC-EKT-IX
+export:         to AS13238 announce AS-FORATEC-EKT-IX
+admin-c:        FCIP-RIPE
+tech-c:         FCIP-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         FORATEC-MNT
+created:        2004-04-26T09:19:30Z
+last-modified:  2018-09-04T10:02:18Z
+source:         RIPE
+
+
+
+aut-num:        AS31425
+as-name:        FORATEC-AS
+descr:          Foratec Net AS
+descr:          at Khanty-Mansiyskiy AO-Yugra
+descr:          and Yamalo-Nenetskiy AO
+descr:          Surgut, Russia
+org:            ORG-ES15-RIPE
+remarks:        ------------------------------------------------------------
+remarks:        Upstreams:
+remarks:        ------------------------------------------------------------
+import:         from AS12389 action pref=400; accept ANY
+export:         to AS12389 announce AS31425 AS31425:AS-CUSTOMERS-SRG
+import:         from AS20485 action pref=400; accept ANY
+export:         to AS20485 announce AS31425 AS31425:AS-CUSTOMERS-SRG
+import:         from AS3216 action pref=400; accept ANY
+export:         to AS3216 announce AS31425 AS31425:AS-CUSTOMERS-SRG
+remarks:        ------------------------------------------------------------
+remarks:        Customers:
+remarks:        ------------------------------------------------------------
+import:         from AS31425:AS-CUSTOMERS-SRG action pref=100; accept <^AS31425:AS-CUSTOMERS-SRG+$>
+export:         to AS31425:AS-CUSTOMERS-SRG announce ANY
+remarks:        ------------------------------------------------------------
+remarks:        Private peers:
+remarks:        ------------------------------------------------------------
+import:         from AS31359 action pref=100; accept ANY
+export:         to AS31359 announce AS31425 AS31425:AS-CUSTOMERS-SRG AS31425:AS-PEERING
+admin-c:        FCIP-RIPE
+tech-c:         FCIP-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         FORATEC-MNT
+created:        2004-05-13T08:59:05Z
+last-modified:  2018-09-04T10:02:35Z
+source:         RIPE
+
+
+
+aut-num:        AS34038
+as-name:        COMTEL-TMN-AS
+remarks:        JSC Vimpelcom, Tyumen branch
+remarks:        Comtel Net
+remarks:        Tyumen, Russia
+org:            ORG-ES15-RIPE
+remarks:        ------------------------------------------------------------
+remarks:        Upstreams:
+remarks:        ------------------------------------------------------------
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-COMTEL-TMN
+remarks:        ------------------------------------------------------------
+remarks:        Customers:
+remarks:        ------------------------------------------------------------
+import:         from AS49533 accept AS49533
+export:         to AS-COMTEL-TMN announce ANY
+remarks:        ------------------------------------------------------------
+remarks:        Private peers:
+remarks:        ------------------------------------------------------------
+import:         from AS31359 accept AS31359:AS-PEERING
+export:         to AS31359 announce AS-COMTEL-TMN
+admin-c:        SVNT1-RIPE
+tech-c:         SVNT2-RIPE
+tech-c:         FCIP-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         COMTEL-TMN-MNT
+mnt-by:         SOVINTEL-MNT
+mnt-by:         FORATEC-MNT
+created:        2004-10-06T14:17:10Z
+last-modified:  2018-09-04T10:05:10Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS50539
+as-name:        TELEMATIKA-AS
+remarks:        Nizhnevartovsk, HMAO, Russia
+org:            ORG-TL161-RIPE
+import:         from AS31425 accept ANY
+export:         to AS31425 announce AS50539
+import:         from AS28719 accept ANY
+export:         to AS28719 announce AS50539
+admin-c:        BA1525-RIPE
+tech-c:         BA1525-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TELEMATICA-HMAO-MNT
+mnt-by:         FORATEC-MNT
+created:        2010-02-08T08:25:09Z
+last-modified:  2018-09-04T10:48:23Z
+source:         RIPE
+sponsoring-org: ORG-ES15-RIPE
+
+
+

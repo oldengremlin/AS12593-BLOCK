@@ -1,4 +1,118 @@
 
 
 
+as-block:       AS44571 - AS45055
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2025-01-27T15:33:09Z
+last-modified:  2025-01-27T15:33:09Z
+source:         RIPE
+
+
+
+aut-num:        AS44943
+as-name:        RAMNET-AS
+descr:          Internet Service Provider "RamNet"
+org:            ORG-RL79-RIPE
+remarks:        --------- IPv4 UPSTREAMS ------------
+import:         from AS57304 action pref=100; accept ANY # RETN
+export:         to AS57304 announce AS-RAMNET
+import:         from AS20485 action pref=100; accept ANY # TTK
+export:         to AS20485 announce AS-RAMNET
+import:         from AS31500 action pref=100; accept ANY # GLOBALNET
+export:         to AS31500 announce AS-RAMNET
+import:         from AS3216 action pref=100; accept ANY # BeeLine
+export:         to AS3216 announce AS-RAMNET
+remarks:        -------- IPv6 UPSTREAMS ---------
+mp-import:      afi ipv6.unicast from AS57304 action pref=100; accept ANY # RETN v6
+mp-export:      afi ipv6.unicast to AS57304 announce AS-RAMNET6 # RETN v6
+remarks:        -------- IPv4 PEERINGS ----------
+import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER # MSK-IX
+export:         to AS8631 announce AS-RAMNET
+import:         from AS50952 action pref=200; accept AS-DATAIX # Data-IX
+export:         to AS50952 announce AS-RAMNET
+import:         from AS15169 action pref=300; accept AS-GOOGLE # Google
+export:         to AS15169 announce AS-RAMNET
+import:         from AS13238 action pref=300; accept AS-YANDEX # YANDEX
+export:         to AS13238 announce AS-RAMNET
+import:         from AS47764 action pref=300; accept AS-MAILRU # Mail.RU
+export:         to AS47764 announce AS-RAMNET
+import:         from AS48061 action pref=300; accept AS48061 # Gazprom Media
+export:         to AS48061 announce AS-RAMNET
+remarks:        -------- IPv6 PEERINGS ----------
+mp-import:      afi ipv6.unicast from AS8631 action pref=300; accept ANY # MSK-IX
+mp-export:      afi ipv6.unicast to AS8631 announce AS-RAMNET6 # MSK-IX
+mp-import:      afi ipv6.unicast from AS50952 action pref=300; accept AS-DATAIX # Data-IX
+mp-export:      afi ipv6.unicast to AS50952 announce AS-RAMNET6 # Data-IX
+mp-import:      afi ipv6.unicast from AS15169 action pref=300; accept AS-GOOGLE # Google
+mp-export:      afi ipv6.unicast to AS15169 announce AS-RAMNET6 # Google
+mp-import:      afi ipv6.unicast from AS13238 action pref=300; accept AS-YANDEX # Yandex
+mp-export:      afi ipv6.unicast to AS13238 announce AS-RAMNET6 # Yandex
+mp-import:      afi ipv6.unicast from AS47764 action pref=300; accept AS-MAILRU6 # Mail.RU
+mp-export:      afi ipv6.unicast to AS47764 announce AS-RAMNET6 # Mail.RU
+remarks:        ---------------------------------------
+admin-c:        SS344-RIPE
+admin-c:        VK5186-RIPE
+tech-c:         SS344-RIPE
+tech-c:         VK5186-RIPE
+tech-c:         KV3507-RIPE
+status:         ASSIGNED
+mnt-by:         MNT-RAMNET
+mnt-by:         RIPE-NCC-END-MNT
+created:        2008-04-04T12:31:41Z
+last-modified:  2025-04-25T08:24:05Z
+source:         RIPE # Filtered
+
+organisation:   ORG-RL79-RIPE
+org-name:       Ramtel Ltd.
+country:        RU
+org-type:       LIR
+address:        11a Guryeva str.
+address:        140109
+address:        Ramenskoye
+address:        RUSSIAN FEDERATION
+phone:          +74964659999
+fax-no:         +74964658899
+descr:          Internet Service Provider
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-RAMNET
+admin-c:        VK5186-RIPE
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-RAMNET
+abuse-c:        RNOC7-RIPE
+created:        2010-02-22T16:25:37Z
+last-modified:  2025-04-14T09:44:46Z
+source:         RIPE # Filtered
+
+person:         Kuzma Voskresensky
+address:        Ramenskoe, Russian Federation
+phone:          +74964659999 ext. 780
+nic-hdl:        KV3507-RIPE
+mnt-by:         KV-MNT
+created:        2023-02-02T06:27:36Z
+last-modified:  2023-02-03T14:32:30Z
+source:         RIPE # Filtered
+
+person:         Serge Sivenco
+address:        11a Guryeva Str.
+address:        Ramenskoe, Russian Federation
+phone:          +79150463342
+phone:          +79060303079
+nic-hdl:        SS344-RIPE
+mnt-by:         SIVENCO-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2023-02-06T13:54:20Z
+source:         RIPE # Filtered
+
+person:         Viktor Kalinchenko
+address:        Ramenskoe, Russian Federation
+phone:          +74964659999 ext. 777
+nic-hdl:        VK5186-RIPE
+mnt-by:         VK-MNT
+created:        2020-12-16T13:03:00Z
+last-modified:  2023-02-03T14:29:19Z
+source:         RIPE # Filtered
+
+
 

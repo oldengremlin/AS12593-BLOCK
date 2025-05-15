@@ -2,3 +2,57 @@
 
 
 
+aut-num:        AS15640
+as-name:        FPIC-AS
+org:            ORG-ZM1-RIPE
+import:         from AS8359 action pref=200; accept ANY
+mp-import:      afi ipv6.unicast from AS8359 action pref=200; accept ANY
+export:         to AS8359 announce AS-FPIC
+mp-export:      afi ipv6.unicast to AS8359 announce AS-FPIC
+import:         from AS47854 action pref=500; accept AS47854
+export:         to AS47854 announce any
+import:         from AS49003 action pref=500; accept AS49003
+export:         to AS49003 announce any
+import:         from AS61431 action pref=500; accept AS61431
+mp-import:      afi ipv6.unicast from AS61431 action pref=500; accept AS61431
+export:         to AS61431 announce any
+mp-export:      afi ipv6.unicast to AS61431 announce any
+import:         from AS201582 action pref=500; accept AS201582
+export:         to AS201582 announce any
+import:         from AS51663 action pref=500; accept AS51663
+export:         to AS51663 announce any
+import:         from AS198195 action pref=500; accept AS-STARODUMOV
+export:         to AS198195 announce any
+import:         from AS62293 action pref=500; accept AS62293
+export:         to AS62293 announce any
+admin-c:        NA2029-RIPE
+tech-c:         NA2029-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RU-CCL-MNT
+mnt-by:         MTU-NOC
+created:        1970-01-01T00:00:00Z
+last-modified:  2022-02-17T11:19:41Z
+source:         RIPE
+
+
+
+aut-num:        AS49003
+as-name:        ENERGOS
+org:            ORG-PA306-RIPE
+import:         from AS15640 accept ANY
+export:         to AS15640 announce AS49003
+import:         from AS2854 accept ANY
+export:         to AS2854 announce AS49003
+admin-c:        IA480-RIPE
+tech-c:         IA480-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RU-CCL-MNT
+created:        2009-03-20T14:44:51Z
+last-modified:  2019-06-03T12:42:37Z
+source:         RIPE
+sponsoring-org: ORG-ZM1-RIPE
+
+
+

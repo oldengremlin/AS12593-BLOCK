@@ -1,4 +1,186 @@
 
 
 
+as-block:       AS59392 - AS60437
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-09-03T13:31:09Z
+last-modified:  2024-09-03T13:31:09Z
+source:         RIPE
+
+
+
+aut-num:        AS60388
+as-name:        TRANSNEFT-TELECOM-AS
+descr:          Moscow Russia
+org:            ORG-TL274-RIPE
+remarks:        --= UPSTREAMS =--
+remarks:        *** IPv4 ***
+import:         from AS28917 accept ANY
+export:         to AS28917 announce AS-SIGMA-TELECOM
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS-SIGMA-TELECOM
+import:         from AS1299 accept ANY
+export:         to AS1299 announce AS-SIGMA-TELECOM
+import:         from AS31261 accept ANY
+export:         to AS31261 announce AS-SIGMA-TELECOM
+import:         from AS197453 accept ANY
+export:         to AS197453 announce AS-SIGMA-TELECOM
+import:         from AS209030 accept ANY
+export:         to AS209030 announce {212.73.99.0/24, 212.73.100.0/24, 212.73.102.0/24, 212.73.103.0/24}
+remarks:        *** IPv6 ***
+mp-import:      afi ipv6.unicast from AS25478 accept ANY
+mp-export:      afi ipv6.unicast to AS25478 announce AS-SIGMA-TELECOM-V6
+mp-import:      afi ipv6.unicast from AS1299 accept ANY
+mp-export:      afi ipv6.unicast to AS1299 announce AS-SIGMA-TELECOM-V6
+mp-import:      afi ipv6.unicast from AS31261 accept ANY
+mp-export:      afi ipv6.unicast to AS31261 announce AS-SIGMA-TELECOM-V6
+remarks:        --= PEERS/IX =--
+remarks:        *** IPv4 ***
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-SIGMA-TELECOM
+import:         from AS59613 accept AS-UBNIX
+export:         to AS59613 announce AS-SIGMA-TELECOM
+import:         from AS42403 accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-SIGMA-TELECOM
+import:         from AS50384 accept AS-W-IX
+export:         to AS50384 announce AS-SIGMA-TELECOM
+import:         from AS42574 accept AS-NSPLUS
+export:         to AS42574 announce AS-SIGMA-TELECOM
+import:         from AS50817 accept AS-PITER-IX
+export:         to AS50817 announce AS-SIGMA-TELECOM
+import:         from AS13094 accept AS-MILECOM-RS
+export:         to AS13094 announce AS-SIGMA-TELECOM
+remarks:        *** IPv6 ***
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-SIGMA-TELECOM-V6
+mp-import:      afi ipv6.unicast from AS59613 accept AS-UBNIX-v6
+mp-export:      afi ipv6.unicast to AS59613 announce AS-SIGMA-TELECOM-V6
+mp-import:      afi ipv6.unicast from AS42403 accept AS-NSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS42403 announce AS-SIGMA-TELECOM-V6
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX-IPVSIX
+mp-export:      afi ipv6.unicast to AS50384 announce AS-SIGMA-TELECOM-V6
+mp-import:      afi ipv6.unicast from AS42574 accept AS-NSPLUS
+mp-export:      afi ipv6.unicast to AS42574 announce AS-SIGMA-TELECOM-V6
+remarks:        --= DOWNSTREAMS =--
+remarks:        *** IPv4 ***
+import:         from AS209248 accept AS209248
+export:         to AS209248 announce ANY
+import:         from AS12879 accept AS12879
+export:         to AS12879 announce ANY
+import:         from AS39775 accept AS-HYPERNET
+export:         to AS39775 announce ANY
+import:         from AS60740 accept AS60740
+export:         to AS60740 announce {0.0.0.0/0}
+import:         from AS44113 accept AS44113
+export:         to AS44113 announce ANY
+import:         from AS197292 accept AS197292
+export:         to AS197292 announce ANY
+import:         from AS60280 accept AS-NTEC
+export:         to AS60280 announce ANY
+import:         from AS205062 accept AS205062
+export:         to AS205062 announce {0.0.0.0/0}
+import:         from AS43859 accept AS43859
+export:         to AS43859 announce {0.0.0.0/0}
+import:         from AS208129 accept AS208129
+export:         to AS208129 announce ANY
+import:         from AS50477 accept AS-SET-SVEN
+export:         to AS50477 announce ANY
+import:         from AS199728 accept AS-DATA-LINE
+export:         to AS199728 announce ANY
+remarks:        *** IPv6 ***
+mp-import:      afi ipv6.unicast from AS199728 accept AS-DATA-LINE
+mp-export:      afi ipv6.unicast to AS199728 announce ANY
+mp-import:      afi ipv6.unicast from AS60280 accept AS-NCET
+mp-export:      afi ipv6.unicast to AS60280 announce ANY
+remarks:        BGP communities in advertisements towards downstream
+remarks:        1. Route type:
+remarks:        60388:901 Downstream's route
+remarks:        60388:902 Peer's route
+remarks:        60388:903 IX's route
+remarks:        60388:905 Upstream's route
+remarks:        2. Where the route has been received:
+remarks:        60388:XYYZZ, where
+remarks:        X - route type
+remarks:        1 - customer
+remarks:        2 - peer
+remarks:        3 - IX
+remarks:        5 - upstream
+remarks:        YY - region
+remarks:        02 - Ufa
+remarks:        16 - Kazan
+remarks:        24 - Krasnoyarsk
+remarks:        27 - Khabarovsk
+remarks:        28 - Blagoveschensk
+remarks:        38 - Irkutsk
+remarks:        52 - Nizhniy Novgorod
+remarks:        54 - Novosibirsk
+remarks:        55 - Omsk
+remarks:        58 - Penza
+remarks:        62 - Ryazan
+remarks:        63 - Samara
+remarks:        72 - Tumen
+remarks:        74 - Chelyabinsk
+remarks:        77 - Moscow
+remarks:        ZZ - site id [00-99]
+remarks:        BGP communities accepted from downstream
+remarks:        1. Prepending :
+remarks:        649XY:X, where
+remarks:        X = 0 (upstreams + peers), 2 (peers), 5 (upstreams)
+remarks:        Y = 1,3,5 - prepend Y times, 9 - do not advertise
+remarks:        2. Prepending to upstream/peer ASN: 6480Y:ASN, where
+remarks:        Y = 1,3,5 - prepend Y times, 9 - do not advertise
+remarks:        3. Backup community:
+remarks:        60388:00 - Set local preference 50 (backup)
+admin-c:        STL10-RIPE
+tech-c:         STL10-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIGMATELECOM-MNT
+created:        2013-07-26T12:03:35Z
+last-modified:  2024-08-27T18:00:47Z
+source:         RIPE
+
+organisation:   ORG-TL274-RIPE
+org-name:       Limited Liability Company "Transneft Telecom"
+country:        RU
+org-type:       LIR
+address:        Nametkina street, 12 bld. 1
+address:        117420
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74997070742
+phone:          +74992361171
+fax-no:         +74997070742
+fax-no:         +74992360334
+mnt-ref:        SIGMATELECOM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         SIGMATELECOM-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+admin-c:        DG9297-RIPE
+admin-c:        ADG544-RIPE
+admin-c:        AZ7015-RIPE
+abuse-c:        STL10-RIPE
+created:        2013-07-11T08:08:18Z
+last-modified:  2020-12-16T12:28:27Z
+source:         RIPE # Filtered
+
+role:           Transneft Telecom LLC
+address:        "Transneft Telecom" LLC
+address:        Nametkina street, 12 bld. 1
+address:        117420 Moscow
+address:        RUSSIAN FEDERATION
+abuse-mailbox:  tntk-noc@stn.transneft.ru
+nic-hdl:        STL10-RIPE
+mnt-by:         SIGMATELECOM-MNT
+admin-c:        ADG544-RIPE
+admin-c:        RMV96-RIPE
+tech-c:         ADG544-RIPE
+tech-c:         RMV96-RIPE
+created:        2013-07-11T11:45:44Z
+last-modified:  2025-01-26T21:48:31Z
+source:         RIPE # Filtered
+
+
 

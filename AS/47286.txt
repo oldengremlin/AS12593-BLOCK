@@ -44,6 +44,10 @@ import:         from AS57629 action pref=200; accept AS57629
 export:         to AS57629 announce AS-OTSNET
 import:         from AS13335 action pref=200; accept ANY
 export:         to AS13335 announce AS-OTSNET
+import:         from AS32934 action pref=200; accept ANY
+export:         to AS32934 announce AS-OTSNET
+import:         from AS211609 action pref=200; accept ANY
+export:         to AS211609 announce AS-OTSNET
 remarks:        CLIENTS
 import:         from AS50802 action pref=300; accept AS50802
 export:         to AS50802 announce ANY
@@ -58,7 +62,6 @@ remarks:        | 47286:4105x - Megafon (AS31133)
 remarks:        | 47286:4107x - TTK (AS20485)
 remarks:        | 47286:4108x - Inetcom (AS35598)
 remarks:        | 47286:4109x - Piter-IX MSK (AS49869)
-remarks:        | 47286:4110x - Transroute (AS50509)
 remarks:        |
 remarks:        | x = 1,2,3 or 5 - prepend 47286 (1,2,3 or 5) times
 remarks:        | x = 9 - don't advertise
@@ -73,7 +76,6 @@ remarks:        | 47286:1205 - Megafon (AS31133)
 remarks:        | 47286:1207 - TTK (AS20485)
 remarks:        | 47286:1208 - Inetcom (AS35598)
 remarks:        | 47286:1209 - Piter-IX MSK (AS49869)
-remarks:        | 47286:1210 - Transroute (AS50509)
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        | Community from PEERS
@@ -88,6 +90,8 @@ remarks:        | 47286:3211 - Hurricane Electric (AS6939)
 remarks:        | 47286:3212 - Tricolor TV (AS209739)
 remarks:        | 47286:3213 - IVI (AS57629)
 remarks:        | 47286:3215 - Cloudflare (AS13335)
+remarks:        | 47286:3216 - Meta (AS32934)
+remarks:        | 47286:3217 - Okko (AS211609)
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        +-------------------------------------------------------------------------------+
 remarks:        | Community from CLIENTS
@@ -104,7 +108,7 @@ status:         ASSIGNED
 mnt-by:         OTSNET-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2008-05-28T12:51:56Z
-last-modified:  2025-02-16T15:16:11Z
+last-modified:  2025-05-14T13:18:10Z
 source:         RIPE
 sponsoring-org: ORG-NL73-RIPE
 
