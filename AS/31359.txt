@@ -1,4 +1,102 @@
 
 
 
+as-block:       AS31246 - AS31618
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:33Z
+last-modified:  2018-11-22T15:27:33Z
+source:         RIPE
+
+
+
+aut-num:        AS31359
+as-name:        FORATEC-AS
+descr:          Foratec Net
+descr:          Yekaterinburg, Russia
+org:            ORG-ES15-RIPE
+remarks:        ------------------------------------------------------------
+remarks:        Upstreams:
+remarks:        ------------------------------------------------------------
+import:         from AS3216 action pref=400; accept ANY
+export:         to AS3216 announce AS31359 AS31359:AS-CUSTOMERS-YEK AS31359:AS-CUSTOMERS-TMN
+remarks:        ------------------------------------------------------------
+remarks:        Customers:
+remarks:        ------------------------------------------------------------
+import:         from AS31359:AS-CUSTOMERS-YEK action pref=100; accept <^AS31359:AS-CUSTOMERS-YEK+$>
+import:         from AS31359:AS-CUSTOMERS-TMN action pref=100; accept <^AS31359:AS-CUSTOMERS-TMN+$>
+export:         to AS-FORATEC announce ANY
+remarks:        ------------------------------------------------------------
+remarks:        Private peers:
+remarks:        ------------------------------------------------------------
+import:         from AS31425 action pref=100; accept ANY
+export:         to AS31425 announce AS31359 AS31359:AS-CUSTOMERS-YEK AS31359:AS-CUSTOMERS-TMN AS31359:AS-PEERING
+import:         from AS3253 action pref=150; accept AS3253
+export:         to AS3253 announce AS31359:AS-PEERING
+import:         from AS34038 action pref=100; accept AS34038
+export:         to AS34038 announce AS31359:AS-PEERING
+import:         from AS31359:AS-EIX at 194.226.255.235 action pref=200; accept ANY
+export:         to AS31359:AS-EIX announce AS31359 AS31359:AS-CUSTOMERS-YEK AS31359:AS-CUSTOMERS-TMN
+remarks:        ------------------------------------------------------------
+remarks:        EKT-IX peers:
+remarks:        ------------------------------------------------------------
+import:         from AS43213 194.85.107.100 at 194.85.107.60 action pref=150; accept AS-EKTROUTESERVER
+import:         from AS43213 194.85.107.200 at 194.85.107.60 action pref=150; accept AS-EKTROUTESERVER
+import:         from AS13238 194.85.107.57 at 194.85.107.60 action pref=150; accept AS-YANDEX
+export:         to AS43213 announce AS-FORATEC-EKT-IX
+export:         to AS13238 announce AS-FORATEC-EKT-IX
+admin-c:        FCIP-RIPE
+tech-c:         FCIP-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         FORATEC-MNT
+created:        2004-04-26T09:19:30Z
+last-modified:  2018-09-04T10:02:18Z
+source:         RIPE
+
+organisation:   ORG-ES15-RIPE
+org-name:       PJSC "Vimpelcom"
+country:        RU
+org-type:       LIR
+remarks:        VEON Group
+address:        8 Marta str, 10, bld. 14
+address:        127083
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74999233775
+fax-no:         +74957871990
+admin-c:        SVNT1-RIPE
+admin-c:        SVNT2-RIPE
+admin-c:        IAI1-RIPE
+admin-c:        DM3740-RIPE
+admin-c:        BEE15-RIPE
+mnt-ref:        SOVINTEL-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         SOVINTEL-MNT
+abuse-c:        SVNT2-RIPE
+created:        2004-04-17T11:58:43Z
+last-modified:  2022-04-21T15:45:58Z
+source:         RIPE # Filtered
+
+role:           Packet Network Group, NOC, Ural Region
+address:        OJSC Vimpelcom
+address:        Zone Packet Network Group #5, Operations Center
+address:        Lunacharskogo str., 212k2
+address:        Yekaterinburg, 620026
+address:        Russia
+admin-c:        AK21450-RIPE
+admin-c:        AAV44-RIPE
+tech-c:         AK21450-RIPE
+tech-c:         AAV44-RIPE
+tech-c:         MK11102-RIPE
+nic-hdl:        FCIP-RIPE
+mnt-by:         FORATEC-MNT
+created:        2004-04-26T19:48:57Z
+last-modified:  2024-07-18T21:13:09Z
+source:         RIPE # Filtered
+
+
 

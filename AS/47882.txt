@@ -1,4 +1,184 @@
 
 
 
+as-block:       AS47870 - AS50048
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-12-06T06:09:56Z
+last-modified:  2024-12-06T06:09:56Z
+source:         RIPE
+
+
+
+aut-num:        AS47882
+as-name:        SMR-IX-RS
+descr:          Routing Arbiter for
+descr:          Samara Internet Exchange
+org:            ORG-JCE1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+import:         from AS2854
+                action pref=100;
+                accept AS-OBSRUSSIA6 AS-ROSPRINT
+import:         from AS9049
+                action pref=100;
+                accept AS-ERTH
+import:         from AS12389
+                action pref=100;
+                accept as-rostelecom:as-smra
+import:         from AS28709
+                action pref=100;
+                accept AS-VKONTAKTE
+import:         from AS31133
+                action pref=100;
+                accept AS-CDN-MEGAFON
+import:         from AS34879
+                action pref=100;
+                accept AS-NGENIX-SMR
+import:         from AS35032
+                action pref=100;
+                accept AS-TAHION
+import:         from AS39042
+                action pref=100;
+                accept AS-GLOBAL63RU
+import:         from AS39264
+                action pref=100;
+                accept AS-METROMAX
+import:         from AS44597
+                action pref=100;
+                accept AS-NS9_RIPN_NET
+import:         from AS49136
+                action pref=100;
+                accept AS49136
+import:         from AS56407
+                action pref=100;
+                accept AS-ZHIGULINET
+import:         from AS57629
+                action pref=100;
+                accept AS57629
+import:         from AS60072
+                action pref=100;
+                accept AS60072
+import:         from AS60764
+                action pref=100;
+                accept AS-TKTEL
+import:         from AS62261
+                action pref=100;
+                accept AS62261
+import:         from AS201211
+                action pref=100;
+                accept AS-DRUGOYTEL
+import:         from AS204720
+                action pref=100;
+                accept AS-CDNETWORKSRU
+import:         from AS210756
+                action pref=100;
+                accept AS-EDGECENTER
+import:         from AS211609
+                action pref=100;
+                accept AS211609
+export:         to AS2854
+                announce AS-SMRROUTESERVER
+export:         to AS9049
+                announce AS-SMRROUTESERVER
+export:         to AS12389
+                announce AS-SMRROUTESERVER
+export:         to AS28709
+                announce AS-SMRROUTESERVER
+export:         to AS31133
+                announce AS-SMRROUTESERVER
+export:         to AS34879
+                announce AS-SMRROUTESERVER
+export:         to AS35032
+                announce AS-SMRROUTESERVER
+export:         to AS39042
+                announce AS-SMRROUTESERVER
+export:         to AS39264
+                announce AS-SMRROUTESERVER
+export:         to AS44597
+                announce AS-SMRROUTESERVER
+export:         to AS49136
+                announce AS-SMRROUTESERVER
+export:         to AS56407
+                announce AS-SMRROUTESERVER
+export:         to AS57629
+                announce AS-SMRROUTESERVER
+export:         to AS60072
+                announce AS-SMRROUTESERVER
+export:         to AS60764
+                announce AS-SMRROUTESERVER
+export:         to AS62261
+                announce AS-SMRROUTESERVER
+export:         to AS201211
+                announce AS-SMRROUTESERVER
+export:         to AS204720
+                announce AS-SMRROUTESERVER
+export:         to AS210756
+                announce AS-SMRROUTESERVER
+export:         to AS211609
+                announce AS-SMRROUTESERVER
+remarks:        * -------------------------------------------------------------
+remarks:        AS47882 is used for the SMR-IX Route Servers.
+remarks:        All ASes participating in the Route Servers peering
+remarks:        are grouped into the AS-SET: AS-SMRROUTESERVER
+remarks:
+remarks:        You may use communities to control outgoing information
+remarks:        via the route server. The meaning and order of evaluation is
+remarks:        important:
+remarks:
+remarks:        block announcement of a route to a certain peer 0:peer-as
+remarks:        announcement of a route to a certain peer 47882:peer-as
+remarks:        block announcement of a route to all peers 0:47882
+remarks:        announcement of a route to all peers 47882:47882
+remarks:
+remarks:        Please visit http://www.ix.ru/eng/smr/routeserver.html
+remarks:        for more information on the SMR-IX Route Servers
+remarks:        and for more filtering options.
+remarks:        * -------------------------------------------------------------
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUIX-MNT
+created:        2008-09-10T14:53:33Z
+last-modified:  2025-01-16T13:32:24Z
+source:         RIPE # Filtered
+
+organisation:   ORG-JCE1-RIPE
+org-name:       Join-stock company "Internet Exchange"MSK-IX"
+country:        RU
+org-type:       LIR
+address:        8 Marta Street 1, bld. 12, office XXXV, room 19
+address:        127083
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +7 495 7379296
+admin-c:        EV3802-RIPE
+tech-c:         IA5224-RIPE
+abuse-c:        AR49378-RIPE
+mnt-ref:        RUIX-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         RUIX-MNT
+created:        2018-11-16T14:06:09Z
+last-modified:  2022-12-02T12:04:03Z
+source:         RIPE # Filtered
+
+person:         Placeholder Person Object
+address:        RIPE Network Coordination Centre
+address:        P.O. Box 10096
+address:        1001 EB Amsterdam
+address:        The Netherlands
+phone:          +31 20 535 4444
+nic-hdl:        DUMY-RIPE
+mnt-by:         RIPE-DBM-MNT
+remarks:        **********************************************************
+remarks:        * This is a placeholder object to protect personal data.
+remarks:        * To view the original object, please query the RIPE
+remarks:        * Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        **********************************************************
+created:        2009-11-11T16:36:07Z
+last-modified:  2009-11-11T16:36:07Z
+source:         RIPE
+
+
 

@@ -17,16 +17,16 @@ org:            ORG-CL341-RIPE
 remarks:        ----------
 remarks:        Uplinks
 remarks:        ----------
-remarks:        Netorn:
-import:         from AS34123 action pref=100; accept ANY
-export:         to AS34123 announce AS-SPNETRU
-mp-import:      afi ipv6.unicast from AS34123 action pref=100; accept ANY
-mp-export:      afi ipv6.unicast to AS34123 announce AS-SPNETRU
+remarks:        TransTeleCom:
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS-SPNETRU
+mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-SPNETRU
 remarks:
 remarks:        MegaFon:
-import:         from AS31133 action pref=100; accept ANY
+import:         from AS31133 action pref=150; accept ANY
 export:         to AS31133 announce AS-SPNETRU
-mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
+mp-import:      afi ipv6.unicast from AS31133 action pref=150; accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS-SPNETRU
 remarks:        ----------
 remarks:        Peers
@@ -41,7 +41,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-csitllc-1-mnt
 created:        2007-10-05T09:04:08Z
-last-modified:  2019-02-19T06:24:09Z
+last-modified:  2025-05-17T08:02:47Z
 source:         RIPE
 
 organisation:   ORG-CL341-RIPE

@@ -1,4 +1,70 @@
 
 
 
+as-block:       AS51857 - AS52209
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-12-12T14:34:06Z
+last-modified:  2024-12-12T14:34:06Z
+source:         RIPE
+
+
+
+aut-num:        AS52197
+as-name:        SITC-OREL-MNT-AS
+descr:          GIR-OREL RU AS aut-num
+descr:          Oblastnoe gosudarstvennoe uchrejdenie
+descr:          Centr Gosudarstvennyh Informacionnyh resursov
+descr:          Orlovskoy oblasti
+org:            ORG-OguC2-RIPE
+remarks:        ------------------------------------------------------------
+remarks:        We accept All from our BGP-Neighbours
+remarks:        and default
+remarks:        EXCEPT :
+remarks:        Local AS num , Local IP Subnets
+remarks:        and our own
+remarks:        ip subnet  -:)
+import:         from AS31133 action pref=300; accept ANY
+remarks:        We announce our own subnet only
+remarks:        Local ip AS not announcing
+export:         to AS31133 announce AS52197
+remarks:        Transit NO
+remarks:        Community NO
+remarks:        -----------------------------------------------------------
+admin-c:        ANG61-RIPE
+tech-c:         ANG61-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+remarks:        mnt-by:         MNT-SITC-OREL-MNT
+created:        2011-01-25T10:44:01Z
+last-modified:  2019-07-11T09:38:31Z
+source:         RIPE
+sponsoring-org: ORG-CS216-RIPE
+
+organisation:   ORG-OguC2-RIPE
+org-name:       Oblastnoe gosudarstvennoe uchrejdenie Centr Gosudarstvennyh Informacionnyh resursov Orlovskoy oblasti
+country:        RU
+org-type:       OTHER
+address:        302033, Russia, Orel city, Leskova str, bld.22
+admin-c:        ANG61-RIPE
+abuse-c:        AR23134-RIPE
+admin-c:        GBP23-RIPE
+tech-c:         GBP23-RIPE
+mnt-ref:        MNT-SITC-OREL-MNT
+mnt-by:         MNT-SITC-OREL-MNT
+created:        2011-01-14T14:43:31Z
+last-modified:  2022-12-01T16:40:55Z
+source:         RIPE # Filtered
+
+person:         Alexandre N Goltsov
+address:        302033, Russia, Orel city, Leskova str, bld.22
+phone:          +74862455990
+nic-hdl:        ANG61-RIPE
+mnt-by:         MNT-SITC-OREL-MNT
+created:        2011-01-14T14:43:26Z
+last-modified:  2011-01-30T07:18:13Z
+source:         RIPE
+
+
 
