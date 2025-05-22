@@ -1,4 +1,86 @@
+mux_client_request_session: session request failed: Session open refused by peer
+ControlSocket /home/olden/.ssh/control/olden@212.90.160.8:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS51639
+as-name:        FIABANKRUS-ASN
+org:            ORG-FA357-RIPE
+import:         from AS8416 accept ANY
+import:         from AS8249 accept ANY
+export:         to AS8416 announce AS51639
+export:         to AS8249 announce AS51639
+admin-c:        DB1404-RIPE
+tech-c:         DB1404-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IFLN-MNT
+mnt-by:         FIABNK-NET
+created:        2010-10-12T15:08:15Z
+last-modified:  2018-09-04T10:54:55Z
+source:         RIPE
+sponsoring-org: ORG-IL14-RIPE
+
+
+
+aut-num:        AS52108
+as-name:        ITC-AS
+org:            ORG-ITC6-RIPE
+import:         from AS8416 accept ANY
+import:         from AS8249 accept ANY
+export:         to AS8416 announce AS52108
+export:         to AS8249 announce AS52108
+admin-c:        YVA13-RIPE
+tech-c:         YVA13-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-INTEC
+mnt-by:         IFLN-MNT
+created:        2010-12-29T09:17:55Z
+last-modified:  2018-09-04T10:57:21Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-IL14-RIPE
+
+
+
+aut-num:        AS8416
+as-name:        INFOLINE-AS
+org:            ORG-IL14-RIPE
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS30852 action pref=100; accept ANY
+import:         from AS50775 action pref=100; accept ANY
+import:         from AS8249 action pref=200; accept AS-TOTCOM
+import:         from AS8439 action pref=200; accept AS8439
+import:         from AS43273 action pref=200; accept AS43273
+import:         from AS51639 action pref=200; accept AS51639
+import:         from AS52108 action pref=200; accept AS52108
+import:         from AS48236 action pref=200; accept AS48236
+export:         to AS31133 announce as-infolada
+export:         to AS20485 announce as-infolada
+export:         to AS3216 announce as-infolada
+export:         to AS12389 announce as-infolada
+export:         to AS30852 announce AS8416
+export:         to AS50775 announce AS8416
+export:         to AS8249 announce as-iltopeers
+export:         to AS8439 announce as-iltopeers
+export:         to AS43273 announce ANY
+export:         to AS51639 announce ANY
+export:         to AS52108 announce ANY
+export:         to AS48236 announce ANY
+admin-c:        YAS7-RIPE
+admin-c:        DAS26-RIPE
+tech-c:         YAS7-RIPE
+tech-c:         DAS26-RIPE
+status:         ASSIGNED
+mnt-by:         IFLN-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2023-05-30T12:07:55Z
+source:         RIPE
 
 
 

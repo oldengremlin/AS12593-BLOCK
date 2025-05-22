@@ -2,3 +2,35 @@
 
 
 
+aut-num:        AS39125
+as-name:        RUBIN-AS
+org:            ORG-KRL1-RIPE
+remarks:        ------------------------------------------------------------------
+remarks:        Upstreams
+remarks:        *** Fiord ***
+import:         from AS28917 62.140.245.197 action pref=300; accept ANY
+export:         to AS28917 announce AS-RUBIN
+remarks:        *** NovitaTelecom ***
+import:         from AS59589 195.93.248.192 action pref=200; accept ANY
+export:         to AS59589 announce AS-RUBIN
+remarks:        ------------------------------------------------------------------
+remarks:        Customers
+remarks:        *** Parus Telecom ***
+import:         from AS48969 accept AS48969
+export:         to AS48969 announce ANY
+remarks:        *** Lifelink-Himki ***
+import:         from AS49346 accept AS49346
+export:         to AS49346 announce ANY
+remarks:        ------------------------------------------------------------------
+sponsoring-org: ORG-VAG4-RIPE
+admin-c:        KBRN-RIPE
+tech-c:         KBRN-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-RUBIN
+created:        2005-12-16T13:04:46Z
+last-modified:  2022-05-31T14:30:48Z
+source:         RIPE # Filtered
+
+
+

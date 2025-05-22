@@ -1,4 +1,145 @@
+mux_client_request_session: session request failed: Session open refused by peer
+ControlSocket /home/olden/.ssh/control/olden@94.125.120.198:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS52015
+as-name:        DANCER-AS
+descr:          DANCER ISP AS
+org:            ORG-DL118-RIPE
+remarks:        |:::::: +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+ ::::::|
+remarks:        |:::::: | [ AS52015 DANCER-AS Routing Policy ] | ::::::|
+remarks:        |:::::: +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+ ::::::|
+remarks:        |-===================== [ IPv4 ] =====================-|
+remarks:        -============ [ Uplinks in Nizhnevartovsk: ] ==========-
+remarks:        -=-=-=-=-=-=-=-=- [ -Tier-2/MegaFon- ] -=-=-=-=-=-=-=-=-
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS31133 announce AS-DANCER
+remarks:        -=-=-=-=-=-=-=-=- [ -Tier-2/Rostelecom- ] -=-=-=-=-=-=-=-=-
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS-DANCER
+remarks:        -=-=-=-=-=-=-=-=- [ -Tier-2/SVolokno- ] -=-=-=-=-=-=-=-=-
+import:         from AS51028 action pref=100; accept ANY
+export:         to AS51028 announce AS-DANCER
+remarks:        -======================================================-
+remarks:        -============= [ Peering in Nizhnevartovsk: ] ===========-
+remarks:        -=-=-=-=-=- [ - Peering at Beeline- ] -=-=-=-=-=-
+import:         from AS8563 action pref=100; accept AS-DIRECTNET
+export:         to AS8563 announce AS-DANCER
+remarks:        -============= [ Peering in Ekaterinburg: ] ===========-
+remarks:        -=-=-=-=-=- [ -Public Peering at Cloud-IX- ] -=-=-=-=-=-
+import:         from AS29076 action pref=100; accept AS-CLOUD-IX-LOCAL
+export:         to AS29076 announce AS-DANCER
+remarks:        -======================================================-
+remarks:        -=========== [ Peering in Sankt-Petersburg: ] =========-
+remarks:        -=-=-=-=-=- [ -Public Peering at Piter-IX- ] -=-=-=-=-=-
+import:         from AS49869 action pref=100; accept as-piter-ix
+export:         to AS49869 announce AS-DANCER
+remarks:        -=-=-=-=-=- [ -Public Peering at Global-IX- ] -=-=-=-=-=-
+import:         from AS50952 action pref=100; accept AS-DATAIX
+export:         to AS50952 announce AS-DANCER
+remarks:        -======================================================-
+remarks:        -=========== [ Peering in Moscow: ] =========-
+remarks:        -=-=-=-=-=- [ -Public Peering at MSK-IX- ] -=-=-=-=-=-
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-DANCER
+remarks:        +::::::::::::::::::::::::::::::::::::::::::::::::::::::+
+remarks:        |-===================== [ IPv6 ] =====================-|
+remarks:        +::::::::::::::::::::::::::::::::::::::::::::::::::::::+
+remarks:        -============ [ Uplinks in Nizhnevartovsk: ] ==========-
+remarks:        -=-=-=-=-=-=-=-=-=-= [ -Tier-1/HE- ] -=-=-=-=-=-=-=-=-=-
+mp-import:      afi ipv6.unicast from AS6939 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS6939 announce AS-DANCER6
+remarks:        -=-=-=-=-=-=-=-=- [ -Tier-2/MegaFon- ] -=-=-=-=-=-=-=-=-
+mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-DANCER6
+remarks:        -=-=-=-=-=-=- [ -Tier-3/Severnoe volokno- ] =-=-=-=-=-=-
+mp-import:      afi ipv6.unicast from AS51028 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS51028 announce AS-DANCER6
+remarks:        -======================================================-
+remarks:        -============= [ Peering in Ekaterinburg: ] ===========-
+remarks:        -======================================================-
+remarks:        -=-=-=-=-=- [ -Public Peering at Cloud-IX- ] -=-=-=-=-=-
+mp-import:      afi ipv6.unicast from AS29076 action pref=100; accept AS-CLOUD-IX-LOCAL
+mp-export:      afi ipv6.unicast to AS29076 announce AS-DANCER6
+remarks:        |::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+remarks:        |:::::: | [ AS52015 DANCER-AS Routing Policy ] | ::::::|
+remarks:        |::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+remarks:        +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+admin-c:        MK10167-RIPE
+tech-c:         MK10167-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DancerLLC-mnt
+created:        2010-12-15T14:56:30Z
+last-modified:  2023-12-25T19:09:00Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS59612
+as-name:        DANCER-AS
+org:            ORG-DL118-RIPE
+admin-c:        MK10167-RIPE
+tech-c:         MK10167-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DancerLLC-mnt
+created:        2012-08-21T15:11:37Z
+last-modified:  2018-11-26T10:13:22Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS61318
+as-name:        DANCER-AS
+descr:          DANCER AS
+org:            ORG-DL118-RIPE
+remarks:        +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+remarks:        |::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+remarks:        |:::::: +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+ ::::::|
+remarks:        |:::::: | [ AS61318 DANCER-AS Routing Policy ] | ::::::|
+remarks:        |:::::: +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+ ::::::|
+remarks:        |::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+remarks:        +::::::::::::::::::::::::::::::::::::::::::::::::::::::+
+remarks:        |-===================== [ IPv4 ] =====================-|
+remarks:        +::::::::::::::::::::::::::::::::::::::::::::::::::::::+
+remarks:        -======================================================-
+remarks:        -================ [ Uplinks in Moscow: ] ==============-
+remarks:        -======================================================-
+remarks:        -=-=-=-=-=-=- [ -Tier-3/Severnoe volokno- ] =-=-=-=-=-=-
+import:         from AS51028 action pref=100; accept ANY
+export:         to AS51028 announce AS61318
+remarks:        -=-=-=-=-=-=- [ -Tier-3/Azimut-Telecom- ] -=-=-=-=-=-=-
+import:         from AS61372 action pref=100; accept ANY
+export:         to AS61372 announce AS61318
+remarks:        +::::::::::::::::::::::::::::::::::::::::::::::::::::::+
+remarks:        |-===================== [ IPv6 ] =====================-|
+remarks:        +::::::::::::::::::::::::::::::::::::::::::::::::::::::+
+remarks:        -======================================================-
+remarks:        -================ [ Uplinks in Moscow: ] ==============-
+remarks:        -======================================================-
+remarks:        -=-=-=-=-=-=-=-=-=-= [ -Tier-1/HE- ] -=-=-=-=-=-=-=-=-=-
+mp-import:      afi ipv6.unicast from AS6939 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS6939 announce AS61318
+remarks:        -=-=-=-=-=-=- [ -Tier-3/Severnoe volokno- ] =-=-=-=-=-=-
+mp-import:      afi ipv6.unicast from AS51028 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS51028 announce AS61318
+remarks:        |::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+remarks:        |:::::: +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+ ::::::|
+remarks:        |:::::: | [ AS61318 DANCER-AS Routing Policy ] | ::::::|
+remarks:        |:::::: +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+ ::::::|
+remarks:        |::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+remarks:        +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+admin-c:        MK10167-RIPE
+tech-c:         MK10167-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DancerLLC-mnt
+created:        2012-11-22T17:24:47Z
+last-modified:  2018-11-26T10:29:23Z
+source:         RIPE # Filtered
 
 
 

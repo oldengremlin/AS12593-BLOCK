@@ -2,3 +2,68 @@
 
 
 
+aut-num:        AS24810
+as-name:        TELESET-KAZAN
+org:            ORG-JR8-RIPE
+descr:          PJSC "Rostelecom". Kazan branch
+mnt-by:         ROSTELECOM-MNT
+remarks:        *** Upstreams ***
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS-TELESET
+remarks:        *** IX's public route servers ***
+import:         from AS50706 action pref=150; accept AS-KZNROUTESERVER
+export:         to AS50706 announce AS-TELESET
+remarks:        *** Private peering in Kazan ***
+import:         from AS29125 action pref=150; accept AS29125
+export:         to AS29125 announce AS-TELESET
+import:         from AS28840 action pref=150; accept AS28840
+export:         to AS28840 announce AS-TELESET
+import:         from AS39805 action pref=150; accept AS39805
+export:         to AS39805 announce AS-TELESET
+import:         from AS34364 action pref=150; accept AS34364
+export:         to AS34364 announce AS-TELESET
+import:         from AS39613 action pref=150; accept AS39613
+export:         to AS39613 announce AS-TELESET
+import:         from AS29194 action pref=150; accept AS29194
+export:         to AS29194 announce AS-TELESET
+remarks:        *** Clients ***
+import:         from AS197873 action pref=200; accept AS197873
+export:         to AS197873 announce ANY
+import:         from AS12538 action pref=200; accept AS12538
+export:         to AS12538 announce ANY
+import:         from AS197765 action pref=150; accept AS197765
+export:         to AS197765 announce ANY
+import:         from AS12772 action pref=200; accept AS12772
+export:         to AS12772 announce ANY
+import:         from AS61228 action pref=200; accept AS12772
+export:         to AS61228 announce ANY
+admin-c:        TK-RU
+tech-c:         TK-RU
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TELESET-MNTNR
+mnt-by:         ROSTELECOM-MNT
+created:        2002-04-08T11:26:20Z
+last-modified:  2024-12-13T07:08:39Z
+source:         RIPE
+
+
+
+aut-num:        AS33887
+as-name:        TELESET-NCHELNY
+org:            ORG-JR8-RIPE
+descr:          TELESET LLC
+import:         from AS50615 accept any
+export:         to AS50615 announce AS33887
+admin-c:        TN-RU
+tech-c:         TN-RU
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TELESET-MNTNR
+mnt-by:         ROSTELECOM-MNT
+created:        2004-08-31T11:47:32Z
+last-modified:  2025-04-15T11:33:05Z
+source:         RIPE
+
+
+

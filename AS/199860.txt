@@ -1,4 +1,143 @@
 
 
 
+as-block:       AS198305 - AS200350
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2025-02-18T15:12:58Z
+last-modified:  2025-02-18T15:12:58Z
+source:         RIPE
+
+
+
+aut-num:        AS199860
+as-name:        Xelent-AS
+org:            ORG-AJ134-RIPE
+remarks:        ========================================================
+remarks:        IPv4 Routing Policy
+remarks:        --------------------------------------------------------
+remarks:        Upstreams
+remarks:        --------------------------------------------------------
+import:         from AS20764 action pref=250; accept ANY
+export:         to AS20764 announce AS-XELENT
+import:         from AS57304 action pref=250; accept ANY
+export:         to AS57304 announce AS-XELENT
+import:         from AS13002 action pref=250; accept ANY
+export:         to AS13002 announce AS-XELENT
+remarks:        --------------------------------------------------------
+remarks:        Peering
+remarks:        --------------------------------------------------------
+import:         from AS50952 action pref=300; accept AS-DATAIX
+export:         to AS50952 announce AS-XELENT
+import:         from AS31500 action pref=300; accept AS-GLOBAL-IX
+export:         to AS31500 announce AS-XELENT
+import:         from AS43690 action pref=300; accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-XELENT
+remarks:        --------------------------------------------------------
+remarks:        Downstreams
+remarks:        --------------------------------------------------------
+import:         from AS59496 action pref=400; accept AS59496
+export:         to AS59496 announce ANY
+import:         from AS203668 action pref=400; accept AS203668
+export:         to AS203668 announce ANY
+import:         from AS48102 action pref=400; accept AS48102
+export:         to AS48102 announce ANY
+import:         from AS213329 action pref=400; accept AS213329
+export:         to AS213329 announce ANY
+import:         from AS200935 action pref=400; accept AS200935
+export:         to AS200935 announce ANY
+import:         from AS18561 action pref=400; accept AS18561
+export:         to AS18561 announce ANY
+import:         from AS210829 action pref=400; accept AS210829
+export:         to AS210829 announce ANY
+remarks:        =========================================================
+remarks:        IPv6 Routing Policy
+remarks:        --------------------------------------------------------
+remarks:        Upstreams
+remarks:        --------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS20764 action pref=250; accept ANY
+mp-export:      afi ipv6.unicast to AS20764 announce AS-XELENT
+mp-import:      afi ipv6.unicast from AS9002 action pref=250; accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-XELENT
+remarks:        --------------------------------------------------------
+remarks:        Peering
+remarks:        --------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS50952 action pref=300; accept ANY
+mp-export:      afi ipv6.unicast to AS50952 announce AS-XELENT
+mp-import:      afi ipv6.unicast from AS31500 action pref=300; accept ANY
+mp-export:      afi ipv6.unicast to AS31500 announce AS-XELENT
+mp-import:      afi ipv6.unicast from AS43690 action pref=300; accept ANY
+mp-export:      afi ipv6.unicast to AS43690 announce AS-XELENT
+remarks:        =========================================================
+remarks:        Communities
+remarks:        --------------------------------------------------------
+remarks:        0:666 - Blackhole (Only for /32 IPv4 and /128 IPv6)
+remarks:        0:100 - Backup (set the lowest local preference = 100)
+remarks:        0:200 - set local preference like upstreams = 200
+remarks:        0:300 - set local preference like peering = 300
+remarks:        0:299 - do not announce prefixes to upstreams
+remarks:        0:399 - do not announce prefixes to peering
+remarks:        ========================================================
+remarks:        Contacts
+remarks:        --------------------------------------------------------
+remarks:        Web Site https://www.xelent.ru
+remarks:        Looking Glass https://lg.xelent.ru
+remarks:        Customer Support support@xelent.ru
+remarks:        =======================================================
+admin-c:        AM48019-RIPE
+tech-c:         AN32466-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ATOMDATA-MNT
+mnt-by:         ADC-XELENT-MNT
+created:        2013-12-30T08:37:12Z
+last-modified:  2025-04-29T08:31:24Z
+source:         RIPE # Filtered
+
+organisation:   ORG-AJ134-RIPE
+org-name:       ATOMDATA JSC
+org-type:       LIR
+address:        19, Roshchinskiy 4 dr.
+address:        115191
+address:        Moscow
+address:        RUSSIAN FEDERATION
+country:        RU
+phone:          +74952233558
+admin-c:        AN32466-RIPE
+admin-c:        AM48019-RIPE
+tech-c:         AN32466-RIPE
+abuse-c:        AR62956-RIPE
+mnt-ref:        ATOMDATA-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ATOMDATA-MNT
+created:        2021-04-22T08:02:21Z
+last-modified:  2023-05-05T15:20:30Z
+source:         RIPE # Filtered
+
+role:           Atomdata Management
+address:        19, Roshchinskiy 4 dr.
+address:        115191
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74952233558
+nic-hdl:        AM48019-RIPE
+mnt-by:         ATOMDATA-MNT
+created:        2021-04-22T08:02:20Z
+last-modified:  2023-05-05T15:22:17Z
+source:         RIPE # Filtered
+
+role:           Atomdata NOC
+address:        19, Roshchinskiy 4 dr.
+address:        115191
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74952233558
+nic-hdl:        AN32466-RIPE
+mnt-by:         ATOMDATA-MNT
+created:        2021-04-22T08:02:21Z
+last-modified:  2023-05-05T15:22:54Z
+source:         RIPE # Filtered
+
+
 

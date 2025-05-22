@@ -1,4 +1,32 @@
+mux_client_request_session: session request failed: Session open refused by peer
+ControlSocket /home/olden/.ssh/control/olden@212.90.160.8:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS34896
+as-name:        VTELECOM-AS
+remarks:        ---Upstreams---
+remarks:        ---Rostelecom---
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS34896
+remarks:        ---Downstreams---
+remarks:        ---Telecom Union---
+import:         from AS62069 accept AS62069
+import:         from AS62069 accept AS31059
+export:         to AS62069 announce ANY
+remarks:        ---Avantelecom---
+import:         from AS204898 accept AS204898
+export:         to AS204898 announce ANY
+org:            ORG-VTCL1-RIPE
+admin-c:        AR17039-RIPE
+tech-c:         AR17039-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VTELECOM-MNT
+created:        2005-04-26T10:27:46Z
+last-modified:  2023-12-19T01:24:59Z
+source:         RIPE
 
 
 

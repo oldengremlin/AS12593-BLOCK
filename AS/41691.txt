@@ -1,4 +1,170 @@
 
 
 
+as-block:       AS40960 - AS42171
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-07-22T14:14:32Z
+last-modified:  2024-07-22T14:14:32Z
+source:         RIPE
+
+
+
+aut-num:        AS41691
+as-name:        SUMTEL-AS-RIPE
+descr:          CJSC "Sumtel"
+org:            ORG-JR8-RIPE
+remarks:        ---------------------------------------------------------------
+remarks:        Uplinks
+remarks:        ---------------------------------------------------------------
+remarks:        ==== ROSTELECOM ====
+import:         from AS12389 accept ANY AND {0.0.0.0/0}
+export:         to AS12389 announce AS-SUMTEL
+remarks:        ---------------------------------------------------------------
+remarks:        misc peers
+remarks:        ---------------------------------------------------------------
+import:         from AS43975 accept AS43975 AND AS25405
+export:         to AS43975 announce AS-SUMTEL-2RT
+import:         from AS47626 accept AS-ARPNET61
+export:         to AS47626 announce AS-SUMTEL-MHL
+import:         from AS57766 accept AS-EI
+export:         to AS57766 announce AS-SUMTEL-MHL
+import:         from AS201826 accept AS-ERATEL
+export:         to AS201826 announce AS-SUMTEL
+import:         from AS13178 accept AS-DIGCOMM
+export:         to AS13178 announce AS-SUMTEL
+import:         from AS200976 accept AS200976
+export:         to AS200976 announce AS-SUMTEL
+import:         from AS47541 accept AS-VKONTAKTE
+export:         to AS47541 announce AS-SUMTEL
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-SUMTEL
+import:         from AS15169 accept AS-GOOGLE
+export:         to AS15169 announce AS-SUMTEL
+remarks:        ---------------------------------------------------------------
+remarks:        Customers
+remarks:        ---------------------------------------------------------------
+import:         from AS24762 accept AS-STELCOM
+export:         to AS24762 announce ANY
+import:         from AS49679 accept AS49679
+export:         to AS49679 announce ANY
+import:         from AS12646 accept AS12646
+export:         to AS12646 announce ANY
+import:         from AS56634 accept AS56634
+export:         to AS56634 announce ANY
+import:         from AS48508 accept AS48508
+export:         to AS48508 announce ANY
+import:         from AS201901 accept AS201901
+export:         to AS201901 announce ANY
+import:         from AS34528 accept AS34528
+export:         to AS34528 announce ANY
+import:         from AS198580 accept AS198580
+export:         to AS198580 announce ANY
+import:         from AS49017 accept AS49017
+export:         to AS49017 announce ANY
+import:         from AS197987 accept AS197987
+export:         to AS197987 announce ANY
+import:         from AS35572 accept AS-CMTL
+export:         to AS35572 announce ANY
+import:         from AS202873 accept AS202873
+export:         to AS202873 announce ANY
+import:         from AS56483 accept AS56483
+export:         to AS56483 announce ANY
+import:         from AS50740 accept AS50740
+export:         to AS50740 announce ANY
+remarks:        --------------------------------------------------------------
+remarks:        COMMNUTIES ADVERTIZED TO NEIGHBOURS
+remarks:        41691:1NXX - Uplinks
+remarks:        41691:2NXX - Peers
+remarks:        41691:3NXX - IP-Transit customers
+remarks:        41691:4NXX - Own subscribers
+remarks:        where:
+remarks:        N - reserved
+remarks:        XX - for region code:
+remarks:        05 - Dagestan Republic
+remarks:        23 - Krasnodarskiy kray
+remarks:        36 - Voronezhskaya oblast
+remarks:        48 - Lipetskaya oblast
+remarks:        52 - Nizhegorodskaya oblast
+remarks:        61 - Rostovskaya oblast
+remarks:        69 - Tverskaya oblast
+remarks:        77 - Moscow
+remarks:        78 - St.Petersbourg
+remarks:        --------------------------------------------------------------
+admin-c:        PRTT1-RIPE
+tech-c:         RTNC-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2006-10-09T14:34:50Z
+last-modified:  2024-07-03T07:47:40Z
+source:         RIPE
+
+organisation:   ORG-JR8-RIPE
+org-name:       PJSC Rostelecom
+country:        RU
+org-type:       LIR
+address:        14 A, Sinopskaya nabereznaya
+address:        191167
+address:        S.Peterburg
+address:        RUSSIAN FEDERATION
+phone:          +7 499 999-82-83
+fax-no:         +74999953619
+admin-c:        RTNC-RIPE
+admin-c:        EP6706-RIPE
+admin-c:        IE1277-RIPE
+admin-c:        NM7547-RIPE
+admin-c:        AA728-RIPE
+admin-c:        SVS153-RIPE
+admin-c:        ASV77-RIPE
+admin-c:        RVP-RIPE
+admin-c:        VEV57-RIPE
+admin-c:        TR4627-RIPE
+admin-c:        TL4565-RIPE
+admin-c:        DN216-RIPE
+admin-c:        DA2353-RIPE
+admin-c:        IS111-RIPE
+admin-c:        VE128-RIPE
+admin-c:        SS216-RIPE
+abuse-c:        RTNC-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        ROSTELECOM-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2005-03-22T11:11:20Z
+last-modified:  2023-01-26T10:52:42Z
+source:         RIPE # Filtered
+
+role:           PJSC Rostelecom Technical Team
+address:        PJSC Rostelecom Russian Federation
+nic-hdl:        PRTT1-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2024-05-20T01:54:00Z
+last-modified:  2024-05-20T01:54:00Z
+source:         RIPE # Filtered
+
+role:           PJSC Rostelecom Technical Team
+address:        PJSC Rostelecom
+address:        Russian Federation
+abuse-mailbox:  abuse@rt.ru
+admin-c:        IE1277-RIPE
+tech-c:         IE1277-RIPE
+remarks:        trouble: ---------------------------------------------------------------
+remarks:        trouble: Rostelecom NOC is available 24 x 7
+remarks:        trouble: e-mail cuss-ip@rt.ru
+remarks:        trouble: ---------------------------------------------------------------
+remarks:        ------------------------------------------------------------------------
+remarks:        peering requests: peering@rt.ru
+remarks:        ------------------------------------------------------------------------
+remarks:        http://www.rostelecom.ru/, looking-glass http://lg.ip.rt.ru/
+remarks:        ------------------------------------------------------------------------
+nic-hdl:        RTNC-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2007-11-27T13:28:11Z
+last-modified:  2022-12-12T07:46:18Z
+source:         RIPE # Filtered
+
+
 

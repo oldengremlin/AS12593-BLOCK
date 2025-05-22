@@ -1,4 +1,158 @@
+ControlSocket /home/olden/.ssh/control/olden@212.90.160.8:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS47236
+as-name:        CITYLINK-AS
+org:            ORG-Llc9-RIPE
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS15169 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS20764 action pref=100; accept ANY
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS31500 action pref=100; accept ANY
+import:         from AS48354 action pref=100; accept AS48354
+import:         from AS50509 action pref=100; accept ANY
+import:         from AS50817 action pref=100; accept ANY
+import:         from AS50952 action pref=100; accept ANY
+import:         from AS57304 action pref=100; accept ANY
+import:         from AS57856 action pref=100; accept AS57856
+export:         to AS3216 announce {178.19.251.0/24}
+export:         to AS15169 announce {94.140.246.0/24, 185.90.101.0/24}
+export:         to AS20485 announce AS-SET-CL
+export:         to AS20764 announce {94.140.246.0/24, 185.90.101.0/24}
+export:         to AS31133 announce AS-SET-CL
+export:         to AS31500 announce AS-SET-CL
+export:         to AS48354 announce AS47236
+export:         to AS50509 announce {185.90.101.0/24}
+export:         to AS50817 announce {94.140.246.0/24, 185.90.101.0/24}
+export:         to AS50952 announce AS-SET-CL
+export:         to AS57304 announce {94.140.246.0/24, 185.90.101.0/24}
+export:         to AS57856 announce ANY
+admin-c:        CN12435-RIPE
+tech-c:         CN12435-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CTLNK-MNT
+created:        2008-05-22T09:01:33Z
+last-modified:  2024-03-12T14:55:49Z
+source:         RIPE
+
+
+
+aut-num:        AS48354
+as-name:        RELANT-AS
+org:            ORG-Llc9-RIPE
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-SET-RELANT
+import:         from AS48738 accept AS48738
+export:         to AS48738 announce AS48354
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-SET-RELANT
+import:         from AS200123 accept AS200123
+export:         to AS200123 announce ANY
+import:         from AS47236 accept AS47236
+export:         to AS47236 announce ANY
+admin-c:        CN12435-RIPE
+tech-c:         CN12435-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CTLNK-MNT
+created:        2008-11-18T07:41:42Z
+last-modified:  2023-09-19T08:58:01Z
+source:         RIPE
+
+
+
+aut-num:        AS50258
+as-name:        TEYLA
+org:            ORG-Llc9-RIPE
+remarks:        YANDEX-SPB-IX
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-TEYLA
+remarks:        internet Vympelcom-as3216
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-TEYLA
+remarks:        -----------======<>=======-----------
+import:         from AS35000 accept ANY
+import:         from AS20764 accept ANY
+import:         from AS43690 accept AS-SPBROUTESERVER
+import:         from AS47395 accept ANY
+import:         from AS20632 accept ANY
+import:         from AS49686 accept ANY
+import:         from AS50952 accept ANY
+export:         to AS35000 announce AS-TEYLA
+export:         to AS20764 announce AS-TEYLA
+export:         to AS43690 announce AS-TEYLA
+export:         to AS47395 announce AS-TEYLA
+export:         to AS20632 announce AS-TEYLA
+export:         to AS49686 announce AS-TEYLA
+export:         to AS50952 announce AS-TEYLA
+remarks:        peering-westtel
+import:         from AS31189 accept AS-WESTTEL
+export:         to AS31189 announce ANY
+remarks:        internet-TTK
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-TEYLA
+remarks:        -----==< MSK-IX Peering Group >==-----
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-TEYLA
+remarks:        -----------======<*>=======-----------
+admin-c:        CN12435-RIPE
+tech-c:         CN12435-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CTLNK-MNT
+created:        2009-12-10T14:40:46Z
+last-modified:  2023-09-19T08:57:36Z
+source:         RIPE
+
+
+
+aut-num:        AS50916
+as-name:        NADYMSS-AS
+org:            ORG-Llc9-RIPE
+import:         from AS51028 action pref=100; accept ANY
+export:         to AS51028 announce AS50916
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS50916
+import:         from AS8631 action pref=100; accept ANY
+export:         to AS8631 announce AS50916
+import:         from AS43213 action pref=100; accept ANY
+export:         to AS43213 announce AS50916
+import:         from AS50817 action pref=100; accept ANY
+export:         to AS50817 announce AS50916
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS31133 announce AS50916
+import:         from AS50923 action pref=100; accept ANY
+export:         to AS50923 announce AS50916
+admin-c:        CN12435-RIPE
+tech-c:         CN12435-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CTLNK-MNT
+created:        2010-04-21T08:06:17Z
+last-modified:  2023-09-19T08:57:16Z
+source:         RIPE
+
+
+
+aut-num:        AS57320
+as-name:        T-TELECOM-MNT-AS
+org:            ORG-Llc9-RIPE
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS31133 announce AS57320
+export:         to AS20485 announce AS57320
+admin-c:        CN12435-RIPE
+tech-c:         CN12435-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CTLNK-MNT
+created:        2011-09-23T10:24:16Z
+last-modified:  2023-09-26T14:42:52Z
+source:         RIPE
 
 
 

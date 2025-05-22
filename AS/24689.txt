@@ -1,4 +1,86 @@
 
 
 
+as-block:       AS24576 - AS24735
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:29Z
+last-modified:  2018-11-22T15:27:29Z
+source:         RIPE
+
+
+
+aut-num:        AS24689
+as-name:        ROSINTEL-AS
+org:            ORG-JR11-RIPE
+admin-c:        AVS36-RIPE
+tech-c:         RNK12-RIPE
+status:         ASSIGNED
+remarks:        ...UPSTREAMS...
+mnt-by:         RIPE-NCC-END-MNT
+import:         from AS9002 action pref=100; accept ANY
+export:         to AS9002 announce AS-ROSINTEL
+import:         from AS43727 action pref=100; accept ANY
+export:         to AS43727 announce AS-ROSINTEL
+import:         from AS35598 action pref=100; accept ANY
+export:         to AS35598 announce AS-ROSINTEL
+remarks:        ...MSK-IX...
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-ROSINTEL
+remarks:        ...PEERING...
+import:         from AS35401 action pref=100; accept <^AS35401$>
+export:         to AS35401 announce AS-ROSINTEL
+remarks:        ...DOWNSTREAMS...
+mnt-by:         ROSINTEL-MNT
+created:        2006-11-23T14:11:42Z
+last-modified:  2023-10-02T08:31:17Z
+source:         RIPE
+
+organisation:   ORG-JR11-RIPE
+org-name:       JSC Rosin.telekom
+country:        RU
+org-type:       LIR
+address:        KALININA 24B
+address:        301650
+address:        NOVOMOSKOVSK
+address:        RUSSIAN FEDERATION
+phone:          +7 4876299900
+fax-no:         +7 4876299900
+admin-c:        AVS36-RIPE
+admin-c:        RNK12-RIPE
+tech-c:         RNL1998
+abuse-c:        RNL1998
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        ROSINTEL-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ROSINTEL-MNT
+created:        2006-11-13T13:49:11Z
+last-modified:  2021-01-25T11:29:07Z
+source:         RIPE # Filtered
+
+person:         Albert V Scherbinin
+address:        301650, Russia, Tula region,
+address:        Novomoskovsk City, Kalinina Str., 24b
+address:        JSC Rosin.telekom
+phone:          +7 48762 99900
+fax-no:         +7 48762 99900 Ext. 6103
+nic-hdl:        AVS36-RIPE
+created:        1970-01-01T00:00:00Z
+last-modified:  2021-01-25T11:20:59Z
+source:         RIPE # Filtered
+remarks:        modified for Russian phone area changes
+mnt-by:         ROSINTEL-MNT
+
+person:         Roman N Kozlov
+address:        301650, Russia, Tula region,
+address:        Novomoskovsk City, Kalinina Str., 24b
+phone:          +7 48762 99900
+nic-hdl:        RNK12-RIPE
+mnt-by:         ROSINTEL-MNT
+created:        2021-01-25T11:19:04Z
+last-modified:  2021-01-25T11:19:04Z
+source:         RIPE
+
+
 

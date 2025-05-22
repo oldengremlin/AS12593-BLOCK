@@ -2,3 +2,111 @@
 
 
 
+aut-num:        AS15974
+as-name:        VTT-AS
+descr:          ISP, Saratov, Russia.
+descr:          JSC "Volgatranstelecom"
+remarks:        Looking Glass:
+remarks:        http://lg.vtt.net/
+remarks:        ---------------------------------------------------------
+remarks:        ***** Saratov Classic Uplink *****
+remarks:        ---------------------------------------------------------
+import:         from AS20485 217.150.41.246 at 217.150.41.245 action pref=100; accept ANY
+export:         to AS20485 217.150.41.246 at 217.150.41.245 announce AS-VTT-S
+remarks:        ---------------------------------------------------------
+remarks:        *** Saratov Retail Uplink ***
+remarks:        ---------------------------------------------------------
+import:         from AS20485 217.150.45.6 at 217.150.45.5 action pref=100; accept { 0.0.0.0/0 }
+export:         to AS20485 217.150.45.6 at 217.150.45.5 announce AS-VTT-S
+mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-VTT-S
+remarks:        ---------------------------------------------------------
+remarks:        ***** Volgograd Classic Uplink *****
+remarks:        ---------------------------------------------------------
+import:         from AS20485 217.150.47.45 at 217.150.47.46 action pref=100; accept ANY
+export:         to AS20485 217.150.47.45 at 217.150.47.46 announce AS-VTT-V
+remarks:        ---------------------------------------------------------
+remarks:        *** Volgograd Retail Uplink ***
+remarks:        ---------------------------------------------------------
+import:         from AS20485 217.150.46.214 at 217.150.46.213 action pref=100; accept { 0.0.0.0/0 }
+export:         to AS20485 217.150.46.214 at 217.150.46.213 announce AS-VTT-V
+mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-VTT-V
+remarks:        ---------------------------------------------------------
+remarks:        *** Astrakhan General Uplink ***
+remarks:        ---------------------------------------------------------
+import:         from AS20485 217.150.50.114 at 217.150.50.113 action pref=100; accept ANY
+export:         to AS20485 217.150.50.114 at 217.150.50.113 announce AS-VTT-A
+mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-VTT-A
+remarks:        ---------------------------------------------------------
+remarks:        ************ IX in Saratov ************
+remarks:        ---------------------------------------------------------
+import:         from AS9049 action pref=200; accept AS-ERTH
+export:         to AS9049 announce AS-VTT
+mp-import:      afi ipv6.unicast from AS9049 action pref=200; accept AS-ERTH
+mp-export:      afi ipv6.unicast to AS9049 announce AS-VTT
+import:         from AS9111 action pref=200; accept AS9111 { 212.193.32.0/19^19-24 }
+export:         to AS9111 announce AS-VTT
+mp-import:      afi ipv6.unicast from AS9111 action pref=200; accept AS9111
+mp-export:      afi ipv6.unicast to AS9111 announce AS-VTT
+remarks:        ---------------------------------------------------------
+remarks:        *********** IX in Volgograd ***********
+remarks:        ---------------------------------------------------------
+import:         from AS9049 action pref=200; accept AS-ERTH
+export:         to AS9049 announce AS-VTT
+remarks:        ---------------------------------------------------------
+remarks:        *********** IX in Astrakhan ************
+remarks:        ---------------------------------------------------------
+remarks:        EMPTY
+remarks:        ---------------------------------------------------------
+remarks:        ***** Customers in Saratov *****
+remarks:        ---------------------------------------------------------
+remarks:        EMPTY
+remarks:        ***** Customers in Balakovo *****
+remarks:        ---------------------------------------------------------
+remarks:        EMPTY
+remarks:        ---------------------------------------------------------
+remarks:        ***** Customers in Volgograd *****
+remarks:        ---------------------------------------------------------
+import:         from AS198778 action pref=200; accept AS-EROS { 91.246.24.0/24 }
+export:         to AS198778 announce ANY
+import:         from AS58084 action pref=200; accept AS58084 { 37.221.184.0/21^21-24 }
+export:         to AS58084 announce ANY
+remarks:        ---------------------------------------------------------
+remarks:        ***** Customers in Astrakhan *****
+remarks:        ---------------------------------------------------------
+import:         from AS58084 action pref=200; accept AS58084 { 37.221.184.0/21^21-24 }
+export:         to AS58084 announce ANY
+remarks:        ---------------------------------------------------------
+org:            ORG-CJSC19-RIPE
+admin-c:        VTT3-RIPE
+tech-c:         VN887-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TRANSTELECOM-MNT
+mnt-by:         VTT-MNT
+created:        2002-08-16T17:53:28Z
+last-modified:  2025-01-14T15:47:58Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS196797
+as-name:        CityTeleNet
+org:            ORG-CJSC19-RIPE
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS196797
+admin-c:        KTTK-RIPE
+admin-c:        TTK52-RIPE
+tech-c:         TTK52-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TRANSTELECOM-MNT
+mnt-by:         VTT-MNT
+created:        2009-10-20T06:20:15Z
+last-modified:  2025-04-28T12:44:02Z
+source:         RIPE
+
+
+
