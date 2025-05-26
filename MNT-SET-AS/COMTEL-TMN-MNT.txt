@@ -4,38 +4,3 @@ ControlSocket /home/olden/.ssh/control/olden@94.125.120.198:22 already exists, d
 
 
 
-aut-num:        AS34038
-as-name:        COMTEL-TMN-AS
-remarks:        JSC Vimpelcom, Tyumen branch
-remarks:        Comtel Net
-remarks:        Tyumen, Russia
-org:            ORG-ES15-RIPE
-remarks:        ------------------------------------------------------------
-remarks:        Upstreams:
-remarks:        ------------------------------------------------------------
-import:         from AS3216 accept ANY
-export:         to AS3216 announce AS-COMTEL-TMN
-remarks:        ------------------------------------------------------------
-remarks:        Customers:
-remarks:        ------------------------------------------------------------
-import:         from AS49533 accept AS49533
-export:         to AS-COMTEL-TMN announce ANY
-remarks:        ------------------------------------------------------------
-remarks:        Private peers:
-remarks:        ------------------------------------------------------------
-import:         from AS31359 accept AS31359:AS-PEERING
-export:         to AS31359 announce AS-COMTEL-TMN
-admin-c:        SVNT1-RIPE
-tech-c:         SVNT2-RIPE
-tech-c:         FCIP-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         COMTEL-TMN-MNT
-mnt-by:         SOVINTEL-MNT
-mnt-by:         FORATEC-MNT
-created:        2004-10-06T14:17:10Z
-last-modified:  2018-09-04T10:05:10Z
-source:         RIPE # Filtered
-
-
-

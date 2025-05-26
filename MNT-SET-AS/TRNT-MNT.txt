@@ -1,3 +1,33 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.8 port 22
+
+
+
+
+aut-num:        AS35508
+as-name:        teranet
+org:            ORG-TL858-RIPE
+import:         from AS25478 accept ANY
+import:         from AS50448 accept as-colocat
+export:         to AS25478 announce as-teranet
+export:         to AS50448 announce ANY
+mp-import:      afi ipv6.unicast from AS25478 accept ANY
+mp-export:      afi ipv6.unicast to AS25478 announce as-teranet
+import:         from AS50384 accept ANY
+export:         to AS50384 announce as-teranet
+mp-import:      afi ipv6.unicast from AS50384 accept ANY
+mp-export:      afi ipv6.unicast to AS50384 announce as-teranet
+import:         from AS20764 accept ANY
+export:         to AS20764 announce as-teranet
+mp-import:      afi ipv6.unicast from AS20764 accept ANY
+mp-export:      afi ipv6.unicast to AS20764 announce as-teranet
+sponsoring-org: ORG-WL316-RIPE
+admin-c:        NA7537-RIPE
+tech-c:         NA7537-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         trnt-mnt
+created:        2019-02-13T11:29:47Z
+last-modified:  2023-06-21T09:09:51Z
+source:         RIPE
+
+
+

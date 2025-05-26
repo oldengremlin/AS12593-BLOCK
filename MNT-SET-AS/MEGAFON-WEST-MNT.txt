@@ -1,3 +1,1954 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 94.125.121.14 port 22
+
+
+
+
+aut-num:        AS197934
+as-name:        BALTINVESTBANK
+org:            ORG-JA161-RIPE
+import:         from AS6850 action pref=180; accept ANY
+export:         to AS6850 announce AS197934
+import:         from AS20632 action pref=100; accept ANY
+export:         to AS20632 announce AS197934
+import:         from AS2854 action pref=30; accept ANY
+export:         to AS2854 announce AS197934
+import:         from AS8359 action pref=120; accept ANY
+export:         to AS8359 announce AS197934
+admin-c:        AVB267-RIPE
+tech-c:         AVB267-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS6850-MNT
+mnt-by:         MEGAFON-WEST-MNT
+mnt-by:         BALTINVESTBANK-MNT
+created:        2011-07-05T13:49:43Z
+last-modified:  2018-09-04T11:03:36Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-OM1-RIPE
+
+
+
+aut-num:        AS204230
+as-name:        GAZPROM-EP-INT-SERVICES-AS
+org:            ORG-GEIS2-RIPE
+import:         from AS20632 accept ANY
+export:         to AS20632 announce AS204230
+import:         from AS6858 accept ANY
+export:         to AS6858 announce AS204230
+admin-c:        AS31184-RIPE
+tech-c:         MFON-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         PSTAR-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2015-07-22T13:33:55Z
+last-modified:  2020-11-16T17:52:05Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-OM1-RIPE
+
+
+
+aut-num:        AS20632
+as-name:        PETERSTAR-AS
+org:            ORG-OM1-RIPE
+descr:          Saint-Petersburg
+descr:          Russia
+remarks:        --------------------------------------------
+remarks:        --------------------------------------------
+remarks:        Uplinks
+remarks:        --------------------------------------------
+remarks:        MEGAFON BACKBONE
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-PETERSTAR
+remarks:        ----------------
+remarks:        Synterra
+import:         from AS6854 accept ANY
+export:         to AS6854 announce AS-PETERSTAR
+remarks:        ----------------
+remarks:        ---------------------------------------------
+remarks:        ---------------------------------------------
+remarks:        Customers
+remarks:        --------------------------------------------
+remarks:        NW-GSM
+mp-import:      afi ipv6.unicast from AS31213 accept AS31213
+mp-export:      afi ipv6.unicast to AS31213 announce ANY
+remarks:        --------------------------------------------
+import:         from AS31213 action pref=130; accept AS31213
+export:         to AS31213 announce ANY
+remarks:        --------------------------------------------
+remarks:        SMART-TELECOM
+import:         from AS31376 action pref=130; accept AS-SMART-C
+export:         to AS31376 announce ANY
+remarks:        ----------------
+remarks:        KIROVTELECOM
+import:         from AS33908 action pref=130; accept AS33908
+export:         to AS33908 announce ANY
+remarks:        ----------------
+remarks:        MASTER-IT
+import:         from AS34866 action pref=130; accept AS34866
+export:         to AS34866 announce ANY
+remarks:        ----------------
+remarks:        MASTER-IT
+import:         from AS31503 action pref=130; accept AS31503
+export:         to AS31503 announce ANY
+remarks:        ----------------
+remarks:        THEOREMA-TELECOM
+import:         from AS39046 action pref=130; accept AS-THEOREMA
+export:         to AS39046 announce ANY
+import:         from AS201913 accept AS201913
+export:         to AS201913 announce ANY
+remarks:        ----------------
+remarks:        PHARMA_SUPPORT
+import:         from AS25185 action pref=130; accept AS25185
+export:         to AS25185 announce ANY
+remarks:        ----------------
+remarks:        IP-NET
+import:         from AS21048 action pref=130; accept AS21048 AS35357
+export:         to AS21048 announce ANY
+remarks:        ----------------
+remarks:        SEBBANK
+import:         from AS41067 action pref=130; accept AS41067
+export:         to AS41067 announce ANY
+remarks:        ----------------
+remarks:        RTS SPb
+import:         from AS35357 action pref=130; accept AS-RTS
+export:         to AS35357 announce ANY
+remarks:        ----------------
+remarks:        Convey Plus
+import:         from AS13215 action pref=130; accept AS-CONVEYPLUS
+export:         to AS13215 announce ANY
+remarks:        ----------------
+remarks:        StarTelecom
+import:         from AS31321 action pref=130; accept AS31321
+export:         to AS31321 announce ANY
+remarks:        ----------------
+remarks:        DeltaTelecom
+import:         from AS28702 action pref=130; accept AS28702
+export:         to AS28702 announce ANY
+remarks:        ----------------
+remarks:        GazInternet
+import:         from AS13080 action pref=130; accept AS-GAZINTERNET
+export:         to AS13080 announce ANY
+remarks:        ----------------
+remarks:        NordTelecom
+import:         from AS43726 action pref=130; accept AS43726
+export:         to AS43726 announce ANY
+remarks:        ----------------
+remarks:        North-West
+import:         from AS24960 action pref=130; accept AS24960
+export:         to AS24960 announce ANY
+remarks:        ----------------
+remarks:        DRWEB
+import:         from AS49238 action pref=130; accept AS49238
+export:         to AS49238 announce ANY
+remarks:        ----------------
+remarks:        UNNET
+import:         from AS31323 action pref=130; accept AS-UNNET
+export:         to AS31323 announce ANY
+remarks:        ----------------
+remarks:        LEIVO
+import:         from AS6820 action pref=130; accept AS-LEIVO
+export:         to AS6820 announce ANY
+remarks:        ----------------
+remarks:        LINTEKS
+import:         from AS49426 action pref=130; accept AS49426
+export:         to AS49426 announce ANY
+remarks:        ----------------
+remarks:        SPERASOFT
+import:         from AS49200 action pref=130; accept AS49200
+export:         to AS49200 announce ANY
+remarks:        ----------------
+remarks:        FUTURES-TELECOM
+import:         from AS25520 action pref=130; accept AS25520
+export:         to AS25520 announce ANY
+remarks:        ----------------
+remarks:        Continental
+import:         from AS49345 action pref=130; accept AS49345
+export:         to AS49345 announce ANY
+remarks:        ----------------
+remarks:        PETERLINK
+import:         from AS8377 action pref=130; accept AS-PETERLINK
+export:         to AS8377 announce ANY
+remarks:        ----------------
+remarks:        WELLCOM
+import:         from AS35550 action pref=130; accept AS-WELLCOM
+export:         to AS35550 announce ANY
+remarks:        ----------------
+remarks:        West-Com
+import:         from AS44380 action pref=130; accept AS44380
+export:         to AS44380 announce ANY
+remarks:        ----------------
+remarks:        SVYAZEINFORM
+import:         from AS31214 action pref=130; accept AS-TISDIALOG
+export:         to AS31214 announce ANY
+remarks:        ----------------
+remarks:        ByteCom
+import:         from AS48704 action pref=130; accept AS48704
+export:         to AS48704 announce ANY
+remarks:        ----------------
+remarks:        SpaceWeb
+import:         from AS44112 action pref=130; accept AS44112
+export:         to AS44112 announce ANY
+remarks:        ----------------
+remarks:        METROCOM
+import:         from AS6850 action pref=130; accept AS6850
+export:         to AS6850 announce ANY
+remarks:        ----------------
+remarks:        GDC
+import:         from AS50058 action pref=130; accept AS50058
+export:         to AS50058 announce ANY
+remarks:        ----------------
+remarks:        Mariinsky Theatre
+import:         from AS50222 action pref=130; accept AS50222
+export:         to AS50222 announce ANY
+remarks:        ----------------
+remarks:        GAZPROM-TELEKOM
+import:         from AS20576 action pref=130; accept AS20576
+export:         to AS20576 announce ANY
+remarks:        ----------------
+remarks:        Biblioteka im. Elcina
+import:         from AS50571 action pref=130; accept AS50571
+export:         to AS50571 announce ANY
+remarks:        ----------------
+remarks:        Sestroreckoe Kabelnoe TV
+import:         from AS50105 action pref=130; accept AS50105
+export:         to AS50105 announce ANY
+remarks:        ----------------
+remarks:        Elvis Apanet Murmansk
+import:         from AS48738 action pref=130; accept AS48738
+export:         to AS48738 announce ANY
+remarks:        ----------------
+remarks:        KSK-ELECTRO
+import:         from AS41512 action pref=130; accept AS41512
+export:         to AS41512 announce ANY
+remarks:        ----------------
+remarks:        E-TYPE
+import:         from AS8774 action pref=130; accept AS-ETYPE
+export:         to AS8774 announce ANY
+remarks:        ----------------
+remarks:        CHUDONET (AS31088)
+import:         from AS31088 action pref=130; accept AS31088
+export:         to AS31088 announce ANY
+remarks:        ----------------
+remarks:        FORTIS
+import:         from AS50717 action pref=130; accept AS50717
+export:         to AS50717 announce ANY
+remarks:        ----------------
+remarks:        VYBORG-NET (AS25290)
+import:         from AS25290 action pref=130; accept AS25290
+export:         to AS25290 announce ANY
+remarks:        ----------------
+remarks:        CityLink (Petrozavodsk)
+import:         from AS47236 action pref=130; accept AS-SET-CL
+export:         to AS47236 announce ANY
+remarks:        ----------------
+remarks:        SMART (AS-SMART-C)
+import:         from AS31376 action pref=130; accept AS-SMART-C
+export:         to AS31376 announce ANY
+remarks:        ----------------
+remarks:        SZKTI (AS41976)
+import:         from AS41976 action pref=130; accept AS-SZKTI
+export:         to AS41976 announce ANY
+remarks:        ----------------
+remarks:        SIMPLEX-KLGD-AS (AS41975)
+import:         from AS41975 action pref=130; accept AS41975
+export:         to AS41975 announce ANY
+remarks:        ----------------
+remarks:        CTM Ltd (AS51700)
+import:         from AS51700 action pref=130; accept AS51700
+export:         to AS51700 announce ANY
+remarks:        ----------------
+remarks:        TKB BNP Paribas (AS51723)
+import:         from AS51723 action pref=130; accept AS51723
+export:         to AS51723 announce ANY
+remarks:        ----------------
+remarks:        Fedorov Pitkyranta (AS47259)
+import:         from AS47259 action pref=130; accept AS47259
+export:         to AS47259 announce ANY
+remarks:        ----------------
+remarks:        LSR (AS197700)
+import:         from AS197700 action pref=130; accept AS197700
+export:         to AS197700 announce ANY
+remarks:        ----------------
+remarks:        Ekran KNG AS196742
+import:         from AS196742 action pref=130; accept AS196742
+export:         to AS196742 announce ANY
+remarks:        ----------------
+remarks:        PSK Admin AS56613
+import:         from AS56613 action pref=130; accept AS56613
+export:         to AS56613 announce ANY
+remarks:        ----------------
+remarks:        Chermetresurs AS42891
+import:         from AS42891 action pref=130; accept AS42891
+export:         to AS42891 announce ANY
+remarks:        ----------------
+remarks:        Centr informacionnyh tehnologiy AS56853
+import:         from AS56853 action pref=130; accept AS-LMN
+export:         to AS56853 announce ANY
+remarks:        ----------------
+remarks:        PES SPb
+import:         from AS198074 action pref=130; accept AS198074
+export:         to AS198074 announce ANY
+remarks:        ----------------
+remarks:        TELESERVISPLUS
+import:         from AS41616 action pref=130; accept AS41616
+export:         to AS41616 announce ANY
+import:         from AS57781 action pref=130; accept AS57781
+export:         to AS57781 announce ANY
+remarks:        ----------------
+remarks:        Regionalnye.Internet.Seti
+import:         from AS56630 action pref=130; accept AS56630
+export:         to AS56630 announce ANY
+remarks:        ----------------
+remarks:        Didgicom
+import:         from AS197952 action pref=130; accept AS197952
+export:         to AS197952 announce ANY
+remarks:        ----------------
+remarks:        PSI
+import:         from AS25185 action pref=130; accept AS25185
+export:         to AS25185 announce ANY
+remarks:        ----------------
+remarks:        LUIS-SEVERO-ZAPAD
+import:         from AS57303 action pref=130; accept AS57303
+export:         to AS57303 announce ANY
+remarks:        ----------------
+remarks:        Baltic Financial Agency Bank
+import:         from AS198609 action pref=130; accept AS198609
+export:         to AS198609 announce ANY
+remarks:        ----------------
+remarks:        RSNET
+import:         from AS43797 action pref=130; accept AS43797
+export:         to AS43797 announce ANY
+remarks:        ----------------
+remarks:        PULKOVO
+import:         from AS198626 action pref=130; accept AS198626
+export:         to AS198626 announce ANY
+remarks:        ----------------
+remarks:        Electron-M
+import:         from AS31189 action pref=130; accept AS31189
+export:         to AS31189 announce ANY
+remarks:        ----------------
+remarks:        MULTICARTA
+import:         from AS43673 action pref=130; accept AS43673
+export:         to AS43673 announce ANY
+remarks:        ----------------
+remarks:        ATS_SMOLNOGO
+import:         from AS57334 action pref=130; accept AS57334
+export:         to AS57334 announce ANY
+remarks:        ----------------
+remarks:        ROSENGINEERING
+import:         from AS3180 action pref=130; accept AS3180
+export:         to AS3180 announce ANY
+remarks:        ----------------
+remarks:        XTRIM
+import:         from AS44484 action pref=130; accept AS44484
+export:         to AS44484 announce ANY
+remarks:        ----------------
+remarks:        LESTA
+import:         from AS57572 action pref=130; accept AS57572
+export:         to AS57572 announce ANY
+remarks:        ----------------
+remarks:        A-TELECOM
+import:         from AS57022 action pref=130; accept AS57022
+export:         to AS57022 announce ANY
+remarks:        ----------------
+remarks:        AuctionHouse
+import:         from AS59434 action pref=130; accept AS59434
+export:         to AS59434 announce ANY
+remarks:        ----------------
+remarks:        AK-ROSSIYA
+import:         from AS59722 action pref=130; accept AS59722
+export:         to AS59722 announce ANY
+remarks:        ----------------
+remarks:        INVESTTORGBANK
+import:         from AS50416 action pref=130; accept AS50416
+export:         to AS50416 announce ANY
+remarks:        ----------------
+remarks:        NEC-NEVA
+import:         from AS199674 action pref=130; accept AS199674
+export:         to AS199674 announce ANY
+remarks:        ----------------
+remarks:        KIBERRI-ELEKTRONIKS
+import:         from AS59511 action pref=130; accept AS59511
+export:         to AS59511 announce ANY
+remarks:        ----------------
+remarks:        SUPERWAVE-GROUP
+import:         from AS61259 action pref=130; accept AS61259
+export:         to AS61259 announce ANY
+remarks:        ----------------
+remarks:        Home Computer Networks
+import:         from AS51669 action pref=130; accept AS51669
+export:         to AS51669 announce ANY
+remarks:        ----------------
+remarks:        MediaSeti
+import:         from AS41515 action pref=130; accept AS41515
+export:         to AS41515 announce ANY
+remarks:        ----------------
+remarks:        PMEF
+import:         from AS199658 action pref=130; accept AS199658
+export:         to AS199658 announce ANY
+remarks:        ----------------
+remarks:        NEW LINE TELECOM
+import:         from AS31277 action pref=130; accept AS31277
+export:         to AS31277 announce ANY
+remarks:        ----------------
+remarks:        SIGMA-SOFT
+import:         from AS199112 action pref=130; accept AS199112
+export:         to AS199112 announce ANY
+remarks:        ----------------
+remarks:        Systemnaya Integraciya
+import:         from AS199266 action pref=130; accept AS199266
+export:         to AS199266 announce ANY
+remarks:        ----------------
+remarks:        Sovcomflot
+import:         from AS44665 action pref=130; accept AS44665
+export:         to AS44665 announce ANY
+remarks:        ----------------
+remarks:        Lanamar
+import:         from AS59516 action pref=130; accept AS-LANAMAR
+export:         to AS59516 announce ANY
+remarks:        ----------------
+remarks:        ERA-HPC
+import:         from AS60913 action pref=130; accept AS60913
+export:         to AS60913 announce ANY
+remarks:        ----------------
+remarks:        DOZOR-TELEPORT
+import:         from AS41942 action pref=130; accept AS-DOZOR
+export:         to AS41942 announce ANY
+remarks:        ----------------
+remarks:        LUKOIL-INFORM
+import:         from AS13105 action pref=130; accept AS13105
+export:         to AS13105 announce ANY
+remarks:        ----------------
+remarks:        UNET
+import:         from AS42518 action pref=130; accept AS-UNETCOMRU
+export:         to AS42518 announce ANY
+remarks:        ----------------
+remarks:        ATCOM
+import:         from AS60623 action pref=130; accept AS60623
+export:         to AS60623 announce ANY
+remarks:        ----------------
+remarks:        PRESTIZH-INTERNET
+import:         from AS12772 action pref=130; accept AS-ENFORTA
+export:         to AS12772 announce ANY
+remarks:        ----------------
+remarks:        MASTER-IT
+import:         from AS34866 action pref=130; accept AS34866
+export:         to AS34866 announce ANY
+remarks:        ----------------
+remarks:        STM
+import:         from AS51700 action pref=130; accept AS51700
+export:         to AS51700 announce ANY
+remarks:        ----------------
+remarks:        IMPULS-TV
+import:         from AS59549 action pref=130; accept AS59549
+export:         to AS59549 announce ANY
+remarks:        ----------------
+remarks:        KORUS
+import:         from AS198117 action pref=130; accept AS198117
+export:         to AS198117 announce ANY
+remarks:        ----------------
+remarks:        EKRAN
+import:         from AS196742 action pref=130; accept AS-EKRAN
+export:         to AS196742 announce ANY
+remarks:        ----------------
+remarks:        BNEDV-NET
+import:         from AS60684 action pref=130; accept AS60684
+export:         to AS60684 announce ANY
+remarks:        ----------------
+remarks:        KING-ONLINE
+import:         from AS48481 action pref=130; accept AS48481
+export:         to AS48481 announce ANY
+remarks:        ----------------
+remarks:        MIRAN
+import:         from AS41722 action pref=130; accept AS-MIRAN
+export:         to AS41722 announce ANY
+remarks:        ----------------
+remarks:        NWLINK
+import:         from AS42893 action pref=130; accept AS42893
+export:         to AS42893 announce ANY
+remarks:        ----------------
+remarks:        LMS
+import:         from AS23619 action pref=130; accept AS23619
+export:         to AS23619 announce ANY
+remarks:        ----------------
+remarks:        TVSZ
+import:         from AS42340 action pref=130; accept AS42340
+export:         to AS42340 announce ANY
+remarks:        ----------------
+remarks:        LENENERGO
+import:         from AS8662 action pref=130; accept AS8662
+export:         to AS8662 announce ANY
+remarks:        ----------------
+remarks:        EQUALINK
+import:         from AS51093 action pref=130; accept AS51093
+export:         to AS51093 announce ANY
+remarks:        ----------------
+remarks:        BETA-TELECOM
+import:         from AS39710 action pref=130; accept AS39710
+export:         to AS39710 announce ANY
+remarks:        ----------------
+remarks:        RU-SERVICE
+import:         from AS8888 action pref=130; accept AS8888
+export:         to AS8888 announce ANY
+remarks:        ----------------
+remarks:        GORINFOSET
+import:         from AS51552 action pref=130; accept AS51552
+export:         to AS51552 announce ANY
+remarks:        ----------------
+remarks:        AEROCLUB
+import:         from AS48499 action pref=130; accept AS48499
+export:         to AS48499 announce ANY
+remarks:        ----------------
+remarks:        WELLTELECOM
+import:         from AS57246 accept AS57246
+export:         to AS57246 announce ANY
+remarks:        ----------------
+remarks:        ROSTA
+import:         from AS201465 accept AS201465
+export:         to AS201465 announce ANY
+remarks:        ----------------
+remarks:        SOFTBALANS
+import:         from AS201797 accept AS201797
+export:         to AS201797 announce ANY
+remarks:        ----------------
+remarks:        SPBEX
+import:         from AS50674 accept AS50674
+export:         to AS50674 announce ANY
+remarks:        ----------------
+remarks:        Bank Sovetsky
+import:         from AS51638 accept AS51638
+export:         to AS51638 announce ANY
+remarks:        ----------------
+remarks:        Sodruzhestvo-SOYA
+import:         from AS42528 accept AS42528
+export:         to AS42528 announce ANY
+remarks:        ----------------
+remarks:        SANG
+import:         from AS201496 accept AS201496
+export:         to AS201496 announce ANY
+remarks:        ----------------
+remarks:        LINIYA SVYAZI
+import:         from AS35631 accept AS-BALTLINE
+export:         to AS35631 announce ANY
+remarks:        ----------------
+remarks:        BERCUT
+import:         from AS201016 accept AS201016
+export:         to AS201016 announce ANY
+remarks:        ----------------
+remarks:        BFU.Kanta
+import:         from AS9124 accept AS9124
+export:         to AS9124 announce ANY
+remarks:        ----------------
+remarks:        LIBERTI
+import:         from AS200823 accept AS200823
+export:         to AS200823 announce ANY
+remarks:        ----------------
+remarks:        MOSCOMSVYAZ
+import:         from AS42653 accept AS42653
+export:         to AS42653 announce ANY
+remarks:        ----------------
+remarks:        PETROLESPORT
+import:         from AS204219 accept AS204219
+export:         to AS204219 announce ANY
+remarks:        ----------------
+remarks:        Nauka-Telecom
+import:         from AS59840 accept AS59840
+export:         to AS59840 announce ANY
+remarks:        ----------------
+remarks:        BALTBANK
+import:         from AS28809 accept AS-NS-Luxoft
+export:         to AS28809 announce ANY
+remarks:        ----------------
+remarks:        OMZ-IT
+import:         from AS34329 accept AS34329
+export:         to AS34329 announce ANY
+remarks:        ----------------
+remarks:        CentrofinansGrupp
+import:         from AS203173 accept AS203173
+export:         to AS203173 announce ANY
+remarks:        ----------------
+remarks:        ARKADIA
+import:         from AS203458 accept AS203458
+export:         to AS203458 announce ANY
+remarks:        ----------------
+remarks:        ENEL
+import:         from AS56982 accept AS56982
+export:         to AS56982 announce ANY
+remarks:        ----------------
+remarks:        KTSP
+import:         from AS202642 accept AS202642
+export:         to AS202642 announce ANY
+remarks:        ----------------
+remarks:        ON.NET
+import:         from AS47746 accept AS47746
+export:         to AS47746 announce ANY
+remarks:        ----------------
+remarks:        ATK
+import:         from AS51998 accept AS51998
+export:         to AS51998 announce ANY
+remarks:        ----------------
+remarks:        GAZPROM
+import:         from AS204230 accept AS204230
+export:         to AS204230 announce ANY
+remarks:        ----------------
+remarks:        NEWKONTAKT
+import:         from AS58084 accept AS58084
+export:         to AS58084 announce ANY
+remarks:        ----------------
+remarks:        First Container Terminal
+import:         from AS60837 accept AS60837
+export:         to AS60837 announce ANY
+remarks:        ----------------
+remarks:        KGILC
+import:         from AS200123 accept AS200123
+export:         to AS200123 announce ANY
+remarks:        ----------------
+remarks:        EUROHIMSERVICE
+import:         from AS47231 accept AS47231
+export:         to AS47231 announce ANY
+remarks:        ----------------
+remarks:        KSB
+import:         from AS48201 accept AS48201
+export:         to AS48201 announce ANY
+remarks:        ----------------
+remarks:        Light Port
+import:         from AS59440 accept AS59440
+export:         to AS59440 announce ANY
+remarks:        ----------------
+remarks:        GRAND-AUTO
+import:         from AS58178 accept AS58178
+export:         to AS58178 announce ANY
+remarks:        ----------------
+remarks:        MODUL
+import:         from AS44263 accept AS44263
+export:         to AS44263 announce ANY
+remarks:        ----------------
+remarks:        MERKURIY
+import:         from AS57212 accept AS57212
+export:         to AS57212 announce ANY
+remarks:        ----------------
+remarks:        IKS-TELEKOM
+import:         from AS58007 accept AS58007
+export:         to AS58007 announce ANY
+remarks:        ----------------
+remarks:        FOSAGRO
+import:         from AS56916 accept AS56916
+export:         to AS56916 announce ANY
+remarks:        ----------------
+remarks:        PARK-YANINO
+import:         from AS212273 accept AS212273
+export:         to AS212273 announce ANY
+remarks:        ----------------
+remarks:        GridDinamix
+import:         from AS57031 accept AS57031
+export:         to AS57031 announce ANY
+remarks:        ----------------
+remarks:        ORBITA-PLUS-VYAZMA
+import:         from AS57471 accept AS57471
+export:         to AS57471 announce ANY
+remarks:        ----------------
+remarks:        GLONASS
+import:         from AS38928 accept AS38928
+export:         to AS38928 announce ANY
+remarks:        ----------------
+remarks:        ARH-MIAC
+import:         from AS62056 accept AS62056
+export:         to AS62056 announce ANY
+remarks:        ----------------
+remarks:        NEVSKIYSYNDICAT
+import:         from AS205297 accept AS205297
+export:         to AS205297 announce ANY
+remarks:        ----------------
+remarks:        SEVMASH-ARH
+import:         from AS48853 accept AS48853
+export:         to AS48853 announce ANY
+remarks:        ----------------
+remarks:        ITB-IVANOVO
+import:         from AS29114 accept AS-RUBIT
+export:         to AS29114 announce ANY
+remarks:        ----------------
+remarks:        CENTRINFORM-AS
+import:         from AS3191 accept AS3191
+export:         to AS3191 announce ANY
+remarks:        ----------------
+remarks:        PETER-SERVICE
+import:         from AS48102 accept AS48102
+export:         to AS48102 announce ANY
+remarks:        ----------------
+remarks:        LADOGATELECOM
+import:         from AS44067 accept AS-SET-LADOGATELECOM
+export:         to AS44067 announce ANY
+remarks:        ----------------
+remarks:        TENZOR
+import:         from AS39864 accept AS-DPC24
+export:         to AS39864 announce ANY
+remarks:        ----------------
+remarks:        OPTIC
+import:         from AS2585 accept AS-OPTICTELECOMSPB
+export:         to AS2585 announce ANY
+remarks:        ----------------
+import:         from AS5495 accept AS-SPBU
+export:         to AS5495 announce ANY
+remarks:        ----------------
+remarks:        ANT-DS
+import:         from AS209096 accept AS209096
+export:         to AS209096 announce ANY
+remarks:        ----------------
+remarks:        RTT
+import:         from AS58042 accept AS58042
+export:         to AS58042 announce ANY
+remarks:        ----------------
+remarks:        TELEINKOMSERV
+import:         from AS50870 accept AS50870
+export:         to AS50870 announce ANY
+remarks:        ----------------
+remarks:        ZENIT-ARENA
+import:         from AS34944 accept AS-ZENIT-ARENA
+export:         to AS34944 announce ANY
+remarks:        ----------------
+remarks:        SBERBANK
+import:         from AS205161 accept AS205161
+export:         to AS205161 announce ANY
+remarks:        ----------------
+remarks:        CITYLINE
+import:         from AS57451 accept AS57451
+export:         to AS57451 announce ANY
+remarks:        ----------------
+remarks:        GORIZONT-YAROSLAVL
+import:         from AS45005 accept AS45005
+export:         to AS45005 announce ANY
+remarks:        ----------------
+remarks:        BARNIUS
+import:         from AS208100 accept AS208100
+export:         to AS208100 announce ANY
+remarks:        ----------------
+remarks:        OSS
+import:         from AS207665 accept AS207665
+export:         to AS207665 announce ANY
+remarks:        ----------------
+remarks:        PETERSBURG METRO
+import:         from AS207438 accept AS207438
+export:         to AS207438 announce ANY
+remarks:        ----------------
+remarks:        LADOGA TELECOM
+import:         from AS64469 accept AS64469
+export:         to AS64469 announce ANY
+remarks:        ----------------
+remarks:        MEDLINX
+import:         from AS208411 accept AS208411
+export:         to AS208411 announce ANY
+remarks:        ----------------
+remarks:        NIAC
+import:         from AS47822 accept AS47822
+export:         to AS47822 announce ANY
+remarks:        ----------------
+remarks:        GAMEINSIGHT
+import:         from AS209713 accept AS209713
+export:         to AS209713 announce ANY
+remarks:        ----------------
+remarks:        RENEYSSANS
+import:         from AS51667 accept AS51667
+export:         to AS51667 announce ANY
+remarks:        ----------------
+remarks:        CITMKU
+import:         from AS62402 accept AS62402
+export:         to AS62402 announce ANY
+remarks:        ----------------
+remarks:        DEPCIFRRAZVSML
+import:         from AS205060 accept AS205060
+export:         to AS205060 announce ANY
+remarks:        ----------------
+remarks:        UIKT
+import:         from AS61416 accept AS61416
+export:         to AS61416 announce ANY
+remarks:        ----------------
+remarks:        WDT-AS
+import:         from AS211525 accept AS211525
+export:         to AS211525 announce ANY
+remarks:        ----------------
+remarks:        PLAZA
+import:         from AS58139 accept AS58139
+export:         to AS58139 announce ANY
+remarks:        ----------------
+remarks:        YUVELIT
+import:         from AS207382 accept AS207382
+export:         to AS207382 announce ANY
+remarks:        ----------------
+remarks:        HRABROVO
+import:         from AS29038 accept AS29038
+export:         to AS29038 announce ANY
+remarks:        ----------------
+remarks:        STARLAYN
+import:         from AS201511 accept AS201511
+export:         to AS201511 announce ANY
+remarks:        -----------------
+remarks:        INTELLIDZHEY-LABS
+import:         from AS209680 accept AS209680
+export:         to AS209680 announce ANY
+remarks:        -----------------
+remarks:        FASTMILE
+import:         from AS208447 accept as-fm
+export:         to AS208447 announce ANY
+remarks:        -----------------
+remarks:        CIT-VOLOGDA
+import:         from AS200496 accept AS200496
+export:         to AS200496 announce ANY
+remarks:        -----------------
+remarks:        LENVENDO
+import:         from AS47168 accept AS47168
+export:         to AS47168 announce ANY
+remarks:        -----------------
+remarks:        BankSPB
+import:         from AS24913 accept AS24913
+import:         from AS24913 accept AS39254
+export:         to AS24913 announce ANY
+remarks:        -----------------
+remarks:        BUSINESS-TRADE
+import:         from AS207168 accept AS207168
+export:         to AS207168 announce ANY
+remarks:        -----------------
+remarks:        Er-Telecom
+import:         from AS212494 accept AS212494
+export:         to AS212494 announce ANY
+remarks:        -----------------
+remarks:        CMIRIT
+import:         from AS197780 accept AS197780
+export:         to AS197780 announce ANY
+remarks:        -----------------
+remarks:        UNITEL
+import:         from AS62205 accept AS-UNITELECOM-NET
+export:         to AS62205 announce ANY
+remarks:        -----------------
+remarks:        Stroyproekt
+import:         from AS200453 accept AS200453
+export:         to AS200453 announce ANY
+remarks:        -----------------
+remarks:        SIMPLTELEKOM
+import:         from AS211637 accept AS211637
+export:         to AS211637 announce ANY
+remarks:        -----------------
+remarks:        MEDIALANDTECHNOLOGY
+import:         from AS206728 accept AS206728:AS-MEDIALANDTECHNOLOGY
+export:         to AS206728 announce ANY
+remarks:        -----------------
+remarks:        GBNHOST
+import:         from AS35112 accept AS35112
+export:         to AS35112 announce ANY
+remarks:        -----------------
+remarks:        EIRC
+import:         from AS57557 accept AS57557
+export:         to AS57557 announce ANY
+remarks:        -----------------
+remarks:        PAROHODSTVO
+import:         from AS206536 accept AS206536
+export:         to AS206536 announce ANY
+remarks:        -----------------
+remarks:        KSB
+import:         from AS56619 accept AS56619
+export:         to AS56619 announce ANY
+remarks:        -----------------
+remarks:        GRINATOM
+import:         from AS57573 accept AS57573
+export:         to AS57573 announce ANY
+remarks:        -----------------
+remarks:        ARKHTELECENTR
+import:         from AS44662 accept AS44662
+export:         to AS44662 announce ANY
+remarks:        -----------------
+remarks:        ULTRAMAR
+import:         from AS214683 accept AS214683
+export:         to AS214683 announce ANY
+remarks:        -----------------
+remarks:        KATARSIS
+import:         from AS30924 accept AS30924
+export:         to AS30924 announce ANY
+remarks:        -----------------
+remarks:        LIPTSoft
+import:         from AS215983 accept AS215983
+export:         to AS215983 announce ANY
+remarks:        =========
+remarks:        -----------------------------------------------
+remarks:        --- AS20632 internal community:
+remarks:        -----------------------------------------------
+remarks:        20632:65XYZ
+remarks:        -----------------------------------------------
+remarks:        Y=0 Internal prefix
+remarks:        Y=1 Customers prefix
+remarks:        Y=2 Private peers prefix
+remarks:        Y=3 IX-peers prefix
+remarks:        Y=4 Uplinks prefix
+remarks:        Y=5 Backup uplinks prefix
+remarks:        X=3,Z=0 Kaliningrad
+remarks:        X=3,Z=2 Yaroslavle
+remarks:        X=4,Z=1 St.Petersburg
+remarks:        X=4,Z=2 Moscow
+remarks:        X=4,Z=3 Pskov
+remarks:        X=4,Z=4 Novgorod the Great
+remarks:        X=4,Z=5 Petrozavodsk
+remarks:        X=4,Z=6 Arhangelsk
+remarks:        X=4,Z=7 Murmansk
+remarks:        X=4,Z=8 London
+remarks:        X=4,Z=9 NewYork
+remarks:        20632:REMOTE_AS
+remarks:        -----------------------------------------------
+remarks:        --- AS20632 customer community:
+remarks:        --- Last update: 25.09.2009
+remarks:        -----------------------------------------------
+remarks:        WARNING ! ! !
+remarks:        We do not accept no-export community;
+remarks:        Any other communities are deleted !
+remarks:        -----------------------------------------------
+remarks:        20632:64XXY
+remarks:        XX=00 All (include internal & customer)
+remarks:        XX=10 All IXs
+remarks:        XX=11 SPB-IX
+remarks:        XX=12 MSK-IX
+remarks:        XX=18 LINX
+remarks:        XX=19 NY-IX
+remarks:        XX=20 All private peers
+remarks:        XX=21 Private peer in St.Petersburg
+remarks:        XX=22 Private peer in Moscow
+remarks:        XX=23 Private peer in Pskov
+remarks:        XX=24 Private peer in Novgorod the Great
+remarks:        XX=25 Private peer in Petrozavodsk
+remarks:        XX=26 Private peer in Arhangelsk
+remarks:        XX=27 Private peer in Murmansk
+remarks:        XX=28 Private peer in London
+remarks:        XX=29 Private peer in New York
+remarks:        XX=30 All uplinks
+remarks:        XX=31 RTComm (AS8342)
+remarks:        XX=32 Telia (AS1299)
+remarks:        XX=33 RETN (AS9002)
+remarks:        XX=34 NTT Verio (AS2914)
+remarks:        XX=35 GoldenTelecom (AS3216)
+remarks:        XX=36 Synterra (AS6854)
+remarks:        XX=37 Comstar (AS6731)
+remarks:        XX=38 RosTeleCom (AS12389)
+remarks:        XX=39 RasCom (AS20764)
+remarks:        XX=50 Private peer in Kaliningrad
+remarks:        Y=0 Do not advertise
+remarks:        Y=1,2,3,4,5 Prepend 20632 1,2,3,4 or 5 times
+remarks:        Y=9 Backup community. Set lowest possible
+remarks:        local preference, except IXs and private peers
+remarks:        --------------------------------------------------
+remarks:        Looking Glass http://lg.megafon.ru
+remarks:        --------------------------------------------------
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         PSTAR-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-WEST-MNT
+admin-c:        MFON-RIPE
+tech-c:         MFON-RIPE
+created:        2002-05-22T08:31:37Z
+last-modified:  2024-12-06T07:06:33Z
+source:         RIPE
+
+
+
+aut-num:        AS206365
+as-name:        ROSSIA-AIRLINES-AS
+org:            ORG-OR23-RIPE
+import:         from AS25159 accept ANY
+export:         to AS25159 announce AS206365
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS206365
+admin-c:        MY1318-RIPE
+tech-c:         MY1318-RIPE
+tech-c:         MY1318-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2017-02-03T14:17:54Z
+last-modified:  2020-11-16T17:53:29Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-OM1-RIPE
+
+
+
+aut-num:        AS20663
+as-name:        INAR-VOLOGDA-AS
+org:            ORG-OM1-RIPE
+remarks:        ----------------
+remarks:        RTComm.RU
+import:         from AS8342 action pref=100; accept AS8342
+export:         to AS8342 announce AS20663
+remarks:        ----------------
+remarks:        INAR-ARH
+import:         from AS12396 action pref=100; accept AS12396
+export:         to AS12396 announce AS20663
+remarks:        ----------------
+remarks:        CTK
+import:         from AS13095 action pref=100; accept AS13095 AS21191
+export:         to AS13095 announce ANY
+remarks:        ----------------
+remarks:        RT
+import:         from AS12389 action pref=100; accept AS-ROSTELECOM
+export:         to AS12389 announce AS20663
+remarks:        =========
+remarks:
+admin-c:        NMNW-RIPE
+tech-c:         NMNW-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INAR-RIPE-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-GNOC-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2002-05-31T13:35:04Z
+last-modified:  2017-11-15T09:17:21Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS209660
+as-name:        OSASEVER-AS
+org:            ORG-SASL2-RIPE
+import:         from AS20632 accept ANY
+export:         to AS20632 announce AS209660
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS209660
+admin-c:        MFON-RIPE
+admin-c:        AL16590-RIPE
+tech-c:         MFON-RIPE
+tech-c:         AL16590-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         NCH-SPN-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2018-12-27T12:54:48Z
+last-modified:  2020-11-16T17:55:43Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-OM1-RIPE
+
+
+
+aut-num:        AS24913
+as-name:        BANKSPB
+org:            ORG-BSPO1-RIPE
+import:         from AS6854 action pref=150; accept ANY
+import:         from AS2854 action pref=50; accept ANY
+import:         from AS20632 action pref=200; accept ANY
+remarks:        Accept all route from SZT
+import:         from AS12389 accept ANY
+import:         from AS39254 accept AS39254
+export:         to AS6854 announce AS24913
+export:         to AS2854 announce AS24913
+export:         to AS39254 announce ANY
+export:         to AS20632 announce AS24913
+export:         to AS20632 announce AS39254
+remarks:        Announce AS24913 and AS39254 to SZT
+export:         to AS12389 announce AS24913
+export:         to AS12389 announce AS39254
+admin-c:        DTD1-RIPE
+admin-c:        DA6629-RIPE
+tech-c:         DTD1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MEGAFON-WEST-MNT
+mnt-by:         BSPB-MNT
+created:        2002-05-18T08:26:25Z
+last-modified:  2025-03-13T08:12:13Z
+source:         RIPE
+sponsoring-org: ORG-OM1-RIPE
+
+
+
+aut-num:        AS25159
+as-name:        SONICDUO-AS
+org:            ORG-OM1-RIPE
+remarks:        --- UpStreams ---
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS31133 announce AS-MFMSK
+remarks:        --- Customers ---
+import:         from AS5467 accept AS-MIPT
+export:         to AS5467 announce ANY
+import:         from AS6854 accept {0.0.0.0/0};
+export:         to AS6854 announce {83.149.8.0/23, 85.26.155.0/24};
+import:         from AS8441 accept AS8441
+export:         to AS8441 announce ANY
+import:         from AS8901 accept AS8901
+export:         to AS8901 announce ANY
+import:         from AS8904 accept AS8904
+export:         to AS8904 announce ANY
+import:         from AS12418 accept AS12418
+export:         to AS12418 announce ANY
+import:         from AS21231 accept AS21231
+export:         to AS21231 announce ANY
+import:         from AS25189 accept AS-COUNTRY
+export:         to AS25189 announce ANY
+import:         from AS31379 accept AS31379
+export:         to AS31379 announce ANY
+import:         from AS31324 accept AS31324
+export:         to AS31324 announce ANY
+import:         from AS31600 accept AS31600
+export:         to AS31600 announce ANY
+import:         from AS31720 accept AS-ENGINET
+export:         to AS31720 announce ANY
+import:         from AS34030 accept AS34030
+export:         to AS34030 announce ANY
+import:         from AS34249 accept AS34249
+export:         to AS34249 announce ANY
+import:         from AS34580 accept AS34580:AS-UNITLINEMSK
+export:         to AS34580 announce ANY
+import:         from AS39154 accept AS39154
+export:         to AS39154 announce ANY
+import:         from AS39266 accept AS39266:AS-BIZTEL
+export:         to AS39266 announce ANY
+import:         from AS39678 accept AS39678
+export:         to AS39678 announce ANY
+import:         from AS39684 accept AS39684
+export:         to AS39684 announce ANY
+import:         from AS41615 accept AS41615
+export:         to AS41615 announce ANY
+import:         from AS41706 accept AS41706
+export:         to AS41706 announce ANY
+import:         from AS47860 accept AS47860
+export:         to AS47860 announce ANY
+import:         from AS42674 accept AS42674
+export:         to AS42674 announce ANY
+import:         from AS43045 accept AS-SvHolding
+export:         to AS43045 announce ANY
+import:         from AS43201 accept AS43201
+export:         to AS43201 announce ANY
+import:         from AS44094 accept AS-WEBHOST1
+export:         to AS44094 announce ANY
+import:         from AS44621 accept AS44621
+export:         to AS44621 announce ANY
+import:         from AS44704 accept AS44704
+export:         to AS44704 announce ANY
+import:         from AS47258 accept AS47258
+export:         to AS47258 announce ANY
+import:         from AS47358 accept AS47358
+export:         to AS47358 announce ANY
+import:         from AS47395 accept AS47395
+export:         to AS47395 announce ANY
+import:         from AS47437 accept AS47437
+export:         to AS47437 announce ANY
+import:         from AS47761 accept AS47761
+export:         to AS47761 announce ANY
+import:         from AS47808 accept AS47808
+export:         to AS47808 announce ANY
+import:         from AS47827 accept AS47827
+export:         to AS47827 announce ANY
+import:         from AS48143 accept AS48143
+export:         to AS48143 announce ANY
+import:         from AS48848 accept AS-MCM
+export:         to AS48848 announce ANY
+import:         from AS49186 accept AS49186
+export:         to AS49186 announce ANY
+import:         from AS49730 accept AS49730
+export:         to AS49730 announce ANY
+import:         from AS50038 accept AS50038
+export:         to AS50038 announce ANY
+import:         from AS50341 accept AS50341
+export:         to AS50341 announce ANY
+import:         from AS50374 accept AS50374
+export:         to AS50374 announce ANY
+import:         from AS50619 accept AS50619
+export:         to AS50619 announce ANY
+import:         from AS51170 accept AS51170
+export:         to AS51170 announce ANY
+import:         from AS51283 accept AS51283
+export:         to AS51283 announce ANY
+import:         from AS51309 accept AS51309
+export:         to AS51309 announce ANY
+import:         from AS51339 accept AS51339
+export:         to AS51339 announce ANY
+import:         from AS51437 accept AS51437
+export:         to AS51437 announce ANY
+import:         from AS51472 accept AS51472:AS-BIZTEL
+export:         to AS51472 announce ANY
+import:         from AS51771 accept AS51771
+export:         to AS51771 announce ANY
+import:         from AS51811 accept AS51811
+export:         to AS51811 announce ANY
+import:         from AS56996 accept AS56996
+export:         to AS56996 announce ANY
+import:         from AS57421 accept AS57421
+export:         to AS57421 announce AS25159 AND {0.0.0.0/0};
+export:         to AS57449 announce ANY
+import:         from AS57449 accept AS57449
+export:         to AS57671 announce ANY
+import:         from AS57671 accept AS57671
+import:         from AS57909 accept AS57909
+export:         to AS57909 announce ANY
+import:         from AS58009 accept AS58009
+export:         to AS58009 announce ANY
+import:         from AS59994 accept AS59994
+export:         to AS59994 announce ANY
+import:         from AS60151 accept AS60151
+export:         to AS60151 announce ANY
+import:         from AS60519 accept AS60519
+export:         to AS60519 announce ANY
+import:         from AS60642 accept AS60642
+export:         to AS60642 announce ANY
+import:         from AS61038 accept AS61038
+export:         to AS61038 announce AS25159 AND {0.0.0.0/0};
+import:         from AS61378 accept AS61378
+export:         to AS61378 announce ANY
+import:         from AS48739 accept AS48739
+export:         to AS48739 announce ANY
+import:         from AS50338 accept AS50338
+export:         to AS50338 announce ANY
+import:         from AS59941 accept AS59941
+export:         to AS59941 announce ANY
+import:         from AS56982 accept AS56982
+export:         to AS56982 announce ANY
+import:         from AS44479 accept AS44479
+export:         to AS44479 announce ANY
+import:         from AS49916 accept AS49916
+export:         to AS49916 announce ANY
+import:         from AS64419 accept AS64419
+export:         to AS64419 announce ANY
+import:         from AS47737 accept AS47737
+export:         to AS47737 announce ANY
+import:         from AS15559 accept AS15559
+export:         to AS15559 announce ANY
+import:         from AS15632 accept AS15632
+export:         to AS15632 announce ANY
+import:         from AS39266 accept AS39266
+export:         to AS39266 announce ANY
+import:         from AS57145 accept AS57145
+export:         to AS57145 announce ANY
+import:         from AS58094 accept AS58094
+export:         to AS58094 announce ANY
+import:         from AS41102 accept AS41102
+export:         to AS41102 announce ANY
+import:         from AS59718 accept AS59718
+export:         to AS59718 announce ANY
+import:         from AS21287 accept AS21287
+export:         to AS21287 announce ANY
+import:         from AS41029 accept AS41029
+export:         to AS41029 announce ANY
+import:         from AS41361 accept AS41361
+export:         to AS41361 announce ANY
+import:         from AS57073 accept AS57073
+export:         to AS57073 announce ANY
+import:         from AS56483 accept AS56483
+export:         to AS56483 announce ANY
+import:         from AS51538 accept AS-TEKCOM
+export:         to AS51538 announce ANY
+import:         from AS47747 accept AS-TMK
+export:         to AS47747 announce ANY
+import:         from AS43009 accept AS43009
+export:         to AS43009 announce ANY
+import:         from AS57573 accept AS57573
+export:         to AS57573 announce ANY
+import:         from AS57645 accept AS57645
+export:         to AS57645 announce ANY
+import:         from AS51994 accept AS51994
+export:         to AS51994 announce ANY
+import:         from AS42072 accept AS42072
+export:         to AS42072 announce ANY
+import:         from AS42554 accept AS42554
+export:         to AS42554 announce ANY
+import:         from AS50002 accept AS50002
+export:         to AS50002 announce ANY
+import:         from AS61379 accept AS61379
+export:         to AS61379 announce ANY
+import:         from AS34662 accept AS34662
+export:         to AS34662 announce ANY
+import:         from AS57268 accept AS57268
+export:         to AS57268 announce ANY
+import:         from AS60864 accept AS60864
+export:         to AS60864 announce ANY
+remarks:        --- for 4byte AS ---
+import:         from AS197453 accept AS197453
+export:         to AS197453 announce ANY
+import:         from AS198902 accept AS198902
+export:         to AS198902 announce AS25159 AND {0.0.0.0/0};
+import:         from AS199549 accept AS199549
+export:         to AS199549 announce ANY
+import:         from AS199798 accept AS199798
+export:         to AS199798 announce ANY
+import:         from AS199922 accept AS199922
+export:         to AS199922 announce ANY
+import:         from AS200926 accept AS200926
+export:         to AS200926 announce ANY
+import:         from AS201537 accept AS201537
+export:         to AS201537 announce ANY
+import:         from AS202000 accept AS202000
+export:         to AS202000 announce ANY
+import:         from AS202202 accept AS202202
+export:         to AS202202 announce ANY
+import:         from AS200515 accept AS200515
+export:         to AS200515 announce ANY
+import:         from AS201430 accept AS201430
+export:         to AS201430 announce ANY
+import:         from AS48719 accept AS-INTELSVYAZ
+import:         from AS30869 accept AS30869
+export:         to AS48719 announce ANY
+export:         to AS30869 announce ANY
+import:         from AS49012 accept AS49012
+export:         to AS49012 announce ANY
+import:         from AS52006 accept AS52006
+export:         to AS52006 announce ANY
+import:         from AS204071 accept AS-NATNET
+export:         to AS204071 announce ANY
+import:         from AS34500 accept AS34500
+export:         to AS34500 announce ANY
+import:         from AS51680 accept AS51680
+export:         to AS51680 announce ANY
+import:         from AS21252 accept AS21252
+export:         to AS21252 announce ANY
+import:         from AS12921 accept AS12921
+export:         to AS12921 announce ANY
+import:         from AS34089 accept AS34089
+export:         to AS34089 announce ANY
+import:         from AS203992 accept AS203992
+export:         to AS203992 announce ANY
+import:         from AS50464 accept AS50464
+export:         to AS50464 announce ANY
+import:         from AS61131 accept AS61131
+export:         to AS61131 announce ANY
+import:         from AS41619 accept AS41619
+export:         to AS41619 announce ANY
+import:         from AS204237 accept AS204237
+export:         to AS204237 announce ANY
+import:         from AS21287 accept AS-ITN
+export:         to AS21287 announce ANY
+import:         from AS200575 accept AS200575
+export:         to AS200575 announce ANY
+import:         from AS203269 accept AS203269
+export:         to AS202760 announce ANY
+import:         from AS202760 accept AS202760
+export:         to AS203269 announce ANY
+import:         from AS203196 accept AS203196
+export:         to AS203196 announce ANY
+import:         from AS204276 accept AS204276
+export:         to AS204276 announce ANY
+import:         from AS207064 accept AS207064
+export:         to AS207064 announce ANY
+import:         from AS206554 accept AS206554
+export:         to AS206554 announce ANY
+import:         from AS199572 accept AS199572
+export:         to AS199572 announce ANY
+import:         from AS202764 accept AS202764
+export:         to AS202764 announce ANY
+import:         from AS206323 accept AS206323
+export:         to AS206323 announce ANY
+import:         from AS206365 accept AS206365
+export:         to AS206365 announce ANY
+import:         from AS206153 accept AS206153
+export:         to AS206153 announce ANY
+import:         from AS205567 accept AS205567
+export:         to AS205567 announce ANY
+import:         from AS205349 accept AS205349
+export:         to AS205349 announce ANY
+import:         from AS204226 accept AS204226
+export:         to AS204226 announce ANY
+import:         from AS203832 accept AS203832
+export:         to AS203832 announce ANY
+import:         from AS196764 accept AS196764
+export:         to AS196764 announce ANY
+import:         from AS203401 accept AS203401
+export:         to AS203401 announce ANY
+import:         from AS29182 accept AS29182
+export:         to AS29182 announce ANY
+import:         from AS203843 accept AS203843
+export:         to AS203843 announce ANY
+import:         from AS39688 accept AS39688
+export:         to AS39688 announce ANY
+import:         from AS41802 accept AS41802
+export:         to AS41802 announce ANY
+import:         from AS44386 accept AS44386
+export:         to AS44386 announce ANY
+import:         from AS50797 accept AS-NORD
+export:         to AS50797 announce ANY
+import:         from AS41774 accept AS41774
+export:         to AS41774 announce ANY
+import:         from AS199444 accept AS199444
+export:         to AS199444 announce ANY
+import:         from AS200285 accept AS200285
+export:         to AS200285 announce ANY
+import:         from AS200743 accept AS200743
+export:         to AS200743 announce ANY
+import:         from AS209096 accept AS209096
+export:         to AS209096 announce ANY
+import:         from AS201788 accept AS201788
+export:         to AS201788 announce ANY
+import:         from AS209794 accept AS209794
+export:         to AS209794 announce ANY
+import:         from AS42529 accept AS42529
+export:         to AS42529 announce ANY
+import:         from AS49450 accept AS49450
+export:         to AS49450 announce ANY
+import:         from AS209787 accept AS209787
+export:         to AS209787 announce ANY
+import:         from AS208274 accept AS208274
+export:         to AS208274 announce ANY
+import:         from AS208129 accept AS208129
+export:         to AS208129 announce ANY
+import:         from AS203492 accept AS203492
+export:         to AS203492 announce ANY
+import:         from AS208165 accept AS208165
+export:         to AS208165 announce ANY
+import:         from AS207635 accept AS207635
+export:         to AS207635 announce ANY
+import:         from AS201092 accept AS201092
+export:         to AS201092 announce ANY
+import:         from AS197987 accept AS197987
+export:         to AS197987 announce ANY
+import:         from AS198806 accept AS198806
+export:         to AS198806 announce ANY
+import:         from AS197482 accept AS197482
+export:         to AS197482 announce ANY
+import:         from AS197756 accept AS197756
+export:         to AS197756 announce ANY
+import:         from AS207839 accept AS207839
+export:         to AS207839 announce ANY
+import:         from AS198819 accept AS198819
+export:         to AS198819 announce ANY
+import:         from AS204291 accept AS204291
+export:         to AS204291 announce ANY
+import:         from AS208677 accept AS208677
+export:         to AS208677 announce ANY
+import:         from AS199148 accept AS199148
+export:         to AS199148 announce ANY
+import:         from AS204357 accept AS204357
+export:         to AS204357 announce ANY
+import:         from AS24823 accept {195.242.82.0/23, 185.179.144.0/22, 185.179.144.0/24}
+export:         to AS24823 announce ANY
+import:         from AS41226 accept {195.248.69.0/24}
+export:         to AS41226 announce ANY
+import:         from AS213175 accept AS213175
+export:         to AS213175 announce ANY
+import:         from AS207024 accept AS207024
+export:         to AS207024 announce ANY
+import:         from AS211381 accept AS211381
+export:         to AS211381 announce ANY
+import:         from AS43946 accept AS43946
+export:         to AS43946 announce ANY
+import:         from AS49452 accept AS49452
+export:         to AS49452 announce ANY
+import:         from AS199790 accept AS199790
+export:         to AS199790 announce ANY
+import:         from AS207984 accept AS207984
+export:         to AS207984 announce ANY
+import:         from AS13238 accept AS13238
+export:         to AS13238 announce ANY
+import:         from AS48666 accept AS48666
+export:         to AS48666 announce ANY
+import:         from AS51218 accept AS51218
+export:         to AS51218 announce ANY
+import:         from AS210410 accept AS210410
+export:         to AS210410 announce ANY
+import:         from AS210239 accept AS210239
+export:         to AS210239 announce ANY
+import:         from AS208447 accept AS208447
+export:         to AS208447 announce ANY
+import:         from AS41388 accept AS41388
+export:         to AS41388 announce ANY
+import:         from AS56820 accept AS56820
+export:         to AS56820 announce ANY
+import:         from AS212747 accept AS212747
+export:         to AS212747 announce ANY
+import:         from AS199624 accept AS199624
+export:         to AS199624 announce ANY
+import:         from AS51642 accept AS51642
+export:         to AS51642 announce ANY
+import:         from AS50276 accept AS50276
+export:         to AS50276 announce ANY
+import:         from AS196667 accept AS196667
+export:         to AS196667 announce ANY
+import:         from AS44378 accept AS44378
+export:         to AS44378 announce ANY
+import:         from AS43670 accept AS43670
+export:         to AS43670 announce ANY
+import:         from AS31174 accept AS31174
+export:         to AS31174 announce ANY
+import:         from AS206653 accept AS206653
+export:         to AS206653 announce ANY
+import:         from AS212260 accept AS212260
+export:         to AS212260 announce ANY
+import:         from AS203270 accept AS203270
+export:         to AS203270 announce ANY
+import:         from AS34485 accept AS-SS
+export:         to AS34485 announce ANY
+import:         from AS211076 accept AS211076
+export:         to AS211076 announce ANY
+import:         from AS197489 accept AS197489
+export:         to AS197489 announce ANY
+import:         from AS207561 accept AS207561
+export:         to AS207561 announce ANY
+import:         from AS57107 accept AS57107
+export:         to AS57107 announce ANY
+import:         from AS213235 accept AS213235
+export:         to AS213235 announce ANY
+import:         from AS56619 accept AS56619
+export:         to AS56619 announce ANY
+import:         from AS20576 accept AS20576
+export:         to AS20576 announce ANY
+import:         from AS48807 accept AS48807
+export:         to AS48807 announce ANY
+import:         from AS48891 accept AS48891
+export:         to AS48891 announce ANY
+import:         from AS206424 accept AS206424
+export:         to AS206424 announce ANY
+import:         from AS62333 accept AS62333
+export:         to AS62333 announce ANY
+import:         from AS208825 accept AS208825
+export:         to AS208825 announce ANY
+import:         from AS60065 accept AS60065
+export:         to AS60065 announce ANY
+import:         from AS216236 accept AS216236
+export:         to AS216236 announce ANY
+import:         from AS43102 accept AS43102
+export:         to AS43102 announce ANY
+import:         from AS51860 accept AS-VDNH
+export:         to AS51860 announce ANY
+import:         from AS201974 accept AS201974
+export:         to AS201974 announce ANY
+import:         from AS216365 accept AS216365
+export:         to AS216365 announce ANY
+import:         from AS57785 accept AS57785
+export:         to AS57785 announce ANY
+import:         from AS215997 accept AS215997
+export:         to AS215997 announce ANY
+import:         from AS198712 accept AS198712
+export:         to AS198712 announce ANY
+import:         from AS202768 accept AS202768
+export:         to AS202768 announce ANY
+import:         from AS30853 accept AS30853
+export:         to AS30853 announce ANY
+import:         from AS64450 accept AS64450
+export:         to AS64450 announce ANY
+import:         from AS213805 accept AS213805
+export:         to AS213805 announce ANY
+import:         from AS203699 accept AS203699
+export:         to AS203699 announce ANY
+import:         from AS49675 accept AS49675
+export:         to AS49675 announce ANY
+import:         from AS44102 accept AS44102
+export:         to AS44102 announce ANY
+import:         from AS5174 accept AS5174
+export:         to AS5174 announce ANY
+import:         from AS51748 accept AS51748
+export:         to AS51748 announce ANY
+import:         from AS213829 accept AS213829
+export:         to AS213829 announce ANY
+import:         from AS35021 accept AS35021
+export:         to AS35021 announce ANY
+import:         from AS41257 accept AS41257
+export:         to AS41257 announce ANY
+import:         from AS43089 accept AS43089
+export:         to AS43089 announce ANY
+remarks:        MegaFonMoscow has PI addr. block= 193.201.228.0/22
+remarks:        ---------IPv6----------
+mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS25159
+remarks:        -------------------
+admin-c:        MFMS-RIPE
+admin-c:        MFON-RIPE
+tech-c:         MFMS-RIPE
+tech-c:         MFON-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MF-MOSCOW-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-GNOC-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2002-08-13T09:32:19Z
+last-modified:  2025-03-14T13:35:26Z
+source:         RIPE
+
+
+
+aut-num:        AS28965
+as-name:        TRK5-AS
+org:            ORG-Bc14-RIPE
+import:         from AS6850 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS25408 action pref=100; accept ANY
+import:         from AS42014 action pref=100; accept ANY
+export:         to AS6850 announce AS28965
+export:         to AS12389 announce AS28965
+export:         to AS25408 announce AS28965
+export:         to AS42014 announce AS28965
+admin-c:        MFON-RIPE
+tech-c:         MNOC1-RIPE
+status:         ASSIGNED
+mnt-by:         AS6850-MNT
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-GNOC-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2003-04-22T14:30:04Z
+last-modified:  2017-11-15T09:20:54Z
+source:         RIPE
+sponsoring-org: ORG-OM1-RIPE
+
+
+
+aut-num:        AS29648
+as-name:        COMLINE-AS
+org:            ORG-OM1-RIPE
+remarks:        ------------------------------------------------------------------
+remarks:        Upstreams:
+remarks:        ------------------------------------------------------------------
+remarks:        *** RtComm ***
+import:         { from AS8342 action pref=50; accept NOT AS29648:RS-MARTIANS; } refine { from AS8342 action community .= {29648:200, 29648:101}; accept NOT AS29648:RS-MARTIANS; }
+export:         { to AS8342 announce AS-COMLINE AND NOT community(29648:200) AND NOT community(29648:201); }
+remarks:        *** RosTelecom ***
+import:         { from AS12389 action pref=50; accept NOT AS29648:RS-MARTIANS; } refine { from AS12389 action community .= {29648:200, 29648:102}; accept NOT AS29648:RS-MARTIANS; }
+export:         { to AS12389 announce AS-COMLINE AND NOT community(29648:200) AND NOT community(29648:202); }
+remarks:        *** Synterra ***
+import:         { from AS6854 action pref=50; accept NOT AS29648:RS-MARTIANS; } refine { from AS6854 action community .= {29648:200, 29648:103}; accept NOT AS29648:RS-MARTIANS; }
+export:         { to AS6854 announce AS-COMLINE AND NOT community(29648:200) AND NOT community(29648:203); }
+remarks:        *** TransTelecom ***
+import:         { from AS28745 action pref=50; accept NOT AS29648:RS-MARTIANS; } refine { from AS28745 action community .= {29648:200, 29648:104}; accept NOT AS29648:RS-MARTIANS; }
+export:         { to AS28745 announce AS-COMLINE AND NOT community(29648:200) AND NOT community(29648:204); }
+remarks:        *** Megafon ***
+import:         { from AS31133 action pref=50; accept NOT AS29648:RS-MARTIANS; } refine { from AS31133 action community .= {29648:200, 29648:105}; accept NOT AS29648:RS-MARTIANS; }
+export:         { to AS31133 announce AS-COMLINE-NEW AND NOT community(29648:200) AND NOT community(29648:205); }
+remarks:        ------------------------------------------------------------------
+remarks:        Customers:
+remarks:        ------------------------------------------------------------------
+import:         { from AS-ANY accept NOT {0.0.0.0/0}; } refine { from AS-ANY action pref=0; accept ANY; } refine { from AS29648:AS-CUST accept (AS29648:AS-IN:PeerAS OR PeerAS) AND (<AS29648:AS-IN:PeerAS$> OR <PeerAS$>); }
+export:         { to AS29648:AS-CUST-FULL announce NOT AS29648:RS-MARTIANS; }
+remarks:
+remarks:        +-----------------------------------------------------------------
+remarks:        | Community Meaning
+remarks:        +-----------------------------------------------------------------
+remarks:        | 29648:10x -- Learned from UPSTREAM....
+remarks:        | ....x=1 -- RTComm (AS8342)
+remarks:        | ....x=2 -- RosTelecom (AS12389)
+remarks:        | ....x=3 -- Synterra (AS6854)
+remarks:        | ....x=4 -- TransTelecom (AS28745)
+remarks:        | ....x=5 -- Megafon (AS31133)
+remarks:        |
+remarks:        | 29648:20x -- When advertising to UPSTREAM...
+remarks:        | ....x=0 -- do not advertising to any upstream
+remarks:        | ....x=1 -- do not advertising to RTComm (AS8342)
+remarks:        | ....x=2 -- do not advertising to RosTelecom (AS12389)
+remarks:        | ....x=3 -- do not advertising to Synterra (AS6854)
+remarks:        | ....x=4 -- do not advertising to TransTelecom (AS28745)
+remarks:        | ....x=5 -- do not advertising to Megafon (AS31133)
+remarks:        |
+remarks:        | 29648:30x -- When advertising to RTComm... (AS8342)
+remarks:        | ....x=0 -- do not advertising to FIRST (F) Interface
+remarks:        | ....x=1 -- do not advertising to SECOND (P) Interface
+remarks:        |
+remarks:        | Any routes received from connected customers has localpref=150
+remarks:        | Any routes received from UPSTREAMS has localperf=50
+remarks:        | Any other routes has default localpref=100
+remarks:        |
+remarks:        | 29648:nn -- To change localpref of received route....
+remarks:        | ....nn=60,70,80,90 -- set localpref to selected value
+remarks:        +-----------------------------------------------------------------
+remarks:
+admin-c:        MFON-RIPE
+tech-c:         MFON-RIPE
+mnt-by:         MEGAFON-RIPE-MNT
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         COMLINE-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2003-10-31T11:36:21Z
+last-modified:  2023-06-01T10:43:31Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS31208
+as-name:        MF-CENTER-AS
+remarks:        Central branch of OJSC Megafon
+org:            ORG-OM1-RIPE
+remarks:        -- Upstreams
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS31208
+export:         to AS31133 announce AS-MF-CENTER
+remarks:        -- Clients
+import:         from AS202925 accept AS202925
+export:         to AS31133 announce AS202925
+export:         to AS202925 announce ANY
+import:         from AS58347 accept AS58347
+export:         to AS31133 announce AS58347
+export:         to AS58347 announce ANY
+import:         from AS15370 accept AS15370
+export:         to AS31133 announce AS15370
+export:         to AS15370 announce ANY
+import:         from AS197717 accept AS197717
+export:         to AS31133 announce AS197717
+export:         to AS197717 announce ANY
+import:         from AS57573 accept AS57573
+export:         to AS31133 announce AS57573
+export:         to AS57573 announce ANY
+import:         from AS61228 accept AS61228
+export:         to AS31133 announce AS61228
+export:         to AS61228 announce ANY
+import:         from AS200452 accept AS200452
+export:         to AS31133 announce AS200452
+export:         to AS200452 announce ANY
+import:         from AS21143 accept AS21143
+export:         to AS21143 announce ANY
+export:         to AS31133 announce AS21143
+import:         from AS50169 accept AS50169
+export:         to AS50169 announce ANY
+export:         to AS31133 announce AS50169
+import:         from AS51352 accept AS51352
+export:         to AS51352 announce ANY
+export:         to AS31133 announce AS51352
+import:         from AS61123 accept AS61123
+export:         to AS61123 announce ANY
+export:         to AS31133 announce AS61123
+import:         from AS201778 accept AS201778
+export:         to AS201778 announce ANY
+export:         to AS31133 announce AS201778
+import:         from AS28900 accept AS28900
+export:         to AS28900 announce ANY
+export:         to AS31133 announce AS28900
+import:         from AS199010 accept AS199010
+export:         to AS199010 announce ANY
+export:         to AS31133 announce AS199010
+import:         from AS44115 accept AS44115
+export:         to AS31133 announce AS44115
+export:         to AS44115 announce ANY
+import:         from AS204102 accept AS204102
+export:         to AS31133 announce AS204102
+export:         to AS204102 announce ANY
+export:         to AS31133 announce AS61123
+export:         to AS61123 announce ANY
+import:         from AS52197 accept AS52197
+export:         to AS31133 announce AS52197
+export:         to AS52197 announce ANY
+import:         from AS60346 accept AS60346
+export:         to AS31133 announce AS60346
+export:         to AS60346 announce ANY
+import:         from AS60518 accept AS60518
+export:         to AS31133 announce AS60518
+export:         to AS60518 announce ANY
+import:         from AS60557 accept AS60557
+export:         to AS31133 announce AS60557
+export:         to AS60557 announce ANY
+import:         from AS31008 accept AS31008
+export:         to AS31133 announce AS31008
+export:         to AS31008 announce ANY
+import:         from AS197406 accept AS197406
+export:         to AS31133 announce AS197406
+export:         to AS197406 announce ANY
+import:         from AS39395 accept AS39395
+export:         to AS31133 announce AS39395
+export:         to AS39395 announce ANY
+import:         from AS61979 accept AS61979
+export:         to AS31133 announce AS61979
+export:         to AS61979 announce ANY
+import:         from AS35479 accept AS35479
+export:         to AS31133 announce AS35479
+export:         to AS35479 announce ANY
+import:         from AS209458 accept AS209458
+export:         to AS31133 announce AS209458
+export:         to AS209458 announce ANY
+import:         from AS211714 accept AS211714
+export:         to AS211714 announce ANY
+import:         from AS198369 accept AS198369
+export:         to AS198369 announce ANY
+import:         from AS209794 accept AS209794
+export:         to AS209794 announce ANY
+import:         from AS213681 accept AS213681
+export:         to AS213681 announce ANY
+admin-c:        MWST-RIPE
+admin-c:        MIM16-RIPE
+tech-c:         MWST-RIPE
+tech-c:         MIM16-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-GNOC-MNT
+mnt-by:         MEGAFON-WEST-MNT
+mnt-by:         MF-CENTER-MNT
+admin-c:        MFON-RIPE
+tech-c:         MFON-RIPE
+created:        2004-03-23T09:41:56Z
+last-modified:  2025-04-07T10:30:40Z
+source:         RIPE
+
+
+
+aut-num:        AS31213
+as-name:        MF-NWGSM-AS
+remarks:        North-West Branch of PJSC MegaFon Network
+org:            ORG-OM1-RIPE
+remarks:
+remarks:        ------------- Uplinks ----------------------------------------
+remarks:
+remarks:        Name: MCS-Povolzhie
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-MEGAFONNW
+remarks:
+remarks:        Name: Peterstar
+import:         from AS20632 accept ANY
+export:         to AS20632 announce AS-MEGAFONNW
+remarks:
+remarks:        ------------- Private Peering ---------------------------------
+remarks:        ---------------------------------------------------------------
+remarks:
+admin-c:        MFON-RIPE
+tech-c:         MFON-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-GNOC-MNT
+mnt-by:         MEGAFON-WEST-MNT
+mnt-by:         MNT-MF-NWGSM
+created:        2004-03-23T13:17:44Z
+last-modified:  2018-09-04T10:01:40Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS31224
+as-name:        MF-UGSM-AS
+org:            ORG-OM1-RIPE
+import:         from AS8342 accept ANY
+import:         from AS20485 accept ANY
+import:         from AS2854 accept ANY
+export:         to AS8342 announce AS31224
+export:         to AS20485 announce AS31224
+export:         to AS2854 announce AS31224
+admin-c:        MFON-RIPE
+tech-c:         MFON-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MF-UGSM-MNT
+mnt-by:         MEGAFON-GNOC-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2004-03-26T09:32:41Z
+last-modified:  2019-12-04T11:18:06Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS34552
+as-name:        TKURAL-AS
+org:            ORG-OM1-RIPE
+import:         from AS29648 action pref=50; accept ANY
+export:         to AS29648 announce AS-TKURAL
+import:         from AS44845 action pref=100; accept AS44845
+export:         to AS44845 announce ANY
+import:         from AS47569 action pref=100; accept AS47569
+export:         to AS47569 announce ANY
+import:         from AS6699 action pref=100; accept AS6699
+export:         to AS6699 announce ANY
+import:         from AS16230 action pref=100; accept AS16230
+export:         to AS16230 announce ANY
+import:         from AS34322 action pref=100; accept AS34322
+export:         to AS34322 announce ANY
+import:         from AS34266 action pref=100; accept AS34266
+export:         to AS34266 announce ANY
+import:         from AS34995 action pref=100; accept AS34995
+export:         to AS34995 announce ANY
+import:         from AS41861 action pref=100; accept AS41861
+export:         to AS41861 announce ANY
+import:         from AS51316 action pref=100; accept AS51316
+export:         to AS51316 announce ANY
+import:         from AS51507 action pref=100; accept AS51507
+export:         to AS51507 announce ANY
+admin-c:        MFON-RIPE
+tech-c:         MFON-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2005-02-14T12:52:59Z
+last-modified:  2023-11-20T10:08:44Z
+source:         RIPE
+
+
+
+aut-num:        AS41976
+as-name:        SZKTI-AS
+org:            ORG-OM1-RIPE
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS20632 action pref=100; accept ANY
+export:         to AS12389 announce AS41976
+export:         to AS31133 announce AS41976
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS41976
+export:         to AS20632 announce AS41976
+import:         from AS39713 accept ANY
+export:         to AS39713 announce AS41976
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS41976
+import:         from AS48354 accept ANY
+export:         to AS48354 announce AS41976
+import:         from AS24767 accept ANY
+export:         to AS24767 announce AS41976
+import:         from AS48738 accept ANY
+export:         to AS48738 announce AS41976
+import:         from AS196991 accept ANY
+export:         to AS196991 announce AS41976
+admin-c:        MFON-RIPE
+tech-c:         MFON-RIPE
+status:         ASSIGNED
+mnt-by:         SZKTI-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2006-11-24T16:44:45Z
+last-modified:  2020-03-02T06:21:51Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS47395
+as-name:        SCARTEL-AS
+org:            ORG-OM1-RIPE
+remarks:        ****************************************
+remarks:        Contact information:
+remarks:        ****************************************
+remarks:        Old Abuse: abuse@yotateam.ru
+remarks:        Old Peering: noc@yotateam.ru
+remarks:        ****************************************
+remarks:        -----------------------------------------------------------
+remarks:        Technical questions: gnocwest_tr@megafon.ru
+remarks:        Routing and peering: gnoceast_backbone@megafon.ru
+remarks:        -----------------------------------------------------------
+remarks:        SPAM and Network security: abuse-mailbox@megafon.ru
+remarks:        Please use abuse-mailbox@megafon.ru e-mail address for complaints.
+remarks:        All messages to any other our address, relative to SPAM
+remarks:        or security issues, will not be concerned.
+remarks:        -----------------------------------------------------------
+remarks:        ================
+remarks:        Upstream
+remarks:        ================
+import:         from AS-SCARTEL-UPSTREAM action pref=100; accept ANY
+export:         to AS-SCARTEL-UPSTREAM announce AS-SCARTEL
+remarks:        ================
+remarks:        Private peerings
+remarks:        ================
+remarks:        === peering at SPB-IX ===
+import:         from AS3267 action pref=80; accept AS-RUNNET
+export:         to AS3267 announce AS-SCARTEL
+import:         from AS3277 action pref=80; accept AS-RUSNETIX
+export:         to AS3277 announce AS-SCARTEL
+import:         from AS20632 action pref=80; accept AS-PETERSTAR
+export:         to AS20632 announce AS-SCARTEL
+remarks:        === peering at MSK-IX ===
+import:         from AS31430 action pref=80; accept AS-TEL-NET
+export:         to AS31430 announce AS-SCARTEL
+remarks:        ================
+remarks:        Downstream
+remarks:        ================
+import:         from AS-SCARTEL-DOWNSTREAM action pref=60; accept PeerAS
+export:         to AS-SCARTEL-DOWNSTREAM announce any
+remarks:        ================
+admin-c:        MFON-RIPE
+tech-c:         MFON-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SCARTEL-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-GNOC-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2008-06-12T12:26:22Z
+last-modified:  2018-09-04T10:33:31Z
+source:         RIPE # Filtered
+
+
+

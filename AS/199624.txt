@@ -31,12 +31,9 @@ import:         from AS15169 action pref=200; accept AS15169
 export:         to AS15169 announce AS199624:AS-DKTEL
 remarks:        -------------------------------------------------------------
 remarks:        == IXes ==
-remarks:        === Piter-IX MSK ===
-import:         from AS49869 accept AS-PITER-IX-MSK
-export:         to AS49869 announce AS199624:AS-DKTEL
-remarks:        === Piter-IX FRA ===
-import:         from AS48193 accept AS-PITER-IX-FRA
-export:         to AS48193 announce AS199624:AS-DKTEL
+remarks:        === MSK-IX ===
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS199624:AS-DKTEL
 remarks:        === Global-IX ===
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS199624:AS-DKTEL
@@ -117,7 +114,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         dktel-noc-mnt
 created:        2012-11-02T13:50:42Z
-last-modified:  2024-11-17T08:53:34Z
+last-modified:  2025-05-23T10:13:05Z
 source:         RIPE # Filtered
 
 organisation:   ORG-DSO7-RIPE

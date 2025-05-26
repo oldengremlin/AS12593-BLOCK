@@ -1,3 +1,69 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.8 port 22
+
+
+
+
+aut-num:        AS29194
+as-name:        ASN-TVT
+descr:          Kazan, Tatarstan, Russia
+org:            ORG-ZM1-RIPE
+remarks:        ----UPSTREAMS----
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-TVT
+import:         from AS31286 accept ANY
+export:         to AS31286 announce AS-TVT
+admin-c:        IIT100-RIPE
+admin-c:        TVT-RU
+tech-c:         TVT-RU
+status:         ASSIGNED
+mnt-by:         MTU-NOC
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TVT-NOC-MNT
+created:        2003-06-25T12:58:46Z
+last-modified:  2018-09-04T09:57:45Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS31286
+as-name:        INTELSET-AS
+descr:          Kazan, Tatarstan, Russia
+org:            ORG-ZM1-RIPE
+descr:          ----UPSTREAMS----
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-TVT
+import:         from AS29194 accept ANY
+export:         to AS29194 announce AS-ISET
+admin-c:        IIT100-RIPE
+admin-c:        TVT-RU
+tech-c:         TVT-RU
+status:         ASSIGNED
+mnt-by:         MTU-NOC
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TVT-NOC-MNT
+created:        2004-04-06T12:35:02Z
+last-modified:  2018-09-04T10:02:01Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS51027
+as-name:        ASN-TATINF
+org:            ORG-TA465-RIPE
+import:         from AS28840 action pref=150; accept ANY
+import:         from AS29194 action pref=100; accept ANY
+import:         from AS31286 action pref=70; accept ANY
+export:         to AS28840 announce AS-TATINF
+export:         to AS29194 announce AS-TATINF
+export:         to AS31286 announce AS-TATINF
+admin-c:        TVT-RU
+tech-c:         TVT-RU
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TVT-NOC-MNT
+created:        2010-05-19T10:16:25Z
+last-modified:  2018-09-04T10:51:04Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-ZM1-RIPE
+
+
+

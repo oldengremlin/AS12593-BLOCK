@@ -1,4 +1,85 @@
 
 
 
+as-block:       AS198305 - AS200350
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2025-02-18T15:12:58Z
+last-modified:  2025-02-18T15:12:58Z
+source:         RIPE
+
+
+
+aut-num:        AS198367
+as-name:        ASINKOTEL
+org:            ORG-INKO2-RIPE
+remarks:        --- UPLINKS---
+import:         from AS12389 accept ANY
+import:         from AS28917 accept ANY
+export:         to AS12389 announce AS-INKOTELECOM
+export:         to AS28917 announce AS-INKOTELECOM
+remarks:        --- IX PEERING ---
+import:         from AS8631 accept AS-MSKROUTESERVER
+import:         from AS49869 accept as-piter-ix-msk
+import:         from AS48193 accept as-piter-ix-fra
+import:         from AS39607 accept AS-PITER-IX-HELSINKI
+import:         from AS49634 accept as-piter-ix-riga
+import:         from AS59539 accept as-piter-ix-rov
+import:         from AS50817 accept as-piter-ix
+import:         from AS57936 accept as-piter-ix-tll
+export:         to AS8631 announce AS-INKOTELECOM
+export:         to AS49869 announce AS-INKOTELECOM
+export:         to AS48193 announce AS-INKOTELECOM
+export:         to AS39607 announce AS-INKOTELECOM
+export:         to AS49634 announce AS-INKOTELECOM
+export:         to AS59539 announce AS-INKOTELECOM
+export:         to AS50817 announce AS-INKOTELECOM
+export:         to AS57936 announce AS-INKOTELECOM
+remarks:        --- AS-SET PEERING ---
+import:         from AS-INKOTELECOM accept AS-INKOTELECOM
+export:         to AS-INKOTELECOM announce ANY
+admin-c:        KVA167-RIPE
+tech-c:         AG13074-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INKOTEL-MNT
+created:        2011-12-27T15:01:02Z
+last-modified:  2023-04-25T18:51:15Z
+source:         RIPE
+sponsoring-org: ORG-Vs35-RIPE
+
+organisation:   ORG-INKO2-RIPE
+org-name:       INKO-Telecom, LLC
+country:        RU
+org-type:       OTHER
+address:        Russia, Moscow district, Luhovitsy, Timiryazeva, 120
+abuse-c:        AR30526-RIPE
+mnt-ref:        INKOTEL-MNT
+mnt-by:         INKOTEL-MNT
+created:        2011-12-20T16:05:09Z
+last-modified:  2022-12-01T16:31:12Z
+source:         RIPE # Filtered
+
+person:         Admin INKO-Telecom
+address:        Russia, Moscow district, Luhovitsy, Timiryazeva, 120
+phone:          +7-496-639-44-44
+nic-hdl:        AG13074-RIPE
+mnt-by:         INKOTEL-MNT
+created:        2011-12-20T16:03:37Z
+last-modified:  2018-03-30T08:11:13Z
+source:         RIPE # Filtered
+
+person:         Konstantin Viktorovich Andreev
+address:        Russia, Moscow region, Lukhovicy, Timiryazeva str. 120
+phone:          +79686689810
+nic-hdl:        KVA167-RIPE
+mnt-by:         MNT-TONUS
+mnt-by:         RU-PLAYTELECOM-MNT
+mnt-by:         INKOTEL-MNT
+created:        2021-10-14T10:52:39Z
+last-modified:  2021-10-14T11:52:33Z
+source:         RIPE
+
+
 

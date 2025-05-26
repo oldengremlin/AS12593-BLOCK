@@ -1,3 +1,82 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 94.125.120.198 port 22
+
+
+
+
+aut-num:        AS39293
+as-name:        RTCENTER-AS
+org:            ORG-SR8-RIPE
+remarks:        -------------------------------------------------------------2
+remarks:        SAMARA:
+remarks:        -------------------------------------------------------------
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS-SAMARA-RTCENTER
+import:         from AS8439 action pref=1000; accept AS-AISTNET
+export:         to AS8439 announce ANY
+import:         from AS34879 action pref=1000; accept AS-NGENIX-SMR
+export:         to AS34879 announce ANY
+import:         from AS44436 action pref=1000; accept AS-EFFORTEL-SAM
+export:         to AS44436 announce ANY
+import:         from AS30852 action pref=1000; accept AS-INFOLADA
+export:         to AS30852 announce {0.0.0.0/0}
+default:        to AS12389
+remarks:        -------------------------------------------------------------
+remarks:        TOGLIATTI:
+remarks:        -------------------------------------------------------------
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS-TLT-RTCENTER
+import:         from AS8439 action pref=1000; accept AS-AISTNET
+export:         to AS8439 announce ANY
+import:         from AS30852 action pref=1000; accept AS-INFOLADA
+export:         to AS30852 announce ANY
+import:         from AS56407 action pref=1000; accept AS-ZHIGULINET
+export:         to AS56407 announce ANY
+import:         from AS196673 action pref=1000; accept AS196673
+export:         to AS196673 announce ANY
+default:        to AS12389
+remarks:        -------------------------------------------------------------
+remarks:        ULIANOVSK:
+remarks:        -------------------------------------------------------------
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS-ULIANOVSK-RTCENTER
+import:         from AS31133 action pref=200; accept ANY
+export:         to AS31133 announce AS-ULIANOVSK-RTCENTER
+import:         from AS8342 action pref=200; accept ANY
+export:         to AS8342 announce AS-ULIANOVSK-RTCENTER
+import:         from AS3217 action pref=1000; accept AS3217
+export:         to AS3217 announce {0.0.0.0/0}
+import:         from AS43782 action pref=1000; accept AS-DARS-IP
+export:         to AS43782 announce ANY
+import:         from AS50716 action pref=1000; accept AS50716
+export:         to AS50716 announce ANY
+default:        to AS8342
+remarks:        -------------------------------------------------------------
+remarks:        PENZA:
+remarks:        -------------------------------------------------------------
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS-PNZ-RTCENTER
+import:         from AS12500 action pref=1000; accept AS-RCS-PNZ1
+export:         to AS12500 announce ANY
+default:        to AS12389
+remarks:        -------------------------------------------------------------
+remarks:        KAZAN:
+remarks:        -------------------------------------------------------------2
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS-KZN-RTCENTER
+import:         from AS31286 action pref=1000; accept AS-TVT
+export:         to AS31286 announce ANY
+import:         from AS39613 action pref=1000; accept AS-MELT
+export:         to AS39613 announce ANY
+default:        to AS12389
+remarks:        -------------------------------------------------------------
+admin-c:        SRH18-RIPE
+tech-c:         SRH18-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2006-01-25T12:49:38Z
+last-modified:  2024-12-07T08:07:20Z
+source:         RIPE
+sponsoring-org: ORG-NT3-RIPE
+
+
+
