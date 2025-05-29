@@ -1,4 +1,45 @@
+mux_client_request_session: session request failed: Session open refused by peer
+ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS48327
+as-name:        Ray-AS
+org:            ORG-LPN1-RIPE
+remarks:        Upstreams
+remarks:        Beeline
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-RAYCOM
+remarks:        Megafon
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-RAYCOM
+remarks:        SFO-IX-AS
+import:         from AS13094 accept ANY
+export:         to AS13094 announce AS-RAYCOM
+remarks:        Peers
+remarks:        Milecom
+import:         from AS48858 accept AS48858 AND AS12668
+export:         to AS48858 announce AS48327
+remarks:        ZSTTK
+import:         from AS21127 accept AS21127
+export:         to AS21127 announce AS48327
+remarks:        NVTC
+import:         from AS47530 accept AS47530
+export:         to AS47530 announce AS48327
+remarks:        rostelekom
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-RAYCOM
+remarks:        Clients
+remarks:        -----------------------
+admin-c:        BAN58-RIPE
+tech-c:         BAN58-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-REY-SVYAZ
+created:        2008-11-12T12:59:30Z
+last-modified:  2025-04-14T12:04:43Z
+source:         RIPE # Filtered
 
 
 

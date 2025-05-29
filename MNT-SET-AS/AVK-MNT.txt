@@ -1,3 +1,53 @@
 mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 94.125.120.198 port 22
+ControlSocket /home/olden/.ssh/control/olden@212.90.160.8:22 already exists, disabling multiplexing
+
+
+
+
+aut-num:        AS48781
+as-name:        AVK-COM-AS
+org:            ORG-Al118-RIPE
+remarks:        *** UPSTREAMS ***
+remarks:        -- TransRoute --
+import:         from AS50509 action pref = 200; accept ANY
+export:         to AS50509 announce AS-AVK-COM
+remarks:        -- 1-Telekom ---
+import:         from AS39156 action pref = 200; accept ANY
+export:         to AS39156 announce AS-AVK-COM
+remarks:        *** PEERING ***
+remarks:        --- Piter-IX ---
+import:         from AS49869 action pref = 300; accept as-piter-ix-msk
+export:         to AS49869 announce AS-AVK-COM
+import:         from AS50817 action pref = 300; accept as-piter-ix
+export:         to AS50817 announce AS-AVK-COM
+import:         from AS57936 action pref = 300; accept as-piter-ix-tll
+export:         to AS57936 announce AS-AVK-COM
+import:         from AS49634 action pref = 300; accept as-piter-ix-riga
+export:         to AS49634 announce AS-AVK-COM
+import:         from AS39607 action pref = 300; accept AS-PITER-IX-HELSINKI
+export:         to AS39607 announce AS-AVK-COM
+remarks:        *** CUSTOMERS ***
+remarks:        --- TTECH ---
+import:         from AS48241 action pref = 100; accept AS48241
+export:         to AS48241 announce ANY
+remarks:        -- SILVER ---
+import:         from AS51686 action pref = 300; accept AS51686
+export:         to AS51686 announce ANY
+remarks:        -- MinEnergo--
+import:         from AS60628 action pref = 300; accept AS60628
+export:         to AS60628 announce ANY
+remarks:        --VIK--
+import:         from AS212095 action pref = 400; accept AS212095
+export:         to AS212095 announce ANY
+admin-c:        LOS20-RIPE
+admin-c:        SSP102-RIPE
+tech-c:         DD1133-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AVK-MNT
+created:        2009-02-05T15:22:01Z
+last-modified:  2025-01-04T15:09:21Z
+source:         RIPE
+
+
+

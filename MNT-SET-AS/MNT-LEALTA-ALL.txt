@@ -1,6 +1,85 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS202289
+as-name:        LOVITEL-WIFI-AS
+org:            ORG-LL24-RIPE
+import:         from as41275 accept ANY
+export:         to as41275 announce AS202289
+admin-c:        LEV38-RIPE
+tech-c:         LEV38-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-LEALTA-ALL
+created:        2018-06-11T11:17:51Z
+last-modified:  2018-11-08T07:40:34Z
+source:         RIPE
+
+
+
+aut-num:        AS41275
+as-name:        LEALTA-AS
+org:            ORG-Ll24-RIPE
+descr:          Moscow, Russia
+remarks:        ======
+remarks:        IPv4
+remarks:        ======
+remarks:        +==============================================================+
+remarks:        Upstreams
+remarks:        +==============================================================+
+remarks:        ----- Rostelecom -----
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS-TUT
+remarks:        ----- NETBYNET -----
+import:         from AS12714 action pref=100; accept ANY
+export:         to AS12714 announce AS-TUT
+remarks:        +==============================================================+
+remarks:        INTERNATIONAL PEERS
+remarks:        +==============================================================+
+remarks:        +--------------------------------------------------------------+
+remarks:        Peering at DE-CIX
+remarks:        +--------------------------------------------------------------+
+import:         from AS6695 accept AS-DECIX
+export:         to AS6695 announce AS-TUT
+remarks:        +==============================================================+
+remarks:        RUSSIAN PEERS
+remarks:        +==============================================================+
+remarks:        +--------------------------------------------------------------+
+remarks:        Peering at MSK-IX
+remarks:        +--------------------------------------------------------------+
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS41275
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-TUT
+remarks:        +==============================================================+
+remarks:        Downstreams
+remarks:        +==============================================================+
+remarks:        +--------------------------------------------------------------+
+remarks:        LLC "Lovitel" Wi-Fi
+remarks:        +--------------------------------------------------------------+
+import:         from AS202289 action pref=100; accept AS202289
+export:         to AS202289 announce ANY
+remarks:        +--------------------------------------------------------------+
+remarks:        LLC "Lightning"
+remarks:        +--------------------------------------------------------------+
+import:         from AS203394 action pref=100; accept AS203394
+export:         to AS203394 announce ANY
+remarks:        +==============================================================+
+remarks:        We filter inbound prefixes longer than /24
+remarks:        +==============================================================+
+remarks:        -----------------------------------------
+admin-c:        LEAL-RIPE
+tech-c:         LEAL-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-LEALTA-AS
+mnt-by:         MNT-LEALTA-IB
+mnt-by:         MNT-LEALTA-RS
+mnt-by:         MNT-LEALTA-ALL
+created:        2006-07-13T12:27:27Z
+last-modified:  2020-01-20T09:48:25Z
+source:         RIPE # Filtered
 
 
 

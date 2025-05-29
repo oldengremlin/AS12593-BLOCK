@@ -1,4 +1,283 @@
 
 
 
+as-block:       AS8525 - AS8769
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:23Z
+last-modified:  2018-11-22T15:27:23Z
+source:         RIPE
+
+
+
+aut-num:        AS8744
+as-name:        MegaMax-AS
+descr:          Nizhny Novgorod, RU
+descr:          http://virginconnect.ru
+org:            ORG-CCM2-RIPE
+remarks:        ----------------------------------------------------------------
+remarks:        IPv4 Upstreams (LP=55):
+remarks:        ----------------------------------------------------------------
+import:         { from AS8359 212.188.11.97 accept ANY; from AS20485 217.150.41.134 accept ANY; from AS12389 188.254.43.137 accept ANY; from AS1299 62.115.11.189 accept ANY; from AS31133 37.29.16.57 accept ANY; }
+export:         { to AS8359 announce AS-WIMAX; to AS20485 announce AS-WIMAX; to AS12389 announce AS-WIMAX; to AS1299 announce AS-WIMAX; to AS31133 announce AS-WIMAX; }
+remarks:        ----------------------------------------------------------------
+remarks:        IPv6 Upstreams (LP=55):
+remarks:        ----------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS20485 2a00:1e48:1:1::1:2 accept ANY
+mp-import:      afi ipv6.unicast from AS1299 2001:2000:3080:068a::1 accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS1299 announce AS-WIMAX
+remarks:        ----------------------------------------------------------------
+remarks:        IPv4 Private Peers (LP=75):
+remarks:        ----------------------------------------------------------------
+import:         { from AS29076 89.188.100.97 accept AS-CITYTELECOM; from AS21219 81.16.123.214 accept AS-FF-TRANSIT; from AS3249 195.250.170.73 accept AS-ESTPAK; from AS35320 81.16.116.202 accept AS-ETT; from AS15169 74.125.50.89 accept AS-GOOGLE; from AS196678 81.16.123.34 accept AS-HOSTEROV; from AS49813 81.16.122.146 accept AS-INN; from AS47764 81.16.116.42 accept AS-MAILRU; from AS47764 81.16.116.158 accept AS-MAILRU; from AS25532 217.16.17.129 accept AS-MASTERHOST; from AS42632 77.220.168.109 accept AS-MNOGOBYTE; from AS42632 77.220.168.157 accept AS-MNOGOBYTE; from AS12714 212.1.242.1 accept AS-TI; from AS9002 87.245.229.101 accept AS-RETN; from AS48061 91.207.58.107 accept AS48061; from AS21011 81.16.116.30 accept AS21011:AS-EXT; from AS3267 194.190.254.129 accept AS-RUNNET; from AS47541 92.246.149.158 accept AS-VKONTAKTE; from AS47541 92.246.149.162 accept AS-VKONTAKTE; from AS47541 92.246.149.166 accept AS-VKONTAKTE; from AS47541 92.246.149.170 accept AS-VKONTAKTE; from AS13238 81.16.116.206 accept AS-YANDEX; from AS35297 193.239.74.209 accept AS-DL-WORLD; from AS9049 188.234.131.29 accept AS-ERTH; }
+export:         { to AS29076 announce AS-WIMAX; to AS21219 announce AS-WIMAX; to AS3249 announce AS-WIMAX; to AS35320 announce AS-WIMAX; to AS15169 announce AS-WIMAX; to AS196678 announce AS-WIMAX; to AS49813 announce AS-WIMAX; to AS47764 announce AS-WIMAX; to AS25532 announce AS-WIMAX; to AS42632 announce AS-WIMAX; to AS12714 announce AS-WIMAX; to AS9002 announce AS-WIMAX; to AS48061 announce AS-WIMAX; to AS21011 announce AS-WIMAX; to AS3267 announce AS-WIMAX; to AS47541 announce AS-WIMAX; to AS13238 announce AS-WIMAX; to AS35297 announce AS-WIMAX; to AS9049 announce AS-WIMAX; }
+remarks:        ----------------------------------------------------------------
+remarks:        IPv6 Private Peers (LP=75):
+remarks:        ----------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS35320 2a02:5f0::1:1:15 accept AS-ETT
+mp-import:      afi ipv6.unicast from AS15169 2001:4860:1:1:0:2228:: accept AS-GOOGLE
+mp-import:      afi ipv6.unicast from AS9002 2a02:2d8:0:c007:232a:: accept AS-RETN
+mp-import:      afi ipv6.unicast from AS47541 2a02:2850:0:100::78:10b accept AS-RETN
+mp-import:      afi ipv6.unicast from AS47541 2a02:2850:0:100::78:20b accept AS-RETN
+mp-import:      afi ipv6.unicast from AS47541 2a02:2850:0:100::78:30b accept AS-RETN
+mp-import:      afi ipv6.unicast from AS47541 2a02:2850:0:100::78:40b accept AS-RETN
+mp-import:      afi ipv6.unicast from AS12714 2a02:2850:0:100::77:10b accept AS-TI
+mp-import:      afi ipv6.unicast from AS13238 2a02:2850:0:100::77:30b accept AS-YANDEX
+mp-export:      afi ipv6.unicast to AS35320 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS15169 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS9002 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS47541 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS12714 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS13238 announce AS-WIMAX
+remarks:        ----------------------------------------------------------------
+remarks:        IPv4 MSK-IX (LP=70):
+remarks:        ----------------------------------------------------------------
+import:         { from AS8631 193.232.244.100 accept ANY; from AS8631 193.232.246.100 accept ANY; from AS41126 193.232.244.28 accept AS-HCRU; from AS3267 193.232.244.44 accept AS-RUNNET; from AS8470 193.232.244.59 accept AS-MACOMNET; from AS13238 193.232.244.93 accept AS-YANDEX; from AS13230 193.232.244.117 accept AS-NCPORT; from AS49342 193.232.244.126 accept AS-SPEEDYLINE; from AS20632 193.232.244.130 accept AS-PETERSTAR; from AS8641 193.232.244.131 accept AS-NAUKANET; from AS30833 193.232.244.143 accept AS-TNC; from AS31500 193.232.244.171 accept AS-GLOBAL-NET; from AS8905 193.232.244.180 accept AS-SITEK; from AS34300 193.232.244.191 accept AS34300; from AS12976 193.232.244.209 accept AS-CWSVYAZ; from AS33902 193.232.244.212 accept AS-STARNETWORKS; from AS25308 193.232.244.228 accept AS-CITYLAN; from AS20985 193.232.244.237 accept AS-ARTX; from AS41206 193.232.244.242 accept AS-COMMSOL-CLI; from AS29329 193.232.244.252 accept AS-NODEX; from AS44436 193.232.245.3 accept AS-EFFORTEL-MSK-IX; from AS41095 193.232.245.4 accept AS-IPTP; from AS31370 193.232.245.9 accept AS-MOSLINE; from AS15756 193.232.244.208 accept AS-CARAVANRUS; from AS6854 193.232.244.31 accept AS-SYNTERRA; from AS41126 193.232.246.28 accept AS-HCRU; from AS3267 193.232.246.44 accept AS-RUNNET; from AS8470 193.232.246.59 accept AS-MACOMNET; from AS20632 193.232.246.130 accept AS-PETERSTAR; from AS30833 193.232.246.143 accept AS-TNC; from AS8905 193.232.246.180 accept AS-SITEK; from AS20985 193.232.246.237 accept AS-ARTX; from AS41095 193.232.247.4 accept AS-IPTP; from AS31370 193.232.247.9 accept AS-MOSLINE; from AS13230 193.232.246.117 accept AS-NCPORT; from AS44436 193.232.247.3 accept AS-EFFORTEL-MSK-IX; from AS33902 193.232.246.212 accept AS-STARNETWORKS; from AS12976 193.232.246.209 accept AS-CWSVYAZ; from AS31500 193.232.246.171 accept AS-GLOBAL-NET; from AS13238 193.232.246.93 accept AS-YANDEX; from AS15756 193.232.246.208 accept AS-CARAVANRUS; from AS6854 193.232.246.31 accept AS-SYNTERRA;
+ from AS9031 193.232.244.16 accept AS-EDPNET; from AS9031 193.232.246.16 accept AS-EDPNET; from AS20764 193.232.244.223 accept AS-RASCOM; from AS20764 193.232.246.223 accept AS-RASCOM; from AS31133 193.232.245.47 accept AS-MF-MGSM; from AS31133 193.232.247.47 accept AS-MF-MGSM; from AS12076 193.232.244.137 accept AS-MICROSOFT; from AS12076 193.232.246.137 accept AS-MICROSOFT; from AS3327 193.232.246.151 accept AS-LINXTELECOM; from AS3327 193.232.246.151 accept AS-LINXTELECOM; from AS15772 193.232.245.186 accept AS-WNET; from AS15772 193.232.247.186 accept AS-WNET; }
+export:         { to AS8631 announce AS-WIMAX; to AS41126 announce AS-WIMAX; to AS3267 announce AS-WIMAX; to AS8470 announce AS-WIMAX; to AS13238 announce AS-WIMAX; to AS13230 announce AS-WIMAX; to AS49342 announce AS-WIMAX; to AS20632 announce AS-WIMAX; to AS8641 announce AS-WIMAX; to AS30833 announce AS-WIMAX; to AS31500 announce AS-WIMAX; to AS8905 announce AS-WIMAX; to AS34300 announce AS-WIMAX; to AS12976 announce AS-WIMAX; to AS33902 announce AS-WIMAX; to AS25308 announce AS-WIMAX; to AS20985 announce AS-WIMAX; to AS41206 announce AS-WIMAX; to AS29329 announce AS-WIMAX; to AS44436 announce AS-WIMAX; to AS41095 announce AS-WIMAX; to AS31370 announce AS-WIMAX; to AS15756 announce AS-WIMAX; to AS6854 announce AS-WIMAX; to AS9031 announce AS-WIMAX; to AS20764 announce AS-WIMAX; to AS31133 announce AS-WIMAX; to AS12076 announce AS-WIMAX; to AS3327 announce AS-WIMAX; to AS15772 announce AS-WIMAX; }
+remarks:        ----------------------------------------------------------------
+remarks:        IPv6 MSK-IX (LP=70):
+remarks:        ----------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS8631 2001:7F8:20:101::244:100 accept ANY
+mp-import:      afi ipv6.unicast from AS8631 2001:7F8:20:102::246:100 accept ANY
+mp-import:      afi ipv6.unicast from AS3327 2001:7f8:20:101::244:151 accept AS-LINXTELECOM
+mp-export:      afi ipv6.unicast to AS8631 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS3327 announce AS-WIMAX
+remarks:        ----------------------------------------------------------------
+remarks:        IPv4 DE-CIX (LP=60):
+remarks:        ----------------------------------------------------------------
+import:         { from AS6695 80.81.192.157 accept ANY; from AS6695 80.81.193.157 accept ANY; from AS6939 80.81.192.172 accept AS-HURRICANE; from AS8447 80.81.192.69 accept AS-PTA; from AS8365 80.81.192.6 accept AS-MANDA; from AS8365 80.81.193.6 accept AS-MANDA; from AS33873 80.81.192.216 accept AS-ARVATO; from AS12874 80.81.194.10 accept AS-FASTWEB; from AS8657 80.81.192.38 accept AS-CPRM; from AS13030 80.81.192.67 accept AS-INIT7; from AS13030 80.81.193.67 accept AS-INIT7; from AS21219 80.81.192.145 accept AS-FF-TRANSIT; from AS12989 80.81.192.224 accept AS-HIGHWINDS; from AS8075 80.81.194.52 accept AS-MICROSOFTEU; from AS12615 80.81.192.169 accept AS-CABLETEL; from AS20940 80.81.192.28 accept AS-AKAMAI; from AS20940 80.81.192.168 accept AS-AKAMAI; from AS9116 80.81.194.65 accept AS-GOLDEN; from AS8781 80.81.194.11 accept AS-QTEL-SET; from AS12301 80.81.192.70 accept AS12301; from AS32934 80.81.195.40 accept AS-FACEBOOK; from AS32934 80.81.194.40 accept AS-FACEBOOK; from AS1248 80.81.194.17 accept AS-NOK; from AS6661 80.81.192.204 accept AS-PTLU; from AS8708 80.81.192.87 accept AS-RDSNET; from AS9009 80.81.192.165 accept AS-GBXS; from AS19151 80.81.192.220 accept AS-BBOI; from AS49544 80.81.194.107 accept AS-INTERACTIVE3D; from AS20773 80.81.192.239 accept AS20773:AS-HOSTEUROPE; from AS20773 80.81.193.239 accept AS20773:AS-HOSTEUROPE; from AS12678 80.81.194.162 accept AS-BADOO; from AS3327 80.81.192.192 accept AS-LINXTELECOM; from AS5430 80.81.192.49 accept AS-FREENETDE; from AS31400 80.81.194.50 accept AS-ACCELERATED; from AS44788 80.81.194.93 accept AS-CRITEO-EU; from AS56665 80.81.194.209 accept AS-TELINDUSLUX; }
+export:         { to AS6695 announce AS-WIMAX; to AS6939 announce AS-WIMAX; to AS8447 announce AS-WIMAX; to AS8365 announce AS-WIMAX; to AS33873 announce AS-WIMAX; to AS12874 announce AS-WIMAX; to AS8657 announce AS-WIMAX; to AS13030 announce AS-WIMAX; to AS21219 announce AS-WIMAX; to AS12989 announce AS-WIMAX; to AS8075 announce AS-WIMAX; to AS12615 announce AS-WIMAX; to AS20940 announce AS-WIMAX; to AS9116 announce AS-WIMAX; to AS8781 announce AS-WIMAX; to AS12301 announce AS-WIMAX; to AS32934 announce AS-WIMAX; to AS1248 announce AS-WIMAX; to AS6661 announce AS-WIMAX; to AS8708 announce AS-WIMAX; to AS9009 announce AS-WIMAX; to AS19151 announce AS-WIMAX; to AS49544 announce AS-WIMAX; to AS20773 announce AS-WIMAX; to AS12678 announce AS-WIMAX; to AS3327 announce AS-WIMAX; to AS5430 announce AS-WIMAX; to AS31400 announce AS-WIMAX; to AS44788 announce AS-WIMAX; to AS56665 announce AS-WIMAX; }
+remarks:        ----------------------------------------------------------------
+remarks:        IPv6 DE-CIX (LP=60):
+remarks:        ----------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS6695 2001:7f8::1a27:5051:c09d accept ANY
+mp-import:      afi ipv6.unicast from AS6695 2001:7f8::1a27:5051:c19d accept ANY
+mp-import:      afi ipv6.unicast from AS6939 2001:7f8::1b1b:0:1 accept ANY
+mp-import:      afi ipv6.unicast from AS8781 2001:7f8::224d:0:1 accept AS-QTEL-SET
+mp-import:      afi ipv6.unicast from AS12301 2001:7f8::300d:0:1 accept AS12301:AS-ROUTES
+mp-import:      afi ipv6.unicast from AS1248 2001:7f8::4e0:0:1 accept AS-NOK
+mp-import:      afi ipv6.unicast from AS8708 2001:7f8::2204:0:1 accept AS-RDSNET
+mp-import:      afi ipv6.unicast from AS8075 2001:7f8::1f8b:0:1 accept AS-MICROSOFTEU
+mp-import:      afi ipv6.unicast from AS32934 2001:7f8::80a6:0:2 accept AS-FACEBOOK
+mp-import:      afi ipv6.unicast from AS32934 2001:7f8::80a6:0:1 accept AS-FACEBOOK
+mp-import:      afi ipv6.unicast from AS8365 2001:7f8::20ad:0:2 accept AS-MANDA
+mp-import:      afi ipv6.unicast from AS8365 2001:7f8::20ad:0:1 accept AS-MANDA
+mp-import:      afi ipv6.unicast from AS9009 2001:7f8::2331:0:1 accept AS-GBXS6
+mp-import:      afi ipv6.unicast from AS19151 2001:7f8::4acf:0:1 accept AS-BBOI
+mp-import:      afi ipv6.unicast from AS49544 2001:7f8::c188:0:1 accept AS-INTERACTIVE3D
+mp-import:      afi ipv6.unicast from AS20773 2001:7f8::5125:f1:1 accept AS20773:AS-HOSTEUROPE
+mp-import:      afi ipv6.unicast from AS20773 2001:7f8::5125:f2:1 accept AS20773:AS-HOSTEUROPE
+mp-import:      afi ipv6.unicast from AS3327 2001:7f8::cff:0:1 accept AS-LINXTELECOM
+mp-import:      afi ipv6.unicast from AS5430 2001:7f8::1536:0:1 accept AS-FREENETDE
+mp-import:      afi ipv6.unicast from AS20940 2001:7f8::51cc:0:28 accept AS-AKAMAI
+mp-import:      afi ipv6.unicast from AS20940 2001:7f8::51cc:0:168 accept AS-AKAMAI
+mp-import:      afi ipv6.unicast from AS31400 2001:7f8::7aa8:0:1 accept AS-AKAMAI
+mp-import:      afi ipv6.unicast from AS44788 2001:7f8::aef4:0:1 accept AS-CRITEO-EU-V6
+mp-import:      afi ipv6.unicast from AS56665 2001:7f8::dd59:0:1 accept AS-TELINDUSLUX
+mp-export:      afi ipv6.unicast to AS6939 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS8781 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS12301 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS1248 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS8708 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS8075 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS32934 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS8365 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS9009 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS19151 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS49544 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS20773 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS3327 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS5430 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS20940 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS31400 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS44788 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS56665 announce AS-WIMAX
+remarks:        ----------------------------------------------------------------
+remarks:        IPv4 AMS-IX (LP=60):
+remarks:        ----------------------------------------------------------------
+import:         { from AS6777 195.69.144.255 accept ANY; from AS6777 195.69.145.0 accept ANY; from AS24904 195.69.146.22 accept AS-KWAOO; from AS6327 195.69.144.148 accept AS-BIGPIPE; from AS44788 195.69.145.151 accept AS-CRITEO-EU; from AS56665 195.69.146.155 accept AS-TELINDUSLUX; }
+export:         { to AS6777 announce AS-WIMAX; to AS24904 announce AS-WIMAX; to AS6327 announce AS-WIMAX; to AS44788 announce AS-WIMAX; to AS56665 announce AS-WIMAX; }
+remarks:        ----------------------------------------------------------------
+remarks:        IPv6 AMS-IX (LP=60):
+remarks:        ----------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS6777 2001:7f8:1::a500:6777:1 accept ANY
+mp-import:      afi ipv6.unicast from AS6777 2001:7f8:1::a500:6777:2 accept ANY
+mp-import:      afi ipv6.unicast from AS24904 2001:7f8:1::a502:4904:1 accept AS-KWAOO
+mp-import:      afi ipv6.unicast from AS6327 2001:7f8:1::a500:6327:1 accept AS-BIGPIPE
+mp-import:      afi ipv6.unicast from AS44788 2001:7f8:1::a504:4788:1 accept AS-CRITEO-EU-V6
+mp-import:      afi ipv6.unicast from AS56665 2001:7f8:1::a505:6665:1 accept AS-TELINDUSLUX
+mp-export:      afi ipv6.unicast to AS6777 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS24904 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS6327 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS44788 announce AS-WIMAX
+mp-export:      afi ipv6.unicast to AS56665 announce AS-WIMAX
+remarks:        +--------------------------------------------------------------+
+remarks:        | BGP COMMUNITIES |
+remarks:        +--------------------------------------------------------------+
+remarks:        | Communities for prefix control |
+remarks:        +--------------------------------------------------------------+
+remarks:        | !!!ATTENTION!!! |
+remarks:        | Using this communities may cause connectivity |
+remarks:        | problems and you must clearly understand what are you |
+remarks:        | doing. StartTelecom does not bear any responsibility |
+remarks:        | if there will be such troubles. |
+remarks:        +--------------------------------------------------------------+
+remarks:        | |
+remarks:        | - To prepend or deny prefix use 8744:5DNNA, where: |
+remarks:        | |
+remarks:        | D - destination of the prepend or deny action: |
+remarks:        | |
+remarks:        | 2 - Upstreams |
+remarks:        | 3 - Russian peers |
+remarks:        | 4 - Foreign peers |
+remarks:        | 9 - Upstreams and Peers |
+remarks:        | |
+remarks:        | NN - Upstream or peer number: |
+remarks:        | |
+remarks:        | Upstreams: |
+remarks:        | |
+remarks:        | 02 - TELIA (AS1299) |
+remarks:        | 04 - TTK (AS20485) |
+remarks:        | 06 - MTS (AS8359) |
+remarks:        | 08 - ROSTELECOM (AS12389) |
+remarks:        | 99 - All Upstreams |
+remarks:        | |
+remarks:        | Russian peers: |
+remarks:        | |
+remarks:        | 01 - MSK-IX (AS8631) |
+remarks:        | 04 - VKONTAKTE (AS47541) |
+remarks:        | 12 - GOOGLE (AS15169) |
+remarks:        | 13 - MAIL.RU (AS47764) |
+remarks:        | 99 - All Russian Peers |
+remarks:        | |
+remarks:        | Foreign peers: |
+remarks:        | |
+remarks:        | 01 - DE-CIX (AS6695) |
+remarks:        | 06 - AMS-IX (AS6777) |
+remarks:        | 99 - All Foreign Peers |
+remarks:        | |
+remarks:        | A - action: |
+remarks:        | |
+remarks:        | 0 - don't announce prefix |
+remarks:        | 1 - announce with one prepend |
+remarks:        | 2 - announce with two times prepend |
+remarks:        | 4 - announce with four times prepend |
+remarks:        | |
+remarks:        | - To set local preference to 20 use 8744:51010 |
+remarks:        | |
+remarks:        +--------------------------------------------------------------+
+remarks:        | Communities for prefix classification |
+remarks:        +--------------------------------------------------------------+
+remarks:        | |
+remarks:        | All inbound prefixes are marked with BGP communities |
+remarks:        | which describe their source and geographical region. |
+remarks:        | |
+remarks:        | 8744:1 - IP Transit |
+remarks:        | 8744:2 - Peering |
+remarks:        | 8744:3 - Customer |
+remarks:        | 8744:4 - Internal prefixes |
+remarks:        | |
+remarks:        | 8744:1002 - TELIA (AS1299) |
+remarks:        | 8744:1004 - TTK (AS20485) |
+remarks:        | 8744:1006 - MTS (AS8359) |
+remarks:        | 8744:1008 - ROSTELECOM (AS12389) |
+remarks:        | |
+remarks:        | 8744:2001 - MSK-IX (AS8631) |
+remarks:        | 8744:2003 - DE-CIX (AS6695) |
+remarks:        | 8744:2006 - AMS-IX (AS6777) |
+remarks:        | |
+remarks:        | 8744:2101 - MASTERHOST (AS25532) |
+remarks:        | 8744:2102 - TOPNET (AS21011) |
+remarks:        | 8744:2103 - RUNNET (AS3267) |
+remarks:        | 8744:2104 - CITYTELECOM (AS29076) |
+remarks:        | 8744:2105 - ELION (AS3249) |
+remarks:        | 8744:2106 - ETTK (AS35320) |
+remarks:        | 8744:2107 - MNOGOBYTE (AS42632) |
+remarks:        | 8744:2109 - DATALINE (AS35297) |
+remarks:        | 8744:2110 - VKONTAKTE (AS47541) |
+remarks:        | 8744:2111 - ECOTELECOM (AS50473) |
+remarks:        | 8744:2112 - GOOGLE (AS15169) |
+remarks:        | 8744:2113 - MAIL.RU (AS49281) |
+remarks:        | 8744:2114 - INNOVA (AS49813) |
+remarks:        | 8744:2115 - HOSTEROV (AS196678) |
+remarks:        | 8744:2116 - RUTUBE (AS48061) |
+remarks:        | 8744:2117 - RETN (AS9002) |
+remarks:        | 8744:2118 - DATA-GROUP (AS21219) |
+remarks:        | 8744:2119 - NET-BY-NET (AS12714) |
+remarks:        | 8744:2120 - YANDEX (AS13238) |
+remarks:        | 8744:2121 - ER-TELECOM (AS9049) |
+remarks:        | |
+remarks:        +==============================================================+
+remarks:        | |
+remarks:        | To check the routing information on the StartTelecom network |
+remarks:        | please use our Looking Glass at http://lg.starttelecom.ru |
+remarks:        | |
+remarks:        +==============================================================+
+admin-c:        UTLN1-RIPE
+tech-c:         UTLN1-RIPE
+status:         ASSIGNED
+mnt-by:         UNITLINE
+mnt-by:         RIPE-NCC-END-MNT
+created:        2002-05-06T05:57:10Z
+last-modified:  2021-09-10T15:52:28Z
+source:         RIPE # Filtered
+
+organisation:   ORG-CCM2-RIPE
+org-name:       OOO "MediaSeti"
+country:        RU
+org-type:       LIR
+address:        mailbox 147, 24/27 Vosstaniya str.,
+address:        191014
+address:        St. Peterburg
+address:        RUSSIAN FEDERATION
+phone:          +79052333701
+fax-no:         +79052333701
+admin-c:        UTLN1-RIPE
+tech-c:         UTLN1-RIPE
+abuse-c:        AR17023-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        UNITLINE
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         UNITLINE
+created:        2005-01-24T08:17:43Z
+last-modified:  2025-03-05T13:40:36Z
+source:         RIPE # Filtered
+
+role:           MediaSeti Contact Role
+address:        OOO "MediaSeti" room XXII, 10k1, Shabolovka str., Moscow, 119049, RU
+org:            ORG-CCM2-RIPE
+phone:          +7 499 405 5050
+fax-no:         +7 495 114 9449
+admin-c:        DI2372-RIPE
+tech-c:         DI2372-RIPE
+nic-hdl:        UTLN1-RIPE
+mnt-by:         UNITLINE
+created:        2021-09-10T14:09:05Z
+last-modified:  2024-10-27T11:55:18Z
+source:         RIPE # Filtered
+
+
 
