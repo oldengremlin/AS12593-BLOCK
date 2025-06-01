@@ -1,3 +1,46 @@
 mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 94.125.120.198 port 22
+ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
+
+
+
+
+aut-num:        AS47684
+as-name:        FCOMM-AS
+org:            ORG-SL761-RIPE
+remarks:        Upstreams:
+import:         from AS3216 accept ANY
+import:         from AS20485 accept ANY
+import:         from AS9049 accept ANY
+import:         from AS31133 accept ANY
+export:         to AS3216 announce AS-FCOMM
+export:         to AS20485 announce AS-FCOMM
+export:         to AS9049 announce AS-FCOMM
+export:         to AS31133 announce AS-FCOMM
+remarks:        Customers:
+import:         from AS34085 accept AS34085
+import:         from AS49369 accept AS49369
+import:         from AS51348 accept AS51348
+export:         to AS34085 announce {0.0.0.0/0}
+export:         to AS49369 announce {0.0.0.0/0}
+export:         to AS51348 announce {0.0.0.0/0}
+remarks:        -------------------------------------------------------
+remarks:        BGP COMMUNITIES
+remarks:        -------------------------------------------------------
+remarks:        Local Preference
+remarks:        -------------------------------------------------------
+remarks:        47684:70 - set local-pref=70
+remarks:        Default local-pref:
+remarks:        120 - Customer
+remarks:        100 - Upstream
+remarks:        -------------------------------------------------------
+admin-c:        MM49264-RIPE
+tech-c:         MM49264-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-stroytechservice-1
+created:        2008-08-01T09:44:18Z
+last-modified:  2022-05-30T08:05:52Z
+source:         RIPE # Filtered
+
+
+

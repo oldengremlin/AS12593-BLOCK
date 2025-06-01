@@ -1,4 +1,143 @@
 
 
 
+as-block:       AS5377 - AS5535
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:22Z
+last-modified:  2018-11-22T15:27:22Z
+source:         RIPE
+
+
+
+aut-num:        AS5429
+as-name:        IIP-NET-AS5429
+remarks:        South Moscow Backbone Network
+remarks:        Telecommunication Center UMOS
+remarks:        --------------------------------------------
+remarks:        Uplinks
+export:         to AS47478 announce AS-IIPNET
+import:         from AS47478 action pref=100; accept ANY
+export:         to AS3267 announce AS-IIPNET
+import:         from AS3267 action pref=100; accept ANY
+export:         to AS25478 announce AS-IIPNET
+import:         from AS25478 action pref=100; accept ANY
+export:         to AS8595 announce AS-IIPNET
+import:         from AS8595 action pref=100; accept ANY
+export:         to AS50384 announce AS-IIPNET
+import:         from AS50384 action pref=120; accept ANY
+export:         to AS29076 announce AS-IIPNET
+import:         from AS29076 action pref=120; accept ANY
+remarks:        --------------------------------------------
+remarks:        Peers
+export:         to AS8631 announce AS-IIPNET-MSK-IX
+import:         from AS8631 action pref=150; accept ANY
+import:         from AS13105 action pref=150; accept AS-LUKOIL
+export:         to AS13105 announce AS-IIPNET-MSK-IX
+import:         from AS2820 action pref=150; accept AS-ELVIS
+export:         to AS2820 announce AS-IIPNET-MSK-IX
+import:         from AS5537 action pref=150; accept AS-GARANTPARK
+export:         to AS5537 announce AS-IIPNET-MSK-IX
+import:         from AS28968 action pref=150; accept AS-EUT
+export:         to AS28968 announce AS-IIPNET-MSK-IX
+import:         from AS13238 action pref=150; accept AS-COMPTEK
+export:         to AS13238 announce AS-IIPNET-MSK-IX
+import:         from AS5467 action pref=150; accept AS-MIPT
+export:         to AS5467 announce AS-IIPNET-MSK-IX
+import:         from AS8491 action pref=150; accept AS-BSH
+export:         to AS8491 announce AS-IIPNET-MSK-IX
+import:         from AS28917 action pref=150; accept AS-FIORD
+export:         to AS28917 announce AS-IIPNET-MSK-IX
+import:         from AS34352 action pref=150; accept AS-MCN
+export:         to AS34352 announce AS-IIPNET-MSK-IX
+import:         from AS30733 action pref=150; accept AS-GLOBUS
+export:         to AS30733 announce AS-IIPNET-MSK-IX
+import:         from AS30733 action pref=200; accept ANY
+export:         to AS30733 announce AS-IIPNET
+remarks:        --------------------------------------------
+remarks:        Clients
+import:         from AS12724 action pref=300; accept AS12724
+import:         from AS34848 action pref=300; accept AS34848
+import:         from AS52184 action pref=300; accept AS52184
+import:         from AS59801 action pref=300; accept AS59801
+import:         from AS49450 action pref=300; accept AS49450
+export:         to AS49450 announce ANY
+export:         to AS52184 announce ANY
+export:         to AS59801 announce ANY
+export:         to AS12724 announce ANY
+export:         to AS34848 announce ANY
+import:         from AS41892 action pref=300; accept AS41892
+export:         to AS41892 announce ANY
+import:         from AS51831 action pref=300; accept AS51831
+export:         to AS51831 announce ANY
+import:         from AS56935 action pref=300; accept AS56935
+export:         to AS56935 announce ANY
+import:         from AS57627 action pref=300; accept AS-ILBITTEL
+export:         to AS57627 announce ANY
+import:         from AS29233 action pref=300; accept AS29233
+export:         to AS29233 announce ANY
+import:         from AS199906 action pref=300; accept AS199906
+export:         to AS199906 announce ANY
+remarks:        ---------------------------------------------------
+remarks:        Looking glass: http://noc.iip.net/lg/
+remarks:        ---------------------------------------------------
+remarks:        Communities for prefix control
+remarks:        5429:100 Do not advertise to any uplink or peer.
+remarks:        This has priority over all the following communities.
+remarks:        5429:50xn Controls advertisement to direction "x"
+remarks:        where directions are:
+remarks:        x = 0 clients and peers
+remarks:        x = 1 uplink to AS3267 (RUNNet)
+remarks:        x = 2 uplink to AS8595 (WestCall)
+remarks:        x = 3 uplink to AS29076 (Filanco)
+remarks:        x = 4 uplink to AS50384 (W-IX)
+remarks:        x = 5 uplink to AS25478 (iHome)
+remarks:        and values of "n" define possible actions:
+remarks:        n = 0 do not advertise
+remarks:        n = 1,2,4,6 add n prepends
+org:            ORG-TCUL3-RIPE
+admin-c:        AAS527-RIPE
+tech-c:         AAS527-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-umos-tc-1
+created:        2002-05-08T12:08:37Z
+last-modified:  2023-01-09T09:00:58Z
+source:         RIPE
+
+organisation:   ORG-TCUL3-RIPE
+org-name:       Telecommunications center UMOS, LLC
+country:        RU
+org-type:       LIR
+address:        NAUKCHNY DRIVE, HOUSE 19, ROOM 6D
+address:        117246
+address:        Moscow
+address:        RUSSIAN FEDERATION
+phone:          +74956695858
+admin-c:        AAS527-RIPE
+admin-c:        AS43041-RIPE
+tech-c:         AS43040-RIPE
+tech-c:         AAS527-RIPE
+abuse-c:        AR55407-RIPE
+mnt-ref:        mnt-ru-umos-tc-1
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         mnt-ru-umos-tc-1
+created:        2019-09-06T14:54:43Z
+last-modified:  2024-11-11T12:11:10Z
+source:         RIPE # Filtered
+
+person:         Irina K Smirnova
+address:        Solovyiniy proezd 2
+address:        117593 Moscow ROSSIA
+address:        117593 Moscow RUSSIA
+phone:          +7 495 669-58-58
+nic-hdl:        AAS527-RIPE
+org:            ORG-TCUL3-RIPE
+mnt-by:         mnt-ru-umos-tc-1
+created:        2019-11-08T11:13:27Z
+last-modified:  2024-09-23T08:51:43Z
+source:         RIPE
+
+
 

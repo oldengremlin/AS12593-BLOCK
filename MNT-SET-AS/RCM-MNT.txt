@@ -1,3 +1,70 @@
 mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.8 port 22
+ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
+
+
+
+
+aut-num:        AS34456
+as-name:        RIALCOM-AS
+remarks:        ****************************
+remarks:        UPSTREAMS
+remarks:        ****************************
+import:         from AS8631 action pref=150; accept ANY
+export:         to AS8631 announce AS-RCPEERS
+import:         from AS13238 action pref=150; accept ANY
+export:         to AS13128 announce AS-RCPEERS
+import:         from AS15169 action pref=150; accept ANY
+export:         to AS15169 announce AS-RCPEERS
+import:         from AS20764 action pref=50; accept ANY
+export:         to AS20764 announce AS-RCPEERS
+import:         from AS43727 action pref=170; accept AS-SETKT
+export:         to AS43727 announce AS-RCPEERS
+import:         from AS200976 action pref=170; accept AS-LIFESTREAM
+export:         to AS200976 announce AS-RCPEERS
+import:         from AS47764 action pref=170; accept ANY
+export:         to AS47764 announce AS-RCPEERS
+import:         from AS42632 action pref=170; accept ANY
+export:         to AS42632 announce AS-RCPEERS
+import:         from AS12714 action pref=200; accept ANY
+export:         to AS12714 announce AS-RCPEERS
+remarks:        ****************************
+remarks:        CUSTOMERS
+remarks:        ****************************
+import:         from AS196667 action pref=300; accept AS196667
+export:         to AS196667 announce ANY
+import:         from AS50009 action pref=300; accept AS-QUARTZ
+export:         to AS50009 announce ANY
+import:         from AS48321 action pref=300; accept AS48321
+export:         to AS48321 announce ANY
+import:         from AS49053 action pref=300; accept AS49053
+export:         to AS49053 announce ANY
+org:            ORG-RCJ1-RIPE
+admin-c:        YVK-RIPE
+tech-c:         AG20567-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RCM-MNT
+mnt-by:         RCM-MNT
+created:        2005-01-24T15:03:59Z
+last-modified:  2024-04-05T06:51:29Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS48321
+as-name:        RialcomOOO-AS
+org:            ORG-RL253-RIPE
+import:         from AS34456 action pref=50; accept ANY
+export:         to AS34456 announce AS48321
+admin-c:        YVK-RIPE
+tech-c:         AVK777-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RCM-MNT
+created:        2011-08-03T09:08:53Z
+last-modified:  2020-11-16T18:01:48Z
+source:         RIPE
+sponsoring-org: ORG-RCJ1-RIPE
+
+
+

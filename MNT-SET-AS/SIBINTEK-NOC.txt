@@ -1,4 +1,395 @@
+mux_client_request_session: session request failed: Session open refused by peer
+ControlSocket /home/olden/.ssh/control/olden@185.151.106.150:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS13165
+org:            ORG-SIC1-RIPE
+as-name:        SIBINTEK-AS
+descr:          Moscow Russia
+remarks:        ------------------------
+remarks:        uplinks
+remarks:        ------------------------
+import:         { from AS3216 action pref=100; from AS8470 action pref=100; from AS12695 action pref=100; from AS12976 action pref=100; accept ANY; }
+export:         { to AS3216 to AS8470 to AS12695 to AS12976 announce AS-SIBINTEK; }
+remarks:        ----------------------
+remarks:        downlinks
+remarks:        ----------------------
+import:         from AS34709 action pref=90; accept AS34709 AS30745
+export:         to AS34709 announce ANY
+admin-c:        BAKS-RIPE
+tech-c:         BAKS-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2002-09-11T15:55:16Z
+last-modified:  2023-11-28T11:26:33Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS197693
+as-name:        RU-RN-INFORM-VORONEZH
+descr:          Branch in Voronezh
+org:            ORG-SIC1-RIPE
+import:         from AS24923 accept ANY
+export:         to AS24923 announce AS-RNI-VORONEZH
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2011-03-28T13:02:23Z
+last-modified:  2018-10-31T09:30:03Z
+source:         RIPE
+
+
+
+aut-num:        AS198350
+as-name:        RU-RN-INFORM-NEFTEUGANSK
+remarks:        Branch in Nefteugansk
+org:            ORG-SIC1-RIPE
+import:         from AS29648 accept ANY
+import:         from AS15599 accept ANY
+import:         from AS28719 accept ANY
+import:         from AS41822 accept ANY
+export:         to AS29648 announce AS198350
+export:         to AS15599 announce AS198350
+export:         to AS28719 announce AS198350
+export:         to AS41822 announce AS198350
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2011-12-21T09:09:06Z
+last-modified:  2018-10-31T09:30:02Z
+source:         RIPE
+
+
+
+aut-num:        AS198960
+as-name:        RU-RN-INFORM-YUZHNO-SAKHALINSK
+remarks:        Branch Yuzhno-Sakhalinsk city
+org:            ORG-SIC1-RIPE
+import:         from AS43550 accept ANY
+export:         to AS43550 announce AS-SIK-YS
+import:         from AS31195 accept ANY
+export:         to AS31195 announce AS-SIK-YS
+import:         from AS8443 accept ANY
+export:         to AS8443 announce AS-SIK-YS
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-SIK-YS
+import:         from AS198974 accept AS198974
+export:         to AS198974 announce ANY
+import:         from AS198973 accept AS198973
+export:         to AS198973 announce ANY
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2012-07-03T12:51:14Z
+last-modified:  2021-12-01T09:59:23Z
+source:         RIPE
+
+
+
+aut-num:        AS198973
+as-name:        RU-RN-INFORM-OHA
+remarks:        Branch Oha
+org:            ORG-SIC1-RIPE
+import:         from AS8443 accept ANY
+export:         to AS8443 announce AS198973
+import:         from AS43550 accept ANY
+export:         to AS43550 announce AS198973
+import:         from AS198960 accept ANY
+export:         to AS198960 announce AS198973
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2012-07-04T14:10:17Z
+last-modified:  2021-08-31T08:53:31Z
+source:         RIPE
+
+
+
+aut-num:        AS198974
+as-name:        RU-RN-INFORM-NOGLIKI
+remarks:        Branch Nogliki
+org:            ORG-SIC1-RIPE
+import:         from AS43746 accept ANY
+export:         to AS43746 announce AS198974
+import:         from AS8443 accept ANY
+export:         to AS8443 announce AS198974
+import:         from AS198960 accept ANY
+export:         to AS198960 announce AS198974
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2012-07-04T14:13:37Z
+last-modified:  2021-08-31T08:52:34Z
+source:         RIPE
+
+
+
+aut-num:        AS34249
+as-name:        TNKBP-AS
+org:            ORG-OR14-RIPE
+sponsoring-org: ORG-SIC1-RIPE
+admin-c:        AV12752-RIPE
+tech-c:         AV12752-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2004-11-26T16:09:08Z
+last-modified:  2023-11-29T05:33:37Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS39575
+as-name:        SIBINTEK-MR-CENTER-AS
+descr:          Makroregion Center
+org:            ORG-SIC1-RIPE
+import:         from AS41209 accept ANY
+import:         from AS51543 accept ANY
+import:         from AS12389 accept ANY
+import:         from AS50691 accept ANY
+export:         to AS41209 announce AS39575
+export:         to AS51543 announce AS39575
+export:         to AS12389 announce AS39575
+export:         to AS50691 announce AS39575
+admin-c:        BAKS-RIPE
+tech-c:         BAKS-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2006-03-21T11:37:20Z
+last-modified:  2023-11-28T11:26:59Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS41706
+as-name:        ROSNEFT-AS
+org:            ORG-OR14-RIPE
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS41706
+import:         from AS50374 accept ANY
+export:         to AS50374 announce AS41706
+import:         from AS25159 accept ANY
+export:         to AS25159 announce AS41706
+import:         from AS209030 accept ANY
+export:         to AS209030 announce AS41706
+import:         from AS197068 accept ANY
+export:         to AS197068 announce AS41706
+admin-c:        AV12752-RIPE
+tech-c:         AV12752-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2010-09-10T13:20:46Z
+last-modified:  2023-11-22T11:45:24Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-SIC1-RIPE
+
+
+
+aut-num:        AS41826
+as-name:        BN-NET
+org:            ORG-SIC1-RIPE
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS41826
+import:         from AS9049 action pref=100; accept ANY
+export:         to AS9049 announce AS41826
+admin-c:        SNF-RIPE
+admin-c:        RG12571-RIPE
+tech-c:         RG12571-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+mnt-by:         MNT-SIBINTEK
+created:        2013-08-15T10:15:46Z
+last-modified:  2024-01-09T13:14:04Z
+source:         RIPE
+
+
+
+aut-num:        AS42870
+org:            ORG-SIC1-RIPE
+as-name:        SIBINTEK-STAVROPOL-AS
+descr:          Stavropol MRU
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS8359 announce AS42870
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS42870
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2007-04-27T11:38:19Z
+last-modified:  2020-07-22T12:01:04Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS50374
+as-name:        RN-INFORM
+remarks:        Branch in Moscow
+org:            ORG-SIC1-RIPE
+remarks:        -= Uplinks =-
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS-RN
+import:         from AS25159 accept ANY
+export:         to AS25159 announce AS-RN
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-RN
+import:         from AS28917 accept ANY
+export:         to AS28917 announce AS-RN
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-RN
+remarks:        -= Downlink =-
+import:         from AS41706 accept AS41706
+export:         to AS41706 announce ANY
+admin-c:        BAKS-RIPE
+tech-c:         BAKS-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2009-12-30T12:25:53Z
+last-modified:  2023-11-28T11:27:26Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS50443
+as-name:        RU-SIBINTEK-KRSK
+remarks:        Krasnoyarsk branch
+org:            ORG-SIC1-RIPE
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS50443
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS50443
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS50443
+import:         from AS60430 accept ANY
+export:         to AS60430 announce AS50443
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2010-01-18T14:24:48Z
+last-modified:  2024-03-11T06:35:13Z
+source:         RIPE
+
+
+
+aut-num:        AS50691
+as-name:        RU-RN-INFORM-SAMARA
+descr:          Branch in Samara
+org:            ORG-SIC1-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-SIBINTEK-SAMARA
+import:         from AS197235 accept ANY
+export:         to AS197235 announce AS-SIBINTEK-SAMARA
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2010-07-05T13:15:56Z
+last-modified:  2020-01-10T12:56:37Z
+source:         RIPE
+
+
+
+aut-num:        AS50753
+as-name:        RU-RN-INFORM-IRK
+remarks:        Branch in Irkutsk.
+org:            ORG-SIC1-RIPE
+import:         from AS8345 accept ANY
+export:         to AS8345 announce AS50753
+import:         from AS31195 accept ANY
+export:         to AS31195 announce AS50753
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS50753
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2010-03-19T09:55:43Z
+last-modified:  2023-04-21T05:26:51Z
+source:         RIPE
+
+
+
+aut-num:        AS51209
+as-name:        RN-GOSA
+remarks:        LLC RN-Inform, Saint Petersburg
+org:            ORG-SIC1-RIPE
+import:         from AS29329 accept ANY
+export:         to AS29329 announce AS51209
+import:         from AS20632 accept ANY
+export:         to AS20632 announce AS51209
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS51209
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2010-06-23T12:25:55Z
+last-modified:  2021-11-24T16:20:53Z
+source:         RIPE
+
+
+
+aut-num:        AS51238
+as-name:        KRASNODAR-RN-INFORM-AS
+descr:          Branch in Krasnodar
+org:            ORG-SIC1-RIPE
+import:         from AS48479 accept ANY
+export:         to AS48479 announce AS51238
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS51238
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2010-06-29T11:09:17Z
+last-modified:  2018-10-31T09:30:02Z
+source:         RIPE
+
+
+
+aut-num:        AS60513
+as-name:        RU-RN-INFORM-KOMSOMOLSK
+descr:          branch in Komsomolsk
+org:            ORG-SIC1-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS60513
+import:         from AS31195 accept ANY
+export:         to AS31195 announce AS60513
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS60513
+admin-c:        SNF-RIPE
+tech-c:         SNF-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SIBINTEK-NOC
+created:        2013-07-08T09:56:54Z
+last-modified:  2018-10-31T09:30:01Z
+source:         RIPE
 
 
 

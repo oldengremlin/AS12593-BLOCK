@@ -1,3 +1,92 @@
 mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.8 port 22
+ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
+
+
+
+
+aut-num:        AS206011
+as-name:        FREEDOM1-AS
+org:            ORG-FL196-RIPE
+import:         from AS28917 accept ANY
+export:         to AS28917 announce AS206011:AS-FREEDOM-KRD
+import:         from AS8631 accept ANY
+export:         to AS8631 announce AS206011:AS-FREEDOM-KRD
+import:         from AS49869 accept ANY
+export:         to AS49869 announce AS206011:AS-FREEDOM-KRD
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS206011:AS-FREEDOM-KRD
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS206011:AS-FREEDOM-KRD
+import:         from AS216348 accept ANY
+export:         to AS216348 announce AS206011:AS-FREEDOM-KRD
+import:         from AS15169 accept ANY
+export:         to AS15169 announce AS206011:AS-FREEDOM-KRD
+import:         from AS48129 accept AS-IRBISTELECOM
+export:         to AS48129 announce ANY
+remarks:        IPv6 policy
+mp-import:      afi ipv6.unicast from AS28917 accept ANY
+mp-export:      afi ipv6.unicast to AS28917 announce AS206011:AS-FREEDOM-KRD
+mp-import:      afi ipv6.unicast from AS8631 accept ANY
+mp-export:      afi ipv6.unicast to AS8631 announce AS206011:AS-FREEDOM-KRD
+mp-import:      afi ipv6.unicast from AS49869 accept ANY
+mp-export:      afi ipv6.unicast to AS49869 announce AS206011:AS-FREEDOM-KRD
+mp-import:      afi ipv6.unicast from AS15169 accept ANY
+mp-export:      afi ipv6.unicast to AS15169 announce AS206011:AS-FREEDOM-KRD
+mp-import:      afi ipv6.unicast from AS3216 accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS206011:AS-FREEDOM-KRD
+admin-c:        VM6336-RIPE
+tech-c:         VM6336-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-freedom-1-mnt
+created:        2017-04-11T15:34:20Z
+last-modified:  2024-04-16T05:38:04Z
+source:         RIPE
+
+
+
+aut-num:        AS216348
+as-name:        MV-AS
+org:            ORG-VA29673-RIPE
+sponsoring-org: ORG-FL196-RIPE
+import:         from AS206011 accept ANY
+export:         to AS206011 announce AS216348
+import:         from AS48129 accept ANY
+export:         to AS48129 announce AS216348
+mp-import:      afi ipv6.unicast from AS206011 accept ANY
+mp-export:      afi ipv6.unicast to AS206011 announce AS216348
+admin-c:        AR39900-RIPE
+tech-c:         AR39900-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-freedom-1-mnt
+created:        2023-09-05T13:35:42Z
+last-modified:  2023-09-27T06:12:49Z
+source:         RIPE
+
+
+
+aut-num:        AS61964
+as-name:        FREEDOM-AS
+org:            ORG-FL196-RIPE
+admin-c:        VM6336-RIPE
+tech-c:         VM6336-RIPE
+import:         from AS8427 accept ANY
+import:         from AS28812 accept ANY
+import:         from AS44775 accept ANY
+import:         from AS35400 accept ANY
+import:         from AS9049 accept ANY
+export:         to AS8427 announce AS61964
+export:         to AS28812 announce AS61964
+export:         to AS44775 announce AS61964
+export:         to AS35400 announce AS61964
+export:         to AS9049 announce AS61964
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-freedom-1-mnt
+created:        2014-04-14T12:59:09Z
+last-modified:  2021-02-05T10:25:44Z
+source:         RIPE
+
+
+

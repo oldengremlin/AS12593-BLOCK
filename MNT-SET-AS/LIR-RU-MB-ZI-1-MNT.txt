@@ -1,6 +1,70 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@94.125.121.46:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS35021
+as-name:        E-STOCK-AS
+import:         from AS12389 accept ANY
+import:         from AS48009 accept AS48009
+import:         from AS3216 accept ANY
+export:         to AS12389 announce AS-MBTECH
+export:         to AS12389 announce {85.118.181.0/24}
+export:         to AS12389 announce {85.118.179.0/24}
+export:         to AS12389 announce {193.232.39.0/24}
+export:         to AS48009 announce AS35021
+export:         to AS3216 announce AS-MBTECH
+org:            ORG-LLCM8-RIPE
+admin-c:        MIS237-RIPE
+tech-c:         MIS237-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         lir-ru-mb-zi-1-MNT
+created:        2005-05-18T14:05:21Z
+last-modified:  2025-02-11T09:34:00Z
+source:         RIPE # Filtered
+
+
+
+aut-num:        AS48009
+as-name:        MICEX
+import:         from AS35021 accept ANY
+import:         from AS25159 accept ANY
+import:         from AS2854 accept ANY
+import:         from AS35598 accept ANY
+export:         to AS35021 announce AS48009
+export:         to AS35021 announce {85.118.181.0/24}
+export:         to AS35021 announce {85.118.182.0/24}
+export:         to AS35021 announce {85.118.183.0/24}
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS48009
+export:         to AS12389 announce {85.118.181.0/24}
+import:         from AS8631 accept ANY
+import:         from AS47122 accept ANY
+import:         from AS201706 accept ANY
+export:         to AS8631 announce AS48009
+export:         to AS8631 announce {85.118.181.0/24}
+export:         to AS25159 announce AS48009
+export:         to AS25159 announce {85.118.181.0/24}
+export:         to AS2854 announce AS48009
+export:         to AS2854 announce {85.118.181.0/24}
+export:         to AS35598 announce AS48009
+export:         to AS35598 announce {85.118.181.0/24}
+export:         to AS35598 announce {85.118.182.0/24}
+export:         to AS35598 announce {85.118.183.0/24}
+export:         to AS47122 announce AS-MBTECH
+export:         to AS47122 announce {85.118.182.0/24}
+export:         to AS47122 announce {85.118.183.0/24}
+export:         to AS201706 announce AS-MBTECH
+export:         to AS201706 announce {85.118.181.0/24}
+org:            ORG-LLCM8-RIPE
+admin-c:        MIS237-RIPE
+tech-c:         MIS237-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         lir-ru-mb-zi-1-MNT
+created:        2008-09-29T08:59:50Z
+last-modified:  2025-02-11T09:31:49Z
+source:         RIPE # Filtered
 
 
 

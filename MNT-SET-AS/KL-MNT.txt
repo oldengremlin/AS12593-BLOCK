@@ -1,3 +1,253 @@
 mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.8 port 22
+ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
+
+
+
+
+aut-num:        AS200107
+as-name:        KL-EXT
+org:            ORG-KLSG1-RIPE
+import:         from AS9002 accept ANY
+import:         from AS28917 accept ANY
+import:         from AS3356 accept ANY
+import:         from AS3327 accept ANY
+import:         from AS20485 accept ANY
+import:         from AS12389 accept ANY
+import:         from AS61400 accept ANY
+import:         from AS1273 accept ANY
+import:         from AS1299 accept ANY
+import:         from AS174 accept ANY
+import:         from AS1836 accept ANY
+import:         from AS41502 accept AS41502
+import:         from AS12498 accept AS12498
+import:         from AS61144 accept AS61144
+import:         from AS47986 accept AS47986
+import:         from AS29604 accept AS29604
+import:         from AS43887 accept AS43887
+import:         from AS201530 accept AS201530
+import:         from AS205559 accept AS205559
+import:         from AS56467 accept AS56467
+import:         from AS203043 accept AS203043
+import:         from AS1547 accept AS1547
+export:         to AS9002 announce AS-KDP
+export:         to AS41502 announce ANY
+export:         to AS61144 announce ANY
+export:         to AS174 announce ANY
+export:         to AS3356 announce AS200107
+export:         to AS3356 announce AS-KDP
+export:         to AS3327 announce AS200107
+export:         to AS20485 announce AS200107
+export:         to AS12389 announce AS200107
+export:         to AS28917 announce AS200107
+export:         to AS61400 announce AS200107
+export:         to AS1836 announce AS200107
+export:         to AS12498 announce ANY
+export:         to AS1273 announce ANY
+export:         to AS1299 announce ANY
+export:         to AS47986 announce ANY
+export:         to AS29604 announce ANY
+export:         to AS43887 announce ANY
+export:         to AS201530 announce ANY
+export:         to AS205559 announce ANY
+export:         to AS1547 announce ANY
+admin-c:        KLSC1-RIPE
+tech-c:         KLSC1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         KL-MNT
+created:        2013-10-08T06:16:31Z
+last-modified:  2025-05-06T14:23:41Z
+source:         RIPE
+
+
+
+aut-num:        AS209030
+as-name:        KL-KDP
+org:            ORG-KL28-RIPE
+import:         from as9002 accept ANY
+export:         to as9002 announce AS-KDP-RUSSIA
+import:         from as57304 accept ANY
+export:         to as57304 announce AS-KDP-RUSSIA
+import:         from AS9198 accept ANY
+export:         to AS9198 announce AS-KDP-RUSSIA
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS60040 announce ANY
+export:         to AS9049 announce AS-KDP-RUSSIA-ERTH
+import:         from AS9049 accept AS-KDP-RUSSIA-ERTH
+import:         from AS60040 accept AS60040
+import:         from AS12695 action pref=100; accept ANY
+import:         from AS12976 action pref=100; accept ANY
+import:         from AS29076 action pref=100; accept ANY
+import:         from AS8631 action pref=100; accept ANY
+import:         from AS49869 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS42974 accept AS42974
+import:         from AS56725 accept AS56725
+import:         from AS39850 accept AS39850
+import:         from AS34662 accept AS34662
+import:         from AS6694 accept AS6694
+import:         from AS39818 accept AS39818
+import:         from AS34802 accept AS34802
+import:         from AS196641 accept AS196641
+import:         from AS3327 action pref=100; accept ANY
+import:         from AS16345 accept AS16345
+import:         from AS34832 accept AS34832
+import:         from AS47976 accept AS47976
+import:         from AS35022 accept AS35022
+import:         from AS198645 accept AS198645
+import:         from AS49012 accept AS49012
+import:         from AS34887 accept AS34887
+import:         from AS59434 accept AS59434
+import:         from AS50164 accept AS50164
+import:         from AS203972 accept AS203972
+import:         from AS41636 accept AS41636
+import:         from AS61166 accept AS61166
+import:         from AS41826 accept AS41826
+import:         from AS200107 action pref=100; accept ANY
+import:         from AS41430 accept AS41430
+import:         from AS43946 accept AS43946
+import:         from AS41983 accept AS41983
+import:         from AS51316 accept AS51316
+import:         from AS61960 accept AS61960
+import:         from AS39350 accept AS39350
+import:         from AS28965 accept AS28965
+import:         from AS31462 accept AS31462
+import:         from AS50640 accept AS50640
+import:         from AS30833 accept AS30833
+import:         from AS8846 accept AS8846
+import:         from AS50339 accept AS50339
+import:         from AS41798 accept AS41798
+import:         from AS21292 accept AS21292
+import:         from AS200928 accept AS200928
+import:         from AS33936 accept AS33936
+import:         from AS203725 accept AS203725
+import:         from AS60967 accept AS60967
+import:         from AS56760 accept AS56760
+import:         from AS39433 accept AS39433
+import:         from AS25532 accept AS25532
+import:         from AS205559 accept AS205559
+import:         from AS44915 accept AS44915
+import:         from AS9198 accept AS9198
+import:         from AS8706 accept AS8706
+import:         from AS39725 accept AS39725
+import:         from AS50586 accept AS50586
+import:         from AS9198 accept AS9198
+export:         to AS12389 announce AS-KDP-RUSSIA
+export:         to AS12695 announce AS-KDP-RUSSIA
+export:         to AS3216 announce AS-KDP-RUSSIA
+export:         to AS12976 announce AS-KDP-RUSSIA
+export:         to AS29076 announce AS-KDP-RUSSIA
+export:         to AS8631 announce AS-KDP-RUSSIA
+export:         to AS49869 announce AS-KDP-RUSSIA
+export:         to AS196641 announce ANY
+export:         to AS20485 announce AS-KDP-RUSSIA
+export:         to AS16345 announce AS-KDP-RUSSIA
+export:         to AS39850 announce ANY
+export:         to AS56725 announce ANY
+export:         to AS42974 announce ANY
+export:         to AS41551 announce ANY
+export:         to AS34662 announce ANY
+export:         to AS34832 announce ANY
+export:         to AS6694 announce ANY
+export:         to AS43946 announce ANY
+export:         to AS8706 announce ANY
+export:         to AS39818 announce ANY
+export:         to AS34802 announce ANY
+export:         to AS61960 announce ANY
+export:         to AS3327 announce AS-KDP-RUSSIA
+export:         to AS59425 announce ANY
+export:         to AS41826 announce ANY
+export:         to AS50164 announce ANY
+export:         to AS35022 announce ANY
+export:         to AS198645 announce ANY
+export:         to AS49012 announce ANY
+export:         to AS34887 announce ANY
+export:         to AS59434 announce ANY
+export:         to AS41636 announce ANY
+export:         to AS61166 announce ANY
+export:         to AS200107 announce AS-KDP-RUSSIA
+export:         to AS41430 announce ANY
+export:         to AS41983 announce ANY
+export:         to AS201606 announce ANY
+export:         to AS51316 announce ANY
+export:         to AS39350 announce ANY
+export:         to AS28965 announce ANY
+export:         to AS31462 announce ANY
+export:         to AS50640 announce ANY
+export:         to AS30833 announce ANY
+export:         to AS8846 announce ANY
+export:         to AS50339 announce ANY
+export:         to AS41798 announce ANY
+export:         to AS21292 announce ANY
+export:         to AS200928 announce ANY
+export:         to AS33936 announce ANY
+export:         to AS203725 announce ANY
+export:         to AS60967 announce ANY
+export:         to AS56760 announce ANY
+export:         to AS39433 announce ANY
+export:         to AS25532 announce ANY
+export:         to AS205559 announce ANY
+export:         to AS47976 announce ANY
+export:         to AS44915 announce ANY
+export:         to AS9198 announce ANY
+export:         to AS39725 announce ANY
+export:         to AS50586 announce ANY
+export:         to AS9198 announce ANY
+export:         to AS60865 announce ANY
+import:         from AS60865 accept AS60865
+import:         from AS8491 accept AS8491
+export:         to AS8491 announce ANY
+import:         from AS60388 accept AS60388
+export:         to AS60388 announce ANY
+export:         to AS47995 announce ANY
+import:         from AS47995 accept AS47995
+import:         from AS2854 accept ANY
+export:         to AS2854 announce AS-KDP-RUSSIA
+import:         from AS203891 accept AS203891
+export:         to AS203891 announce ANY
+import:         from AS15632 accept AS15632
+export:         to AS15632 announce ANY
+import:         from AS196699 accept AS196699
+export:         to AS196699 announce ANY
+import:         from AS12722 accept AS-RECONN
+export:         to AS12722 announce ANY
+import:         from AS50790 accept AS50790
+export:         to AS50790 announce ANY
+import:         from AS8484 accept AS8484
+export:         to AS8484 announce ANY
+import:         from AS48716 accept AS48716
+export:         to AS48716 announce ANY
+admin-c:        SK15560-RIPE
+tech-c:         SK15560-RIPE
+abuse-c:        KLKC1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         KDP-MNT
+mnt-by:         KL-MNT
+created:        2019-04-23T12:32:23Z
+last-modified:  2025-04-15T10:25:31Z
+source:         RIPE
+
+
+
+aut-num:        AS41983
+as-name:        KL-AS
+org:            ORG-KLSG1-RIPE
+import:         from AS57304 accept ANY
+export:         to AS57304 announce AS41983
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS41983
+import:         from AS2854 accept ANY
+export:         to AS2854 announce AS41983
+admin-c:        KLSC1-RIPE
+tech-c:         KLSC1-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         KL-MNT
+created:        2006-11-27T15:19:05Z
+last-modified:  2023-10-03T14:04:45Z
+source:         RIPE
+
+
+

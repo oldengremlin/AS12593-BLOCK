@@ -1,6 +1,101 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.160.8:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS34470
+as-name:        PTKOM-AS
+descr:          PortTelekom Autonomous system
+descr:          Vladivostok, Russia
+remarks:
+remarks:        UPSTREAMS
+remarks:
+import:         from AS20485 action pref=10; accept ANY
+export:         to AS20485 announce AS-PTKOM
+import:         from AS3216 action pref=10; accept ANY
+export:         to AS3216 announce AS-PTKOM
+import:         from AS12389 action pref=10; accept ANY
+export:         to AS12389 announce AS-PTKOM
+remarks:
+remarks:        PEERS
+remarks:
+import:         from AS34185 action pref=50; accept AS34185
+export:         to AS34185 announce ANY
+import:         from AS34434 action pref=50; accept AS34434
+export:         to AS34434 announce ANY
+import:         from AS42920 action pref=50; accept AS42920
+export:         to AS42920 announce ANY
+import:         from AS44724 action pref=50; accept AS44724
+export:         to AS44724 announce ANY
+import:         from AS34879 action pref=50; accept RS-NGENIX-VLK
+export:         to AS34879 announce ANY
+import:         from AS45018 action pref=50; accept AS45018
+export:         to AS45018 announce AS-PTKOM
+import:         from AS13238 action pref=50; accept AS-YANDEX
+export:         to AS13238 announce AS-PTKOM
+import:         from AS47162 action pref=50; accept AS47162
+export:         to AS47162 announce ANY
+import:         from AS52069 action pref=50; accept AS52069
+export:         to AS52069 announce ANY
+import:         from AS57898 action pref=50; accept AS57898
+export:         to AS57898 announce ANY
+import:         from AS34352 action pref=50; accept AS34352
+export:         to AS34352 announce ANY
+import:         from AS197596 action pref=50; accept AS197596
+export:         to AS197596 announce ANY
+remarks:
+org:            ORG-PL11-RIPE
+admin-c:        ED920-RIPE
+tech-c:         PIN11-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         PTKOM-MNT
+created:        2005-01-28T08:26:59Z
+last-modified:  2024-07-04T01:15:48Z
+source:         RIPE
+
+
+
+aut-num:        AS41060
+as-name:        PRIMBANK-AS
+org:            ORG-JCBP1-RIPE
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS41060
+import:         from AS12332 action pref=100; accept ANY
+export:         to AS12332 announce AS41060
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS41060
+import:         from AS2854 action pref=100; accept ANY
+export:         to AS2854 announce AS41060
+import:         from AS34470 action pref=100; accept ANY
+export:         to AS34470 announce AS41060
+admin-c:        AM51919-RIPE
+tech-c:         AK23026-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         PTKOM-MNT
+created:        2009-08-13T08:14:17Z
+last-modified:  2024-05-23T10:44:11Z
+source:         RIPE
+sponsoring-org: ORG-PL11-RIPE
+
+
+
+aut-num:        AS52069
+as-name:        VMTP-AS
+org:            ORG-PJSC13-RIPE
+import:         from AS34470 accept ANY
+export:         to AS34470 announce AS52069
+import:         from AS21332 accept ANY
+export:         to AS21332 announce AS52069
+admin-c:        KS11572-RIPE
+tech-c:         KS11572-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         PTKOM-MNT
+created:        2010-12-23T09:02:40Z
+last-modified:  2022-03-14T13:25:59Z
+source:         RIPE
+sponsoring-org: ORG-PL11-RIPE
 
 
 

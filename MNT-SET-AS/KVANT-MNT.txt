@@ -1,6 +1,26 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@94.125.121.46:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS35738
+as-name:        Kvant-AS
+org:            ORG-Kl17-RIPE
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS31133 announce AS35738
+import:         from AS8369 action pref=100; accept ANY
+export:         to AS8359 announce AS35738
+import:         from AS44599 action pref=100; accept ANY
+export:         to AS44599 announce AS35738
+import:         from AS62264 action pref=100; accept AS62264
+export:         to as62264 announce {0.0.0.0/0}
+admin-c:        VK566-RIPE
+tech-c:         DM3937-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         kvant-mnt
+created:        2005-10-14T06:44:59Z
+last-modified:  2021-12-13T11:58:43Z
+source:         RIPE
 
 
 

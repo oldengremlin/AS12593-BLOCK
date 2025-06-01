@@ -1,3 +1,59 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 94.125.121.46 port 22
+
+
+
+
+aut-num:        AS31643
+as-name:        GES-AS
+org:            ORG-CC3-RIPE
+remarks:        **************************
+remarks:        *** Uplinks ***
+remarks:        **************************
+import:         {                from AS12389 action pref=100; accept ANY;                from AS21127 action pref=100; accept ANY;                from AS20485 action pref=100; accept ANY;                }
+export:         {                to AS12389 announce AS31643:AS-TRANSIT;                to AS21127 announce AS31643:AS-TRANSIT;                to AS20485 announce AS31643:AS-TRANSIT;                }
+remarks:        **************************
+remarks:        *** Internet customers ***
+remarks:        **************************
+import:         {                 from AS8411 action pref=500; accept AS8411; }
+export:         {                 to AS8411 announce ANY; }
+remarks:        **********************
+remarks:        *** SIB-IX peering ***
+remarks:        ***   ROUTESERVER  ***
+remarks:        **********************
+import:         {  from AS43882 action pref=1000; accept AS43882 AS28809;  from AS31160 action pref=1000; accept AS31160;  from AS41440 action pref=1000; accept AS-SIBNET;  from AS41771 action pref=1000; accept AS41771;  from AS41843 action pref=1000; accept AS41843;  from AS28884 action pref=1000; accept AS28884;  from AS47165 action pref=1000; accept AS47165;  from AS49880 action pref=1000; accept AS49880;  from AS30729 action pref=1000; accept AS30729;  from AS21127 action pref=1000; accept AS21127;  }
+export:         { to AS43882 announce AS31643:AS-IX-PEERS; to AS41440 announce AS31643:AS-IX-PEERS; to AS31160 announce AS31643:AS-IX-PEERS; to AS41771 announce AS31643:AS-IX-PEERS; to AS41843 announce AS31643:AS-IX-PEERS; to AS28884 announce AS31643:AS-IX-PEERS; to AS47165 announce AS31643:AS-IX-PEERS; to AS49880 announce AS31643:AS-IX-PEERS; to AS30729 announce AS31643:AS-IX-PEERS; to AS21127 announce AS31643:AS-IX-PEERS; }
+remarks:        *********************************************
+remarks:        * Community description: *
+remarks:        * 31643:10000 all peers prefixes *
+remarks:        * 31643:1XXXR received from community *
+remarks:        * R: reserved (always 0 at now) *
+remarks:        * XXX: peer number from table *
+remarks:        * 001 - AS31643 *
+remarks:        * 002 - AS43853 *
+remarks:        * 003 - AS43882 *
+remarks:        * 004 - AS41440 *
+remarks:        * 005 - AS48038 *
+remarks:        * 006 - AS31160 *
+remarks:        * 007 - AS41771 *
+remarks:        * 008 - AS41843 *
+remarks:        * 009 - AS28884 *
+remarks:        * 010 - AS47165 *
+remarks:        * 011 - AS39735 *
+remarks:        * 012 - AS49880 *
+remarks:        * 014 - AS30729 *
+remarks:        * 015 - AS21127 *
+remarks:        * 31643:2XXXR - adverise to community *
+remarks:        * R: reserved (always 0 at now) *
+remarks:        * XXX: peer number from table see above *
+remarks:        *********************************************
+remarks:
+admin-c:        WHYB-RIPE
+tech-c:         WHYB-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IMASTER-MNT
+created:        2004-06-29T14:50:39Z
+last-modified:  2021-08-05T09:28:25Z
+source:         RIPE
+
+
+

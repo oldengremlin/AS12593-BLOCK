@@ -1,4 +1,83 @@
 
 
 
+as-block:       AS203113 - AS203887
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-11-12T15:22:00Z
+last-modified:  2024-11-12T15:22:00Z
+source:         RIPE
+
+
+
+aut-num:        AS203784
+as-name:        FiberTelecom-AS
+org:            ORG-FTL24-RIPE
+remarks:        -----------------------------------------
+remarks:        Uplinks
+remarks:        -----------------------------------------
+import:         from as50928 accept ANY
+import:         from as48858 accept ANY
+export:         to AS50928 announce AS203784
+export:         to as48858 announce AS203784
+remarks:        -----------------------------------------
+remarks:        IX
+remarks:        -----------------------------------------
+import:         from AS8631 action pref=460; accept AS8631
+import:         from AS13094 action pref=400; accept AS13094
+import:         from AS42403 action pref=470; accept AS42403
+import:         from AS60763 action pref=470; accept AS60763
+import:         from AS43213 action pref=470; accept AS43213
+export:         to AS8631 announce AS203784
+export:         to AS13094 announce AS203784
+export:         to AS42403 announce AS203784
+export:         to AS60763 announce AS203784
+export:         to AS43213 announce AS203784
+remarks:        -----------------------------------------
+remarks:        Peers
+remarks:        -----------------------------------------
+import:         from AS714 action pref=500; accept AS714
+import:         from AS3267 action pref=500; accept AS3267
+import:         from AS6939 action pref=500; accept AS6939
+import:         from AS13238 action pref=500; accept AS13238
+import:         from AS49673 action pref=500; accept AS49673
+export:         to AS714 announce AS203784
+export:         to AS3267 announce AS203784
+export:         to AS6939 announce AS203784
+export:         to AS13238 announce AS203784
+export:         to AS49673 announce AS203784
+admin-c:        AC32816-RIPE
+tech-c:         AC32816-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         LIDERTELECOM-mnt
+created:        2015-10-29T12:56:29Z
+last-modified:  2020-12-17T14:13:23Z
+source:         RIPE
+sponsoring-org: ORG-LL38-RIPE
+
+organisation:   ORG-FTL24-RIPE
+org-name:       Fiber Telecom Ltd
+country:        RU
+org-type:       OTHER
+address:        652380, Russia, Kemerovo region, pgt. Promyshlennaya, ul. Molodezhnaya, 16-2
+abuse-c:        AC32816-RIPE
+mnt-ref:        lidertelecom-mnt
+mnt-by:         lidertelecom-mnt
+created:        2015-10-28T13:32:56Z
+last-modified:  2022-12-01T17:12:48Z
+source:         RIPE # Filtered
+
+role:           Abuse Contact
+address:        652380, Russia, Kemerovo region, pgt. Promyshlennaya, ul. Molodezhnaya, 16-2
+abuse-mailbox:  mail@ftlink.ru
+nic-hdl:        AC32816-RIPE
+mnt-by:         lidertelecom-mnt
+mnt-by:         lidertelecom-mnt
+created:        2016-05-13T10:45:22Z
+last-modified:  2016-05-13T10:45:22Z
+source:         RIPE # Filtered
+
+
 

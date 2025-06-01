@@ -1,6 +1,297 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@94.125.121.46:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS50923
+as-name:        METRO-SET-AS
+descr:          Metroset Autonomous System
+descr:          Russia
+org:            ORG-ML141-RIPE
+remarks:        *******************************
+remarks:        ***** IPv4 Routing Policy *****
+remarks:        *******************************
+remarks:        Uplinks
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-METRO-SET
+import:         from AS198354 accept ANY
+export:         to AS198354 announce AS-METRO-SET
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-METRO-SET
+import:         from AS6762 accept ANY
+export:         to AS6762 announce AS-METRO-SET
+import:         from AS1299 accept ANY
+export:         to AS1299 announce AS-METRO-SET
+import:         from AS43727 accept ANY
+export:         to AS43727 announce AS-METRO-SET
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS-METRO-SET
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-METRO-SET
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS-METRO-SET
+import:         from AS205540 accept ANY
+export:         to AS205540 announce AS-METRO-SET
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS-METRO-SET
+import:         from AS8563 accept ANY
+export:         to AS8563 announce AS-METRO-SET
+import:         from AS51028 accept ANY
+export:         to AS51028 announce AS-METRO-SET
+remarks:        Peers
+import:         from AS31200 accept AS-RUNTK-SET
+export:         to AS31200 announce AS-METRO-SET
+import:         from AS47165 accept AS-OMKC-SET
+export:         to AS47165 announce ANY
+import:         from AS60430 accept AS-RED-IX-PEERS
+export:         to AS60430 announce AS-METRO-SET
+remarks:        MSK-IX
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-METRO-SET
+import:         from AS8075 accept AS-MICROSOFT
+export:         to AS8075 announce AS-METRO-SET
+import:         from AS20940 accept AS-AKAMAI
+export:         to AS20940 announce AS-METRO-SET
+remarks:        Global-IX
+import:         from AS31500 accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-METRO-SET
+remarks:        EKT-IX
+import:         from AS43213 accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS-METRO-SET
+remarks:        DATA-IX
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-METRO-SET
+remarks:        NSK-IX
+import:         from AS42403 accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-METRO-SET
+remarks:        EurasiaPeering-IX
+import:         from AS56931 accept ANY
+export:         to AS56931 announce AS-METRO-SET
+remarks:        DE-CIX
+import:         from AS6695 accept AS-DECIX
+export:         to AS6695 announce AS-METRO-SET
+import:         from AS42473 accept AS-ANEXIA
+export:         to AS42473 announce AS-METRO-SET
+import:         from AS46489 accept AS46489
+export:         to AS46489 announce AS-METRO-SET
+import:         from AS32590 accept AS-VALVE
+export:         to AS32590 announce AS-METRO-SET
+import:         from AS8365 accept AS-MANDA
+export:         to AS8365 announce AS-METRO-SET
+import:         from AS44066 accept AS-FIRSTCOLO
+export:         to AS44066 announce AS-METRO-SET
+import:         from AS16509 accept AS-AMAZON
+export:         to AS16509 announce AS-METRO-SET
+import:         from AS6939 accept AS-HURRICANE
+export:         to AS6939 announce AS-METRO-SET
+import:         from AS16265 accept AS-LEASEWEB
+export:         to AS16265 announce AS-METRO-SET
+import:         from AS13335 accept AS13335
+export:         to AS13335 announce AS-METRO-SET
+import:         from AS12041 accept AS12041
+export:         to AS12041 announce AS-METRO-SET
+import:         from AS8075 accept AS-MICROSOFT
+export:         to AS8075 announce AS-METRO-SET
+import:         from AS32934 accept AS-FACEBOOK
+export:         to AS32934 announce AS-METRO-SET
+remarks:        NETNOD
+import:         from AS52005 accept ANY
+export:         to AS52005 announce AS-METRO-SET
+import:         from AS16509 accept AS-AMAZON
+export:         to AS16509 announce AS-METRO-SET
+import:         from AS6939 accept AS-HURRICANE
+export:         to AS6939 announce AS-METRO-SET
+import:         from AS16265 accept AS-LEASEWEB
+export:         to AS16265 announce AS-METRO-SET
+import:         from AS13335 accept AS13335
+export:         to AS13335 announce AS-METRO-SET
+import:         from AS8075 accept AS-MICROSOFT
+export:         to AS8075 announce AS-METRO-SET
+import:         from AS32934 accept AS-FACEBOOK
+export:         to AS32934 announce AS-METRO-SET
+import:         from AS6507 accept AS-RIOT
+export:         to AS6507 announce AS-METRO-SET
+remarks:        AMS-IX
+import:         from AS6777 accept AS6777:AS-AMS-IX-RS-SETS AND NOT <^[AS32590 AS35000 AS56487 AS48858 AS13238 AS8075 AS20485 AS51497 AS52041 AS2854 AS3267 AS8732 AS9002 AS12714 AS13002 AS13238 AS20764 AS28917 AS31133 AS31500 AS39792 AS42861 AS44050 AS44053 AS47541 AS47764 AS48166 AS50384 AS57976]>
+export-via:     AS6777 to AS-ANY announce AS-METRO-SET
+export:         to AS6777 announce AS-METRO-SET
+import:         from AS13335 accept AS13335
+export:         to AS13335 announce AS-METRO-SET
+import:         from AS12041 accept AS12041
+export:         to AS12041 announce AS-METRO-SET
+import:         from AS8075 accept AS-MICROSOFT
+export:         to AS8075 announce AS-METRO-SET
+import:         from AS32934 accept AS-FACEBOOK
+export:         to AS32934 announce AS-METRO-SET
+remarks:        SOL-IX
+import:         from AS25172 accept AS-SOLIX-RS
+export:         to AS25172 announce AS-METRO-SET
+remarks:        SFO-IX
+import:         from AS13094 accept AS-MILECOM-RS
+export:         to AS13094 announce AS-METRO-SET
+remarks:        W-IX
+import:         from AS50384 accept AS-W-IX
+export:         to AS50384 announce AS-METRO-SET
+remarks:        PNI Moscow
+import:         from AS48061 accept AS-RUTUBE
+export:         to AS48061 announce AS-METRO-SET
+import:         from AS47764 accept AS-MAILRU
+export:         to AS47764 announce AS-METRO-SET
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-METRO-SET
+remarks:        Customers
+import:         from AS39735 accept AS-TMTYUMEN
+export:         to AS39735 announce ANY
+import:         from AS15493 accept AS-RUSCOMP
+export:         to AS15493 announce ANY
+import:         from AS44811 accept AS-AVANTEL-NJV
+export:         to AS44811 announce ANY
+import:         from AS42498 accept AS42498
+export:         to AS42498 announce ANY
+import:         from AS56889 accept AS56889
+export:         to AS56889 announce ANY
+import:         from AS15599 accept AS-ROILCOM-NY
+export:         to AS15599 announce ANY
+import:         from AS204077 accept AS204077
+export:         to AS204077 announce ANY
+import:         from AS16300 accept AS-INTERTAX
+export:         to AS16300 announce ANY
+import:         from AS48873 accept AS-PROXI-COM
+export:         to AS48873 announce ANY
+import:         from AS202136 accept AS-ASITI-EXPORT
+export:         to AS202136 announce ANY
+import:         from AS47654 accept AS47654
+export:         to AS47654 announce ANY
+import:         from AS50916 accept AS50916
+export:         to AS50916 announce ANY
+import:         from AS44627 accept AS-LINKNV
+export:         to AS44627 announce ANY
+remarks:        *******************************
+remarks:        ***** IPv6 Routing Policy *****
+remarks:        *******************************
+remarks:        Uplinks
+mp-import:      afi ipv6.unicast from AS3216 accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS6762 accept ANY
+mp-export:      afi ipv6.unicast to AS6762 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS20485 accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS1299 accept ANY
+mp-export:      afi ipv6.unicast to AS1299 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS43727 accept ANY
+mp-export:      afi ipv6.unicast to AS43727 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS25478 accept ANY
+mp-export:      afi ipv6.unicast to AS25478 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS9049 accept ANY
+mp-export:      afi ipv6.unicast to AS9049 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS35598 accept ANY
+mp-export:      afi ipv6.unicast to AS35598 announce AS-METRO-SET6
+remarks:        Peers
+mp-import:      afi ipv6.unicast from AS60430 accept AS-RED-IX-PEERS
+mp-export:      afi ipv6.unicast to AS60430 announce AS-METRO-SET6
+remarks:        MSK-IX
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS8075 accept AS-MICROSOFT
+mp-export:      afi ipv6.unicast to AS8075 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS20940 accept AS-AKAMAI
+mp-export:      afi ipv6.unicast to AS20940 announce AS-METRO-SET6
+remarks:        Global-IX
+mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-NET
+mp-export:      afi ipv6.unicast to AS31500 announce AS-METRO-SET6
+remarks:        EKT-IX
+mp-import:      afi ipv6.unicast from AS43213 accept AS-EKTROUTESERVER
+mp-export:      afi ipv6.unicast to AS43213 announce AS-METRO-SET6
+remarks:
+remarks:        DATA-IX
+mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX
+mp-export:      afi ipv6.unicast to AS50952 announce AS-METRO-SET6
+remarks:        DE-CIX
+mp-import:      afi ipv6.unicast from AS6695 accept AS-DECIX-V6
+mp-export:      afi ipv6.unicast to AS6695 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS42473 accept AS-ANEXIA
+mp-export:      afi ipv6.unicast to AS42473 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS32590 accept AS-VALVE
+mp-export:      afi ipv6.unicast to AS32590 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS8365 accept AS-MANDA
+mp-export:      afi ipv6.unicast to AS8365 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS44066 accept AS-FIRSTCOLO
+mp-export:      afi ipv6.unicast to AS44066 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS16509 accept AS-AMAZON
+mp-export:      afi ipv6.unicast to AS16509 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS6939 accept AS-HURRICANE
+mp-export:      afi ipv6.unicast to AS6939 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS16265 accept AS-LEASEWEB
+mp-export:      afi ipv6.unicast to AS16265 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS13335 accept AS13335
+mp-export:      afi ipv6.unicast to AS13335 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS12041 accept AS12041
+mp-export:      afi ipv6.unicast to AS12041 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS8075 accept AS-MICROSOFT
+mp-export:      afi ipv6.unicast to AS8075 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS32934 accept AS-FACEBOOK
+mp-export:      afi ipv6.unicast to AS32934 announce AS-METRO-SET6
+remarks:        NETNOD
+mp-import:      afi ipv6.unicast from AS52005 accept ANY
+mp-export:      afi ipv6.unicast to AS52005 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS6939 accept AS-HURRICANE
+mp-export:      afi ipv6.unicast to AS6939 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS16265 accept AS-LEASEWEB
+mp-export:      afi ipv6.unicast to AS16265 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS13335 accept AS13335
+mp-export:      afi ipv6.unicast to AS13335 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS8075 accept AS-MICROSOFT
+mp-export:      afi ipv6.unicast to AS8075 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS32934 accept AS-FACEBOOK
+mp-export:      afi ipv6.unicast to AS32934 announce AS-METRO-SET6
+remarks:        AMS-IX
+mp-import:      afi ipv6.unicast from AS13335 accept AS13335
+mp-export:      afi ipv6.unicast to AS13335 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS12041 accept AS12041
+mp-export:      afi ipv6.unicast to AS12041 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS8075 accept AS-MICROSOFT
+mp-export:      afi ipv6.unicast to AS8075 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS32934 accept AS-FACEBOOK
+mp-export:      afi ipv6.unicast to AS32934 announce AS-METRO-SET6
+remarks:        SOL-IX
+mp-import:      afi ipv6.unicast from AS25172 accept AS-SOLIX-RS
+mp-export:      afi ipv6.unicast to AS25172 announce AS-METRO-SET6
+remarks:        EurasiaPeering-IX
+mp-import:      afi ipv6.unicast from AS56931 accept ANY
+mp-export:      afi ipv6.unicast to AS56931 announce AS-METRO-SET6
+remarks:        W-IX
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX-IPVSIX
+mp-export:      afi ipv6.unicast to AS50384 announce AS-METRO-SET6
+remarks:        PNI Moscow
+mp-import:      afi ipv6.unicast from AS48061 accept AS-RUTUBE
+mp-export:      afi ipv6.unicast to AS48061 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS47764 accept AS-MAILRU
+mp-export:      afi ipv6.unicast to AS47764 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS13238 accept AS-YANDEX
+mp-export:      afi ipv6.unicast to AS13238 announce AS-METRO-SET6
+remarks:        Customers
+mp-import:      afi ipv6.unicast from AS15493 accept AS-RUSCOMP
+mp-export:      afi ipv6.unicast to AS15493 announce AS-METRO-SET6
+mp-import:      afi ipv6.unicast from AS15599 accept AS-ROILCOM-NY
+mp-export:      afi ipv6.unicast to AS15599 announce ANY
+mp-import:      afi ipv6.unicast from AS16300 accept AS-INTERTAX
+mp-export:      afi ipv6.unicast to AS16300 announce ANY
+mp-import:      afi ipv6.unicast from AS39735 accept AS39735
+mp-export:      afi ipv6.unicast to AS39735 announce ANY
+mp-import:      afi ipv6.unicast from AS202136 accept AS-ASITI-EXPORT
+mp-export:      afi ipv6.unicast to AS202136 announce ANY
+mp-import:      afi ipv6.unicast from AS50916 accept AS50916
+mp-export:      afi ipv6.unicast to AS50916 announce ANY
+admin-c:        SAM157-RIPE
+tech-c:         NOC50923-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         METRO-SET-MNT
+mnt-by:         NOC50923-MNT
+created:        2010-04-21T13:30:47Z
+last-modified:  2024-12-24T11:42:28Z
+source:         RIPE # Filtered
 
 
 

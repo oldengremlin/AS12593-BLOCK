@@ -1,4 +1,98 @@
 
 
 
+as-block:       AS50220 - AS50841
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2024-08-12T14:10:44Z
+last-modified:  2024-08-12T14:10:44Z
+source:         RIPE
+
+
+
+aut-num:        AS50596
+as-name:        ITNET33
+org:            ORG-ITL17-RIPE
+remarks:        itnet33.ru
+remarks:        abuse-mailbox: abuse@itnet33.ru
+remarks:        =========================================================
+remarks:        ---------------------------------------------------------
+remarks:        Upstreams IPv4
+remarks:        ---------------------------------------------------------
+remarks:        MF-MGSM-AS
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS31133 announce AS-ITNET33
+remarks:
+remarks:        SOVAM-AS
+import:         from AS3216 action pref=100; accept ANY
+export:         to AS3216 announce AS50596
+remarks:
+remarks:        MTS
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS8359 announce AS-ITNET33
+remarks:        =========================================================
+remarks:        ---------------------------------------------------------
+remarks:        Upstreams IPv6
+remarks:        ---------------------------------------------------------
+remarks:        MF-MGSM-AS
+mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-ITNET33
+remarks:
+remarks:        SOVAM-AS
+mp-import:      afi ipv6.unicast from AS3216 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS50596
+remarks:
+remarks:        MTS
+mp-import:      afi ipv6.unicast from AS8359 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-ITNET33
+remarks:        ---------------------------------------------------------
+remarks:        Local preference values
+remarks:        ---------------------------------------------------------
+remarks:        100 - routes from Upstream
+remarks:        =========================================================
+remarks:
+admin-c:        MSG-RIPE
+tech-c:         MSG-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-MSG
+created:        2010-02-16T13:03:59Z
+last-modified:  2025-04-13T07:58:16Z
+source:         RIPE
+
+organisation:   ORG-ITL17-RIPE
+org-name:       Informatsionnye Tekhnologii LLC
+country:        RU
+org-type:       LIR
+address:        Lopatina str., 21
+address:        601901
+address:        Kovrov
+address:        RUSSIAN FEDERATION
+phone:          +74923264488
+fax-no:         +74923264488
+admin-c:        MSG-RIPE
+abuse-c:        AB50596-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-MSG
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-MSG
+created:        2010-01-27T15:11:24Z
+last-modified:  2020-12-16T13:06:52Z
+source:         RIPE # Filtered
+
+person:         Mikhail S Godovitsyn
+address:        Informatsionnye Tekhnologii LLC
+address:        Lopatina, 21
+address:        Kovrov
+address:        601900 Russia, Vladimir region
+phone:          +7 49232 64488
+fax-no:         +7 49232 64488
+nic-hdl:        MSG-RIPE
+mnt-by:         MNT-MSG
+created:        2002-06-21T07:28:43Z
+last-modified:  2019-11-29T13:50:12Z
+source:         RIPE # Filtered
+
+
 

@@ -1,6 +1,38 @@
 mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@94.125.120.198:22 already exists, disabling multiplexing
+ControlSocket /home/olden/.ssh/control/olden@212.90.160.3:22 already exists, disabling multiplexing
 
+
+
+
+aut-num:        AS49136
+as-name:        TELECOM-NETWORKS-AS
+org:            ORG-TnJ1-RIPE
+remarks:        Peer MSK-IX
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS49136
+remarks:        Peer SMR-IX
+import:         from AS47882 accept AS-SMRROUTESERVER
+export:         to AS47882 announce AS49136
+remarks:        Peer Global
+import:         from AS31500 accept any
+export:         to AS31500 announce AS49136
+remarks:        Peer TK-Telecom
+import:         from AS60764 accept any
+export:         to AS60764 announce AS49136
+remarks:        TTK
+import:         from AS20485 accept any
+export:         to AS20485 announce AS49136
+import:         from AS15169 accept any
+export:         to AS15169 announce AS49136
+admin-c:        VBK7-RIPE
+tech-c:         VBK7-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-TELECOM-NETWORKS
+created:        2009-04-16T15:02:19Z
+last-modified:  2023-03-15T18:32:41Z
+source:         RIPE
+sponsoring-org: ORG-CS216-RIPE
 
 
 

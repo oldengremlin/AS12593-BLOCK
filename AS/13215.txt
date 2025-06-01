@@ -1,4 +1,164 @@
 
 
 
+as-block:       AS12557 - AS13223
+descr:          RIPE NCC ASN block
+remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2018-11-22T15:27:24Z
+last-modified:  2018-11-22T15:27:24Z
+source:         RIPE
+
+
+
+aut-num:        AS13215
+as-name:        CPLUS1-AS
+org:            ORG-CTCP2-RIPE
+remarks:        AO "Telecommunications company "Convey Plus"
+remarks:        ---------------------------------------------------------------
+remarks:        *************** IPv4 Routing Policy ***************
+remarks:        ---------------------------------------------------------------
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-CONVEYPLUS
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS-CONVEYPLUS
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-CONVEYPLUS
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-CONVEYPLUS
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS-CONVEYPLUS
+import:         from AS50509 accept ANY
+export:         to AS50509 announce AS-CONVEYPLUS
+import:         from AS57304 accept ANY
+export:         to AS57304 announce AS-CONVEYPLUS
+remarks:        ---------------------------------------------------------------
+remarks:        PITER-IX:
+import:         from AS50817 accept AS-PITER-IX
+export:         to AS50817 announce AS-CONVEYPLUS
+import:         from AS49869 accept AS-PITER-IX
+export:         to AS49869 announce AS-CONVEYPLUS
+import:         from AS49634 accept AS-PITER-IX
+export:         to AS49634 announce AS-CONVEYPLUS
+import:         from AS13335 accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-CONVEYPLUS
+remarks:        ---------------------------------------------------------------
+remarks:        MSK-IX:
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-CONVEYPLUS
+import:         from AS43690 accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-CONVEYPLUS
+remarks:        ---------------------------------------------------------------
+import:         from AS202642 accept AS202642
+export:         to AS202642 announce ANY
+import:         from AS206536 accept AS206536
+export:         to AS206536 announce ANY
+import:         from AS213067 accept AS213067
+export:         to AS213067 announce ANY
+remarks:        ---------------------------------------------------------------
+remarks:        *************** IPv6 Routing Policy ***************
+remarks:        ---------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS9002 accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-CONVEYPLUS
+mp-import:      afi ipv6.unicast from AS9049 accept ANY
+mp-export:      afi ipv6.unicast to AS9049 announce AS-CONVEYPLUS
+mp-import:      afi ipv6.unicast from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-CONVEYPLUS
+mp-import:      afi ipv6.unicast from AS25408 accept ANY
+mp-export:      afi ipv6.unicast to AS25408 announce AS-CONVEYPLUS
+mp-import:      afi ipv6.unicast from AS50509 accept ANY
+mp-export:      afi ipv6.unicast to AS50509 announce AS-CONVEYPLUS
+mp-import:      afi ipv6.unicast from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-CONVEYPLUS
+mp-import:      afi ipv6.unicast from AS35598 accept ANY
+mp-export:      afi ipv6.unicast to AS35598 announce AS-CONVEYPLUS
+mp-import:      afi ipv6.unicast from AS57304 accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-CONVEYPLUS
+remarks:        ---------------------------------------------------------------
+remarks:        PITER-IX:
+mp-import:      afi ipv6.unicast from AS50817 accept AS-PITER-IX
+mp-export:      afi ipv6.unicast to AS50817 announce AS-CONVEYPLUS
+remarks:        ---------------------------------------------------------------
+remarks:        MSK-IX:
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-CONVEYPLUS
+mp-import:      afi ipv6.unicast from AS43690 accept AS-SPBROUTESERVER
+mp-export:      afi ipv6.unicast to AS43690 announce AS-CONVEYPLUS
+remarks:        ---------------------------------------------------------------
+mp-import:      afi ipv6.unicast from AS202642 accept AS202642
+mp-export:      afi ipv6.unicast to AS202642 announce ANY
+mp-import:      afi ipv6.unicast from AS206536 accept AS206536
+mp-export:      afi ipv6.unicast to AS206536 announce ANY
+mp-import:      afi ipv6.unicast from AS213067 accept AS213067
+mp-export:      afi ipv6.unicast to AS213067 announce ANY
+mp-import:      afi ipv6.unicast from AS202181 accept AS202181
+mp-export:      afi ipv6.unicast to AS202181 announce ANY
+mp-import:      afi ipv6.unicast from AS204048 accept AS204048
+mp-export:      afi ipv6.unicast to AS204048 announce ANY
+mp-import:      afi ipv6.unicast from AS60346 accept AS60346
+mp-export:      afi ipv6.unicast to AS60346 announce ANY
+remarks:        ---------------------------------------------------------------
+admin-c:        AS42721-RIPE
+admin-c:        PL13372-RIPE
+tech-c:         AS42721-RIPE
+tech-c:         PL13372-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CPLUS1-MNT
+created:        2001-09-24T06:02:38Z
+last-modified:  2024-01-23T17:44:50Z
+source:         RIPE
+
+organisation:   ORG-CTCP2-RIPE
+org-name:       JSC Telecommunication company "Convey Plus"
+country:        RU
+org-type:       LIR
+address:        Mejevoy 5
+address:        198035
+address:        Saint-Petersburg
+address:        RUSSIAN FEDERATION
+phone:          +78127149300
+admin-c:        IE964-RIPE
+admin-c:        AS42721-RIPE
+admin-c:        PL13372-RIPE
+tech-c:         IE964-RIPE
+tech-c:         AS42721-RIPE
+tech-c:         PL13372-RIPE
+abuse-c:        AR31898-RIPE
+mnt-ref:        CPLUS1-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         CPLUS1-MNT
+created:        2015-04-20T07:22:57Z
+last-modified:  2021-08-25T11:30:08Z
+source:         RIPE # Filtered
+
+person:         Alexey Savosin
+address:        Mejevoy 5
+address:        198035
+address:        Saint-Petersburg
+address:        RUSSIAN FEDERATION
+phone:          +78127149300
+nic-hdl:        AS42721-RIPE
+mnt-by:         ru-conveyplus-1-mnt
+mnt-by:         CPLUS1-MNT
+created:        2019-06-13T14:20:50Z
+last-modified:  2019-06-13T14:20:50Z
+source:         RIPE
+
+person:         Pavel Likhatov
+address:        Mejevoy 5
+address:        198035
+address:        Saint-Petersburg
+address:        RUSSIAN FEDERATION
+phone:          +78127149300
+nic-hdl:        PL13372-RIPE
+org:            ORG-CTCP2-RIPE
+mnt-by:         ru-conveyplus-1-mnt
+mnt-by:         CPLUS1-MNT
+created:        2019-07-16T10:59:21Z
+last-modified:  2019-11-21T08:29:39Z
+source:         RIPE # Filtered
+
+
 
