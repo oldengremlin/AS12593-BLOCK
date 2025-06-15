@@ -1,0 +1,698 @@
+aut-num:        AS2854
+as-name:        ROSPRINT-AS
+org:            ORG-GORC1-RIPE
+import:         from AS12350 accept AS-VTX
+export:         to AS12350 announce AS-ROSPRINT
+import:         from AS8220 accept AS-COLT
+export:         to AS8220 announce AS-ROSPRINT
+import:         from AS8075 accept AS-MICROSOFT
+export:         to AS8075 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS8075 accept AS-MICROSOFT
+mp-export:      afi ipv6 to AS8075 announce AS-OBSRUSSIA6
+import-via:     AS6777 from AS-ANY EXCEPT AS2854:AS-AMS-IX-EXCEPTIONS accept ANY
+export-via:     AS6777 to AS-ANY EXCEPT AS2854:AS-AMS-IX-EXCEPTIONS announce AS-ROSPRINT
+import:         from AS61955 accept AS-COLOCATIONIX
+export:         to AS61955 announce AS-ROSPRINT
+import:         from AS3223 accept AS-VOXILITY-SET
+export:         to AS3223 announce AS-ROSPRINT
+import:         from AS57928 accept AS-PRODWARE
+export:         to AS57928 announce AS-ROSPRINT
+import:         from AS16509 accept AS-AMAZON
+export:         to AS16509 announce AS-ROSPRINT
+import:         from AS8365 accept AS-MANDA
+export:         to AS8365 announce AS-ROSPRINT
+import:         from AS8455 accept AS-ATOM86
+export:         to AS8455 announce AS-ROSPRINT
+import:         from AS13335 accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-ROSPRINT
+import:         from AS714 accept AS-APPLE
+export:         to AS714 announce AS-ROSPRINT
+import:         from AS63541 accept AS63541
+export:         to AS63541 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS63541 accept AS63541
+mp-export:      afi ipv6 to AS63541 announce AS-OBSRUSSIA6
+import:         from AS39533 accept AS-ALL
+export:         to AS39533 announce AS-ROSPRINT
+import:         from AS8075 accept AS-MICROSOFT
+export:         to AS8075 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS8075 accept AS-MICROSOFT
+mp-export:      afi ipv6 to AS8075 announce AS-OBSRUSSIA6
+import:         from AS3223 accept AS-VOXILITY-SET
+export:         to AS3223 announce AS-ROSPRINT
+import:         from AS61955 accept AS-COLOCATIONIX
+export:         to AS61955 announce AS-ROSPRINT
+import:         from AS33873 accept AS-ARVATO
+export:         to AS33873 announce AS-ROSPRINT
+import:         from AS57928 accept AS-PRODWARE
+export:         to AS57928 announce AS-ROSPRINT
+import:         from AS16509 accept AS-AMAZON
+export:         to AS16509 announce AS-ROSPRINT
+import:         from AS8365 accept AS-MANDA
+export:         to AS8365 announce AS-ROSPRINT
+import:         from AS8220 accept AS-COLT
+export:         to AS8220 announce AS-ROSPRINT
+import:         from AS12678 accept AS-BADOO
+export:         to AS12678 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS12678 accept AS-BADOO
+mp-export:      afi ipv6 to AS12678 announce AS-OBSRUSSIA6
+import:         from AS13335 accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-ROSPRINT
+import:         from AS714 accept AS-APPLE
+export:         to AS714 announce AS-ROSPRINT
+import:         from AS136907 accept AS-HUAWEI
+export:         to AS136907 announce AS-ROSPRINT
+import:         from AS39533 accept AS-ALL
+export:         to AS39533 announce AS-ROSPRINT
+import:         from AS16509 accept AS-AMAZON
+export:         to AS16509 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS16509 accept AS-AMAZON
+mp-export:      afi ipv6 to AS16509 announce AS-OBSRUSSIA6
+import:         from AS8075 accept AS-MICROSOFT
+export:         to AS8075 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS8075 accept AS-MICROSOFT
+mp-export:      afi ipv6 to AS8075 announce AS-OBSRUSSIA6
+import:         from AS13335 accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-ROSPRINT
+import:         from AS2578 accept AS-DEMOS AS-RUDEMOS
+export:         to AS2578 announce AS-ROSPRINT
+import:         from AS2683 accept AS-RADIOMSU
+export:         to AS2683 announce AS-ROSPRINT
+import:         from AS2820 accept AS-ELVISPEERS
+export:         to AS2820 announce AS-ROSPRINT
+import:         from AS3218 accept AS-COSMOS
+export:         to AS3218 announce AS-ROSPRINT
+import:         from AS5468 accept AS5468
+export:         to AS5468 announce AS-ROSPRINT
+import:         from AS5537 accept AS-GARANTPARK
+export:         to AS5537 announce AS-ROSPRINT
+import:         from AS5568 accept AS-RBNET AND NOT AS-RELARN
+export:         to AS5568 announce AS-ROSPRINT
+import:         from AS6699 accept AS-URAN
+export:         to AS6699 announce AS-ROSPRINT
+import:         from AS6854 accept AS-SYNTERRA
+export:         to AS6854 announce AS-ROSPRINT
+import:         from AS8263 accept AS-PORTAL
+export:         to AS8263 announce AS-ROSPRINT
+import:         from AS8470 accept AS-MACOMNET
+export:         to AS8470 announce AS-ROSPRINT
+import:         from AS8492 accept AS-OBIT
+export:         to AS8492 announce AS-ROSPRINT
+import:         from AS8537 accept AS8537
+export:         to AS8537 announce AS-ROSPRINT
+import:         from AS8615 accept AS-CNTPEERS
+export:         to AS8615 announce AS-ROSPRINT
+import:         from AS8641 accept AS-NAUKANET
+export:         to AS8641 announce AS-ROSPRINT
+import:         from AS8755 accept AS8755
+export:         to AS8755 announce AS-ROSPRINT
+import:         from AS9110 accept AS-AGTEL
+export:         to AS9110 announce AS-ROSPRINT
+import:         from AS12314 accept AS-ROPNET
+export:         to AS12314 announce AS-ROSPRINT
+import:         from AS12654 accept AS12654
+export:         to AS12654 announce AS-ROSPRINT
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-ROSPRINT
+import:         from AS15169 accept AS-GOOGLE
+export:         to AS15169 announce AS-ROSPRINT
+import:         from AS15756 accept AS-CARAVAN
+export:         to AS15756 announce AS-ROSPRINT
+import:         from AS16054 accept AS16054
+export:         to AS16054 announce AS-ROSPRINT
+import:         from AS20483 accept AS20483
+export:         to AS20483 announce AS-ROSPRINT
+import:         from AS21414 accept AS-RCNET
+export:         to AS21414 announce AS-ROSPRINT
+import:         from AS24638 accept AS-RAMTEL
+export:         to AS24638 announce AS-ROSPRINT
+import:         from AS26415 accept AS-GTLD
+export:         to AS26415 announce AS-ROSPRINT
+import:         from AS28917 accept AS-FIORD
+export:         to AS28917 announce AS-ROSPRINT
+import:         from AS28968 accept AS-EUT
+export:         to AS28968 announce AS-ROSPRINT
+import:         from AS30943 accept AS-UTRANSIT-PG-EU
+export:         to AS29076 announce AS-ROSPRINT
+import:         from AS29076 accept AS-CITYTELECOM
+export:         to AS31359 announce AS-ROSPRINT
+import:         from AS42861 accept AS-PRIME-LINE
+export:         to AS42861 announce AS-ROSPRINT
+import:         from AS43832 accept AS-NS5_RIPN_NET
+export:         to AS43832 announce AS-ROSPRINT
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-ROSPRINT
+import:         from AS49813 accept AS-INN
+export:         to AS49813 announce AS-ROSPRINT
+import:         from AS48061 accept AS48061
+export:         to AS48061 announce AS-ROSPRINT
+import:         from AS39792 accept AS-ANDERS
+export:         to AS39792 announce AS-ROSPRINT
+import:         from AS47764 accept AS-MAILRU
+export:         to AS47764 announce AS-ROSPRINT
+import:         from AS3327 accept AS-CITICTEL-CPC
+export:         to AS3327 announce AS-ROSPRINT
+import:         from AS6695 accept AS-DECIX
+export:         to AS6695 announce AS-ROSPRINT
+import:         from AS6777 accept AS-AMS-IX-RS-SETS
+export:         to AS6777 announce AS-ROSPRINT
+import:         from AS56931 accept AS-EURASIAPEERING_RS
+export:         to AS56931 announce AS-ROSPRINT
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS50952 accept AS-DATAIX
+mp-export:      afi ipv6 to AS50952 announce AS-OBSRUSSIA6
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-ROSPRINT
+import:         from AS6939 accept AS-HURRICANE
+export:         to AS6939 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS6939 accept AS-HURRICANE
+mp-export:      afi ipv6 to AS6939 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS50952 accept AS-DATAIX
+mp-export:      afi ipv6 to AS50952 announce AS-OBSRUSSIA6
+import:         from AS12714 accept AS-TI
+export:         to AS12714 announce AS-ROSPRINT
+import:         from AS31500 accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS31500 accept AS-GLOBAL-NET
+mp-export:      afi ipv6 to AS31500 announce AS-OBSRUSSIA6
+import:         from AS2118 accept AS-RELCOM
+export:         to AS2118 announce AS-ROSPRINT
+import:         from AS12418 accept AS-QUANTUM
+export:         to AS12418 announce AS-ROSPRINT
+import:         from AS20632 accept AS-PETERSTAR
+export:         to AS20632 announce AS-ROSPRINT
+import:         from AS8482 accept AS-DPBSPBIX
+export:         to AS8482 announce AS-ROSPRINT
+import:         from AS35000 accept AS-PROMETEY-IX
+export:         to AS35000 announce AS-ROSPRINT
+import:         from AS45029 accept AS-NS9_RIPN_NET
+export:         to AS45029 announce AS-ROSPRINT
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-ROSPRINT
+import:         from AS43690 accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS43690 accept AS-SPBROUTESERVER
+mp-export:      afi ipv6 to AS43690 announce AS-OBSRUSSIA6
+import:         from AS34879 accept AS-NGENIX-SPB
+export:         to AS34879 announce AS-ROSPRINT
+import:         from AS3277 accept AS-RUSNETIX
+export:         to AS3277 announce AS-ROSPRINT
+import:         from AS8371 accept AS-KIS
+export:         to AS8371 announce AS-ROSPRINT
+import:         from AS34821 accept AS-PSN
+export:         to AS34821 announce AS-ROSPRINT
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-ROSPRINT
+import:         from AS42385 accept AS42385
+export:         to AS42385 announce AS-ROSPRINT
+import:         from AS50706 accept AS-KZNROUTESERVER
+export:         to AS50706 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS50706 accept AS-KZNROUTESERVER
+mp-export:      afi ipv6 to AS50706 announce AS-OBSRUSSIA6
+import:         from AS44597 accept AS-NS9_RIPN_NET
+export:         to AS44597 announce AS-ROSPRINT
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-ROSPRINT
+import:         from AS39042 accept AS-GLOBAL63RU
+export:         to AS39042 announce AS-ROSPRINT
+import:         from AS47882 accept AS-SMRROUTESERVER
+export:         to AS47882 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS47882 accept AS-SMRROUTESERVER
+mp-export:      afi ipv6 to AS47882 announce AS-OBSRUSSIA6
+import:         from AS47445 accept AS-NS9_RIPN_NET
+export:         to AS47445 announce AS-ROSPRINT
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-ROSPRINT
+import:         from AS48216 accept AS-RNDROUTESERVER
+export:         to AS48216 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS48216 accept AS-RNDROUTESERVER
+mp-export:      afi ipv6 to AS48216 announce AS-OBSRUSSIA6
+import:         from AS15974 accept AS-VTT
+export:         to AS15974 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS15974 accept AS-VTT
+mp-export:      afi ipv6 to AS15974 announce AS-OBSRUSSIA6
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-ROSPRINT
+import:         from AS42728 accept AS-NS9_RIPN_NET
+export:         to AS42728 announce AS-ROSPRINT
+import:         from AS36040 accept AS36040
+export:         to AS36040 announce AS-ROSPRINT
+import:         from AS43213 accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS43213 accept AS-EKTROUTESERVER
+mp-export:      afi ipv6 to AS43213 announce AS-OBSRUSSIA6
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-ROSPRINT
+import:         from AS25535 accept AS25535
+export:         to AS25535 announce AS-ROSPRINT
+import:         from AS42139 accept AS-NS9_RIPN_NET
+export:         to AS42139 announce AS-ROSPRINT
+import:         from AS34879 accept AS-NGENIX-NSK
+export:         to AS34879 announce AS-ROSPRINT
+import:         from AS3216 accept AS-SOVAM
+export:         to AS3216 announce AS-ROSPRINT
+import:         from AS42403 accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS42403 accept AS-NSKROUTESERVER
+mp-export:      afi ipv6 to AS42403 announce AS-OBSRUSSIA6
+import:         from AS41440 accept AS-Sibnet
+export:         to AS41440 announce AS-ROSPRINT
+import:         from AS48531 accept AS-VLVROUTESERVER
+export:         to AS48531 announce AS-ROSPRINT
+import:         from AS45018 accept AS-NS9_RIPN_NET
+export:         to AS45018 announce AS-ROSPRINT
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS48531 accept AS-VLVROUTESERVER
+mp-export:      afi ipv6 to AS48531 announce AS-OBSRUSSIA6
+import:         from AS50125 accept AS-ULNIX
+export:         to AS50125 announce AS-ROSPRINT
+import:         from AS59428 accept AS-KRD-RS
+export:         to AS59428 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS59428 accept AS-KRD-RS
+mp-export:      afi ipv6 to AS59428 announce AS-OBSRUSSIA6
+import:         from AS9049 accept AS-ER-TELECOM
+export:         to AS9049 announce AS-ROSPRINT
+import:         from AS215983 accept AS215983
+export:         to AS215983 announce ANY
+import:         from AS50793 accept AS50793
+export:         to AS50793 announce ANY
+import:         from AS21446 accept AS-ALMAZTELECOM
+export:         to AS21446 announce ANY
+import:         from AS201368 accept AS201368
+export:         to AS201368 announce ANY
+import:         from AS51384 accept AS51384
+export:         to AS51384 announce ANY
+import:         from AS210726 accept AS210726
+export:         to AS210726 announce ANY
+import:         from AS48891 accept AS48891
+export:         to AS48891 announce ANY
+import:         from AS210914 accept AS210914
+export:         to AS210914 announce ANY
+import:         from AS59957 accept AS59957
+export:         to AS59957 announce ANY
+import:         from AS211697 accept AS211697
+export:         to AS211697 announce ANY
+import:         from AS211730 accept AS211697
+export:         to AS211730 announce ANY
+import:         from AS41185 accept AS41185
+export:         to AS41185 announce ANY
+import:         from AS207055 accept AS207055
+export:         to AS207055 announce ANY
+import:         from AS212681 accept AS212681
+export:         to AS212681 announce ANY
+import:         from AS60308 accept AS60308
+export:         to AS60308 announce ANY
+import:         from AS58207 accept AS58207
+export:         to AS58207 announce ANY
+import:         from AS51532 accept AS51532
+export:         to AS51532 announce ANY
+import:         from AS41187 accept AS41187
+export:         to AS41187 announce ANY
+import:         from AS198873 accept AS198873
+export:         to AS198873 announce ANY
+import:         from AS214149 accept AS214149
+export:         to AS214149 announce ANY
+import:         from AS48054 accept AS48054
+export:         to AS48054 announce ANY
+import:         from AS202378 accept AS202378
+export:         to AS202378 announce ANY
+import:         from AS199537 accept AS199537
+export:         to AS199537 announce ANY
+import:         from AS58257 accept AS58257
+export:         to AS58257 announce ANY
+import:         from AS200627 accept AS200627
+export:         to AS200627 announce ANY
+import:         from AS51213 accept AS51213
+export:         to AS51213 announce ANY
+import:         from AS49356 accept AS49356
+export:         to AS49356 announce ANY
+import:         from AS60361 accept AS60361
+export:         to AS60361 announce ANY
+import:         from AS48349 accept AS48349
+export:         to AS48349 announce ANY
+import:         from AS42558 accept AS42558
+export:         to AS42558 announce ANY
+import:         from AS15632 accept AS15632
+export:         to AS15632 announce ANY
+import:         from AS34336 accept AS34336
+export:         to AS34336 announce ANY
+import:         from AS201672 accept AS201672
+export:         to AS201672 announce ANY
+import:         from AS201394 accept AS201394
+export:         to AS201394 announce ANY
+import:         from AS59792 accept AS59792
+export:         to AS59792 announce ANY
+import:         from AS56725 accept AS56725
+export:         to AS56725 announce ANY
+import:         from AS60716 accept AS60716
+export:         to AS60716 announce ANY
+import:         from AS62389 accept AS62389
+export:         to AS62389 announce ANY
+import:         from AS11414 accept AS11414
+export:         to AS11414 announce ANY
+import:         from AS15632 accept AS15632
+export:         to AS15632 announce ANY
+import:         from AS15707 accept AS15707
+export:         to AS15707 announce ANY
+import:         from AS16173 accept AS16173
+export:         to AS16173 announce ANY
+import:         from AS20806 accept AS20806
+export:         to AS20806 announce ANY
+import:         from AS24823 accept AS24823
+export:         to AS24823 announce ANY
+import:         from AS28712 accept AS-TELSYCOM AS57512
+export:         to AS28712 announce ANY
+import:         from AS29450 accept AS29450
+export:         to AS29450 announce ANY
+import:         from AS34098 accept AS34098
+export:         to AS34098 announce ANY
+import:         from AS34147 accept AS34147
+export:         to AS34147 announce ANY
+import:         from AS34291 accept AS34291
+export:         to AS34291 announce ANY
+import:         from AS34998 accept AS34998
+export:         to AS34998 announce ANY
+import:         from AS35354 accept AS35354
+export:         to AS35354 announce ANY
+import:         from AS39267 accept AS39267
+export:         to AS39267 announce ANY
+import:         from AS41067 accept AS41067
+export:         to AS41067 announce ANY
+import:         from AS42190 accept AS42190
+export:         to AS42190 announce ANY
+import:         from AS42693 accept AS42693
+export:         to AS42693 announce ANY
+import:         from AS43673 accept AS43673
+export:         to AS43673 announce ANY
+import:         from AS43952 accept AS43952
+export:         to AS43952 announce ANY
+import:         from AS44121 accept AS44121
+export:         to AS44121 announce ANY
+import:         from AS214283 accept AS214283
+export:         to AS214283 announce ANY
+import:         from AS47976 accept AS47976
+export:         to AS47976 announce ANY
+import:         from AS48312 accept AS48312
+export:         to AS48312 announce ANY
+import:         from AS48914 accept AS-ZEPPELIN
+export:         to AS48914 announce ANY
+import:         from AS49841 accept AS49841
+export:         to AS49841 announce ANY
+import:         from AS49897 accept AS-ALLTELECOM
+export:         to AS49897 announce ANY
+import:         from AS49241 accept AS49241
+export:         to AS49241 announce ANY
+import:         from AS49899 accept AS49899
+export:         to AS49899 announce ANY
+import:         from AS49799 accept AS49799
+export:         to AS49799 announce ANY
+import:         from AS50038 accept AS50038 AS42901
+export:         to AS50038 announce ANY
+import:         from AS50141 accept AS50141
+export:         to AS50141 announce ANY
+import:         from AS51193 accept AS51193
+export:         to AS51193 announce ANY
+import:         from AS51771 accept AS51771
+export:         to AS51771 announce ANY
+import:         from AS57580 accept AS57580
+export:         to AS57580 announce ANY
+import:         from AS196923 accept AS196923
+export:         to AS196923 announce ANY
+import:         from AS197258 accept AS197258
+export:         to AS197258 announce ANY
+import:         from AS197559 accept AS197559
+export:         to AS197559 announce ANY
+import:         from AS197574 accept AS197574
+export:         to AS197574 announce ANY
+import:         from AS56533 accept AS56533
+export:         to AS56533 announce ANY
+import:         from AS56741 accept AS56741
+export:         to AS56741 announce ANY
+import:         from AS56810 accept AS56810
+export:         to AS56810 announce ANY
+import:         from AS197986 accept AS197986
+export:         to AS197986 announce ANY
+import:         from AS25296 accept AS25296
+export:         to AS25296 announce ANY
+import:         from AS197366 accept AS197366
+export:         to AS197366 announce ANY
+import:         from AS197952 accept AS197952
+export:         to AS197952 announce ANY
+import:         from AS198258 accept AS198258
+export:         to AS198258 announce ANY
+import:         from AS57589 accept AS-GAZKOMPLEKTSERVICE
+export:         to AS57589 announce ANY
+import:         from AS198645 accept AS198645
+export:         to AS198645 announce ANY
+import:         from AS50878 accept AS50878
+export:         to AS50878 announce ANY
+import:         from AS198929 accept AS198929
+export:         to AS198929 announce ANY
+import:         from AS39264 accept AS39264
+export:         to AS39264 announce ANY
+import:         from AS44479 accept AS44479
+export:         to AS44479 announce ANY
+import:         from AS24913 accept AS24913
+export:         to AS24913 announce ANY
+import:         from AS61197 accept AS61197
+export:         to AS61197 announce ANY
+import:         from AS49675 accept AS49675 AS201268
+export:         to AS49675 announce ANY
+import:         from AS42559 accept AS42559
+export:         to AS42559 announce ANY
+import:         from AS49955 accept AS49955
+export:         to AS49955 announce ANY
+import:         from AS60988 accept AS60988
+export:         to AS60988 announce ANY
+import:         from AS43429 accept AS43429
+export:         to AS43429 announce ANY
+import:         from AS57631 accept AS57631
+export:         to AS57631 announce ANY
+import:         from AS57531 accept AS57531
+export:         to AS57531 announce ANY
+import:         from AS51193 accept AS51193
+export:         to AS51193 announce ANY
+import:         from AS58231 accept AS58231
+export:         to AS58231 announce ANY
+import:         from AS51721 accept AS51721
+export:         to AS51721 announce ANY
+import:         from AS199314 accept AS199314
+export:         to AS199314 announce ANY
+import:         from AS60544 accept AS60544
+export:         to AS60544 announce ANY
+import:         from AS60702 accept AS60702
+export:         to AS60702 announce ANY
+import:         from AS41060 accept AS41060
+export:         to AS41060 announce ANY
+import:         from AS60598 accept AS60598
+export:         to AS60598 announce ANY
+import:         from AS49108 accept AS49108
+export:         to AS49108 announce ANY
+import:         from AS44315 accept AS44315
+export:         to AS44315 announce ANY
+import:         from AS201774 accept AS201774
+export:         to AS201774 announce ANY
+import:         from AS60017 accept AS60017
+export:         to AS60017 announce ANY
+import:         from AS201195 accept AS201195
+export:         to AS201195 announce ANY
+import:         from AS12686 accept AS12686
+export:         to AS12686 announce ANY
+import:         from AS59846 accept AS59846
+export:         to AS59846 announce ANY
+import:         from AS60186 accept AS60186
+export:         to AS60186 announce ANY
+import:         from AS201486 accept AS201486
+export:         to AS201486 announce ANY
+import:         from AS60347 accept AS60347
+export:         to AS60347 announce ANY
+import:         from AS50339 accept AS50339
+export:         to AS50339 announce ANY
+import:         from AS47168 accept AS47168
+export:         to AS47168 announce ANY
+import:         from AS203697 accept AS203697
+export:         to AS203697 announce ANY
+import:         from AS38029 accept AS38029
+export:         to AS38029 announce ANY
+import:         from AS202801 accept AS202801
+export:         to AS202801 announce ANY
+import:         from AS56793 accept AS56793
+export:         to AS56793 announce ANY
+import:         from AS34853 accept AS34853
+export:         to AS34853 announce ANY
+import:         from AS200926 accept AS200926
+export:         to AS200926 announce ANY
+import:         from AS42920 accept AS42920
+export:         to AS42920 announce ANY
+import:         from AS206179 accept AS206179
+export:         to AS206179 announce ANY
+import:         from AS62236 accept AS62236
+export:         to AS62236 announce ANY
+import:         from AS44165 accept AS44165
+export:         to AS44165 announce ANY
+import:         from AS39594 accept AS39594
+export:         to AS39594 announce ANY
+import:         from AS205153 accept AS205153
+export:         to AS205153 announce ANY
+import:         from AS204492 accept AS204492
+export:         to AS204492 announce ANY
+import:         from AS208177 accept AS208177
+export:         to AS208177 announce ANY
+import:         from AS25451 accept AS25451
+export:         to AS25451 announce ANY
+import:         from AS41983 accept AS41983
+export:         to AS41983 announce ANY
+import:         from AS208811 accept AS208811
+export:         to AS208811 announce ANY
+import:         from AS209779 accept AS209779
+export:         to AS209779 announce ANY
+import:         from AS208008 accept AS208008
+export:         to AS208008 announce ANY
+import:         from AS29528 accept AS29528
+export:         to AS29528 announce ANY
+import:         from AS207104 accept AS207104
+export:         to AS207104 announce ANY
+import:         from AS54201 accept AS54201
+export:         to AS54201 announce ANY
+import:         from AS34669 accept AS34669
+export:         to AS34669 announce ANY
+import:         from AS207496 accept AS207496
+export:         to AS207496 announce ANY
+import:         from AS205616 accept AS4205616
+export:         to AS205616 announce ANY
+import:         from AS212410 accept AS212410
+export:         to AS212410 announce ANY
+import:         from AS212264 accept AS212264
+export:         to AS212264 announce ANY
+import:         from AS212869 accept AS212869
+export:         to AS212869 announce ANY
+import:         from AS25227 accept AS25227
+export:         to AS25227 announce ANY
+import:         from AS197482 accept AS-2GIS
+export:         to AS197482 announce ANY
+import:         from AS213304 accept AS213304
+export:         to AS213304 announce ANY
+import:         from AS31275 accept AS-SAMTELECOM
+export:         to AS31275 announce ANY
+import:         from AS205080 accept AS205080
+export:         to AS205080 announce ANY
+import:         from AS209973 accept AS209973
+export:         to AS209973 announce ANY
+import:         from AS216103 accept AS216103
+export:         to AS216103 announce ANY
+import:         from AS43805 accept AS43805
+export:         to AS43805 announce ANY
+import:         from AS214956 accept AS214956
+export:         to AS214956 announce ANY
+import:         from AS214951 accept AS214951
+export:         to AS214951 announce ANY
+mp-import:      afi ipv6 from AS49675 action pref=150; accept AS49675
+mp-export:      afi ipv6 to AS49675 announce AS-OBSRUSSIA6
+import:         from AS57304 accept ANY
+export:         to AS57304 announce AS-ROSPRINT
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS-ROSPRINT
+import:         from AS2874 accept ANY
+export:         to AS2874 announce AS-ROSPRINT
+import:         from AS20764 accept ANY
+export:         to AS20764 announce AS-ROSPRINT
+import:         from AS39811 accept ANY
+export:         to AS39811 announce AS-ROSPRINT
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-ROSPRINT
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-ROSPRINT
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-ROSPRINT
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-ROSPRINT
+import:         from AS5511 accept ANY
+export:         to AS5511 announce AS-ROSPRINT
+mp-import:      afi ipv6 from AS136907 accept AS-HUAWEI
+mp-export:      afi ipv6 to AS136907 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS39533 accept AS-ALL
+mp-export:      afi ipv6 to AS39533 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS39533 accept AS-ALL
+mp-export:      afi ipv6 to AS39533 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS3573 accept AS3573
+mp-export:      afi ipv6 to AS3573 announce ANY
+mp-import:      afi ipv6 from AS47764 accept AS-MAILRU6
+mp-export:      afi ipv6 to AS47764 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS12714 accept AS-TI
+mp-export:      afi ipv6 to AS12714 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS33873 accept AS-ARVATO-V6
+mp-export:      afi ipv6 to AS33873 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS8359 accept ANY
+mp-export:      afi ipv6 to AS8359 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS31133 accept ANY
+mp-export:      afi ipv6 to AS31133 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS57304 accept ANY
+mp-export:      afi ipv6 to AS57304 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6 to AS8631 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS12654 accept AS12654
+mp-export:      afi ipv6 to AS12654 announce ANY
+mp-import:      afi ipv6 from AS15169 accept AS-GOOGLE
+mp-export:      afi ipv6 to AS15169 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS8342 accept ANY
+mp-export:      afi ipv6 to AS8342 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS8470 accept AS-MACOMNET
+mp-export:      afi ipv6 to AS8470 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS6777 accept AS-AMS-IX-RS-SETS-V6
+mp-export:      afi ipv6 to AS6777 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS16509 accept AS-AMAZON
+mp-export:      afi ipv6 to AS16509 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS57928 accept AS-PRODWARE
+mp-export:      afi ipv6 to AS57928 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS8365 accept AS-MANDA
+mp-export:      afi ipv6 to AS8365 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS8220 accept AS-COLT
+mp-export:      afi ipv6 to AS8220 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS198258 accept AS198258
+mp-export:      afi ipv6 to AS198258 announce ANY
+mp-import:      afi ipv6 from AS8455 accept AS-ATOM86
+mp-export:      afi ipv6 to AS8455 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS13335 accept AS-CLOUDFLARE
+mp-export:      afi ipv6 to AS13335 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS714 accept AS-APPLE
+mp-export:      afi ipv6 to AS714 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS20485 accept ANY
+mp-export:      afi ipv6 to AS20485 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS12389 accept ANY
+mp-export:      afi ipv6 to AS12389 announce AS-OBSRUSSIA6
+mp-import:      afi ipv6 from AS23901 accept AS23901
+mp-export:      afi ipv6 to AS23901 announce ANY
+mp-import:      afi ipv6 from AS56793 accept AS56793
+mp-export:      afi ipv6 to AS56793 announce ANY
+mp-import:      afi ipv6 from AS5511 accept ANY
+mp-export:      afi ipv6 to AS5511 announce AS-OBSRUSSIA6
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSPRINT-NCC
+created:        2002-07-25T12:28:38Z
+last-modified:  2025-05-13T00:47:54Z
+source:         RIPE
+
+as-num:         AS2854
+country:        RU
+as-name:        ROSPRINT-AS LLC Orange Business Services
+
+organisation:   ORG-GORC1-RIPE
+org-name:       LLC Orange Business Services
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-GORC1-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        AR16895-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        ROSPRINT-NCC
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ROSPRINT-NCC
+created:        2004-04-17T11:57:33Z
+last-modified:  2024-03-21T09:25:13Z
+source:         RIPE
+
+

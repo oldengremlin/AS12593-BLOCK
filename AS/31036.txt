@@ -1,0 +1,75 @@
+aut-num:        AS31036
+as-name:        NEWTELESYSTEMS
+import:         from AS48858 accept ANY AND NOT <^[AS12389]>
+export:         to AS48858 announce AS-NEWTELESYSTEMS
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-NEWTELESYSTEMS
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-NEWTELESYSTEMS
+import:         from AS13094 action pref=105; accept ANY AND NOT <^[AS12389]>
+export:         to AS13094 announce AS-NEWTELESYSTEMS
+import:         from AS62399 accept AS-TSKIX AND NOT AS31036
+export:         to AS62399 announce AS-NEWTELESYSTEMS
+import:         from AS49414 action pref=1000; accept AS49414 AND AS31357
+export:         to AS49414 announce AS31036
+import:         from AS48758 accept AS48758
+export:         to AS48758 announce ANY
+import:         from AS9078 accept AS9078
+export:         to AS9078 announce ANY
+import:         from AS51456 accept AS51456
+export:         to AS51456 announce ANY
+import:         from AS47938 accept AS47938
+export:         to AS47938 announce ANY
+import:         from AS49980 accept AS49980
+export:         to AS49980 announce ANY
+import:         from AS49814 accept AS49814
+export:         to AS49814 announce ANY
+import:         from AS61106 accept AS61106
+export:         to AS61106 announce ANY
+import:         from AS56707 accept <^AS56707+$>
+export:         to AS56707 announce ANY
+export:         to AS9049 announce AS-NEWTELESYSTEMS
+import:         from AS9049 accept ANY
+default:        to AS8359
+mp-import:      afi ipv6.unicast from AS8359 accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS31036
+mp-import:      afi ipv6.unicast from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS31036
+mp-import:      afi ipv6.unicast from AS48858 accept ANY
+mp-export:      afi ipv6.unicast to AS48858 announce AS31036
+mp-import:      afi ipv6.unicast from AS13094 accept ANY
+mp-export:      afi ipv6.unicast to AS13094 announce AS31036
+org:            ORG-RA21-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         lir@nts.su
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RAID-MNT
+created:        2004-02-12T10:35:33Z
+last-modified:  2022-03-22T06:28:59Z
+source:         RIPE
+
+as-num:         AS31036
+country:        RU
+as-name:        NEWTELESYSTEMS JSC "ER-Telecom Holding"
+
+organisation:   ORG-RA21-RIPE
+org-name:       JSC "ER-Telecom Holding"
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-RA21-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        RAID1-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        RAID-MNT
+mnt-ref:        ENFORTA-MNT
+mnt-ref:        AS8345-MNT
+mnt-ref:        RU-NTK-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         RAID-MNT
+created:        2004-04-17T11:56:55Z
+last-modified:  2024-01-18T14:09:09Z
+source:         RIPE
+
+

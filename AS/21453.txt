@@ -1,0 +1,162 @@
+aut-num:        AS21453
+as-name:        FLEX-AS
+org:            ORG-FI3-RIPE
+import:         from AS3216 action pref=240; accept ANY
+export:         to AS3216 announce AS-FLEX
+import:         from AS57304 action pref=240; accept ANY
+export:         to AS57304 announce AS-FLEX
+import:         from AS8641 action pref=240; accept ANY
+export:         to AS8641 announce AS-FLEX
+import:         from AS29076 action pref=240; accept ANY
+export:         to AS29076 announce AS-FLEX
+import:         from AS20764 action pref=240; accept ANY
+export:         to AS20764 announce AS-FLEX
+import:         from AS20485 action pref=240; accept ANY
+export:         to AS20485 announce AS-FLEX
+import:         from AS35598 action pref=240; accept ANY
+export:         to AS35598 announce AS-FLEX
+import:         from AS28917 action pref=240; accept ANY
+export:         to AS28917 announce AS-FLEX
+import:         from AS8631 action pref=250; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-FLEX
+import:         from AS50952 action pref=250; accept ANY
+export:         to AS50952 announce AS-FLEX
+import:         from AS31500 action pref=250; accept ANY
+export:         to AS31500 announce AS-FLEX
+import:         from AS49869 action pref=250; accept ANY
+export:         to AS49869 announce AS-FLEX
+import:         from AS50817 action pref=250; accept ANY
+export:         to AS50817 announce AS-FLEX
+import:         from AS48193 action pref=250; accept ANY
+export:         to AS48193 announce AS-FLEX
+import:         from AS57936 action pref=250; accept ANY
+export:         to AS57936 announce AS-FLEX
+import:         from AS39607 action pref=250; accept ANY
+export:         to AS39607 announce AS-FLEX
+import:         from AS49634 action pref=250; accept ANY
+export:         to AS49634 announce AS-FLEX
+import:         from AS3267 action pref=254; accept AS-RUNNET
+export:         to AS3267 announce AS-FLEX
+import:         from AS5429 action pref=254; accept AS-IIPNET-MSK-IX
+export:         to AS5429 announce AS-FLEX
+import:         from AS28698 action pref=254; accept AS-EUT
+export:         to AS28698 announce AS-FLEX
+import:         from AS13335 action pref=254; accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-FLEX
+import:         from AS45102 action pref=254; accept AS-ALIBABA
+export:         to AS45102 announce AS-FLEX
+import:         from AS8470 action pref=254; accept AS-MACOMNET
+export:         to AS8470 announce AS-FLEX
+import:         from AS32934 action pref=254; accept AS-FACEBOOK
+export:         to AS32934 announce AS-FLEX
+import:         from AS15169 action pref=254; accept AS-GOOGLE
+export:         to AS15169 announce AS-FLEX
+import:         from AS11344 action pref=254; accept AS-YOUTUBE
+export:         to AS11344 announce AS-FLEX
+import:         from AS34123 action pref=254; accept AS-NETORN
+export:         to AS34123 announce AS-FLEX
+import:         from AS47541 action pref=254; accept AS-VKONTAKTE
+export:         to AS47541 announce AS-FLEX
+import:         from AS200976 action pref=254; accept AS-LIFESTREAM
+export:         to AS200976 announce AS-FLEX
+import:         from AS35271 action pref=300; accept AS35271
+export:         to AS35271 announce ANY
+import:         from AS41783 action pref=300; accept AS41783:AS-CUSTOMERS
+export:         to AS41783 announce ANY
+import:         from AS47321 action pref=300; accept AS-IIF
+export:         to AS47321 announce ANY
+import:         from AS48149 action pref=300; accept AS-ITKM
+export:         to AS48149 announce ANY
+import:         from AS34975 action pref=300; accept AS-AZIMUTR
+export:         to AS34975 announce ANY
+import:         from AS50289 action pref=300; accept AS-WELLCOMM
+export:         to AS50289 announce ANY
+import:         from AS57489 action pref=300; accept AS57489
+export:         to AS57489 announce ANY
+import:         from AS51230 action pref=300; accept AS-ROSINTEH
+export:         to AS51230 announce ANY
+import:         from AS49893 action pref=300; accept AS-BITRACE
+export:         to AS49893 announce ANY
+import:         from AS48940 action pref=300; accept AS-LINK-NET
+export:         to AS48940 announce ANY
+import:         from AS43567 action pref=300; accept AS-SOUTHTEL
+export:         to AS43567 announce ANY
+import:         from AS201646 action pref=300; accept AS201646
+export:         to AS201646 announce ANY
+import:         from AS199933 action pref=300; accept AS-ELEKTRANET
+export:         to AS199933 announce ANY
+import:         from AS50449 action pref=300; accept AS50449
+export:         to AS50449 announce ANY
+mp-import:      afi ipv6.unicast from AS3216 action pref=240; accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS57304 action pref=240; accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS8641 action pref=240; accept ANY
+mp-export:      afi ipv6.unicast to AS8641 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS28917 action pref=240; accept ANY
+mp-export:      afi ipv6.unicast to AS28917 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS29076 action pref=240; accept ANY
+mp-export:      afi ipv6.unicast to AS29076 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS25478 action pref=240; accept ANY
+mp-export:      afi ipv6.unicast to AS25478 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS8631 action pref=250; accept AS-MSKROUTESERVER;
+mp-export:      afi ipv6.unicast to AS8631 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS49869 action pref=250; accept AS-PITER-IX;
+mp-export:      afi ipv6.unicast to AS49869 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS50817 action pref=250; accept AS-PITER-IX;
+mp-export:      afi ipv6.unicast to AS50817 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS15169 action pref=254; accept AS-GOOGLE;
+mp-export:      afi ipv6.unicast to AS15169 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS11344 action pref=254; accept AS-YOUTUBE;
+mp-export:      afi ipv6.unicast to AS11344 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS32934 action pref=254; accept AS-FACEBOOK;
+mp-export:      afi ipv6.unicast to AS32934 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS13335 action pref=254; accept AS-CLOUDFLARE;
+mp-export:      afi ipv6.unicast to AS13335 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS8470 action pref=254; accept AS-MACOMNET;
+mp-export:      afi ipv6.unicast to AS8470 announce AS-FLEXV6;
+mp-import:      afi ipv6.unicast from AS50289 action pref=300; accept AS-WELLCOMM;
+mp-export:      afi ipv6.unicast to AS50289 announce ANY;
+mp-import:      afi ipv6.unicast from AS35271 action pref=300; accept AS35271;
+mp-export:      afi ipv6.unicast to AS35271 announce ANY;
+mp-import:      afi ipv6.unicast from AS48149 action pref=300; accept AS-ITKM;
+mp-export:      afi ipv6.unicast to AS48149 announce ANY;
+mp-import:      afi ipv6.unicast from AS201646 action pref=300; accept AS201646;
+mp-export:      afi ipv6.unicast to AS201646 announce ANY;
+mp-import:      afi ipv6.unicast from AS51230 action pref=300; accept AS-ROSINTEH;
+mp-export:      afi ipv6.unicast to AS51230 announce ANY;
+mp-import:      afi ipv6.unicast from AS57489 action pref=300; accept AS57489;
+mp-export:      afi ipv6.unicast to AS57489 announce ANY;
+mp-import:      afi ipv6.unicast from AS199933 action pref=300; accept AS-ELEKTRANET;
+mp-export:      afi ipv6.unicast to AS199933 announce ANY;
+mp-import:      afi ipv6.unicast from AS41783 action pref=300; accept AS41783:AS-CUSTOMERS;
+mp-export:      afi ipv6.unicast to AS41783 announce ANY;
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         FLEX-MNT
+created:        2002-06-26T09:03:58Z
+last-modified:  2024-02-26T15:59:20Z
+source:         RIPE
+
+as-num:         AS21453
+country:        RU
+as-name:        FLEX-AS Flex Ltd.
+
+organisation:   ORG-FI3-RIPE
+org-name:       Flex Ltd.
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-FI3-RIPE
+e-mail:         unread@ripe.net
+mnt-ref:        FLEX-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         FLEX-MNT
+abuse-c:        DIFF-RU
+created:        2004-04-17T11:52:39Z
+last-modified:  2023-10-25T07:46:14Z
+source:         RIPE
+
+

@@ -1,0 +1,88 @@
+aut-num:        AS2895
+as-name:        FREE-NET-AS
+descr:          FREEnet
+org:            ORG-FG2-RIPE
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS8732 action pref=200; accept ANY
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS8732 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS3267 action pref=200; accept ANY
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS3267 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS2587 action pref=80; accept AS2587
+mp-export:      afi ipv4.unicast to AS2587 announce ANY
+import:         from AS201842 action pref=80; accept {147.45.206.0/24, 193.233.79.0/24}
+export:         to AS201842 announce AS-FREENET {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from AS204039 action pref=80; accept {31.28.22.0/24}
+mp-export:      afi ipv4.unicast to AS204039 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from AS3218 action pref=100; accept AS-COSMOS
+mp-export:      afi ipv4.unicast to AS3218 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS3316 action pref=100; accept AS-RELARN
+mp-export:      afi ipv4.unicast to AS3316 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS45102 action pref=100; accept AS45102
+mp-export:      afi ipv4.unicast to AS45102 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS5431 action pref=100; accept ANY
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS5431 announce AS-FREENET
+import:         from AS5467 action pref=100; accept AS-MIPT
+export:         to AS5467 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS5568 action pref=100; accept AS-RBNET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS5568 announce AS-FREENET
+import:         from AS8241 action pref=100; accept AS-RELLINE
+export:         to AS8241 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS8470 action pref=100; accept AS-MACOMNET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS8470 announce AS-FREENET
+import-via:     afi ipv4.unicast, ipv6.unicast AS8631 from AS-MSKROUTESERVER action pref=100; accept AS-MSKROUTESERVER
+export-via:     afi ipv4.unicast, ipv6.unicast AS8631 to AS-MSKROUTESERVER announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS12695 action pref=100; accept AS-DINET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS12695 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS13238 action pref=100; accept AS-YANDEX
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS13238 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS30124 action pref=90; accept {192.5.5.0/24}
+mp-import:      afi ipv6.unicast from AS30124 action pref=90; accept {2001:500:2f::/48}
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS30124 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS31059 action pref=100; accept AS-AVELACOM
+mp-import:      afi ipv6.unicast from AS31059 action pref=100; accept AS-AVELACOM6
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS31059 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS31500 action pref=100; accept AS-GLOBAL-NET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS31500 announce AS-FREENET
+import:         from AS43832 action pref=100; accept AS43832
+export:         to AS43832 announce AS-FREENET
+import-via:     afi ipv4.unicast, ipv6.unicast AS49869 from AS-PITER-IX-MSK action pref=100; accept AS-PITER-IX-MSK
+export-via:     afi ipv4.unicast, ipv6.unicast AS49869 to AS-PITER-IX-MSK announce AS-FREENET
+import-via:     afi ipv4.unicast, ipv6.unicast AS50817 from AS-PITER-IX action pref=100; accept AS-PITER-IX
+export-via:     afi ipv4.unicast, ipv6.unicast AS50817 to AS-PITER-IX announce AS-FREENET
+import-via:     afi ipv4.unicast AS39607 from AS-PITER-IX-HELSINKI action pref=100; accept AS-PITER-IX-HELSINKI
+export-via:     afi ipv4.unicast AS39607 to AS-PITER-IX-HELSINKI announce AS-FREENET
+import-via:     afi ipv4.unicast AS57936 from AS-PITER-IX-TLL action pref=100; accept AS-PITER-IX-TLL
+export-via:     afi ipv4.unicast AS57936 to AS-PITER-IX-TLL announce AS-FREENET
+import-via:     afi ipv4.unicast AS49634 from AS-PITER-IX-RIGA action pref=100; accept AS-PITER-IX-RIGA
+export-via:     afi ipv4.unicast AS49634 to AS-PITER-IX-RIGA announce AS-FREENET
+import-via:     afi ipv4.unicast AS48193 from AS-PITER-IX-FRA action pref=100; accept AS-PITER-IX-RIGA
+export-via:     afi ipv4.unicast AS48193 to AS-PITER-IX-FRA announce AS-FREENET
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         LEGACY
+mnt-by:         RIPE-NCC-LEGACY-MNT
+mnt-by:         AS2895-MNT
+mnt-by:         FREENET-MNT
+created:        2002-09-10T15:26:09Z
+last-modified:  2024-09-16T18:39:51Z
+source:         RIPE
+
+as-num:         AS2895
+country:        RU
+as-name:        FREE-NET-AS OOO FREEnet Group
+
+organisation:   ORG-FG2-RIPE
+org-name:       OOO FREEnet Group
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-FG2-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        FRAB1-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        FREENET-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         FREENET-MNT
+created:        2004-04-17T11:52:42Z
+last-modified:  2021-05-11T14:44:51Z
+source:         RIPE
+
+

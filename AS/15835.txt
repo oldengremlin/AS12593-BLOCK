@@ -1,0 +1,140 @@
+aut-num:        AS15835
+org:            ORG-JCE1-RIPE
+as-name:        MAP
+descr:          Moscow Network Access Point
+import:         from AS3316 action pref=100; accept AS-RELARN
+import:         from AS5568 action pref=100; accept AS-RBNET
+import:         from AS8631 action pref=100; accept ANY
+import:         from AS15756 action pref=100; accept AS-CARAVANRUS
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS8359 action pref=100; accept ANY
+import:         from AS13238 action pref=100; accept AS-COMPTEK
+import:         from AS12976 action pref=100; accept AS-CWSVYAZ
+import:         from AS3267 action pref=100; accept AS-RUNNETIX
+import:         from AS8291 action pref=100; accept AS-RSNETPEERS
+import:         from AS6903 action pref=100; accept AS-ZENON
+import:         from AS30853 action pref=100; accept AS-METEOTELECOM
+import:         from AS34879 action pref=100; accept AS-NGENIX
+import:         from AS8491 action pref=100; accept AS-BSH
+import:         from AS3327 action pref=100; accept AS-LINXTELECOM-MSK-IX
+import:         from AS41853 action pref=100; accept AS-NTCOM;
+import:         from AS42121 action pref=100; accept AS42121
+import:         from AS39113 action pref=100; accept AS-STV
+import:         from AS42750 action pref=100; accept AS42750
+import:         from as3218 action pref=100; accept AS-COSMOS
+import:         from AS8732 action pref=100; accept AS-COMCOR
+import:         from AS43489 action pref=100; accept AS-PARKING
+import:         from AS44063 action pref=100; accept AS44063
+import:         from AS43226 action pref=100; accept AS-SAFEDATA
+import:         from AS28917 action pref=100; accept AS-FIORD
+import:         from AS1273 action pref=100; accept ANY
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS43797 action pref=100; accept AS-RSNETPEERS
+import:         from AS48287 action pref=100; accept AS48287
+import:         from AS44237 action pref=100; accept AS-CTC-CORE
+import:         from AS39792 action pref=100; accept AS-ANDERS
+import:         from AS43832 action pref=100; accept AS-NS5_RIPN_NET
+import:         from AS5386 action pref=100; accept AS-COSMOS-SN
+import:         from AS51408 action pref=100; accept AS-SIRIUS
+import:         from AS21416 action pref=100; accept AS21416
+import:         from AS6801 action pref=100; accept AS6801
+import:         from AS43690 action pref=100; accept ANY
+import:         from AS3277 action pref=100; accept AS-RUSNETIX
+import:         from AS13002 action pref=100; accept AS-LINKEY
+import:         from AS8492 action pref=100; accept AS-OBIT
+import:         from AS50436 action pref=100; accept AS-LUTEL
+import:         from AS8997 action pref=100; accept AS-SPBNIT
+import:         from AS57107 action pref=100; accept AS57107
+import:         from AS44816 action pref=100; accept AS-DELFINTELECOM
+import:         from AS24406 action pref=100; accept AS24406
+import:         from AS33871 action pref=100; accept AS33871
+import:         from AS62295 action pref=100; accept AS62295
+import:         from AS8470 action pref=100; accept AS-MACOMNET
+import:         from AS59718 action pref=100; accept AS59718
+import:         from AS50157 action pref=100; accept AS50157
+import:         from AS200362 action pref=100; accept AS200362
+export:         to AS3316 announce ANY
+export:         to AS5568 announce ANY
+export:         to AS8631 announce AS-MAP
+export:         to AS20485 announce AS-MAPEXT
+export:         to AS15756 announce AS-MAP
+export:         to AS13238 announce AS-MAP
+export:         to AS3267 announce AS-MAP
+export:         to AS12976 announce AS-MAP
+export:         to AS8291 announce ANY
+export:         to AS6903 announce AS-MAP
+export:         to AS30853 announce AS-MAP
+export:         to AS34879 announce ANY
+export:         to AS8491 announce AS-MAP
+export:         to AS3327 announce AS-MAP
+export:         to AS41853 announce AS-MAP
+export:         to AS42121 announce AS-MAP
+export:         to AS39113 announce ANY
+export:         to AS42750 announce ANY
+export:         to AS3218 announce ANY
+export:         to AS8732 announce AS-MAP
+export:         to AS43489 announce ANY
+export:         to AS44063 announce ANY
+export:         to AS43226 announce ANY
+export:         to AS28917 announce AS-MAP
+export:         to AS1273 announce AS-MAPEXT
+export:         to AS3216 announce AS-MAPEXT
+export:         to AS43797 announce ANY
+export:         to AS48287 announce ANY
+export:         to AS44237 announce AS-MAP
+export:         to AS39792 announce AS-MAP
+export:         to AS43832 announce ANY
+export:         to AS5386 announce ANY
+export:         to AS51408 announce ANY
+export:         to AS21416 announce ANY
+export:         to AS6801 announce ANY
+export:         to AS43690 announce AS-MAP
+export:         to AS3277 announce AS-MAP
+export:         to AS13002 announce AS-MAP
+export:         to AS8492 announce AS-MAP
+export:         to AS50436 announce AS-MAP
+export:         to AS8997 announce AS-MAP
+export:         to AS57107 announce ANY
+export:         to AS44816 announce ANY
+export:         to AS24406 announce ANY
+export:         to AS33871 announce ANY
+export:         to AS8470 announce AS-MAP
+export:         to AS8359 announce AS-MAPEXT
+export:         to AS59718 announce ANY
+export:         to AS5473 announce ANY
+export:         to AS50157 announce ANY
+export:         to AS200362 announce ANY
+default:        to AS3216 action pref=100; networks ANY
+default:        to AS20485 action pref=100; networks ANY
+default:        to AS39134 action pref=100; networks ANY
+default:        to AS8359 action pref=100; networks ANY
+default:        to AS62295 action pref=100; networks ANY
+default:        to AS62169 action pref=100; networks ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUIX-MNT
+created:        2002-06-17T08:40:49Z
+last-modified:  2022-12-23T06:14:53Z
+source:         RIPE
+
+as-num:         AS15835
+country:        RU
+as-name:        MAP Join-stock company "Internet Exchange"MSK-IX"
+
+organisation:   ORG-JCE1-RIPE
+org-name:       Join-stock company "Internet Exchange"MSK-IX"
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-JCE1-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        AR49378-RIPE
+mnt-ref:        RUIX-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         RUIX-MNT
+created:        2018-11-16T14:06:09Z
+last-modified:  2022-12-02T12:04:03Z
+source:         RIPE
+
+

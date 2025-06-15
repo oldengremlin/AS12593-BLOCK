@@ -1,0 +1,93 @@
+aut-num:        AS44237
+as-name:        CTC-CORE-AS
+import:         from AS12389 action pref=80; accept ANY
+descr:          PJSC "Rostelecom". Center branch
+mp-import:      afi ipv6.unicast from AS12389 action pref=80; accept ANY
+import:         from AS29651 action pref=80; accept ANY
+mp-import:      afi ipv6.unicast from AS29651 action pref=80; accept ANY
+import:         from AS29651 action pref=80; accept ANY
+import:         from AS20764 action pref=100; accept AS-RASCOM
+mp-import:      afi ipv6.unicast from AS20764 action pref=100; accept AS-RASCOM
+import:         from AS29456 action pref=100; accept AS-BELSVYAZ
+import:         from AS21017 action pref=100; accept AS-VSI2CTC
+mp-import:      afi ipv6.unicast from AS21017 action pref=100; accept AS-VSI2CTC
+import:         from AS8570 action pref=100; accept AS-LES
+import:         from AS34267 action pref=100; accept AS-DEBRYANSK
+import:         from AS13118 action pref=100; accept AS-YARTELECOM
+mp-import:      afi ipv6.unicast from AS13118 action pref=100; accept AS-YARTELECOM
+import:         from AS15468 action pref=100; accept AS-KLGELECS
+import:         from AS13056 action pref=100; accept AS-TMB
+import:         from AS21378 action pref=100; accept AS-CTCTVER
+import:         from AS8675 action pref=100; accept AS-TULATELECOM
+import:         from AS34168 action pref=100; accept AS-ELCOM
+mp-import:      afi ipv6.unicast from AS34168 action pref=100; accept AS-ELCOM
+import:         from AS35516 action pref=100; accept AS-KURSKNET
+import:         from AS41134 action pref=100; accept AS-OREL
+import:         from AS12730 action pref=100; accept AS-RYAZAN-CTC
+import:         from AS35125 action pref=100; accept AS-SMOLENSK
+import:         from AS24699 action pref=100; accept AS-IVTELECOM
+import:         from AS6863 action pref=100; accept AS-ROSNET
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+import:         from AS25515 action pref=100; accept AS-CTC
+import:         from AS57629 action pref=100; accept AS57629
+export:         to AS29651 announce AS-CTC-CORE
+mp-export:      afi ipv6.unicast to AS29651 announce AS-CTC-CORE
+export:         to AS12389 announce AS-CTC-CORE
+mp-export:      afi ipv6.unicast to AS12389 announce AS-CTC-CORE
+export:         to AS8631 announce AS-CTC-CORE
+export:         to AS20764 announce AS-CTC-CORE
+mp-export:      afi ipv6.unicast to AS20764 announce AS-CTC-CORE
+export:         to AS29456 announce ANY
+export:         to AS21017 announce ANY
+mp-export:      afi ipv6.unicast to AS21017 announce ANY
+export:         to AS8570 announce ANY
+export:         to AS35125 announce ANY
+export:         to AS12730 announce ANY
+export:         to AS41134 announce ANY
+export:         to AS35516 announce ANY
+export:         to AS34168 announce ANY
+mp-export:      afi ipv6.unicast to AS34168 announce ANY
+export:         to AS34267 announce ANY
+export:         to AS13118 announce ANY
+mp-export:      afi ipv6.unicast to AS13118 announce ANY
+export:         to AS15468 announce ANY
+export:         to AS13056 announce ANY
+export:         to AS21378 announce ANY
+export:         to AS8675 announce ANY
+export:         to AS24699 announce ANY
+export:         to AS6863 announce ANY
+export:         to AS25515 announce ANY
+export:         to AS57629 announce ANY
+org:            ORG-JR8-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-CTC
+mnt-by:         CTCS-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2007-12-07T15:28:23Z
+last-modified:  2025-04-15T11:48:34Z
+source:         RIPE
+
+as-num:         AS44237
+country:        RU
+as-name:        CTC-CORE-AS PJSC Rostelecom
+
+organisation:   ORG-JR8-RIPE
+org-name:       PJSC Rostelecom
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-JR8-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        RTNC-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        ROSTELECOM-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2005-03-22T11:11:20Z
+last-modified:  2023-01-26T10:52:42Z
+source:         RIPE
+
+
