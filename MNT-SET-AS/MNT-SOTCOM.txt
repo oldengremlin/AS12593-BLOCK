@@ -1,3 +1,169 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.3 port 22
+as-set:         AS-SOTCOM
+descr:          Sotcom ISP
+members:        AS34467
+members:        AS21240
+members:        AS51106
+members:        AS49799
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SOTCOM
+created:        2005-01-26T12:07:00Z
+last-modified:  2016-04-22T14:11:19Z
+source:         RIPE
+
+
+
+as-set:         AS-SOTCOM-P-ANT
+descr:          Peering set to Antena
+members:        AS-SOTCOM
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SOTCOM
+created:        2010-07-08T16:27:57Z
+last-modified:  2010-07-08T16:27:57Z
+source:         RIPE
+
+
+
+as-set:         AS-SOTCOM-P-EC
+descr:          peering set to Electrocom
+members:        AS-SOTCOM
+members:        AS-INTERTELRZN
+members:        AS-CRRZN
+members:        AS-VIDIKON
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SOTCOM
+created:        2010-07-08T16:28:52Z
+last-modified:  2013-06-28T08:23:20Z
+source:         RIPE
+
+
+
+as-set:         AS-SOTCOM-P-EC-IN
+descr:          peering set to Electrocom in
+members:        AS47313
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SOTCOM
+created:        2015-04-10T11:05:42Z
+last-modified:  2015-04-10T11:05:42Z
+source:         RIPE
+
+
+
+as-set:         AS-SOTCOM-P-ISSR
+descr:          Peering set to ISSR
+members:        AS-SOTCOM
+members:        AS-NLINK
+members:        AS-INTERTELRZN
+members:        AS-SOTCOM-P-EC-IN
+members:        AS-VIDIKON
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SOTCOM
+created:        2010-07-08T16:28:32Z
+last-modified:  2015-04-10T11:11:18Z
+source:         RIPE
+
+
+
+as-set:         AS-SOTCOM-P-NLINK
+descr:          Peering set Nlink
+members:        AS-SOTCOM
+members:        AS-CRRZN
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SOTCOM
+created:        2010-07-08T16:29:07Z
+last-modified:  2019-10-24T10:15:22Z
+source:         RIPE
+
+
+
+as-set:         AS-SOTCOM-P-VIDIKON
+descr:          Peering set to Vidikon
+members:        AS-SOTCOM
+members:        AS-CRRZN
+members:        AS-SOTCOM-P-EC-IN
+members:        AS-INTERTELRZN
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SOTCOM
+created:        2012-08-27T14:46:38Z
+last-modified:  2015-04-10T11:17:57Z
+source:         RIPE
+
+
+
+as-set:         AS-SOTCOM-P-WC
+descr:          Peering set to WC
+members:        AS-SOTCOM
+members:        AS-CRRZN
+members:        AS-SOTCOM-P-EC-IN
+members:        AS-VIDIKON
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SOTCOM
+created:        2010-07-08T16:28:17Z
+last-modified:  2015-04-10T11:15:58Z
+source:         RIPE
+
+
+
+as-set:         AS-SOTCOM-PS
+descr:          All peering set
+members:        AS-SOTCOM
+members:        AS41854
+members:        AS44895
+members:        AS47659
+members:        AS49799
+members:        AS-ELECTROCOM
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SOTCOM
+created:        2010-07-08T15:12:36Z
+last-modified:  2019-10-24T10:16:13Z
+source:         RIPE
+
+
+
+aut-num:        AS34467
+as-name:        SOTCOM-AS
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS-SOTCOM
+import:         from AS6854 action pref=100; accept ANY
+export:         to AS6854 announce AS-SOTCOM
+import:         from AS30751 action pref=100; accept ANY
+export:         to AS30751 announce AS-SOTCOM
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS8359 announce AS-SOTCOM
+import:         from AS9002 action pref=100; accept ANY
+export:         to AS9002 announce AS-SOTCOM
+import:         from AS41854 action pref=150; accept AS-NLINK
+export:         to AS41854 announce AS-SOTCOM-P-NLINK
+import:         from AS44895 action pref=150; accept AS-CRRZN
+export:         to AS44895 announce AS-SOTCOM-P-ISSR
+import:         from AS47659 action pref=150; accept AS-INTERTELRZN
+export:         to AS47659 announce AS-SOTCOM-P-WC
+import:         from AS47313 action pref=150; accept AS-SOTCOM-P-EC-IN
+export:         to AS47313 announce AS-SOTCOM-P-EC
+import:         from AS57214 action pref=150; accept AS-VIDIKON
+export:         to AS57214 announce AS-SOTCOM-P-VIDIKON
+import:         from AS21240 action pref=150; accept AS21240
+export:         to AS21240 announce ANY
+import:         from AS49799 action pref=150; accept AS49799
+export:         to AS49799 announce ANY
+org:            ORG-JTC5-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         nic@sotcom.ru
+mnt-by:         MNT-SOTCOM
+created:        2005-01-26T11:17:45Z
+last-modified:  2021-06-10T13:26:53Z
+source:         RIPE
+
+
+

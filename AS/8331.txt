@@ -1,57 +1,23 @@
-
-
-
-as-block:       AS8192 - AS8523
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS8331
 as-name:        RINET-AS
 descr:          Cronyx Plus Ltd
 descr:          Moscow, Russia
-remarks:        Cronyx Plus Ltd (RiNet ISP) Autonomous System
-remarks:        --------------------
-remarks:        *** Main Uplinks ***
-remarks:        --------------------
-remarks:        --- ER-Telecom ---
 import:         from AS9049 action pref=15; accept ANY
 export:         to AS9049 announce AS-RINET
-remarks:        --- NetByNet ---
 import:         from AS12714 action pref=15; accept ANY
 export:         to AS12714 announce AS-RINET
-remarks:        --- RETN ---
 import:         from AS9002 action pref=15; accept ANY
 export:         to AS9002 announce AS-RINET
-remarks:        -----------------------------
-remarks:        *** IXPs (Master Peering) ***
-remarks:        -----------------------------
-remarks:        --- MSK-IX ---
 import:         from AS8631 action pref=15; accept ANY
 export:         to AS8631 announce AS-RINET
-remarks:        --- W-IX ---
 import:         from AS50384 action pref=15; accept ANY
 export:         to AS50384 announce AS-RINET
-remarks:        ------------------------
-remarks:        *** Proposed Uplinks ***
-remarks:        ------------------------
-remarks:        --- CityTelecom ---
 import:         from AS29076 action pref=20; accept ANY
 export:         to AS29076 announce AS-RINET
-remarks:        --- Fiord ---
 import:         from AS28917 action pref=20; accept ANY
 export:         to AS28917 announce AS-RINET
-remarks:        --- Megafon ---
 import:         from AS31133 action pref=15; accept ANY
 export:         to AS31133 announce AS-RINET
-remarks:        -----------------
-remarks:        *** Downlinks ***
-remarks:        -----------------
 import:         from AS6719 action pref=10; accept AS6719
 export:         to AS6719 announce ANY
 import:         from AS9130 action pref=10; accept AS9130
@@ -153,12 +119,8 @@ import:         from AS207839 action pref=10; accept AS207839
 export:         to AS207839 announce ANY
 import:         from AS210093 action pref=10; accept AS210093
 export:         to AS210093 announce ANY
-remarks:        -------------
-remarks:        *** Peers ***
-remarks:        -------------
 import:         from AS714 action pref=10; accept AS-APPLE
 export:         to AS714 announce AS-RINET
-remarks:        --- Hurricane Electric ---
 import:         from AS6939 action pref=10; accept ANY
 export:         to AS6939 announce AS-RINET
 import:         from AS6854 action pref=10; accept AS-TCNET
@@ -227,54 +189,9 @@ import:         from AS47764 action pref=10; accept AS-MAILRU
 export:         to AS47764 announce AS-RINET
 import:         from AS50775 action pref=10; accept AS50775
 export:         to AS50775 announce AS-RINET
-remarks:
-remarks:        -------------------------------------
-remarks:        *** BGP Communities control rules ***
-remarks:        -------------------------------------
-remarks:
-remarks:        8331:1ZMMX - do action X for zone Z (zone member MM), where:
-remarks:
-remarks:        *** Z (zone) is one of:
-remarks:        0 all
-remarks:        1 uplink
-remarks:        2 peer
-remarks:        3 downlink
-remarks:
-remarks:        *** ZMM (zone members) rules:
-remarks:        Z00 all members of this zone
-remarks:        101 RETN
-remarks:        102 NetByNet
-remarks:        201 MSK-IX
-remarks:        202 DataIX
-remarks:        203 W-IX
-remarks:
-remarks:        *** X (action) is one of:
-remarks:        0 as is
-remarks:        1 1 prepend
-remarks:        2 2 prepends
-remarks:        3 3 prepends
-remarks:        9 do not announce
-remarks:
-remarks:        The strictier community set is, the higher priority it has.
-remarks:
-remarks:        -------------------------------------
-remarks:        *** BGP Communities marking rules ***
-remarks:        -------------------------------------
-remarks:
-remarks:        8331:9000 originated locally
-remarks:        8331:9100 source is uplink
-remarks:        8331:91NN which one uplink (see above)
-remarks:        8331:9200 source is peer
-remarks:        8331:92NN which one IX (see above)
-remarks:        8331:9300 source is downlink
-remarks:
-remarks:        -----------------------------
 org:            ORG-RA21-RIPE
-remarks:        $Revision: 1.226 $
-remarks:        For information on "status:" attribute read https://www.ripe.net/data-tools/db/faq/faq-status-values-legacy-resources
-admin-c:        ERTH3-RIPE
-tech-c:         RAID1-RIPE
-tech-c:         RNOC-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RAID-MNT
@@ -283,19 +200,16 @@ created:        2002-04-27T15:40:45Z
 last-modified:  2024-11-09T15:43:48Z
 source:         RIPE
 
+as-num:         AS8331
+country:        RU
+as-name:        RINET-AS JSC "ER-Telecom Holding"
+
 organisation:   ORG-RA21-RIPE
 org-name:       JSC "ER-Telecom Holding"
 country:        RU
 org-type:       LIR
-address:        Shosse Kosmonavtov, 111i, bldg. 2, office 509
-address:        614066
-address:        Perm
-address:        RUSSIAN FEDERATION
-phone:          +79197001771
-phone:          +7 342 2462233
-fax-no:         +7 342 2195024
-admin-c:        ERTH3-RIPE
-tech-c:         RAID1-RIPE
+address:        Dummy address for ORG-RA21-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        RAID1-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        RAID-MNT
@@ -306,54 +220,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         RAID-MNT
 created:        2004-04-17T11:56:55Z
 last-modified:  2024-01-18T14:09:09Z
-source:         RIPE # Filtered
-
-role:           ER-Telecom ISP General Contact Role
-address:        111, str. Shosse Kosmonavtov
-address:        614000 Perm
-address:        Russian Federation
-nic-hdl:        ERTH3-RIPE
-mnt-by:         ERTH-MAGISTR
-mnt-by:         RAID-MNT
-created:        2019-04-29T09:26:35Z
-last-modified:  2019-04-29T09:26:35Z
-source:         RIPE # Filtered
-
-role:           ER-Telecom ISP Contact Role
-address:        JSC "ER-Telecom"
-address:        111, str. Shosse Kosmonavtov
-address:        614000 Perm
-address:        Russian Federation
-phone:          +7 342 2462233
-fax-no:         +7 342 2463344
-abuse-mailbox:  abuse@domru.ru
-remarks:        24/7 phone number: +7-342-2362233
-admin-c:        AAS585-RIPE
-admin-c:        SAWJ-RIPE
-tech-c:         AAS585-RIPE
-tech-c:         SAWJ-RIPE
-nic-hdl:        RAID1-RIPE
-mnt-by:         RAID-MNT
-created:        2005-02-11T12:50:50Z
-last-modified:  2024-07-24T09:39:40Z
-source:         RIPE # Filtered
-
-role:           RiNet Network Operation Center
-address:        RiNet NOC
-address:        Cronyx Plus Ltd (RiNet ISP)
-address:        Off.111, Bld.11a, 1st Khvostov Lane
-address:        Moscow 119180 RU
-phone:          +7 (495) 981-4571
-abuse-mailbox:  abuse@rinet.ru
-admin-c:        OBUL-RIPE
-admin-c:        MCK-RIPE
-tech-c:         MCK-RIPE
-tech-c:         OBUL-RIPE
-nic-hdl:        RNOC-RIPE
-mnt-by:         RINET-MNT
-created:        2002-09-02T16:50:59Z
-last-modified:  2023-03-12T14:30:08Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

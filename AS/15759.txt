@@ -1,65 +1,31 @@
-
-
-
-as-block:       AS15719 - AS15803
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-02-13T15:18:50Z
-last-modified:  2024-02-13T15:18:50Z
-source:         RIPE
-
-
-
 aut-num:        AS15759
 org:            ORG-JR8-RIPE
 as-name:        DIN-AS
 descr:          OJSC "Tomsktelecom"
-remarks:        ==========================================
-remarks:        UPSTREAMS
-remarks:        ==========================================
 import:         { from AS41440 action pref=300; accept ANY; from AS8342 action pref=200; accept ANY; from AS21127 action pref=100; accept ANY; }
 export:         { to AS41440 announce AS-DIN; to AS8342 announce AS-DIN; to AS21127 announce AS15759; }
-remarks:        ==========================================
-remarks:        CUSTOMERS
-remarks:        ==========================================
 import:         { from AS31036 action pref=100; accept AS31036; from AS5567 action pref=100; accept AS5567; from AS29047 action pref=100; accept AS29047; from AS12879 action pref=100; accept AS12879; from AS34145 action pref=100; accept AS34145 and AS35715; from AS34490 action pref=100; accept AS34490; from AS34573 action pref=100; accept AS34573; from AS42508 action pref=100; accept AS42508; from AS51256 action pref=100; accept AS51256; }
 export:         { to AS31036 announce ANY; to AS5567 announce ANY; to AS29047 announce ANY; to AS12879 announce ANY; to AS34145 announce ANY; to AS34490 announce ANY; to AS34573 announce ANY; to AS42508 announce ANY; to AS51256 announce ANY; }
-admin-c:        DIN-RIPE
-tech-c:         DIN-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@tomsknet.ru
 mnt-by:         DIN-RIPE-MNT
 created:        2002-03-12T09:45:05Z
 last-modified:  2024-05-13T10:39:24Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS15759
+country:        RU
+as-name:        DIN-AS PJSC Rostelecom
 
 organisation:   ORG-JR8-RIPE
 org-name:       PJSC Rostelecom
 country:        RU
 org-type:       LIR
-address:        14 A, Sinopskaya nabereznaya
-address:        191167
-address:        S.Peterburg
-address:        RUSSIAN FEDERATION
-phone:          +7 499 999-82-83
-fax-no:         +74999953619
-admin-c:        RTNC-RIPE
-admin-c:        EP6706-RIPE
-admin-c:        IE1277-RIPE
-admin-c:        NM7547-RIPE
-admin-c:        AA728-RIPE
-admin-c:        SVS153-RIPE
-admin-c:        ASV77-RIPE
-admin-c:        RVP-RIPE
-admin-c:        VEV57-RIPE
-admin-c:        TR4627-RIPE
-admin-c:        TL4565-RIPE
-admin-c:        DN216-RIPE
-admin-c:        DA2353-RIPE
-admin-c:        IS111-RIPE
-admin-c:        VE128-RIPE
-admin-c:        SS216-RIPE
+address:        Dummy address for ORG-JR8-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        RTNC-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        ROSTELECOM-MNT
@@ -68,29 +34,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2005-03-22T11:11:20Z
 last-modified:  2023-01-26T10:52:42Z
-source:         RIPE # Filtered
-
-role:           DIN Tomsktelecom NET Contact Role
-address:        Digital Information Network
-address:        Tomsktelecom
-address:        40, Chernykh str.,
-address:        634063, Tomsk, Russia
-phone:          +7 3822 662510
-phone:          +7 3822 662506
-phone:          +7 3822 559876
-fax-no:         +7 3822 662502
-remarks:        trouble: URI2-RIPE
-remarks:        trouble: VAD-RIPE
-admin-c:        SLY-RIPE
-admin-c:        VAD-RIPE
-tech-c:         SLY-RIPE
-tech-c:         URI2-RIPE
-tech-c:         VAD-RIPE
-nic-hdl:        DIN-RIPE
-mnt-by:         DIN-RIPE-MNT
-created:        1970-01-01T00:00:00Z
-last-modified:  2022-07-19T12:19:00Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

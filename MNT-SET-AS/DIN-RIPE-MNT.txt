@@ -1,6 +1,40 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
+as-set:         AS-DIN
+descr:          ASes routed by TOMSKTELECOM
+members:        AS15759
+members:        AS31036
+members:        AS5567
+members:        AS29047
+members:        AS12879
+members:        AS34145
+members:        AS34490
+members:        AS34573
+members:        AS35715
+members:        AS42508
+members:        AS51256
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         noc@tomsknet.ru
+mnt-by:         DIN-RIPE-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2010-10-22T03:09:31Z
+source:         RIPE
 
+
+
+as-set:         AS-DIN2
+descr:          ASes routed by TOMSKTELECOM toward ZSTTK
+members:        AS15759
+members:        AS34573
+members:        AS34145
+members:        AS29047
+members:        AS31036
+notify:         noc@tomsknet.ru
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         DIN-RIPE-MNT
+created:        2005-08-22T06:35:35Z
+last-modified:  2007-11-29T10:29:43Z
+source:         RIPE
 
 
 
@@ -8,24 +42,19 @@ aut-num:        AS15759
 org:            ORG-JR8-RIPE
 as-name:        DIN-AS
 descr:          OJSC "Tomsktelecom"
-remarks:        ==========================================
-remarks:        UPSTREAMS
-remarks:        ==========================================
 import:         { from AS41440 action pref=300; accept ANY; from AS8342 action pref=200; accept ANY; from AS21127 action pref=100; accept ANY; }
 export:         { to AS41440 announce AS-DIN; to AS8342 announce AS-DIN; to AS21127 announce AS15759; }
-remarks:        ==========================================
-remarks:        CUSTOMERS
-remarks:        ==========================================
 import:         { from AS31036 action pref=100; accept AS31036; from AS5567 action pref=100; accept AS5567; from AS29047 action pref=100; accept AS29047; from AS12879 action pref=100; accept AS12879; from AS34145 action pref=100; accept AS34145 and AS35715; from AS34490 action pref=100; accept AS34490; from AS34573 action pref=100; accept AS34573; from AS42508 action pref=100; accept AS42508; from AS51256 action pref=100; accept AS51256; }
 export:         { to AS31036 announce ANY; to AS5567 announce ANY; to AS29047 announce ANY; to AS12879 announce ANY; to AS34145 announce ANY; to AS34490 announce ANY; to AS34573 announce ANY; to AS42508 announce ANY; to AS51256 announce ANY; }
-admin-c:        DIN-RIPE
-tech-c:         DIN-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@tomsknet.ru
 mnt-by:         DIN-RIPE-MNT
 created:        2002-03-12T09:45:05Z
 last-modified:  2024-05-13T10:39:24Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

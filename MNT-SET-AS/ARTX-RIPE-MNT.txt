@@ -1,27 +1,57 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
+as-set:         AS-ARTX
+descr:          ARTX network
+members:        AS20985
+members:        AS43798
+members:        AS48939
+members:        AS-NTK
+members:        AS203699
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ARTX-RIPE-MNT
+created:        2007-05-17T12:37:37Z
+last-modified:  2024-10-08T14:44:36Z
+source:         RIPE
 
+
+
+as-set:         AS-ZENCOM
+descr:          Zencom as set
+members:        AS197460
+members:        AS28736
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ARTX-RIPE-MNT
+created:        2012-03-26T12:30:49Z
+last-modified:  2023-08-11T09:18:28Z
+source:         RIPE
+
+
+
+as-set:         AS197460:AS-ZENCOM
+descr:          Zencom AS set AS197460
+members:        AS197460
+members:        AS28736
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ARTX-RIPE-MNT
+created:        2023-08-11T09:37:54Z
+last-modified:  2023-08-11T09:37:54Z
+source:         RIPE
 
 
 
 aut-num:        AS197460
 as-name:        ZENCOM-AS
 org:            ORG-ZL11-RIPE
-remarks:
-remarks:        Uplinks:
 descr:          FORTEX
 import:         from AS48166 accept ANY
 export:         to AS48166 announce AS-ZENCOM
 descr:          NAUKANET
 import:         from AS8641 accept ANY
 export:         to AS8641 announce AS-ZENCOM
-remarks:
-remarks:        Downlinks:
 descr:          ZENCOM-TELECOMNET
 import:         from AS28736 action pref=111; accept AS28736
 export:         to AS28736 announce ANY
-remarks:
-remarks:        Direct Peers:
 descr:          GOLITSYNO TELECOM
 import:         from AS49320 action pref=111; accept AS49320
 export:         to AS49320 announce AS-ZENCOM
@@ -34,27 +64,23 @@ export:         to AS61121 announce AS197460
 descr:          LIFESTREAM
 import:         from AS200976 action pref=111; accept AS200976
 export:         to AS200976 announce AS-ZENCOM
-remarks:
-remarks:        Peer IX:
 descr:          Piter-IX MSK
 import:         from AS49869 accept ANY
 export:         to AS49869 announce AS-ZENCOM
 descr:          Piter-IX SPB
 import:         from AS50817 action pref=50; accept ANY
 export:         to AS50817 announce AS-ZENCOM
-remarks:
-admin-c:        ZENC-RIPE
-admin-c:        ARTX1-RIPE
-tech-c:         ZENC-RIPE
-tech-c:         ARTX1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         admin@zencom.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ARTX-RIPE-MNT
 mnt-by:         ZENCOM-RIPE-MNT
 mnt-by:         ZENC-MNT
 created:        2010-12-10T15:23:09Z
 last-modified:  2024-12-26T11:17:06Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-LT104-RIPE
 
 
@@ -136,8 +162,8 @@ export:         to AS34879 announce AS-ARTX
 export:         to AS48939 announce ANY
 export:         to AS28917 announce AS-ARTX
 export:         to AS203699 announce ANY
-admin-c:        ARTX1-RIPE
-tech-c:         ARTX1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         ARTX-RIPE-MNT
 mnt-by:         RIPE-NCC-END-MNT

@@ -1,47 +1,21 @@
-
-
-
-as-block:       AS57370 - AS57973
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2025-04-24T14:15:44Z
-last-modified:  2025-04-24T14:15:44Z
-source:         RIPE
-
-
-
 aut-num:        AS57420
 as-name:        FORATELECOM-AS
 org:            ORG-LA270-RIPE
-remarks:        ========= Uplinks =========
-remarks:        -------------------- IHOME -------------------
 import:         from AS25478 action pref=100; accept ANY
 export:         to AS25478 announce AS-FORATELECOM
-remarks:        -------------------- INETCOM ---------------------
 import:         from AS35598 action pref=100; accept ANY
 export:         to AS35598 announce AS-FORATELECOM
-remarks:        ------------------StormWall--------------------------
 export:         to AS59796 announce AS-FORATELECOM
 import:         from AS59796 accept AS59796
-remarks:        ========= Peers =========
-remarks:        W-IX
 import:         from AS50384 action pref=150; accept ANY
 export:         to AS50384 announce AS-FORATELECOM
-remarks:        ========= Customers =========
-remarks:        LTD SPUTNIK
 import:         from AS48739 action pref=90; accept ANY
 export:         to AS48739 announce AS-FORATELECOM
-remarks:        -----------------------------------------------------
-remarks:        FORA-BANK
 import:         from AS60437 action pref=200; accept AS60437
 export:         to AS60437 announce ANY
-remarks:        -----------------------------------------------------
-remarks:        RKN
 export:         to AS65211 announce ANY
-remarks:        -----------------------------------------------------
-admin-c:        FTN-RIPE
-tech-c:         FTN-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-FORATELECOM
@@ -49,18 +23,16 @@ created:        2011-10-20T14:34:26Z
 last-modified:  2025-04-09T09:54:30Z
 source:         RIPE
 
+as-num:         AS57420
+country:        RU
+as-name:        FORATELECOM-AS LLC "Foratelecom"
+
 organisation:   ORG-LA270-RIPE
 org-name:       LLC "Foratelecom"
 country:        RU
 org-type:       LIR
-address:        Ul. Nametkina 12A
-address:        117420
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74952281945
-fax-no:         +74952281945
-admin-c:        AG20
-admin-c:        AT10680-RIPE
+address:        Dummy address for ORG-LA270-RIPE
+e-mail:         unread@ripe.net
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-by:         MNT-FORATELECOM
 mnt-ref:        MNT-FORATELECOM
@@ -68,22 +40,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 abuse-c:        FTN-RIPE
 created:        2010-05-17T09:29:15Z
 last-modified:  2024-03-18T08:34:24Z
-source:         RIPE # Filtered
-
-role:           Foratelecom NOC
-address:        Nastavnicheskiy per., 17 build 1
-address:        105120 Moscow
-address:        Russia
-phone:          +7 (495) 228-1945
-abuse-mailbox:  abuse@foratelecom.ru
-admin-c:        AK22286-RIPE
-tech-c:         AK22286-RIPE
-tech-c:         AK22286-RIPE
-nic-hdl:        FTN-RIPE
-mnt-by:         MNT-FORATELECOM
-created:        2010-05-19T10:20:16Z
-last-modified:  2022-08-30T08:40:00Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

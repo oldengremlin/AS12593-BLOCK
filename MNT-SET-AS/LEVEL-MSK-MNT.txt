@@ -1,6 +1,117 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.184.190:22 already exists, disabling multiplexing
+as-set:         AS-LEVEL
+descr:          NETWORKS ROUTED BY LEVEL DONETSK LTD.
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         LEVEL-MSK-MNT
+mnt-by:         LEVEL-MNT
+created:        2016-08-30T18:42:22Z
+last-modified:  2018-12-04T05:01:06Z
+source:         RIPE
+members:        AS197658
+members:        AS-DIDAN
 
+
+
+as-set:         AS-LEVEL-MSK
+descr:          LEVEL-MSK DOWNSTREAMS
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         LEVEL-MSK-MNT
+created:        2017-03-02T23:34:50Z
+last-modified:  2025-04-29T14:45:36Z
+source:         RIPE
+members:        AS35273
+members:        AS39089
+members:        AS39262
+members:        AS44539:AS-CUST
+members:        AS44660
+members:        AS52091
+members:        AS201496
+members:        AS202279
+members:        AS202279:AS-KOMTEL
+members:        AS204108
+members:        AS206810:AS-CUSTOMERS
+members:        AS207353
+members:        AS208435
+members:        AS213203
+members:        AS214721
+members:        AS-DEC
+members:        AS-DIDAN
+members:        AS-DON
+members:        AS-HELITELE
+members:        AS-LEVEL
+members:        AS-MEGA-NET-RU
+members:        AS-MESHNET
+members:        AS-NL
+members:        AS-Promtelecom
+members:        AS-ROS
+members:        AS-TRKMETRO
+members:        AS-UGLETELECOM
+
+
+
+as-set:         AS-LEVEL-MSK6
+descr:          AS52091 IPv6 announces
+members:        AS52091
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         LEVEL-MSK-MNT
+created:        2021-04-10T02:25:39Z
+last-modified:  2021-04-10T02:25:39Z
+source:         RIPE
+
+
+
+as-set:         AS202279:AS-KOMTEL
+members:        AS202279
+members:        AS199827
+members:        AS57982
+members:        AS44137
+members:        AS197923
+members:        AS213203
+members:        AS48595
+members:        AS52213
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         KOMTEL-DPR-MNT
+mnt-by:         LEVEL-MSK-MNT
+created:        2023-06-06T06:51:17Z
+last-modified:  2023-12-13T11:17:02Z
+source:         RIPE
+
+
+
+as-set:         AS214268:AS-ORANGE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         LEVEL-MSK-MNT
+mnt-by:         ORANGEDNR-MNT
+mnt-by:         ORANGEDN-MNT
+created:        2024-09-03T11:08:55Z
+last-modified:  2024-11-15T11:30:55Z
+source:         RIPE
+members:        AS214268
+members:        AS31069
+members:        AS44660
+members:        AS196629
+members:        AS51591
+members:        AS197578
+members:        AS-HANGENKOVONET
+
+
+
+as-set:         AS214721:AS-RTO
+descr:          Phoenix networks
+org:            ORG-SUEO4-RIPE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS214721
+members:        AS204108
+mnt-by:         RTO-MNT
+mnt-by:         LEVEL-MSK-MNT
+created:        2024-10-22T14:54:32Z
+last-modified:  2024-10-22T14:54:32Z
+source:         RIPE
 
 
 
@@ -9,15 +120,12 @@ as-name:        KOMTEL-DPR-AS
 org:            ORG-SUEO4-RIPE
 import:         from AS201776 accept ANY
 export:         to AS201776 announce AS202279:AS-KOMTEL
-remarks:        -MIRANDA-
 import:         from AS206810 accept ANY
 export:         to AS206810 announce AS202279:AS-KOMTEL
-remarks:        -UGLETELECOM-
 import:         from AS39089 accept ANY
 export:         to AS39089 announce AS202279:AS-KOMTEL
-remarks:        -UGLETELECOM-
-admin-c:        DK8730-RIPE
-tech-c:         MA21653-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LEVEL-MSK-MNT
@@ -36,10 +144,8 @@ import:         from AS52091 accept ANY
 export:         to AS52091 announce AS208435
 import:         from AS48276 accept ANY
 export:         to AS48276 announce AS208435
-admin-c:        SZ5086-RIPE
-admin-c:        ANDT-RIPE
-tech-c:         SZ5086-RIPE
-tech-c:         ANDT-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ZUGRES-MNT
@@ -59,8 +165,8 @@ import:         from AS206810 accept ANY
 export:         to AS206810 announce AS211692
 import:         from AS52091 accept ANY
 export:         to AS52091 announce AS211692
-admin-c:        IRA35-RIPE
-tech-c:         IRA35-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LEVEL-MSK-MNT
@@ -79,8 +185,8 @@ import:         from AS206810 accept ANY
 export:         to AS206810 announce AS214210
 import:         from AS52091 accept ANY
 export:         to AS52091 announce AS214210
-admin-c:        PA11619-RIPE
-tech-c:         PA11619-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LEVEL-MSK-MNT
@@ -99,8 +205,8 @@ import:         from AS206810 accept ANY
 export:         to AS206810 announce AS214218
 import:         from AS41039 accept ANY
 export:         to AS41039 announce AS214218
-admin-c:        ML24884-RIPE
-tech-c:         ML24884-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LEVEL-MSK-MNT
@@ -121,8 +227,8 @@ import:         from AS52091 accept ANY
 export:         to AS52091 announce AS214268
 import:         from AS44539 accept ANY
 export:         to AS44539 announce AS214268
-admin-c:        TM12912-RIPE
-tech-c:         IRA35-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LEVEL-MSK-MNT
@@ -141,10 +247,8 @@ import:         from AS52091 accept ANY
 export:         to AS52091 announce AS214721
 import:         from AS206810 accept ANY
 export:         to AS206810 announce AS214721
-admin-c:        ANDT-RIPE
-admin-c:        RA11817-RIPE
-tech-c:         ANDT-RIPE
-tech-c:         OROD1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LEVEL-MSK-MNT
@@ -158,7 +262,6 @@ source:         RIPE
 aut-num:        AS39089
 as-name:        UGLETELECOM-AS
 org:            ORG-DPR2-RIPE
-remarks:        -------------------------------------------
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS39089:AS-CUSTOMERS
 import:         from AS48084 accept ANY
@@ -167,7 +270,6 @@ import:         from AS52091 accept ANY
 export:         to AS52091 announce AS39089:AS-CUSTOMERS
 import:         from AS206810 accept ANY
 export:         to AS206810 announce AS39089:AS-CUSTOMERS
-remarks:        -------------------------------------------
 import:         from AS50817 accept ANY
 export:         to AS50817 announce AS39089:AS-CUSTOMERS
 import:         from AS49869 accept ANY
@@ -178,30 +280,18 @@ import:         from AS59539 accept ANY
 export:         to AS59539 announce AS39089:AS-CUSTOMERS
 import:         from AS39607 accept ANY
 export:         to AS39607 announce AS39089:AS-CUSTOMERS
-remarks:        -------------------------------------------
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS39089:AS-CUSTOMERS
-remarks:        -------------------------------------------
-remarks:        -=-=-=-CUSTOMERS-=-=-=-
-remarks:        -------------------------------------------
 import:         from AS12773 accept AS-MESHNET
 export:         to AS12773 announce ANY
-remarks:        -------------------------------------------
 import:         from AS41039 accept AS-DON
 export:         to AS41039 announce ANY
-remarks:        -------------------------------------------
 import:         from AS44539 accept AS44539:AS-CUST
 export:         to AS44539 announce ANY
-remarks:        -------------------------------------------
 import:         from AS202279 accept AS202279:AS-KOMTEL
 export:         to AS202279 announce ANY
-remarks:        -------------------------------------------
-remarks:        -=-=-=-CUSTOMERS END-=-=-=-
-remarks:        -------------------------------------------
-admin-c:        IRA35-RIPE
-tech-c:         IRA35-RIPE
-admin-c:        MI5795-RIPE
-tech-c:         MI5795-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         UGT-MNT
@@ -221,9 +311,8 @@ import:         from AS52091 accept ANY
 export:         to AS52091 announce AS44660
 import:         from AS47694 accept ANY
 export:         to AS47694 announce AS44660
-admin-c:        SA40867-RIPE
-admin-c:        ANDT-RIPE
-tech-c:         ANDT-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         UMKA-MNT
@@ -238,8 +327,6 @@ aut-num:        AS47694
 as-name:        LEVEL-MSK-AS
 org:            ORG-LL304-RIPE
 descr:          Level-MSK Ltd.
-remarks:        --------------------
-remarks:        -----Transits-----
 import:         from AS48276 action pref=500; accept any
 export:         to AS48276 announce AS-DIDAN
 import:         from AS52091 action pref=500; accept any
@@ -248,7 +335,6 @@ import:         from AS6886 action pref=500; accept ANY
 export:         to AS6886 announce AS-DIDAN
 import:         from AS197658 action pref=500; accept ANY
 export:         to AS197658 announce AS-DIDAN
-remarks:        -----Peers-----
 import:         from AS12773 action pref=150; accept AS-SONIKO-DNIX
 export:         to AS12773 announce AS-DIDAN
 import:         from AS21189 action pref=100; accept AS-MOLS
@@ -259,7 +345,6 @@ import:         from AS204108 action pref=100; accept AS204108
 export:         to AS204108 announce AS-DIDAN
 import:         from AS-ANY action pref=400; accept ANY
 export:         to AS-ANY announce AS-DIDAN
-remarks:        -----Customers-----
 import:         from AS8274 action pref=10; accept AS8274
 export:         to AS8274 announce ANY
 import:         from AS31069 action pref=10; accept AS31069
@@ -278,10 +363,8 @@ import:         from AS196977 action pref=10; accept AS-HANGENKOVONET
 export:         to AS196977 announce ANY
 import:         from AS197578 action pref=10; accept AS197578
 export:         to AS197578 announce ANY
-remarks:        ----------------------
-admin-c:        ANDT-RIPE
-admin-c:        DZ2792-RIPE
-tech-c:         ANDT-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         DIDAN-MNT
 mnt-by:         RIPE-NCC-END-MNT
@@ -296,10 +379,8 @@ aut-num:        AS52091
 as-name:        LEVEL-MSK-AS
 org:            ORG-LL304-RIPE
 descr:          Level-MSK Ltd.
-remarks:        -------------------------------------------------------------------------------
 import:         from AS714 action pref=200; accept AS-APPLE
 export:         to AS714 announce AS-LEVEL-MSK
-remarks:        -------------------------------------------------------------------------------
 import:         from AS1239 action pref=600; accept ANY
 export:         to AS1239 announce AS-LEVEL-MSK
 descr:          -------------------------------------------------------------------------------
@@ -308,73 +389,50 @@ export:         to AS1299 announce AS-LEVEL-MSK
 descr:          -------------------------------------------------------------------------------
 import:         from AS3216 action pref=500; accept ANY
 export:         to AS3216 announce AS-LEVEL-MSK
-remarks:        -------------------------------------------------------------------------------
 import:         from AS6939 action pref=600; accept AS-HURRICANE
 export:         to AS6939 announce AS-LEVEL-MSK
-remarks:        -------------------------------------------------------------------------------
 import:         from AS8631 action pref=300; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-LEVEL-MSK
-remarks:        -------------------------------------------------------------------------------
 import:         from AS9002 action pref=500; accept ANY
 export:         to AS9002 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS12389 action pref=500; accept ANY
 export:         to AS12389 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS15169 action pref=200; accept ANY
 export:         to AS15169 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS13004 action pref=300; accept AS-SOX
 export:         to AS13004 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS13094 action pref=300; accept ANY
 export:         to AS13094 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS20485 action pref=500; accept ANY
 export:         to AS20485 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS25478 action pref=500; accept ANY
 export:         to AS25478 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS31500 action pref=300; accept AS-GLOBAL-IX
 export:         to AS31500 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS35598 action pref=500; accept ANY
 export:         to AS35598 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS42632 action pref=200; accept AS-MNOGOBYTE
 export:         to AS42632 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS48061 action pref=200; accept AS-GPM-TECH
 export:         to AS48061 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------
 import:         from AS48166 action pref=200; accept AS-FORTEX
 export:         to AS48166 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS48216 action pref=300; accept AS-RNDROUTESERVER
 export:         to AS48216 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS50384 action pref=300; accept ANY
 export:         to AS50384 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS50509 action pref=300; accept ANY
 export:         to AS50509 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS50817 action pref=300; accept as-piter-ix
 export:         to AS50817 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS50952 action pref=300; accept AS-DATAIX
 export:         to AS50952 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS52005 action pref=300; accept ANY
 export:         to AS52005 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS56931 action pref=300; accept AS-EURASIAPEERING_RS
 export:         to AS56931 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS57304 action pref=500; accept ANY
 export:         to AS57304 announce AS-LEVEL-MSK
-remarks:        --------------------------------------------------------------------------------
 import:         from AS5598 action pref=10; accept AS-NL
 export:         to AS5598 announce ANY
 import:         from AS6886 action pref=10; accept AS-INTS
@@ -419,9 +477,8 @@ import:         from AS208435 action pref=10; accept AS208435
 export:         to AS208435 announce ANY
 import:         from AS213203 action pref=10; accept AS213203
 export:         to AS213203 announce ANY
-admin-c:        ANDT-RIPE
-admin-c:        DZ2792-RIPE
-tech-c:         ANDT-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LEVEL-MSK-MNT
@@ -444,10 +501,8 @@ import:         from AS61965 accept AS61965
 export:         to AS61965 announce AS-HOST
 import:         from AS206810 accept { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 export:         to AS206810 announce AS-HOST
-admin-c:        ANDT-RIPE
-admin-c:        BI1261-RIPE
-tech-c:         ANDT-RIPE
-tech-c:         BI1261-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LEVEL-MSK-MNT
@@ -466,9 +521,8 @@ import:         from AS48276 accept ANY
 export:         to AS48276 announce AS59867
 import:         from AS52091 accept ANY
 export:         to AS52091 announce AS59867
-admin-c:        OB4664-RIPE
-tech-c:         OB4664-RIPE
-tech-c:         ANDT-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LEVEL-MSK-MNT

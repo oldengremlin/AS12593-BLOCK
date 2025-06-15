@@ -1,6 +1,16 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
-
+as-set:         AS-SET-CL
+descr:          Citylink As-Set
+members:        AS47236
+members:        AS57856
+members:        AS48354
+members:        AS50916
+members:        AS200123
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         CTLNK-MNT
+created:        2009-10-05T11:03:25Z
+last-modified:  2023-10-24T06:54:46Z
+source:         RIPE
 
 
 
@@ -31,8 +41,8 @@ export:         to AS50817 announce {94.140.246.0/24, 185.90.101.0/24}
 export:         to AS50952 announce AS-SET-CL
 export:         to AS57304 announce {94.140.246.0/24, 185.90.101.0/24}
 export:         to AS57856 announce ANY
-admin-c:        CN12435-RIPE
-tech-c:         CN12435-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CTLNK-MNT
@@ -55,8 +65,8 @@ import:         from AS200123 accept AS200123
 export:         to AS200123 announce ANY
 import:         from AS47236 accept AS47236
 export:         to AS47236 announce ANY
-admin-c:        CN12435-RIPE
-tech-c:         CN12435-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CTLNK-MNT
@@ -69,13 +79,10 @@ source:         RIPE
 aut-num:        AS50258
 as-name:        TEYLA
 org:            ORG-Llc9-RIPE
-remarks:        YANDEX-SPB-IX
 import:         from AS13238 accept AS-YANDEX
 export:         to AS13238 announce AS-TEYLA
-remarks:        internet Vympelcom-as3216
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-TEYLA
-remarks:        -----------======<>=======-----------
 import:         from AS35000 accept ANY
 import:         from AS20764 accept ANY
 import:         from AS43690 accept AS-SPBROUTESERVER
@@ -90,18 +97,14 @@ export:         to AS47395 announce AS-TEYLA
 export:         to AS20632 announce AS-TEYLA
 export:         to AS49686 announce AS-TEYLA
 export:         to AS50952 announce AS-TEYLA
-remarks:        peering-westtel
 import:         from AS31189 accept AS-WESTTEL
 export:         to AS31189 announce ANY
-remarks:        internet-TTK
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-TEYLA
-remarks:        -----==< MSK-IX Peering Group >==-----
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-TEYLA
-remarks:        -----------======<*>=======-----------
-admin-c:        CN12435-RIPE
-tech-c:         CN12435-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CTLNK-MNT
@@ -128,8 +131,8 @@ import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS50916
 import:         from AS50923 action pref=100; accept ANY
 export:         to AS50923 announce AS50916
-admin-c:        CN12435-RIPE
-tech-c:         CN12435-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CTLNK-MNT
@@ -146,8 +149,8 @@ import:         from AS31133 action pref=100; accept ANY
 import:         from AS20485 action pref=100; accept ANY
 export:         to AS31133 announce AS57320
 export:         to AS20485 announce AS57320
-admin-c:        CN12435-RIPE
-tech-c:         CN12435-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CTLNK-MNT

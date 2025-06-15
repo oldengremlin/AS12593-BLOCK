@@ -1,41 +1,40 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@185.151.106.150:22 already exists, disabling multiplexing
-
+as-set:         AS-VSEVNET
+descr:          Vsevnet AS-SET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         VSEVNET-MNT
+created:        2009-04-06T11:03:17Z
+last-modified:  2015-12-24T06:11:33Z
+source:         RIPE
+members:        AS44882
 
 
 
 aut-num:        AS44882
 as-name:        VSEVNET-AS
 org:            ORG-VL71-RIPE
-remarks:        ----- Uplinks -----
-remarks:        Global-net
 import:         from AS31500 action pref=100; accept ANY
 export:         to AS31500 announce AS-VSEVNET
-remarks:        WestCall
 import:         from AS25408 action pref=100; accept ANY
 export:         to AS25408 announce AS-VSEVNET
-remarks:        ----- IXes -----
-remarks:        CLOUD-IX ROUTE SERVER
 import:         from AS29076 action pref=150; accept AS-CLOUD-IX
 export:         to AS29076 announce AS-VSEVNET
-remarks:        DATA.IX ROUTE SERVER
 import:         from AS50952 action pref=150; accept AS-DATAIX
 export:         to AS50952 announce AS-VSEVNET
-remarks:        PIRIX ROUTE SERVER
 import:         from AS48625 action pref=150; accept AS-PIRIX
 export:         to AS48625 announce AS-VSEVNET
-remarks:        PITER-IX ROUTE SERVER
 import:         from AS50817 action pref=100; accept as-piter-ix
 export:         to AS50817 announce AS-VSEVNET
-remarks:        ----- Private peers -----
-admin-c:        SK4004-RIPE
-tech-c:         SK4004-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         ksa@vsevnet.ru
+notify:         sergey.ksa@gmail.com
 mnt-by:         VSEVNET-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2008-03-26T15:53:54Z
 last-modified:  2021-01-27T13:59:16Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

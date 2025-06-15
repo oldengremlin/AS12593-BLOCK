@@ -1,6 +1,29 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.184.190:22 already exists, disabling multiplexing
+as-set:         AS-KURSKTELECOM
+descr:          kursktelecom and customers
+members:        AS42277
+members:        AS206419
+members:        AS61140
+members:        AS48673
+members:        AS34033
+notify:         noc@kursktelecom.ru
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         KURSKTELECOM-MNT
+created:        2007-01-29T11:23:16Z
+last-modified:  2019-09-11T06:33:58Z
+source:         RIPE
 
+
+
+as-set:         AS-SALON2116
+descr:          salon2116 and customers
+members:        AS34033
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         KURSKTELECOM-MNT
+created:        2009-01-06T10:13:42Z
+last-modified:  2015-01-03T10:05:19Z
+source:         RIPE
 
 
 
@@ -11,8 +34,8 @@ import:         from AS42277 accept ANY
 export:         to AS42277 announce AS206419
 import:         from as12389 accept ANY
 export:         to as12389 announce AS206419
-admin-c:        SUEO1-RIPE
-tech-c:         SUEO1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         KURSKTELECOM-MNT
@@ -30,8 +53,8 @@ import:         from AS42277 action pref=100; accept ANY
 export:         to AS42277 announce AS34033
 import:         from AS199020 action pref=100; accept ANY
 export:         to AS199020 announce AS34033
-admin-c:        SLN2116-RIPE
-tech-c:         SLN2116-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         KURSKTELECOM-MNT
 mnt-by:         RIPE-NCC-END-MNT
@@ -44,12 +67,10 @@ sponsoring-org: ORG-JSCK1-RIPE
 
 aut-num:        AS42277
 as-name:        KURSKTELECOM-AS
-remarks:        UPSTREAMS:
 import:         from AS8359 action pref=100; accept ANY
 export:         to AS8359 announce AS-KURSKTELECOM
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS-KURSKTELECOM
-remarks:        PEERING:
 import:         from AS8631 action pref=100; accept AS8631
 export:         to AS8631 announce AS-KURSKTELECOM
 descr:          CUSTOMERS:
@@ -60,8 +81,8 @@ export:         to AS34033 announce ANY
 import:         from AS206419 action pref=200; accept AS206419
 export:         to AS206419 announce ANY
 org:            ORG-JscK1-RIPE
-admin-c:        KTK46-RIPE
-tech-c:         KTK46-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         KURSKTELECOM-MNT
@@ -78,8 +99,8 @@ import:         from AS42277 action pref=100; accept ANY
 export:         to AS42277 announce AS44011
 import:         from AS8342 action pref=100; accept ANY
 export:         to AS8342 announce AS44011
-admin-c:        TKS2000-RIPE
-tech-c:         TKS2000-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         KURSKTELECOM-MNT
 mnt-by:         RIPE-NCC-END-MNT
@@ -97,8 +118,8 @@ import:         from AS42277 action pref=100; accept ANY
 export:         to AS42277 announce AS48673
 import:         from AS34033 action pref=100; accept ANY
 export:         to AS34033 announce AS48673
-admin-c:        AKO46-RIPE
-tech-c:         AKO46-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         KURSKTELECOM-MNT
 mnt-by:         RIPE-NCC-END-MNT

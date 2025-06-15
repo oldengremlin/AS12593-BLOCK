@@ -1,6 +1,70 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@185.151.106.150:22 already exists, disabling multiplexing
+as-set:         AS-RN
+descr:          Sibintek Sof.
+members:        AS50374
+members:        AS41706
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SIBINTEK-NOC
+created:        2020-02-26T13:00:37Z
+last-modified:  2020-02-26T13:04:01Z
+source:         RIPE
 
+
+
+as-set:         AS-SIBINTEK
+descr:          Sibintek downlinks
+members:        AS13165
+members:        AS34709
+members:        AS30745
+members:        AS60057
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@sibintek.net
+mnt-by:         SIBINTEK-NOC
+created:        2002-09-12T08:38:13Z
+last-modified:  2015-08-06T09:50:53Z
+source:         RIPE
+
+
+
+as-set:         AS-SIBINTEK-SAMARA
+descr:          SIBINTEK-SAMARA AS-SET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS50691
+members:        AS201507
+members:        AS39575
+mnt-by:         SIBINTEK-NOC
+created:        2019-03-19T08:31:50Z
+last-modified:  2019-07-08T11:51:31Z
+source:         RIPE
+
+
+
+as-set:         AS-SIBINTEK-VORONEZH
+descr:          Sibintek Voronezh
+members:        AS42870
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@sibintek.net
+notify:         voronezh-noc@sibintek.net
+mnt-by:         SIBINTEK-NOC
+created:        2007-05-30T10:09:31Z
+last-modified:  2009-02-05T07:54:35Z
+source:         RIPE
+
+
+
+as-set:         AS-SIK-YS
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS198974
+members:        AS198973
+members:        AS198960
+mnt-by:         SIBINTEK-NOC
+created:        2021-08-31T08:49:58Z
+last-modified:  2021-08-31T08:49:58Z
+source:         RIPE
 
 
 
@@ -8,24 +72,19 @@ aut-num:        AS13165
 org:            ORG-SIC1-RIPE
 as-name:        SIBINTEK-AS
 descr:          Moscow Russia
-remarks:        ------------------------
-remarks:        uplinks
-remarks:        ------------------------
 import:         { from AS3216 action pref=100; from AS8470 action pref=100; from AS12695 action pref=100; from AS12976 action pref=100; accept ANY; }
 export:         { to AS3216 to AS8470 to AS12695 to AS12976 announce AS-SIBINTEK; }
-remarks:        ----------------------
-remarks:        downlinks
-remarks:        ----------------------
 import:         from AS34709 action pref=90; accept AS34709 AS30745
 export:         to AS34709 announce ANY
-admin-c:        BAKS-RIPE
-tech-c:         BAKS-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@sibintek.net
 mnt-by:         SIBINTEK-NOC
 created:        2002-09-11T15:55:16Z
 last-modified:  2023-11-28T11:26:33Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -35,8 +94,8 @@ descr:          Branch in Voronezh
 org:            ORG-SIC1-RIPE
 import:         from AS24923 accept ANY
 export:         to AS24923 announce AS-RNI-VORONEZH
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -48,7 +107,6 @@ source:         RIPE
 
 aut-num:        AS198350
 as-name:        RU-RN-INFORM-NEFTEUGANSK
-remarks:        Branch in Nefteugansk
 org:            ORG-SIC1-RIPE
 import:         from AS29648 accept ANY
 import:         from AS15599 accept ANY
@@ -58,8 +116,8 @@ export:         to AS29648 announce AS198350
 export:         to AS15599 announce AS198350
 export:         to AS28719 announce AS198350
 export:         to AS41822 announce AS198350
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -71,7 +129,6 @@ source:         RIPE
 
 aut-num:        AS198960
 as-name:        RU-RN-INFORM-YUZHNO-SAKHALINSK
-remarks:        Branch Yuzhno-Sakhalinsk city
 org:            ORG-SIC1-RIPE
 import:         from AS43550 accept ANY
 export:         to AS43550 announce AS-SIK-YS
@@ -85,8 +142,8 @@ import:         from AS198974 accept AS198974
 export:         to AS198974 announce ANY
 import:         from AS198973 accept AS198973
 export:         to AS198973 announce ANY
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -98,7 +155,6 @@ source:         RIPE
 
 aut-num:        AS198973
 as-name:        RU-RN-INFORM-OHA
-remarks:        Branch Oha
 org:            ORG-SIC1-RIPE
 import:         from AS8443 accept ANY
 export:         to AS8443 announce AS198973
@@ -106,8 +162,8 @@ import:         from AS43550 accept ANY
 export:         to AS43550 announce AS198973
 import:         from AS198960 accept ANY
 export:         to AS198960 announce AS198973
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -119,7 +175,6 @@ source:         RIPE
 
 aut-num:        AS198974
 as-name:        RU-RN-INFORM-NOGLIKI
-remarks:        Branch Nogliki
 org:            ORG-SIC1-RIPE
 import:         from AS43746 accept ANY
 export:         to AS43746 announce AS198974
@@ -127,8 +182,8 @@ import:         from AS8443 accept ANY
 export:         to AS8443 announce AS198974
 import:         from AS198960 accept ANY
 export:         to AS198960 announce AS198974
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -140,16 +195,18 @@ source:         RIPE
 
 aut-num:        AS34249
 as-name:        TNKBP-AS
+notify:         IT_Operator@rosneft.ru
+notify:         NOC@rosneft.ru
 org:            ORG-OR14-RIPE
 sponsoring-org: ORG-SIC1-RIPE
-admin-c:        AV12752-RIPE
-tech-c:         AV12752-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
 created:        2004-11-26T16:09:08Z
 last-modified:  2023-11-29T05:33:37Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -165,19 +222,23 @@ export:         to AS41209 announce AS39575
 export:         to AS51543 announce AS39575
 export:         to AS12389 announce AS39575
 export:         to AS50691 announce AS39575
-admin-c:        BAKS-RIPE
-tech-c:         BAKS-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@sibintek.ru
+notify:         noc2@sibintek.ru
 mnt-by:         SIBINTEK-NOC
 created:        2006-03-21T11:37:20Z
 last-modified:  2023-11-28T11:26:59Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS41706
 as-name:        ROSNEFT-AS
+notify:         NOC@rosneft.ru
+notify:         IT_Operator@rosneft.ru
 org:            ORG-OR14-RIPE
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS41706
@@ -189,14 +250,14 @@ import:         from AS209030 accept ANY
 export:         to AS209030 announce AS41706
 import:         from AS197068 accept ANY
 export:         to AS197068 announce AS41706
-admin-c:        AV12752-RIPE
-tech-c:         AV12752-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
 created:        2010-09-10T13:20:46Z
 last-modified:  2023-11-22T11:45:24Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-SIC1-RIPE
 
 
@@ -208,9 +269,8 @@ import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS41826
 import:         from AS9049 action pref=100; accept ANY
 export:         to AS9049 announce AS41826
-admin-c:        SNF-RIPE
-admin-c:        RG12571-RIPE
-tech-c:         RG12571-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -229,22 +289,21 @@ import:         from AS8359 action pref=100; accept ANY
 export:         to AS8359 announce AS42870
 import:         from AS20485 action pref=100; accept ANY
 export:         to AS20485 announce AS42870
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@sibintek.net
 mnt-by:         SIBINTEK-NOC
 created:        2007-04-27T11:38:19Z
 last-modified:  2020-07-22T12:01:04Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS50374
 as-name:        RN-INFORM
-remarks:        Branch in Moscow
 org:            ORG-SIC1-RIPE
-remarks:        -= Uplinks =-
 import:         from AS201706 accept ANY
 export:         to AS201706 announce AS-RN
 import:         from AS25159 accept ANY
@@ -255,23 +314,23 @@ import:         from AS28917 accept ANY
 export:         to AS28917 announce AS-RN
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-RN
-remarks:        -= Downlink =-
 import:         from AS41706 accept AS41706
 export:         to AS41706 announce ANY
-admin-c:        BAKS-RIPE
-tech-c:         BAKS-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         aksenovbi@sibintek.ru
+notify:         babkinaa@sibintek.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
 created:        2009-12-30T12:25:53Z
 last-modified:  2023-11-28T11:27:26Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS50443
 as-name:        RU-SIBINTEK-KRSK
-remarks:        Krasnoyarsk branch
 org:            ORG-SIC1-RIPE
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS50443
@@ -281,8 +340,8 @@ import:         from AS31133 accept ANY
 export:         to AS31133 announce AS50443
 import:         from AS60430 accept ANY
 export:         to AS60430 announce AS50443
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -300,8 +359,8 @@ import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-SIBINTEK-SAMARA
 import:         from AS197235 accept ANY
 export:         to AS197235 announce AS-SIBINTEK-SAMARA
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -313,7 +372,6 @@ source:         RIPE
 
 aut-num:        AS50753
 as-name:        RU-RN-INFORM-IRK
-remarks:        Branch in Irkutsk.
 org:            ORG-SIC1-RIPE
 import:         from AS8345 accept ANY
 export:         to AS8345 announce AS50753
@@ -321,8 +379,8 @@ import:         from AS31195 accept ANY
 export:         to AS31195 announce AS50753
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS50753
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -334,7 +392,6 @@ source:         RIPE
 
 aut-num:        AS51209
 as-name:        RN-GOSA
-remarks:        LLC RN-Inform, Saint Petersburg
 org:            ORG-SIC1-RIPE
 import:         from AS29329 accept ANY
 export:         to AS29329 announce AS51209
@@ -342,8 +399,8 @@ import:         from AS20632 accept ANY
 export:         to AS20632 announce AS51209
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS51209
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -361,8 +418,8 @@ import:         from AS48479 accept ANY
 export:         to AS48479 announce AS51238
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS51238
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC
@@ -382,8 +439,8 @@ import:         from AS31195 accept ANY
 export:         to AS31195 announce AS60513
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS60513
-admin-c:        SNF-RIPE
-tech-c:         SNF-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBINTEK-NOC

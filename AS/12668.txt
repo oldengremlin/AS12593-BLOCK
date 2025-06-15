@@ -1,20 +1,6 @@
-
-
-
-as-block:       AS12557 - AS13223
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:24Z
-last-modified:  2018-11-22T15:27:24Z
-source:         RIPE
-
-
-
 aut-num:        AS12668
 as-name:        MIRALOGIC-AS
 org:            ORG-EP3-RIPE
-remarks:        = Upstreams =
 import:         from AS31133 accept ANY
 import:         from AS8359 accept ANY
 import:         from AS50384 accept ANY
@@ -27,7 +13,6 @@ mp-import:      afi ipv6.unicast from AS8359 accept ANY
 mp-export:      afi ipv6.unicast to AS50384 announce AS-MIRALOGIC
 mp-export:      afi ipv6.unicast to AS31133 announce AS-MIRALOGIC
 mp-export:      afi ipv6.unicast to AS8359 announce AS-MIRALOGIC
-remarks:        = Peers =
 import:         from AS3253 accept AS3253
 import:         from AS5468 accept AS5468
 import:         from AS6699 accept AS6699 AND AS5563
@@ -46,31 +31,28 @@ export:         to AS43213 announce AS-MIRALOGIC
 export:         to AS8631 announce AS-MIRALOGIC
 export:         to AS43690 announce AS-MIRALOGIC
 export:         to AS42403 announce AS-MIRALOGIC
-remarks:        = Clients =
 import:         from AS198449 accept AS198449
 export:         to AS198449 announce ANY
-admin-c:        MRL42-RIPE
-tech-c:         MRL42-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         EXTRIM-MNT
+notify:         registry@extrim.ru
 created:        1970-01-01T00:00:00Z
 last-modified:  2018-05-03T12:02:30Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS12668
+country:        RU
+as-name:        MIRALOGIC-AS LLC "KomTehCentr"
 
 organisation:   ORG-EP3-RIPE
 org-name:       LLC "KomTehCentr"
 country:        RU
 org-type:       LIR
-address:        Bazhova 79, 211
-address:        620075
-address:        Yekaterinburg
-address:        RUSSIAN FEDERATION
-phone:          +73433790011
-phone:          +73433790001
-fax-no:         +73433790002
-admin-c:        MRL42-RIPE
-tech-c:         MRL42-RIPE
+address:        Dummy address for ORG-EP3-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        MRL42-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        EXTRIM-MNT
@@ -78,23 +60,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         EXTRIM-MNT
 created:        2004-04-17T11:52:32Z
 last-modified:  2020-12-16T13:21:09Z
-source:         RIPE # Filtered
-
-role:           MIRALOGIC NOC role
-address:        Bazhova 79, 211
-address:        620075
-address:        Yekaterinburg
-address:        RUSSIAN FEDERATION
-admin-c:        ASD11-RIPE
-admin-c:        VD4309-RIPE
-tech-c:         MNTR1-RIPE
-tech-c:         VETR-RIPE
-abuse-mailbox:  noc@itmh.ru
-nic-hdl:        MRL42-RIPE
-mnt-by:         EXTRIM-MNT
-created:        2012-06-07T12:30:27Z
-last-modified:  2024-10-16T12:09:58Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

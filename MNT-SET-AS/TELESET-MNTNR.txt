@@ -1,6 +1,22 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@185.151.106.150:22 already exists, disabling multiplexing
-
+as-set:         AS-TELESET
+descr:          Telecet customers AS list
+descr:          Russia, city of Kazan
+members:        AS24810
+members:        AS31185
+members:        AS42062
+members:        AS41190
+members:        AS39805
+members:        AS12538
+members:        AS197873
+members:        AS197765
+members:        AS12772
+members:        AS61228
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         TELESET-MNTNR
+created:        2005-12-06T08:02:21Z
+last-modified:  2015-12-25T12:24:25Z
+source:         RIPE
 
 
 
@@ -9,13 +25,10 @@ as-name:        TELESET-KAZAN
 org:            ORG-JR8-RIPE
 descr:          PJSC "Rostelecom". Kazan branch
 mnt-by:         ROSTELECOM-MNT
-remarks:        *** Upstreams ***
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS-TELESET
-remarks:        *** IX's public route servers ***
 import:         from AS50706 action pref=150; accept AS-KZNROUTESERVER
 export:         to AS50706 announce AS-TELESET
-remarks:        *** Private peering in Kazan ***
 import:         from AS29125 action pref=150; accept AS29125
 export:         to AS29125 announce AS-TELESET
 import:         from AS28840 action pref=150; accept AS28840
@@ -28,7 +41,6 @@ import:         from AS39613 action pref=150; accept AS39613
 export:         to AS39613 announce AS-TELESET
 import:         from AS29194 action pref=150; accept AS29194
 export:         to AS29194 announce AS-TELESET
-remarks:        *** Clients ***
 import:         from AS197873 action pref=200; accept AS197873
 export:         to AS197873 announce ANY
 import:         from AS12538 action pref=200; accept AS12538
@@ -39,8 +51,8 @@ import:         from AS12772 action pref=200; accept AS12772
 export:         to AS12772 announce ANY
 import:         from AS61228 action pref=200; accept AS12772
 export:         to AS61228 announce ANY
-admin-c:        TK-RU
-tech-c:         TK-RU
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TELESET-MNTNR
@@ -57,8 +69,8 @@ org:            ORG-JR8-RIPE
 descr:          TELESET LLC
 import:         from AS50615 accept any
 export:         to AS50615 announce AS33887
-admin-c:        TN-RU
-tech-c:         TN-RU
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TELESET-MNTNR

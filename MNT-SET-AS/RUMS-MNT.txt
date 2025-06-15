@@ -1,37 +1,43 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
-
-
-
-
-aut-num:        AS197360
-as-name:        TELSYS-AS
-org:            ORG-BC2-RIPE
-import:         from AS28812 accept ANY
-export:         to AS28812 announce AS197360
-admin-c:        ORD5-RIPE
-tech-c:         SSM18-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
+as-set:         AS-BASHNET
+descr:          AS BASHNET and clients
+members:        AS28881
+members:        AS51153
+members:        AS51234
+members:        AS41447
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         s.makarov@bashtel.ru
+mnt-by:         BASHNET-MNT
 mnt-by:         RUMS-MNT
-created:        2010-11-01T07:56:42Z
-last-modified:  2019-08-05T06:50:17Z
+created:        2005-03-01T08:00:03Z
+last-modified:  2020-10-22T03:54:52Z
 source:         RIPE
 
 
 
-aut-num:        AS198486
-as-name:        YANAUL-TELSYS-AS
-org:            ORG-BC2-RIPE
-import:         from AS28812 accept ANY
-export:         to AS28812 announce AS198486
-admin-c:        ORD5-RIPE
-tech-c:         SSM18-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
+as-set:         AS-JSCBIS
+descr:          AS BASHTEL and clients
+members:        AS28812
+members:        AS35769
+members:        AS45048
+members:        AS47733
+members:        AS8475
+members:        AS199609
+members:        AS61964
+members:        AS-BASHNET
+members:        AS13105
+members:        AS31552
+members:        AS61228
+members:        AS39113
+members:        AS51153
+members:        AS204925
+members:        AS208352
+members:        AS41447
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
 mnt-by:         RUMS-MNT
-created:        2012-02-14T12:54:35Z
-last-modified:  2019-08-05T06:53:50Z
+created:        2004-12-09T09:18:00Z
+last-modified:  2020-03-18T06:06:15Z
 source:         RIPE
 
 
@@ -43,8 +49,8 @@ import:         from AS28812 accept ANY
 export:         to AS28812 announce AS208352
 import:         from AS9049 accept ANY
 export:         to AS9049 announce AS208352
-admin-c:        SSM18-RIPE
-tech-c:         SSM18-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUMS-MNT
@@ -58,16 +64,10 @@ sponsoring-org: ORG-BC2-RIPE
 aut-num:        AS28812
 as-name:        JSCBIS-AS
 org:            ORG-BC2-RIPE
-remarks:        ---------------
-remarks:        Upstreams
-remarks:        ---------------
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-JSCBIS
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-JSCBIS
-remarks:        ---------------
-remarks:        Clients
-remarks:        ---------------
 import:         from AS28881 accept AS-BASHNET
 export:         to AS28881 announce ANY
 import:         from AS35769 accept AS35769
@@ -92,8 +92,8 @@ import:         from AS41447 accept AS41447
 import:         from AS8475 accept AS8475
 export:         to AS41447 announce ANY
 export:         to AS8475 announce ANY
-admin-c:        ORD5-RIPE
-tech-c:         SSM18-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUMS-MNT
@@ -110,14 +110,15 @@ import:         from AS28812 action pref=100; accept ANY
 import:         from AS41447 action pref=100; accept AS41447
 export:         to AS28812 announce AS-BASHNET
 export:         to AS41447 announce ANY
-admin-c:        ORD5-RIPE
-tech-c:         ORD5-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RUMS-MNT
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@bashtelecom.ru
 created:        2003-03-26T10:54:47Z
 last-modified:  2019-12-04T11:17:51Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

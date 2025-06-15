@@ -1,3 +1,43 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 10.100.1.2 port 22
+as-set:         AS-FDTV
+descr:          First Digital TV Ltd
+members:        AS50671
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         GOROD-MNT
+created:        2015-10-29T07:12:52Z
+last-modified:  2015-10-29T07:40:39Z
+source:         RIPE
+
+
+
+as-set:         AS-GORODTV
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS50671
+mnt-by:         GOROD-MNT
+created:        2018-03-13T12:23:23Z
+last-modified:  2018-03-13T12:23:48Z
+source:         RIPE
+
+
+
+aut-num:        AS50671
+as-name:        GOROD-AS
+org:            ORG-FDTL1-RIPE
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS48176 action pref=160; accept ANY
+export:         to AS31133 announce AS50671
+export:         to AS48176 announce AS50671
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         GOROD-MNT
+mnt-by:         GOROD-MNT
+created:        2010-03-05T13:42:57Z
+last-modified:  2019-12-16T11:28:19Z
+source:         RIPE
+sponsoring-org: ORG-NGs2-RIPE
+
+
+

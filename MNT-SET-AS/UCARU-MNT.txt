@@ -1,3 +1,169 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 185.151.106.150 port 22
+as-set:         AS-MEGANET-2003
+members:        AS51410
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         noc@mega-net.ru
+mnt-by:         UCARU-MNT
+created:        2022-01-12T12:44:14Z
+last-modified:  2022-01-12T12:44:14Z
+source:         RIPE
+
+
+
+as-set:         AS-UCANET
+descr:          ASes routed by ISP UCA Networks
+members:        AS43404
+members:        AS51410
+members:        AS50619
+members:        AS34687
+members:        AS-MOSCONNECT
+members:        AS209228
+members:        AS35780
+members:        AS3287
+members:        AS29420
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         UCARU-MNT
+created:        2007-10-09T07:50:23Z
+last-modified:  2024-12-02T14:23:15Z
+source:         RIPE
+
+
+
+as-set:         AS-UCANETv6
+descr:          ASes with IPv6 routed by ISP UCA Networks
+members:        AS43404
+members:        AS-MEGANET-2003
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         UCARU-MNT
+created:        2013-07-26T11:23:26Z
+last-modified:  2022-02-28T13:48:38Z
+source:         RIPE
+
+
+
+aut-num:        AS34687
+as-name:        KOLBI-AS
+import:         from AS43404 accept ANY
+export:         to AS43404 announce AS34687
+org:            ORG-KL26-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         UCARU-MNT
+created:        2005-03-17T10:41:49Z
+last-modified:  2020-08-03T13:26:29Z
+source:         RIPE
+
+
+
+aut-num:        AS43404
+as-name:        UCARU-AS
+import:         from AS57304 accept ANY;
+export:         to AS57304 announce AS-UCANET;
+import:         from AS20485 accept ANY;
+export:         to AS20485 announce AS-UCANET;
+import:         from AS29076 accept ANY;
+export:         to AS29076 announce AS-UCANET;
+import:         from AS8732 accept ANY;
+export:         to AS8732 announce AS-UCANET;
+import:         from AS12389 accept ANY;
+export:         to AS12389 announce AS-UCANET;
+import:         from AS51410 accept AS51410;
+export:         to AS51410 announce ANY;
+import:         from AS50619 accept AS50619;
+export:         to AS50619 announce ANY;
+import:         from AS35297 accept AS-DL-WORLD;
+export:         to AS35297 announce AS-UCANET;
+import:         from AS34687 accept AS34687;
+export:         to AS34687 announce {0.0.0.0/0};
+import:         from AS15169 accept AS15169;
+export:         to AS15169 announce AS-UCANET;
+import:         from AS47764 accept AS-MAILRU;
+export:         to AS47764 announce AS-UCANET;
+import:         from AS8470 accept AS-MACOMNET;
+export:         to AS8470 announce AS-UCANET;
+import:         from AS49869 accept as-piter-ix;
+export:         to AS49869 announce AS-UCANET;
+import:         from AS201588 accept AS-MOSCONNECT;
+export:         to AS201588 announce ANY;
+import:         from AS46489 accept AS-TWITCH;
+export:         to AS46489 announce AS-UCANET;
+import:         from AS35598 accept ANY;
+export:         to AS35598 announce AS-UCANET;
+import:         from AS29319 accept AS-IMSYS;
+export:         to AS29319 announce AS-UCANET;
+import:         from AS209228 accept AS209228;
+export:         to AS209228 announce {0.0.0.0/0};
+import:         from AS35780 accept AS35780;
+export:         to AS35780 announce {0.0.0.0/0};
+import:         from AS51343 accept AS51343;
+export:         to AS51343 announce AS-UCANET;
+import:         from AS29420 accept AS29420;
+export:         to AS29420 announce {0.0.0.0/0};
+import:         from AS8631 accept AS-MSKROUTESERVER;
+export:         to AS8631 announce AS-UCANET;
+import:         from AS50952 accept AS-DATAIX;
+export:         to AS50952 announce AS-UCANET;
+import:         from AS31500 accept AS-GLOBAL-IX;
+export:         to AS31500 announce AS-UCANET;
+mp-import:      afi ipv6.unicast from AS57304 accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-UCANETv6
+mp-import:      afi ipv6.unicast from AS29076 accept ANY
+mp-export:      afi ipv6.unicast to AS29076 announce AS-UCANETv6
+mp-import:      afi ipv6.unicast from AS51410 accept AS51410
+mp-export:      afi ipv6.unicast to AS51410 announce ANY
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-UCANETv6
+mp-import:      afi ipv6.unicast from AS15169 accept AS15169
+mp-export:      afi ipv6.unicast to AS15169 announce AS-UCANETv6
+mp-import:      afi ipv6.unicast from AS47764 accept AS-MAILRU
+mp-export:      afi ipv6.unicast to AS47764 announce AS-UCANETv6
+mp-import:      afi ipv6.unicast from AS8470 accept AS-MACOMNET
+mp-export:      afi ipv6.unicast to AS8470 announce AS-UCANETv6
+mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX;
+mp-export:      afi ipv6.unicast to AS50952 announce AS-UCANETv6;
+mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-IX;
+mp-export:      afi ipv6.unicast to AS31500 announce AS-UCANETv6;
+mp-import:      afi ipv6.unicast from AS51410 accept AS51410;
+mp-export:      afi ipv6.unicast to AS51410 announce ANY;
+mp-import:      afi ipv6.unicast from AS35598 accept AS35598;
+mp-export:      afi ipv6.unicast to AS35598 announce AS-UCANETv6;
+org:            ORG-KL26-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@mega-net.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         UCARU-MNT
+created:        2007-07-26T11:43:21Z
+last-modified:  2024-11-29T12:48:40Z
+source:         RIPE
+
+
+
+aut-num:        AS51410
+as-name:        AS51410
+org:            ORG-KL26-RIPE
+import:         from AS43404 accept ANY
+import:         from AS12695 accept ANY
+export:         to AS43404 announce AS51410
+export:         to AS12695 announce AS51410
+mp-import:      afi ipv6.unicast from AS12695 accept ANY
+mp-export:      afi ipv6.unicast to AS12695 announce AS51410
+mp-import:      afi ipv6.unicast from AS43404 accept ANY
+mp-export:      afi ipv6.unicast to AS43404 announce AS51410
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@ucanet.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         UCARU-MNT
+created:        2010-08-17T12:04:16Z
+last-modified:  2021-06-10T11:43:57Z
+source:         RIPE
+
+
+

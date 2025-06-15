@@ -1,3 +1,48 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 10.100.1.2 port 22
+as-set:         AS-SET-IPV6-KMTN
+descr:          OAO Kostroma Municipal Telephone Network IPV6  AS-SET
+tech-c:         DUMY-RIPE
+members:        AS50477
+members:        AS44507
+admin-c:        DUMY-RIPE
+mnt-by:         kmtn2-mnt
+created:        2018-05-08T12:08:22Z
+last-modified:  2018-05-08T12:13:07Z
+source:         RIPE
+
+
+
+as-set:         AS-SET-KMTN
+descr:          OAO Kostroma Municipal Telephone Network AS-SET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS50477
+members:        AS44507
+mnt-by:         kmtn2-mnt
+created:        2010-12-16T10:16:01Z
+last-modified:  2022-06-14T22:58:36Z
+source:         RIPE
+
+
+
+aut-num:        AS44507
+org:            ORG-OKMT1-RIPE
+as-name:        KMTN-AS
+import:         from AS50477 accept ANY
+export:         to AS50477 announce ANY
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-SET-KMTN
+import:         from AS25478 accept ANY
+import:         from AS197298 accept AS197298
+export:         to AS25478 announce AS-SET-KMTN
+export:         to AS197298 announce AS-SET-KMTN
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         kmtn2-mnt
+created:        2008-01-29T13:44:04Z
+last-modified:  2022-06-14T23:00:26Z
+source:         RIPE
+
+
+

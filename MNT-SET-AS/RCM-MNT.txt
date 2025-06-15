@@ -1,14 +1,38 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
+as-set:         AS-RCPEERS
+descr:          JSC Rial Com AS
+members:        AS34456
+members:        AS196667
+members:        AS48321
+members:        AS-QUARTZ
+members:        AS49053
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@rialcom.ru
+mnt-by:         RCM-MNT
+created:        2006-11-16T09:47:34Z
+last-modified:  2024-04-05T11:45:23Z
+source:         RIPE
 
+
+
+as-set:         AS34456:AS-CUSTOMERS
+descr:          JSC Rial Com customers AS list
+members:        AS34456
+members:        AS41783:AS-CUSTOMERS
+org:            ORG-RCJ1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@rialcom.ru
+mnt-lower:      RCM-MNT
+mnt-by:         RCM-MNT
+created:        2006-11-10T07:52:16Z
+last-modified:  2006-11-10T07:52:16Z
+source:         RIPE
 
 
 
 aut-num:        AS34456
 as-name:        RIALCOM-AS
-remarks:        ****************************
-remarks:        UPSTREAMS
-remarks:        ****************************
 import:         from AS8631 action pref=150; accept ANY
 export:         to AS8631 announce AS-RCPEERS
 import:         from AS13238 action pref=150; accept ANY
@@ -27,9 +51,6 @@ import:         from AS42632 action pref=170; accept ANY
 export:         to AS42632 announce AS-RCPEERS
 import:         from AS12714 action pref=200; accept ANY
 export:         to AS12714 announce AS-RCPEERS
-remarks:        ****************************
-remarks:        CUSTOMERS
-remarks:        ****************************
 import:         from AS196667 action pref=300; accept AS196667
 export:         to AS196667 announce ANY
 import:         from AS50009 action pref=300; accept AS-QUARTZ
@@ -39,15 +60,16 @@ export:         to AS48321 announce ANY
 import:         from AS49053 action pref=300; accept AS49053
 export:         to AS49053 announce ANY
 org:            ORG-RCJ1-RIPE
-admin-c:        YVK-RIPE
-tech-c:         AG20567-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@rialcom.ru
 mnt-by:         RCM-MNT
 mnt-by:         RCM-MNT
 created:        2005-01-24T15:03:59Z
 last-modified:  2024-04-05T06:51:29Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -56,8 +78,8 @@ as-name:        RialcomOOO-AS
 org:            ORG-RL253-RIPE
 import:         from AS34456 action pref=50; accept ANY
 export:         to AS34456 announce AS48321
-admin-c:        YVK-RIPE
-tech-c:         AVK777-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RCM-MNT

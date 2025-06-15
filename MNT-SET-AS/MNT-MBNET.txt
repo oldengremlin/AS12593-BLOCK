@@ -1,4 +1,38 @@
+as-set:         AS-MNOGOBYTE
+descr:          MnogoByte LLC
+descr:          ASNs routed by MnogoByte
+members:        AS42632
+members:        AS41349
+members:        AS47251
+members:        AS57728
+members:        AS58059
+members:        AS203391
+members:        AS212872
+members:        AS-TRI
+members:        AS-MNOGOBYTE-CDN
+members:        AS-MASTERBIT
+members:        AS-BELPAK
+members:        AS-DIGITALONE
+members:        AS-CRELCOM
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-MBNET
+created:        2007-06-19T13:03:15Z
+last-modified:  2022-08-17T13:20:30Z
+source:         RIPE
 
+
+
+as-set:         AS-MNOGOBYTE-CDN
+descr:          MnogoByte LLC
+descr:          ASes routed by MnogoByte CDN
+members:        AS199251
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-MBNET
+created:        2013-04-05T09:46:44Z
+last-modified:  2013-04-05T09:46:46Z
+source:         RIPE
 
 
 
@@ -6,9 +40,6 @@ aut-num:        AS42632
 as-name:        MNOGOBYTE-AS
 descr:          Moscow, Russia
 org:            ORG-ML74-RIPE
-remarks:        ==========================================================
-remarks:        Peers in Moscow, Russia
-remarks:        ==========================================================
 import:         from AS3267 action pref=200; accept AS-RUNNET
 import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
 mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
@@ -57,14 +88,8 @@ export:         to AS42861 announce AS-MNOGOBYTE
 export:         to AS47775 announce AS-MNOGOBYTE
 export:         to AS48061 announce AS-MNOGOBYTE
 export:         to AS50952 announce AS-MNOGOBYTE
-remarks:        ==========================================================
-remarks:        Peers in Saint Petersburg, Russia
-remarks:        ==========================================================
 import:         from AS50952 action pref=200; accept AS-DATAIX
 export:         to AS50952 announce AS-MNOGOBYTE
-remarks:        ==========================================================
-remarks:        Upstreams
-remarks:        ==========================================================
 import:         from AS3216 action pref=200; accept ANY
 import:         from AS8359 action pref=100; accept ANY
 import:         from AS9002 action pref=100; accept ANY
@@ -73,9 +98,6 @@ export:         to AS3216 announce AS-MNOGOBYTE
 export:         to AS8359 announce AS-MNOGOBYTE
 export:         to AS9002 announce AS-MNOGOBYTE
 export:         to AS20485 announce AS-MNOGOBYTE
-remarks:        ==========================================================
-remarks:        Downstreams
-remarks:        ==========================================================
 import:         from AS6679 action pref=200; accept AS-SKADI
 import:         from AS6697 action pref=200; accept AS-BELPAK
 import:         from AS31415 action pref=700; accept AS-SVSCOMM
@@ -110,14 +132,15 @@ export:         to AS50384 announce ANY
 export:         to AS57728 announce ANY
 export:         to AS58059 announce ANY
 export:         to AS199251 announce ANY
-admin-c:        ASV33-RIPE
-tech-c:         MN3482-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         a.voronin@mnogobyte.ru
 mnt-by:         MNT-MBNET
 mnt-by:         RIPE-NCC-END-MNT
 created:        2007-03-23T14:30:57Z
 last-modified:  2018-09-04T10:22:57Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

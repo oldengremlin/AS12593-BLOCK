@@ -1,6 +1,33 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@185.151.106.150:22 already exists, disabling multiplexing
+as-set:         AS-PTC
+descr:          ASes announced by PTC-AS
+members:        AS6857
+members:        AS5495
+members:        AS38951
+mbrs-by-ref:    OLL-RIPE-MNT
+mbrs-by-ref:    SPBU-MNT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         OLL-RIPE-MNT
+mnt-by:         SPBU-MNT
+created:        2007-05-08T18:37:17Z
+last-modified:  2011-04-12T19:36:00Z
+source:         RIPE
 
+
+
+as-set:         AS-SPBU
+descr:          Saint-Petersburg State University
+members:        AS5495
+members:        AS6857
+members:        AS43951
+members:        AS197905
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@spb.edu
+mnt-by:         SPBU-MNT
+created:        2011-03-07T17:32:06Z
+last-modified:  2021-03-03T06:57:29Z
+source:         RIPE
 
 
 
@@ -8,56 +35,35 @@ aut-num:        AS5495
 as-name:        ASN-SPBGU
 descr:          St.Petersburg, Russia
 org:            ORG-SPSU1-RIPE
-remarks:        # --------------------------------------------
-remarks:        MEGAFON
 import:         from AS31133 action pref=250; accept ANY
 export:         to AS31133 announce AS-SPBU
-remarks:        # --------------------------------------------
-remarks:        RUNNET
 import:         from AS3267 action pref=150; accept ANY
 export:         to AS3267 announce AS-SPBU
-remarks:        # --------------------------------------------
-remarks:        BEELINE
 import:         from AS3216 action pref=250; accept ANY
 export:         to AS3216 announce AS-SPBU
-remarks:        # --------------------------------------------
-remarks:        SPBU-PTC
 import:         from AS6857 action pref=100; accept AS6857
 export:         to AS6857 announce ANY
-remarks:        # --------------------------------------------
-remarks:        LANIT
 import:         from AS43951 action pref=100; accept AS43951
 export:         to AS43951 announce ANY
-remarks:        # --------------------------------------------
-remarks:        SPB-IX
 import:         from AS43690 action pref=220; accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-SPBU
-remarks:        # --------------------------------------------
-remarks:        MSK-IX
 import:         from AS8631 action pref=220; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-SPBU
-remarks:        # --------------------------------------------
-remarks:        CLOUD-IX
 import:         from AS29076 action pref=220; accept AS-CLOUD-IX-LOCAL
 export:         to AS29076 announce AS-SPBU
-remarks:        # --------------------------------------------
-remarks:        DATA-IX
 import:         from AS50952 action pref=220; accept AS-DATAIX
 export:         to AS50952 announce AS-SPBU
-remarks:        # --------------------------------------------
-remarks:        Sherpa
 import:         from AS197905 action pref=100; accept AS197905
 export:         to AS197905 announce ANY
-remarks:        # --------------------------------------------
-tech-c:         SPBU1-RIPE
-tech-c:         SPBU2-RIPE
-admin-c:        SPBU1-RIPE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@spb.edu
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SPBU-MNT
 created:        1970-01-01T00:00:00Z
 last-modified:  2021-09-06T19:33:06Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

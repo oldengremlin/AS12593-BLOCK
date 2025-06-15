@@ -1,4 +1,29 @@
+as-set:         AS-NEVOD
+descr:          POWERNET ISP ASes
+org:            ORG-NL393-RIPE
+members:        AS51032
+members:        AS-STARNET-VLZ
+members:        AS34804
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         MNT-NEVOD
+created:        2011-04-26T11:25:18Z
+last-modified:  2021-02-05T08:14:15Z
+source:         RIPE
 
+
+
+as-set:         AS-NEVOD-U
+descr:          POWERNET ISP ASes union
+org:            ORG-NL393-RIPE
+members:        AS-NEVOD
+members:        AS41344:AS-VISTCOM
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         MNT-NEVOD
+created:        2016-02-11T12:56:51Z
+last-modified:  2024-07-09T13:41:19Z
+source:         RIPE
 
 
 
@@ -11,42 +36,34 @@ import:         from AS47844 action pref=20; accept ANY
 export:         to AS39422 announce AS47844
 export:         to AS34804 announce AS47844
 export:         to AS47844 announce AS47844
-admin-c:        AM11666-RIPE
-tech-c:         AM11666-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TOWERTEL-MNT
 mnt-by:         MNT-NEVOD
+notify:         info@lidertelecom.ru
 created:        2008-09-02T12:20:39Z
 last-modified:  2022-08-15T12:59:52Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS51032
 as-name:        NEVOD-AS
 org:            ORG-LP174-RIPE
-remarks:        +----------------------------------------------+
-remarks:        ******** Upstreams IPv4 Routing Policy *********
-remarks:        +----------------------------------------------+
 import:         from AS31133 action pref=90;community={51032:11}; accept ANY
 export:         to AS31133 announce AS-NEVOD-U
 import:         from AS9049 action pref=90;community={51032:13}; accept ANY
 export:         to AS9049 announce AS-NEVOD
 import:         from AS3216 action pref=90;community={51032:14}; accept ANY
 export:         to AS3216 announce AS-NEVOD-U
-remarks:        +----------------------------------------------+
-remarks:        ******** Upstreams IPv6 Routing Policy *********
-remarks:        +----------------------------------------------+
 mp-import:      afi ipv6.unicast from AS31133 action pref=90;community={51032:11}; accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS51032
 mp-import:      afi ipv6.unicast from AS9049 action pref=90;community={51032:13}; accept ANY
 mp-export:      afi ipv6.unicast to AS9049 announce AS51032
 mp-import:      afi ipv6.unicast from AS3216 action pref=90;community={51032:14}; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS51032
-remarks:        +----------------------------------------------+
-remarks:        ******** Peers IPv4 Routing Policy *************
-remarks:        +----------------------------------------------+
 import:         from AS43801 action pref=110;community={51032:24}; accept AS-COMRISE
 export:         to AS43801 announce AS-NEVOD
 import:         from AS41344 action pref=90;community={51032:25}; accept AS41344:AS-VISTCOM
@@ -59,30 +76,23 @@ import:         from AS39607 action pref=90;community={51032:28}; accept AS-PITE
 export:         to AS39607 announce AS-NEVOD
 import:         from AS48193 action pref=90;community={51032:29}; accept as-piter-ix-fra
 export:         to AS48193 announce AS-NEVOD
-remarks:        +----------------------------------------------+
-remarks:        ******** Peers IPv6 Routing Policy *************
-remarks:        +----------------------------------------------+
 mp-import:      afi ipv6.unicast from AS49869 action pref=110;community={51032:26}; accept as-piter-ix-msk
 mp-export:      afi ipv6.unicast to AS49869 announce AS51032
 mp-import:      afi ipv6.unicast from AS50817 action pref=110;community={51032:27}; accept as-piter-ix
 mp-export:      afi ipv6.unicast to AS50817 announce AS51032
-remarks:        +----------------------------------------------+
-remarks:        ******** Clients IPv4 Routing Policy ***********
-remarks:        +----------------------------------------------+
 import:         from AS47844 action pref=110;community={51032:31}; accept AS-STARNET-VLZ
 export:         to AS47844 announce ANY
 import:         from AS34804 action pref=110;community={51032:30}; accept AS34804
 export:         to AS34804 announce ANY
-remarks:        +----------------------------------------------+
-admin-c:        AAK30-RIPE
-tech-c:         NPI7-RIPE
-tech-c:         AAK30-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         admin@powernet.com.ru
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NEVOD
 created:        2010-05-20T08:08:45Z
 last-modified:  2024-11-01T10:40:08Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

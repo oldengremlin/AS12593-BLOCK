@@ -1,3 +1,54 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.3 port 22
+as-set:         AS-ETHERWAY
+descr:          all etherway as
+members:        AS43660
+members:        AS-ETHERWAY-TR
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SHUPASHKARTRANS
+created:        2010-06-28T10:43:44Z
+last-modified:  2010-06-28T10:46:23Z
+source:         RIPE
+
+
+
+as-set:         AS-ETHERWAY-TR
+descr:          for transit as
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-SHUPASHKARTRANS
+created:        2010-06-28T10:44:29Z
+last-modified:  2010-06-28T10:44:29Z
+source:         RIPE
+
+
+
+aut-num:        AS43660
+as-name:        SHUPASHKARTRANS-AS
+org:            ORG-SL146-RIPE
+import:         from AS50384 accept ANY
+import:         from AS9002 accept ANY
+import:         from AS57304 accept ANY
+import:         from AS12389 accept ANY
+import:         from AS8631 accept ANY
+export:         to AS50384 announce AS43660
+export:         to AS9002 announce AS43660
+export:         to AS57304 announce AS43660
+export:         to AS12389 announce AS43660
+export:         to AS8631 announce AS43660
+export:         to AS50384 announce AS-ETHERWAY
+export:         to AS9002 announce AS-ETHERWAY
+export:         to AS57304 announce AS-ETHERWAY
+export:         to AS12389 announce AS-ETHERWAY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         ripe@etherway.ru
+mnt-by:         MNT-SHUPASHKARTRANS
+created:        2007-09-10T06:26:06Z
+last-modified:  2024-09-06T08:31:21Z
+source:         RIPE
+sponsoring-org: ORG-Vs35-RIPE
+
+
+

@@ -1,5 +1,117 @@
+as-set:         AS-Luganet
+descr:          Luganet
+members:        AS39728
+members:        AS-LTC
+members:        AS-M3X
+members:        AS39529
+members:        AS44125
+members:        AS44539:AS-CUST
+members:        AS47204
+members:        AS50015
+members:        AS197129
+members:        AS207744
+members:        AS215882
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ARTA-MNT
+mnt-by:         mnt-ru-likhno-1
+mnt-by:         mnt-cn-yiwumaflik1-1
+mnt-by:         ARTA-MNT
+created:        2009-04-22T10:09:08Z
+last-modified:  2025-06-05T13:12:19Z
+source:         RIPE
 
 
+
+as-set:         AS198310:AS-molniya
+org:            ORG-OM81-RIPE
+descr:          OOO Molniya
+members:        AS198310
+members:        AS39728
+members:        AS-Luganet
+members:        AS-LTC
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         mnt-ru-likhno-1
+mnt-by:         mnt-cn-yiwumaflik1-1
+mnt-by:         ARTA-MNT
+created:        2023-06-09T07:27:23Z
+last-modified:  2025-06-05T13:12:19Z
+source:         RIPE
+
+
+
+aut-num:        AS39728
+as-name:        Luganet
+org:            ORG-LD123-RIPE
+import:         from AS50509  action pref=100; accept   ANY
+export:         to   AS50509                   announce AS-LUGANET
+import:         from AS198310 action pref=100; accept   ANY
+export:         to   AS198310                  announce AS-LUGANET
+import:         from AS8631   action pref=120; accept   AS-MSKROUTESERVER
+export:         to   AS8631                    announce AS-LUGANET
+import:         from AS31500  action pref=120; accept   AS-DATAIX
+export:         to   AS31500                   announce AS-LUGANET
+import:         from AS39607  action pref=120; accept   AS-PITER-IX-HELSINKI
+export:         to   AS39607                   announce AS-LUGANET
+import:         from AS39751  action pref=120; accept   AS-M-IX
+export:         to   AS39751                   announce AS-LUGANET
+import:         from AS42403  action pref=120; accept   AS-NSKROUTESERVER
+export:         to   AS42403                   announce AS-LUGANET
+import:         from AS43213  action pref=120; accept   AS-EKTROUTESERVER
+export:         to   AS43213                   announce AS-LUGANET
+import:         from AS43690  action pref=120; accept   AS-SPBROUTESERVER
+export:         to   AS43690                   announce AS-LUGANET
+import:         from AS48193  action pref=120; accept   AS-PITER-IX-FRA
+export:         to   AS48193                   announce AS-LUGANET
+import:         from AS48216  action pref=120; accept   AS-RNDROUTESERVER
+export:         to   AS48216                   announce AS-LUGANET
+import:         from AS49869  action pref=120; accept   AS-PITER-IX-MSK
+export:         to   AS49869                   announce AS-LUGANET
+import:         from AS50817  action pref=120; accept   AS-PITER-IX
+export:         to   AS50817                   announce AS-LUGANET
+import:         from AS50952  action pref=120; accept   AS-DATAIX
+export:         to   AS50952                   announce AS-LUGANET
+import:         from AS57936  action pref=120; accept   AS-PITER-IX-TLL
+export:         to   AS57936                   announce AS-LUGANET
+import:         from AS59539  action pref=120; accept   AS-PITER-IX-ROV
+export:         to   AS59539                   announce AS-LUGANET
+import:         from AS41039  action pref=400; accept   AS-DON
+export:         to   AS41039                   announce AS-LUGANET
+import:         from AS47764  action pref=400; accept   AS-VKONTAKTE
+export:         to   AS47764                   announce AS-LUGANET
+import:         from AS207353 action pref=400; accept   AS207353
+export:         to   AS207353                  announce AS-LUGANET
+import:         from AS29031  action pref=500; accept   AS-LTC
+export:         to   AS29031                   announce ANY
+import:         from AS39529  action pref=500; accept   AS-M3X
+export:         to   AS39529                   announce ANY
+import:         from AS44125  action pref=500; accept   AS44125
+export:         to   AS44125                   announce ANY
+import:         from AS44539  action pref=500; accept   AS44539:AS-CUST
+export:         to   AS44539                   announce ANY
+import:         from AS47204  action pref=500; accept   AS47204
+export:         to   AS47204                   announce ANY
+import:         from AS48692  action pref=500; accept   AS48692
+export:         to   AS48692                   announce ANY
+import:         from AS50015  action pref=500; accept   AS50015
+export:         to   AS50015                   announce ANY
+import:         from AS197129 action pref=500; accept   AS197129
+export:         to   AS197129                  announce ANY
+import:         from AS207744 action pref=500; accept   AS207744:AS-MIKLLC
+export:         to   AS207744                  announce ANY
+import:         from AS215882 action pref=500; accept   AS215882
+export:         to   AS215882                  announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-likhno-1
+mnt-by:         mnt-cn-yiwumaflik1-1
+mnt-by:         ARTA-MNT
+created:        2006-04-18T13:04:02Z
+last-modified:  2025-06-11T08:29:35Z
+source:         RIPE
 
 
 

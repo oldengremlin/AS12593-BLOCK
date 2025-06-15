@@ -1,3 +1,84 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.184.190 port 22
+as-set:         as-kht-dsv
+descr:          for customer of Dalsvyaz of Khabarovsk Region
+members:        AS34584
+members:        AS35304
+members:        AS58100
+members:        AS34205
+members:        AS12770
+members:        as6844
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-KHTDSV-NOC
+created:        2005-12-25T23:30:54Z
+last-modified:  2018-11-01T05:22:45Z
+source:         RIPE
+
+
+
+aut-num:        AS34584
+org:            ORG-JR8-RIPE
+descr:          PJSC "Rostelecom". Khabarovsk branch
+as-name:        KHBDSV
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS34584
+export:         to AS12389 announce AS35304
+export:         to AS12389 announce AS58100
+export:         to AS12389 announce AS12770
+export:         to AS12389 announce AS6844
+import:         from AS35304 action pref=180; accept ANY
+export:         to AS35304 announce AS34584
+export:         to AS35304 announce AS12389
+descr:          # downlink to customer DalComBank
+import:         from AS58100 action pref=180; accept ANY
+export:         to AS58100 announce AS34584
+export:         to AS58100 announce AS12389
+descr:          # downlink to customer TOGU
+import:         from AS12770 action pref=180; accept ANY
+export:         to AS12770 announce AS34584
+export:         to AS12770 announce AS12389
+import:         from AS34205 action pref=180; accept ANY
+export:         to AS34205 announce AS12389
+export:         to AS34205 announce AS35304
+export:         to AS34205 announce AS58100
+import:         from AS6844 action pref=180; accept ANY
+export:         to AS6844 announce AS12389
+export:         to AS6844 announce AS34584
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         red@kht.ru
+mnt-by:         MNT-KHTDSV-NOC
+mnt-by:         ROSTELECOM-MNT
+created:        2005-02-17T13:03:33Z
+last-modified:  2024-05-27T05:47:21Z
+source:         RIPE
+
+
+
+aut-num:        AS35304
+as-name:        KHB-AVIA-Center-AS
+status:         ASSIGNED
+org:            ORG-SAS9-RIPE
+import:         from AS34584 action pref=120; accept ANY
+import:         from AS20485 action pref=200; accept ANY
+import:         from AS12389 action pref=200; accept ANY
+import:         from AS2854 action pref=200; accept ANY
+import:         from AS8749 action pref=200; accept ANY
+export:         to AS34584 announce AS35304
+export:         to AS20485 announce AS35304
+export:         to AS12389 announce AS35304
+export:         to AS2854 announce AS35304
+export:         to AS8749 announce AS35304
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         red@kht.ru
+mnt-by:         MNT-KHTDSV-NOC
+mnt-by:         RIPE-NCC-END-MNT
+created:        2005-07-12T12:20:50Z
+last-modified:  2018-09-04T10:10:26Z
+source:         RIPE
+sponsoring-org: ORG-LL38-RIPE
+
+
+

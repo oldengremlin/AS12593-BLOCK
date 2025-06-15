@@ -1,66 +1,31 @@
-
-
-
-as-block:       AS57370 - AS57973
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2025-04-24T14:15:44Z
-last-modified:  2025-04-24T14:15:44Z
-source:         RIPE
-
-
-
 aut-num:        AS57456
 as-name:        INTEK-MYTISCHI-AS
-remarks:        ------------------------------------------------------
-remarks:        https://www.rosintek.net/
-remarks:        ------------------------------------------------------
-remarks:        Uplinks
-remarks:
-remarks:        GlobalNet
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS-ROSINTEK
 mp-import:      afi ipv6.unicast from AS31500 accept ANY
 mp-export:      afi ipv6.unicast to AS31500 announce AS-ROSINTEK
-remarks:
-remarks:        Netorn
 import:         from AS34123 accept ANY
 export:         to AS34123 announce AS-ROSINTEK
-remarks:
-remarks:        MTW
 import:         from AS48347 accept ANY
 export:         to AS48347 announce AS-ROSINTEK
 mp-import:      afi ipv6.unicast from AS48347 accept ANY
 mp-export:      afi ipv6.unicast to AS48347 announce AS-ROSINTEK
-remarks:
-remarks:        ------------------------------------------------------
-remarks:        IX
-remarks:
-remarks:        Global-IX
 import:         from AS31500 accept AS-GLOBAL-IX
 export:         to AS31500 announce AS-ROSINTEK
 mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-IX
 mp-export:      afi ipv6.unicast to AS31500 announce AS-ROSINTEK
-remarks:
-remarks:        Piter-IX
 import:         from AS50817 accept as-piter-ix
 export:         to AS50817 announce AS-ROSINTEK
-remarks:
-remarks:        Data-IX
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-ROSINTEK
 mp-import:      afi ipv6.unicast from AS50817 accept as-piter-ix
 mp-export:      afi ipv6.unicast to AS50817 announce AS-ROSINTEK
-remarks:
-remarks:        EurasiaPeering
 import:         from AS56931 accept AS-EURASIAPEERING_RS
 export:         to AS56931 announce AS-ROSINTEK
 mp-import:      afi ipv6.unicast from AS56931 accept AS-EURASIAPEERING_RS
 mp-export:      afi ipv6.unicast to AS56931 announce AS-ROSINTEK
-remarks:
-admin-c:        DS19865-RIPE
-tech-c:         DS19865-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 org:            ORG-IL441-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
@@ -70,15 +35,16 @@ last-modified:  2020-11-16T18:04:00Z
 source:         RIPE
 sponsoring-org: ORG-ONTL1-RIPE
 
+as-num:         AS57456
+country:        RU
+as-name:        INTEK-MYTISCHI-AS Intek-Mytischi LLC
+
 organisation:   ORG-IL441-RIPE
 org-name:       Intek-Mytischi LLC
 country:        RU
 org-type:       OTHER
-address:        141011, Mytischi,
-address:        Drujba mkrn.
-address:        Parkovaya 4-ya str., 18
-admin-c:        DS19865-RIPE
-tech-c:         DS19865-RIPE
+address:        Dummy address for ORG-IL441-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR39052-RIPE
 mnt-ref:        CSTNET-MNT
 mnt-ref:        mnt-ru-navant1-1
@@ -88,20 +54,6 @@ mnt-by:         CSTNET-MNT
 mnt-by:         NA-MNT
 created:        2017-01-24T15:01:10Z
 last-modified:  2024-07-17T03:42:44Z
-source:         RIPE # Filtered
-
-person:         Dmitry Salomikin
-address:        Intek-Mytischi LLC
-address:        141011, Mytischi,
-address:        Drujba mkrn.
-address:        Parkovaya 4-ya str., 18
-address:        Russia
-phone:          +74951146886
-mnt-by:         CSTNET-MNT
-nic-hdl:        DS19865-RIPE
-created:        2017-01-24T14:54:10Z
-last-modified:  2017-01-24T14:54:10Z
 source:         RIPE
-
 
 

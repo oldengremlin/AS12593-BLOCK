@@ -1,4 +1,29 @@
+as-set:         AS-AVANTEL-BARNAUL
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS8711
+members:        AS206572
+members:        AS197878
+mnt-by:         MAGTEL-MNT
+mnt-by:         AVANTEL-MNT
+created:        2016-10-12T06:18:46Z
+last-modified:  2025-03-17T07:56:42Z
+source:         RIPE
 
+
+
+as-set:         AS-MAGTEL-SET
+descr:          RU-MAGTEL-AS-SET 20050302
+members:        AS8711
+members:        AS8410
+members:        AS8848
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@siberia.net
+mnt-by:         MAGTEL-MNT
+created:        2005-01-21T09:03:33Z
+last-modified:  2005-03-02T13:24:02Z
+source:         RIPE
 
 
 
@@ -11,8 +36,8 @@ import:         from AS8711 accept ANY
 export:         to AS8711 announce AS198021
 import:         from AS41440 accept ANY
 export:         to AS41440 announce AS198021
-admin-c:        DO1384-RIPE
-tech-c:         SA8081-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MAGTEL-MNT
@@ -26,23 +51,16 @@ sponsoring-org: ORG-CJcA1-RIPE
 aut-num:        AS198181
 as-name:        OPENTECH-NSK
 org:            ORG-LT28-RIPE
-remarks:        ---------------------------------------------
-remarks:        UPLINKS
-remarks:        ---------------------------------------------
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS198181
 import:         from AS25549 accept ANY
 export:         to AS25549 announce AS198181
 import:         from AS31200 accept ANY
 export:         to AS31200 announce AS198181
-remarks:        ---------------------------------------------
-remarks:        KRS-IX ROUTE SERVER
-remarks:        ---------------------------------------------
 import:         from AS43154 action pref=200; accept AS-KRS-IX-PEERS
 export:         to AS43154 announce AS-MAGTEL
-remarks:        ---------------------------------------------
-admin-c:        UAA1509-RIPE
-tech-c:         SK12688-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MAGTEL-MNT
@@ -57,9 +75,6 @@ aut-num:        AS8711
 as-name:        AVANTEL-BARNAUL-AS
 descr:          BARNAUL, Russia
 org:            ORG-CJcA1-RIPE
-remarks:        ---------------------------------------------
-remarks:        Upstreams
-remarks:        ---------------------------------------------
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS-AVANTEL-BARNAUL
 import:         from AS25549 action pref=100; accept ANY
@@ -70,17 +85,12 @@ import:         from AS41794 action pref=100; accept ANY
 export:         to AS41794 announce AS-AVANTEL-BARNAUL
 import:         from AS9049 action pref=100; accept ANY
 export:         to AS9049 announce AS-AVANTEL-BARNAUL
-remarks:        ---------------------------------------------
-remarks:        ---------------------------------------------
-remarks:        Customers
-remarks:        ---------------------------------------------
 import:         from AS206572 accept AS206572
 export:         to AS206572 announce ANY
 import:         from AS197878 accept AS197878
 export:         to AS197878 announce ANY
-admin-c:        AVN65-RIPE
-tech-c:         SVS138-RIPE
-tech-c:         SVS138-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AVANTEL-MNT

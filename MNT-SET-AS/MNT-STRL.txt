@@ -1,3 +1,229 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.3 port 22
+as-set:         AS-STARLNK
+descr:          Starlink (Media Ltd.) AS set
+members:        AS34602
+members:        AS58020
+members:        AS58319
+members:        AS60954
+members:        AS58072
+members:        AS203117
+members:        AS205595
+members:        AS43319
+members:        AS215445
+members:        AS202832
+members:        AS59679
+members:        AS43917
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-STRL
+notify:         noc@starlink.ru
+created:        2007-06-26T08:37:08Z
+last-modified:  2024-12-10T07:47:49Z
+source:         RIPE
+
+
+
+aut-num:        AS34602
+as-name:        STARLINK-AS
+descr:          Moscow, Russia
+descr:          http://www.starlink.ru
+org:            ORG-ML423-RIPE
+import:         from AS43727 action pref=100; accept ANY;
+export:         to AS43727 announce AS-STARLNK;
+import:         from AS25478 action pref=100; accept ANY;
+export:         to AS25478 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS25478 accept ANY;
+mp-export:      afi ipv6.unicast to AS25478 announce AS-STARLNK;
+import:         from AS49063 action pref=100; accept ANY;
+export:         to AS49063 announce AS-STARLNK;
+import:         from AS42861 action pref=100; accept ANY;
+mp-import:      afi ipv6.unicast from AS42861 accept ANY;
+export:         to AS42861 announce AS-STARLNK;
+mp-export:      afi ipv6.unicast to AS42861 announce AS-STARLNK;
+import:         from AS28917 action pref=100; accept ANY;
+export:         to AS28917 announce AS-STARLNK;
+import:         from AS201706 action pref=100; accept ANY;
+export:         to AS201706 announce AS-STARLNK;
+import:         from AS203921 action pref=200; accept AS-ELBA-IX-ROUTESERVER;
+export:         to AS203921 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS203921 accept AS-ELBA-IX-ROUTESERVER;
+mp-export:      afi ipv6.unicast to AS203921 announce AS-STARLNK;
+import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER;
+export:         to AS8631 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER;
+mp-export:      afi ipv6.unicast to AS8631 announce AS-STARLNK;
+import:         from AS8470 action pref=200; accept AS-MACOMNET;
+export:         to AS8470 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS8470 accept AS-MACOMNET;
+mp-export:      afi ipv6.unicast to AS8470 announce AS-STARLNK;
+import:         from AS42610 action pref=200; accept AS-NCNET;
+export:         to AS42610 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS42610 accept AS-NCNET-IPV6;
+mp-export:      afi ipv6.unicast to AS42610 announce AS-STARLNK;
+import:         from AS28917 action pref=200; accept AS-FIORD;
+export:         to AS28917 announce AS-STARLNK;
+import:         from AS3267 action pref=200; accept AS-RUNNET;
+export:         to AS3267 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS3267 accept AS3267;
+mp-export:      afi ipv6.unicast to AS3267 announce AS-STARLNK;
+import:         from AS20632 action pref=200; accept AS-PETERSTAR;
+export:         to AS20632 announce AS-STARLNK;
+import:         from AS31500 action pref=200; accept AS-GLOBAL-NET;
+export:         to AS31500 announce AS-STARLNK;
+import:         from AS41095 action pref=200; accept AS-IPTP;
+export:         to AS41095 announce AS-STARLNK;
+import:         from AS30124 action pref=200; accept AS30124:AS-SET;
+export:         to AS30124 announce AS-STARLNK;
+import:         from AS31261 action pref=200; accept AS-GARS;
+export:         to AS31261 announce AS-STARLNK;
+import:         from AS6903 action pref=200; accept AS-ZENON;
+export:         to AS6903 announce AS-STARLNK;
+import:         from AS41802 action pref=200; accept AS-KVIDEX;
+export:         to AS41802 announce AS-STARLNK;
+import:         from AS9031 action pref=200; accept AS-EDPNET;
+export:         to AS9031 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS9031 accept AS-EDPNET-V6;
+mp-export:      afi ipv6.unicast to AS9031 announce AS-STARLNK;
+import:         from AS47764 action pref=200; accept AS-MAILRU;
+export:         to AS47764 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS47764 accept AS-MAILRU6;
+mp-export:      afi ipv6.unicast to AS47764 announce AS-STARLNK;
+import:         from AS13238 action pref=200; accept AS-YANDEX;
+export:         to AS13238 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS13238 accept AS-YANDEX;
+mp-export:      afi ipv6.unicast to AS13238 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS8359 accept AS-MTU;
+mp-export:      afi ipv6.unicast to AS8359 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS13105 accept AS-LUKOIL;
+mp-export:      afi ipv6.unicast to AS13105 announce AS-STARLNK;
+import:         from AS714 action pref=200; accept AS714;
+export:         to AS714 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS714 accept AS714;
+mp-export:      afi ipv6.unicast to AS714 announce AS-STARLNK;
+import:         from AS50384 accept AS-W-IX;
+export:         to AS50384 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX;
+mp-export:      afi ipv6.unicast to AS50384 announce AS-STARLNK;
+import:         from AS50952 accept AS-DATAIX;
+export:         to AS50952 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX;
+mp-export:      afi ipv6.unicast to AS50952 announce AS-STARLNK;
+import:         from AS6939 accept AS-HURRICANE;
+export:         to AS6939 announce AS-STARLNK;
+import:         from AS56931 accept AS-EURASIAPEERING_RS;
+export:         to AS56931 announce AS-STARLNK;
+import:         from AS15169 accept AS-GOOGLE;
+export:         to AS15169 announce AS-STARLNK;
+mp-import:      afi ipv6.unicast from AS15169 accept AS-GOOGLE;
+mp-export:      afi ipv6.unicast to AS15169 announce AS-STARLNK;
+import:         from AS203117 action pref=100; accept AS203117;
+export:         to AS203117 announce ANY;
+import:         from AS59829 action pref=100; accept AS59829;
+export:         to AS59829 announce ANY;
+import:         from AS61261 action pref=100; accept AS61261;
+export:         to AS61261 announce ANY;
+import:         from AS60954 action pref=100; accept AS60954;
+export:         to AS60954 announce ANY;
+import:         from AS39922 action pref=100; accept AS-NLN;
+export:         to AS39922 announce ANY;
+import:         from AS58319 action pref=100; accept AS58319;
+export:         to AS58319 announce ANY;
+import:         from AS58020 action pref=100; accept AS58020;
+export:         to AS58020 announce ANY;
+import:         from AS35026 action pref=100; accept AS35026;
+export:         to AS35026 announce ANY;
+import:         from AS56755 action pref=100; accept AS56755;
+export:         to AS56755 announce ANY;
+import:         from AS59679 action pref=100; accept AS59679;
+export:         to AS59679 announce ANY;
+import:         from AS57848 action pref=100; accept AS57848;
+export:         to AS57848 announce ANY;
+import:         from AS59454 action pref=100; accept AS59454;
+export:         to AS59454 announce ANY;
+import:         from AS39266 action pref=100; accept AS39266;
+export:         to AS39266 announce ANY;
+import:         from AS58072 action pref=100; accept AS58072;
+export:         to AS58072 announce ANY;
+import:         from AS203831 action pref=100; accept AS203831;
+export:         to AS203831 announce ANY;
+import:         from AS51716 action pref=100; accept AS51716;
+export:         to AS51716 announce ANY;
+import:         from AS49060 action pref=100; accept AS49060;
+export:         to AS49060 announce ANY;
+import:         from AS205595 action pref=100; accept AS205595;
+export:         to AS205595 announce ANY;
+import:         from AS57085 action pref=100; accept AS57085;
+export:         to AS57085 announce ANY;
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@starlink.ru
+mnt-by:         MNT-STRL
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-megasvyaz-1-mnt
+created:        2005-02-22T14:10:38Z
+last-modified:  2022-07-26T08:11:22Z
+source:         RIPE
+
+
+
+aut-num:        AS39922
+as-name:        TLCM-AS
+org:            ORG-ML844-RIPE
+import:         { from AS48822 action pref=100; accept ANY; from AS34602 action pref=100; accept ANY; }
+export:         { to AS48822 announce AS39922; to AS34602 announce AS39922; }
+sponsoring-org: ORG-ML423-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-STRL
+created:        2006-05-18T07:43:03Z
+last-modified:  2023-05-17T06:45:45Z
+source:         RIPE
+
+
+
+aut-num:        AS51716
+as-name:        MOSRP-AS
+org:            ORG-MRSJ2-RIPE
+import:         from AS9110 action pref=100; accept ANY
+import:         from AS56574 action pref=100; accept ANY
+export:         to AS9110 announce AS51716
+export:         to AS56574 announce AS51716
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@starlink.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-STRL
+created:        2010-10-25T13:58:31Z
+last-modified:  2021-08-13T10:05:56Z
+source:         RIPE
+sponsoring-org: ORG-ML423-RIPE
+
+
+
+aut-num:        AS58020
+as-name:        TERSYS-AS
+org:            ORG-TC33-RIPE
+import:         from AS15756 accept ANY
+import:         from AS34602 accept ANY
+import:         from AS51226 accept ANY
+import:         from AS41722 accept ANY
+export:         to AS15756 announce AS58020
+export:         to AS34602 announce AS58020
+export:         to AS51226 announce AS58020
+export:         to AS41722 announce AS58020
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-STRL
+mnt-by:         TERSYS-MNT
+created:        2012-04-02T14:43:33Z
+last-modified:  2018-09-04T11:10:47Z
+source:         RIPE
+sponsoring-org: ORG-ML423-RIPE
+
+
+

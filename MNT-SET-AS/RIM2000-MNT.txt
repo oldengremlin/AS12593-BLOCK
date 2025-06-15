@@ -1,3 +1,117 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 94.125.121.58 port 22
+as-set:         AS-PLUS-GPT
+descr:          Plusinfo AS with russian connectivity
+members:        AS28762
+members:        AS28917
+members:        AS8631
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         PLUSINFO-MNT
+mnt-by:         RIM2000-MNT
+created:        2004-12-01T11:26:43Z
+last-modified:  2019-03-06T08:13:37Z
+source:         RIPE
+
+
+
+as-set:         AS-RIM2000M
+descr:          OOO "PLUSINFO" AS List
+members:        AS24936
+members:        AS38912
+members:        AS211932
+members:        AS58091
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         admin@rim2000.ru
+mnt-by:         RIM2000-MNT
+created:        2004-04-02T07:08:39Z
+last-modified:  2023-01-17T15:56:58Z
+source:         RIPE
+
+
+
+as-set:         AS24936:AS-BIO
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS24936
+members:        AS58091
+mnt-by:         PLUSINFO-MNT
+mnt-by:         RIM2000-MNT
+created:        2023-01-17T15:47:02Z
+last-modified:  2023-01-17T15:48:35Z
+source:         RIPE
+
+
+
+aut-num:        AS201192
+as-name:        Dilmax
+org:            ORG-DC170-RIPE
+import:         from AS24936 accept ANY
+export:         to AS24936 announce AS201192
+import:         from AS6939 accept ANY
+export:         to AS6939 announce AS201192
+import:         from AS-ANY accept ANY
+export:         to AS-ANY announce AS201192
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RIM2000-MNT
+created:        2018-07-09T09:30:53Z
+last-modified:  2020-11-16T17:50:32Z
+source:         RIPE
+sponsoring-org: ORG-RMl1-RIPE
+
+
+
+aut-num:        AS24936
+as-name:        RIM2000M-AS
+descr:          2, Odesskaya str.,
+descr:          Moscow, Russia
+org:            ORG-RMl1-RIPE
+import:         from AS28917 action pref=102; accept ANY
+import:         from AS29076 action pref=102; accept ANY
+import:         from AS8631 action pref=160; accept ANY
+import:         from AS38912 action pref=550; accept AS38912
+import:         from AS211932 action pref=550; accept AS211932
+import:         from AS43235 action pref=550; accept AS43235
+import:         from AS58091 action pref=550; accept AS58091
+export:         to AS28917 announce AS-RIM2000M
+export:         to AS29076 announce AS-RIM2000M
+export:         to AS8631 announce AS-RIM2000M
+export:         to AS38912 announce ANY
+export:         to AS211932 announce ANY
+export:         to AS58091 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         admin@rim2000.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RIM2000-MNT
+created:        2002-05-30T14:37:48Z
+last-modified:  2023-06-01T12:28:17Z
+source:         RIPE
+
+
+
+aut-num:        AS35824
+as-name:        COMMASTER-AS
+org:            ORG-CL62-RIPE
+descr:          Russia, Moscow, Baumanskaya str. , 58 building 16
+import:         from AS43287 action pref=100; accept ANY
+export:         to AS43287 announce AS35824
+import:         from AS8732 action pref=100; accept ANY
+export:         to AS8732 announce AS35824
+default:        to AS8732 action pref=100;
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         support@commaster.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RIM2000-MNT
+created:        2005-11-07T15:48:27Z
+last-modified:  2019-03-11T14:12:51Z
+source:         RIPE
+sponsoring-org: ORG-RMl1-RIPE
+
+
+

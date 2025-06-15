@@ -1,6 +1,23 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
-
+as-set:         AS-RENET
+descr:          RENET COM Ltd as-set
+tech-c:         DUMY-RIPE
+members:        AS30936
+members:        AS21375
+members:        AS44324
+members:        AS209962
+members:        AS202344
+members:        AS205433
+members:        AS61971
+members:        AS51051
+members:        AS48763
+members:        AS206850
+members:        AS200041
+members:        AS48143
+admin-c:        DUMY-RIPE
+mnt-by:         RENET-MNT
+created:        2006-12-27T12:56:18Z
+last-modified:  2023-07-06T09:04:12Z
+source:         RIPE
 
 
 
@@ -12,14 +29,15 @@ import:         from AS47789 accept ANY
 import:         from AS30936 accept ANY
 export:         to AS47789 announce AS21375
 export:         to AS30936 announce AS21375
-admin-c:        VVK40-RIPE
-tech-c:         VVK40-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         lir@renet.ru
 mnt-by:         RENET-MNT
 created:        2018-08-21T12:35:36Z
 last-modified:  2018-10-11T09:38:53Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-RCL1-RIPE
 
 
@@ -50,28 +68,15 @@ export:         to AS206850 announce ANY
 export:         to AS51051 announce ANY
 export:         to AS200041 announce ANY
 export:         to AS48143 announce ANY
-admin-c:        RCCL1-RIPE
-tech-c:         RCCL1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-remarks:        +==============================================================+
-remarks:        BGP Communities
-remarks:        The format of communities for upstream advertisements
-remarks:        30936:5UUN
-remarks:        UU - Upstream number
-remarks:        10 - All upstreams
-remarks:        11 - RetnNet AS9002
-remarks:        12 - Beeline AS3216
-remarks:        N - Number of prepends
-remarks:        0 - don't advertise
-remarks:        1 - advertise with one prepend
-remarks:        2 - advertise with two prepends
-remarks:        3 - advertise with three prepends
-remarks:        4 - advertise with four prepends
+notify:         lir@renet.ru
 mnt-by:         RENET-MNT
 created:        2004-01-21T14:46:50Z
 last-modified:  2023-07-06T09:04:54Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

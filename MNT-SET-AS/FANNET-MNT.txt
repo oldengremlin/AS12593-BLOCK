@@ -1,20 +1,24 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
-
+as-set:         AS-FANNET
+descr:          Fannet Telecom AS macro
+members:        AS39256
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         FANNET-MNT
+created:        2006-05-03T10:58:13Z
+last-modified:  2024-01-07T06:48:10Z
+source:         RIPE
 
 
 
 aut-num:        AS39256
 as-name:        FANNET
-remarks:        --------- uplinks ------------
 import:         from AS44158 accept ANY;
 export:         to AS44158 announce AS-FANNET;
 import:         from AS20485 accept ANY;
 export:         to AS20485 announce AS-FANNET;
-remarks:        ------------------------------
 org:            ORG-FTL5-RIPE
-admin-c:        FT1033-RIPE
-tech-c:         FT1033-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FANNET-MNT

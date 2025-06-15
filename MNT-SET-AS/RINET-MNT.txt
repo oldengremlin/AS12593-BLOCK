@@ -1,3 +1,295 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 94.125.121.58 port 22
+as-set:         AS-RINET
+descr:          RiNet/Cronyx Plus ASes
+descr:          full Connectivity (including international trafic)
+members:        AS8331
+members:        AS42218
+members:        AS60043
+members:        AS-RICENTR
+members:        AS6719
+members:        AS9130
+members:        AS25251
+members:        AS25530
+members:        AS28912
+members:        AS30738
+members:        AS35301
+members:        AS35522
+members:        AS39631
+members:        AS42901
+members:        AS43102
+members:        AS43526
+members:        AS44232
+members:        AS44773
+members:        AS44913
+members:        AS48128
+members:        AS49326
+members:        AS49929
+members:        AS50038
+members:        AS50126
+members:        AS50425
+members:        AS50545
+members:        AS50846
+members:        AS51115
+members:        AS59512
+members:        AS59653
+members:        AS60085
+members:        AS60944
+members:        AS61151
+members:        AS61378
+members:        AS62063
+members:        AS197449
+members:        AS199945
+members:        AS199647
+members:        AS199975
+members:        AS201244
+members:        AS202432
+members:        AS202587
+members:        AS203504
+members:        AS206181
+members:        AS207104
+members:        AS207839
+members:        AS-ARTCON
+members:        AS-AWAX
+members:        AS-DUBROVKA
+members:        AS-EDUNET
+members:        AS-ICTELECOM
+members:        AS-PLUSTELECOM
+members:        AS-SPARKTELL
+members:        AS-ZHUKOVSKYNET
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RINET-MNT
+created:        2002-04-27T15:40:44Z
+last-modified:  2024-08-01T11:27:14Z
+source:         RIPE
+
+
+
+aut-num:        AS60944
+as-name:        ALPHA-CAPITAL-AS
+org:            ORG-OCAC1-RIPE
+import:         from AS8331 accept ANY
+import:         from AS58157 accept ANY
+import:         from AS9049 accept ANY
+import:         from AS31430 accept ANY
+export:         to AS8331 announce AS60944
+export:         to AS58157 announce AS60944
+export:         to AS9049 announce AS60944
+export:         to AS31430 announce AS60944
+sponsoring-org: ORG-TL254-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RINET-MNT
+mnt-by:         RAID-MNT
+mnt-by:         CIREX-MNT
+created:        2013-04-05T13:01:15Z
+last-modified:  2025-06-02T14:19:28Z
+source:         RIPE
+
+
+
+aut-num:        AS8331
+as-name:        RINET-AS
+descr:          Cronyx Plus Ltd
+descr:          Moscow, Russia
+import:         from AS9049 action pref=15; accept ANY
+export:         to AS9049 announce AS-RINET
+import:         from AS12714 action pref=15; accept ANY
+export:         to AS12714 announce AS-RINET
+import:         from AS9002 action pref=15; accept ANY
+export:         to AS9002 announce AS-RINET
+import:         from AS8631 action pref=15; accept ANY
+export:         to AS8631 announce AS-RINET
+import:         from AS50384 action pref=15; accept ANY
+export:         to AS50384 announce AS-RINET
+import:         from AS29076 action pref=20; accept ANY
+export:         to AS29076 announce AS-RINET
+import:         from AS28917 action pref=20; accept ANY
+export:         to AS28917 announce AS-RINET
+import:         from AS31133 action pref=15; accept ANY
+export:         to AS31133 announce AS-RINET
+import:         from AS6719 action pref=10; accept AS6719
+export:         to AS6719 announce ANY
+import:         from AS9130 action pref=10; accept AS9130
+export:         to AS9130 announce ANY
+import:         from AS25251 action pref=10; accept AS-ARTCON
+export:         to AS25251 announce ANY
+import:         from AS25530 action pref=10; accept AS25530
+export:         to AS25530 announce ANY
+import:         from AS28762 action pref=10; accept AS-AWAX
+export:         to AS28762 announce ANY
+import:         from AS28912 action pref=10; accept AS28912
+export:         to AS28912 announce ANY
+import:         from AS31681 action pref=10; accept AS-ICTELECOM
+export:         to AS31681 announce ANY
+import:         from AS30738 action pref=10; accept AS30738
+export:         to AS30738 announce ANY
+import:         from AS35522 action pref=10; accept AS35522
+export:         to AS35522 announce ANY
+import:         from AS35301 action pref=10; accept AS35301
+export:         to AS35301 announce ANY
+import:         from AS39631 action pref=10; accept AS39631
+export:         to AS39631 announce ANY
+import:         from AS42031 action pref=10; accept AS-PLUSTELECOM
+export:         to AS42031 announce ANY
+import:         from AS42218 action pref=10; accept AS42218
+export:         to AS42218 announce ANY
+import:         from AS42861 action pref=15; accept AS-FOTONTELECOM
+export:         to AS42861 announce AS-RINET
+import:         from AS43102 action pref=10; accept AS43102
+export:         to AS42901 announce ANY
+import:         from AS42901 action pref=10; accept AS42901
+export:         to AS43102 announce ANY
+import:         from AS43526 action pref=10; accept AS43526
+export:         to AS43526 announce ANY
+import:         from AS44232 action pref=10; accept AS44232
+export:         to AS44232 announce ANY
+import:         from AS44773 action pref=10; accept AS44773
+export:         to AS44773 announce ANY
+import:         from AS48128 action pref=10; accept AS48128
+export:         to AS48128 announce ANY
+import:         from AS49326 action pref=10; accept AS49326
+export:         to AS49326 announce ANY
+import:         from AS49929 action pref=10; accept AS49929
+export:         to AS49929 announce ANY
+import:         from AS50038 action pref=10; accept AS50038
+export:         to AS50038 announce ANY
+import:         from AS50126 action pref=10; accept AS-ZHUKOVSKYNET
+export:         to AS50126 announce ANY
+import:         from AS50425 action pref=10; accept AS50425
+export:         to AS50425 announce ANY
+import:         from AS50545 action pref=10; accept AS50545
+export:         to AS50545 announce ANY
+import:         from AS50846 action pref=10; accept AS50846
+export:         to AS50846 announce ANY
+import:         from AS51115 action pref=10; accept AS51115
+export:         to AS51115 announce ANY
+import:         from AS58157 action pref=10; accept AS-RICENTR
+export:         to AS58157 announce ANY
+import:         from AS59512 action pref=10; accept AS59512
+export:         to AS59512 announce ANY
+import:         from AS59653 action pref=10; accept AS-ARTCON
+export:         to AS59653 announce ANY
+import:         from AS60043 action pref=10; accept AS60043
+export:         to AS60043 announce ANY
+import:         from AS60085 action pref=10; accept AS60085
+export:         to AS60085 announce ANY
+import:         from AS60944 action pref=10; accept AS60944
+export:         to AS60944 announce ANY
+import:         from AS61151 action pref=10; accept AS61151
+export:         to AS61151 announce ANY
+import:         from AS61378 action pref=10; accept AS61378
+export:         to AS61378 announce ANY
+import:         from AS62063 action pref=10; accept AS62063
+export:         to AS62063 announce ANY
+import:         from AS197449 action pref=10; accept AS197449
+export:         to AS197449 announce ANY
+import:         from AS199624 action pref=10; accept AS-SPARKTELL
+export:         to AS199624 announce ANY
+import:         from AS199647 action pref=10; accept AS199647
+export:         to AS199647 announce ANY
+import:         from AS199945 action pref=10; accept AS199945
+import:         from AS199945 action pref=10; accept AS44913
+export:         to AS199945 announce ANY
+import:         from AS199975 action pref=10; accept AS199975
+export:         to AS199975 announce ANY
+import:         from AS201244 action pref=10; accept AS201244
+export:         to AS201244 announce ANY
+import:         from AS202432 action pref=10; accept AS202432
+export:         to AS202432 announce ANY
+import:         from AS202587 action pref=10; accept AS202587
+export:         to AS202587 announce ANY
+import:         from AS203504 action pref=10; accept AS203504
+export:         to AS203504 announce ANY
+import:         from AS206181 action pref=10; accept AS206181
+export:         to AS206181 announce ANY
+import:         from AS207104 action pref=10; accept AS207104
+export:         to AS207104 announce ANY
+import:         from AS207839 action pref=10; accept AS207839
+export:         to AS207839 announce ANY
+import:         from AS210093 action pref=10; accept AS210093
+export:         to AS210093 announce ANY
+import:         from AS714 action pref=10; accept AS-APPLE
+export:         to AS714 announce AS-RINET
+import:         from AS6939 action pref=10; accept ANY
+export:         to AS6939 announce AS-RINET
+import:         from AS6854 action pref=10; accept AS-TCNET
+export:         to AS6854 announce AS-RINET
+import:         from AS2895 action pref=10; accept AS-FREENET
+export:         to AS2895 announce AS-RINET
+import:         from AS2683 action pref=10; accept AS-RADIOMSU
+export:         to AS2683 announce AS-RINET
+import:         from AS13105 action pref=10; accept AS-LUKOIL
+export:         to AS13105 announce AS-RINET
+import:         from AS3267 action pref=10; accept AS-RUNNETIX
+export:         to AS3267 announce AS-RINET
+import:         from AS6903 action pref=10; accept AS-ZENON
+export:         to AS6903 announce AS-RINET
+import:         from AS5537 action pref=10; accept AS-GARANTPARK
+export:         to AS5537 announce AS-RINET
+import:         from AS8075 action pref=10; accept AS-MICROSOFT
+export:         to AS8075 announce AS-RINET
+import:         from AS8470 action pref=10; accept AS-MACOMNET
+export:         to AS8470 announce AS-RINET
+import:         from AS8299 action pref=10; accept AS-INFOTELRU
+export:         to AS8299 announce AS-RINET
+import:         from AS8615 action pref=10; accept AS-CNTPEERS
+export:         to AS8615 announce AS-RINET
+import:         from AS20483 action pref=10; accept AS-RTNET
+export:         to AS20483 announce AS-RINET
+import:         from AS5523 action pref=10; accept AS-RMT
+export:         to AS5523 announce AS-RINET
+import:         from AS13238 action pref=10; accept AS-COMPTEK
+export:         to AS13238 announce AS-RINET
+import:         from AS15169 action pref=10; accept AS-GOOGLE
+export:         to AS15169 announce AS-RINET
+import:         from AS15934 action pref=10; accept AS-ZEBRA
+export:         to AS15934 announce AS-RINET
+import:         from AS24638 action pref=10; accept AS-RAMTEL
+export:         to AS24638 announce AS-RINET
+import:         from AS21156 action pref=10; accept AS-DATAGRUPA
+export:         to AS21156 announce AS-RINET
+import:         from AS8491 action pref=10; accept AS-BSH
+export:         to AS8491 announce AS-RINET
+import:         from AS20632 action pref=10; accept AS-PETERSTAR
+export:         to AS20632 announce AS-RINET
+import:         from AS28917 action pref=10; accept AS-FIORD
+export:         to AS28917 announce AS-RINET
+import:         from AS29076 action pref=10; accept AS-HOSTER
+export:         to AS29076 announce AS-RINET
+import:         from AS43727 action pref=10; accept AS-SETKT
+export:         to AS43727 announce AS-RINET
+import:         from AS15658 action pref=10; accept AS-INETCOMM
+export:         to AS15658 announce AS-RINET
+import:         from AS33902 action pref=10; accept AS33902
+export:         to AS33902 announce AS-RINET
+import:         from AS9032 action pref=10; accept AS-EDUNET
+export:         to AS9032 announce AS-RINET
+import:         from AS21425 action pref=10; accept AS21425
+export:         to AS21425 announce AS-RINET
+import:         from AS31240 action pref=10; accept AS-HTS
+export:         to AS31240 announce AS-RINET
+import:         from AS3277 action pref=10; accept AS-RUSNETIX
+export:         to AS3277 announce AS-RINET
+import:         from AS29329 action pref=10; accept AS-NODEX
+export:         to AS29329 announce AS-RINET
+import:         from AS49813 action pref=10; accept AS49813
+export:         to AS49813 announce AS-RINET
+import:         from AS47764 action pref=10; accept AS-MAILRU
+export:         to AS47764 announce AS-RINET
+import:         from AS50775 action pref=10; accept AS50775
+export:         to AS50775 announce AS-RINET
+org:            ORG-RA21-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RAID-MNT
+mnt-by:         RINET-MNT
+created:        2002-04-27T15:40:45Z
+last-modified:  2024-11-09T15:43:48Z
+source:         RIPE
+
+
+

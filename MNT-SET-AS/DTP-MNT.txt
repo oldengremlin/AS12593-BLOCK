@@ -1,9 +1,3 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
-
-
-
-
 aut-num:        AS205830
 as-name:        CYMRG-AS
 org:            ORG-DTPL1-RIPE
@@ -13,25 +7,21 @@ import:         from AS8359 accept ANY
 export:         to AS8359 announce AS205830
 import:         from as47764 accept ANY
 export:         to as47764 announce AS205830
-admin-c:        DN4813-RIPE
-tech-c:         DN4813-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2017-05-24T13:46:52Z
 last-modified:  2023-11-06T14:28:25Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS60476
 as-name:        MYCOM-AS
 org:            ORG-DTPL1-RIPE
-remarks:
-remarks:        =========================================
-remarks:        Uplinks
-remarks:        -----------------------------------------
-remarks:
 import:         from AS5511 action pref=200; accept ANY
 export:         to AS5511 announce AS-MYCOM
 mp-export:      afi ipv6.unicast to AS5511 announce AS-MYCOM;
@@ -52,11 +42,6 @@ import:         from AS6453 action pref=200; accept ANY
 export:         to AS6453 announce AS-MYCOM
 mp-export:      afi ipv6.unicast to AS6453 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS6453 accept ANY;
-remarks:
-remarks:        =========================================
-remarks:        direct Peers
-remarks:        -----------------------------------------
-remarks:
 export:         to AS45758 announce AS-MYCOM
 import:         from AS45758 accept AS-TRIPLETNET
 mp-export:      afi ipv6.unicast to AS45758 announce AS-MYCOM;
@@ -73,11 +58,6 @@ export:         to AS18403 announce AS-MYCOM
 import:         from AS18403 accept AS-FPT
 mp-export:      afi ipv6.unicast to AS18403 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS18403 accept AS-FPT;
-remarks:
-remarks:        =========================================
-remarks:        DE-CIX Peers
-remarks:        -----------------------------------------
-remarks:
 export:         to AS6695 announce AS-MYCOM
 import:         from AS6695 accept AS-DECIX
 mp-export:      afi ipv6.unicast to AS6695 announce AS-MYCOM;
@@ -230,11 +210,6 @@ export:         to AS8551 announce AS-MYCOM
 import:         from AS8551 accept AS-BEZEQINT
 mp-export:      afi ipv6.unicast to AS8551 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS8551 accept AS-BEZEQINT;
-remarks:
-remarks:        =========================================
-remarks:        AMS-IX Peers
-remarks:        -----------------------------------------
-remarks:
 export:         to AS6777 announce AS-MYCOM
 import:         from AS6777 accept AS-AMS-IX-RS-SETS
 mp-export:      afi ipv6.unicast to AS6777 announce AS-MYCOM;
@@ -399,110 +374,21 @@ export:         to AS49544 announce AS-MYCOM
 import:         from AS49544 accept AS-INTERACTIVE3D
 mp-export:      afi ipv6.unicast to AS49544 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS49544 accept AS-INTERACTIVE3D;
-remarks:
-remarks:        =========================================
-remarks:        Partners
-remarks:        -----------------------------------------
-remarks:
 export:         to AS47764 announce ANY
 import:         from AS47764 accept ANY
 mp-export:      afi ipv6.unicast to AS47764 announce ANY;
 mp-import:      afi ipv6.unicast from AS47764 accept ANY;
 export:         to AS47541 announce ANY
 import:         from AS47541 accept ANY
-remarks:
-remarks:        =========================================
-remarks:        BGP Policy
-remarks:        -----------------------------------------
-remarks:
-remarks:        External communities may be set by some external peers
-remarks:        when talking to AS60476.
-remarks:        They are 60476:[1-3]*
-remarks:
-remarks:        The following control communities are accepted from any
-remarks:        BGP peer (partner/peer/uplink):
-remarks:
-remarks:        60476:20 - Don't accept prefix
-remarks:        60476:2x - Accept prefix and expand its as-path with
-remarks:        last AS x (x=1, 2 or 3) times.
-remarks:
-remarks:        The following control communities are accepted only from
-remarks:        partners:
-remarks:
-remarks:        Community Meaning
-remarks:
-remarks:        60476:1100x When advertising to ANY uplink, specifically:
-remarks:
-remarks:        60476:1101x When advertising to RETN (AS9002) uplink...
-remarks:        60476:1106x When advertising to Seabone (AS6762) uplink...
-remarks:        60476:1107x When advertising to Orange (AS5511) uplink...
-remarks:        60476:1108x When advertising to Telia (AS1299) uplink...
-remarks:
-remarks:        60476:2100x When advertising to ANY peer or IX, specifically:
-remarks:
-remarks:        60476:2102x When advertising to DE-CIX...
-remarks:        60476:2103x When advertising to AMS-IX...
-remarks:
-remarks:        60476:3NNNx When advertising to direct peer PeerID:NNN
-remarks:        (see below)...
-remarks:
-remarks:
-remarks:        ...x=0 - do not advertise
-remarks:        ...x=1, 2 - prepend 60476 1 or 2 times
-remarks:
-remarks:        PeerID:NNN is:
-remarks:
-remarks:        161 ROMTEL (AS9050)
-remarks:        165 Tripletnet (AS45758)
-remarks:        169 FPT (AS18403)
-remarks:        184 RDSNET (AS8708)
-remarks:        -------------------------------------------------------------
-remarks:
-remarks:        Other 60476:* communities are deleted.
-remarks:        Other *:* communities are passed intact but not to all
-remarks:        peers.
-remarks:
-remarks:        Own routes get local preference 400 (highest).
-remarks:        Partner's routes get local preference 300.
-remarks:        Technological partner's routes get local preference 250.
-remarks:        Peer's and uplink's routes get local preference 200.
-remarks:        We don't change lprefs by outer requests, so please don't
-remarks:        request us about it.
-remarks:
-remarks:        -------------------------------------------------------------
-remarks:
-remarks:        Internal comminuties are assigned only internally.
-remarks:        They may be used by peers to filter some prefixes.
-remarks:
-remarks:        Community Meaning
-remarks:
-remarks:        60476:40000 Our own routes
-remarks:
-remarks:        60476:41101 Receieved from RETN
-remarks:        60476:41105 Receieved from Tata
-remarks:        60476:41106 Receieved from Telecom Italia (Seabone)
-remarks:        60476:41107 Receieved from Orange
-remarks:        60476:41108 Receieved from Telia
-remarks:
-remarks:        60476:42100 Received from IX, specifically:
-remarks:        60476:42102 Received from DE-CIX
-remarks:        60476:42103 Received from AMS-IX
-remarks:
-remarks:        60476:43100 Receieved from private peer, specifically:
-remarks:        60476:43NNN Received from private peer PeerID:NNN
-remarks:        (see above)...
-remarks:
-remarks:        60476:50101 Receieved in Frankfurt
-remarks:        60476:50102 Receieved in Amsterdam
-remarks:
-admin-c:        DN4813-RIPE
-tech-c:         DN4813-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ncc@corp.my.com
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-07-12T09:26:04Z
 last-modified:  2025-04-07T11:07:29Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -511,14 +397,15 @@ as-name:        CYMRG-AS2
 org:            ORG-DTPL1-RIPE
 import:         from AS49063 accept ANY
 export:         to AS49063 announce AS61178
-admin-c:        DN4813-RIPE
-tech-c:         DN4813-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-01-22T11:19:18Z
 last-modified:  2023-11-06T14:28:25Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

@@ -1,37 +1,37 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@185.151.106.150:22 already exists, disabling multiplexing
-
+as-set:         AS-WELLSERVER
+descr:          Xeon Ltd and clients
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS56864
+members:        AS211624
+members:        AS211404
+mnt-by:         xeonltd-mnt
+created:        2021-04-02T11:58:56Z
+last-modified:  2022-10-22T15:54:30Z
+source:         RIPE
 
 
 
 aut-num:        AS56864
 as-name:        WELLSERVER-AS
 org:            ORG-XL33-RIPE
-remarks:        *** MSK-IX ***
+notify:         noc@wellserver.ru
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-WELLSERVER
-remarks:        *** Eurasia-Peering ***
 import:         from AS56931 accept AS-EURASIAPEERING_RS
 export:         to AS56931 announce AS-WELLSERVER
-remarks:        *** DataIX ***
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-WELLSERVER
-remarks:        *** MASTERTEL ***
 import:         from AS29226 accept ANY
 export:         to AS29226 announce AS-WELLSERVER
-remarks:        *** CIREX ***
 import:         from AS199599 accept ANY
 export:         to AS199599 announce AS-WELLSERVER
-remarks:        *** RETN ***
 import:         from AS9002 accept ANY
 export:         to AS9002 announce AS-WELLSERVER
-remarks:        *** DDOS-GUARD ***
 import:         from AS57724 accept ANY
 export:         to AS57724 announce AS56864
-remarks:        *** ROSTELECOM ***
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-WELLSERVER
-remarks:        *** Piter-IX ***
 import:         from AS49869 accept as-piter-ix-msk
 export:         to AS49869 announce AS-WELLSERVER
 import:         from AS50817 accept as-piter-ix
@@ -44,20 +44,18 @@ import:         from AS5433 accept as-piter-ix-tll
 export:         to AS5433 announce AS-WELLSERVER
 import:         from AS51178 accept as-piter-ix-riga
 export:         to AS51178 announce AS-WELLSERVER
-remarks:        *** TETRON ***
 import:         from AS211624 accept AS211624
 export:         to AS211624 announce ANY
-remarks:        *** RG ***
 import:         from AS211404 accept AS211404
 export:         to AS211404 announce ANY
-admin-c:        KV2880-RIPE
-tech-c:         KV2880-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         xeonltd-mnt
 created:        2011-05-31T07:16:38Z
 last-modified:  2023-09-22T18:16:22Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

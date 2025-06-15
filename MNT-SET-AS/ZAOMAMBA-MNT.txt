@@ -1,3 +1,48 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 185.151.106.150 port 22
+as-set:         AS-MAMBA6
+descr:          MAMBA IPv6
+members:        AS49063
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ZAOMAMBA-MNT
+created:        2017-11-14T10:11:02Z
+last-modified:  2017-11-14T10:11:02Z
+source:         RIPE
+
+
+
+as-set:         AS58116:AS-MAMBA
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ZAOMAMBA-MNT
+created:        2023-08-25T11:08:11Z
+last-modified:  2023-08-25T11:08:11Z
+source:         RIPE
+members:        AS58116
+members:        AS44903
+members:        AS42834
+
+
+
+aut-num:        AS58116
+as-name:        ASMAMBA
+org:            ORG-MAMB1-RIPE
+import:         from AS49063 action pref=100; accept ANY
+import:         from AS29226 action pref=100; accept ANY
+export:         to AS49063 announce AS58116
+export:         to AS29226 announce AS58116
+mp-import:      afi ipv6.unicast from AS49063 action pref=100; accept ANY
+mp-import:      afi ipv6.unicast from AS29226 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS49063 announce AS58116
+mp-export:      afi ipv6.unicast to AS29226 announce AS58116
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ZAOMAMBA-MNT
+created:        2012-05-08T07:38:57Z
+last-modified:  2025-05-19T13:59:16Z
+source:         RIPE
+sponsoring-org: ORG-Vs35-RIPE
+
+
+

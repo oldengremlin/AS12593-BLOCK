@@ -1,3 +1,1268 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 185.151.106.150 port 22
+as-set:         AS-M100
+members:        AS49281
+members:        AS-MAILRU
+members:        AS47764
+members:        AS21051
+descr:          M100
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         VKCOMPANY-MNT
+created:        2010-03-24T08:52:36Z
+last-modified:  2024-10-10T12:48:39Z
+source:         RIPE
+
+
+
+as-set:         AS-M100v6
+descr:          M100 IPv6
+members:        AS49281
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         VKCOMPANY-MNT
+created:        2011-02-03T15:52:18Z
+last-modified:  2024-10-10T12:48:39Z
+source:         RIPE
+
+
+
+as-set:         AS-MAILRU
+members:        AS-VK
+descr:          Mail.Ru
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         VKCOMPANY-MNT
+created:        2009-11-16T12:28:48Z
+last-modified:  2023-01-12T08:18:19Z
+source:         RIPE
+
+
+
+as-set:         AS-MAILRU6
+descr:          Mail.Ru IPv6
+members:        AS47764
+members:        AS49988
+members:        AS60863
+members:        AS49281
+members:        AS21051
+members:        AS199295
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         VKCOMPANY-MNT
+created:        2010-12-17T12:27:06Z
+last-modified:  2022-06-16T14:47:36Z
+source:         RIPE
+
+
+
+as-set:         AS-VK
+members:        AS47764
+members:        AS-MYCOM
+members:        AS60476
+members:        AS60863
+members:        AS-M100
+members:        AS49988
+members:        AS-VKONTAKTE
+members:        AS21051
+members:        AS199295
+members:        AS205830
+members:        AS201817
+members:        AS207970
+descr:          VK company
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         VKCOMPANY-MNT
+created:        2022-08-17T10:41:26Z
+last-modified:  2024-05-20T15:56:13Z
+source:         RIPE
+
+
+
+as-set:         AS-VK-CACHE
+descr:          VK.COM Cache and CDN
+members:        AS28709
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         VKCOMPANY-MNT
+created:        2012-12-07T19:11:46Z
+last-modified:  2022-06-20T13:22:54Z
+source:         RIPE
+
+
+
+as-set:         AS-VKONTAKTE
+descr:          VKontakte Ltd (http://vk.com)
+members:        AS47541
+members:        AS47542
+members:        AS28709
+members:        AS62243
+members:        AS207581
+members:        AS21051
+members:        AS57973
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         VKCOMPANY-MNT
+created:        2009-03-04T00:28:46Z
+last-modified:  2025-01-14T15:02:15Z
+source:         RIPE
+notify:         ncc@corp.vk.com
+
+
+
+aut-num:        AS199295
+as-name:        locust-as
+descr:          Locust
+org:            ORG-LLCn4-RIPE
+import:         from AS47764 accept ANY
+import:         from AS49281 accept ANY
+import:         from AS6939 accept ANY
+export:         to AS47764 announce AS199295
+export:         to AS49281 announce AS199295
+export:         to AS6939 announce AS199295
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2013-03-21T10:30:25Z
+last-modified:  2024-10-02T11:20:11Z
+source:         RIPE
+
+
+
+aut-num:        AS207581
+as-name:        VKONTAKTE-SPBKM-AS
+org:            ORG-VL47-RIPE
+import:         from as9002 accept ANY
+export:         to as9002 announce AS207581
+import:         from as20764 accept ANY
+export:         to as20764 announce AS207581
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2020-01-10T10:06:06Z
+last-modified:  2022-06-20T12:51:13Z
+source:         RIPE
+
+
+
+aut-num:        AS207970
+as-name:        mailru-as
+org:            ORG-LLCn4-RIPE
+import:         from AS47764 accept ANY
+export:         to AS47764 announce AS207970
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS207970
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2019-10-24T10:10:09Z
+last-modified:  2022-06-16T14:51:06Z
+source:         RIPE
+
+
+
+aut-num:        AS211963
+as-name:        MAILRU-IS
+org:            ORG-LLCn4-RIPE
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS211963
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS211963
+import:         from AS47764 accept AS47764
+export:         to AS47764 announce AS211963
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2021-01-21T17:39:36Z
+last-modified:  2024-10-02T11:20:10Z
+source:         RIPE
+
+
+
+aut-num:        AS213235
+as-name:        mailru-as
+org:            ORG-LLCn4-RIPE
+import:         from AS8641 accept ANY
+export:         to AS8641 announce AS213235
+import:         from AS21367 accept ANY
+export:         to AS21367 announce AS213235
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2020-05-13T13:40:48Z
+last-modified:  2024-10-10T11:43:09Z
+source:         RIPE
+
+
+
+aut-num:        AS28709
+as-name:        VKONTAKTE-REGIONAL-CDN
+org:            ORG-VL47-RIPE
+descr:          Regional CDN http://vk.com
+export:         to AS3216 announce AS-VKONTAKTE
+import:         from AS3216 accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS3216 accept ANY;
+export:         to AS31133 announce AS-VKONTAKTE
+import:         from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31133 accept ANY;
+export:         to AS12389 announce AS-VKONTAKTE
+import:         from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS12389 accept ANY;
+export:         to AS50952 announce AS-VKONTAKTE
+import:         from AS50952 accept AS-DATAIX
+mp-export:      afi ipv6.unicast to AS50952 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX;
+export:         to AS50384 announce AS-VKONTAKTE
+import:         from AS50384 accept AS-W-IX
+mp-export:      afi ipv6.unicast to AS50384 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX-IPVSIX;
+export:         to AS29076 announce AS-VKONTAKTE
+import:         from AS29076 accept AS-CITYTELECOM AND NOT AS-CLOUD-IX-M
+mp-export:      afi ipv6.unicast to AS29076 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS29076 accept AS-CITYTELECOM;
+export:         to AS42403 announce AS-VKONTAKTE
+import:         from AS42403 accept AS-NSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS42403 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS42403 accept AS-NSKROUTESERVER;
+export:         to AS43213 announce AS-VKONTAKTE
+import:         from AS43213 accept AS-EKTROUTESERVER
+mp-export:      afi ipv6.unicast to AS43213 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS43213 accept AS-EKTROUTESERVER;
+export:         to AS60430 announce AS-VKONTAKTE
+import:         from AS60430 accept AS-RED-IX-PEERS
+mp-export:      afi ipv6.unicast to AS60430 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS60430 accept AS-RED-IX-PEERS;
+export:         to AS31133 announce AS-VKONTAKTE
+import:         from AS31133 accept AS-MF-IX
+export:         to AS47764 announce AS-VKONTAKTE
+import:         from AS47764 accept AS-MAILRU
+export:         to AS47882 announce AS-VKONTAKTE
+import:         from AS47882 accept AS-SMRROUTESERVER
+mp-export:      afi ipv6.unicast to AS47882 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS47882 accept AS-SMRROUTESERVER;
+export:         to AS48216 announce AS-VKONTAKTE
+import:         from AS48216 accept AS-RNDROUTESERVER
+mp-export:      afi ipv6.unicast to AS48216 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS48216 accept AS-RNDROUTESERVER;
+export:         to AS59428 announce AS-VKONTAKTE
+import:         from AS59428 accept AS-KRD-RS
+export:         to AS13094 announce AS-VKONTAKTE
+import:         from AS13094 accept AS-MILECOM-RS
+mp-export:      afi ipv6.unicast to AS13094 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS13094 accept AS-MILECOM-RS;
+export:         to AS20730 announce AS-VKONTAKTE
+import:         from AS20730 accept AS-DVO-IX
+mp-export:      afi ipv6.unicast to AS20730 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS20730 accept AS-DVO-IX;
+export:         to AS59539 announce AS-VKONTAKTE
+import:         from AS59539 accept AS-PITER-IX-ROV
+export:         to AS39304 announce AS-VKONTAKTE
+import:         from AS39304 accept AS-DV-IX
+export:         to AS3216 announce AS-VKONTAKTE
+import:         from AS3216 accept AS-SOVAM
+mp-export:      afi ipv6.unicast to AS3216 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS3216 accept AS-SOVAM;
+export:         to AS20485 announce AS-VKONTAKTE
+import:         from AS20485 accept AS-TTK
+mp-export:      afi ipv6.unicast to AS20485 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS20485 accept AS-TTK;
+export:         to AS31133 announce AS-VKONTAKTE
+import:         from AS31133 accept AS-MF-MGSM
+mp-export:      afi ipv6.unicast to AS31133 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31133 accept AS-MF-MGSM;
+export:         to AS9049 announce AS-VKONTAKTE
+import:         from AS9049 accept AS-ERTH
+mp-export:      afi ipv6.unicast to AS9049 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS9049 accept AS-ERTH;
+export:         to AS8359 announce AS-VKONTAKTE
+import:         from AS8359 accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8359 accept AS-MTU;
+export:         to AS57304 announce AS-VKONTAKTE
+import:         from AS57304 accept AS-RETN
+mp-export:      afi ipv6.unicast to AS57304 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS57304 accept AS-RETN6;
+export:         to AS12389 announce AS-VKONTAKTE
+import:         from AS12389 accept AS-ROSTELECOM
+mp-export:      afi ipv6.unicast to AS12389 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS12389 accept AS-ROSTELECOM;
+export:         to AS8749 announce AS-VKONTAKTE
+import:         from AS8749 accept AS-REDCOM
+export:         to AS34757 announce AS-VKONTAKTE
+import:         from AS34757 accept AS34757
+export:         to AS41330 announce AS-VKONTAKTE
+import:         from AS41330 accept AS41330
+export:         to AS24955 announce AS-VKONTAKTE
+import:         from AS24955 accept AS24955
+export:         to AS31499 announce AS-VKONTAKTE
+import:         from AS31499 accept AS-MOTIV
+mp-export:      afi ipv6.unicast to AS31499 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31499 accept AS-MOTIV;
+export:         to AS42498 announce AS-VKONTAKTE
+import:         from AS42498 accept AS-GERCON
+export:         to AS48524 announce AS-VKONTAKTE
+import:         from AS48524 accept AS-INTERRA
+export:         to AS60246 announce AS-VKONTAKTE
+import:         from AS60246 accept AS-PG19
+mp-export:      afi ipv6.unicast to AS60246 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS60246 accept AS-PG19;
+export:         to AS28917 announce AS-VKONTAKTE
+import:         from AS28917 accept AS-FIORD
+export:         to AS42437 announce AS-VKONTAKTE
+import:         from AS42437 accept AS-T2RU-MR-ROSTOV
+export:         to AS48190 announce AS-VKONTAKTE
+import:         from AS48190 accept AS48190
+export:         to AS48642 announce AS-VKONTAKTE
+import:         from AS48642 accept AS-KT-RU
+mp-export:      afi ipv6.unicast to AS48642 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS48642 accept AS-KT-RU;
+export:         to AS47626 announce AS-VKONTAKTE
+import:         from AS47626 accept AS-ARPNET61
+mp-export:      afi ipv6.unicast to AS47626 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS47626 accept AS-ARPNET61;
+export:         to AS209307 announce AS-VKONTAKTE
+import:         from AS209307 accept AS-CNX-EKB
+export:         to AS6789 announce AS-VKONTAKTE
+import:         from AS6789 accept AS-CRELCOM
+mp-export:      afi ipv6.unicast to AS6789 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS6789 accept AS-CRELCOM;
+export:         to AS58096 announce AS-VKONTAKTE
+import:         from AS58096 accept AS58096
+export:         to AS41039 announce AS-VKONTAKTE
+import:         from AS41039 accept AS-DON
+export:         to AS28890 announce AS-VKONTAKTE
+import:         from AS28890 accept AS-INSYS-EKB
+export:         to AS41560 announce AS-VKONTAKTE
+import:         from AS41560 accept AS41560
+export:         to AS12773 announce AS-VKONTAKTE
+import:         from AS12773 accept AS-MESHNET
+export:         to AS57973 announce AS-VKONTAKTE
+import:         from AS57973 accept AS-NIVAL
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2009-08-05T11:34:14Z
+last-modified:  2025-05-20T16:40:35Z
+source:         RIPE
+notify:         ncc@corp.vk.com
+
+
+
+aut-num:        AS47541
+as-name:        VKONTAKTE-SPB-AS
+org:            ORG-VL47-RIPE
+descr:          http://vk.com
+export:         to AS6762 announce AS-VKONTAKTE
+import:         from AS6762 accept ANY
+mp-export:      afi ipv6.unicast to AS6762 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS6762 accept ANY;
+export:         to AS1299 announce AS-VKONTAKTE
+import:         from AS1299 accept ANY
+mp-export:      afi ipv6.unicast to AS1299 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS1299 accept ANY;
+export:         to AS57304 announce AS-VKONTAKTE
+import:         from AS57304 accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS57304 accept ANY;
+export:         to AS31133 announce AS-VKONTAKTE
+import:         from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31133 accept ANY;
+export:         to AS12389 announce AS-VKONTAKTE
+import:         from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS12389 accept ANY;
+export:         to AS50952 announce AS-VKONTAKTE
+import:         from AS50952 accept AS-DATAIX
+mp-export:      afi ipv6.unicast to AS50952 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX;
+export:         to AS34123 announce AS-VKONTAKTE
+import:         from AS34123 accept AS-NETORN
+export:         to AS47441 announce AS-VKONTAKTE
+import:         from AS47441 accept AS47441
+export:         to AS51028 announce AS-VKONTAKTE
+import:         from AS51028 accept AS-SVOLS
+export:         to AS60299 announce AS-VKONTAKTE
+import:         from AS60299 accept AS-MMTS
+export:         to AS8369 announce AS-VKONTAKTE
+import:         from AS8369 accept AS-INTERSVYAZ
+export:         to AS8551 announce AS-VKONTAKTE
+import:         from AS8551 accept AS-BEZEQINT
+mp-export:      afi ipv6.unicast to AS8551 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8551 accept AS-BEZEQINT;
+export:         to AS212914 announce AS-VKONTAKTE
+import:         from AS212914 accept AS212914
+mp-export:      afi ipv6.unicast to AS212914 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS212914 accept AS212914;
+export:         to AS8631 announce AS-VKONTAKTE
+import:         from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER;
+export:         to AS43690 announce AS-VKONTAKTE
+import:         from AS43690 accept AS-SPBROUTESERVER
+mp-export:      afi ipv6.unicast to AS43690 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS43690 accept AS-SPBROUTESERVER;
+export:         to AS31500 announce AS-VKONTAKTE
+import:         from AS31500 accept AS-GLOBAL-NET
+mp-export:      afi ipv6.unicast to AS31500 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-NET;
+export:         to AS42893 announce AS-VKONTAKTE
+import:         from AS42893 accept AS42893
+export:         to AS48257 announce AS-VKONTAKTE
+import:         from AS48257 accept AS-SATNETSPB
+export:         to AS50923 announce AS-VKONTAKTE
+import:         from AS50923 accept AS-METRO-SET
+export:         to AS21453 announce AS-VKONTAKTE
+import:         from AS21453 accept AS-FLEX
+export:         to AS6939 announce AS-VKONTAKTE
+import:         from AS6939 accept AS-HURRICANE
+export:         to AS60764 announce AS-VKONTAKTE
+import:         from AS60764 accept AS-TKTEL
+export:         to AS15672 announce AS-VKONTAKTE
+import:         from AS15672 accept AS-TZTELECOM
+export:         to AS15169 announce AS-VKONTAKTE
+import:         from AS15169 accept AS-GOOGLE
+mp-export:      afi ipv6.unicast to AS15169 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS15169 accept AS-GOOGLE;
+export:         to AS35032 announce AS-VKONTAKTE
+import:         from AS35032 accept AS-TAHION
+export:         to AS56407 announce AS-VKONTAKTE
+import:         from AS56407 accept AS-ZHIGULINET
+export:         to AS49136 announce AS-VKONTAKTE
+import:         from AS49136 accept AS-TELENET-NET
+export:         to AS47914 announce AS-VKONTAKTE
+import:         from AS47914 accept AS-IPHOME
+export:         to AS50384 announce AS-VKONTAKTE
+import:         from AS50384 accept AS-W-IX
+mp-export:      afi ipv6.unicast to AS50384 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX-IPVSIX;
+export:         to AS29076 announce AS-VKONTAKTE
+import:         from AS29076 accept AS-CITYTELECOM
+mp-export:      afi ipv6.unicast to AS29076 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS29076 accept AS-CITYTELECOM;
+export:         to AS31133 announce AS-VKONTAKTE
+import:         from AS31133 accept AS-MF-IX
+export:         to AS50817 announce AS-VKONTAKTE
+import:         from AS50817 accept AS-PITER-IX
+export:         to AS49869 announce AS-VKONTAKTE
+import:         from AS49869 accept AS-PITER-IX-MSK
+export:         to AS13094 announce AS-VKONTAKTE
+import:         from AS13094 accept as-milecom-rs
+mp-export:      afi ipv6.unicast to AS13094 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS13094 accept as-milecom-rs;
+export:         to AS44843 announce AS-VKONTAKTE
+import:         from AS44843 accept AS-MALOCO
+mp-export:      afi ipv6.unicast to AS44843 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS44843 accept AS-MALOCO;
+export:         to AS3216 announce AS-VKONTAKTE
+import:         from AS3216 accept AS-SOVAM
+mp-export:      afi ipv6.unicast to AS3216 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS3216 accept AS-SOVAM;
+export:         to AS6697 announce AS-VKONTAKTE
+import:         from AS6697 accept AS-BELPAK
+export:         to AS8732 announce AS-VKONTAKTE
+import:         from AS8732 accept AS-COMCOR
+mp-export:      afi ipv6.unicast to AS8732 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8732 accept AS-COMCOR;
+export:         to AS8359 announce AS-VKONTAKTE
+import:         from AS8359 accept AS-MTU
+mp-export:      afi ipv6.unicast to AS8359 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8359 accept AS-MTU;
+export:         to AS8402 announce AS-VKONTAKTE
+import:         from AS8402 accept AS-CORBINA
+mp-export:      afi ipv6.unicast to AS8402 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8402 accept AS-CORBINA;
+export:         to AS57304 announce AS-VKONTAKTE
+import:         from AS57304 accept AS-RETN
+mp-export:      afi ipv6.unicast to AS57304 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS57304 accept AS-RETN6;
+export:         to AS9049 announce AS-VKONTAKTE
+import:         from AS9049 accept AS-ERTH
+mp-export:      afi ipv6.unicast to AS9049 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS9049 accept AS-ERTH;
+export:         to AS28917 announce AS-VKONTAKTE
+import:         from AS28917 accept AS-FIORD
+mp-export:      afi ipv6.unicast to AS28917 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS28917 accept AS-FIORD;
+export:         to AS31133 announce AS-VKONTAKTE
+import:         from AS31133 accept AS-MF-MGSM
+mp-export:      afi ipv6.unicast to AS31133 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31133 accept AS-MF-MGSM;
+export:         to AS20764 announce AS-VKONTAKTE
+import:         from AS20764 accept AS20764:AS-RASCOM
+mp-export:      afi ipv6.unicast to AS20764 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS20764 accept AS20764:AS-RASCOM;
+export:         to AS12389 announce AS-VKONTAKTE
+import:         from AS12389 accept AS-ROSTELECOM
+mp-export:      afi ipv6.unicast to AS12389 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS12389 accept AS-ROSTELECOM;
+export:         to AS3267 announce AS-VKONTAKTE
+import:         from AS3267 accept AS-RUNNET
+mp-export:      afi ipv6.unicast to AS3267 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS3267 accept AS-RUNNET;
+export:         to AS15378 announce AS-VKONTAKTE
+import:         from AS15378 accept ANY
+export:         to AS20485 announce AS-VKONTAKTE
+import:         from AS20485 accept AS-TTK
+mp-export:      afi ipv6.unicast to AS20485 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS20485 accept AS-TTK;
+export:         to AS56534 announce AS-VKONTAKTE
+import:         from AS56534 accept AS-PIRIXNET
+mp-export:      afi ipv6.unicast to AS56534 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS56534 accept AS-PIRIXNET;
+export:         to AS35000 announce AS-VKONTAKTE
+import:         from AS35000 accept AS-PROMETEY
+mp-export:      afi ipv6.unicast to AS35000 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS35000 accept AS-PROMETEY-V6;
+export:         to AS43727 announce AS-VKONTAKTE
+import:         from AS43727 accept AS-SETKT
+export:         to AS39087 announce AS-VKONTAKTE
+import:         from AS39087 accept AS-PAKT
+mp-export:      afi ipv6.unicast to AS39087 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS39087 accept AS-PAKT;
+export:         to AS49505 announce AS-VKONTAKTE
+import:         from AS49505 accept AS-SELECTEL
+mp-export:      afi ipv6.unicast to AS49505 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS49505 accept AS-SELECTEL;
+export:         to AS35807 announce AS-VKONTAKTE
+import:         from AS35807 accept AS-OLYMP-TELECOM
+export:         to AS42668 announce AS-VKONTAKTE
+import:         from AS42668 accept AS-NEVALINK
+export:         to AS31214 announce AS-VKONTAKTE
+import:         from AS31214 accept AS-TISDIALOG
+mp-export:      afi ipv6.unicast to AS31214 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31214 accept AS-TISDIALOG;
+export:         to AS29076 announce AS-VKONTAKTE
+import:         from AS29076 accept AS-CITYTELECOM AND NOT AS-CLOUD-IX-M
+mp-export:      afi ipv6.unicast to AS29076 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS29076 accept AS-CITYTELECOM;
+export:         to AS15169 announce AS-VKONTAKTE
+import:         from AS15169 accept AS-GOOGLE
+mp-export:      afi ipv6.unicast to AS15169 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS15169 accept AS-GOOGLE;
+export:         to AS25478 announce AS-VKONTAKTE
+import:         from AS25478 accept AS-IHOME
+mp-export:      afi ipv6.unicast to AS25478 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS25478 accept AS-IHOME;
+export:         to AS43966 announce AS-VKONTAKTE
+import:         from AS43966 accept AS-ITREGION
+export:         to AS51973 announce AS-VKONTAKTE
+import:         from AS51973 accept AS-KOLT
+export:         to AS48858 announce AS-VKONTAKTE
+import:         from AS48858 accept AS-MILECOM
+export:         to AS8492 announce AS-VKONTAKTE
+import:         from AS8492 accept AS-OBIT
+mp-export:      afi ipv6.unicast to AS8492 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8492 accept AS-OBIT;
+export:         to AS35598 announce AS-VKONTAKTE
+import:         from AS35598 accept AS-ICNET
+mp-export:      afi ipv6.unicast to AS35598 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS35598 accept AS-ICNET;
+export:         to AS60280 announce AS-VKONTAKTE
+import:         from AS60280 accept AS-NTEC
+mp-export:      afi ipv6.unicast to AS60280 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS60280 accept AS-NTEC;
+export:         to AS9123 announce AS-VKONTAKTE
+import:         from AS9123 accept AS-TIMEWEB
+mp-export:      afi ipv6.unicast to AS9123 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS9123 accept AS-TIMEWEB;
+export:         to AS31376 announce AS-VKONTAKTE
+import:         from AS31376 accept AS-SMART
+export:         to AS207581 announce ANY
+import:         from AS207581 accept AS207581
+export:         to AS62243 announce ANY
+import:         from AS62243 accept AS62243
+export:         to AS57973 announce AS-VKONTAKTE
+import:         from AS57973 accept AS-NIVAL
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2008-07-03T14:45:56Z
+last-modified:  2025-05-22T12:44:57Z
+source:         RIPE
+notify:         ncc@corp.vk.com
+
+
+
+aut-num:        AS47542
+as-name:        VKONTAKTE-MSK-CDN-AS
+org:            ORG-VL47-RIPE
+descr:          Moscow CDN http://vk.com
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-VKONTAKTE
+mp-export:      afi ipv6.unicast to AS50952 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX;
+export:         to AS8631 announce AS-VKONTAKTE
+import:         from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER;
+export:         to AS31500 announce AS-VKONTAKTE
+import:         from AS31500 accept AS-GLOBAL-NET
+mp-export:      afi ipv6.unicast to AS31500 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-NET;
+export:         to AS50384 announce AS-VKONTAKTE
+import:         from AS50384 accept AS-W-IX
+mp-export:      afi ipv6.unicast to AS50384 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX-IPVSIX;
+export:         to AS29076 announce AS-VKONTAKTE
+import:         from AS29076 accept AS-CLOUD-IX
+mp-export:      afi ipv6.unicast to AS29076 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS29076 accept AS-CLOUD-IX;
+export:         to AS31133 announce AS-VKONTAKTE
+import:         from AS31133 accept AS-MF-IX
+export:         to AS49869 announce AS-VKONTAKTE
+import:         from AS49869 accept as-piter-ix-msk
+export:         to AS3216 announce AS-VKONTAKTE
+import:         from AS3216 accept AS-SOVAM
+mp-export:      afi ipv6.unicast to AS3216 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS3216 accept AS-SOVAM;
+export:         to AS8732 announce AS-VKONTAKTE
+import:         from AS8732 accept AS-COMCOR
+mp-export:      afi ipv6.unicast to AS8732 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8732 accept AS-COMCOR;
+export:         to AS8359 announce AS-VKONTAKTE
+import:         from AS8359 accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8359 accept AS-MTU;
+export:         to AS8402 announce AS-VKONTAKTE
+import:         from AS8402 accept AS-CORBINA
+mp-export:      afi ipv6.unicast to AS8402 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS8402 accept AS-CORBINA;
+export:         to AS9049 announce AS-VKONTAKTE
+import:         from AS9049 accept AS-ERTH
+mp-export:      afi ipv6.unicast to AS9049 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS9049 accept AS-ERTH;
+export:         to AS28917 announce AS-VKONTAKTE
+import:         from AS28917 accept AS-FIORD
+mp-export:      afi ipv6.unicast to AS28917 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS28917 accept AS-FIORD;
+export:         to AS31133 announce AS-VKONTAKTE
+import:         from AS31133 accept AS-MF-MGSM
+mp-export:      afi ipv6.unicast to AS31133 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31133 accept AS-MF-MGSM;
+export:         to AS57304 announce AS-VKONTAKTE
+import:         from AS57304 accept AS-RETN
+mp-export:      afi ipv6.unicast to AS57304 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS57304 accept AS-RETN6;
+export:         to AS12389 announce AS-VKONTAKTE
+import:         from AS12389 accept AS-ROSTELECOM
+mp-export:      afi ipv6.unicast to AS12389 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS12389 accept AS-ROSTELECOM;
+export:         to AS20485 announce AS-VKONTAKTE
+import:         from AS20485 accept AS-TTK
+mp-export:      afi ipv6.unicast to AS20485 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS20485 accept AS-TTK;
+export:         to AS42610 announce AS-VKONTAKTE
+import:         from AS42610 accept AS-NCNET
+mp-export:      afi ipv6.unicast to AS42610 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS42610 accept AS-NCNET;
+export:         to AS47764 announce AS-VKONTAKTE
+import:         from AS47764 accept AS-MAILRU
+export:         to AS43727 announce AS-VKONTAKTE
+import:         from AS43727 accept AS43727
+export:         to AS201776 announce AS-VKONTAKTE
+import:         from AS201776 accept AS-MRNDA
+export:         to AS47775 announce AS-VKONTAKTE
+import:         from AS47775 accept AS-UBN
+export:         to AS20764 announce AS-VKONTAKTE
+import:         from AS20764 accept AS-RASCOM
+mp-export:      afi ipv6.unicast to AS20764 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS20764 accept AS-RASCOM;
+export:         to AS29076 announce AS-VKONTAKTE
+import:         from AS29076 accept AS-CITYTELECOM
+mp-export:      afi ipv6.unicast to AS29076 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS29076 accept AS-CITYTELECOM;
+export:         to AS25478 announce AS-VKONTAKTE
+import:         from AS25478 accept AS-IHOME
+mp-export:      afi ipv6.unicast to AS25478 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS25478 accept AS-IHOME;
+export:         to AS12958 announce AS-VKONTAKTE
+import:         from AS12958 accept AS-T2RU-MR-MOSCOW
+export:         to AS52091 announce AS-VKONTAKTE
+import:         from AS52091 accept AS-LEVEL-MSK
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2008-07-03T14:47:28Z
+last-modified:  2024-07-03T07:51:30Z
+source:         RIPE
+notify:         ncc@corp.vk.com
+
+
+
+aut-num:        AS47764
+as-name:        VK-AS
+org:            ORG-LLCn4-RIPE
+export:         to AS3216 announce AS-VK
+import:         from AS3216 accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS3216 accept ANY;
+export:         to AS57304 announce AS-VK
+import:         from AS57304 accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS57304 accept ANY;
+export:         to AS12389 announce AS-VK
+import:         from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS12389 accept ANY;
+export:         to AS8359 announce AS-VK
+import:         from AS8359 accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS8359 accept ANY;
+export:         to AS31133 announce AS-VK
+import:         from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS31133 accept ANY;
+export:         to AS1299 announce AS-VK
+import:         from AS1299 accept ANY
+mp-export:      afi ipv6.unicast to AS1299 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS1299 accept ANY;
+export:         to AS5511 announce AS-VK
+import:         from AS5511 accept ANY
+mp-export:      afi ipv6.unicast to AS5511 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS5511 accept ANY;
+export:         to AS6762 announce AS-VK
+import:         from AS6762 accept ANY
+mp-export:      afi ipv6.unicast to AS6762 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS6762 accept ANY;
+export:         to AS47541 announce AS-VK
+import:         from AS47541 accept AS-VKONTAKTE
+mp-export:      afi ipv6.unicast to AS47541 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS47541 accept AS-VKONTAKTE;
+export:         to AS57304 announce AS-VK
+import:         from AS57304 accept AS-RETN
+mp-export:      afi ipv6.unicast to AS57304 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS57304 accept AS-RETN;
+export:         to AS3267 announce AS-VK
+import:         from AS3267 accept AS-RUNNET
+export:         to AS8359 announce AS-VK
+import:         from AS8359 accept AS-MTU
+mp-export:      afi ipv6.unicast to AS8359 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS8359 accept AS-MTU;
+export:         to AS8492 announce AS-VK
+import:         from AS8492 accept AS-OBIT
+export:         to AS12695 announce AS-VK
+import:         from AS12695 accept AS-DINET
+mp-export:      afi ipv6.unicast to AS12695 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS12695 accept AS-DINET-V6;
+export:         to AS13238 announce AS-VK
+import:         from AS13238 accept AS-YANDEX
+mp-export:      afi ipv6.unicast to AS13238 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS13238 accept AS-YANDEX;
+export:         to AS20764 announce AS-VK
+import:         from AS20764 accept AS20764:AS-RASCOM
+mp-export:      afi ipv6.unicast to AS20764 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS20764 accept AS20764:AS-RASCOM;
+export:         to AS31133 announce AS-VK
+import:         from AS31133 accept AS-MF-MGSM
+mp-export:      afi ipv6.unicast to AS31133 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS31133 accept AS-MF-MGSM;
+export:         to AS42610 announce AS-VK
+import:         from AS42610 accept AS-NCNET
+mp-export:      afi ipv6.unicast to AS42610 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS42610 accept AS-NCNET-IPV6;
+export:         to AS15169 announce AS-VK
+import:         from AS15169 accept AS-GOOGLE
+mp-export:      afi ipv6.unicast to AS15169 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS15169 accept AS-GOOGLE;
+export:         to AS2854 announce AS-VK
+import:         from AS2854 accept AS-ROSPRINT
+export:         to AS8641 announce AS-VK
+import:         from AS8641 accept AS-NAUKANET
+export:         to AS8905 announce AS-VK
+import:         from AS8905 accept AS-DIGIT1
+export:         to AS13002 announce AS-VK
+import:         from AS13002 accept AS-LINKEY
+export:         to AS29226 announce AS-VK
+import:         from AS29226 accept AS-MASTERTEL
+mp-export:      afi ipv6.unicast to AS29226 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS29226 accept AS-MASTERTEL;
+export:         to AS12389 announce AS-VK
+import:         from AS12389 accept AS-ROSTELECOM
+mp-export:      afi ipv6.unicast to AS12389 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS12389 accept AS-ROSTELECOM;
+export:         to AS20485 announce AS-VK
+import:         from AS20485 accept AS-TTK
+mp-export:      afi ipv6.unicast to AS20485 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS20485 accept AS-TTK;
+export:         to AS3216 announce AS-VK
+import:         from AS3216 accept AS-SOVAM
+mp-export:      afi ipv6.unicast to AS3216 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS3216 accept AS-SOVAM;
+export:         to AS31261 announce AS-VK
+import:         from AS31261 accept AS-GARS
+mp-export:      afi ipv6.unicast to AS31261 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS31261 accept AS-GARS;
+export:         to AS34456 announce AS-VK
+import:         from AS34456 accept AS-RCPEERS
+export:         to AS35810 announce AS-VK
+import:         from AS35810 accept AS-BIGTELECOM
+mp-export:      afi ipv6.unicast to AS35810 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS35810 accept AS-BIGTELECOM;
+export:         to AS9049 announce AS-VK
+import:         from AS9049 accept AS-ERTH
+mp-export:      afi ipv6.unicast to AS9049 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS9049 accept AS-ERTH;
+export:         to AS34123 announce AS-VK
+import:         from AS34123 accept AS-NETORN
+mp-export:      afi ipv6.unicast to AS34123 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS34123 accept AS-NETORN;
+export:         to AS41268 announce AS-VK
+import:         from AS41268 accept AS-LANTA
+mp-export:      afi ipv6.unicast to AS41268 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS41268 accept AS-LANTANET-V6;
+export:         to AS6697 announce AS-VK
+import:         from AS6697 accept AS-BELPAK
+export:         to AS51343 announce AS-VK
+import:         from AS51343 accept AS-FORCELINE
+export:         to AS44843 announce AS-VK
+import:         from AS44843 accept AS-OBTEL
+mp-export:      afi ipv6.unicast to AS44843 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS44843 accept AS-OBTEL;
+export:         to AS8402 announce AS-VK
+import:         from AS8402 accept AS-CORBINA
+mp-export:      afi ipv6.unicast to AS8402 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS8402 accept AS-CORBINA;
+export:         to AS8732 announce AS-VK
+import:         from AS8732 accept AS-COMCOR
+mp-export:      afi ipv6.unicast to AS8732 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS8732 accept AS-COMCOR;
+export:         to AS29069 announce AS-VK
+import:         from AS29069 accept AS-TRANSLINECOM
+export:         to AS50923 announce AS-VK
+import:         from AS50923 accept AS-METRO-SET
+mp-export:      afi ipv6.unicast to AS50923 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS50923 accept AS-METRO-SET6;
+export:         to AS49800 announce AS-VK
+import:         from AS49800 accept AS-GNC
+mp-export:      afi ipv6.unicast to AS49800 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS49800 accept AS-GNC;
+export:         to AS43727 announce AS-VK
+import:         from AS43727 accept AS-SETKT
+mp-export:      afi ipv6.unicast to AS43727 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS43727 accept AS-SETKT;
+export:         to AS39153 announce AS-VK
+import:         from AS39153 accept AS-SETEL
+export:         to AS49218 announce AS-VK
+import:         from AS49218 accept AS-NTKS
+export:         to AS47626 announce AS-VK
+import:         from AS47626 accept AS-ARPNET61
+export:         to AS48347 announce AS-VK
+import:         from AS48347 accept AS-MTW
+mp-export:      afi ipv6.unicast to AS48347 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS48347 accept AS-MTW6;
+export:         to AS12958 announce AS-VK
+import:         from AS12958 accept AS-MCC
+export:         to AS47542 announce AS-VK
+import:         from AS47542 accept AS-VKONTAKTE
+export:         to AS47775 announce AS-VK
+import:         from AS47775 accept AS-UBN
+mp-export:      afi ipv6.unicast to AS47775 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS47775 accept AS-UBN;
+export:         to AS28917 announce AS-VK
+import:         from AS28917 accept AS-FIORD
+mp-export:      afi ipv6.unicast to AS28917 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS28917 accept AS-FIORD;
+export:         to AS51904 announce AS-VK
+import:         from AS51904 accept AS-UTEX
+export:         to AS29124 announce AS-VK
+import:         from AS29124 accept AS-7SKY
+mp-export:      afi ipv6.unicast to AS29124 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS29124 accept AS-7SKY-V6;
+export:         to AS201776 announce AS-VK
+import:         from AS201776 accept AS-MRNDA
+export:         to AS48293 announce AS-VK
+import:         from AS48293 accept AS-UNIONTEL-RU
+export:         to AS60299 announce AS-VK
+import:         from AS60299 accept AS-MMTS
+export:         to AS48940 announce AS-VK
+import:         from AS48940 accept AS-LINK-NET
+export:         to AS50473 announce AS-VK
+import:         from AS50473 accept AS-ECO
+export:         to AS25478 announce AS-VK
+import:         from AS25478 accept AS-IHOME
+mp-export:      afi ipv6.unicast to AS25478 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS25478 accept AS-IHOME;
+export:         to AS44943 announce AS-VK
+import:         from AS44943 accept AS-RAMNET
+mp-export:      afi ipv6.unicast to AS44943 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS44943 accept AS-RAMNET6;
+export:         to AS44020 announce AS-VK
+import:         from AS44020 accept AS-CLN
+mp-export:      afi ipv6.unicast to AS44020 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS44020 accept AS-CLN;
+export:         to AS6789 announce AS-VK
+import:         from AS6789 accept AS-CRELCOM
+export:         to AS44050 announce AS-VK
+import:         from AS44050 accept AS-PIN
+mp-export:      afi ipv6.unicast to AS44050 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS44050 accept AS-PIN-IPV6;
+export:         to AS8636 announce AS-VK
+import:         from AS8636 accept AS-MAX
+mp-export:      afi ipv6.unicast to AS8636 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS8636 accept AS-MAX;
+export:         to AS57724 announce AS-VK
+import:         from AS57724 accept AS-DDOS-GUARD
+mp-export:      afi ipv6.unicast to AS57724 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS57724 accept AS-DDOS-GUARD;
+export:         to AS198354 announce AS-VK
+import:         from AS198354 accept AS-SISTELECOM
+export:         to AS60246 announce AS-VK
+import:         from AS60246 accept AS-PG19
+mp-export:      afi ipv6.unicast to AS60246 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS60246 accept AS-PG19;
+export:         to AS199599 announce AS-VK
+import:         from AS199599 accept AS-CIREX
+export:         to AS35598 announce AS-VK
+import:         from AS35598 accept AS-ICNET
+mp-export:      afi ipv6.unicast to AS35598 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS35598 accept AS-ICNET;
+export:         to AS211914 announce AS-VK
+import:         from AS211914 accept AS-DFW
+export:         to AS49988 announce AS-VK
+import:         from AS49988 accept AS49988
+export:         to AS42291 announce AS-VK
+import:         from AS42291 accept AS42291:AS-ISTRANET
+mp-export:      afi ipv6.unicast to AS42291 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS42291 accept AS-ISTRANET6;
+export:         to AS60280 announce AS-VK
+import:         from AS60280 accept AS-NTEC
+mp-export:      afi ipv6.unicast to AS60280 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS60280 accept AS-NTEC;
+export:         to AS206673 announce AS-VK
+import:         from AS206673 accept AS-SBTC
+export:         to AS49063 announce AS-VK
+import:         from AS49063 accept AS-DTLN
+mp-export:      afi ipv6.unicast to AS49063 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS49063 accept AS-DTLN;
+export:         to AS49368 announce AS-VK
+import:         from AS49368 accept AS-DOMOLAN
+export:         to AS29588 announce AS-VK
+import:         from AS29588 accept AS-IVSTAR
+mp-export:      afi ipv6.unicast to AS29588 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS29588 accept AS-IVSTAR;
+export:         to AS52091 announce AS-VK
+import:         from AS52091 accept AS-LEVEL-MSK
+export:         to AS47286 announce AS-VK
+import:         from AS47286 accept AS-OTSNET
+export:         to AS200350 announce AS-MAILRU
+import:         from AS200350 accept AS-YACLOUD
+mp-export:      afi ipv6.unicast to AS200350 announce AS-MAILRU;
+mp-import:      afi ipv6.unicast from AS200350 accept AS-YACLOUD;
+export:         to AS201825 announce AS-MAILRU
+import:         from AS201825 accept AS-RUSPHONE
+mp-export:      afi ipv6.unicast to AS201825 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS201825 accept AS-RUSPHONE;
+mp-export:      afi ipv6.unicast to AS12297 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS12297 accept AS-TELARM;
+export:         to AS12297 announce AS-VK
+import:         from AS12297 accept AS-TELARM
+export:         to AS56340 announce AS-VK
+import:         from AS56340 accept AS-UMNYESETI
+export:         to AS8932 announce AS-VK
+import:         from AS8932 accept AS8932:AS-ALL
+mp-export:      afi ipv6.unicast to AS8932 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS8932 accept AS8932:AS-ALL;
+export:         to AS58116 announce AS-VK
+import:         from AS58116 accept AS58116:AS-MAMBA
+export:         to AS41625 announce AS-VK
+import:         from AS41625 accept AS41625
+mp-export:      afi ipv6.unicast to AS41625 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS41625 accept AS41625;
+export:         to AS207353 announce AS-VK
+import:         from AS207353 accept AS207353
+export:         to AS35539 announce AS-VK
+import:         from AS35539 accept AS-INFOLINK
+export:         to AS41275 announce AS-VK
+import:         from AS41275 accept AS-TUT
+export:         to AS47914 announce AS-VK
+import:         from AS47914 accept AS-IPHOME
+mp-export:      afi ipv6.unicast to AS47914 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS47914 accept AS-IPHOME;
+export:         to AS48610 announce AS-VK
+import:         from AS48610 accept AS48610:AS-OFORO
+mp-export:      afi ipv6.unicast to AS48610 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS48610 accept AS48610:AS-OFORO;
+export:         to AS56814 announce AS-VK
+import:         from AS56814 accept AS56814
+mp-export:      afi ipv6.unicast to AS56814 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS56814 accept AS56814;
+export:         to AS9123 announce AS-VK
+import:         from AS9123 accept AS-TIMEWEB
+mp-export:      afi ipv6.unicast to AS9123 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS9123 accept AS-TIMEWEB;
+export:         to AS58096 announce AS-VK
+import:         from AS58096 accept AS58096
+export:         to AS50164 announce AS-VK
+import:         from AS50164 accept AS50164
+export:         to AS50509 announce AS-VK
+import:         from AS50509 accept AS-TRANSROUTE
+mp-export:      afi ipv6.unicast to AS50509 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS50509 accept AS-TRANSROUTE;
+export:         to AS12722 announce AS-VK
+import:         from AS12722 accept AS-RECONN
+mp-export:      afi ipv6.unicast to AS12722 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS12722 accept AS-RECONN-V6;
+export:         to AS50254 announce AS-VK
+import:         from AS50254 accept AS50254
+export:         to AS41039 announce AS-VK
+import:         from AS41039 accept AS-DON
+export:         to AS201706 announce AS-VK
+import:         from AS201706 accept NOT ANY
+export:         to AS8563 announce AS-VK
+import:         from AS8563 accept AS-DIRECTNET
+export:         to AS43404 announce AS-VK
+import:         from AS43404 accept AS-UCANET
+mp-export:      afi ipv6.unicast to AS43404 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS43404 accept AS-UCANET;
+export:         to AS47895 announce AS-VK
+import:         from AS47895 accept AS47895
+export:         to AS61308 announce AS-VK
+import:         from AS61308 accept AS-SKYNETCOM
+export:         to AS25292 announce AS-VK
+import:         from AS25292 accept AS25292
+export:         to AS206011 announce AS-VKONTAKTE
+import:         from AS206011 accept AS206011:AS-FREEDOM-KRD
+mp-export:      afi ipv6.unicast to AS206011 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS206011 accept AS206011:AS-FREEDOM-KRD;
+export:         to AS43530 announce AS-VKONTAKTE
+import:         from AS43530 accept AS-IRTELCOM-SET
+export:         to AS31214 announce AS-VKONTAKTE
+import:         from AS31214 accept AS-TISDIALOG
+mp-export:      afi ipv6.unicast to AS31214 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS31214 accept AS-TISDIALOG;
+export:         to AS39728 announce AS-VKONTAKTE
+import:         from AS39728 accept AS-MOLNIYA
+export:         to AS213452 announce AS-VKONTAKTE
+import:         from AS213452 accept AS213452
+export:         to AS43399 announce AS-VK
+import:         from AS43399 accept AS-TINKOFF
+export:         to AS209307 announce AS-VK
+import:         from AS209307 accept AS-CNX-EKB
+export:         to AS8631 announce AS-VK
+import:         from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER;
+export:         to AS6939 announce AS-VK
+import:         from AS6939 accept AS-HURRICANE
+mp-export:      afi ipv6.unicast to AS6939 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS6939 accept AS-HURRICANE;
+export:         to AS16509 announce AS-VK
+import:         from AS16509 accept AS-AMAZON
+mp-export:      afi ipv6.unicast to AS16509 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS16509 accept AS-AMAZON;
+export:         to AS49476 announce AS-VK
+import:         from AS49476 accept AS-MTT
+export:         to AS25292 announce AS-VK
+import:         from AS25292 accept AS25292
+export:         to AS43690 announce AS-VK
+import:         from AS43690 accept AS-SPBROUTESERVER
+mp-export:      afi ipv6.unicast to AS43690 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS43690 accept AS-SPBROUTESERVER;
+export:         to AS50952 announce AS-VK
+import:         from AS50952 accept AS-DATAIX
+mp-export:      afi ipv6.unicast to AS50952 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX;
+export:         to AS31500 announce AS-VK
+import:         from AS31500 accept AS-GLOBAL-NET
+mp-export:      afi ipv6.unicast to AS31500 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-NET;
+export:         to AS13094 announce AS-VK
+import:         from AS13094 accept AS-MILECOM-RS
+mp-export:      afi ipv6.unicast to AS13094 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS13094 accept AS-MILECOM-RS;
+export:         to AS29076 announce AS-VK
+import:         from AS29076 accept AS-CITYTELECOM
+mp-export:      afi ipv6.unicast to AS29076 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS29076 accept AS-CITYTELECOMV6;
+export:         to AS50384 announce AS-VK
+import:         from AS50384 accept AS-W-IX
+mp-export:      afi ipv6.unicast to AS50384 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX-IPVSIX;
+export:         to AS49869 announce AS-VK
+import:         from AS49869 accept AS-PITER-IX
+export:         to AS56931 announce AS-VK
+import:         from AS56931 accept AS-EURASIAPEERING_RS
+mp-export:      afi ipv6.unicast to AS56931 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS56931 accept AS-EURASIAPEERING_RS;
+export:         to AS31133 announce AS-VK
+import:         from AS31133 accept AS-MF-IX
+export:         to AS28709 announce AS-VK
+import:         from AS28709 accept AS-VKONTAKTE
+export:         to AS8631 announce AS-VK
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8563 announce AS-VK
+import:         from AS8563 accept AS-DIRECTNET
+export:         to AS201817 announce ANY
+import:         from AS201817 accept AS201817
+export:         to AS60476 announce ANY
+import:         from AS60476 accept AS60476
+mp-export:      afi ipv6.unicast to AS60476 announce ANY;
+mp-import:      afi ipv6.unicast from AS60476 accept AS60476;
+export:         to AS59796 announce {94.139.244.0/24}
+import:         from AS59796 accept AS59796
+export:         to AS207970 announce ANY
+import:         from AS207970 accept ANY
+export:         to AS49281 announce ANY
+import:         from AS49281 accept AS-M100
+mp-export:      afi ipv6.unicast to AS49281 announce ANY;
+mp-import:      afi ipv6.unicast from AS49281 accept AS-M100v6;
+export:         to AS60863 announce ANY
+import:         from AS60863 accept AS60863
+export:         to AS49988 announce ANY
+import:         from AS49988 accept AS49988
+export:         to AS21051 announce ANY
+import:         from AS21051 accept AS21051
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2008-08-15T07:37:11Z
+last-modified:  2025-06-06T10:00:26Z
+source:         RIPE
+
+
+
+aut-num:        AS49281
+as-name:        M100
+descr:          LLC M100
+org:            ORG-LLCD1-RIPE
+export:         to AS3216 announce AS-M100
+import:         from AS3216 accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-M100v6;
+mp-import:      afi ipv6.unicast from AS3216 accept ANY;
+export:         to AS47764 announce AS-M100
+import:         from AS47764 accept ANY
+mp-export:      afi ipv6.unicast to AS47764 announce AS-M100v6;
+mp-import:      afi ipv6.unicast from AS47764 accept ANY;
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
+notify:         ncc@corp.mail.ru
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2009-05-11T13:13:56Z
+last-modified:  2025-04-23T09:32:40Z
+source:         RIPE
+
+
+
+aut-num:        AS49797
+as-name:        NESSLY
+org:            ORG-LLCn4-RIPE
+import:         from AS49063 action pref=100; accept ANY
+export:         to AS49063 announce AS49797
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2009-09-11T15:06:13Z
+last-modified:  2022-06-16T14:51:06Z
+source:         RIPE
+
+
+
+aut-num:        AS49988
+as-name:        odkl-as
+org:            ORG-OL67-RIPE
+import:         from AS12578 accept ANY
+export:         to AS12578 announce AS49988
+import:         from AS28886 accept ANY
+export:         to AS28886 announce AS49988
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
+status:         ASSIGNED
+mnt-by:         VKCOMPANY-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2009-10-22T09:49:31Z
+last-modified:  2024-10-10T12:48:39Z
+source:         RIPE
+
+
+
+aut-num:        AS57973
+as-name:        CLOUDGAMING-REGION-AS
+org:            ORG-LLCn4-RIPE
+import:         from AS28709 accept ANY
+export:         to AS28709 announce AS57973
+import:         from AS210756 accept ANY
+export:         to AS210756 announce AS57973
+import:         from AS47541 accept ANY
+export:         to AS47541 announce AS57973
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+notify:         ipncc@corp.mail.ru
+created:        2012-03-22T13:59:33Z
+last-modified:  2024-10-10T12:48:39Z
+source:         RIPE
+
+
+
+aut-num:        AS60863
+as-name:        VK-AS
+org:            ORG-LLCn4-RIPE
+import:         from AS47764 accept ANY
+import:         from AS49281  accept ANY
+export:         to AS47764 announce AS60863
+export:         to AS49281 announce AS60863
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ipncc@corp.mail.ru
+status:         ASSIGNED
+notify:         ncc@corp.mail.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2013-04-23T09:09:39Z
+last-modified:  2022-08-18T08:19:00Z
+source:         RIPE
+
+
+
+aut-num:        AS62243
+as-name:        VKONTAKTE-SPBZN-AS
+org:            ORG-VL47-RIPE
+import:         from AS60212 accept any
+export:         to AS60212 announce AS62243
+import:         from AS196754 accept any
+export:         to AS196754 announce AS62243
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VKCOMPANY-MNT
+created:        2013-12-11T14:55:07Z
+last-modified:  2025-01-14T15:39:31Z
+source:         RIPE
+
+
+

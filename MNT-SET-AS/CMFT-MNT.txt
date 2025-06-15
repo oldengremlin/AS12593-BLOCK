@@ -1,6 +1,171 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
+as-set:         AS-CMFT
+descr:          Comfortel Customers
+members:        AS-EPS
+members:        AS-FORTIS
+members:        AS-CROSSMIX-TELECOM
+members:        AS-EXPOFORUM
+members:        AS-PULNET
+members:        AS-KOLT
+members:        AS-SENATOR
+members:        AS-NEVACOM
+members:        AS-DREAMLESS
+members:        AS-VSEVNET
+members:        AS-VLAN
+members:        AS-PUDLINK
+members:        AS-STARTELECOMSPB
+members:        AS-SEANET
+members:        AS-PROSERV
+members:        AS-SATNETSPB
+members:        AS-TIERA
+members:        AS-CTTELECOM
+members:        AS-XTRIM
+members:        AS-ETALON
+members:        AS-WESTCOM
+members:        AS-INFOLAN
+members:        as-dedic-center
+members:        AS-PL-NET
+members:        as-skytel_as-set
+members:        AS-KOLPINONET
+members:        AS-SET-SANG
+members:        AS-ART-COM-CUSTOM
+members:        AS-MTEL-OBLNET
+members:        AS-EKASSIR
+members:        AS-EXPRE_LLC
+members:        AS-TRICOLOR
+members:        AS-RUS-AS
+members:        AS-NETMAN
+members:        AS-WAVEACCESS
+members:        AS-TRUNKMOBILE
+members:        AS-ABS
+members:        AS-CNT-TEL
+members:        AS-HAPOTELE
+members:        AS-ELEKTRA
+members:        AS-ITConst
+members:        AS207168:AS-Bttelecom
+members:        AS-ZENIT-ARENA
+members:        AS200847:AS-MOBILECARD
+members:        AS8219
+members:        AS3227
+members:        AS13105
+members:        AS21314
+members:        AS34574
+members:        AS35112
+members:        AS39101
+members:        AS42119
+members:        AS42144
+members:        AS44640
+members:        AS48226
+members:        AS44985
+members:        AS47149
+members:        AS48235
+members:        AS48890
+members:        AS49017
+members:        AS49200
+members:        AS49211
+members:        AS50082
+members:        AS50471
+members:        AS50538
+members:        AS50801
+members:        AS51478
+members:        AS51562
+members:        AS51783
+members:        AS51836
+members:        AS51973
+members:        AS52007
+members:        AS56336
+members:        AS56534
+members:        AS56846
+members:        AS56923
+members:        AS56928
+members:        AS57010
+members:        AS57557
+members:        AS59482
+members:        AS59627
+members:        AS60357
+members:        AS62065
+members:        AS196750
+members:        AS197040
+members:        AS197303
+members:        AS198542
+members:        AS198580
+members:        AS199112
+members:        AS199732
+members:        AS199790
+members:        AS200214
+members:        AS200679
+members:        AS200847
+members:        AS201475
+members:        AS201515
+members:        AS201797
+members:        AS201848
+members:        AS202537
+members:        AS202633
+members:        AS202775
+members:        AS202689
+members:        AS202974
+members:        AS202989
+members:        AS203004
+members:        AS203139
+members:        AS203725
+members:        AS204219
+members:        AS204492
+members:        AS205221
+members:        AS205454
+members:        AS205489
+members:        AS205701
+members:        AS206403
+members:        AS206812
+members:        AS207184
+members:        AS207256
+members:        AS207259
+members:        AS207648
+members:        AS207698
+members:        AS208111
+members:        AS208371
+members:        AS205672
+members:        AS205601
+members:        AS207657
+members:        AS208325
+members:        AS208894
+members:        AS209339
+members:        AS209636
+members:        AS209667
+members:        AS209679
+members:        AS210685
+members:        AS211191
+members:        AS211246
+members:        AS211796
+members:        AS211930
+members:        AS212165
+members:        AS212278
+members:        AS212333
+members:        AS213461
+members:        AS213666
+members:        AS213922
+members:        AS214887
+members:        AS215425
+members:        AS216236
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         noc@comfortel.pro
+mnt-by:         CMFT-MNT
+created:        2021-04-20T09:21:21Z
+last-modified:  2025-05-07T07:19:13Z
+source:         RIPE
 
+
+
+as-set:         AS197968:AS-CMFTKZ
+members:        AS-CDNETWORKSRU
+members:        AS197968
+members:        AS204720
+members:        AS214500
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         CMFT-MNT
+created:        2023-08-21T08:14:16Z
+last-modified:  2024-12-24T11:03:00Z
+source:         RIPE
 
 
 
@@ -8,19 +173,16 @@ aut-num:        AS197968
 as-name:        Comfortel
 org:            ORG-CA2458-RIPE
 sponsoring-org: ORG-CL253-RIPE
-remarks:        --- IPv4 Routing Policy ---
-remarks:        --- UPSTREAMS ---
 import:         from AS198803 accept ANY
 export:         to AS198803 announce AS197968:AS-CMFTKZ
 import:         from AS35104 accept ANY
 export:         to AS35104 announce AS197968:AS-CMFTKZ
-remarks:        --- DOWNSTREAMS ---
 import:         from AS214500 action pref=130; accept AS214500
 export:         to AS214500 announce ANY
 import:         from AS204720 action pref=130; accept AS-CDNETWORKSRU
 export:         to AS204720 announce ANY
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
@@ -40,8 +202,8 @@ import:         from AS20764 accept ANY
 export:         to AS20764 announce AS198542
 import:         from AS12555 accept ANY
 export:         to AS12555 announce AS198542
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
@@ -60,8 +222,8 @@ import:         from AS56534 accept ANY
 export:         to AS56534 announce AS200214
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS200214
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
@@ -85,8 +247,8 @@ import:         from AS51552 accept ANY
 export:         to AS51552 announce AS208894
 import:         from AS62205 accept ANY
 export:         to AS62205 announce AS208894
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
@@ -104,8 +266,8 @@ import:         from AS56534 accept ANY
 export:         to AS56534 announce AS209636
 import:         from AS35000 accept ANY
 export:         to AS35000 announce AS209636
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
@@ -123,8 +285,8 @@ import:         from AS56534 accept ANY
 export:         to AS56534 announce AS211930
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS211930
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
@@ -142,8 +304,8 @@ import:         from AS56534 accept ANY
 export:         to AS56534 announce AS213461
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS213461
-admin-c:        CMFT
-tech-c:         NT4906-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
@@ -162,8 +324,8 @@ import:         from AS56534 accept ANY
 export:         to AS56534 announce AS213666
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS213666
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
@@ -180,8 +342,8 @@ import:         from AS56534 action pref=100; accept ANY
 import:         from AS20632 action pref=100; accept ANY
 export:         to AS56534 announce AS2585
 export:         to AS20632 announce AS2585
-admin-c:        ACRO45557-RIPE
-tech-c:         ACRO45557-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
@@ -208,21 +370,21 @@ export:         to AS3267 announce AS34232
 export:         to AS198580 announce AS34232
 export:         to AS20764 announce AS34232
 export:         to AS51478 announce AS34232
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@pulnet.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
 created:        2009-11-12T16:28:34Z
 last-modified:  2025-03-05T12:31:33Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS47441
 as-name:        TRUNKM
 org:            ORG-CL253-RIPE
-remarks:        Upstreams
 import:         from AS3216 accept any
 export:         to AS3216 announce AS-TRUNKMOBILE
 import:         from AS31133 accept any
@@ -239,7 +401,6 @@ import:         from AS35598 accept any
 export:         to AS35598 announce AS-TRUNKMOBILE
 import:         from AS56534 accept any
 export:         to AS56534 announce AS-TRUNKMOBILE
-remarks:        Peers
 import:         from AS13328 accept AS-YANDEX
 export:         to AS13328 announce AS-TRUNKMOBILE
 import:         from AS47764 accept AS-MAILRU
@@ -270,25 +431,20 @@ import:         from AS31261 accept AS-GARS
 export:         to AS31261 announce AS-TRUNKMOBILE
 import:         from AS198297 accept AS-UL-COM-Media
 export:         to AS198297 announce AS-TRUNKMOBILE
-remarks:        PITER-IX
 import:         from AS50817 accept AS-PITER-IX
 export:         to AS50817 announce AS-TRUNKMOBILE
 import:         from AS49869 accept AS-PITER-IX-MSK
 export:         to AS49869 announce AS-TRUNKMOBILE
-remarks:        DE-CIX peering
 import:         from AS6695 accept AS-DECIX
 export:         to AS6695 announce AS-TRUNKMOBILE
 import:         from AS714 accept AS-APPLE
 export:         to AS714 announce AS-TRUNKMOBILE
 import:         from AS56931 accept AS56931
 export:         to AS56931 announce AS-TRUNKMOBILE
-remarks:        AMS-IX peering
 import:         from AS6777 accept AS-AMS-IX-RS
 export:         to AS6777 announce AS-TRUNKMOBILE
-remarks:        PIRIX
 import:         from AS48625 accept AS-PIRIX
 export:         to AS48625 announce AS-TRUNKMOBILE
-remarks:        Clients
 import:         from AS60088 accept AS60088
 export:         to AS60088 announce any
 import:         from AS50471 accept AS50471
@@ -315,14 +471,15 @@ import:         from AS8515 accept AS-DATAFORCE
 export:         to AS8515 announce any
 import:         from AS56534 accept AS-CMFT
 export:         to AS56534 announce any
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@trunkmobile.org
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
 created:        2008-06-20T07:35:04Z
 last-modified:  2022-06-15T10:50:17Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -330,8 +487,6 @@ aut-num:        AS56534
 as-name:        Comfortel
 descr:          Comfortel, St.Petersburg, Russia
 org:            ORG-CL253-RIPE
-remarks:        --- IPv4 Routing Policy ---
-remarks:        --- UPSTREAMS ---
 import:         from AS9002 action pref=105; accept ANY
 export:         to AS9002 announce AS-CMFT
 import:         from AS20764 action pref=105; accept ANY
@@ -344,7 +499,6 @@ import:         from AS31133 action pref=105; accept ANY
 export:         to AS31133 announce AS-CMFT
 import:         from AS12389 action pref=105; accept ANY
 export:         to AS12389 announce AS-CMFT
-remarks:        --- PEERS ---
 import:         from AS31210 action pref=110; accept AS-DTEL-IX
 export:         to AS31210 announce AS-CMFT
 import:         from AS3267 action pref=110; accept AS-RUNNET
@@ -369,7 +523,6 @@ import:         from AS15169 action pref=111; accept AS-GOOGLE
 export:         to AS15169 announce AS-CMFT
 import:         from AS51178 action pref=111; accept AS-AVANTEL-SPB
 export:         to AS51178 announce AS-CMFT
-remarks:        --- DOWNSTREAMS ---
 import:         from AS3227 action pref=130; accept AS3227
 export:         to AS3227 announce ANY
 import:         from AS3312 action pref=130; accept AS-ELEKTRA
@@ -624,8 +777,6 @@ import:         from AS215425 action pref=130; accept AS215425
 export:         to AS215425 announce ANY
 import:         from AS216236 action pref=130; accept AS216236
 export:         to AS216236 announce ANY
-remarks:        --- IPv6 Routing Policy ---
-remarks:        --- UPSTREAMS ---
 mp-import:      afi ipv6.unicast from AS3267 action pref=105; accept AS-ANY
 mp-export:      afi ipv6.unicast to AS3267 announce AS-CMFT6
 mp-import:      afi ipv6.unicast from AS20764 action pref=105; accept AS-ANY
@@ -634,7 +785,6 @@ mp-import:      afi ipv6.unicast from AS9002 action pref=105; accept AS-ANY
 mp-export:      afi ipv6.unicast to AS9002 announce AS-CMFT6
 mp-import:      afi ipv6.unicast from AS31500 action pref=105; accept AS-ANY
 mp-export:      afi ipv6.unicast to AS31500 announce AS-CMFT6
-remarks:        --- PEERS ---
 mp-import:      afi ipv6.unicast from AS48625 action pref=110; accept AS-PIRIX
 mp-export:      afi ipv6.unicast to AS48625 announce AS-CMFT6
 mp-import:      afi ipv6.unicast from AS43690 action pref=110; accept AS-SPBROUTESERVER
@@ -643,7 +793,6 @@ mp-import:      afi ipv6.unicast from AS8631 action pref=110; accept AS-MSKROUTE
 mp-export:      afi ipv6.unicast to AS8631 announce AS-PIRIXINET
 mp-import:      afi ipv6.unicast from AS203921 action pref=110; accept AS-ELBA-IX-ROUTESERVER
 mp-export:      afi ipv6.unicast to AS203921 announce AS-PIRIXINET
-remarks:        --- DOWNSTREAMS ---
 mp-import:      afi ipv6.unicast from AS43031 action pref=130; accept AS-VLAN
 mp-export:      afi ipv6.unicast to AS43031 announce AS-ANY
 mp-import:      afi ipv6.unicast from AS44484 action pref=130; accept AS44484
@@ -658,70 +807,15 @@ mp-import:      afi ipv6.unicast from AS211892 action pref=130; accept AS-WAVEAC
 mp-export:      afi ipv6.unicast to AS211892 announce AS-ANY
 mp-import:      afi ipv6.unicast from AS62251 action pref=130; accept AS-DREAMLESS
 mp-export:      afi ipv6.unicast to AS62251 announce AS-ANY
-remarks:        ----------------------------------
-remarks:        External communities may be set by external peers when
-remarks:        talking to AS56534.
-remarks:        Community Meaning
-remarks:        56534:1000x When advertising to any UPSTREAM peer
-remarks:        56534:1010x When advertising to ReTN
-remarks:        56534:1020x When advertising to RuNNET
-remarks:        56534:1030x When advertising to iHome
-remarks:        56534:1040x When advertising to RASCOM
-remarks:        56534:1050x When advertising to GlobalNet
-remarks:        56534:1060x When advertising to TTK
-remarks:        56534:1070x When advertising to Megafon
-remarks:        56534:2000x When advertising to any GOOGLE peer
-remarks:        56534:2010x When advertising to any SPB-IX peer
-remarks:        56534:2020x When advertising to any MSK-IX peer
-remarks:        56534:2030x When advertising to any G-CORE peer
-remarks:        56534:2040x When advertising to any DATAIX peer
-remarks:        56534:2050x When advertising to any DTEL-IX peer
-remarks:        56534:2060x When advertising to any PITERIX peer
-remarks:        56534:2070x When advertising to any PITERIX-MSK peer
-remarks:        56534:2080x When advertising to any APPLE peer
-remarks:        56534:2090x When advertising to any PITERIX-KIEV peer
-remarks:        56534:2100x When advertising to any PITERIX-HELSINKI peer
-remarks:        ...x=0 - do not advertise
-remarks:        ...x=1,2,4 or 6 - prepend 56534 1,2,4 or 6 times
-remarks:        Internal comminuties are assigned only internally, and are
-remarks:        always deleted from incoming updates at the border routers.
-remarks:        They may be used by peers to filter some prefixes.
-remarks:        56534:1000 Receieved from an UPSTREAM peer
-remarks:        56534:1010 Receieved from ReTN
-remarks:        56534:1020 Receieved from RunNET
-remarks:        56534:1030 Receieved from iHome
-remarks:        56534:1040 Receieved from RASCOM
-remarks:        56534:1050 Receieved from GlobalNet
-remarks:        56534:1060 Receieved from TTK
-remarks:        56534:1070 Receieved from Megafon
-remarks:        56534:2000 Receieved from GOOGLE
-remarks:        56534:2010 Receieved from SPB-IX
-remarks:        56534:2020 Receieved from MSK-IX
-remarks:        56534:2030 Receieved from G-CORE
-remarks:        56534:2040 Receieved from DATAIX
-remarks:        56534:2050 Receieved from DTEL-IX
-remarks:        56534:2060 Receieved from PITER-IX
-remarks:        56534:2070 Receieved from PITER-IX-MSK
-remarks:        56534:2080 Receieved from APPLE
-remarks:        56534:2090 Receieved from PITER-IX-KIEV
-remarks:        56534:2100 Receieved from PITER-IX-HELSINKI
-remarks:        56534:3000 Receieved from IX peer
-remarks:        56534:9900 Origin in SPB
-remarks:        56534:9000 Origin in SPB
-remarks:        Blackhole community for downstreams peers 56534:6666
-remarks:        Backup community for downstreams peers 56534:9966 set minimum local-pref for our network
-remarks:        Other communities are accepted but ignored.
-remarks:        -------------------------------
-remarks:        Public Looking Glass: lg.comfortel.pro
-remarks:        -------------------------------
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@comfortel.pro
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
 created:        2011-03-11T14:49:01Z
 last-modified:  2025-05-07T07:21:09Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

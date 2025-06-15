@@ -1,4 +1,53 @@
+as-set:         AS-INTERSVYAS
+descr:          ASes routed by INTERSVYAS
+members:        AS8369
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         INTERSVYAS-MNT
+created:        2004-11-26T06:07:17Z
+last-modified:  2004-11-26T06:07:17Z
+source:         RIPE
 
+
+
+as-set:         AS-INTERSVYAZ
+descr:          INTERSVYAZ and it's customers AS set
+members:        AS8369
+members:        AS198856
+members:        AS199153
+members:        AS57418
+members:        AS51690
+members:        AS34291
+members:        AS47842
+members:        AS202800
+members:        AS198683
+members:        AS207124
+members:        AS57425
+members:        AS204713
+members:        AS202423
+members:        AS207935
+members:        AS58231
+members:        AS57629
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         INTERSVYAS-MNT
+created:        2005-05-31T04:07:16Z
+last-modified:  2025-04-21T09:20:28Z
+source:         RIPE
+
+
+
+as-set:         AS-ISDNETRU
+descr:          ISDNET internal networks and customers
+members:        AS8369, AS24665
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         hostmaster@chel.com.ru
+mnt-by:         INTERSVYAS-MNT
+mnt-by:         DION-MNT-RIPE
+created:        2002-03-21T11:16:14Z
+last-modified:  2002-03-21T11:16:14Z
+source:         RIPE
 
 
 
@@ -9,14 +58,15 @@ import:         from AS8369 action pref=150; accept ANY;
 import:         from AS28703 action pref=100; accept ANY;
 export:         to AS8369 announce AS198856
 export:         to AS28703 announce AS198856
-admin-c:        VL6028-RIPE
-tech-c:         VL6028-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@is74.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         INTERSVYAS-MNT
 created:        2012-06-01T09:41:48Z
 last-modified:  2018-09-04T11:12:32Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-IJ7-RIPE
 
 
@@ -28,14 +78,15 @@ import:         from AS8369 action pref=150; accept ANY;
 import:         from AS43031 action pref=100; accept ANY;
 export:         to AS8369 announce AS199153
 export:         to AS43031 announce AS199153
-admin-c:        PML23-RIPE
-tech-c:         PML23-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@is74.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         INTERSVYAS-MNT
 created:        2012-08-24T14:00:12Z
 last-modified:  2018-09-04T11:15:21Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-IJ7-RIPE
 
 
@@ -47,8 +98,8 @@ import:         from AS8369 accept ANY
 export:         to AS8369 announce AS202800
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS202800
-admin-c:        TAC42-RIPE
-tech-c:         TAC42-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         INTERSVYAS-MNT
@@ -66,8 +117,8 @@ import:         from AS204713 accept ANY
 export:         to AS204713 announce AS204713
 import:         from AS8369 accept ANY
 export:         to AS8369 announce AS204713
-admin-c:        MC29184-RIPE
-tech-c:         MC29184-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         INTERSVYAS-MNT
@@ -85,8 +136,8 @@ import:         from AS8369 accept ANY
 export:         to AS8369 announce AS207124
 import:         from AS3239 accept ANY
 export:         to AS3239 announce AS207124
-admin-c:        AV2001-RIPE
-tech-c:         MAC311-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         INTERSVYAS-MNT
@@ -163,24 +214,8 @@ export:         to AS49869 announce AS-INTERSVYAZ;
 export:         to AS58231 announce AS-INTERSVYAZ;
 export:         to AS207935 announce {0.0.0.0/0};
 export:         to AS59796 announce AS-INTERSVYAZ;
-remarks:        ---------------------------------------
-remarks:        Community for customers:
-remarks:        ---------------------------------------
-remarks:        8369:399x - prepend AS8369
-remarks:        x = 0 - advertise without prepends
-remarks:        x = 1,2,3,4 - prepend AS8369 X times
-remarks:        x = 5 - do not advertise
-remarks:        ---------------------------------------
-remarks:        8369:y - set local-preference
-remarks:        y = 50,200
-remarks:        default local-preference = 150
-remarks:        ---------------------------------------
-remarks:        0:Z - do not advertise to Z AS
-remarks:        ---------------------------------------
-remarks:        other community - action strip
-remarks:        ---------------------------------------
-admin-c:        IS-RIPE
-tech-c:         IS-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         INTERSVYAS-MNT

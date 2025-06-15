@@ -1,6 +1,56 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
+as-set:         AS-COSMOS
+descr:          IKI RAN autonomous systems
+members:        AS-COSMOS-SN
+members:        AS-COSMOS-RS
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         RSSI-NOC
+created:        2002-02-04T09:16:25Z
+last-modified:  2011-07-18T14:20:52Z
+source:         RIPE
 
+
+
+as-set:         AS-COSMOS-RS
+descr:          Cosmos network RSSI branch
+members:        AS3218
+members:        AS34849
+members:        AS49834
+members:        AS49554
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         RSSI-NOC
+created:        2011-07-15T11:46:41Z
+last-modified:  2025-03-21T10:55:42Z
+source:         RIPE
+
+
+
+as-set:         AS-COSMOS-SN
+descr:          Cosmos network Relcom branch
+members:        AS5386
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         RSSI-NOC
+created:        2008-04-18T16:17:32Z
+last-modified:  2025-03-21T10:49:56Z
+source:         RIPE
+
+
+
+as-set:         AS-COSMOSF
+descr:          IKI RAN Peers' list
+members:        AS-EMNETFSU, AS12724, AS-RADIOMSU, AS-FREENET
+members:        AS-MSURUNNET, AS-RELARN, AS-RELCOM, AS-RUNNETIX
+members:        AS-METROCOM, AS-ROSNET, AS-COMSTAR, AS-TCNET
+members:        AS-ROSPRINT, AS-AGTEL-RUS, AS-ASTELIT, AS-RCNET
+members:        AS-MSKROUTESERVER, AS-ZENON, AS-INFOTEL
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RSSI-NOC
+created:        1970-01-01T00:00:00Z
+last-modified:  2005-07-28T15:54:00Z
+source:         RIPE
 
 
 
@@ -21,9 +71,6 @@ import:         from AS5386 action pref=100; accept AS5386 AS34327 AS35083
 import:         from AS15835 action pref=90; accept ANY
 import:         from AS34849 action pref=100; accept AS34849
 import:         from AS49554 action pref=100; accept AS49554
-remarks:        =================
-remarks:        == M9-IX peers ==
-remarks:        =================
 import:         from AS2683 action pref=100; accept AS-RADIOMSU
 import:         from AS2895 action pref=100; accept AS-FREENET
 import:         from AS2848 action pref=100; accept AS-MSURUNNET
@@ -52,9 +99,6 @@ export:         to AS5386 announce AS-COSMOSF
 export:         to AS15835 announce AS-COSMOS
 export:         to AS34849 announce AS-COSMOS
 export:         to AS49554 announce AS-COSMOS {0.0.0.0/0}
-remarks:        =================
-remarks:        == M9-IX peers ==
-remarks:        =================
 export:         to AS2683 announce AS-COSMOS
 export:         to AS2895 announce AS-COSMOS
 export:         to AS2848 announce AS-COSMOS
@@ -73,17 +117,16 @@ export:         to AS8631 announce AS-COSMOS
 export:         to AS6903 announce AS-COSMOS
 export:         to AS8299 announce AS-COSMOS
 export:         to AS35422 announce AS-COSMOS
-admin-c:        OAS19-RIPE
-admin-c:        MNB1-RIPE
-tech-c:         OAS19-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 org:            ORG-SRIo1-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-tech-c:         MNB1-RIPE
+notify:         noc@rssi.ru
 mnt-by:         RSSI-NOC
 created:        1970-01-01T00:00:00Z
 last-modified:  2020-04-24T10:55:32Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -116,17 +159,16 @@ export:         to AS15835 announce AS-COSMOS-SN
 export:         to AS50687 announce ANY
 export:         to AS49834 announce ANY
 default:        to AS2118 action pref=50; networks ANY
-admin-c:        OAS19-RIPE
-admin-c:        MNB1-RIPE
-tech-c:         OAS19-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 org:            ORG-SRIo1-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-tech-c:         MNB1-RIPE
+notify:         noc@rssi.ru
 mnt-by:         RSSI-NOC
 created:        2002-07-12T08:59:02Z
 last-modified:  2020-06-08T10:19:11Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

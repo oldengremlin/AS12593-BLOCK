@@ -1,24 +1,6 @@
-
-
-
-as-block:       AS57148 - AS57368
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-09-03T13:31:56Z
-last-modified:  2024-09-03T13:31:56Z
-source:         RIPE
-
-
-
 aut-num:        AS57304
 as-name:        RETNRU-AS
 org:            ORG-CA1293-RIPE
-remarks:
-remarks:        ---------------------------------------------------------------
-remarks:        ****************** ReTN IPv4 Routing Policy *******************
-remarks:        ---------------------------------------------------------------
-remarks:
 import:         from   AS1299 action pref=200; accept   AS1299:AS-TWELVE99-V4
 export:         to     AS1299                  announce AS57304:AS-RETN-RU
 import:         from   AS2854 action pref=100; accept   AS-ROSPRINT
@@ -97,8 +79,6 @@ import:         from  AS15682 action pref=100; accept   AS-ITERANET
 export:         to    AS15682                  announce ANY
 import:         from  AS15754 action pref=100; accept   AS15754
 export:         to    AS15754                  announce ANY
-import:         from  AS15757 action pref=100; accept   AS-GASCOM
-export:         to    AS15757                  announce ANY
 import:         from  AS20483 action pref=100; accept   AS20483
 export:         to    AS20483                  announce ANY
 import:         from  AS20485 action pref=200; accept   AS-TTK
@@ -639,6 +619,8 @@ import:         from  AS56694 action pref=100; accept   AS-DHUB
 export:         to    AS56694                  announce ANY
 import:         from  AS56701 action pref=100; accept   AS-AVANTA
 export:         to    AS56701                  announce ANY
+import:         from  AS56741 action pref=100; accept   AS56741
+export:         to    AS56741                  announce ANY
 import:         from  AS56806 action pref=100; accept   AS56806
 export:         to    AS56806                  announce ANY
 import:         from  AS56864 action pref=100; accept   AS-WELLSERVER
@@ -661,8 +643,6 @@ import:         from  AS57629 action pref=200; accept   AS57629
 export:         to    AS57629                  announce AS57304:AS-RETN-RU
 import:         from  AS57671 action pref=100; accept   AS57671
 export:         to    AS57671                  announce ANY
-import:         from  AS57712 action pref=100; accept   AS-SOFTVIDEO
-export:         to    AS57712                  announce ANY
 import:         from  AS57824 action pref=100; accept   AS-METRONET-MSK
 export:         to    AS57824                  announce ANY
 import:         from  AS58084 action pref=100; accept   AS58084
@@ -1079,11 +1059,6 @@ import:         from AS216341 action pref=100; accept   AS216341
 export:         to   AS216341                  announce ANY
 import:         from AS273045 action pref=100; accept   AS273045
 export:         to   AS273045                  announce ANY
-remarks:
-remarks:        ---------------------------------------------------------------
-remarks:        ****************** ReTN IPv6 Routing Policy *******************
-remarks:        ---------------------------------------------------------------
-remarks:
 mp-import:      afi ipv6.unicast from   AS1299 action pref=200; accept   AS1299:AS-TWELVE99-V6
 mp-export:      afi ipv6.unicast to     AS1299                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from   AS2854 action pref=100; accept   AS-OBSRUSSIA6
@@ -1438,8 +1413,6 @@ mp-import:      afi ipv6.unicast from  AS57578 action pref=100; accept   AS-MISA
 mp-export:      afi ipv6.unicast to    AS57578                  announce ANY
 mp-import:      afi ipv6.unicast from  AS57629 action pref=200; accept   AS57629
 mp-export:      afi ipv6.unicast to    AS57629                  announce AS57304:AS-RETN6-RU
-mp-import:      afi ipv6.unicast from  AS57712 action pref=100; accept   AS-SOFTVIDEO
-mp-export:      afi ipv6.unicast to    AS57712                  announce ANY
 mp-import:      afi ipv6.unicast from  AS58314 action pref=100; accept   AS-B2BTELECOM-V6
 mp-export:      afi ipv6.unicast to    AS58314                  announce ANY
 mp-import:      afi ipv6.unicast from  AS59516 action pref=100; accept   AS-LANAMAR
@@ -1618,59 +1591,26 @@ mp-import:      afi ipv6.unicast from AS216246 action pref=100; accept   AS-AEZA
 mp-export:      afi ipv6.unicast to   AS216246                  announce ANY
 mp-import:      afi ipv6.unicast from AS216262 action pref=100; accept   AS216262
 mp-export:      afi ipv6.unicast to   AS216262                  announce ANY
-remarks:
-remarks:        ---------------------------------------------------------------
-remarks:        ****************** ReTN bgp confederation *********************
-remarks:        ---------------------------------------------------------------
-remarks:        -  AS9002
-remarks:        -  AS14947
-remarks:        -  AS25462
-remarks:        -  AS28886
-remarks:        -  AS29470
-remarks:        -  AS44877
-remarks:        -  AS51327
-remarks:        -  AS57304
-remarks:        -  AS60392
-remarks:        -  AS134518
-remarks:        -  AS139903
-remarks:        -  AS150003
-remarks:        -  AS198947
-remarks:        -  AS209447
-remarks:        -  AS210203
-remarks:        -  AS214455
-remarks:        -  AS214845
-remarks:        ---------------------------------------------------------------
-remarks:        ********************* Contacts and URLs ***********************
-remarks:        ---------------------------------------------------------------
-remarks:        Routing issues                   ncc at retn.ru
-remarks:        Peering issues and requests      peering at retn.ru
-remarks:        SPAM and security issues         abuse at retn.ru
-remarks:        Web Site                         http://retn.ru
-remarks:        Looking Glass                    http://lg.retn.ru
-remarks:        BGP communities list             http://retn.ru/bgp-communities
-remarks:        or                       http://lg.retn.ru/bgp-communities.html
-remarks:        ---------------------------------------------------------------
-remarks:
-admin-c:        JRN32-RIPE
-tech-c:         JRN32-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
+notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-05-26T19:59:05Z
-source:         RIPE # Filtered
+last-modified:  2025-06-10T19:59:04Z
+source:         RIPE
+
+as-num:         AS57304
+country:        RU
+as-name:        RETNRU-AS JSC "RetnNet"
 
 organisation:   ORG-CA1293-RIPE
 org-name:       JSC "RetnNet"
 country:        RU
 org-type:       LIR
-address:        NIZHNY SUSALNY PER., D. 5, STR. 19
-address:        05064
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74956631640
-fax-no:         +74956631641
-admin-c:        JRN32-RIPE
+address:        Dummy address for ORG-CA1293-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        RTNT1-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MNT-RETNRU
@@ -1679,18 +1619,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MNT-RETNRU
 created:        2013-03-21T10:46:45Z
 last-modified:  2024-11-25T09:10:16Z
-source:         RIPE # Filtered
-
-role:           JSC Retnnet contacts data
-address:        NIZHNY SUSALNY PER., D. 5, STR. 19
-address:        05064
-address:        Moscow
-address:        RUSSIAN FEDERATION
-nic-hdl:        JRN32-RIPE
-mnt-by:         MNT-RETNRU
-created:        2022-11-28T09:23:09Z
-last-modified:  2024-11-25T09:11:37Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

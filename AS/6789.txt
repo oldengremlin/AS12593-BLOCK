@@ -1,20 +1,6 @@
-
-
-
-as-block:       AS6714 - AS6878
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS6789
 as-name:        CRELCOM-NET
 org:            ORG-CJ2-RIPE
-remarks:        -=-= TRANSIT OPERATORS =-=-
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS-CRELCOM
 import:         from AS201776 action pref=100; accept ANY
@@ -25,7 +11,10 @@ import:         from AS48084 action pref=100; accept ANY
 export:         to AS48084 announce AS-CRELCOM
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-CRELCOM
-remarks:        -=-= IXs =-=-
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-CRELCOM
+mp-import:      afi ipv6.unicast from AS8359 accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-CRELCOM-V6
 import:         from AS39751 accept AS-M-IX
 export:         to AS39751 announce AS-CRELCOM
 import:         from AS8631 accept AS-MSKROUTESERVER
@@ -38,7 +27,6 @@ import:         from AS50384 accept AS-W-IX
 export:         to AS50384 announce AS-CRELCOM
 import:         from AS49869 accept AS-PITER-IX-MSK
 export:         to AS49869 announce AS-CRELCOM
-remarks:        -=-= IPv6 IXs =-=-
 mp-import:      afi ipv6.unicast from AS8631 action pref=120; accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS-CRELCOM-V6
 mp-import:      afi ipv6.unicast from AS50384 action pref=120; accept AS-W-IX-IPVSIX
@@ -49,7 +37,6 @@ mp-import:      afi ipv6.unicast from AS207979 accept AS207979
 mp-export:      afi ipv6.unicast to AS207979 announce ANY
 mp-import:      afi ipv6.unicast from AS31133 accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS-CRELCOM-V6
-remarks:        -=-= PEERS =-=-
 import:         from AS205515 accept AS205515
 export:         to AS205515 announce AS-CRELCOM
 import:         from AS35816 accept AS-LANCOM
@@ -88,7 +75,6 @@ mp-import:      afi ipv6.unicast from AS28709 accept AS-VKONTAKTE
 mp-export:      afi ipv6.unicast to AS28709 announce AS-CRELCOM-V6
 import:         from AS45102 accept AS45102
 export:         to AS45102 announce AS-CRELCOM
-remarks:        -=-= CUSTOMERS =-=-
 import:         from AS25118 action pref=20; accept AS25118
 import:         from AS31583 action pref=20; accept AS31583
 import:         from AS42975 action pref=20; accept AS42975
@@ -231,28 +217,26 @@ export:         to AS214221 announce ANY
 export:         to AS25000 announce ANY
 export:         to AS216062 announce ANY
 export:         to AS200467 announce ANY
-admin-c:        AZ46-RIPE
-tech-c:         AZ46-RIPE
-tech-c:         AZ46-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@crimea.net
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS6789-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2025-03-19T08:59:19Z
-source:         RIPE # Filtered
+last-modified:  2025-06-06T07:19:56Z
+source:         RIPE
+
+as-num:         AS6789
+country:        RU
+as-name:        CRELCOM-NET CRELCOM LLC
 
 organisation:   ORG-CJ2-RIPE
 org-name:       CRELCOM LLC
 country:        RU
 org-type:       LIR
-address:        38 Nikoloyamskaya str., bilding 2 office 6
-address:        109004
-address:        Moscow
-address:        RUSSIAN FEDERATION
-geoloc:         55.747049 37.658949
-phone:          +74997020045
-fax-no:         +74997020045
-admin-c:        AZ46-RIPE
+address:        Dummy address for ORG-CJ2-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        ABCR6789-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        AS6789-MNT
@@ -260,18 +244,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         AS6789-MNT
 created:        2005-09-29T11:02:40Z
 last-modified:  2020-12-16T13:29:58Z
-source:         RIPE # Filtered
-
-person:         Arthur E Zimens
-address:        38 Nikoloyamskaya str., bilding 2 office 6
-address:        109004 Moscow
-address:        Russian Federation
-phone:          +74997020045
-nic-hdl:        AZ46-RIPE
-mnt-by:         AS6789-MNT
-created:        1970-01-01T00:00:00Z
-last-modified:  2020-10-28T13:20:53Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

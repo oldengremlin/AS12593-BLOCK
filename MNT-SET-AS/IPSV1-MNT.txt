@@ -1,9 +1,3 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
-
-
-
-
 aut-num:        AS213926
 as-name:        AIBank-as
 descr:          Commercial bank "Asia-Invest Bank" (joint-stock company)
@@ -13,8 +7,8 @@ import:         from AS3216 accept ANY
 export:         to AS3216 announce AS213926
 import:         from AS197453 accept ANY
 export:         to AS197453 announce AS213926
-admin-c:        AI5742-RIPE
-tech-c:         AI5742-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IPSV1-MNT
@@ -24,18 +18,36 @@ source:         RIPE
 
 
 
+aut-num:        AS39068
+as-name:        MainTelecom
+descr:          Main Telecom LLC
+org:            ORG-MT182-RIPE
+import:         from AS12389 accept any
+export:         to AS12389 announce AS39068:AS-MAINTELECOM
+import:         from AS42696 accept any
+export:         to AS42696 announce AS39068:AS-MAINTELECOM
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPSV1-MNT
+created:        2020-12-11T07:02:51Z
+last-modified:  2025-06-02T08:18:23Z
+source:         RIPE
+sponsoring-org: ORG-VS330-RIPE
+
+
+
 aut-num:        AS42696
 descr:          UN AS
 as-name:        UN-AS
 org:            ORG-VS330-RIPE
-remarks:        upstream
 import:         from AS8595 accept ANY
 export:         to AS8595 announce AS-UNITYNET
-remarks:        MainTelecom
 import:         from AS39068 accept AS39068
 export:         to AS39068 announce ANY
-admin-c:        IPSV1-RIPE
-tech-c:         IPSV1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IPSV1-MNT
@@ -48,21 +60,17 @@ source:         RIPE
 aut-num:        AS44342
 as-name:        MarushkinoNET
 org:            ORG-MA2124-RIPE
-remarks:        upstream - "Nauka-Svyaz"
 import:         from AS8641 accept ANY
 export:         to AS8641 announce AS44342:AS-MARUSHKINONET
-remarks:        upstream - "Main Telecom"
 import:         from AS39068 accept ANY
 export:         to AS39068 announce AS44342:AS-MARUSHKINONET
-remarks:        upstream - "Uniontel Ltd"
 import:         from AS48293 accept ANY
 export:         to AS48293 announce AS44342:AS-MARUSHKINONET
-remarks:        upstream - "Unity NET"
 import:         from AS42696 accept ANY
 export:         to AS42696 announce AS44342:AS-MARUSHKINONET
 sponsoring-org: ORG-VS330-RIPE
-admin-c:        IPSV1-RIPE
-tech-c:         IPSV1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IPSV1-MNT

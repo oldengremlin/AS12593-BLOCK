@@ -1,3 +1,31 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 185.151.106.150 port 22
+as-set:         AS-SET-SVSERV
+descr:          Svyazservice AS-SET
+members:        AS42387
+members:        AS8790
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SVSERV-MNT
+created:        2008-06-05T06:46:18Z
+last-modified:  2017-05-16T12:48:58Z
+source:         RIPE
+
+
+
+aut-num:        AS42387
+as-name:        SSERV-AS
+import:         from AS12389 action pref=100; accept any
+import:         from AS8790 action pref=100; accept AS8790
+export:         to AS12389 announce AS42387
+export:         to AS12389 announce AS8790
+org:            ORG-LCS4-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SVSERV-MNT
+created:        2007-02-14T10:05:19Z
+last-modified:  2022-12-23T11:24:22Z
+source:         RIPE
+
+
+

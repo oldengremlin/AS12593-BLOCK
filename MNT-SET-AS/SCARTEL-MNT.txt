@@ -1,64 +1,30 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
-
-
-
-
-
-
 aut-num:        AS47395
 as-name:        SCARTEL-AS
 org:            ORG-OM1-RIPE
-remarks:        ****************************************
-remarks:        Contact information:
-remarks:        ****************************************
-remarks:        Old Abuse: abuse@yotateam.ru
-remarks:        Old Peering: noc@yotateam.ru
-remarks:        ****************************************
-remarks:        -----------------------------------------------------------
-remarks:        Technical questions: gnocwest_tr@megafon.ru
-remarks:        Routing and peering: gnoceast_backbone@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        SPAM and Network security: abuse-mailbox@megafon.ru
-remarks:        Please use abuse-mailbox@megafon.ru e-mail address for complaints.
-remarks:        All messages to any other our address, relative to SPAM
-remarks:        or security issues, will not be concerned.
-remarks:        -----------------------------------------------------------
-remarks:        ================
-remarks:        Upstream
-remarks:        ================
 import:         from AS-SCARTEL-UPSTREAM action pref=100; accept ANY
 export:         to AS-SCARTEL-UPSTREAM announce AS-SCARTEL
-remarks:        ================
-remarks:        Private peerings
-remarks:        ================
-remarks:        === peering at SPB-IX ===
 import:         from AS3267 action pref=80; accept AS-RUNNET
 export:         to AS3267 announce AS-SCARTEL
 import:         from AS3277 action pref=80; accept AS-RUSNETIX
 export:         to AS3277 announce AS-SCARTEL
 import:         from AS20632 action pref=80; accept AS-PETERSTAR
 export:         to AS20632 announce AS-SCARTEL
-remarks:        === peering at MSK-IX ===
 import:         from AS31430 action pref=80; accept AS-TEL-NET
 export:         to AS31430 announce AS-SCARTEL
-remarks:        ================
-remarks:        Downstream
-remarks:        ================
 import:         from AS-SCARTEL-DOWNSTREAM action pref=60; accept PeerAS
 export:         to AS-SCARTEL-DOWNSTREAM announce any
-remarks:        ================
-admin-c:        MFON-RIPE
-tech-c:         MFON-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         lir@megafon.ru
 mnt-by:         SCARTEL-MNT
 mnt-by:         MEGAFON-RIPE-MNT
 mnt-by:         MEGAFON-GNOC-MNT
 mnt-by:         MEGAFON-WEST-MNT
 created:        2008-06-12T12:26:22Z
 last-modified:  2018-09-04T10:33:31Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

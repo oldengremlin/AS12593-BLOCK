@@ -1,3 +1,99 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 94.125.121.58 port 22
+as-set:         AS-SAMTELECOM
+descr:          ASes routed by LLC Samtelecom.
+members:        AS31275
+members:        AS51523
+members:        AS205773
+members:        AS212234
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         ru-llctelecom-service-1-mnt
+created:        2005-02-01T10:39:16Z
+last-modified:  2022-05-27T06:59:35Z
+source:         RIPE
+
+
+
+aut-num:        AS205773
+as-name:        Telecom-Service-AS
+org:            ORG-LT130-RIPE
+import:         from AS31275 action pref=100; accept ANY
+export:         to AS31275 announce AS205773
+mp-import:      afi ipv6.unicast from AS31275 accept any
+mp-export:      afi ipv6.unicast to AS31275 announce AS205773
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-llctelecom-service-1-mnt
+created:        2018-06-27T06:32:04Z
+last-modified:  2022-08-03T10:38:30Z
+source:         RIPE
+
+
+
+aut-num:        AS31275
+as-name:        Samtelecom-AS
+org:            ORG-LT130-RIPE
+import:         from AS50509 action pref=100; accept ANY
+export:         to AS50509 announce AS-SAMTELECOM
+import:         from AS49869 action pref=100; accept ANY
+export:         to AS49869 announce AS-SAMTELECOM
+import:         from AS2854 action pref=100; accept ANY
+export:         to AS2854 announce AS-SAMTELECOM
+import:         from AS48193 action pref=100; accept ANY
+export:         to AS48193 announce AS-SAMTELECOM
+import:         from AS39607 action pref=100; accept ANY
+export:         to AS39607 announce AS-SAMTELECOM
+import:         from AS50817 action pref=100; accept ANY
+export:         to AS50817 announce AS-SAMTELECOM
+import:         from AS13335 action pref=100; accept ANY
+export:         to AS13335 announce AS-SAMTELECOM
+import:         from AS6939 action pref=100; accept ANY
+export:         to AS6939 announce AS-SAMTELECOM
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS-SAMTELECOM
+import:         from AS31500 action pref=100; accept ANY
+export:         to AS31500 announce AS-SAMTELECOM
+import:         from AS29076 action pref=100; accept ANY
+export:         to AS29076 announce AS-SAMTELECOM
+import:         from AS51523 action pref=100; accept AS51523
+export:         to AS51523 announce {0.0.0.0/0}
+import:         from AS205773 action pref=100; accept AS205773
+export:         to AS205773 announce ANY
+import:         from AS212234 action pref=100; accept AS212234
+export:         to AS212234 announce ANY
+mp-import:      afi ipv6.unicast from AS50509 accept any
+mp-export:      afi ipv6.unicast to AS50509 announce AS-SAMTELECOM
+mp-import:      afi ipv6.unicast from AS49869 accept any
+mp-export:      afi ipv6.unicast to AS49869 announce AS-SAMTELECOM
+mp-import:      afi ipv6.unicast from AS2854 accept any
+mp-export:      afi ipv6.unicast to AS2854 announce AS-SAMTELECOM
+mp-import:      afi ipv6.unicast from AS50817 accept any
+mp-export:      afi ipv6.unicast to AS50817 announce AS-SAMTELECOM
+mp-import:      afi ipv6.unicast from AS13335 accept any
+mp-export:      afi ipv6.unicast to AS13335 announce AS-SAMTELECOM
+mp-import:      afi ipv6.unicast from AS6939 accept any
+mp-export:      afi ipv6.unicast to AS6939 announce AS-SAMTELECOM
+mp-import:      afi ipv6.unicast from AS12389 accept any
+mp-export:      afi ipv6.unicast to AS12389 announce AS-SAMTELECOM
+mp-import:      afi ipv6.unicast from AS31500 accept any
+mp-export:      afi ipv6.unicast to AS31500 announce AS-SAMTELECOM
+mp-import:      afi ipv6.unicast from AS29076 accept any
+mp-export:      afi ipv6.unicast to AS29076 announce AS-SAMTELECOM
+mp-import:      afi ipv6.unicast from AS51523 accept AS51523
+mp-export:      afi ipv6.unicast to AS51523 announce {::/0}
+mp-import:      afi ipv6.unicast from AS205773 accept AS205773
+mp-export:      afi ipv6.unicast to AS205773 announce ANY
+mp-import:      afi ipv6.unicast from AS212234 accept AS212234
+mp-export:      afi ipv6.unicast to AS212234 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-llctelecom-service-1-mnt
+created:        2004-04-05T08:19:40Z
+last-modified:  2024-03-19T07:22:05Z
+source:         RIPE
+
+
+

@@ -1,6 +1,14 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
-
+as-set:         AS206011:AS-FREEDOM-KRD
+members:        AS206011
+members:        AS216348
+members:        AS48129
+members:        AS28917
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ru-freedom-1-mnt
+created:        2023-09-09T06:28:58Z
+last-modified:  2024-08-23T17:12:12Z
+source:         RIPE
 
 
 
@@ -23,7 +31,6 @@ import:         from AS15169 accept ANY
 export:         to AS15169 announce AS206011:AS-FREEDOM-KRD
 import:         from AS48129 accept AS-IRBISTELECOM
 export:         to AS48129 announce ANY
-remarks:        IPv6 policy
 mp-import:      afi ipv6.unicast from AS28917 accept ANY
 mp-export:      afi ipv6.unicast to AS28917 announce AS206011:AS-FREEDOM-KRD
 mp-import:      afi ipv6.unicast from AS8631 accept ANY
@@ -34,8 +41,8 @@ mp-import:      afi ipv6.unicast from AS15169 accept ANY
 mp-export:      afi ipv6.unicast to AS15169 announce AS206011:AS-FREEDOM-KRD
 mp-import:      afi ipv6.unicast from AS3216 accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS206011:AS-FREEDOM-KRD
-admin-c:        VM6336-RIPE
-tech-c:         VM6336-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-freedom-1-mnt
@@ -55,8 +62,8 @@ import:         from AS48129 accept ANY
 export:         to AS48129 announce AS216348
 mp-import:      afi ipv6.unicast from AS206011 accept ANY
 mp-export:      afi ipv6.unicast to AS206011 announce AS216348
-admin-c:        AR39900-RIPE
-tech-c:         AR39900-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-freedom-1-mnt
@@ -69,8 +76,8 @@ source:         RIPE
 aut-num:        AS61964
 as-name:        FREEDOM-AS
 org:            ORG-FL196-RIPE
-admin-c:        VM6336-RIPE
-tech-c:         VM6336-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 import:         from AS8427 accept ANY
 import:         from AS28812 accept ANY
 import:         from AS44775 accept ANY

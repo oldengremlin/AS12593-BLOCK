@@ -1,21 +1,6 @@
-
-
-
-as-block:       AS8525 - AS8769
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS8595
 as-name:        WESTCALL-AS
 org:            ORG-WL4-RIPE
-remarks:        Moscow, Russia
-remarks:
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-WESTCALL-MSK
 import:         from AS20764 accept ANY
@@ -24,7 +9,6 @@ import:         from AS35598 accept ANY
 export:         to AS35598 announce AS-WESTCALL-MSK
 import:         from AS50509 accept ANY
 export:         to AS50509 announce AS-WESTCALL-MSK
-remarks:
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-WESTCALL-MSK
 import:         from AS3249 accept AS-ESTPAK
@@ -37,7 +21,6 @@ import:         from AS28917 accept AS-FIORD
 export:         to AS28917 announce AS-WESTCALL-MSK
 import:         from AS43727 accept AS-SETKT
 export:         to AS43727 announce AS-WESTCALL-MSK
-remarks:
 import:         from AS8641 accept AS-NAUKANET
 export:         to AS8641 announce AS-WESTCALL-MSK
 import:         from AS13094 accept AS-MILECOM-RS
@@ -46,7 +29,6 @@ import:         from AS15169 accept AS-GOOGLE
 export:         to AS15169 announce AS-WESTCALL-MSK
 import:         from AS39221 accept AS-ITOOLABS
 export:         to AS39221 announce AS-WESTCALL-MSK
-remarks:
 import:         from AS12418 accept AS12418
 export:         to AS12418 announce ANY
 import:         from AS25530 accept AS25530
@@ -181,31 +163,8 @@ import:         from AS211605 accept AS211605:AS-Vectortel
 export:         to AS211605 announce ANY
 import:         from AS215074 accept AS215074
 export:         to AS215074 announce ANY
-remarks:
-remarks:        # BGP COMMUNITIES:
-remarks:        #
-remarks:        #   advertising prefix control
-remarks:        #     8595:300x  all upstreams and peers
-remarks:        #     8595:310x   all peers
-remarks:        #     8595:311x    msk-ix
-remarks:        #     8595:313x    peering
-remarks:        #     8595:317x    piter-ix
-remarks:        #     8595:350x   all upstreams
-remarks:        #     8595:352x    BEELINE
-remarks:        #     8595:355x    INETCOM
-remarks:        #     8595:357x    RASCOM
-remarks:        #     8595:358x    TRANSROUTE
-remarks:        #     where
-remarks:        #       x=0     - do not announce
-remarks:        #       x=1     - announce
-remarks:        #       x=2,3,4 - prepend 1,2,3 times
-remarks:        #
-remarks:        #   8595:666 blackholing for /32 prefixes.
-remarks:        #
-remarks:        # Inbound prefixes longer than /24 are not accepted.
-remarks:
-admin-c:        WCN-RIPE
-tech-c:         WCN-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS8595-MNT
@@ -213,57 +172,23 @@ created:        1970-01-01T00:00:00Z
 last-modified:  2025-05-29T12:30:25Z
 source:         RIPE
 
+as-num:         AS8595
+country:        RU
+as-name:        WESTCALL-AS OOO WestCall Ltd.
+
 organisation:   ORG-WL4-RIPE
 org-name:       OOO WestCall Ltd.
 country:        RU
 org-type:       LIR
-address:        1A, Semenovskaya ploschad
-address:        107023
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74957211700
-phone:          +74959613500
-fax-no:         +74957211701
-fax-no:         +74959613501
+address:        Dummy address for ORG-WL4-RIPE
+e-mail:         unread@ripe.net
 mnt-ref:        WESTCALL-MNT
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         WESTCALL-MNT
-admin-c:        AP834-RIPE
-admin-c:        YY274-RIPE
-admin-c:        WCN-RIPE
 abuse-c:        WCN-RIPE
 created:        2004-04-17T12:00:52Z
 last-modified:  2020-12-16T12:20:18Z
-source:         RIPE # Filtered
-
-role:           WestCall NOC
-address:        WestCall Ltd
-address:        1a, Semenovskaya sq.
-address:        Moscow, Russia
-phone:          +7 495 647 0011
-phone:          +7 495 721 1700
-fax-no:         +7 495 721 1701
-abuse-mailbox:  abuse@westcall.ru
-remarks:        -------------------------------
-remarks:        NOC working time:
-remarks:        09:30-18:00 MSK workdays
-remarks:        -------------------------------
-remarks:        Contact addresses:
-remarks:        routing issues: noc@westcall.ru
-remarks:        abuse issues: abuse@westcall.ru
-remarks:        helpdesk:       aid@westcall.ru
-remarks:        -------------------------------
-admin-c:        YY274-RIPE
-admin-c:        KAC4-RIPE
-tech-c:         AP834-RIPE
-tech-c:         AZH-RIPE
-mnt-by:         WESTCALL-MNT
-mnt-by:         AS8595-MNT
-nic-hdl:        WCN-RIPE
-created:        2002-01-24T12:47:34Z
-last-modified:  2017-06-14T14:08:00Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

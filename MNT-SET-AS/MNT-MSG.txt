@@ -1,3 +1,38 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.3 port 22
+as-set:         AS-ITNET33
+descr:          Set of AS announced from ITNet33
+members:        AS50596
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         MNT-MSG
+created:        2010-02-12T20:58:44Z
+last-modified:  2025-04-13T08:01:56Z
+source:         RIPE
+
+
+
+aut-num:        AS50596
+as-name:        ITNET33
+org:            ORG-ITL17-RIPE
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS31133 announce AS-ITNET33
+import:         from AS3216 action pref=100; accept ANY
+export:         to AS3216 announce AS50596
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS8359 announce AS-ITNET33
+mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-ITNET33
+mp-import:      afi ipv6.unicast from AS3216 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS50596
+mp-import:      afi ipv6.unicast from AS8359 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-ITNET33
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-MSG
+created:        2010-02-16T13:03:59Z
+last-modified:  2025-04-13T07:58:16Z
+source:         RIPE
+
+
+

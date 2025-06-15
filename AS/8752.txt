@@ -1,16 +1,3 @@
-
-
-
-as-block:       AS8525 - AS8769
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS8752
 as-name:        ASVT-NETWORK
 descr:          Russia
@@ -25,6 +12,7 @@ import:         from AS48193 action pref=90; accept AS-PITER-IX-FRA
 import:         from AS39607 action pref=90; accept AS-PITER-IX-HELSINKI
 import:         from AS47122 action pref=85; accept ANY
 import:         from AS57304 action pref=100; accept ANY
+import:         from AS59796 action pref=100; accept ANY
 import:         from AS32934 action pref=90; accept ANY
 import:         from AS1200 action pref=90; accept ANY
 import:         from AS46489 action pref=90; accept ANY
@@ -40,31 +28,27 @@ export:         to AS32934 announce AS-ASVT
 export:         to AS1200 announce AS-ASVT
 export:         to AS46489 announce AS-ASVT
 export:         to AS47122 announce AS-ASVT
+export:         to AS59796 announce AS-ASVT
 org:            ORG-ZA2-RIPE
-admin-c:        VV5059-RIPE
-admin-c:        SK5441-RIPE
-tech-c:         SK5441-RIPE
-tech-c:         VV5059-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         AS8752-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2002-06-03T07:32:24Z
-last-modified:  2025-05-28T21:43:34Z
+last-modified:  2025-06-04T08:29:58Z
 source:         RIPE
+
+as-num:         AS8752
+country:        RU
+as-name:        ASVT-NETWORK AO "ASVT"
 
 organisation:   ORG-ZA2-RIPE
 org-name:       AO "ASVT"
 country:        RU
 org-type:       LIR
-address:        Yablochcova str., 19b
-address:        127322
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +7 (495) 744 5577
-fax-no:         +7 (495) 913 4025
-admin-c:        OVP-RIPE
-admin-c:        SK5441-RIPE
-admin-c:        VV5059-RIPE
+address:        Dummy address for ORG-ZA2-RIPE
+e-mail:         unread@ripe.net
 mnt-ref:        AS8752-MNT
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-by:         RIPE-NCC-HM-MNT
@@ -72,29 +56,6 @@ mnt-by:         AS8752-MNT
 abuse-c:        AC23925-RIPE
 created:        2004-04-17T11:53:43Z
 last-modified:  2025-02-24T15:39:34Z
-source:         RIPE # Filtered
-
-person:         Sergey Khitrovo
-address:        OJSC  "ASVT"
-address:        127322, Russia, Moscow, Yablochcova str., 19b
-phone:          +7 (495) 744 5577
-nic-hdl:        SK5441-RIPE
-mnt-by:         SK5441-MNT
-created:        2010-10-11T06:04:29Z
-last-modified:  2011-02-10T12:36:07Z
-source:         RIPE # Filtered
-
-person:         Vladimir Vorontsov
-org:            ORG-ZA2-RIPE
-remarks:        JSC ASVT
-address:        127322, Russia, Moscow
-address:        Yablochcova str., 19b
-phone:          +7 (495) 744 5577
-nic-hdl:        VV5059-RIPE
-mnt-by:         AS8752-MNT
-created:        2025-02-24T15:26:43Z
-last-modified:  2025-02-24T15:40:49Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

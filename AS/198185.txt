@@ -1,59 +1,34 @@
-
-
-
-as-block:       AS197842 - AS198303
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2025-02-18T15:12:58Z
-last-modified:  2025-02-18T15:12:58Z
-source:         RIPE
-
-
-
 aut-num:        AS198185
 as-name:        LIGALINK-AS
 org:            ORG-LL106-RIPE
-remarks:        -------------------------------------------------------------
-remarks:        == Uplinks ==
-remarks:        === iHome ===
 import:         from AS25478 accept ANY
 export:         to AS25478 announce AS-LIGALINK
-remarks:        === DKTEL ===
 import:         from AS199624 accept ANY
 export:         to AS199624 announce AS-LIGALINK
-remarks:        -------------------------------------------------------------
-remarks:        == Internet Exchanges ==
-remarks:        === MSK-IX ===
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-LIGALINK
-remarks:        -------------------------------------------------------------
-remarks:        == Downlinks ==
-remarks:        === PeerAS ===
 import:         from AS-LIGALINK action pref=200; accept PeerAS
 export:         to AS-LIGALINK announce ANY
-remarks:        -------------------------------------------------------------
-admin-c:        LLNC-RIPE
-tech-c:         LLNC-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@liga-link.net
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LIGALINK-NOC-MNT
 created:        2011-10-28T13:49:27Z
 last-modified:  2025-05-23T10:10:34Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS198185
+country:        RU
+as-name:        LIGALINK-AS LigaLink LLC
 
 organisation:   ORG-LL106-RIPE
 org-name:       LigaLink LLC
 country:        RU
 org-type:       LIR
-address:        Zarechnaya 9, pomeschenie I
-address:        143910
-address:        Balashikha
-address:        RUSSIAN FEDERATION
-phone:          +74955446363
-fax-no:         +74955446363
-descr:          LigaLink ISP
-tech-c:         LLNC-RIPE
+address:        Dummy address for ORG-LL106-RIPE
+e-mail:         unread@ripe.net
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        LIGALINK-NOC-MNT
 mnt-by:         RIPE-NCC-HM-MNT
@@ -61,22 +36,6 @@ mnt-by:         LIGALINK-NOC-MNT
 abuse-c:        LLAT1-RIPE
 created:        2011-10-21T12:29:45Z
 last-modified:  2023-05-02T12:36:37Z
-source:         RIPE # Filtered
-
-role:           LigaLink NOC
-address:        9, Zarechnaya Street
-address:        143905 Balashikha
-address:        Russia
-phone:          +7 495 544 63 63
-fax-no:         +7 495 544 63 63
-remarks:        http://www.ligalink.ru
-admin-c:        SB15181-RIPE
-tech-c:         SB15181-RIPE
-nic-hdl:        LLNC-RIPE
-mnt-by:         LIGALINK-NOC-MNT
-created:        2011-11-03T08:54:30Z
-last-modified:  2023-03-04T08:27:11Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

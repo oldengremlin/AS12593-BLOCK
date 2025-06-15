@@ -1,27 +1,14 @@
-
-
-
-as-block:       AS196608 - AS197840
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-09-04T14:04:38Z
-last-modified:  2024-09-04T14:04:38Z
-source:         RIPE
-
-
-
 aut-num:        AS197078
 as-name:        YARNET-AS
 org:            ORG-YL6-RIPE
-remarks:        UPSTREAMS
 import:         from AS20485 accept ANY
 import:         from AS28917 accept ANY
 import:         from AS8359 accept ANY
+import:         from AS3216 accept ANY
 export:         to AS28917 announce AS-YARNET
 export:         to AS20485 announce AS-YARNET
-export:         to AS8359  announce AS-YARNET
-remarks:        PEERS
+export:         to AS8359 announce AS-YARNET
+export:         to AS3216 announce AS-YARNET
 import:         from AS25592 action pref=150; accept AS25592
 import:         from AS197298 action pref=150; accept AS197298
 import:         from AS50384 accept any
@@ -31,8 +18,8 @@ export:         to AS21191 announce AS197078
 export:         to AS197298 announce AS197078
 export:         to AS28917 announce AS197078
 export:         to AS64600 announce AS197078
-remarks:        CUSTOMERS
 import:         from AS58112 accept AS58112
+import:         from AS57629 accept AS57629
 import:         from AS52118 accept AS52118
 import:         from AS44425 accept AS44425 AS59656
 import:         from AS59656 accept AS59656
@@ -42,26 +29,27 @@ export:         to AS52118 announce ANY
 export:         to AS44425 announce ANY
 export:         to AS59656 announce ANY
 export:         to AS48228 announce ANY
-admin-c:        BXXL-RIPE
-tech-c:         BXXL-RIPE
+export:         to AS57629 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@yarnet.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         YARNET-MNT
 created:        2010-05-20T13:47:30Z
-last-modified:  2023-11-03T07:35:13Z
-source:         RIPE # Filtered
+last-modified:  2025-06-05T13:12:33Z
+source:         RIPE
+
+as-num:         AS197078
+country:        RU
+as-name:        YARNET-AS Yarnet Ltd
 
 organisation:   ORG-YL6-RIPE
 org-name:       Yarnet Ltd
 country:        RU
 org-type:       LIR
-address:        Lisitsyna, 5
-address:        150049
-address:        Yaroslavl
-address:        RUSSIAN FEDERATION
-phone:          +74852593000
-fax-no:         +74852593001
-admin-c:        BXXL-RIPE
+address:        Dummy address for ORG-YL6-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR17048-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        YARNET-MNT
@@ -69,16 +57,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         YARNET-MNT
 created:        2010-04-21T10:28:25Z
 last-modified:  2020-12-16T12:18:27Z
-source:         RIPE # Filtered
-
-person:         Tokarev Denis
-address:        150049, Russia, Yaroslavl, Lisitsyna, 5
-mnt-by:         YARNET-MNT
-phone:          +7 4852 593000
-nic-hdl:        BXXL-RIPE
-created:        2010-05-24T08:01:41Z
-last-modified:  2015-12-18T09:11:29Z
 source:         RIPE
-
 
 

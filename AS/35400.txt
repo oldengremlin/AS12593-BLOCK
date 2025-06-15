@@ -1,33 +1,11 @@
-
-
-
-as-block:       AS35252 - AS35618
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-05-01T14:06:15Z
-last-modified:  2024-05-01T14:06:15Z
-source:         RIPE
-
-
-
 aut-num:        AS35400
 org:            ORG-JR8-RIPE
 as-name:        MFIST
 descr:          OJSC "Uralsviazinform"
-remarks:        ---------
-remarks:        Upstreams
-remarks:        ---------
 import:         { from AS30751 accept ANY; from AS8342 accept ANY; from AS20485 accept ANY; from AS12389 accept ANY; from AS6854 accept ANY; from AS29648 accept ANY; }
 export:         { to AS30751 announce AS-USI; to AS8342 announce AS-USI; to AS20485 announce AS-USI; to AS12389 announce AS-USI; to AS6854 announce AS-USI; to AS29648 announce AS-USI; }
-remarks:        ---------
-remarks:        Peers
-remarks:        ---------
 import:         { from AS31094 accept AS-TFES; from AS28719 accept AS-HMFES; from AS35531 accept AS-KFES; from AS34875 accept AS-YANFES; from AS12705 accept AS-PFES; from AS6828 accept AS-EFES; from AS3239 accept AS-CHFES; from AS12768 accept AS-ERTELECOM; from AS29303 accept AS29303; from AS15640 accept AS-FPIC; from AS13304 accept AS13304 AS30977; from AS41682 accept AS-TMN; from AS41661 accept AS41661; from AS24665 accept AS24665; from AS12668 accept AS12668; from AS28890 accept AS28890; from AS3253 accept AS3253 AS41560 AS42602 AS20619 AS30868; from AS35154 accept AS35154; from AS5563 accept AS-URAL; from AS13238 accept AS-YANDEX; from AS31359 accept AS-FORATEC; from AS34879 accept AS-NGENIX; from AS39735 accept AS39735; from AS44661 accept AS44661; }
 export:         { to AS31094 announce AS-USI; to AS28719 announce AS-USI; to AS35531 announce AS-USI; to AS34875 announce AS-USI; to AS12705 announce AS-USI; to AS6828 announce AS-USI; to AS3239 announce AS-USI; to AS12768 announce AS-USI; to AS29303 announce AS-USI; to AS15640 announce AS-USI; to AS13304 announce AS-USI; to AS41682 announce AS-USI; to AS41661 announce AS-USI; to AS12668 announce AS-USI; to AS24665 announce AS-USI; to AS28890 announce AS-USI; to AS3253 announce AS-USI; to AS35154 announce AS-USI; to AS5563 announce AS-USI; to AS13238 announce AS-USI; to AS31359 announce AS-USI; to AS34879 announce AS-USI; to AS39735 announce AS-USI; to AS44661 announce AS-USI; }
-remarks:        ---------
-remarks:        Customers
-remarks:        ---------
 import:         { from AS31094 accept AS-TFES; from AS28719 accept AS-HMFES; from AS35531 accept AS-KFES; from AS34875 accept AS-YANFES; from AS12705 accept AS-PFES; from AS6828 accept AS-EFES; from AS3239 accept AS-CHFES; from AS29303 accept AS29303; from AS12768 accept AS-ERTELECOM; from AS41682 accept AS-TMN; from AS41661 accept AS41661; from AS35154 accept AS-KABINET; from AS3253 accept AS3253 AS41560 AS42602 AS20619 AS30868; from AS12668 accept AS-EXTRIM; from AS5563 accept AS-URAL; from AS28890 accept AS-INSYS-EKB; from AS44661 accept AS44661; }
 export:         { to AS29303 announce ANY; to AS12768 announce ANY; to AS41682 announce ANY; to AS41661 announce ANY; to AS35154 announce ANY; to AS3253 announce ANY; to AS12668 announce ANY; to AS5563 announce ANY; to AS28890 announce ANY; to AS44661 announce ANY; }
 default:        to AS31094
@@ -37,8 +15,8 @@ default:        to AS34875
 default:        to AS12705
 default:        to AS6828
 default:        to AS3239
-admin-c:        AS9898-RIPE
-tech-c:         RED2-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MFIST-MNT
@@ -47,32 +25,16 @@ created:        2005-08-01T10:00:18Z
 last-modified:  2025-04-15T11:37:50Z
 source:         RIPE
 
+as-num:         AS35400
+country:        RU
+as-name:        MFIST PJSC Rostelecom
+
 organisation:   ORG-JR8-RIPE
 org-name:       PJSC Rostelecom
 country:        RU
 org-type:       LIR
-address:        14 A, Sinopskaya nabereznaya
-address:        191167
-address:        S.Peterburg
-address:        RUSSIAN FEDERATION
-phone:          +7 499 999-82-83
-fax-no:         +74999953619
-admin-c:        RTNC-RIPE
-admin-c:        EP6706-RIPE
-admin-c:        IE1277-RIPE
-admin-c:        NM7547-RIPE
-admin-c:        AA728-RIPE
-admin-c:        SVS153-RIPE
-admin-c:        ASV77-RIPE
-admin-c:        RVP-RIPE
-admin-c:        VEV57-RIPE
-admin-c:        TR4627-RIPE
-admin-c:        TL4565-RIPE
-admin-c:        DN216-RIPE
-admin-c:        DA2353-RIPE
-admin-c:        IS111-RIPE
-admin-c:        VE128-RIPE
-admin-c:        SS216-RIPE
+address:        Dummy address for ORG-JR8-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        RTNC-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        ROSTELECOM-MNT
@@ -81,34 +43,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2005-03-22T11:11:20Z
 last-modified:  2023-01-26T10:52:42Z
-source:         RIPE # Filtered
-
-person:         Alexander Smelik
-address:        OJSC Uralsviazinform MFIST
-address:        Vostochnaya str. 44a
-address:        Yekaterinburg, 620075
-address:        Russia
-phone:          +7 (343) 3791830
-phone:          +7 (343) 2906091
-phone:          +7 9024096091
-fax-no:         +7 (343) 3791299
-mnt-by:         MFIST-MNT
-nic-hdl:        AS9898-RIPE
-created:        1970-01-01T00:00:00Z
-last-modified:  2011-07-05T02:17:18Z
-source:         RIPE # Filtered
-
-person:         Rodin O Edward
-address:        JSC "Uralsvyzinform"
-address:        Moscovskay str., 11
-address:        620014, Ekaterinburg, Russia
-phone:          +7 3432 762199
-fax-no:         +7 3432 768171
-nic-hdl:        RED2-RIPE
-created:        2003-12-24T08:42:54Z
-last-modified:  2020-06-04T12:20:37Z
-source:         RIPE # Filtered
-mnt-by:         AS8342-MNT
-
+source:         RIPE
 
 

@@ -1,3 +1,104 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 94.125.121.58 port 22
+as-set:         AS-COMTEK
+descr:          OOO Com Tech
+members:        AS39161
+members:        AS59440
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SATNETSPB-MNT
+created:        2017-06-16T09:07:16Z
+last-modified:  2017-06-16T09:07:16Z
+source:         RIPE
+
+
+
+as-set:         AS-SATNETSPB
+descr:          SatNet ISP
+descr:          SatNet (www.satnet-spb.ru)
+members:        AS48257
+descr:          UniWeb (www.uni-web.ru)
+members:        AS215031
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         satnetspb-mnt
+created:        2008-11-26T11:50:23Z
+last-modified:  2024-05-17T07:51:43Z
+source:         RIPE
+
+
+
+aut-num:        AS215031
+as-name:        uni-web
+org:            ORG-UL40-RIPE
+sponsoring-org: ORG-CitL5-RIPE
+import:         from AS48257 accept ANY
+export:         to AS48257 announce AS215031
+import:         from AS20764 accept ANY
+export:         to AS20764 announce AS215031
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SATNETSPB-MNT
+created:        2024-04-25T13:30:17Z
+last-modified:  2024-04-25T13:30:17Z
+source:         RIPE
+
+
+
+aut-num:        AS39161
+as-name:        TOPOLOGIYA-AS
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-COMTEK
+import:         from AS29076 accept ANY
+export:         to AS29076 announce AS-COMTEK
+export:         to AS59440 announce ANY
+import:         from AS59440 accept AS59440
+org:            ORG-TL503-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SATNETSPB-MNT
+created:        2005-12-23T10:47:57Z
+last-modified:  2020-04-01T10:24:03Z
+source:         RIPE
+sponsoring-org: ORG-RL441-RIPE
+
+
+
+aut-num:        AS48257
+as-name:        SATNETSPB
+org:            ORG-CitL5-RIPE
+import:         from AS50509 accept ANY
+export:         to AS50509 announce AS-SATNETSPB
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS-SATNETSPB
+import:         from AS20764 accept ANY
+export:         to AS20764 announce AS-SATNETSPB
+import:         from AS60373 accept ANY
+export:         to AS60373 announce AS-SATNETSPB
+import:         from AS47541 accept ANY
+import:         from AS47542 accept ANY
+export:         to AS47541 announce AS-SATNETSPB
+export:         to AS47542 announce AS-SATNETSPB
+import:         from AS49869 accept ANY
+export:         to AS49869 announce AS-SATNETSPB
+import:         from AS61376 accept ANY
+export:         to AS61376 announce AS-SATNETSPB
+import:         from AS50817 accept ANY
+export:         to AS50817 announce AS-SATNETSPB
+import:         from AS39607 accept ANY
+export:         to AS39607 announce AS-SATNETSPB
+import:         from AS215031 accept AS215031
+export:         to AS215031 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SATNETSPB-MNT
+created:        2008-10-30T10:15:56Z
+last-modified:  2024-05-17T07:55:11Z
+source:         RIPE
+
+
+

@@ -1,3 +1,122 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 212.90.160.3 port 22
+as-set:         AS-CMST-BLKV
+descr:          AS macro routed by JSC Comstar-UTS Saratov Branch
+descr:          Office Balakovo
+members:        AS29190
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         OVERTA-MNT
+created:        2010-12-14T07:38:29Z
+last-modified:  2010-12-14T07:38:29Z
+source:         RIPE
+
+
+
+as-set:         AS-CMST-Simbirsk
+descr:          AS-SET routed by JSC Comstar-UTS Simbirsk
+members:        AS49816
+members:        AS198207
+members:        AS8706
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         OVERTA-MNT
+mnt-by:         MTS-ULN_MNT
+notify:         sysadm@netroad.ru
+notify:         ncc@saratov.mts.ru
+created:        2009-09-16T13:56:00Z
+last-modified:  2018-04-04T11:23:05Z
+source:         RIPE
+
+
+
+as-set:         AS-OVERTA
+descr:          Saratov CSC of Privolgsky macro branch JSC "Comstar-Region"
+members:        AS29190
+members:        AS44165
+members:        AS44324
+members:        AS42955
+members:        AS56508
+members:        AS47783
+members:        AS51051
+members:        AS56674
+members:        AS205433
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         OVERTA-MNT
+created:        2006-11-30T11:10:49Z
+last-modified:  2024-02-01T15:10:22Z
+source:         RIPE
+
+
+
+aut-num:        AS29190
+as-name:        OVERTA-AS
+org:            ORG-ZM1-RIPE
+import:         from AS8359 action pref=150; accept ANY
+export:         to AS8359 announce AS-OVERTA
+export:         to AS44165 announce ANY
+export:         to AS56508 announce ANY
+export:         to AS51051 announce ANY
+export:         to AS56674 announce ANY
+export:         to AS205433 announce ANY
+import:         from AS44165 action pref=100; accept AS44165
+import:         from AS56508 action pref=100; accept AS56508
+import:         from AS51051 action pref=100; accept AS51051
+import:         from AS56674 action pref=100; accept AS56674
+import:         from AS205433 action pref=100; accept AS205433
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         MTU-NOC
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         OVERTA-MNT
+created:        2003-06-24T13:12:23Z
+last-modified:  2024-02-01T15:00:44Z
+source:         RIPE
+
+
+
+aut-num:        AS39858
+as-name:        Comstar-Volga-Arzamas
+org:            ORG-ZM1-RIPE
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-CMST-ARZAMAS
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-CMST-ARZAMAS
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         MTU-NOC
+mnt-by:         OVERTA-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2011-03-16T09:03:40Z
+last-modified:  2019-12-04T11:19:39Z
+source:         RIPE
+
+
+
+aut-num:        AS49816
+as-name:        CMST-Volga-SimbirskAS
+org:            ORG-ZM1-RIPE
+import:         from AS50125 accept ANY
+export:         to AS50125 announce AS-CMST-Simbirsk
+import:         from AS198207 accept AS198207
+export:         to AS198207 announce ANY
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-CMST-Simbirsk
+import:         from AS8706 accept AS8706
+export:         to AS8706 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         MTU-NOC
+mnt-by:         OVERTA-MNT
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MTS-ULN_MNT
+notify:         sysadm@netroad.ru
+notify:         ncc@saratov.mts.ru
+created:        2009-09-16T10:58:28Z
+last-modified:  2018-09-04T10:44:27Z
+source:         RIPE
+
+
+

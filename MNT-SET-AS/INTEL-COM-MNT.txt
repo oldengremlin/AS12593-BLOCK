@@ -1,16 +1,59 @@
+as-set:         AS-CITYTELECOM-KRS
+org:            ORG-LV6-RIPE
+descr:          LLC Intelcom
+members:        AS-INTRALINE
+descr:          Krasnoyarsk
+members:        AS42773
+members:        AS199524
+members:        AS51416
+members:        AS25293
+members:        AS43334
+members:        AS42995
+members:        AS57251
+members:        AS43605
+members:        AS47963
+members:        AS-INTRALINE
+members:        AS199534
+members:        AS199281
+members:        AS41831
+members:        AS42895
+members:        AS47486
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         Intel-COM-MNT
+created:        2011-06-03T08:33:02Z
+last-modified:  2024-09-20T06:24:28Z
+source:         RIPE
 
+
+
+as-set:         AS57251:AS-INTELCOM
+descr:          intelcom
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS57251
+members:        AS39746
+mnt-by:         Intel-COM-MNT
+created:        2015-09-11T08:09:45Z
+last-modified:  2015-09-11T08:10:56Z
+source:         RIPE
+
+
+
+as-set:         AS57251:AS-INTELCOM:AS41831
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         Intel-COM-MNT
+created:        2024-06-18T09:40:25Z
+last-modified:  2024-06-18T09:40:25Z
+source:         RIPE
+members:        AS41831
 
 
 
 aut-num:        AS42773
 as-name:        INTELCOM-UPSTREAM
 org:            ORG-NEVP1-RIPE
-remarks:        ---------------------
-remarks:        IPv4 routing policy
-remarks:        ---------------------
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Upstreams
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import:         from AS12389 accept any
 export:         to AS12389 announce AS-CITYTELECOM-KRS
 import:         from AS50544 accept any
@@ -21,57 +64,10 @@ import:         from AS16300 accept any
 export:         to AS16300 announce AS-CITYTELECOM-KRS
 import:         from AS25293 accept any
 export:         to AS25293 announce AS42773
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-remarks:        Russian peers
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-remarks:        --------
-remarks:        krasnoyarsk
-remarks:        --------
 import:         from AS431549 action pref=100; accept AS12389;
 export:         to AS43154 announce AS-CITYTELECOM-KRS;
-remarks:        ==========================================================
-remarks:        BGP community accepted only from customers
-remarks:        ==========================================================
-remarks:        ! 42773:SNNX - TAGS !
-remarks:        S - Source of prefix:
-remarks:        1 Upstream
-remarks:        2 Russian peer
-remarks:        NN - Number of Upstream, peer, customer
-remarks:        42773:20NX Russian peers
-remarks:        205X Rostelecom (krasnoyarsk)
-remarks:        X - tag for action:
-remarks:        x=0 - do not announce
-remarks:        x=1 - announce
-remarks:        x=2,4 or 6 - prepend LAST {YOUR_AS} 2,4 or 6 times
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Local-pref use cisco like:
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Customers 300
-remarks:        Private peering 250
-remarks:        Peering 210
-remarks:        Upstream 160
-remarks:        Backup 70
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Advertised prefixes by type:
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        42773:69 Black hole route
-remarks:        42773:777 All customers by default
-remarks:        42773:900 Russian routes
-remarks:        42773:901 Foreign routes
-remarks:        42773:42773 Locally originated routes
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Where the route has been received:
-remarks:        42773:63912 Krasnoyarsk
-remarks:        Country:
-remarks:        42773:64667 RU (Russia)
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Notes
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Any other 42773:* community removed on input.
-remarks:        BGP Filters automatic update at 01:10 MSK
-remarks:        BGP filter generate by prefix-list, route object RADB
-admin-c:        EB660111-RIPE
-tech-c:         EB660111-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         Intel-COM-MNT
@@ -90,15 +86,16 @@ import:         from AS50928 action pref=100; accept ANY
 export:         to AS20485 announce AS47963
 export:         to AS21483 announce AS47963
 export:         to AS50928 announce AS47963
-admin-c:        ILIN3-RIPE
-tech-c:         ILIN3-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         support@intraline.ru
 mnt-by:         Intel-COM-MNT
 mnt-by:         MNT-INTRALINE
 created:        2008-09-22T12:51:51Z
 last-modified:  2024-02-01T15:54:53Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-NEVP1-RIPE
 
 
@@ -110,8 +107,8 @@ import:         from AS33871 accept ANY
 export:         to AS33871 announce AS57251
 import:         from AS48950 accept ANY
 export:         to AS48950 announce AS57251
-admin-c:        EB660111-RIPE
-tech-c:         EB660111-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         Intel-COM-MNT

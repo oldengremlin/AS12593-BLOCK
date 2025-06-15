@@ -1,3 +1,35 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 10.100.1.2 port 22
+as-set:         AS-EXTEL
+descr:          Extel Internet
+members:        AS34644 #Extel
+members:        AS9124 #BFGU
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         EXTL1-MNT
+created:        2005-12-21T10:05:48Z
+last-modified:  2012-06-22T10:07:10Z
+source:         RIPE
+
+
+
+aut-num:        AS34644
+as-name:        EXTEL-AS
+import:         from AS20485 action pref=110; accept ANY
+import:         from AS3216 action pref=110; accept ANY
+import:         from AS9124 action pref=110; accept AS9124
+export:         to AS20485 announce AS-EXTEL
+export:         to AS3216 announce AS-EXTEL
+export:         to AS9124 announce {0.0.0.0/0}
+org:            ORG-JA8-RIPE
+default:        to AS3216 action pref=100; networks ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         kkomash@kng.beeline.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         EXTL1-MNT
+created:        2005-03-07T13:36:58Z
+last-modified:  2019-12-04T11:18:35Z
+source:         RIPE
+
+
+

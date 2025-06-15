@@ -1,3 +1,118 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.184.190 port 22
+as-set:         AS-ABIProduct
+descr:          ZAO ABI "Product"
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         INFOCENTRE-MNT
+created:        2011-07-07T10:56:08Z
+last-modified:  2011-07-07T10:56:08Z
+source:         RIPE
+
+
+
+as-set:         AS-ASKONAVEK
+descr:          OOO ASKONA-VEK
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         infocentre-mnt
+created:        2011-07-21T07:04:31Z
+last-modified:  2011-07-21T07:04:31Z
+source:         RIPE
+
+
+
+as-set:         AS-INFOCENTER
+descr:          INFOCENTER
+members:        AS35645
+members:        AS50556
+members:        AS60224
+members:        AS51352
+members:        AS60635
+members:        AS57047
+members:        AS210894
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         INFOCENTRE-MNT
+created:        2007-08-10T13:23:18Z
+last-modified:  2023-02-27T11:36:22Z
+source:         RIPE
+
+
+
+aut-num:        AS210894
+as-name:        DSKOV
+org:            ORG-JD116-RIPE
+sponsoring-org: ORG-LLC12-RIPE
+import:         from AS35645 accept ANY
+export:         to AS35645 announce AS210894
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS210894
+import:         from AS34168 accept ANY
+export:         to AS34168 announce AS210894
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INFOCENTRE-MNT
+created:        2023-02-21T07:42:19Z
+last-modified:  2023-02-21T07:42:19Z
+source:         RIPE
+
+
+
+aut-num:        AS35645
+as-name:        INFOCENTER
+org:            ORG-LLC12-RIPE
+import:         from AS9002 action pref=100; accept ANY
+import:         from AS57304 action pref=100; accept ANY
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS50556 action pref=100; accept AS50556
+import:         from AS60224 action pref=100; accept AS60224
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS8359 action pref=100; accept ANY
+import:         from AS57047 action pref=100; accept AS57047
+import:         from AS210894 action pref=100; accept AS210894
+import:         from AS51352 action pref=100; accept AS51352
+export:         to AS9002 announce AS-INFOCENTER
+export:         to AS57304 announce AS-INFOCENTER
+export:         to AS50556 announce ANY
+export:         to AS60635 announce ANY
+export:         to AS60224 announce ANY
+export:         to AS31133 announce AS-INFOCENTER
+export:         to AS3216 announce AS-INFOCENTER
+export:         to AS8359 announce AS-INFOCENTER
+export:         to AS57047 announce ANY
+export:         to AS210894 announce ANY
+export:         to AS51352 announce AS35645
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INFOCENTRE-MNT
+created:        2005-09-23T07:13:39Z
+last-modified:  2024-09-23T06:58:25Z
+source:         RIPE
+
+
+
+aut-num:        AS57047
+as-name:        ABIProduct
+org:            ORG-AP35-RIPE
+import:         from AS35645 action pref=100; accept ANY
+import:         from AS13016 action pref=100; accept ANY
+import:         from AS34168 action pref=100; accept ANY
+export:         to AS35645 announce AS57047
+export:         to AS13016 announce AS57047
+export:         to AS34168 announce AS57047
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         kejsi@icvladimir.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INFOCENTRE-MNT
+created:        2011-07-11T07:39:22Z
+last-modified:  2018-09-04T11:03:43Z
+source:         RIPE
+sponsoring-org: ORG-LLC12-RIPE
+
+
+

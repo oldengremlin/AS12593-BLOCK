@@ -1,13 +1,21 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
-
+as-set:         AS-PRIDE
+descr:          AS set Pride Limited company
+members:        AS38934
+members:        AS56836
+members:        AS198718
+members:        AS60660
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         PRIDENET-MNT
+created:        2014-02-13T06:01:13Z
+last-modified:  2019-06-20T09:31:28Z
+source:         RIPE
 
 
 
 aut-num:        AS38934
 as-name:        PRIDENET-AS
 descr:          Nizhnevartovsk, Russia
-remarks:        =============================================
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-PRIDE
 import:         from AS3216 accept ANY
@@ -16,16 +24,13 @@ import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-PRIDE
 import:         from AS198718 accept AS198718
 export:         to AS198718 announce ANY
-remarks:        =============================================
 import:         from AS56836 action pref=500; accept AS56836
 export:         to AS56836 announce ANY
-remarks:        =============================================
 org:            ORG-PLC1-RIPE
-admin-c:        PD2496-RIPE
-tech-c:         MN2389-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-tech-c:         RA6254-RIPE
 mnt-by:         PRIDENET-MNT
 created:        2005-11-15T15:33:01Z
 last-modified:  2023-12-19T07:20:50Z

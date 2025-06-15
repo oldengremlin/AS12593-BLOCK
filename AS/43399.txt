@@ -1,22 +1,6 @@
-
-
-
-as-block:       AS43075 - AS44168
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2023-12-11T15:09:58Z
-last-modified:  2023-12-11T15:09:58Z
-source:         RIPE
-
-
-
 aut-num:        AS43399
 as-name:        TCS-AS
 org:            ORG-TBJ1-RIPE
-remarks:        ----------------------------------------------------------
-remarks:        ****************** IPv4 Routing Policy *******************
-remarks:        ----------------------------------------------------------
 import:         from AS6854 accept ANY
 export:         to AS6854 announce AS-TINKOFF
 import:         from AS9002 accept ANY
@@ -47,16 +31,10 @@ import:         from AS205638 accept ANY
 export:         to AS205638 announce AS43399
 import:         from AS8631 action pref=100; accept ANY
 export:         to AS8631 announce AS43399
-remarks:        ----------------------------------------------------------
-remarks:        ****************** IPv6 Routing Policy *******************
-remarks:        ----------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS9002 accept ANY
 mp-export:      afi ipv6.unicast to AS9002 announce AS-TINKOFF
-admin-c:        AD13831-RIPE
-admin-c:        NKN28-RIPE
-tech-c:         AD13831-RIPE
-tech-c:         NKN28-RIPE
-tech-c:         VS10143-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         ru-tinkoff-1-mnt
 mnt-by:         RIPE-NCC-END-MNT
@@ -64,66 +42,22 @@ created:        2007-07-25T13:41:47Z
 last-modified:  2022-06-14T14:39:03Z
 source:         RIPE
 
+as-num:         AS43399
+country:        RU
+as-name:        TCS-AS "TBANK" JSC
+
 organisation:   ORG-TBJ1-RIPE
 org-name:       "TBANK" JSC
 country:        RU
 org-type:       LIR
-address:        2 Khutorskaya str., 38A, Bldg. 26
-address:        127287
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +7 495 648 10 00
-admin-c:        AD13831-RIPE
-admin-c:        NKN28-RIPE
-admin-c:        VS10143-RIPE
-tech-c:         AD13831-RIPE
-tech-c:         NKN28-RIPE
-tech-c:         VS10143-RIPE
+address:        Dummy address for ORG-TBJ1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR41955-RIPE
 mnt-ref:        TCSBANK-MNT
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         ru-tinkoff-1-mnt
 created:        2017-06-30T06:30:54Z
 last-modified:  2024-07-09T07:51:50Z
-source:         RIPE # Filtered
-
-person:         Alexander Derzhaev
-address:        1-st Volokolamsky drive, 10, bld 1
-address:        123060
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +7 495 648 10 00
-nic-hdl:        AD13831-RIPE
-mnt-by:         ru-tinkoff-1-mnt
-created:        2017-06-30T06:30:54Z
-last-modified:  2017-06-30T06:30:54Z
 source:         RIPE
-
-person:         Andrey Nikonenko
-address:        Closed joint-stock company "Tinkoff Credit Systems" Bank
-address:        1st Volokolamsky Proezd, 10, bld.1
-address:        Moscow, 123060
-address:        Russian Federation
-phone:          +7 495 6481000
-fax-no:         +7 495 6455909
-nic-hdl:        NKN28-RIPE
-mnt-by:         TCSBANK-MNT
-created:        2014-04-08T11:03:42Z
-last-modified:  2017-12-20T07:27:23Z
-source:         RIPE # Filtered
-
-person:         Vladislav Sakalkin
-address:        Tinkoff Mobile JSC
-address:        1st Volokolamsky Proezd, 10, bld.1
-address:        Moscow, 123060
-address:        Russian Federation
-phone:          +7 495 6481000
-nic-hdl:        VS10143-RIPE
-mnt-by:         TCSBANK-MNT
-mnt-by:         ru-tinkoff-1-mnt
-created:        2017-08-25T13:26:10Z
-last-modified:  2017-12-21T15:21:30Z
-source:         RIPE # Filtered
-
 
 

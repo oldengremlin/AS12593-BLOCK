@@ -1,3 +1,54 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.3 port 22
+as-set:         AS-NETIS
+descr:          NETIS TELECOM Inc.
+members:        AS25592
+members:        AS8325
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NETIS-NOC-MNT
+created:        2006-11-08T15:42:04Z
+last-modified:  2022-01-14T13:07:39Z
+source:         RIPE
+
+
+
+as-set:         AS-NETIS-V6
+descr:          NETIS TELECOM IPv6
+members:        AS25592
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NETIS-NOC-MNT
+created:        2015-08-19T13:28:31Z
+last-modified:  2015-08-19T13:37:30Z
+source:         RIPE
+
+
+
+aut-num:        AS25592
+org:            ORG-NTI1-RIPE
+as-name:        NETIS-AS
+descr:          NETIS TELECOM ISP, Yaroslavl region, Russia
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-NETIS
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-NETIS
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-NETIS
+mp-import:      afi ipv6.unicast from AS6939 accept ANY
+mp-export:      afi ipv6.unicast to AS6939 announce AS25592
+import:         from AS8325 accept AS8325
+export:         to AS8325 announce AS25592
+import:         from AS197078 accept AS197078
+export:         to AS197078 announce AS-NETIS
+import:         from AS197298 accept AS197298
+export:         to AS197298 announce AS-NETIS
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETIS-NOC-MNT
+created:        2003-01-21T15:46:28Z
+last-modified:  2022-02-07T12:57:01Z
+source:         RIPE
+
+
+

@@ -1,11 +1,63 @@
+as-set:         AS-SUNLINK
+descr:          Sunlink Telecom Tula export list
+members:        AS35401
+members:        AS56939
+members:        AS48938
+members:        AS43740
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SUNLINK-DBM
+created:        2006-11-10T11:58:25Z
+last-modified:  2024-07-12T06:22:01Z
+source:         RIPE
 
+
+
+as-set:         AS-SUNLINK-EXPORT
+descr:          Sunlink Telecom Tula export list
+members:        AS35401
+members:        AS48938
+members:        AS56939
+members:        AS43740
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SUNLINK-DBM
+org:            ORG-ZT3-RIPE
+created:        2007-06-21T11:16:49Z
+last-modified:  2024-06-18T13:46:25Z
+source:         RIPE
+
+
+
+as-set:         AS-SUNLINK-IPv6
+descr:          IPv6 export list
+members:        AS35401
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SUNLINK-DBM
+created:        2010-11-30T11:21:53Z
+last-modified:  2010-11-30T11:21:53Z
+source:         RIPE
+
+
+
+as-set:         AS-SUNLINK-ROSINT
+descr:          Sunlink Telecom Tula import list
+members:        AS24689
+members:        AS47495
+members:        AS24602
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SUNLINK-DBM
+created:        2009-06-19T07:51:29Z
+last-modified:  2009-06-19T07:51:29Z
+source:         RIPE
 
 
 
 aut-num:        AS35401
 as-name:        SUNLINK-AS
 descr:          Sunlink Telecom ISP, Tula, Russia
-remarks:        UPSTREAMS:
 import:         from AS9002 accept ANY
 export:         to AS9002 announce AS-SUNLINK-EXPORT
 import:         from AS57304 accept ANY
@@ -14,32 +66,28 @@ import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-SUNLINK-EXPORT
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-SUNLINK-EXPORT
-remarks:        PEERING:
 import:         from AS24689 accept <^AS24689$>
 export:         to AS24689 announce AS-SUNLINK-EXPORT
-remarks:        DOWNSTREAMS:
 import:         from AS48938 accept AS48938
 export:         to AS48938 announce ANY
 import:         from AS56939 accept AS56939
 export:         to AS56939 announce ANY
 import:         from AS43740 accept AS43740
 export:         to AS43740 announce ANY
-remarks:        ----------------------------------------------------------------
-remarks:        IPv6 Routing Policy
-remarks:        ----------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS9002 accept ANY
 mp-import:      afi ipv6.unicast from AS12389 accept ANY
 mp-export:      afi ipv6.unicast to AS9002 announce AS-SUNLINK-IPv6
 mp-export:      afi ipv6.unicast to AS12389 announce AS-SUNLINK-IPv6
 org:            ORG-ZT3-RIPE
-admin-c:        NCT-RIPE
-tech-c:         NCT-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@sunlink.ru
 mnt-by:         SUNLINK-DBM
 created:        2005-08-01T10:03:04Z
 last-modified:  2024-06-18T13:52:36Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

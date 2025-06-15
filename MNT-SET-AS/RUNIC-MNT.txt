@@ -1,3 +1,421 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 94.125.121.58 port 22
+as-set:         AS-FAITID
+descr:          FAITID ASes
+members:        AS60216
+members:        AS199472
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         RUNIC-MNT
+created:        2015-02-20T06:35:57Z
+last-modified:  2019-10-02T10:20:25Z
+source:         RIPE
+
+
+
+as-set:         AS-HOSTING
+descr:          RUCENTER HOSTING
+members:        AS48287
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RUNIC-MNT
+created:        2004-09-30T12:53:09Z
+last-modified:  2019-02-07T10:28:55Z
+source:         RIPE
+
+
+
+as-set:         AS-INTC
+descr:          FAITID AS
+members:        AS199472
+members:        AS60216
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         RUNIC-MNT
+mnt-by:         NICNOC-MNT
+created:        2013-09-05T19:58:13Z
+last-modified:  2014-06-18T12:25:53Z
+source:         RIPE
+
+
+
+as-set:         AS-RUCENTER
+descr:          RU-NIC networks
+members:        AS5537
+members:        AS20144
+members:        AS25537
+members:        AS35295
+members:        AS35569
+members:        AS39494
+members:        AS42751
+members:        AS42399
+members:        AS43489
+members:        AS44112
+members:        AS47385
+members:        AS47595
+members:        AS48287
+members:        AS60216
+members:        AS199472
+members:        AS12722
+members:        AS-RBC
+members:        AS-REGRU
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         RUNIC-MNT
+mnt-by:         NICNOC-MNT
+created:        2009-11-11T12:34:39Z
+last-modified:  2022-02-28T06:17:20Z
+source:         RIPE
+
+
+
+as-set:         AS-RUSERVICE
+descr:          RUSERVICE AS
+members:        AS48287
+members:        AS20144
+members:        AS199472
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         RUNIC-MNT
+mnt-by:         NICNOC-MNT
+created:        2012-03-28T12:01:55Z
+last-modified:  2015-08-11T14:32:51Z
+source:         RIPE
+
+
+
+as-set:         AS-ZAO-RU-NIC
+descr:          ZAO RU-NIC ASes
+members:        AS47595
+members:        AS48287
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         RUNIC-MNT
+created:        2009-06-10T09:48:28Z
+last-modified:  2015-06-05T15:11:15Z
+source:         RIPE
+
+
+
+aut-num:        AS199472
+as-name:        FAITID-AS
+org:            ORG-FFAF1-RIPE
+import:         from AS48287 accept ANY
+export:         to AS48287 announce AS-INTC
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-INTC
+import:         from AS60216 accept AS60216
+export:         to AS60216 announce AS199472
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUNIC-MNT
+created:        2013-01-10T11:56:53Z
+last-modified:  2019-10-02T10:00:14Z
+source:         RIPE
+sponsoring-org: ORG-JR15-RIPE
+
+
+
+aut-num:        AS25537
+as-name:        RU-CENTER-AS
+org:            ORG-JR15-RIPE
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-RUCENTER
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-RUCENTER
+import:         from AS5537 accept ANY
+export:         to AS5537 announce AS25537
+import:         from AS48287 accept ANY
+export:         to AS48287 announce AS25537
+import:         from AS42403 accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-RUCENTER
+import:         from AS43489 accept AS43489
+export:         to AS43489 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUNIC-MNT
+created:        2002-12-27T15:29:35Z
+last-modified:  2019-01-25T13:45:20Z
+source:         RIPE
+
+
+
+aut-num:        AS35295
+as-name:        PETERHOST-PITER
+import:         from AS5537 accept ANY
+export:         to AS5537 announce AS35295
+import:         from AS48287 accept ANY
+export:         to AS48287 announce AS35295
+org:            ORG-JR15-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUNIC-MNT
+created:        2005-07-11T14:10:49Z
+last-modified:  2018-11-16T11:09:13Z
+source:         RIPE
+
+
+
+aut-num:        AS39494
+as-name:        RU-CENTER-AS
+import:         from AS5537 accept ANY
+export:         to AS5537 announce AS39494
+import:         from AS48287 accept ANY
+export:         to AS48287 announce AS39494
+org:            ORG-JR15-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RUNIC-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2006-03-07T09:02:42Z
+last-modified:  2018-11-16T11:07:03Z
+source:         RIPE
+
+
+
+aut-num:        AS42399
+as-name:        HCRU-AS
+import:         from AS5537 accept ANY
+export:         to AS5537 announce AS42399
+import:         from AS48287 accept ANY
+export:         to AS48287 announce AS42399
+org:            ORG-JR15-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         HCRU-NOC
+mnt-by:         RUNIC-MNT
+created:        2007-02-15T11:40:02Z
+last-modified:  2018-11-16T11:05:20Z
+source:         RIPE
+
+
+
+aut-num:        AS43489
+as-name:        ANYCAST-AS
+org:            ORG-JR15-RIPE
+import:         from AS48287 accept ANY
+export:         to AS48287 announce AS43489
+import:         from AS47595 accept ANY
+export:         to AS47595 announce AS43489
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUNIC-MNT
+mnt-by:         NICNOC-MNT
+created:        2007-08-09T12:16:31Z
+last-modified:  2020-12-21T05:56:38Z
+source:         RIPE
+
+
+
+aut-num:        AS44112
+as-name:        SWEB-AS
+org:            ORG-SW40-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-RUCENTER
+import:         from AS8492 accept ANY
+export:         to AS8492 announce AS-RUCENTER
+import:         from AS48287 accept ANY
+export:         to AS48287 announce AS44112
+import:         from AS25462 accept ANY
+export:         to AS25462 announce AS44112
+default:        to AS25462
+import:         from AS50817 accept as-piter-ix
+export:         to AS50817 announce AS-RUCENTER
+import:         from AS43690 accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-RUCENTER
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUNIC-MNT
+created:        2007-11-19T15:29:13Z
+last-modified:  2024-04-09T09:39:00Z
+source:         RIPE
+sponsoring-org: ORG-JR15-RIPE
+
+
+
+aut-num:        AS47385
+as-name:        HOSTING-COMPANY-AS
+org:            ORG-JR15-RIPE
+import:         from AS5537 accept ANY
+export:         to AS5537 announce AS47385
+import:         from AS48287 accept ANY
+export:         to AS48287 announce AS47385
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUNIC-MNT
+created:        2008-06-11T10:09:21Z
+last-modified:  2018-11-16T11:02:18Z
+source:         RIPE
+
+
+
+aut-num:        AS47595
+as-name:        ZAO-RU-NIC-AS
+org:            ORG-JR15-RIPE
+import:         from AS48287 accept ANY
+export:         to AS48287 announce AS-RUCENTER
+import:         from AS6731 accept ANY
+export:         to AS6731 announce AS-RUCENTER
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-RUCENTER
+import:         from AS43489 accept AS43489
+export:         to AS43489 announce ANY
+mp-import:      from AS6731 accept ANY
+mp-export:      to AS6731 announce AS-RUCENTER
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RUNIC-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2008-07-18T10:01:00Z
+last-modified:  2020-09-25T07:51:10Z
+source:         RIPE
+
+
+
+aut-num:        AS48287
+as-name:        RU-CENTER
+org:            ORG-JR15-RIPE
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS-RUCENTER
+import:         from AS5537 accept ANY
+export:         to AS5537 announce ANY
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-RUCENTER
+import:         from AS47595 accept AS-RUCENTER
+export:         to AS47595 announce ANY
+import:         from AS43489 accept AS43489
+export:         to AS43489 announce ANY
+import:         from AS20144 accept AS20144
+export:         to AS20144 announce ANY
+import:         from AS60216 accept AS60216
+export:         to AS60216 announce ANY
+import:         from AS199472 accept AS199472
+export:         to AS199472 announce ANY
+import:         from AS8492 accept ANY
+export:         to AS8492 announce AS-RUCENTER
+import:         from AS43690 accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-RUCENTER
+import:         from AS50817 accept as-piter-ix
+export:         to AS50817 announce AS-RUCENTER
+import:         from AS29076 accept AS-CITYTELECOM
+export:         to AS29076 announce AS-RUCENTER
+import:         from AS6939 accept AS-HURRICANE
+export:         to AS6939 announce AS-RUCENTER
+import:         from AS44112 accept AS44112
+export:         to AS44112 announce ANY
+import:         from AS35295 accept AS35295
+export:         to AS35295 announce ANY
+import:         from AS20848 accept AS20848
+export:         to AS20848 announce ANY
+import:         from AS25537 accept AS25537
+export:         to AS25537 announce ANY
+import:         from AS35569 accept AS35569
+export:         to AS35569 announce ANY
+import:         from AS39494 accept AS39494
+export:         to AS39494 announce ANY
+import:         from AS42399 accept AS42399
+export:         to AS42399 announce ANY
+import:         from AS42751 accept AS42751
+export:         to AS42751 announce ANY
+import:         from AS43489 accept AS43489
+export:         to AS43489 announce ANY
+import:         from AS47385 accept AS47385
+export:         to AS47385 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RUNIC-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2008-11-04T14:06:13Z
+last-modified:  2021-02-03T20:02:29Z
+source:         RIPE
+
+
+
+aut-num:        AS5537
+as-name:        RU-CENTER-AS
+org:            ORG-JR15-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-RUCENTER
+import:         from AS29076 accept AS-CITYTELECOM
+export:         to AS29076 announce AS-RUCENTER
+import:         from AS48287 accept ANY
+export:         to AS48287 announce ANY
+import:         from AS50384 accept AS-W-IX
+export:         to AS50384 announce AS-RUCENTER
+import:         from AS56931 accept AS-EURASIAPEERING_RS
+export:         to AS56931 announce AS-RUCENTER
+import:         from AS20848 accept AS20848
+export:         to AS20848 announce ANY
+import:         from AS25537 accept AS25537
+export:         to AS25537 announce ANY
+import:         from AS35569 accept AS35569
+export:         to AS35569 announce ANY
+import:         from AS39494 accept AS39494
+export:         to AS39494 announce ANY
+import:         from AS42399 accept AS42399
+export:         to AS42399 announce ANY
+import:         from AS42751 accept AS42751
+export:         to AS42751 announce ANY
+import:         from AS43489 accept AS43489
+export:         to AS43489 announce ANY
+import:         from AS47385 accept AS47385
+export:         to AS47385 announce ANY
+import:         from AS35295 accept AS35295
+export:         to AS35295 announce ANY
+mp-import:      from AS12389 accept ANY
+mp-export:      to AS12389 announce AS-RUCENTER
+mp-import:      from AS29076 accept ANY
+mp-export:      to AS29076 announce AS-RUCENTER
+mp-import:      from AS48287 accept ANY
+mp-export:      to AS48287 announce ANY
+mp-import:      from AS43489 accept AS43489
+mp-export:      to AS43489 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUNIC-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2021-02-03T20:01:11Z
+source:         RIPE
+
+
+
+aut-num:        AS60216
+as-name:        FAITID-AS
+org:            ORG-FFAF1-RIPE
+import:         from AS61400 accept ANY
+export:         to AS61400 announce AS60216
+import:         from AS48287 accept ANY
+export:         to AS48287 announce AS60216
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS60216
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS60216
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUNIC-MNT
+created:        2013-09-03T06:19:35Z
+last-modified:  2023-12-19T07:10:27Z
+source:         RIPE
+sponsoring-org: ORG-JR15-RIPE
+
+
+

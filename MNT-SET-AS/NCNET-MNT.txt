@@ -1,3 +1,237 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 212.90.160.3 port 22
+as-set:         AS-NCNET
+descr:          NCNET
+members:        AS42610
+members:        AS50822
+members:        AS8557
+members:        AS8901
+members:        AS-E2CORP
+members:        AS51026
+members:        AS60473
+members:        AS-MCC
+members:        AS-MCNTT
+members:        AS-CTC
+members:        AS199760
+members:        AS200166
+members:        AS202127
+members:        AS60124
+members:        AS62133
+members:        AS-ROSNET
+members:        AS29651
+members:        AS-TRANSLINECOM
+members:        AS197461
+members:        AS197379
+members:        AS42288
+members:        AS48201
+members:        AS-INTINFORM
+members:        AS205031
+members:        AS62358
+members:        AS-SYNTERRAMEDIA
+members:        AS199085
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ncnet-mnt
+created:        2007-04-18T16:54:53Z
+last-modified:  2021-11-29T11:44:46Z
+source:         RIPE
+
+
+
+as-set:         AS-NCNET-IPV6
+descr:          NCNET IPv6
+members:        AS42610
+members:        AS-MCC
+members:        AS-MCNTT
+members:        AS38951
+members:        AS-INTINFORM-V6
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NCNET-MNT
+created:        2010-12-07T09:00:37Z
+last-modified:  2018-10-23T11:36:10Z
+source:         RIPE
+
+
+
+aut-num:        AS35078
+as-name:        CORVETTE-AS
+descr:          OJSC "National Cable Networks"
+import:         from AS2118 action pref=120; accept ANY
+export:         to AS2118 announce AS-CORVETTE
+import:         from AS3327 action pref=120; accept ANY
+export:         to AS3327 announce AS-CORVETTE
+import:         from AS20485 action pref=120; accept ANY
+export:         to AS20485 announce AS-CORVETTE
+import:         from AS8631 action pref=80; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-CORVETTE
+import:         from AS8492 action pref=80; accept AS-OBIT
+export:         to AS8492 announce AS-CORVETTE
+import:         from AS13238 action pref=80; accept AS-YANDEX
+export:         to AS13238 announce AS-CORVETTE
+import:         from AS28917 action pref=80; accept AS-FIORD
+export:         to AS28917 announce AS-CORVETTE
+import:         from AS33902 action pref=80; accept AS-STARNETWORKS
+export:         to AS33902 announce AS-CORVETTE
+import:         from AS35422 action pref=80; accept AS-PETERSTAR
+export:         to AS35422 announce AS-CORVETTE
+import:         from AS43667 accept AS43667
+export:         to AS43667 announce ANY
+org:            ORG-JR8-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         NCNET-MNT
+notify:         noc@ncnet.ru
+created:        2005-05-31T08:12:27Z
+last-modified:  2025-04-15T11:35:52Z
+source:         RIPE
+
+
+
+aut-num:        AS42610
+as-name:        NCNET-AS
+org:            ORG-JR8-RIPE
+descr:          OJSC "National Cable Networks"
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-NCNET
+mp-import:      afi ipv6.unicast from AS12389 accept ANY
+mp-export:      afi ipv6.unicast to AS12389 announce AS-NCNET-IPV6
+import:         from AS1299 accept ANY
+export:         to AS1299 announce AS-NCNET
+mp-import:      afi ipv6.unicast from AS1299 accept ANY
+mp-export:      afi ipv6.unicast to AS1299 announce AS-NCNET-IPV6
+import:         from AS6863 accept AS-ROSNET
+export:         to AS6863 announce ANY
+import:         from AS8557 accept AS8557
+export:         to AS8557 announce ANY
+import:         from AS8629 accept AS-MCNTT
+export:         to AS8629 announce ANY
+mp-import:      afi ipv6.unicast from AS8629 accept AS-MCNTT
+mp-export:      afi ipv6.unicast to AS8629 announce ANY
+import:         from AS8901 accept AS8901
+export:         to AS8901 announce ANY
+import:         from AS12958 accept AS-MCC
+export:         to AS12958 announce ANY
+mp-import:      afi ipv6.unicast from AS12958 accept AS-MCC
+mp-export:      afi ipv6.unicast to AS12958 announce ANY
+import:         from AS25515 accept AS-CTC
+export:         to AS25515 announce ANY
+import:         from AS25531 accept AS-INTINFORM
+export:         to AS25531 announce ANY
+mp-import:      afi ipv6.unicast from AS25531 accept AS-INTINFORM-V6
+mp-export:      afi ipv6.unicast to AS25541 announce ANY
+import:         from AS29069 accept AS-TRANSLINECOM
+export:         to AS29069 announce ANY
+import:         from AS29651 accept AS29651
+export:         to AS29651 announce ANY
+import:         from AS44848 accept AS-E2CORP
+export:         to AS44848 announce ANY
+import:         from AS50822 accept AS50822
+export:         to AS50822 announce ANY
+import:         from AS51026 accept AS51026
+export:         to AS51026 announce ANY
+import:         from AS60124 accept AS60124
+export:         to AS60124 announce ANY
+import:         from AS60473 accept AS60473
+export:         to AS60473 announce ANY
+import:         from AS62133 accept AS62133
+export:         to AS62133 announce ANY
+import:         from AS197461 accept AS197461
+export:         to AS197461 announce ANY
+import:         from AS199760 accept AS199760
+export:         to AS199760 announce ANY
+import:         from AS200166 accept AS200166
+export:         to AS200166 announce ANY
+import:         from AS202127 accept AS202127
+export:         to AS202127 announce ANY
+import:         from AS42288 accept AS42288
+export:         to AS42288 announce ANY
+import:         from AS62358 accept AS62358
+export:         to AS62358 announce ANY
+import:         from AS60892 accept AS-SYNTERRAMEDIA
+export:         to AS60892 announce ANY
+import:         from AS199085 accept AS199085
+export:         to AS199085 announce ANY
+import:         from AS8359 accept AS-MTU
+export:         to AS8359 announce AS-NCNET
+mp-import:      afi ipv6.unicast from AS8359 accept ANY
+mp-export:      afi ipv6.unicast to AS8359 announce AS-NCNET-IPV6
+import:         from AS9002 accept AS-RETN
+export:         to AS9002 announce AS-NCNET
+mp-import:      afi ipv6.unicast from AS9002 accept AS-RETN6
+mp-export:      afi ipv6.unicast to AS9002 announce AS-NCNET-IPV6
+import:         from AS12714 accept AS-TI
+export:         to AS12714 announce AS-NCNET
+import:         from AS15169 accept AS-GOOGLE
+export:         to AS15169 announce AS-NCNET
+mp-import:      afi ipv6.unicast from AS15169 accept AS-GOOGLE
+mp-export:      afi ipv6.unicast to AS15169 announce AS-NCNET-IPV6
+import:         from AS31133 accept AS-MF-MGSM
+export:         to AS31133 announce AS-NCNET
+mp-import:      afi ipv6.unicast from AS31133 accept AS-MF-MGSM
+mp-export:      afi ipv6.unicast to AS31133 announce AS-NCNET-IPV6
+import:         from AS44237 accept AS-CTC-CORE
+export:         to AS44237 announce AS-NCNET
+import:         from AS47764 accept AS-MAILRU
+export:         to AS47764 announce AS-NCNET
+mp-import:      afi ipv6.unicast from AS47764 accept AS-MAILRU
+mp-export:      afi ipv6.unicast to AS47764 announce AS-NCNET-IPV6
+import:         from AS47542 accept AS-VKONTAKTE
+export:         to AS47542 announce AS-NCNET
+mp-import:      afi ipv6.unicast from AS47542 accept AS-VKONTAKTE
+mp-export:      afi ipv6.unicast to AS47542 announce AS-NCNET-IPV6
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         NCNET-MNT
+created:        2007-03-22T09:50:49Z
+last-modified:  2025-04-15T11:46:22Z
+source:         RIPE
+
+
+
+aut-num:        AS47460
+as-name:        NCNET-KURGAN-AS
+org:            ORG-JR8-RIPE
+descr:          OJSC "National Cable Networks"
+import:         from AS20485 accept ANY
+import:         from AS8342 accept ANY
+export:         to AS20485 announce AS47460
+export:         to AS8342 announce AS47460
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+notify:         lir@ncnet.ru
+mnt-by:         NCNET-MNT
+created:        2008-06-23T10:45:36Z
+last-modified:  2025-04-15T11:50:55Z
+source:         RIPE
+
+
+
+aut-num:        AS8828
+as-name:        BURNET-AS
+descr:          OJSC "National Cable Networks"
+org:            ORG-JR8-RIPE
+import:         from AS41440 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS41440 announce AS-BURNET
+export:         to AS12389 announce AS-BURNET
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         BURNET-RIPE-MNT
+mnt-by:         ncnet-mnt
+created:        1970-01-01T00:00:00Z
+last-modified:  2025-04-15T11:09:42Z
+source:         RIPE
+
+
+

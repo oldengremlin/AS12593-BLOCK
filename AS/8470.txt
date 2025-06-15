@@ -1,23 +1,5 @@
-
-
-
-as-block:       AS8192 - AS8523
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS8470
 as-name:        MAcomnet
-remarks:        Russian-Antarctican TelCo
-remarks:        Moscow, Russia
-remarks:        -----------------------------------------------
-remarks:        UPSTREAMS
-remarks:        -----------------------------------------------
 import:         from AS20485 action pref=115; accept ANY
 export:         to AS20485 announce AS-MACOMNET
 import:         from AS20764 action pref=115; accept ANY
@@ -28,9 +10,6 @@ import:         from AS8359 action pref=115; accept ANY
 export:         to AS8359 announce AS-MACOMNET
 import:         from AS31133 action pref=115; accept ANY
 export:         to AS31133 announce AS-MACOMNET
-remarks:        -----------------------------------------------
-remarks:        PEERING AT MSK-IX
-remarks:        -----------------------------------------------
 import:         from AS136907 action pref=120; accept AS136907
 export:         to AS136907 announce AS-MACOMNET
 import:         from AS45102 action pref=120; accept AS45102
@@ -153,9 +132,10 @@ import:         from AS49037 action pref=120; accept AS-PG19
 export:         to AS49037 announce AS-MACOMNET
 import:         from AS13002 action pref=120; accept AS-ISIX
 export:         to AS13002 announce AS-MACOMNET
-remarks:        -------------------cust-----------------------------
 import:         from  AS213478 action pref=120; accept  AS213478
 export:         to  AS213478 announce ANY
+import:         from  AS216290 action pref=120; accept  AS216290
+export:         to  AS216290 announce ANY
 import:         from  AS39688 action pref=120; accept  AS39688
 export:         to  AS39688 announce ANY
 import:         from  AS215394 action pref=120; accept  AS215394
@@ -257,11 +237,6 @@ import:         from AS52163 action pref=130; accept AS56954
 export:         to AS52163 announce ANY
 import:         from AS58341 action pref=130; accept AS58341
 export:         to AS58341 announce ANY
-remarks:        -------------------------------------------------------
-remarks:        ipv6 customers, peer and uplinks
-remarks:        -------------------------------------------------------
-remarks:        uplinks
-remarks:        -------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS20764 action pref=115; accept ANY
 mp-export:      afi ipv6.unicast to AS20764 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS20485 action pref=115; accept ANY
@@ -272,9 +247,6 @@ mp-import:      afi ipv6.unicast from AS12389 action pref=115; accept ANY
 mp-export:      afi ipv6.unicast to AS12389 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS31133 action pref=115; accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS-MACOMNET
-remarks:        -------------------------------------------------------
-remarks:        msk ix peers
-remarks:        -------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS54994 action pref=120; accept AS54994
 mp-export:      afi ipv6.unicast to AS54994 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS13002 action pref=120; accept AS-ISIX
@@ -327,9 +299,6 @@ mp-import:      afi ipv6.unicast from AS49037 action pref=120; accept AS-PG19
 mp-export:      afi ipv6.unicast to AS49037 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS216262 action pref=120; accept AS216262
 mp-export:      afi ipv6.unicast to AS216262 announce AS-MACOMNET
-remarks:        -------------------------------------------------------
-remarks:        ipv6 customers
-remarks:        -------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS41983 action pref=130; accept AS41983
 mp-export:      afi ipv6.unicast to AS41983 announce ANY
 mp-import:      afi ipv6.unicast from AS56879 action pref=130; accept AS56879
@@ -340,53 +309,26 @@ mp-import:      afi ipv6.unicast from AS56577 action pref=130; accept AS56577
 mp-export:      afi ipv6.unicast to AS56577 announce ANY
 mp-import:      afi ipv6.unicast from AS35237 action pref=130; accept AS35237
 mp-export:      afi ipv6.unicast to AS35237 announce ANY
-remarks:        -------------------------------------------------------
 org:            ORG-MTC3-RIPE
-admin-c:        MAC61-RIPE
-tech-c:         MAC61-RIPE
-remarks:        -------------------------------------------------------
-remarks:        MACOMNET uses communities with their customers.
-remarks:        Pre-defined Communities Available For Customer Signaling
-remarks:        -------------------------------------------------------
-remarks:        8470:1 Don't announce to any foreign upstream
-remarks:        8470:2 Set AS PATH prepend for announces to RU
-remarks:        8470:3 Don't announce to RU
-remarks:        8470:4 Set AS PATH prepend for announces foreign upstream
-remarks:        8470:6 Don't announce to AS20485
-remarks:        8470:70 Rostelecom only
-remarks:        -----------------------------------------
-remarks:        We filter inbound prefixes longer than /24
-remarks:
-remarks:        -----------------------------------------
-remarks:        General questions: info@macomnet.NET
-remarks:        Spam & Abuse: abuse@8470.net
-remarks:        Routing inquiries: noc@macomnet.NET
-remarks:        Peering issues: noc@macomnet.NET
-remarks:        NNTP issues: newsmaster@macomnet.NET
-remarks:        Voip issues: noc@macomnet.NET
-remarks:        -----------------------------------------
-remarks:        --------- A T T E N T I O N !!! ----------
-remarks:        Please use abuse@8470.net e-mail address
-remarks:        for spam and abuse complaints.
-remarks:        Mails for other addresses will be ignored!
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MACOMNET-MNT
 created:        2002-09-10T13:31:17Z
-last-modified:  2025-05-14T13:47:41Z
+last-modified:  2025-06-02T12:28:19Z
 source:         RIPE
+
+as-num:         AS8470
+country:        RU
+as-name:        MAcomnet JSC Macomnet
 
 organisation:   ORG-MTC3-RIPE
 org-name:       JSC Macomnet
 country:        RU
 org-type:       LIR
-address:        Kapelskiy pereulok, d. 8, str. 1,
-address:        129110
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +7 495 796 9079
-fax-no:         +7 495 796 9401
-admin-c:        SS1613-RIPE
+address:        Dummy address for ORG-MTC3-RIPE
+e-mail:         unread@ripe.net
 mnt-ref:        MACOMNET-MNT
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-by:         RIPE-NCC-HM-MNT
@@ -394,52 +336,6 @@ mnt-by:         MACOMNET-MNT
 abuse-c:        AC23738-RIPE
 created:        2004-04-17T11:54:46Z
 last-modified:  2020-12-16T12:54:02Z
-source:         RIPE # Filtered
-
-role:           MAcomnet Registry
-address:        MAcomnet ISP and ITSP,
-address:        Kapelskiy pereulok, d. 8, str. 1,
-address:        Moscow, 129110, Russia
-phone:          +7 495 7969079
-fax-no:         +7 495 7969401
-remarks:        trouble:      24/7 phone number +7 495 7969006
-remarks:        trouble:      Spam or Abuse: abuse@as8470.NET
-admin-c:        SS1613-RIPE
-tech-c:         SS1613-RIPE
-nic-hdl:        MAC61-RIPE
-mnt-by:         MACOMNET-MNT
-created:        2002-03-15T09:07:49Z
-last-modified:  2014-10-17T08:38:48Z
-source:         RIPE # Filtered
-abuse-mailbox:  abuse@as8470.NET
-
-
-role:           AS8470 Abuse Contact
-address:        Russia, 129110, Moscow, Kapelsky per., 8/1, AO "Macomnet"
-phone:          +7 495 7969079
-phone:          +7 495 7969392
-phone:          +7 916 5316625
-nic-hdl:        AC23738-RIPE
-mnt-by:         MACOMNET-MNT
-abuse-mailbox:  abuse@as8470.net
-admin-c:        SS1613-RIPE
-tech-c:         SS1613-RIPE
-created:        2013-06-10T17:13:37Z
-last-modified:  2019-04-23T11:01:50Z
-source:         RIPE # Filtered
-
-person:         Serg V Shubenkov
-address:        MAcomnet Telco,
-address:        Kapelskiy pereulok, d. 8, str. 1,
-address:        Moscow, 129110, Russia
-phone:          +7 916 5316625
-fax-no:         +7 495 7969401
-nic-hdl:        SS1613-RIPE
-remarks:        BirthDay: 19680731
-mnt-by:         MACOMNET-MNT
-created:        1970-01-01T00:00:00Z
-last-modified:  2025-03-04T13:15:13Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

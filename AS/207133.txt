@@ -1,42 +1,24 @@
-
-
-
-as-block:       AS206369 - AS207419
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-06-03T14:03:01Z
-last-modified:  2024-06-03T14:03:01Z
-source:         RIPE
-
-
-
 aut-num:        AS207133
 as-name:        RUCOMTECH-AS
-remarks:        Moscow, Russia
 org:            ORG-RL293-RIPE
-remarks:        ***************** Upstreams ******************
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-RUCOMTECH
 import:         from AS25478 accept ANY
 export:         to AS25478 announce AS-RUCOMTECH
 import:         from AS35598 accept ANY
 export:         to AS35598 announce AS-RUCOMTECH
-remarks:        ****************** Exchange ******************
 import:         from AS8631 action pref=500; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-RUCOMTECH
 import:         from AS50384 action pref=500; accept ANY
 export:         to AS50384 announce AS-RUCOMTECH
-remarks:        ******************* CUSTOMER *****************
 import:         from AS201498 action pref=700; accept AS201498
 export:         to AS201498 announce ANY
 import:         from AS211773 action pref=700; accept AS211773
 export:         to AS211773 announce ANY
 import:         from AS215121 action pref=700; accept AS215121
 export:         to AS215121 announce ANY
-remarks:        **********************************************
-admin-c:        AS40673-RIPE
-tech-c:         AS40673-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-rucomtech-1-mnt
@@ -44,39 +26,22 @@ created:        2016-08-24T13:13:47Z
 last-modified:  2024-05-06T10:09:26Z
 source:         RIPE
 
+as-num:         AS207133
+country:        RU
+as-name:        RUCOMTECH-AS RUCOMTECH LLC
+
 organisation:   ORG-RL293-RIPE
 org-name:       RUCOMTECH LLC
 country:        RU
 org-type:       LIR
-phone:          +74951357575
-phone:          +79264666667
-language:       RU
-address:        KOROLYOV, TUP EASTERN D. 8
-address:        141075
-address:        Korolev
-address:        RUSSIAN FEDERATION
-admin-c:        AS40673-RIPE
-tech-c:         AS40673-RIPE
+address:        Dummy address for ORG-RL293-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR45455-RIPE
 mnt-ref:        ru-rucomtech-1-mnt
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         ru-rucomtech-1-mnt
 created:        2018-03-09T16:10:06Z
 last-modified:  2024-11-15T12:28:56Z
-source:         RIPE # Filtered
-
-person:         Alexander Sgibnev
-address:        ul. Pionerskaya D.19, K.2, Kb.8, 141070 Korolev
-address:        125212
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74951357575
-phone:          +79264666667
-nic-hdl:        AS40673-RIPE
-mnt-by:         ru-rucomtech-1-mnt
-created:        2018-03-09T16:10:06Z
-last-modified:  2024-08-01T20:00:07Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

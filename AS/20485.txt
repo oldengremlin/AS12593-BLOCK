@@ -1,16 +1,3 @@
-
-
-
-as-block:       AS20485 - AS20857
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:27Z
-last-modified:  2018-11-22T15:27:27Z
-source:         RIPE
-
-
-
 aut-num:        AS20485
 as-name:        TRANSTELECOM
 org:            ORG-CJSC19-RIPE
@@ -42,7 +29,6 @@ import:         from AS5547 action pref=50; accept AS-ORTEL
 import:         from AS5588 action pref=100; accept AS-GTS-CE
 import:         from AS5589 action pref=100; accept AS-OPENBANK
 import:         from AS6697 action pref=100; accept AS-BELPAK
-remarks:        Amsterdam Internet Exchange (AMS-IX)
 import:         from AS6777 accept ANY AND NOT <^[AS3216 AS3255 AS6697 AS6849 AS8359 AS8492 AS8641 AS8744 AS8764 AS9002 AS9031 AS12389 AS12714 AS13002 AS13238 AS15169 AS16265 AS20764 AS25308 AS28917 AS29049 AS29226 AS31133 AS31500 AS34123 AS34456 AS35297 AS35320 AS35374 AS35805 AS39792 AS41733 AS42861 AS43727 AS47541 AS47764 AS48166 AS4934 AS50384 AS58002]>
 import:         from AS6844 action pref=100; accept AS-TD-SET
 import:         from AS6856 action pref=100; accept AS-SETICCUS
@@ -1619,201 +1605,8 @@ export:         to AS212487 announce ANY
 export:         to AS212747 announce ANY
 export:         to AS213067 announce ANY
 export:         to AS213334 announce ANY
-remarks:        +==============================================================+
-remarks:        BGP COMMUNITIES
-remarks:        +--------------------------------------------------------------+
-remarks:        Communities for prefix classification
-remarks:        +--------------------------------------------------------------+
-remarks:        All inbound prefixes are marked with BGP communities
-remarks:        which describe their geographical region source and number of node.
-remarks:
-remarks:
-remarks:        The format for the second component of community
-remarks:        (number after 20485:) is set at five digits.
-remarks:        This format is 20485:RSSNN where the fields are:
-remarks:
-remarks:        R - Geographical region code:
-remarks:
-remarks:        1 - Russia
-remarks:        2 - Europe
-remarks:        3 - Asia
-remarks:        4 - America
-remarks:
-remarks:        SS - source of the prefix:
-remarks:
-remarks:        00 - Customers
-remarks:
-remarks:        01 - Megafon - AS31133
-remarks:        03 - Vimpelcom - AS3216
-remarks:        04 - MTS - AS8359
-remarks:        06 - CenturyLink/Level3 - AS3356
-remarks:        07 - CHINA TELECOM - AS4134
-remarks:        09 - TeliaSonera - AS1299
-remarks:        10 - Vkontakte - AS47541
-remarks:        11 - Rostelecom - AS12389
-remarks:        12 - Mail&Odnoklassniki - AS47764
-remarks:        14 - Cogent - AS174
-remarks:        29 - Telecom Italia (TI-SPARKLE) - AS6762
-remarks:        31 - TWITCH - AS46489
-remarks:        32 - VALVE - AS32590
-remarks:        40 - Limelight - AS22822
-remarks:        41 - Facebook - AS32934
-remarks:        42 - LEASEWEB - AS16265
-remarks:        43 - PCCW - AS3491
-remarks:        44 - WEBAZILLA (AS-IPTRANSIT) - AS46786
-remarks:        48 - Vodafone - AS1273
-remarks:
-remarks:
-remarks:
-remarks:        NN - number of node:
-remarks:
-remarks:
-remarks:
-remarks:
-remarks:        07 - Frankfurt
-remarks:        08 - Stockholm
-remarks:        09 - HongKong
-remarks:        10 - Tokyo
-remarks:        11 - Syktivkar
-remarks:        12 - YoshkarOla
-remarks:        13 - Saransk
-remarks:        16 - Kazan
-remarks:        18 - Izhevsk
-remarks:        21 - Cheboksary
-remarks:        22 - Barnaul
-remarks:        23 - Krasnodar
-remarks:        24 - Krasnoyarsk
-remarks:        25 - Vladivostok
-remarks:        26 - Stavropol
-remarks:        27 - Khabarovsk
-remarks:        28 - Amurskaya region
-remarks:        29 - Arkhangelsk
-remarks:        30 - Astrakhan
-remarks:        31 - Belgorod
-remarks:        32 - Bryansk
-remarks:        34 - Volgograd
-remarks:        36 - Voronezh
-remarks:        38 - Irkutsk, Bratsk
-remarks:        39 - Kaliningrad
-remarks:        42 - Kemerovo
-remarks:        43 - Kirov
-remarks:        45 - Kurgan
-remarks:        46 - Kursk
-remarks:        48 - Lipetsk
-remarks:        51 - Murmansk
-remarks:        52 - Nizhny Novgorod
-remarks:        54 - Novosibirsk
-remarks:        55 - Omsk
-remarks:        56 - Orenburg
-remarks:        58 - Penza
-remarks:        59 - Perm
-remarks:        60 - Pskov
-remarks:        61 - RostovDon
-remarks:        62 - Ryazan
-remarks:        63 - Samara, Ufa
-remarks:        64 - Saratov
-remarks:        66 - Ekaterinburg
-remarks:        67 - Smolensk
-remarks:        70 - Tomsk
-remarks:        71 - Tula
-remarks:        72 - Tumen
-remarks:        73 - Ulyanovsk
-remarks:        74 - Chelyabinsk
-remarks:        75 - Chita
-remarks:        76 - Yaroslavl
-remarks:        77 - Moscow
-remarks:        78 - St.Petersburg
-remarks:        86 - Surgut
-remarks:        88 - USA
-remarks:        99 - Moscow
-remarks:
-remarks:        +--------------------------------------------------------------+
-remarks:        COMMUNITIES for PREFIX CONTROL
-remarks:        +--------------------------------------------------------------+
-remarks:        | !!!ATTENTION!!! |
-remarks:        The using of this communities may cause connectivity
-remarks:        problems and you must clearly understand what you
-remarks:        are doing. TransTeleCom does not bear any responsibility
-remarks:        if there will be such troubles.
-remarks:        +--------------------------------------------------------------+
-remarks:
-remarks:        Customers with Global Internet Access may control
-remarks:        prefixes that they announce to TTK by eBGP.
-remarks:        You can use communities that prepend prefix path
-remarks:        with additional AS hops or deny it announcement to
-remarks:        any peer. The first digit of the second part of
-remarks:        control community (number after 20485:)
-remarks:        is 5 (five). Next four digits are:
-remarks:
-remarks:
-remarks:        - To prepend or deny prefix use 20485:5RSSA, where:
-remarks:
-remarks:        R - Geographical region code:
-remarks:
-remarks:        1 - Russia
-remarks:        2 - Europe
-remarks:        3 - Asia
-remarks:        4 - America
-remarks:
-remarks:
-remarks:        SS - peer number:
-remarks:
-remarks:        Russia
-remarks:        01 - Megafon - AS31133
-remarks:        03 - Vimpelcom - AS3216
-remarks:        04 - MTS - AS8359
-remarks:        10 - Vkontakte - AS47541
-remarks:        11 - Rostelecom - AS12389
-remarks:        12 - Mailru & Odnoklassniki - AS47764
-remarks:
-remarks:
-remarks:        Europe
-remarks:        06 - Level3 - AS3356
-remarks:        07 - CHINA TELECOM - AS4134
-remarks:        09 - TeliaSonera - AS1299
-remarks:        14 - Cogent - AS174
-remarks:        29 - Telecom Italia (TI-SPARKLE) - AS6762
-remarks:        31 - TWITCH - AS46489
-remarks:        32 - VALVE - AS32590
-remarks:        40 - Limelight - AS22822
-remarks:        41 - Facebook - AS32934
-remarks:        43 - PCCW - AS3491
-remarks:        44 - WEBAZILLA (AS-IPTRANSIT) - AS46786
-remarks:        48 - Vodafone - AS1273
-remarks:        51 - Edgecast - AS15133
-remarks:
-remarks:        Asia
-remarks:        07 - CHINA TELECOM - AS4134
-remarks:        19 - Equinix Tokyo
-remarks:        25 - JPNAP Tokyo
-remarks:
-remarks:        A - action:
-remarks:
-remarks:        0 - don't announce prefix
-remarks:        1 - announce with one prepend
-remarks:        2 - announce with two times prepend
-remarks:        3 - announce with three times prepend
-remarks:
-remarks:
-remarks:
-remarks:        Default Local Preference are:
-remarks:
-remarks:        70 - Upstream
-remarks:        70 - International Peer
-remarks:        70 - Russian Peer
-remarks:        Range from 90 to 100 - Customer
-remarks:
-remarks:
-remarks:        +==============================================================+
-remarks:        We filter inbound prefixes longer than /24
-remarks:        +==============================================================+
-remarks:
-remarks:        Blackhole community 20485:65535
-remarks:
-remarks:
-remarks:        -----------------------------------------
-admin-c:        KTTK-RIPE
-tech-c:         KTTK-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TRANSTELECOM-MNT
@@ -1821,18 +1614,16 @@ created:        2002-09-12T12:29:41Z
 last-modified:  2025-04-30T08:03:11Z
 source:         RIPE
 
+as-num:         AS20485
+country:        RU
+as-name:        TRANSTELECOM Joint Stock Company TransTeleCom
+
 organisation:   ORG-CJSC19-RIPE
 org-name:       Joint Stock Company TransTeleCom
 country:        RU
 org-type:       LIR
-address:        Vereyskaya street 29, building 134
-address:        121357
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74957846670
-fax-no:         +74957846671
-admin-c:        YL390-RIPE
-admin-c:        MN12708-RIPE
+address:        Dummy address for ORG-CJSC19-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        KTTK-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        TRANSTELECOM-MNT
@@ -1840,38 +1631,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         TRANSTELECOM-MNT
 created:        2009-03-11T13:07:47Z
 last-modified:  2025-01-13T21:17:10Z
-source:         RIPE # Filtered
-
-role:           TTC NOC
-address:        Company TransTeleCom Network Operation Center
-address:        29/134, Vereyskaya str.
-address:        121357 Moscow Russian Federation
-phone:          +7 495 7846677
-phone:          +7 495 7846670
-fax-no:         +7 495 7846671
-remarks:        ------------------------------------------
-admin-c:        YL390-RIPE
-tech-c:         YL390-RIPE
-tech-c:         DP11502-RIPE
-tech-c:         MN12708-RIPE
-tech-c:         EL29455-RIPE
-nic-hdl:        KTTK-RIPE
-remarks:        -----------------------------------------
-remarks:        General questions: ripe@ttk.ru
-remarks:        Spam & Abuse: abuse@ttk.ru
-remarks:        Routing inquiries: iptech@ttk.ru
-remarks:        Peering issues: peering@ttk.ru
-remarks:        -----------------------------------------
-remarks:        --------- A T T E N T I O N !!! ---------
-remarks:        Please use abuse@ttk.ru e-mail address
-remarks:        for spam and abuse complaints.
-remarks:        Mails for other addresses will be ignored!
-remarks:        -----------------------------------------
-mnt-by:         TRANSTELECOM-MNT
-created:        2003-09-26T09:09:36Z
-last-modified:  2025-01-13T21:19:52Z
-source:         RIPE # Filtered
-abuse-mailbox:  abuse@ttk.ru
-
+source:         RIPE
 
 

@@ -1,87 +1,45 @@
-
-
-
-as-block:       AS25251 - AS25361
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:30Z
-last-modified:  2018-11-22T15:27:30Z
-source:         RIPE
-
-
-
 aut-num:        AS25251
 as-name:        ARTCON-AS
 descr:          Alpha Online Team
 org:            ORG-AOL10-RIPE
-remarks:        ========================================================
-remarks:        Upstreams
-remarks:        --------------------------------------------------------
-remarks:        - Inetcom
 import:         from AS35598 action pref=100; accept ANY
 export:         to AS35598 announce AS-ARTCON;
-remarks:        - Transroute Telecom
 import:         from AS50509 action pref=100; accept ANY
 export:         to AS50509 announce AS-ARTCON;
-remarks:        ========================================================
-remarks:        Peering
-remarks:        --------------------------------------------------------
-remarks:        - Dubrovka Telecom
 import:         from AS62459 action pref=400; accept AS-DUBROVKA
 export:         to AS62459 announce AS-ARTCON;
-remarks:        - Piter-IX MSK RS
 import:         from AS49869 action pref=400; accept ANY
 export:         to AS49869 announce AS-ARTCON;
-remarks:        - Piter-IX SPB RS
 import:         from AS50817 action pref=400; accept ANY
 export:         to AS50817 announce AS-ARTCON;
-remarks:        ========================================================
-remarks:        Downstreams
-remarks:        --------------------------------------------------------
-remarks:        - Alpha Online
 import:         from AS59653 action pref=1000; accept ANY;
 export:         to AS59653 announce AS-ARTCON;
-remarks:        ========================================================
-admin-c:        VT4512-RIPE
-tech-c:         VT4512-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@abcnet.ru
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-ALPHA
 created:        2002-09-12T06:52:26Z
 last-modified:  2025-04-30T08:18:36Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS25251
+country:        RU
+as-name:        ARTCON-AS Alpha Online Ltd
 
 organisation:   ORG-AOL10-RIPE
 org-name:       Alpha Online Ltd
 country:        RU
 org-type:       LIR
-address:        Korovinskoe Rd, 21, Bld 3, Apt 72
-address:        125412
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74957260864
-admin-c:        VT4512-RIPE
-tech-c:         VT4512-RIPE
+address:        Dummy address for ORG-AOL10-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR57085-RIPE
 mnt-ref:        MNT-ALPHA
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MNT-ALPHA
 created:        2019-11-28T13:38:52Z
 last-modified:  2024-01-23T17:03:57Z
-source:         RIPE # Filtered
-
-role:           Vladimir Tananko
-address:        Korovinskoe Rd, 21, Bld 3, Apt 72
-address:        125412
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74951050015
-nic-hdl:        VT4512-RIPE
-mnt-by:         MNT-ALPHA
-created:        2019-11-28T13:38:52Z
-last-modified:  2019-11-28T13:38:52Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

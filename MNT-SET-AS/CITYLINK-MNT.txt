@@ -1,3 +1,31 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 10.100.1.2 port 22
+as-set:         AS-CISP
+descr:          All CityLink announced AS
+members:        AS59793
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         CITYLINK-MNT
+created:        2016-07-14T09:54:19Z
+last-modified:  2021-10-13T15:01:40Z
+source:         RIPE
+
+
+
+aut-num:        AS59793
+as-name:        CISP-AS
+org:            ORG-CISP5-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CITYLINK-MNT
+import:         from AS34123 action pref=200; accept ANY
+import:         from AS48347 action pref=200; accept ANY
+export:         to AS34123 announce AS-CISP
+export:         to AS48347 announce AS-CISP
+status:         ASSIGNED
+created:        2014-09-26T11:22:39Z
+last-modified:  2020-11-16T18:04:37Z
+source:         RIPE
+sponsoring-org: ORG-TTL21-RIPE
+
+
+

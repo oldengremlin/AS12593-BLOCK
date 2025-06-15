@@ -1,34 +1,16 @@
-
-
-
-as-block:       AS6714 - AS6878
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS6731
 as-name:        COMSTAR-AS
 descr:          MTS Moscow, former COMSTAR Telecommunications
 descr:          Moscow, Russia
 org:            ORG-ZM1-RIPE
-remarks:        **********Upstreams********
 import:         from AS8359 action pref=30; accept ANY
 export:         to AS8359 announce AS-COMSTAR
 mp-import:      afi ipv6.unicast from AS8359 action pref=30; accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS-COMSTAR
-remarks:        ***************************
-remarks:        **********Peers************
 import:         from AS6863 action pref=20; accept AS-ROSNET
 import:         from AS13238 action pref=20; accept AS-COMPTEK
 export:         to AS6863 announce AS-COMSTAR
 export:         to AS13238 announce AS-COMSTAR
-remarks:        ***************************
-remarks:        **********Customers********
 import:         from AS72 action pref=10; accept AS72
 import:         from AS2567 action pref=10; accept AS2567
 import:         from AS6850 action pref=10; accept AS-METROCOM
@@ -252,8 +234,6 @@ export:         to AS211773 announce ANY
 export:         to AS212764 announce ANY
 export:         to AS212840 announce ANY
 export:         to AS47595 announce ANY
-remarks:        ***************************
-remarks:        **********Import***********
 import:         from AS41209 action pref=10; accept AS-COMSTAR-VOLGA
 import:         from AS28891 action pref=10; accept AS28891
 import:         from AS47358 action pref=10; accept AS47358
@@ -295,7 +275,6 @@ import:         from AS202181 action pref=10; accept AS202181
 import:         from AS203269 action pref=10; accept AS203269
 import:         from AS206295 action pref=10; accept AS206295
 import:         from AS206965 action pref=10; accept AS206965
-remarks:        **********Export***********
 export:         to AS28891 announce ANY
 export:         to AS8249 announce ANY
 export:         to AS29561 announce ANY
@@ -338,36 +317,28 @@ export:         to AS202181 announce ANY
 export:         to AS203269 announce ANY
 export:         to AS206295 announce ANY
 export:         to AS206965 announce ANY
-remarks:        ==================================================================================================
-admin-c:        CTN-RIPE
-tech-c:         CTN-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         MTU-NOC
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         COMSTAR-MNT
-remarks:        ===========================================================================
-remarks:        Information about Traffic Control using BGP Communities
-remarks:        see AS8359 Communities
-remarks:        ===========================================================================
+notify:         lir@comstar.ru
+notify:         camelot@comstar.ru
 created:        2002-07-09T05:39:18Z
 last-modified:  2024-11-25T06:24:06Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS6731
+country:        RU
+as-name:        COMSTAR-AS MTS PJSC
 
 organisation:   ORG-ZM1-RIPE
 org-name:       MTS PJSC
 country:        RU
 org-type:       LIR
-address:        Smolenskaya-Sennaya sq., 27 bld 2
-address:        119121
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74957213499
-fax-no:         +74992318129
-admin-c:        LAP-RIPE
-admin-c:        TABY-RIPE
-admin-c:        LMUR-RIPE
-admin-c:        YUF-RIPE
-admin-c:        RPS-RIPE
+address:        Dummy address for ORG-ZM1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        MAB8359-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MTU-NOC
@@ -375,36 +346,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MTU-NOC
 created:        2004-04-17T11:55:44Z
 last-modified:  2024-01-16T14:42:44Z
-source:         RIPE # Filtered
-
-role:           COMSTAR Telecommunications NOC
-address:        COMSTAR United Telesystems
-address:        Smolenskaya-Sennaya Sq., 27, build.2
-address:        119121 Moscow
-address:        Russia
-phone:          +7 495 9560000
-fax-no:         +7 495 9560795
-remarks:        trouble: -------------------------------------------------
-remarks:        trouble: * NOC: 5x9 (08:30-17:30 Moscow local time)
-remarks:        trouble: * Duty staff: 7x24
-remarks:        trouble: General questions: noc@comstar.ru
-remarks:        trouble: Spam and abuse: abuse@comstar.ru
-remarks:        trouble: Other: support@comstar.ru
-remarks:        trouble: -------------------------------------------------
-admin-c:        AUM3-RIPE
-tech-c:         AUM3-RIPE
-tech-c:         SNF100-RIPE
-tech-c:         TABY-RIPE
-tech-c:         PRV-RIPE
-tech-c:         LAP-RIPE
-tech-c:         POMA-RIPE
-nic-hdl:        CTN-RIPE
-remarks:        http://noc.comstar.ru
-mnt-by:         COMSTAR-MNT
-created:        1970-01-01T00:00:00Z
-last-modified:  2023-01-30T12:09:06Z
-source:         RIPE # Filtered
-abuse-mailbox:  abuse@comstar.ru
-
+source:         RIPE
 
 

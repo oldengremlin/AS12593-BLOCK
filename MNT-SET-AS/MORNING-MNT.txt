@@ -1,6 +1,80 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.160.3:22 already exists, disabling multiplexing
+as-set:         AS-KRK-IX
+descr:          Customers
+members:        AS31257
+members:        AS42895
+members:        AS12737
+members:        AS50775
+members:        AS30920
+members:        AS42574
+members:        AS57261
+members:        AS42995
+members:        AS201970
+members:        AS39785
+members:        AS47963
+members:        AS57438
+members:        AS34858
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MORNING-MNT
+created:        2017-11-14T04:12:36Z
+last-modified:  2021-02-12T09:53:40Z
+source:         RIPE
 
+
+
+as-set:         AS-ORIONNET
+descr:          Orion telecom, Krasnoyarsk
+members:        AS31257
+members:        AS204137
+members:        AS60980
+members:        AS208221
+members:        AS209867
+members:        AS-ABAKANNET
+members:        AS201786
+members:        AS201970
+members:        AS57438
+members:        AS50439
+members:        AS59696
+members:        AS51838
+members:        AS60575
+members:        AS41831
+members:        AS200976
+members:        AS58351
+members:        AS48699
+members:        AS48302
+members:        AS50443
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MORNING-MNT
+created:        2007-08-30T06:36:37Z
+last-modified:  2024-09-18T14:46:38Z
+source:         RIPE
+
+
+
+as-set:         AS-ORIONNET-IRK
+descr:          Orion telecom, Irkutsk
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS204137
+members:        AS208221
+mnt-by:         MORNING-MNT
+created:        2011-11-17T20:53:53Z
+last-modified:  2021-02-16T11:02:06Z
+source:         RIPE
+
+
+
+as-set:         AS204137:AS-ORIONNET
+descr:          Orion telecom, Irkutsk
+members:        AS204137
+members:        AS208221:AS-ORIONNET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MORNING-MNT
+created:        2025-01-02T09:51:32Z
+last-modified:  2025-01-02T09:54:18Z
+source:         RIPE
 
 
 
@@ -12,8 +86,8 @@ import:         from AS31257 accept ANY
 export:         to AS31257 announce AS211240
 import:         from AS50022 accept ANY
 export:         to AS50022 announce AS211240
-admin-c:        ORNN2-RIPE
-tech-c:         ORNN2-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MORNING-MNT
@@ -33,8 +107,8 @@ export:         to AS30865 announce AS211403
 import:         from AS39568 accept ANY
 export:         to AS39568 announce AS211403
 sponsoring-org: ORG-MNL1-RIPE
-admin-c:        ORNN2-RIPE
-tech-c:         ORNN2-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MORNING-MNT
@@ -47,11 +121,7 @@ source:         RIPE
 
 aut-num:        AS31257
 as-name:        ORIONNET-KRK
-remarks:        Orion Telecom LLC AS
 org:            ORG-MNL1-RIPE
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | UPSTREAMS
-remarks:        +-------------------------------------------------------------------------------+
 import:         from AS31133 accept ANY
 mp-import:      afi ipv6.unicast from AS31133 accept ANY;
 import:         from AS48858 accept ANY
@@ -76,9 +146,6 @@ export:         to AS12389 announce AS-ORIONNET
 mp-export:      afi ipv6.unicast to AS12389 announce AS-ORIONNET;
 export:         to AS20485 announce AS-ORIONNET
 mp-export:      afi ipv6.unicast to AS20485 announce AS-ORIONNET;
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | IX
-remarks:        +-------------------------------------------------------------------------------+
 import:         from AS13094 accept ANY
 mp-import:      afi ipv6.unicast from AS13094 accept ANY;
 import:         from AS60430 accept AS-RED-IX-PEERS
@@ -95,9 +162,6 @@ export:         to AS60763 announce AS-ORIONNET
 mp-export:      afi ipv6.unicast to AS60763 announce AS-ORIONNET;
 export:         to AS50384 announce AS-ORIONNET
 mp-export:      afi ipv6.unicast to AS50384 announce AS-ORIONNET;
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | CUSTOMERS
-remarks:        +-------------------------------------------------------------------------------+
 import:         from AS50439 accept AS50439
 import:         from AS50427 accept AS-ABAKANNET
 mp-import:      afi ipv6.unicast from AS50427 accept AS-ABAKANNET;
@@ -120,172 +184,8 @@ export:         to AS201786 announce ANY
 mp-export:      afi ipv6.unicast to AS201786 announce ANY;
 import:         from AS48699 accept AS48699
 export:         to AS48699 announce ANY
-remarks:
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix classification (Intro)
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Classification prefix (Upstream, IX, Clients and Others)
-remarks:        | 1 - Upstreams
-remarks:        | 2 - IX
-remarks:        | 3 - Peerings
-remarks:        | 5 - Customers
-remarks:        | 6 - Orionnet Cites
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix classification from UPSTREAMS
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 31257:1001 - ERTH (AS9049)
-remarks:        | 31257:1002 - Megafon (AS31133)
-remarks:        | 31257:1003 - RTK (AS12389)
-remarks:        | 31257:1004 - Beeline (AS3216)
-remarks:        | 31257:1005 - Milecom (AS48858)
-remarks:        | 31257:1006 - TTK (AS20485)
-remarks:        | 31257:1000 - All Upstreams
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix classification from IX
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 31257:2001 - RED-IX (AS60430)
-remarks:        | 31257:2002 - SIBIR-IX (AS60763)
-remarks:        | 31257:2003 - SFO-IX (AS13094)
-remarks:        | 31257:2004 - W-IX (AS50384)
-remarks:        | 31257:2000 - All IX
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix classification from Peerings
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 31257:3002 - SIBSETI (AS44026)
-remarks:        | 31257:3003 - Smotreshka (AS200976)
-remarks:        | 31257:3004 - 24HTV (AS50775)
-remarks:        | 31257:3006 - SORAN (AS207978)
-remarks:        | 31257:3000 - All Peerings
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix classification from Customers
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 31257:5001 - Komandor (AS201970)
-remarks:        | 31257:5002 - Sibservicesvyaz (AS60575)
-remarks:        | 31257:5004 - Scorpion (AS209867)
-remarks:        | 31257:5005 - IE Dudin (AS58351)
-remarks:        | 31257:5006 - Datapool (AS48699)
-remarks:        | 31257:5007 - GHK Telecom (AS48302)
-remarks:        | 31257:5009 - GTS (AS50439)
-remarks:        | 31257:5010 - Lesproekt (AS51838)
-remarks:        | 31257:5012 - KrasGMU (AS57438)
-remarks:        | 31257:5013 - Smotreshka (AS200976)
-remarks:        | 31257:5014 - Pravoved LLC (AS41831)
-remarks:        | 31257:5046 - Orionnet NVKZ (AS201786)
-remarks:        | 31257:5047 - Orionnet ABK (AS50427)
-remarks:        | 31257:5048 - Orionnet IRK (AS204137)
-remarks:        | 31257:5000 - All Customers
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix classification from Orion Cites
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 31257:6001 - Abakan (AS50427)
-remarks:        | 31257:6002 - Irkutsk (AS204137)
-remarks:        | 31257:6003 - Bratsk (AS208221)
-remarks:        | 31257:6004 - Zelenogorsk (AS60980)
-remarks:        | 31257:6005 - Minusinsk (AS50022)
-remarks:        | 31257:6006 - Novokuznetsk (AS201786)
-remarks:        | 31257:6000 - All Cites
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix control (Intro)
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Customers may control prefixes that they announce
-remarks:        | to Orion telecom by eBGP.
-remarks:        | You can use communities that prepend prefix path
-remarks:        | with additional AS hops or deny it announcement to
-remarks:        | any Upstream or Peer. To prepand or deny prefix
-remarks:        | use 31257:DNNA, where:
-remarks:        | D - destination of the prepend or deny action:
-remarks:        | 1 - Upstreams
-remarks:        | 2 - IX
-remarks:        | 3 - Peerings
-remarks:        | 5 - Customers
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix control to UPSTREAMS
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 31257:101x - ERTH (AS9049)
-remarks:        | 31257:102x - Megafon (AS31133)
-remarks:        | 31257:103x - RTK (AS12389)
-remarks:        | 31257:104x - Beeline (AS3216)
-remarks:        | 31257:105x - Milecom (AS48858)
-remarks:        | 31257:106x - TTK (AS20485)
-remarks:        | 31257:199x - All upstreams
-remarks:        | x = 0 - do not announce
-remarks:        | x = 1 to 6 - prepend 31257 (1 to 6) times
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix control to IX
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 31257:201X - RED-IX (AS60430)
-remarks:        | 31257:202X - SIBIR-IX (AS60763)
-remarks:        | 31257:203X - SFO-IX (AS13094)
-remarks:        | 31257:204X - W-IX (AS50384)
-remarks:        | 31257:299X - All IX
-remarks:        | x = 0 - do not announce
-remarks:        | x = 1 to 6 - prepend 31257 (1 to 6) times
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix control to Peerings
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 31257:302X - SIBSETI (AS44026)
-remarks:        | 31257:303X - Smotreshka (AS200976)
-remarks:        | 31257:304X - 24HTV (AS50775)
-remarks:        | 31257:306X - SORAN (AS207978)
-remarks:        | 31257:399X - All Peerings
-remarks:        | x = 0 - do not announce
-remarks:        | x = 1 to 6 - prepend 31257 (1 to 6) times
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix control to Customers
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 31257:551X - Komandor (AS201970)
-remarks:        | 31257:552X - Sibservicesvyaz (AS60575)
-remarks:        | 31257:554X - Scorpion (AS209867)
-remarks:        | 31257:555X - IE Dudin (AS58351)
-remarks:        | 31257:556X - Datapool (AS48699)
-remarks:        | 31257:557X - GHK Telecom (AS48302)
-remarks:        | 31257:559X - GTS (AS50439)
-remarks:        | 31257:560X - Lesproekt (AS51838)
-remarks:        | 31257:562X - KrasGMU (AS57438)
-remarks:        | 31257:563X - Smotreshka (AS200976)
-remarks:        | 31257:564X - Pravoved LLC (AS41831)
-remarks:        | 31257:596X - Orionnet NVKZ (AS201786)
-remarks:        | 31257:597X - Orionnet ABK (AS50427)
-remarks:        | 31257:598X - Orionnet IRK (AS204137)
-remarks:        | 31257:599X - All Customers
-remarks:        | x = 0 - do not announce
-remarks:        | x = 1,2,4,6 - prepend 31257 (1,2,4 or 6) times
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Backup Community
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 31257:9070 - Set local preference 70
-remarks:        | 31257:9080 - Set local preference 80
-remarks:        | 31257:9090 - Set local preference 90
-remarks:        | 31257:9110 - Set local preference 110
-remarks:        | 31257:9120 - Set local preference 120
-remarks:        | Default local preference is 100
-remarks:        | 31257:666 - Blackhole
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | We filter inbound prefixes smaller than /24
-remarks:        | Looking-glass: https://lg.orionnet.ru/
-remarks:        +-------------------------------------------------------------------------------+
-admin-c:        ORNN2-RIPE
-tech-c:         ORNN2-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MORNING-MNT

@@ -1,45 +1,115 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
+as-set:         AS-MTS-SAKH
+descr:          Mobile TeleSystems, PJSC, MR DV, SAKH
+members:        AS21103
+members:        AS30745
+members:        AS196721
+members:        AS39811
+members:        AS43550
+members:        AS51004
+members:        AS15454
+members:        AS47560
+members:        AS-SVTC
+members:        AS-MTSDV
+members:        AS-SNC
+members:        AS56720
+members:        AS196721
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MR-DV-MTS-MNT
+mnt-by:         MTU-NOC
+created:        2012-04-23T05:06:51Z
+last-modified:  2022-07-13T08:56:00Z
+source:         RIPE
 
+
+
+as-set:         AS-MTSDV
+descr:          Mobile TeleSystems PJSC, MR DV
+members:        AS39811
+members:        AS-MTS-SAKH
+members:        AS8749
+members:        AS-SIBRON-TELECOM
+members:        AS213117
+members:        AS198182
+members:        AS41060
+members:        AS47636
+members:        AS59672
+members:        AS56977
+members:        AS-PODRYAD
+members:        AS57898
+members:        AS-VLADLINK
+members:        AS59960
+members:        AS204112
+members:        AS50248
+members:        AS56437
+members:        AS56720
+members:        AS56845
+members:        AS50477
+members:        AS203533
+members:        AS49350
+members:        AS209217
+members:        AS213304
+members:        AS-ENFORTA
+members:        AS-BASE
+members:        AS2854
+members:        AS49181
+members:        AS60452
+members:        AS57737
+members:        AS48035
+members:        AS202806
+members:        AS206134
+members:        AS200764
+members:        AS60075
+members:        AS48058
+members:        AS57038
+members:        AS41789
+members:        AS59515
+members:        AS62008
+members:        AS56879
+members:        AS56581
+members:        AS196648
+members:        AS47375
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MR-DV-MTS-MNT
+mnt-by:         MTU-NOC
+notify:         mpls.vld@mts.ru
+created:        2008-05-19T07:44:30Z
+last-modified:  2024-02-14T07:35:33Z
+source:         RIPE
 
 
 
 aut-num:        AS21103
 as-name:        PRIMTEL-AS
 org:            ORG-ZM1-RIPE
-remarks:
 descr:          Sakhalin
 descr:          --- Upstreams ---
 import:         from AS20485 accept ANY
 import:         from AS8359 accept ANY
 export:         to AS20485 announce AS-MTS-SAKH
 export:         to AS8359 announce AS-MTS-SAKH
-remarks:
 descr:          Vladivostok
-remarks:        --- Upstreams ---
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-MTS-SAKH
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-MTS-SAKH
 import:         from AS39811 accept ANY
 export:         to AS39811 announce AS21103
-remarks:
-remarks:        --- Clients ---
-remarks:
 import:         from AS30745 accept AS-SVTC
 export:         to AS30745 announce ANY
 import:         from AS196721 accept AS196721
 export:         to AS196721 announce ANY
-admin-c:        MTU1-RIPE
-admin-c:        MTSA
-tech-c:         MTU1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         MTU-NOC
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MR-DV-MTS-MNT
+notify:         lir@mtu.ru
 created:        2002-06-06T22:23:54Z
 last-modified:  2022-07-13T08:56:00Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -48,7 +118,6 @@ as-name:        MTSNET-FAR-EAST-AS
 org:            ORG-ZM1-RIPE
 descr:          An Autonomous System for the Far East divisions
 descr:          of Mobile TeleSystems PJSC
-remarks:        --- Upstreams ---
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-MTSDV
 import:         from AS12389 accept ANY
@@ -57,12 +126,8 @@ import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-MTSDV
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-MTSDV
-remarks:        -- Peering --
-remarks:        -- MTS --
 import:         from AS21103 accept AS-MTS-SAKH
 export:         to AS21103 announce ANY
-remarks:        -- Clients --
-remarks:        - Vladivostok -
 import:         from AS213117 accept AS213117
 export:         to AS213117 announce ANY
 import:         from AS56437 accept AS56437
@@ -99,7 +164,6 @@ import:         from AS209217 accept AS209217
 export:         to AS209217 announce ANY
 import:         from AS213304 accept AS213304
 export:         to AS213304 announce ANY
-remarks:        -Irkutsk-
 import:         from AS13155 accept AS-SIBRON-TELECOM
 export:         to AS13155 announce ANY
 import:         from AS56959 accept AS56959
@@ -132,32 +196,20 @@ export:         to AS56581 announce ANY
 descr:          -Buryatia-
 import:         from AS206134 accept AS206134
 export:         to AS206134 announce ANY
-remarks:        ---Yakutiya(Sakha)---
 import:         from AS196648 accept AS196648
 export:         to AS196648 announce ANY
-remarks:        - Kamchatka -
 import:         from AS47375 accept AS47375
 export:         to AS47375 announce ANY
-admin-c:        MTSA
-admin-c:        PZ2049-RIPE
-tech-c:         PZ2049-RIPE
-remarks:        -----------------------------------------------------------
-remarks:        Communities
-remarks:        -----------------------------------------------------------
-remarks:        39811:1000 - do not advertise to all upstreams
-remarks:        39811:201x - MTS
-remarks:        39822:202x - TTK
-remarks:        39811:203x - RTK
-remarks:        x:
-remarks:        0 - do not advertise
-remarks:        1..6 - prepend N times
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         lir@mtu.ru
 mnt-by:         MR-DV-MTS-MNT
 mnt-by:         MTU-NOC
 created:        2006-04-27T12:23:32Z
 last-modified:  2024-02-14T07:34:58Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

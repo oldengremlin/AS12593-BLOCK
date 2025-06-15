@@ -1,3 +1,105 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 212.90.160.3 port 22
+as-set:         AS-MTT
+descr:          Multiregional TransitTelecom
+descr:          Autonomous systems
+members:        AS-MTT-OWN
+members:        AS-MTT-CLIENTS
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         MTT-RIPE-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2015-09-08T13:41:01Z
+source:         RIPE
+
+
+
+as-set:         AS-MTT-CLIENTS
+descr:          Multiregional TransitTelecom
+descr:          Client`s AS
+members:        AS59667
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MTT-RIPE-MNT
+notify:         noc@mtt.ru
+notify:         data@mtt.ru
+created:        2015-09-08T13:23:37Z
+last-modified:  2023-10-02T12:12:49Z
+source:         RIPE
+
+
+
+as-set:         AS-MTT-OWN
+descr:          Multiregional TransitTelecom
+descr:          Own autonomous systems
+members:        AS49476
+members:        AS21135
+members:        AS49789
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MTT-RIPE-MNT
+notify:         noc@mtt.ru
+notify:         data@mtt.ru
+created:        2015-07-06T12:04:20Z
+last-modified:  2017-10-18T09:54:30Z
+source:         RIPE
+
+
+
+aut-num:        AS21135
+org:            ORG-MTT1-RIPE
+as-name:        MTT-AS
+descr:          MTT AS (Russia)
+import:         from AS49476 action pref=100; accept ANY
+export:         to AS49476 announce AS21135
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MTT-RIPE-MNT
+created:        2001-11-02T08:10:13Z
+last-modified:  2024-11-12T11:55:43Z
+source:         RIPE
+
+
+
+aut-num:        AS49476
+as-name:        MTT-AS
+org:            ORG-MTT1-RIPE
+export:         to AS47196 announce AS-MTT
+import:         from AS47196 action pref=100; accept AS-GPI
+export:         to AS47196 announce ANY
+import:         from AS47196 action pref=100; accept AS-GPI
+export:         to AS59667 announce ANY
+import:         from AS59667 action pref=200; accept AS59667
+export:         to AS21135 announce AS49476
+import:         from AS21135 action pref=100; accept ANY
+export:         to AS49789 announce AS49476
+import:         from AS49789 action pref=100; accept ANY
+import:         from AS8631 action pref=100; accept ANY
+export:         to AS8631 announce AS-MTT
+export:         to AS25478 announce AS-MTT
+import:         from AS25478 action pref=100; accept AS25478
+export:         to AS25478 announce ANY
+import:         from AS25478 action pref=100; accept AS25478
+export:         to AS31133 announce as-mtt
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS29226 announce as-mtt
+import:         from AS29226 action pref=100; accept ANY
+import:         from AS8641 action pref=100; accept ANY
+export:         to AS8641 announce as-mtt
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce as-mtt
+import:         from AS47764 action pref=100; accept ANY
+export:         to AS47764 announce AS-MTT
+export:         to AS200662 announce ANY
+import:         from AS200662 action pref=100; accept AS200662
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MTT-RIPE-MNT
+created:        2009-06-16T08:29:01Z
+last-modified:  2023-03-14T13:04:43Z
+source:         RIPE
+
+
+

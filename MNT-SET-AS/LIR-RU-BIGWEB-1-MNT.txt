@@ -1,4 +1,52 @@
+as-set:         AS-VALUEHOST
+descr:          AS numbers for Valuehost
+members:        AS40966
+members:        AS30943
+members:        AS63258
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         lir-ru-bigweb-1-MNT
+created:        2004-10-07T16:31:56Z
+last-modified:  2024-08-20T14:41:09Z
+source:         RIPE
 
+
+
+as-set:         AS30943:AS-BIGWEB
+descr:          Downstream AS numbers announced to Upstreams
+members:        AS30943
+members:        AS40966
+members:        AS63258
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         lir-ru-bigweb-1-MNT
+created:        2024-08-20T14:24:01Z
+last-modified:  2024-10-17T12:48:12Z
+source:         RIPE
+
+
+
+as-set:         AS40966:AS-L7GUARD
+members:        AS40966
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         lir-ru-bigweb-1-MNT
+created:        2024-09-23T12:02:57Z
+last-modified:  2024-09-23T12:02:57Z
+source:         RIPE
+
+
+
+as-set:         as40966:AS-BIGWEB
+members:        AS40966
+members:        AS30943
+members:        AS63258
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         lir-ru-bigweb-1-MNT
+created:        2024-10-16T10:19:10Z
+last-modified:  2024-10-17T12:47:40Z
+source:         RIPE
 
 
 
@@ -6,21 +54,14 @@ aut-num:        AS30943
 org:            ORG-ZWH2-RIPE
 as-name:        BIGWEB-AS
 descr:          BIGWEB Network
-remarks:        ----------------------------------------------------
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS30943:AS-BIGWEB
 import:         from AS40966 accept AS40966
 export:         to AS40966 announce ANY
 import:         from AS63258 accept AS63258
 export:         to AS63258 announce ANY
-remarks:        ----------------------------------------------------
-remarks:        1. ABUSE CONTACTS
-remarks:        If you are being abused and this seems to be
-remarks:        originated from our network please report this
-remarks:        to our Incident Response Team at abuse@bigweb.host
-remarks:        ----------------------------------------------------
-admin-c:        WHN4-RIPE
-tech-c:         WHN4-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lir-ru-bigweb-1-MNT
@@ -63,8 +104,8 @@ import:         from AS50817 accept ANY
 export:         to AS50817 announce as40966:AS-BIGWEB
 import:         from AS50952 accept ANY
 export:         to AS50952 announce as40966:AS-BIGWEB
-admin-c:        WHN4-RIPE
-tech-c:         WHN4-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lir-ru-bigweb-1-MNT

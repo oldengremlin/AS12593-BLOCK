@@ -1,3 +1,151 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 185.151.106.150 port 22
+as-set:         AS3239:AS-IN
+descr:          AS list to accept from peer or customer
+descr:          Accept PeerAS only from the PeerAS if
+descr:          AS3239:AS-IN:PeerAS objects is not defined
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SURNET-MNT
+created:        2004-12-23T13:52:36Z
+last-modified:  2008-07-03T06:15:42Z
+source:         RIPE
+
+
+
+as-set:         AS3239:AS-IN:AS2118
+descr:          See AS3239:AS-IN object for description.
+members:        AS2118
+members:        AS12335
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SURNET-MNT
+created:        2004-12-23T13:52:43Z
+last-modified:  2008-07-03T06:15:42Z
+source:         RIPE
+
+
+
+as-set:         AS3239:AS-IN:AS2854
+descr:          See AS3239:AS-IN object for description.
+members:        AS-ROSPRINT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SURNET-MNT
+created:        2004-12-23T13:52:47Z
+last-modified:  2008-07-03T06:15:42Z
+source:         RIPE
+
+
+
+as-set:         AS3239:AS-IN:AS28970
+descr:          See AS3239:AS-IN object for description.
+members:        AS-TRS
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SURNET-MNT
+created:        2004-12-23T13:52:46Z
+last-modified:  2008-07-03T06:15:42Z
+source:         RIPE
+
+
+
+as-set:         AS3239:AS-OUT
+descr:          AS list to announce to customer
+descr:          Announce AS-SURNET to the PeerAS if
+descr:          AS3239:AS-OUT:PeerAS objects is not defined
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SURNET-MNT
+created:        2004-12-23T13:52:38Z
+last-modified:  2008-07-03T06:15:42Z
+source:         RIPE
+
+
+
+as-set:         AS3239:AS-PREF
+descr:          Raise local preference for some upstream routes.
+descr:          Parent object. See AS3239:AS-PREF:PeerAS objects further.
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SURNET-MNT
+created:        2004-12-22T12:16:42Z
+last-modified:  2008-07-03T06:15:40Z
+source:         RIPE
+
+
+
+as-set:         AS3239:AS-PREF:AS29648
+descr:          See AS3239:AS-PREF object for description.
+members:        AS3239:AS-PREF:AS8342
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SURNET-MNT
+created:        2005-07-28T12:58:02Z
+last-modified:  2008-07-03T06:15:42Z
+source:         RIPE
+
+
+
+as-set:         AS3239:AS-PREF:AS35400
+descr:          See AS3239:AS-PREF object for description.
+members:        AS3239:AS-PREF:AS8342
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SURNET-MNT
+created:        2006-01-30T10:55:37Z
+last-modified:  2008-07-03T06:15:43Z
+source:         RIPE
+
+
+
+as-set:         AS3239:AS-PREF:AS8342
+descr:          See AS3239:AS-PREF object for description.
+members:        AS12335
+members:        AS30594
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SURNET-MNT
+created:        2004-12-22T13:29:15Z
+last-modified:  2008-07-03T06:15:41Z
+source:         RIPE
+
+
+
+as-set:         AS3239:AS-UPSTREAM
+descr:          Our upstream ISPs
+members:        AS702
+members:        AS8342
+members:        AS20535
+members:        AS29648
+members:        AS35400
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SURNET-MNT
+created:        2004-12-22T13:10:53Z
+last-modified:  2008-07-03T06:15:41Z
+source:         RIPE
+
+
+
+aut-num:        AS3239
+as-name:        RU-SUrNet
+descr:          PJSC "Rostelecom". Chelyabinsk branch
+import:         { from AS-ANY accept NOT { 0.0.0.0/0 }; } refine { from AS-ANY action pref=40; accept community(3239:60); from AS-ANY action pref=30; accept community(3239:70); from AS-ANY action pref=10; accept community(3239:90); from AS-ANY action pref=0; accept ANY; } refine { from AS3239:AS-CUST accept (AS3239:AS-IN:PeerAS OR PeerAS) AND (<AS3239:AS-IN:PeerAS$> OR <PeerAS$>); }
+export:         { to AS3239:AS-CUST announce AS3239:AS-OUT:PeerAS OR AS-SURNET; to AS3239:AS-OUT-FULL announce ANY; }
+import:         { from AS-ANY action community .= {3239:1000}; accept ANY; } refine { from AS8342 action community .= {3239:201}; accept ANY; from AS2118 action community .= {3239:203}; accept ANY; from AS8324 action community .= {3239:205}; accept ANY; from AS702 action community .= {3239:206}; accept ANY; from AS29304 accept NOT ANY; from AS29648 action community .= {3239:208}; accept ANY; from AS35400 action community .= {3239:209}; accept ANY; } refine { from AS3239:AS-UPSTREAM action pref=25; accept AS3239:RS-PREF:PeerAS OR <AS3239:AS-PREF:PeerAS$>; from AS35400 action pref=26; accept ANY; from AS29648 action pref=26; accept ANY; from AS8324 action pref=27; accept ANY; from AS3239:AS-UPSTREAM action pref=30; accept ANY; from AS-ANY action pref=15; accept AS3239:RS-PREF:PeerAS; from AS-ANY action pref=20; accept (<AS3239:AS-IN:PeerAS$> OR <PeerAS$>) AND NOT { 0.0.0.0/0 }; }
+export:         { to AS8342 to AS29648 to AS35400 action community .= {8342:1000, 8342:1100, 8342:1300}; announce AS3239:RS-HALFROUTES; to AS8342 to AS29648 to AS35400 action community .= {8342:1006, 8342:1106, 8342:1306}; announce AS3239; to AS2118 action community .= {NO_EXPORT}; aspath.prepend(AS3239,AS3239,AS3239) ; announce AS3239; }
+export:         { to AS-ANY announce AS-SURNET AND NOT community(3239:1000) AND NOT { 62.148.254.0/24 }; } refine { to AS8342 announce NOT community(3239:1010); to AS8324 announce NOT community(3239:1050); to AS702 announce NOT community(3239:1060); to AS29304 announce NOT community(3239:1060); to AS29648 announce NOT community(3239:1080); to AS35400 announce NOT community(3239:1090); }
+org:            ORG-JR8-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SURNET-MNT
+mnt-by:         MFIST-MNT
+mnt-by:         MFIST-ROUTE-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2002-04-16T12:40:25Z
+last-modified:  2024-05-13T10:43:27Z
+source:         RIPE
+
+
+

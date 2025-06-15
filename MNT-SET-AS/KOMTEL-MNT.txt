@@ -1,4 +1,40 @@
+as-set:         AS-MTT-CONNECT-IVANOVO
+descr:          MTT Connect Ltd.
+descr:          Ivanovo Branch
+org:            ORG-NIL11-RIPE
+members:        AS198541
+members:        AS199991
+members:        AS29114
+members:        AS20821
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         KOMTEL-MNT
+notify:         sse@345000.ru
+created:        2012-02-27T13:46:05Z
+last-modified:  2021-12-08T08:24:41Z
+source:         RIPE
 
+
+
+as-set:         as-intercomtel
+descr:          INTERCOMTEL LTD
+members:        AS38917
+members:        AS62439
+members:        AS51781
+members:        AS51730
+members:        AS42393
+members:        AS20821
+members:        AS51525
+members:        AS198541
+members:        AS199991
+members:        AS-RUBIT
+members:        AS-MTT-CONNECT-IVANOVO
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         KOMTEL-MNT
+created:        2007-04-26T08:23:14Z
+last-modified:  2024-04-06T06:22:23Z
+source:         RIPE
 
 
 
@@ -14,15 +50,16 @@ export:         to AS29114 announce ANY
 import:         from as38917 accept any
 export:         to as38917 announce AS-MTT-CONNECT-IVANOVO
 org:            ORG-OC8-RIPE
-admin-c:        AR4565-RIPE
-tech-c:         AR4565-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         sse@345000.ru
 abuse-c:        AR22022-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         KOMTEL-MNT
 created:        2012-03-01T08:27:14Z
 last-modified:  2023-10-26T09:17:10Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -50,23 +87,11 @@ import:         from AS29114 accept AS29114
 export:         to AS29114 announce {0.0.0.0/0}
 import:         from AS51525 accept AS51525
 export:         to AS51525 announce {0.0.0.0/0}
-remarks:        ------------------------------------------------------------------------------
-remarks:        38917:1X0N When advertising to any uplink...
-remarks:        ...N=0 - do not advertise
-remarks:        ...N=1,2,3,4 - prepend most recent AS 1,2,3 or 4 times
-remarks:        ...X=1 TRANSTELECOM (AS20485)
-remarks:        ...X=2 PAO VimpelCom (AS3216)
-remarks:        ...X=3 PJSC MegaFon (AS31133)
-remarks:        ...X=4 ROSTELECOM (AS12389)
-remarks:        ------------------------------------------------------------------------------
 org:            ORG-OC8-RIPE
-admin-c:        AR4565-RIPE
-admin-c:        IV6524-RIPE
-admin-c:        AE6363-RIPE
-tech-c:         AR4565-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-tech-c:         IV6524-RIPE
 mnt-by:         KOMTEL-MNT
 created:        2005-11-14T10:54:43Z
 last-modified:  2024-04-09T10:33:26Z

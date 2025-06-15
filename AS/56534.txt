@@ -1,22 +1,7 @@
-
-
-
-as-block:       AS56444 - AS56807
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-12-10T14:53:42Z
-last-modified:  2024-12-10T14:53:42Z
-source:         RIPE
-
-
-
 aut-num:        AS56534
 as-name:        Comfortel
 descr:          Comfortel, St.Petersburg, Russia
 org:            ORG-CL253-RIPE
-remarks:        --- IPv4 Routing Policy ---
-remarks:        --- UPSTREAMS ---
 import:         from AS9002 action pref=105; accept ANY
 export:         to AS9002 announce AS-CMFT
 import:         from AS20764 action pref=105; accept ANY
@@ -29,7 +14,6 @@ import:         from AS31133 action pref=105; accept ANY
 export:         to AS31133 announce AS-CMFT
 import:         from AS12389 action pref=105; accept ANY
 export:         to AS12389 announce AS-CMFT
-remarks:        --- PEERS ---
 import:         from AS31210 action pref=110; accept AS-DTEL-IX
 export:         to AS31210 announce AS-CMFT
 import:         from AS3267 action pref=110; accept AS-RUNNET
@@ -54,7 +38,6 @@ import:         from AS15169 action pref=111; accept AS-GOOGLE
 export:         to AS15169 announce AS-CMFT
 import:         from AS51178 action pref=111; accept AS-AVANTEL-SPB
 export:         to AS51178 announce AS-CMFT
-remarks:        --- DOWNSTREAMS ---
 import:         from AS3227 action pref=130; accept AS3227
 export:         to AS3227 announce ANY
 import:         from AS3312 action pref=130; accept AS-ELEKTRA
@@ -309,8 +292,6 @@ import:         from AS215425 action pref=130; accept AS215425
 export:         to AS215425 announce ANY
 import:         from AS216236 action pref=130; accept AS216236
 export:         to AS216236 announce ANY
-remarks:        --- IPv6 Routing Policy ---
-remarks:        --- UPSTREAMS ---
 mp-import:      afi ipv6.unicast from AS3267 action pref=105; accept AS-ANY
 mp-export:      afi ipv6.unicast to AS3267 announce AS-CMFT6
 mp-import:      afi ipv6.unicast from AS20764 action pref=105; accept AS-ANY
@@ -319,7 +300,6 @@ mp-import:      afi ipv6.unicast from AS9002 action pref=105; accept AS-ANY
 mp-export:      afi ipv6.unicast to AS9002 announce AS-CMFT6
 mp-import:      afi ipv6.unicast from AS31500 action pref=105; accept AS-ANY
 mp-export:      afi ipv6.unicast to AS31500 announce AS-CMFT6
-remarks:        --- PEERS ---
 mp-import:      afi ipv6.unicast from AS48625 action pref=110; accept AS-PIRIX
 mp-export:      afi ipv6.unicast to AS48625 announce AS-CMFT6
 mp-import:      afi ipv6.unicast from AS43690 action pref=110; accept AS-SPBROUTESERVER
@@ -328,7 +308,6 @@ mp-import:      afi ipv6.unicast from AS8631 action pref=110; accept AS-MSKROUTE
 mp-export:      afi ipv6.unicast to AS8631 announce AS-PIRIXINET
 mp-import:      afi ipv6.unicast from AS203921 action pref=110; accept AS-ELBA-IX-ROUTESERVER
 mp-export:      afi ipv6.unicast to AS203921 announce AS-PIRIXINET
-remarks:        --- DOWNSTREAMS ---
 mp-import:      afi ipv6.unicast from AS43031 action pref=130; accept AS-VLAN
 mp-export:      afi ipv6.unicast to AS43031 announce AS-ANY
 mp-import:      afi ipv6.unicast from AS44484 action pref=130; accept AS44484
@@ -343,83 +322,26 @@ mp-import:      afi ipv6.unicast from AS211892 action pref=130; accept AS-WAVEAC
 mp-export:      afi ipv6.unicast to AS211892 announce AS-ANY
 mp-import:      afi ipv6.unicast from AS62251 action pref=130; accept AS-DREAMLESS
 mp-export:      afi ipv6.unicast to AS62251 announce AS-ANY
-remarks:        ----------------------------------
-remarks:        External communities may be set by external peers when
-remarks:        talking to AS56534.
-remarks:        Community Meaning
-remarks:        56534:1000x When advertising to any UPSTREAM peer
-remarks:        56534:1010x When advertising to ReTN
-remarks:        56534:1020x When advertising to RuNNET
-remarks:        56534:1030x When advertising to iHome
-remarks:        56534:1040x When advertising to RASCOM
-remarks:        56534:1050x When advertising to GlobalNet
-remarks:        56534:1060x When advertising to TTK
-remarks:        56534:1070x When advertising to Megafon
-remarks:        56534:2000x When advertising to any GOOGLE peer
-remarks:        56534:2010x When advertising to any SPB-IX peer
-remarks:        56534:2020x When advertising to any MSK-IX peer
-remarks:        56534:2030x When advertising to any G-CORE peer
-remarks:        56534:2040x When advertising to any DATAIX peer
-remarks:        56534:2050x When advertising to any DTEL-IX peer
-remarks:        56534:2060x When advertising to any PITERIX peer
-remarks:        56534:2070x When advertising to any PITERIX-MSK peer
-remarks:        56534:2080x When advertising to any APPLE peer
-remarks:        56534:2090x When advertising to any PITERIX-KIEV peer
-remarks:        56534:2100x When advertising to any PITERIX-HELSINKI peer
-remarks:        ...x=0 - do not advertise
-remarks:        ...x=1,2,4 or 6 - prepend 56534 1,2,4 or 6 times
-remarks:        Internal comminuties are assigned only internally, and are
-remarks:        always deleted from incoming updates at the border routers.
-remarks:        They may be used by peers to filter some prefixes.
-remarks:        56534:1000 Receieved from an UPSTREAM peer
-remarks:        56534:1010 Receieved from ReTN
-remarks:        56534:1020 Receieved from RunNET
-remarks:        56534:1030 Receieved from iHome
-remarks:        56534:1040 Receieved from RASCOM
-remarks:        56534:1050 Receieved from GlobalNet
-remarks:        56534:1060 Receieved from TTK
-remarks:        56534:1070 Receieved from Megafon
-remarks:        56534:2000 Receieved from GOOGLE
-remarks:        56534:2010 Receieved from SPB-IX
-remarks:        56534:2020 Receieved from MSK-IX
-remarks:        56534:2030 Receieved from G-CORE
-remarks:        56534:2040 Receieved from DATAIX
-remarks:        56534:2050 Receieved from DTEL-IX
-remarks:        56534:2060 Receieved from PITER-IX
-remarks:        56534:2070 Receieved from PITER-IX-MSK
-remarks:        56534:2080 Receieved from APPLE
-remarks:        56534:2090 Receieved from PITER-IX-KIEV
-remarks:        56534:2100 Receieved from PITER-IX-HELSINKI
-remarks:        56534:3000 Receieved from IX peer
-remarks:        56534:9900 Origin in SPB
-remarks:        56534:9000 Origin in SPB
-remarks:        Blackhole community for downstreams peers 56534:6666
-remarks:        Backup community for downstreams peers 56534:9966 set minimum local-pref for our network
-remarks:        Other communities are accepted but ignored.
-remarks:        -------------------------------
-remarks:        Public Looking Glass: lg.comfortel.pro
-remarks:        -------------------------------
-admin-c:        CMFT
-tech-c:         CMFT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@comfortel.pro
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
 created:        2011-03-11T14:49:01Z
 last-modified:  2025-05-07T07:21:09Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS56534
+country:        RU
+as-name:        Comfortel Comfortel Ltd.
 
 organisation:   ORG-CL253-RIPE
 org-name:       Comfortel Ltd.
 country:        RU
 org-type:       LIR
-address:        Detskiy str 5 office 304
-address:        196084
-address:        Saint-Petersburg
-address:        RUSSIAN FEDERATION
-phone:          +78126700000
-fax-no:         +78126700000 ext. 4
-admin-c:        CMFT
-tech-c:         CMFT
+address:        Dummy address for ORG-CL253-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        CMFT
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        CMFT-MNT
@@ -437,33 +359,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         CMFT-MNT
 created:        2014-01-31T10:00:31Z
 last-modified:  2023-08-21T13:31:26Z
-source:         RIPE # Filtered
-
-role:           Comfortel Ltd Contacts Data
-address:        Savushkina 119-5
-address:        193091 St.Petersburg Russia
-phone:          +7 812 670 00 00
-fax-no:         +7 812 670 00 00 ext. 4
-abuse-mailbox:  abuse@comfortel.pro
-admin-c:        ME3174-RIPE
-tech-c:         POOF-RIPE
-remarks:        -----------------------------------------
-remarks:        General questions: lir@comfortel.pro
-remarks:        Spam & Abuse: abuse@comfortel.pro
-remarks:        Routing issues: noc@comfortel.pro
-remarks:        Peering issues: team@pirix.ru
-remarks:        -----------------------------------------
-remarks:        --------- A T T E N T I O N !!! ---------
-remarks:        -----------------------------------------
-remarks:        Please use abuse@comfortel.pro e-mail address
-remarks:        for spam and abuse complaints.
-remarks:        Mails for other addresses will be ignored!
-remarks:        -----------------------------------------
-nic-hdl:        CMFT
-mnt-by:         CMFT-MNT
-created:        2021-04-20T09:17:41Z
-last-modified:  2022-01-18T10:37:33Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

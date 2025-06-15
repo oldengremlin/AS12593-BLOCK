@@ -1,3 +1,45 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 10.100.1.2 port 22
+as-set:         AS-ELECTRON
+descr:          AS50911
+members:        AS50911
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         EL-TELECOM-MNT
+created:        2018-07-18T06:28:54Z
+last-modified:  2018-07-18T06:28:54Z
+source:         RIPE
+
+
+
+as-set:         AS-SET-ELTELECOM
+members:        AS50911
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         EL-TELECOM-MNT
+created:        2016-10-14T10:57:13Z
+last-modified:  2018-07-18T06:16:58Z
+source:         RIPE
+
+
+
+aut-num:        AS50911
+as-name:        AS-ELECTRON
+org:            ORG-LA921-RIPE
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS31133 announce AS-SET-ELTELECOM
+import:         from AS8631 action pref=100; accept ANY
+export:         to AS8631 announce AS-SET-ELTELECOM
+import:         from AS31500 action pref=100; accept ANY
+export:         to AS31500 announce AS-SET-ELTELECOM
+import:         from AS15169 action pref=100; accept ANY
+export:         to AS15169 announce AS-SET-ELTELECOM
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         EL-TELECOM-MNT
+created:        2010-04-20T08:17:53Z
+last-modified:  2018-09-04T10:50:21Z
+source:         RIPE
+
+
+

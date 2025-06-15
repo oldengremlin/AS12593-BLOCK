@@ -1,20 +1,6 @@
-
-
-
-as-block:       AS25365 - AS25542
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:30Z
-last-modified:  2018-11-22T15:27:30Z
-source:         RIPE
-
-
-
 aut-num:        AS25408
 as-name:        WESTCALL-SPB-AS
 org:            ORG-RA21-RIPE
-remarks:        --- Upstreams ---
 import:         from AS1299 accept ANY
 export:         to AS1299 announce AS-WESTCALLSPB
 import:         from AS20764 accept ANY
@@ -27,14 +13,12 @@ import:         from AS9049 accept ANY
 export:         to AS9049 announce AS-WESTCALLSPB
 import:         from AS201706 accept ANY
 export:         to AS201706 announce AS-WESTCALLSPB
-remarks:        --- IX ---
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-WESTCALLSPB
 import:         from AS43690 accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-WESTCALLSPB
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-WESTCALLSPB
-remarks:        --- Customers ---
 import:         from AS45051 accept AS45051
 export:         to AS45051 announce ANY
 import:         from AS48547 accept AS48547
@@ -110,33 +94,8 @@ export:         to AS207853 announce ANY
 import:         from AS20946 accept AS20946
 export:         to AS20946 announce ANY
 default:        to AS9049
-remarks:        ===================================
-remarks:        BGP communities in advertisements to downstream:
-remarks:        -----------------------------------
-remarks:        25408:5100 received from uplink
-remarks:        25408:5200 received from peers
-remarks:        25408:5300 received from customer
-remarks:        -----------------------------------
-remarks:        BGP communities accepted from downstream:
-remarks:        -----------------------------------
-remarks:        25408:100x any uplink
-remarks:        25408:102x Telia
-remarks:        25408:104x RETN
-remarks:        25408:106x Rostelecom
-remarks:        25408:108x ER-Telecom
-remarks:        25408:200x any peer
-remarks:        25408:201x SPb-IX
-remarks:        25408:202x MSK-IX
-remarks:        where
-remarks:        x = 1,2,3,4 prepend x times
-remarks:        x = 5 do not advertise
-remarks:        -----------------------------------
-remarks:        Blackhole communities:
-remarks:        -----------------------------------
-remarks:        65535:666
-remarks:        ===================================
-admin-c:        ERTH3-RIPE
-tech-c:         RAID1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RAID-MNT
@@ -144,19 +103,16 @@ created:        2002-11-13T15:17:39Z
 last-modified:  2024-10-29T05:28:11Z
 source:         RIPE
 
+as-num:         AS25408
+country:        RU
+as-name:        WESTCALL-SPB-AS JSC "ER-Telecom Holding"
+
 organisation:   ORG-RA21-RIPE
 org-name:       JSC "ER-Telecom Holding"
 country:        RU
 org-type:       LIR
-address:        Shosse Kosmonavtov, 111i, bldg. 2, office 509
-address:        614066
-address:        Perm
-address:        RUSSIAN FEDERATION
-phone:          +79197001771
-phone:          +7 342 2462233
-fax-no:         +7 342 2195024
-admin-c:        ERTH3-RIPE
-tech-c:         RAID1-RIPE
+address:        Dummy address for ORG-RA21-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        RAID1-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        RAID-MNT
@@ -167,37 +123,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         RAID-MNT
 created:        2004-04-17T11:56:55Z
 last-modified:  2024-01-18T14:09:09Z
-source:         RIPE # Filtered
-
-role:           ER-Telecom ISP General Contact Role
-address:        111, str. Shosse Kosmonavtov
-address:        614000 Perm
-address:        Russian Federation
-nic-hdl:        ERTH3-RIPE
-mnt-by:         ERTH-MAGISTR
-mnt-by:         RAID-MNT
-created:        2019-04-29T09:26:35Z
-last-modified:  2019-04-29T09:26:35Z
-source:         RIPE # Filtered
-
-role:           ER-Telecom ISP Contact Role
-address:        JSC "ER-Telecom"
-address:        111, str. Shosse Kosmonavtov
-address:        614000 Perm
-address:        Russian Federation
-phone:          +7 342 2462233
-fax-no:         +7 342 2463344
-abuse-mailbox:  abuse@domru.ru
-remarks:        24/7 phone number: +7-342-2362233
-admin-c:        AAS585-RIPE
-admin-c:        SAWJ-RIPE
-tech-c:         AAS585-RIPE
-tech-c:         SAWJ-RIPE
-nic-hdl:        RAID1-RIPE
-mnt-by:         RAID-MNT
-created:        2005-02-11T12:50:50Z
-last-modified:  2024-07-24T09:39:40Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

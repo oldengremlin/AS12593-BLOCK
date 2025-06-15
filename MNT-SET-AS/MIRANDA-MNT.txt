@@ -1,6 +1,130 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.184.190:22 already exists, disabling multiplexing
-
+as-set:         AS-MRNDA
+descr:          Miranda-media AS-SET
+members:        AS57899
+members:        AS201776
+members:        AS8274
+members:        AS8381
+members:        AS21403
+members:        AS25082
+members:        AS25482:AS-CUSTOMERS
+members:        AS25591
+members:        AS29031
+members:        AS31387
+members:        AS31531
+members:        AS34280
+members:        AS34990
+members:        AS39047
+members:        AS39529
+members:        AS39667
+members:        AS39772
+members:        AS41039
+members:        AS41269
+members:        AS41430
+members:        AS42074
+members:        AS42238
+members:        AS42250
+members:        AS43022
+members:        AS43400
+members:        AS43564
+members:        AS43972
+members:        AS44125
+members:        AS44139
+members:        AS44539
+members:        AS44884
+members:        AS47694
+members:        AS47939
+members:        AS49444
+members:        AS49465
+members:        AS49617
+members:        AS50204
+members:        AS56359
+members:        AS56386
+members:        AS56587
+members:        AS56663
+members:        AS56915
+members:        AS57164
+members:        AS57460
+members:        AS57615
+members:        AS57641
+members:        AS57679
+members:        AS57847
+members:        AS57899
+members:        AS57982
+members:        AS59815
+members:        AS59833
+members:        AS61421
+members:        AS196638
+members:        AS197002
+members:        AS197152
+members:        AS197335
+members:        AS197714
+members:        AS197960
+members:        AS198793
+members:        AS199827
+members:        AS199961:AS-MULTSYS
+members:        AS200467
+members:        AS202279
+members:        AS203451
+members:        AS203528
+members:        AS203561
+members:        AS204144
+members:        AS204161
+members:        AS204485
+members:        AS204634
+members:        AS205515
+members:        AS207889
+members:        AS207967
+members:        AS208232
+members:        AS208435
+members:        AS208701
+members:        AS209074
+members:        AS209720
+members:        AS213278
+members:        AS213890
+members:        AS214210
+members:        AS214218
+members:        AS214221
+members:        AS214883
+members:        AS215503
+members:        AS215654
+members:        AS215678
+members:        AS216062
+members:        AS216264
+members:        AS-AGRONET
+members:        AS-AMIK
+members:        AS-CRELCOM
+members:        AS-CRIMEAINFOCOM
+members:        AS-CRIMEATEL
+members:        AS-CRIS
+members:        AS-CRISTAL-NET
+members:        AS-DIGIUA
+members:        AS-DON
+members:        AS-DOVECOM-RU
+members:        AS-DVCOM
+members:        AS-ENTELE
+members:        AS-FARLINE
+members:        AS-FEONET
+members:        AS-GIGABYTE
+members:        AS-IPCOM-NET
+members:        AS-KHERSONTELECOM
+members:        AS-KTKRU
+members:        AS-LANCOM
+members:        AS-LEVEL-MSK-NR
+members:        AS-LTC
+members:        AS-M3X
+members:        AS-REEDLAN
+members:        AS-PE_ARZANOVA
+members:        AS-SET-APEX
+members:        AS-SIVASH
+members:        AS-STATUS-V6
+members:        AS-TRKMETRO
+members:        AS-YALTAONLINE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MIRANDA-MNT
+created:        2014-07-17T06:27:21Z
+last-modified:  2025-05-29T07:23:39Z
+source:         RIPE
 
 
 
@@ -8,46 +132,24 @@ aut-num:        AS201776
 as-name:        MIRANDA-AS
 org:            ORG-ML281-RIPE
 descr:          Miranda-Media LLC
-remarks:        =========================================
-remarks:        Upstreams
-remarks:        -----------------------------------------
-remarks:        ROSTELECOM
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-MRNDA
-remarks:        Fiord
 import:         from AS28917 action pref=100; accept ANY
 export:         to AS28917 announce AS-MRNDA
-remarks:        RETN
 import:         from AS9002 action pref=100; accept ANY
 export:         to AS9002 announce AS-MRNDA
-remarks:        =========================================
-remarks:        Peers
-remarks:        -----------------------------------------
-remarks:        Yandex
 import:         from AS13238 accept AS-YANDEX
 export:         to AS13238 announce AS-MRNDA
-remarks:        Mail.ru
 import:         from AS47764 accept AS-MAILRU
 export:         to AS47764 announce AS-MRNDA
-remarks:        VK.com
 import:         from AS47542 accept AS-VKONTAKTE
 export:         to AS47542 announce AS-MRNDA
-remarks:        Piter-IX
 import:         from AS50817 accept as-piter-ix
 export:         to AS5081 announce AS-MRNDA
-remarks:        MSK-IX
 import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-MRNDA
-remarks:        Data-IX
 import:         from AS50952 action pref=100; accept AS-DATAIX
 export:         to AS50952 announce AS-MRNDA
-remarks:        =========================================
-remarks:        Community
-remarks:        -----------------------------------------
-remarks:        65500:55555 - blackhole traffic
-remarks:        =========================================
-remarks:        Customers
-remarks:        -----------------------------------------
 import:         from AS5593 accept AS-CRIS
 export:         to AS5593 announce ANY
 import:         from AS6789 accept AS-CRELCOM
@@ -214,14 +316,8 @@ import:         from AS213278 accept ANY
 export:         to AS213278 announce ANY
 import:         from AS216264 accept AS216264
 export:         to AS216264 announce ANY
-remarks:        =========================================
-admin-c:        MLTT2-RIPE
-tech-c:         MLTT2-RIPE
-remarks:        -----------------------------------------
-remarks:        Please use abuse@miranda-media.ru e-mail
-remarks:        address for spam and abuse complaints.
-remarks:        -----------------------------------------
-remarks:        Geofeed https://www.miranda-media.ru/geofeed
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MIRANDA-MNT
@@ -237,8 +333,8 @@ org:            ORG-ML281-RIPE
 descr:          Miranda-Media LLC
 import:         from as201776 accept ANY
 export:         to as201776 announce AS21445
-tech-c:         MLTT2-RIPE
-admin-c:        MLTT2-RIPE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MIRANDA-MNT
@@ -252,36 +348,18 @@ aut-num:        AS47203
 as-name:        KTKRU-AS
 org:            ORG-ML281-RIPE
 descr:          JSC  "CrimeaTelecom"
-remarks:        =========================================
-remarks:        Upstreams
-remarks:        -----------------------------------------
-remarks:        UMLC
 import:         from AS48084 accept ANY
 export:         to AS48084 announce AS-KTKRU
-remarks:        -----------------------------------------
-remarks:        M-M
 import:         from AS201776 accept ANY
 export:         to AS201776 announce AS-KTKRU
-remarks:        =========================================
-remarks:        Internet Exchange Point
-remarks:        -----------------------------------------
-remarks:        Crimea-IX
 import:         from AS43222 accept AS-CRIMEA-IX
 export:         to AS43222 announce AS47203
-remarks:        =========================================
-remarks:        Customers
-remarks:        -----------------------------------------
-remarks:        KSZ
 import:         from AS198899 accept AS198899
 export:         to AS198899 announce ANY
-remarks:        -----------------------------------------
-remarks:        INKO-NET-AS
 import:         from AS34180 accept AS34180
 export:         to AS34180 announce ANY
-remarks:        -----------------------------------------
-remarks:        =========================================
-admin-c:        MLTT2-RIPE
-tech-c:         MLTT2-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MIRANDA-MNT

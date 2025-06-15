@@ -1,16 +1,3 @@
-
-
-
-as-block:       AS59392 - AS60437
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-09-03T13:31:09Z
-last-modified:  2024-09-03T13:31:09Z
-source:         RIPE
-
-
-
 aut-num:        AS60430
 as-name:        REDIX
 descr:          Webra LLC
@@ -162,55 +149,26 @@ export:         to AS48158 announce AS-RED-IX-PEERS
 export:         to AS52091 announce AS-RED-IX-PEERS
 export:         to AS50157 announce AS-RED-IX-PEERS
 export:         to AS201512 announce AS-RED-IX-PEERS
-remarks:        -----------------------------------------------------------
-remarks:        Informational communities
-remarks:
-remarks:        60430:2001 - prefix received in Krasnoyarsk
-remarks:        60430:2002 - prefix received in Novosibirsk
-remarks:        60430:2003 - prefix received in Achinsk
-remarks:        60430:2004 - prefix received in Irkutsk
-remarks:        60430:2005 - prefix received in Abakan
-remarks:        60430:2006 - prefix received in Khabarovsk
-remarks:        -----------------------------------------------------------
-remarks:        BGP communities for control route advertisement
-remarks:
-remarks:        0:$peer-as, rt:0:$peer-as - Do not announce prefix to a peer with AS $peer-as
-remarks:        60430:$peer-as, rt:60430:$peer-as - Announce prefix to a peer with AS $peer-as
-remarks:        0:60430 - Do not announce prefix to anyone
-remarks:
-remarks:        1:$peer-as, rt,1,$peer-as - Prepend once when announcing this prefix to AS $peer-as
-remarks:        2:$peer-as, rt,2,$peer-as - Prepend twice when announcing this prefix to AS $peer-as
-remarks:        3:$peer-as, rt,3,$peer-as - Prepend three times when announcing this prefix to AS $peer-as
-remarks:
-remarks:        60430:0 - Set local preference 0
-remarks:        60430:50 - Set local preference 50
-remarks:        60430:100 - Set local preference 100
-remarks:        -----------------------------------------------------------
-remarks:        Looking glass
-remarks:        http://lg.red-ix.ru/
-remarks:        -----------------------------------------------------------
-admin-c:        ERTH3-RIPE
-tech-c:         RAID1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         hostadm@webra.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ERTH-MAGISTR
 created:        2013-07-18T14:45:21Z
 last-modified:  2025-02-26T06:54:34Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS60430
+country:        RU
+as-name:        REDIX JSC "ER-Telecom Holding"
 
 organisation:   ORG-RA21-RIPE
 org-name:       JSC "ER-Telecom Holding"
 country:        RU
 org-type:       LIR
-address:        Shosse Kosmonavtov, 111i, bldg. 2, office 509
-address:        614066
-address:        Perm
-address:        RUSSIAN FEDERATION
-phone:          +79197001771
-phone:          +7 342 2462233
-fax-no:         +7 342 2195024
-admin-c:        ERTH3-RIPE
-tech-c:         RAID1-RIPE
+address:        Dummy address for ORG-RA21-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        RAID1-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        RAID-MNT
@@ -221,37 +179,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         RAID-MNT
 created:        2004-04-17T11:56:55Z
 last-modified:  2024-01-18T14:09:09Z
-source:         RIPE # Filtered
-
-role:           ER-Telecom ISP General Contact Role
-address:        111, str. Shosse Kosmonavtov
-address:        614000 Perm
-address:        Russian Federation
-nic-hdl:        ERTH3-RIPE
-mnt-by:         ERTH-MAGISTR
-mnt-by:         RAID-MNT
-created:        2019-04-29T09:26:35Z
-last-modified:  2019-04-29T09:26:35Z
-source:         RIPE # Filtered
-
-role:           ER-Telecom ISP Contact Role
-address:        JSC "ER-Telecom"
-address:        111, str. Shosse Kosmonavtov
-address:        614000 Perm
-address:        Russian Federation
-phone:          +7 342 2462233
-fax-no:         +7 342 2463344
-abuse-mailbox:  abuse@domru.ru
-remarks:        24/7 phone number: +7-342-2362233
-admin-c:        AAS585-RIPE
-admin-c:        SAWJ-RIPE
-tech-c:         AAS585-RIPE
-tech-c:         SAWJ-RIPE
-nic-hdl:        RAID1-RIPE
-mnt-by:         RAID-MNT
-created:        2005-02-11T12:50:50Z
-last-modified:  2024-07-24T09:39:40Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

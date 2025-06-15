@@ -1,3 +1,63 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 10.100.1.2 port 22
+as-set:         AS-CWSVYAZ
+descr:          CITIC Telecom CPC Rus LLC
+members:        AS12976
+members:        AS-INCOMA
+members:        AS-SUPERJOB
+members:        AS43299
+members:        AS-LINXDATACENTER
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         ripe@citictel-cpc.com
+mnt-by:         CWSVYAZ-MNT
+created:        2002-09-24T14:12:05Z
+last-modified:  2023-11-30T06:59:04Z
+source:         RIPE
+
+
+
+as-set:         AS-RUCWSVYAZ
+descr:          CWSVYAZ ASes List
+members:        AS-CWSVYAZ
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         ripe@citictel-cpc.com
+mnt-by:         CWSVYAZ-MNT
+created:        2002-09-25T14:13:02Z
+last-modified:  2023-05-29T13:55:13Z
+source:         RIPE
+
+
+
+aut-num:        AS12976
+as-name:        AS-CWSVYAZ
+org:            ORG-LL250-RIPE
+import:         from AS47652 action pref=120; accept AS-SUPERJOB
+export:         to AS47652 announce ANY
+import:         from AS6673 action pref=120; accept AS6673
+export:         to AS6673 announce ANY
+import:         from AS43299 action pref=120; accept AS43299
+export:         to AS43299 announce ANY
+import:         from AS48399 action pref=120; accept AS-LINXDATACENTER
+export:         to AS48399 announce ANY
+mp-import:      afi ipv6.unicast from AS48399 action pref=140; accept AS-LINXDATACENTER
+mp-export:      afi ipv6.unicast to AS48399 announce ANY
+import:         from AS8631 action pref=140; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-RUCWSVYAZ
+mp-import:      afi ipv6.unicast from AS8631 action pref=140; accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-RUCWSVYAZ
+import:         from AS3327 action pref=120; accept ANY
+export:         to AS3327 announce AS-CWSVYAZ
+mp-import:      afi ipv6.unicast from AS3327 action pref=103; accept ANY
+mp-export:      afi ipv6.unicast to AS3327 announce AS-CWSVYAZ
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS3327-MNT
+mnt-by:         CWSVYAZ-MNT
+created:        2002-09-24T14:12:08Z
+last-modified:  2023-11-29T15:10:01Z
+source:         RIPE
+
+
+

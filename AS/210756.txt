@@ -1,246 +1,140 @@
-
-
-
-as-block:       AS208189 - AS215128
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2025-03-25T09:02:29Z
-last-modified:  2025-03-25T09:02:29Z
-source:         RIPE
-
-
-
 aut-num:        AS210756
 as-name:        EdgeCenterLLC
 org:            ORG-GRL12-RIPE
-remarks:        -------------------------------------
-remarks:        Local Preference Policy
-remarks:        -------------------------------------
-remarks:        80 - Upstream
-remarks:        90 - IXP RS
-remarks:        95 - IXP Peer
-remarks:        100 - PNI
-remarks:        105 - Customer
-remarks:        -------------------------------------
-remarks:        Traffic-Engineering Communities
-remarks:        -------------------------------------
-remarks:        6500x:ASN for uplink/peering prepending
-remarks:        x= 1,2,3, for prepending and 9 is "do not advertise"
-remarks:        6500x:0 - for all Upstreams
-remarks:        6500x:1 - for all PNIs
-remarks:        6500x:2 - for all IXPs
-remarks:        65000:666 - blackhole community
-remarks:        We support transit communities and send them to upstream ISP or IXP
-remarks:        -------------------------------------
-remarks:        Upstream:
-remarks:        -------------------------------------
-remarks:        BEELINE
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-EDGECENTER
-remarks:        MTS
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-EDGECENTER
-remarks:        RETN
 import:         from AS57304 accept ANY
 export:         to AS57304 announce AS-EDGECENTER
-remarks:        ROSTELECOM
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-EDGECENTER
-remarks:        TRANSTELECOM
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-EDGECENTER
-remarks:        MEGAFON
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-EDGECENTER
-remarks:        BELTELECOM
 import:         from AS6697 accept ANY
 export:         to AS6697 announce AS-EDGECENTER
-remarks:        KAZAHTELECOM
 import:         from AS9198 accept ANY
 export:         to AS9198 announce AS-EDGECENTER
-remarks:        -------------------------------------
-remarks:        IXP:
-remarks:        -------------------------------------
-remarks:        CLOUD-IX
 import:         from AS29076 accept ANY
 export:         to AS29076 announce AS-EDGECENTER
-remarks:        DATA-IX
 import:         from AS50952 accept ANY
 export:         to AS50952 announce AS-EDGECENTER
-remarks:        GLOBAL-IX
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS-EDGECENTER
-remarks:        EURASIA-IX
 import:         from AS56931 accept ANY
 export:         to AS56931 announce AS-EDGECENTER
-remarks:        MSK-IX Ekaterinburg
 import:         from AS43213 accept ANY
 export:         to AS43213 announce AS-EDGECENTER
-remarks:        MSK-IX Saint-Petersburg
 import:         from AS43690 accept ANY
 export:         to AS43690 announce AS-EDGECENTER
-remarks:        MSK-IX Moscow
 import:         from AS8631 accept ANY
 export:         to AS8631 announce AS-EDGECENTER
-remarks:        MSK-IX Novosibirsk
 import:         from AS42403 accept ANY
 export:         to AS42403 announce AS-EDGECENTER
-remarks:        MSK-IX Rostov-on-Don
 import:         from AS48216 accept ANY
 export:         to AS48216 announce AS-EDGECENTER
-remarks:        MSK-IX Samara
 import:         from AS47882 accept ANY
 export:         to AS47882 announce AS-EDGECENTER
-remarks:        MSK-IX Vladivostok
 import:         from AS48531 accept ANY
 export:         to AS48531 announce AS-EDGECENTER
-remarks:        PITER-IX Saint-Petersburg
 import:         from AS50817 accept ANY
 export:         to AS50817 announce AS-EDGECENTER
-remarks:        PITER-IX Moscow
 import:         from AS49869 accept ANY
 export:         to AS49869 announce AS-EDGECENTER
-remarks:        RED-IX
 import:         from AS60430 accept ANY
 export:         to AS60430 announce AS-EDGECENTER
-remarks:        SEA-IX
 import:         from AS59428 accept ANY
 export:         to AS59428 announce AS-EDGECENTER
-remarks:        SFO-IX
 import:         from AS13094 accept ANY
 export:         to AS13094 announce AS-EDGECENTER
-remarks:        SIBIR-IX
 import:         from AS60763 accept ANY
 export:         to AS60763 announce AS-EDGECENTER
-remarks:        W-IX
 import:         from AS25478 accept ANY
 export:         to AS25478 announce AS-EDGECENTER
 import:         from AS50384 accept ANY
 export:         to AS50384 announce AS-EDGECENTER
-remarks:        DVO-IX
 import:         from AS20730 accept AS20730:AS-DVO-IX
 export:         to AS20730 announce AS-EDGECENTER
-remarks:        -------------------------------------
-remarks:        PNI:
-remarks:        -------------------------------------
-remarks:        BELTELECOM
 import:         from AS6697 accept AS-BELPAK
 export:         to AS6697 announce AS-EDGECENTER
-remarks:        NTEC
 import:         from AS60280 accept AS-NTEC
 export:         to AS60280 announce AS-EDGECENTER
-remarks:        GOOGLE
 import:         from AS15169 accept AS-GOOGLE
 export:         to AS15169 announce AS-EDGECENTER
-remarks:        ER-TELECOM
 import:         from AS9049 accept AS-ERTH
 export:         to AS9049 announce AS-EDGECENTER
-remarks:        RETN
 import:         from AS57304 accept AS-RETN
 export:         to AS57304 announce AS-EDGECENTER
-remarks:        MIRALOGIC
 import:         from AS12668 accept AS-MIRALOGIC
 export:         to AS12668 announce AS-EDGECENTER
-remarks:        RASKOM
 import:         from AS20764 accept AS-RASCOM
 export:         to AS20764 announce AS-EDGECENTER
-remarks:        FIORD
 import:         from AS28917 accept AS-FIORD
 export:         to AS28917 announce AS-EDGECENTER
-remarks:        YANDEX CLOUD
 import:         from AS200350 accept AS-YACLOUD
 export:         to AS200350 announce AS-EDGECENTER
-remarks:        INETCOM
 import:         from AS35598 accept AS-ICNET
 export:         to AS35598 announce AS-EDGECENTER
-remarks:        KVANT TELECOM
 import:         from AS43727 accept AS-SETKT
 export:         to AS43727 announce AS-EDGECENTER
-remarks:        COMCOR
 import:         from AS9068 accept AS-COMCOR
 export:         to AS9068 announce AS-EDGECENTER
-remarks:        REDCOM
 import:         from AS8749 accept AS-REDCOM
 export:         to AS8749 announce AS-EDGECENTER
-remarks:        CRELCOM
 import:         from AS6789 accept AS-CRELCOM
 export:         to AS6789 announce AS-EDGECENTER
-remarks:        TIMER
 import:         from AS47626 accept AS-ARPNET61
 export:         to AS47626 announce AS-EDGECENTER
-remarks:        TELECOM ARMENIA
 import:         from AS12297 accept AS-TELARM
 export:         to AS12297 announce AS-EDGECENTER
-remarks:        NAUKANET
 import:         from AS8641 accept AS-NAUKANET
 export:         to AS8641 announce AS-EDGECENTER
-remarks:        SELECTEL
 import:         from AS50340 accept AS-SELECTEL-MSK
 export:         to AS50340 announce AS-EDGECENTER
-remarks:        SKYNET
 import:         from AS35807 accept AS-SKYNET-SPB
 export:         to AS35807 announce AS-EDGECENTER
-remarks:        OBIT
 import:         from AS8492 accept AS8492
 export:         to AS8492 announce AS-EDGECENTER
-remarks:        UMLC
 import:         from AS48084 accept AS-UMLC
 export:         to AS48084 announce AS-EDGECENTER
-remarks:        UFANET
 import:         from AS47775 accept AS-UBN
 export:         to AS47775 announce AS-EDGECENTER
-remarks:        OZON
 import:         from AS44386 accept AS44386
 export:         to AS44386 announce AS-EDGECENTER
-remarks:        COMFORTEL
 import:         from AS56534 accept AS-PIRIXINET
 export:         to AS56534 announce AS-EDGECENTER
-remarks:        PAKT
 import:         from AS39087 accept AS-PAKT
 export:         to AS39087 announce AS-EDGECENTER
-remarks:        VGTRK
 import:         from AS25292 accept AS25292
 export:         to AS25292 announce AS-EDGECENTER
-remarks:        UCOM
 import:         from AS8932 accept AS8932:AS-ALL
 export:         to AS8932 announce AS-EDGECENTER
-remarks:        VITRINATV
 import:         from AS41718 accept AS41718
 export:         to AS41718 announce AS-EDGECENTER
-remarks:        DINET
 import:         from AS12695 accept AS-DINET
 export:         to AS12695 announce AS-EDGECENTER
-remarks:        SYNTERRA-MEDIA
 import:         from AS60892 accept AS60892
 export:         to AS60892 announce AS-EDGECENTER
-remarks:        FTICOM
 import:         from AS41039 accept AS-DON
 export:         to AS41039 announce AS-EDGECENTER
-remarks:        PG-19
 import:         from AS60246 accept AS-PG19
 export:         to AS60246 announce AS-EDGECENTER
-remarks:        AVITO
 import:         from AS201012 accept AS201012
 export:         to AS201012 announce AS-EDGECENTER
-remarks:        OFORO
 import:         from AS48610 accept AS48610
 export:         to AS48610 announce AS-EDGECENTER
-remarks:        IVSTAR
 import:         from AS29588 accept AS-IVSTAR
 export:         to AS29588 announce AS-EDGECENTER
-remarks:        TELE2-EKATERINBURG
 import:         from AS48190 accept AS48190
 export:         to AS48190 announce AS-EDGECENTER
-remarks:        BIG TELECOM
 import:         from AS35810 accept AS-BIGTELECOM
 export:         to AS35810 announce AS-EDGECENTER
-remarks:        TELE2-NOVOSIBIRSK
 import:         from AS41330 accept AS-T2RU-MR-NSK
 export:         to AS41330 announce AS-EDGECENTER
-remarks:        -------------------------------------
-admin-c:        NA7283-RIPE
-tech-c:         NA7283-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         EDGECENTER-MNT
@@ -248,36 +142,22 @@ created:        2021-09-14T12:35:41Z
 last-modified:  2025-02-10T08:01:14Z
 source:         RIPE
 
+as-num:         AS210756
+country:        RU
+as-name:        EdgeCenterLLC EdgeCenter LLC
+
 organisation:   ORG-GRL12-RIPE
 org-name:       EdgeCenter LLC
 country:        RU
 org-type:       LIR
-address:        Bolshoi Boulevard 42, str. 1, pom. 137, et. 0, rab. m. 33
-address:        121205
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +7(800) 775-08-54
-admin-c:        NA7283-RIPE
-tech-c:         NA7283-RIPE
+address:        Dummy address for ORG-GRL12-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR64988-RIPE
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         EDGECENTER-MNT
 created:        2021-09-10T07:52:02Z
 last-modified:  2022-07-27T08:48:57Z
-source:         RIPE # Filtered
+source:         RIPE
 mnt-ref:        EDGECENTER-MNT
-
-role:           NOC
-address:        RUSSIAN FEDERATION
-address:        Moscow
-address:        111024
-address:        Aviamotornaya str. 10, building 2, floor 3
-phone:          +7(800) 775-08-54
-nic-hdl:        NA7283-RIPE
-mnt-by:         EDGECENTER-MNT
-created:        2021-09-10T07:52:02Z
-last-modified:  2022-07-27T13:08:03Z
-source:         RIPE # Filtered
-
 
 

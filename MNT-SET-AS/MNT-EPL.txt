@@ -1,12 +1,35 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.184.190:22 already exists, disabling multiplexing
+as-set:         AS-EPL
+descr:          Routed by EPL
+members:        AS43714
+members:        AS51081
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-EPL
+created:        2009-10-20T10:02:13Z
+last-modified:  2023-12-14T10:15:35Z
+source:         RIPE
 
+
+
+as-set:         as-43714_downlinks
+members:        AS51081
+members:        AS44619
+members:        AS42911
+members:        AS198438
+members:        AS61308
+members:        AS43714
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-KIE-PRKEPL
+mnt-by:         MNT-EPL
+created:        2017-10-04T10:08:40Z
+last-modified:  2017-12-06T13:41:54Z
+source:         RIPE
 
 
 
 aut-num:        AS43714
 as-name:        EPL-AS
-remarks:        PrK "EPL"
 org:            ORG-PcEl1-RIPE
 import:         from AS8631 action pref=1000; accept ANY
 export:         to AS8631 announce AS-EPL
@@ -22,14 +45,15 @@ import:         from AS51081 action pref=1500; accept AS51081
 export:         to AS51081 announce ANY
 mp-import:      afi ipv6.unicast from AS8631 action pref=1000; accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS43714
-admin-c:        KIE18-RIPE
-tech-c:         KIE18-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         kochergin@vosnet.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-EPL
 created:        2007-09-18T10:53:38Z
 last-modified:  2024-10-14T12:42:08Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

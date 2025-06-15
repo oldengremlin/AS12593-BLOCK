@@ -1,109 +1,45 @@
-
-
-
-as-block:       AS8797 - AS9128
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2021-11-04T15:25:08Z
-last-modified:  2021-11-04T15:25:08Z
-source:         RIPE
-
-
-
 aut-num:        AS8915
 as-name:        DELFA-AS
 descr:          Company Delfa Co. Ltd.
 org:            ORG-FT7-RIPE
-remarks:
-remarks:        --- import ---
-remarks:
 import:         from AS3285  action pref=100; accept ANY
 import:         from AS12714 action pref=80; accept ANY
-remarks:
-remarks:        --- export ---
-remarks:
 export:         to AS3285  announce ANY
 export:         to AS12714 announce AS-DELFA
-remarks:
-remarks:
-remarks:        --- default ---
-remarks:
 default:        to AS3285
 default:        to AS12714
-remarks:
-remarks:        --- IPV6 ---
-remarks:
-remarks:
 mp-import:      afi ipv6.unicast from AS3285 accept ANY
 mp-export:      afi ipv6.unicast to AS3285 announce ANY
-remarks:
-remarks:
 mp-default:     afi ipv6.unicast to AS3285
-remarks:
-remarks:
-admin-c:        DD-RIPE
-tech-c:         DRR-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         dmitry@delfa.net
+notify:         tat@delfa.net
+notify:         operator@delfa.net
 mnt-by:         DELFA-RIPE-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2001-11-29T12:36:53Z
 last-modified:  2023-04-27T16:39:56Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS8915
+country:        RU
+as-name:        DELFA-AS Company Delfa Co. Ltd.
 
 organisation:   ORG-FT7-RIPE
 org-name:       Company Delfa Co. Ltd.
 country:        RU
 org-type:       LIR
-address:        Liteyniy pr., d. 29, lit. A
-address:        190028
-address:        St. Petersburg
-address:        RUSSIAN FEDERATION
-phone:          +79219936001
-phone:          +79311187823
-phone:          +79317058157
+address:        Dummy address for ORG-FT7-RIPE
 abuse-c:        DRR-RIPE
-admin-c:        DD-RIPE
-admin-c:        TAT-RIPE
+e-mail:         unread@ripe.net
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MNT-FTCOM
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MNT-FTCOM
 created:        2005-06-02T05:11:05Z
 last-modified:  2023-08-18T05:12:43Z
-source:         RIPE # Filtered
-
-role:           ISP Delfa NOC
-address:        Company Delfa Co. Ltd.
-phone:          +7 931 1187823
-phone:          +7 931 7058157
-abuse-mailbox:  abuse@delfa.net
-remarks:        ------------------------------------------------
-remarks:        Contact addresses by category:
-remarks:        Routing:                    operator@delfa.net
-remarks:        Domains/IP delegation:      operator@delfa.net
-remarks:        Scans/Hacking attempts:     abuse@delfa.net
-remarks:        SPAM/UCE:                   abuse@delfa.net
-remarks:        Mail:                       operator@delfa.net
-remarks:        ------------------------------------------------
-admin-c:        DD-RIPE
-admin-c:        TAT-RIPE
-tech-c:         DD-RIPE
-tech-c:         TAT-RIPE
-nic-hdl:        DRR-RIPE
-mnt-by:         DELFA-RIPE-MNT
-created:        2009-03-19T11:07:38Z
-last-modified:  2023-08-18T05:08:40Z
-source:         RIPE # Filtered
-
-person:         Dmitry Davidov
-address:        St. Petersburg, Russia
-phone:          +7 931 1187823
-nic-hdl:        DD-RIPE
-mnt-by:         DELFA-RIPE-MNT
-created:        2001-12-29T12:48:09Z
-last-modified:  2023-08-18T05:08:16Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

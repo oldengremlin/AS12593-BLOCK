@@ -1,6 +1,28 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
+as-set:         AS-CSTNET
+members:        AS62429
+members:        as210281:AS-EcoConnect
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         CSTNET-MNT
+created:        2016-03-29T11:55:09Z
+last-modified:  2025-05-12T16:42:05Z
+source:         RIPE
 
+
+
+as-set:         AS-ROSINTEK
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS57456
+members:        AS34690
+members:        AS34682
+members:        AS43865
+members:        AS57209
+members:        AS60029
+mnt-by:         CSTNET-MNT
+created:        2019-09-10T19:50:27Z
+last-modified:  2021-12-08T17:16:03Z
+source:         RIPE
 
 
 
@@ -12,67 +34,46 @@ export:         to AS8641 announce AS-KOMDIV
 export:         to AS34123 announce AS-KOMDIV
 org:            ORG-VVD2-RIPE
 sponsoring-org: ORG-ONTL1-RIPE
-admin-c:        CN4177-RIPE
-tech-c:         CN4177-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         gm@dutyadmin.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CSTNET-MNT
 created:        2005-05-19T14:01:32Z
 last-modified:  2022-09-16T14:11:40Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS57456
 as-name:        INTEK-MYTISCHI-AS
-remarks:        ------------------------------------------------------
-remarks:        https://www.rosintek.net/
-remarks:        ------------------------------------------------------
-remarks:        Uplinks
-remarks:
-remarks:        GlobalNet
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS-ROSINTEK
 mp-import:      afi ipv6.unicast from AS31500 accept ANY
 mp-export:      afi ipv6.unicast to AS31500 announce AS-ROSINTEK
-remarks:
-remarks:        Netorn
 import:         from AS34123 accept ANY
 export:         to AS34123 announce AS-ROSINTEK
-remarks:
-remarks:        MTW
 import:         from AS48347 accept ANY
 export:         to AS48347 announce AS-ROSINTEK
 mp-import:      afi ipv6.unicast from AS48347 accept ANY
 mp-export:      afi ipv6.unicast to AS48347 announce AS-ROSINTEK
-remarks:
-remarks:        ------------------------------------------------------
-remarks:        IX
-remarks:
-remarks:        Global-IX
 import:         from AS31500 accept AS-GLOBAL-IX
 export:         to AS31500 announce AS-ROSINTEK
 mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-IX
 mp-export:      afi ipv6.unicast to AS31500 announce AS-ROSINTEK
-remarks:
-remarks:        Piter-IX
 import:         from AS50817 accept as-piter-ix
 export:         to AS50817 announce AS-ROSINTEK
-remarks:
-remarks:        Data-IX
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-ROSINTEK
 mp-import:      afi ipv6.unicast from AS50817 accept as-piter-ix
 mp-export:      afi ipv6.unicast to AS50817 announce AS-ROSINTEK
-remarks:
-remarks:        EurasiaPeering
 import:         from AS56931 accept AS-EURASIAPEERING_RS
 export:         to AS56931 announce AS-ROSINTEK
 mp-import:      afi ipv6.unicast from AS56931 accept AS-EURASIAPEERING_RS
 mp-export:      afi ipv6.unicast to AS56931 announce AS-ROSINTEK
-remarks:
-admin-c:        DS19865-RIPE
-tech-c:         DS19865-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 org:            ORG-IL441-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
@@ -87,53 +88,24 @@ sponsoring-org: ORG-ONTL1-RIPE
 aut-num:        AS62429
 as-name:        CSTNET
 org:            ORG-ONTL1-RIPE
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Uplinks
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        +--Filanco--+
-remarks:        ---------------------
 import:         from AS29076 action pref=201; accept ANY;
 export:         to AS29076 announce AS-CSTNET;
 mp-import:      afi ipv6.unicast from AS29076 action pref=201; accept ANY;
 mp-export:      afi ipv6.unicast to AS29076 announce AS-CSTNET;
-remarks:        ==============
-remarks:        +--Naukanet--+
-remarks:        ---------------------
 import:         from AS8641 action pref=201; accept ANY;
 export:         to AS8641 announce AS-CSTNET;
 mp-import:      afi ipv6.unicast from AS8641 action pref=201; accept ANY;
 mp-export:      afi ipv6.unicast to AS8641 announce AS-CSTNET;
-remarks:        ==============
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        IX
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        +--Piter-IX--+
-remarks:        ---------------------
 import:         from AS49869 action pref=280; accept as-piter-ix-msk;
 export:         to AS49869 announce AS-CSTNET;
-remarks:        ==============
-remarks:        +--Eurasia-Peering--+
-remarks:        ---------------------
 import:         from AS56931 action pref=280; accept AS56931;
 export:         to AS56931 announce AS-CSTNET;
 mp-import:      afi ipv6.unicast from AS56931 action pref=280; accept ANY;
 mp-export:      afi ipv6.unicast to AS56931 announce AS-CSTNET;
-remarks:        ==============
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Customers(Downlinks)
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        +--Ecoconnect--+
-remarks:        ---------------------
 import:         from AS210281 action pref=201; accept as210281:AS-EcoConnect;
 export:         to AS210281 announce {0.0.0.0/0};
-remarks:        ==============
-remarks:        +=================================+
-remarks:        https://www.peeringdb.com/asn/62429
-remarks:        +=================================+
-admin-c:        MV10401-RIPE
-admin-c:        BM11324-RIPE
-tech-c:         MV10401-RIPE
-tech-c:         BM11324-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CSTNET-MNT

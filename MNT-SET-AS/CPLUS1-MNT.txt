@@ -1,16 +1,50 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
+as-set:         AS-CONVEYPLUS
+descr:          AO "TK CONVEY PLUS" Networks
+members:        AS13215
+members:        AS60346
+members:        AS202181
+members:        AS202642
+members:        AS204048
+members:        AS206536
+members:        AS213067
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         CPLUS1-MNT
+created:        2007-08-20T11:42:31Z
+last-modified:  2022-11-22T02:59:18Z
+source:         RIPE
 
+
+
+as-set:         AS-TCSP
+descr:          Tuapse Commercial Sea Port networks
+members:        AS213067
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         CPLUS1-MNT
+created:        2020-06-24T17:32:09Z
+last-modified:  2020-06-24T17:32:09Z
+source:         RIPE
+
+
+
+as-set:         AS-VOLGAFLOT
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+descr:          VOLGA SHIPPING NETWORK
+members:        AS204048
+members:        AS60346
+mnt-by:         ru-conveyplus-1-mnt
+mnt-by:         CPLUS1-MNT
+created:        2019-07-16T10:38:25Z
+last-modified:  2022-11-22T02:46:55Z
+source:         RIPE
 
 
 
 aut-num:        AS13215
 as-name:        CPLUS1-AS
 org:            ORG-CTCP2-RIPE
-remarks:        AO "Telecommunications company "Convey Plus"
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv4 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 import:         from AS9002 accept ANY
 export:         to AS9002 announce AS-CONVEYPLUS
 import:         from AS9049 accept ANY
@@ -25,8 +59,6 @@ import:         from AS50509 accept ANY
 export:         to AS50509 announce AS-CONVEYPLUS
 import:         from AS57304 accept ANY
 export:         to AS57304 announce AS-CONVEYPLUS
-remarks:        ---------------------------------------------------------------
-remarks:        PITER-IX:
 import:         from AS50817 accept AS-PITER-IX
 export:         to AS50817 announce AS-CONVEYPLUS
 import:         from AS49869 accept AS-PITER-IX
@@ -35,22 +67,16 @@ import:         from AS49634 accept AS-PITER-IX
 export:         to AS49634 announce AS-CONVEYPLUS
 import:         from AS13335 accept AS-CLOUDFLARE
 export:         to AS13335 announce AS-CONVEYPLUS
-remarks:        ---------------------------------------------------------------
-remarks:        MSK-IX:
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-CONVEYPLUS
 import:         from AS43690 accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-CONVEYPLUS
-remarks:        ---------------------------------------------------------------
 import:         from AS202642 accept AS202642
 export:         to AS202642 announce ANY
 import:         from AS206536 accept AS206536
 export:         to AS206536 announce ANY
 import:         from AS213067 accept AS213067
 export:         to AS213067 announce ANY
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv6 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS9002 accept ANY
 mp-export:      afi ipv6.unicast to AS9002 announce AS-CONVEYPLUS
 mp-import:      afi ipv6.unicast from AS9049 accept ANY
@@ -67,17 +93,12 @@ mp-import:      afi ipv6.unicast from AS35598 accept ANY
 mp-export:      afi ipv6.unicast to AS35598 announce AS-CONVEYPLUS
 mp-import:      afi ipv6.unicast from AS57304 accept ANY
 mp-export:      afi ipv6.unicast to AS57304 announce AS-CONVEYPLUS
-remarks:        ---------------------------------------------------------------
-remarks:        PITER-IX:
 mp-import:      afi ipv6.unicast from AS50817 accept AS-PITER-IX
 mp-export:      afi ipv6.unicast to AS50817 announce AS-CONVEYPLUS
-remarks:        ---------------------------------------------------------------
-remarks:        MSK-IX:
 mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS-CONVEYPLUS
 mp-import:      afi ipv6.unicast from AS43690 accept AS-SPBROUTESERVER
 mp-export:      afi ipv6.unicast to AS43690 announce AS-CONVEYPLUS
-remarks:        ---------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS202642 accept AS202642
 mp-export:      afi ipv6.unicast to AS202642 announce ANY
 mp-import:      afi ipv6.unicast from AS206536 accept AS206536
@@ -90,11 +111,8 @@ mp-import:      afi ipv6.unicast from AS204048 accept AS204048
 mp-export:      afi ipv6.unicast to AS204048 announce ANY
 mp-import:      afi ipv6.unicast from AS60346 accept AS60346
 mp-export:      afi ipv6.unicast to AS60346 announce ANY
-remarks:        ---------------------------------------------------------------
-admin-c:        AS42721-RIPE
-admin-c:        PL13372-RIPE
-tech-c:         AS42721-RIPE
-tech-c:         PL13372-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CPLUS1-MNT
@@ -107,31 +125,20 @@ source:         RIPE
 aut-num:        AS202181
 as-name:        TAMCOM-AS
 org:            ORG-TAML1-RIPE
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv4 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 import:         from AS13215 action pref=100; accept ANY
 export:         to AS13215 announce AS202181
 import:         from AS31430 action pref=100; accept ANY
 export:         to AS31430 announce AS202181
 import:         from AS57681 action pref=100; accept ANY
 export:         to AS57681 announce AS202181
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv6 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS13215 accept ANY
 mp-export:      afi ipv6.unicast to AS13215 announce AS202181
 mp-import:      afi ipv6.unicast from AS31430 accept ANY
 mp-export:      afi ipv6.unicast to AS31430 announce AS202181
 mp-import:      afi ipv6.unicast from AS57681 accept ANY
 mp-export:      afi ipv6.unicast to AS57681 announce AS202181
-remarks:        ---------------------------------------------------------------
-admin-c:        AS42721-RIPE
-admin-c:        PL13372-RIPE
-admin-c:        YS10000-RIPE
-tech-c:         AS42721-RIPE
-tech-c:         PL13372-RIPE
-tech-c:         YS10000-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 abuse-c:        AR20560-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
@@ -147,25 +154,16 @@ sponsoring-org: ORG-LL38-RIPE
 aut-num:        AS202642
 as-name:        JSCC5-AS
 org:            ORG-JSCC5-RIPE
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv4 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 import:         from AS13215 accept ANY
 export:         to AS13215 announce AS202642
 import:         from AS20632 accept ANY
 export:         to AS20632 announce AS202642
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv6 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS13215 accept ANY
 mp-export:      afi ipv6.unicast to AS13215 announce AS202642
 mp-import:      afi ipv6.unicast from AS20632 accept ANY
 mp-export:      afi ipv6.unicast to AS20632 announce AS202642
-remarks:        ---------------------------------------------------------------
-admin-c:        AS42721-RIPE
-admin-c:        PL13372-RIPE
-tech-c:         AS42721-RIPE
-tech-c:         PL13372-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CPLUS1-MNT
@@ -179,9 +177,6 @@ sponsoring-org: ORG-CTCP2-RIPE
 aut-num:        AS204048
 as-name:        VFT-AS
 org:            ORG-JSVS1-RIPE
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv4 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-VOLGAFLOT
 import:         from AS12418 accept ANY
@@ -192,19 +187,14 @@ import:         from AS60346 accept AS60346
 export:         to AS60346 announce ANY
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-VOLGAFLOT
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv6 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS12389 accept ANY
 mp-export:      afi ipv6.unicast to AS12389 announce AS-VOLGAFLOT
 mp-import:      afi ipv6.unicast from AS8580 accept ANY
 mp-export:      afi ipv6.unicast to AS8580 announce AS-VOLGAFLOT
 mp-import:      afi ipv6.unicast from AS60346 accept AS60346
 mp-export:      afi ipv6.unicast to AS60346 announce ANY
-admin-c:        AS42721-RIPE
-admin-c:        PL13372-RIPE
-tech-c:         AS42721-RIPE
-tech-c:         PL13372-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CPLUS1-MNT
@@ -224,10 +214,8 @@ import:         from AS20632 accept ANY
 export:         to AS20632 announce AS206536
 import:         from AS9049 accept ANY
 export:         to AS9049 announce AS206536
-admin-c:        AS42721-RIPE
-admin-c:        PL13372-RIPE
-tech-c:         AS42721-RIPE
-tech-c:         PL13372-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CPLUS1-MNT
@@ -242,31 +230,20 @@ aut-num:        AS213067
 as-name:        TCSP-AS
 descr:          Tuapse Commercial Sea Port ASN
 org:            ORG-JSCT12-RIPE
-remarks:        ----------------------------------------------------------------
-remarks:        ******** Tuapse Commercial Sea Port IPV4 routing policy ********
-remarks:        ----------------------------------------------------------------
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-TCSP
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-TCSP
 import:         from AS13215 accept ANY
 export:         to AS13215 announce AS-TCSP
-remarks:        ----------------------------------------------------------------
-remarks:        ******** Tuapse Commercial Sea Port IPV6 routing policy ********
-remarks:        ----------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS20485 accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-TCSP
 mp-import:      afi ipv6.unicast from AS29497 accept ANY
 mp-export:      afi ipv6.unicast to AS29497 announce AS-TCSP
 mp-import:      afi ipv6.unicast from AS13215 accept ANY
 mp-export:      afi ipv6.unicast to AS13215 announce AS-TCSP
-remarks:        ----------------------------------------------------------------
-admin-c:        AS42721-RIPE
-admin-c:        PL13372-RIPE
-admin-c:        CPL23-RIPE
-tech-c:         AS42721-RIPE
-tech-c:         PL13372-RIPE
-tech-c:         CPL23-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CPLUS1-MNT
@@ -280,25 +257,18 @@ sponsoring-org: ORG-CTCP2-RIPE
 aut-num:        AS60346
 as-name:        V_F_Tanker-AS
 org:            ORG-AKP2-RIPE
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv4 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 import:         from AS8359 action pref=100; accept ANY
 export:         to AS8359 announce AS60346
 import:         from AS31208 action pref=100; accept ANY
 export:         to AS31208 announce AS60346
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv6 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS8359 accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS60346
 mp-import:      afi ipv6.unicast from AS13215 accept ANY
 mp-export:      afi ipv6.unicast to AS13215 announce AS60346
 mp-import:      afi ipv6.unicast from AS31208 accept ANY
 mp-export:      afi ipv6.unicast to AS31208 announce AS60346
-remarks:        ---------------------------------------------------------------
-admin-c:        ACRO23147-RIPE
-tech-c:         ACRO23147-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lidertelecom-mnt

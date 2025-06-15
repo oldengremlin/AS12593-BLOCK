@@ -1,16 +1,3 @@
-
-
-
-as-block:       AS25365 - AS25542
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:30Z
-last-modified:  2018-11-22T15:27:30Z
-source:         RIPE
-
-
-
 aut-num:        AS25478
 as-name:        IHOME-AS
 descr:          iHome LLC
@@ -858,60 +845,9 @@ import:         from AS48166 action pref=130; accept AS-FORTEX # fortex
 mp-import:      afi ipv6.unicast from AS48166 accept AS-FORTEX
 export:         to AS48166 announce ANY
 mp-export:      afi ipv6.unicast to AS48166 announce ANY
-remarks:
-remarks:        Cities:
-remarks:        25478:4004 Amsterdam
-remarks:        25478:4123 Vladivostok
-remarks:        25478:4013 Vladimir
-remarks:        25478:4014 Voronezh
-remarks:        25478:4010 Ekaterinburg
-remarks:        25478:4009 Kazan
-remarks:        25478:4019 Kemerovo
-remarks:        25478:4005 Kiev
-remarks:        25478:4021 Kostroma
-remarks:        25478:4027 Krasnoyarsk
-remarks:        25478:4015 Kurgan
-remarks:        25478:4001 Moscow
-remarks:        25478:4025 Nijnii Novgorod
-remarks:        25478:4011 Novosibirsk
-remarks:        25478:4020 Omsk
-remarks:        25478:4012 Perm
-remarks:        25478:4026 Rostov-on-Don
-remarks:        25478:4016 Samara
-remarks:        25478:4002 Leningrad
-remarks:        25478:4024 Saratov
-remarks:        25478:4022 Tambov
-remarks:        25478:4018 Tomsk
-remarks:        25478:4017 Tumen
-remarks:        25478:4103 Ulanude
-remarks:        25478:4006 Ufa
-remarks:        25478:4003 Frankfurt
-remarks:        25478:4127 Khabarovsk
-remarks:        25478:4007 Cheboksari
-remarks:        25478:4008 Chelabinsk
-remarks:
-remarks:        RS accepts:
-remarks:        25478:9999 blackhole
-remarks:        0:as - do not advertise to as
-remarks:
-remarks:        city = 61000 + 40xx = 650xx
-remarks:        where 40xx - city community
-remarks:
-remarks:        in order of specifity:
-remarks:        0:peeras - no ann to peer
-remarks:        myas:peeras - ann to peer
-remarks:        0:city - no ann to city
-remarks:        myas:city - ann to city
-remarks:        0:myas - no ann to any
-remarks:
-remarks:        65501:peeras - 1 prep to peer or city (additive)
-remarks:        65502:peeras - 2 prep to peer or city (additive)
-remarks:        i.e. up to 6 prepends to peer at city
-remarks:
-remarks:
 org:            ORG-IJ5-RIPE
-admin-c:        IHOM-RIPE
-tech-c:         IHOM-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
@@ -919,18 +855,16 @@ created:        2002-12-04T16:28:40Z
 last-modified:  2025-04-18T19:14:28Z
 source:         RIPE
 
+as-num:         AS25478
+country:        RU
+as-name:        IHOME-AS iHome LLC
+
 organisation:   ORG-IJ5-RIPE
 org-name:       iHome LLC
 country:        RU
 org-type:       LIR
-address:        emb. Ovchinnikovskaya, 20, building 2, office 30 (floor 3)
-address:        115035
-address:        MOSCOW
-address:        RUSSIAN FEDERATION
-phone:          +74959886011
-fax-no:         +74959886011
-admin-c:        IHOM-RIPE
-tech-c:         IHOM-RIPE
+address:        Dummy address for ORG-IJ5-RIPE
+e-mail:         unread@ripe.net
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        IHOME-MNT
 mnt-by:         RIPE-NCC-HM-MNT
@@ -938,20 +872,6 @@ mnt-by:         IHOME-MNT
 abuse-c:        IHOM-RIPE
 created:        2004-12-13T13:58:57Z
 last-modified:  2023-02-16T10:55:38Z
-source:         RIPE # Filtered
-
-role:           iHome NOC
-address:        iHome Ltd.
-address:        1A Semenovskaya pl.
-address:        107023, Moscow, Russia
-phone:          +7 495 9886011
-admin-c:        IAK61-RIPE
-nic-hdl:        IHOM-RIPE
-created:        2007-11-01T15:07:35Z
-last-modified:  2024-08-20T04:46:15Z
-source:         RIPE # Filtered
-mnt-by:         IHOME-MNT
-abuse-mailbox:  abuse@ihome.ru
-
+source:         RIPE
 
 

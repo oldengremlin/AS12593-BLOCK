@@ -1,16 +1,3 @@
-
-
-
-as-block:       AS8192 - AS8523
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS8369
 org:            ORG-IJ7-RIPE
 as-name:        INTERSVYAZ-AS
@@ -76,24 +63,8 @@ export:         to AS49869 announce AS-INTERSVYAZ;
 export:         to AS58231 announce AS-INTERSVYAZ;
 export:         to AS207935 announce {0.0.0.0/0};
 export:         to AS59796 announce AS-INTERSVYAZ;
-remarks:        ---------------------------------------
-remarks:        Community for customers:
-remarks:        ---------------------------------------
-remarks:        8369:399x - prepend AS8369
-remarks:        x = 0 - advertise without prepends
-remarks:        x = 1,2,3,4 - prepend AS8369 X times
-remarks:        x = 5 - do not advertise
-remarks:        ---------------------------------------
-remarks:        8369:y - set local-preference
-remarks:        y = 50,200
-remarks:        default local-preference = 150
-remarks:        ---------------------------------------
-remarks:        0:Z - do not advertise to Z AS
-remarks:        ---------------------------------------
-remarks:        other community - action strip
-remarks:        ---------------------------------------
-admin-c:        IS-RIPE
-tech-c:         IS-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         INTERSVYAS-MNT
@@ -101,19 +72,16 @@ created:        2002-08-21T15:26:00Z
 last-modified:  2025-04-21T20:36:06Z
 source:         RIPE
 
+as-num:         AS8369
+country:        RU
+as-name:        INTERSVYAZ-AS Intersvyaz-2 JSC
+
 organisation:   ORG-IJ7-RIPE
 org-name:       Intersvyaz-2 JSC
 country:        RU
 org-type:       LIR
-address:        KOMSOMOLSKY PROSPEKT 38B
-address:        454138
-address:        CHELYABINSK
-address:        RUSSIAN FEDERATION
-phone:          +73517929745
-fax-no:         +73512656520
-admin-c:        MC29184-RIPE
-admin-c:        AV2001-RIPE
-admin-c:        EK204-RIPE
+address:        Dummy address for ORG-IJ7-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        IS-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        INTERSVYAS-MNT
@@ -121,25 +89,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         INTERSVYAS-MNT
 created:        2005-12-05T12:47:21Z
 last-modified:  2021-03-17T06:00:51Z
-source:         RIPE # Filtered
-
-role:           Intersvyaz JSC Network Operation Center
-address:        38-B, Komsomolsky prospekt, Chelyabinsk, 454138, Russia
-remarks:        SPAM and Network security issues: abuse@chelcom.ru
-remarks:        Address, name and routing issues: hostmaster@chelcom.ru
-remarks:        Mail issues: postmaster@chelcom.ru
-remarks:        News issues: newsmaster@chelcom.ru
-remarks:        FTP issues: ftp@chelcom.ru
-remarks:        Web issues: webmaster@chelcom.ru
-remarks:        Proxy issues: cachemaster@chelcom.ru
-abuse-mailbox:  abuse@is74.ru
-admin-c:        EK204-RIPE
-tech-c:         AV2001-RIPE
-mnt-by:         INTERSVYAS-MNT
-nic-hdl:        IS-RIPE
-created:        2004-08-30T16:11:45Z
-last-modified:  2024-01-06T06:33:41Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

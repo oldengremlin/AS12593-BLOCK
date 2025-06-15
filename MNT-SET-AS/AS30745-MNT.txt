@@ -1,6 +1,30 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
+as-set:         AS-BGT
+descr:          BG Telecom AS macro
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         BGT-MNT
+mnt-by:         AS30745-MNT
+created:        2003-10-28T04:00:07Z
+last-modified:  2012-04-24T23:24:03Z
+source:         RIPE
 
+
+
+as-set:         AS-SVTC
+descr:          Site ISP LLC, SVTC.RU ASes
+descr:          Russia, Sakhalin area
+descr:          --------------------------
+descr:          MEMBERS
+descr:          --------------------------
+members:        AS30745
+members:        AS47407
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         AS30745-MNT
+notify:         noc@svtc.ru
+created:        2003-12-28T12:21:45Z
+last-modified:  2024-10-01T02:09:10Z
+source:         RIPE
 
 
 
@@ -15,8 +39,8 @@ export:         to AS51004 announce AS196721
 export:         to AS8359 announce AS196721
 export:         to AS8443 announce AS196721
 export:         to AS43797 announce AS196721
-admin-c:        DK2815-RIPE
-tech-c:         DK2815-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-ASO
@@ -31,14 +55,11 @@ sponsoring-org: ORG-SL98-RIPE
 aut-num:        AS202501
 as-name:        SAKHALINSVYAZ
 org:            ORG-JC124-RIPE
-remarks:        JSC "Sakhalinsvyaz"
 descr:          Multimedia network
 import:         from AS30745 accept ANY
 export:         to AS30745 announce AS202501
-admin-c:        AA40002-RIPE
-admin-c:        SMM5-RIPE
-tech-c:         SMM5-RIPE
-tech-c:         AA40002-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS30745-MNT
@@ -57,30 +78,31 @@ import:         from AS12389 accept ANY
 export:         to AS12389 announce AS202542
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS202542
-admin-c:        SMM5-RIPE
-tech-c:         EK6120-RIPE
-admin-c:        EK6120-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@sakhminfin.ru
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS30745-MNT
 mnt-by:         MOFO5-MNT
 created:        2022-09-30T12:30:19Z
 last-modified:  2023-04-07T12:01:05Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS29567
 as-name:        SITENETWORK-AS
 org:            ORG-SL98-RIPE
-admin-c:        SMM5-RIPE
-tech-c:         SMM5-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         oleg@svtc.ru
 status:         ASSIGNED
 mnt-by:         AS30745-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-10-10T09:35:51Z
 last-modified:  2024-10-08T07:37:00Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -88,44 +110,33 @@ aut-num:        AS30745
 as-name:        SITENETWORK-AS
 descr:          Sakhalin, Russia
 org:            ORG-SL98-RIPE
-remarks:        -----------------------------------------------------------------
-remarks:        Upstreams
-remarks:        -----------------------------------------------------------------
 import:         from AS12389 action pref=100; accept ANY
 import:         from AS21103 action pref=100; accept ANY
 import:         from AS8359 action pref=100; accept ANY
 export:         to AS12389 announce AS-SVTC
 export:         to AS21103 announce AS-SVTC
 export:         to AS8359 announce AS-SVTC
-remarks:        -----------------------------------------------------------------
-remarks:        -----------------------------------------------------------------
-remarks:        Customers
-remarks:        -----------------------------------------------------------------
 import:         from AS202501 action pref=1000; accept AS202501
 export:         to AS202501 announce ANY
-remarks:        -----------------------------------------------------------------
-remarks:        Default routes:
 default:        to AS21103 action pref=100; networks ANY
 default:        to AS8359 action pref=100; networks ANY
-remarks:        -----------------------------------------------------------------
-admin-c:        SMM5-RIPE
-tech-c:         SMM5-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-admin-c:        IAP22-RIPE
-tech-c:         IAP22-RIPE
+notify:         noc@svtc.ru
 mnt-by:         AS30745-MNT
 created:        2003-11-25T10:47:50Z
 last-modified:  2024-10-01T02:22:19Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS35287
 as-name:        TV-ASN-SITE
 org:            ORG-SL98-RIPE
-admin-c:        SMM5-RIPE
-tech-c:         SMM5-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS30745-MNT
@@ -138,14 +149,15 @@ source:         RIPE
 aut-num:        AS43746
 as-name:        SITENETWORK
 org:            ORG-SL98-RIPE
-admin-c:        SMM5-RIPE
-tech-c:         SMM5-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@svtc.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS30745-MNT
 created:        2007-09-21T09:17:28Z
 last-modified:  2024-10-08T07:36:31Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

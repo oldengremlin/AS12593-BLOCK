@@ -1,12 +1,43 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.184.190:22 already exists, disabling multiplexing
+as-set:         AS-60312
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MF-KVK-MNT
+created:        2020-11-20T12:50:54Z
+last-modified:  2020-11-20T12:50:54Z
+source:         RIPE
 
+
+
+as-set:         AS-MF-KVK
+descr:          Customers with MegaFon-KVK Global Access
+descr:          Russian Federation
+members:        AS31163
+members:        AS49476
+members:        AS202700
+members:        AS208991
+members:        AS51125
+members:        AS201151
+members:        AS205232
+members:        AS57805
+members:        AS203533
+members:        AS57364
+members:        AS200362
+members:        AS207423
+members:        AS202533
+members:        AS211508
+members:        AS56619
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MF-KVK-MNT
+mnt-by:         MEGAFON-EAST-MNT
+created:        2013-04-25T12:34:49Z
+last-modified:  2024-10-08T11:10:37Z
+source:         RIPE
 
 
 
 aut-num:        AS31163
 as-name:        MF-KAVKAZ-AS
-remarks:        Caucasus Branch of PJSC MegaFon AS
 org:            ORG-OM1-RIPE
 import:         from AS8342 accept ANY
 import:         from AS20485 accept ANY
@@ -23,9 +54,7 @@ import:         from AS200362 accept ANY
 import:         from AS207423 accept ANY
 import:         from AS202533 accept ANY
 import:         from AS211508 accept ANY
-remarks:        T5017664
 import:         from AS56619 accept ANY
-remarks:        T5088103
 export:         to AS8342 announce AS31163
 export:         to AS20485 announce AS31163
 export:         to AS25490 announce AS31163
@@ -41,14 +70,12 @@ export:         to AS200362 announce AS-MF-KVK
 export:         to AS207423 announce AS-MF-KVK
 export:         to AS202533 announce AS-MF-KVK
 export:         to AS211508 announce AS-MF-KVK
-remarks:        T5017664
 export:         to AS56619 announce AS-MF-KVK
-remarks:        T5088103
 status:         ASSIGNED
-admin-c:        MKVK-RIPE
-admin-c:        MEST-RIPE
-tech-c:         MKVK-RIPE
-tech-c:         MEST-RIPE
+notify:         lir@megafon.ru
+notify:         kvk-netadm@megafon.ru
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEGAFON-RIPE-MNT
 mnt-by:         MEGAFON-GNOC-MNT
@@ -56,13 +83,12 @@ mnt-by:         MEGAFON-EAST-MNT
 mnt-by:         MF-KVK-MNT
 created:        2004-03-11T10:45:35Z
 last-modified:  2024-10-08T11:15:21Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS47218
 as-name:        SYNTERRA-UG-AS
-remarks:        Caucasus Branch of OJSC MegaFon
 org:            ORG-OM1-RIPE
 import:         from AS6854 accept ANY
 export:         to AS6854 announce AS-SYNTERRA-UG
@@ -203,19 +229,16 @@ import:         from AS35623 accept AS35623
 export:         to AS35623 announce {0.0.0.0/0}
 import:         from AS44890 accept AS-ASTELECOM
 export:         to AS44890 announce {0.0.0.0/0}
-admin-c:        SYN9-RIPE
-admin-c:        MKVK-RIPE
-tech-c:         SYN9-RIPE
-tech-c:         MKVK-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-admin-c:        MFON-RIPE
-tech-c:         MFON-RIPE
+notify:         lir@megafon.ru
 mnt-by:         MEGAFON-RIPE-MNT
 mnt-by:         MF-KVK-MNT
 created:        2008-05-19T13:05:38Z
 last-modified:  2019-04-23T08:31:21Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

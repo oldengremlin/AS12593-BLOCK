@@ -1,3 +1,46 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.3 port 22
+as-set:         AS41344:AS-VISTCOM
+descr:          Vist-online as-set
+tech-c:         DUMY-RIPE
+members:        AS39442
+members:        AS39442:AS-UNICO-CUST
+members:        AS41344
+admin-c:        DUMY-RIPE
+org:            ORG-VOL2-RIPE
+mnt-by:         MNT-VISTCOM-RIPE
+created:        2023-04-04T07:06:26Z
+last-modified:  2024-08-29T15:43:17Z
+source:         RIPE
+members:        AS-NEVOD
+
+
+
+aut-num:        AS41344
+as-name:        VOL-AS
+org:            ORG-VoL2-RIPE
+import:         from AS39442 action pref=100; accept ANY
+import:         from AS12389 accept ANY
+import:         from AS43727 accept ANY
+import:         from AS15169 accept ANY
+import:         from AS49869 accept ANY
+import:         from AS50817 accept ANY
+import:         from AS51032 accept AS-NEVOD
+import:         from AS39707 accept AS39707
+export:         to AS39442 announce ANY
+export:         to AS12389 announce AS41344:AS-VISTCOM
+export:         to AS43727 announce AS41344:AS-VISTCOM
+export:         to AS15169 announce AS41344:AS-VISTCOM
+export:         to AS50817 announce AS41344:AS-VISTCOM
+export:         to AS49869 announce AS41344:AS-VISTCOM
+export:         to AS51032 announce ANY
+export:         to AS39707 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-VISTCOM-RIPE
+created:        2006-07-27T09:54:54Z
+last-modified:  2024-09-02T10:04:19Z
+source:         RIPE
+
+
+

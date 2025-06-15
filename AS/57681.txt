@@ -1,40 +1,10 @@
-
-
-
-as-block:       AS57370 - AS57973
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2025-04-24T14:15:44Z
-last-modified:  2025-04-24T14:15:44Z
-source:         RIPE
-
-
-
 aut-num:        AS57681
 as-name:        ASN-MGTS-USPD2
 org:            ORG-OMct1-RIPE
-remarks:
-remarks:        ---------------------------------------------
-remarks:        IPv4 import/export policy expression
-remarks:        ---------------------------------------------
-remarks:
-remarks:        UPLINKS:
-remarks:
 import:         from AS8359 action pref=100; accept ANY
 export:         to AS8359 announce AS-SPDOP
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        PEERING PARTNERS:
-remarks:
 import:         from AS39143 action pref=100; accept ANY
 export:         to AS39143 announce AS57681
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        CUSTOMERS:
-remarks:
 import:         from AS12456 action pref=100; accept AS12456
 export:         to AS12456 announce ANY
 import:         from AS29603 action pref=100; accept AS29603
@@ -135,37 +105,16 @@ import:         from AS208534 action pref=100; accept {45.95.136.0/22}
 export:         to AS208534 announce ANY
 import:         from AS48096 action pref=100; accept AS48096
 export:         to AS48096 announce ANY
-remarks:
-remarks:        ---------------------------------------------
-remarks:        IPv6 import/export policy expression
-remarks:        ---------------------------------------------
-remarks:
-remarks:        UPLINKS:
-remarks:
 mp-import:      afi ipv6.unicast from AS8359 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS-SPDOP
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        CUSTOMERS:
-remarks:
 mp-import:      afi ipv6.unicast from AS35455 action pref=100; accept AS35455
 mp-export:      afi ipv6.unicast to AS35455 announce ANY
 mp-import:      afi ipv6.unicast from AS202181 action pref=100; accept AS202181
 mp-export:      afi ipv6.unicast to AS202181 announce ANY
 mp-import:      afi ipv6.unicast from AS204671 action pref=100; accept AS204671
 mp-export:      afi ipv6.unicast to AS204671 announce ANY
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        ROUTING POLICIES:
-remarks:
-remarks:        We accept communities 8359:* and advertise their into AS8359
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-admin-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
@@ -173,47 +122,23 @@ created:        2012-01-12T10:42:42Z
 last-modified:  2025-01-21T11:02:01Z
 source:         RIPE
 
+as-num:         AS57681
+country:        RU
+as-name:        ASN-MGTS-USPD2 PJSC Moscow city telephone network
+
 organisation:   ORG-OMct1-RIPE
 org-name:       PJSC Moscow city telephone network
 country:        RU
 org-type:       LIR
-address:        ul. Bolshja Ordynka, d.25, str.1
-address:        119991
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +7 4956098741
-fax-no:         +7 4959500598
-admin-c:        AVK103-RIPE
-admin-c:        ANO3-RIPE
-admin-c:        VMK
-admin-c:        AGS9167-RIPE
-admin-c:        GIA45-RIPE
+address:        Dummy address for ORG-OMct1-RIPE
 mnt-ref:        MGTS-USPD-MNT
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MGTS-USPD-MNT
 abuse-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+e-mail:         unread@ripe.net
 created:        2004-04-17T11:55:11Z
 last-modified:  2021-04-13T10:42:42Z
-source:         RIPE # Filtered
-
-role:           PJSC Moscow City Telephone Network NOC
-address:        USPD MGTS
-address:        Moscow, Russia
-address:        Khachaturyana 5
-admin-c:        AGS9167-RIPE
-admin-c:        AVK103-RIPE
-admin-c:        GIA45-RIPE
-tech-c:         AVK103-RIPE
-tech-c:         VMK
-tech-c:         ANO3-RIPE
-abuse-mailbox:  abuse@spd-mgts.ru
-nic-hdl:        USPD-RIPE
-mnt-by:         MGTS-USPD-MNT
-created:        2006-09-11T07:56:01Z
-last-modified:  2022-04-04T16:36:51Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

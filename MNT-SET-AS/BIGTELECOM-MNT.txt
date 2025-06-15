@@ -1,226 +1,155 @@
+as-set:         AS-BIG-TMP1
+descr:          BIG Telecom TMP ASes
+members:        AS-FORTEX, AS-RURINET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         BIGTELECOM-MNT
+created:        2010-04-09T10:18:52Z
+last-modified:  2010-04-09T10:18:52Z
+source:         RIPE
 
+
+
+as-set:         AS-BIGTELECOM
+descr:          BIG Telecom ASes
+members:        AS35810
+members:        AS50212
+members:        AS6679
+members:        as-TTK-Ltd
+members:        AS-ASTEIS
+members:        AS-TNC
+members:        AS-TELINCOM
+members:        AS202051
+members:        AS198675
+members:        AS57652
+members:        AS49160
+members:        AS204921
+members:        AS-MIGRAPH
+members:        AS204985
+members:        AS28738
+members:        AS50806
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         BIGTELECOM-MNT
+created:        2008-06-16T08:20:53Z
+last-modified:  2025-02-04T13:55:12Z
+source:         RIPE
 
 
 
 aut-num:        AS35810
 as-name:        BIGTELECOM-AS
 org:            ORG-BCJ2-RIPE
-remarks:
-remarks:        #### UPSTREAMS ####
-remarks:
-remarks:        ---- BeeLine ---
-remarks:
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS3216 accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- NaukaNet ---
-remarks:
 import:         from AS8641 accept ANY
 export:         to AS8641 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS8641 accept ANY
 mp-export:      afi ipv6.unicast to AS8641 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- Rascom ---
-remarks:
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS20764 accept ANY
 mp-export:      afi ipv6.unicast to AS20764 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- Fiord ---
-remarks:
 import:         from AS28917 accept ANY
 export:         to AS28917 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS28917 accept ANY
 mp-export:      afi ipv6.unicast to AS28917 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- ER-Telecom ---
-remarks:
 import:         from AS9049 accept ANY
 export:         to AS9049 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS9049 accept ANY
 mp-export:      afi ipv6.unicast to AS9049 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- Inetcom ---
-remarks:
 import:         from AS35598 accept ANY
 export:         to AS35598 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS35598 accept ANY
 mp-export:      afi ipv6.unicast to AS35598 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- Team-Host ---
-remarks:
 import:         from AS202984 accept ANY
 export:         to AS202984 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS202984 accept ANY
 mp-export:      afi ipv6.unicast to AS202984 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- GlobalNet ---
-remarks:
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS31500 accept ANY
 mp-export:      afi ipv6.unicast to AS31500 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        #### PEERS ####
-remarks:
-remarks:        ---- Yandex ---
-remarks:
 import:         from AS13238 accept AS-YANDEX
 export:         to AS13238 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS13238 accept AS-YANDEX
 mp-export:      afi ipv6.unicast to AS13238 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- VK ---
-remarks:
 import:         from AS47764 accept AS-VK
 export:         to AS47764 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS47764 accept AS-VK
 mp-export:      afi ipv6.unicast to AS47764 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- UMA-TECH ---
-remarks:
 import:         from AS48061 accept AS-UMA-TECH
 export:         to AS48061 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS48061 accept AS-UMA-TECH
 mp-export:      afi ipv6.unicast to AS48061 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- 24h.tv ---
-remarks:
 import:         from AS50775 accept AS50775
 export:         to AS50775 announce AS-BIGTELECOM
-remarks:
-remarks:        ---- Lifestream ---
-remarks:
 import:         from AS200976 accept AS-LIFESTREAM
 export:         to AS200976 announce AS-BIGTELECOM
-remarks:
-remarks:        ---- Tricolor ---
-remarks:
 import:         from AS209739 accept AS209739
 export:         to AS209739 announce AS-BIGTELECOM
-remarks:
-remarks:        ---- CDN VIDEO ---
-remarks:
 import:         from AS57363 accept AS-CDNVIDEO
 export:         to AS57363 announce AS-BIGTELECOM
-remarks:
-remarks:        ---- CDN NETWORKS ---
-remarks:
 import:         from AS204720 accept AS-CDNETWORKSRU
 export:         to AS204720 announce AS-BIGTELECOM
-remarks:
-remarks:        ---- OKKO ---
-remarks:
 import:         from AS211609 accept AS211609
 export:         to AS211609 announce AS-BIGTELECOM
-remarks:
-remarks:        ---- EdgeCenter ---
-remarks:
 import:         from AS210756 accept AS-EDGECENTER
 export:         to AS210756 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS210756 accept AS-EDGECENTER
 mp-export:      afi ipv6.unicast to AS210756 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- Mnogobyte ---
-remarks:
 import:         from AS42632 accept AS-MNOGOBYTE
 export:         to AS42632 announce AS-BIGTELECOM
-remarks:
-remarks:        #### IXes ####
-remarks:
-remarks:        ---- MSK-IX ---
-remarks:
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- DATA-IX ---
-remarks:
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX
 mp-export:      afi ipv6.unicast to AS50952 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- GlobalNet IX ---
-remarks:
 import:         from AS31500 accept AS-GLOBAL-NET
 export:         to AS31500 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-NET-V6
 mp-export:      afi ipv6.unicast to AS31500 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        ---- Piter-IX / SPB ---
-remarks:
 import:         from AS50817 accept as-piter-ix
 export:         to AS50817 announce AS-BIGTELECOM
-remarks:
-remarks:        ---- Piter-IX / MSK ---
-remarks:
 import:         from AS49869 accept as-piter-ix-msk
 export:         to AS49869 announce AS-BIGTELECOM
-remarks:
-remarks:        ---- Eurasia-IX ---
-remarks:
 import:         from AS56931 accept AS-EURASIAPEERING_RS
 export:         to AS56931 announce AS-BIGTELECOM
-remarks:
-remarks:        ---- CityTelecom (CLOUD-IX) ---
-remarks:
 import:         from AS29076 accept AS-CITYTELECOM
 export:         to AS29076 announce AS-BIGTELECOM
-remarks:
-remarks:        ---- W-IX ---
-remarks:
 import:         from AS50384 accept AS-W-IX-IPVSIX
 export:         to AS50384 announce AS-BIGTELECOM
 mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX-IPVSIX
 mp-export:      afi ipv6.unicast to AS50384 announce AS-BIGTELECOM-IPV6
-remarks:
-remarks:        #### DOWNSTREAMS ####
-remarks:
-remarks:        ---- Interlan ---
-remarks:
 import:         from AS28738 accept AS-INTERLAN
 export:         to AS28738 announce ANY
-remarks:
-remarks:        ---- AsteisNet ---
-remarks:
 import:         from AS49160 accept AS-ASTEIS
 export:         to AS49160 announce ANY
-remarks:
-remarks:        ---- Zeltelecom ---
-remarks:
 import:         from AS57652 accept AS57652
 export:         to AS57652 announce ANY
-remarks:
-remarks:        ---- Intersvyaz ---
-remarks:
 import:         from AS198675 accept AS198675
 export:         to AS198675 announce ANY
-remarks:
-remarks:        ---- GigaLink ---
-remarks:
 import:         from AS50771 accept AS50771
 import:         from AS50771 accept AS197120
 import:         from AS50771 accept AS50600
 export:         to AS50771 announce ANY
-remarks:
-remarks:        ---- LKOM ---
-remarks:
 import:         from AS50806 accept AS-LKOM
 export:         to AS50806 announce ANY
-remarks:
-admin-c:        ASI27-RIPE
-tech-c:         DF1791-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@bigtelecom.ru
+notify:         big@bigtelecom.ru
 mnt-by:         BIGTELECOM-MNT
 created:        2005-11-02T10:09:30Z
 last-modified:  2025-04-28T18:04:12Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

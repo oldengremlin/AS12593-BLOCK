@@ -1,25 +1,10 @@
-
-
-
-as-block:       AS31246 - AS31618
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:33Z
-last-modified:  2018-11-22T15:27:33Z
-source:         RIPE
-
-
-
 aut-num:        AS31261
 org:            ORG-OM1-RIPE
 as-name:        GARS-AS
 descr:          Moscow, Russia
 descr:          www.garstelecom.ru
-remarks:        ---- UPLINKS --------------------------------
 import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-GARS
-remarks:        +--- IPv6 ----------------------------
 mp-import:      afi ipv6.unicast from AS9002 accept ANY
 mp-export:      afi ipv6.unicast to AS9002 announce AS-GARSV6
 mp-import:      afi ipv6.unicast from AS20764 accept ANY
@@ -42,7 +27,6 @@ mp-import:      afi ipv6.unicast from AS29329 accept AS-NODEX
 mp-export:      afi ipv6.unicast to AS29329 announce AS-GARSV6
 mp-import:      afi ipv6.unicast from AS34602 accept AS-STARLNK
 mp-export:      afi ipv6.unicast to AS34602 announce AS-GARSV6
-remarks:        ---- IPV6 DOWNLINKS ------------------------------
 mp-import:      afi ipv6.unicast from AS51219 action pref=250; accept AS-CROC
 mp-export:      afi ipv6.unicast to AS51219 announce ANY
 mp-import:      afi ipv6.unicast from AS51297 action pref=250; accept AS51297
@@ -57,16 +41,12 @@ mp-export:      afi ipv6.unicast to AS204117 announce ANY
 mp-export:      afi ipv6.unicast to AS202344 announce ANY
 mp-import:      afi ipv6.unicast from AS60388 action pref=250; accept AS-SIGMA-TELECOM
 mp-export:      afi ipv6.unicast to AS60388 announce ANY
-remarks:        RAMBLER
 mp-import:      afi ipv6.unicast from AS24638 action pref=250; accept AS24638
 mp-export:      afi ipv6.unicast to AS24638 announce ANY
-remarks:        +-- DATA-IX PEERING --------------------------
 import:         from AS50952 action pref=160; accept AS-DATAIX
 export:         to AS50952 announce AS-GARS
-remarks:        +-- DEC-IX PEERING --------------------------
 import:         from AS6695 action pref=160; accept AS-DECIX
 export:         to AS6695 announce AS-GARS
-remarks:        +-- MSK-IX PEERING ---------------------------
 import:         from AS8641 action pref=160; accept AS-NAUKANET
 import:         from AS8492 action pref=160; accept AS-OBIT
 import:         from AS8631 action pref=160; accept AS-MSKROUTESERVER
@@ -87,13 +67,10 @@ export:         to AS13105 announce AS-GARS
 export:         to AS41095 announce AS-GARS
 export:         to AS41145 announce AS-GARS
 export:         to AS44050 announce AS-GARS
-remarks:        +--SPB-IX PEERING ---------------------------
 import:         from AS43690 action pref=160; accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-GARS
-remarks:        ----- EURASIAPEERING---------------------
 import:         from AS56931 action pref=160; accept ANY
 export:         to AS56931 announce AS-GARS
-remarks:        ----- PEERING -------------------------------
 import:         from AS8631 action pref=160; accept AS-NAUKANET
 import:         from AS13238 action pref=160; accept AS-YANDEX
 import:         from AS39134 action pref=160; accept AS-UNITEDNET
@@ -107,8 +84,6 @@ export:         to AS29076 announce AS-GARSNW
 export:         to AS39221 announce AS-GARS
 export:         to AS203921 announce AS-GARS
 export:         to AS201706 announce AS-GARS-DDOS
-remarks:        ---- DOWNLINKS ------------------------------
-remarks:        RAMBLER
 import:         from AS24638 action pref=250; accept AS-RAMTEL
 export:         to AS24638 announce ANY
 import:         from AS30952 action pref=250; accept AS30952
@@ -283,7 +258,6 @@ import:         from AS212764 action pref=250; accept AS212764
 import:         from AS56537 action pref=250; accept AS56537
 import:         from AS47470 action pref=250; accept AS47470
 import:         from AS216214 action pref=250; accept AS216214
-import:         from AS41118 action pref=250; accept AS41118
 import:         from AS39678 action pref=250; accept AS39678
 import:         from AS210914 action pref=250; accept AS210914
 import:         from AS44102 action pref=250; accept AS44102
@@ -292,7 +266,6 @@ export:         to AS197379 announce ANY
 export:         to AS44102 announce ANY
 export:         to AS210914 announce ANY
 export:         to AS39678 announce ANY
-export:         to AS41118 announce ANY
 export:         to AS216214 announce ANY
 export:         to AS47470 announce ANY
 export:         to AS204507 announce ANY
@@ -462,58 +435,28 @@ export:         to AS50024 announce ANY
 export:         to AS34910 announce ANY
 export:         to AS212764 announce ANY
 export:         to AS56537 announce ANY
-remarks:        ===================================================
-remarks:        Looking glass http://lg.garstelecom.ru
-remarks:        ===================================================
-remarks:        Community for prefix classification
-remarks:        31261:XYY
-remarks:        ---------------------------------------
-remarks:        X - type of prexif:
-remarks:        1 - UPSTREAM
-remarks:        2 - PEER
-remarks:        4 - DOWNSTREAM
-remarks:        ---------------------------------------
-remarks:        YY - PREFIX DESCRIPTION:
-remarks:        UPSTREAM:
-remarks:        01 - TTK AS20485
-remarks:        02 - RETN AS9002
-remarks:        03 - BEELINE AS3216
-remarks:        04 - COGENT AS174
-remarks:        05 - LEVEL3 AS3356
-remarks:        PEER:
-remarks:        01 - MSK-IX PEER
-remarks:        02 - DATAIX PEER
-remarks:        03 - PRIVATE PEER
-remarks:        DOWNLINK:
-remarks:        01 - ANY
-remarks:        ===================================================
 status:         ASSIGNED
-admin-c:        GARS-RIPE
-tech-c:         GARS-RIPE
-admin-c:        MFON-RIPE
-tech-c:         MFON-RIPE
+notify:         ripe-notify@ti.ru
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEGAFON-RIPE-MNT
 mnt-by:         GARS-MNT
 mnt-by:         TI-MNT
 created:        2004-04-01T09:50:34Z
-last-modified:  2025-03-24T10:36:38Z
-source:         RIPE # Filtered
+last-modified:  2025-06-06T07:21:46Z
+source:         RIPE
+
+as-num:         AS31261
+country:        RU
+as-name:        GARS-AS PJSC MegaFon
 
 organisation:   ORG-OM1-RIPE
 org-name:       PJSC MegaFon
 country:        RU
 org-type:       LIR
-address:        41, Oruzheyniy lane
-address:        127006
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74955077777
-phone:          +74959801970
-fax-no:         +74959801939
-fax-no:         +74959801949
-admin-c:        MFON-RIPE
-tech-c:         MFON-RIPE
+address:        Dummy address for ORG-OM1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        MFON-RIPE
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MEGAFON-RIPE-MNT
@@ -521,47 +464,6 @@ mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MEGAFON-RIPE-MNT
 created:        2004-04-17T11:55:06Z
 last-modified:  2024-05-27T05:04:02Z
-source:         RIPE # Filtered
-
-role:           GARSTELECOM MT
-address:        Russia
-admin-c:        TI805-RIPE
-admin-c:        MFON-RIPE
-tech-c:         TI805-RIPE
-nic-hdl:        GARS-RIPE
-mnt-by:         GARS-MNT
-abuse-mailbox:  abuse@ti.ru
-created:        2013-04-04T07:14:27Z
-last-modified:  2023-08-03T10:58:15Z
-source:         RIPE # Filtered
-
-role:           MegaFon PJSC - Internet Service Network Operation Center
-address:        PJSC "MegaFon"
-address:        41, Oruzheyniy lane
-address:        Moscow, 127006
-address:        Russian Federation
-abuse-mailbox:  abuse-mailbox@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        Customer Service Center, is available at 24 x 7
-remarks:        Phone: +8(800)5500500
-remarks:        -----------------------------------------------------------
-remarks:        Technical questions: gnocwest_tr@megafon.ru
-remarks:        Routing and peering: gnoceast_backbone@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        SPAM and Network security: abuse-mailbox@megafon.ru
-remarks:        Please use abuse-mailbox@megafon.ru e-mail address for complaints.
-remarks:        All messages to any other our address, relative to SPAM
-remarks:        or security issues, will not be concerned.
-remarks:        -----------------------------------------------------------
-remarks:        Information: http://www.megafon.ru
-remarks:        -----------------------------------------------------------
-admin-c:        PP18881-RIPE
-admin-c:        AI5775-RIPE
-nic-hdl:        MFON-RIPE
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2013-03-27T07:19:58Z
-last-modified:  2025-02-05T05:45:20Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

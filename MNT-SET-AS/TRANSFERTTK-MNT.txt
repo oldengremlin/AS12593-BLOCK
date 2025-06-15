@@ -1,22 +1,25 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@185.151.106.150:22 already exists, disabling multiplexing
-
+as-set:         AS-TRANSFER
+descr:          ASes routed by Transfer
+members:        AS30729
+members:        AS8411
+members:        AS198384
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         a.komarov@transfer.su
+mnt-by:         TRANSFERTTK-MNT
+created:        2007-12-11T12:47:41Z
+last-modified:  2015-03-12T07:58:00Z
+source:         RIPE
 
 
 
 aut-num:        AS30729
 as-name:        TRANSFER-AS
 org:            ORG-TL70-RIPE
-remarks:        -------------------------------
-remarks:        Uplinks
-remarks:        -------------------------------
 import:         from AS21127 action pref=100; accept ANY
 import:         from AS8359 action pref=100; accept ANY
 export:         to AS21127 announce AS-TRANSFER
 export:         to AS8359 announce AS-TRANSFER
-remarks:        -------------------------------
-remarks:        Peers
-remarks:        -------------------------------
 import:         from AS47165 action pref=200; accept AS-OMKC-PEERING-SET
 import:         from AS47246 action pref=200; accept AS-OMTT-SET
 import:         from AS31643 action pref=200; accept AS31643:AS-IX-PEERS
@@ -25,18 +28,12 @@ export:         to AS47165 announce AS-TRANSFER
 export:         to AS47246 announce AS-TRANSFER
 export:         to AS31643 announce AS-TRANSFER
 export:         to AS48858 announce AS-TRANSFER
-remarks:        -------------------------------
-remarks:        Customers
-remarks:        -------------------------------
 import:         from AS8411 action pref=300; accept AS8411
 import:         from AS198384 action pref=300; accept AS198384
 export:         to AS8411 announce ANY
 export:         to AS198384 announce ANY
-remarks:        -------------------------------
-remarks:        Looking Glass http://lg.transfer.su
-remarks:        -------------------------------
-admin-c:        KA4368-RIPE
-tech-c:         KA4368-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         TRANSFERTTK-MNT
 mnt-by:         RIPE-NCC-END-MNT

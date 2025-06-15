@@ -1,64 +1,37 @@
-
-
-
-as-block:       AS15835 - AS15963
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:25Z
-last-modified:  2018-11-22T15:27:25Z
-source:         RIPE
-
-
-
 aut-num:        AS15848
 as-name:        RSVOSPB-AS
 org:            ORG-FSUE10-RIPE
-remarks:        ---------- UPLINKS --------------
-remarks:        RASCOM
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS-RSVOSPB
-remarks:        ---------------------------------
-remarks:        INETCOM
 import:         from AS35598 accept ANY
 export:         to AS35598 announce AS-RSVOSPB
-remarks:        ---------------------------------
-remarks:        PAO VimpelCom
-import:         from AS3216 accept ANY
-export:         to AS3216 announce AS-RSVOSPB
-remarks:        ---------- EXCHANGE --------------
-remarks:        DATA-IX
 import:         from AS50952 accept ANY
 export:         to AS50952 announce AS-RSVOSPB
-remarks:        PITER-IX
 import:         from AS50817 accept ANY
 export:         to AS50817 announce AS-RSVOSPB
-remarks:        --------- CLIENTS ---------------
 import:         from AS57091 action pref=10; accept ANY
 export:         to AS57091 announce ANY
 import:         from AS211246 accept ANY
 export:         to AS211246 announce ANY
-remarks:        ---------------------------------
-admin-c:        RN4206-RIPE
-tech-c:         RN4206-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-rsvospb-1-mnt
 created:        2015-08-31T13:15:10Z
-last-modified:  2025-01-28T13:04:12Z
+last-modified:  2025-06-10T09:30:28Z
 source:         RIPE
+
+as-num:         AS15848
+country:        RU
+as-name:        RSVOSPB-AS Federal State Unitary Enterprise of the Order of the Red Banner of Labour "Russian Broad-casting and Notification Network"
 
 organisation:   ORG-FSUE10-RIPE
 org-name:       Federal State Unitary Enterprise of the Order of the Red Banner of Labour "Russian Broad-casting and Notification Network"
 country:        RU
 org-type:       LIR
-address:        5 Totzhkovskaya str.
-address:        197342
-address:        St. Petersburg
-address:        RUSSIAN FEDERATION
-phone:          +78123840000
-admin-c:        RN4206-RIPE
-tech-c:         RN4206-RIPE
+address:        Dummy address for ORG-FSUE10-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR33343-RIPE
 mnt-ref:        ru-rsvospb-1-mnt
 mnt-ref:        RIPE-NCC-HM-MNT
@@ -66,19 +39,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         ru-rsvospb-1-mnt
 created:        2015-08-27T15:28:53Z
 last-modified:  2022-04-06T10:26:45Z
-source:         RIPE # Filtered
-
-role:           RSVO-SPB NOC
-address:        Branch office FGUP RSVO - St.-Petersburg
-address:        5 Totzhkovskaya str.
-address:        197342 St. Petersburg Russia
-remarks:        admin@spb.rsvo.ru
-phone:          +7(812)318-16-24
-nic-hdl:        RN4206-RIPE
-mnt-by:         ru-rsvospb-1-mnt
-created:        2018-01-15T13:33:58Z
-last-modified:  2018-04-16T08:39:05Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

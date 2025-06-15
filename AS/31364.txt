@@ -1,73 +1,43 @@
-
-
-
-as-block:       AS31246 - AS31618
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:33Z
-last-modified:  2018-11-22T15:27:33Z
-source:         RIPE
-
-
-
 aut-num:        AS31364
 as-name:        INTELBI-AS
 org:            ORG-CJSC19-RIPE
-remarks:
-remarks:        Uplinks
-remarks:        ---------------------------
 import:         from AS21127 accept ANY
 import:         from AS49451 accept ANY
 export:         to AS21127 announce AS-INTELBI-SET
 export:         to AS49451 announce AS-INTELBI-SET
 default:        to AS21127
-remarks:        ---------------------------
-remarks:
-remarks:        Local IX peering
-remarks:        ---------------------------
 import:         from AS43314 accept AS43314
 import:         from AS29581 accept AS29581
 import:         from AS30911 accept AS30911
 export:         to AS29581 announce AS-INTELBI-SET AS43314 AS30911
 export:         to AS43314 announce AS-INTELBI-SET AS29581 AS30911
 export:         to AS30911 announce AS-INTELBI-SET AS29581 AS43314
-remarks:        ---------------------------
-remarks:
-remarks:        Customers
-remarks:        ---------------------------
 import:         from AS51245 accept AS51245
 export:         to AS51245 announce ANY
-remarks:        ---------------------------
-remarks:
-remarks:        IPv6 uplinks
-remarks:        ---------------------------
 mp-import:      afi ipv6.unicast from AS6939 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS6939 announce AS31364
 mp-import:      afi ipv6.unicast from AS21127 action pref=105; accept ANY
 mp-export:      afi ipv6.unicast to AS21127 announce AS21127
-remarks:        ---------------------------
-admin-c:        TN1646-RIPE
-tech-c:         TN1646-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TRANSTELECOM-MNT
+notify:         noc@intelbi.ru
 created:        2004-04-26T12:53:27Z
 last-modified:  2025-01-13T21:16:51Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS31364
+country:        RU
+as-name:        INTELBI-AS Joint Stock Company TransTeleCom
 
 organisation:   ORG-CJSC19-RIPE
 org-name:       Joint Stock Company TransTeleCom
 country:        RU
 org-type:       LIR
-address:        Vereyskaya street 29, building 134
-address:        121357
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74957846670
-fax-no:         +74957846671
-admin-c:        YL390-RIPE
-admin-c:        MN12708-RIPE
+address:        Dummy address for ORG-CJSC19-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        KTTK-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        TRANSTELECOM-MNT
@@ -75,45 +45,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         TRANSTELECOM-MNT
 created:        2009-03-11T13:07:47Z
 last-modified:  2025-01-13T21:17:10Z
-source:         RIPE # Filtered
-
-role:           TTK-INTELBI NOC
-remarks:        ------------------------------------------------------
-remarks:        TTK-INTELBI, a TTK (TransTeleCom) regional company
-remarks:
-remarks:        http://www.intelbi.ru/
-remarks:        http://www.ttk.ru/
-remarks:
-remarks:        Working time: Mon-Fri 9am-6pm NOVST (GMT+7)
-remarks:
-remarks:        ------------------------------------------------------
-remarks:        Customers support:           support@intelbi.ru
-remarks:        Network security issues:     noc@intelbi.ru
-remarks:        Routing and peering issues:  noc@intelbi.ru
-remarks:        SPAM issues:                 abuse@intelbi.ru
-remarks:        Mail issues:                 postmaster@intelbi.ru
-remarks:        Hosting and DNS issues:      hosting@intelbi.ru
-remarks:        General:                     info@intelbi.ru
-remarks:        ------------------------------------------------------
-remarks:
-address:        TTK-INTELBI
-address:        52, Komsomolsky Avenue
-address:        656056 Barnaul
-address:        Altai Krai
-address:        RUSSIAN FEDERATION
-phone:          +7 3852 289488
-phone:          +7 3852 289489
-fax-no:         +7 3852 289486
-fax-no:         +7 3852 289500
-abuse-mailbox:  abuse@intelbi.ru
-admin-c:        TN1646-RIPE
-tech-c:         TN1646-RIPE
-nic-hdl:        TN1646-RIPE
-mnt-by:         MNT-INTELBI
-created:        2011-03-31T15:53:52Z
-last-modified:  2011-12-13T04:25:16Z
-source:         RIPE # Filtered
-mnt-by:         MNT-INTELBI
-
+source:         RIPE
 
 

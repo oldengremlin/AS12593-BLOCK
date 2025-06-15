@@ -1,31 +1,12 @@
-
-
-
-as-block:       AS35009 - AS35250
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-05-01T14:06:15Z
-last-modified:  2024-05-01T14:06:15Z
-source:         RIPE
-
-
-
 aut-num:        AS35078
 as-name:        CORVETTE-AS
 descr:          OJSC "National Cable Networks"
-remarks:        -------------------------------------------------------
-remarks:        - upstreams -
-remarks:        -------------------------------------------------------
 import:         from AS2118 action pref=120; accept ANY
 export:         to AS2118 announce AS-CORVETTE
 import:         from AS3327 action pref=120; accept ANY
 export:         to AS3327 announce AS-CORVETTE
 import:         from AS20485 action pref=120; accept ANY
 export:         to AS20485 announce AS-CORVETTE
-remarks:        -------------------------------------------------------
-remarks:        - peers -
-remarks:        -------------------------------------------------------
 import:         from AS8631 action pref=80; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-CORVETTE
 import:         from AS8492 action pref=80; accept AS-OBIT
@@ -38,48 +19,30 @@ import:         from AS33902 action pref=80; accept AS-STARNETWORKS
 export:         to AS33902 announce AS-CORVETTE
 import:         from AS35422 action pref=80; accept AS-PETERSTAR
 export:         to AS35422 announce AS-CORVETTE
-remarks:        --------------------------------------------------------
-remarks:        - customers -
-remarks:        --------------------------------------------------------
 import:         from AS43667 accept AS43667
 export:         to AS43667 announce ANY
 org:            ORG-JR8-RIPE
-admin-c:        NCN7-RIPE
-tech-c:         NCN7-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
 mnt-by:         NCNET-MNT
+notify:         noc@ncnet.ru
 created:        2005-05-31T08:12:27Z
 last-modified:  2025-04-15T11:35:52Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS35078
+country:        RU
+as-name:        CORVETTE-AS PJSC Rostelecom
 
 organisation:   ORG-JR8-RIPE
 org-name:       PJSC Rostelecom
 country:        RU
 org-type:       LIR
-address:        14 A, Sinopskaya nabereznaya
-address:        191167
-address:        S.Peterburg
-address:        RUSSIAN FEDERATION
-phone:          +7 499 999-82-83
-fax-no:         +74999953619
-admin-c:        RTNC-RIPE
-admin-c:        EP6706-RIPE
-admin-c:        IE1277-RIPE
-admin-c:        NM7547-RIPE
-admin-c:        AA728-RIPE
-admin-c:        SVS153-RIPE
-admin-c:        ASV77-RIPE
-admin-c:        RVP-RIPE
-admin-c:        VEV57-RIPE
-admin-c:        TR4627-RIPE
-admin-c:        TL4565-RIPE
-admin-c:        DN216-RIPE
-admin-c:        DA2353-RIPE
-admin-c:        IS111-RIPE
-admin-c:        VE128-RIPE
-admin-c:        SS216-RIPE
+address:        Dummy address for ORG-JR8-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        RTNC-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        ROSTELECOM-MNT
@@ -88,23 +51,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2005-03-22T11:11:20Z
 last-modified:  2023-01-26T10:52:42Z
-source:         RIPE # Filtered
-
-role:           NCNET NCC Operations
-address:        National Cable Networks
-address:        Nagatinskaya str., 1, bldn. 26
-address:        117105 Moscow, Russia
-org:            ORG-NCN1-RIPE
-admin-c:        RVP-RIPE
-tech-c:         RVP-RIPE
-phone:          +7 495 6859542
-fax-no:         +7 495 6859530
-mnt-by:         NCNET-MNT
-nic-hdl:        NCN7-RIPE
-created:        2007-03-26T07:46:58Z
-last-modified:  2015-10-12T11:53:05Z
-source:         RIPE # Filtered
-abuse-mailbox:  abuse@moscow.rt.ru
-
+source:         RIPE
 
 

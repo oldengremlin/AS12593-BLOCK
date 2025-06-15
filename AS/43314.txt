@@ -1,29 +1,10 @@
-
-
-
-as-block:       AS43075 - AS44168
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2023-12-11T15:09:58Z
-last-modified:  2023-12-11T15:09:58Z
-source:         RIPE
-
-
-
 aut-num:        AS43314
 as-name:        DIANET-AS
 org:            ORG-RA21-RIPE
-remarks:        ------------------------------------------------------------------------
-remarks:        -- uplinks
-remarks:        ------------------------------------------------------------------------
 import:         from AS9049 accept ANY
 export:         to AS9049 announce AS-DIANET
 import:         from AS48858 accept ANY
 export:         to AS48858 announce AS-DIANET
-remarks:        ------------------------------------------------------------------------
-remarks:        -- peers
-remarks:        ------------------------------------------------------------------------
 import:         from AS50512 action pref=500; accept AS50512
 export:         to AS50512 announce AS-DIANET
 import:         from AS13094 action pref=300; accept ANY
@@ -44,9 +25,6 @@ import:         from AS25549 action pref=500; accept AS25549
 export:         to AS25549 announce AS-DIANET
 import:         from AS42403 action pref=500; accept AS42403
 export:         to AS42403 announce AS-DIANET
-remarks:        ------------------------------------------------------------------------
-remarks:        -- clients
-remarks:        ------------------------------------------------------------------------
 import:         from AS29581 action pref=500; accept AS29581
 export:         to AS29581 announce ANY
 import:         from AS51245 action pref=500; accept AS51245
@@ -63,8 +41,8 @@ import:         from AS5387 action pref=500; accept AS5387
 export:         to AS5387 announce ANY
 import:         from AS207373 action pref=500; accept AS207373
 export:         to AS207373 announce ANY
-admin-c:        ERTH3-RIPE
-tech-c:         RAID1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RAID-MNT
@@ -73,19 +51,16 @@ created:        2007-07-12T07:37:29Z
 last-modified:  2022-01-13T04:37:43Z
 source:         RIPE
 
+as-num:         AS43314
+country:        RU
+as-name:        DIANET-AS JSC "ER-Telecom Holding"
+
 organisation:   ORG-RA21-RIPE
 org-name:       JSC "ER-Telecom Holding"
 country:        RU
 org-type:       LIR
-address:        Shosse Kosmonavtov, 111i, bldg. 2, office 509
-address:        614066
-address:        Perm
-address:        RUSSIAN FEDERATION
-phone:          +79197001771
-phone:          +7 342 2462233
-fax-no:         +7 342 2195024
-admin-c:        ERTH3-RIPE
-tech-c:         RAID1-RIPE
+address:        Dummy address for ORG-RA21-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        RAID1-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        RAID-MNT
@@ -96,37 +71,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         RAID-MNT
 created:        2004-04-17T11:56:55Z
 last-modified:  2024-01-18T14:09:09Z
-source:         RIPE # Filtered
-
-role:           ER-Telecom ISP General Contact Role
-address:        111, str. Shosse Kosmonavtov
-address:        614000 Perm
-address:        Russian Federation
-nic-hdl:        ERTH3-RIPE
-mnt-by:         ERTH-MAGISTR
-mnt-by:         RAID-MNT
-created:        2019-04-29T09:26:35Z
-last-modified:  2019-04-29T09:26:35Z
-source:         RIPE # Filtered
-
-role:           ER-Telecom ISP Contact Role
-address:        JSC "ER-Telecom"
-address:        111, str. Shosse Kosmonavtov
-address:        614000 Perm
-address:        Russian Federation
-phone:          +7 342 2462233
-fax-no:         +7 342 2463344
-abuse-mailbox:  abuse@domru.ru
-remarks:        24/7 phone number: +7-342-2362233
-admin-c:        AAS585-RIPE
-admin-c:        SAWJ-RIPE
-tech-c:         AAS585-RIPE
-tech-c:         SAWJ-RIPE
-nic-hdl:        RAID1-RIPE
-mnt-by:         RAID-MNT
-created:        2005-02-11T12:50:50Z
-last-modified:  2024-07-24T09:39:40Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

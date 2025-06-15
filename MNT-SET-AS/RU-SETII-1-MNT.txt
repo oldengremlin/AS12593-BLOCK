@@ -1,3 +1,152 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 94.125.121.58 port 22
+as-set:         AS-SET-MT6-RU
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+descr:          Moy Telecom LLC AS-Macro
+members:        AS209759
+members:        AS210989
+members:        AS209938
+mnt-by:         ru-mt6ru-1-mnt
+mnt-by:         ru-setii-1-mnt
+mnt-by:         lir-ru-moytelecom-1-MNT
+created:        2019-10-22T13:54:02Z
+last-modified:  2025-04-24T07:57:51Z
+source:         RIPE
+
+
+
+as-set:         AS-SSERV-RU
+descr:          SServ-RU JSC AS-Macro
+members:        AS57174
+members:        AS-RELLINE
+members:        AS8241
+members:        AS48009
+members:        AS52184
+members:        AS59801
+members:        AS209759
+members:        AS-SET-MT6-RU
+members:        AS-FTELECOM
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ru-setii-1-mnt
+created:        2012-05-12T13:55:56Z
+last-modified:  2025-02-27T14:38:47Z
+source:         RIPE
+
+
+
+aut-num:        AS57174
+as-name:        SETISERVISY
+org:            ORG-NASJ1-RIPE
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS25478 action pref=100; accept ANY
+import:         from AS44020 action pref=100; accept ANY
+import:         from AS35598 action pref=100; accept ANY
+import:         from AS8241 action pref=100; accept AS-RELLINE
+import:         from AS209759 action pref=100; accept AS-SET-MT6-RU
+import:         from AS39156 action pref=100; accept AS-FTELECOM
+import:         from AS52184 action pref=100; accept AS52184
+import:         from AS59801 action pref=100; accept AS59801
+export:         to AS25478 announce AS-SSERV-RU
+export:         to AS3216 announce AS-SSERV-RU
+export:         to AS35598 announce AS-SSERV-RU
+export:         to AS44020 announce AS-SSERV-RU
+export:         to AS8241 announce ANY
+export:         to AS209759 announce ANY
+export:         to AS39156 announce ANY
+export:         to AS52184 announce ANY
+export:         to AS59801 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-setii-1-mnt
+created:        2011-08-12T07:47:37Z
+last-modified:  2025-05-13T14:35:52Z
+source:         RIPE
+
+
+
+aut-num:        AS57482
+as-name:        SMP-AS
+org:            ORG-PSB3-RIPE
+sponsoring-org: ORG-ES15-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         PROMSVYAZBANK-MNT
+mnt-by:         ru-setii-1-mnt
+created:        2011-11-08T10:56:15Z
+last-modified:  2025-01-30T10:20:10Z
+source:         RIPE
+abuse-c:        AR28426-RIPE
+
+
+
+aut-num:        AS58108
+as-name:        USC-AS
+org:            ORG-USCJ1-RIPE
+import:         from AS5431 action pref=100; accept ANY
+import:         from AS48719 action pref=100; accept ANY
+export:         to AS5431 announce AS58108
+export:         to AS48719 announce AS58108
+sponsoring-org: ORG-NASJ1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@relline.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-setii-1-mnt
+created:        2012-04-24T13:09:29Z
+last-modified:  2022-07-13T14:28:42Z
+source:         RIPE
+
+
+
+aut-num:        AS8241
+as-name:        RELLINE-AS
+org:            ORG-NASJ1-RIPE
+import:         from AS8631 action pref=100; accept ANY
+import:         from AS35598 action pref=100; accept ANY
+import:         from AS57174 action pref=100; accept ANY
+import:         from AS20940 action pref=100; accept AS-AKAMAI
+import:         from AS209759 action pref=100; accept AS-SET-MT6-RU
+import:         from AS200955 action pref=100; accept AS200955
+import:         from AS201327 action pref=100; accept AS201327
+import:         from AS44595 action pref=100; accept AS44595
+import:         from AS48009 action pref=100; accept AS-MBTECH
+import:         from AS52184 action pref=100; accept AS52184
+import:         from AS59801 action pref=100; accept AS59801
+import:         from AS57482 action pref=100; accept AS57482
+import:         from AS12695 action pref=100; accept AS-DINET
+import:         from AS2895 action pref=100; accept AS-FREENET
+import:         from AS3267 action pref=100; accept AS-RUNNETIX
+import:         from AS9032 action pref=100; accept AS-EDUNET
+default:        to AS57174 action pref=100; networks ANY
+export:         to AS200955 announce ANY
+export:         to AS201327 announce ANY
+export:         to AS209759 announce ANY
+export:         to AS44595 announce ANY
+export:         to AS48009 announce ANY
+export:         to AS52184 announce ANY
+export:         to AS59801 announce ANY
+export:         to AS57482 announce ANY
+export:         to AS12695 announce AS-RELLINE
+export:         to AS20940 announce AS-RELLINE
+export:         to AS2895 announce AS-RELLINE
+export:         to AS3267 announce AS-RELLINE
+export:         to AS35598 announce AS-RELLINE
+export:         to AS57174 announce AS-RELLINE
+export:         to AS9032 announce AS-RELLINE
+export:         to AS8631 announce AS-RELLINE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-setii-1-mnt
+created:        1970-01-01T00:00:00Z
+last-modified:  2025-02-27T14:37:31Z
+source:         RIPE
+
+
+

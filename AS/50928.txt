@@ -1,35 +1,10 @@
-
-
-
-as-block:       AS50893 - AS51311
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-12-10T14:54:30Z
-last-modified:  2024-12-10T14:54:30Z
-source:         RIPE
-
-
-
 aut-num:        AS50928
 as-name:        SYNTSIB-AS
 org:            ORG-OM1-RIPE
-remarks:
-remarks:
-remarks:        +=======================================================+
-remarks:        IPv4
-remarks:        ---------------------------------------------------------
-remarks:
-remarks:        Upstream
-remarks:        ---------------------------------------------------------
 import:         from AS6854 action pref=100; accept ANY;
 import:         from AS31133 action pref=100; accept ANY;
 export:         to AS6854 announce AS-SYNTSIB;
 export:         to AS31133 announce AS-SYNTSIB;
-remarks:
-remarks:        ---------------------------------------------------------
-remarks:        Customers
-remarks:        ---------------------------------------------------------
 import:         from AS21365 action pref=110; accept AS-INTELECA;
 import:         from AS25293 action pref=110; accept AS-KASSIR;
 import:         from AS25446 action pref=110; accept AS-TOMLINE-SET;
@@ -89,7 +64,7 @@ import:         from AS41411 action pref=110; accept AS41411;
 import:         from AS209179 action pref=110; accept AS209179;
 import:         from AS34671 action pref=110; accept AS34671;
 import:         from AS214463 action pref=110; accept AS214463;
-remarks:        T5007440
+import:         from AS51067 action pref=110; accept AS51067;
 export:         to AS209179 announce ANY;
 export:         to AS8279 announce ANY;
 export:         to AS21365 announce ANY;
@@ -150,15 +125,9 @@ export:         to AS42558 announce ANY;
 export:         to AS41411 announce ANY;
 export:         to AS34671 announce ANY;
 export:         to AS214463 announce ANY;
-remarks:        T5007440
+export:         to AS51067 announce ANY;
 default:        to AS6854
 default:        to AS31133
-remarks:
-remarks:        ---------------------------------------------------------
-remarks:        Peers
-remarks:        ---------------------------------------------------------
-remarks:        NSK-IX
-remarks:        ---------------------------------------------------------
 import:         from AS42403 action pref=105; accept AS-NSKROUTESERVER;
 import:         from AS39586 action pref=105; accept AS39586;
 import:         from AS41560 action pref=105; accept AS41560;
@@ -166,26 +135,14 @@ export:         to AS42403 announce AS-SYNTSIB;
 export:         to AS42403 announce AS-CDN-MEGAFON;
 export:         to AS39586 announce AS-NSKROUTESERVER;
 export:         to AS41560 announce AS-NSKROUTESERVER;
-remarks:        ---------------------------------------------------------
-remarks:        IPv6
-remarks:        ---------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS42403 accept AS-NSKROUTESERVER;
 mp-import:      afi ipv6.unicast from AS39586 accept AS39586;
 mp-export:      afi ipv6.unicast to AS42403 announce AS-SYNTSIB;
 mp-export:      afi ipv6.unicast to AS39586 announce AS-NSKROUTESERVER;
-remarks:
-remarks:        +=======================================================+
-remarks:        IPv6
-remarks:        ---------------------------------------------------------
-remarks:        Upstream
-remarks:        ---------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS6854 accept ANY;
 mp-import:      afi ipv6.unicast from AS31133 accept ANY;
 mp-export:      afi ipv6.unicast to AS6854 announce AS-SYNTSIB;
 mp-export:      afi ipv6.unicast to AS31133 announce AS-SYNTSIB;
-remarks:        ---------------------------------------------------------
-remarks:        Customers
-remarks:        ---------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS41566 accept AS-TUSUR;
 mp-import:      afi ipv6.unicast from AS31200 accept AS-RUNTK-SET;
 mp-import:      afi ipv6.unicast from AS39586 accept AS39586;
@@ -200,54 +157,28 @@ mp-export:      afi ipv6.unicast to AS42187 announce ANY;
 mp-export:      afi ipv6.unicast to AS203784 announce ANY;
 mp-export:      afi ipv6.unicast to AS51291 announce ANY;
 mp-export:      afi ipv6.unicast to AS39701 announce ANY;
-remarks:        +=======================================================+
-remarks:        | BGP COMMUNITIES |
-remarks:        +-------------------------------------------------------+
-remarks:        | Communities for prefix classification |
-remarks:        +-------------------------------------------------------+
-remarks:        | The format is 50928:12XX0 where the fields are: |
-remarks:        | |
-remarks:        | XX - Customers geographical code: |
-remarks:        | |
-remarks:        | 22 - Barnaul, Biysk, Gorno-Altaysk |
-remarks:        | 24 - Krasnoyarsk, Kansk, Abakan, Achinsk |
-remarks:        | 42 - Kemerovo, Novokuznetsk, Yurga |
-remarks:        | 54 - Novosibirsk |
-remarks:        | 55 - Omsk |
-remarks:        | 70 - Tomsk, Seversk |
-remarks:        | |
-remarks:        +-------------------------------------------------------+
-remarks:        | We filter inbound prefixes longer than /24 |
-remarks:        +=======================================================+
-remarks:        | Also see BGP communities for AS6854 |
-remarks:        | Also see BGP communities for AS31133 |
-remarks:        +=======================================================+
-remarks:
-admin-c:        MFON-RIPE
-tech-c:         MFON-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEGAFON-RIPE-MNT
 mnt-by:         MEGAFON-EAST-MNT
+notify:         lir@megafon.ru
 mnt-by:         MF-SIB-MNT
 created:        2010-04-26T10:03:04Z
-last-modified:  2024-11-20T11:47:22Z
-source:         RIPE # Filtered
+last-modified:  2025-06-06T08:28:26Z
+source:         RIPE
+
+as-num:         AS50928
+country:        RU
+as-name:        SYNTSIB-AS PJSC MegaFon
 
 organisation:   ORG-OM1-RIPE
 org-name:       PJSC MegaFon
 country:        RU
 org-type:       LIR
-address:        41, Oruzheyniy lane
-address:        127006
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74955077777
-phone:          +74959801970
-fax-no:         +74959801939
-fax-no:         +74959801949
-admin-c:        MFON-RIPE
-tech-c:         MFON-RIPE
+address:        Dummy address for ORG-OM1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        MFON-RIPE
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MEGAFON-RIPE-MNT
@@ -255,35 +186,6 @@ mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MEGAFON-RIPE-MNT
 created:        2004-04-17T11:55:06Z
 last-modified:  2024-05-27T05:04:02Z
-source:         RIPE # Filtered
-
-role:           MegaFon PJSC - Internet Service Network Operation Center
-address:        PJSC "MegaFon"
-address:        41, Oruzheyniy lane
-address:        Moscow, 127006
-address:        Russian Federation
-abuse-mailbox:  abuse-mailbox@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        Customer Service Center, is available at 24 x 7
-remarks:        Phone: +8(800)5500500
-remarks:        -----------------------------------------------------------
-remarks:        Technical questions: gnocwest_tr@megafon.ru
-remarks:        Routing and peering: gnoceast_backbone@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        SPAM and Network security: abuse-mailbox@megafon.ru
-remarks:        Please use abuse-mailbox@megafon.ru e-mail address for complaints.
-remarks:        All messages to any other our address, relative to SPAM
-remarks:        or security issues, will not be concerned.
-remarks:        -----------------------------------------------------------
-remarks:        Information: http://www.megafon.ru
-remarks:        -----------------------------------------------------------
-admin-c:        PP18881-RIPE
-admin-c:        AI5775-RIPE
-nic-hdl:        MFON-RIPE
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2013-03-27T07:19:58Z
-last-modified:  2025-02-05T05:45:20Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

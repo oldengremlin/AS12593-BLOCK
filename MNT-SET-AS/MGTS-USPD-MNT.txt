@@ -1,78 +1,135 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.184.190:22 already exists, disabling multiplexing
+as-set:         AS-PROGTECH
+descr:          ASes routed by MGTS-PROGTECH
+members:        AS35475
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         AS35475-MNT
+mnt-by:         MGTS-USPD-MNT
+created:        2011-08-08T11:52:34Z
+last-modified:  2019-09-13T11:59:45Z
+source:         RIPE
 
+
+
+as-set:         AS-SPDOP
+descr:          PJSC MGTS SPDOP AS set
+members:        AS2587
+members:        AS8901
+members:        AS12456
+members:        AS39604
+members:        AS20985
+members:        AS25513
+members:        AS28912
+members:        AS29603
+members:        AS34500
+members:        AS34862
+members:        AS35455
+members:        AS35571
+members:        AS39415
+members:        AS41443
+members:        AS42024
+members:        AS42056
+members:        AS42674
+members:        AS42678
+members:        AS43798
+members:        AS43993
+members:        AS44232
+members:        AS44088
+members:        AS44505
+members:        AS44560
+members:        AS47851
+members:        AS48096
+members:        AS48396
+members:        AS48552
+members:        AS49170
+members:        AS49179
+members:        AS49181
+members:        AS49351
+members:        AS49712
+members:        AS50279
+members:        AS50339
+members:        AS50464
+members:        AS51811
+members:        AS51893
+members:        AS56483
+members:        AS56537
+members:        AS56619
+members:        AS56678
+members:        AS56794
+members:        AS56829
+members:        AS56975
+members:        AS57530
+members:        AS57681
+members:        AS58071
+members:        AS58072
+members:        AS60375
+members:        AS211616
+members:        AS61436
+members:        AS61375
+members:        AS62268
+members:        AS62366
+members:        AS62382
+members:        AS197896
+members:        AS198712
+members:        AS199093
+members:        AS199809
+members:        AS200515
+members:        AS202065
+members:        AS203097
+members:        AS204671
+members:        AS205004
+members:        AS205576
+members:        AS205682
+members:        AS206054
+members:        AS206585
+members:        AS206965
+members:        AS210989
+members:        AS211605
+members:        AS211796
+members:        AS211247
+members:        AS211532
+members:        AS57580
+members:        AS58139
+members:        AS48666
+members:        AS60827
+members:        AS207561
+members:        AS201244
+members:        AS8441
+members:        AS51916
+members:        AS202181
+members:        AS208534
+members:        AS210239
+members:        as-3data_CK19
+members:        AS-MBTECH
+members:        AS-GCX
+members:        AS-TASCOM
+members:        AS-AMTMGTS
+members:        AS-PWRS
+members:        AS-PROGTECH
+members:        AS48096
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         MGTS-USPD-MNT
+created:        2006-09-11T09:54:32Z
+last-modified:  2025-01-21T11:03:52Z
+source:         RIPE
 
 
 
 aut-num:        AS16020
 as-name:        TASCOM
 org:            ORG-OMct1-RIPE
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        UPLINKS:
-remarks:
-remarks:        PAO MGTS
 import:         from AS25513 94.29.127.153 at 217.26.6.14 action pref=90; accept AS25513 OR  {0.0.0.0/0}
 import:         from AS25513 94.29.127.157 at 217.26.6.15 action pref=120; accept AS25513 OR {0.0.0.0/0}
 export:         to AS25513 announce AS-TASCOM
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        PEERING PARTNERS:
-remarks:
-remarks:        RUNNET
 import:         from AS3267 action pref=500; accept AS-RUNNET
 export:         to AS3267 announce AS-TASCOM
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        CUSTOMERS:
-remarks:
-remarks:        GUM-AS (OJSC TRADING HOUSE GUM)
 import:         from AS49246 action pref=1000; accept AS49246
 export:         to AS49246 announce {0.0.0.0/0}
-remarks:
-remarks:        Green Telecom, LLC
 import:         from AS199502 action pref=1000; accept AS199502
 export:         to AS199502 announce {0.0.0.0/0}
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        NOTE: We drop all prefixes more specific then /25
-remarks:
-remarks:        NOTE: We remove all communities from incoming  announces except 25513:.*
-remarks:        and communities which describes below:
-remarks:
-remarks:        External communities which may be set by external peers when
-remarks:        talking to AS16020.
-remarks:
-remarks:        Community meaning:
-remarks:        -----
-remarks:        16020:8000 - BLACKHOLE - accept prefixes longer then /24
-remarks:        but forward traffic to Null 0.
-remarks:        Available only to AS16020 customers.
-remarks:
-remarks:        16020:8030 - BACKUP - set local preference to 30,
-remarks:        lowest value used in the network.
-remarks:        -----
-remarks:        16020:900x - when advertising to all uplinks
-remarks:        16020:910x - when advertising to all IXs
-remarks:        where
-remarks:        x=0 - do not advertise
-remarks:        x=1,2,3,4 or 5 - prepend 16020 1,2,3,4 or 5 times
-remarks:        -----
-remarks:
-remarks:        -----
-remarks:        Uplinks
-remarks:        16020:1xx00 - do not advertise...
-remarks:        16020:1xx0[1-5] - prepend 16020 1-5 times...
-remarks:
-remarks:        ...xx=00 - to PAO MGTS
-remarks:        -----
-remarks:
-admin-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
@@ -85,8 +142,8 @@ source:         RIPE
 aut-num:        AS197461
 as-name:        AS-MGTSSHOKO
 org:            ORG-OMct1-RIPE
-admin-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
@@ -103,16 +160,17 @@ import:         from AS34123 action pref=100; accept ANY
 import:         from AS29285 action pref=100; accept ANY
 export:         to AS34123 announce AS198409
 export:         to AS29285 announce AS198409
-admin-c:        AGS9167-RIPE
-admin-c:        SBK12-RIPE
-tech-c:         SBK12-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         asedletsky@spdop.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
 mnt-by:         AMTMGTS-MNT
+notify:         S.B.Kabakov@mgts.ru
 created:        2012-01-18T11:00:54Z
 last-modified:  2018-10-11T09:32:47Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -198,8 +256,8 @@ export:         to AS201244 announce {0.0.0.0/0}
 export:         to AS58071 announce {0.0.0.0/0}
 export:         to AS198712 announce {0.0.0.0/0}
 export:         to AS210239 announce {0.0.0.0/0}
-admin-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         MGTS-USPD-MNT
 mnt-by:         RIPE-NCC-END-MNT
@@ -212,82 +270,49 @@ source:         RIPE
 aut-num:        AS29285
 as-name:        AMTMGTS-AS
 org:            ORG-OMct1-RIPE
-remarks:        ***************************************************
-remarks:        ----------------- IMPORT ---------------------
-remarks:        ***************************************************
-remarks:        ---=== Uplinks ===---
 import:         from AS8359 action pref=100; accept ANY
 import:         from AS12389 action pref=100; accept ANY
 import:         from AS42861 action pref=100; accept ANY
 import:         from AS50384 action pref=100; accept ANY
 import:         from AS57681 action pref=100; accept ANY
 import:         from AS25513 action pref=100; accept ANY
-remarks:        ***
-remarks:        -------======= M9-IX routing arbiter =======-------
-remarks:        ***
 import:         from AS8631 action pref=150; accept AS-MSKROUTESERVER
-remarks:        ***
-remarks:        -------======= HOME-IX routing arbiter =======-------
-remarks:        ***
 import:         from AS50384 action pref=150; accept ANY
-remarks:        ***
-remarks:        --------======== Peers ========--------
-remarks:        ***
 import:         from AS34123 action pref=200; accept AS-NETORN
-remarks:        ***
-remarks:        ---=== Downlinks ===---
-remarks:        ***
 import:         from AS49380 action pref=800; accept AS-SOKRATEL
 import:         from AS198409 action pref=800; accept AS-Contact
 import:         from AS44618 action pref=800; accept as-gigabit
 import:         from AS198274 action pref=800; accept AS-ITKVARTAL
 import:         from AS48713 action pref=800; accept AS-OSKAR
-remarks:        ***
-remarks:        ***************************************************
-remarks:        ----------------- EXPORT ---------------------
-remarks:        ***************************************************
-remarks:        ---=== Uplinks ===---
 export:         to AS8359 announce AS-AMTMGTS
 export:         to AS12389 announce AS-AMTMGTS
 export:         to AS57681 announce AS-AMTMGTS
 export:         to AS25513 announce AS-AMTMGTS
-remarks:        ***
-remarks:        -------======= M9-IX routing arbiter =======-------
-remarks:        ***
 export:         to AS8631 announce AS-AMTMGTS
-remarks:        ***
-remarks:        -------======= HOME-IX routing arbiter =======-------
-remarks:        ***
 export:         to AS50384 announce AS-AMTMGTS
-remarks:        ***
-remarks:        --------======== Peers ========--------
-remarks:        ***
 export:         to AS34123 announce AS-AMTMGTS
-remarks:        ***
-remarks:        ---=== Downlinks ===---
-remarks:        ***
 export:         to AS49380 announce ANY
 export:         to AS198409 announce ANY
 export:         to AS44618 announce ANY
 export:         to AS198274 announce ANY
 export:         to AS48713 announce ANY
-remarks:        ***
-admin-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         mgts-lir@spdop.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
 created:        2003-07-22T08:50:39Z
 last-modified:  2024-01-31T08:09:51Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS35475
 as-name:        PROGTECH-AS
 org:            ORG-OMct1-RIPE
-admin-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
@@ -304,20 +329,19 @@ import:         from AS12389 action pref=100; accept ANY
 import:         from AS29285 action pref=100; accept ANY
 export:         to AS12389 action pref=100; announce AS-GIGABIT
 export:         to AS29285 action pref=100; announce AS-GIGABIT
-remarks:        -----------MSK-IX---------
 import:         from AS8631 action pref=120; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-GIGABIT
 import:         from AS44943 action pref=100; accept ANY
 export:         to AS44943 announce AS-GIGABIT AND NOT AS-RAMNET
-remarks:        GCX-SYSTEMS-NET
-admin-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         mgts-lir@spdop.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
 created:        2008-02-14T07:53:54Z
 last-modified:  2024-01-31T08:11:13Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -328,66 +352,48 @@ import:         from AS8359 action pref=100; accept ANY
 export:         to AS8359 announce AS48713
 export:         to AS29285 announce AS48713
 import:         from AS29285 action pref=100; accept ANY
-admin-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         mgts-lir@spdop.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
 created:        2009-01-16T14:04:43Z
 last-modified:  2022-03-25T14:07:16Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS49380
 org:            ORG-OMct1-RIPE
 as-name:        AMTMGTS-AS
-remarks:        ***Upstreams***
 import:         from AS28917 action pref=100; accept ANY
 export:         to AS28917 announce AS-SOKRATEL
 import:         from AS8595 action pref=100; accept ANY
 export:         to AS8595 announce AS-SOKRATEL
 import:         from AS29285 action pref=100; accept ANY
 export:         to AS29285 announce AS-SOKRATEL
-remarks:        ***Private peers***
 import:         from AS44618 action pref=100; accept ANY
 export:         to AS44618 announce ANY
-remarks:        ***Customers***
-admin-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         mgts-lir@spdop.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
 created:        2009-05-28T13:52:54Z
 last-modified:  2024-01-31T08:12:26Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS57681
 as-name:        ASN-MGTS-USPD2
 org:            ORG-OMct1-RIPE
-remarks:
-remarks:        ---------------------------------------------
-remarks:        IPv4 import/export policy expression
-remarks:        ---------------------------------------------
-remarks:
-remarks:        UPLINKS:
-remarks:
 import:         from AS8359 action pref=100; accept ANY
 export:         to AS8359 announce AS-SPDOP
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        PEERING PARTNERS:
-remarks:
 import:         from AS39143 action pref=100; accept ANY
 export:         to AS39143 announce AS57681
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        CUSTOMERS:
-remarks:
 import:         from AS12456 action pref=100; accept AS12456
 export:         to AS12456 announce ANY
 import:         from AS29603 action pref=100; accept AS29603
@@ -488,37 +494,16 @@ import:         from AS208534 action pref=100; accept {45.95.136.0/22}
 export:         to AS208534 announce ANY
 import:         from AS48096 action pref=100; accept AS48096
 export:         to AS48096 announce ANY
-remarks:
-remarks:        ---------------------------------------------
-remarks:        IPv6 import/export policy expression
-remarks:        ---------------------------------------------
-remarks:
-remarks:        UPLINKS:
-remarks:
 mp-import:      afi ipv6.unicast from AS8359 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS-SPDOP
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        CUSTOMERS:
-remarks:
 mp-import:      afi ipv6.unicast from AS35455 action pref=100; accept AS35455
 mp-export:      afi ipv6.unicast to AS35455 announce ANY
 mp-import:      afi ipv6.unicast from AS202181 action pref=100; accept AS202181
 mp-export:      afi ipv6.unicast to AS202181 announce ANY
 mp-import:      afi ipv6.unicast from AS204671 action pref=100; accept AS204671
 mp-export:      afi ipv6.unicast to AS204671 announce ANY
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-remarks:        ROUTING POLICIES:
-remarks:
-remarks:        We accept communities 8359:* and advertise their into AS8359
-remarks:
-remarks:        ---------------------------------------------
-remarks:
-admin-c:        USPD-RIPE
-tech-c:         USPD-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT

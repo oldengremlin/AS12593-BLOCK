@@ -1,3 +1,46 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.184.190 port 22
+as-set:         AS-JELATIN
+descr:          JELATIN ASs
+members:        AS50024
+members:        AS48209
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         LNX-MNT
+created:        2012-12-18T19:23:15Z
+last-modified:  2012-12-18T19:23:15Z
+source:         RIPE
+
+
+
+as-set:         AS-LANCRONIX
+descr:          LANCRONIX and customers
+members:        AS48209
+members:        AS211773
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         LNX-MNT
+created:        2008-10-27T08:15:46Z
+last-modified:  2021-03-25T07:40:36Z
+source:         RIPE
+
+
+
+aut-num:        AS48209
+as-name:        LANCRONIX-AS
+descr:          Moscow, Russia
+descr:          http://www.lancronix.ru
+org:            ORG-OL43-RIPE
+import:         { from AS12695 action pref=150; accept ANY; from AS20485 action pref=150; accept ANY; }
+export:         { to AS12695 announce AS-LANCRONIX; to AS20485 announce AS-LANCRONIX; }
+import:         { from AS211773 action pref=50; accept AS211773; }
+export:         { to AS211773 announce ANY; }
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         LNX-MNT
+created:        2008-10-24T10:47:25Z
+last-modified:  2021-03-25T07:39:41Z
+source:         RIPE
+
+
+

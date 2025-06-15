@@ -1,23 +1,9 @@
-
-
-
-as-block:       AS8192 - AS8523
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS8402
 as-name:        CORBINA-AS
 descr:          OJSC "Vimpelcom"
 descr:          Russia,
 descr:          127083, Moscow, 8-th Marth 10 building 14.
 org:            ORG-CTaM1-RIPE
-remarks:        ---Upstreams---------------------------------------------------
 import:         from AS1273 action pref=77; accept ANY
 export:         to AS1273 announce AS-CORBINA
 import:         from AS2914 action pref=77; accept ANY
@@ -38,10 +24,8 @@ mp-import:      afi ipv6 from AS3356 action pref=77; accept ANY
 mp-export:      afi ipv6 to AS3356 announce AS-CORBINA-V6
 mp-import:      afi ipv6 from AS6762 action pref=77; accept ANY
 mp-export:      afi ipv6 to AS6762 announce AS-CORBINA-V6
-remarks:        --- Vimpelcom Networks------------------------------------------
 import:         from AS3216 action pref=95; accept AS-SOVAM
 export:         to AS3216 announce AS-CORBINA
-remarks:        ---Private peers-----------------------------------------------
 import:         from AS8359 action pref=95; accept AS-MTU
 export:         to AS8359 announce AS-CORBINA
 import:         from AS31133 action pref=95; accept AS-MF-MGSM
@@ -80,7 +64,6 @@ mp-import:      afi ipv6 from AS12389 action pref=95; accept AS-ROSTELECOM
 mp-export:      afi ipv6 to AS12389 announce AS-CORBINA-V6
 mp-import:      afi ipv6 from AS211157 action pref=95; accept AS211157
 mp-export:      afi ipv6 to AS211157 announce AS-CORBINA-V6
-remarks:        ---Customers----------------------------------------------------
 import:         from AS5531 action pref=300; accept AS5531
 export:         to AS5531 announce ANY
 import:         from AS6673 action pref=300; accept AS-INCOMA
@@ -376,159 +359,35 @@ import:         from AS199549 action pref=300; accept AS199549
 export:         to AS199549 announce ANY
 import:         from AS199602 action pref=300; accept AS199602
 export:         to AS199602 announce ANY
-remarks:        ----------------------------------------------------------------
 import:         from AS201669 action pref=300; accept AS201669
 export:         to AS201669 announce ANY
-remarks:        ----------------------------------------------------------------
-remarks:        Customer traffic engineering communities - Prepending
-remarks:        ----------------------------------------------------------------
-remarks:        8402:31x - International.
-remarks:        8402:33x - All Private Peers ( RUSSIA )
-remarks:
-remarks:        0 - Don't announce.
-remarks:        1 - Announce with 1 prepend
-remarks:        2 - Announce with 2 prepends
-remarks:        5 - Announce with 5 prepends
-remarks:        ----------------------------------------------------------------
-remarks:        Upstreams communities
-remarks:        8402:2914 - Don't announce to NTT
-remarks:        8402:3356 - Don't announce to Level3
-remarks:        8402:3320 - Don't announce to Deutshe Telekom
-remarks:        8402:01273 - Don't announce to Cable & Wireless
-remarks:        8402:6762 - Don't announce to Telecom Italia
-remarks:        8402:5400 - Don't announce to Tata Communications
-remarks:        ----------------------------------------------------------------
-remarks:        Private Peers communities
-remarks:        8402:520x When advertising to Google private peer (Moscow and Frankfurt)...
-remarks:        8402:521x When advertising to Megafon private peer...
-remarks:        8402:522x When advertising to MTU private peer...
-remarks:        8402:524x When advertising to TTK private peer...
-remarks:        8402:525x When advertising to Yandex private peer...
-remarks:        8402:526x When advertising to GLDN private peer...
-remarks:        8402:527x When advertising to Comcor private peer...
-remarks:        8402:528x When advertising to Netbynet private peer...
-remarks:        8402:529x When advertising to Rostelecom private peer...
-remarks:        8402:530x When advertising to Rascom private peer...
-remarks:        8402:531x When advertising to Fiord private peer...
-remarks:        8402:533x When advertising to VKONTAKTE-SPB private peer...
-remarks:        8402:534x When advertising to VKONTAKTE-MSK private peer...
-remarks:        8402:535x When advertising to MAIL.RU private peer...
-remarks:        8402:536x When advertising to TELEGRAM private peer...
-remarks:        ...x=0 - do not advertise
-remarks:        ...x=1,2,4 or 6 - prepend 8402 1,2,4 or 6 times
-remarks:        ----------------------------------------------------------------
-remarks:        ----------------------------------------------------------------
-remarks:        8402:50 - Set local pref 50 within AS8402 (lowest possible)
-remarks:        ----------------------------------------------------------------
-remarks:        ----------------------------------------------------------------
-remarks:        Internal communities mean
-remarks:        ----------------------------------------------------------------
-remarks:        8402:904 - Corbina super nets blocks
-remarks:        8402:902 - Foreign
-remarks:        8402:901 - Russian Peer
-remarks:        8402:900 - Customers (AS-CORBINA)
-remarks:        8402:9000 - Customers on access routers (Internal community for ibgp)
-remarks:        ----------------------------------------------------------------
-remarks:        8402:1118 Google private peering (Moscow and Frankfurt)
-remarks:        8402:2201 GLDN private peering (Moscow)
-remarks:        8402:2202 MTU private peering (Moscow)
-remarks:        8402:2203 GLDN international transit
-remarks:        8402:2208 TTK private peering (Moscow)
-remarks:        8402:2209 Yandex private peering (Moscow)
-remarks:        8402:2210 Rascom private peering (Moscow)
-remarks:        8402:2211 Comcor private peering (Moscow)
-remarks:        8402:2212 Netbynet private peering (Moscow)
-remarks:        8402:2215 Rostelecom private peering (Moscow)
-remarks:        8402:2217 VKONTAKTE-SPB private peering (Saint Petersburg)
-remarks:        8402:2218 VKONTAKTE-MSK private peering (Moscow)
-remarks:        8402:2219 MAIL.RU private peering (Moscow)
-remarks:        8402:2220 Megafon private peering (Moscow)
-remarks:        8402:2221 Telegram private peering (Moscow/Finland)
-remarks:        ----------------------------------------------------------------
-remarks:        Regional FTTB prefixes marking:
-remarks:        8402:1001 - all FTTB regions (non-Moscow FTTB networks)
-remarks:        8402:1013 - Saint Petersburg
-remarks:        8402:1023 - Yaroslavl
-remarks:        8402:1033 - Tula
-remarks:        8402:1043 - Volgograd
-remarks:        8402:1053 - Orenburg
-remarks:        8402:1063 - Kaluga
-remarks:        8402:1073 - Rostov-na-Donu
-remarks:        8402:1093 - Saratov
-remarks:        8402:1103 - Ulyanovsk
-remarks:        8402:1105 - Dimitrovgrad
-remarks:        8402:1113 - Volzhsky
-remarks:        8402:1133 - Lipetsk
-remarks:        8402:1143 - Balakovo
-remarks:        8402:1153 - Tver
-remarks:        8402:1163 - Ivanovo
-remarks:        8402:1173 - Astrakhan
-remarks:        8402:1183 - Smolensk
-remarks:        8402:1193 - Kursk
-remarks:        8402:1203 - Perm
-remarks:        8402:1213 - Bryansk
-remarks:        8402:1223 - Omsk
-remarks:        8402:1233 - Shatura
-remarks:        8402:1243 - Pyatigorsk
-remarks:        8402:1253 - NNovgorod
-remarks:        8402:1263 - Kostroma
-remarks:        8402:1273 - Stavropol
-remarks:        ----------------------------------------------------------------
-admin-c:        CORB1-RIPE
-tech-c:         CORB1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RU-CORBINA-MNT
+notify:         ipnoc@corbina.net
 created:        2002-09-05T09:26:53Z
 last-modified:  2022-07-26T10:15:05Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS8402
+country:        RU
+as-name:        CORBINA-AS PJSC "Vimpelcom"
 
 organisation:   ORG-CTaM1-RIPE
 org-name:       PJSC "Vimpelcom"
 country:        RU
 org-type:       LIR
-address:        8-th Marth 10  building 14
-address:        127083
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74999233775
-phone:          +74957555648
-fax-no:         +74957871990
+address:        Dummy address for ORG-CTaM1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR16612-RIPE
-admin-c:        SVNT1-RIPE
-admin-c:        SVNT2-RIPE
 mnt-ref:        RU-CORBINA-MNT
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         RU-CORBINA-MNT
 created:        2004-04-17T11:51:34Z
 last-modified:  2022-04-21T15:46:31Z
-source:         RIPE # Filtered
-
-role:           CORBINA TELECOM Network Operations
-address:        PAO Vimpelcom - CORBINA TELECOM/Internet Network Operations
-address:        111250 Russia Moscow Krasnokazarmennaya, 12
-phone:          +7 495 755 5648
-fax-no:         +7 495 787 1990
-remarks:        -----------------------------------------------------------
-remarks:        Feel free to contact Corbina Telecom NOC to
-remarks:        resolve networking problems related to Corbina
-remarks:        -----------------------------------------------------------
-remarks:        User support, general questions: support@corbina.net
-remarks:        Routing, peering, security: corbina-noc@beeline.ru
-remarks:        Report spam and abuse: abuse@beeline.ru
-remarks:        Mail and news: postmaster@corbina.net
-remarks:        DNS: hostmaster@corbina.net
-remarks:        Engineering Support ES@beeline.ru
-remarks:        -----------------------------------------------------------
-admin-c:        SVNT1-RIPE
-tech-c:         SVNT2-RIPE
-nic-hdl:        CORB1-RIPE
-mnt-by:         RU-CORBINA-MNT
-abuse-mailbox:  abuse-b2b@beeline.ru
-created:        1970-01-01T00:00:00Z
-last-modified:  2022-05-11T13:21:44Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

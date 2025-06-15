@@ -1,6 +1,19 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.184.190:22 already exists, disabling multiplexing
-
+as-set:         AS-DIANET
+descr:          DIANET Ltd
+members:        AS43314
+members:        AS51245
+members:        AS206572
+members:        AS204323
+members:        AS200364
+members:        AS209885
+members:        AS5387
+members:        AS207373
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-DIANET
+created:        2007-08-27T09:24:32Z
+last-modified:  2022-01-13T04:22:19Z
+source:         RIPE
 
 
 
@@ -12,10 +25,8 @@ export:         to AS43314 announce AS200364
 import:         from AS48858 accept ANY
 export:         to AS48858 announce AS200364
 sponsoring-org: ORG-DA1282-RIPE
-admin-c:        DNOC-RIPE
-admin-c:        DNOC-RIPE
-tech-c:         DNOC-RIPE
-tech-c:         DNOC-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-DIANET
@@ -35,8 +46,8 @@ export:         to AS8711 announce AS206572
 import:         from AS9049 accept ANY
 export:         to AS9049 announce AS206572
 sponsoring-org: ORG-DA1282-RIPE
-admin-c:        DNOC-RIPE
-tech-c:         DNOC-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-DIANET
@@ -54,8 +65,8 @@ export:         to AS9049 announce AS209885
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS209885
 sponsoring-org: ORG-DA1282-RIPE
-admin-c:        DNOC-RIPE
-tech-c:         DNOC-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-DIANET
@@ -68,16 +79,10 @@ source:         RIPE
 aut-num:        AS43314
 as-name:        DIANET-AS
 org:            ORG-RA21-RIPE
-remarks:        ------------------------------------------------------------------------
-remarks:        -- uplinks
-remarks:        ------------------------------------------------------------------------
 import:         from AS9049 accept ANY
 export:         to AS9049 announce AS-DIANET
 import:         from AS48858 accept ANY
 export:         to AS48858 announce AS-DIANET
-remarks:        ------------------------------------------------------------------------
-remarks:        -- peers
-remarks:        ------------------------------------------------------------------------
 import:         from AS50512 action pref=500; accept AS50512
 export:         to AS50512 announce AS-DIANET
 import:         from AS13094 action pref=300; accept ANY
@@ -98,9 +103,6 @@ import:         from AS25549 action pref=500; accept AS25549
 export:         to AS25549 announce AS-DIANET
 import:         from AS42403 action pref=500; accept AS42403
 export:         to AS42403 announce AS-DIANET
-remarks:        ------------------------------------------------------------------------
-remarks:        -- clients
-remarks:        ------------------------------------------------------------------------
 import:         from AS29581 action pref=500; accept AS29581
 export:         to AS29581 announce ANY
 import:         from AS51245 action pref=500; accept AS51245
@@ -117,8 +119,8 @@ import:         from AS5387 action pref=500; accept AS5387
 export:         to AS5387 announce ANY
 import:         from AS207373 action pref=500; accept AS207373
 export:         to AS207373 announce ANY
-admin-c:        ERTH3-RIPE
-tech-c:         RAID1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RAID-MNT

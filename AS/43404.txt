@@ -1,279 +1,96 @@
-
-
-
-as-block:       AS43075 - AS44168
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2023-12-11T15:09:58Z
-last-modified:  2023-12-11T15:09:58Z
-source:         RIPE
-
-
-
 aut-num:        AS43404
 as-name:        UCARU-AS
-remarks:        ISP UCA Networks
-remarks:
-remarks:        RETN
 import:         from AS57304 accept ANY;
 export:         to AS57304 announce AS-UCANET;
-remarks:
-remarks:        TTK
 import:         from AS20485 accept ANY;
 export:         to AS20485 announce AS-UCANET;
-remarks:
-remarks:        CITYTELECOM (Filanco)
 import:         from AS29076 accept ANY;
 export:         to AS29076 announce AS-UCANET;
-remarks:
-remarks:        Comcor
 import:         from AS8732 accept ANY;
 export:         to AS8732 announce AS-UCANET;
-remarks:
-remarks:        Rostelecom
 import:         from AS12389 accept ANY;
 export:         to AS12389 announce AS-UCANET;
-remarks:
-remarks:        Meganet-2003
 import:         from AS51410 accept AS51410;
 export:         to AS51410 announce ANY;
-remarks:
-remarks:        Domokom
 import:         from AS50619 accept AS50619;
 export:         to AS50619 announce ANY;
-remarks:
-remarks:        Dataline
 import:         from AS35297 accept AS-DL-WORLD;
 export:         to AS35297 announce AS-UCANET;
-remarks:
-remarks:        Kolbi
 import:         from AS34687 accept AS34687;
 export:         to AS34687 announce {0.0.0.0/0};
-remarks:
-remarks:        Google
 import:         from AS15169 accept AS15169;
 export:         to AS15169 announce AS-UCANET;
-remarks:
-remarks:        Mail.ru
 import:         from AS47764 accept AS-MAILRU;
 export:         to AS47764 announce AS-UCANET;
-remarks:
-remarks:        Macomnet
 import:         from AS8470 accept AS-MACOMNET;
 export:         to AS8470 announce AS-UCANET;
-remarks:
-remarks:        Piter-IX
 import:         from AS49869 accept as-piter-ix;
 export:         to AS49869 announce AS-UCANET;
-remarks:
-remarks:        Mosconnect
 import:         from AS201588 accept AS-MOSCONNECT;
 export:         to AS201588 announce ANY;
-remarks:
-remarks:        Twitch Inc.
 import:         from AS46489 accept AS-TWITCH;
 export:         to AS46489 announce AS-UCANET;
-remarks:
-remarks:        Inetcom
-remarks:        from AS35598 accept AS-ICNET;
 import:         from AS35598 accept ANY;
 export:         to AS35598 announce AS-UCANET;
-remarks:
-remarks:        Mosnet
 import:         from AS29319 accept AS-IMSYS;
 export:         to AS29319 announce AS-UCANET;
-remarks:
-remarks:        Vega
 import:         from AS209228 accept AS209228;
 export:         to AS209228 announce {0.0.0.0/0};
-remarks:
-remarks:        LOGIX
 import:         from AS35780 accept AS35780;
 export:         to AS35780 announce {0.0.0.0/0};
-remarks:
-remarks:        Forceline.net
 import:         from AS51343 accept AS51343;
 export:         to AS51343 announce AS-UCANET;
-remarks:
-remarks:        NLine
 import:         from AS29420 accept AS29420;
 export:         to AS29420 announce {0.0.0.0/0};
-remarks:
-remarks:        -----------------------------------------------
-remarks:        Moscow IX
-remarks:        -----------------------------------------------
-remarks:        MSK-IX
-remarks:
 import:         from AS8631 accept AS-MSKROUTESERVER;
 export:         to AS8631 announce AS-UCANET;
-remarks:
-remarks:        DATA-IX
-remarks:
 import:         from AS50952 accept AS-DATAIX;
 export:         to AS50952 announce AS-UCANET;
-remarks:
-remarks:        Global-IX
-remarks:
 import:         from AS31500 accept AS-GLOBAL-IX;
 export:         to AS31500 announce AS-UCANET;
-remarks:
-remarks:        ---------------------------------------------
-remarks:        IPv6 Routing Policy
-remarks:        ---------------------------------------------
-remarks:
-remarks:        Retn
 mp-import:      afi ipv6.unicast from AS57304 accept ANY
 mp-export:      afi ipv6.unicast to AS57304 announce AS-UCANETv6
-remarks:
-remarks:        CITYTELECOM (Filanco)
 mp-import:      afi ipv6.unicast from AS29076 accept ANY
 mp-export:      afi ipv6.unicast to AS29076 announce AS-UCANETv6
-remarks:
-remarks:        Meganet-2003
 mp-import:      afi ipv6.unicast from AS51410 accept AS51410
 mp-export:      afi ipv6.unicast to AS51410 announce ANY
-remarks:
-remarks:        MSK-IX
 mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS-UCANETv6
-remarks:
-remarks:        Google
 mp-import:      afi ipv6.unicast from AS15169 accept AS15169
 mp-export:      afi ipv6.unicast to AS15169 announce AS-UCANETv6
-remarks:
-remarks:        Mail.ru
 mp-import:      afi ipv6.unicast from AS47764 accept AS-MAILRU
 mp-export:      afi ipv6.unicast to AS47764 announce AS-UCANETv6
-remarks:
-remarks:        Macomnet
 mp-import:      afi ipv6.unicast from AS8470 accept AS-MACOMNET
 mp-export:      afi ipv6.unicast to AS8470 announce AS-UCANETv6
-remarks:
-remarks:        DATA-IX
 mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX;
 mp-export:      afi ipv6.unicast to AS50952 announce AS-UCANETv6;
-remarks:
-remarks:        Global-IX
 mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-IX;
 mp-export:      afi ipv6.unicast to AS31500 announce AS-UCANETv6;
-remarks:
-remarks:        Meganet-2003
 mp-import:      afi ipv6.unicast from AS51410 accept AS51410;
 mp-export:      afi ipv6.unicast to AS51410 announce ANY;
-remarks:
-remarks:        Inecom
 mp-import:      afi ipv6.unicast from AS35598 accept AS35598;
 mp-export:      afi ipv6.unicast to AS35598 announce AS-UCANETv6;
-remarks:
-remarks:        +======================================================
-remarks:        | BGP COMMUNITIES
-remarks:        +------------------------------------------------------
-remarks:        | Communities for prefix classification
-remarks:        +------------------------------------------------------
-remarks:        | All inbound prefixes are marked with BGP communities.
-remarks:        | Community 43404:SNN00, where:
-remarks:        |
-remarks:        | S - source of the prefix:
-remarks:        |
-remarks:        | 1 - Customer
-remarks:        | 2 - Upstream
-remarks:        | 3 - Private peer
-remarks:        |
-remarks:        | NN - Upstream, peer or customer number:
-remarks:        |
-remarks:        | Customers (with Global Internet Access):
-remarks:        | 04 - Meganet (AS51410)
-remarks:        | 09 - Mosconnect (AS201588)
-remarks:        | Upstreams:
-remarks:        | 02 - Retn (AS9002)
-remarks:        | 04 - TTK (AS20485)
-remarks:        | 05 - Rostelecom (AS12389)
-remarks:        | 07 - CITYTELECOM (AS29076)
-remarks:        | 09 - Comcor (AS8732)
-remarks:        | Private peers:
-remarks:        | 00 - MSK-IX (AS8631)
-remarks:        | 06 - Inetcom (AS35598)
-remarks:        | 11 - Dataline (AS35297)
-remarks:        | 12 - Data-IX (AS50952)
-remarks:        | 14 - Global-IX (AS31500)
-remarks:        | 15 - Google (AS15169)
-remarks:        | 16 - Mail.ru (AS47764)
-remarks:        | 17 - Macomnet (AS8470)
-remarks:        | 18 - Piter-IX (AS49869)
-remarks:        | 19 - Twitch Inc. (AS46489)
-remarks:        | 20 - Mosnet (AS29319)
-remarks:        |
-remarks:        +----------------------------------------------------------
-remarks:        | Prefix control: Prepend OR Deny
-remarks:        | !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-remarks:        | !!! accepted only from Customers and Russian peers !!!
-remarks:        | !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-remarks:        +----------------------------------------------------------
-remarks:        | Community 43404:5DNNA, where:
-remarks:        |
-remarks:        | D - destination of the prepend or deny action:
-remarks:        | 1 - Customers
-remarks:        | 2 - Upstreams
-remarks:        | 3 - Private peers
-remarks:        |
-remarks:        | NN - Upstream or peer number:
-remarks:        |
-remarks:        | Customers (with Global Internet Access):
-remarks:        | 04 - Meganet (AS51410)
-remarks:        | 09 - Mosconnect (AS201588)
-remarks:        | 99 - All Customers
-remarks:        | Upstreams:
-remarks:        | 02 - Retn (AS9002)
-remarks:        | 04 - TTK (AS20485)
-remarks:        | 05 - Rostelecom (AS12389)
-remarks:        | 07 - CITYTELECOM (AS29076)
-remarks:        | 09 - Comcor (AS8732)
-remarks:        | 99 - All Upstreams
-remarks:        | Private peers:
-remarks:        | 00 - MSK-IX (AS8631)
-remarks:        | 06 - Inetcom (AS35598)
-remarks:        | 11 - Dataline (AS35297)
-remarks:        | 12 - Data-ix (AS50952)
-remarks:        | 14 - Global-IX (AS31500)
-remarks:        | 15 - Google (AS15169)
-remarks:        | 16 - Mail.ru (AS47764)
-remarks:        | 17 - Macomnet (AS8470)
-remarks:        | 18 - Piter-IX (AS49869)
-remarks:        | 19 - Twitch Inc. (AS46489)
-remarks:        | 20 - Mosnet (AS29319)
-remarks:        | 99 - All Russian peers
-remarks:        | A - action:
-remarks:        | 0 - don't announce prefix
-remarks:        | 1 - announce with one prepend
-remarks:        | 2 - announce with two times prepend
-remarks:        | 3 - announce with three times prepend
-remarks:        |
-remarks:        | Communities 43404:5DNNA deleted on output
-remarks:        |
-remarks:        +======================================================
 org:            ORG-KL26-RIPE
-admin-c:        AYK24-RIPE
-tech-c:         FLS103-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@mega-net.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         UCARU-MNT
 created:        2007-07-26T11:43:21Z
 last-modified:  2024-11-29T12:48:40Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS43404
+country:        RU
+as-name:        UCARU-AS Fastnet LLC
 
 organisation:   ORG-KL26-RIPE
 org-name:       Fastnet LLC
 country:        RU
 org-type:       LIR
-address:        Chernomorskii blvd, 4-2
-address:        117556
-address:        MOSCOW
-address:        RUSSIAN FEDERATION
-phone:          +7 (495) 114-0000
-fax-no:         +7 (495) 114-0000
-admin-c:        AYK24-RIPE
-tech-c:         FLS103-RIPE
+address:        Dummy address for ORG-KL26-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        FLS103-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        UCARU-MNT
@@ -281,35 +98,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         UCARU-MNT
 created:        2006-06-23T09:18:34Z
 last-modified:  2020-12-16T13:03:22Z
-source:         RIPE # Filtered
-
-role:           Fastnet LLC support
-address:        Chernomorskii blvd, 4-2
-address:        117556
-address:        MOSCOW
-address:        RUSSIAN FEDERATION
-phone:          +7 (495) 114-0000
-fax-no:         +7 (495) 114-0000
-org:            ORG-KL26-RIPE
-admin-c:        AYK24-RIPE
-tech-c:         AYK24-RIPE
-nic-hdl:        FLS103-RIPE
-abuse-mailbox:  abuse@ucanet.ru
-mnt-by:         UCARU-MNT
-created:        2020-07-29T13:08:48Z
-last-modified:  2020-07-29T13:10:26Z
-source:         RIPE # Filtered
-
-person:         Alexey Yuryevich Kolpakov
-address:        66 Varshavskoe sh.,
-address:        Moscow, Russia
-phone:          +7 495 1140000
-fax-no:         +7 495 1140000
-nic-hdl:        AYK24-RIPE
-mnt-by:         UCARU-MNT
-created:        2007-07-15T11:24:09Z
-last-modified:  2015-04-10T13:55:12Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

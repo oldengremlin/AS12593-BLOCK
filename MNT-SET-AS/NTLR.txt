@@ -1,3 +1,150 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 212.90.160.3 port 22
+as-set:         AS-NETLINE
+descr:          Set of AS for NetLine operation
+members:        AS12739
+members:        AS28983
+members:        AS44241
+members:        AS50464
+members:        AS57505
+members:        AS57589
+members:        AS210725
+members:        AS51427
+members:        AS-NTKLtd
+members:        AS-ULCOMNET
+members:        as-RegionSv
+members:        AS60642
+org:            ORG-NL6-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@ntl.ru
+mnt-by:         NTLR
+created:        2004-06-18T11:58:00Z
+last-modified:  2021-09-29T09:44:34Z
+source:         RIPE
+
+
+
+as-set:         AS-NETLINE6
+descr:          Set of AS for NetLine operation
+members:        AS12739
+members:        AS-NTKLtd
+members:        AS-ISNETRU
+org:            ORG-NL6-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@ntl.ru
+mnt-by:         NTLR
+created:        2012-12-11T10:54:42Z
+last-modified:  2019-02-18T12:51:32Z
+source:         RIPE
+
+
+
+as-set:         AS-NTL
+descr:          Set of AS for NetLine operation
+members:        AS12739
+members:        AS28983
+members:        AS44241
+members:        AS50464
+members:        AS57505
+members:        AS51427
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NTLR
+created:        2009-03-17T09:25:58Z
+last-modified:  2021-02-22T09:58:54Z
+source:         RIPE
+
+
+
+aut-num:        AS12739
+as-name:        NetLine_AS
+org:            ORG-NL6-RIPE
+import:         from AS8631 action pref=20; accept AS-MSKROUTESERVER
+import:         from AS20632 action pref=21; accept AS-PETERSTAR
+import:         from AS41095 action pref=21; accept AS-IPTP
+import:         from AS13238 action pref=21; accept AS-YANDEX
+import:         from AS8470 action pref=21; accept AS-MACOMNET
+import:         from AS9002 action pref=30; accept ANY
+import:         from AS3216 action pref=40; accept ANY
+import:         from AS25308 action pref=50; accept ANY
+import:         from AS29076 action pref=60; accept ANY
+import:         from AS28917 action pref=70; accept ANY
+import:         from AS25478 action pref=80; accept ANY
+import:         from AS28983 action pref=10; accept AS28983
+import:         from AS44241 action pref=10; accept AS44241
+import:         from AS50464 action pref=10; accept AS50464
+import:         from AS57505 action pref=10; accept AS57505
+import:         from AS57589 action pref=10; accept AS57589
+import:         from AS56477 action pref=10; accept AS-NTKLtd
+import:         from AS42583 action pref=10; accept AS42583
+import:         from AS205460 action pref=10; accept AS205460
+import:         from AS210725 action pref=10; accept AS210725
+import:         from AS60642 action pref=10; accept AS60642
+import:         from AS51427 action pref=10; accept AS51427
+import:         from AS6939 action pref=10; accept AS-HURRICANE
+mp-import:      afi ipv6.unicast from AS3216 accept ANY
+mp-import:      afi ipv6.unicast from AS9002 accept ANY
+mp-import:      afi ipv6.unicast from AS29076 accept ANY
+mp-import:      afi ipv6.unicast from AS28917 accept ANY
+mp-import:      afi ipv6.unicast from AS25478 accept ANY
+mp-import:      afi ipv6.unicast from AS13238 accept AS-YANDEX
+mp-import:      afi ipv6.unicast from AS8470 accept AS-MACOMNET
+mp-import:      afi ipv6.unicast from AS56477 accept AS-NTKLtd
+mp-import:      afi ipv6.unicast from AS6939 accept AS-HURRICANEv6
+export:         to AS8631 announce AS-NETLINE
+export:         to AS20632 announce AS-NETLINE
+export:         to AS41095 announce AS-NETLINE
+export:         to AS13238 announce AS-NETLINE
+export:         to AS8470 announce AS-NETLINE
+export:         to AS9002 announce AS-NETLINE
+export:         to AS3216 announce AS-NETLINE
+export:         to AS25308 announce AS-NETLINE
+export:         to AS29076 announce AS-NETLINE
+export:         to AS28917 announce AS-NETLINE
+export:         to AS25478 announce AS-NETLINE
+export:         to AS28983 announce ANY
+export:         to AS44241 announce ANY
+export:         to AS50464 announce ANY
+export:         to AS57505 announce ANY
+export:         to AS57589 announce ANY
+export:         to AS56477 announce ANY
+export:         to AS42583 announce ANY
+export:         to AS205460 announce ANY
+export:         to AS210725 announce ANY
+export:         to AS60642 announce ANY
+export:         to AS51427 announce ANY
+export:         to AS6939 announce AS-NETLINE
+mp-export:      afi ipv6.unicast to AS3216 announce AS-NETLINE6
+mp-export:      afi ipv6.unicast to AS9002 announce AS-NETLINE6
+mp-export:      afi ipv6.unicast to AS13238 announce AS-NETLINE6
+mp-export:      afi ipv6.unicast to AS8470 announce AS-NETLINE6
+mp-export:      afi ipv6.unicast to AS29076 announce AS-NETLINE6
+mp-export:      afi ipv6.unicast to AS28917 announce AS-NETLINE6
+mp-export:      afi ipv6.unicast to AS25478 announce AS-NETLINE6
+mp-export:      afi ipv6.unicast to AS6939 announce AS-NETLINE6
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NTLR
+created:        1970-01-01T00:00:00Z
+last-modified:  2021-09-29T12:04:24Z
+source:         RIPE
+
+
+
+aut-num:        AS60642
+as-name:        PRESNYA
+org:            ORG-JCEN1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NTLR
+created:        2013-06-07T09:51:09Z
+last-modified:  2024-02-28T12:30:11Z
+source:         RIPE
+sponsoring-org: ORG-NL6-RIPE
+
+
+

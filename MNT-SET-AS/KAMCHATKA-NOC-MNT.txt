@@ -1,3 +1,42 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 10.100.1.2 port 22
+as-set:         AS-KAMCHATKA
+descr:          BGP ASes announced by Ru.Kamchatka
+members:        AS34974
+members:        AS47375
+members:        AS50502
+members:        AS59603
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         KAMCHATKA-NOC-MNT
+created:        2009-04-21T03:55:08Z
+last-modified:  2024-01-15T09:04:45Z
+source:         RIPE
+
+
+
+aut-num:        AS34974
+org:            ORG-JR8-RIPE
+descr:          PJSC "Rostelecom". Kamchatka branch
+as-name:        KAMCHATKA-AS
+descr:          Kamchatka, Russia
+export:         to AS12389 announce AS-KAMCHATKA
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS47375 announce ANY
+import:         from AS47375 action pref=1000; accept AS47375
+export:         to AS50502 announce ANY
+import:         from AS50502 action pref=1000; accept AS50502
+export:         to AS58047 announce ANY
+import:         from AS58047 action pref=1000; accept AS58047
+export:         to AS59603 announce ANY
+import:         from AS59603 action pref=1000; accept AS59603
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         KAMCHATKA-NOC-MNT
+created:        2005-05-11T08:33:16Z
+last-modified:  2024-05-27T05:48:04Z
+source:         RIPE
+
+
+

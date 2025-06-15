@@ -1,6 +1,18 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
-
+as-set:         AS-IIAT
+descr:          Macro for IIAT network
+members:        AS9039
+members:        AS44479
+members:        AS51186
+members:        AS62344
+members:        AS34853
+org:            ORG-Ioia1-RIPE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         IIAT-RIPE-MNT
+mnt-lower:      IIAT-RIPE-MNT
+created:        2002-04-27T13:23:29Z
+last-modified:  2015-11-13T09:32:44Z
+source:         RIPE
 
 
 
@@ -13,10 +25,8 @@ import:         from AS29076 accept ANY
 export:         to AS29076 announce AS34853
 import:         from AS6854 accept ANY
 export:         to AS6854 announce AS34853
-admin-c:        POTY-RIPE
-admin-c:        CHA37-RIPE
-tech-c:         SM29076-RIPE
-tech-c:         CHA37-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IIAT-RIPE-MNT
@@ -31,91 +41,37 @@ aut-num:        AS9039
 org:            ORG-Ioia1-RIPE
 as-name:        IIAT-AS
 descr:          IIAT Autonomous System
-remarks:        ----------------------
-remarks:        MSK-IX peers
-remarks:        ----------------------
-remarks:        --- Lukoil-Inform ---
 import:         from AS13105 action pref=100; community.append(9039:2050, 9039:2052); accept AS-LUKOIL
 export:         to AS13105 announce AS-IIAT
-remarks:        --- RUNNet ---
 import:         from AS3267 action pref=100; community.append(9039:2050, 9039:2052); accept AS-RUNNETIX
 export:         to AS3267 announce AS-IIAT
-remarks:        --- DI-NET ---
 import:         from AS12695 action pref=100; community.append(9039:2050, 9039:2052); accept AS-DINET
 export:         to AS12695 announce AS-IIAT
-remarks:        --- MSK-IX route-server ---
 import:         from AS8631 action pref=100; community.append(9039:2050, 9039:2052); accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-IIAT
-remarks:        --- BusinessSvyazHold ---
 import:         from AS8491 action pref=100; community.append(9039:2050, 9039:2052); accept AS-BSH
 export:         to AS8491 announce AS-IIAT
-remarks:        --- PETERSTAR ---
 import:         from AS20632 action pref=100; community.append(9039:2050, 9039:2052); accept AS-PETERSTAR
 export:         to AS20632 announce AS-IIAT
-remarks:        --- NODEX ---
 import:         from AS29329 action pref=100; community.append(9039:2050, 9039:2052); accept AS-NODEX
 export:         to AS29329 announce AS-IIAT
-remarks:        --- Innova ---
 import:         from AS49813 action pref=100; community.append(9039:2050, 9039:2052); accept AS-INN
 export:         to AS29329 announce AS-IIAT
-remarks:        ----------------------
-remarks:        Client peers
-remarks:        ----------------------
-remarks:        --- RIA Novosti ---
 import:         from AS44479 action pref=100; community.append(9039:2050, 9039:2051); accept AS44479
 export:         to AS44479 announce ANY
-remarks:        --- PRIME ---
 import:         from AS34853 action pref=100; community.append(9039:2050, 9039:2051); accept AS34853
 export:         to AS34853 announce ANY
-remarks:        ----------------------
-remarks:        Upstream peers
-remarks:        ----------------------
-remarks:        --- NOVITATELECOM ---
 import:         from AS59589 action pref=100; community.append(9039:2090, 9039:2091); accept ANY
 export:         to AS59589 announce AS-IIAT
-remarks:        --- Citytelecom (Filanco)---
 import:         from AS29076 action pref=100; community.append(9039:2090, 9039:2093); accept ANY
 export:         to AS29076 announce AS-IIAT
-remarks:        --- GlobalNet ---
 import:         from AS31500 action pref=100; community.append(9039:2090, 9039:2094); accept ANY
 export:         to AS31500 announce AS-IIAT
-remarks:        --- Globus-Telecom ---
 import:         from AS30733 action pref=100; community.append(9039:2090, 9039:2095); accept ANY
 export:         to AS30733 announce AS-IIAT
-remarks:        ---------------------------
 default:        to AS59589 action pref=100; networks ANY
-remarks:        ---------------------------
-remarks:        ---------------------------
-remarks:        Communities used in the AS
-remarks:        ---------------------------
-remarks:        External communities which may be set by external peers
-remarks:        when talking to AS9039 (subject to contractual agreement).
-remarks:        They are in range 9039:2000-9039:2050.
-remarks:        All other communities are deleted.
-remarks:        ---------------------------
-remarks:        9039:200x - When advertising to Upstreams.
-remarks:        9039:204x - When advertising to IXs peers.
-remarks:        where:
-remarks:        ...x=0 - do not prepend
-remarks:        ...x=1,2 or 3 - prepend 9039 1,2 or 3 times
-remarks:        ...x=9 - do not advertise
-remarks:        ---------------------------
-remarks:        Internal communities are assigned only internally.
-remarks:        They are deleted from announces from external peers.
-remarks:        They are in range 9039:2050-9039:2100
-remarks:        ---------------------------
-remarks:        9039:2050 - Received from an internal peers, specifically:
-remarks:        9039:2051 - Customers
-remarks:        9039:2052 - MSK-IX
-remarks:        9039:2053 - Demos
-remarks:        9039:2090 - Received from an upstream peer, specifically:
-remarks:        9039:2091 - NOVITATELECOM
-remarks:        9039:2093 - Citytelecom (Filanco)
-remarks:        9039:2094 - GlobalNet
-remarks:        9039:2095 - Globus-Telecom
-remarks:        ---------------------------
-admin-c:        POTY-RIPE
-tech-c:         POTY-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IIAT-RIPE-MNT

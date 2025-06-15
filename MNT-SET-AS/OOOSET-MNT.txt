@@ -1,6 +1,63 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.160.3:22 already exists, disabling multiplexing
+as-set:         AS-OOO-NET
+descr:          OOO Set
+members:        AS48176
+members:        AS49325
+members:        AS57579
+members:        AS50671
+members:        AS204169
+members:        AS49759
+members:        AS15868
+members:        AS-POTOK
+members:        AS-POSTLTD
+members:        AS208991
+members:        AS49107
+members:        AS202852
+members:        AS13077
+members:        AS21030
+members:        AS204495
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         OOOSET-MNT
+created:        2009-04-21T09:00:40Z
+last-modified:  2023-02-09T09:39:13Z
+source:         RIPE
 
+
+
+as-set:         AS-OOO-NET-V6
+descr:          OOO Set
+members:        AS48176
+members:        AS199833
+members:        AS204169
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         OOOSET-MNT
+created:        2012-08-15T09:32:23Z
+last-modified:  2023-02-09T09:39:50Z
+source:         RIPE
+
+
+
+as-set:         AS-OOOSET-PEER
+descr:          OOO Set
+members:        AS48176
+members:        AS49325
+members:        AS57579
+members:        AS50671
+members:        AS204169
+members:        AS208991
+members:        AS44963
+members:        AS49107
+members:        AS15868
+members:        AS202852
+members:        AS49759
+members:        AS12494
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         OOOSET-MNT
+created:        2018-03-19T15:27:29Z
+last-modified:  2023-02-09T09:42:33Z
+source:         RIPE
 
 
 
@@ -17,8 +74,8 @@ import:         from AS31133 accept ANY
 export:         to AS31133 announce AS15868
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS15868
-admin-c:        KO124-RIPE
-tech-c:         KO124-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NALTEL-MNT
@@ -33,21 +90,12 @@ sponsoring-org: ORG-NGs2-RIPE
 aut-num:        AS200953
 as-name:        ZT-VLAD-AS
 org:            ORG-ZTVL1-RIPE
-remarks:
-remarks:        # MobileTelesystems Uplink
 import:         from AS8359 accept ANY
 export:         to AS8359 announce rs-MTS
-remarks:        # MobileTelesystems Uplink
-remarks:
-remarks:        # Megafon Uplink
 import:         from AS31133 accept { 195.191.208.0/23 }
 export:         to AS31133 announce rs-Megafon
-remarks:        # Megafon Uplink
-remarks:
-admin-c:        IVS61-RIPE
-admin-c:        OAA13-RIPE
-admin-c:        LSV84-RIPE
-tech-c:         LSV84-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-VLD-ZT
@@ -62,21 +110,16 @@ sponsoring-org: ORG-OS57-RIPE
 aut-num:        AS200982
 as-name:        ZT-TOMSK-AS
 org:            ORG-ZTTL1-RIPE
-remarks:        Uplink BeeLine
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS200982:AS-SET-ZTT
-remarks:        Uplink MegaFon
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS200982:AS-SET-ZTT
-remarks:        Downlink Customer TSU
 import:         from AS8510 accept AS8510
 export:         to AS8510 announce ANY
-admin-c:        IVS61-RIPE
-remarks:        Uplink MTS
+admin-c:        DUMY-RIPE
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS200982:AS-SET-ZTT
-admin-c:        LSV84-RIPE
-tech-c:         LSV84-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OOOSET-MNT
@@ -95,10 +138,8 @@ import:         from AS48176 accept ANY
 export:         to AS48176 announce AS201123
 import:         from AS49325 accept ANY
 export:         to AS49325 announce AS201123
-admin-c:        IVS61-RIPE
-admin-c:        LSV84-RIPE
-tech-c:         LSV84-RIPE
-tech-c:         AK13570-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OOOSET-MNT
@@ -116,10 +157,8 @@ import:         from AS3216 accept ANY
 export:         to AS3216 announce AS201250
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS201250
-admin-c:        IVS61-RIPE
-admin-c:        LSV84-RIPE
-tech-c:         LSV84-RIPE
-tech-c:         AK13570-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OOOSET-MNT
@@ -138,11 +177,8 @@ import:         from AS8359 accept ANY
 import:         from AS208541 accept AS208541
 export:         to AS8359 announce AS-ZTBELGOROD
 export:         to AS208541 announce ANY
-admin-c:        IVS61-RIPE
-admin-c:        AB39456-RIPE
-admin-c:        PAV258-RIPE
-tech-c:         AB39456-RIPE
-tech-c:         PAV258-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OOOSET-MNT
@@ -163,10 +199,8 @@ import:         from AS49325 accept ANY
 export:         to AS49325 announce AS204169
 import:         from AS48176 accept ANY
 export:         to AS48176 announce AS204169
-admin-c:        IVS61-RIPE
-admin-c:        LSV84-RIPE
-tech-c:         IVS61-RIPE
-tech-c:         LSV84-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OOOSET-MNT
@@ -181,53 +215,12 @@ sponsoring-org: ORG-OS57-RIPE
 aut-num:        AS48176
 as-name:        OOOSET-AS
 org:            ORG-OS57-RIPE
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Community
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Local PEERs
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        |
-remarks:        | 48176:500 - Set local preference 150
-remarks:        | 48176:600 - Set local preference 200
-remarks:        | 48176:900 - Set local preference 50
-remarks:        |
-remarks:        | Default local preference for Customer is 100
-remarks:        |
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Community to UPLINKS
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 48176:100x - Megafon (AS3133)
-remarks:        | 48176:200x - BeeLine (AS3216)
-remarks:        | 48176:400x - Google Global Cache
-remarks:        | 48176:500x - MTS (AS8359)
-remarks:        |
-remarks:        | x = 0 - don't advertise
-remarks:        | x = 1 - advertise
-remarks:        | x = 3,5 - prepend (3 or 5) times
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 48176:0 - local peering (don't any advertise)
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Default community: 48176:1001 48176:2001 48176:3000 48176:4001 48176:5000
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | UPLINKS
-remarks:        +-------------------------------------------------------------------------------+
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-OOO-NET
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-OOO-NET
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-OOO-NET
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | DOWNLINKS
-remarks:        +-------------------------------------------------------------------------------+
 import:         from AS57579 accept AS57579
 import:         from AS50671 accept AS50671
 import:         from AS204169 accept AS204169
@@ -242,10 +235,6 @@ export:         to AS208991 announce ANY
 export:         to AS21030 announce ANY
 export:         to AS44963 announce {0.0.0.0/0}
 export:         to AS204495 announce ANY
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | LOCAL PEERs
-remarks:        +-------------------------------------------------------------------------------+
 import:         from AS49325 accept AS49325
 export:         to AS49325 announce AS-OOO-NET
 import:         from AS13077 accept AS13077
@@ -258,11 +247,8 @@ import:         from AS49107 accept AS49107
 export:         to AS49107 announce AS-OOO-NET
 import:         from AS202852 accept AS202852
 export:         to AS202852 announce AS-OOO-NET
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-admin-c:        OOO4-RIPE
-admin-c:        IVS61-RIPE
-tech-c:         OOO4-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         OOOSET-MNT
 mnt-by:         RIPE-NCC-END-MNT

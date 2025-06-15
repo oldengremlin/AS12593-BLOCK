@@ -1,3 +1,89 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 94.125.121.58 port 22
+as-set:         AS-RUSCOMP
+descr:          List of all AS that RU.RUSCOMP accepts
+members:        AS15493
+members:        AS-DELTA-TELESYSTEMS
+members:        AS8998
+members:        AS31336
+members:        AS211933
+members:        AS209099
+members:        AS-GIGA-NET
+members:        AS-RULINK
+members:        AS59552
+members:        AS197392
+members:        AS44847
+members:        AS60287
+members:        AS196884
+members:        AS35747
+members:        AS41469
+members:        AS-JSC-TTS
+members:        AS-PALCOM
+members:        AS204298
+members:        AS-SIBTEL-TMN
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RUSCOMP-MNT
+created:        2006-10-25T08:50:32Z
+last-modified:  2022-11-30T07:30:08Z
+source:         RIPE
+
+
+
+as-set:         AS-TRANSIT72
+descr:          Closed Joint Stock Company
+descr:          "Russian company"
+members:        AS8998
+org:            ORG-TTL3-RIPE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         depnet@rk.t72.ru
+mnt-by:         RUSCOMP-MNT
+mnt-by:         TUMTTL-MNT
+created:        2009-10-02T03:17:20Z
+last-modified:  2017-04-27T10:27:55Z
+source:         RIPE
+
+
+
+aut-num:        AS15493
+as-name:        RUSCOMP-AS
+descr:          Russian company LLC. Internet Service Provider, Tyumen
+org:            ORG-JSCc1-RIPE
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-RUSCOMP
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-RUSCOMP
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-RUSCOMP
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-RUSCOMP
+import:         from AS50923 accept ANY
+export:         to AS50923 announce AS-RUSCOMP
+import:         from AS51028 accept ANY
+export:         to AS51028 announce AS-RUSCOMP
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUSCOMP-MNT
+created:        2002-03-21T13:56:11Z
+last-modified:  2024-01-29T07:43:37Z
+source:         RIPE
+
+
+
+aut-num:        AS8998
+as-name:        TUMTTL-AS
+import:         from AS15493 accept ANY
+export:         to AS15493 announce AS-TRANSIT72
+org:            ORG-JSCc1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RUSCOMP-MNT
+created:        2005-06-10T10:23:16Z
+last-modified:  2018-09-04T10:09:42Z
+source:         RIPE
+
+
+

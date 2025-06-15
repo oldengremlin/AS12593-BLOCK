@@ -1,37 +1,63 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.184.190:22 already exists, disabling multiplexing
+as-set:         AS-DELTA-TELESYSTEMS
+descr:          Delta Telesystems AS set
+members:        AS13259
+members:        AS-KRAVTSOV
+members:        AS-RULINK
+members:        AS198755
+members:        AS41058
+members:        AS31112
+members:        AS209734
+members:        AS202923
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-DELTA-TELESYSTEMS
+created:        2010-04-22T05:23:19Z
+last-modified:  2024-05-30T13:00:53Z
+source:         RIPE
 
+
+
+as-set:         AS13259:AS-DT-ADMAN
+descr:          Delta Telesystems AS set for AS57494
+members:        AS13259
+members:        AS207967
+members:        AS41058
+members:        AS-KRAVTSOV
+members:        AS209734
+members:        AS202923
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-DELTA-TELESYSTEMS
+created:        2023-04-30T16:32:40Z
+last-modified:  2025-06-07T06:58:54Z
+source:         RIPE
 
 
 
 aut-num:        AS13259
 as-name:        DELTA-TELESYSTEMS-AS
 org:            ORG-DTL13-RIPE
-remarks:        +-----------------------------------------------+
-remarks:        Routing issues: noc@oborona.net
-remarks:        +-----------------------------------------------+
 import:         from AS15493 action pref=90; accept ANY
 export:         to AS15493 announce AS-DELTA-TELESYSTEMS
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS-DELTA-TELESYSTEMS
 import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-DELTA-TELESYSTEMS
-remarks:        +-----------------------------------------------+
 import:         from AS-RULINK action pref=500; accept AS-RULINK
 export:         to AS-RULINK announce ANY
 import:         from AS198755 action pref=500; accept AS198755
 export:         to AS198755 announce ANY
 import:         from AS-KRAVTSOV action pref=500; accept AS-KRAVTSOV
 export:         to AS-KRAVTSOV announce ANY
-remarks:        +-----------------------------------------------+
-admin-c:        DT6747-RIPE
-tech-c:         DT6747-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@oborona.net
 mnt-by:         MNT-DELTA-TELESYSTEMS
 created:        2008-06-10T07:46:20Z
 last-modified:  2022-01-11T17:16:15Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-Tc5-RIPE
 
 
@@ -40,17 +66,12 @@ aut-num:        AS211860
 as-name:        VPSDEDIC-AS
 org:            ORG-NVN2-RIPE
 sponsoring-org: ORG-Tc5-RIPE
-remarks:        +-----------------------------------+
-remarks:        For abuse, use the contacts below.
-remarks:        Email: admin@vpsdedic.ru
-remarks:        Telegram: https://t.me/vpskot
-remarks:        +-----------------------------------+
 import:         from AS57494 accept ANY
 export:         to AS57494 announce AS211860
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS211860
-admin-c:        NVN41-RIPE
-tech-c:         NVN41-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-DELTA-TELESYSTEMS

@@ -1,4 +1,70 @@
+as-set:         AS-FGNET
+descr:          FGNet ASes
+members:        AS-FREENET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         FREENET-MNT
+created:        2006-01-16T17:46:50Z
+last-modified:  2019-02-15T14:42:53Z
+source:         RIPE
 
+
+
+as-set:         AS-FREENET
+descr:          FREEnet ASes
+members:        AS2895
+members:        AS2587
+members:        AS201842
+members:        AS20549
+members:        AS5431
+members:        AS204039
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         FREENET-MNT
+created:        2001-09-26T17:48:35Z
+last-modified:  2024-09-16T17:21:29Z
+source:         RIPE
+
+
+
+as-set:         AS-FREENET-GREAT
+descr:          All FREEnet ASes
+members:        AS-FREENET
+members:        AS6869
+members:        AS8480
+org:            ORG-FG2-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         FREENET-MNT
+created:        2003-01-22T17:26:31Z
+last-modified:  2005-11-27T19:04:59Z
+source:         RIPE
+
+
+
+as-set:         AS-FREENETMIX
+descr:          FREEnet ASes announced on M9-MIX
+members:        AS2895, AS6869
+members:        AS8324, AS8325
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         FREENET-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2001-09-21T21:49:52Z
+source:         RIPE
+
+
+
+as-set:         AS-MIG-SERVICE
+org:            ORG-MIGS3-RIPE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS205628
+mnt-by:         FREENET-MNT
+mnt-by:         MIG-SRV-MNT
+created:        2017-10-24T11:30:00Z
+last-modified:  2017-11-02T14:42:57Z
+source:         RIPE
 
 
 
@@ -9,16 +75,15 @@ import:         from AS2895 action pref=100; accept ANY
 import:         from AS47478 action pref=100; accept ANY
 export:         to AS2895 announce AS201842
 export:         to AS47478 announce AS201842
-admin-c:        BNY11-RIPE
-tech-c:         BNY11-RIPE
-tech-c:         DIS3-RIPE
-tech-c:         MAA8-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         boris@rfbr.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
 created:        2014-06-27T09:11:33Z
 last-modified:  2024-02-10T18:59:41Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-FG2-RIPE
 
 
@@ -34,8 +99,8 @@ import:         from AS3216 accept ANY
 export:         to AS3216 announce AS202999
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS202999
-admin-c:        ABB82-RIPE
-tech-c:         ABB82-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
@@ -54,8 +119,8 @@ import:         from AS50928 accept ANY
 export:         to AS50928 announce AS203163
 import:         from AS5431 accept ANY
 export:         to AS5431 announce AS203163
-admin-c:        MIC258-RIPE
-tech-c:         MIC258-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
@@ -74,8 +139,8 @@ import:         from AS8439 accept ANY
 export:         to AS8439 announce AS203337
 import:         from AS205998 accept ANY
 export:         to AS205998 announce AS203337
-admin-c:        nnk10-ripe
-tech-c:         pmg1-ripe
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
@@ -95,8 +160,8 @@ export:         to AS12389 announce AS203344
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS203344
 sponsoring-org: ORG-FG2-RIPE
-admin-c:        RRS44-RIPE
-tech-c:         RRS44-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
@@ -113,8 +178,8 @@ import:         from AS34757 accept ANY
 export:         to AS34757 announce AS204833
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS204833
-admin-c:        ABB82-RIPE
-tech-c:         ABB82-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
@@ -135,8 +200,8 @@ import:         from AS34896 accept ANY
 export:         to AS34896 announce AS204898
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS204898
-admin-c:        VVV136-RIPE
-tech-c:         VVV136-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
@@ -155,8 +220,8 @@ import:         from AS2895 action pref=100; accept ANY
 import:         from AS3267 action pref=100; accept ANY
 export:         to AS2895 announce AS20549
 export:         to AS3267 announce AS20549
-admin-c:        MPEI1-RIPE
-tech-c:         MPEI1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         FREENET-MNT
 mnt-by:         MPEI-MNT
@@ -177,8 +242,8 @@ import:         from AS35598 action pref=100; accept ANY
 export:         to AS205460 announce AS205628
 export:         to AS12389 announce AS205628
 export:         to AS35598 announce AS205628
-admin-c:        AVM283-RIPE
-tech-c:         SD8055-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
@@ -197,8 +262,8 @@ import:         from AS25159 accept ANY
 export:         to AS25159 announce AS206152
 import:         from AS51343 accept ANY
 export:         to AS51343 announce AS206152
-admin-c:        AD13628-RIPE
-tech-c:         AD13628-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
@@ -216,8 +281,8 @@ import:         from AS29226 accept ANY
 export:         to AS29226 announce AS207447
 import:         from AS5431 accept ANY
 export:         to AS5431 announce AS207447
-admin-c:        MDS875-RIPE
-tech-c:         AVS600-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
@@ -236,15 +301,16 @@ import:         from AS2895 action pref=100; accept ANY
 export:         to AS2895 announce AS2587
 import:         from AS57681 action pref=100; accept ANY
 export:         to AS57681 announce AS2587
-admin-c:        DIS3-RIPE
-tech-c:         FH645-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 abuse-c:        GPNT1-RIPE
+notify:         gpntb@gpntb.ru
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
 created:        2002-09-02T14:25:44Z
 last-modified:  2023-03-14T19:16:04Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -252,30 +318,16 @@ aut-num:        AS2895
 as-name:        FREE-NET-AS
 descr:          FREEnet
 org:            ORG-FG2-RIPE
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Upstreams
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        --- Comcor ---
 mp-import:      afi ipv4.unicast, ipv6.unicast from AS8732 action pref=200; accept ANY
 mp-export:      afi ipv4.unicast, ipv6.unicast to AS8732 announce AS-FREENET
-remarks:        --- RUNNet ---
 mp-import:      afi ipv4.unicast, ipv6.unicast from AS3267 action pref=200; accept ANY
 mp-export:      afi ipv4.unicast, ipv6.unicast to AS3267 announce AS-FREENET
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Clients
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        ---GPNTB---
 mp-import:      afi ipv4.unicast from AS2587 action pref=80; accept AS2587
 mp-export:      afi ipv4.unicast to AS2587 announce ANY
-remarks:        ---RFBR---
 import:         from AS201842 action pref=80; accept {147.45.206.0/24, 193.233.79.0/24}
 export:         to AS201842 announce AS-FREENET {0.0.0.0/0}
-remarks:        --- Filanco-CL ---
 mp-import:      afi ipv4.unicast from AS204039 action pref=80; accept {31.28.22.0/24}
 mp-export:      afi ipv4.unicast to AS204039 announce {0.0.0.0/0}
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Peers
-remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 mp-import:      afi ipv4.unicast from AS3218 action pref=100; accept AS-COSMOS
 mp-export:      afi ipv4.unicast to AS3218 announce AS-FREENET
 mp-import:      afi ipv4.unicast from AS3316 action pref=100; accept AS-RELARN
@@ -308,58 +360,20 @@ mp-import:      afi ipv4.unicast, ipv6.unicast from AS31500 action pref=100; acc
 mp-export:      afi ipv4.unicast, ipv6.unicast to AS31500 announce AS-FREENET
 import:         from AS43832 action pref=100; accept AS43832
 export:         to AS43832 announce AS-FREENET
-remarks:        ---------------------------------------------
-remarks:        PITER-IX MSK
-remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast, ipv6.unicast AS49869 from AS-PITER-IX-MSK action pref=100; accept AS-PITER-IX-MSK
 export-via:     afi ipv4.unicast, ipv6.unicast AS49869 to AS-PITER-IX-MSK announce AS-FREENET
-remarks:        ---------------------------------------------
-remarks:        PITER-IX SPB
-remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast, ipv6.unicast AS50817 from AS-PITER-IX action pref=100; accept AS-PITER-IX
 export-via:     afi ipv4.unicast, ipv6.unicast AS50817 to AS-PITER-IX announce AS-FREENET
-remarks:        ---------------------------------------------
-remarks:        PITER-IX HEL
-remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast AS39607 from AS-PITER-IX-HELSINKI action pref=100; accept AS-PITER-IX-HELSINKI
 export-via:     afi ipv4.unicast AS39607 to AS-PITER-IX-HELSINKI announce AS-FREENET
-remarks:        ---------------------------------------------
-remarks:        PITER-IX TLL
-remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast AS57936 from AS-PITER-IX-TLL action pref=100; accept AS-PITER-IX-TLL
 export-via:     afi ipv4.unicast AS57936 to AS-PITER-IX-TLL announce AS-FREENET
-remarks:        ---------------------------------------------
-remarks:        PITER-IX RIX
-remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast AS49634 from AS-PITER-IX-RIGA action pref=100; accept AS-PITER-IX-RIGA
 export-via:     afi ipv4.unicast AS49634 to AS-PITER-IX-RIGA announce AS-FREENET
-remarks:        ---------------------------------------------
-remarks:        PITER-IX FRA
-remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast AS48193 from AS-PITER-IX-FRA action pref=100; accept AS-PITER-IX-RIGA
 export-via:     afi ipv4.unicast AS48193 to AS-PITER-IX-FRA announce AS-FREENET
-remarks:        ---------------------------------------------
-remarks:        Communities for prefix advertisement control (accepted from clients)
-remarks:        ---------------------------------------------
-remarks:        2895:50xn Controls advertisement to
-remarks:        direction "x",where directions are:
-remarks:        x=0 All upstreams
-remarks:        x=1 All peers
-remarks:        x=2 All clients
-remarks:        x=3 Upstream AS3267 (RUNNet)
-remarks:        x=4 Upstream AS8732 (COMCOR)
-remarks:        x=7 MSK-IX Peers
-remarks:        x=8 PITER-IX Peers
-remarks:        and values of "n" define possible actions:
-remarks:        n=0 do not advertise
-remarks:        n=1,2,4,6 add n prepends
-remarks:        Less specific directions take precedence
-remarks:        over more specific directions. For given "x",
-remarks:        the least value of "n" takes precedence.
-remarks:        ---------------------------------------------
-admin-c:        ASM57-RIPE
-tech-c:         DIS3-RIPE
-tech-c:         FH645-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         LEGACY
 mnt-by:         RIPE-NCC-LEGACY-MNT
 mnt-by:         AS2895-MNT
@@ -382,8 +396,8 @@ export:         to AS8359 announce AS35783
 export:         to AS12389 announce AS35783
 import:         from AS12389 accept ANY
 sponsoring-org: ORG-FG2-RIPE
-admin-c:        ILN13-RIPE
-tech-c:         ILN13-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIPE-DB-MNT
@@ -402,8 +416,8 @@ mp-export:      afi ipv4.unicast, ipv6.unicast to AS2895 announce ANY
 import-via:     afi ipv4.unicast, ipv6.unicast AS8631 from AS-MSKROUTESERVER action pref=100; accept AS-MSKROUTESERVER
 export-via:     afi ipv4.unicast, ipv6.unicast AS8631 to AS-MSKROUTESERVER announce AS-FGNET
 org:            ORG-FG2-RIPE
-admin-c:        DIS3-RIPE
-tech-c:         FH645-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
@@ -417,43 +431,36 @@ aut-num:        AS6869
 as-name:        FREE-6869
 org:            ORG-FG2-RIPE
 abuse-c:        KUZ1-RIPE
-remarks:        ----------------
-remarks:        Rostelecom
-remarks:        ----------------
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce {193.233.152.0/24}
-remarks:        ----------------
-remarks:        E-Light-Telecom
-remarks:        ----------------
 import:         from AS39927 action pref=100; accept ANY
 export:         to AS39927 announce {193.233.152.0/24}
-remarks:        ----------------
-admin-c:        DIS3-RIPE
-tech-c:         FH645-RIPE
-tech-c:         KUZ1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         support@kuzstu.ru
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
 created:        2001-12-25T14:05:42Z
 last-modified:  2023-03-14T19:54:02Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS8325
 as-name:        NETIS-AS
-remarks:        Yaroslavl
 org:            ORG-FG2-RIPE
 import:         from AS25592 action pref=100; accept ANY
 export:         to AS25592 announce AS8325
-admin-c:        SEK14-RIPE
-tech-c:         BIRD55-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         head@netis.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
 created:        1970-01-01T00:00:00Z
 last-modified:  2023-03-16T15:08:46Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

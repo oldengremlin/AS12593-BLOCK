@@ -1,22 +1,6 @@
-
-
-
-as-block:       AS25544 - AS25567
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:30Z
-last-modified:  2018-11-22T15:27:30Z
-source:         RIPE
-
-
-
 aut-num:        AS25549
 as-name:        AVANTEL-AS
 org:            ORG-CJcA1-RIPE
-remarks:        -----------------------------------
-remarks:        Upstreams
-remarks:        -----------------------------------
 import:         from AS9049 accept ANY
 export:         to AS9049 announce AS-AVANTEL
 import:         from AS12389 accept ANY
@@ -49,9 +33,6 @@ import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-AVANTEL
 mp-import:      from AS3216 accept ANY
 mp-export:      to AS3216 announce AS-AVANTEL
-remarks:        -----------------------------------
-remarks:        Peers Novosibirsk
-remarks:        -----------------------------------
 import:         from AS35711 accept AS35711
 export:         to AS35711 announce AS-AVANTEL
 import:         from AS15508 accept AS15508
@@ -86,18 +67,12 @@ import:         from AS44310 accept AS44310
 export:         to AS44310 announce AS-AVANTEL
 import:         from AS31200 accept AS-RUNTK-SET
 export:         to AS31200 announce AS-AVANTEL
-remarks:        -----------------------------------
-remarks:        Peers Tomsk
-remarks:        -----------------------------------
 import:         from AS13094 accept ANY
 export:         to AS13094 announce AS-AVANTEL
 import:         from AS41566 accept AS41566
 export:         to AS41566 announce AS-AVANTEL
 import:         from AS48679 accept AS48679
 export:         to AS48679 announce AS-AVANTEL
-remarks:        -----------------------------------
-remarks:        Customers Novosibirsk
-remarks:        -----------------------------------
 import:         from AS214149 accept AS214149
 export:         to AS214149 announce ANY
 import:         from AS214597 accept AS214597
@@ -216,15 +191,8 @@ import:         from AS212264 accept AS212264
 export:         to AS212264 announce ANY
 import:         from AS211343 accept AS211343
 export:         to AS211343 announce ANY
-remarks:        -----------------------------------
-remarks:        Customers Omsk
-remarks:        -----------------------------------
-remarks:        ------
 import:         from AS8817 accept AS8817
 export:         to AS8817 announce ANY
-remarks:        -----------------------------------
-remarks:        Customers Tomsk
-remarks:        -----------------------------------
 import:         from AS49977 accept AS49977
 export:         to AS49977 announce ANY
 import:         from AS35411 accept AS35411
@@ -255,33 +223,26 @@ import:         from AS35722 accept AS35722
 export:         to AS35722 announce ANY
 import:         from AS34479 accept AS34479
 export:         to AS34479 announce ANY
-remarks:        -----------------------------------
 default:        to AS12389 networks ANY
-remarks:        -----------------------------------
-admin-c:        LAB27-RIPE
-admin-c:        AVN65-RIPE
-tech-c:         LAB27-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-tech-c:         AVN65-RIPE
-tech-c:         SVS138-RIPE
 mnt-by:         AVANTEL-MNT
 created:        2003-01-06T10:19:24Z
 last-modified:  2025-04-25T08:43:52Z
 source:         RIPE
 
+as-num:         AS25549
+country:        RU
+as-name:        AVANTEL-AS JSC Avantel
+
 organisation:   ORG-CJcA1-RIPE
 org-name:       JSC Avantel
 country:        RU
 org-type:       LIR
-address:        Skladochnaya str., 1, 15
-address:        127018
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +73833630909
-fax-no:         +73833630939
-admin-c:        SVS138-RIPE
-admin-c:        LAB27-RIPE
+address:        Dummy address for ORG-CJcA1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR16568-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        AVANTEL-MNT
@@ -291,41 +252,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         AVANTEL-MNT
 created:        2008-04-24T12:04:02Z
 last-modified:  2022-03-21T06:04:53Z
-source:         RIPE # Filtered
-
-person:         NOC of AVANTEL
-address:        JSC Avantel
-address:        Russia, 630132, Novosibirsk
-address:        Narymskaya str. 27
-phone:          +7 383 363 0909
-fax-no:         +7 383 363 0939
-nic-hdl:        AVN65-RIPE
-mnt-by:         AVANTEL-MNT
-created:        2007-12-05T14:31:44Z
-last-modified:  2017-10-30T21:57:46Z
-source:         RIPE # Filtered
-
-person:         Lozhnikov Alexey
-address:        JSC Avantel
-address:        Russia, 630132, Novosibirsk
-address:        Narymskaya str. 27
-phone:          +7 383 363 0909
-fax-no:         +7 383 363 0939
-nic-hdl:        LAB27-RIPE
-mnt-by:         theone-mnt
-created:        2010-01-21T04:44:49Z
-last-modified:  2010-01-31T18:53:06Z
 source:         RIPE
-
-person:         Vladislav Shashkov
-address:        Russia, 630132, Novosibirsk
-address:        Narymskaya str. 27
-mnt-by:         SVS138-MNT
-phone:          +7 383 363 0909
-nic-hdl:        SVS138-RIPE
-created:        2010-02-08T04:20:48Z
-last-modified:  2010-02-08T04:31:54Z
-source:         RIPE
-
 
 

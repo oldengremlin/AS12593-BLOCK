@@ -1,15 +1,37 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@185.151.106.150:22 already exists, disabling multiplexing
-
+as-set:         AS-SOVINTEL-KRSK
+descr:          ASes of LLC "EDN Sovintel" Krasnoyarsk branch
+members:        AS21483
+members:        AS31257
+members:        AS30920
+members:        AS39703
+members:        AS12772
+members:        AS42895
+members:        AS43238
+members:        AS48302
+members:        AS47963
+members:        AS47117
+members:        AS50443
+members:        AS50787
+members:        AS51067
+members:        AS50725
+members:        AS60980
+members:        AS59525
+members:        AS62233
+members:        AS205720
+members:        AS51536
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         TEL-MNT
+created:        2006-06-01T09:39:23Z
+last-modified:  2024-07-18T22:09:53Z
+source:         RIPE
 
 
 
 aut-num:        AS21483
 as-name:        TEL-AS
-remarks:        == UPLINKS ==
 import:         from AS3216 action pref=100; accept ANY
 export:         to AS3216 announce AS-SOVINTEL-KRSK
-remarks:        == CLIENTS ==
 import:         from AS50443 action pref=100; accept AS50443
 export:         to AS50443 announce AS-SOVINTEL-KRSK
 import:         from AS50787 action pref=100; accept AS50787
@@ -32,27 +54,9 @@ import:         from AS205720 action pref=100; accept AS205720
 export:         to AS205720 announce AS-SOVINTEL-KRSK
 import:         from AS51536 action pref=100; accept AS51536
 export:         to AS51536 announce AS-SOVINTEL-KRSK
-remarks:        -------------------------------------------------------+
-remarks:        | We are using following communities for our customers:
-remarks:        -------------------------------------------------------+
-remarks:        | 21483:80 Set local preference to 80 (below default)
-remarks:        | 21483:120 Set local preference to 120 (above default)
-remarks:        | 21483:1000 Do not export to UPLINKS
-remarks:        | 21483:1001 Prepend once to UPLINKS
-remarks:        | 21483:1002 Prepend twice to UPLINKS
-remarks:        | 21483:1003 Prepend thrice to UPLINKS
-remarks:        -------------------------------------------------------+
-remarks:        | 21483:3000 Do not export to CUSTOMERS
-remarks:        | 21483:3001 Prepend once to CUSTOMERS
-remarks:        | 21483:3002 Prepend twice to CUSTOMERS
-remarks:        | 21483:3003 Prepend thrice to CUSTOMERS
-remarks:        -------------------------------------------------------+
-remarks:        | 21483:9999 Blackhole (discard) traffic
-remarks:        -------------------------------------------------------
-remarks:
 org:            ORG-ES15-RIPE
-admin-c:        TEL-RIPE
-tech-c:         TEL-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TEL-MNT

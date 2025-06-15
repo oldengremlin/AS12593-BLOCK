@@ -1,3 +1,337 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.184.190 port 22
+as-set:         AS-MF-KRS-IX
+descr:          RU-MF-KRS-IX-AS-SET 20111027
+members:        AS50928
+members:        AS44347
+members:        AS50022
+members:        AS48507
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SYNTSIB-MNT
+mnt-by:         MF-SIB-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+created:        2011-10-27T10:06:59Z
+last-modified:  2011-12-14T03:21:59Z
+source:         RIPE
+
+
+
+as-set:         AS-MF-NSK-IX
+descr:          RU-MF-NSK-IX-AS-SET 20111031
+members:        AS50928
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SYNTSIB-MNT
+mnt-by:         MF-SIB-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+created:        2011-11-02T08:12:10Z
+last-modified:  2011-12-14T03:21:59Z
+source:         RIPE
+
+
+
+as-set:         AS-MegaFon-KRSK
+descr:          Siberian Branch of OJSC MegaFon
+descr:          Krasnoyarsk, Russia
+members:        AS31205
+members:        AS50544
+members:        AS35025
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MF-SIB-MNT
+created:        2010-02-05T04:09:42Z
+last-modified:  2014-11-19T08:48:32Z
+source:         RIPE
+
+
+
+as-set:         AS-MegaFon-NSK
+descr:          Siberian Branch of OJSC MegaFon
+descr:          Novosibirsk, Russia
+members:        AS31205
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MF-SIB-MNT
+created:        2010-02-05T04:11:42Z
+last-modified:  2014-11-19T08:49:17Z
+source:         RIPE
+
+
+
+as-set:         AS-SYNTSIB
+descr:          RU-SYNTSIB-AS-SET 20120116
+members:        AS50928
+members:        AS209179
+members:        AS-SIBSET
+members:        AS-ITEL
+members:        AS-OMKC-SET
+members:        AS-SIBELTELECOM
+members:        AS-NIR
+members:        AS-RUNTK-SET
+members:        AS48316
+members:        AS-INTELECA
+members:        AS40995
+members:        AS49932
+members:        AS-DIANET
+members:        AS-TOMLINE-SET
+members:        AS-AVANTEL
+members:        AS-ADMAN
+members:        AS51291
+members:        AS-KASSIR
+members:        AS-KTSCOM-SET
+members:        AS-TOMGATE
+members:        AS-REGIT-SET
+members:        AS-TRANSFER
+members:        AS-TOMICA
+members:        AS-ORIONNET
+members:        AS5567
+members:        AS-RUSMEDVED
+members:        AS51506
+members:        AS58093
+members:        AS50433
+members:        AS-EFFORTEL-KEM
+members:        AS48316
+members:        AS-TUSUR
+members:        AS47963
+members:        AS-SIBINET
+members:        AS-ALLIANCE
+members:        AS50725
+members:        AS-AVANTEL
+members:        AS-TOMTEL
+members:        AS-Sibsvyaz
+members:        AS-MEGACOM
+members:        AS-ENTERLLC
+members:        AS-SKALA
+members:        AS-ONLINECITY
+members:        AS41560
+members:        AS39860
+members:        AS21383
+members:        AS-ABAKANNET
+members:        AS-ENFORTA
+members:        AS-TEHNOSET
+members:        AS-SET-RIGHTSIDE
+members:        AS-ENERGY-RU
+members:        AS51086
+members:        AS39469
+members:        AS9078
+members:        AS-SL
+members:        AS197482
+members:        AS59591
+members:        AS50029
+members:        AS3205
+members:        AS5473
+members:        AS60361
+members:        AS203784
+members:        AS8279
+members:        AS-CSIT
+members:        AS-RTCSIB
+members:        AS197443
+members:        AS48758
+members:        AS42558
+members:        AS41411
+members:        AS-MULTINET
+members:        AS44420
+members:        AS206871
+members:        AS34671
+members:        AS214463
+members:        AS51067
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         MF-SIB-MNT
+mnt-by:         MEGAFON-EAST-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+created:        2010-04-26T11:02:34Z
+last-modified:  2025-06-06T08:09:09Z
+source:         RIPE
+
+
+
+as-set:         AS-SYNTSIB6
+descr:          RU-AS-SYNTSIB6 20110830
+members:        AS50928
+members:        AS-TUSUR
+members:        AS-RUNTK-SET
+members:        AS34145
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         SYNTSIB-MNT
+mnt-by:         MF-SIB-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+created:        2011-07-06T05:35:27Z
+last-modified:  2011-12-14T03:21:59Z
+source:         RIPE
+
+
+
+aut-num:        AS50928
+as-name:        SYNTSIB-AS
+org:            ORG-OM1-RIPE
+import:         from AS6854 action pref=100; accept ANY;
+import:         from AS31133 action pref=100; accept ANY;
+export:         to AS6854 announce AS-SYNTSIB;
+export:         to AS31133 announce AS-SYNTSIB;
+import:         from AS21365 action pref=110; accept AS-INTELECA;
+import:         from AS25293 action pref=110; accept AS-KASSIR;
+import:         from AS25446 action pref=110; accept AS-TOMLINE-SET;
+import:         from AS30729 action pref=110; accept AS-TRANSFER;
+import:         from AS30922 action pref=110; accept AS-SIBELTELECOM;
+import:         from AS31200 action pref=110; accept AS-RUNTK-SET;
+import:         from AS31257 action pref=110; accept AS-ORIONNET;
+import:         from AS31357 action pref=110; accept AS-TOMICA;
+import:         from AS34757 action pref=110; accept AS-SIBSET;
+import:         from AS40995 action pref=110; accept AS40995;
+import:         from AS48758 action pref=110; accept AS48758;
+import:         from AS41566 action pref=110; accept AS-TUSUR;
+import:         from AS42187 action pref=110; accept AS-REGIT-SET;
+import:         from AS43314 action pref=110; accept AS-DIANET;
+import:         from AS44436 action pref=110; accept AS-EFFORTEL-KEM;
+import:         from AS44587 action pref=110; accept AS-MEGACOM;
+import:         from AS39701 action pref=110; accept AS-TOMGATE;
+import:         from AS47165 action pref=110; accept AS-OMKC-SET;
+import:         from AS47117 action pref=110; accept AS-SL;
+import:         from AS47433 action pref=110; accept AS-RUSMEDVED;
+import:         from AS47955 action pref=110; accept AS-KTSCOM-SET;
+import:         from AS47963 action pref=110; accept AS47963;
+import:         from AS48316 action pref=110; accept AS48316;
+import:         from AS50433 action pref=110; accept AS50433;
+import:         from AS50725 action pref=110; accept AS50725;
+import:         from AS51291 action pref=110; accept AS51291;
+import:         from AS51506 action pref=110; accept AS51506;
+import:         from AS51078 action pref=110; accept AS-ITEL;
+import:         from AS5567 action pref=110; accept AS5567;
+import:         from AS56341 action pref=110; accept AS-ENTERLLC;
+import:         from AS57494 action pref=110; accept AS-ADMAN;
+import:         from AS8410 action pref=110; accept AS-NIR;
+import:         from AS41560 action pref=110; accept AS41560;
+import:         from AS39860 action pref=110; accept AS39860;
+import:         from AS21383 action pref=110; accept AS21383;
+import:         from AS50427 action pref=110; accept AS-ABAKANNET;
+import:         from AS12772 action pref=110; accept AS-ENFORTA;
+import:         from AS49118 action pref=110; accept AS-TEHNOSET;
+import:         from AS34858 action pref=110; accept AS-ENERGY-RU;
+import:         from AS51086 action pref=110; accept AS51086 AS39469;
+import:         from AS49932 action pref=110; accept AS49932;
+import:         from AS9078 action pref=110; accept AS9078;
+import:         from AS58093 action pref=110; accept AS58093;
+import:         from AS59591 action pref=110; accept AS59591;
+import:         from AS197482 action pref=110; accept AS197482;
+import:         from AS50029 action pref=110; accept AS50029;
+import:         from AS3205 action pref=110; accept AS3205;
+import:         from AS5473 action pref=110; accept AS5473;
+import:         from AS60361 action pref=110; accept AS60361;
+import:         from AS39785 action pref=110; accept AS-MULTINET;
+import:         from AS8279 action pref=110; accept AS8279;
+import:         from AS41311 action pref=110; accept AS-CSIT;
+import:         from AS41066 action pref=110; accept AS-RTCSIB;
+import:         from AS197443 action pref=110; accept AS197443;
+import:         from AS42558 action pref=110; accept AS42558;
+import:         from AS41411 action pref=110; accept AS41411;
+import:         from AS209179 action pref=110; accept AS209179;
+import:         from AS34671 action pref=110; accept AS34671;
+import:         from AS214463 action pref=110; accept AS214463;
+import:         from AS51067 action pref=110; accept AS51067;
+export:         to AS209179 announce ANY;
+export:         to AS8279 announce ANY;
+export:         to AS21365 announce ANY;
+export:         to AS25293 announce ANY;
+export:         to AS25446 announce ANY;
+export:         to AS30729 announce ANY;
+export:         to AS30922 announce ANY;
+export:         to AS31200 announce ANY;
+export:         to AS31257 announce ANY;
+export:         to AS31357 announce ANY;
+export:         to AS34757 announce ANY;
+export:         to AS39785 announce ANY;
+export:         to AS40995 announce ANY;
+export:         to AS47117 announce ANY;
+export:         to AS41566 announce ANY;
+export:         to AS42187 announce ANY;
+export:         to AS43314 announce ANY;
+export:         to AS49932 announce ANY;
+export:         to AS44436 announce ANY;
+export:         to AS44587 announce ANY;
+export:         to AS39701 announce ANY;
+export:         to AS47165 announce ANY;
+export:         to AS47433 announce ANY;
+export:         to AS47955 announce ANY;
+export:         to AS47963 announce ANY;
+export:         to AS48316 announce ANY;
+export:         to AS50433 announce ANY;
+export:         to AS7494 announce ANY;
+export:         to AS50725 announce ANY;
+export:         to AS51291 announce ANY;
+export:         to AS51506 announce ANY;
+export:         to AS5567 announce ANY;
+export:         to AS56341 announce ANY;
+export:         to AS8410 announce ANY;
+export:         to AS41560 announce ANY;
+export:         to AS39860 announce ANY;
+export:         to AS21383 announce ANY;
+export:         to AS48758 announce ANY;
+export:         to AS50427 announce ANY;
+export:         to AS51078 announce ANY;
+export:         to AS12772 announce ANY;
+export:         to AS49118 announce ANY;
+export:         to AS34858 announce ANY;
+export:         to AS51086 announce ANY;
+export:         to AS9078 announce ANY;
+export:         to AS58093 announce ANY;
+export:         to AS59591 announce ANY;
+export:         to AS197482 announce ANY;
+export:         to AS57494 announce ANY;
+export:         to AS50029 announce ANY;
+export:         to AS3205 announce ANY;
+export:         to AS5473 announce ANY;
+export:         to AS60361 announce ANY;
+export:         to AS41311 announce ANY;
+export:         to AS41066 announce ANY;
+export:         to AS197443 announce ANY;
+export:         to AS42558 announce ANY;
+export:         to AS41411 announce ANY;
+export:         to AS34671 announce ANY;
+export:         to AS214463 announce ANY;
+export:         to AS51067 announce ANY;
+default:        to AS6854
+default:        to AS31133
+import:         from AS42403 action pref=105; accept AS-NSKROUTESERVER;
+import:         from AS39586 action pref=105; accept AS39586;
+import:         from AS41560 action pref=105; accept AS41560;
+export:         to AS42403 announce AS-SYNTSIB;
+export:         to AS42403 announce AS-CDN-MEGAFON;
+export:         to AS39586 announce AS-NSKROUTESERVER;
+export:         to AS41560 announce AS-NSKROUTESERVER;
+mp-import:      afi ipv6.unicast from AS42403 accept AS-NSKROUTESERVER;
+mp-import:      afi ipv6.unicast from AS39586 accept AS39586;
+mp-export:      afi ipv6.unicast to AS42403 announce AS-SYNTSIB;
+mp-export:      afi ipv6.unicast to AS39586 announce AS-NSKROUTESERVER;
+mp-import:      afi ipv6.unicast from AS6854 accept ANY;
+mp-import:      afi ipv6.unicast from AS31133 accept ANY;
+mp-export:      afi ipv6.unicast to AS6854 announce AS-SYNTSIB;
+mp-export:      afi ipv6.unicast to AS31133 announce AS-SYNTSIB;
+mp-import:      afi ipv6.unicast from AS41566 accept AS-TUSUR;
+mp-import:      afi ipv6.unicast from AS31200 accept AS-RUNTK-SET;
+mp-import:      afi ipv6.unicast from AS39586 accept AS39586;
+mp-import:      afi ipv6.unicast from AS42187 accept AS42187;
+mp-import:      afi ipv6.unicast from AS203784 accept AS203784;
+mp-import:      afi ipv6.unicast from AS51291 accept AS51291;
+mp-import:      afi ipv6.unicast from AS39701 accept AS39701;
+mp-export:      afi ipv6.unicast to AS41566 announce ANY;
+mp-export:      afi ipv6.unicast to AS31200 announce ANY;
+mp-export:      afi ipv6.unicast to AS39586 announce ANY;
+mp-export:      afi ipv6.unicast to AS42187 announce ANY;
+mp-export:      afi ipv6.unicast to AS203784 announce ANY;
+mp-export:      afi ipv6.unicast to AS51291 announce ANY;
+mp-export:      afi ipv6.unicast to AS39701 announce ANY;
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-EAST-MNT
+notify:         lir@megafon.ru
+mnt-by:         MF-SIB-MNT
+created:        2010-04-26T10:03:04Z
+last-modified:  2025-06-06T08:28:26Z
+source:         RIPE
+
+
+

@@ -1,3 +1,160 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 185.151.106.150 port 22
+as-set:         AS-KGTS
+descr:          Kazan City Telephone Network(Kazan GTS) AS-SET
+members:        AS29294
+members:        AS34887
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         TIC-NOC-MNT
+created:        2003-07-24T10:32:08Z
+last-modified:  2007-05-10T07:52:00Z
+source:         RIPE
+
+
+
+as-set:         AS-TIC
+descr:          Tatintelkom customers AS list
+descr:          AS29125
+members:        AS3325
+members:        AS50342
+members:        AS57011
+members:        AS-ITPARK_DC
+members:        AS-MELT
+members:        as-tfp
+members:        AS39805
+members:        AS-TATNEFT
+members:        AS34364
+members:        AS29125
+members:        AS8888
+members:        AS9058
+members:        AS-TVT
+members:        AS-TTC
+members:        AS29294
+members:        AS-CTEL
+members:        AS24846
+members:        as-tnpko
+members:        AS24810
+members:        AS56692
+members:        AS24846
+members:        as-fatum
+members:        AS31286
+members:        AS39613
+members:        AS34887
+members:        AS41050
+members:        AS12538
+members:        AS41668
+members:        AS42062
+members:        AS42116
+members:        AS41190
+members:        AS29225
+members:        AS42682
+members:        AS-KAZAN
+members:        AS42116
+members:        AS50051
+members:        AS51027
+members:        AS51117
+members:        AS44751
+members:        AS197394
+members:        AS197765
+members:        AS197306
+members:        AS203883
+members:        AS197873
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         TIC-NOC-MNT
+created:        2003-06-16T08:13:58Z
+last-modified:  2016-05-20T08:14:29Z
+source:         RIPE
+
+
+
+as-set:         as-fatum
+descr:          fatum kazan
+members:        AS20720
+members:        AS50051
+members:        AS34518
+members:        AS203883
+members:        AS-BANCORP
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         TIC-NOC-MNT
+created:        2005-09-27T10:27:13Z
+last-modified:  2019-01-16T10:35:51Z
+source:         RIPE
+
+
+
+as-set:         as-tfp
+descr:          AS SET RNTelecom
+members:        as197873
+members:        as8888
+members:        as1973394
+members:        as29125
+members:        as39805
+members:        as-melt
+members:        as39613
+members:        as48676
+members:        as29294
+members:        as50051
+members:        AS-BANCORP
+members:        AS41190
+members:        AS59418
+members:        AS43265
+members:        as-fatum
+members:        AS42062
+members:        AS24846
+members:        AS51117
+members:        as62150
+members:        as3325
+members:        AS-TELESET
+members:        AS24810
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         TIC-NOC-MNT
+created:        2009-08-04T10:10:26Z
+last-modified:  2018-03-30T21:09:19Z
+source:         RIPE
+
+
+
+aut-num:        AS29125
+as-name:        TATINT-AS
+status:         ASSIGNED
+org:            ORG-ES15-RIPE
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS8342 action pref=100; accept ANY
+import:         from AS2854 action pref=100; accept ANY
+export:         to AS2854 announce AS-TIC
+export:         to AS8342 announce AS-TIC
+export:         to AS20485 announce AS-TIC
+default:        to AS2854 action pref=110; networks ANY
+default:        to AS8342 action pref=100; networks ANY
+default:        to AS20485 action pref=105; networks ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TIC-NOC-MNT
+created:        2003-06-11T08:07:39Z
+last-modified:  2018-09-04T09:57:37Z
+source:         RIPE
+
+
+
+aut-num:        AS42062
+as-name:        TRSKZN-AS
+org:            ORG-TTCK1-RIPE
+import:         from AS29125 accept ANY
+import:         from AS24810 accept ANY
+export:         to AS29125 announce AS42062
+export:         to AS24810 announce AS42062
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TIC-NOC-MNT
+created:        2006-12-13T10:44:24Z
+last-modified:  2018-09-04T10:20:48Z
+source:         RIPE
+sponsoring-org: ORG-RTL7-RIPE
+
+
+

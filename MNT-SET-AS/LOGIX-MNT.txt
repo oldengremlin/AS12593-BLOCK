@@ -1,3 +1,66 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.184.190 port 22
+as-set:         AS-LOGIX
+descr:          Logix telecom LLC
+members:        AS35780
+members:        AS3287
+org:            ORG-LOGT1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         admin@logix.ru
+mnt-by:         LOGIX-MNT
+created:        2016-03-09T10:54:09Z
+last-modified:  2016-03-09T10:54:09Z
+source:         RIPE
+
+
+
+as-set:         AS-LOGIX-NET1
+members:        AS35780
+members:        AS3287
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         LOGIX-MNT
+created:        2018-08-02T15:26:23Z
+last-modified:  2019-11-25T20:30:32Z
+source:         RIPE
+
+
+
+as-set:         AS-LOGIX-NET2
+members:        AS35780
+members:        AS3287
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         LOGIX-MNT
+created:        2018-12-28T23:56:22Z
+last-modified:  2018-12-28T23:56:22Z
+source:         RIPE
+
+
+
+aut-num:        AS35780
+as-name:        LOGIX-AS
+org:            ORG-LOGT1-RIPE
+import:         from AS43404 accept ANY
+export:         to AS43404 announce AS-LOGIX-NET1
+import:         from AS34221 accept ANY
+export:         to AS34221 announce AS-LOGIX-NET1
+import:         from AS8641 accept ANY
+export:         to AS8641 announce AS-LOGIX-NET2
+import:         from AS31430 accept ANY
+export:         to AS31430 announce AS-LOGIX-NET1
+import:         from AS3287 accept AS3287
+export:         to AS3287 announce ANY
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS-LOGIX-NET1
+sponsoring-org: ORG-DL158-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         LOGIX-MNT
+created:        2005-10-25T12:57:33Z
+last-modified:  2025-02-07T08:17:04Z
+source:         RIPE
+
+
+

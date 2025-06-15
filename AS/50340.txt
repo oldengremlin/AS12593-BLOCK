@@ -1,260 +1,134 @@
-
-
-
-as-block:       AS50220 - AS50841
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-08-12T14:10:44Z
-last-modified:  2024-08-12T14:10:44Z
-source:         RIPE
-
-
-
 aut-num:        AS50340
 as-name:        SELECTEL-MSK
 org:            ORG-SL223-RIPE
-admin-c:        SA32710-RIPE
-tech-c:         SA32710-RIPE
-remarks:        ---------------------------------------------------------------
-remarks:        -------------------------- UPLINKS: ---------------------------
-remarks:        ---------------------------------------------------------------
-remarks:        Telia
-remarks:        https://lg.telia.net
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 import:         from AS1299 accept ANY
 export:         to AS1299 announce AS-SELECTEL-MSK
-remarks:        RETN
-remarks:        https://lg.retn.ru/
 import:         from AS9002 accept ANY
 export:         to AS9002 announce AS-SELECTEL-MSK
-remarks:        Rostelecom
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-SELECTEL-MSK
-remarks:        TTK
-remarks:        http://lg.ttk.ru/
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-SELECTEL-MSK
-remarks:        Rascom
-remarks:        https://lg.rascom.ru/
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS-SELECTEL-MSK
-remarks:        Selectel SPB
-remarks:        https://lg.selectel.ru/
 import:         from AS49505 accept ANY
 export:         to AS49505 announce ANY
-remarks:        ---------------------------------------------------------------
-remarks:        ----------- PEERINGs at IXes and direct PNI links: ------------
-remarks:        ---------------------------------------------------------------
-remarks:        Apple
 import:         from AS714 accept AS-APPLE
 export:         to AS714 announce AS-SELECTEL-MSK
-remarks:        Hurricane Electric
 import:         from AS6939 accept AS6939
 export:         to AS6939 announce AS-SELECTEL-MSK
-remarks:        AMS-IX
 import:         from AS6777 accept AS-AMS-IX-RS-SETS
 export:         to AS6777 announce AS-SELECTEL-MSK
-remarks:        Microsoft
 import:         from AS8075 accept AS-MICROSOFT
 export:         to AS8075 announce AS-SELECTEL-MSK
-remarks:        MSK-IX
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-SELECTEL-MSK
-remarks:        ER-Telecom
 import:         from AS9049 accept AS-ERTH
 export:         to AS9049 announce AS-SELECTEL-MSK
-remarks:        Cloudflare
 import:         from AS13335 accept AS-CLOUDFLARE
 export:         to AS13335 announce AS-SELECTEL-MSK
-remarks:        Google
 import:         from AS15169 accept AS-GOOGLE
 export:         to AS15169 announce AS-SELECTEL-MSK
-remarks:        Amazon
 import:         from AS16509 accept AS16509
 export:         to AS16509 announce AS-SELECTEL-MSK
-remarks:        Verisign
 import:         from AS26415 accept AS26415
 export:         to AS26415 announce AS-SELECTEL-MSK
-remarks:        Fiord
 import:         from AS28917 accept AS-FIORD
 export:         to AS28917 announce AS-SELECTEL-MSK
-remarks:        Global-IX
 import:         from AS31500 accept AS-GLOBAL-NET
 export:         to AS31500 announce AS-SELECTEL-MSK
-remarks:        Facebook / Meta
 import:         from AS32934 accept AS-FACEBOOK
 export:         to AS32934 announce AS-SELECTEL-MSK
-remarks:        Sberbank
 import:         from AS35237 accept AS-SBRF
 export:         to AS35237 announce AS-SELECTEL-MSK
-remarks:        SPB-IX
 import:         from AS43690 accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-SELECTEL-MSK
-remarks:        Kvant-Telecom
 import:         from AS43727 accept AS-SETKT
 export:         to AS43727 announce AS-SELECTEL-MSK
-remarks:        SKBKONTUR
 import:         from AS49675 accept AS49675
 export:         to AS49675 announce AS-SELECTEL-MSK
-remarks:        W-IX
 import:         from AS50384 accept AS-W-IX
 export:         to AS50384 announce AS-SELECTEL-MSK
-remarks:        DATAIX
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-SELECTEL-MSK
-remarks:        StormWall
 import:         from AS59796 accept AS-STORMWALL-SET
 export:         to AS59796 announce AS-SELECTEL-MSK
-remarks:        Telegram
 import:         from AS62041 accept AS62041
 export:         to AS62041 announce AS-SELECTEL-MSK
-remarks:        EdgeCenter
 import:         from AS210756 accept AS210756
 export:         to AS210756 announce AS-SELECTEL-MSK
-remarks:        Inetcom
 import:         from AS35598 accept AS35598
 export:         to AS35598 announce AS-SELECTEL-MSK
-remarks:        Qrator
 import:         from AS197068 accept AS197068
 export:         to AS197068 announce AS-SELECTEL-MSK
-remarks:        YandexCloud
 import:         from AS200350 accept AS-YACLOUD
 export:         to AS200350 announce AS-SELECTEL-MSK
-remarks:        Megafon
 import:         from AS31133 accept AS-MF-MGSM
 export:         to AS31133 announce AS-SELECTEL-MSK
-remarks:        Nauka-Svyaz
 import:         from AS8641 accept AS-NaukaNet
 export:         to AS8641 announce AS-SELECTEL-MSK
-remarks:        TRANSROUTE
 import:         from AS50509 accept AS-TRANSROUTE
 export:         to AS50509 announce AS-SELECTEL-MSK
-remarks:        ---------------------------------------------------------------
-remarks:        -------------------- CLIENTS (CUSTOMERS): ---------------------
-remarks:        ---------------------------------------------------------------
-remarks:        *
-remarks:        * The import filter in BGP sessions with clients is configured
-remarks:        * to match exactly the routes registered in the IRRs.
-remarks:        *
-remarks:        ---------------------------------------------------------------
-remarks:        nazwa.pl
 import:         from AS15967 accept AS15967
 export:         to AS15967 announce ANY
-remarks:        K-ROOT-SERVER
 import:         from AS25152 accept RS-KROOT-ANYCAST
 export:         to AS25152 announce ANY
-remarks:        active24.cz
 import:         from AS25234 accept AS25234
 export:         to AS25234 announce ANY
-remarks:        SVK-Telecom
-remarks:        STD Petrovich
 import:         from AS44661 accept AS44661
 export:         to AS44661 announce ANY
-remarks:        Edfact / Mediascope
 import:         from AS52016 accept AS52016
 export:         to AS52016 announce ANY
-remarks:        axol.net
 import:         from AS57541 accept AS57541
 export:         to AS57541 announce ANY
-remarks:        ComputerTrade
 import:         from AS57898 accept AS57898
 export:         to AS57898 announce ANY
-remarks:        Softline
 import:         from AS60034 accept AS60034
 export:         to AS60034 announce ANY
-remarks:        UADOMEN
 import:         from AS196682 accept AS196682
 export:         to AS196682 announce ANY
-remarks:        Avtoline
 import:         from AS201429 accept AS201429
 export:         to AS201429 announce ANY
-remarks:        PonyExpress
 import:         from AS206027 accept AS206027
 export:         to AS206027 announce ANY
-remarks:        Action-Digital
 import:         from AS209684 accept AS209684
 export:         to AS209684 announce ANY
-remarks:        IIT
 import:         from AS212575 accept AS212575
 export:         to AS212575 announce ANY
-remarks:        Zeonit
 import:         from AS212936 accept AS212936
 export:         to AS212936 announce ANY
-remarks:        Skydns
 import:         from AS51289 accept AS51289
 export:         to AS51289 announce ANY
-remarks:        Skynetcom
 import:         from AS61308 accept AS-SKYNETCOM
 export:         to AS61308 announce ANY
-remarks:        Eduard Ilin
 import:         from AS215443 accept AS215443
 export:         to AS215443 announce ANY
-remarks:        FrostyHosting
 import:         from AS213995 accept AS213995
 export:         to AS213995 announce ANY
-remarks:        NETSHIELD LTD
 import:         from AS49418 accept AS49418:AS-NETSHIELD
 export:         to AS49418 announce ANY
-remarks:        ---------------------------------------------------------------
-remarks:        ---------- BGP communities accepted from downstream: ----------
-remarks:        ---------------------------------------------------------------
-remarks:        1. Prepending to all peers
-remarks:        50340:100X, where
-remarks:        X < 5 prepend X times to all peers
-remarks:        X = 5 do not advertise to all peers
-remarks:        2. Specific, prepending to peer ASN:
-remarks:        50340:ASNX, where
-remarks:        X < 5 prepend X times to peer ASN
-remarks:        X = 5 do not advertise to peer ASN
-remarks:        IPv4 peers
-remarks:        101 RETN
-remarks:        102 Rascom
-remarks:        103 Telia
-remarks:        104 TTK
-remarks:        105 Rostelecom
-remarks:        169 TRANSROUTE / AS50509
-remarks:        171 Megafon / AS31133
-remarks:        173 NaukaNet / AS8641
-remarks:        174 YandexCloud / AS200350
-remarks:        175 AMS-IX
-remarks:        176 Telegram / AS62041
-remarks:        177 Qrator
-remarks:        178 EdgeCenter
-remarks:        179 Inetcom
-remarks:        180 CloudFlare
-remarks:        181 MSK-IX
-remarks:        182 Data-IX
-remarks:        183 Cloud-IX
-remarks:        189 ER-Telecom
-remarks:        190 Hurricane Electric
-remarks:        191 SPB-IX
-remarks:        192 Global-IX
-remarks:        194 Google
-remarks:        195 W-IX
-remarks:        196 Eurasia Peering IX
-remarks:        199 Testing sessions
-remarks:        3. Blackhole:
-remarks:        50340:666
+import:         from AS52016 accept AS52016
+export:         to AS52016 announce ANY
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-SELECTEL
+notify:         noc@selectel.ru
 created:        2017-10-16T13:23:55Z
-last-modified:  2025-04-01T12:10:51Z
-source:         RIPE # Filtered
+last-modified:  2025-06-13T07:23:13Z
+source:         RIPE
+
+as-num:         AS50340
+country:        RU
+as-name:        SELECTEL-MSK JSC Selectel
 
 organisation:   ORG-SL223-RIPE
 org-name:       JSC Selectel
 country:        RU
 org-type:       LIR
-address:        Tsvetochnaya 21A
-address:        196084
-address:        Saint-Petersburg
-address:        RUSSIAN FEDERATION
-phone:          +79312224495
-fax-no:         +78126778036
-admin-c:        CMH-RIPE
-admin-c:        SA32710-RIPE
-tech-c:         SA32710-RIPE
+address:        Dummy address for ORG-SL223-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR12863-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MNT-SELECTEL
@@ -262,34 +136,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MNT-SELECTEL
 created:        2009-05-05T13:00:18Z
 last-modified:  2024-07-15T10:32:17Z
-source:         RIPE # Filtered
-
-role:           SELECTEL-NOC
-address:        Russia, Saint-Petersburg, Cvetochnaya st. 21
-admin-c:        CMH-RIPE
-admin-c:        KS9134-RIPE
-admin-c:        TL5407-RIPE
-admin-c:        RVA179-RIPE
-admin-c:        EN5675-RIPE
-admin-c:        NS8369-RIPE
-admin-c:        AD16782-RIPE
-admin-c:        AN33480-RIPE
-admin-c:        KV3619-RIPE
-tech-c:         CMH-RIPE
-tech-c:         KS9134-RIPE
-tech-c:         TL5407-RIPE
-tech-c:         RVA179-RIPE
-tech-c:         EN5675-RIPE
-tech-c:         NS8369-RIPE
-tech-c:         AD16782-RIPE
-tech-c:         AN33480-RIPE
-tech-c:         AN33869-RIPE
-tech-c:         KV3619-RIPE
-nic-hdl:        SA32710-RIPE
-mnt-by:         mnt-selectel
-created:        2015-01-19T15:40:16Z
-last-modified:  2025-05-13T07:58:33Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

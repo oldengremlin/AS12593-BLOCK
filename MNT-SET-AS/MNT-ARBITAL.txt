@@ -1,3 +1,57 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.184.190 port 22
+as-set:         AS-ARBITAL
+descr:          Arbital ISP customers
+org:            ORG-SA623-RIPE
+members:        AS44068
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-ARBITAL
+created:        2009-03-05T15:52:06Z
+last-modified:  2015-07-24T12:33:12Z
+source:         RIPE
+
+
+
+as-set:         AS-GLOCONS
+tech-c:         DUMY-RIPE
+members:        AS196642
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-ARBITAL
+created:        2018-05-07T15:55:33Z
+last-modified:  2018-05-07T15:57:42Z
+source:         RIPE
+
+
+
+aut-num:        AS44068
+as-name:        ARBITAL-AS
+descr:          Arbital ISP
+org:            ORG-PINl1-RIPE
+import:         from AS44050 action pref=50; accept ANY
+export:         to AS44050 announce AS-ARBITAL
+mp-import:      afi ipv6.unicast from AS44050 accept ANY
+mp-export:      afi ipv6.unicast to AS44050 announce AS-ARBITAL
+import:         from AS50509 action pref=100; accept ANY
+export:         to AS50509 announce AS-ARBITAL
+mp-import:      afi ipv6.unicast from AS50509 accept ANY
+mp-export:      afi ipv6.unicast to AS50509 announce AS-ARBITAL
+import:         from AS50817 action pref=200; accept ANY
+export:         to AS50817 announce AS-ARBITAL
+mp-import:      afi ipv6.unicast from AS50817 accept ANY
+mp-export:      afi ipv6.unicast to AS50817 announce AS-ARBITAL
+import:         from AS49869 action pref=200; accept ANY
+export:         to AS49869 announce AS-ARBITAL
+mp-import:      afi ipv6.unicast from AS49869 accept ANY
+mp-export:      afi ipv6.unicast to AS49869 announce AS-ARBITAL
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-PIN
+notify:         noc@arbital.ru
+mnt-by:         MNT-ARBITAL
+created:        2007-11-13T13:33:22Z
+last-modified:  2024-01-17T13:34:55Z
+source:         RIPE
+
+
+

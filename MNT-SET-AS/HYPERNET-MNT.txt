@@ -1,4 +1,52 @@
+as-set:         AS-HYPERNET
+descr:          Hypernet's AS-SET
+members:        AS39775
+members:        AS56436
+members:        AS202835
+members:        AS-FACTORIAL-INTERNET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         HYPERNET-MNT
+created:        2006-07-25T11:31:50Z
+last-modified:  2024-03-15T16:43:29Z
+source:         RIPE
 
+
+
+as-set:         AS-HYPERNET-V6
+descr:          Hypernet's IPv6 AS-SET
+members:        AS39775
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         HYPERNET-MNT
+created:        2010-05-18T04:58:34Z
+last-modified:  2021-08-06T07:14:23Z
+source:         RIPE
+
+
+
+as-set:         AS39775:AS-CUSTOMERS-FV
+descr:          Customers full BGP4 table advertisement
+members:        AS41610
+members:        AS41925
+members:        AS42219
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         HYPERNET-MNT
+created:        2006-08-03T16:40:02Z
+last-modified:  2016-07-21T06:26:27Z
+source:         RIPE
+
+
+
+as-set:         AS39775:AS-IN
+descr:          AS list
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         HYPERNET-MNT
+created:        2006-08-04T06:05:53Z
+last-modified:  2016-07-21T06:27:52Z
+source:         RIPE
 
 
 
@@ -10,15 +58,16 @@ import:         from AS39775 accept ANY
 import:         from AS34241 accept ANY
 export:         to AS39775 announce AS197044
 export:         to AS34241 announce AS197044
-admin-c:        MVS44-RIPE
-tech-c:         MVS44-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@hypernet.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         HYPERNET-MNT
 mnt-by:         STEK-MNT-RIPE
 created:        2010-04-29T10:19:37Z
 last-modified:  2018-09-04T10:50:34Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-LLCH2-RIPE
 
 
@@ -30,8 +79,8 @@ import:         from AS39775 accept ANY
 export:         to AS39775 announce AS202835
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS202835
-admin-c:        DG2731-RIPE
-tech-c:         DG2731-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         HYPERNET-MNT
@@ -44,142 +93,33 @@ sponsoring-org: ORG-LLCH2-RIPE
 
 aut-num:        AS39775
 as-name:        HYPERNET-AS
-remarks:        ------------------------------------------------------------
-remarks:        UPSTREAMS
-remarks:        ------------------------------------------------------------
-remarks:        Beeline:
 import:         from AS3216 action pref=40; accept ANY
 export:         to AS3216 announce AS-HYPERNET
 mp-import:      afi ipv6.unicast from AS3216 action pref=40; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS-HYPERNET-V6
-remarks:
-remarks:        ER-Telecom:
 import:         from AS9049 action pref=40; accept ANY
 export:         to AS9049 announce AS-HYPERNET
-remarks:
-remarks:        RETN:
 import:         from AS57304 action pref=40; accept ANY
 export:         to AS57304 announce AS-HYPERNET
 mp-import:      afi ipv6.unicast from AS57304 action pref=40; accept ANY
 mp-export:      afi ipv6.unicast to AS57304 announce AS-HYPERNET-V6
-remarks:
-remarks:        Zummer:
 import:         from AS51028 action pref=40; accept ANY
 export:         to AS51028 announce AS-HYPERNET
-remarks:
-remarks:        ------------------------------------------------------------
-remarks:        PEERS
-remarks:        ------------------------------------------------------------
-remarks:        DataIX:
 import:         from AS50952 action pref=80; accept ANY
 export:         to AS50952 announce AS-HYPERNET
-remarks:
-remarks:        Intersvyaz:
 import:         from AS8369 action pref=80; accept AS-INTERSVYAZ
 export:         to AS8369 announce AS-HYPERNET
-remarks:
-remarks:        K-Telecom:
 import:         from AS48642 action pref=80; accept AS-KT-RU
 export:         to AS48642 announce AS-HYPERNET
-remarks:
-remarks:        ------------------------------------------------------------
-remarks:        CUSTOMERS
-remarks:        ------------------------------------------------------------
 import:         from AS41925 action pref=110; accept AS-FACTORIAL-INTERNET
 export:         to AS41925 announce ANY
-remarks:
 import:         from AS56436 action pref=110; accept AS56436
 export:         to AS56436 announce ANY
-remarks:
 import:         from AS202835 action pref=110; accept AS202835
 export:         to AS202835 announce ANY
-remarks:
-remarks:        +-----------------------------------------------------------
-remarks:        | BGP COMMUNITIES
-remarks:        +-----------------------------------------------------------
-remarks:        | Communities for prefix classification
-remarks:        +-----------------------------------------------------------
-remarks:        | All inbound prefixes are marked with BGP communities.
-remarks:        | Format for the of community 39775:10SNN where:
-remarks:        |
-remarks:        | S - source of the prefix:
-remarks:        |
-remarks:        | 1 - Upstream
-remarks:        | 2 - Peer
-remarks:        | 3 - Customer
-remarks:        |
-remarks:        | NN - source of the prefix:
-remarks:        | Upstream:
-remarks:        | 03 - Zummer (AS51028)
-remarks:        | 04 - Beeline (AS3216)
-remarks:        | 05 - RETN (AS57304)
-remarks:        | 06 - ER-Telecom (AS9049)
-remarks:        |
-remarks:        | Peer:
-remarks:        | 05 - DataIX (AS50952)
-remarks:        | 06 - Intersvyaz (AS8369)
-remarks:        | 07 - K-Telecom (AS48642)
-remarks:        |
-remarks:        | Customer:
-remarks:        | 10 - Static routes
-remarks:        | 20 - Special purpose routes
-remarks:        | 40 - BGP
-remarks:        |
-remarks:        +-----------------------------------------------------------
-remarks:        | Communities for prefix control
-remarks:        +-----------------------------------------------------------
-remarks:        |
-remarks:        | - To prepend or deny prefix use 39775:3DNNA, where:
-remarks:        |
-remarks:        | D - destination of the prepend or deny action:
-remarks:        | 1 - Upstreams
-remarks:        | 2 - Peers
-remarks:        | NN - Upstream or peer number:
-remarks:        |
-remarks:        | Upstreams:
-remarks:        | 03 - Zummer (AS51028)
-remarks:        | 04 - Beeline (AS3216)
-remarks:        | 05 - RETN (AS57304)
-remarks:        | 06 - ER-Telecom (AS9049)
-remarks:        | 99 - All upstreams
-remarks:        |
-remarks:        | Peer:
-remarks:        | 05 - DataIX (AS50952)
-remarks:        | 06 - Intersvyaz (AS8369)
-remarks:        | 07 - K-Telecom (AS48642)
-remarks:        | 99 - All peers
-remarks:        |
-remarks:        | A - action:
-remarks:        |
-remarks:        | 0 - don't announce prefix
-remarks:        | 1 - announce with one prepend
-remarks:        | 2 - announce with two times prepend
-remarks:        | 3 - announce with three times prepend
-remarks:        |
-remarks:        | - For change the Local Preference for prefix use 39775:20NNN,
-remarks:        | where:
-remarks:        | NNN | Value Local Preference
-remarks:        | ----+-----------------------
-remarks:        | 010 | 10 (lowest) (BACKUP)
-remarks:        | 050 | 50
-remarks:        | 090 | 90
-remarks:        | 100 | 100
-remarks:        | 110 | 110 (highest) (PREFFERED)
-remarks:        | Default Local Preference are:
-remarks:        | 40 - Upstream
-remarks:        | 80 - Peer
-remarks:        | 110 - Customer
-remarks:        |
-remarks:        | - Blackhole community (/32 prefixes only): 39775:666
-remarks:        |
-remarks:        | Other communities are passed intact but not to all peers.
-remarks:        ------------------------------------------------------------
-remarks:        Spam and Network security issues: abuse@hypernet.ru
-remarks:        Routing issues: noc@hypernet.ru
-remarks:        ------------------------------------------------------------
 org:            ORG-LLCH2-RIPE
-admin-c:        HPN778
-tech-c:         HPN778
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         HYPERNET-MNT

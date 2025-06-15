@@ -1,15 +1,36 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.160.3:22 already exists, disabling multiplexing
+as-set:         AS-DIGCOMM
+descr:          Digital communications AS set
+members:        AS13178
+members:        AS50356
+members:        AS15552
+members:        AS198076
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         nk@real-net.pro
+mnt-by:         MNT-REAL-NET
+created:        2008-03-25T18:47:48Z
+last-modified:  2022-05-20T10:10:16Z
+source:         RIPE
 
+
+
+as-set:         AS-DIGCOMM-SET
+descr:          Digital communications AS Set
+members:        AS13178
+members:        AS15552
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         nk@real-net.pro
+mnt-by:         MNT-REAL-NET
+created:        2012-02-27T06:38:02Z
+last-modified:  2022-05-20T10:07:03Z
+source:         RIPE
 
 
 
 aut-num:        AS13178
 as-name:        DIGCOMM
 org:            ORG-LA745-RIPE
-remarks:
-remarks:        Uplinks
-remarks:
 export:         to AS-ANY announce AS-DIGCOMM
 mp-import:      afi ipv4.unicast from AS43727 action pref=100 ; accept ANY
 mp-export:      afi ipv4.unicast to AS43727 announce AS-DIGCOMM
@@ -17,23 +38,21 @@ mp-import:      afi ipv6.unicast from AS43727 action pref=100 ; accept ANY
 mp-export:      afi ipv6.unicast to AS43727 announce AS-DIGCOMM
 mp-import:      afi ipv4.unicast from AS20485 action pref=100 ; accept ANY
 mp-export:      afi ipv4.unicast to AS20485 announce AS-DIGCOMM
-remarks:
-remarks:        Peers
-remarks:
 mp-import:      afi ipv4.unicast from AS50356 action pref=100 ; accept AS50356
 mp-export:      afi ipv4.unicast to AS50356 announce ANY
 mp-import:      afi ipv4.unicast from AS15552 action pref=100 ; accept AS15552
 mp-export:      afi ipv4.unicast to AS15552 announce ANY
 mp-import:      afi ipv4.unicast from AS198076 action pref=100 ; accept AS198076
 mp-export:      afi ipv4.unicast to AS198076 announce ANY
-admin-c:        RN3331-RIPE
-tech-c:         RN3331-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@joxnet.ru
 mnt-by:         MNT-REAL-NET
 created:        2008-03-25T08:03:47Z
 last-modified:  2022-05-20T10:22:44Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -42,8 +61,8 @@ as-name:        CK
 import:         from AS-ANY accept ANY
 export:         to AS-ANY announce AS15552
 org:            ORG-LA745-RIPE
-admin-c:        RN3331-RIPE
-tech-c:         RN3331-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-REAL-NET

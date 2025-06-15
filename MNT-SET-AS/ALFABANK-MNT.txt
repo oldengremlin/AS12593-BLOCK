@@ -1,9 +1,3 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
-
-
-
-
 aut-num:        AS15632
 org:            ORG-AMR1-RIPE
 as-name:        Alfa-Bank-AS
@@ -24,8 +18,8 @@ export:         to AS201706 announce AS15632
 export:         to AS25159 announce AS15632
 export:         to AS43048 announce AS15632
 default:        to AS2854 action pref=100; networks ANY
-admin-c:        ALFA-IT
-tech-c:         ALFA-IT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ALFABANK-MNT
@@ -42,16 +36,16 @@ import:         from AS2854 accept ANY
 export:         to AS2854 announce AS208811
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS208811
-admin-c:        PD7506-RIPE
-tech-c:         Alfa-IT
-tech-c:         EV3876-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         VAElizarov@alfabank.ru
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSPRINT-NCC
 mnt-by:         ALFABANK-MNT
 created:        2019-05-31T08:17:16Z
 last-modified:  2024-03-07T10:10:45Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-GORC1-RIPE
 
 
@@ -63,8 +57,8 @@ import:         from AS2854 accept ANY
 export:         to AS25086 announce AS35013
 export:         to AS2854 announce AS35013
 org:            ORG-AMR1-RIPE
-admin-c:        ALFA-IT
-tech-c:         ALFA-IT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ALFABANK-MNT
@@ -79,8 +73,8 @@ as-name:        BALTBANK-AS
 org:            ORG-AMR1-RIPE
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS59840
-admin-c:        Alfa-IT
-tech-c:         Alfa-IT
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         BB302011-MNT

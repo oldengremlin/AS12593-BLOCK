@@ -1,44 +1,16 @@
-
-
-
-as-block:       AS8192 - AS8523
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS8242
 as-name:        INTELWAY-AS
 org:            ORG-ATL67-RIPE
-admin-c:        IWAY-RIPE
-tech-c:         IWAY-RIPE
-remarks:        ----------------------------------------------------------
-remarks:        UPLINKS
-remarks:        ----------------------------------------------------------
-remarks:
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 import:         from AS9002 action pref=150; accept ANY
 export:         to AS9002 announce AS-DINFO
 import:         from AS57304 action pref=150; accept ANY
 export:         to AS57304 announce AS-DINFO
 import:         from AS28968 action pref=150; accept ANY
 export:         to AS28968 announce AS-DINFO
-remarks:
-remarks:        ----------------------------------------------------------
-remarks:        CUSTOMERS
-remarks:        ----------------------------------------------------------
-remarks:
-remarks:
-remarks:        ----------------------------------------------------------
-remarks:        MSK-IX
-remarks:        ----------------------------------------------------------
-remarks:
 import:         from AS8631 action pref=200; accept ANY
 export:         to AS8631 announce AS-DINFO
-remarks:
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIPE-DB-MNT
@@ -48,14 +20,16 @@ last-modified:  2023-11-08T20:53:55Z
 source:         RIPE
 sponsoring-org: ORG-ATS13-RIPE
 
+as-num:         AS8242
+country:        RU
+as-name:        INTELWAY-AS Apex Telecom Ltd.
+
 organisation:   ORG-ATL67-RIPE
 org-name:       Apex Telecom Ltd.
 country:        RU
 org-type:       OTHER
-phone:          +7 800 333 76 76
-address:        8/1 Presnenskaya naberezhnaya st., Moscow, Russia
-admin-c:        IWAY-RIPE
-tech-c:         IWAY-RIPE
+address:        Dummy address for ORG-ATL67-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        ATRL1-RIPE
 mnt-ref:        RIPE-DB-MNT
 mnt-ref:        MNT-DINFO
@@ -63,18 +37,6 @@ mnt-by:         RIPE-DB-MNT
 mnt-by:         MNT-DINFO
 created:        2018-07-06T08:45:35Z
 last-modified:  2022-12-01T16:16:34Z
-source:         RIPE # Filtered
-
-role:           Intelway NOC
-address:        8/1 Presnenskaya naberezhnaya st., Moscow, Russia
-admin-c:        CH13
-tech-c:         CH13
-nic-hdl:        IWAY-RIPE
-abuse-mailbox:  abuse@intelway.ru
-mnt-by:         MNT-DINFO
-created:        2014-07-30T07:13:56Z
-last-modified:  2018-07-06T12:44:28Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

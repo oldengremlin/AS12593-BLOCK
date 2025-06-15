@@ -1,94 +1,46 @@
-
-
-
-as-block:       AS21281 - AS21390
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:28Z
-last-modified:  2018-11-22T15:27:28Z
-source:         RIPE
-
-
-
 aut-num:        AS21367
 as-name:        WILAND-AS
 org:            ORG-WL18-RIPE
-remarks:        ====================================================
-remarks:        Upstreams :: IPv4
-remarks:        ====================================================
-remarks:        # RETN
 import:         from AS57304 accept ANY
 export:         to AS57304 announce AS-WILAND
-remarks:        # W-IX iHOME
 import:         from AS25478 accept ANY
 export:         to AS25478 announce AS-WILAND
-remarks:        # TTK
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-WILAND
-remarks:        # BEELINE
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-WILAND
-remarks:        ====================================================
-remarks:        Upstreams :: IPv6
-remarks:        ====================================================
-remarks:        # RETN IPv6
 mp-import:      afi ipv6.unicast from AS57304 accept ANY
 mp-export:      afi ipv6.unicast to AS57304 announce AS-WILAND
-remarks:        # W-IX IPv6
 mp-import:      afi ipv6.unicast from AS25478 accept ANY
 mp-export:      afi ipv6.unicast to AS25478 announce AS-WILAND
-remarks:        # TTK IPv6
 mp-import:      afi ipv6.unicast from AS20485 accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-WILAND
-remarks:        # BEELINE IPv6
 mp-import:      afi ipv6.unicast from AS3216 accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS-WILAND
-remarks:        ====================================================
-remarks:        Peering :: IPv4
-remarks:        ====================================================
-remarks:        # MSK-IX
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-WILAND
-remarks:        # W-IX iHOME
 import:         from AS50384 accept AS-W-IX
 export:         to AS50384 announce AS-WILAND
-remarks:        # PITER-IX
 import:         from AS49869 accept AS-PITER-IX
 export:         to AS49869 announce AS-WILAND
-remarks:        ====================================================
-remarks:        Peering :: IPv6
-remarks:        ====================================================
-remarks:        # MSK-IX IPv6
 mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS-WILAND
-remarks:        # W-IX iHOME IPv6
 mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX
 mp-export:      afi ipv6.unicast to AS50384 announce AS-WILAND
-remarks:        ====================================================
-remarks:        Customers :: IPv4
-remarks:        ====================================================
-remarks:        # Wiland2
 import:         from AS38922 accept AS38922
 export:         to AS38922 announce any
-remarks:        # VILS
 import:         from AS199549 accept AS199549
 export:         to AS199549 announce any
-remarks:        # ARSENAL
 import:         from AS201569 accept AS201569
 export:         to AS201569 announce any
-remarks:        # CARCADE
 import:         from AS41212 accept AS41212
 export:         to AS41212 announce any
-remarks:        # ROSNOU
 import:         from AS197526 accept AS197526
 export:         to AS197526 announce any
-remarks:        # PSST
 import:         from AS200390 accept AS200390
 export:         to AS200390 announce any
-remarks:        ====================================================
-admin-c:        WLND-RIPE
-tech-c:         WLND-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-WILAND
@@ -96,18 +48,16 @@ created:        2011-06-15T09:48:03Z
 last-modified:  2024-05-07T13:16:47Z
 source:         RIPE
 
+as-num:         AS21367
+country:        RU
+as-name:        WILAND-AS Wiland Ltd
+
 organisation:   ORG-WL18-RIPE
 org-name:       Wiland Ltd
 country:        RU
 org-type:       LIR
-address:        Lenina Ave., hs nr 25, room 17
-address:        144000
-address:        Moscow Elektrostal
-address:        RUSSIAN FEDERATION
-phone:          +74959812310
-fax-no:         +74959812311
-admin-c:        VG4714-RIPE
-admin-c:        SV6753-RIPE
+address:        Dummy address for ORG-WL18-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR17045-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MNT-WILAND
@@ -115,27 +65,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MNT-WILAND
 created:        2005-10-20T11:49:49Z
 last-modified:  2020-12-16T12:20:23Z
-source:         RIPE # Filtered
-
-role:           Wiland Network Russia
-address:        Nab. Akademica Tupoleva 15 build 22
-address:        123995, Moscow, Russia
-phone:          +7 495 9812310
-fax-no:         +7 495 9812311
-remarks:        trouble: ********************************************
-remarks:        trouble: The contact information on problems:
-remarks:        trouble: ********************************************
-remarks:        trouble: Backbone/Routing: noc@wiland.ru
-remarks:        trouble: ABUSE/SPAM: abuse@wiland.ru
-remarks:        trouble: Internet Customer support: support@wiland.ru
-remarks:        trouble: ********************************************
-admin-c:        VG4714-RIPE
-admin-c:        SV6753-RIPE
-nic-hdl:        WLND-RIPE
-mnt-by:         MNT-WILAND
-created:        2007-02-22T13:49:22Z
-last-modified:  2016-10-17T20:40:19Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

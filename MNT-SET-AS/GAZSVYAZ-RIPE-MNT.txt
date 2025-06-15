@@ -1,3 +1,140 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 10.100.1.2 port 22
+as-set:         AS-GAZSVYAZ
+descr:          ASes routed by Gazsvyaz Ltd.
+members:        AS20576
+members:        AS41904
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         GAZSVYAZ-RIPE-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2013-11-20T08:09:29Z
+source:         RIPE
+
+
+
+as-set:         AS-GAZTELECOM
+descr:          LLC Gazprom telecom and their clients
+members:        AS39045
+members:        AS50193
+members:        AS50703
+members:        AS62264
+members:        AS21166
+members:        AS49108
+members:        AS203353
+members:        AS25032
+members:        AS-GAZSVYAZ
+members:        AS49575
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         GAZTELECOM-MNT
+mnt-by:         GAZSVYAZ-RIPE-MNT
+notify:         noc@gtconline.ru
+created:        2005-12-06T12:09:50Z
+last-modified:  2019-12-18T08:06:40Z
+source:         RIPE
+
+
+
+as-set:         AS-TLIC
+descr:          ASes of Teleintercom and Teleintercom's customers
+members:        AS25032
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         GAZTELECOM-MNT
+mnt-by:         GAZSVYAZ-RIPE-MNT
+created:        2003-04-10T12:32:17Z
+last-modified:  2019-12-18T08:06:40Z
+source:         RIPE
+
+
+
+aut-num:        AS20576
+org:            ORG-GL3-RIPE
+as-name:        GAZSVYAZ
+descr:          16, Nametkina street
+descr:          117997, Moscow, V-420
+descr:          Russia
+import:         from AS1299 action pref=300; accept ANY
+import:         from AS12389 action pref=300; accept ANY
+export:         to AS1299 announce AS-GAZSVYAZ
+export:         to AS12389 announce AS-GAZSVYAZ
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         GAZSVYAZ-RIPE-MNT
+created:        2002-06-05T12:26:28Z
+last-modified:  2019-04-12T13:10:31Z
+source:         RIPE
+
+
+
+aut-num:        AS25032
+as-name:        TELEINTERCOM-AS
+org:            ORG-GL3-RIPE
+import:         from AS39045 action pref=200; accept ANY
+export:         to AS39045 announce AS-TLIC
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@gtconline.ru
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         GAZSVYAZ-RIPE-MNT
+created:        2002-09-04T08:32:10Z
+last-modified:  2019-10-16T13:17:45Z
+source:         RIPE
+
+
+
+aut-num:        AS39045
+as-name:        Gaztelecom-AS
+org:            ORG-GL3-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS39045
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS39045
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS39045
+import:         from AS8631 accept ANY
+export:         to AS8631 announce AS-GAZTELECOM
+import:         from AS47218 accept ANY
+export:         to AS47218 announce AS39045
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS39045
+mp-import:      afi ipv6 from AS12389 accept ANY
+mp-export:      afi ipv6 to AS12389 announce AS-GAZTELECOM
+mp-import:      afi ipv6 from AS8631 accept ANY
+mp-export:      afi ipv6 to AS8631 announce AS-GAZTELECOM
+import:         from AS20576 accept AS20576
+export:         to AS20576 announce ANY
+import:         from AS50703 accept AS50703
+export:         to AS50703 announce ANY
+import:         from AS50193 accept AS50193
+export:         to AS50193 announce ANY
+import:         from AS21166 accept AS21166
+export:         to AS21166 announce ANY
+import:         from AS62264 accept AS62264
+export:         to AS62264 announce ANY
+import:         from AS49108 accept AS49108
+export:         to AS49108 announce {0.0.0.0/0}
+import:         from AS25032 accept AS25032
+export:         to AS25032 announce ANY
+import:         from AS203353 accept AS203353
+export:         to AS203353 announce ANY
+import:         from AS49575 accept AS49575
+export:         to AS49575 announce ANY
+import:         from AS205540 accept AS205540
+export:         to AS205540 announce ANY
+import:         from AS49323 accept AS49323
+export:         to AS49323 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@gtconline.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         GAZSVYAZ-RIPE-MNT
+created:        2005-12-02T15:48:23Z
+last-modified:  2022-05-30T06:33:54Z
+source:         RIPE
+
+
+

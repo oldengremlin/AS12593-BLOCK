@@ -1,21 +1,7 @@
-
-
-
-as-block:       AS42383 - AS42959
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2021-08-19T06:50:17Z
-last-modified:  2021-08-19T06:50:17Z
-source:         RIPE
-
-
-
 aut-num:        AS42610
 as-name:        NCNET-AS
 org:            ORG-JR8-RIPE
 descr:          OJSC "National Cable Networks"
-remarks:        Upstreams
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-NCNET
 mp-import:      afi ipv6.unicast from AS12389 accept ANY
@@ -24,9 +10,6 @@ import:         from AS1299 accept ANY
 export:         to AS1299 announce AS-NCNET
 mp-import:      afi ipv6.unicast from AS1299 accept ANY
 mp-export:      afi ipv6.unicast to AS1299 announce AS-NCNET-IPV6
-remarks:
-remarks:        Clients
-remarks:
 import:         from AS6863 accept AS-ROSNET
 export:         to AS6863 announce ANY
 import:         from AS8557 accept AS8557
@@ -79,9 +62,6 @@ import:         from AS60892 accept AS-SYNTERRAMEDIA
 export:         to AS60892 announce ANY
 import:         from AS199085 accept AS199085
 export:         to AS199085 announce ANY
-remarks:
-remarks:        Direct Peers
-remarks:
 import:         from AS8359 accept AS-MTU
 export:         to AS8359 announce AS-NCNET
 mp-import:      afi ipv6.unicast from AS8359 accept ANY
@@ -110,67 +90,8 @@ import:         from AS47542 accept AS-VKONTAKTE
 export:         to AS47542 announce AS-NCNET
 mp-import:      afi ipv6.unicast from AS47542 accept AS-VKONTAKTE
 mp-export:      afi ipv6.unicast to AS47542 announce AS-NCNET-IPV6
-remarks:        +----------------------------------------------------+
-remarks:        | NCNET filters out |
-remarks:        | inbound prefixes longer than /24 |
-remarks:        | MEDs are overwritten |
-remarks:        | unless special arrangements have been made |
-remarks:        +----------------------------------------------------+
-remarks:        | COMMUNITIES |
-remarks:        +----------------------------------------------------+
-remarks:        | Communities sent to downstreams are marked upon |
-remarks:        | upsteam type and place of interconnection. |
-remarks:        | 42610:yyyy (4 digits) |
-remarks:        | |
-remarks:        | User-settable communities are derived from |
-remarks:        | UPLINKS, PEERS and SPECIAL communities |
-remarks:        | 42610:yyyyx (with 5th digit) |
-remarks:        | |
-remarks:        | where 'x' is: |
-remarks:        | ....x=9 - advertise without prepends |
-remarks:        | ....x=0 - do not advertise |
-remarks:        | ....x=1,2,3 or 5 - prepend 42610 (1,2,3 or 5) times|
-remarks:        | Childs overrides parents |
-remarks:        | (i.e. 42610:22009 overrides 42610:10002) |
-remarks:        +----------------------------------------------------+
-remarks:        | UPLINKS |
-remarks:        |----------------------------------------------------|
-remarks:        | 42610:2000x - All uplinks |
-remarks:        | | |
-remarks:        | + 42610:2100x - Uplinks at MSK |
-remarks:        | + 42610:2101x - Rostelekom AS12389 |
-remarks:        | + 42610:2102x - Telia AS1299 |
-remarks:        |----------------------------------------------------|
-remarks:        | PEERS |
-remarks:        |----------------------------------------------------|
-remarks:        | 42610:1000x - All peers |
-remarks:        | | |
-remarks:        | + 42610:2400x - Private Peers |
-remarks:        | | | |
-remarks:        | | + 42610:2500x - Private Peers at MSK |
-remarks:        | | | + 42610:2502x - MTS AS8359 |
-remarks:        | | | + 42610:2503x - Google AS15169 |
-remarks:        | | | + 42610:2507x - Megafon AS31133 |
-remarks:        | | | + 42610:2511x - Mail.ru AS47764 |
-remarks:        | | | + 42610:2515x - Rostelecom CTC AS44237 |
-remarks:        | | | + 42610:2517x - NetByNet AS12714 |
-remarks:        | | | + 42610:2518x - ReTN AS9002 |
-remarks:        | | | |
-remarks:        |----------------------------------------------------|
-remarks:        | CLIENTS |
-remarks:        |----------------------------------------------------|
-remarks:        | 42610:42610 - NCNET |
-remarks:        | 42610:3000 - Clients |
-remarks:        | | |
-remarks:        | + 42610:3100 - Clients at MSK |
-remarks:        |----------------------------------------------------|
-remarks:        | SPECIAL |
-remarks:        |----------------------------------------------------|
-remarks:        | 42610:666 - blackhole |
-remarks:        | 42610:1900 - Backup |
-remarks:        +----------------------------------------------------+
-admin-c:        NCN7-RIPE
-tech-c:         NCN7-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
@@ -179,32 +100,16 @@ created:        2007-03-22T09:50:49Z
 last-modified:  2025-04-15T11:46:22Z
 source:         RIPE
 
+as-num:         AS42610
+country:        RU
+as-name:        NCNET-AS PJSC Rostelecom
+
 organisation:   ORG-JR8-RIPE
 org-name:       PJSC Rostelecom
 country:        RU
 org-type:       LIR
-address:        14 A, Sinopskaya nabereznaya
-address:        191167
-address:        S.Peterburg
-address:        RUSSIAN FEDERATION
-phone:          +7 499 999-82-83
-fax-no:         +74999953619
-admin-c:        RTNC-RIPE
-admin-c:        EP6706-RIPE
-admin-c:        IE1277-RIPE
-admin-c:        NM7547-RIPE
-admin-c:        AA728-RIPE
-admin-c:        SVS153-RIPE
-admin-c:        ASV77-RIPE
-admin-c:        RVP-RIPE
-admin-c:        VEV57-RIPE
-admin-c:        TR4627-RIPE
-admin-c:        TL4565-RIPE
-admin-c:        DN216-RIPE
-admin-c:        DA2353-RIPE
-admin-c:        IS111-RIPE
-admin-c:        VE128-RIPE
-admin-c:        SS216-RIPE
+address:        Dummy address for ORG-JR8-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        RTNC-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        ROSTELECOM-MNT
@@ -213,23 +118,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2005-03-22T11:11:20Z
 last-modified:  2023-01-26T10:52:42Z
-source:         RIPE # Filtered
-
-role:           NCNET NCC Operations
-address:        National Cable Networks
-address:        Nagatinskaya str., 1, bldn. 26
-address:        117105 Moscow, Russia
-org:            ORG-NCN1-RIPE
-admin-c:        RVP-RIPE
-tech-c:         RVP-RIPE
-phone:          +7 495 6859542
-fax-no:         +7 495 6859530
-mnt-by:         NCNET-MNT
-nic-hdl:        NCN7-RIPE
-created:        2007-03-26T07:46:58Z
-last-modified:  2015-10-12T11:53:05Z
-source:         RIPE # Filtered
-abuse-mailbox:  abuse@moscow.rt.ru
-
+source:         RIPE
 
 

@@ -1,6 +1,11 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@185.151.106.150:22 already exists, disabling multiplexing
-
+as-set:         AS-VTELL
+members:        AS59883
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         VTELL-MNT
+created:        2021-09-16T10:02:38Z
+last-modified:  2021-09-16T10:02:38Z
+source:         RIPE
 
 
 
@@ -8,8 +13,6 @@ aut-num:        AS59883
 as-name:        VTELL-AS
 org:            ORG-GTL20-RIPE
 descr:          Global Telecom, Moscow
-remarks:        UPLINKS
-remarks:        --------------------------------------------------------------------
 import:         from AS20485 accept ANY
 import:         from AS50313 accept ANY
 import:         from AS51601 accept ANY
@@ -18,15 +21,15 @@ export:         to AS20485 announce AS59883
 export:         to AS50313 announce AS59883
 export:         to AS51601 announce AS59883
 export:         to AS8631 announce AS59883
-remarks:        --------------------------------------------------------------------
-admin-c:        GTNO1-RIPE
-tech-c:         GTNO1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VTELL-MNT
+notify:         ripe@v-tell.com
 created:        2014-08-21T13:36:48Z
 last-modified:  2022-07-26T15:29:24Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

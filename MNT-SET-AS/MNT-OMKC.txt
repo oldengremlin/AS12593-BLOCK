@@ -1,4 +1,69 @@
+as-set:         AS-OMKC-PEERING-SET
+descr:          OMKC & Peers
+members:        AS47165
+members:        AS30729
+members:        AS41771
+members:        AS41843
+members:        AS42676
+members:        AS49880
+members:        AS49404
+members:        AS8411
+members:        AS28884
+members:        AS41440
+members:        AS49648
+members:        AS48038
+members:        AS21127
+members:        AS47246
+members:        AS50236
+members:        AS8402
+members:        AS43853
+members:        AS50942
+members:        AS9049
+members:        AS41661
+members:        AS42682
+members:        AS41682
+members:        AS50512
+members:        AS56377
+members:        AS56330
+members:        AS50544
+members:        AS43478
+members:        AS15870
+members:        AS57411
+members:        AS61151
+members:        AS198384
+members:        AS-RUNTK-SET
+members:        AS50775
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-OMKC
+created:        2009-07-15T06:16:35Z
+last-modified:  2021-12-30T09:46:03Z
+source:         RIPE
 
+
+
+as-set:         AS-OMKC-SET
+descr:          OMKC and Customers with AS
+members:        AS47165
+members:        AS47246
+members:        AS31200
+members:        AS61084
+members:        AS15870
+members:        AS61228
+members:        AS36040
+members:        AS57411
+members:        AS61151
+members:        AS49880
+members:        AS198384
+members:        AS57629
+members:        AS207353
+members:        AS-PROMOBIT
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-OMKC
+created:        2009-07-06T10:17:52Z
+last-modified:  2025-02-26T10:15:05Z
+source:         RIPE
 
 
 
@@ -9,8 +74,8 @@ import:         from AS47165 accept ANY
 export:         to AS47165 announce AS15870
 import:         from AS47246 accept ANY
 export:         to AS47246 announce AS15870
-admin-c:        BLN19-RIPE
-tech-c:         BLN19-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-OMKC
@@ -24,9 +89,6 @@ sponsoring-org: ORG-OksL1-RIPE
 aut-num:        AS47165
 as-name:        OMKC-AS
 org:            ORG-OksL1-RIPE
-remarks:        ********************
-remarks:        Uplinks
-remarks:        ********************
 import:         from AS21127 action pref=100; accept ANY
 import:         from AS8359 action pref=100; accept ANY
 import:         from AS50928 action pref=100; accept ANY
@@ -45,9 +107,6 @@ export:         to AS12389 announce AS-OMKC-SET
 mp-export:      afi ipv6.unicast to AS8359 announce AS-OMKC-SET
 mp-export:      afi ipv6.unicast to AS20485 announce AS-OMKC-SET
 mp-export:      afi ipv6.unicast to AS31133 announce AS-OMKC-SET
-remarks:        ********************
-remarks:        Peers
-remarks:        ********************
 import:         from AS41843 action pref=200; accept AS41843
 export:         to AS41843 announce AS-OMKC-PEERING-SET
 import:         from AS42676 action pref=200; accept AS42676
@@ -80,9 +139,6 @@ import:         from AS211609 action pref=150; accept AS211609
 export:         to AS211609 announce AS-OMKC-SET
 import:         from AS207353 action pref=150; accept AS207353
 export:         to AS207353 announce ANY
-remarks:        ********************
-remarks:        Customers
-remarks:        ********************
 import:         from AS49404 action pref=300; accept AS49404 and AS61084
 export:         to AS49404 announce ANY
 import:         from AS47246 action pref=200; accept AS-OMKC-PEERING-SET
@@ -105,33 +161,15 @@ mp-import:      afi ipv6.unicast from AS47246 action pref=300; accept AS47246
 mp-export:      afi ipv6.unicast to AS47246 announce ANY
 mp-import:      afi ipv6.unicast from AS57629 action pref=300; accept AS57629
 mp-export:      afi ipv6.unicast to AS57629 announce ANY
-remarks:        +-------------------------------------------------------------+
-remarks:        | Community for Customers |
-remarks:        +-------------------------------------------------------------+
-remarks:        | 47165:xxy When advertising to Uplinks |
-remarks:        +-------------------------------------------------------------+
-remarks:        | 47165:40y When advertising to ZSTTKAS (AS21127) |
-remarks:        | 47165:50y When advertising to COMSTAR (AS8359) |
-remarks:        | 47165:60y When advertising to TTK (AS20485) |
-remarks:        | 47165:70y When advertising to MEGAFON (AS31133) |
-remarks:        | 47165:80y When advertising to RTK (AS12389) |
-remarks:        | y=9 - advertise without prepends |
-remarks:        | y=0 - do not advertise |
-remarks:        | y=1,2 or 3 - prepend 47165 (1,2, or 3) times |
-remarks:        +-------------------------------------------------------------+
-remarks:        -----------------------------------------------------
-remarks:        Contact addresses:
-remarks:        routing & peering noc@omkc.ru
-remarks:        spam & security abuse@omkc.ru
-remarks:        -----------------------------------------------------
-admin-c:        DG5568-RIPE
-tech-c:         DMF9-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         lir@omkc.ru
 mnt-by:         MNT-OMKC
 created:        2008-05-07T12:53:33Z
 last-modified:  2025-03-07T04:42:45Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

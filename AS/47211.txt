@@ -1,20 +1,6 @@
-
-
-
-as-block:       AS47193 - AS47383
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-09-24T13:48:22Z
-last-modified:  2024-09-24T13:48:22Z
-source:         RIPE
-
-
-
 aut-num:        AS47211
 as-name:        KOLPINONET-AS
 org:            ORG-KA162-RIPE
-remarks:        ---------------- IPv4 ----------------
 import:         from AS9031 action pref=100; accept ANY
 export:         to AS9031 announce AS-KOLPINONET
 import:         from AS31500 action pref=100; accept ANY
@@ -43,7 +29,6 @@ import:         from AS39102 accept AS-NNZ
 export:         to AS39102 announce AS-KOLPINONET
 import:         from AS44050 accept AS-PIN-SPBIX
 export:         to AS44050 announce AS-KOLPINONET
-remarks:        ---------------- IPv6 ----------------
 mp-import:      afi ipv6.unicast from AS9031 accept ANY
 mp-export:      afi ipv6.unicast to AS9031 announce AS-KOLPINONET
 mp-import:      afi ipv6.unicast from AS31500 accept ANY
@@ -52,11 +37,10 @@ mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS-KOLPINONET
 mp-import:      afi ipv6.unicast from AS43690 accept AS-SPBROUTESERVER
 mp-export:      afi ipv6.unicast to AS43690 announce AS-KOLPINONET
-remarks:        ----------------downstream----------------
 import:         from AS42827 accept AS42827
 export:         to AS42827 announce ANY
-admin-c:        TA2679-RIPE
-tech-c:         PA5270-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         KIS-SPB-MNT
@@ -65,37 +49,21 @@ last-modified:  2019-03-21T10:53:55Z
 source:         RIPE
 sponsoring-org: ORG-FL139-RIPE
 
+as-num:         AS47211
+country:        RU
+as-name:        KOLPINONET-AS OOO Kolpinskie Internet-Seti
+
 organisation:   ORG-KA162-RIPE
 org-name:       OOO Kolpinskie Internet-Seti
 country:        RU
 org-type:       OTHER
-address:        Russia, Saint-Petersburg, Kolpino
-admin-c:        TA2679-RIPE
-tech-c:         PA5270-RIPE
+address:        Dummy address for ORG-KA162-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        KIS49-RIPE
 mnt-ref:        PROMETEY-MNT
 mnt-by:         KIS-SPB-MNT
 created:        2008-05-05T20:01:03Z
 last-modified:  2022-12-01T16:33:11Z
-source:         RIPE # Filtered
-
-person:         Piotkovsky Alex
-address:        Russia,Saint-Petersburg
-phone:          +78124907225
-nic-hdl:        PA5270-RIPE
-mnt-by:         KIS-SPB-MNT
-created:        2010-02-11T14:42:57Z
-last-modified:  2017-10-30T22:08:15Z
-source:         RIPE # Filtered
-
-person:         Trubanov Alexander
-address:        Russia,S-Petersburg
-phone:          +78124907223
-nic-hdl:        TA2679-RIPE
-mnt-by:         KIS-SPB-MNT
-created:        2010-02-05T11:11:59Z
-last-modified:  2017-10-30T22:08:11Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

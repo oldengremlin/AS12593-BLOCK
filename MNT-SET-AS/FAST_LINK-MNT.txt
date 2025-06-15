@@ -1,13 +1,21 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
-
+as-set:         AS-FAST_LINK
+descr:          Fast Link AS-set
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS47562
+members:        AS208604
+members:        AS48508
+members:        AS39562
+mnt-by:         FAST_LINK-MNT
+created:        2008-09-01T20:07:53Z
+last-modified:  2024-08-19T09:24:49Z
+source:         RIPE
 
 
 
 aut-num:        AS47562
 as-name:        FastLink
 org:            ORG-FLL1-RIPE
-remarks:        UpStreams
 import:         from AS57304 action pref=20; accept ANY;
 export:         to AS57304 announce AS-FAST_LINK;
 import:         from AS35598 action pref=20; accept ANY;
@@ -16,31 +24,25 @@ import:         from AS20764 action pref=20; accept ANY;
 export:         to AS20764 announce AS-FAST_LINK;
 import:         from AS50509 action pref=20; accept ANY;
 export:         to AS50509 announce AS-FAST_LINK;
-remarks:        IXs
 import:         from AS8631 action pref=20; accept AS-MSKROUTESERVER;
 export:         to AS8631 announce AS-FAST_LINK;
 import:         from AS56931 action pref=20; accept AS-EURASIAPEERING_RS;
 export:         to AS56931 announce AS-FAST_LINK;
 import:         from AS49869 action pref=20; accept AS-PITER-IX-MSK;
 export:         to AS49869 announce AS-FAST_LINK;
-remarks:        Clients
 import:         from AS208604 action pref=20; accept AS208604;
 export:         to AS208604 announce ANY;
 import:         from AS48508 action pref=20; accept AS48508;
 export:         to AS48508 announce ANY;
-remarks:        Contact infrmation
-remarks:        User support, general questions: support@fastlnk.ru
-remarks:        Routing, DNS, security issues: noc@fastlnk.ru
-remarks:        Report spam and abuse: abuse@fastlnk.ru
-remarks:        Peering issues: peering@fastlnk.ru
-admin-c:        SIN18-RIPE
-tech-c:         SIN18-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         ivan@fastlnk.ru
 mnt-by:         Fast_Link-mnt
 created:        2008-07-10T07:30:31Z
 last-modified:  2025-02-13T16:13:08Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
@@ -51,8 +53,8 @@ import:         from AS13118 action pref=100; accept ANY
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS13118 announce AS57711
 export:         to AS12389 announce AS57711
-admin-c:        GAG116-RIPE
-tech-c:         GAG116-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         Fast_Link-mnt

@@ -1,95 +1,14 @@
-
-
-
-as-block:       AS200352 - AS203022
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-10-03T13:30:54Z
-last-modified:  2024-10-03T13:30:54Z
-source:         RIPE
-
-
-
 aut-num:        AS201817
 as-name:        KZVKTECH
 org:            ORG-VTKL1-RIPE
-remarks:
-remarks:        =========================================
-remarks:        Partners
-remarks:        -----------------------------------------
-remarks:
 import:         from AS47764 accept ANY
 export:         to AS47764 announce AS201817
-remarks:
-remarks:        =========================================
-remarks:        Uplinks
-remarks:        -----------------------------------------
-remarks:
 import:         from AS47764 accept ANY
 export:         to AS47764 announce AS201817
 import:         from AS35104 accept ANY
 export:         to AS35104 announce AS201817
-remarks:
-remarks:        =========================================
-remarks:        BGP Policy
-remarks:        -----------------------------------------
-remarks:
-remarks:        External communities may be set by some external peers
-remarks:        when talking to 201817.
-remarks:        They are 201817:[1-3]*
-remarks:
-remarks:        The following control communities are accepted from any
-remarks:        BGP peer (partner/peer/uplink):
-remarks:
-remarks:        201817:20 - Don't accept prefix
-remarks:        201817:2x - Accept prefix and expand its as-path with
-remarks:        last AS x (x=1, 2 or 3) times.
-remarks:
-remarks:        The following control communities are accepted only from
-remarks:        partners:
-remarks:
-remarks:        Community Meaning
-remarks:
-remarks:        201817:1100x When advertising to uplink, specifically:
-remarks:        201817:1102x Not used
-remarks:        201817:1103x When advertising to KAZTRANSCOM (AS35104) uplink...
-remarks:
-remarks:        ...x=0 - do not advertise
-remarks:        ...x=1, 2 - prepend 201817 1 or 2 times
-remarks:        -------------------------------------------------------------
-remarks:
-remarks:        Other 201817:* communities are deleted.
-remarks:        Other *:* communities are passed intact but not to all
-remarks:        peers.
-remarks:
-remarks:        Own routes get local preference 400 (highest).
-remarks:        Partner's routes get local preference 300.
-remarks:        Technological partner's routes get local preference 250.
-remarks:        Peer's and uplink's routes get local preference 200.
-remarks:        We don't change lprefs by outer requests, so please don't
-remarks:        request us about it.
-remarks:
-remarks:        -------------------------------------------------------------
-remarks:
-remarks:        Internal communities are assigned only internally.
-remarks:        They may be used by peers to filter some prefixes.
-remarks:
-remarks:        Community Meaning
-remarks:
-remarks:        201817:40000 Our own routes
-remarks:
-remarks:        201817:41100 Receieved from Uplink, specifically:
-remarks:        201817:41102 Receieved from TTC
-remarks:        201817:41103 Receieved from KAZTRANSCOM
-remarks:
-remarks:        201817:50103 Receieved in Astana
-remarks:
-remarks:        Last Update: February 2023
-remarks:        -------------------------------------------------------------
-remarks:
-admin-c:        VN3650-RIPE
-tech-c:         VN3650-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NETBRIDGE
@@ -97,36 +16,22 @@ created:        2022-10-28T08:58:45Z
 last-modified:  2024-01-17T10:42:38Z
 source:         RIPE
 
+as-num:         AS201817
+country:        KZ
+as-name:        KZVKTECH VK Tech Kazakhstan LLP
+
 organisation:   ORG-VTKL1-RIPE
 org-name:       VK Tech Kazakhstan LLP
 country:        KZ
 org-type:       LIR
-address:        38, Dostyk Avenue, Medeu District
-address:        050010
-address:        Almaty
-address:        KAZAKHSTAN
-phone:          +7 7015556130
-admin-c:        VN3650-RIPE
-tech-c:         VN3650-RIPE
+address:        Dummy address for ORG-VTKL1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR69178-RIPE
 mnt-ref:        MNT-NETBRIDGE
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MNT-NETBRIDGE
 created:        2022-10-18T09:51:37Z
 last-modified:  2024-03-18T16:19:44Z
-source:         RIPE # Filtered
-
-role:           VK NOC
-address:        KAZAKHSTAN
-address:        Nur-Sultan
-address:        010000
-address:        10/1, Rakymzhan Koshkarbayev Avenue
-phone:          +7 7015556130
-nic-hdl:        VN3650-RIPE
-mnt-by:         MNT-NETBRIDGE
-created:        2022-10-18T09:51:36Z
-last-modified:  2022-10-18T09:51:37Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

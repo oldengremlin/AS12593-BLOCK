@@ -1,6 +1,85 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@185.151.106.150:22 already exists, disabling multiplexing
+as-set:         AS-IGAS6672
+descr:          RELCOM SPB IGP
+members:        AS6672
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         spbnoc@relcom.spb.ru
+mnt-by:         VF1-MNT
+created:        2012-02-03T16:58:10Z
+last-modified:  2012-02-03T17:29:52Z
+source:         RIPE
 
+
+
+as-set:         AS-INTERMEDIA-RU
+descr:          Intermedia.net RU ASes
+members:        AS25188
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         mark@intermedia.net
+mnt-by:         VF1-MNT
+created:        2020-08-24T13:42:42Z
+last-modified:  2020-08-24T13:42:42Z
+source:         RIPE
+
+
+
+as-set:         AS-RELCOMSPB
+descr:          RELCOM-SPB's customers
+members:        AS6672
+members:        AS15455
+members:        AS21416
+members:        AS25188
+members:        AS49994
+members:        AS60837
+members:        AS200935
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         spbnoc@relcom.spb.ru
+mnt-by:         VF1-MNT
+created:        2012-02-03T18:02:38Z
+last-modified:  2015-03-12T12:38:32Z
+source:         RIPE
+
+
+
+as-set:         AS-RELSPBBCUST
+descr:          RELCOM-SPB's multias  customers
+members:        AS-PETERLINK
+members:        AS31444,AS39092,AS48079,AS44263
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@Relcom.net
+mnt-by:         VF1-MNT
+created:        2002-08-13T12:30:02Z
+last-modified:  2011-09-08T09:40:50Z
+source:         RIPE
+
+
+
+as-set:         AS-RELSPBSCUST
+descr:          RELCOM-SPB's single as customers
+members:        AS6672
+members:        AS8915
+members:        AS12380
+members:        AS13215
+members:        AS15455
+members:        AS21353
+members:        AS21416
+members:        AS24960
+members:        AS25073
+members:        AS25185
+members:        AS25188
+members:        AS28887
+members:        AS48235
+members:        AS48933
+members:        AS49994
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         VF1-MNT
+created:        2002-09-24T07:51:44Z
+last-modified:  2014-02-12T12:05:42Z
+source:         RIPE
 
 
 
@@ -11,8 +90,8 @@ import:         from AS35000 accept ANY
 export:         to AS35000 announce AS200935
 import:         from AS6672 accept ANY
 export:         to AS6672 announce AS200935
-admin-c:        YVV32-RIPE
-tech-c:         YVV32-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VF1-MNT
@@ -30,8 +109,8 @@ import:         from AS25159 accept ANY
 export:         to AS25159 announce AS201443
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS201443
-admin-c:        TRFT1-RIPE
-tech-c:         TRFT1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VF1-MNT
@@ -49,8 +128,8 @@ import:         from AS8492 accept ANY
 export:         to AS8492 announce AS210223
 import:         from AS24739 accept ANY
 export:         to AS24739 announce AS210223
-admin-c:        SPM10-RIPE
-tech-c:         VDS221-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VF1-MNT
@@ -68,8 +147,8 @@ import:         from AS25159 accept ANY
 export:         to AS25159 announce AS212443
 import:         from AS29226 accept ANY
 export:         to AS29226 announce AS212443
-admin-c:        SPM10-RIPE
-tech-c:         VDS221-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VF1-MNT
@@ -91,14 +170,15 @@ export:         to AS43690 announce AS-RELCOMSPB
 export:         to AS2118 announce AS-RELCOMSPB
 export:         to AS9002 announce AS-RELCOMSPB
 export:         to AS48268 announce AS-RELCOMSPB
-admin-c:        VF1-RIPE
-tech-c:         VF1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         spbnoc@relcom.spb.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VF1-MNT
 created:        1970-01-01T00:00:00Z
 last-modified:  2018-09-04T09:48:19Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

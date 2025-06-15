@@ -1,6 +1,50 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@212.90.184.190:22 already exists, disabling multiplexing
+as-set:         AS-METROBIT-PEERING
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         METROBITRU-MNT
+mnt-by:         mnt-ru-metrobit-1
+mnt-by:         MNT-PINSUPPORT
+created:        2019-10-16T22:38:10Z
+last-modified:  2019-10-16T22:41:42Z
+source:         RIPE
 
+
+
+as-set:         AS-METROBITRU
+descr:          METROBIT
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+org:            ORG-METR1-RIPE
+members:        AS45054
+members:        AS25073
+mnt-by:         METROBITRU-MNT
+created:        2015-07-31T10:27:09Z
+last-modified:  2019-05-18T00:33:16Z
+source:         RIPE
+
+
+
+as-set:         AS-METROPEER
+tech-c:         DUMY-RIPE
+members:        AS45054
+members:        AS-FORCELINE
+members:        AS-EUT
+members:        AS57246
+members:        AS-COMITEN
+members:        AS196642
+members:        AS62415
+members:        AS-CNX-EKB
+members:        AS-ECO
+members:        AS-STATION
+members:        AS-OBLTELECOM
+members:        AS-TCENTER
+members:        AS-MARYNONET
+members:        AS-UNIONTEL-RU
+admin-c:        DUMY-RIPE
+mnt-by:         METROBITRU-MNT
+created:        2019-10-25T12:34:06Z
+last-modified:  2019-11-26T11:20:58Z
+source:         RIPE
 
 
 
@@ -8,7 +52,6 @@ aut-num:        AS45054
 as-name:        Metrobit-AS
 status:         ASSIGNED
 org:            ORG-METR1-RIPE
-remarks:        -- uplinks --
 import:         from AS8744 action pref=150; accept AS-WIMAX
 import:         from AS8744 action pref=200; accept { 0.0.0.0/0 }
 export:         to AS8744 announce AS-DI-NET
@@ -18,11 +61,9 @@ export:         to AS31500 announce AS-DI-NET
 import:         from AS44050 action pref=150; accept AS-PIN
 import:         from AS44050 action pref=200; accept { 0.0.0.0/0 }
 export:         to AS44050 announce AS-DI-NET
-remarks:        -- proposed uplinks --
 import:         from AS29076 action pref=150; accept AS-CITYTELECOM
 import:         from AS29076 action pref=200; accept { 0.0.0.0/0 }
 export:         to AS29076 announce AS-DI-NET
-remarks:        -- peers --
 import:         from AS50952 action pref=150; accept AS-DATAIX
 import:         from AS50952 action pref=200; accept ANY AND NOT { 0.0.0.0/0 }
 export:         to AS50952 announce AS-DI-NET
@@ -30,8 +71,8 @@ import:         from AS13238 action pref=100; accept AS-YANDEX
 import:         from AS25073 accept AS25073
 export:         to AS13238 announce AS-DI-NET
 export:         to AS25073 announce any
-admin-c:        SEO-RIPE
-tech-c:         SEO-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         METROBITRU-MNT
 mnt-by:         MNT-PIN

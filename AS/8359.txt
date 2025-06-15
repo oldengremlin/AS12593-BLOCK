@@ -1,21 +1,5 @@
-
-
-
-as-block:       AS8192 - AS8523
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS8359
 as-name:        MTS
-remarks:        Mobile TeleSystems PJSC
-remarks:        Marksistskaya street, 4
-remarks:        109147 Moscow, Russia
 org:            ORG-ZM1-RIPE
 import:         from AS42 action pref=105; accept AS-PCH
 export:         to AS42 announce AS-MTU
@@ -225,6 +209,8 @@ import:         from AS6774 action pref=105; accept AS-BELBONETOPEERS
 export:         to AS6774 announce AS-MTU
 import:         from AS6777 action pref=105; accept ANY AND NOT <^[AS714 AS2854 AS3255 AS3267 AS8075 AS8369 AS8732 AS9002 AS9031 AS12389 AS12714 AS12883 AS13238 AS15169 AS15772 AS16265 AS20485 AS20764 AS20940 AS21011 AS21219 AS25229 AS28917 AS31133 AS31500 AS35320 AS35662 AS44050 AS44053 AS47764 AS50384 AS50923 AS50968]>
 export:         to AS6777 action community .= { 6777:6777, 6777:714, 6777:2854, 6777:3255, 6777:3267, 6777:8075, 6777:8369, 6777:8732, 6777:9002, 6777:9031, 6777:12389, 6777:12714, 6777:12883, 6777:13238, 6777:15169, 6777:15772, 6777:16265, 6777:20485, 6777:20764, 6777:20940, 6777:21011, 6777:21219, 6777:25229, 6777:28917, 6777:31133, 6777:31500, 6777:35320, 6777:35662, 6777:39792, 6777:44050, 6777:44053, 6777:47764, 6777:50384, 6777:50923, 6777:50968, 6777:51092 }; announce AS-MTU
+import:         from AS6789 action pref=140; accept AS-CRELCOM
+export:         to AS6789 announce ANY
 import:         from AS6805 action pref=105; accept AS-TDDE
 export:         to AS6805 announce AS-MTU
 import:         from AS6849 action pref=105; accept AS-UKRTELBT
@@ -909,8 +895,6 @@ import:         from AS29527 action pref=105; accept AS-OTHELLOTECH
 export:         to AS29527 announce AS-MTU
 import:         from AS29561 action pref=105; accept AS29561
 export:         to AS29561 announce ANY
-import:         from AS29572 action pref=105; accept AS29572
-export:         to AS29572 announce ANY
 import:         from AS29608 action pref=105; accept AS-W2MY
 export:         to AS29608 announce AS-MTU
 import:         from AS29611 action pref=105; accept AS-ELITE
@@ -2485,217 +2469,25 @@ import:         from AS216214 action pref=105; accept AS216214
 export:         to AS216214 announce ANY
 import:         from AS201123 action pref=105; accept AS201123
 export:         to AS201123 announce ANY
-remarks:        -----------------------------------------------------------
-remarks:        Please send spam and abuse reports to abuse@mtu.ru
-remarks:        -----------------------------------------------------------
-remarks:        Communities
-remarks:        -----------------------------------------------------------
-remarks:        Traffic engineering communities - LocalPref
-remarks:        --------------------------------------------------------
-remarks:        8359:990 - set local preference to 90 (backup route, lowest possible)
-remarks:        --------------------------------------------------------
-remarks:        Communities accepted from customers are in range 8359:2000 - 8359:2999
-remarks:        Community Meaning
-remarks:        8359:201x when announcing to FICIX, Helsinki, Finland
-remarks:        8359:202x when announcing to TeliaSonera (AS1299)
-remarks:        8359:203x when announcing to NYIIX peers, New York, USA
-remarks:        8359:204x when announcing to Ukrtelecom (AS6849)
-remarks:        8359:205x when announcing to DE-CIX peers, Frankfurt, Germany
-remarks:        8359:206x when announcing to Lumen (CenturyLink / Level3) (AS3356)
-remarks:        8359:207x when announcing to AMS-IX peers, Amsterdam, Netherlands
-remarks:        8359:208x when announcing to Hurricane Electric (AS6939)
-remarks:        8359:220x when announcing to Verizon (AS702)
-remarks:        8359:221x when announcing to Netnod peers, Stockholm, Sweden
-remarks:        8359:222x when announcing to LINX peers, London, UK
-remarks:        8359:223x when announcing to Cogent (AS174)
-remarks:        8359:224x when announcing to Core-Backbone (AS33891)
-remarks:        8359:225x when announcing to Google (AS15169)
-remarks:        8359:226x when announcing to Equinux, Ashburn peers, USA
-remarks:        8359:227x when announcing to Any2, California peers, USA
-remarks:        8359:228x when announcing to Equinix, New York peers, USA
-remarks:        8359:229x when announcing to CloudeFlare (AS13335)
-remarks:        8359:230x when announcing to Leaseweb Network (AS16265)
-remarks:        8359:231x when announcing to Microsoft (AS8075)
-remarks:        8359:232x when announcing to IPTransit (AS46786)
-remarks:        8359:233x when announcing to DE-CIX NY peers, New York, USA
-remarks:        8359:234x when announcing to Twitch (AS46489)
-remarks:        8359:235x when announcing to Apple (AS714)
-remarks:        8359:236x when announcing to Limelight Networks (AS22822)
-remarks:        8359:237x when announcing to Valve Corp (AS32590)
-remarks:        8359:238x when announcing to Facebook (AS32934)
-remarks:        8359:239x when announcing to Verizon Digital Media (EdgeCast)
-remarks:        8359:240x when announcing to G-Core (AS199524)
-remarks:        8359:250x when announcing to Amazon (AS16509)
-remarks:        8359:251x when announcing to China Telecom (AS4134)
-remarks:        8359:252x when announcing to Akamai (AS20940)
-remarks:        8359:253x when announcing to HK-IX peers
-remarks:        8359:254x when announcing to Hetzner (AS24940)
-remarks:        8359:255x when announcing to OVH Cloud (AS16276)
-remarks:        8359:256x when announcing to Fastly (AS54113)
-remarks:        8359:257x when announcing to Telegram (AS62041)
-remarks:        8359:258x when announcing to Roblox (AS22697)
-remarks:        8359:259x when announcing to CDN77 (AS60068)
-remarks:        8359:209x when announcing to any of the above (8359:20xx,8359:22xx, 8359:23xx, 8359:24xx, 8359:25xx)(International peers)
-remarks:        8359:210x when announcing to MSK-IX peers
-remarks:        8359:211x when announcing to Rostelecom (AS12389)
-remarks:        8359:212x when announcing to Beeline (AS3216)
-remarks:        8359:213x when announcing to TTK (AS20485)
-remarks:        8359:214x when announcing to Comcor (AS8732)
-remarks:        8359:215x when announcing to Beeline (Corbina) (AS8402)
-remarks:        8359:216x when announcing to NSK-IX peers
-remarks:        8359:217x when announcing to Megafon (AS31133)
-remarks:        8359:218x when announcing to Vkontaket-Spb (AS47541)
-remarks:        8359:260x when announcing to Vkontaket-Msk (AS47542)
-remarks:        8359:261x when announcing to Vkontaket-Region (AS28709)
-remarks:        8359:262x when announcing to EKT-IX peers
-remarks:        8359:263x when announcing to Mail.ru (AS47764)
-remarks:        8359:264x when announcing to Rostelecom-Moscow (NCNet) (AS42610)
-remarks:        8359:265x when announcing to Yandex (AS13238)
-remarks:        8359:266x when announcing to ReTN (AS57304)
-remarks:        8359:219x when announcing to any of the above (8359:21xx, 8359:26xx)(National Peers)
-remarks:        8359:299x Summary of total all above
-remarks:        x=0 - do not announce
-remarks:        x=1,2,4 or 6 - add prepend 8359 1,2,4 or 6 times
-remarks:        -----------------------------------------------------------
-remarks:        Internal informational communities, advertised to customers
-remarks:        Community Meaning
-remarks:        8359:50[0,2,4,6,8]x - international peers
-remarks:        5002 - FICIX, Helsinki
-remarks:        5003 - Telia Carrier
-remarks:        5004 - NYIIX, New York
-remarks:        5005 - Ukrtelecom
-remarks:        5006 - DE-CIX, Frankfurt
-remarks:        5007 - Lumen (CenturyLink / Level3)
-remarks:        5008 - AMS-IX, Amsterdam
-remarks:        5009 - G-Core (AS199524)
-remarks:        5020 - reserved
-remarks:        5021 - Netnod, Stockholm
-remarks:        5022 - LINX, London
-remarks:        5023 - reserved
-remarks:        5024 - reserved
-remarks:        5025 - Google
-remarks:        5026 - Equinix, Ashburn
-remarks:        5027 - Any2, Los Angeles
-remarks:        5028 - Equinix NY [PAIX], New York
-remarks:        5029 - Verizon Business (AS702)
-remarks:        5041 - Microsoft
-remarks:        5042 - IPTransit
-remarks:        5043 - DE-CIX NY
-remarks:        5044 - Leasweb
-remarks:        5045 - Apple
-remarks:        5046 - Limelight Networks
-remarks:        5047 - Valve Corp
-remarks:        5048 - Facebook
-remarks:        5049 - Verizon Digital Media (EdgeCast)
-remarks:        5060 - Core-Backbone
-remarks:        5061 - Twitch
-remarks:        5062 - CloudFlare
-remarks:        5063 - Akamai
-remarks:        5064 - Amazon
-remarks:        5065 - China Telecom
-remarks:        5066 - HK-IX
-remarks:        5067 - rezerved
-remarks:        5068 - Hetzner
-remarks:        5069 - OVH
-remarks:        5080 - Fastly
-remarks:        5081 - Telegram
-remarks:        5082 - Roblox
-remarks:        5083 - CDN77
-remarks:        8359:50[1,3]x - national peers
-remarks:        5010 - MSK-IX, Moscow
-remarks:        5011 - Mail.ru
-remarks:        5012 - Beeline (GoldenTelecom)
-remarks:        5013 - TTK
-remarks:        5014 - Comcor (Akado)
-remarks:        5015 - Beeline (Corbina)
-remarks:        5016 - reserved
-remarks:        5017 - Rostelecom
-remarks:        5018 - Vkontakte
-remarks:        5019 - ReTN
-remarks:        5030 - NSK-IX, Novosibirsk
-remarks:        5031 - EKT-IX, Ekaterinburg
-remarks:        5032 - Megafon
-remarks:        5033 - RND-IX, Rostov-on-Don
-remarks:        5034 - Yandex
-remarks:        8359:5500 - AS-MTU (direct bgp clients)
-remarks:        8359:55178 - clients St. Petersburg
-remarks:        8359:55323 - clients Krasnodar/Novorossiisk/Sochi
-remarks:        8359:55566 - clients Ekaterinburg
-remarks:        8359:55572 - clients Tumen
-remarks:        8359:55586 - clients Surgut
-remarks:        8359:55334 - clients Volgograd
-remarks:        8359:55624 - clients Krasnoyarsk/Noril'sk
-remarks:        8359:55638 - clients Irkutsk
-remarks:        8359:55654 - clients Novosibirsk
-remarks:        8359:55642 - clients Kemerovo/Novokuzneczk
-remarks:        8359:55655 - clients Omsk
-remarks:        8359:55361 - clients Rostov on Don
-remarks:        8359:55452 - clients Nizhniy Novgorod
-remarks:        8359:55458 - clients Penza
-remarks:        8359:55418 - clients Izhevsk
-remarks:        8359:55271 - clients Tula
-remarks:        8359:55262 - clients Ryazan
-remarks:        8359:55269 - clients Tver
-remarks:        8359:55153 - clients Velikiy Novgorod
-remarks:        8359:55574 - clients Chelyabinsk
-remarks:        8359:55416 - clients Kazan/Naberezhnye Chelny
-remarks:        8359:55464 - clients Saratov
-remarks:        8359:55257 - clients Orel
-remarks:        8359:55231 - clients Belgorod
-remarks:        8359:55110 - clients Petrozavodsk
-remarks:        8359:55151 - clients Murmansk
-remarks:        8359:55443 - clients Kirov
-remarks:        8359:55233 - clients Vladimir
-remarks:        8359:55268 - clients Tambov
-remarks:        8359:55463 - clients Samara
-remarks:        8359:55277 - clients Moscow
-remarks:        8359:55250 - clients Moscow region
-remarks:        8359:55246 - clients Kursk
-remarks:        8359:55330 - clients Astrakhan
-remarks:        8359:55240 - clients Kaluga
-remarks:        8359:55402 - clients Ufa
-remarks:        8359:55459 - clients Perm
-remarks:        8359:55257 - clients Smolensk
-remarks:        8359:55232 - clients Bryansk
-remarks:        8359:55237 - clients Ivanovo
-remarks:        8359:55276 - clients Yaroslavl'
-remarks:        8359:55135 - clients Vologda/Cherepovets
-remarks:        8359:55473 - clients Ul'yanovsk
-remarks:        8359:55456 - clients Orenburg
-remarks:        8359:55725 - clients Vladivostok
-remarks:        8359:55727 - clients Khabarovsk/Komsomol'sk on Amur
-remarks:        8359:55775 - clients Chita
-remarks:        8359:55703 - clients Ulan-Ude
-remarks:        8359:55129 - clients Arkhangelsk
-remarks:        8359:8359 - AS8359 itself
-remarks:        -----------------------------------------------------------
-remarks:        To watch for your announces you can use looking glass at
-remarks:        http://lg.mtu.ru
-remarks:        -----------------------------------------------------------
-admin-c:        MTU1-RIPE
-tech-c:         MTU1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:20:57Z
-last-modified:  2025-04-29T08:40:32Z
+last-modified:  2025-06-05T20:46:30Z
 source:         RIPE
+
+as-num:         AS8359
+country:        RU
+as-name:        MTS MTS PJSC
 
 organisation:   ORG-ZM1-RIPE
 org-name:       MTS PJSC
 country:        RU
 org-type:       LIR
-address:        Smolenskaya-Sennaya sq., 27 bld 2
-address:        119121
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74957213499
-fax-no:         +74992318129
-admin-c:        LAP-RIPE
-admin-c:        TABY-RIPE
-admin-c:        LMUR-RIPE
-admin-c:        YUF-RIPE
-admin-c:        RPS-RIPE
+address:        Dummy address for ORG-ZM1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        MAB8359-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MTU-NOC
@@ -2703,30 +2495,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MTU-NOC
 created:        2004-04-17T11:55:44Z
 last-modified:  2024-01-16T14:42:44Z
-source:         RIPE # Filtered
-
-role:           MTS backbone NOC
-address:        PJSC MTS / former CJSC Comstar-Direct
-address:        Petrovsky blvd 12, bldg 3
-address:        P.O. BOX 4711 127051
-address:        Moscow, Russia
-remarks:        **************************************
-remarks:        Contact addresses:
-remarks:        routing & peering noc@mtu.ru
-remarks:        spam & security abuse@mtu.ru
-remarks:        mail postmaster@mtu.ru
-remarks:        ddos reports ddos-reports@mtu.ru
-remarks:        **************************************
-phone:          +7 495 721-34-99
-fax-no:         +7 495 956-07-07
-admin-c:        EDA-RIPE
-admin-c:        RPS-RIPE
-tech-c:         EDA-RIPE
-nic-hdl:        MTU1-RIPE
-mnt-by:         MTU-NOC
-created:        2002-10-18T13:29:19Z
-last-modified:  2022-04-08T13:50:05Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

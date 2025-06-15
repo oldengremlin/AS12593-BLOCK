@@ -1,20 +1,8 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
-
-
-
-
 aut-num:        AS34602
 as-name:        STARLINK-AS
 descr:          Moscow, Russia
 descr:          http://www.starlink.ru
 org:            ORG-ML423-RIPE
-remarks:        ======================================================
-remarks:
-remarks:
-remarks:
-remarks:        Uplinks
-remarks:        ------------------------------------------------------
 import:         from AS43727 action pref=100; accept ANY;
 export:         to AS43727 announce AS-STARLNK;
 import:         from AS25478 action pref=100; accept ANY;
@@ -31,16 +19,10 @@ import:         from AS28917 action pref=100; accept ANY;
 export:         to AS28917 announce AS-STARLNK;
 import:         from AS201706 action pref=100; accept ANY;
 export:         to AS201706 announce AS-STARLNK;
-remarks:        ======================================================
-remarks:        DATALINE Peers
-remarks:        ------------------------------------------------------
 import:         from AS203921 action pref=200; accept AS-ELBA-IX-ROUTESERVER;
 export:         to AS203921 announce AS-STARLNK;
 mp-import:      afi ipv6.unicast from AS203921 accept AS-ELBA-IX-ROUTESERVER;
 mp-export:      afi ipv6.unicast to AS203921 announce AS-STARLNK;
-remarks:        ======================================================
-remarks:        MSK-IX Peers
-remarks:        ------------------------------------------------------
 import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER;
 export:         to AS8631 announce AS-STARLNK;
 mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER;
@@ -93,37 +75,22 @@ import:         from AS714 action pref=200; accept AS714;
 export:         to AS714 announce AS-STARLNK;
 mp-import:      afi ipv6.unicast from AS714 accept AS714;
 mp-export:      afi ipv6.unicast to AS714 announce AS-STARLNK;
-remarks:        ======================================================
-remarks:        Peering at W-IX
-remarks:        ------------------------------------------------------
 import:         from AS50384 accept AS-W-IX;
 export:         to AS50384 announce AS-STARLNK;
 mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX;
 mp-export:      afi ipv6.unicast to AS50384 announce AS-STARLNK;
-remarks:        ======================================================
-remarks:        Peering at DATA-IX
-remarks:        ------------------------------------------------------
 import:         from AS50952 accept AS-DATAIX;
 export:         to AS50952 announce AS-STARLNK;
 mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX;
 mp-export:      afi ipv6.unicast to AS50952 announce AS-STARLNK;
 import:         from AS6939 accept AS-HURRICANE;
 export:         to AS6939 announce AS-STARLNK;
-remarks:        ======================================================
-remarks:        Peering at Eurasia Peering IX
-remarks:        ------------------------------------------------------
 import:         from AS56931 accept AS-EURASIAPEERING_RS;
 export:         to AS56931 announce AS-STARLNK;
-remarks:        ======================================================
-remarks:        Private Peers
-remarks:        ------------------------------------------------------
 import:         from AS15169 accept AS-GOOGLE;
 export:         to AS15169 announce AS-STARLNK;
 mp-import:      afi ipv6.unicast from AS15169 accept AS-GOOGLE;
 mp-export:      afi ipv6.unicast to AS15169 announce AS-STARLNK;
-remarks:        ======================================================
-remarks:        Clients
-remarks:        ------------------------------------------------------
 import:         from AS203117 action pref=100; accept AS203117;
 export:         to AS203117 announce ANY;
 import:         from AS59829 action pref=100; accept AS59829;
@@ -162,22 +129,16 @@ import:         from AS205595 action pref=100; accept AS205595;
 export:         to AS205595 announce ANY;
 import:         from AS57085 action pref=100; accept AS57085;
 export:         to AS57085 announce ANY;
-remarks:        ======================================================
-remarks:        BGP COMMUNITIES SUPPORTED FROM OUR TRANSIT CUSTOMERS
-remarks:        ------------------------------------------------------
-remarks:        Community Meaning
-remarks:        34602:601x When advertising to Foton AS42861
-remarks:        34602:602x When advertising to Dataline AS49063
-remarks:        ...x=0 - do not advertise
-admin-c:        STNO4-RIPE
-tech-c:         STNO4-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@starlink.ru
 mnt-by:         MNT-STRL
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-megasvyaz-1-mnt
 created:        2005-02-22T14:10:38Z
 last-modified:  2022-07-26T08:11:22Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

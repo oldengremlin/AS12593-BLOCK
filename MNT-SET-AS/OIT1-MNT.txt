@@ -1,3 +1,138 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 212.90.160.3 port 22
+as-set:         AS-INFOLINK
+descr:          All Infolink announced AS
+members:        AS35539
+members:        AS50553
+members:        AS211563
+members:        AS215584
+members:        AS60681
+members:        AS-DELTELECOM
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         OIT1-MNT
+created:        2007-04-09T06:48:31Z
+last-modified:  2025-04-02T14:19:36Z
+source:         RIPE
+
+
+
+as-set:         AS60681:AS-BIOCOMBINAT
+descr:          Biocombinat- as-set
+members:        AS35539
+members:        AS28917
+members:        AS60681
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         CP-MNT
+mnt-by:         OIT1-MNT
+created:        2024-09-06T08:04:25Z
+last-modified:  2024-12-11T09:39:16Z
+source:         RIPE
+
+
+
+aut-num:        AS211563
+as-name:        stilkuhni
+org:            ORG-OIT1-RIPE
+import:         from AS35539 accept ANY
+export:         to AS35539 announce AS211563
+import:         from AS33993 accept ANY
+export:         to AS33993 announce AS211563
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         OIT1-MNT
+created:        2022-10-26T13:11:11Z
+last-modified:  2022-10-26T13:11:11Z
+source:         RIPE
+
+
+
+aut-num:        AS35539
+as-name:        INFOLINK-T-AS
+descr:          Moscow, Russia
+org:            ORG-OIT1-RIPE
+import:         from AS28917 action pref=110; accept ANY
+import:         from AS35598 action pref=110; accept ANY
+import:         from AS202984 action pref=110; accept ANY
+export:         to AS28917 announce AS-INFOLINK
+export:         to AS35598 announce AS-INFOLINK
+export:         to AS202984 announce AS-INFOLINK
+mp-import:      afi ipv6.unicast from AS28917 action pref=110; accept ANY
+mp-export:      afi ipv6.unicast to AS28817 announce AS-INFOLINK
+import:         from AS8631 action pref=120; accept ANY
+export:         to AS8631 announce AS-INFOLINK
+import:         from AS31500 action pref=125; accept AS31500
+export:         to AS31500 announce AS-INFOLINK
+import:         from AS48166 action pref=125; accept AS48166
+export:         to AS48166 announce AS-INFOLINK
+import:         from AS46489 action pref=125; accept AS46489
+export:         to AS46489 announce AS-INFOLINK
+import:         from AS16509 action pref=125; accept AS16509
+export:         to AS16509 announce AS-INFOLINK
+import:         from AS45102 action pref=125; accept AS45102
+export:         to AS45102 announce AS-INFOLINK
+import:         from AS136907 action pref=125; accept AS136907
+export:         to AS136907 announce AS-INFOLINK
+import:         from AS6939 action pref=125; accept AS6939
+export:         to AS6939 announce AS-INFOLINK
+import:         from AS50952 action pref=115; accept ANY
+export:         to AS50952 announce AS-INFOLINK
+import:         from AS31500 action pref=115; accept ANY
+export:         to AS31500 announce AS-INFOLINK
+import:         from AS50553 action pref=130; accept AS50553
+export:         to AS50553 announce ANY
+import:         from AS197821 action pref=130; accept AS197821
+export:         to AS197821 announce ANY
+import:         from AS211563 action pref=130; accept AS211563
+export:         to AS211563 announce ANY
+import:         from AS215584 action pref=130; accept AS215584
+export:         to AS215584 announce ANY
+import:         from AS60681 action pref=130; accept AS60681
+export:         to AS60681 announce ANY
+notify:         it@infolink.ru
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         OIT1-MNT
+created:        2005-08-30T15:50:21Z
+last-modified:  2025-06-10T14:04:25Z
+source:         RIPE
+
+
+
+aut-num:        AS57615
+as-name:        ispnet-me
+org:            ORG-RL111-RIPE
+import:         from AS52091 action pref=100; accept ANY
+import:         from AS201776 action pref=100; accept ANY
+export:         to AS52091 announce ANY
+export:         to AS201776 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+abuse-c:        AC43434-RIPE
+status:         ASSIGNED
+mnt-by:         OIT1-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2011-12-09T10:03:42Z
+last-modified:  2024-04-26T10:34:06Z
+source:         RIPE
+sponsoring-org: ORG-OIT1-RIPE
+
+
+
+aut-num:        AS60681
+as-name:        BIOCOMBINAT
+org:            ORG-OIT1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         OIT1-MNT
+created:        2013-05-29T14:35:52Z
+last-modified:  2024-09-06T09:35:41Z
+source:         RIPE
+
+
+

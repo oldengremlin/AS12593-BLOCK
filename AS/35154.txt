@@ -1,28 +1,9 @@
-
-
-
-as-block:       AS35009 - AS35250
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-05-01T14:06:15Z
-last-modified:  2024-05-01T14:06:15Z
-source:         RIPE
-
-
-
 aut-num:        AS35154
 as-name:        TELENET-AS
 org:            ORG-JR8-RIPE
 descr:          Teleset Service LLC
-remarks:        --------------------------------------
-remarks:        == Uplinks ==
-remarks:        --------------------------------------
 import:         from AS12389 action pref=95; accept ANY
 export:         to AS12389 announce AS-KABINET
-remarks:        --------------------------------------
-remarks:        == Peers ==
-remarks:        --------------------------------------
 import:         from AS5563 action pref=200; accept AS-URAL
 import:         from AS6828 action pref=200; accept AS-USI
 import:         from AS12668 action pref=200; accept AS12668
@@ -53,14 +34,10 @@ export:         to AS31363 announce AS-KABINET
 export:         to AS34879 announce AS-KABINET
 export:         to AS41082 announce AS-KABINET
 export:         to AS41560 announce AS-KABINET
-remarks:        --------------------------------------
-remarks:        == EKT-IX ==
-remarks:        --------------------------------------
 import:         from AS43213 action pref=190; accept AS-EKTROUTESERVER
 export:         to AS43213 announce AS-KABINET
-remarks:        --------------------------------------
-admin-c:        TLNT-RIPE
-tech-c:         TLNT-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TELENET1-MNT
@@ -68,32 +45,16 @@ created:        2005-06-14T09:54:12Z
 last-modified:  2024-05-13T10:47:23Z
 source:         RIPE
 
+as-num:         AS35154
+country:        RU
+as-name:        TELENET-AS PJSC Rostelecom
+
 organisation:   ORG-JR8-RIPE
 org-name:       PJSC Rostelecom
 country:        RU
 org-type:       LIR
-address:        14 A, Sinopskaya nabereznaya
-address:        191167
-address:        S.Peterburg
-address:        RUSSIAN FEDERATION
-phone:          +7 499 999-82-83
-fax-no:         +74999953619
-admin-c:        RTNC-RIPE
-admin-c:        EP6706-RIPE
-admin-c:        IE1277-RIPE
-admin-c:        NM7547-RIPE
-admin-c:        AA728-RIPE
-admin-c:        SVS153-RIPE
-admin-c:        ASV77-RIPE
-admin-c:        RVP-RIPE
-admin-c:        VEV57-RIPE
-admin-c:        TR4627-RIPE
-admin-c:        TL4565-RIPE
-admin-c:        DN216-RIPE
-admin-c:        DA2353-RIPE
-admin-c:        IS111-RIPE
-admin-c:        VE128-RIPE
-admin-c:        SS216-RIPE
+address:        Dummy address for ORG-JR8-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        RTNC-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        ROSTELECOM-MNT
@@ -102,19 +63,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2005-03-22T11:11:20Z
 last-modified:  2023-01-26T10:52:42Z
-source:         RIPE # Filtered
-
-role:           Teleset-Servis Ltd. NOC
-address:        13, 8 Marta st.
-address:        Yekaterinburg, Russia
-admin-c:        IL154-RIPE
-tech-c:         DMVY-RIPE
-tech-c:         BUD2-RIPE
-nic-hdl:        TLNT-RIPE
-mnt-by:         TELENET1-MNT
-created:        2012-11-23T08:09:32Z
-last-modified:  2012-11-23T08:09:32Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

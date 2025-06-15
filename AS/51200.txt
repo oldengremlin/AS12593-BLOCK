@@ -1,31 +1,14 @@
-
-
-
-as-block:       AS50893 - AS51311
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-12-10T14:54:30Z
-last-modified:  2024-12-10T14:54:30Z
-source:         RIPE
-
-
-
 aut-num:        AS51200
 as-name:        DIDI-AS
-remarks:        di-di.ru
 org:            ORG-LDD1-RIPE
-remarks:        ---------------------- UPSTREAM -----------------------------------------
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-DI-DI
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-DI-DI
 import:         from AS58002 accept ANY
 export:         to AS58002 announce AS-DI-DI
-remarks:        ---------------------- Clients -------------------------
 import:         from AS51384 accept AS51384
 export:         to AS51384 announce AS51200
-remarks:        ------------------ Peering ---------------
 export:         to AS48216 announce AS-DI-DI
 import:         from AS48216 accept ANY
 export:         to AS8631 announce AS-DI-DI
@@ -46,27 +29,27 @@ export:         to AS35598 announce AS-DI-DI
 import:         from AS35598 accept AS35598
 export:         to AS59428 announce AS-DI-DI
 import:         from AS59428 accept ANY
-admin-c:        VB1921-RIPE
-tech-c:         VB1921-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSNIIROS-MNT
 mnt-by:         DIDI-MNT
 created:        2010-06-18T09:53:44Z
 last-modified:  2025-03-31T06:19:45Z
-source:         RIPE # Filtered
+source:         RIPE
+notify:         noc@di-di.ru
+
+as-num:         AS51200
+country:        RU
+as-name:        DIDI-AS LLC Digital Dialogue-Nets
 
 organisation:   ORG-LDD1-RIPE
 org-name:       LLC Digital Dialogue-Nets
 country:        RU
 org-type:       LIR
-address:        TEKUCHEVA STREET, D. 141, ROOM 1, OFFICE 33
-address:        344003
-address:        Rostov-na-Donu
-address:        RUSSIAN FEDERATION
-phone:          +7 863 308-9-308
-admin-c:        VB6312-RIPE
-tech-c:         VB6312-RIPE
+address:        Dummy address for ORG-LDD1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR46086-RIPE
 mnt-ref:        ru-di-di-1-mnt
 mnt-ref:        ROSNIIROS-MNT
@@ -74,18 +57,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         ru-di-di-1-mnt
 created:        2018-04-19T06:40:51Z
 last-modified:  2024-07-04T07:49:08Z
-source:         RIPE # Filtered
-
-person:         Vitaly Bulakhov
-address:        344018, Rostov-on-Don, Russia
-address:        Dolomanovsky, 130
-phone:          +7 863 308-9-308
-fax-no:         +7 863 308-9-308
-nic-hdl:        VB1921-RIPE
-created:        2006-09-25T13:37:39Z
-last-modified:  2019-10-01T09:03:10Z
-source:         RIPE # Filtered
-mnt-by:         ru-di-di-1-mnt
-
+source:         RIPE
 
 

@@ -1,3 +1,156 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 212.90.160.3 port 22
+as-set:         AS-MSU
+descr:          Moscow State University Network
+members:        AS2848
+members:        AS42364
+members:        AS212899
+members:        AS213761
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@msu.ru
+mnt-by:         MSU-MNT
+created:        2005-07-05T10:00:19Z
+last-modified:  2025-06-10T16:11:18Z
+source:         RIPE
+
+
+
+as-set:         AS-MSUPEER
+descr:          Moscow State University Network
+members:        AS-MSU
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@msu.ru
+mnt-by:         MSU-MNT
+created:        2014-06-25T12:51:11Z
+last-modified:  2014-06-25T12:51:11Z
+source:         RIPE
+
+
+
+as-set:         AS-MSURBNET
+descr:          MSU transit to RBNET
+members:        AS2848
+members:        AS2148
+members:        AS12925
+members:        AS5467
+members:        AS28800
+members:        AS42364
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@msu.ru
+mnt-by:         MSU-MNT
+created:        2007-02-13T14:15:14Z
+last-modified:  2010-11-02T16:43:45Z
+source:         RIPE
+
+
+
+as-set:         AS-MSURUNNET
+descr:          MSU transit AS
+members:        AS2848
+members:        AS-MSUNET
+members:        AS42364
+members:        AS49929
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@msu.ru
+mnt-by:         MSU-MNT
+created:        2002-08-08T14:19:58Z
+last-modified:  2011-08-03T08:52:40Z
+source:         RIPE
+
+
+
+aut-num:        AS2848
+as-name:        MSU
+descr:          Vorobjovy Gory, Moscow, Russia
+org:            ORG-LMSU1-RIPE
+import:         from AS2578 accept AS-DEMOS AS-RUDEMOS
+import:         from AS2683 accept AS-RADIOMSU
+import:         from AS3058 accept ANY
+import:         from AS3267 accept ANY
+import:         from AS3316 accept AS-RELARN
+import:         from AS5429 accept AS-IIPNET
+import:         from AS5537 accept AS-GARANTPARK
+import:         from AS5568 accept ANY
+import:         from AS6863 accept AS-ROSNET
+import:         from AS6903 accept AS-ZENON
+import:         from AS8491 accept AS-BSH
+import:         from AS8592 accept AS-MSUNET
+import:         from AS8631 accept ANY
+import:         from AS9031 accept AS-EDPNET
+import:         from AS9032 accept AS-EDUNET
+import:         from AS9110 accept AS-AGTEL-RUS
+import:         from AS12654 accept AS12654:RS-RIS
+import:         from AS12695 accept AS-DINET^+
+import:         from AS13105 accept AS-LUKOIL
+import:         from AS13238 accept AS-YANDEX
+import:         from AS15169 accept AS-GOOGLE
+import:         from AS15756 accept AS-CARAVANRUS
+import:         from AS25308 accept AS-CITYLAN
+import:         from AS28870 accept AS-PLUS-IX
+import:         from AS28917 accept AS-FIORD
+import:         from AS34879 accept AS-NGENIX-MSK
+import:         from AS42364 accept AS42364
+import:         from AS49929 accept AS49929
+export:         to AS2578 announce AS-MSUPEER
+export:         to AS2683 announce AS-MSU
+export:         to AS2820 announce AS-MSUPEER
+export:         to AS3058 announce AS-MSU
+export:         to AS3267 announce AS-MSU
+export:         to AS3316 announce AS-MSUPEER
+export:         to AS5429 announce AS-MSUPEER
+export:         to AS5537 announce AS-MSUPEER
+export:         to AS5568 announce AS-MSUPEER
+export:         to AS6863 announce AS-MSUPEER
+export:         to AS6903 announce AS-MSUPEER
+export:         to AS8491 announce AS-MSUPEER
+export:         to AS8592 announce AS-MSUPEER
+export:         to AS8631 announce AS-MSUPEER
+export:         to AS9031 announce AS-MSUPEER
+export:         to AS9032 announce AS-MSUPEER
+export:         to AS9110 announce AS-MSUPEER
+export:         to AS12654 announce AS-MSUPEER
+export:         to AS12695 announce AS-MSUPEER
+export:         to AS13105 announce AS-MSUPEER
+export:         to AS13238 announce AS-MSUPEER
+export:         to AS15169 announce AS-MSUPEER
+export:         to AS15756 announce AS-MSUPEER
+export:         to AS25308 announce AS-MSUPEER
+export:         to AS28800 announce ANY
+export:         to AS28870 announce AS-MSUPEER
+export:         to AS28917 announce AS-MSUPEER
+export:         to AS34879 announce AS-MSUPEER
+export:         to AS42364 announce ANY
+export:         to AS49929 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MSU-MNT
+created:        2002-04-09T11:54:02Z
+last-modified:  2017-11-15T09:15:01Z
+source:         RIPE
+
+
+
+aut-num:        AS42364
+as-name:        ALELNET
+org:            ORG-LMSU1-RIPE
+import:         from AS2848 accept ANY
+import:         from AS2643 accept ANY
+export:         to AS2848 announce AS42364
+export:         to AS2643 announce AS42364
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@alel.net
+mnt-by:         MSU-MNT
+mnt-by:         ALELNET-MNT
+created:        2007-02-08T16:52:04Z
+last-modified:  2021-07-09T12:40:45Z
+source:         RIPE
+
+
+

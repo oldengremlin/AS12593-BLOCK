@@ -1,3 +1,75 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.3 port 22
+as-set:         AS-INTERKAMSERVICE
+descr:          InterKamService and customers AS
+members:        AS42742
+members:        AS47375
+members:        AS49098
+members:        AS49839
+members:        AS50502
+members:        AS44064
+members:        AS59603
+members:        AS29304
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-INTERKAMSERVICE
+mnt-by:         mnt-ru-interkamservice-1
+notify:         v.bobyrev@mail.ru
+created:        2008-04-10T20:29:40Z
+last-modified:  2024-10-09T05:31:00Z
+source:         RIPE
+
+
+
+aut-num:        AS42742
+as-name:        INTERKAMSERVICE-AS
+org:            ORG-IL570-RIPE
+import:         from AS29304 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS47375 accept AS47375
+import:         from AS49098 accept AS49098
+import:         from AS49839 accept AS49839
+import:         from AS50502 accept AS50502
+import:         from AS58047 accept AS58047
+import:         from AS44064 accept AS44064
+import:         from AS59603 accept AS59603
+export:         to AS29304 announce AS-INTERKAMSERVICE
+export:         to AS12389 announce AS-INTERKAMSERVICE
+export:         to AS31133 announce AS-INTERKAMSERVICE
+export:         to AS3216 announce AS-INTERKAMSERVICE
+export:         to AS47375 announce ANY
+export:         to AS49098 announce ANY
+export:         to AS49839 announce ANY
+export:         to AS58047 announce ANY
+export:         to AS50502 announce ANY
+export:         to AS44064 announce ANY
+export:         to AS59603 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         v.bobyrev@mail.iks.ru
+mnt-by:         MNT-INTERKAMSERVICE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-interkamservice-1
+created:        2007-04-10T13:15:43Z
+last-modified:  2024-11-07T02:02:19Z
+source:         RIPE
+
+
+
+aut-num:        AS49839
+as-name:        INTERKAMSERVICE-AS
+org:            ORG-IL570-RIPE
+import:         from AS42742 accept ANY
+export:         to AS42742 announce AS49839
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-interkamservice-1
+created:        2009-09-29T09:06:51Z
+last-modified:  2021-04-14T03:55:21Z
+source:         RIPE
+
+
+

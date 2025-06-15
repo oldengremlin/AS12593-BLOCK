@@ -1,85 +1,52 @@
-
-
-
-as-block:       AS50220 - AS50841
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-08-12T14:10:44Z
-last-modified:  2024-08-12T14:10:44Z
-source:         RIPE
-
-
-
 aut-num:        AS50265
 as-name:        GT-AS
 org:            ORG-IML10-RIPE
-remarks:        ---------------------------------------------
-remarks:        IPv4 Routing Policy
-remarks:        ---------------------------------------------
-remarks:        Beeline
 import:         from AS3216 accept ANY;
 export:         to AS3216 announce AS-GT;
-remarks:        Nauka
 import:         from AS8641 accept ANY;
 export:         to AS8641 announce AS-GT;
-remarks:        Dinet
 import:         from AS12695 accept ANY;
 export:         to AS12695 announce AS-GT;
-remarks:        MSK-IX
 import:         from AS8631 accept AS-MSKROUTESERVER;
 export:         to AS8631 announce AS-GT;
-remarks:        SPB-IX
 import:         from AS43690 accept AS-SPBROUTESERVER;
 export:         to AS43690 announce AS-GT;
-remarks:        Delta
 import:         from AS48383 accept AS-DTEL;
 export:         to AS48383 announce ANY;
-remarks:        StarNetworks
 import:         from AS33902 accept AS33902;
 export:         to AS33902 announce ANY;
-remarks:        MATRAS
 import:         from AS42529 accept AS42529;
 export:         to AS42529 announce ANY;
-remarks:        ATD
 import:         from AS43628 accept AS43628;
 export:         to AS43628 announce {0.0.0.0/0};
-remarks:        Telecom Technologies
 import:         from AS48241 accept AS48241;
 export:         to AS48241 announce ANY;
-remarks:        ---------------------------------------------
-remarks:        IPv6 Routing Policy
-remarks:        ---------------------------------------------
-remarks:        Beeline
 mp-import:      afi ipv6.unicast from AS3216 accept ANY;
 mp-export:      afi ipv6.unicast to AS3216 announce AS-GT-IPV6;
-remarks:        Nauka
 mp-import:      afi ipv6.unicast from AS8641 accept ANY;
 mp-export:      afi ipv6.unicast to AS8641 announce AS-GTv6;
-remarks:        MSK-IX
 mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER;
 mp-export:      afi ipv6.unicast to AS8631 announce AS-GTv6;
-admin-c:        DNK8-RIPE
-tech-c:         GNOC2010-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@mega-net.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GT
 created:        2009-12-11T14:25:00Z
 last-modified:  2024-11-13T08:55:18Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS50265
+country:        RU
+as-name:        GT-AS Invest Mobile LLC
 
 organisation:   ORG-IML10-RIPE
 org-name:       Invest Mobile LLC
 country:        RU
 org-type:       LIR
-address:        Volokolamskoe shosse, 1, bldg.1
-address:        125080
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74953803233
-fax-no:         +74953803233
-admin-c:        DNK8-RIPE
-admin-c:        SIM-RIPE
+address:        Dummy address for ORG-IML10-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        GNOC2010-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MNT-GT
@@ -87,27 +54,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MNT-GT
 created:        2013-02-21T11:09:02Z
 last-modified:  2024-12-03T07:51:53Z
-source:         RIPE # Filtered
-
-role:           GOLD TELECOM NOC
-address:        125080, RUSSIA, Moscow, Volokolamskoe shosse, 1, bldg.1, office 807.4
-abuse-mailbox:  abuse@gold-telecom.ru
-admin-c:        DNK8-RIPE
-tech-c:         DNK8-RIPE
-nic-hdl:        GNOC2010-RIPE
-mnt-by:         MNT-GT
-created:        2010-05-19T10:15:10Z
-last-modified:  2020-08-03T14:03:55Z
-source:         RIPE # Filtered
-
-person:         Denis N. Kovalev
-address:        Russia, Moscow
-phone:          +7 (495) 380-32-33
-nic-hdl:        DNK8-RIPE
-mnt-by:         MNT-GT
-created:        2009-12-08T14:18:11Z
-last-modified:  2013-02-22T10:12:09Z
 source:         RIPE
-
 
 

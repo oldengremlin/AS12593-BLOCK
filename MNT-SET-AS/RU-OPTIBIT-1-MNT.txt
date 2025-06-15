@@ -1,6 +1,21 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
-
+as-set:         AS-OPTIBIT
+descr:          AS-SET for DataCenter www.optibit.ru
+members:        AS8496
+members:        AS21030
+members:        AS34879
+members:        AS51289
+members:        AS57363
+members:        AS61084
+members:        AS202576
+members:        AS209372
+members:        AS-MISAKA
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ru-optibit-1-mnt
+created:        2014-06-11T07:26:48Z
+last-modified:  2020-11-11T16:35:14Z
+source:         RIPE
+notify:         ceo@optibit.ru
 
 
 
@@ -11,8 +26,8 @@ import:         from AS8496 accept {0.0.0.0/0}
 export:         to AS8496 announce AS202576
 import:         from AS13094 accept AS-MILECOM-RS
 export:         to AS13094 announce AS202576
-admin-c:        DVG94-RIPE
-tech-c:         ADOB-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-optibit-1-mnt
@@ -29,8 +44,8 @@ import:         from AS60763 accept AS-SIBIR-IX
 import:         from AS33991 accept ANY
 export:         to AS60763 announce AS-OPTIZONE
 export:         to AS33991 announce AS-OPTIZONE
-admin-c:        DVG94-RIPE
-tech-c:         ADOB-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OPTIZONE-MNT
@@ -47,8 +62,8 @@ org:            ORG-LS536-RIPE
 import:         from AS34784 accept ANY
 export:         to AS34784 announce AS43605
 sponsoring-org: ORG-OL159-RIPE
-admin-c:        BA8755-RIPE
-tech-c:         AB46332-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-optibit-1-mnt
@@ -66,8 +81,8 @@ import:         from AS33991 accept ANY
 export:         to AS33991 announce AS49643
 import:         from AS13094 accept ANY
 export:         to AS13094 announce AS49643
-admin-c:        DVG94-RIPE
-tech-c:         DVG94-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-optibit-1-mnt
@@ -82,8 +97,8 @@ as-name:        SIBIR-IX-RS
 org:            ORG-OL159-RIPE
 import:         from AS33991 accept ANY
 export:         to AS33991 announce AS50699
-admin-c:        DVG94-RIPE
-tech-c:         ADOB-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-optibit-1-mnt
@@ -101,9 +116,8 @@ import:         from AS13094 accept ANY
 import:         from AS48858 accept ANY
 export:         to AS13094 announce AS60625
 export:         to AS48858 announce AS60625
-admin-c:        EB14303-RIPE
-admin-c:        DS25959-RIPE
-tech-c:         EB14303-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-optibit-1-mnt
@@ -118,14 +132,12 @@ source:         RIPE
 aut-num:        AS8496
 as-name:        RU-OPTIBIT
 org:            ORG-OL159-RIPE
-remarks:        Upstreams:
 import:         from AS33991 accept ANY
 import:         from AS60763 accept AS-SIBIR-IX
 import:         from AS13094 accept AS-MILECOM-RS
 export:         to AS33991 announce AS-OPTIBIT
 export:         to AS60763 announce AS-OPTIBIT
 export:         to AS13094 announce AS-OPTIBIT
-remarks:        Downstreams:
 import:         from AS21030 accept AS21030
 import:         from AS34879 accept AS34879
 import:         from AS36344 accept AS36344
@@ -138,14 +150,15 @@ export:         to AS36344 announce { 0.0.0.0/0 }
 export:         to AS61084 announce { 0.0.0.0/0 }
 export:         to AS202576 announce { 0.0.0.0/0 }
 export:         to AS209372 announce { 0.0.0.0/0 }
-admin-c:        DVG94-RIPE
-tech-c:         DVG94-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-optibit-1-mnt
 created:        2011-01-14T11:48:48Z
 last-modified:  2019-10-14T18:54:17Z
-source:         RIPE # Filtered
+source:         RIPE
+notify:         ceo@optibit.ru
 
 
 

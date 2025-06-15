@@ -1,3 +1,208 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 94.125.121.58 port 22
+as-set:         AS-KZN-RTCENTER
+descr:          ASes routed by JSC RT Center
+members:        AS39293
+members:        AS-TVT
+members:        AS-MELT
+members:        AS-TELESET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2009-08-11T15:44:31Z
+last-modified:  2010-03-19T12:43:49Z
+source:         RIPE
+
+
+
+as-set:         AS-PNZ-RTCENTER
+descr:          ASes routed by JSC RT Center
+members:        AS39293
+members:        AS-RCS-PNZ1
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2008-02-19T05:28:21Z
+last-modified:  2013-03-05T12:55:36Z
+source:         RIPE
+
+
+
+as-set:         AS-RTCENTER
+descr:          ASes routed by JSC RT Center
+members:        AS-SAMARA-RTCENTER
+members:        AS-ULIANOVSK-RTCENTER
+members:        AS-PNZ-RTCENTER
+members:        AS-TLT-RTCENTER
+members:        AS-KZN-RTCENTER
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2008-06-09T05:09:40Z
+last-modified:  2009-08-11T15:46:06Z
+source:         RIPE
+
+
+
+as-set:         AS-RTCENTER-IPV6
+descr:          ASes routed by JSC RT Center
+members:        AS39293
+members:        AS-SAMARA-RTCENTER-IPV6
+members:        AS-SAMARA-TOGLIATTY-IPV6
+members:        AS-ULIANOVSK-RTCENTER-IPV6
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2011-09-01T11:21:35Z
+last-modified:  2024-12-07T08:06:16Z
+source:         RIPE
+
+
+
+as-set:         AS-SAMARA-RTCENTER
+tech-c:         DUMY-RIPE
+descr:          ASes routed by JSC RT Center
+admin-c:        DUMY-RIPE
+members:        AS39293
+members:        AS30852
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2019-12-20T12:52:31Z
+last-modified:  2019-12-20T13:05:38Z
+source:         RIPE
+
+
+
+as-set:         AS-SAMARA-RTCENTER-IPV6
+descr:          ASes routed by JSC RT Center
+members:        AS39293
+members:        AS-INFOLADA
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2013-04-12T05:22:53Z
+last-modified:  2024-12-07T08:05:45Z
+source:         RIPE
+
+
+
+as-set:         AS-SAMARA-TOGLIATTY-IPV6
+descr:          ASes routed by JSC RT Center
+members:        AS39293
+members:        AS-INFOLADA
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2014-10-28T11:02:01Z
+last-modified:  2024-12-07T08:09:17Z
+source:         RIPE
+
+
+
+as-set:         AS-TLT-RTCENTER
+descr:          ASes routed by JSC RT Center
+members:        AS39293
+members:        AS-SAMARA-STOTELECOM
+members:        AS-AISTNET
+members:        AS-INFOLADA
+members:        AS196673
+members:        AS-ZHIGULINET
+members:        AS-TOTCOM
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2007-12-27T05:56:20Z
+last-modified:  2024-12-07T08:08:46Z
+source:         RIPE
+
+
+
+as-set:         AS-ULIANOVSK-RTCENTER
+descr:          ASes routed by JSC RT Center
+members:        AS39293
+members:        AS3217
+members:        AS198207
+members:        AS50716
+members:        AS-TELECOMRU
+members:        AS-DARS-IP
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2007-11-30T11:39:17Z
+last-modified:  2019-06-17T08:53:15Z
+source:         RIPE
+
+
+
+as-set:         AS-ULIANOVSK-RTCENTER-IPV6
+descr:          ASes routed by JSC RT Center
+members:        AS39293
+members:        AS50716
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2013-04-12T05:28:17Z
+last-modified:  2014-10-28T11:09:06Z
+source:         RIPE
+
+
+
+aut-num:        AS39293
+as-name:        RTCENTER-AS
+org:            ORG-SR8-RIPE
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS-SAMARA-RTCENTER
+import:         from AS8439 action pref=1000; accept AS-AISTNET
+export:         to AS8439 announce ANY
+import:         from AS34879 action pref=1000; accept AS-NGENIX-SMR
+export:         to AS34879 announce ANY
+import:         from AS44436 action pref=1000; accept AS-EFFORTEL-SAM
+export:         to AS44436 announce ANY
+import:         from AS30852 action pref=1000; accept AS-INFOLADA
+export:         to AS30852 announce {0.0.0.0/0}
+default:        to AS12389
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS-TLT-RTCENTER
+import:         from AS8439 action pref=1000; accept AS-AISTNET
+export:         to AS8439 announce ANY
+import:         from AS30852 action pref=1000; accept AS-INFOLADA
+export:         to AS30852 announce ANY
+import:         from AS56407 action pref=1000; accept AS-ZHIGULINET
+export:         to AS56407 announce ANY
+import:         from AS196673 action pref=1000; accept AS196673
+export:         to AS196673 announce ANY
+default:        to AS12389
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS-ULIANOVSK-RTCENTER
+import:         from AS31133 action pref=200; accept ANY
+export:         to AS31133 announce AS-ULIANOVSK-RTCENTER
+import:         from AS8342 action pref=200; accept ANY
+export:         to AS8342 announce AS-ULIANOVSK-RTCENTER
+import:         from AS3217 action pref=1000; accept AS3217
+export:         to AS3217 announce {0.0.0.0/0}
+import:         from AS43782 action pref=1000; accept AS-DARS-IP
+export:         to AS43782 announce ANY
+import:         from AS50716 action pref=1000; accept AS50716
+export:         to AS50716 announce ANY
+default:        to AS8342
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS-PNZ-RTCENTER
+import:         from AS12500 action pref=1000; accept AS-RCS-PNZ1
+export:         to AS12500 announce ANY
+default:        to AS12389
+import:         from AS12389 action pref=200; accept ANY
+export:         to AS12389 announce AS-KZN-RTCENTER
+import:         from AS31286 action pref=1000; accept AS-TVT
+export:         to AS31286 announce ANY
+import:         from AS39613 action pref=1000; accept AS-MELT
+export:         to AS39613 announce ANY
+default:        to AS12389
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SAMARA-RTCENTER-NOC
+created:        2006-01-25T12:49:38Z
+last-modified:  2024-12-07T08:07:20Z
+source:         RIPE
+sponsoring-org: ORG-NT3-RIPE
+
+
+

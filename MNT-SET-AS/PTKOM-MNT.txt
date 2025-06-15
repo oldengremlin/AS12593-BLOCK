@@ -1,4 +1,29 @@
-
+as-set:         AS-PTKOM
+descr:          PortTelekom main upstream feed
+members:        AS34470
+descr:          PortTelekom downstream feed
+members:        AS42038
+members:        AS42920
+members:        AS44724
+members:        AS34185
+members:        AS34434
+members:        AS196949
+members:        AS47162
+members:        AS52069
+members:        AS57898
+members:        AS56845
+members:        AS34352
+members:        AS62287
+members:        AS42537
+members:        AS41060
+members:        AS197596
+members:        AS213933
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         PTKOM-MNT
+created:        2006-05-16T02:12:01Z
+last-modified:  2025-06-03T12:30:54Z
+source:         RIPE
 
 
 
@@ -6,18 +31,14 @@ aut-num:        AS34470
 as-name:        PTKOM-AS
 descr:          PortTelekom Autonomous system
 descr:          Vladivostok, Russia
-remarks:
-remarks:        UPSTREAMS
-remarks:
 import:         from AS20485 action pref=10; accept ANY
 export:         to AS20485 announce AS-PTKOM
 import:         from AS3216 action pref=10; accept ANY
 export:         to AS3216 announce AS-PTKOM
 import:         from AS12389 action pref=10; accept ANY
 export:         to AS12389 announce AS-PTKOM
-remarks:
-remarks:        PEERS
-remarks:
+import:         from AS31133 action pref=10; accept ANY
+export:         to AS31133 announce AS-PTKOM
 import:         from AS34185 action pref=50; accept AS34185
 export:         to AS34185 announce ANY
 import:         from AS34434 action pref=50; accept AS34434
@@ -42,15 +63,16 @@ import:         from AS34352 action pref=50; accept AS34352
 export:         to AS34352 announce ANY
 import:         from AS197596 action pref=50; accept AS197596
 export:         to AS197596 announce ANY
-remarks:
+import:         from AS213933 action pref=50; accept AS213933
+export:         to AS213933 announce ANY
 org:            ORG-PL11-RIPE
-admin-c:        ED920-RIPE
-tech-c:         PIN11-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PTKOM-MNT
 created:        2005-01-28T08:26:59Z
-last-modified:  2024-07-04T01:15:48Z
+last-modified:  2025-06-07T17:14:37Z
 source:         RIPE
 
 
@@ -68,8 +90,8 @@ import:         from AS2854 action pref=100; accept ANY
 export:         to AS2854 announce AS41060
 import:         from AS34470 action pref=100; accept ANY
 export:         to AS34470 announce AS41060
-admin-c:        AM51919-RIPE
-tech-c:         AK23026-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PTKOM-MNT
@@ -87,8 +109,8 @@ import:         from AS34470 accept ANY
 export:         to AS34470 announce AS52069
 import:         from AS21332 accept ANY
 export:         to AS21332 announce AS52069
-admin-c:        KS11572-RIPE
-tech-c:         KS11572-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PTKOM-MNT

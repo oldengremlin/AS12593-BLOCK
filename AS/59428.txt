@@ -1,36 +1,7 @@
-
-
-
-as-block:       AS59392 - AS60437
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-09-03T13:31:09Z
-last-modified:  2024-09-03T13:31:09Z
-source:         RIPE
-
-
-
 aut-num:        AS59428
 as-name:        KRD-IX-AS
-remarks:        KRD IX AS
 org:            ORG-IL280-RIPE
-remarks:        **************************************
-remarks:        AS59428 is used for the SEA-IX Route Servers.
-remarks:        All ASes participating in the Route Servers peering
-remarks:        are grouped into the AS-SET: AS-KRD-RS
-remarks:        You may use communities to control outgoing information
-remarks:        via the route server.
-remarks:        The meaning and order of evaluation is important:
-remarks:        block announcement of a route to a certain peer ->
-remarks:        ---------- 0:peer-as
-remarks:        announcement of a route to a certain peer ->
-remarks:        ---------- 59428:peer-as
-remarks:        block announcement of a route to all peers ->
-remarks:        ---------- 0:59428
-remarks:        announcement of a route to all peers ->
 descr:          ---------- 59428:59428
-remarks:        ****************************************************
 import:         from AS48479 accept AS-KUBAN-TELECOM
 import:         from AS48129 accept AS-IRBISTELECOM
 import:         from AS34352 accept AS34352
@@ -169,38 +140,33 @@ export:         to AS13238 announce AS-KRD-AS
 export:         to AS215455 announce AS-KRD-AS
 export:         to AS201119 announce AS-KRD-AS
 export:         to AS215013 announce AS-KRD-AS
-remarks:        ****************************************************
 status:         ASSIGNED
-admin-c:        ED8385-RIPE
-tech-c:         ED8385-RIPE
+notify:         noc@sea-ix.ru
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-KUBAN-TELECOM
 mnt-by:         MNT-IPNETCOM
 created:        2012-07-10T09:44:05Z
 last-modified:  2024-11-04T06:15:26Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-KL75-RIPE
+
+as-num:         AS59428
+country:        RU
+as-name:        KRD-IX-AS IpNetcom LLC
 
 organisation:   ORG-IL280-RIPE
 org-name:       IpNetcom LLC
 country:        RU
 org-type:       OTHER
-address:        1, Putevaya street, KRASNODAR, RUSSIAN FEDERATION, 350015
+address:        Dummy address for ORG-IL280-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR20941-RIPE
 mnt-ref:        MNT-IPNETCOM
 mnt-by:         MNT-IPNETCOM
 created:        2012-10-23T09:52:48Z
 last-modified:  2022-12-01T16:30:48Z
-source:         RIPE # Filtered
-
-person:         Egor Drobyshev
-address:        1, Putevaya street, KRASNODAR, RUSSIAN FEDERATION, 350015
-phone:          +7 928 281 8385
-nic-hdl:        ED8385-RIPE
-mnt-by:         MNT-IPNETCOM
-created:        2013-12-06T04:51:17Z
-last-modified:  2013-12-06T04:51:17Z
 source:         RIPE
-
 
 

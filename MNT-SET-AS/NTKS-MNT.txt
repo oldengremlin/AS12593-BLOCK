@@ -1,15 +1,21 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
-
+as-set:         AS-NTKS
+descr:          AS set NTKS LLC
+descr:          Nizhnii Tagil, RU
+members:        AS49218
+members:        AS201844
+members:        AS197817
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NTKS-MNT
+created:        2011-01-11T07:22:00Z
+last-modified:  2016-02-11T09:57:09Z
+source:         RIPE
 
 
 
 aut-num:        AS49218
 as-name:        NTKS-AS
 org:            ORG-NKSL2-RIPE
-remarks:        +--------------------------------------------
-remarks:        | Upstream
-remarks:        +--------------------------------------------
 import:         from AS31359 action pref=100; accept ANY
 export:         to AS31359 announce AS-NTKS
 import:         from AS20485 action pref=100; accept ANY
@@ -18,9 +24,6 @@ import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-NTKS
 import:         from AS9002 action pref=100; accept ANY
 export:         to AS9002 announce AS-NTKS
-remarks:        +--------------------------------------------
-remarks:        | Peering
-remarks:        +--------------------------------------------
 import:         from AS12668 action pref=180; accept AS12668
 export:         to AS12668 announce AS-NTKS
 import:         from AS49111 action pref=180; accept AS49111
@@ -39,13 +42,10 @@ import:         from AS43690 action pref=100; accept ANY
 export:         to AS43690 announce AS-NTKS
 import:         from AS42403 action pref=100; accept ANY
 export:         to AS42403 announce AS-NTKS
-remarks:        +--------------------------------------------
-remarks:        | Customers
-remarks:        +--------------------------------------------
 import:         from AS201844 action pref=400; accept AS201844
 export:         to AS201844 announce ANY
-admin-c:        KK2782-RIPE
-tech-c:         KK2782-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NTKS-MNT

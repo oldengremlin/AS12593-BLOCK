@@ -1,23 +1,8 @@
-
-
-
-as-block:       AS24988 - AS25162
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:30Z
-last-modified:  2018-11-22T15:27:30Z
-source:         RIPE
-
-
-
 aut-num:        AS25159
 as-name:        SONICDUO-AS
 org:            ORG-OM1-RIPE
-remarks:        --- UpStreams ---
 import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-MFMSK
-remarks:        --- Customers ---
 import:         from AS5467 accept AS-MIPT
 export:         to AS5467 announce ANY
 import:         from AS6854 accept {0.0.0.0/0};
@@ -210,7 +195,6 @@ import:         from AS57268 accept AS57268
 export:         to AS57268 announce ANY
 import:         from AS60864 accept AS60864
 export:         to AS60864 announce ANY
-remarks:        --- for 4byte AS ---
 import:         from AS197453 accept AS197453
 export:         to AS197453 announce ANY
 import:         from AS198902 accept AS198902
@@ -491,15 +475,10 @@ import:         from AS41257 accept AS41257
 export:         to AS41257 announce ANY
 import:         from AS43089 accept AS43089
 export:         to AS43089 announce ANY
-remarks:        MegaFonMoscow has PI addr. block= 193.201.228.0/22
-remarks:        ---------IPv6----------
 mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS25159
-remarks:        -------------------
-admin-c:        MFMS-RIPE
-admin-c:        MFON-RIPE
-tech-c:         MFMS-RIPE
-tech-c:         MFON-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MF-MOSCOW-MNT
@@ -510,20 +489,16 @@ created:        2002-08-13T09:32:19Z
 last-modified:  2025-03-14T13:35:26Z
 source:         RIPE
 
+as-num:         AS25159
+country:        RU
+as-name:        SONICDUO-AS PJSC MegaFon
+
 organisation:   ORG-OM1-RIPE
 org-name:       PJSC MegaFon
 country:        RU
 org-type:       LIR
-address:        41, Oruzheyniy lane
-address:        127006
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74955077777
-phone:          +74959801970
-fax-no:         +74959801939
-fax-no:         +74959801949
-admin-c:        MFON-RIPE
-tech-c:         MFON-RIPE
+address:        Dummy address for ORG-OM1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        MFON-RIPE
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MEGAFON-RIPE-MNT
@@ -531,59 +506,6 @@ mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MEGAFON-RIPE-MNT
 created:        2004-04-17T11:55:06Z
 last-modified:  2024-05-27T05:04:02Z
-source:         RIPE # Filtered
-
-role:           MegaFon PJSC - Moscow Branch
-address:        41 Oruzheyniy lane, Moscow, Russia, 127006
-admin-c:        IK9000-RIPE
-nic-hdl:        MFMS-RIPE
-mnt-by:         MF-MOSCOW-MNT
-mnt-by:         MEGAFON-RIPE-MNT
-abuse-mailbox:  abuse-mailbox@megafon.ru
-created:        2008-03-25T13:13:46Z
-last-modified:  2022-07-11T08:01:19Z
-source:         RIPE # Filtered
-remarks:        -----------------------------------------------------------
-remarks:        Customer Service Center, is available at 24 x 7
-remarks:        -----------------------------------------------------------
-remarks:        Technical questions: gnocwest_tr@megafon.ru
-remarks:        Routing and peering: gnoceast_backbone@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        SPAM and Network security: abuse-mailbox@megafon.ru
-remarks:        Please use abuse-mailbox@megafon.ru e-mail address for complaints.
-remarks:        All messages to any other our address, relative to SPAM
-remarks:        or security issues, will not be concerned.
-remarks:        -----------------------------------------------------------
-remarks:        Information: http://www.megafon.ru
-remarks:        -----------------------------------------------------------
-
-role:           MegaFon PJSC - Internet Service Network Operation Center
-address:        PJSC "MegaFon"
-address:        41, Oruzheyniy lane
-address:        Moscow, 127006
-address:        Russian Federation
-abuse-mailbox:  abuse-mailbox@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        Customer Service Center, is available at 24 x 7
-remarks:        Phone: +8(800)5500500
-remarks:        -----------------------------------------------------------
-remarks:        Technical questions: gnocwest_tr@megafon.ru
-remarks:        Routing and peering: gnoceast_backbone@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        SPAM and Network security: abuse-mailbox@megafon.ru
-remarks:        Please use abuse-mailbox@megafon.ru e-mail address for complaints.
-remarks:        All messages to any other our address, relative to SPAM
-remarks:        or security issues, will not be concerned.
-remarks:        -----------------------------------------------------------
-remarks:        Information: http://www.megafon.ru
-remarks:        -----------------------------------------------------------
-admin-c:        PP18881-RIPE
-admin-c:        AI5775-RIPE
-nic-hdl:        MFON-RIPE
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2013-03-27T07:19:58Z
-last-modified:  2025-02-05T05:45:20Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

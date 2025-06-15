@@ -1,22 +1,40 @@
+as-set:         AS-STACK
+descr:          Stack Ltd ASes
+members:        AS16083
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         STACK-MNT
+created:        2002-04-18T12:23:54Z
+last-modified:  2024-12-13T10:12:41Z
+source:         RIPE
 
+
+
+as-set:         AS-STACK6
+descr:          Stack Ltd IPv6 downstreams
+members:        AS16083
+members:        AS41783:AS-CUSTOMERS
+members:        AS-OSMP-IPV6
+members:        AS52016
+members:        AS200044
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         STACK-MNT
+created:        2010-12-14T12:02:09Z
+last-modified:  2018-08-10T15:44:28Z
+source:         RIPE
 
 
 
 aut-num:        AS16083
 as-name:        STACK-AS
 org:            ORG-SL20-RIPE
-remarks:        ----------------------------------------------------------
-remarks:        IPv4 Routing Policy
-remarks:        ----------------------------------------------------------
 import:         from AS200044 accept AS200044
 export:         to AS200044 announce any
-remarks:        ----------------------------------------------------------
-remarks:        IPv6 Routing Policy
-remarks:        ----------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS200044 accept ANY
 mp-export:      afi ipv6.unicast to AS200044 announce AS-STACK6
-admin-c:        SLN5-RIPE
-tech-c:         SLN5-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         STACK-MNT

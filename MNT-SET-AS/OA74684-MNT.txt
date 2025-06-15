@@ -1,4 +1,33 @@
+as-set:         AS-B2BTELECOM
+descr:          SvyazResurs-Kuban
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS58314
+members:        AS57319
+members:        AS199583
+members:        AS-WINSTEL
+members:        AS201267
+members:        AS-KRLAN
+members:        AS203750
+members:        AS198645
+members:        AS34777
+members:        AS57323
+mnt-by:         OA74684-MNT
+created:        2012-06-24T07:18:13Z
+last-modified:  2023-03-15T05:27:55Z
+source:         RIPE
 
+
+
+as-set:         AS-WINSTEL
+descr:          StroyTelecom AS-SET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         OA74684-MNT
+members:        AS34855
+created:        2015-09-18T08:30:37Z
+last-modified:  2015-09-18T08:30:37Z
+source:         RIPE
 
 
 
@@ -7,8 +36,8 @@ as-name:        Stroy-Telecom
 org:            ORG-SL517-RIPE
 import:         from AS58314 accept ANY
 export:         to AS58314 announce AS34855
-admin-c:        OA1442-RIPE
-tech-c:         OA1442-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OA74684-MNT
@@ -21,7 +50,6 @@ source:         RIPE
 aut-num:        AS58314
 as-name:        B2B-Telecom
 org:            ORG-SL513-RIPE
-remarks:        --- UPLINKS ---
 import:         from AS9002 action pref=100; accept ANY
 import:         from AS3216 action pref=100; accept ANY
 import:         from AS20485 action pref=100; accept ANY
@@ -30,12 +58,11 @@ export:         to AS31133 announce AS-B2BTELECOM
 export:         to AS3216 announce AS-B2BTELECOM
 export:         to AS20485 announce AS-B2BTELECOM
 export:         to AS9002 announce AS-B2BTELECOM
-remarks:        --- CLIENTS ---
 import:         from AS34855 action pref=100; ACCEPT AS-WINSTEL
 export:         to AS34855 announce ANY
 import:         from AS57319 action pref=100; ACCEPT AS57319
 export:         to AS57319 announce ANY
-tech-c:         OA1442-RIPE
+tech-c:         DUMY-RIPE
 import:         from AS56621 action pref=100; ACCEPT AS56621
 export:         to AS56621 announce ANY
 import:         from AS41757 action pref=100; ACCEPT AS41757
@@ -50,13 +77,14 @@ import:         from AS43712 action pref=100; ACCEPT AS-OSYSTEMS
 export:         to AS43712 announce ANY
 import:         from AS201631 action pref=100; ACCEPT AS201631
 export:         to AS201631 announce ANY
-admin-c:        OA1442-RIPE
+admin-c:        DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OA74684-MNT
+notify:         ripe@l2v.org
 created:        2012-06-21T09:31:55Z
 last-modified:  2019-01-17T22:20:52Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

@@ -1,32 +1,13 @@
-
-
-
-as-block:       AS206369 - AS207419
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-06-03T14:03:01Z
-last-modified:  2024-06-03T14:03:01Z
-source:         RIPE
-
-
-
 aut-num:        AS206810
 as-name:        UGLETELECOM
 org:            ORG-USTA2-RIPE
 sponsoring-org: ORG-OAN1-RIPE
-remarks:        ------------------------------------------------------------------------
-remarks:        -- Providers
-remarks:        ------------------------------------------------------------------------
 import:         from AS48084 accept ANY
 export:         to AS48084 announce AS206810:AS-CUSTOMERS
 import:         from AS52091 accept ANY
 export:         to AS52091 announce AS206810:AS-CUSTOMERS
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS206810:AS-CUSTOMERS
-remarks:        ------------------------------------------------------------------------
-remarks:        -- Peerings
-remarks:        ------------------------------------------------------------------------
 import:         from AS8631 accept ANY
 export:         to AS8631 announce AS206810:AS-CUSTOMERS
 import:         from AS39607 accept ANY
@@ -41,9 +22,6 @@ import:         from AS59539 accept ANY
 export:         to AS59539 announce AS206810:AS-CUSTOMERS
 import:         from AS8631 accept ANY
 export:         to AS8631 announce AS206810:AS-CUSTOMERS
-remarks:        ------------------------------------------------------------------------
-remarks:        -- Customers
-remarks:        ------------------------------------------------------------------------
 import:         from AS5598 accept AS5598
 export:         to AS5598 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS8274 accept AS8274
@@ -138,10 +116,8 @@ import:         from AS214218 accept AS214218
 export:         to AS214218 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS214210 accept AS214210
 export:         to AS214210 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
-admin-c:        IRA35-RIPE
-admin-c:        MI5795-RIPE
-tech-c:         IRA35-RIPE
-tech-c:         MI5795-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MIV-MNT
@@ -150,42 +126,21 @@ last-modified:  2025-01-28T11:52:03Z
 source:         RIPE
 abuse-c:        ACRO47149-RIPE
 
+as-num:         AS206810
+country:        RU
+as-name:        UGLETELECOM GUP DNR "UGLETELECOM"
+
 organisation:   ORG-USTA2-RIPE
 org-name:       GUP DNR "UGLETELECOM"
 country:        RU
 org-type:       OTHER
-address:        DPR,Donetsk, Postysheva, 60
+address:        Dummy address for ORG-USTA2-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        ACRO47149-RIPE
 mnt-ref:        MIV-MNT
 mnt-by:         MIV-MNT
 created:        2022-03-15T21:45:03Z
 last-modified:  2024-11-14T11:02:30Z
-source:         RIPE # Filtered
-admin-c:        MI5795-RIPE
-tech-c:         MI5795-RIPE
-admin-c:        IRA35-RIPE
-tech-c:         IRA35-RIPE
-
-person:         Irina Pikalova
-address:        DPR, Donetsk, Postysheva str., 60
-phone:          +79493363315
-nic-hdl:        IRA35-RIPE
-mnt-by:         LEVEL-MSK-MNT
-mnt-by:         ORANGEDN-MNT
-mnt-by:         ORANGEDNR-MNT
-mnt-by:         IRA35-MNT
-created:        2024-09-01T11:29:13Z
-last-modified:  2024-11-14T14:52:43Z
-source:         RIPE # Filtered
-
-person:         Moskovchenko Ivan
-address:        Donetsk, Postysheva, 60
-phone:          +78563890120
-nic-hdl:        MI5795-RIPE
-mnt-by:         MIV-MNT
-created:        2024-06-27T08:33:26Z
-last-modified:  2024-06-27T08:33:26Z
 source:         RIPE
-
 
 

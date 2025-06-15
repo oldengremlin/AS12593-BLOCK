@@ -1,6 +1,31 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
+as-set:         AS-RTSNET
+descr:          Macro for RTSNET connected ASes
+members:        AS6694
+members:        AS197863
+members:        AS200694
+members:        AS201804
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         noc@rtsnet.ru
+mnt-by:         RTSNET-NCC
+created:        2002-03-29T11:19:50Z
+last-modified:  2024-04-04T12:37:44Z
+source:         RIPE
 
+
+
+as-set:         AS-RTSNETWEST
+descr:          Macro for RTSNET connected ASes to announce to the West
+members:        AS6694
+members:        AS-EDUNET
+members:        AS-TI
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         noc@rtsnet.ru
+mnt-by:         RTSNET-NCC
+created:        2002-01-29T12:33:58Z
+last-modified:  2002-01-29T12:33:58Z
+source:         RIPE
 
 
 
@@ -11,8 +36,8 @@ import:         from AS6694 accept ANY
 export:         to AS6694 announce AS200694
 import:         from AS31059 accept ANY
 export:         to AS31059 announce AS200694
-admin-c:        JSI8-RIPE
-tech-c:         JSI8-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RTSNET-NCC
@@ -38,14 +63,15 @@ import:         from AS29076 accept ANY
 export:         to AS29076 announce AS-RTSNET
 mp-import:      afi ipv6.unicast from AS29076 accept ANY
 mp-export:      afi ipv6.unicast to AS29076 announce AS-RTSNET
-admin-c:        RNOC-ORG
-tech-c:         RNOC-ORG
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@rtsnet.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RTSNET-NCC
 created:        1970-01-01T00:00:00Z
 last-modified:  2017-11-15T09:16:43Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

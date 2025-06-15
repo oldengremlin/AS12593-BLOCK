@@ -1,6 +1,59 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@10.100.1.2:22 already exists, disabling multiplexing
+as-set:         AS-FTELECOM
+descr:          First Telecom Ltd.
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         FTELECOM-MNT
+created:        2012-12-17T07:45:47Z
+last-modified:  2024-09-05T16:38:34Z
+source:         RIPE
+members:        AS39156
+members:        AS31183
+members:        AS48781
+members:        AS198819
+members:        AS48143
+members:        AS60312
+members:        AS-AVK-COM
+members:        AS207024
+members:        AS44848
+members:        AS199287
+members:        AS35928
+members:        AS35129
 
+
+
+as-set:         AS39156:AS-FTELECOM
+descr:          First Telecom Ltd.
+members:        AS39156
+members:        AS31183
+members:        AS48666
+members:        AS51970
+members:        AS50577
+members:        AS59637
+members:        AS48781
+members:        AS48143
+members:        AS198819
+members:        AS44848
+members:        AS-AVK-COM
+members:        AS35129
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         FTELECOM-MNT
+created:        2008-11-21T11:40:53Z
+last-modified:  2017-12-19T18:19:24Z
+source:         RIPE
+
+
+
+as-set:         AS39156:AS-FTELECOM6
+descr:          First Telecom Ltd. IPv6
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         FTELECOM-MNT
+created:        2024-05-17T10:01:38Z
+last-modified:  2024-05-17T10:01:38Z
+source:         RIPE
+members:        AS39156
+members:        AS60312
 
 
 
@@ -11,8 +64,8 @@ import:         from AS39156 accept ANY
 import:         from AS6854 accept ANY
 export:         to AS39156 announce AS198819
 export:         to AS6854 announce AS198819
-admin-c:        FT1500-RIPE
-tech-c:         FT1500-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FTELECOM-MNT
@@ -30,8 +83,8 @@ import:         from AS25478 accept ANY
 export:         to AS25478 announce AS199287
 import:         from AS49869 accept ANY
 export:         to AS49869 announce AS199287
-admin-c:        YM258-RIPE
-tech-c:         YM258-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FTELECOM-MNT
@@ -50,8 +103,8 @@ import:         from AS30733 accept ANY
 export:         to AS39156 announce AS31183
 export:         to AS38922 announce AS31183
 export:         to AS30733 announce AS31183
-admin-c:        EMG-RIPE
-tech-c:         FT1500-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FTELECOM-MNT
@@ -67,9 +120,6 @@ org:            ORG-FTL2-RIPE
 as-name:        FTELECOM-AS
 descr:          Vorontsovskaya str., 35b, building 2
 descr:          Moscow, Russia
-remarks:        --------------------------------
-remarks:        Uplinks
-remarks:        --------------------------------
 import:         from AS28917 93.191.9.232 at 93.191.9.233 action pref=90; accept ANY
 export:         to AS28917 93.191.9.232 at 93.191.9.233 announce AS-FTELECOM
 import:         from AS28917 93.191.9.234 at 93.191.9.235 action pref=90; accept ANY
@@ -84,9 +134,6 @@ import:         from AS31500 109.239.137.254 at 109.239.136.128 action pref=140;
 export:         to AS31500 109.239.137.254 at 109.239.136.128 announce AS-FTELECOM
 mp-import:      afi ipv6.unicast from AS28917 2a02:2518:0:25:0:3:9156:1 at 2a02:2518:0:25:0:3:9156:2 action pref=140; accept ANY
 mp-export:      afi ipv6.unicast to AS28917 2a02:2518:0:25:0:3:9156:1 at 2a02:2518:0:25:0:3:9156:2 announce AS-FTELECOM
-remarks:        -----------------------------
-remarks:        Customers
-remarks:        -----------------------------
 import:         from AS31183 action pref=50; accept AS31183
 export:         to AS31183 announce ANY AND {0.0.0.0/0}
 import:         from AS198819 action pref=50; accept AS198819
@@ -101,15 +148,15 @@ import:         from AS207024 action pref=50; accept AS207024
 export:         to AS207024 announce ANY
 mp-import:      afi ipv6.unicast from AS207024 action pref=50; accept AS207024
 mp-export:      afi ipv6.unicast to AS207024 announce ANY
-remarks:        -----------------------------
-admin-c:        FT1500-RIPE
-tech-c:         FT1500-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         ncc@1system.ru
 mnt-by:         FTELECOM-MNT
 created:        2005-12-23T08:40:50Z
 last-modified:  2019-06-25T14:45:13Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

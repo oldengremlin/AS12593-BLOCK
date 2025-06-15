@@ -1,4 +1,23 @@
+as-set:         AS-INTERCON
+descr:          INTERCON AS list
+members:        AS34550
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         mnt-ru-llcintercon-1
+created:        2007-05-29T11:49:27Z
+last-modified:  2020-05-28T15:03:40Z
+source:         RIPE
 
+
+
+as-set:         AS-SETINTERCON
+descr:          LLC Intercon
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         mnt-ru-llcintercon-1
+created:        2006-04-25T09:55:38Z
+last-modified:  2020-05-28T15:30:43Z
+source:         RIPE
 
 
 
@@ -7,44 +26,31 @@ as-name:        INTERCON-AS
 descr:          INTERCON AS
 descr:          Russian Federation, 394043, Voronezh, Lenina street, 73
 org:            ORG-LI109-RIPE
-remarks:        ==========================================================
-remarks:        Upstreams
-remarks:        ==========================================================
-remarks:        DataIX
 import:         from AS50952 action pref=100; accept ANY
 export:         to AS50952 announce AS-INTERCON
-remarks:        Global-IX
 import:         from AS31500 action pref=100; accept ANY
 export:         to AS31500 announce AS-INTERCON
-remarks:        KVANT-TELECOM
 import:         from AS43727 action pref=100; accept ANY
 export:         to AS43727 announce AS-INTERCON
-remarks:        PITER-IX
 import:         from AS50817 action pref=100; accept ANY
 export:         to AS50817 announce AS-INTERCON
-remarks:        PITER-IX MSK
 import:         from AS49869 action pref=100; accept ANY
 export:         to AS49869 announce AS-INTERCON
-remarks:        VimpelCom
 import:         from AS3216 action pref=100; accept ANY
 export:         to AS3216 announce AS-INTERCON
-remarks:        Lifestream
 import:         from AS200976 action pref=200; accept AS-LIFESTREAM
 export:         to AS200976 announce AS-INTERCON
-remarks:        MSK-IX-RS
 import:         from AS8631 action pref=100; accept ANY
 export:         to AS8631 announce AS-INTERCON
-remarks:        ==========================================================
-remarks:        Customers
-remarks:        ==========================================================
-admin-c:        AA35689-RIPE
-tech-c:         AA35689-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         ripe@office.intercon.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-llcintercon-1
 created:        2005-02-14T08:56:02Z
 last-modified:  2025-04-01T09:05:50Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 

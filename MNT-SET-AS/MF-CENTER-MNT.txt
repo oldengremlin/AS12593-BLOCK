@@ -1,16 +1,74 @@
+as-set:         AS-MF-CENTER
+descr:          ASes routed by MF-CENTER
+members:        AS31208
+members:        AS15370
+members:        AS197717
+members:        AS57573
+members:        AS51352
+members:        AS200452
+members:        AS61228
+members:        AS21143
+members:        AS201778
+members:        AS50169
+members:        AS199010
+members:        AS61123
+members:        AS44115
+members:        AS204102
+members:        AS60557
+members:        AS60518
+members:        AS52197
+members:        AS205562
+members:        AS31008
+members:        AS197406
+members:        AS202925
+members:        AS39395
+members:        AS62461
+members:        AS201224
+members:        AS199745
+members:        AS60346
+members:        AS61979
+members:        AS58347
+members:        AS35479
+members:        AS209458
+members:        AS207397
+members:        AS211714
+members:        AS198369
+members:        AS209794
+members:        AS213681
+members:        AS-ATLASNN
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MF-CENTER-MNT
+mnt-by:         MEGAFON-RIPE-MNT
+mnt-by:         MEGAFON-WEST-MNT
+created:        2011-04-19T06:08:08Z
+last-modified:  2025-04-07T10:31:52Z
+source:         RIPE
 
+
+
+as-set:         AS-SET-MF-Center
+descr:          AS-SET Announcing by MegaFon Central Branch
+members:        AS31208
+descr:          ----- DOWNSTREAMS -----
+members:        AS15370
+members:        AS197717
+members:        AS57870
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MF-CENTER-MNT
+created:        2013-04-25T11:16:43Z
+last-modified:  2013-04-25T11:18:41Z
+source:         RIPE
 
 
 
 aut-num:        AS31208
 as-name:        MF-CENTER-AS
-remarks:        Central branch of OJSC Megafon
 org:            ORG-OM1-RIPE
-remarks:        -- Upstreams
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS31208
 export:         to AS31133 announce AS-MF-CENTER
-remarks:        -- Clients
 import:         from AS202925 accept AS202925
 export:         to AS31133 announce AS202925
 export:         to AS202925 announce ANY
@@ -99,18 +157,14 @@ import:         from AS209794 accept AS209794
 export:         to AS209794 announce ANY
 import:         from AS213681 accept AS213681
 export:         to AS213681 announce ANY
-admin-c:        MWST-RIPE
-admin-c:        MIM16-RIPE
-tech-c:         MWST-RIPE
-tech-c:         MIM16-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEGAFON-RIPE-MNT
 mnt-by:         MEGAFON-GNOC-MNT
 mnt-by:         MEGAFON-WEST-MNT
 mnt-by:         MF-CENTER-MNT
-admin-c:        MFON-RIPE
-tech-c:         MFON-RIPE
 created:        2004-03-23T09:41:56Z
 last-modified:  2025-04-07T10:30:40Z
 source:         RIPE

@@ -1,3 +1,62 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: read: Connection reset by peer
-Connection reset by 185.151.106.150 port 22
+as-set:         AS-WEBA
+descr:          WEBA Ltd.
+descr:          Russia, Saint-Petersburg
+members:        AS196750
+members:        AS43362
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         WEBA-SETI-MNT
+created:        2016-10-12T16:51:49Z
+last-modified:  2022-04-26T09:59:09Z
+source:         RIPE
+
+
+
+aut-num:        AS196750
+as-name:        SETI-WEBA
+org:            ORG-SWL2-RIPE
+import:         from AS56534 action pref=200; accept ANY;
+export:         to AS56534 announce AS196750;
+import:         from AS9002 action pref=90; accept ANY;
+export:         to AS9002 announce AS196750;
+import:         from AS50817 action pref=50; accept AS-PITER-IX;
+export:         to AS50817 announce AS196750;
+import:         from AS29076 action pref=140; accept ANY;
+export:         to AS29076 announce AS196750;
+import:         from AS42244 action pref=50; accept ANY;
+export:         to AS42244 announce AS196750;
+import:         from AS39792 action pref=50; accept ANY;
+export:         to AS39792 announce AS196750;
+import:         from AS28917 action pref=30; accept ANY;
+export:         to AS28917 announce AS196750;
+import:         from AS48625 action pref=100; accept ANY;
+export:         to AS48625 announce AS196750;
+import:         from AS8492 action pref=50; accept ANY;
+export:         to AS8492 announce AS196750;
+import:         from AS20632 action pref=100; accept ANY;
+export:         to AS20632 announce AS196750;
+import:         from AS50952 action pref=30; accept ANY;
+export:         to AS50952 announce AS196750;
+import:         from AS43690 action pref=30; accept AS-SPBROUTESERVER;
+export:         to AS43690 announce AS-WEBA;
+import:         from AS8631 action pref=50; accept AS-MSKROUTESERVER;
+export:         to AS8631 announce AS-WEBA;
+import:         from AS43362 action pref=50; accept AS43362;
+export:         to AS43362 announce ANY;
+import:         from AS43362 action pref=50; accept AS43362;
+export:         to AS43362 announce AS-WEBA;
+import:         from AS56534 action pref=200; accept ANY;
+export:         to AS56534 announce AS43362;
+import:         from AS8631 action pref=50; accept AS-MSKROUTESERVER;
+export:         to AS8631 announce AS43362;
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         WEBA-SETI-MNT
+created:        2009-08-27T14:02:37Z
+last-modified:  2022-04-26T08:37:28Z
+source:         RIPE
+
+
+

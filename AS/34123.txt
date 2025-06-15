@@ -1,81 +1,41 @@
-
-
-
-as-block:       AS33792 - AS34436
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2023-04-20T14:54:28Z
-last-modified:  2023-04-20T14:54:28Z
-source:         RIPE
-
-
-
 aut-num:        AS34123
 as-name:        NETORN-AS
-remarks:        Moscow, Russia
-remarks:
-remarks:        ------------------------------------------------------
-remarks:        Uplinks:
-remarks:
-remarks:        MSM
 import:         from AS12695 action pref=200; accept ANY
 export:         to AS12695 announce AS-NETORN
 mp-import:      afi ipv6.unicast from AS12695 action pref=200; accept ANY
 mp-export:      afi ipv6.unicast to AS12695 announce AS-NETORN
-remarks:
-remarks:        NAUKANET
 import:         from AS8641 action pref=200; accept ANY
 export:         to AS8641 announce AS-NETORN
 mp-import:      afi ipv6.unicast from AS8641 action pref=200; accept ANY
 mp-export:      afi ipv6.unicast to AS8641 announce AS-NETORN
-remarks:
-remarks:        RASCOM
 import:         from AS20764 action pref=200; accept ANY
 export:         to AS20764 announce AS-NETORN
 mp-import:      afi ipv6.unicast from AS20764 action pref=200; accept ANY
 mp-export:      afi ipv6.unicast to AS20764 announce AS-NETORN
-remarks:        -------------------------------------------------------
-remarks:        IX:
-remarks:
-remarks:        MSK-IX
 import:         from AS8631 action pref=240; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-NETORN
 mp-import:      afi ipv6.unicast from AS8631 action pref=240; accept ANY
 mp-export:      afi ipv6.unicast to AS8631 announce AS-NETORN
-remarks:
-remarks:        DTEL-IX
 import:         from AS31210 action pref=240; accept AS-DTEL-IX
 export:         to AS31210 announce AS-NETORN
 mp-import:      afi ipv6.unicast from AS31210 action pref=240; accept AS-DTEL-IX-V6
 mp-export:      afi ipv6.unicast to AS31210 announce AS-NETORN
-remarks:
-remarks:        NL-IX
 import:         from AS34307 action pref=240; accept ANY
 export:         to AS34307 announce AS-NETORN
 mp-import:      afi ipv6.unicast from AS34307 action pref=240; accept ANY
 mp-export:      afi ipv6.unicast to AS34307 announce AS-NETORN
-remarks:
-remarks:        DATA-IX
 import:         from AS50952 action pref=240; accept AS-DATAIX
 export:         to AS50952 announce AS-NETORN
 mp-import:      afi ipv6.unicast from AS50952 action pref=240; accept AS-DATAIX
 mp-export:      afi ipv6.unicast to AS50952 announce AS-NETORN
-remarks:
-remarks:        Eurasia-Peering
 import:         from AS56931 action pref=240; accept AS-EURASIAPEERING_RS
 export:         to AS56931 announce AS-NETORN
 mp-import:      afi ipv6.unicast from AS56931  action pref=240; accept AS-EURASIAPEERING_RS
 mp-export:      afi ipv6.unicast to AS56931 announce AS-NETORN
-remarks:
-remarks:        GLOBALNET - IX
 import:         from AS31500 action pref=240; accept AS-GLOBAL-IX
 export:         to AS31500 announce AS-NETORN
 mp-import:      afi ipv6.unicast from AS31500 action pref=240; accept AS-GLOBAL-IX
 mp-export:      afi ipv6.unicast to AS31500 announce AS-NETORN
-remarks:        -------------------------------------------------------
-remarks:        Peers:
-remarks:
 import:         from AS8075 action pref=250; accept AS8075
 export:         to AS8075 announce AS-NETORN
 import:         from AS8470 action pref=250; accept AS-MACOMNET
@@ -100,9 +60,6 @@ import:         from AS49813 action pref=250; accept AS-INN
 export:         to AS49813 announce AS-NETORN
 import:         from AS200976 action pref=250; accept AS200976
 export:         to AS200976 announce AS-NETORN
-remarks:        -------------------------------------------------------
-remarks:        Customers:
-remarks:
 import:         from AS28738 action pref=300; accept AS-INTERLAN
 export:         to AS28738 announce ANY
 import:         from AS34139 action pref=300; accept AS-TSI
@@ -168,8 +125,8 @@ export:         to AS49106 announce ANY
 import:         from AS50435 action pref=300; accept AS50435 AND AS49106
 export:         to AS50435 announce ANY
 org:            ORG-NL73-RIPE
-admin-c:        NET4-RIPE
-tech-c:         NET4-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NETORN-MNT
@@ -177,45 +134,23 @@ created:        2004-10-28T13:36:39Z
 last-modified:  2023-01-17T09:14:18Z
 source:         RIPE
 
+as-num:         AS34123
+country:        RU
+as-name:        NETORN-AS Netorn LLC
+
 organisation:   ORG-NL73-RIPE
 org-name:       Netorn LLC
 country:        RU
 org-type:       LIR
-address:        HIBINSKIY 9
-address:        129337
-address:        MOSCOW
-address:        RUSSIAN FEDERATION
-phone:          +74951119595
-fax-no:         +74951119595
+address:        Dummy address for ORG-NL73-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        AR13682-RIPE
-admin-c:        NET4-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        NETORN-MNT
 mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         NETORN-MNT
 created:        2006-08-17T05:11:04Z
 last-modified:  2021-04-15T19:58:41Z
-source:         RIPE # Filtered
-
-role:           NETORN NOC
-address:        9, Hibinsky proezd.
-address:        Moscow, Russia, 129337
-phone:          +7 495 111 9595
-fax-no:         +7 495 111 9595
-remarks:        trouble: Points of contact for NETORN Network Operations:
-remarks:        trouble: -----------------------------------------------------------
-remarks:        trouble: SPAM issues: abuse@netorn.net
-remarks:        trouble: Customer support: help@netorn.net
-remarks:        trouble: General information: info@netorn.net
-remarks:        trouble: -----------------------------------------------------------
-admin-c:        AN2262-RIPE
-tech-c:         AN2262-RIPE
-nic-hdl:        NET4-RIPE
-abuse-mailbox:  abuse@netorn.net
-mnt-by:         NETORN-MNT
-created:        2006-12-26T11:30:31Z
-last-modified:  2021-07-01T08:41:32Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

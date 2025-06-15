@@ -1,53 +1,36 @@
-
-
-
-as-block:       AS47104 - AS47191
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-09-24T13:48:22Z
-last-modified:  2024-09-24T13:48:22Z
-source:         RIPE
-
-
-
 aut-num:        AS47156
 as-name:        MALNET-AS
 org:            ORG-ML236-RIPE
-remarks:        --------- IPv4 UPSTREAMS ------------
 import:         from AS29226 action pref=100; accept ANY # MASTERTEL
 export:         to AS29226 announce AS-MALNET
 import:         from AS57304 action pref=50; accept ANY # RETN-RESERVE
 export:         to AS57304 announce AS-MALNET
-remarks:        -------- IPv6 UPSTREAMS ---------
 mp-import:      afi ipv6.unicast from AS8631 2001:7F8:20:101::244:100 at 2001:7F8:20:101::244:173 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 2001:7F8:20:101::244:100 at 2001:7F8:20:101::244:173 announce AS-MALNET
 mp-import:      afi ipv6.unicast from AS8631 2001:7F8:20:102::246:100 at 2001:7F8:20:102::246:173 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 2001:7F8:20:102::246:100 at 2001:7F8:20:102::246:173 announce AS-MALNET
-remarks:        -------- IPv4 PEERINGS ----------
 import:         from AS8631 action pref=150; accept AS-MSKROUTESERVER # MSK-IX
 export:         to AS8631 announce AS-MALNET
-admin-c:        AOO7-RIPE
-admin-c:        SAO35-RIPE
-tech-c:         AOO7-RIPE
-tech-c:         SAO35-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         prx@malnet.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-MALNET
 created:        2008-05-06T09:44:55Z
 last-modified:  2024-10-21T10:24:26Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS47156
+country:        RU
+as-name:        MALNET-AS Malnet LTD.
 
 organisation:   ORG-ML236-RIPE
 org-name:       Malnet LTD.
 country:        RU
 org-type:       LIR
-address:        Shosseynaya, 1a
-address:        140032
-address:        Moscow region, Malakhovka
-address:        RUSSIAN FEDERATION
-phone:          +79266482694
-fax-no:         +74952585236
+address:        Dummy address for ORG-ML236-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        MN9544-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        MNT-MALNET
@@ -55,25 +38,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         MNT-MALNET
 created:        2013-04-25T09:36:11Z
 last-modified:  2020-12-16T12:56:21Z
-source:         RIPE # Filtered
-
-person:         Albegov Oleg Olegovich
-address:        140180, Russia, Moscow region, Malakhovka, Shosseynaya str., 2a
-phone:          +7 (353) 87-215-5087
-nic-hdl:        AOO7-RIPE
-mnt-by:         MNT-MALNET
-created:        2008-02-08T08:03:08Z
-last-modified:  2015-10-09T09:48:23Z
-source:         RIPE # Filtered
-
-person:         Sergin Aleksandr Olegovich
-address:        140132, Russia, Moscow region, Malakhovka, Shosseynaya str., 1a
-phone:          +7 (926) 648 26 94
-nic-hdl:        SAO35-RIPE
-mnt-by:         MNT-MALNET
-created:        2015-09-30T13:21:26Z
-last-modified:  2015-09-30T13:21:26Z
 source:         RIPE
-
 
 

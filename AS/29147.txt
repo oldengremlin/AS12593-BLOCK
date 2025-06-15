@@ -1,20 +1,6 @@
-
-
-
-as-block:       AS29092 - AS29337
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:31Z
-last-modified:  2018-11-22T15:27:31Z
-source:         RIPE
-
-
-
 aut-num:        AS29147
 as-name:        NSTU-AS
 org:            ORG-NSTU1-RIPE
-remarks:        === Uplinks ===
 import:         from AS3267 action pref=100; accept ANY;
 export:         to AS3267 announce AS-NSTU;
 mp-import:      afi ipv6 from AS3267 action pref=100; accept ANY;
@@ -24,93 +10,39 @@ export:         to AS28884 announce AS-NSTU;
 mp-import:      afi ipv6 from AS28884 action pref=100; accept ANY;
 mp-export:      afi ipv6 to AS28884 announce AS29147;
 default:        to AS3267 action pref=100; networks ANY
-remarks:        === Local,NSK-IX ===
 import:         from AS31738 action pref=120; accept AS31738;
 export:         to AS31738 announce AS29147;
 import:         from AS31738 accept AS31738;
 export:         to AS31738 announce ANY;
 mp-import:      afi ipv6 from AS31738 action pref=120; accept ANY;
 mp-export:      afi ipv6 to AS31738 announce AS29147;
-admin-c:        ASB5-RIPE
-admin-c:        GVB163-RIPE
-admin-c:        OKN14-RIPE
-tech-c:         ASB5-RIPE
-tech-c:         OKN14-RIPE
-tech-c:         GVB163-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
+notify:         noc@nstu.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         INFR-MNT
 mnt-by:         NSTU-MNT
 created:        2003-06-16T12:52:42Z
 last-modified:  2021-06-09T12:50:59Z
-source:         RIPE # Filtered
+source:         RIPE
 sponsoring-org: ORG-CR1-RIPE
+
+as-num:         AS29147
+country:        RU
+as-name:        NSTU-AS State Educational Enterprise of Higher Professional Education Novosibirsk State Technical University
 
 organisation:   ORG-NSTU1-RIPE
 org-name:       State Educational Enterprise of Higher Professional Education Novosibirsk State Technical University
 country:        RU
 org-type:       OTHER
-address:        20, Karl Marx avenue
-address:        630073 Novosibirsk
-address:        Russia
-phone:          +7 383 3462484
-admin-c:        GVB163-RIPE
-admin-c:        ASB5-RIPE
-admin-c:        MVS447-RIPE
-admin-c:        OKN14-RIPE
-tech-c:         ASB5-RIPE
-tech-c:         MVS447-RIPE
-tech-c:         OKN14-RIPE
-tech-c:         GVB163-RIPE
+address:        Dummy address for ORG-NSTU1-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        NSTU1-RIPE
 mnt-ref:        NSTU-MNT
 mnt-by:         NSTU-MNT
 created:        2006-09-29T08:49:33Z
 last-modified:  2023-10-31T07:48:43Z
-source:         RIPE # Filtered
-
-person:         Anvar S Bagautdinov
-address:        Novosibirsk State Technical University
-address:        Office I-305
-address:        20, Karl Marks ave
-address:        Novosibirsk, 630092
-address:        RUSSIA
-phone:          +7 383 3462484
-fax-no:         +7 383 3460500
-nic-hdl:        ASB5-RIPE
-remarks:        Network specialist
-mnt-by:         NSTU-MNT
-created:        1970-01-01T00:00:00Z
-last-modified:  2007-06-07T10:40:45Z
-source:         RIPE # Filtered
-
-person:         Vadim B Grischuk
-address:        Novosibirsk State Technical University
-address:        Office I-302
-address:        20, Karl Marx Avenue
-address:        Novosibirsk, 630092
-address:        RUSSIA
-phone:          +7 383 3460500
-nic-hdl:        GVB163-RIPE
-remarks:        Chief Information Technologies Center NSTU
-mnt-by:         NSTU-MNT
-created:        2021-01-28T10:33:30Z
-last-modified:  2021-01-28T11:09:12Z
-source:         RIPE # Filtered
-
-person:         Konstantin N Ovchinnikov
-address:        Novosibirsk State Technical University
-address:        Office I-305
-address:        20, Karl Marks ave
-address:        Novosibirsk, 630092
-address:        RUSSIA
-phone:          +7 383 3462484
-nic-hdl:        OKN14-RIPE
-remarks:        Network specialist
-mnt-by:         NSTU-MNT
-created:        2021-01-28T10:46:11Z
-last-modified:  2021-01-28T11:10:24Z
-source:         RIPE # Filtered
-
+source:         RIPE
 
 

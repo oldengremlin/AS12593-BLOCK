@@ -1,35 +1,18 @@
-
-
-
-as-block:       AS44170 - AS44569
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2025-01-27T15:33:09Z
-last-modified:  2025-01-27T15:33:09Z
-source:         RIPE
-
-
-
 aut-num:        AS44206
 as-name:        SIBSET-KRS-AS
 org:            ORG-CNL7-RIPE
-remarks:        ----- Upstreams -----
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-SIBSET-KRS
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-SIBSET-KRS
-remarks:        ------ Peers -------
 import:         from AS42403 accept AS-NSKROUTESERVER
 export:         to AS42403 announce AS-SIBSET-KRS
 import:         from AS60763 accept AS-SIBIR-IX
 export:         to AS60763 announce AS-SIBSET-KRS
 import:         from AS42773 accept ANY
 export:         to AS42773 announce AS-SIBSET-KRS
-remarks:        -------Norilsk_Reserve -------
 import:         from AS33871 accept AS33871
 export:         to AS33871 announce any
-remarks:        ------ Customers -------
 import:         from AS56326 accept AS56326
 export:         to AS56326 announce any
 import:         from AS51416 accept AS51416
@@ -40,18 +23,8 @@ import:         from AS48302 accept AS48302
 export:         to AS48302 announce any
 import:         from AS209687 accept AS209687
 export:         to AS209687 announce any
-remarks:        ----- BGB Communities -----
-remarks:        44206:5020 don't announce prefix to Milecom AS48858
-remarks:        44206:502x x - 1, 2, 3 is count prepend announce to Milecom AS48858
-remarks:        44206:5030 don't announce prefix to Milecom AS13094
-remarks:        44206:503x x - 1, 2, 3 is count prepend announce to Milecom AS13094
-remarks:        44206:5040 don't announce prefix to RED-IX AS60430
-remarks:        44206:504x x - 1, 2, 3 is count prepend announce to RED-IX AS60430
-remarks:        44206:5050 don't announce prefix to SIBIR-IX AS60763
-remarks:        44206:505x x - 1, 2, 3 is count prepend announce to SIBIR-IX AS60763
-remarks:        ---------------------------
-admin-c:        NOC211-RIPE
-tech-c:         NOC211-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBSET-MNT
@@ -59,20 +32,16 @@ created:        2007-12-04T08:15:19Z
 last-modified:  2025-02-20T03:07:16Z
 source:         RIPE
 
+as-num:         AS44206
+country:        RU
+as-name:        SIBSET-KRS-AS Sibirskie Seti Ltd.
+
 organisation:   ORG-CNL7-RIPE
 org-name:       Sibirskie Seti Ltd.
 country:        RU
 org-type:       LIR
-address:        118, Saltykova-Shchedrina Str.
-address:        630132
-address:        Novosibirsk
-address:        RUSSIAN FEDERATION
-phone:          +73832050000
-phone:          +73843940000
-fax-no:         +73832050000
-fax-no:         +73843391245
-admin-c:        NOC211-RIPE
-tech-c:         NOC211-RIPE
+address:        Dummy address for ORG-CNL7-RIPE
+e-mail:         unread@ripe.net
 abuse-c:        SNAT1-RIPE
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        SIBSET-MNT
@@ -80,32 +49,6 @@ mnt-by:         RIPE-NCC-HM-MNT
 mnt-by:         SIBSET-MNT
 created:        2006-05-23T10:11:04Z
 last-modified:  2020-12-16T13:28:59Z
-source:         RIPE # Filtered
-
-role:           Siberian Networks NOC
-address:        LTD Siberian Networks
-address:        1/2, Dzerzhinskogo av.
-address:        630015, Novosibirsk, Russia
-phone:          +7 383 2050000
-fax-no:         +7 383 2050000
-remarks:        ******************************************************
-remarks:        Points of contact for Siberian Networks NOC:
-remarks:        _
-remarks:        Spam and security issues: abuse@sibset-team.ru
-remarks:        Routing issues: noc@sibset-team.ru
-remarks:        Mail issues: postmaster@sibset-team.ru
-remarks:        General information: info@sibset-team.ru
-remarks:        ******************************************************
-admin-c:        PK2069-RIPE
-admin-c:        RS25662-RIPE
-tech-c:         RS25662-RIPE
-tech-c:         OP3295-RIPE
-nic-hdl:        NOC211-RIPE
-mnt-by:         SIBSET-MNT
-created:        2007-03-21T10:10:01Z
-last-modified:  2023-12-07T04:18:23Z
-source:         RIPE # Filtered
-abuse-mailbox:  abuse@sibset-team.ru
-
+source:         RIPE
 
 

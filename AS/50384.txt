@@ -1,16 +1,3 @@
-
-
-
-as-block:       AS50220 - AS50841
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-08-12T14:10:44Z
-last-modified:  2024-08-12T14:10:44Z
-source:         RIPE
-
-
-
 aut-num:        AS50384
 as-name:        W-IX_LTD
 descr:          W-IX LTD
@@ -28,26 +15,26 @@ export:         to AS1200 announce AS-W-IX
 mp-import:      afi ipv6.unicast from AS1200 accept ANY
 mp-export:      afi ipv6.unicast to AS1200 announce AS-W-IX-IPVSIX
 import:         from AS6777 accept ANY AND NOT <^[AS3216 AS3255 AS3327 AS5568
-                AS8342 AS8359 AS8492 AS8641
-                AS8732 AS9002 AS9031 AS12389
-                AS12695 AS13238 AS13249 AS15169
-                AS16265 AS16276 AS21011 AS21219
-                AS28917 AS29076 AS30751
-                AS31133 AS31500 AS35320 AS39792
-                AS42861 AS47541 AS47542 AS6697
-                AS20485 AS42861]>
+AS8342 AS8359 AS8492 AS8641
+AS8732 AS9002 AS9031 AS12389
+AS12695 AS13238 AS13249 AS15169
+AS16265 AS16276 AS21011 AS21219
+AS28917 AS29076 AS30751
+AS31133 AS31500 AS35320 AS39792
+AS42861 AS47541 AS47542 AS6697
+AS20485 AS42861]>
 export:         to AS6777 action community .= { 6777:6777, 6777:3216, 6777:3255,
-                6777:3327, 6777:5568, 6777:8342,
-                6777:8359, 6777:8492, 6777:8641,
-                6777:8732, 6777:9002, 6777:9031,
-                6777:12389, 6777:12695, 6777:13238,
-                6777:13249, 6777:15169, 6777:16265,
-                6777:16276, 6777:21011, 6777:21219,
-                6777:28917, 6777:29076,
-                6777:30751, 6777:31133, 6777:31500,
-                6777:35320, 6777:39792, 6777:42861,
-                6777:47541, 6777:47542, 6777:6697,
-                6777:20485, 6777:42861 }; announce AS-W-IX
+6777:3327, 6777:5568, 6777:8342,
+6777:8359, 6777:8492, 6777:8641,
+6777:8732, 6777:9002, 6777:9031,
+6777:12389, 6777:12695, 6777:13238,
+6777:13249, 6777:15169, 6777:16265,
+6777:16276, 6777:21011, 6777:21219,
+6777:28917, 6777:29076,
+6777:30751, 6777:31133, 6777:31500,
+6777:35320, 6777:39792, 6777:42861,
+6777:47541, 6777:47542, 6777:6697,
+6777:20485, 6777:42861 }; announce AS-W-IX
 mp-import:      afi ipv6.unicast from AS6777 accept ANY
 mp-export:      afi ipv6.unicast to AS6777 announce AS-W-IX-IPVSIX
 import:         from AS31210 accept AS-DTEL-IX
@@ -938,74 +925,8 @@ import:         from AS48166 action pref=130; accept AS-FORTEX # fortex
 mp-import:      afi ipv6.unicast from AS48166 accept AS-FORTEX
 export:         to AS48166 announce ANY
 mp-export:      afi ipv6.unicast to AS48166 announce ANY
-remarks:
-remarks:        communities
-remarks:        50384:3001 msk-ix
-remarks:        50384:3007 dtel-ix
-remarks:        50384:3051 de-cix
-remarks:        50384:3052 ams-ix
-remarks:
-remarks:
-remarks:        Cities:
-remarks:        50384:4004 Amsterdam
-remarks:        50384:4123 Vladivostok
-remarks:        50384:4013 Vladimir
-remarks:        50384:4014 Voronezh
-remarks:        50384:4010 Ekaterinburg
-remarks:        50384:4009 Kazan
-remarks:        50384:4019 Kemerovo
-remarks:        50384:4005 Kiev
-remarks:        50384:4021 Kostroma
-remarks:        50384:4027 Krasnoyarsk
-remarks:        50384:4015 Kurgan
-remarks:        50384:4001 Moscow
-remarks:        50384:4025 Nijnii Novgorod
-remarks:        50384:4011 Novosibirsk
-remarks:        50384:4020 Omsk
-remarks:        50384:4012 Perm
-remarks:        50384:4026 Rostov-on-Don
-remarks:        50384:4016 Samara
-remarks:        50384:4002 Leningrad
-remarks:        50384:4024 Saratov
-remarks:        50384:4022 Tambov
-remarks:        50384:4018 Tomsk
-remarks:        50384:4017 Tumen
-remarks:        50384:4103 Ulanude
-remarks:        50384:4006 Ufa
-remarks:        50384:4003 Frankfurt
-remarks:        50384:4127 Khabarovsk
-remarks:        50384:4007 Cheboksari
-remarks:        50384:4008 Chelabinsk
-remarks:
-remarks:        RS accepts:
-remarks:        50384:6666 blackhole
-remarks:        0:as - do not advertise to as
-remarks:
-remarks:        city = 61000 + 40xx = 650xx
-remarks:        where 40xx - city community
-remarks:
-remarks:        in order of specifity:
-remarks:        0:peeras - no ann to peer
-remarks:        myas:peeras - ann to peer
-remarks:        0:city - no ann to city
-remarks:        myas:city - ann to city
-remarks:        0:myas - no ann to any
-remarks:
-remarks:        65501:peeras - 1 prep to peer or city (additive)
-remarks:        65502:peeras - 2 prep to peer or city (additive)
-remarks:        i.e. up to 6 prepends to peer at city
-remarks:
-remarks:        uplink:
-remarks:        mark
-remarks:        50384:30xx
-remarks:
-remarks:        ctrl
-remarks:        50384:5xxy
-remarks:        y=0 noadv
-remarks:        1<=y<=3 prepend 50384 y times
-remarks:
-admin-c:        IHOM-RIPE
-tech-c:         IHOM-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
@@ -1013,18 +934,16 @@ created:        2009-12-30T16:24:09Z
 last-modified:  2025-04-01T10:53:22Z
 source:         RIPE
 
+as-num:         AS50384
+country:        RU
+as-name:        W-IX_LTD iHome LLC
+
 organisation:   ORG-IJ5-RIPE
 org-name:       iHome LLC
 country:        RU
 org-type:       LIR
-address:        emb. Ovchinnikovskaya, 20, building 2, office 30 (floor 3)
-address:        115035
-address:        MOSCOW
-address:        RUSSIAN FEDERATION
-phone:          +74959886011
-fax-no:         +74959886011
-admin-c:        IHOM-RIPE
-tech-c:         IHOM-RIPE
+address:        Dummy address for ORG-IJ5-RIPE
+e-mail:         unread@ripe.net
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-ref:        IHOME-MNT
 mnt-by:         RIPE-NCC-HM-MNT
@@ -1032,20 +951,6 @@ mnt-by:         IHOME-MNT
 abuse-c:        IHOM-RIPE
 created:        2004-12-13T13:58:57Z
 last-modified:  2023-02-16T10:55:38Z
-source:         RIPE # Filtered
-
-role:           iHome NOC
-address:        iHome Ltd.
-address:        1A Semenovskaya pl.
-address:        107023, Moscow, Russia
-phone:          +7 495 9886011
-admin-c:        IAK61-RIPE
-nic-hdl:        IHOM-RIPE
-created:        2007-11-01T15:07:35Z
-last-modified:  2024-08-20T04:46:15Z
-source:         RIPE # Filtered
-mnt-by:         IHOME-MNT
-abuse-mailbox:  abuse@ihome.ru
-
+source:         RIPE
 
 

@@ -1,21 +1,102 @@
-mux_client_request_session: session request failed: Session open refused by peer
-ControlSocket /home/olden/.ssh/control/olden@t2.ukrhub.net:22 already exists, disabling multiplexing
+as-set:         AS-SIBMTS
+descr:          MTS PJSC, MR Sibir
+members:        AS28884
+members:        AS-MKC-OMSK
+members:        AS-SIBELTELECOM
+members:        AS-STRKEM
+members:        AS48541
+members:        AS-inteleca
+members:        AS-Scatplus
+members:        AS-ENFORTA
+members:        AS61118
+members:        AS196986
+members:        AS-CSIT
+members:        AS5473
+members:        AS42087
+members:        AS212275
+members:        AS201786
+members:        AS-TPTUS
+members:        AS57552
+members:        AS198021
+members:        AS-NSTU
+members:        AS15850
+members:        AS34671
+members:        AS34490
+members:        AS202999
+members:        AS43552
+members:        AS62036
+members:        AS50567
+members:        AS61193
+members:        AS61985
+members:        AS206871
+members:        AS50860
+members:        AS197880
+members:        AS34336
+members:        AS9006
+members:        AS205076
+members:        AS59591
+members:        AS59957
+members:        AS206427
+members:        AS35783
+members:        AS60081
+members:        AS60360
+members:        AS42524
+members:        AS-ITEL
+members:        AS198384
+members:        AS212264
+members:        AS49932
+members:        AS210889
+members:        AS42558
+notify:         vvostran@mts.ru
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MR-SIB-MTS-MNT
+mnt-by:         MTU-NOC
+created:        2009-05-22T01:54:53Z
+last-modified:  2022-04-29T09:55:40Z
+source:         RIPE
 
+
+
+as-set:         AS-SIBMTS-UPLINK
+descr:          AS-Set Mobile TeleSystems, OJSC, MR SIBIR
+members:        AS-SIBMTS
+notify:         Ostranitsyn.Vadim@sib.mts.ru
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MR-SIB-MTS-MNT
+created:        2010-07-01T07:22:11Z
+last-modified:  2014-04-16T03:40:59Z
+source:         RIPE
+
+
+
+as-set:         AS-SIBMTS-V6
+descr:          MTS PJSC, MR Sibir
+members:        AS28884
+members:        AS30922
+members:        AS29147
+members:        AS-Scatplus
+members:        AS205076
+notify:         vvostran@mts.ru
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MR-SIB-MTS-MNT
+created:        2012-09-25T04:21:38Z
+last-modified:  2018-03-06T08:43:16Z
+source:         RIPE
 
 
 
 aut-num:        AS28884
 as-name:        MR-SIB-MTSAS
 descr:          MR Sibir
-remarks:        --- Upstreams ---
 import:         from AS8359 action pref=200; accept ANY
 export:         to AS8359 announce AS-SIBMTS
 mp-import:      afi ipv6.unicast from AS8359 action pref=200; accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS-SIBMTS-V6
-remarks:        --- Peering ---
 import:         from AS8848 action pref=500; accept AS8848
 export:         to AS8848 announce AS-SIBMTS
-remarks:        --- Clients ---
 import:         from AS41771 action pref=1000; accept AS-MKC-OMSK
 export:         to AS41771 announce ANY
 import:         from AS49154 action pref=1000; accept AS-STRKEM
@@ -102,33 +183,33 @@ import:         from AS210889 action pref=1000; accept AS210889
 export:         to AS210889 announce ANY
 import:         from AS42558 action pref=1000; accept AS42558
 export:         to AS42558 announce ANY
-remarks:        ---------------------------------------------------
 org:            ORG-ZM1-RIPE
-admin-c:        MA14315-RIPE
-tech-c:         MN9513-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         lir@mtu.ru
+notify:         vvostran@mts.ru
+notify:         noc@mtsnet.ru
 mnt-by:         MR-SIB-MTS-MNT
 mnt-by:         MTU-NOC
 created:        2003-03-26T12:23:40Z
 last-modified:  2022-04-29T09:56:20Z
-source:         RIPE # Filtered
+source:         RIPE
 
 
 
 aut-num:        AS30922
 as-name:        MTS-FBN-Siberia-AS
 org:            ORG-ZM1-RIPE
-remarks:        ---
 import:         from AS28884 accept ANY
 export:         to AS28884 announce AS-SIBELTELECOM
 import:         from AS43318 accept AS43318
 export:         to AS43318 announce ANY
 import:         from AS48100 accept AS48100
 export:         to AS48100 announce ANY
-remarks:        ---
-admin-c:        MA14315-RIPE
-tech-c:         MN9513-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         MTU-NOC
 mnt-by:         RIPE-NCC-END-MNT

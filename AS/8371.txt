@@ -1,16 +1,3 @@
-
-
-
-as-block:       AS8192 - AS8523
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:23Z
-last-modified:  2018-11-22T15:27:23Z
-source:         RIPE
-
-
-
 aut-num:        AS8371
 as-name:        Vimpelcom-NN
 descr:          Vimpelcom, Nizhniy Novgorod branch, fixed network
@@ -75,59 +62,26 @@ mp-export:      afi ipv6 to AS200479 announce ANY
 import:         from AS12389 action pref=90; accept ANY
 export:         to AS12389 announce AS-KIS
 default:        to AS3216 action pref=90; networks ANY
-remarks:        External communities may be set by external peers when
-remarks:        talking to AS8371. They are in range 8371:5000-8371:5999.
-remarks:        Community Meaning
-remarks:        8371:5000 - Do not export outside AS8371
-remarks:        8371:5001 - Export to all clients and peers but don't export
-remarks:        to all uplinks
-remarks:        8371:501x - When advertising to Rostelecom peer
-remarks:        8371:502x - When advertising to TTK-NN peer
-remarks:        8371:503x - When advertising to StartTelecom peer
-remarks:        ...x=0 - Do not advertise
-remarks:        x=1,2,4,6 - prepend 8371 1,2,4,6 times.
-remarks:        8371:5500 - Do not advertise to OTHER peers.
-remarks:        8371:5510 - Do not advertise to ALL peers.
-remarks:        8371:5880 - set local preference to 80 (the lowest value
-remarks:        used in the network (BACKUP).
-remarks:        Internal comminuties are assigned only internally.
-remarks:        are always deleted from incoming updates at the border
-remarks:        routers.
-remarks:        They may be used by peers to filter some prefixes.
-remarks:        8371:1000 - prefixes originated from Uplinks
-remarks:        8371:1101 - prefixes originated from Rostelecom peer
-remarks:        8371:1102 - prefixes originated from TTK-NN peer
-remarks:        8371:1103 - prefixes originated from StartTelecom peer
-remarks:        8371:1150 - prefixes originated from OTHER peers
-remarks:        8371:1151 - prefixes originated from ALL peers
-remarks:        8371:1200 - prefixes originated from clients in Nizhniy
-remarks:        Novgorod
-remarks:        8371:1201 - prefixes originated from clients in Bor
-admin-c:        SVNT2-RIPE
-tech-c:         SVNT1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS8371-MNT
+notify:         noc@bca.ru
 created:        1970-01-01T00:00:00Z
 last-modified:  2024-10-10T14:48:25Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS8371
+country:        RU
+as-name:        Vimpelcom-NN PJSC "Vimpelcom"
 
 organisation:   ORG-ES15-RIPE
 org-name:       PJSC "Vimpelcom"
 country:        RU
 org-type:       LIR
-remarks:        VEON Group
-address:        8 Marta str, 10, bld. 14
-address:        127083
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74999233775
-fax-no:         +74957871990
-admin-c:        SVNT1-RIPE
-admin-c:        SVNT2-RIPE
-admin-c:        IAI1-RIPE
-admin-c:        DM3740-RIPE
-admin-c:        BEE15-RIPE
+address:        Dummy address for ORG-ES15-RIPE
+e-mail:         unread@ripe.net
 mnt-ref:        SOVINTEL-MNT
 mnt-ref:        ROSNIIROS-MNT
 mnt-ref:        RIPE-NCC-HM-MNT
@@ -136,40 +90,6 @@ mnt-by:         SOVINTEL-MNT
 abuse-c:        SVNT2-RIPE
 created:        2004-04-17T11:58:43Z
 last-modified:  2022-04-21T15:45:58Z
-source:         RIPE # Filtered
-
-role:           Sovintel NOC
-remarks:        now PAO Vimpelcom - formely Sovam Teleport/Teleross
-remarks:        aka Sovintel - Golden Telecom
-address:        111250 Russia Moscow Krasnokazarmennaya, 12
-mnt-by:         SOVINTEL-MNT
-org:            ORG-ES15-RIPE
-phone:          +7 800 7008061
-fax-no:         +7 495 7871010
-abuse-mailbox:  abuse-b2b@beeline.ru
-admin-c:        IAI1-RIPE
-admin-c:        DM3740-RIPE
-tech-c:         DM3740-RIPE
-tech-c:         SVNT2-RIPE
-nic-hdl:        SVNT1-RIPE
-created:        2004-05-13T11:50:32Z
-last-modified:  2022-04-20T08:31:22Z
-source:         RIPE # Filtered
-
-role:           Sovintel Abuse Department
-remarks:        now Vimpelcom Business Abuse Department
-address:        111250 Russia Moscow, Krasnokazarmennaya, 12
-org:            ORG-ES15-RIPE
-fax-no:         +7 495 7254300
-phone:          +7 495 7871000
-nic-hdl:        SVNT2-RIPE
-admin-c:        SVNT1-RIPE
-tech-c:         SVNT1-RIPE
-mnt-by:         SOVINTEL-MNT
-created:        2004-05-14T10:21:01Z
-last-modified:  2018-11-08T08:46:48Z
-source:         RIPE # Filtered
-abuse-mailbox:  abuse-b2b@beeline.ru
-
+source:         RIPE
 
 

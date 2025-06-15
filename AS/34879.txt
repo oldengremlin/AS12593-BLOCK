@@ -1,24 +1,7 @@
-
-
-
-as-block:       AS34554 - AS34984
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2024-07-03T14:03:00Z
-last-modified:  2024-07-03T14:03:00Z
-source:         RIPE
-
-
-
 aut-num:        AS34879
 as-name:        CCT-AS
 descr:          NGENIX
 org:            ORG-CCT1-RIPE
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Moscow Node
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Upstreams
 import:         from AS15835 accept ANY
 export:         to AS15835 announce AS-NGENIX
 import:         from AS8359 accept ANY
@@ -31,7 +14,6 @@ import:         from AS61400 accept ANY
 export:         to AS61400 announce { 46.235.187.0/24 }
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-NGENIX
-remarks:        Peers at MSK-IX
 import:         from AS2848 action pref=120; community.append(34879:30100); accept AS-MSURUNNET
 export:         to AS2848 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
 import:         from AS2854 at 193.232.244.74 action pref=120; community.append(34879:30100); accept AS-ROSPRINT
@@ -84,17 +66,12 @@ import:         from AS48842 action pref=120; community.append(34879:30100); acc
 export:         to AS48842 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
 import:         from AS49813 action pref=120; community.append(34879:30100); accept AS-INN
 export:         to AS49813 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Ekaterinburg Node
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Upstreams
 import:         from AS16179 217.119.90.241 at 217.119.90.242 action pref=150; community.append(34879:40201); accept ANY
 export:         to AS16179 217.119.90.241 at 217.119.90.242 announce AS-NGENIX-EKT
 import:         from AS8744 81.16.123.181 at 81.16.123.182 action pref=150; community.append(34879:40203); accept ANY
 export:         to AS8744 81.16.123.181 at 81.16.123.182 announce AS-NGENIX-EKT
 import:         from AS29648 77.233.170.49 at 77.233.170.50 action pref=150; community.append(34879:40202); accept ANY
 export:         to AS29648 77.233.170.49 at 77.233.170.50 announce AS-NGENIX-EKT
-remarks:        Peers at EKT-IX
 import:         from AS5563 action pref=120; community.append(34879:30200); accept AS5563
 export:         to AS5563 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
 import:         from AS16230 action pref=120; community.append(34879:30200); accept AS16230
@@ -111,16 +88,10 @@ import:         from AS43213 action pref=120; community.append(34879:30200); acc
 export:         to AS43213 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
 import:         from AS43218 action pref=120; community.append(34879:30200); accept AS43218
 export:         to AS43218 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
-remarks:        Private peers
 import:         from AS31363 action pref=150; community.append(34879:30201); accept ANY
 export:         to AS31363 announce AS-NGENIX-EKT
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Novosibirsk Node
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Upstreams
 import:         from AS8342 213.24.141.193 at 213.24.141.194 action pref=150; community.append(34879:40301); accept ANY
 export:         to AS8342 213.24.141.193 at 213.24.141.194 announce AS-NGENIX-NSK
-remarks:        Peers at NSK-IX
 import:         from AS2854 at 193.232.87.70 action pref=120; community.append(34879:30300); accept AS-ROSPRINT
 export:         to AS2854 at 193.232.87.70 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
 import:         from AS3216 at 193.232.87.70 action pref=120; community.append(34879:30300); accept AS3216
@@ -157,13 +128,8 @@ import:         from AS44634 action pref=120; community.append(34879:30300); acc
 export:         to AS44634 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
 import:         from AS48100 action pref=120; community.append(34879:30300); accept AS48100
 export:         to AS48100 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Samara Node
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Upstreams
 import:         from AS39293 195.248.236.233 at 195.248.236.234 action pref=150; community.append(34879:40401); accept ANY
 export:         to AS39293 195.248.236.233 at 195.248.236.234 announce AS-NGENIX-SMR
-remarks:        Peers at SMR-IX
 import:         from AS6800 action pref=120; community.append(34879:30400); accept AS-SAMARA
 export:         to AS6800 announce AS-NGENIX-SMR AND NOT community.contains(34879:52000,34879:52040)
 import:         from AS8439 action pref=120; community.append(34879:30400); accept AS8439
@@ -178,13 +144,8 @@ import:         from AS39042 action pref=120; community.append(34879:30400); acc
 export:         to AS39042 announce AS-NGENIX-SMR AND NOT community.contains(34879:52000,34879:52040)
 import:         from AS47882 action pref=120; community.append(34879:30400); accept AS-SMRROUTESERVER
 export:         to AS47882 announce AS-NGENIX-SMR AND NOT community.contains(34879:52000,34879:52040)
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Spb Node
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Upstreams
 import:         from AS3216 194.186.155.89 at 194.186.155.90 action pref=150; community.append(34879:40705); accept ANY
 export:         to AS3216 194.186.155.89 at 194.186.155.90 announce AS-NGENIX-SPB
-remarks:        Peers at SPB-IX
 import:         from AS2854 at 194.85.177.109 action pref=120; community.append(34879:30700); accept AS-ROSPRINT
 export:         to AS2854 at 194.85.177.109 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
 import:         from AS3267 at 194.85.177.109 action pref=120; community.append(34879:30700); accept AS-RUNNET
@@ -261,46 +222,36 @@ import:         from AS48416 action pref=120; community.append(34879:30700); acc
 export:         to AS48416 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
 import:         from AS50258 action pref=120; community.append(34879:30700); accept AS-TEYLA
 export:         to AS50258 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-remarks:        Peers
 import:         from AS8402 action pref=120; community.append(34879:30700); accept AS8402
 export:         to AS8402 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Vladivostok Node
-remarks:        ------------------------------------------------------------------------------------
-remarks:        Peers at VVO-IX
 import:         from AS48531 action pref=120; accept AS-VLVROUTESERVER
 export:         to AS48531 announce AS-NGENIX-VVO
-remarks:        ------------------------------------------------------------------------------------
-remarks:        BY Node
-remarks:        ------------------------------------------------------------------------------------
 import:         from AS208407 action pref=120; accept AS208407
 export:         to AS208407 announce AS-NGENIX-NET
-remarks:        ------------------------------------------------------------------------------------
 import:         from AS28761 accept ANY
 export:         to AS28761 announce AS34879
 import:         from AS43222 accept ANY
 export:         to AS43222 announce AS34879
-remarks:        ------------------------------------------------------------------------------------
-admin-c:        NGNX-RIPE
-tech-c:         NGNX-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+notify:         hostmaster@ngenix.net
 mnt-by:         CCT-MNT
 created:        2005-04-22T13:09:41Z
 last-modified:  2023-06-09T06:50:06Z
-source:         RIPE # Filtered
+source:         RIPE
+
+as-num:         AS34879
+country:        RU
+as-name:        CCT-AS OOO "Sovremennye setevye tekhnologii"
 
 organisation:   ORG-CCT1-RIPE
 org-name:       OOO "Sovremennye setevye tekhnologii"
 country:        RU
 org-type:       LIR
-address:        ul. 8 Marta, dom 1, stroenie 12, et. 7, pm. XL, kom. 20
-address:        127083
-address:        Moscow
-address:        RUSSIAN FEDERATION
-phone:          +74950236333
-admin-c:        NGNX-RIPE
-tech-c:         NGNX-RIPE
+address:        Dummy address for ORG-CCT1-RIPE
+e-mail:         unread@ripe.net
 mnt-ref:        CCT-MNT
 mnt-ref:        ROSNIIROS-MNT
 mnt-ref:        RIPE-NCC-HM-MNT
@@ -309,35 +260,6 @@ mnt-by:         CCT-MNT
 abuse-c:        NGNX-RIPE
 created:        2005-04-21T15:21:59Z
 last-modified:  2021-05-26T08:36:58Z
-source:         RIPE # Filtered
-fax-no:         +74950236333
-
-role:           NGENIX Network Operations Center
-address:        OOO "CCT"
-address:        ul. 8 Marta d.1 str.12, Moscow, 127083, Russia
-phone:          +7 495 023-6333
-remarks:        ------------------------------------------------------
-remarks:        NGENIX Network Operations Center is available 24 x 7
-remarks:        ------------------------------------------------------
-remarks:        Contacts for NGENIX General Operations
-remarks:        ------------------------------------------------------
-remarks:        Customer support service: support@ngenix.net
-remarks:        Routing and peering issues: noc@ngenix.net
-remarks:        Network security issues: noc@ngenix.net
-remarks:        SPAM and virus issues: abuse@ngenix.net
-remarks:        Mail issues: postmaster@ngenix.net
-remarks:        Registration issues: hostmaster@ngenix.net
-remarks:        General information: info@ngenix.net
-remarks:        ------------------------------------------------------
-admin-c:        DK7505-RIPE
-tech-c:         DK7505-RIPE
-tech-c:         PK9312-RIPE
-nic-hdl:        NGNX-RIPE
-mnt-by:         CCT-MNT
-created:        2008-09-18T09:50:18Z
-last-modified:  2019-09-30T09:07:59Z
-source:         RIPE # Filtered
-abuse-mailbox:  abuse@ngenix.net
-
+source:         RIPE
 
 

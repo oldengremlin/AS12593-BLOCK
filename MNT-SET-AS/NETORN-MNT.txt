@@ -1,3 +1,341 @@
-mux_client_request_session: session request failed: Session open refused by peer
-kex_exchange_identification: Connection closed by remote host
-Connection closed by 212.90.160.3 port 22
+as-set:         AS-BEIREL
+descr:          BEIREL and customers AS list
+members:        AS42148
+members:        AS57209
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         noc@netorn.ru
+notify:         noc@beirel.ru
+mnt-by:         NETORN-MNT
+mnt-by:         BEIREL-MNT
+created:        2011-04-01T09:14:49Z
+last-modified:  2021-02-16T12:00:42Z
+source:         RIPE
+
+
+
+as-set:         AS-DIALOGK
+descr:          DIALOG-K LLC
+members:        AS50668
+members:        AS47711
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NETORN-MNT
+mnt-by:         DIALOGK-MNT
+created:        2018-10-08T20:19:42Z
+last-modified:  2018-10-08T20:19:42Z
+source:         RIPE
+
+
+
+as-set:         AS-NETORN
+descr:          NETORN and customers AS list
+members:        AS34123
+members:        AS35035
+members:        AS39462
+members:        AS42998
+members:        AS43667
+members:        AS43865
+members:        AS47711
+members:        AS49348
+members:        AS50553
+members:        AS51009
+members:        AS57368
+members:        AS57712
+members:        AS58036
+members:        AS59584
+members:        AS59793
+members:        AS59875
+members:        AS62429
+members:        AS203051
+members:        AS-BEIREL
+members:        AS-BITRACE
+members:        AS-CISP
+members:        AS-DIALOGK
+members:        AS-EAST
+members:        AS-ENGINETPLUS
+members:        AS-VSHK
+members:        AS-INFOLINK
+members:        AS-INTERLAN
+members:        AS-MEDIAL
+members:        AS-ITKM
+members:        AS-IVLAN
+members:        AS-KOMDIV
+members:        AS-KOMLAN
+members:        AS-OTSNET
+members:        AS-ROSINTEK
+members:        AS-SPNETRU
+members:        AS-TECHSTANDART
+members:        AS-TRYTEK
+members:        AS-TSI
+members:        AS-VSHKRU
+members:        AS49106
+members:        AS-VERMONT
+members:        AS50435
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         noc@netorn.ru
+mnt-by:         NETORN-MNT
+created:        2006-05-01T22:09:05Z
+last-modified:  2021-08-20T17:16:25Z
+source:         RIPE
+
+
+
+as-set:         AS-NPOSERT
+members:        AS34682
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NETORN-MNT
+created:        2016-03-29T12:15:31Z
+last-modified:  2023-09-01T02:00:47Z
+source:         RIPE
+
+
+
+as-set:         AS-SVAOIX
+descr:          Svao-Ix.ru
+members:        AS12452
+members:        AS12695
+members:        AS197498
+members:        AS197968
+members:        AS21453
+members:        AS25341
+members:        AS28738
+members:        AS28870
+members:        AS29319
+members:        AS29588
+members:        AS30833
+members:        AS34139
+members:        AS34682
+members:        AS34690
+members:        AS34898
+members:        AS35026
+members:        AS35271
+members:        AS35475
+members:        AS35598
+members:        AS38984
+members:        AS39709
+members:        AS41206
+members:        AS41225
+members:        AS41802
+members:        AS41842
+members:        AS41895
+members:        AS42148
+members:        AS42892
+members:        AS42998
+members:        AS43404
+members:        AS43667
+members:        AS43686
+members:        AS43826
+members:        AS44020
+members:        AS44056
+members:        AS44116
+members:        AS44202
+members:        AS44622
+members:        AS44834
+members:        AS47286
+members:        AS47711
+members:        AS47713
+members:        AS48822
+members:        AS49060
+members:        AS49403
+members:        AS49608
+members:        AS49893
+members:        AS50471
+members:        AS50473
+members:        AS50577
+members:        AS51230
+members:        AS51281
+members:        AS51343
+members:        AS51596
+members:        AS8395
+members:        AS34123
+members:        AS43865
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         noc@netorn.ru
+mnt-by:         NETORN-MNT
+created:        2012-04-12T12:12:30Z
+last-modified:  2012-04-12T12:12:30Z
+source:         RIPE
+
+
+
+aut-num:        AS202980
+as-name:        LUBOVICH-AS
+org:            ORG-LSO6-RIPE
+import:         from AS34123 accept ANY
+export:         to AS34123 announce AS202980
+import:         from AS35297 accept ANY
+export:         to AS35297 announce AS202980
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETORN-MNT
+created:        2016-04-21T14:24:40Z
+last-modified:  2020-11-16T17:51:24Z
+source:         RIPE
+sponsoring-org: ORG-NL73-RIPE
+
+
+
+aut-num:        AS34123
+as-name:        NETORN-AS
+import:         from AS12695 action pref=200; accept ANY
+export:         to AS12695 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS12695 action pref=200; accept ANY
+mp-export:      afi ipv6.unicast to AS12695 announce AS-NETORN
+import:         from AS8641 action pref=200; accept ANY
+export:         to AS8641 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS8641 action pref=200; accept ANY
+mp-export:      afi ipv6.unicast to AS8641 announce AS-NETORN
+import:         from AS20764 action pref=200; accept ANY
+export:         to AS20764 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS20764 action pref=200; accept ANY
+mp-export:      afi ipv6.unicast to AS20764 announce AS-NETORN
+import:         from AS8631 action pref=240; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS8631 action pref=240; accept ANY
+mp-export:      afi ipv6.unicast to AS8631 announce AS-NETORN
+import:         from AS31210 action pref=240; accept AS-DTEL-IX
+export:         to AS31210 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS31210 action pref=240; accept AS-DTEL-IX-V6
+mp-export:      afi ipv6.unicast to AS31210 announce AS-NETORN
+import:         from AS34307 action pref=240; accept ANY
+export:         to AS34307 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS34307 action pref=240; accept ANY
+mp-export:      afi ipv6.unicast to AS34307 announce AS-NETORN
+import:         from AS50952 action pref=240; accept AS-DATAIX
+export:         to AS50952 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS50952 action pref=240; accept AS-DATAIX
+mp-export:      afi ipv6.unicast to AS50952 announce AS-NETORN
+import:         from AS56931 action pref=240; accept AS-EURASIAPEERING_RS
+export:         to AS56931 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS56931  action pref=240; accept AS-EURASIAPEERING_RS
+mp-export:      afi ipv6.unicast to AS56931 announce AS-NETORN
+import:         from AS31500 action pref=240; accept AS-GLOBAL-IX
+export:         to AS31500 announce AS-NETORN
+mp-import:      afi ipv6.unicast from AS31500 action pref=240; accept AS-GLOBAL-IX
+mp-export:      afi ipv6.unicast to AS31500 announce AS-NETORN
+import:         from AS8075 action pref=250; accept AS8075
+export:         to AS8075 announce AS-NETORN
+import:         from AS8470 action pref=250; accept AS-MACOMNET
+export:         to AS8470 announce AS-NETORN
+import:         from AS15169 action pref=250; accept AS15169
+export:         to AS15169 announce AS-NETORN
+import:         from AS21453 action pref=250; accept AS-FLEX
+export:         to AS21453 announce AS-NETORN
+import:         from AS28917 action pref=250; accept AS-FIORD
+export:         to AS28917 announce AS-NETORN
+import:         from AS41842 action pref=250; accept AS-MEDIAL
+export:         to AS41842 announce AS-NETORN
+import:         from AS42632 action pref=250; accept AS-MNOGOBYTE
+export:         to AS42632 announce AS-NETORN
+import:         from AS46489 action pref=250; accept AS46489
+export:         to AS46489 announce AS-NETORN
+import:         from AS47764 action pref=250; accept AS-MAILRU
+export:         to AS47764 announce AS-NETORN
+import:         from AS48061 action pref=250; accept AS-M-TECH
+export:         to AS48061 announce AS-NETORN
+import:         from AS49813 action pref=250; accept AS-INN
+export:         to AS49813 announce AS-NETORN
+import:         from AS200976 action pref=250; accept AS200976
+export:         to AS200976 announce AS-NETORN
+import:         from AS28738 action pref=300; accept AS-INTERLAN
+export:         to AS28738 announce ANY
+import:         from AS34139 action pref=300; accept AS-TSI
+export:         to AS34139 announce ANY
+mp-import:      afi ipv6.unicast from AS34139 action pref=300; accept AS-TSI
+mp-export:      afi ipv6.unicast to AS34139 announce ANY
+import:         from AS35035 action pref=300; accept AS-OSTNET
+export:         to AS35035 announce ANY
+import:         from AS35539 action pref=300; accept AS-INFOLINK
+export:         to AS35539 announce ANY
+import:         from AS39462 action pref=300; accept AS39462
+export:         to AS39462 announce ANY
+import:         from AS42148 action pref=300; accept AS-BEIREL
+export:         to AS42148 announce ANY
+import:         from AS42998 action pref=300; accept AS42998
+export:         to AS42998 announce ANY
+import:         from AS43667 action pref=300; accept AS-VERMONT
+export:         to AS43667 announce ANY
+import:         from AS43826 action pref=300; accept AS-SPNETRU
+export:         to AS43826 announce ANY
+import:         from AS43865 action pref=300; accept AS43865
+export:         to AS43865 announce ANY
+import:         from AS44056 action pref=300; accept AS-TRYTEK
+export:         to AS44056 announce ANY
+import:         from AS47286 action pref=300; accept AS-OTSNET
+export:         to AS47286 announce ANY
+import:         from AS47711 action pref=300; accept AS47711
+export:         to AS47711 announce ANY
+import:         from AS48149 action pref=300; accept AS48149
+export:         to AS48149 announce ANY
+import:         from AS49348 action pref=300; accept AS49348
+export:         to AS49348 announce ANY
+import:         from AS49583 action pref=300; accept AS-KOMLAN
+export:         to AS49583 announce ANY
+import:         from AS49893 action pref=300; accept AS-BITRACE
+export:         to AS49893 announce ANY
+import:         from AS50553 action pref=300; accept AS50553
+export:         to AS50553 announce ANY
+import:         from AS51579 action pref=300; accept AS-VSHK
+export:         to AS51579 announce ANY
+import:         from AS52080 action pref=300; accept AS-IVLAN
+export:         to AS52080 announce ANY
+import:         from AS57368 action pref=300; accept AS57368
+export:         to AS57368 announce ANY
+import:         from AS57712 action pref=300; accept AS57712
+export:         to AS57712 announce ANY
+import:         from AS58036 action pref=300; accept AS58036
+export:         to AS58036 announce ANY
+import:         from AS59584 action pref=300; accept AS59584
+export:         to AS59584 announce ANY
+import:         from AS61380 action pref=300; accept AS61380
+export:         to AS61380 announce ANY
+import:         from AS62429 action pref=300; accept AS62429
+export:         to AS62429 announce ANY
+import:         from AS196803 action pref=300; accept AS-KOMDIV
+export:         to AS196803 announce ANY
+import:         from AS201088 action pref=300; accept AS-TECHSTANDART
+export:         to AS201088 announce ANY
+import:         from AS203051 action pref=300; accept AS203051
+export:         to AS203051 announce ANY
+import:         from AS49106 action pref=300; accept AS49106
+export:         to AS49106 announce ANY
+import:         from AS50435 action pref=300; accept AS50435 AND AS49106
+export:         to AS50435 announce ANY
+org:            ORG-NL73-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETORN-MNT
+created:        2004-10-28T13:36:39Z
+last-modified:  2023-01-17T09:14:18Z
+source:         RIPE
+
+
+
+aut-num:        AS50668
+as-name:        DIALOGK-AS
+import:         from AS34123 accept ANY
+export:         to AS34123 announce AS-DIALOGK
+import:         from AS48347 accept ANY
+export:         to AS48347 announce AS-DIALOGK
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+org:            ORG-DL43-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETORN-MNT
+mnt-by:         DIALOGK-MNT
+created:        2018-10-08T12:41:48Z
+last-modified:  2020-11-16T18:02:48Z
+source:         RIPE
+sponsoring-org: ORG-NL73-RIPE
+
+
+

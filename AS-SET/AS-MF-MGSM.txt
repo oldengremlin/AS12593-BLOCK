@@ -1,19 +1,6 @@
-% This is the RIPE Database query service.
-% The objects are in RPSL format.
-%
-% The RIPE Database is subject to Terms and Conditions.
-% See https://docs.db.ripe.net/terms-conditions.html
-
-% Note: this output has been filtered.
-%       To receive output for a database update, use the "-B" flag.
-
-% Information related to 'AS-MF-MGSM'
-
 as-set:         AS-MF-MGSM
 descr:          AS set PJSC MegaFon
-remarks:        --- Owner ---
 members:        AS31133
-remarks:        --- Owner ---
 members:        AS-23NET
 members:        AS-3DATA-BP54
 members:        AS-3DATA_MR4
@@ -64,6 +51,7 @@ members:        AS-DINET
 members:        AS-DON
 members:        AS-DTLN
 members:        AS-DRUGOYTEL
+members:        AS-FASTLY
 members:        AS-EDGECENTER
 members:        AS-EgstelecomSamara
 members:        AS-ELIGHT
@@ -73,6 +61,7 @@ members:        as-erlang
 members:        AS-EROS
 members:        AS-ERTH
 members:        AS-ESD
+members:        AS-EST
 members:        AS-ETHERWAY
 members:        AS-ETYPE
 members:        AS-EUT
@@ -170,6 +159,7 @@ members:        AS-O2CLOUD
 members:        AS-OBSRUSSIA6
 members:        AS-OBIT
 members:        AS-OGS
+members:        AS-OKKO
 members:        AS-OOO-NET
 members:        AS-optimanet
 members:        AS-ORBITEL
@@ -180,8 +170,8 @@ members:        AS-PAKT
 members:        AS-PermInterCom
 members:        AS-PervajaBaza
 members:        AS-PETERSTAR
+members:        AS-PETROSVYAZ
 members:        AS-PIRIXINET
-members:        AS-PSB
 members:        AS-PODRYAD
 members:        AS-PRIDE
 members:        AS-PROGTECH
@@ -190,6 +180,8 @@ members:        AS-PROMETEY
 members:        AS-PROMETEY-V6
 members:        AS-PROVODOV-NET
 members:        AS-PROEKT
+members:        AS-PSB
+members:        AS-PTKOM
 members:        AS-ROSPRINT
 members:        AS-QIPCONNECT
 members:        AS-QUANTUM
@@ -316,7 +308,6 @@ members:        AS202611:AS-YCTLCDN
 members:        AS206810:AS-CUSTOMERS
 members:        AS208677:AS-CLOUDRU
 members:        AS216322:AS-ADI
-remarks:        ***
 members:        AS2854
 members:        AS3168
 members:        AS5572
@@ -574,7 +565,6 @@ members:        AS50317
 members:        AS50342
 members:        AS50374
 members:        AS50443
-members:        AS50538
 members:        AS50539
 members:        AS50596
 members:        AS50671
@@ -733,6 +723,7 @@ members:        AS62130
 members:        AS62169
 members:        AS62243
 members:        AS62378
+members:        AS62404
 members:        AS62440
 members:        AS64429
 members:        AS64439
@@ -821,7 +812,6 @@ members:        AS204297
 members:        AS204350
 members:        AS204362
 members:        AS204564
-members:        AS204833
 members:        AS204925
 members:        AS205031
 members:        AS205103
@@ -835,7 +825,6 @@ members:        AS206756
 members:        AS206803
 members:        AS206809
 members:        AS206846
-members:        AS207228
 members:        AS207353
 members:        AS207382
 members:        AS207387
@@ -899,65 +888,11 @@ members:        AS216140
 members:        AS216185
 members:        AS216322
 members:        AS216379
-tech-c:         MFPF-RIPE
-admin-c:        MFON-RIPE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2007-10-01T11:16:52Z
-last-modified:  2025-05-07T22:03:03Z
+last-modified:  2025-06-11T07:11:06Z
 source:         RIPE
-
-role:           MegaFon PJSC - Internet Service Network Operation Center
-address:        PJSC "MegaFon"
-address:        41, Oruzheyniy lane
-address:        Moscow, 127006
-address:        Russian Federation
-abuse-mailbox:  abuse-mailbox@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        Customer Service Center, is available at 24 x 7
-remarks:        Phone: +8(800)5500500
-remarks:        -----------------------------------------------------------
-remarks:        Technical questions: gnocwest_tr@megafon.ru
-remarks:        Routing and peering: gnoceast_backbone@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        SPAM and Network security: abuse-mailbox@megafon.ru
-remarks:        Please use abuse-mailbox@megafon.ru e-mail address for complaints.
-remarks:        All messages to any other our address, relative to SPAM
-remarks:        or security issues, will not be concerned.
-remarks:        -----------------------------------------------------------
-remarks:        Information: http://www.megafon.ru
-remarks:        -----------------------------------------------------------
-admin-c:        PP18881-RIPE
-admin-c:        AI5775-RIPE
-nic-hdl:        MFON-RIPE
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2013-03-27T07:19:58Z
-last-modified:  2025-02-05T05:45:20Z
-source:         RIPE # Filtered
-
-role:           Volga Branch of OJSC MegaFon Technical Department
-address:        443080, Russia, Samara, Moskovskoe shosse, 15
-abuse-mailbox:  abuse-mailbox@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        Customer Service Center, is available at 24 x 7
-remarks:        -----------------------------------------------------------
-remarks:        Technical questions: gnocwest_tr@megafon.ru
-remarks:        Routing and peering: gnoceast_backbone@megafon.ru
-remarks:        -----------------------------------------------------------
-remarks:        SPAM and Network security: abuse-mailbox@megafon.ru
-remarks:        Please use abuse-mailbox@megafon.ru e-mail address for complaints.
-remarks:        All messages to any other our address, relative to SPAM
-remarks:        or security issues, will not be concerned.
-remarks:        -----------------------------------------------------------
-remarks:        Information: http://www.megafon.ru
-remarks:        -----------------------------------------------------------
-admin-c:        MA25605-RIPE
-nic-hdl:        MFPF-RIPE
-mnt-by:         MGSM-MNT
-created:        2013-02-11T09:17:34Z
-last-modified:  2022-07-16T04:43:00Z
-source:         RIPE # Filtered
-
-% This query was served by the RIPE Database Query Service version 1.117 (SHETLAND)
-
 

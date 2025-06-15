@@ -1,22 +1,6 @@
-
-
-
-as-block:       AS24737 - AS24756
-descr:          RIPE NCC ASN block
-remarks:        These AS Numbers are assigned to network operators in the RIPE NCC service region.
-mnt-by:         RIPE-NCC-HM-MNT
-created:        2018-11-22T15:27:29Z
-last-modified:  2018-11-22T15:27:29Z
-source:         RIPE
-
-
-
 aut-num:        AS24739
 as-name:        SEVEREN-TELECOM
 descr:          St.Petersburg, Russia
-remarks:        -----------------------------------------
-remarks:        ---------------- UPSTREAMS---------------
-remarks:        -----------------------------------------
 import:         from AS3216 action pref=100; accept ANY
 export:         to AS3216 announce AS-SEVEREN-TELECOM
 import:         from AS9002 action pref=100; accept ANY
@@ -27,27 +11,14 @@ import:         from AS20485 action pref=100; accept ANY
 export:         to AS20485 announce AS-SEVEREN-TELECOM
 import:         from AS20764 action pref=100; accept ANY
 export:         to AS20764 announce AS-SEVEREN-TELECOM
-remarks:        -----------------------------------------
-remarks:        ---------------- IX-V4 -----------
-remarks:        -----------------------------------------
-remarks:        SPB-IX
 import:         from AS43690 action pref=100; accept ANY
 export:         to AS43690 announce AS-SEVEREN-TELECOM
-remarks:        MSK-IX
 import:         from AS8631 action pref=100; accept ANY
 export:         to AS8631 announce AS-SEVEREN-TELECOM
-remarks:        -----------------------------------------
-remarks:        ---------------- IX-V6 -----------
-remarks:        -----------------------------------------
-remarks:        SPB-IX
 mp-import:      afi ipv6.unicast from AS43690 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS43690 announce AS-SEVEREN-TELECOM-V6
-remarks:        MSK-IX
 mp-import:      afi ipv6.unicast from AS8631 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS8631 announce AS-SEVEREN-TELECOM-V6
-remarks:        -----------------------------------------
-remarks:        ---------------- CUSTOMERS --------------
-remarks:        -----------------------------------------
 import:         from AS42339 action pref=200; accept AS-CHTP
 export:         to AS42339 announce ANY
 import:         from AS49905 action pref=200; accept AS49905
@@ -124,9 +95,6 @@ import:         from AS211400 action pref=200; accept AS211400
 export:         to AS211400 announce ANY
 import:         from AS61259 action pref=200; accept AS211400
 export:         to AS61259 announce ANY
-remarks:        -----------------------------------------
-remarks:        ------------------ IPv6 -----------------
-remarks:        -----------------------------------------
 mp-import:      afi ipv6.unicast from AS3216 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS-SEVEREN-TELECOM-V6
 mp-import:      afi ipv6.unicast from AS9002 action pref=100; accept ANY
@@ -135,9 +103,6 @@ mp-import:      afi ipv6.unicast from AS9031 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS9031 announce AS-SEVEREN-TELECOM-V6
 mp-import:      afi ipv6.unicast from AS20764 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS20764 announce AS-SEVEREN-TELECOM-V6
-remarks:        -----------------------------------------
-remarks:        ---------------- CUSTOMERS-V6 -----------
-remarks:        -----------------------------------------
 mp-import:      afi ipv6.unicast from AS58042 action pref=200; accept AS58042
 mp-export:      afi ipv6.unicast to AS58042 announce ANY
 mp-import:      afi ipv6.unicast from AS60832 action pref=200; accept AS60832
@@ -156,75 +121,9 @@ mp-import:      afi ipv6.unicast from AS210223 action pref=200; accept AS210223
 mp-export:      afi ipv6.unicast to AS210223 announce ANY
 mp-import:      afi ipv6.unicast from AS211400 action pref=200; accept AS211400
 mp-export:      afi ipv6.unicast to AS211400 announce ANY
-remarks:
-remarks:        -------------------------------------------
-remarks:
-remarks:        Routing communities
-remarks:
-remarks:        External communities may be set by customers peers when
-remarks:        talking to AS24739. They are in range: 24739:4000 -
-remarks:        24739:4999.
-remarks:
-remarks:        24739:401x Advertising to Rascom
-remarks:        24739:402x Advertising to Rostelecom
-remarks:        24739:403x Advertising to TTK
-remarks:        24739:404x Advertising to Beeline
-remarks:        24739:408x Advertising to RETN
-remarks:        24739:410x Advertising to any Russian peer
-remarks:        24739:413x Advertising to any PRIVATE peer
-remarks:        24739:450x Advertising to any INTERNATIONAL peer
-remarks:        24739:453x Advertising to any PRIVATE peer
-remarks:
-remarks:        ...x=0 - do not advertise
-remarks:        ...x=1,2,4 - prepend 1,2,4 times
-remarks:
-remarks:        24739:4999 Do not advertise to any peers and uplinks
-remarks:
-remarks:        Customers routes get local preference of 200 (highest)
-remarks:        Peers routes get local preference in the range of 151-199.
-remarks:        Uplinks routes get local preference in the range of 95-105.
-remarks:
-remarks:        24739:4950 Set local preference 190
-remarks:        24739:4900 Set local preference 151
-remarks:
-remarks:        24739:4998 Blackhole (discard) traffic
-remarks:        Traffic destined for /32 prefixes tagged with
-remarks:        this community will be discarded at ingress to the
-remarks:        Severen-Telecom network.
-remarks:
-remarks:        Other communities in range 24739:4000-24739:4999 are
-remarks:        accepted but ignored.
-remarks:
-remarks:        Informational communities
-remarks:
-remarks:        Informational communities 24739:* (except 24739:4xxx) are
-remarks:        assigned only internally and are always deleted from
-remarks:        incoming updates at the border routers. They may be
-remarks:        used by peers to filter some prefixes.
-remarks:
-remarks:        24739:1000 Russian peers
-remarks:        24739:1004 Private peers in St.Petersburg
-remarks:        24739:1005 Private peers in Moscow
-remarks:        24739:2000 International peers
-remarks:        24739:3001 Originated in St.Petersburg
-remarks:        24739:3002 Originated in Moscow
-remarks:        24739:5001 Rascom
-remarks:        24739:5002 Rostelecom
-remarks:        24739:5003 TTK
-remarks:        24739:5004 Beeline
-remarks:        24739:5008 RETN
-remarks:
-remarks:        Other 24739:* communities are always deleted from incoming
-remarks:        updates at the border routers.
-remarks:
-remarks:        Other *:* communities are passed to all peers.
-remarks:
-remarks:        Last Update: 26 September 2018
-remarks:        --------------------------------------
-remarks:
 org:            ORG-SL18-RIPE
-admin-c:        STKM2-RIPE
-tech-c:         STKM1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         SEVEREN-MNT
 mnt-by:         RIPE-NCC-END-MNT
@@ -232,18 +131,15 @@ created:        2002-03-08T13:26:34Z
 last-modified:  2023-09-01T07:40:42Z
 source:         RIPE
 
+as-num:         AS24739
+country:        RU
+as-name:        SEVEREN-TELECOM JSC "Severen-Telecom"
+
 organisation:   ORG-SL18-RIPE
 org-name:       JSC "Severen-Telecom"
 country:        RU
 org-type:       LIR
-address:        Respublikanskaya str., h.28, Lit. A
-address:        195112
-address:        Saint-Petersburg
-address:        RUSSIAN FEDERATION
-phone:          +7 812 740-7070
-fax-no:         +7 812 740-7071
-admin-c:        STKM1-RIPE
-tech-c:         STKM1-RIPE
+address:        Dummy address for ORG-SL18-RIPE
 mnt-ref:        SEVEREN-MNT
 mnt-ref:        RIPE-NCC-HM-MNT
 mnt-by:         RIPE-NCC-HM-MNT
@@ -251,46 +147,7 @@ mnt-by:         SEVEREN-MNT
 abuse-c:        STKM1-RIPE
 created:        2004-04-17T11:58:16Z
 last-modified:  2024-12-17T10:01:10Z
-source:         RIPE # Filtered
-
-role:           Severen-Telecom NOC
-remarks:        Network operation center staff
-org:            ORG-SL18-RIPE
-address:        Severen-Telecom
-address:        Respublikanskaya str., h. 28, Lit. A
-address:        195112, Saint-Petersburg, Russia
-phone:          +7 812 740-7070
-fax-no:         +7 812 740-7071
-abuse-mailbox:  abuse@severen.net
-admin-c:        SPEC1-RIPE
-admin-c:        MNB29-RIPE
-tech-c:         SPEC1-RIPE
-tech-c:         MNB29-RIPE
-nic-hdl:        STKM1-RIPE
-mnt-by:         SEVEREN-MNT
-created:        2006-09-18T06:24:53Z
-last-modified:  2024-02-16T09:45:00Z
-source:         RIPE # Filtered
-
-role:           Severen-Telecom ABUSE
-remarks:        Administration and incident staff
-org:            ORG-SL18-RIPE
-address:        Severen-Telecom
-address:        Respublikanskaya str., h. 28, Litera A
-address:        195112, Saint-Petersburg, Russia
-phone:          +7 812 740-7070
-fax-no:         +7 812 740-7071
-abuse-mailbox:  abuse@severen.net
-admin-c:        VAR11
-admin-c:        SPEC1-RIPE
-tech-c:         SPEC1-RIPE
-tech-c:         ST10938-RIPE
-nic-hdl:        STKM2-RIPE
-mnt-by:         SEVEREN-MNT
-mnt-by:         SEVEREN-MNT
-created:        2006-09-18T06:27:28Z
-last-modified:  2021-03-04T11:51:57Z
-source:         RIPE # Filtered
-
+source:         RIPE
+e-mail:         unread@ripe.net
 
 
