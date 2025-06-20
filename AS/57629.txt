@@ -398,6 +398,8 @@ import:         from AS197068 accept ANY
 export:         to AS197068 announce AS57629
 import:         from AS207362 accept AS-LINXDATACENTER
 export:         to AS207362 announce AS57629
+import:         from AS60280 accept AS-NTEC
+export:         to AS60280 announce AS57629
 mp-export:      afi ipv6.unicast to AS3216 announce AS57629
 mp-import:      afi ipv6.unicast from AS3216 accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS57629
@@ -448,6 +450,8 @@ mp-export:      afi ipv6.unicast to AS50952 announce AS57629
 mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX
 mp-export:      afi ipv6.unicast to AS60299 announce AS57629
 mp-import:      afi ipv6.unicast from AS60299 accept AS-MMTS
+mp-export:      afi ipv6.unicast to AS60280 announce AS57629
+mp-import:      afi ipv6.unicast from AS60280 accept AS-NTEC
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -455,7 +459,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-ivi-1-mnt
 notify:         noc@ivi.ru
 created:        2011-12-19T11:32:01Z
-last-modified:  2025-06-17T11:37:10Z
+last-modified:  2025-06-19T15:15:52Z
 source:         RIPE
 
 as-num:         AS57629
