@@ -68,9 +68,6 @@ accept AS-GOOGLE
 import:         from AS39684
 action pref=100;
 accept AS39684
-import:         from AS39728
-action pref=100;
-accept AS-LUGANET
 import:         from AS41082
 action pref=100;
 accept AS-URALTRANSCOM
@@ -200,8 +197,6 @@ export:         to AS36040
 announce AS-EKTROUTESERVER
 export:         to AS39684
 announce AS-EKTROUTESERVER
-export:         to AS39728
-announce AS-EKTROUTESERVER
 export:         to AS41082
 announce AS-EKTROUTESERVER
 export:         to AS41560
@@ -264,7 +259,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-06-11T12:11:06Z
+last-modified:  2025-06-23T12:12:40Z
 source:         RIPE
 
 as-num:         AS43213

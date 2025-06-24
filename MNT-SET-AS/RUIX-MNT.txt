@@ -46,8 +46,6 @@ members:        AS-NGENIX-EKT
 members:        AS-GOOGLE
 # from AS39684:
 members:        AS39684
-# from AS39728:
-members:        AS-LUGANET
 # from AS41082:
 members:        AS-URALTRANSCOM
 # from AS41560:
@@ -112,7 +110,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2025-06-11T12:11:10Z
+last-modified:  2025-06-23T12:12:36Z
 source:         RIPE
 
 
@@ -377,6 +375,8 @@ members:        AS-AGTEL-RUS
 members:        AS-TIMEWEB
 # from AS9498:
 members:        AS9498:AS-BHARTI-IN
+# from AS10099:
+members:        AS10099
 # from AS10122:
 members:        AS-BIGO-10122
 # from AS11284:
@@ -1129,8 +1129,6 @@ members:        AS-T21V
 members:        AS-2GIS
 # from AS197826:
 members:        AS-SKYNET-MSK
-# from AS197888:
-members:        AS197888
 # from AS197969:
 members:        AS-CTS-MARSAT
 # from AS198076:
@@ -1233,6 +1231,8 @@ members:        AS-CNX-EKB
 members:        AS209739
 # from AS210063:
 members:        AS210063
+# from AS210357:
+members:        AS210357
 # from AS210443:
 members:        AS210443
 # from AS210756:
@@ -1268,7 +1268,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-06-12T09:47:37Z
+last-modified:  2025-06-23T13:45:36Z
 source:         RIPE
 
 
@@ -1442,6 +1442,8 @@ members:        AS61976:AS-SELECTEL-NSK
 members:        AS-NSK-MEDIAIX
 # from AS201119:
 members:        AS201119
+# from AS201706:
+members:        AS-SERVICEPIPE
 # from AS202498:
 members:        AS202498
 # from AS204720:
@@ -1462,7 +1464,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2025-06-11T10:15:03Z
+last-modified:  2025-06-23T05:44:34Z
 source:         RIPE
 
 
@@ -2681,6 +2683,9 @@ accept AS-NSK-MEDIAIX
 import:         from AS201119
 action pref=100;
 accept AS201119
+import:         from AS201706
+action pref=100;
+accept AS-SERVICEPIPE
 import:         from AS202498
 action pref=100;
 accept AS202498
@@ -2830,6 +2835,8 @@ export:         to AS62261
 announce AS-NSKROUTESERVER
 export:         to AS201119
 announce AS-NSKROUTESERVER
+export:         to AS201706
+announce AS-NSKROUTESERVER
 export:         to AS202498
 announce AS-NSKROUTESERVER
 export:         to AS204720
@@ -2846,7 +2853,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-06-11T10:15:03Z
+last-modified:  2025-06-23T05:44:35Z
 source:         RIPE
 
 
@@ -2947,9 +2954,6 @@ accept AS-GOOGLE
 import:         from AS39684
 action pref=100;
 accept AS39684
-import:         from AS39728
-action pref=100;
-accept AS-LUGANET
 import:         from AS41082
 action pref=100;
 accept AS-URALTRANSCOM
@@ -3079,8 +3083,6 @@ export:         to AS36040
 announce AS-EKTROUTESERVER
 export:         to AS39684
 announce AS-EKTROUTESERVER
-export:         to AS39728
-announce AS-EKTROUTESERVER
 export:         to AS41082
 announce AS-EKTROUTESERVER
 export:         to AS41560
@@ -3143,7 +3145,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-06-11T12:11:06Z
+last-modified:  2025-06-23T12:12:40Z
 source:         RIPE
 
 
@@ -4677,6 +4679,9 @@ accept AS-TIMEWEB
 import:         from AS9498
 action pref=100;
 accept AS9498:AS-BHARTI-IN
+import:         from AS10099
+action pref=100;
+accept AS10099
 import:         from AS10122
 action pref=100;
 accept AS-BIGO-10122
@@ -5805,9 +5810,6 @@ accept AS-2GIS
 import:         from AS197826
 action pref=100;
 accept AS-SKYNET-MSK
-import:         from AS197888
-action pref=100;
-accept AS197888
 import:         from AS197969
 action pref=100;
 accept AS-CTS-MARSAT
@@ -5961,6 +5963,9 @@ accept AS209739
 import:         from AS210063
 action pref=100;
 accept AS210063
+import:         from AS210357
+action pref=100;
+accept AS210357
 import:         from AS210443
 action pref=100;
 accept AS210443
@@ -6095,6 +6100,8 @@ announce AS-MSKROUTESERVER
 export:         to AS9123
 announce AS-MSKROUTESERVER
 export:         to AS9498
+announce AS-MSKROUTESERVER
+export:         to AS10099
 announce AS-MSKROUTESERVER
 export:         to AS10122
 announce AS-MSKROUTESERVER
@@ -6848,8 +6855,6 @@ export:         to AS197482
 announce AS-MSKROUTESERVER
 export:         to AS197826
 announce AS-MSKROUTESERVER
-export:         to AS197888
-announce AS-MSKROUTESERVER
 export:         to AS197969
 announce AS-MSKROUTESERVER
 export:         to AS198076
@@ -6952,6 +6957,8 @@ export:         to AS209739
 announce AS-MSKROUTESERVER
 export:         to AS210063
 announce AS-MSKROUTESERVER
+export:         to AS210357
+announce AS-MSKROUTESERVER
 export:         to AS210443
 announce AS-MSKROUTESERVER
 export:         to AS210756
@@ -6983,7 +6990,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-06-12T09:47:37Z
+last-modified:  2025-06-23T13:45:37Z
 source:         RIPE
 
 

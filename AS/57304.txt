@@ -277,6 +277,8 @@ import:         from  AS41925 action pref=100; accept   AS-FACTORIAL-INTERNET
 export:         to    AS41925                  announce ANY
 import:         from  AS41983 action pref=100; accept   AS41983
 export:         to    AS41983                  announce ANY
+import:         from  AS42135 action pref=100; accept   AS-BUSINESS-PARTNERSHIP
+export:         to    AS42135                  announce ANY
 import:         from  AS42144 action pref=100; accept   AS42144
 export:         to    AS42144                  announce ANY
 import:         from  AS42289 action pref=100; accept   AS-VUZTC
@@ -463,8 +465,6 @@ import:         from  AS48642 action pref=100; accept   AS-KT-RU
 export:         to    AS48642                  announce ANY
 import:         from  AS48667 action pref=100; accept   AS-AKVILON
 export:         to    AS48667                  announce ANY
-import:         from  AS48724 action pref=100; accept   AS-BUSINESS-PARTNERSHIP
-export:         to    AS48724                  announce ANY
 import:         from  AS48763 action pref=100; accept   AS48763
 export:         to    AS48763                  announce ANY
 import:         from  AS48770 action pref=100; accept   AS48770
@@ -1227,6 +1227,8 @@ mp-import:      afi ipv6.unicast from  AS41853 action pref=100; accept   AS-NTCO
 mp-export:      afi ipv6.unicast to    AS41853                  announce ANY
 mp-import:      afi ipv6.unicast from  AS41983 action pref=100; accept   AS41983
 mp-export:      afi ipv6.unicast to    AS41983                  announce ANY
+mp-import:      afi ipv6.unicast from  AS42135 action pref=100; accept   AS-BUSINESS-PARTNERSHIP
+mp-export:      afi ipv6.unicast to    AS42135                  announce ANY
 mp-import:      afi ipv6.unicast from  AS42291 action pref=100; accept   AS-ISTRANET6
 mp-export:      afi ipv6.unicast to    AS42291                  announce ANY
 mp-import:      afi ipv6.unicast from  AS42339 action pref=100; accept   AS-CHTP
@@ -1325,8 +1327,6 @@ mp-import:      afi ipv6.unicast from  AS48610 action pref=100; accept   AS48610
 mp-export:      afi ipv6.unicast to    AS48610                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48642 action pref=100; accept   AS-KT-RU
 mp-export:      afi ipv6.unicast to    AS48642                  announce ANY
-mp-import:      afi ipv6.unicast from  AS48724 action pref=100; accept   AS-BUSINESS-PARTNERSHIP
-mp-export:      afi ipv6.unicast to    AS48724                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48763 action pref=100; accept   AS48763
 mp-export:      afi ipv6.unicast to    AS48763                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48822 action pref=100; accept   AS-UNIVERSUMNET-V6
@@ -1594,7 +1594,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-06-17T19:59:05Z
+last-modified:  2025-06-23T19:59:05Z
 source:         RIPE
 
 as-num:         AS57304

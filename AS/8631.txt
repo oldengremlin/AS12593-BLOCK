@@ -141,6 +141,9 @@ accept AS-TIMEWEB
 import:         from AS9498
 action pref=100;
 accept AS9498:AS-BHARTI-IN
+import:         from AS10099
+action pref=100;
+accept AS10099
 import:         from AS10122
 action pref=100;
 accept AS-BIGO-10122
@@ -1269,9 +1272,6 @@ accept AS-2GIS
 import:         from AS197826
 action pref=100;
 accept AS-SKYNET-MSK
-import:         from AS197888
-action pref=100;
-accept AS197888
 import:         from AS197969
 action pref=100;
 accept AS-CTS-MARSAT
@@ -1425,6 +1425,9 @@ accept AS209739
 import:         from AS210063
 action pref=100;
 accept AS210063
+import:         from AS210357
+action pref=100;
+accept AS210357
 import:         from AS210443
 action pref=100;
 accept AS210443
@@ -1559,6 +1562,8 @@ announce AS-MSKROUTESERVER
 export:         to AS9123
 announce AS-MSKROUTESERVER
 export:         to AS9498
+announce AS-MSKROUTESERVER
+export:         to AS10099
 announce AS-MSKROUTESERVER
 export:         to AS10122
 announce AS-MSKROUTESERVER
@@ -2312,8 +2317,6 @@ export:         to AS197482
 announce AS-MSKROUTESERVER
 export:         to AS197826
 announce AS-MSKROUTESERVER
-export:         to AS197888
-announce AS-MSKROUTESERVER
 export:         to AS197969
 announce AS-MSKROUTESERVER
 export:         to AS198076
@@ -2416,6 +2419,8 @@ export:         to AS209739
 announce AS-MSKROUTESERVER
 export:         to AS210063
 announce AS-MSKROUTESERVER
+export:         to AS210357
+announce AS-MSKROUTESERVER
 export:         to AS210443
 announce AS-MSKROUTESERVER
 export:         to AS210756
@@ -2447,7 +2452,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-06-12T09:47:37Z
+last-modified:  2025-06-23T13:45:37Z
 source:         RIPE
 
 as-num:         AS8631
