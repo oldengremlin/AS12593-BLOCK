@@ -552,7 +552,7 @@ members:        AS-AWANTI
 # from AS34123:
 members:        AS-NETORN
 # from AS34139:
-members:        AS-TSI
+members:        AS34139:AS-DIVO
 # from AS34170:
 members:        AS34170, AS34170:AS-customers
 # from AS34352:
@@ -1268,7 +1268,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-06-23T13:45:36Z
+last-modified:  2025-06-24T13:51:09Z
 source:         RIPE
 
 
@@ -1378,8 +1378,6 @@ members:        AS-TELECONNECT
 members:        AS-GOOGLE
 # from AS39684:
 members:        AS39684
-# from AS39728:
-members:        AS-LUGANET
 # from AS40995:
 members:        AS-CNLTD
 # from AS41082:
@@ -1464,7 +1462,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2025-06-23T05:44:34Z
+last-modified:  2025-06-24T05:44:05Z
 source:         RIPE
 
 
@@ -2587,9 +2585,6 @@ accept AS-GOOGLE
 import:         from AS39684
 action pref=100;
 accept AS39684
-import:         from AS39728
-action pref=100;
-accept AS-LUGANET
 import:         from AS40995
 action pref=100;
 accept AS-CNLTD
@@ -2771,8 +2766,6 @@ export:         to AS36040
 announce AS-NSKROUTESERVER
 export:         to AS39684
 announce AS-NSKROUTESERVER
-export:         to AS39728
-announce AS-NSKROUTESERVER
 export:         to AS40995
 announce AS-NSKROUTESERVER
 export:         to AS41082
@@ -2853,7 +2846,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-06-23T05:44:35Z
+last-modified:  2025-06-24T05:44:00Z
 source:         RIPE
 
 
@@ -4945,7 +4938,7 @@ action pref=100;
 accept AS-NETORN
 import:         from AS34139
 action pref=100;
-accept AS-TSI
+accept AS34139:AS-DIVO
 import:         from AS34170
 action pref=100;
 accept AS34170 AS34170:AS-customers
@@ -6990,7 +6983,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-06-23T13:45:37Z
+last-modified:  2025-06-24T13:51:09Z
 source:         RIPE
 
 

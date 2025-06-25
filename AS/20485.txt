@@ -721,6 +721,7 @@ import:         from AS65001 action pref=50; accept AS65001
 import:         from AS65074 action pref=50; accept AS65074
 import:         from AS65500 action pref=50; accept AS65500
 import:         from AS139089 action pref=50; accept AS-MTNETWORKS
+import:         from AS139057 action pref=50; accept AS139057:AS-CONE
 import:         from AS196648 action pref=50; accept AS-YSUNET
 import:         from AS196691 action pref=50; accept AS-GETNET
 import:         from AS196770 action pref=50; accept AS-BIGTELECOM-LIPETSK
@@ -1501,6 +1502,7 @@ export:         to AS64597 announce AS-TTK
 export:         to AS65001 announce ANY
 export:         to AS65074 announce ANY
 export:         to AS65500 announce ANY
+export:         to AS139057 announce ANY
 export:         to AS139089 announce ANY
 export:         to AS196648 announce ANY
 export:         to AS196691 announce ANY
@@ -1611,12 +1613,15 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TRANSTELECOM-MNT
 created:        2002-09-12T12:29:41Z
-last-modified:  2025-04-30T08:03:11Z
+last-modified:  2025-06-24T08:41:15Z
 source:         RIPE
 
 as-num:         AS20485
 country:        RU
 as-name:        TRANSTELECOM Joint Stock Company TransTeleCom
+as-num:         AS20485
+country:        RU
+as-name:        null
 as-num:         AS20485
 country:        RU
 as-name:        null
