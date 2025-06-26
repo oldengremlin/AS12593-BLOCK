@@ -1679,6 +1679,8 @@ members:        AS-SMART-C
 members:        AS-MOTIV
 # from AS34102:
 members:        AS-AWANTI
+# from AS34223:
+members:        AS-NREGION
 # from AS34879:
 members:        AS-NGENIX-SPB
 # from AS35000:
@@ -1809,7 +1811,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2025-06-11T10:10:03Z
+last-modified:  2025-06-25T14:08:46Z
 source:         RIPE
 
 
@@ -3247,6 +3249,9 @@ accept AS-MOTIV
 import:         from AS34102
 action pref=100;
 accept AS-AWANTI
+import:         from AS34223
+action pref=100;
+accept AS-NREGION
 import:         from AS34879
 action pref=100;
 accept AS-NGENIX-SPB
@@ -3497,6 +3502,8 @@ export:         to AS31499
 announce AS-SPBROUTESERVER
 export:         to AS34102
 announce AS-SPBROUTESERVER
+export:         to AS34223
+announce AS-SPBROUTESERVER
 export:         to AS34879
 announce AS-SPBROUTESERVER
 export:         to AS35000
@@ -3624,7 +3631,7 @@ announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-06-11T10:10:03Z
+last-modified:  2025-06-25T14:08:42Z
 source:         RIPE
 
 

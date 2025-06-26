@@ -103,6 +103,7 @@ members:        AS59459
 members:        AS59509
 members:        AS59513
 members:        AS59574
+members:        AS59601
 members:        AS59633
 members:        AS59663
 members:        AS59688
@@ -312,7 +313,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MASTERTEL-MNT
 created:        2004-03-19T10:40:20Z
-last-modified:  2025-06-22T12:12:02Z
+last-modified:  2025-06-25T11:09:56Z
 source:         RIPE
 
 
@@ -339,7 +340,6 @@ members:        AS42972
 members:        AS48349
 members:        AS57898
 members:        AS198705
-members:        AS200457
 members:        AS202760
 members:        AS205567
 members:        AS211183
@@ -349,7 +349,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MASTERTEL-MNT
 created:        2019-05-29T12:44:20Z
-last-modified:  2025-05-14T13:00:22Z
+last-modified:  2025-06-25T20:25:03Z
 source:         RIPE
 
 
@@ -423,7 +423,7 @@ source:         RIPE
 
 
 as-set:         AS29226:AS-MASTERTEL_CYBERFIRST
-descr:          MASTERTEL guard  reroute CYBERFIRST
+descr:          MASTERTEL guard reroute CYBERFIRST
 members:        AS29226
 members:        AS34706
 members:        AS41184
@@ -431,7 +431,6 @@ members:        AS42972
 members:        AS48349
 members:        AS57898
 members:        AS198705
-members:        AS200457
 members:        AS202760
 members:        AS205567
 members:        AS211183
@@ -441,7 +440,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MASTERTEL-MNT
 created:        2025-06-17T13:28:10Z
-last-modified:  2025-06-17T13:53:40Z
+last-modified:  2025-06-25T20:25:14Z
 source:         RIPE
 
 
@@ -1219,6 +1218,8 @@ import:         from AS57996 action pref=200; accept AS57996
 export:         to AS57996 announce ANY
 import:         from AS206323 action pref=200; accept AS206323
 export:         to AS206323 announce {0.0.0.0/0}
+import:         from AS59601 action pref=200; accept AS59601
+export:         to AS59601 announce {0.0.0.0/0}
 mp-import:      afi ipv6 from AS29076 accept ANY;
 mp-export:      afi ipv6 to AS29076 announce AS-MASTERTEL6;
 mp-import:      afi ipv6 from AS9002 accept ANY;
@@ -1288,7 +1289,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2025-06-22T12:11:41Z
+last-modified:  2025-06-25T11:28:29Z
 source:         RIPE
 
 
