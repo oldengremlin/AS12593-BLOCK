@@ -1,0 +1,154 @@
+as-set:         AS-DEMOS
+descr:          DEMOS customers ASes
+members:        AS2578
+members:        AS29258
+members:        AS38916
+members:        AS42377
+members:        AS48396
+members:        AS57487
+members:        AS60511
+members:        AS197199
+members:        AS198981
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         AS2578-MNT
+created:        2002-07-18T13:32:24Z
+last-modified:  2013-10-02T11:26:34Z
+source:         RIPE
+
+
+
+as-set:         AS-DEMOS-IPV6
+descr:          DEMOS customers ASes IPv6
+members:        AS2578
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         AS2578-MNT
+created:        2010-12-09T10:10:52Z
+last-modified:  2010-12-09T10:10:52Z
+source:         RIPE
+
+
+
+as-set:         AS-DEMOS6
+descr:          DEMOS IPv6 customers ASes
+members:        AS2578
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         AS2578-MNT
+created:        2013-08-21T13:33:08Z
+last-modified:  2013-08-21T13:33:08Z
+source:         RIPE
+
+
+
+as-set:         AS-RUDEMOS
+descr:          RU only DEMOS customers ASs
+members:        AS2578
+members:        AS-DATAFORCE
+members:        AS48396
+members:        AS38916
+members:        AS42377
+members:        AS29258
+members:        AS-ALTURA
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         AS2578-MNT
+created:        2002-09-13T11:17:54Z
+last-modified:  2011-12-15T13:14:02Z
+source:         RIPE
+
+
+
+aut-num:        AS2578
+as-name:        DEMOS-AS
+descr:          Demos, Moscow, Russia
+import:         from AS2118  accept   ANY
+export:         to   AS2118  announce AS2578
+import:         from AS20473 accept   ANY
+export:         to   AS20473 announce AS2578
+import:         from AS25341 accept   ANY
+export:         to   AS25341 announce AS2578
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+status:         LEGACY
+mnt-by:         AS2578-MNT
+notify:         netadmin@relcom.net
+created:        2002-09-13T11:35:45Z
+last-modified:  2017-12-21T14:40:11Z
+source:         RIPE
+
+
+
+aut-num:        AS29258
+as-name:        JETINFO-AS
+org:            ORG-JA83-RIPE
+import:         From AS25227 action pref=110; accept { 0.0.0.0/0 }
+import:         From AS57724 action pref=120; accept { 0.0.0.0/0 }
+import:         From AS3216 action pref=90; accept { 0.0.0.0/0 }
+export:         To AS25227 announce AS29258
+export:         To AS57724 announce AS29258
+export:         To AS3216 announce AS29258
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         ncc@demos.net
+notify:         jnoc@jet.su
+mnt-by:         AS2578-MNT
+created:        2008-06-02T13:07:55Z
+last-modified:  2022-09-12T11:19:44Z
+source:         RIPE
+sponsoring-org: ORG-RHL16-RIPE
+
+
+
+aut-num:        AS42024
+as-name:        CRYPTOPRO-AS
+org:            ORG-CA815-RIPE
+import:         from AS8359 action pref=200; accept ANY
+export:         to AS8359 announce AS42024
+import:         from AS16020 action pref=200; accept ANY
+export:         to AS16020 announce AS42024
+import:         from AS29226 action pref=200; accept ANY
+export:         to AS29226 announce AS42024
+import:         from AS57681 action pref=200; accept ANY
+export:         to AS57681 announce AS42024
+import:         from AS57724 action pref=100; accept ANY
+export:         to AS57724 announce AS42024
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         AS2578-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2006-12-05T16:27:46Z
+last-modified:  2022-04-29T14:31:28Z
+source:         RIPE
+sponsoring-org: ORG-RHL16-RIPE
+
+
+
+aut-num:        AS48396
+as-name:        NORNICKEL-MOS-AS
+org:            ORG-RNN1-RIPE
+import:         from AS2578 action pref=100; accept ANY
+import:         from AS3216 action pref=200; accept ANY
+export:         to AS2578 announce AS48396
+export:         to AS3216 announce AS48396
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SOVINTEL-MNT
+mnt-by:         nornik-mnt
+mnt-by:         AS2578-MNT
+notify:         ncc@demos.net
+notify:         antipovmv@nornik.ru
+notify:         kasitsyn@nornik.ru
+created:        2008-11-21T09:55:36Z
+last-modified:  2023-08-29T09:31:03Z
+source:         RIPE
+sponsoring-org: ORG-ES15-RIPE
+
+
+

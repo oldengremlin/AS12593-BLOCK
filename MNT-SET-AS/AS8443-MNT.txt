@@ -1,0 +1,133 @@
+as-set:         AS-SAKHALIN
+descr:          RU.SAKHALIN announced ASes
+members:        AS8443
+members:        AS48566
+members:        AS49166
+members:        AS198960
+members:        AS198973
+members:        AS198974
+members:        AS29425
+members:        AS199261
+members:        AS199992
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         lir@sakhalin.ru
+mnt-by:         AS8443-MNT
+created:        2001-10-02T07:01:44Z
+last-modified:  2017-01-11T06:08:02Z
+source:         RIPE
+
+
+
+as-set:         AS-SKH-IX
+descr:          Yuzhno-Sakhalinsk internet exchange
+descr:          Route Server ASes
+descr:
+descr:          The following are AS'es permitted to
+descr:          originate prefixes accepted from each
+descr:          route server customer.
+members:        AS8440
+members:        AS25287
+members:        AS20533
+members:        AS29567
+members:        AS20620
+members:        AS31075
+members:        AS8443
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@sakhalin.ru
+mnt-by:         AS8443-MNT
+created:        2004-12-08T07:01:30Z
+last-modified:  2004-12-08T07:01:30Z
+source:         RIPE
+
+
+
+aut-num:        AS34297
+org:            ORG-JR8-RIPE
+as-name:        SKH-IX-AS
+descr:          Yuzhno-Sakhalinsk Internet eXchange
+descr:          PJSC "Rostelecom". Yuzhno-Sakhalinsk branch
+import:         from AS8440 accept AS8440
+import:         from AS25287 accept AS25287
+import:         from AS20533 accept AS20533
+import:         from AS29567 accept AS29567
+import:         from AS20620 accept AS20620
+import:         from AS31075 accept AS31075
+import:         from AS8443 accept AS8443
+export:         to AS8440 announce AS-SKH-IX
+export:         to AS25287 announce AS-SKH-IX
+export:         to AS20533 announce AS-SKH-IX
+export:         to AS29567 announce AS-SKH-IX
+export:         to AS20620 announce AS-SKH-IX
+export:         to AS31075 announce AS-SKH-IX
+export:         to AS8443 announce AS-SKH-IX
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@sakhalin.ru
+mnt-by:         AS8443-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2004-12-10T12:34:45Z
+last-modified:  2024-06-19T07:20:33Z
+source:         RIPE
+
+
+
+aut-num:        AS48566
+as-name:        DVBANK-SKH-AS
+descr:          Sakhalin branch AS
+org:            ORG-DA236-RIPE
+import:         from AS8443 accept ANY
+import:         from AS43550 accept ANY
+export:         to AS8443 announce AS48566
+export:         to AS43550 announce AS48566
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         lir@sakhalin.ru
+mnt-by:         AS8443-MNT
+created:        2008-12-10T13:24:32Z
+last-modified:  2018-09-04T10:38:11Z
+source:         RIPE
+sponsoring-org: ORG-JR8-RIPE
+
+
+
+aut-num:        AS8443
+org:            ORG-JR8-RIPE
+as-name:        SKHDSV-AS
+descr:          PJSC "Rostelecom". Sakhalin branch
+descr:          PJSC Rostelecom (Irkutsk)
+import:         from AS12389 action pref=115; accept ANY
+export:         to AS12389 announce AS-SAKHALIN
+import:         from AS49166 action pref=1000; accept AS49166
+export:         to AS49166 announce AS8443 AND {0.0.0.0/0}
+import:         from AS48566 action pref=1000; accept AS48566
+export:         to AS48566 announce AS8443 AND {0.0.0.0/0}
+import:         from AS198960 action pref=1000; accept AS198960
+export:         to AS198960 announce AS8443 AND {0.0.0.0/0}
+import:         from AS198973 action pref=1000; accept AS198973
+export:         to AS198973 announce AS8443 AND {0.0.0.0/0}
+import:         from AS198974 action pref=1000; accept AS198974
+export:         to AS198974 announce AS8443 AND {0.0.0.0/0}
+import:         from AS29425 action pref=1000; accept AS29425
+export:         to AS29425 announce ANY
+import:         from AS199261 action pref=2000; accept AS199261
+export:         to AS199261 announce ANY
+import:         from AS199992 action pref=1000; accept AS199992
+export:         to AS199992 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         AS8443-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2001-10-02T07:00:34Z
+last-modified:  2024-05-27T05:34:52Z
+source:         RIPE
+
+
+

@@ -1,0 +1,65 @@
+as-set:         AS-ROKSON
+descr:          ASes announced by ROKSON-AS
+members:        AS5433
+members:        AS29493
+members:        AS35764
+members:        AS39186
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         VEROLINE-MNT
+created:        2006-01-16T11:11:37Z
+last-modified:  2021-11-17T01:18:40Z
+source:         RIPE
+
+
+
+aut-num:        AS39186
+as-name:        SPSC-AS
+org:            ORG-SPSC1-RIPE
+import:         from AS5433 accept ANY
+export:         to AS5433 announce AS39186
+import:         from AS3267 accept ANY
+export:         to AS3267 announce AS39186
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VEROLINE-MNT
+created:        2005-12-29T15:17:21Z
+last-modified:  2020-12-29T11:03:15Z
+source:         RIPE
+sponsoring-org: ORG-PINl1-RIPE
+
+
+
+aut-num:        AS5433
+as-name:        ROKSON-AS
+descr:          ROKSON-NW
+descr:          Network of Science, Education and
+descr:          Culture for St.Petersburg
+org:            ORG-VL93-RIPE
+import:         from AS3267 accept ANY
+import:         from AS9049 accept ANY
+import:         from AS50509 accept ANY
+import:         from AS50817 action pref=100; accept AS-PITER-IX
+import:         from AS29329 action pref=120; accept AS29493
+import:         from AS35764 action pref=120; accept AS35764
+export:         to AS3267 announce AS-ROKSON
+export:         to AS9049 announce AS-ROKSON
+export:         to AS50509 announce AS-ROKSON
+export:         to AS50817 announce AS-ROKSON
+export:         to AS35764 announce ANY
+export:         to AS29329 announce AS5433
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         VEROLINE-MNT
+mnt-by:         MNT-PIN
+created:        1970-01-01T00:00:00Z
+last-modified:  2022-10-30T20:17:55Z
+source:         RIPE
+sponsoring-org: ORG-PINl1-RIPE
+
+
+

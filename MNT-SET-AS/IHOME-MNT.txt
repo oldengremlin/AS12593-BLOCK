@@ -175,7 +175,6 @@ members:        AS-SKYNET-MSK
 members:        AS20730:AS-DVO-IX
 members:        AS61992
 members:        AS215116
-members:        AS61979
 members:        AS50766
 members:        AS57304
 members:        AS-UMLC
@@ -197,7 +196,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         IHOME-MNT
 created:        2005-03-10T12:31:16Z
-last-modified:  2025-04-18T19:14:29Z
+last-modified:  2025-06-26T05:06:55Z
 source:         RIPE
 
 
@@ -396,7 +395,6 @@ members:        AS-TEL-NET
 members:        AS61992
 members:        AS47457:AS-SBRF2
 members:        AS-TIMEWEB
-members:        AS61979
 members:        AS50766
 members:        AS-UMLC
 members:        AS-INTERSVYAZ
@@ -422,7 +420,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         IHOME-MNT
 created:        2010-02-02T17:05:07Z
-last-modified:  2025-04-01T10:53:22Z
+last-modified:  2025-06-26T05:08:33Z
 source:         RIPE
 
 
@@ -1244,10 +1242,6 @@ import:         from AS215116 action pref=130; accept AS215116 # chudotelecom
 mp-import:      afi ipv6.unicast from AS215116 accept AS215116
 export:         to AS215116 announce ANY
 mp-export:      afi ipv6.unicast to AS215116 announce ANY
-import:         from AS61979 action pref=130; accept AS61979 # mediakvant
-mp-import:      afi ipv6.unicast from AS61979 accept AS61979
-export:         to AS61979 announce ANY
-mp-export:      afi ipv6.unicast to AS61979 announce ANY
 import:         from AS50766 action pref=130; accept AS50766 # zamkov
 mp-import:      afi ipv6.unicast from AS50766 accept AS50766
 export:         to AS50766 announce ANY
@@ -1339,7 +1333,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2002-12-04T16:28:40Z
-last-modified:  2025-04-18T19:14:28Z
+last-modified:  2025-06-26T05:08:01Z
 source:         RIPE
 
 
@@ -1400,27 +1394,8 @@ import:         from AS1200 accept ANY
 export:         to AS1200 announce AS-W-IX
 mp-import:      afi ipv6.unicast from AS1200 accept ANY
 mp-export:      afi ipv6.unicast to AS1200 announce AS-W-IX-IPVSIX
-import:         from AS6777 accept ANY AND NOT <^[AS3216 AS3255 AS3327 AS5568
-AS8342 AS8359 AS8492 AS8641
-AS8732 AS9002 AS9031 AS12389
-AS12695 AS13238 AS13249 AS15169
-AS16265 AS16276 AS21011 AS21219
-AS28917 AS29076 AS30751
-AS31133 AS31500 AS35320 AS39792
-AS42861 AS47541 AS47542 AS6697
-AS20485 AS42861]>
-export:         to AS6777 action community .= { 6777:6777, 6777:3216, 6777:3255,
-6777:3327, 6777:5568, 6777:8342,
-6777:8359, 6777:8492, 6777:8641,
-6777:8732, 6777:9002, 6777:9031,
-6777:12389, 6777:12695, 6777:13238,
-6777:13249, 6777:15169, 6777:16265,
-6777:16276, 6777:21011, 6777:21219,
-6777:28917, 6777:29076,
-6777:30751, 6777:31133, 6777:31500,
-6777:35320, 6777:39792, 6777:42861,
-6777:47541, 6777:47542, 6777:6697,
-6777:20485, 6777:42861 }; announce AS-W-IX
+import:         from AS6777 accept ANY AND NOT <^[AS3216 AS3255 AS3327 AS5568                AS8342 AS8359 AS8492 AS8641                AS8732 AS9002 AS9031 AS12389                AS12695 AS13238 AS13249 AS15169                AS16265 AS16276 AS21011 AS21219                AS28917 AS29076 AS30751                AS31133 AS31500 AS35320 AS39792                AS42861 AS47541 AS47542 AS6697                AS20485 AS42861]>
+export:         to AS6777 action community .= { 6777:6777, 6777:3216, 6777:3255,                6777:3327, 6777:5568, 6777:8342,                6777:8359, 6777:8492, 6777:8641,                6777:8732, 6777:9002, 6777:9031,                6777:12389, 6777:12695, 6777:13238,                6777:13249, 6777:15169, 6777:16265,                6777:16276, 6777:21011, 6777:21219,                6777:28917, 6777:29076,                6777:30751, 6777:31133, 6777:31500,                6777:35320, 6777:39792, 6777:42861,                6777:47541, 6777:47542, 6777:6697,                6777:20485, 6777:42861 }; announce AS-W-IX
 mp-import:      afi ipv6.unicast from AS6777 accept ANY
 mp-export:      afi ipv6.unicast to AS6777 announce AS-W-IX-IPVSIX
 import:         from AS31210 accept AS-DTEL-IX
@@ -2199,10 +2174,6 @@ import:         from AS9123 action pref=130; accept AS-TIMEWEB # timeweb
 mp-import:      afi ipv6.unicast from AS9123 accept AS-TIMEWEB
 export:         to AS9123 announce ANY
 mp-export:      afi ipv6.unicast to AS9123 announce ANY
-import:         from AS61979 action pref=130; accept AS61979 # mediakvant
-mp-import:      afi ipv6.unicast from AS61979 accept AS61979
-export:         to AS61979 announce ANY
-mp-export:      afi ipv6.unicast to AS61979 announce ANY
 import:         from AS50766 action pref=130; accept AS50766 # zamkov
 mp-import:      afi ipv6.unicast from AS50766 accept AS50766
 export:         to AS50766 announce ANY
@@ -2317,7 +2288,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2009-12-30T16:24:09Z
-last-modified:  2025-04-01T10:53:22Z
+last-modified:  2025-06-26T05:08:57Z
 source:         RIPE
 
 

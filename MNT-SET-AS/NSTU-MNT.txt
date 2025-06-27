@@ -1,0 +1,93 @@
+as-set:         AS-NSTU
+descr:          ASes routed by NSTU
+descr:          Novosibirsk, Russia
+members:        AS29147
+members:        AS31738
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@nstu.ru
+mnt-by:         NSTU-MNT
+created:        2005-03-14T13:35:32Z
+last-modified:  2005-03-14T13:35:32Z
+source:         RIPE
+
+
+
+aut-num:        AS29147
+as-name:        NSTU-AS
+org:            ORG-NSTU1-RIPE
+import:         from AS3267 action pref=100; accept ANY;
+export:         to AS3267 announce AS-NSTU;
+mp-import:      afi ipv6 from AS3267 action pref=100; accept ANY;
+mp-export:      afi ipv6 to AS3267 announce AS29147;
+import:         from AS28884 action pref=100; accept ANY;
+export:         to AS28884 announce AS-NSTU;
+mp-import:      afi ipv6 from AS28884 action pref=100; accept ANY;
+mp-export:      afi ipv6 to AS28884 announce AS29147;
+default:        to AS3267 action pref=100; networks ANY
+import:         from AS31738 action pref=120; accept AS31738;
+export:         to AS31738 announce AS29147;
+import:         from AS31738 accept AS31738;
+export:         to AS31738 announce ANY;
+mp-import:      afi ipv6 from AS31738 action pref=120; accept ANY;
+mp-export:      afi ipv6 to AS31738 announce AS29147;
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@nstu.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INFR-MNT
+mnt-by:         NSTU-MNT
+created:        2003-06-16T12:52:42Z
+last-modified:  2021-06-09T12:50:59Z
+source:         RIPE
+sponsoring-org: ORG-CR1-RIPE
+
+
+
+aut-num:        AS31738
+as-name:        NRCDE-AS
+org:            ORG-NRCD1-RIPE
+import:         from AS20485 action pref=100; accept ANY;
+export:         to AS20485 announce AS31738
+import:         from AS29147 action pref=100; accept ANY;
+export:         to AS29147 announce AS31738
+default:        to AS20485
+import:         from AS29147 action pref=200; accept AS29147;
+export:         to AS29147 announce AS31738
+mp-import:      afi ipv6 from AS29147 action pref=120; accept AS29147;
+mp-export:      afi ipv6 to AS29147 announce AS31738
+import:         from AS5387 193.232.87.38 action pref=120; accept ANY;
+export:         to AS5387 announce AS-NSTU
+import:         from AS12389 193.232.87.43 action pref=120; accept ANY;
+export:         to AS12389 announce AS-NSTU
+mp-import:      afi ipv6 from AS12389 action pref=120; accept ANY;
+mp-export:      afi ipv6 to AS12389 announce AS-NSTU
+import:         from AS31200 193.232.87.50 action pref=120; accept ANY;
+export:         to AS31200 announce AS-NSTU
+import:         from AS3267 193.232.87.52 action pref=120; accept ANY;
+export:         to AS3267 announce AS-NSTU
+import:         from AS48858 193.232.87.58 action pref=120; accept ANY;
+export:         to AS48858 announce AS-NSTU
+import:         from AS34757 193.232.87.61 action pref=120; accept ANY;
+export:         to AS34757 announce AS-NSTU
+import:         from AS41787 193.232.87.63 action pref=120; accept ANY;
+export:         to AS41787 announce AS-NSTU
+import:         from AS42403 193.232.87.100 action pref=120; accept ANY;
+import:         from AS42403 193.232.87.200 action pref=120; accept ANY;
+export:         to AS42403 announce AS-NSTU
+mp-import:      afi ipv6 from AS42403 action pref=120; accept ANY;
+mp-export:      afi ipv6 to AS42403 announce AS-NSTU
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         NSTU-MNT
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INFR-MNT
+created:        2004-07-29T09:37:32Z
+last-modified:  2024-01-29T09:00:04Z
+source:         RIPE
+sponsoring-org: ORG-CR1-RIPE
+
+
+

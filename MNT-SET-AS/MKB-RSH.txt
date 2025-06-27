@@ -1,0 +1,29 @@
+aut-num:        AS44470
+as-name:        Moskommertsbank
+org:            ORG-MKB1-RIPE
+import:         from AS43226 action pref=100; accept {0.0.0.0/0}
+import:         from AS8470 action pref=100; accept {0.0.0.0/0}
+import:         from AS9002 action pref=100; accept {0.0.0.0/0}
+import:         from AS57304 action pref=100; accept {0.0.0.0/0}
+import:         from AS8631 accept ANY
+export:         to AS43226 announce AS44470 AND fltr-AS44470-dc
+export:         to AS8470 announce AS44470 AND fltr-AS44470-dc1
+export:         to AS57304 139.45.231.33 at 139.45.231.34 announce AS44470 AND fltr-AS44470-dc
+export:         to AS57304 139.45.226.213 at 139.45.226.214 announce AS44470 AND fltr-AS44470-dc1
+export:         to AS8631 194.190.120.100 at 194.190.120.201 announce AS44470 AND fltr-AS44470-To-Bank-IX
+export:         to AS8631 194.190.120.200 at 194.190.120.201 announce AS44470 AND fltr-AS44470-To-Bank-IX
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         info@lidertelecom.ru
+notify:         noc@moskb.ru
+mnt-by:         mkb1-mnt
+mnt-by:         mkb-rsh
+created:        2008-01-24T10:43:41Z
+last-modified:  2024-12-24T10:04:59Z
+source:         RIPE
+sponsoring-org: ORG-LL38-RIPE
+
+
+

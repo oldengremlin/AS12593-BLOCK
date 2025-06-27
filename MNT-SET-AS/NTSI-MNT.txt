@@ -1,0 +1,111 @@
+as-set:         AS-KOSMOS
+descr:          Hotel Cosmos Net
+members:        AS47785
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NTSI-MNT
+created:        2011-12-13T10:58:59Z
+last-modified:  2012-01-16T12:44:25Z
+source:         RIPE
+
+
+
+as-set:         AS-NTSI
+descr:          NTSI Telecom Ltd
+members:        AS35087
+members:        AS51705
+members:        AS47785
+members:        AS62345
+members:        AS24831
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NTSI-MNT
+created:        2007-07-23T11:38:35Z
+last-modified:  2025-03-31T12:01:34Z
+source:         RIPE
+
+
+
+aut-num:        AS35087
+as-name:        NTSI-AS
+import:         from AS9002 87.245.253.101 at 85.119.76.1 action pref=100; accept ANY
+export:         to AS9002 announce AS-NTSI
+import:         from AS3216 194.186.205.241 at 85.119.76.1 action pref=100; accept ANY
+export:         to AS3216 announce AS-NTSI
+import:         from AS42861 77.91.78.29 at 85.119.76.1 action pref=100; accept ANY
+export:         to AS42861 announce AS-NTSI
+import:         from AS28968 62.181.40.53 at 85.119.76.1 action pref=100; accept ANY
+export:         to AS28968 announce AS-NTSI
+import:         from AS8905 212.34.32.225 at 85.119.76.2 action pref=100; accept ANY
+export:         to AS8905 announce AS-NTSI
+import:         from AS8732 77.108.104.145 at 85.119.76.2 action pref=100; accept ANY
+export:         to AS8732 announce AS-NTSI
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-NTSI
+import:         from AS8631 193.232.244.100 at 85.119.76.2 action pref=120; accept ANY
+export:         to AS8631 announce AS-NTSI
+import:         from AS8631 193.232.246.100 at 85.119.76.2 action pref=120; accept ANY
+export:         to AS8631 announce AS-NTSI
+import:         from AS42226 193.232.244.182 at 85.119.76.2 action pref=150; accept ANY
+export:         to AS42226 announce AS-NTSI
+import:         from AS51705 at 85.119.76.1 action pref=150; accept AS-CSI-NET
+export:         to AS51705 announce ANY
+export:         to AS47785 announce {0.0.0.0/0}
+import:         from AS62345 at 85.119.76.2 action pref=150; accept AS62345
+export:         to AS62345 announce {0.0.0.0/0}
+import:         from AS24831 at 85.119.76.2 action pref=150; accept AS24831
+export:         to AS24831 announce ANY
+org:            ORG-NTL6-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NTSI-MNT
+created:        2005-06-01T12:23:52Z
+last-modified:  2025-03-31T12:05:04Z
+source:         RIPE
+
+
+
+aut-num:        AS47785
+as-name:        KANOPUS-NTSI
+org:            ORG-NTL6-RIPE
+import:         from AS35087 accept {0.0.0.0/0}
+import:         from AS12389 accept {0.0.0.0/0}
+export:         to AS35087 announce AS47785
+export:         to AS12389 announce AS47785
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NTSI-MNT
+created:        2012-01-16T10:30:15Z
+last-modified:  2020-03-25T11:17:59Z
+source:         RIPE
+
+
+
+aut-num:        AS62345
+as-name:        GSKB
+org:            ORG-RMBL1-RIPE
+import:         from AS35087 accept {0.0.0.0/0}
+import:         from AS8732 accept {0.0.0.0/0}
+import:         from AS29226 accept {0.0.0.0/0}
+export:         to AS35087 announce AS62345
+export:         to AS8732 announce AS62345
+export:         to AS29226 announce AS62345
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         ncc@gskb.ru
+notify:         s.druzhenkov@gskb.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NTSI-MNT
+mnt-by:         GSKB-MNT
+created:        2013-10-30T07:01:27Z
+last-modified:  2021-07-27T12:57:09Z
+source:         RIPE
+sponsoring-org: ORG-NTL6-RIPE
+
+
+
