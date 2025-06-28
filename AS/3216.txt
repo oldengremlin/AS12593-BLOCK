@@ -1578,6 +1578,14 @@ import:         from AS211157 action pref=100; accept AS211157
 export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
+import:         from AS6789 action pref=100; accept AS-CRELCOM
+export:         to AS6789 announce ANY
+mp-import:      from AS6789 action pref=100; accept AS-CRELCOM
+mp-export:      to AS6789 announce ANY
+import:         from AS48084 action pref=100; accept AS-UMLC
+export:         to AS48084 announce ANY
+mp-import:      from AS48084 action pref=100; accept AS-UMLC
+mp-export:      to AS48084 announce ANY
 import:         from AS47323 action pref=100; accept AS47323
 export:         to AS47323 announce ANY
 import:         from AS50254 action pref=100; accept AS-SKY-EN
@@ -2994,10 +3002,6 @@ import:         from AS197461 action pref=100; accept AS197461
 export:         to AS197461 announce AS-SOVAM
 import:         from AS9130 action pref=100; accept AS9130
 export:         to AS9130 announce AS-SOVAM
-import:         from AS207382 action pref=100; accept AS207382
-export:         to AS207382 announce ANY
-mp-import:      afi ipv6 from AS207382 action pref=100; accept AS207382
-mp-export:      afi ipv6 to AS207382 announce ANY
 mp-import:      afi ipv6 from AS199599 action pref=90; accept AS-CIREX-IPV6
 mp-export:      afi ipv6 to AS199599 announce ANY
 import:         from AS199599 action pref=100; accept AS-CIREX
@@ -3546,8 +3550,6 @@ import:         from AS57123 action pref=100; accept AS57123
 export:         to AS57123 announce ANY
 import:         from AS206179 action pref=100; accept AS206179
 export:         to AS206179 announce ANY
-import:         from AS206668 action pref=100; accept AS206668
-export:         to AS206668 announce ANY
 import:         from AS200389 action pref=100; accept AS200389
 export:         to AS200389 announce ANY
 import:         from AS56541 action pref=100; accept AS-KOMETA
@@ -4298,10 +4300,6 @@ import:         from AS198255 action pref=100; accept AS198255
 export:         to AS198255 announce ANY
 import:         from AS48530 action pref=100; accept AS48530
 export:         to AS48530 announce ANY
-import:         from AS203730 action pref=100; accept AS-SIR
-export:         to AS203730 announce ANY
-mp-import:      afi ipv6 from AS203730 action pref=100; accept AS-ARTECOM-TRANSIT6
-mp-export:      afi ipv6 to AS203730 announce ANY
 import:         from AS44386 action pref=100; accept AS44386
 export:         to AS44386 announce ANY
 import:         from AS47481 action pref=100; accept AS47481
@@ -5147,7 +5145,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-06-26T07:17:30Z
+last-modified:  2025-06-27T08:51:20Z
 source:         RIPE
 
 as-num:         AS3216
