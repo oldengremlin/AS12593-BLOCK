@@ -270,6 +270,7 @@ members:        AS-KETIS
 members:        AS-KINESCOPE
 members:        AS-KOLCHUG-INFO
 members:        AS-KSTV
+members:        AS-KSINVEST
 members:        AS-KTCPEERS
 members:        AS-KVANT2
 members:        AS-KVS
@@ -873,9 +874,11 @@ members:        AS60936
 members:        AS61011
 members:        AS61040
 members:        AS61206
+members:        AS61151
 members:        AS61263
 members:        AS61308
 members:        AS61360
+members:        AS61382
 members:        AS61400
 members:        AS61406
 members:        AS61433
@@ -1053,7 +1056,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2007-10-01T11:16:52Z
-last-modified:  2025-06-24T14:47:58Z
+last-modified:  2025-06-29T15:02:20Z
 source:         RIPE
 
 
@@ -2480,11 +2483,15 @@ export:         to AS61011 announce ANY
 import:         from AS61040 accept AS61040
 export:         to AS61040 announce ANY
 import:         from AS61206 accept AS61206
+export:         to AS61151 announce ANY
+import:         from AS61151 accept AS61151
 export:         to AS61206 announce ANY
 import:         from AS61308 accept AS61308
 export:         to AS61308 announce ANY
 import:         from AS61360 accept AS61360
 export:         to AS61360 announce ANY
+import:         from AS61382 accept AS-KSINVEST
+export:         to AS61382 announce ANY
 import:         from AS61400 accept AS-NETRACK
 export:         to AS61400 announce ANY
 import:         from AS61403 accept AS-61403
@@ -2868,7 +2875,7 @@ mnt-by:         RIPE-NCC-ENd-MNT
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2004-03-05T14:46:40Z
-last-modified:  2025-06-24T14:47:58Z
+last-modified:  2025-06-29T15:02:20Z
 source:         RIPE
 
 
