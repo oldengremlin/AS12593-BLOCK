@@ -675,6 +675,8 @@ import:         from AS59601 action pref=200; accept AS59601
 export:         to AS59601 announce {0.0.0.0/0}
 import:         from AS211659 action pref=200; accept AS211659:AS-STIMUL
 export:         to AS211659 announce ANY
+import:         from AS209290 action pref=200; accept AS209290
+export:         to AS209290 announce {0.0.0.0/0}
 mp-import:      afi ipv6 from AS29076 accept ANY;
 mp-export:      afi ipv6 to AS29076 announce AS-MASTERTEL6;
 mp-import:      afi ipv6 from AS9002 accept ANY;
@@ -744,7 +746,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2025-06-27T11:36:54Z
+last-modified:  2025-07-01T13:00:18Z
 source:         RIPE
 
 as-num:         AS29226

@@ -581,8 +581,6 @@ members:        AS-SBRF
 members:        AS35271
 # from AS35522:
 members:        AS35522
-# from AS35526:
-members:        AS-MASTERBIT
 # from AS35539:
 members:        AS-INFOLINK
 # from AS35598:
@@ -1268,7 +1266,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-06-24T13:51:09Z
+last-modified:  2025-07-01T13:51:00Z
 source:         RIPE
 
 
@@ -4988,9 +4986,6 @@ accept AS35271
 import:         from AS35522
 action pref=100;
 accept AS35522
-import:         from AS35526
-action pref=100;
-accept AS-MASTERBIT
 import:         from AS35539
 action pref=100;
 accept AS-INFOLINK
@@ -6307,8 +6302,6 @@ export:         to AS35271
 announce AS-MSKROUTESERVER
 export:         to AS35522
 announce AS-MSKROUTESERVER
-export:         to AS35526
-announce AS-MSKROUTESERVER
 export:         to AS35539
 announce AS-MSKROUTESERVER
 export:         to AS35598
@@ -6990,7 +6983,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-06-24T13:51:09Z
+last-modified:  2025-07-01T13:51:00Z
 source:         RIPE
 
 
