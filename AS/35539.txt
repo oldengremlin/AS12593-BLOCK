@@ -10,6 +10,8 @@ export:         to AS35598 announce AS-INFOLINK
 export:         to AS202984 announce AS-INFOLINK
 mp-import:      afi ipv6.unicast from AS28917 action pref=110; accept ANY
 mp-export:      afi ipv6.unicast to AS28817 announce AS-INFOLINK
+mp-import:      afi ipv6.unicast from AS35598 action pref=110; accept ANY
+mp-export:      afi ipv6.unicast to AS35598 announce AS-INFOLINK
 import:         from AS8631 action pref=120; accept ANY
 export:         to AS8631 announce AS-INFOLINK
 import:         from AS31500 action pref=125; accept AS31500
@@ -47,7 +49,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OIT1-MNT
 created:        2005-08-30T15:50:21Z
-last-modified:  2025-06-10T14:04:25Z
+last-modified:  2025-07-02T10:41:20Z
 source:         RIPE
 
 as-num:         AS35539
