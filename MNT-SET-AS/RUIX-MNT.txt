@@ -325,8 +325,6 @@ members:        AS-SETICCUS
 members:        AS-CYTANET
 # from AS6939:
 members:        AS-HURRICANE, AS-HURRICANEv6
-# from AS7195:
-members:        AS-EDGEUNO
 # from AS7713:
 members:        AS7713:AS-TELKOM-TRANSIT
 # from AS8241:
@@ -811,8 +809,6 @@ members:        AS-UMA-TECH
 members:        AS48078
 # from AS48084:
 members:        AS-UMLC
-# from AS48099:
-members:        AS48099:AS-VIAIP
 # from AS48128:
 members:        AS48128
 # from AS48166:
@@ -1266,7 +1262,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-07-01T13:51:00Z
+last-modified:  2025-07-04T09:42:25Z
 source:         RIPE
 
 
@@ -4595,9 +4591,6 @@ accept AS-CYTANET
 import:         from AS6939
 action pref=100;
 accept AS-HURRICANE AS-HURRICANEv6
-import:         from AS7195
-action pref=100;
-accept AS-EDGEUNO
 import:         from AS7713
 action pref=100;
 accept AS7713:AS-TELKOM-TRANSIT
@@ -5324,9 +5317,6 @@ accept AS48078
 import:         from AS48084
 action pref=100;
 accept AS-UMLC
-import:         from AS48099
-action pref=100;
-accept AS48099:AS-VIAIP
 import:         from AS48128
 action pref=100;
 accept AS48128
@@ -6039,8 +6029,6 @@ export:         to AS6866
 announce AS-MSKROUTESERVER
 export:         to AS6939
 announce AS-MSKROUTESERVER
-export:         to AS7195
-announce AS-MSKROUTESERVER
 export:         to AS7713
 announce AS-MSKROUTESERVER
 export:         to AS8241
@@ -6525,8 +6513,6 @@ export:         to AS48078
 announce AS-MSKROUTESERVER
 export:         to AS48084
 announce AS-MSKROUTESERVER
-export:         to AS48099
-announce AS-MSKROUTESERVER
 export:         to AS48128
 announce AS-MSKROUTESERVER
 export:         to AS48166
@@ -6976,7 +6962,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-07-01T13:51:00Z
+last-modified:  2025-07-04T09:42:25Z
 source:         RIPE
 
 
