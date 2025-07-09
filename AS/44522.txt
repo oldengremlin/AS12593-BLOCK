@@ -28,9 +28,6 @@ accept AS-OVANET-NIX
 import:         from AS41088
 action pref=100;
 accept AS-NSYS-NIX
-import:         from AS43070
-action pref=100;
-accept AS-JAW
 import:         from AS43708
 action pref=100;
 accept AS43708
@@ -61,8 +58,6 @@ export:         to AS39817
 announce AS-NS9_RIPN_NET
 export:         to AS41088
 announce AS-NS9_RIPN_NET
-export:         to AS43070
-announce AS-NS9_RIPN_NET
 export:         to AS43708
 announce AS-NS9_RIPN_NET
 export:         to AS47200
@@ -77,12 +72,15 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-01-31T12:36:31Z
-last-modified:  2024-02-12T15:15:58Z
+last-modified:  2025-07-08T15:15:44Z
 source:         RIPE
 
 as-num:         AS44522
 country:        RU
 as-name:        RIPN-RU-PRG Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS44522
+country:        RU
+as-name:        null
 as-num:         AS44522
 country:        RU
 as-name:        null

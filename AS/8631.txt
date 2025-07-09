@@ -1455,6 +1455,9 @@ accept AS213499
 import:         from AS213624
 action pref=100;
 accept AS213624
+import:         from AS213922
+action pref=100;
+accept AS213922
 import:         from AS216262
 action pref=100;
 accept AS216262
@@ -2430,6 +2433,8 @@ export:         to AS213499
 announce AS-MSKROUTESERVER
 export:         to AS213624
 announce AS-MSKROUTESERVER
+export:         to AS213922
+announce AS-MSKROUTESERVER
 export:         to AS216262
 announce AS-MSKROUTESERVER
 export:         to AS216334
@@ -2437,12 +2442,15 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-07-04T09:42:25Z
+last-modified:  2025-07-08T13:48:43Z
 source:         RIPE
 
 as-num:         AS8631
 country:        RU
 as-name:        MSK-IX-RS Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS8631
+country:        RU
+as-name:        null
 as-num:         AS8631
 country:        RU
 as-name:        null

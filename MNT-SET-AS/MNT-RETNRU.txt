@@ -327,6 +327,7 @@ members:        AS34492:AS-MEDIALIFE
 members:        AS42291:AS-ISTRANET
 members:        AS47122:AS-CYBERFIRST
 members:        AS47502:AS-OPTIMATELECOM-NET
+members:        AS48108:AS-VIRTUALDC-RU
 members:        AS48610:AS-OFORO
 members:        AS49395:AS-RTCLOUD-3RD
 members:        AS51219:AS-K2INT
@@ -560,7 +561,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2025-07-01T12:05:04Z
+last-modified:  2025-07-08T19:59:05Z
 source:         RIPE
 
 
@@ -739,6 +740,7 @@ members:        AS206728:AS-MEDIALANDTECHNOLOGY
 members:        AS214294:AS-NOOB
 members:        AS215601:AS-ALLHOSTINGS
 members:        AS47502:AS-OPTIMATELECOM-NET
+members:        AS48108:AS-VIRTUALDC-RU
 members:        AS48610:AS-OFORO
 members:        AS51219:AS-K2INT
 members:        AS57073:AS-WILDBERRIES
@@ -814,7 +816,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2025-07-01T12:05:04Z
+last-modified:  2025-07-08T19:59:04Z
 source:         RIPE
 
 
@@ -1720,6 +1722,8 @@ import:         from  AS48096 action pref=100; accept   AS-ITGRAD
 export:         to    AS48096                  announce ANY
 import:         from  AS48102 action pref=100; accept   AS48102
 export:         to    AS48102                  announce ANY
+import:         from  AS48108 action pref=100; accept   AS48108:AS-VIRTUALDC-RU
+export:         to    AS48108                  announce ANY
 import:         from  AS48158 action pref=100; accept   AS-DIGITALONE
 export:         to    AS48158                  announce ANY
 import:         from  AS48166 action pref=100; accept   AS-FORTEX
@@ -2596,6 +2600,8 @@ mp-import:      afi ipv6.unicast from  AS48061 action pref=200; accept   AS-RUTU
 mp-export:      afi ipv6.unicast to    AS48061                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS48096 action pref=100; accept   AS-ITGRAD
 mp-export:      afi ipv6.unicast to    AS48096                  announce ANY
+mp-import:      afi ipv6.unicast from  AS48108 action pref=100; accept   AS48108:AS-VIRTUALDC-RU
+mp-export:      afi ipv6.unicast to    AS48108                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48166 action pref=100; accept   AS-FORTEX
 mp-export:      afi ipv6.unicast to    AS48166                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48282 action pref=100; accept   AS-VDSINA
@@ -2875,7 +2881,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-07-01T12:05:04Z
+last-modified:  2025-07-08T19:59:04Z
 source:         RIPE
 
 

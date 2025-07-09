@@ -435,6 +435,8 @@ import:         from  AS48096 action pref=100; accept   AS-ITGRAD
 export:         to    AS48096                  announce ANY
 import:         from  AS48102 action pref=100; accept   AS48102
 export:         to    AS48102                  announce ANY
+import:         from  AS48108 action pref=100; accept   AS48108:AS-VIRTUALDC-RU
+export:         to    AS48108                  announce ANY
 import:         from  AS48158 action pref=100; accept   AS-DIGITALONE
 export:         to    AS48158                  announce ANY
 import:         from  AS48166 action pref=100; accept   AS-FORTEX
@@ -1311,6 +1313,8 @@ mp-import:      afi ipv6.unicast from  AS48061 action pref=200; accept   AS-RUTU
 mp-export:      afi ipv6.unicast to    AS48061                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS48096 action pref=100; accept   AS-ITGRAD
 mp-export:      afi ipv6.unicast to    AS48096                  announce ANY
+mp-import:      afi ipv6.unicast from  AS48108 action pref=100; accept   AS48108:AS-VIRTUALDC-RU
+mp-export:      afi ipv6.unicast to    AS48108                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48166 action pref=100; accept   AS-FORTEX
 mp-export:      afi ipv6.unicast to    AS48166                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48282 action pref=100; accept   AS-VDSINA
@@ -1590,12 +1594,15 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-07-01T12:05:04Z
+last-modified:  2025-07-08T19:59:04Z
 source:         RIPE
 
 as-num:         AS57304
 country:        RU
 as-name:        RETNRU-AS JSC "RetnNet"
+as-num:         AS57304
+country:        RU
+as-name:        null
 as-num:         AS57304
 country:        RU
 as-name:        null
