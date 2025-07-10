@@ -155,7 +155,7 @@ export:         to AS60796 announce ANY;
 import:         from AS62366 action pref=50; accept AS62366;
 export:         to AS62366 announce ANY;
 import:         from AS62379 action pref=50; accept AS62379:AS-FREEWAY;
-export:         to AS62379 announce ANY;
+export:         to AS62379 announce AS-CLOUD-IX-PRO;
 import:         from AS64419 action pref=50; accept AS64419;
 export:         to AS64419 announce ANY;
 import:         from AS9032 action pref=50; accept AS9032:AS-LIDER;
@@ -897,12 +897,15 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 notify:         registry@citytelecom.ru
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-06-25T13:03:46Z
+last-modified:  2025-07-09T21:00:02Z
 source:         RIPE
 
 as-num:         AS29076
 country:        RU
 as-name:        CITYTELECOM-AS Citytelecom LLC
+as-num:         AS29076
+country:        RU
+as-name:        null
 as-num:         AS29076
 country:        RU
 as-name:        null

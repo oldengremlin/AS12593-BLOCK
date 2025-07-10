@@ -415,6 +415,7 @@ members:        AS213498
 members:        AS44102
 members:        AS197068:AS-SET
 members:        AS-PIN
+members:        AS-MAGSET-ANNOUNCE-SET
 members:        AS-PINDC
 members:        AS-TT-Mobile
 members:        AS42260
@@ -1583,7 +1584,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-07-04T15:01:39Z
+last-modified:  2025-07-09T14:14:37Z
 source:         RIPE
 
 
@@ -6032,8 +6033,8 @@ import:         from AS43132 action pref=100; accept AS43132
 export:         to AS43132 announce ANY
 import:         from AS43530 action pref=100; accept AS-IRTELCOM-SET
 export:         to AS43530 announce ANY
-import:         from AS43812 action pref=100; accept AS43812
-export:         to AS43812 announce ANY
+import:         from AS43812 action pref=100; accept AS-MAGSET-ANNOUNCE-SET
+export:         to AS43812 announce {0.0.0.0/0}
 import:         from AS61039 action pref=100; accept AS61039
 export:         to AS61039 announce ANY
 import:         from AS198639 action pref=100; accept AS198639
@@ -8383,7 +8384,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-07-04T15:01:07Z
+last-modified:  2025-07-09T14:13:12Z
 source:         RIPE
 
 
