@@ -645,6 +645,8 @@ members:        AS41338
 members:        AS41446
 # from AS41601:
 members:        AS-OBLTELECOM
+# from AS41616:
+members:        AS41616
 # from AS41617:
 members:        AS-SOLID-IFC
 # from AS41718:
@@ -1264,7 +1266,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-07-08T13:48:43Z
+last-modified:  2025-07-10T13:46:51Z
 source:         RIPE
 
 
@@ -5068,6 +5070,9 @@ accept AS41446
 import:         from AS41601
 action pref=100;
 accept AS-OBLTELECOM
+import:         from AS41616
+action pref=100;
+accept AS41616
 import:         from AS41617
 action pref=100;
 accept AS-SOLID-IFC
@@ -6349,6 +6354,8 @@ export:         to AS41446
 announce AS-MSKROUTESERVER
 export:         to AS41601
 announce AS-MSKROUTESERVER
+export:         to AS41616
+announce AS-MSKROUTESERVER
 export:         to AS41617
 announce AS-MSKROUTESERVER
 export:         to AS41718
@@ -6964,7 +6971,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-07-08T13:48:43Z
+last-modified:  2025-07-10T13:46:47Z
 source:         RIPE
 
 
