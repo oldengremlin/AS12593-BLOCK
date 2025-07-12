@@ -449,7 +449,6 @@ members:        AS-NTKS
 members:        AS-UBN
 members:        AS198083
 members:        AS198255
-members:        AS199546
 members:        AS199599
 members:        AS200430
 members:        AS201119
@@ -523,6 +522,7 @@ members:        AS-LINK-NET
 members:        AS-LT
 members:        AS-MASTERTEL
 members:        AS-MMTS
+members:        AS-MOSCOMNET
 members:        AS-MOSLINE
 members:        AS-MOYO
 members:        AS-MSTN
@@ -602,7 +602,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2014-02-20T06:50:48Z
-last-modified:  2025-06-11T21:00:02Z
+last-modified:  2025-07-11T21:00:03Z
 source:         RIPE
 
 
@@ -1077,8 +1077,6 @@ import:         from AS198083 action pref=50; accept AS198083;
 export:         to AS198083 announce {0.0.0.0/0};
 import:         from AS198255 action pref=50; accept AS198255;
 export:         to AS198255 announce ANY;
-import:         from AS199546 action pref=50; accept AS199546;
-export:         to AS199546 announce AS-CLOUD-IX-LOCAL;
 import:         from AS199599 action pref=50; accept AS199599;
 export:         to AS199599 announce ANY;
 import:         from AS200430 action pref=50; accept AS200430;
@@ -1277,6 +1275,8 @@ import:         from AS60299 action pref=50; accept AS-MMTS;
 export:         to AS60299 announce AS-CLOUD-IX-LOCAL;
 import:         from AS42632 action pref=50; accept AS-MNOGOBYTE;
 export:         to AS42632 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
+import:         from AS199546 action pref=50; accept AS-MOSCOMNET;
+export:         to AS199546 announce AS-CLOUD-IX-LOCAL;
 import:         from AS31370 action pref=50; accept AS-MOSLINE;
 export:         to AS31370 announce ANY;
 import:         from AS61170 action pref=50; accept AS-MOYO;
@@ -1511,8 +1511,6 @@ mp-import:      afi ipv6.unicast from AS198083 action pref=50; accept AS198083;
 mp-export:      afi ipv6.unicast to AS198083 announce any;
 mp-import:      afi ipv6.unicast from AS198255 action pref=50; accept AS198255;
 mp-export:      afi ipv6.unicast to AS198255 announce any;
-mp-import:      afi ipv6.unicast from AS199546 action pref=50; accept AS199546;
-mp-export:      afi ipv6.unicast to AS199546 announce any;
 mp-import:      afi ipv6.unicast from AS199599 action pref=50; accept AS199599;
 mp-export:      afi ipv6.unicast to AS199599 announce any;
 mp-import:      afi ipv6.unicast from AS200430 action pref=50; accept AS-EMPTY;
@@ -1711,6 +1709,8 @@ mp-import:      afi ipv6.unicast from AS60299 action pref=50; accept AS-MMTS;
 mp-export:      afi ipv6.unicast to AS60299 announce any;
 mp-import:      afi ipv6.unicast from AS42632 action pref=50; accept AS-MNOGOBYTE;
 mp-export:      afi ipv6.unicast to AS42632 announce any;
+mp-import:      afi ipv6.unicast from AS199546 action pref=50; accept AS-MOSCOMNET;
+mp-export:      afi ipv6.unicast to AS199546 announce any;
 mp-import:      afi ipv6.unicast from AS31370 action pref=50; accept AS31370;
 mp-export:      afi ipv6.unicast to AS31370 announce any;
 mp-import:      afi ipv6.unicast from AS61170 action pref=50; accept AS-MOYO;
@@ -1922,7 +1922,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 notify:         registry@citytelecom.ru
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-07-09T21:00:02Z
+last-modified:  2025-07-11T21:00:03Z
 source:         RIPE
 
 
