@@ -1538,6 +1538,10 @@ import:         from AS16265 action pref=87; accept AS-LEASEWEB
 export:         to AS16265 announce AS-SOVAM
 mp-import:      afi ipv6 from AS16265 action pref=87; accept AS-LEASEWEB
 mp-export:      afi ipv6 to AS16265 announce AS-SOVAM-V6
+import:         from AS211157 action pref=95; accept ANY
+export:         to AS211157 announce AS-SOVAM
+mp-import:      afi ipv6 from AS211157 action pref=95; accept ANY
+mp-export:      afi ipv6 to AS211157 announce AS-SOVAM-V6
 import:         from AS197406 action pref=100; accept AS197406
 export:         to AS197406 announce ANY
 import:         from AS20764 action pref=100; accept AS-RASCOM
@@ -4230,6 +4234,8 @@ import:         from AS198716 action pref=100; accept AS198716
 export:         to AS198716 announce ANY
 import:         from AS212670 action pref=100; accept AS-DATAFORT-NSK
 export:         to AS212670 announce ANY
+import:         from AS207759 action pref=100; accept AS207759
+export:         to AS207759 announce {0.0.0.0/0}
 import:         from AS42444 action pref=100; accept AS42444
 export:         to AS42444 announce ANY
 import:         from AS51071 action pref=100; accept AS51071
@@ -5153,7 +5159,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-07-11T13:33:48Z
+last-modified:  2025-07-14T07:29:13Z
 source:         RIPE
 
 as-num:         AS3216

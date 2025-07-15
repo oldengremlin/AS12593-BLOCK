@@ -224,6 +224,7 @@ members:        AS-LANCRAFT
 members:        AS-LINK-NET
 members:        AS-LT
 members:        AS-MASTERTEL
+members:        AS-MOSCOMNET
 members:        AS-MOSLINE
 members:        AS-MOYO
 members:        AS-MSTN
@@ -300,7 +301,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2012-07-30T05:00:21Z
-last-modified:  2025-06-11T21:00:02Z
+last-modified:  2025-07-14T21:00:03Z
 source:         RIPE
 
 
@@ -1276,7 +1277,7 @@ export:         to AS60299 announce AS-CLOUD-IX-LOCAL;
 import:         from AS42632 action pref=50; accept AS-MNOGOBYTE;
 export:         to AS42632 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 import:         from AS199546 action pref=50; accept AS-MOSCOMNET;
-export:         to AS199546 announce AS-CLOUD-IX-LOCAL;
+export:         to AS199546 announce AS-CLOUD-IX-PRO;
 import:         from AS31370 action pref=50; accept AS-MOSLINE;
 export:         to AS31370 announce ANY;
 import:         from AS61170 action pref=50; accept AS-MOYO;
@@ -1922,7 +1923,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 notify:         registry@citytelecom.ru
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-07-11T21:00:03Z
+last-modified:  2025-07-14T21:00:03Z
 source:         RIPE
 
 

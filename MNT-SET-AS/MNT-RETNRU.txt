@@ -60,6 +60,7 @@ as-set:         AS57304:AS-RETN-RU
 descr:          RETN.ru IPv4 downstreams
 members:        AS57304
 members:        AS-2GIS
+members:        AS-3DATA
 members:        AS-ABS
 members:        AS-ACN
 members:        AS-AEZA
@@ -497,7 +498,6 @@ members:        AS204600
 members:        AS204846
 members:        AS205396
 members:        AS205412
-members:        AS205638
 members:        AS205646
 members:        AS205675
 members:        AS205864
@@ -561,7 +561,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2025-07-08T19:59:05Z
+last-modified:  2025-07-14T19:59:05Z
 source:         RIPE
 
 
@@ -1962,6 +1962,8 @@ import:         from  AS59848 action pref=100; accept   AS-LUREIT
 export:         to    AS59848                  announce ANY
 import:         from  AS60034 action pref=100; accept   AS60034
 export:         to    AS60034                  announce ANY
+import:         from  AS60062 action pref=100; accept   AS-3DATA
+export:         to    AS60062                  announce ANY
 import:         from  AS60122 action pref=100; accept   AS-SBRF
 export:         to    AS60122                  announce ANY
 import:         from  AS60246 action pref=100; accept   AS-PG19
@@ -2178,8 +2180,6 @@ import:         from AS205412 action pref=100; accept   AS205412
 export:         to   AS205412                  announce ANY
 import:         from AS205495 action pref=100; accept   AS-LT
 export:         to   AS205495                  announce ANY
-import:         from AS205638 action pref=100; accept   AS205638
-export:         to   AS205638                  announce ANY
 import:         from AS205646 action pref=100; accept   AS205646
 export:         to   AS205646                  announce ANY
 import:         from AS205675 action pref=100; accept   AS205675
@@ -2881,7 +2881,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-07-08T19:59:04Z
+last-modified:  2025-07-14T19:59:04Z
 source:         RIPE
 
 

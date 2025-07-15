@@ -87,9 +87,6 @@ accept AS-CITYTELECOM
 import:         from AS29329
 action pref=100;
 accept AS-NODEX
-import:         from AS31059
-action pref=100;
-accept AS-AVELACOM
 import:         from AS31133
 action pref=100;
 accept AS-CDN-MEGAFON
@@ -291,6 +288,9 @@ accept AS-EDGECENTER
 import:         from AS211609
 action pref=100;
 accept AS211609
+import:         from AS215182
+action pref=100;
+accept AS215182:AS-AVELACOM-BUSINESS
 export:         to AS2854
 announce AS-SPBROUTESERVER
 export:         to AS3267
@@ -344,8 +344,6 @@ announce AS-SPBROUTESERVER
 export:         to AS29076
 announce AS-SPBROUTESERVER
 export:         to AS29329
-announce AS-SPBROUTESERVER
-export:         to AS31059
 announce AS-SPBROUTESERVER
 export:         to AS31133
 announce AS-SPBROUTESERVER
@@ -481,10 +479,12 @@ export:         to AS210756
 announce AS-SPBROUTESERVER
 export:         to AS211609
 announce AS-SPBROUTESERVER
+export:         to AS215182
+announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-06-25T14:08:42Z
+last-modified:  2025-07-14T10:08:59Z
 source:         RIPE
 
 as-num:         AS43690
