@@ -1133,8 +1133,6 @@ members:        AS-LITEGROUP
 members:        AS-LIGALINK
 # from AS198297:
 members:        AS-UL-COM-Media
-# from AS198310:
-members:        AS198310:AS-MOLNIYA
 # from AS198367:
 members:        AS-INKOTELECOM
 # from AS198539:
@@ -1266,7 +1264,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-07-10T13:46:51Z
+last-modified:  2025-07-16T13:50:56Z
 source:         RIPE
 
 
@@ -5802,9 +5800,6 @@ accept AS-LIGALINK
 import:         from AS198297
 action pref=100;
 accept AS-UL-COM-Media
-import:         from AS198310
-action pref=100;
-accept AS198310:AS-MOLNIYA
 import:         from AS198367
 action pref=100;
 accept AS-INKOTELECOM
@@ -6842,8 +6837,6 @@ export:         to AS198185
 announce AS-MSKROUTESERVER
 export:         to AS198297
 announce AS-MSKROUTESERVER
-export:         to AS198310
-announce AS-MSKROUTESERVER
 export:         to AS198367
 announce AS-MSKROUTESERVER
 export:         to AS198539
@@ -6971,7 +6964,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-07-10T13:46:47Z
+last-modified:  2025-07-16T13:51:01Z
 source:         RIPE
 
 
