@@ -71,6 +71,7 @@ import:         from AS198562 action pref=200; accept AS198562
 import:         from AS196780 action pref=200; accept AS196780
 import:         from AS197756 action pref=200; accept AS197756
 import:         from AS199280 action pref=200; accept AS199280
+import:         from AS200993 action pref=200; accept AS200993:AS-CORE
 import:         from AS204703 action pref=200; accept AS204703
 import:         from AS204720 action pref=200; accept AS-CDNETWORKSRU
 import:         from AS207353 action pref=200; accept AS207353
@@ -87,7 +88,6 @@ import:         from AS212352 action pref=200; accept AS212352
 import:         from AS212940 action pref=200; accept AS212940
 import:         from AS212737 action pref=200; accept AS212737
 import:         from AS212742 action pref=200; accept AS212742
-import:         from AS214537 action pref=200; accept AS214537:AS-CORE
 export:         to AS8603 announce ANY
 export:         to AS9210 announce ANY
 export:         to AS21030 announce ANY
@@ -127,6 +127,7 @@ export:         to AS198562 announce ANY
 export:         to AS196780 announce ANY
 export:         to AS199280 announce ANY
 export:         to AS59730 announce ANY
+export:         to AS200993 announce ANY
 export:         to AS204703 announce ANY
 export:         to AS204720 announce ANY
 export:         to AS209406 announce ANY
@@ -142,7 +143,6 @@ export:         to AS212352 announce ANY
 export:         to AS212737 announce ANY
 export:         to AS212742 announce ANY
 export:         to AS212940 announce ANY
-export:         to AS214537 announce ANY
 mp-import:      afi ipv6.unicast from AS8939 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS8939 announce AS-NETRACK
 mp-import:      afi ipv6.unicast from AS9002 action pref=100; accept ANY
@@ -185,7 +185,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NETRACK-MNT
 created:        2012-10-25T07:55:22Z
-last-modified:  2024-11-25T01:57:11Z
+last-modified:  2025-07-21T07:29:49Z
 source:         RIPE
 
 as-num:         AS61400
