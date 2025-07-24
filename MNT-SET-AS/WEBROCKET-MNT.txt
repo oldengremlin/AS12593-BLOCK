@@ -1,15 +1,16 @@
 as-set:         AS-PG19
 org:            ORG-CICP1-RIPE
 descr:          PR19.RU project
+members:        AS60246
 members:        AS49037
 members:        AS207490
 members:        AS206011
-members:        AS60246
+members:        AS50895
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         WEBROCKET-MNT
 created:        2018-05-03T10:53:28Z
-last-modified:  2025-01-07T18:28:43Z
+last-modified:  2025-07-23T06:18:38Z
 source:         RIPE
 
 
@@ -243,13 +244,15 @@ import:         from AS207490 action pref=500; accept AS207490
 export:         to AS207490 announce AS-PG19
 mp-import:      afi ipv6.unicast from AS207490 action pref=500; accept AS207490
 mp-export:      afi ipv6.unicast to AS207490 announce AS-PG19
+import:         from AS50895 action pref=600; accept AS50895
+export:         to AS50895 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         WEBROCKET-MNT
 created:        2021-05-31T09:45:19Z
-last-modified:  2025-02-27T12:31:09Z
+last-modified:  2025-07-23T06:26:33Z
 source:         RIPE
 
 
