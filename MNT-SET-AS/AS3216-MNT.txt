@@ -2224,7 +2224,6 @@ members:        AS12772
 members:        AS-ENFORTA
 members:        AS41430
 members:        AS12461
-members:        AS35750
 members:        AS-TETRA
 members:        AS41681
 members:        AS42561
@@ -2528,7 +2527,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2011-05-25T11:58:20Z
-last-modified:  2025-06-23T06:31:17Z
+last-modified:  2025-07-28T06:33:48Z
 source:         RIPE
 
 
@@ -3099,6 +3098,7 @@ members:        AS-AS29550
 members:        AS-AVENSYS
 members:        AS-BBC
 members:        AS-BEZEQINT
+members:        AS-BLIZZARD
 members:        AS-BOGONS
 members:        AS-BOOKING
 members:        AS-CLARANET
@@ -3180,7 +3180,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2023-03-06T09:56:45Z
-last-modified:  2023-12-15T08:13:03Z
+last-modified:  2025-07-28T12:59:18Z
 source:         RIPE
 
 
@@ -4014,6 +4014,10 @@ import:         from AS13213 action pref=87; accept AS-UK2NET
 export:         to AS13213 announce AS-SOVAM
 mp-import:      afi ipv6 from AS13213 action pref=87; accept AS-UK2NET
 mp-export:      afi ipv6 to AS13213 announce AS-SOVAM-V6
+import:         from AS57976 action pref=87; accept AS-BLIZZARD
+export:         to AS57976 announce AS-SOVAM
+mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
+mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
 import:         from AS24961 action pref=87; accept AS-MYLOC
 export:         to AS24961 announce AS-SOVAM
 mp-import:      afi ipv6 from AS24961 action pref=87; accept AS-MYLOC
@@ -4726,6 +4730,10 @@ import:         from AS49981 action pref=87; accept AS-WORLDSTREAM
 export:         to AS49981 announce AS-SOVAM
 mp-import:      afi ipv6 from AS49981 action pref=87; accept AS-WORLDSTREAM
 mp-export:      afi ipv6 to AS49981 announce AS-SOVAM-V6
+import:         from AS57976 action pref=87; accept AS-BLIZZARD
+export:         to AS57976 announce AS-SOVAM
+mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
+mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
 import:         from AS45102 action pref=87; accept AS45102
 export:         to AS45102 announce AS-SOVAM
 import:         from AS2906 action pref=87; accept AS-NFLX
@@ -6292,8 +6300,6 @@ import:         from AS57503 action pref=100; accept AS57503
 export:         to AS57503 announce ANY
 import:         from AS30960 action pref=100; accept AS-TETRA
 export:         to AS30960 announce ANY
-import:         from AS35750 action pref=100; accept AS35750
-export:         to AS35750 announce {0.0.0.0/0}
 import:         from AS57609 action pref=100; accept AS57609
 export:         to AS57609 announce AS-SOVAM
 import:         from AS56888 action pref=100; accept AS56888
@@ -8098,8 +8104,6 @@ import:         from AS15673 action pref=100; accept AS-TELESETI-PLUS
 export:         to AS15673 announce ANY
 import:         from AS43317 action pref=100; accept AS43317
 export:         to AS43317 announce ANY
-mp-import:      afi ipv6 from AS56764 action pref=100; accept AS-Profit-Estate-IPV6
-mp-export:      afi ipv6 to AS56764 announce ANY
 import:         from AS61197 action pref=100; accept AS61197
 export:         to AS61197 announce ANY
 import:         from AS59640 action pref=100; accept AS59640
@@ -8417,7 +8421,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-07-25T15:18:18Z
+last-modified:  2025-07-28T13:30:38Z
 source:         RIPE
 
 
