@@ -425,6 +425,7 @@ members:        AS-PINDC
 members:        AS-TT-Mobile
 members:        AS42260
 members:        AS215032
+members:        AS-SAFEVALUE-SET
 members:        AS50553
 members:        AS57742
 members:        AS207347
@@ -1591,7 +1592,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-07-25T15:18:58Z
+last-modified:  2025-07-29T14:34:05Z
 source:         RIPE
 
 
@@ -4722,6 +4723,10 @@ import:         from AS5405 action pref=87; accept AS5405:AS-INTERDOTLINK
 export:         to AS5405 announce AS-SOVAM
 mp-import:      afi ipv6 from AS5405 action pref=87; accept AS5405:AS-INTERDOTLINK
 mp-export:      afi ipv6 to AS5405 announce AS-SOVAM-V6
+import:         from AS57976 action pref=87; accept AS-BLIZZARD
+export:         to AS57976 announce AS-SOVAM
+mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
+mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
 import:         from AS14061 action pref=87; accept AS-14061
 export:         to AS14061 announce AS-SOVAM
 mp-import:      afi ipv6 from AS14061 action pref=87; accept AS-14061
@@ -4748,6 +4753,10 @@ import:         from AS137409 action pref=87; accept AS137409:AS-ALL
 export:         to AS137409 announce AS-SOVAM
 mp-import:      afi ipv6 from AS137409 action pref=87; accept AS137409:AS-ALL
 mp-export:      afi ipv6 to AS137409 announce AS-SOVAM-V6
+import:         from AS57976 action pref=87; accept AS-BLIZZARD
+export:         to AS57976 announce AS-SOVAM
+mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
+mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
 import:         from AS46489 action pref=87; accept AS-TWITCH
 export:         to AS46489 announce AS-SOVAM
 mp-import:      afi ipv6 from AS46489 action pref=87; accept AS-TWITCH
@@ -4760,6 +4769,10 @@ import:         from AS63199 action pref=87; accept AS-CAPITALONLINEDATA
 export:         to AS63199 announce AS-SOVAM
 mp-import:      afi ipv6 from AS63199 action pref=87; accept AS-CAPITALONLINEDATA
 mp-export:      afi ipv6 to AS63199 announce AS-SOVAM-V6
+import:         from AS20940 action pref=87; accept AS-AKAMAI
+export:         to AS20940 announce AS-SOVAM
+mp-import:      afi ipv6 from AS20940 action pref=87; accept AS-AKAMAI
+mp-export:      afi ipv6 to AS20940 announce AS-SOVAM-V6
 import:         from AS3356 action pref=77; accept ANY
 export:         to AS3356 announce AS-SOVAM
 mp-import:      afi ipv6 from AS3356 action pref=77; accept ANY
@@ -4854,6 +4867,8 @@ mp-import:      from AS48084 action pref=100; accept AS-UMLC
 mp-export:      to AS48084 announce ANY
 import:         from AS47323 action pref=100; accept AS47323
 export:         to AS47323 announce ANY
+import:         from AS42745 action pref=100; accept AS-SAFEVALUE-SET
+export:         to AS42745 announce ANY
 import:         from AS50254 action pref=100; accept AS-SKY-EN
 export:         to AS50254 announce ANY
 import:         from AS50553 action pref=100; accept AS50553
@@ -8421,7 +8436,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-07-28T13:30:38Z
+last-modified:  2025-07-29T16:10:06Z
 source:         RIPE
 
 
