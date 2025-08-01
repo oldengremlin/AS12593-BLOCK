@@ -4808,6 +4808,10 @@ import:         from AS211157 action pref=95; accept ANY
 export:         to AS211157 announce AS-SOVAM
 mp-import:      afi ipv6 from AS211157 action pref=95; accept ANY
 mp-export:      afi ipv6 to AS211157 announce AS-SOVAM-V6
+import:         from AS32934 action pref=87; accept AS-FACEBOOK
+export:         to AS32934 announce AS-SOVAM
+mp-import:      afi ipv6 from AS32934 action pref=87; accept AS-FACEBOOK
+mp-export:      afi ipv6 to AS32934 announce AS-SOVAM-V6
 import:         from AS197406 action pref=100; accept AS197406
 export:         to AS197406 announce ANY
 import:         from AS20764 action pref=100; accept AS-RASCOM
@@ -8437,7 +8441,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-07-29T16:10:06Z
+last-modified:  2025-07-31T09:48:10Z
 source:         RIPE
 
 
