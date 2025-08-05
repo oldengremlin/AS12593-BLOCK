@@ -23,7 +23,6 @@ members:        AS41029
 members:        AS41184
 members:        AS41223
 members:        AS41443
-members:        AS41667
 members:        AS41688
 members:        AS41774
 members:        AS41853
@@ -126,7 +125,6 @@ members:        AS61306
 members:        AS61308
 members:        AS61378
 members:        AS62295
-members:        AS62345
 members:        AS64450
 members:        AS136907
 members:        AS196850
@@ -198,6 +196,7 @@ members:        AS205482
 members:        AS205567
 members:        AS205576
 members:        AS205616
+members:        AS205907
 members:        AS206323
 members:        AS206501
 members:        AS206515
@@ -313,7 +312,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MASTERTEL-MNT
 created:        2004-03-19T10:40:20Z
-last-modified:  2025-08-01T12:26:20Z
+last-modified:  2025-08-04T08:29:04Z
 source:         RIPE
 
 
@@ -622,8 +621,6 @@ import:         from AS34192 action pref=200; accept AS34192;
 export:         to AS34192 announce ANY;
 import:         from AS41443 action pref=200; accept AS41443;
 export:         to AS41443 announce ANY;
-import:         from AS41667 action pref=200; accept AS41667;
-export:         to AS41667 announce ANY;
 import:         from AS44799 action pref=200; accept AS44799;
 export:         to AS44799 announce {0.0.0.0/0};
 import:         from AS50652 action pref=200; accept AS-VI;
@@ -920,8 +917,6 @@ import:         from AS208777 action pref=200; accept AS208777;
 export:         to AS208777 announce ANY
 import:         from AS34706 action pref=200; accept AS34706;
 export:         to AS34706 announce {0.0.0.0/0}
-import:         from AS62345 action pref=200; accept AS62345;
-export:         to AS62345 announce {0.0.0.0/0}
 import:         from AS38974 action pref=200; accept AS38974;
 export:         to AS38974 announce {0.0.0.0/0}
 import:         from AS47335 action pref=200; accept AS47335;
@@ -1222,6 +1217,8 @@ import:         from AS206501 action pref=200; accept AS206501
 export:         to AS206501 announce ANY
 import:         from AS48018 action pref=200; accept AS48018
 export:         to AS48018 announce ANY
+import:         from AS205907 action pref=200; accept AS205907
+export:         to AS205907 announce {0.0.0.0/0}
 mp-import:      afi ipv6 from AS29076 accept ANY;
 mp-export:      afi ipv6 to AS29076 announce AS-MASTERTEL6;
 mp-import:      afi ipv6 from AS9002 accept ANY;
@@ -1291,7 +1288,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2025-08-01T09:30:41Z
+last-modified:  2025-08-04T08:28:49Z
 source:         RIPE
 
 

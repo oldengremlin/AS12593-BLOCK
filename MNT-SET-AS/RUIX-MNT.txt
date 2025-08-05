@@ -829,6 +829,8 @@ members:        AS48349
 members:        AS48366
 # from AS48399:
 members:        AS-LINXDATACENTER
+# from AS48467:
+members:        AS-PRANET
 # from AS48475:
 members:        AS48475
 # from AS48524:
@@ -1264,7 +1266,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-07-23T09:47:48Z
+last-modified:  2025-08-04T13:47:22Z
 source:         RIPE
 
 
@@ -5344,6 +5346,9 @@ accept AS48366
 import:         from AS48399
 action pref=100;
 accept AS-LINXDATACENTER
+import:         from AS48467
+action pref=100;
+accept AS-PRANET
 import:         from AS48475
 action pref=100;
 accept AS48475
@@ -6533,6 +6538,8 @@ export:         to AS48366
 announce AS-MSKROUTESERVER
 export:         to AS48399
 announce AS-MSKROUTESERVER
+export:         to AS48467
+announce AS-MSKROUTESERVER
 export:         to AS48475
 announce AS-MSKROUTESERVER
 export:         to AS48524
@@ -6964,7 +6971,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-07-23T09:47:43Z
+last-modified:  2025-08-04T13:47:22Z
 source:         RIPE
 
 
