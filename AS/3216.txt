@@ -332,10 +332,10 @@ mp-import:      afi ipv6 from AS29686 action pref=90; accept AS-PROBENETWORKS
 mp-export:      afi ipv6 to AS29686 announce AS-SOVAM-V6
 import:         from AS34224 action pref=90; accept AS-NETERRA-INT
 export:         to AS34224 announce AS-SOVAM
-mp-import:      afi ipv6 from AS47447 action pref=90; accept AS-23MEDIA
-mp-export:      afi ipv6 to AS47447 announce AS-SOVAM-V6
-import:         from AS47447 action pref=90; accept AS-23MEDIA
+import:         from AS47447 action pref=87; accept AS47447:AS-23M
 export:         to AS47447 announce AS-SOVAM
+mp-import:      afi ipv6 from AS47447 action pref=87; accept AS47447:AS-23M
+mp-export:      afi ipv6 to AS47447 announce AS-SOVAM-V6
 mp-import:      afi ipv6 from AS32934 action pref=90; accept AS-FACEBOOK
 mp-export:      afi ipv6 to AS32934 announce AS-SOVAM-V6
 import:         from AS32934 action pref=90; accept AS-FACEBOOK
@@ -1625,11 +1625,15 @@ export:         to AS48084 announce ANY
 mp-import:      from AS48084 action pref=100; accept AS-UMLC
 mp-export:      to AS48084 announce ANY
 import:         from AS47323 action pref=100; accept AS47323
+import:         from AS202150 action pref=100; accept AS202150
+export:         to AS202150 announce ANY
 export:         to AS47323 announce ANY
 import:         from AS42745 action pref=100; accept AS-SAFEVALUE-SET
 export:         to AS42745 announce ANY
 import:         from AS50254 action pref=100; accept AS-SKY-EN
 export:         to AS50254 announce ANY
+import:         from AS207608 action pref=100; accept AS207608
+export:         to AS207608 announce {0.0.0.0/0}
 import:         from AS50553 action pref=100; accept AS50553
 export:         to AS50553 announce ANY
 import:         from AS8932 action pref=100; accept AS8932:AS-ALL
@@ -5197,12 +5201,15 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-08-01T12:14:18Z
+last-modified:  2025-08-05T13:35:59Z
 source:         RIPE
 
 as-num:         AS3216
 country:        RU
 as-name:        SOVAM-AS PJSC "Vimpelcom"
+as-num:         AS3216
+country:        RU
+as-name:        null
 as-num:         AS3216
 country:        RU
 as-name:        null
