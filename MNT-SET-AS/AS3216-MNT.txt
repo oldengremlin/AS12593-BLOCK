@@ -636,6 +636,7 @@ members:        AS211712
 members:        AS201570
 members:        AS59604
 members:        AS209794
+members:        AS201974
 members:        AS211762
 members:        AS-TOMGATE
 members:        AS49287
@@ -1522,6 +1523,7 @@ members:        AS39688
 members:        AS-INSYS-EKB
 members:        AS47342
 members:        AS207228
+members:        AS-ILIMTELECOM
 members:        AS39488
 members:        AS51655:AS-ILIMTELECOM
 members:        AS-BASE
@@ -1595,7 +1597,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-08-05T13:36:40Z
+last-modified:  2025-08-06T08:25:31Z
 source:         RIPE
 
 
@@ -1893,6 +1895,8 @@ members:        AS-OBSRUSSIA6
 members:        AS-SPDOP
 members:        AS-WESTCALL-MSK
 members:        AS-ARVANCLOUD-CDN
+members:        AS201974
+members:        AS-ILIMTELECOM
 members:        AS204296
 members:        AS-MELBICOM-V6
 members:        AS-ELTEL6
@@ -1971,7 +1975,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2025-07-30T08:16:46Z
+last-modified:  2025-08-06T08:26:06Z
 source:         RIPE
 
 
@@ -5569,6 +5573,10 @@ import:         from AS59604 action pref=100; accept AS59604
 export:         to AS59604 announce ANY
 import:         from AS209794 action pref=100; accept AS209794
 export:         to AS209794 announce ANY
+import:         from AS201974 action pref=100; accept AS201974
+export:         to AS201974 announce ANY
+mp-import:      from AS201974 action pref=100; accept AS201974
+mp-export:      to AS201974 announce ANY
 import:         from AS35598 action pref=100; accept AS-ICNET
 export:         to AS35598 announce AS-SOVAM
 mp-import:      afi ipv6 from AS35598 action pref=100; accept AS-ICNET
@@ -7051,6 +7059,10 @@ import:         from AS57212 action pref=100; accept AS-57212
 export:         to AS57212 announce {0.0.0.0/0}
 import:         from AS58187 action pref=100; accept AS-IRCN
 export:         to AS58187 announce ANY
+import:         from AS51655 action pref=100; accept AS-ILIMTELECOM
+export:         to AS51655 announce ANY
+mp-import:      from AS51655 action pref=100; accept AS-ILIMTELECOM
+mp-export:      to AS51655 announce ANY
 import:         from AS34518 action pref=100; accept AS34518
 export:         to AS34518 announce ANY
 import:         from AS49469 action pref=100; accept AS-MI
@@ -8450,7 +8462,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-08-05T13:35:59Z
+last-modified:  2025-08-06T08:24:58Z
 source:         RIPE
 
 
