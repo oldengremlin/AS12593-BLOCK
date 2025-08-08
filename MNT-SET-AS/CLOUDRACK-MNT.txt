@@ -1,12 +1,15 @@
+
+
 as-set:         AS213787:AS-CLOUDRACK
 descr:          AS-SET CLOUDRACK
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 members:        AS213787
 members:        AS42151:AS-P24-CLOUD
+members:        AS206247:AS-MATVINE
 mnt-by:         CLOUDRACK-MNT
 created:        2025-03-21T16:09:32Z
-last-modified:  2025-06-25T09:59:28Z
+last-modified:  2025-08-07T06:16:23Z
 source:         RIPE
 
 
@@ -16,18 +19,41 @@ as-name:        MATVINE-NET
 org:            ORG-IESM1-RIPE
 sponsoring-org: ORG-SO181-RIPE
 import:         from AS213780 accept ANY
-export:         to AS213780 announce AS206247
+export:         to AS213780 announce AS206247:AS-MATVINE
 import:         from AS213787 accept ANY
-export:         to AS213787 announce AS206247
+export:         to AS213787 announce AS206247:AS-MATVINE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         CITYTELECOM-RIPE-MNT
-mnt-by:         MATVINE-MNT
 mnt-by:         CLOUDRACK-MNT
+mnt-by:         ARKCORE-MNT
+mnt-by:         ARK-CORE-TECH-MNT
+mnt-by:         MATVINE-MNT
 created:        2025-07-24T09:25:05Z
-last-modified:  2025-08-06T18:44:55Z
+last-modified:  2025-08-07T15:32:04Z
+source:         RIPE
+
+
+
+aut-num:        AS213780
+as-name:        ARKCORE
+descr:          ANTI-DDoS Protection for your services
+descr:          Moscow, Russia
+descr:          https://arkcore.ru
+org:            ORG-LST9-RIPE
+sponsoring-org: ORG-SO181-RIPE
+import:         from AS43278 accept ANY
+export:         to AS43278 announce AS213780:AS-ARKCORE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CLOUDRACK-MNT
+mnt-by:         ARK-CORE-TECH-MNT
+mnt-by:         ARKCORE-MNT
+created:        2024-12-02T12:44:00Z
+last-modified:  2025-08-07T15:33:55Z
 source:         RIPE
 
 
@@ -48,10 +74,36 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         P24-MNT
+mnt-by:         ARK-CORE-TECH-MNT
 mnt-by:         CLOUDRACK-MNT
 created:        2024-11-29T13:12:27Z
-last-modified:  2025-07-30T11:19:16Z
+last-modified:  2025-08-07T15:36:11Z
+source:         RIPE
+
+
+
+aut-num:        AS42151
+as-name:        P24-CLOUD
+org:            ORG-LA2016-RIPE
+sponsoring-org: ORG-SO181-RIPE
+import:         from AS213787 accept ANY
+export:         to AS213787 announce AS42151:AS-P24-CLOUD
+import:         from AS213780 accept ANY
+export:         to AS213780 announce AS42151:AS-P24-CLOUD
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS42151:AS-P24-CLOUD
+import:         from AS57494 accept ANY
+export:         to AS57494 announce AS42151
+import:         from AS43278 accept ANY
+export:         to AS43278 announce AS42151:AS-P24-CLOUD
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CLOUDRACK-MNT
+mnt-by:         P24-MNT
+created:        2006-12-27T16:22:48Z
+last-modified:  2025-08-07T15:41:11Z
 source:         RIPE
 
 
