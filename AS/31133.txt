@@ -246,6 +246,8 @@ import:         from AS21105 accept AS-VLADIVOSTOK-TELECOM-NET
 export:         to AS21105 announce ANY
 import:         from AS21135 accept AS-MTT
 export:         to AS21135 announce ANY
+import:         from AS21135 accept AS-MTT-OWN
+export:         to AS21135 announce ANY
 import:         from AS21480 accept AS-WBT
 export:         to AS21480 announce ANY
 import:         from AS21859 accept AS-ZENLAYER
@@ -384,6 +386,8 @@ import:         from AS35165 accept AS35165
 export:         to AS35165 announce ANY
 import:         from AS35168 accept AS-SET_TNSPLUS
 export:         to AS35168 announce ANY
+import:         from AS35237 accept AS-SBRF
+export:         to AS35237 announce ANY
 import:         from AS35239 accept AS-BALTTELECOM
 export:         to AS35239 announce ANY
 import:         from AS35298 accept AS35298
@@ -854,7 +858,7 @@ import:         from AS50671 accept AS-GORODTV
 export:         to AS50671 announce ANY
 import:         from AS50674 accept AS50674
 export:         to AS50674 announce ANY
-import:         from AS50676 accept AS50676
+import:         from AS50676 accept AS50676:AS-TELCOM
 export:         to AS50676 announce ANY
 import:         from AS50716 accept AS-TELECOMRU
 export:         to AS50716 announce ANY
@@ -1571,7 +1575,7 @@ mnt-by:         RIPE-NCC-ENd-MNT
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2004-03-05T14:46:40Z
-last-modified:  2025-08-05T09:55:42Z
+last-modified:  2025-08-08T07:53:12Z
 source:         RIPE
 
 as-num:         AS31133

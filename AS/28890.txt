@@ -10,8 +10,6 @@ import:         from AS12389 action pref=75; accept ANY
 export:         to AS12389 announce AS-INSYS-EKB
 import:         from AS57304 action pref=75; accept ANY
 export:         to AS57304 announce AS-INSYS-EKB
-import:         from AS25478 action pref=75; accept ANY
-export:         to AS25478 announce AS-INSYS-EKB
 import:         from AS20485 action pref=75; accept ANY
 export:         to AS20485 announce AS-INSYS-EKB
 import:         from AS3216 action pref=75; accept ANY
@@ -34,7 +32,8 @@ descr:          Customers
 descr:          ---------------------------------------------------------
 import:         from AS34869 action pref=500; accept AS34869;
 import:         from AS44528 action pref=500; accept AS44528;
-import:         from AS16230 action pref=500; accept AS16230;
+import:         from AS206873 action pref=500; accept AS-GALAXYDATA;
+export:         to AS206873 announce ANY
 descr:          +-------------------------------------------------------
 descr:          | FOR MORE INFO OF BGP
 descr:          | CONNECTIONS IN EKATERINBURG
@@ -47,7 +46,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         INSYS-MNT
 created:        2003-03-27T14:53:11Z
-last-modified:  2024-10-03T05:06:20Z
+last-modified:  2025-08-08T09:31:25Z
 source:         RIPE
 
 as-num:         AS28890
