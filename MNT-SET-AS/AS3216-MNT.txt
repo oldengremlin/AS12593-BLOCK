@@ -504,6 +504,7 @@ members:        AS43170
 members:        AS50089
 members:        AS59846
 members:        AS211157
+members:        AS42532
 members:        AS43330
 members:        AS138915
 members:        AS197783
@@ -1594,7 +1595,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-08-08T07:21:19Z
+last-modified:  2025-08-10T11:41:55Z
 source:         RIPE
 
 
@@ -1642,6 +1643,7 @@ members:        AS-DDOS-GUARD
 members:        AS-ETYPE
 members:        AS42187
 members:        AS211157
+members:        AS42532
 members:        AS-SET-RIGHTSIDE
 members:        AS-BWC
 members:        AS138915
@@ -1972,7 +1974,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2025-08-06T08:26:06Z
+last-modified:  2025-08-10T11:42:30Z
 source:         RIPE
 
 
@@ -4784,6 +4786,10 @@ mp-import:      afi ipv6 from AS3356 action pref=77; accept ANY
 mp-export:      afi ipv6 to AS3356 announce AS-SOVAM-V6
 import:         from AS58073 action pref=87; accept ANY
 export:         to AS58073 announce AS-SOVAM
+import:         from AS42532 action pref=87; accept ANY
+export:         to AS42532 announce AS-SOVAM
+mp-import:      afi ipv6 from AS42532 action pref=87; accept ANY
+mp-export:      afi ipv6 to AS42532 announce AS-SOVAM-V6
 import:         from AS3356 action pref=77; accept ANY
 export:         to AS3356 announce AS-SOVAM
 mp-import:      afi ipv6 from AS3356 action pref=77; accept ANY
@@ -8449,7 +8455,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-08-08T07:20:17Z
+last-modified:  2025-08-10T11:40:43Z
 source:         RIPE
 
 
