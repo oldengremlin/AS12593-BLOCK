@@ -158,6 +158,7 @@ source:         RIPE
 
 as-set:         AS197968:AS-CMFTKZ
 members:        AS-CDNETWORKSRU
+members:        AS-ITGRAD
 members:        AS48096
 members:        AS197968
 members:        AS204720
@@ -166,7 +167,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         CMFT-MNT
 created:        2023-08-21T08:14:16Z
-last-modified:  2025-07-16T08:17:45Z
+last-modified:  2025-08-11T13:09:31Z
 source:         RIPE
 
 
@@ -179,6 +180,8 @@ import:         from AS198803 accept ANY
 export:         to AS198803 announce AS197968:AS-CMFTKZ
 import:         from AS35104 accept ANY
 export:         to AS35104 announce AS197968:AS-CMFTKZ
+import:         from AS48096  action pref=130; accept AS-ITGRAD
+export:         to AS48096 announce ANY
 import:         from AS214500 action pref=130; accept AS214500
 export:         to AS214500 announce ANY
 import:         from AS204720 action pref=130; accept AS-CDNETWORKSRU
@@ -189,7 +192,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
 created:        2023-07-03T11:11:42Z
-last-modified:  2024-12-24T11:02:12Z
+last-modified:  2025-08-11T13:20:46Z
 source:         RIPE
 
 

@@ -3808,9 +3808,9 @@ import:         from AS57212 action pref=100; accept AS-57212
 export:         to AS57212 announce {0.0.0.0/0}
 import:         from AS58187 action pref=100; accept AS-IRCN
 export:         to AS58187 announce ANY
-import:         from AS51655 action pref=100; accept AS-ILIMTELECOM
+import:         from AS51655 action pref=100; accept AS51655:AS-ILIMTELECOM
 export:         to AS51655 announce ANY
-mp-import:      from AS51655 action pref=100; accept AS-ILIMTELECOM
+mp-import:      from AS51655 action pref=100; accept AS51655:AS-ILIMTELECOM
 mp-export:      to AS51655 announce ANY
 import:         from AS34518 action pref=100; accept AS34518
 export:         to AS34518 announce ANY
@@ -5203,12 +5203,15 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-08-10T11:40:43Z
+last-modified:  2025-08-11T07:46:29Z
 source:         RIPE
 
 as-num:         AS3216
 country:        RU
 as-name:        SOVAM-AS PJSC "Vimpelcom"
+as-num:         AS3216
+country:        RU
+as-name:        null
 as-num:         AS3216
 country:        RU
 as-name:        null
