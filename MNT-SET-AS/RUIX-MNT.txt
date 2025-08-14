@@ -1739,6 +1739,8 @@ members:        AS-NTKS
 members:        AS49395:AS-RTCLOUD-3RD
 # from AS49505:
 members:        AS-SELECTEL
+# from AS49954:
+members:        AS49954
 # from AS50265:
 members:        AS-GT
 # from AS50340:
@@ -1807,7 +1809,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2025-07-14T10:08:54Z
+last-modified:  2025-08-13T14:05:16Z
 source:         RIPE
 
 
@@ -3341,6 +3343,9 @@ accept AS49395:AS-RTCLOUD-3RD
 import:         from AS49505
 action pref=100;
 accept AS-SELECTEL
+import:         from AS49954
+action pref=100;
+accept AS49954
 import:         from AS50265
 action pref=100;
 accept AS-GT
@@ -3562,6 +3567,8 @@ export:         to AS49395
 announce AS-SPBROUTESERVER
 export:         to AS49505
 announce AS-SPBROUTESERVER
+export:         to AS49954
+announce AS-SPBROUTESERVER
 export:         to AS50265
 announce AS-SPBROUTESERVER
 export:         to AS50340
@@ -3627,7 +3634,7 @@ announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-07-14T10:08:59Z
+last-modified:  2025-08-13T14:05:16Z
 source:         RIPE
 
 
