@@ -157,6 +157,9 @@ accept AS-TRUENETWORK
 import:         from AS49814
 action pref=100;
 accept AS-TOMGATE
+import:         from AS49954
+action pref=100;
+accept AS49954
 import:         from AS50166
 action pref=100;
 accept AS-RTCLOUD-NSK
@@ -320,6 +323,8 @@ export:         to AS49673
 announce AS-NSKROUTESERVER
 export:         to AS49814
 announce AS-NSKROUTESERVER
+export:         to AS49954
+announce AS-NSKROUTESERVER
 export:         to AS50166
 announce AS-NSKROUTESERVER
 export:         to AS50776
@@ -364,7 +369,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-06-24T05:44:00Z
+last-modified:  2025-08-14T05:41:35Z
 source:         RIPE
 
 as-num:         AS42403

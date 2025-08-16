@@ -620,6 +620,7 @@ members:        AS-KT-RU
 members:        AS-NTKS
 members:        AS209739
 members:        AS21030
+members:        AS211609
 members:        AS44670
 members:        AS47122:AS-CYBERFIRST
 members:        AS47542
@@ -641,6 +642,7 @@ members:        AS-MASTERHOST
 members:        AS-MELBICOM
 members:        AS-MNOGOBYTE
 members:        AS-NGENIX
+members:        AS-PREMIER-GC
 members:        AS-RAMTEL
 members:        AS-RBC
 members:        AS-SETKT
@@ -663,7 +665,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2013-09-03T14:00:46Z
-last-modified:  2025-02-20T21:00:02Z
+last-modified:  2025-08-14T21:00:03Z
 source:         RIPE
 
 
@@ -1139,6 +1141,8 @@ import:         from AS211406 action pref=50; accept AS211406;
 export:         to AS211406 announce ANY;
 import:         from AS211609 action pref=50; accept AS211609;
 export:         to AS211609 announce AS-CLOUD-IX-PRO;
+import:         from AS211609 action pref=50; accept AS211609;
+export:         to AS211609 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 import:         from AS215226 action pref=50; accept AS215226:AS-SIRIUS;
 export:         to AS215226 announce {0.0.0.0/0};
 import:         from AS216366 action pref=50; accept AS216366:AS-SMART-TEL;
@@ -1327,6 +1331,8 @@ import:         from AS49106 action pref=50; accept AS-OPCOM;
 export:         to AS49106 announce ANY;
 import:         from AS47258 action pref=50; accept AS-PREMIER-GC;
 export:         to AS47258 announce AS-CLOUD-IX-PRO;
+import:         from AS47258 action pref=50; accept AS-PREMIER-GC;
+export:         to AS47258 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 import:         from AS24638 action pref=50; accept AS-RAMTEL;
 export:         to AS24638 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 import:         from AS20848 action pref=50; accept AS-RBC;
@@ -1571,6 +1577,8 @@ mp-import:      afi ipv6.unicast from AS211406 action pref=50; accept AS211406;
 mp-export:      afi ipv6.unicast to AS211406 announce any;
 mp-import:      afi ipv6.unicast from AS211609 action pref=50; accept AS211609;
 mp-export:      afi ipv6.unicast to AS211609 announce any;
+mp-import:      afi ipv6.unicast from AS211609 action pref=50; accept AS211609;
+mp-export:      afi ipv6.unicast to AS211609 announce any;
 mp-import:      afi ipv6.unicast from AS215226 action pref=50; accept AS215226:AS-SIRIUS;
 mp-export:      afi ipv6.unicast to AS215226 announce any;
 mp-import:      afi ipv6.unicast from AS216366 action pref=50; accept AS216366:AS-SMART-TEL;
@@ -1759,6 +1767,8 @@ mp-import:      afi ipv6.unicast from AS49106 action pref=50; accept AS-OPCOM;
 mp-export:      afi ipv6.unicast to AS49106 announce any;
 mp-import:      afi ipv6.unicast from AS47258 action pref=50; accept AS-PREMIER-GC;
 mp-export:      afi ipv6.unicast to AS47258 announce any;
+mp-import:      afi ipv6.unicast from AS47258 action pref=50; accept AS-PREMIER-GC;
+mp-export:      afi ipv6.unicast to AS47258 announce any;
 mp-import:      afi ipv6.unicast from AS24638 action pref=50; accept AS-RAMTEL;
 mp-export:      afi ipv6.unicast to AS24638 announce any;
 mp-import:      afi ipv6.unicast from AS20848 action pref=50; accept AS-RBC;
@@ -1942,7 +1952,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 notify:         registry@citytelecom.ru
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-07-17T21:00:02Z
+last-modified:  2025-08-14T21:00:03Z
 source:         RIPE
 
 

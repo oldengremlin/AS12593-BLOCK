@@ -924,6 +924,9 @@ accept AS-GNC
 import:         from AS49813
 action pref=100;
 accept AS-INN
+import:         from AS49954
+action pref=100;
+accept AS49954
 import:         from AS50060
 action pref=100;
 accept AS-ANNET
@@ -1164,9 +1167,6 @@ accept AS60459
 import:         from AS60544
 action pref=100;
 accept AS60544
-import:         from AS60731
-action pref=100;
-accept AS60731
 import:         from AS60764
 action pref=100;
 accept AS-TKTEL
@@ -2082,6 +2082,8 @@ export:         to AS49800
 announce AS-MSKROUTESERVER
 export:         to AS49813
 announce AS-MSKROUTESERVER
+export:         to AS49954
+announce AS-MSKROUTESERVER
 export:         to AS50060
 announce AS-MSKROUTESERVER
 export:         to AS50157
@@ -2241,8 +2243,6 @@ announce AS-MSKROUTESERVER
 export:         to AS60459
 announce AS-MSKROUTESERVER
 export:         to AS60544
-announce AS-MSKROUTESERVER
-export:         to AS60731
 announce AS-MSKROUTESERVER
 export:         to AS60764
 announce AS-MSKROUTESERVER
@@ -2447,7 +2447,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-08-04T13:47:22Z
+last-modified:  2025-08-15T09:39:10Z
 source:         RIPE
 
 as-num:         AS8631
