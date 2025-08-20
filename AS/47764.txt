@@ -41,8 +41,6 @@ export:         to AS57304 announce AS-VK
 import:         from AS57304 accept AS-RETN
 mp-export:      afi ipv6.unicast to AS57304 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS57304 accept AS-RETN;
-export:         to AS3267 announce AS-VK
-import:         from AS3267 accept AS-RUNNET
 export:         to AS8359 announce AS-VK
 import:         from AS8359 accept AS-MTU
 mp-export:      afi ipv6.unicast to AS8359 announce AS-VK;
@@ -65,10 +63,6 @@ export:         to AS31133 announce AS-VK
 import:         from AS31133 accept AS-MF-MGSM
 mp-export:      afi ipv6.unicast to AS31133 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS31133 accept AS-MF-MGSM;
-export:         to AS42610 announce AS-VK
-import:         from AS42610 accept AS-NCNET
-mp-export:      afi ipv6.unicast to AS42610 announce AS-VK;
-mp-import:      afi ipv6.unicast from AS42610 accept AS-NCNET-IPV6;
 export:         to AS15169 announce AS-VK
 import:         from AS15169 accept AS-GOOGLE
 mp-export:      afi ipv6.unicast to AS15169 announce AS-VK;
@@ -79,8 +73,6 @@ export:         to AS8641 announce AS-VK
 import:         from AS8641 accept AS-NAUKANET
 export:         to AS8905 announce AS-VK
 import:         from AS8905 accept AS-DIGIT1
-export:         to AS13002 announce AS-VK
-import:         from AS13002 accept AS-LINKEY
 export:         to AS29226 announce AS-VK
 import:         from AS29226 accept AS-MASTERTEL
 mp-export:      afi ipv6.unicast to AS29226 announce AS-VK;
@@ -123,8 +115,6 @@ export:         to AS6697 announce AS-VK
 import:         from AS6697 accept AS-BELPAK
 mp-export:      afi ipv6.unicast to AS6697 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS6697 accept AS-BELPAK;
-export:         to AS51343 announce AS-VK
-import:         from AS51343 accept AS-FORCELINE
 export:         to AS44843 announce AS-VK
 import:         from AS44843 accept AS-OBTEL
 mp-export:      afi ipv6.unicast to AS44843 announce AS-VK;
@@ -137,8 +127,6 @@ export:         to AS8732 announce AS-VK
 import:         from AS8732 accept AS-COMCOR
 mp-export:      afi ipv6.unicast to AS8732 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS8732 accept AS-COMCOR;
-export:         to AS29069 announce AS-VK
-import:         from AS29069 accept AS-TRANSLINECOM
 export:         to AS50923 announce AS-VK
 import:         from AS50923 accept AS-METRO-SET
 mp-export:      afi ipv6.unicast to AS50923 announce AS-VK;
@@ -173,8 +161,6 @@ export:         to AS28917 announce AS-VK
 import:         from AS28917 accept AS-FIORD
 mp-export:      afi ipv6.unicast to AS28917 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS28917 accept AS-FIORD;
-export:         to AS51904 announce AS-VK
-import:         from AS51904 accept AS-UTEX
 export:         to AS29124 announce AS-VK
 import:         from AS29124 accept AS-7SKY
 mp-export:      afi ipv6.unicast to AS29124 announce AS-VK;
@@ -197,10 +183,6 @@ export:         to AS44943 announce AS-VK
 import:         from AS44943 accept AS-RAMNET
 mp-export:      afi ipv6.unicast to AS44943 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS44943 accept AS-RAMNET6;
-export:         to AS44020 announce AS-VK
-import:         from AS44020 accept AS-CLN
-mp-export:      afi ipv6.unicast to AS44020 announce AS-VK;
-mp-import:      afi ipv6.unicast from AS44020 accept AS-CLN;
 export:         to AS6789 announce AS-VK
 import:         from AS6789 accept AS-CRELCOM
 export:         to AS44050 announce AS-VK
@@ -215,8 +197,6 @@ export:         to AS57724 announce AS-VK
 import:         from AS57724 accept AS-DDOS-GUARD
 mp-export:      afi ipv6.unicast to AS57724 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS57724 accept AS-DDOS-GUARD;
-export:         to AS198354 announce AS-VK
-import:         from AS198354 accept AS-SISTELECOM
 export:         to AS60246 announce AS-VK
 import:         from AS60246 accept AS-PG19
 mp-export:      afi ipv6.unicast to AS60246 announce AS-VK;
@@ -251,8 +231,6 @@ export:         to AS29588 announce AS-VK
 import:         from AS29588 accept AS-IVSTAR
 mp-export:      afi ipv6.unicast to AS29588 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS29588 accept AS-IVSTAR;
-export:         to AS52091 announce AS-VK
-import:         from AS52091 accept AS-LEVEL-MSK
 export:         to AS47286 announce AS-VK
 import:         from AS47286 accept AS-OTSNET
 export:         to AS200350 announce AS-MAILRU
@@ -369,6 +347,10 @@ export:         to AS49476 announce AS-VK
 import:         from AS49476 accept AS-MTT
 export:         to AS25292 announce AS-VK
 import:         from AS25292 accept AS25292
+export:         to AS10122 announce AS-VK
+import:         from AS10122 accept AS-BIGO-10122
+mp-export:      afi ipv6.unicast to AS10122 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS10122 accept AS-BIGO-10122;
 export:         to AS43690 announce AS-VK
 import:         from AS43690 accept AS-SPBROUTESERVER
 mp-export:      afi ipv6.unicast to AS43690 announce AS-VK;
@@ -381,6 +363,10 @@ export:         to AS31500 announce AS-VK
 import:         from AS31500 accept AS-GLOBAL-NET
 mp-export:      afi ipv6.unicast to AS31500 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-NET;
+export:         to AS10122 announce AS-VK
+import:         from AS10122 accept AS-BIGO-10122
+mp-export:      afi ipv6.unicast to AS10122 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS10122 accept AS-BIGO-10122;
 export:         to AS13094 announce AS-VK
 import:         from AS13094 accept AS-MILECOM-RS
 mp-export:      afi ipv6.unicast to AS13094 announce AS-VK;
@@ -434,7 +420,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2025-08-06T15:11:44Z
+last-modified:  2025-08-19T15:40:06Z
 source:         RIPE
 
 as-num:         AS47764
