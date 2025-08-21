@@ -2,9 +2,11 @@ aut-num:        AS44056
 as-name:        TRYTECH-AS
 org:            ORG-TL849-RIPE
 import:         from AS34123 action pref=100; accept ANY
+import:         from AS34771 action pref=100; accept AS34771
 import:         from AS57988 accept ANY
 import:         from AS20485 action pref=100; accept ANY
 import:         from AS56676 action pref=100; accept AS56676
+export:         to AS34771 announce ANY
 import:         from AS28917 action pref=100; accept ANY
 import:         from AS3216 action pref=100; accept ANY
 import:         from AS50952 action pref=100; accept ANY
@@ -29,7 +31,7 @@ notify:         support@trytek.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-TRYTECH
 created:        2007-11-12T07:39:15Z
-last-modified:  2024-07-25T06:29:59Z
+last-modified:  2025-08-20T08:18:33Z
 source:         RIPE
 
 as-num:         AS44056
