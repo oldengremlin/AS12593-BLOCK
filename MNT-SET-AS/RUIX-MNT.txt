@@ -54,8 +54,6 @@ members:        AS41560
 members:        AS-GERCON
 # from AS42728:
 members:        AS-NS9_RIPN_NET
-# from AS42861:
-members:        AS-FOTONTELECOM
 # from AS44128:
 members:        AS-CITY-EKT-IX, AS-INTERNET-PRO-EKT-IX, AS61276
 # from AS44587:
@@ -112,7 +110,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2025-08-14T07:38:41Z
+last-modified:  2025-08-21T07:38:21Z
 source:         RIPE
 
 
@@ -683,8 +681,6 @@ members:        AS-VEESP
 members:        AS-NSPLUS
 # from AS42632:
 members:        AS-MNOGOBYTE
-# from AS42861:
-members:        AS-FOTONTELECOM
 # from AS42893:
 members:        AS42893
 # from AS42909:
@@ -1268,7 +1264,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-08-15T09:39:11Z
+last-modified:  2025-08-21T09:39:24Z
 source:         RIPE
 
 
@@ -1513,8 +1509,6 @@ members:        AS-IP-MAX, AS-IP-MAX-V6
 members:        AS-VKONTAKTE
 # from AS31133:
 members:        AS-CDN-MEGAFON
-# from AS42861:
-members:        AS-FOTONTELECOM
 # from AS44587:
 members:        AS-MEGACOM
 # from AS47445:
@@ -1548,7 +1542,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2008-10-27T12:33:38Z
-last-modified:  2025-07-02T09:55:25Z
+last-modified:  2025-08-21T09:53:28Z
 source:         RIPE
 
 
@@ -1701,8 +1695,6 @@ members:        AS-GERCON
 members:        AS-UNETCOMRU
 # from AS42668:
 members:        AS-NEVALINK
-# from AS42861:
-members:        AS-FOTONTELECOM
 # from AS42893:
 members:        AS42893
 # from AS42909:
@@ -1813,7 +1805,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2025-08-13T14:05:16Z
+last-modified:  2025-08-21T10:05:23Z
 source:         RIPE
 
 
@@ -2968,9 +2960,6 @@ accept AS-GERCON
 import:         from AS42728
 action pref=100;
 accept AS-NS9_RIPN_NET
-import:         from AS42861
-action pref=100;
-accept AS-FOTONTELECOM
 import:         from AS44128
 action pref=100;
 accept AS-CITY-EKT-IX AS-INTERNET-PRO-EKT-IX AS61276
@@ -3096,8 +3085,6 @@ export:         to AS42498
 announce AS-EKTROUTESERVER
 export:         to AS42728
 announce AS-EKTROUTESERVER
-export:         to AS42861
-announce AS-EKTROUTESERVER
 export:         to AS44128
 announce AS-EKTROUTESERVER
 export:         to AS44587
@@ -3152,7 +3139,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-08-14T07:38:37Z
+last-modified:  2025-08-21T07:38:21Z
 source:         RIPE
 
 
@@ -3294,9 +3281,6 @@ accept AS-UNETCOMRU
 import:         from AS42668
 action pref=100;
 accept AS-NEVALINK
-import:         from AS42861
-action pref=100;
-accept AS-FOTONTELECOM
 import:         from AS42893
 action pref=100;
 accept AS42893
@@ -3539,8 +3523,6 @@ export:         to AS42518
 announce AS-SPBROUTESERVER
 export:         to AS42668
 announce AS-SPBROUTESERVER
-export:         to AS42861
-announce AS-SPBROUTESERVER
 export:         to AS42893
 announce AS-SPBROUTESERVER
 export:         to AS42909
@@ -3648,7 +3630,7 @@ announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-08-13T14:05:16Z
+last-modified:  2025-08-21T10:05:28Z
 source:         RIPE
 
 
@@ -4083,9 +4065,6 @@ accept AS-VKONTAKTE
 import:         from AS31133
 action pref=100;
 accept AS-CDN-MEGAFON
-import:         from AS42861
-action pref=100;
-accept AS-FOTONTELECOM
 import:         from AS44587
 action pref=100;
 accept AS-MEGACOM
@@ -4148,8 +4127,6 @@ export:         to AS28709
 announce AS-RNDROUTESERVER
 export:         to AS31133
 announce AS-RNDROUTESERVER
-export:         to AS42861
-announce AS-RNDROUTESERVER
 export:         to AS44587
 announce AS-RNDROUTESERVER
 export:         to AS47445
@@ -4182,7 +4159,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-10-27T08:45:37Z
-last-modified:  2025-07-02T09:55:25Z
+last-modified:  2025-08-21T09:53:24Z
 source:         RIPE
 
 
@@ -5145,9 +5122,6 @@ accept AS-NSPLUS
 import:         from AS42632
 action pref=100;
 accept AS-MNOGOBYTE
-import:         from AS42861
-action pref=100;
-accept AS-FOTONTELECOM
 import:         from AS42893
 action pref=100;
 accept AS42893
@@ -6411,8 +6385,6 @@ export:         to AS42574
 announce AS-MSKROUTESERVER
 export:         to AS42632
 announce AS-MSKROUTESERVER
-export:         to AS42861
-announce AS-MSKROUTESERVER
 export:         to AS42893
 announce AS-MSKROUTESERVER
 export:         to AS42909
@@ -6992,7 +6964,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-08-15T09:39:10Z
+last-modified:  2025-08-21T09:39:24Z
 source:         RIPE
 
 

@@ -323,6 +323,7 @@ members:        AS211914:AS-AERCA
 members:        AS213452:AS-INFRACOM
 members:        AS214294:AS-NOOB
 members:        AS215601:AS-ALLHOSTINGS
+members:        AS28761:AS-CUSTOMERS
 members:        AS29426:AS-CONNECTO
 members:        AS34492:AS-MEDIALIFE
 members:        AS42291:AS-ISTRANET
@@ -529,6 +530,7 @@ members:        AS209930
 members:        AS209973
 members:        AS210038
 members:        AS210109
+members:        AS210171
 members:        AS210827
 members:        AS211078
 members:        AS211663
@@ -563,7 +565,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2025-08-20T19:59:21Z
+last-modified:  2025-08-21T19:59:21Z
 source:         RIPE
 
 
@@ -741,6 +743,7 @@ members:        AS198310:AS-MOLNIYA
 members:        AS206728:AS-MEDIALANDTECHNOLOGY
 members:        AS214294:AS-NOOB
 members:        AS215601:AS-ALLHOSTINGS
+members:        AS28761:AS-CUSTOMERS
 members:        AS47502:AS-OPTIMATELECOM-NET
 members:        AS48108:AS-VIRTUALDC-RU
 members:        AS48610:AS-OFORO
@@ -808,6 +811,7 @@ members:        AS207490
 members:        AS208008
 members:        AS208411
 members:        AS208640
+members:        AS210171
 members:        AS211362
 members:        AS211796
 members:        AS212136
@@ -820,7 +824,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2025-08-20T19:59:21Z
+last-modified:  2025-08-21T19:59:21Z
 source:         RIPE
 
 
@@ -1418,6 +1422,8 @@ import:         from  AS25532 action pref=200; accept   AS-MASTERHOST
 export:         to    AS25532                  announce AS57304:AS-RETN-RU
 import:         from  AS28709 action pref=200; accept   AS28709
 export:         to    AS28709                  announce AS57304:AS-RETN-RU
+import:         from  AS28761 action pref=100; accept   AS28761:AS-CUSTOMERS
+export:         to    AS28761                  announce ANY
 import:         from  AS28840 action pref=100; accept   AS-TTC
 export:         to    AS28840                  announce ANY
 import:         from  AS28890 action pref=100; accept   AS-INSYS-EKB
@@ -2266,6 +2272,8 @@ import:         from AS210038 action pref=100; accept   AS210038
 export:         to   AS210038                  announce ANY
 import:         from AS210109 action pref=100; accept   AS210109
 export:         to   AS210109                  announce ANY
+import:         from AS210171 action pref=100; accept   AS210171
+export:         to   AS210171                  announce ANY
 import:         from AS210756 action pref=100; accept   AS-EDGECENTER
 export:         to   AS210756                  announce ANY
 import:         from AS210756 action pref=200; accept   AS-EDGECENTER
@@ -2446,6 +2454,8 @@ mp-import:      afi ipv6.unicast from  AS25532 action pref=200; accept   AS-MAST
 mp-export:      afi ipv6.unicast to    AS25532                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS28709 action pref=200; accept   AS28709
 mp-export:      afi ipv6.unicast to    AS28709                  announce AS57304:AS-RETN6-RU
+mp-import:      afi ipv6.unicast from  AS28761 action pref=100; accept   AS28761:AS-CUSTOMERS
+mp-export:      afi ipv6.unicast to    AS28761                  announce ANY
 mp-import:      afi ipv6.unicast from  AS28890 action pref=100; accept   AS-INSYS6-EKB
 mp-export:      afi ipv6.unicast to    AS28890                  announce ANY
 mp-import:      afi ipv6.unicast from  AS29182 action pref=100; accept   AS-THEFIRST
@@ -2856,6 +2866,8 @@ mp-import:      afi ipv6.unicast from AS209382 action pref=100; accept   AS-SPOR
 mp-export:      afi ipv6.unicast to   AS209382                  announce ANY
 mp-import:      afi ipv6.unicast from AS209974 action pref=100; accept   AS-ITGLOBAL
 mp-export:      afi ipv6.unicast to   AS209974                  announce ANY
+mp-import:      afi ipv6.unicast from AS210171 action pref=100; accept   AS210171
+mp-export:      afi ipv6.unicast to   AS210171                  announce ANY
 mp-import:      afi ipv6.unicast from AS210756 action pref=100; accept   AS-EDGECENTER
 mp-export:      afi ipv6.unicast to   AS210756                  announce ANY
 mp-import:      afi ipv6.unicast from AS210756 action pref=200; accept   AS-EDGECENTER
@@ -2893,7 +2905,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-08-20T19:59:21Z
+last-modified:  2025-08-21T19:59:21Z
 source:         RIPE
 
 

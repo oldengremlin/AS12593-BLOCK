@@ -135,9 +135,6 @@ accept AS-UNETCOMRU
 import:         from AS42668
 action pref=100;
 accept AS-NEVALINK
-import:         from AS42861
-action pref=100;
-accept AS-FOTONTELECOM
 import:         from AS42893
 action pref=100;
 accept AS42893
@@ -380,8 +377,6 @@ export:         to AS42518
 announce AS-SPBROUTESERVER
 export:         to AS42668
 announce AS-SPBROUTESERVER
-export:         to AS42861
-announce AS-SPBROUTESERVER
 export:         to AS42893
 announce AS-SPBROUTESERVER
 export:         to AS42909
@@ -489,7 +484,7 @@ announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-08-13T14:05:16Z
+last-modified:  2025-08-21T10:05:28Z
 source:         RIPE
 
 as-num:         AS43690
