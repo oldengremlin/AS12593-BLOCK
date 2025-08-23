@@ -94,6 +94,8 @@ import:         from AS211609 action pref=50; accept AS211609;
 export:         to AS211609 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 import:         from AS215226 action pref=50; accept AS215226:AS-SIRIUS;
 export:         to AS215226 announce {0.0.0.0/0};
+import:         from AS216334 action pref=50; accept AS216334:AS-NHT;
+export:         to AS216334 announce ANY;
 import:         from AS216366 action pref=50; accept AS216366:AS-SMART-TEL;
 export:         to AS216366 announce ANY;
 import:         from AS29503 action pref=50; accept AS29503;
@@ -323,6 +325,8 @@ export:         to AS34602 announce AS-CLOUD-IX-PRO;
 import:         from AS51028 action pref=50; accept AS-SVOLS;
 export:         to AS51028 announce AS-CLOUD-IX-PRO;
 import:         from AS1299 action pref=50; accept AS-TELIANET;
+export:         to AS1299 announce ANY;
+import:         from AS1299 action pref=50; accept AS-TELIANET;
 export:         to AS1299 announce AS-CLOUD-IX-LOCAL;
 import:         from AS9123 action pref=50; accept AS-TIMEWEB;
 export:         to AS9123 announce AS-CLOUD-IX-PRO;
@@ -530,6 +534,8 @@ mp-import:      afi ipv6.unicast from AS211609 action pref=50; accept AS211609;
 mp-export:      afi ipv6.unicast to AS211609 announce any;
 mp-import:      afi ipv6.unicast from AS215226 action pref=50; accept AS215226:AS-SIRIUS;
 mp-export:      afi ipv6.unicast to AS215226 announce any;
+mp-import:      afi ipv6.unicast from AS216334 action pref=50; accept AS216334:AS-NHT;
+mp-export:      afi ipv6.unicast to AS216334 announce any;
 mp-import:      afi ipv6.unicast from AS216366 action pref=50; accept AS216366:AS-SMART-TEL;
 mp-export:      afi ipv6.unicast to AS216366 announce any;
 mp-import:      afi ipv6.unicast from AS29503 action pref=50; accept AS29503;
@@ -760,6 +766,8 @@ mp-import:      afi ipv6.unicast from AS51028 action pref=50; accept AS-SVOLS;
 mp-export:      afi ipv6.unicast to AS51028 announce any;
 mp-import:      afi ipv6.unicast from AS1299 action pref=50; accept AS-TELIANET;
 mp-export:      afi ipv6.unicast to AS1299 announce any;
+mp-import:      afi ipv6.unicast from AS1299 action pref=50; accept AS-TELIANET;
+mp-export:      afi ipv6.unicast to AS1299 announce any;
 mp-import:      afi ipv6.unicast from AS9123 action pref=50; accept AS-TIMEWEB;
 mp-export:      afi ipv6.unicast to AS9123 announce any;
 mp-import:      afi ipv6.unicast from AS206767 action pref=50; accept AS-TIONIX;
@@ -901,7 +909,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 notify:         registry@citytelecom.ru
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-08-14T21:00:03Z
+last-modified:  2025-08-22T21:00:02Z
 source:         RIPE
 
 as-num:         AS29076
