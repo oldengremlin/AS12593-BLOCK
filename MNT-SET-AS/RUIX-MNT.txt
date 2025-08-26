@@ -1223,6 +1223,8 @@ members:        AS209141:AS-RUCUST
 members:        AS-CNX-EKB
 # from AS209739:
 members:        AS209739
+# from AS209821:
+members:        AS209821
 # from AS210063:
 members:        AS210063
 # from AS210357:
@@ -1264,7 +1266,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-08-22T13:40:08Z
+last-modified:  2025-08-25T10:26:38Z
 source:         RIPE
 
 
@@ -5935,6 +5937,9 @@ accept AS-CNX-EKB
 import:         from AS209739
 action pref=100;
 accept AS209739
+import:         from AS209821
+action pref=100;
+accept AS209821
 import:         from AS210063
 action pref=100;
 accept AS210063
@@ -6927,6 +6932,8 @@ export:         to AS209307
 announce AS-MSKROUTESERVER
 export:         to AS209739
 announce AS-MSKROUTESERVER
+export:         to AS209821
+announce AS-MSKROUTESERVER
 export:         to AS210063
 announce AS-MSKROUTESERVER
 export:         to AS210357
@@ -6964,7 +6971,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-08-22T13:40:03Z
+last-modified:  2025-08-25T10:26:42Z
 source:         RIPE
 
 

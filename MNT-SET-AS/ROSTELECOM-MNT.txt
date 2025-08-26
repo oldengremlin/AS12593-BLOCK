@@ -55,6 +55,7 @@ source:         RIPE
 
 as-set:         AS-ROSTELECOM
 descr:          Rostelecom-as-set
+members:        AS62379:AS-FREEWAY
 members:        AS10122
 members:        AS11111
 members:        AS11344
@@ -2856,7 +2857,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         ROSTELECOM-MNT
 mnt-by:         SAVRI-MNT
 created:        2005-12-26T14:46:41Z
-last-modified:  2025-08-21T15:45:28Z
+last-modified:  2025-08-25T07:09:27Z
 source:         RIPE
 
 
@@ -3308,6 +3309,8 @@ import:         from AS42403 accept AS25152
 export:         to AS42403 announce AS-ROSTELECOM
 import:         from AS200350 accept AS200350
 export:         to AS200350 announce AS-ROSTELECOM
+import:         from AS62379 accept AS62379:AS-FREEWAY
+export:         to AS62379 announce ANY
 import:         from AS9002 accept AS9002
 export:         to AS9002 announce ANY
 import:         from AS34352 accept AS-MCN
@@ -9642,7 +9645,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SAVRI-MNT
 status:         ASSIGNED
 created:        2005-07-01T14:26:50Z
-last-modified:  2025-08-21T12:20:30Z
+last-modified:  2025-08-25T07:10:44Z
 source:         RIPE
 
 
