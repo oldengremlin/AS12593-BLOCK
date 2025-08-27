@@ -567,6 +567,8 @@ members:        AS-STARLNK
 members:        AS-NGENIX-MSK
 # from AS35000:
 members:        AS-PROMETEY, AS-PROMETEY-V6
+# from AS35025:
+members:        AS-TELECONNECT
 # from AS35032:
 members:        AS-TAHION
 # from AS35087:
@@ -1266,7 +1268,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-08-25T10:26:38Z
+last-modified:  2025-08-26T10:14:10Z
 source:         RIPE
 
 
@@ -4953,6 +4955,9 @@ accept AS-NGENIX-MSK
 import:         from AS35000
 action pref=100;
 accept AS-PROMETEY AS-PROMETEY-V6
+import:         from AS35025
+action pref=100;
+accept AS-TELECONNECT
 import:         from AS35032
 action pref=100;
 accept AS-TAHION
@@ -6276,6 +6281,8 @@ export:         to AS34879
 announce AS-MSKROUTESERVER
 export:         to AS35000
 announce AS-MSKROUTESERVER
+export:         to AS35025
+announce AS-MSKROUTESERVER
 export:         to AS35032
 announce AS-MSKROUTESERVER
 export:         to AS35087
@@ -6971,7 +6978,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-08-25T10:26:42Z
+last-modified:  2025-08-26T10:14:14Z
 source:         RIPE
 
 

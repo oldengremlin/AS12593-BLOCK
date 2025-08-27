@@ -346,6 +346,7 @@ members:        AS28965
 members:        AS30924
 members:        AS30952
 members:        AS31028
+members:        AS31174
 members:        AS31192
 members:        AS33936
 members:        AS33972
@@ -550,6 +551,7 @@ members:        AS214367
 members:        AS214429
 members:        AS214524
 members:        AS214822
+members:        AS214856
 members:        AS214881
 members:        AS215037
 members:        AS215307
@@ -561,7 +563,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2025-08-21T19:59:21Z
+last-modified:  2025-08-26T19:59:20Z
 source:         RIPE
 
 
@@ -751,6 +753,7 @@ members:        AS12335
 members:        AS15754
 members:        AS21416
 members:        AS25451
+members:        AS31174
 members:        AS31444
 members:        AS34574
 members:        AS35278
@@ -820,7 +823,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2025-08-21T19:59:21Z
+last-modified:  2025-08-26T19:59:20Z
 source:         RIPE
 
 
@@ -1448,6 +1451,8 @@ import:         from  AS31028 action pref=100; accept   AS31028
 export:         to    AS31028                  announce ANY
 import:         from  AS31133 action pref=200; accept   AS-MF-MGSM
 export:         to    AS31133                  announce AS57304:AS-RETN-RU
+import:         from  AS31174 action pref=100; accept   AS31174
+export:         to    AS31174                  announce ANY
 import:         from  AS31192 action pref=100; accept   AS31192
 export:         to    AS31192                  announce ANY
 import:         from  AS31214 action pref=100; accept   AS-TISDIALOG
@@ -2332,6 +2337,8 @@ import:         from AS214573 action pref=100; accept   AS200847:AS-MOBILECARD
 export:         to   AS214573                  announce ANY
 import:         from AS214822 action pref=100; accept   AS214822
 export:         to   AS214822                  announce ANY
+import:         from AS214856 action pref=100; accept   AS214856
+export:         to   AS214856                  announce ANY
 import:         from AS214881 action pref=100; accept   AS214881
 export:         to   AS214881                  announce ANY
 import:         from AS215037 action pref=100; accept   AS215037
@@ -2466,6 +2473,8 @@ mp-import:      afi ipv6.unicast from  AS30833 action pref=100; accept   AS-TNC
 mp-export:      afi ipv6.unicast to    AS30833                  announce ANY
 mp-import:      afi ipv6.unicast from  AS31133 action pref=200; accept   AS-MF-MGSM
 mp-export:      afi ipv6.unicast to    AS31133                  announce AS57304:AS-RETN6-RU
+mp-import:      afi ipv6.unicast from  AS31174 action pref=100; accept   AS31174
+mp-export:      afi ipv6.unicast to    AS31174                  announce ANY
 mp-import:      afi ipv6.unicast from  AS31214 action pref=100; accept   AS-TISDIALOG
 mp-export:      afi ipv6.unicast to    AS31214                  announce ANY
 mp-import:      afi ipv6.unicast from  AS31376 action pref=100; accept   AS-SMART-V6
@@ -2897,7 +2906,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-08-21T19:59:21Z
+last-modified:  2025-08-26T19:59:20Z
 source:         RIPE
 
 
