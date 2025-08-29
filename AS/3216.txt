@@ -4698,6 +4698,8 @@ import:         from AS44493 action pref=100; accept AS-CHELYABINSK-SIGNAL
 export:         to AS44493 announce ANY
 import:         from AS209520 action pref=100; accept AS209520
 export:         to AS209520 announce ANY
+import:         from AS215810 action pref=100; accept AS215810
+export:         to AS215810 announce {0.0.0.0/0}
 import:         from AS12737 action pref=100; accept AS-SET-RIGHTSIDE
 export:         to AS12737 announce ANY
 mp-import:      afi ipv6 from AS12737 action pref=100; accept AS-SET-RIGHTSIDE
@@ -5209,7 +5211,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-08-26T15:24:06Z
+last-modified:  2025-08-28T12:09:57Z
 source:         RIPE
 
 as-num:         AS3216
