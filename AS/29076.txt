@@ -325,8 +325,6 @@ export:         to AS34602 announce AS-CLOUD-IX-PRO;
 import:         from AS51028 action pref=50; accept AS-SVOLS;
 export:         to AS51028 announce AS-CLOUD-IX-PRO;
 import:         from AS1299 action pref=50; accept AS-TELIANET;
-export:         to AS1299 announce ANY;
-import:         from AS1299 action pref=50; accept AS-TELIANET;
 export:         to AS1299 announce AS-CLOUD-IX-LOCAL;
 import:         from AS9123 action pref=50; accept AS-TIMEWEB;
 export:         to AS9123 announce AS-CLOUD-IX-PRO;
@@ -766,8 +764,6 @@ mp-import:      afi ipv6.unicast from AS51028 action pref=50; accept AS-SVOLS;
 mp-export:      afi ipv6.unicast to AS51028 announce any;
 mp-import:      afi ipv6.unicast from AS1299 action pref=50; accept AS-TELIANET;
 mp-export:      afi ipv6.unicast to AS1299 announce any;
-mp-import:      afi ipv6.unicast from AS1299 action pref=50; accept AS-TELIANET;
-mp-export:      afi ipv6.unicast to AS1299 announce any;
 mp-import:      afi ipv6.unicast from AS9123 action pref=50; accept AS-TIMEWEB;
 mp-export:      afi ipv6.unicast to AS9123 announce any;
 mp-import:      afi ipv6.unicast from AS206767 action pref=50; accept AS-TIONIX;
@@ -909,7 +905,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 notify:         registry@citytelecom.ru
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-08-22T21:00:02Z
+last-modified:  2025-08-29T21:00:03Z
 source:         RIPE
 
 as-num:         AS29076
