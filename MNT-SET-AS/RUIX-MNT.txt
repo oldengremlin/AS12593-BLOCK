@@ -46,8 +46,6 @@ members:        AS-NGENIX-EKT
 members:        AS-GOOGLE
 # from AS39684:
 members:        AS39684
-# from AS41082:
-members:        AS-URALTRANSCOM
 # from AS41560:
 members:        AS41560
 # from AS42498:
@@ -110,7 +108,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2025-08-21T07:38:21Z
+last-modified:  2025-09-03T12:08:31Z
 source:         RIPE
 
 
@@ -627,8 +625,6 @@ members:        AS-40676
 members:        AS40966
 # from AS41039:
 members:        AS-DON
-# from AS41082:
-members:        AS-URALTRANSCOM
 # from AS41148:
 members:        AS-ZL
 # from AS41185:
@@ -1266,7 +1262,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-09-02T09:38:55Z
+last-modified:  2025-09-03T13:39:28Z
 source:         RIPE
 
 
@@ -1378,8 +1374,6 @@ members:        AS-GOOGLE
 members:        AS39684
 # from AS40995:
 members:        AS-CNLTD
-# from AS41082:
-members:        AS-URALTRANSCOM
 # from AS41794:
 members:        AS-SIBSET-BARN
 # from AS42139:
@@ -1462,7 +1456,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2025-08-14T05:41:39Z
+last-modified:  2025-09-03T10:13:28Z
 source:         RIPE
 
 
@@ -1661,6 +1655,8 @@ members:        AS-IP-MAX, AS-IP-MAX-V6
 members:        AS-WESTCALLSPB
 # from AS25549:
 members:        AS-AVANTEL
+# from AS29049:
+members:        as-azersatmembers
 # from AS29076:
 members:        AS-CITYTELECOM
 # from AS29329:
@@ -1687,8 +1683,6 @@ members:        AS-PAKT
 members:        AS-LUGANET
 # from AS40966:
 members:        as40966:AS-BIGWEB
-# from AS41082:
-members:        AS-URALTRANSCOM
 # from AS41722:
 members:        AS-MIRAN
 # from AS42498:
@@ -1807,7 +1801,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2025-08-21T10:05:23Z
+last-modified:  2025-09-03T10:07:24Z
 source:         RIPE
 
 
@@ -2586,9 +2580,6 @@ accept AS39684
 import:         from AS40995
 action pref=100;
 accept AS-CNLTD
-import:         from AS41082
-action pref=100;
-accept AS-URALTRANSCOM
 import:         from AS41794
 action pref=100;
 accept AS-SIBSET-BARN
@@ -2769,8 +2760,6 @@ export:         to AS39684
 announce AS-NSKROUTESERVER
 export:         to AS40995
 announce AS-NSKROUTESERVER
-export:         to AS41082
-announce AS-NSKROUTESERVER
 export:         to AS41794
 announce AS-NSKROUTESERVER
 export:         to AS42139
@@ -2849,7 +2838,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-08-14T05:41:35Z
+last-modified:  2025-09-03T10:13:24Z
 source:         RIPE
 
 
@@ -2950,9 +2939,6 @@ accept AS-GOOGLE
 import:         from AS39684
 action pref=100;
 accept AS39684
-import:         from AS41082
-action pref=100;
-accept AS-URALTRANSCOM
 import:         from AS41560
 action pref=100;
 accept AS41560
@@ -3079,8 +3065,6 @@ export:         to AS36040
 announce AS-EKTROUTESERVER
 export:         to AS39684
 announce AS-EKTROUTESERVER
-export:         to AS41082
-announce AS-EKTROUTESERVER
 export:         to AS41560
 announce AS-EKTROUTESERVER
 export:         to AS42498
@@ -3141,7 +3125,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-08-21T07:38:21Z
+last-modified:  2025-09-03T12:08:27Z
 source:         RIPE
 
 
@@ -3229,6 +3213,9 @@ accept AS-WESTCALLSPB
 import:         from AS25549
 action pref=100;
 accept AS-AVANTEL
+import:         from AS29049
+action pref=100;
+accept as-azersatmembers
 import:         from AS29076
 action pref=100;
 accept AS-CITYTELECOM
@@ -3268,9 +3255,6 @@ accept AS-LUGANET
 import:         from AS40966
 action pref=100;
 accept as40966:AS-BIGWEB
-import:         from AS41082
-action pref=100;
-accept AS-URALTRANSCOM
 import:         from AS41722
 action pref=100;
 accept AS-MIRAN
@@ -3489,6 +3473,8 @@ export:         to AS25408
 announce AS-SPBROUTESERVER
 export:         to AS25549
 announce AS-SPBROUTESERVER
+export:         to AS29049
+announce AS-SPBROUTESERVER
 export:         to AS29076
 announce AS-SPBROUTESERVER
 export:         to AS29329
@@ -3514,8 +3500,6 @@ announce AS-SPBROUTESERVER
 export:         to AS39728
 announce AS-SPBROUTESERVER
 export:         to AS40966
-announce AS-SPBROUTESERVER
-export:         to AS41082
 announce AS-SPBROUTESERVER
 export:         to AS41722
 announce AS-SPBROUTESERVER
@@ -3632,7 +3616,7 @@ announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-08-21T10:05:28Z
+last-modified:  2025-09-03T10:07:25Z
 source:         RIPE
 
 
@@ -5043,9 +5027,6 @@ accept AS40966
 import:         from AS41039
 action pref=100;
 accept AS-DON
-import:         from AS41082
-action pref=100;
-accept AS-URALTRANSCOM
 import:         from AS41148
 action pref=100;
 accept AS-ZL
@@ -6336,8 +6317,6 @@ export:         to AS40966
 announce AS-MSKROUTESERVER
 export:         to AS41039
 announce AS-MSKROUTESERVER
-export:         to AS41082
-announce AS-MSKROUTESERVER
 export:         to AS41148
 announce AS-MSKROUTESERVER
 export:         to AS41185
@@ -6971,7 +6950,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-09-02T09:38:51Z
+last-modified:  2025-09-03T13:39:33Z
 source:         RIPE
 
 

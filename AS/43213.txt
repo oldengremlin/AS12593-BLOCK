@@ -68,9 +68,6 @@ accept AS-GOOGLE
 import:         from AS39684
 action pref=100;
 accept AS39684
-import:         from AS41082
-action pref=100;
-accept AS-URALTRANSCOM
 import:         from AS41560
 action pref=100;
 accept AS41560
@@ -197,8 +194,6 @@ export:         to AS36040
 announce AS-EKTROUTESERVER
 export:         to AS39684
 announce AS-EKTROUTESERVER
-export:         to AS41082
-announce AS-EKTROUTESERVER
 export:         to AS41560
 announce AS-EKTROUTESERVER
 export:         to AS42498
@@ -259,12 +254,15 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-08-21T07:38:21Z
+last-modified:  2025-09-03T12:08:27Z
 source:         RIPE
 
 as-num:         AS43213
 country:        RU
 as-name:        EKT-IX-RS Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS43213
+country:        RU
+as-name:        null
 as-num:         AS43213
 country:        RU
 as-name:        null
