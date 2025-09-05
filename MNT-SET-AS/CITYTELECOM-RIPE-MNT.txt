@@ -469,6 +469,7 @@ members:        AS207874
 members:        AS208992
 members:        AS211406
 members:        AS211609
+members:        AS216334:AS-NHT
 members:        AS216366:AS-SMART-TEL
 members:        AS29503
 members:        AS34853
@@ -606,7 +607,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         CITYTELECOM-RIPE-MNT
 created:        2014-02-20T06:50:48Z
-last-modified:  2025-07-11T21:00:03Z
+last-modified:  2025-09-04T21:00:02Z
 source:         RIPE
 
 
@@ -1148,6 +1149,8 @@ export:         to AS211609 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 import:         from AS215226 action pref=50; accept AS215226:AS-SIRIUS;
 export:         to AS215226 announce {0.0.0.0/0};
 import:         from AS216334 action pref=50; accept AS216334:AS-NHT;
+export:         to AS216334 announce {0.0.0.0/0};
+import:         from AS216334 action pref=50; accept AS216334:AS-NHT;
 export:         to AS216334 announce ANY;
 import:         from AS216366 action pref=50; accept AS216366:AS-SMART-TEL;
 export:         to AS216366 announce ANY;
@@ -1587,6 +1590,8 @@ mp-import:      afi ipv6.unicast from AS215226 action pref=50; accept AS215226:A
 mp-export:      afi ipv6.unicast to AS215226 announce any;
 mp-import:      afi ipv6.unicast from AS216334 action pref=50; accept AS216334:AS-NHT;
 mp-export:      afi ipv6.unicast to AS216334 announce any;
+mp-import:      afi ipv6.unicast from AS216334 action pref=50; accept AS216334:AS-NHT;
+mp-export:      afi ipv6.unicast to AS216334 announce any;
 mp-import:      afi ipv6.unicast from AS216366 action pref=50; accept AS216366:AS-SMART-TEL;
 mp-export:      afi ipv6.unicast to AS216366 announce any;
 mp-import:      afi ipv6.unicast from AS29503 action pref=50; accept AS29503;
@@ -1958,7 +1963,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 notify:         registry@citytelecom.ru
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-08-29T21:00:03Z
+last-modified:  2025-09-04T21:00:02Z
 source:         RIPE
 
 
