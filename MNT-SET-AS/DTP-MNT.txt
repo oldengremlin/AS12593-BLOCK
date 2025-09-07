@@ -210,6 +210,10 @@ export:         to AS8551 announce AS-MYCOM
 import:         from AS8551 accept AS-BEZEQINT
 mp-export:      afi ipv6.unicast to AS8551 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS8551 accept AS-BEZEQINT;
+export:         to AS8075 announce AS-MYCOM
+import:         from AS8075 accept AS-MICROSOFT
+mp-export:      afi ipv6.unicast to AS8075 announce AS-MYCOM;
+mp-import:      afi ipv6.unicast from AS8075 accept AS-MICROSOFT;
 export:         to AS6777 announce AS-MYCOM
 import:         from AS6777 accept AS-AMS-IX-RS-SETS
 mp-export:      afi ipv6.unicast to AS6777 announce AS-MYCOM;
@@ -387,7 +391,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-07-12T09:26:04Z
-last-modified:  2025-04-07T11:07:29Z
+last-modified:  2025-09-05T15:39:58Z
 source:         RIPE
 
 

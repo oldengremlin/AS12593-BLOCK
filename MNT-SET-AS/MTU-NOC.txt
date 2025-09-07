@@ -1180,6 +1180,7 @@ members:        AS-RECOM
 members:        AS-REDCOM
 members:        AS-RISS
 members:        AS-RT
+members:        AS-RTA
 members:        AS-RTS
 members:        AS-ROSPRINT
 members:        AS-SANDY
@@ -1279,7 +1280,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:31:17Z
-last-modified:  2025-08-28T12:17:20Z
+last-modified:  2025-09-05T08:28:45Z
 source:         RIPE
 
 
@@ -5432,6 +5433,8 @@ import:         from AS9150 action pref=105; accept AS-INTERCONNECT
 export:         to AS9150 announce AS-MTU
 import:         from AS9153 action pref=105; accept AS-BURSTFIRE
 export:         to AS9153 announce AS-MTU
+import:         from AS9177 action pref=140; accept AS-RTA
+export:         to AS9177 announce ANY
 import:         from AS9191 action pref=105; accept AS-NEWNET
 export:         to AS9191 announce AS-MTU
 import:         from AS9304 action pref=105; accept AS9304
@@ -7518,7 +7521,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:20:57Z
-last-modified:  2025-09-04T13:58:53Z
+last-modified:  2025-09-05T08:28:10Z
 source:         RIPE
 
 
