@@ -27,6 +27,8 @@ import:         from AS48216 action pref=100; accept AS-RNDROUTESERVER
 export:         to AS48216 announce AS-MSK-IX-SERVICES
 import:         from AS50706 action pref=100; accept AS-KZNROUTESERVER
 export:         to AS50706 announce AS-MSK-IX-SERVICES
+import:         from AS5568 action pref=130; accept AS-RBNET
+export:         to AS5568 announce ANY
 import:         from AS43832 action pref=130; accept AS-NS5_RIPN_NET
 export:         to AS43832 announce ANY
 import:         from AS42385 action pref=130; accept AS-NS9_RIPN_NET
@@ -119,7 +121,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2025-03-25T10:12:04Z
+last-modified:  2025-09-08T16:07:59Z
 source:         RIPE
 
 as-num:         AS8985
