@@ -96,6 +96,7 @@ members:        AS207692
 members:        AS202880
 members:        AS202768
 members:        AS203410
+members:        AS43740
 members:        AS203714
 members:        AS206932
 members:        AS206968
@@ -165,6 +166,7 @@ members:        AS201851
 members:        AS202009
 members:        AS202760
 members:        AS207055
+members:        AS213506
 members:        AS208303
 members:        AS211247
 members:        AS211624
@@ -212,7 +214,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         CIREX-MNT
 created:        2013-08-02T10:13:11Z
-last-modified:  2025-09-04T08:40:50Z
+last-modified:  2025-09-09T14:32:18Z
 source:         RIPE
 
 
@@ -438,6 +440,9 @@ import:         from AS60702 accept AS60702
 import:         from AS199424 accept AS199424
 import:         from AS48614 accept AS-ITSOFT
 import:         from AS48757 accept AS-TRUSTINFO
+import:         from AS213506 accept AS213506
+import:         from AS43740 accept AS43740
+export:         to AS213506 announce ANY
 export:         to AS48757 announce ANY
 export:         to AS48614 announce ANY
 export:         to AS207059 announce ANY
@@ -560,6 +565,7 @@ export:         to AS215498 announce ANY
 export:         to AS48807 announce ANY
 export:         to AS209930 announce ANY
 export:         to AS60702 announce ANY
+export:         to AS43740 announce ANY
 mp-import:      afi ipv6.unicast from AS3216 action pref=50; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS-CIREX-IPV6
 mp-import:      afi ipv6.unicast from AS20485 action pref=50; accept ANY
@@ -579,7 +585,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CIREX-MNT
 notify:         noc@cirex.ru
 created:        2012-11-12T09:44:39Z
-last-modified:  2025-09-08T07:11:38Z
+last-modified:  2025-09-09T14:29:32Z
 source:         RIPE
 
 

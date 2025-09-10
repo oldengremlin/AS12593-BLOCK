@@ -2,13 +2,13 @@ as-set:         AS-NEVOD
 descr:          POWERNET ISP ASes
 org:            ORG-NL393-RIPE
 members:        AS51032
-members:        AS-STARNET-VLZ
+members:        AS47844
 members:        AS34804
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-NEVOD
 created:        2011-04-26T11:25:18Z
-last-modified:  2021-02-05T08:14:15Z
+last-modified:  2025-09-09T10:54:52Z
 source:         RIPE
 
 
@@ -28,23 +28,18 @@ source:         RIPE
 
 
 aut-num:        AS47844
-as-name:        POWERNET
+as-name:        POWERNET-KRD
 org:            ORG-LP174-RIPE
-import:         from AS39422 action pref=20; accept ANY
-import:         from AS34804 action pref=20; accept ANY
-import:         from AS47844 action pref=20; accept ANY
-export:         to AS39422 announce AS47844
-export:         to AS34804 announce AS47844
-export:         to AS47844 announce AS47844
+import:         from AS51032 action pref=90; accept ANY
+export:         to AS51032 announce AS47844
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         TOWERTEL-MNT
-mnt-by:         MNT-NEVOD
-notify:         info@lidertelecom.ru
+mnt-by:         lir-ru-powernet-1-MNT
+notify:         info@powernet.com.ru
 created:        2008-09-02T12:20:39Z
-last-modified:  2022-08-15T12:59:52Z
+last-modified:  2025-09-09T10:35:42Z
 source:         RIPE
 
 
