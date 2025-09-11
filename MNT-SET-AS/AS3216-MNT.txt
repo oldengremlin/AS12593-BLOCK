@@ -71,6 +71,7 @@ members:        AS-211157
 members:        AS29303
 members:        AS-TELECOMRU
 members:        AS-T21V
+members:        AS-MALOCO
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         noc@beeline.ru
@@ -78,7 +79,7 @@ notify:         noc@sovintel.ru
 mnt-by:         AS8563-MNT
 mnt-by:         AS3216-MNT
 created:        2001-10-22T07:11:15Z
-last-modified:  2025-09-03T11:36:22Z
+last-modified:  2025-09-10T13:52:52Z
 source:         RIPE
 
 
@@ -162,6 +163,7 @@ members:        AS-TIMEWEB
 members:        AS50060
 members:        AS-TUT
 members:        AS50425
+members:        AS57614
 members:        AS-UMLC
 members:        AS47530
 members:        AS58006
@@ -203,6 +205,7 @@ members:        AS57580
 members:        AS-Grant-Telecom
 members:        AS59667
 members:        AS207438
+members:        AS-MALOCO
 members:        AS57988
 members:        as-team-host
 members:        AS197955
@@ -616,7 +619,6 @@ members:        AS-POLYCOMM
 members:        AS-KVIKTEL
 members:        AS49326
 members:        AS60119
-members:        AS43265
 members:        AS211609
 members:        AS204752
 members:        AS-DOMSET
@@ -1602,7 +1604,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-09-08T10:34:07Z
+last-modified:  2025-09-10T13:48:56Z
 source:         RIPE
 
 
@@ -4872,6 +4874,8 @@ import:         from AS211157 action pref=100; accept AS211157
 export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
+import:         from AS57614 action pref=100; accept AS57614
+export:         to AS57614 announce {0.0.0.0/0}
 import:         from AS47999 action pref=100; accept AS47999
 export:         to AS47999 announce ANY
 import:         from AS57181 action pref=100; accept AS-RUSTELECOM
@@ -7002,10 +7006,6 @@ import:         from AS48479 action pref=100; accept AS-KUBAN-TELECOM
 export:         to AS48479 announce ANY
 import:         from AS38917 action pref=100; accept AS-INTERCOMTEL
 export:         to AS38917 announce ANY
-import:         from AS43265 action pref=100; accept AS-TFP
-export:         to AS43265 announce ANY
-import:         from AS43265 action pref=100; accept AS43265
-export:         to AS43265 announce ANY
 import:         from AS43849 action pref=100; accept AS-SEVER-SVYAZ
 export:         to AS43849 announce ANY
 mp-import:      afi ipv6 from AS43849 action pref=100; accept AS-SEVER-SVYAZ
@@ -8048,6 +8048,8 @@ import:         from AS51667 action pref=100; accept AS51667
 export:         to AS51667 announce {0.0.0.0/0}
 import:         from AS207438 action pref=100; accept AS207438
 export:         to AS207438 announce ANY
+import:         from AS44843 action pref=100; accept AS-MALOCO
+export:         to AS44843 announce ANY
 import:         from AS42119 action pref=100; accept AS42119
 export:         to AS42119 announce AS-SOVAM
 import:         from AS50157 action pref=100; accept AS50157
@@ -8475,7 +8477,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-09-09T05:53:21Z
+last-modified:  2025-09-10T13:48:23Z
 source:         RIPE
 
 
