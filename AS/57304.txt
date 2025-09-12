@@ -581,7 +581,7 @@ import:         from  AS51343 action pref=100; accept   AS-FORCELINE
 export:         to    AS51343                  announce ANY
 import:         from  AS51352 action pref=100; accept   AS51352
 export:         to    AS51352                  announce ANY
-import:         from  AS51444 action pref=100; accept   AS51444
+import:         from  AS51444 action pref=100; accept   AS51444:AS-ITLITE
 export:         to    AS51444                  announce ANY
 import:         from  AS51498 action pref=100; accept   AS51498
 export:         to    AS51498                  announce ANY
@@ -881,6 +881,8 @@ import:         from AS204600 action pref=100; accept   AS204600
 export:         to   AS204600                  announce ANY
 import:         from AS204846 action pref=100; accept   AS204846
 export:         to   AS204846                  announce ANY
+import:         from AS205014 action pref=100; accept   AS205014:AS-ITSAT
+export:         to   AS205014                  announce ANY
 import:         from AS205022 action pref=100; accept   AS-ESCROW
 export:         to   AS205022                  announce ANY
 import:         from AS205063 action pref=100; accept   AS-CORTEL
@@ -1614,7 +1616,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-09-10T19:59:20Z
+last-modified:  2025-09-11T19:59:20Z
 source:         RIPE
 
 as-num:         AS57304
