@@ -898,6 +898,8 @@ members:        AS49954
 members:        AS-ANNET
 # from AS50157:
 members:        AS50157
+# from AS50187:
+members:        AS-BWC
 # from AS50241:
 members:        AS-UNITTEL
 # from AS50254:
@@ -1261,7 +1263,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-09-11T09:41:43Z
+last-modified:  2025-09-12T13:42:20Z
 source:         RIPE
 
 
@@ -5447,6 +5449,9 @@ accept AS-ANNET
 import:         from AS50157
 action pref=100;
 accept AS50157
+import:         from AS50187
+action pref=100;
+accept AS-BWC
 import:         from AS50241
 action pref=100;
 accept AS-UNITTEL
@@ -6598,6 +6603,8 @@ export:         to AS50060
 announce AS-MSKROUTESERVER
 export:         to AS50157
 announce AS-MSKROUTESERVER
+export:         to AS50187
+announce AS-MSKROUTESERVER
 export:         to AS50241
 announce AS-MSKROUTESERVER
 export:         to AS50254
@@ -6957,7 +6964,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-09-11T09:41:43Z
+last-modified:  2025-09-12T13:42:24Z
 source:         RIPE
 
 
