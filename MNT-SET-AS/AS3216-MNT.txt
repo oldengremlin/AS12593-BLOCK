@@ -1401,6 +1401,7 @@ members:        AS49246
 members:        AS-MELBICOM
 members:        AS-IZHNET
 members:        AS199317
+members:        AS203118:AS-EZERDI
 members:        AS202871
 members:        AS202835
 members:        AS-FACTORIAL-INTERNET
@@ -1604,7 +1605,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-09-10T13:48:56Z
+last-modified:  2025-09-15T12:37:54Z
 source:         RIPE
 
 
@@ -8309,6 +8310,8 @@ import:         from AS35558 action pref=100; accept AS-IZHNET
 export:         to AS35558 announce ANY
 import:         from AS199317 action pref=100; accept AS199317
 export:         to AS199317 announce {0.0.0.0/0}
+import:         from AS203118 action pref=100; accept AS203118:AS-EZERDI
+export:         to AS203118 announce ANY
 import:         from AS202835 action pref=100; accept AS202835
 export:         to AS202835 announce ANY
 import:         from AS50113 action pref=100; accept AS-NTX
@@ -8478,7 +8481,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-09-10T13:48:23Z
+last-modified:  2025-09-15T12:37:22Z
 source:         RIPE
 
 

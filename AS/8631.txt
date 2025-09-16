@@ -408,6 +408,9 @@ accept AS34139:AS-DIVO
 import:         from AS34170
 action pref=100;
 accept AS34170 AS34170:AS-customers
+import:         from AS34223
+action pref=100;
+accept AS-NREGION
 import:         from AS34352
 action pref=100;
 accept AS-MCN
@@ -1735,6 +1738,8 @@ export:         to AS34139
 announce AS-MSKROUTESERVER
 export:         to AS34170
 announce AS-MSKROUTESERVER
+export:         to AS34223
+announce AS-MSKROUTESERVER
 export:         to AS34352
 announce AS-MSKROUTESERVER
 export:         to AS34456
@@ -2442,12 +2447,15 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-09-12T13:42:24Z
+last-modified:  2025-09-15T09:38:59Z
 source:         RIPE
 
 as-num:         AS8631
 country:        RU
 as-name:        MSK-IX-RS Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS8631
+country:        RU
+as-name:        null
 as-num:         AS8631
 country:        RU
 as-name:        null

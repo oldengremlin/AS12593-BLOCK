@@ -552,6 +552,8 @@ members:        AS-NETORN
 members:        AS34139:AS-DIVO
 # from AS34170:
 members:        AS34170, AS34170:AS-customers
+# from AS34223:
+members:        AS-NREGION
 # from AS34352:
 members:        AS-MCN
 # from AS34456:
@@ -1263,7 +1265,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-09-12T13:42:20Z
+last-modified:  2025-09-15T09:38:59Z
 source:         RIPE
 
 
@@ -1321,6 +1323,8 @@ members:        AS-NSC-NSKIX-SET, AS-NSC6-SET
 members:        AS-MTU
 # from AS8410:
 members:        AS8410
+# from AS8749:
+members:        AS-REDCOM
 # from AS8985:
 members:        AS-MSK-IX-SERVICES
 # from AS9049:
@@ -1411,6 +1415,8 @@ members:        AS-TOMGATE
 members:        AS49954
 # from AS50166:
 members:        AS-RTCLOUD-NSK
+# from AS50187:
+members:        AS-BWC
 # from AS50776:
 members:        AS50776
 # from AS50923:
@@ -1457,7 +1463,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2025-09-03T10:13:28Z
+last-modified:  2025-09-15T05:41:52Z
 source:         RIPE
 
 
@@ -2513,6 +2519,9 @@ accept AS-MTU
 import:         from AS8410
 action pref=100;
 accept AS8410
+import:         from AS8749
+action pref=100;
+accept AS-REDCOM
 import:         from AS8985
 action pref=100;
 accept AS-MSK-IX-SERVICES
@@ -2648,6 +2657,9 @@ accept AS49954
 import:         from AS50166
 action pref=100;
 accept AS-RTCLOUD-NSK
+import:         from AS50187
+action pref=100;
+accept AS-BWC
 import:         from AS50776
 action pref=100;
 accept AS50776
@@ -2719,6 +2731,8 @@ announce AS-NSKROUTESERVER
 export:         to AS8359
 announce AS-NSKROUTESERVER
 export:         to AS8410
+announce AS-NSKROUTESERVER
+export:         to AS8749
 announce AS-NSKROUTESERVER
 export:         to AS8985
 announce AS-NSKROUTESERVER
@@ -2810,6 +2824,8 @@ export:         to AS49954
 announce AS-NSKROUTESERVER
 export:         to AS50166
 announce AS-NSKROUTESERVER
+export:         to AS50187
+announce AS-NSKROUTESERVER
 export:         to AS50776
 announce AS-NSKROUTESERVER
 export:         to AS50923
@@ -2852,7 +2868,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-09-03T10:13:24Z
+last-modified:  2025-09-15T05:41:52Z
 source:         RIPE
 
 
@@ -4930,6 +4946,9 @@ accept AS34139:AS-DIVO
 import:         from AS34170
 action pref=100;
 accept AS34170 AS34170:AS-customers
+import:         from AS34223
+action pref=100;
+accept AS-NREGION
 import:         from AS34352
 action pref=100;
 accept AS-MCN
@@ -6257,6 +6276,8 @@ export:         to AS34139
 announce AS-MSKROUTESERVER
 export:         to AS34170
 announce AS-MSKROUTESERVER
+export:         to AS34223
+announce AS-MSKROUTESERVER
 export:         to AS34352
 announce AS-MSKROUTESERVER
 export:         to AS34456
@@ -6964,7 +6985,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-09-12T13:42:24Z
+last-modified:  2025-09-15T09:38:59Z
 source:         RIPE
 
 
