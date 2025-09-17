@@ -449,6 +449,7 @@ members:        AS-SIBSET-KEM
 members:        AS60067
 members:        AS197406
 members:        AS214257
+members:        AS57489
 members:        AS202498
 members:        AS49476
 members:        AS205641
@@ -1605,7 +1606,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-09-15T12:37:54Z
+last-modified:  2025-09-16T08:54:14Z
 source:         RIPE
 
 
@@ -1907,6 +1908,7 @@ members:        AS-WESTCALL-MSK
 members:        AS-ARVANCLOUD-CDN
 members:        AS201974
 members:        AS51655:AS-ILIMTELECOM
+members:        AS57489
 members:        AS204296
 members:        AS-MELBICOM-V6
 members:        AS-ELTEL6
@@ -1985,7 +1987,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2025-09-12T11:41:12Z
+last-modified:  2025-09-16T08:55:00Z
 source:         RIPE
 
 
@@ -4984,6 +4986,10 @@ import:         from AS40995 action pref=100; accept AS-CNLTD
 export:         to AS40995 announce ANY
 import:         from AS214257 action pref=100; accept AS214257
 export:         to AS214257 announce ANY
+import:         from AS57489 action pref=100; accept AS57489
+export:         to AS57489 announce {0.0.0.0/0}
+mp-import:      from AS57489 action pref=100; accept AS57489
+mp-export:      to AS57489 announce {::/0}
 import:         from AS215013 action pref=100; accept AS215013
 export:         to AS215013 announce ANY
 import:         from AS215032 action pref=100; accept AS215032
@@ -8481,7 +8487,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-09-15T12:37:22Z
+last-modified:  2025-09-16T08:53:55Z
 source:         RIPE
 
 
