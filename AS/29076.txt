@@ -188,6 +188,8 @@ import:         from AS62429 action pref=50; accept AS-CSTNET;
 export:         to AS62429 announce ANY;
 import:         from AS3175 action pref=50; accept AS-DATAHOUSE;
 export:         to AS3175 announce ANY;
+import:         from AS3175 action pref=50; accept AS-DATAHOUSE;
+export:         to AS3175 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 import:         from AS200161 action pref=50; accept AS-DATAPRO;
 export:         to AS200161 announce {0.0.0.0/0};
 import:         from AS56694 action pref=50; accept AS-DHUB;
@@ -624,6 +626,8 @@ mp-import:      afi ipv6.unicast from AS62429 action pref=50; accept AS-CSTNET;
 mp-export:      afi ipv6.unicast to AS62429 announce any;
 mp-import:      afi ipv6.unicast from AS3175 action pref=50; accept AS-DATAHOUSE;
 mp-export:      afi ipv6.unicast to AS3175 announce any;
+mp-import:      afi ipv6.unicast from AS3175 action pref=50; accept AS-DATAHOUSE;
+mp-export:      afi ipv6.unicast to AS3175 announce any;
 mp-import:      afi ipv6.unicast from AS200161 action pref=50; accept AS-DATAPRO;
 mp-export:      afi ipv6.unicast to AS200161 announce any;
 mp-import:      afi ipv6.unicast from AS56694 action pref=50; accept AS-DHUB;
@@ -901,12 +905,15 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 notify:         registry@citytelecom.ru
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-09-15T21:00:03Z
+last-modified:  2025-09-17T21:00:02Z
 source:         RIPE
 
 as-num:         AS29076
 country:        RU
 as-name:        CITYTELECOM-AS Citytelecom LLC
+as-num:         AS29076
+country:        RU
+as-name:        null
 as-num:         AS29076
 country:        RU
 as-name:        null
