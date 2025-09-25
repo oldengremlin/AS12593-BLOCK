@@ -55,9 +55,6 @@ accept AS-MILECOM-RS
 import:         from AS21030
 action pref=100;
 accept AS-CDNNOW
-import:         from AS21051
-action pref=100;
-accept AS21051
 import:         from AS25091
 action pref=100;
 accept AS-IP-MAX AS-IP-MAX-V6
@@ -258,8 +255,6 @@ export:         to AS13094
 announce AS-NSKROUTESERVER
 export:         to AS21030
 announce AS-NSKROUTESERVER
-export:         to AS21051
-announce AS-NSKROUTESERVER
 export:         to AS25091
 announce AS-NSKROUTESERVER
 export:         to AS25152
@@ -374,7 +369,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-09-15T05:41:52Z
+last-modified:  2025-09-24T10:15:04Z
 source:         RIPE
 
 as-num:         AS42403
