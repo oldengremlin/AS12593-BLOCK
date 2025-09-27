@@ -131,6 +131,9 @@ accept AS57629
 import:         from AS62261
 action pref=100;
 accept AS62261
+import:         from AS62331
+action pref=100;
+accept AS62331
 import:         from AS201119
 action pref=100;
 accept AS201119
@@ -236,6 +239,8 @@ export:         to AS57629
 announce AS-EKTROUTESERVER
 export:         to AS62261
 announce AS-EKTROUTESERVER
+export:         to AS62331
+announce AS-EKTROUTESERVER
 export:         to AS201119
 announce AS-EKTROUTESERVER
 export:         to AS202498
@@ -254,7 +259,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-09-03T12:08:27Z
+last-modified:  2025-09-26T12:09:11Z
 source:         RIPE
 
 as-num:         AS43213

@@ -460,6 +460,7 @@ members:        AS64423
 members:        AS214283
 members:        AS-IPTP
 members:        AS201851:AS-PIK
+members:        AS-INDIKOM
 members:        AS200627
 members:        AS214317
 members:        AS197868
@@ -1606,7 +1607,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-09-23T11:06:31Z
+last-modified:  2025-09-26T12:39:40Z
 source:         RIPE
 
 
@@ -1909,6 +1910,7 @@ members:        AS-ARVANCLOUD-CDN
 members:        AS201974
 members:        AS51655:AS-ILIMTELECOM
 members:        AS57489
+members:        AS-INDIKOM
 members:        AS204296
 members:        AS-MELBICOM-V6
 members:        AS-ELTEL6
@@ -1987,7 +1989,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2025-09-16T08:55:00Z
+last-modified:  2025-09-26T12:40:19Z
 source:         RIPE
 
 
@@ -5196,6 +5198,10 @@ import:         from AS24689 action pref=100; accept AS-ROSINTEL
 export:         to AS24689 announce ANY
 import:         from AS201851 action pref=100; accept AS201851:AS-PIK
 export:         to AS201851 announce ANY
+import:         from AS59584 action pref=100; accept AS-INDIKOM
+export:         to AS59584 announce ANY
+mp-import:      from AS59584 action pref=100; accept AS-INDIKOM
+mp-export:      to AS59584 announce ANY
 import:         from AS43170 action pref=100; accept AS43170
 export:         to AS43170 announce {0.0.0.0/0}
 import:         from AS50089 action pref=100; accept AS50089
@@ -8487,7 +8493,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-09-23T11:02:26Z
+last-modified:  2025-09-26T12:39:10Z
 source:         RIPE
 
 
