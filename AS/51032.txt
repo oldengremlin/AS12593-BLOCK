@@ -7,6 +7,8 @@ import:         from AS9049 action pref=90;community={51032:13}; accept ANY
 export:         to AS9049 announce AS-NEVOD
 import:         from AS3216 action pref=90;community={51032:14}; accept ANY
 export:         to AS3216 announce AS-NEVOD-U
+import:         from AS50509 action pref=90;community={51032:15}; accept ANY
+export:         to AS50509 announce AS-NEVOD
 mp-import:      afi ipv6.unicast from AS31133 action pref=90;community={51032:11}; accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS51032
 mp-import:      afi ipv6.unicast from AS9049 action pref=90;community={51032:13}; accept ANY
@@ -40,7 +42,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NEVOD
 created:        2010-05-20T08:08:45Z
-last-modified:  2024-11-01T10:40:08Z
+last-modified:  2025-09-30T09:05:17Z
 source:         RIPE
 
 as-num:         AS51032

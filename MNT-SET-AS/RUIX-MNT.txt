@@ -1451,6 +1451,8 @@ members:        AS202498
 members:        AS-CDNETWORKSRU
 # from AS205063:
 members:        AS-CORTEL
+# from AS206768:
+members:        AS206768
 # from AS207785:
 members:        AS-HOSTLINE-IX
 # from AS209307:
@@ -1465,7 +1467,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2025-09-24T10:15:06Z
+last-modified:  2025-09-30T05:40:19Z
 source:         RIPE
 
 
@@ -1710,8 +1712,6 @@ members:        AS-SETKT
 members:        AS-ITREGION
 # from AS44030:
 members:        AS-LENTEL
-# from AS44112:
-members:        AS-RUCENTER
 # from AS44128:
 members:        AS-INTERNET-PRO-EKT-IX
 # from AS44587:
@@ -1810,7 +1810,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2025-09-11T10:08:42Z
+last-modified:  2025-09-30T14:06:29Z
 source:         RIPE
 
 
@@ -2707,6 +2707,9 @@ accept AS-CDNETWORKSRU
 import:         from AS205063
 action pref=100;
 accept AS-CORTEL
+import:         from AS206768
+action pref=100;
+accept AS206768
 import:         from AS207785
 action pref=100;
 accept AS-HOSTLINE-IX
@@ -2855,6 +2858,8 @@ export:         to AS204720
 announce AS-NSKROUTESERVER
 export:         to AS205063
 announce AS-NSKROUTESERVER
+export:         to AS206768
+announce AS-NSKROUTESERVER
 export:         to AS207785
 announce AS-NSKROUTESERVER
 export:         to AS209307
@@ -2865,7 +2870,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-09-24T10:15:04Z
+last-modified:  2025-09-30T05:40:25Z
 source:         RIPE
 
 
@@ -3314,9 +3319,6 @@ accept AS-ITREGION
 import:         from AS44030
 action pref=100;
 accept AS-LENTEL
-import:         from AS44112
-action pref=100;
-accept AS-RUCENTER
 import:         from AS44128
 action pref=100;
 accept AS-INTERNET-PRO-EKT-IX
@@ -3551,8 +3553,6 @@ export:         to AS43966
 announce AS-SPBROUTESERVER
 export:         to AS44030
 announce AS-SPBROUTESERVER
-export:         to AS44112
-announce AS-SPBROUTESERVER
 export:         to AS44128
 announce AS-SPBROUTESERVER
 export:         to AS44587
@@ -3648,7 +3648,7 @@ announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-09-11T10:08:47Z
+last-modified:  2025-09-30T14:06:35Z
 source:         RIPE
 
 

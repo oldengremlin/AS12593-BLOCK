@@ -19,21 +19,15 @@ import:         from AS15169 action pref=881; accept not AS20483:RS-DEFAULT
 export:         to AS15169 action med=120; announce AS20483:AS-ECNET
 import:         from AS8732 action pref=850; accept not AS20483:RS-DEFAULT
 export:         to AS8732 announce AS20483:AS-ECNET
-import:         from AS9002 action pref=850; accept not AS20483:RS-DEFAULT
+import:         from AS57304 action pref=850; accept not AS20483:RS-DEFAULT
 export:         to AS9002 announce AS20483:AS-ECNET
-import:         from AS12976 action pref=850; aspath.prepend(AS12976, AS12976, AS12976); accept not AS20483:RS-DEFAULT
-export:         to AS12976 action community={12976:2203,12976:2303}; announce AS20483:AS-ECNET
-import:         from AS42861 action pref=850; accept not AS20483:RS-DEFAULT
-export:         to AS42861 action med=100; announce AS20483:AS-ECNET
-import:         from AS60827 action pref=900; accept AS60827
-export:         to AS60827 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         EUROCOM-MNT
 created:        2002-09-17T13:51:29Z
-last-modified:  2024-01-09T07:06:54Z
+last-modified:  2025-09-30T10:40:14Z
 source:         RIPE
 
 as-num:         AS20483

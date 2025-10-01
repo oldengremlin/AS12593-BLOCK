@@ -590,6 +590,8 @@ mp-export:      afi ipv6.unicast to AS9123 announce AS-VKONTAKTE;
 mp-import:      afi ipv6.unicast from AS9123 accept AS-TIMEWEB;
 export:         to AS31376 announce AS-VKONTAKTE
 import:         from AS31376 accept AS-SMART
+export:         to AS42765 announce AS-VKONTAKTE
+import:         from AS42765 accept AS-LINER
 export:         to AS207581 announce ANY
 import:         from AS207581 accept AS207581
 export:         to AS62243 announce ANY
@@ -603,7 +605,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-07-03T14:45:56Z
-last-modified:  2025-07-10T09:07:15Z
+last-modified:  2025-09-30T10:06:20Z
 source:         RIPE
 notify:         ncc@corp.vk.com
 
