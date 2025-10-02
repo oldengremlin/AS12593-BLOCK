@@ -243,6 +243,7 @@ members:        as28800
 members:        as29581
 members:        as30911
 members:        as31575
+members:        as34479
 members:        as34707
 members:        as34849
 members:        as34862
@@ -283,7 +284,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         infr-mnt
 created:        2024-07-16T09:53:56Z
-last-modified:  2025-03-16T12:39:54Z
+last-modified:  2025-10-01T08:24:05Z
 source:         RIPE
 
 
@@ -1301,6 +1302,8 @@ mp-import:      afi ipv4.unicast from as34102 accept as-awanti
 mp-export:      afi ipv4.unicast to as34102 announce as3267:as-customers
 mp-import:      afi ipv4.unicast from as34352 accept as-mcn
 mp-export:      afi ipv4.unicast to as34352 announce as3267:as-customers
+mp-import:      afi ipv4.unicast from as34479 accept as34479
+mp-export:      afi any.unicast to as34479 announce any
 mp-import:      afi ipv4.unicast from as34707 accept as34707
 mp-export:      afi ipv4.unicast to as34707 announce {0.0.0.0/0}
 mp-import:      afi ipv4.unicast from as34849 accept as34849
@@ -1459,7 +1462,7 @@ status:         ASSIGNED
 mnt-by:         ripe-ncc-end-mnt
 mnt-by:         infr-mnt
 created:        2002-09-09T08:24:32Z
-last-modified:  2025-09-09T13:14:24Z
+last-modified:  2025-10-01T08:22:14Z
 source:         RIPE
 
 

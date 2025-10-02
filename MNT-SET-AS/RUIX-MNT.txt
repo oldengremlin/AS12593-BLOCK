@@ -468,8 +468,6 @@ members:        AS-RAMTEL, AS-RAMTEL6
 members:        AS-COMPLAT
 # from AS24689:
 members:        AS-ROSINTEL
-# from AS24739:
-members:        AS-SEVEREN-TELECOM
 # from AS24936:
 members:        AS-RIM2000M
 # from AS25091:
@@ -1156,6 +1154,8 @@ members:        AS-SG
 members:        AS-YACLOUD
 # from AS200487:
 members:        AS200487
+# from AS200847:
+members:        AS65345
 # from AS200976:
 members:        AS-LIFESTREAM
 # from AS201119:
@@ -1269,7 +1269,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-09-26T13:42:17Z
+last-modified:  2025-10-01T13:43:09Z
 source:         RIPE
 
 
@@ -4819,9 +4819,6 @@ accept AS-COMPLAT
 import:         from AS24689
 action pref=100;
 accept AS-ROSINTEL
-import:         from AS24739
-action pref=100;
-accept AS-SEVEREN-TELECOM
 import:         from AS24936
 action pref=100;
 accept AS-RIM2000M
@@ -5851,6 +5848,9 @@ accept AS-YACLOUD
 import:         from AS200487
 action pref=100;
 accept AS200487
+import:         from AS200847
+action pref=100;
+accept AS65345
 import:         from AS200976
 action pref=100;
 accept AS-LIFESTREAM
@@ -6194,8 +6194,6 @@ announce AS-MSKROUTESERVER
 export:         to AS24663
 announce AS-MSKROUTESERVER
 export:         to AS24689
-announce AS-MSKROUTESERVER
-export:         to AS24739
 announce AS-MSKROUTESERVER
 export:         to AS24936
 announce AS-MSKROUTESERVER
@@ -6883,6 +6881,8 @@ export:         to AS200350
 announce AS-MSKROUTESERVER
 export:         to AS200487
 announce AS-MSKROUTESERVER
+export:         to AS200847
+announce AS-MSKROUTESERVER
 export:         to AS200976
 announce AS-MSKROUTESERVER
 export:         to AS201119
@@ -6992,7 +6992,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-09-26T13:42:13Z
+last-modified:  2025-10-01T13:43:06Z
 source:         RIPE
 
 
