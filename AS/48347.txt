@@ -1,44 +1,12 @@
 aut-num:        AS48347
 as-name:        MTW-AS
 org:            ORG-JMe1-RIPE
-import:         from AS9002 action pref=200; accept ANY
-export:         to AS9002 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS9002 action pref=100; accept ANY
-mp-export:      afi ipv6.unicast to AS9002 announce AS-MTW6
 import:         from AS57724 action pref=100; accept ANY
 export:         to AS57724 announce AS-MTW
-import:         from AS20764 action pref=200; accept ANY
-export:         to AS20764 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS20764 action pref=100; accept ANY
-mp-export:      afi ipv6.unicast to AS20764 announce AS-MTW6
-import:         from AS1299 action pref=200; accept ANY
-export:         to AS1299 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS1299 action pref=100; accept ANY
-mp-export:      afi ipv6.unicast to AS1299 announce AS-MTW6
-import:         from AS3216 action pref=200; accept ANY
-export:         to AS3216 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS3216 action pref=100; accept ANY
-mp-export:      afi ipv6.unicast to AS3216 announce AS-MTW6
-import:         from AS20485 action pref=200; accept ANY
-export:         to AS20485 announce AS-MTW
-import:         from AS174 action pref=200; accept ANY
-export:         to AS174 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS174 action pref=100; accept ANY
-mp-export:      afi ipv6.unicast to AS174 announce AS-MTW6
 import:         from AS59796 action pref=100; accept ANY
 export:         to AS59796 announce AS-MTW
 mp-import:      afi ipv6.unicast from AS59796 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS59796 announce AS-MTW6
-import:         from AS29076 action pref=100; accept ANY
-export:         to AS29076 announce AS-MTW
-import:         from AS12389 action pref=100; accept ANY
-export:         to AS12389 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS12389 action pref=100; accept ANY
-mp-export:      afi ipv6.unicast to AS12389 announce AS-MTW6
-import:         from AS3356 action pref=100; accept ANY
-export:         to AS3356 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS3356 action pref=100; accept ANY
-mp-export:      afi ipv6.unicast to AS3356 announce AS-MTW6
 import:         from AS35598 action pref=100; accept ANY
 export:         to AS35598 announce AS-MTW
 mp-import:      afi ipv6.unicast from AS35598 action pref=100; accept ANY
@@ -47,6 +15,10 @@ import:         from AS50509 action pref=100; accept ANY
 export:         to AS50509 announce AS-MTW
 mp-import:      afi ipv6.unicast from AS50509 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS50509 announce AS-MTW6
+import:         from AS9049 action pref=100; accept ANY
+export:         to AS9049 announce AS-MTW
+mp-import:      afi ipv6.unicast from AS9049 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS9049 announce AS-MTW6
 import:         from AS62356 action pref=250; accept AS62356
 export:         to AS62356 announce ANY
 import:         from AS8395 action pref=250; accept AS-EAST
@@ -143,24 +115,26 @@ import:         from AS216090 action pref=250; accept AS216090
 export:         to AS216090 announce ANY
 import:         from AS216218 action pref=250; accept AS216218
 export:         to AS216218 announce ANY
-import:         from AS50952 action pref=100; accept ANY
-export:         to AS50952 announce AS-MTW
-import:         from AS50384 action pref=200; accept ANY
-export:         to AS50384 announce AS-MTW
 import:         from AS56931 action pref=200; accept ANY
 export:         to AS56931 announce AS-MTW
 mp-import:      afi ipv6.unicast from AS56931 action pref=200; accept ANY
 mp-export:      to AS56931 announce AS-MTW6
+import:         from AS49869 action pref=200; accept ANY
+export:         to AS49869 announce AS-MTW
+mp-import:      afi ipv6.unicast from AS49869 action pref=200; accept ANY
+mp-export:      to AS49869 announce AS-MTW6
 import:         from AS50817 action pref=200; accept ANY
 export:         to AS50817 announce AS-MTW
+mp-import:      afi ipv6.unicast from AS50817 action pref=200; accept ANY
+mp-export:      to AS50817 announce AS-MTW6
 import:         from AS39607 action pref=200; accept ANY
 export:         to AS39607 announce AS-MTW
-import:         from AS61376 action pref=200; accept ANY
-export:         to AS61376 announce AS-MTW
-import:         from AS8631 action pref=200; accept ANY
-export:         to AS8631 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS8631 action pref=200; accept ANY
-mp-export:      to AS8631 announce AS-MTW6
+mp-import:      afi ipv6.unicast from AS39607 action pref=200; accept ANY
+mp-export:      to AS39607 announce AS-MTW6
+import:         from AS48193 action pref=200; accept ANY
+export:         to AS48193 announce AS-MTW
+mp-import:      afi ipv6.unicast from AS48193 action pref=200; accept ANY
+mp-export:      to AS48193 announce AS-MTW6
 import:         from AS13238 action pref=100; accept AS-YANDEX
 export:         to AS13238 announce AS-MTW
 import:         from AS47764 action pref=100; accept AS-MAILRU
@@ -169,24 +143,14 @@ mp-import:      afi ipv6.unicast from AS47764 action pref=100; accept AS-MAILRU6
 mp-export:      afi ipv6.unicast to AS47764 announce AS-MTW6
 import:         from AS34123 action pref=100; accept AS-NETORN
 export:         to AS34123 announce AS-MTW
-import:         from AS12695 action pref=100; accept AS-DINET
-export:         to AS12695 announce AS-MTW
-import:         from AS31133 action pref=100; accept AS-CDN-MEGAFON
-export:         to AS31133 announce AS-MTW
 import:         from AS15169 action pref=110; accept AS-GOOGLE
 export:         to AS15169 announce AS-MTW
 mp-import:      afi ipv6.unicast from AS15169 action pref=110; accept AS-GOOGLE
 mp-export:      afi ipv6.unicast to AS15169 announce AS-MTW6
-import:         from AS714 action pref=110; accept AS-APPLE
-export:         to AS714 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS714 action pref=110; accept AS-APPLE
-mp-export:      afi ipv6.unicast to AS714 announce AS-MTW6
 import:         from AS41268 action pref=110; accept AS-LANTA
 export:         to AS41268 announce AS-MTW
 mp-import:      afi ipv6.unicast from AS41268 action pref=110; accept AS-LANTA
 mp-export:      afi ipv6.unicast to AS41268 announce AS-MTW6
-import:         from AS205216 action pref=110; accept AS-MEGOGO
-export:         to AS205216 announce AS-MTW
 import:         from AS48061 action pref=110; accept AS-UMA-TECH
 export:         to AS48061 announce AS-MTW
 import:         from AS57629 action pref=110; accept AS57629
@@ -199,14 +163,14 @@ import:         from AS13335 action pref=110; accept AS-CLOUDFLARE
 export:         to AS13335 announce AS-MTW
 mp-import:      afi ipv6.unicast from AS13335 action pref=110; accept AS-CLOUDFLARE
 mp-export:      afi ipv6.unicast to AS13335 announce AS-MTW6
-import:         from AS35297 action pref=110; accept AS-DL-WORLD
-export:         to AS35297 announce AS-MTW
-mp-import:      afi ipv6.unicast from AS35297 action pref=110; accept AS-DL-v6
-mp-export:      afi ipv6.unicast to AS35297 announce AS-MTW6
 import:         from AS204720 action pref=110; accept AS204720
 export:         to AS204720 announce AS-MTW
 mp-import:      afi ipv6.unicast from AS204720 action pref=110; accept AS204720
 mp-export:      afi ipv6.unicast to AS204720 announce AS-MTW6
+import:         from AS57363 action pref=110; accept AS57363
+export:         to AS57363 announce AS-MTW
+mp-import:      afi ipv6.unicast from AS57363 action pref=110; accept AS57363
+mp-export:      afi ipv6.unicast to AS57363 announce AS-MTW6
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -215,7 +179,7 @@ notify:         noc@mtw.ru
 mnt-by:         MTW-MNT
 mnt-by:         MNT-MTW-HOSTING
 created:        2008-11-17T11:11:49Z
-last-modified:  2024-10-01T17:55:11Z
+last-modified:  2025-10-02T18:00:07Z
 source:         RIPE
 
 as-num:         AS48347
