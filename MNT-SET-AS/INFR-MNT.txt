@@ -717,11 +717,11 @@ sponsoring-org: ORG-CR1-RIPE
 aut-num:        AS31575
 as-name:        MIET
 org:            ORG-MIET2-RIPE
-import:         from AS3267 action pref=100 ; accept ANY
-import:         from AS44964 action pref=50; accept ANY
-import:         from AS29226 action pref=50; accept ANY
+descr:          National Research University of Electronic Technology
+descr:          Moscow, Russia
+import:         from AS3267 action pref=200; accept {0.0.0.0/0}
 export:         to AS3267 announce AS31575
-export:         to AS44964 announce AS31575
+import:         from AS29226 action pref=150; accept {0.0.0.0/0}
 export:         to AS29226 announce AS31575
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -730,7 +730,7 @@ mnt-by:         MIET-MNT
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         INFR-MNT
 created:        2004-06-15T10:04:10Z
-last-modified:  2025-08-20T09:19:08Z
+last-modified:  2025-10-06T10:09:33Z
 source:         RIPE
 sponsoring-org: ORG-CR1-RIPE
 
