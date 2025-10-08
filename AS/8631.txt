@@ -90,6 +90,9 @@ accept AS-TELEKOM
 import:         from AS8410
 action pref=100;
 accept AS8410
+import:         from AS8449
+action pref=100;
+accept AS-ELCAT
 import:         from AS8492
 action pref=100;
 accept AS-OBIT
@@ -1529,6 +1532,8 @@ export:         to AS8400
 announce AS-MSKROUTESERVER
 export:         to AS8410
 announce AS-MSKROUTESERVER
+export:         to AS8449
+announce AS-MSKROUTESERVER
 export:         to AS8492
 announce AS-MSKROUTESERVER
 export:         to AS8595
@@ -2452,7 +2457,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-10-01T13:43:06Z
+last-modified:  2025-10-07T13:44:19Z
 source:         RIPE
 
 as-num:         AS8631

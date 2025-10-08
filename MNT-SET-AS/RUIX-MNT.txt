@@ -343,6 +343,8 @@ members:        AS-INTERSVYAZ
 members:        AS-TELEKOM
 # from AS8410:
 members:        AS8410
+# from AS8449:
+members:        AS-ELCAT
 # from AS8492:
 members:        AS-OBIT
 # from AS8595:
@@ -1270,7 +1272,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-10-01T13:43:09Z
+last-modified:  2025-10-07T13:44:23Z
 source:         RIPE
 
 
@@ -4624,6 +4626,9 @@ accept AS-TELEKOM
 import:         from AS8410
 action pref=100;
 accept AS8410
+import:         from AS8449
+action pref=100;
+accept AS-ELCAT
 import:         from AS8492
 action pref=100;
 accept AS-OBIT
@@ -6063,6 +6068,8 @@ export:         to AS8400
 announce AS-MSKROUTESERVER
 export:         to AS8410
 announce AS-MSKROUTESERVER
+export:         to AS8449
+announce AS-MSKROUTESERVER
 export:         to AS8492
 announce AS-MSKROUTESERVER
 export:         to AS8595
@@ -6986,7 +6993,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-10-01T13:43:06Z
+last-modified:  2025-10-07T13:44:19Z
 source:         RIPE
 
 
