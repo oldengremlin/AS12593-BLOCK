@@ -810,6 +810,9 @@ accept AS-RUCENTER
 import:         from AS48293
 action pref=100;
 accept AS-UNIONTEL-RU
+import:         from AS48327
+action pref=100;
+accept AS48327
 import:         from AS48349
 action pref=100;
 accept AS48349
@@ -2012,6 +2015,8 @@ export:         to AS48287
 announce AS-MSKROUTESERVER
 export:         to AS48293
 announce AS-MSKROUTESERVER
+export:         to AS48327
+announce AS-MSKROUTESERVER
 export:         to AS48349
 announce AS-MSKROUTESERVER
 export:         to AS48366
@@ -2457,7 +2462,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-10-07T13:44:19Z
+last-modified:  2025-10-08T09:43:44Z
 source:         RIPE
 
 as-num:         AS8631

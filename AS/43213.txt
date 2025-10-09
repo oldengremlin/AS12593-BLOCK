@@ -92,6 +92,9 @@ accept AS-OMKC-SET
 import:         from AS47569
 action pref=100;
 accept as-erlang
+import:         from AS48327
+action pref=100;
+accept AS48327
 import:         from AS48642
 action pref=100;
 accept AS-KT-RU
@@ -213,6 +216,8 @@ export:         to AS47165
 announce AS-EKTROUTESERVER
 export:         to AS47569
 announce AS-EKTROUTESERVER
+export:         to AS48327
+announce AS-EKTROUTESERVER
 export:         to AS48642
 announce AS-EKTROUTESERVER
 export:         to AS49218
@@ -259,7 +264,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-09-26T12:09:11Z
+last-modified:  2025-10-08T07:39:46Z
 source:         RIPE
 
 as-num:         AS43213
