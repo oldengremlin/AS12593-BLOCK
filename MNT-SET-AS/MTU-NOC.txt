@@ -507,6 +507,7 @@ members:        AS35469
 members:        AS35473
 members:        AS35521
 members:        AS35527
+members:        AS35608
 members:        AS35728
 members:        AS35774
 members:        AS35783
@@ -620,7 +621,7 @@ members:        AS47963
 members:        AS48000
 members:        AS48035
 members:        AS48061
-members:        AS48078:AS-DTELRU
+members:        AS48078:AS-DAGOTEL
 members:        AS48096
 members:        AS48806
 members:        AS48123
@@ -663,7 +664,7 @@ members:        AS49712
 members:        AS49722
 members:        AS49724
 members:        AS49730
-members:        AS49732
+members:        AS49732:AS-TYVASVIAZINFORM
 members:        AS49880
 members:        AS49977
 members:        AS49988
@@ -1283,7 +1284,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:31:17Z
-last-modified:  2025-09-11T10:29:34Z
+last-modified:  2025-10-13T13:27:28Z
 source:         RIPE
 
 
@@ -6156,6 +6157,8 @@ import:         from AS35580 action pref=105; accept AS35580
 export:         to AS35580 announce ANY
 import:         from AS35591 action pref=105; accept AS-PROVIDERONE
 export:         to AS35591 announce AS-MTU
+import:         from AS35608 action pref=140; accept AS35608
+export:         to AS35608 announce ANY
 import:         from AS35625 action pref=105; accept AS-ATE
 export:         to AS35625 announce AS-MTU
 import:         from AS35640 action pref=105; accept AS-MIGRAPH
@@ -6624,7 +6627,7 @@ import:         from AS48000 action pref=105; accept AS48000
 export:         to AS48000 announce ANY
 import:         from AS48061 action pref=140; accept AS-GPM-TECH
 export:         to AS48061 announce ANY
-import:         from AS48078 action pref=140; accept AS48078:AS-DTELRU
+import:         from AS48078 action pref=140; accept AS48078:AS-DAGOTEL
 export:         to AS48078 announce ANY
 import:         from AS48084 action pref=140; accept AS-UMLC
 export:         to AS48084 announce ANY
@@ -7528,7 +7531,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:20:57Z
-last-modified:  2025-09-18T09:55:06Z
+last-modified:  2025-10-13T13:27:58Z
 source:         RIPE
 
 
