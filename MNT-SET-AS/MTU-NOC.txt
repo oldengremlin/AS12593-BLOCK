@@ -179,6 +179,7 @@ members:        AS56721
 members:        AS57503
 members:        AS57923
 members:        AS57953
+members:        AS58163
 members:        AS58225
 members:        AS59561
 members:        AS60048
@@ -240,6 +241,7 @@ members:        AS214852
 members:        AS215818
 members:        AS215897
 members:        AS216214
+members:        AS216460
 members:        AS-NETCRACKER
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
@@ -247,7 +249,7 @@ notify:         noc@mtu.ru
 mnt-by:         MTU-NOC
 mnt-lower:      MTS-B2B-MNT
 created:        2022-10-18T11:09:38Z
-last-modified:  2025-09-18T09:59:23Z
+last-modified:  2025-10-14T13:37:13Z
 source:         RIPE
 
 
@@ -6765,8 +6767,8 @@ import:         from AS49724 action pref=105; accept AS-VAINAHTELECOM
 export:         to AS49724 announce ANY
 import:         from AS49730 action pref=105; accept AS49730
 export:         to AS49730 announce ANY
-import:         from AS49732 action pref=105; accept AS49732
-export:         to AS49732 announce ANY
+import:         from AS49732 action pref=140; accept AS49732:AS-TYVASVIAZINFORM
+export:         to AS49732:AS-TYVASVIAZINFORM announce ANY
 import:         from AS49759 action pref=105; accept AS-SERDITELECOM
 export:         to AS49759 announce ANY
 import:         from AS49816 action pref=105; accept AS-CMST-SIMBIRSK
@@ -7079,6 +7081,8 @@ import:         from AS58097 action pref=105; accept AS58097
 export:         to AS58097 announce ANY
 import:         from AS58134 action pref=105; accept AS58134
 export:         to AS58134 announce ANY
+import:         from AS58163 action pref=140; accept AS58163
+export:         to AS58163 announce ANY
 import:         from AS58187 action pref=105; accept AS-IRCN
 export:         to AS58187 announce ANY
 import:         from AS58189 action pref=105; accept AS58189
@@ -7523,6 +7527,8 @@ import:         from AS215897 action pref=105; accept AS215897
 export:         to AS215897 announce ANY
 import:         from AS216214 action pref=105; accept AS216214
 export:         to AS216214 announce ANY
+import:         from AS216460 action pref=140; accept AS216460
+export:         to AS216460 announce ANY
 import:         from AS201123 action pref=105; accept AS201123
 export:         to AS201123 announce ANY
 admin-c:        DUMY-RIPE
@@ -7531,7 +7537,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:20:57Z
-last-modified:  2025-10-13T13:27:58Z
+last-modified:  2025-10-14T13:35:57Z
 source:         RIPE
 
 

@@ -9743,6 +9743,24 @@ source:         RIPE
 
 
 
+aut-num:        AS12705
+org:            ORG-JR8-RIPE
+as-name:        PFES
+descr:          Perm department Autonomous System
+descr:          OJSC "Uralsviazinform"
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         MFIST-MNT
+mnt-by:         MFIST-ROUTE-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2025-10-14T07:12:36Z
+source:         RIPE
+
+
+
 aut-num:        AS12730
 org:            ORG-JR8-RIPE
 as-name:        INECO_AS
@@ -10948,6 +10966,48 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2002-12-24T12:12:37Z
 last-modified:  2025-04-15T11:26:30Z
+source:         RIPE
+
+
+
+aut-num:        AS28719
+org:            ORG-JR8-RIPE
+as-name:        HMFES
+descr:          Khanty-Mansiysky department Autonomous System
+descr:          OJSC "Uralsviazinform"
+import:         from AS12487 action pref=100; accept ANY
+import:         from AS16285 action pref=120; accept ANY
+import:         from AS29648 action pref=100; accept ANY
+import:         from AS9110 action pref=100; accept ANY
+import:         from AS28899 action pref=100; accept AS28899
+import:         from AS13304 action pref=100; accept AS13304
+import:         from AS35564 action pref=100; accept AS35564
+import:         from AS15599 action pref=100; accept AS15599
+import:         from AS41822 action pref=100; accept AS41822
+import:         from AS30977 action pref=100; accept AS30977
+import:         from AS13304 action pref=100; accept AS13304
+import:         from AS35527 action pref=100; accept AS35527
+export:         to AS12487 announce ANY
+export:         to AS16285 announce ANY
+export:         to AS29648 announce AS-KHMOD
+export:         to AS9110 announce AS-KHMOD
+export:         to AS28899 announce ANY
+export:         to AS13304 announce ANY
+export:         to AS35564 announce ANY
+export:         to AS15599 announce ANY
+export:         to AS41822 announce ANY
+export:         to AS30977 announce ANY
+export:         to AS13304 announce ANY
+export:         to AS35527 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+mnt-by:         MFIST-MNT
+mnt-by:         MFIST-ROUTE-MNT
+created:        2003-02-07T10:16:42Z
+last-modified:  2025-10-14T07:11:53Z
 source:         RIPE
 
 
@@ -12974,6 +13034,55 @@ created:        2013-05-23T12:30:45Z
 last-modified:  2019-05-14T10:01:12Z
 source:         RIPE
 sponsoring-org: ORG-JR8-RIPE
+
+
+
+aut-num:        AS6828
+as-name:        USI
+org:            ORG-JR8-RIPE
+descr:          PJSC "Rostelecom". Ekaterinburg branch
+import:         from AS2854 action pref=100; accept ANY
+import:         from AS3235 action pref=100; accept AS3235
+import:         from AS3253 action pref=100; accept AS3253
+import:         from AS5468 action pref=100; accept AS5468
+import:         from AS6699 action pref=100; accept AS6699
+import:         from AS16179 action pref=200; accept ANY
+import:         from AS28890 action pref=100; accept AS28890
+import:         from AS31359 action pref=100; accept ANY
+import:         from AS29648 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS30767 action pref=100; accept ANY
+import:         from AS34552 action pref=100; accept ANY
+import:         from AS35154 action pref=100; accept ANY
+import:         from AS38972 action pref=100; accept AS38972
+import:         from AS5563 action pref=100; accept AS5563
+export:         to AS8342 announce AS6828 AND AS16179 AND AS28890
+export:         to AS3235 announce AS6828
+export:         to AS2854 announce AS6828 AND AS29191
+export:         to AS3253 announce AS6828
+export:         to AS5468 announce AS6828
+export:         to AS5544 announce AS6828
+export:         to AS6699 announce AS6828
+export:         to AS16179 announce AS6828
+export:         to AS28890 announce ANY
+export:         to AS31359 announce AS6828
+export:         to AS29648 announce AS6828
+export:         to AS20485 announce ANY
+export:         to AS30767 announce AS6828
+export:         to AS34552 announce AS6828
+export:         to AS35154 announce AS6828
+export:         to AS38972 announce AS6828
+export:         to AS5563 announce AS6828
+default:        to AS20485 action pref=300; networks ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         ip-reg@urtc.ru
+mnt-by:         ROSTELECOM-MNT
+created:        2002-04-09T05:10:08Z
+last-modified:  2025-10-14T06:58:33Z
+source:         RIPE
 
 
 
