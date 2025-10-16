@@ -507,8 +507,6 @@ members:        AS-CITTEL
 members:        AS-FIORD
 # from AS28968:
 members:        AS-EUT
-# from AS29049:
-members:        as-azersatmembers, as29049
 # from AS29076:
 members:        AS-CITYTELECOM
 # from AS29124:
@@ -810,7 +808,7 @@ members:        AS-MOSINFOCOM
 # from AS48061:
 members:        AS-UMA-TECH
 # from AS48078:
-members:        AS48078
+members:        AS48078:AS-DAGOTEL
 # from AS48084:
 members:        AS-UMLC
 # from AS48128:
@@ -884,7 +882,7 @@ members:        AS-INTELLIN
 # from AS49505:
 members:        AS-SELECTEL
 # from AS49530:
-members:        AS49530
+members:        AS-KOMPLEKS
 # from AS49531:
 members:        AS-NETCOM-R
 # from AS49673:
@@ -1280,7 +1278,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-10-14T13:39:15Z
+last-modified:  2025-10-15T13:37:43Z
 source:         RIPE
 
 
@@ -4875,9 +4873,6 @@ accept AS-FIORD
 import:         from AS28968
 action pref=100;
 accept AS-EUT
-import:         from AS29049
-action pref=100;
-accept as-azersatmembers as29049
 import:         from AS29076
 action pref=100;
 accept AS-CITYTELECOM
@@ -5330,7 +5325,7 @@ action pref=100;
 accept AS-UMA-TECH
 import:         from AS48078
 action pref=100;
-accept AS48078
+accept AS48078:AS-DAGOTEL
 import:         from AS48084
 action pref=100;
 accept AS-UMLC
@@ -5441,7 +5436,7 @@ action pref=100;
 accept AS-SELECTEL
 import:         from AS49530
 action pref=100;
-accept AS49530
+accept AS-KOMPLEKS
 import:         from AS49531
 action pref=100;
 accept AS-NETCOM-R
@@ -6245,8 +6240,6 @@ export:         to AS28917
 announce AS-MSKROUTESERVER
 export:         to AS28968
 announce AS-MSKROUTESERVER
-export:         to AS29049
-announce AS-MSKROUTESERVER
 export:         to AS29076
 announce AS-MSKROUTESERVER
 export:         to AS29124
@@ -7014,7 +7007,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-10-14T13:39:11Z
+last-modified:  2025-10-15T13:37:43Z
 source:         RIPE
 
 
