@@ -92,7 +92,6 @@ members:        AS47418
 members:        AS44799
 members:        AS200662
 members:        AS3216
-members:        AS212614
 members:        AS2766
 members:        AS2599
 members:        AS-MAX
@@ -415,6 +414,7 @@ members:        AS-CDNNOW
 members:        AS50713
 members:        AS57587
 members:        AS-SPDOP
+members:        AS-CTGNET
 members:        AS209188
 members:        AS49777
 members:        AS-RUSTELECOM
@@ -1118,7 +1118,6 @@ members:        AS34671
 members:        AS-ROILCOM
 members:        AS-SET_TNSPLUS
 members:        AS51200
-members:        AS50513
 members:        AS-SET-SVEN
 members:        AS8629
 members:        AS57296
@@ -1611,7 +1610,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-10-16T07:06:44Z
+last-modified:  2025-10-17T08:32:53Z
 source:         RIPE
 
 
@@ -1637,6 +1636,7 @@ source:         RIPE
 
 as-set:         AS-SOVAM-V6
 descr:          Sovintel IPv6 customers
+members:        AS-CTGNET
 members:        AS60827
 members:        AS202234
 members:        AS-TT-Mobile
@@ -1994,7 +1994,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2025-10-13T12:49:47Z
+last-modified:  2025-10-17T08:33:22Z
 source:         RIPE
 
 
@@ -4885,6 +4885,10 @@ import:         from AS211157 action pref=100; accept AS211157
 export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
+import:         from AS23764 action pref=100; accept AS-CTGNET
+export:         to AS23764 announce ANY
+mp-import:      from AS23764 action pref=100; accept AS-CTGNET
+mp-export:      to AS23764 announce ANY
 mp-import:      from AS60827 action pref=100; accept AS60827
 mp-export:      to AS60827 announce ANY
 import:         from AS209188 action pref=100; accept AS209188
@@ -6779,8 +6783,6 @@ import:         from AS51200 action pref=100; accept AS51200
 export:         to AS51200 announce ANY
 import:         from AS51200 action pref=100; accept AS-DIDI
 export:         to AS51200 announce ANY
-import:         from AS50513 action pref=100; accept AS50513
-export:         to AS50513 announce ANY
 import:         from AS34557 action pref=100; accept AS-SET-TACOM
 export:         to AS34557 announce ANY
 import:         from AS34557 action pref=100; accept AS-SET-TACOM
@@ -7801,8 +7803,6 @@ import:         from AS207518 action pref=100; accept AS207518
 export:         to AS207518 announce ANY
 import:         from AS61358 action pref=100; accept AS61358
 export:         to AS61358 announce {0.0.0.0/0}
-import:         from AS212614 action pref=100; accept AS212614
-export:         to AS212614 announce {0.0.0.0/0}
 import:         from AS44943 action pref=100; accept AS-RAMNET
 export:         to AS44943 announce ANY
 import:         from AS60328 action pref=100; accept AS60328
@@ -8504,7 +8504,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-10-16T07:02:29Z
+last-modified:  2025-10-17T08:32:07Z
 source:         RIPE
 
 
