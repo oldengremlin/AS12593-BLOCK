@@ -152,6 +152,7 @@ members:        AS-WEBA
 members:        AS49186
 members:        AS58268
 members:        AS-UNICO
+members:        AS-RTKPRIM
 members:        AS35658
 members:        AS60919
 members:        AS-A3PAY
@@ -414,6 +415,7 @@ members:        AS-CDNNOW
 members:        AS50713
 members:        AS57587
 members:        AS-SPDOP
+members:        AS215634
 members:        AS-CTGNET
 members:        AS209188
 members:        AS49777
@@ -423,7 +425,7 @@ members:        AS212715:AS-BPMSOFT
 members:        AS47323
 members:        AS-SKY-EN
 members:        AS39113
-members:        AS202234
+members:        AS202234:AS-SEMANTIC
 members:        AS34858
 members:        AS200121
 members:        AS57368
@@ -1609,7 +1611,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-10-18T10:01:45Z
+last-modified:  2025-10-20T13:40:12Z
 source:         RIPE
 
 
@@ -1637,7 +1639,7 @@ as-set:         AS-SOVAM-V6
 descr:          Sovintel IPv6 customers
 members:        AS-CTGNET
 members:        AS60827
-members:        AS202234
+members:        AS202234:AS-SEMANTIC
 members:        AS-TT-Mobile
 members:        AS57861
 members:        AS-PIN
@@ -1993,7 +1995,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2025-10-17T08:33:22Z
+last-modified:  2025-10-20T08:55:00Z
 source:         RIPE
 
 
@@ -4884,6 +4886,10 @@ import:         from AS211157 action pref=100; accept AS211157
 export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
+import:         from AS215634 action pref=100; accept AS215634
+export:         to AS215634 announce ANY
+import:         from AS21105 action pref=100; accept AS-RTKPRIM
+export:         to AS21105 announce ANY
 import:         from AS23764 action pref=100; accept AS-CTGNET
 export:         to AS23764 announce ANY
 mp-import:      from AS23764 action pref=100; accept AS-CTGNET
@@ -4938,10 +4944,10 @@ import:         from AS57368 action pref=100; accept AS57368
 export:         to AS57368 announce ANY
 import:         from AS50425 action pref=100; accept AS50425
 export:         to AS50425 announce {0.0.0.0/0}
-mp-import:      from AS202234 action pref=100; accept AS202234
-mp-export:      to AS202234 announce {::/0}
-import:         from AS202234 action pref=100; accept AS202234
+import:         from AS202234 action pref=100; accept AS202234:AS-SEMANTIC
 export:         to AS202234 announce {0.0.0.0/0}
+mp-import:      from AS202234 action pref=100; accept AS202234:AS-SEMANTIC
+mp-export:      to AS202234 announce {::/0}
 import:         from AS57861 action pref=100; accept AS57861
 export:         to AS57861 announce ANY
 mp-import:      from AS57861 action pref=100; accept AS57861
@@ -8501,7 +8507,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-10-19T12:31:14Z
+last-modified:  2025-10-20T13:39:54Z
 source:         RIPE
 
 
