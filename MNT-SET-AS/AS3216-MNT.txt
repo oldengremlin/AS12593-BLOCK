@@ -427,6 +427,7 @@ members:        AS47323
 members:        AS-SKY-EN
 members:        AS39113
 members:        AS202234:AS-SEMANTIC
+members:        AS-TELEOS-1
 members:        AS34858
 members:        AS200121
 members:        AS57368
@@ -1612,7 +1613,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-10-22T10:44:32Z
+last-modified:  2025-10-24T07:18:22Z
 source:         RIPE
 
 
@@ -1647,6 +1648,7 @@ members:        AS-PIN
 members:        AS-PINDC
 members:        AS214525
 members:        AS44322
+members:        AS-TELEOS-1
 members:        AS202498
 members:        AS57988
 members:        AS-51601-RU
@@ -1996,7 +1998,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2025-10-20T08:55:00Z
+last-modified:  2025-10-24T07:19:23Z
 source:         RIPE
 
 
@@ -4899,6 +4901,10 @@ mp-import:      from AS60827 action pref=100; accept AS60827
 mp-export:      to AS60827 announce ANY
 import:         from AS209188 action pref=100; accept AS209188
 export:         to AS209188 announce ANY
+import:         from AS43274 action pref=100; accept AS-TELEOS-1
+export:         to AS43274 announce ANY
+mp-import:      from AS43274 action pref=100; accept AS-TELEOS-1
+mp-export:      to AS43274 announce ANY
 import:         from AS57614 action pref=100; accept AS57614
 export:         to AS57614 announce {0.0.0.0/0}
 import:         from AS47999 action pref=100; accept AS47999
@@ -8508,7 +8514,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-10-22T23:01:54Z
+last-modified:  2025-10-24T07:17:10Z
 source:         RIPE
 
 

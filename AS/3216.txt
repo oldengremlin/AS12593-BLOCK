@@ -1626,6 +1626,10 @@ mp-import:      from AS60827 action pref=100; accept AS60827
 mp-export:      to AS60827 announce ANY
 import:         from AS209188 action pref=100; accept AS209188
 export:         to AS209188 announce ANY
+import:         from AS43274 action pref=100; accept AS-TELEOS-1
+export:         to AS43274 announce ANY
+mp-import:      from AS43274 action pref=100; accept AS-TELEOS-1
+mp-export:      to AS43274 announce ANY
 import:         from AS57614 action pref=100; accept AS57614
 export:         to AS57614 announce {0.0.0.0/0}
 import:         from AS47999 action pref=100; accept AS47999
@@ -5235,7 +5239,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-10-22T23:01:54Z
+last-modified:  2025-10-24T07:17:10Z
 source:         RIPE
 
 as-num:         AS3216
