@@ -135,6 +135,7 @@ members:        AS13029
 members:        AS207883
 members:        AS33987
 members:        AS30924
+members:        AS60363
 members:        AS-SET-S-Telecom
 members:        AS-CNLTD
 members:        AS215098
@@ -419,6 +420,7 @@ members:        AS-SPDOP
 members:        AS215634
 members:        AS-CTGNET
 members:        AS209188
+members:        AS12979
 members:        AS49777
 members:        AS-RUSTELECOM
 members:        AS-ARVANCLOUD-CDN
@@ -1613,7 +1615,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-10-24T07:18:22Z
+last-modified:  2025-10-27T12:19:15Z
 source:         RIPE
 
 
@@ -4891,6 +4893,10 @@ mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
 import:         from AS215634 action pref=100; accept AS215634
 export:         to AS215634 announce ANY
+import:         from AS60363 action pref=100; accept AS60363
+export:         to AS60363 announce {0.0.0.0/0}
+import:         from AS12979 action pref=100; accept AS12979
+export:         to AS12979 announce ANY
 import:         from AS21105 action pref=100; accept AS-RTKPRIM
 export:         to AS21105 announce ANY
 import:         from AS23764 action pref=100; accept AS-CTGNET
@@ -8512,7 +8518,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-10-26T18:00:27Z
+last-modified:  2025-10-27T12:18:25Z
 source:         RIPE
 
 
