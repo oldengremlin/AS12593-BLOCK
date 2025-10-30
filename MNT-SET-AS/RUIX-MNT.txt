@@ -657,6 +657,8 @@ members:        AS-SOLID-IFC
 members:        AS41718
 # from AS41722:
 members:        AS-MIRAN
+# from AS41743:
+members:        AS-OPTIMANET
 # from AS41798:
 members:        AS-TRANSKZ
 # from AS41802:
@@ -1282,7 +1284,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-10-21T09:46:59Z
+last-modified:  2025-10-28T09:45:49Z
 source:         RIPE
 
 
@@ -5102,6 +5104,9 @@ accept AS41718
 import:         from AS41722
 action pref=100;
 accept AS-MIRAN
+import:         from AS41743
+action pref=100;
+accept AS-OPTIMANET
 import:         from AS41798
 action pref=100;
 accept AS-TRANSKZ
@@ -6400,6 +6405,8 @@ export:         to AS41718
 announce AS-MSKROUTESERVER
 export:         to AS41722
 announce AS-MSKROUTESERVER
+export:         to AS41743
+announce AS-MSKROUTESERVER
 export:         to AS41798
 announce AS-MSKROUTESERVER
 export:         to AS41802
@@ -7021,7 +7028,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-10-21T09:46:59Z
+last-modified:  2025-10-28T09:45:42Z
 source:         RIPE
 
 
