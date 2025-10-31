@@ -129,6 +129,7 @@ members:        AS-ETALON
 members:        AS-ETHERWAY
 members:        AS-EXPOFORUM
 members:        AS-FACTORIAL-INTERNET
+members:        AS-FARLINE
 members:        AS-FAST_LINK
 members:        AS-FLEX
 members:        AS-FLY
@@ -562,7 +563,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2025-10-24T19:59:19Z
+last-modified:  2025-10-29T19:59:20Z
 source:         RIPE
 
 
@@ -614,6 +615,7 @@ members:        AS-ERLANG
 members:        AS-ERTH
 members:        AS-ESCROW
 members:        AS-EST
+members:        AS-FARLINE
 members:        AS-FAST_LINK
 members:        AS-FLEXV6
 members:        AS-FLYTELECOM
@@ -821,7 +823,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2025-10-09T19:59:19Z
+last-modified:  2025-10-29T19:59:20Z
 source:         RIPE
 
 
@@ -1567,6 +1569,8 @@ import:         from  AS42135 action pref=100; accept   AS-AVGA-TERRA
 export:         to    AS42135                  announce ANY
 import:         from  AS42144 action pref=100; accept   AS42144
 export:         to    AS42144                  announce ANY
+import:         from  AS42239 action pref=100; accept   AS-FARLINE
+export:         to    AS42239                  announce ANY
 import:         from  AS42289 action pref=100; accept   AS-VUZTC
 export:         to    AS42289                  announce ANY
 import:         from  AS42291 action pref=100; accept   AS42291:AS-ISTRANET
@@ -2525,6 +2529,8 @@ mp-import:      afi ipv6.unicast from  AS41983 action pref=100; accept   AS41983
 mp-export:      afi ipv6.unicast to    AS41983                  announce ANY
 mp-import:      afi ipv6.unicast from  AS42135 action pref=100; accept   AS-AVGA-TERRA
 mp-export:      afi ipv6.unicast to    AS42135                  announce ANY
+mp-import:      afi ipv6.unicast from  AS42239 action pref=100; accept   AS-FARLINE
+mp-export:      afi ipv6.unicast to    AS42239                  announce ANY
 mp-import:      afi ipv6.unicast from  AS42291 action pref=100; accept   AS-ISTRANET6
 mp-export:      afi ipv6.unicast to    AS42291                  announce ANY
 mp-import:      afi ipv6.unicast from  AS42339 action pref=100; accept   AS-CHTP
@@ -2898,7 +2904,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-10-24T19:59:20Z
+last-modified:  2025-10-29T19:59:20Z
 source:         RIPE
 
 

@@ -61,6 +61,8 @@ mp-import:      afi ipv6.unicast from AS9049 action pref=90;community={51032:13}
 mp-export:      afi ipv6.unicast to AS9049 announce AS51032
 mp-import:      afi ipv6.unicast from AS3216 action pref=90;community={51032:14}; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS51032
+mp-import:      afi ipv6.unicast from AS50509 action pref=90;community={51032:15}; accept ANY
+mp-export:      afi ipv6.unicast to AS50509 announce AS51032
 import:         from AS43801 action pref=110;community={51032:24}; accept AS-COMRISE
 export:         to AS43801 announce AS-NEVOD
 import:         from AS41344 action pref=90;community={51032:25}; accept AS41344:AS-VISTCOM
@@ -81,6 +83,8 @@ import:         from AS47844 action pref=110;community={51032:31}; accept AS-STA
 export:         to AS47844 announce ANY
 import:         from AS34804 action pref=110;community={51032:30}; accept AS34804
 export:         to AS34804 announce ANY
+import:         from AS39707 action pref=110;community={51032:32}; accept AS39707
+export:         to AS39707 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         admin@powernet.com.ru
@@ -88,7 +92,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NEVOD
 created:        2010-05-20T08:08:45Z
-last-modified:  2025-09-30T09:05:17Z
+last-modified:  2025-10-29T11:12:01Z
 source:         RIPE
 
 
