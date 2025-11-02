@@ -1440,6 +1440,9 @@ accept AS209821
 import:         from AS210063
 action pref=100;
 accept AS210063
+import:         from AS210171
+action pref=100;
+accept AS210171
 import:         from AS210357
 action pref=100;
 accept AS210357
@@ -2447,6 +2450,8 @@ export:         to AS209821
 announce AS-MSKROUTESERVER
 export:         to AS210063
 announce AS-MSKROUTESERVER
+export:         to AS210171
+announce AS-MSKROUTESERVER
 export:         to AS210357
 announce AS-MSKROUTESERVER
 export:         to AS210443
@@ -2482,7 +2487,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-10-28T09:45:42Z
+last-modified:  2025-10-31T09:49:21Z
 source:         RIPE
 
 as-num:         AS8631

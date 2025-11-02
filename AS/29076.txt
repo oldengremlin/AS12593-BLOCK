@@ -442,8 +442,6 @@ import:         from AS50538 action pref=50; accept AS-PETROSVYAZ;
 export:         to AS50538 announce ANY;
 import:         from AS31444 action pref=50; accept AS-SEANET;
 export:         to AS31444 announce ANY;
-import:         from AS49505 action pref=50; accept AS-SELECTEL;
-export:         to AS49505 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 import:         from AS35807 action pref=50; accept AS-SKYNET-SPB;
 export:         to AS35807 announce AS-CITYTELECOM AND NOT AS-CLOUD-IX-M;
 import:         from AS31376 action pref=50; accept AS-SMART-C;
@@ -880,8 +878,6 @@ mp-import:      afi ipv6.unicast from AS50538 action pref=50; accept AS-PETROSVY
 mp-export:      afi ipv6.unicast to AS50538 announce any;
 mp-import:      afi ipv6.unicast from AS31444 action pref=50; accept AS-SEANET;
 mp-export:      afi ipv6.unicast to AS31444 announce any;
-mp-import:      afi ipv6.unicast from AS49505 action pref=50; accept AS-SELECTEL;
-mp-export:      afi ipv6.unicast to AS49505 announce any;
 mp-import:      afi ipv6.unicast from AS35807 action pref=50; accept AS-SKYNET-SPB;
 mp-export:      afi ipv6.unicast to AS35807 announce any;
 mp-import:      afi ipv6.unicast from AS31376 action pref=50; accept AS31376;
@@ -905,7 +901,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 notify:         registry@citytelecom.ru
 created:        2011-01-08T19:33:27Z
-last-modified:  2025-10-21T21:00:03Z
+last-modified:  2025-10-31T21:00:03Z
 source:         RIPE
 
 as-num:         AS29076
