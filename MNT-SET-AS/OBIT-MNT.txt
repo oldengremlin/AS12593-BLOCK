@@ -62,8 +62,10 @@ members:        AS207353
 members:        AS209974
 members:        AS210223
 members:        AS211503
+members:        AS211659:AS-STIMUL
 members:        AS212333
 members:        AS214856
+members:        AS216341:AS-OPTIMA
 members:        AS-ABS
 members:        AS-CCE
 members:        AS-LINETEL
@@ -78,7 +80,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         OBIT-MNT
 created:        2005-10-25T07:07:15Z
-last-modified:  2025-10-05T08:42:09Z
+last-modified:  2025-11-01T11:48:14Z
 source:         RIPE
 
 
@@ -1817,10 +1819,14 @@ import:         from AS210223 action pref=200; accept AS210223
 export:         to AS210223 announce ANY
 import:         from AS211503 action pref=200; accept AS211503
 export:         to AS211503 announce ANY
+import:         from AS211659 action pref=200; accept AS211659:AS-STIMUL
+export:         to AS211659 announce ANY
 import:         from AS212333 action pref=200; accept AS212333
 export:         to AS212333 announce ANY
 import:         from AS214856 action pref=200; accept AS214856
 export:         to AS214856 announce ANY
+import:         from AS216341 action pref=200; accept AS216341:AS-OPTIMA
+export:         to AS216341 announce ANY
 org:            ORG-OL12-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -1828,7 +1834,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OBIT-MNT
 created:        2005-02-17T09:37:03Z
-last-modified:  2025-10-25T07:23:43Z
+last-modified:  2025-11-01T11:47:15Z
 source:         RIPE
 
 

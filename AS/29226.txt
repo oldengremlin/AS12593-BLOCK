@@ -85,8 +85,6 @@ import:         from AS52184 action pref=200; accept AS52184;
 export:         to AS52184 announce ANY;
 import:         from AS196695 action pref=200; accept AS-NETONERUS;
 export:         to AS196695 announce ANY;
-import:         from AS34052 action pref=200; accept AS-LOGIKA;
-export:         to AS34052 announce ANY;
 import:         from AS198348 action pref=200; accept AS198348;
 export:         to AS198348 announce ANY;
 import:         from AS198445 action pref=200; accept AS198445;
@@ -679,6 +677,10 @@ import:         from AS49031 action pref=200; accept AS49031
 export:         to AS49031 announce ANY
 import:         from AS215259 action pref=200; accept AS215259
 export:         to AS215259 announce ANY
+import:         from AS43740 action pref=200; accept AS43740
+export:         to AS43740 announce ANY
+import:         from AS207862 action pref=200; accept AS207862
+export:         to AS207862 announce {0.0.0.0/0}
 mp-import:      afi ipv6 from AS29076 accept ANY;
 mp-export:      afi ipv6 to AS29076 announce AS-MASTERTEL6;
 mp-import:      afi ipv6 from AS9002 accept ANY;
@@ -748,7 +750,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2025-10-24T10:23:43Z
+last-modified:  2025-11-01T11:43:29Z
 source:         RIPE
 
 as-num:         AS29226
