@@ -1329,6 +1329,9 @@ accept AS-LIFESTREAM
 import:         from AS201119
 action pref=100;
 accept AS201119
+import:         from AS201147
+action pref=100;
+accept AS201147
 import:         from AS201211
 action pref=100;
 accept AS-DRUGOYTEL
@@ -2376,6 +2379,8 @@ export:         to AS200976
 announce AS-MSKROUTESERVER
 export:         to AS201119
 announce AS-MSKROUTESERVER
+export:         to AS201147
+announce AS-MSKROUTESERVER
 export:         to AS201211
 announce AS-MSKROUTESERVER
 export:         to AS201302
@@ -2487,7 +2492,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-05T13:50:08Z
+last-modified:  2025-11-07T09:48:05Z
 source:         RIPE
 
 as-num:         AS8631

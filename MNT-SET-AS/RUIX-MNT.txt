@@ -1171,6 +1171,8 @@ members:        AS65345
 members:        AS-LIFESTREAM
 # from AS201119:
 members:        AS201119
+# from AS201147:
+members:        AS201147
 # from AS201211:
 members:        AS-DRUGOYTEL
 # from AS201302:
@@ -1286,7 +1288,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-11-05T13:50:12Z
+last-modified:  2025-11-07T09:48:05Z
 source:         RIPE
 
 
@@ -5877,6 +5879,9 @@ accept AS-LIFESTREAM
 import:         from AS201119
 action pref=100;
 accept AS201119
+import:         from AS201147
+action pref=100;
+accept AS201147
 import:         from AS201211
 action pref=100;
 accept AS-DRUGOYTEL
@@ -6924,6 +6929,8 @@ export:         to AS200976
 announce AS-MSKROUTESERVER
 export:         to AS201119
 announce AS-MSKROUTESERVER
+export:         to AS201147
+announce AS-MSKROUTESERVER
 export:         to AS201211
 announce AS-MSKROUTESERVER
 export:         to AS201302
@@ -7035,7 +7042,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-05T13:50:08Z
+last-modified:  2025-11-07T09:48:05Z
 source:         RIPE
 
 
