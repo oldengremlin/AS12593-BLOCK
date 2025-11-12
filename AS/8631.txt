@@ -330,9 +330,6 @@ accept AS-INSYS-EKB
 import:         from AS28891
 action pref=100;
 accept AS-CITTEL
-import:         from AS28917
-action pref=100;
-accept AS-FIORD
 import:         from AS28968
 action pref=100;
 accept AS-EUT
@@ -1068,6 +1065,9 @@ accept AS56679
 import:         from AS56694
 action pref=100;
 accept AS-DHUB
+import:         from AS56701
+action pref=100;
+accept AS-AVANTA
 import:         from AS56814
 action pref=100;
 accept AS56814
@@ -1713,8 +1713,6 @@ export:         to AS28890
 announce AS-MSKROUTESERVER
 export:         to AS28891
 announce AS-MSKROUTESERVER
-export:         to AS28917
-announce AS-MSKROUTESERVER
 export:         to AS28968
 announce AS-MSKROUTESERVER
 export:         to AS29076
@@ -2205,6 +2203,8 @@ export:         to AS56679
 announce AS-MSKROUTESERVER
 export:         to AS56694
 announce AS-MSKROUTESERVER
+export:         to AS56701
+announce AS-MSKROUTESERVER
 export:         to AS56814
 announce AS-MSKROUTESERVER
 export:         to AS56864
@@ -2492,7 +2492,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-07T09:48:05Z
+last-modified:  2025-11-10T09:48:43Z
 source:         RIPE
 
 as-num:         AS8631

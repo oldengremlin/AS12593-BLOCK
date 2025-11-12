@@ -30,8 +30,6 @@ members:        AS-IP-MAX, AS-IP-MAX-V6
 members:        AS-VKONTAKTE
 # from AS28890:
 members:        AS-INSYS-EKB
-# from AS28917:
-members:        AS-FIORD
 # from AS29076:
 members:        AS-CITYTELECOM
 # from AS31133:
@@ -112,7 +110,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2025-10-08T07:39:42Z
+last-modified:  2025-11-10T07:41:41Z
 source:         RIPE
 
 
@@ -505,8 +503,6 @@ members:        AS-TTC
 members:        AS-INSYS-EKB
 # from AS28891:
 members:        AS-CITTEL
-# from AS28917:
-members:        AS-FIORD
 # from AS28968:
 members:        AS-EUT
 # from AS29076:
@@ -997,6 +993,8 @@ members:        AS-MELBICOM
 members:        AS56679
 # from AS56694:
 members:        AS-DHUB
+# from AS56701:
+members:        AS-AVANTA
 # from AS56814:
 members:        AS56814
 # from AS56864:
@@ -1288,7 +1286,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-11-07T09:48:05Z
+last-modified:  2025-11-10T09:48:42Z
 source:         RIPE
 
 
@@ -2962,9 +2960,6 @@ accept AS-VKONTAKTE
 import:         from AS28890
 action pref=100;
 accept AS-INSYS-EKB
-import:         from AS28917
-action pref=100;
-accept AS-FIORD
 import:         from AS29076
 action pref=100;
 accept AS-CITYTELECOM
@@ -3102,8 +3097,6 @@ export:         to AS28709
 announce AS-EKTROUTESERVER
 export:         to AS28890
 announce AS-EKTROUTESERVER
-export:         to AS28917
-announce AS-EKTROUTESERVER
 export:         to AS29076
 announce AS-EKTROUTESERVER
 export:         to AS31133
@@ -3182,7 +3175,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-10-08T07:39:46Z
+last-modified:  2025-11-10T07:41:45Z
 source:         RIPE
 
 
@@ -4880,9 +4873,6 @@ accept AS-INSYS-EKB
 import:         from AS28891
 action pref=100;
 accept AS-CITTEL
-import:         from AS28917
-action pref=100;
-accept AS-FIORD
 import:         from AS28968
 action pref=100;
 accept AS-EUT
@@ -5618,6 +5608,9 @@ accept AS56679
 import:         from AS56694
 action pref=100;
 accept AS-DHUB
+import:         from AS56701
+action pref=100;
+accept AS-AVANTA
 import:         from AS56814
 action pref=100;
 accept AS56814
@@ -6263,8 +6256,6 @@ export:         to AS28890
 announce AS-MSKROUTESERVER
 export:         to AS28891
 announce AS-MSKROUTESERVER
-export:         to AS28917
-announce AS-MSKROUTESERVER
 export:         to AS28968
 announce AS-MSKROUTESERVER
 export:         to AS29076
@@ -6755,6 +6746,8 @@ export:         to AS56679
 announce AS-MSKROUTESERVER
 export:         to AS56694
 announce AS-MSKROUTESERVER
+export:         to AS56701
+announce AS-MSKROUTESERVER
 export:         to AS56814
 announce AS-MSKROUTESERVER
 export:         to AS56864
@@ -7042,7 +7035,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-07T09:48:05Z
+last-modified:  2025-11-10T09:48:43Z
 source:         RIPE
 
 
