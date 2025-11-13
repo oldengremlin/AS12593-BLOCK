@@ -30,8 +30,8 @@ import:         from AS12773 at cr1-89 accept AS-MESHNET
 export:         to AS12773 at cr1-89 announce ANY
 import:         from AS12773 at cr1-60 accept AS-MESHNET
 export:         to AS12773 at cr1-60 announce ANY
-import:         from AS24881 accept AS24881
-export:         to AS24881 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
+import:         from AS-INTERPHONE accept AS-INTERPHONE
+export:         to AS-INTERPHONE announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS34786 accept AS-DN-VNET
 export:         to AS34786 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS35273 accept AS35273
@@ -125,13 +125,16 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MIV-MNT
 mnt-by:         IRA35-MNT
 created:        2022-03-24T13:12:47Z
-last-modified:  2025-08-07T13:02:17Z
+last-modified:  2025-11-11T12:55:58Z
 source:         RIPE
 abuse-c:        ACRO47149-RIPE
 
 as-num:         AS206810
 country:        RU
 as-name:        UGLETELECOM GUP DNR "UGLETELECOM"
+as-num:         AS206810
+country:        RU
+as-name:        null
 as-num:         AS206810
 country:        RU
 as-name:        null

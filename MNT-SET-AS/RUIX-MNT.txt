@@ -503,6 +503,8 @@ members:        AS-TTC
 members:        AS-INSYS-EKB
 # from AS28891:
 members:        AS-CITTEL
+# from AS28917:
+members:        AS-FIORD
 # from AS28968:
 members:        AS-EUT
 # from AS29076:
@@ -987,6 +989,8 @@ members:        AS55818:AS-NAPINFO-MCIX
 members:        AS-ZHIGULINET
 # from AS56534:
 members:        AS-CMFT
+# from AS56621:
+members:        AS-INTEX
 # from AS56630:
 members:        AS-MELBICOM
 # from AS56679:
@@ -1170,7 +1174,7 @@ members:        AS-LIFESTREAM
 # from AS201119:
 members:        AS201119
 # from AS201147:
-members:        AS201147
+members:        AS201147:AS-MSK-SET
 # from AS201211:
 members:        AS-DRUGOYTEL
 # from AS201302:
@@ -1286,7 +1290,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-11-10T09:48:42Z
+last-modified:  2025-11-11T09:49:13Z
 source:         RIPE
 
 
@@ -4873,6 +4877,9 @@ accept AS-INSYS-EKB
 import:         from AS28891
 action pref=100;
 accept AS-CITTEL
+import:         from AS28917
+action pref=100;
+accept AS-FIORD
 import:         from AS28968
 action pref=100;
 accept AS-EUT
@@ -5599,6 +5606,9 @@ accept AS-ZHIGULINET
 import:         from AS56534
 action pref=100;
 accept AS-CMFT
+import:         from AS56621
+action pref=100;
+accept AS-INTEX
 import:         from AS56630
 action pref=100;
 accept AS-MELBICOM
@@ -5874,7 +5884,7 @@ action pref=100;
 accept AS201119
 import:         from AS201147
 action pref=100;
-accept AS201147
+accept AS201147:AS-MSK-SET
 import:         from AS201211
 action pref=100;
 accept AS-DRUGOYTEL
@@ -6255,6 +6265,8 @@ announce AS-MSKROUTESERVER
 export:         to AS28890
 announce AS-MSKROUTESERVER
 export:         to AS28891
+announce AS-MSKROUTESERVER
+export:         to AS28917
 announce AS-MSKROUTESERVER
 export:         to AS28968
 announce AS-MSKROUTESERVER
@@ -6740,6 +6752,8 @@ export:         to AS56407
 announce AS-MSKROUTESERVER
 export:         to AS56534
 announce AS-MSKROUTESERVER
+export:         to AS56621
+announce AS-MSKROUTESERVER
 export:         to AS56630
 announce AS-MSKROUTESERVER
 export:         to AS56679
@@ -7035,7 +7049,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-10T09:48:43Z
+last-modified:  2025-11-11T09:49:17Z
 source:         RIPE
 
 

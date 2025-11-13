@@ -27,20 +27,20 @@ export:         to AS20485 announce AS-ORIONNET
 mp-export:      afi ipv6.unicast to AS20485 announce AS-ORIONNET;
 import:         from AS13094 accept ANY
 mp-import:      afi ipv6.unicast from AS13094 accept ANY;
-import:         from AS60430 accept AS-RED-IX-PEERS
-mp-import:      afi ipv6.unicast from AS60430 accept AS-RED-IX-PEERS;
 import:         from AS60763 accept AS-SIBIR-IX
 mp-import:      afi ipv6.unicast from AS60763 accept AS-SIBIR-IX;
 import:         from AS50384 accept AS-W-IX
 mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX;
+import:         from AS48586 accept AS-BAIKAL-IX-PEERS
+mp-import:      afi ipv6.unicast from AS48586 accept AS-BAIKAL-IX-PEERS;
 export:         to AS13094 announce AS-ORIONNET
 mp-export:      afi ipv6.unicast to AS13094 announce AS-ORIONNET;
-export:         to AS60430 announce AS-ORIONNET
-mp-export:      afi ipv6.unicast to AS60430 announce AS-ORIONNET;
 export:         to AS60763 announce AS-ORIONNET
 mp-export:      afi ipv6.unicast to AS60763 announce AS-ORIONNET;
 export:         to AS50384 announce AS-ORIONNET
 mp-export:      afi ipv6.unicast to AS50384 announce AS-ORIONNET;
+export:         to AS48586 announce AS-ORIONNET
+mp-export:      afi ipv6.unicast to AS48586 announce AS-ORIONNET;
 import:         from AS50439 accept AS50439
 import:         from AS50427 accept AS-ABAKANNET
 mp-import:      afi ipv6.unicast from AS50427 accept AS-ABAKANNET;
@@ -69,12 +69,15 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MORNING-MNT
 created:        2004-03-31T12:46:47Z
-last-modified:  2025-02-24T15:01:10Z
+last-modified:  2025-11-11T09:18:49Z
 source:         RIPE
 
 as-num:         AS31257
 country:        RU
 as-name:        ORIONNET-KRK Orion Telecom LLC
+as-num:         AS31257
+country:        RU
+as-name:        null
 as-num:         AS31257
 country:        RU
 as-name:        null
