@@ -2,72 +2,70 @@ aut-num:        AS8641
 as-name:        NAUKANET-AS
 descr:          BACKBONE AS of "Nauka-Svyaz"
 org:            ORG-NA41-RIPE
-mp-import:      afi any.unicast from AS31133 accept ANY
-mp-export:      afi any.unicast to AS31133 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS1299 accept ANY
-mp-export:      afi any.unicast to AS1299 announce AS-NAUKANET
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-NAUKANET
+import:         from AS1299 accept ANY
+export:         to AS1299 announce AS-NAUKANET
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-NAUKANET
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-NAUKANET
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS57304 accept ANY
-mp-export:      afi any.unicast to AS57304 announce AS-NAUKANET
+import:         from AS57304 accept ANY
+export:         to AS57304 announce AS-NAUKANET
 import:         from AS3491 accept ANY
 export:         to AS3491 announce AS-NAUKANET
 import:         from AS199231 accept ANY
 export:         to AS199231 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS50952 accept ANY
-mp-export:      afi any.unicast to AS50952 announce AS-NAUKANET
+import:         from AS50952 accept ANY
+export:         to AS50952 announce AS-NAUKANET
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-NAUKANET
-mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
-mp-export:      afi ipv6.unicast to AS8631 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS6695 accept ANY
-mp-export:      afi any.unicast to AS6695 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS31500 accept AS-GLOBAL-IX
-mp-export:      afi any.unicast to AS31500 announce AS-NAUKANET
+import:         from AS6695 accept ANY
+export:         to AS6695 announce AS-NAUKANET
+import:         from AS31500 accept AS-GLOBAL-IX
+export:         to AS31500 announce AS-NAUKANET
 import:         from AS50817 accept ANY
 export:         to AS50817 announce AS-NAUKANET
 import:         from AS207362 accept ANY
 export:         to AS207362 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS56931 accept ANY
-mp-export:      afi any.unicast to AS56931 announce AS-NAUKANET
+import:         from AS56931 accept ANY
+export:         to AS56931 announce AS-NAUKANET
 import:         from AS13094 accept ANY
 export:         to AS13094 announce AS-NAUKANET
-mp-export:      afi any.unicast to AS11344 announce AS-NAUKANET
+export:         to AS11344 announce AS-NAUKANET
 export:         to AS21357 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS15169 accept AS-GOOGLE
-mp-export:      afi any.unicast to AS15169 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS16509 accept AS-AMAZON
-mp-export:      afi any.unicast to AS16509 announce AS-NAUKANET
+import:         from AS15169 accept AS-GOOGLE
+export:         to AS15169 announce AS-NAUKANET
+import:         from AS16509 accept AS-AMAZON
+export:         to AS16509 announce AS-NAUKANET
 import:         from AS47764 accept AS-MAILRU
 export:         to AS47764 announce AS-NAUKANET
 import:         from AS9049 accept ANY
 export:         to AS9049 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS32934 accept AS-FACEBOOK
-mp-export:      afi any.unicast to AS32934 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS2906 accept AS-NFLX
-mp-export:      afi any.unicast to AS2906 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS32590 accept AS-VALVE
-mp-export:      afi any.unicast to AS32590 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS42 accept AS-PCH
-mp-export:      afi any.unicast to AS42 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS3856 accept AS-PCH
-mp-export:      afi any.unicast to AS3856 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS57629 accept AS-57629
-mp-export:      afi any.unicast to AS57629 announce AS-NAUKANET
+import:         from AS32934 accept AS-FACEBOOK
+export:         to AS32934 announce AS-NAUKANET
+import:         from AS2906 accept AS-NFLX
+export:         to AS2906 announce AS-NAUKANET
+import:         from AS32590 accept AS-VALVE
+export:         to AS32590 announce AS-NAUKANET
+import:         from AS42 accept AS-PCH
+export:         to AS42 announce AS-NAUKANET
+import:         from AS3856 accept AS-PCH
+export:         to AS3856 announce AS-NAUKANET
+import:         from AS57629 accept AS-57629
+export:         to AS57629 announce AS-NAUKANET
 import:         from AS42632 accept AS-MNOGOBYTE
 export:         to AS42632 announce AS-NAUKANET
 import:         from AS28917 accept ANY
 export:         to AS28917 announce AS-NAUKANET
-mp-import:      afi ipv4.unicast from AS6939 accept ANY
-mp-export:      afi ipv4.unicast to AS6939 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS136907 accept AS136907
-mp-export:      afi any.unicast to AS136907 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS16276 accept AS-OVH
-mp-export:      afi any.unicast to AS16276 announce AS-NAUKANET
+import:         from AS6939 accept ANY
+export:         to AS6939 announce AS-NAUKANET
+import:         from AS136907 accept AS136907
+export:         to AS136907 announce AS-NAUKANET
+import:         from AS16276 accept AS-OVH
+export:         to AS16276 announce AS-NAUKANET
 import:         from AS3267 accept AS-RUNNET
 export:         to AS3267 announce AS-NAUKANET
 import:         from AS57724 accept AS-DDOS-GUARD
@@ -84,10 +82,8 @@ import:         from AS31430 accept AS-TEL-NET
 export:         to AS31430 announce AS-NAUKANET
 import:         from AS13238 accept AS-YANDEX
 export:         to AS13238 announce AS-NAUKANET
-mp-import:      afi ipv6.unicast from AS13238 accept AS-YANDEX
-mp-export:      afi ipv6.unicast to AS13238 announce AS-NAUKANET
-mp-import:      afi any.unicast from AS13335 accept AS-CLOUDFLARE
-mp-export:      afi any.unicast to AS13335 announce AS-NAUKANET
+import:         from AS13335 accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-NAUKANET
 import:         from AS132203 accept AS132203
 export:         to AS132203 announce AS-NAUKANET
 import:         from AS8551 accept AS8551
@@ -121,7 +117,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NAUKANET-MNT
 created:        2002-01-18T15:32:43Z
-last-modified:  2025-04-23T07:29:18Z
+last-modified:  2025-11-12T15:04:55Z
 source:         RIPE
 
 as-num:         AS8641
