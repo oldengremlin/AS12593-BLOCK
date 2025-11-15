@@ -471,6 +471,7 @@ members:        AS20842
 members:        AS20866
 members:        AS21030
 members:        AS21087
+members:        AS21226
 members:        AS21231
 members:        AS21372
 members:        AS23242
@@ -1290,7 +1291,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:31:17Z
-last-modified:  2025-11-11T16:48:08Z
+last-modified:  2025-11-13T12:32:19Z
 source:         RIPE
 
 
@@ -5741,6 +5742,8 @@ import:         from AS21202 action pref=105; accept AS-DCS
 export:         to AS21202 announce AS-MTU
 import:         from AS21219 action pref=105; accept AS-FF-TRANSIT
 export:         to AS21219 announce AS-MTU
+import:         from AS21226 action pref=140; accept AS21226
+export:         to AS21226 announce ANY
 import:         from AS21263 action pref=105; accept AS-TELEDATA
 export:         to AS21263 announce AS-MTU
 import:         from AS21353 action pref=105; accept AS-ARTCOMS
@@ -7549,7 +7552,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:20:57Z
-last-modified:  2025-11-11T16:48:53Z
+last-modified:  2025-11-13T12:31:51Z
 source:         RIPE
 
 

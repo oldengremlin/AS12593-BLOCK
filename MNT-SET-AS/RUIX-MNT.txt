@@ -92,6 +92,8 @@ members:        AS62261
 members:        AS62331
 # from AS201119:
 members:        AS201119
+# from AS201512:
+members:        AS201512
 # from AS202498:
 members:        AS202498
 # from AS203118:
@@ -110,7 +112,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2025-11-10T07:41:41Z
+last-modified:  2025-11-13T07:40:14Z
 source:         RIPE
 
 
@@ -3057,6 +3059,9 @@ accept AS62331
 import:         from AS201119
 action pref=100;
 accept AS201119
+import:         from AS201512
+action pref=100;
+accept AS201512
 import:         from AS202498
 action pref=100;
 accept AS202498
@@ -3163,6 +3168,8 @@ export:         to AS62331
 announce AS-EKTROUTESERVER
 export:         to AS201119
 announce AS-EKTROUTESERVER
+export:         to AS201512
+announce AS-EKTROUTESERVER
 export:         to AS202498
 announce AS-EKTROUTESERVER
 export:         to AS203118
@@ -3179,7 +3186,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-11-10T07:41:45Z
+last-modified:  2025-11-13T07:40:14Z
 source:         RIPE
 
 

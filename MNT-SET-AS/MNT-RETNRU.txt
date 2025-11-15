@@ -159,7 +159,6 @@ members:        AS-ISATEL
 members:        AS-ITERANET
 members:        AS-ITGLOBAL
 members:        AS-ITGRAD
-members:        AS-ITK
 members:        AS-ITNET33
 members:        AS-ITREGION
 members:        AS-ITSERVICE
@@ -334,6 +333,7 @@ members:        AS49395:AS-RTCLOUD-3RD
 members:        AS51219:AS-K2INT
 members:        AS51444:AS-ITLITE
 members:        AS57073:AS-WILDBERRIES
+members:        AS62379:AS-FREEWAY
 members:        AS63139:AS-CUSTOMER
 members:        AS8484
 members:        AS12335
@@ -563,7 +563,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2025-10-31T19:59:19Z
+last-modified:  2025-11-13T19:59:20Z
 source:         RIPE
 
 
@@ -1992,8 +1992,6 @@ import:         from  AS61400 action pref=100; accept   AS-NETRACK
 export:         to    AS61400                  announce ANY
 import:         from  AS61960 action pref=100; accept   AS-CLOUDLAB
 export:         to    AS61960                  announce ANY
-import:         from  AS62040 action pref=100; accept   AS-ITK
-export:         to    AS62040                  announce ANY
 import:         from  AS62067 action pref=100; accept   AS-TS
 export:         to    AS62067                  announce ANY
 import:         from  AS62082 action pref=100; accept   AS62082
@@ -2018,6 +2016,8 @@ import:         from  AS62314 action pref=100; accept   AS-ATMOSPHERICA
 export:         to    AS62314                  announce ANY
 import:         from  AS62316 action pref=100; accept   AS-GRAN-CALL
 export:         to    AS62316                  announce ANY
+import:         from  AS62379 action pref=100; accept   AS62379:AS-FREEWAY
+export:         to    AS62379                  announce ANY
 import:         from  AS62382 action pref=100; accept   AS62382
 export:         to    AS62382                  announce ANY
 import:         from  AS62404 action pref=100; accept   AS62404
@@ -2907,7 +2907,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-11-12T19:59:20Z
+last-modified:  2025-11-13T19:59:20Z
 source:         RIPE
 
 
