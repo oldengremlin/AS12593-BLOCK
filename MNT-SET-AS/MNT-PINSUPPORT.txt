@@ -364,13 +364,14 @@ members:        AS-IXNT
 members:        AS-HELITELE
 members:        AS-NETFORT
 members:        AS-GSYST
+members:        AS-WAICORE
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:05:11Z
-last-modified:  2025-11-13T14:51:11Z
+last-modified:  2025-11-17T13:36:44Z
 source:         RIPE
 
 
@@ -502,6 +503,7 @@ members:        AS-CXXI
 members:        AS-ONLINE-DN
 members:        AS-NETFORT
 members:        AS-GSYST
+members:        AS-WAICORE
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         PITER-IX-MNT
@@ -509,7 +511,7 @@ mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2020-11-06T12:10:10Z
-last-modified:  2025-11-11T10:16:30Z
+last-modified:  2025-11-17T13:36:14Z
 source:         RIPE
 
 
@@ -1146,13 +1148,14 @@ members:        AS30823:AS-AUROLOGIC
 members:        AS-DOVECOM-RU
 members:        AS210079
 members:        AS139057:AS-CONE
+members:        AS-WAICORE
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2023-08-15T18:17:57Z
-last-modified:  2025-11-10T10:28:51Z
+last-modified:  2025-11-17T12:28:02Z
 source:         RIPE
 
 
@@ -3061,12 +3064,13 @@ members:        AS-CITYTELECOM
 members:        AS30823:AS-AUROLOGIC
 members:        AS-DOVECOM-RU
 members:        AS-NETFORT
+members:        AS-WAICORE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2017-11-18T18:58:06Z
-last-modified:  2025-11-06T08:55:20Z
+last-modified:  2025-11-17T12:27:29Z
 source:         RIPE
 
 
@@ -3844,6 +3848,8 @@ import:         from AS213499 action pref=100; accept AS213499
 export:         to AS213499 announce as-piter-ix-helsinki
 import:         from AS51341 accept AS-GSYST
 export:         to AS51341 announce AS-PITER-IX-HELSINKI
+import:         from AS213887 action pref=100; accept AS-WAICORE
+export:         to AS213887 announce AS-PITER-IX-HELSINKI
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -3852,7 +3858,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-10-08T08:51:37Z
-last-modified:  2025-11-11T12:27:45Z
+last-modified:  2025-11-17T13:39:22Z
 source:         RIPE
 sponsoring-org: ORG-PCL30-RIPE
 
@@ -4142,6 +4148,8 @@ import:         from AS213499 action pref=100; accept AS213499
 export:         to AS213499 announce as-piter-ix-fra
 import:         from AS51341 accept AS-GSYST
 export:         to AS51341 announce as-piter-ix-fra
+import:         from AS213887 action pref=100; accept AS-WAICORE
+export:         to AS213887 announce as-piter-ix-fra
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -4149,7 +4157,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T08:46:05Z
-last-modified:  2025-11-11T12:32:44Z
+last-modified:  2025-11-17T13:40:24Z
 source:         RIPE
 
 
@@ -5405,6 +5413,8 @@ import:         from AS213499 action pref=100; accept AS213499
 export:         to AS213499 announce as-piter-ix-msk
 import:         from AS39529 action pref=100; accept  AS-M3X
 export:         to AS39529 announce as-piter-ix-msk
+import:         from AS213887 action pref=100; accept AS-WAICORE
+export:         to AS213887 announce as-piter-ix-msk
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -5413,7 +5423,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2025-11-11T12:22:06Z
+last-modified:  2025-11-17T12:41:12Z
 source:         RIPE
 
 
@@ -6427,6 +6437,8 @@ import:         from AS209008 action pref=100; accept AS209008
 export:         to AS209008 announce as-piter-ix
 import:         from AS213499 action pref=100; accept AS213499
 export:         to AS213499 announce as-piter-ix
+import:         from AS213887 action pref=100; accept AS-WAICORE
+export:         to AS213887 announce as-piter-ix
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6435,7 +6447,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2025-11-11T12:25:34Z
+last-modified:  2025-11-17T12:39:49Z
 source:         RIPE
 
 

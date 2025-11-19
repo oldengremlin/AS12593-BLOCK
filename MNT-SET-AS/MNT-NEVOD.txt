@@ -80,6 +80,8 @@ mp-import:      afi ipv6.unicast from AS49869 action pref=110;community={51032:2
 mp-export:      afi ipv6.unicast to AS49869 announce AS51032
 mp-import:      afi ipv6.unicast from AS50817 action pref=110;community={51032:27}; accept as-piter-ix
 mp-export:      afi ipv6.unicast to AS50817 announce AS51032
+mp-import:      afi ipv6.unicast from AS48193 action pref=110;community={51032:29}; accept as-piter-ix-fra
+mp-export:      afi ipv6.unicast to AS48193 announce AS51032
 import:         from AS47844 action pref=110;community={51032:31}; accept AS-STARNET-VLZ
 export:         to AS47844 announce ANY
 import:         from AS34804 action pref=110;community={51032:30}; accept AS34804
@@ -93,7 +95,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NEVOD
 created:        2010-05-20T08:08:45Z
-last-modified:  2025-10-29T11:12:01Z
+last-modified:  2025-11-17T18:45:32Z
 source:         RIPE
 
 
