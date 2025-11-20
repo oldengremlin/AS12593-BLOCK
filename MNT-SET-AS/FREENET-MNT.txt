@@ -352,10 +352,9 @@ mp-import:      afi ipv4.unicast, ipv6.unicast from AS13238 action pref=100; acc
 mp-export:      afi ipv4.unicast, ipv6.unicast to AS13238 announce AS-FREENET
 mp-import:      afi ipv4.unicast from AS30124 action pref=90; accept {192.5.5.0/24}
 mp-import:      afi ipv6.unicast from AS30124 action pref=90; accept {2001:500:2f::/48}
-mp-export:      afi ipv4.unicast, ipv6.unicast to AS30124 announce AS-FREENET
-mp-import:      afi ipv4.unicast from AS31059 action pref=100; accept AS-AVELACOM
-mp-import:      afi ipv6.unicast from AS31059 action pref=100; accept AS-AVELACOM6
-mp-export:      afi ipv4.unicast, ipv6.unicast to AS31059 announce AS-FREENET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS215182 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS215182 action pref=100; accept AS-AVELACOM
+mp-import:      afi ipv6.unicast from AS215182 action pref=100; accept AS-AVELACOM6
 import:         from AS43832 action pref=100; accept AS43832
 export:         to AS43832 announce AS-FREENET
 import-via:     afi ipv4.unicast, ipv6.unicast AS49869 from AS-PITER-IX-MSK action pref=100; accept AS-PITER-IX-MSK
@@ -377,7 +376,7 @@ mnt-by:         RIPE-NCC-LEGACY-MNT
 mnt-by:         AS2895-MNT
 mnt-by:         FREENET-MNT
 created:        2002-09-10T15:26:09Z
-last-modified:  2025-08-21T13:45:07Z
+last-modified:  2025-11-18T10:47:41Z
 source:         RIPE
 
 

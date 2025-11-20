@@ -27,8 +27,8 @@ mp-import:      afi any.unicast from as3327 accept as-citictel-cpc-msk-ix
 mp-export:      afi any.unicast to as3327 announce as3267:as-customers
 mp-import:      afi ipv4.unicast from as3351 accept as3351
 mp-export:      afi ipv4.unicast to as3351 announce {0.0.0.0/0}
-mp-import:      afi ipv4.unicast from as5387 accept as-nsc-set
-mp-export:      afi ipv4.unicast to as5387 announce as3267:as-nren
+mp-import:      afi ipv4.unicast from as5387 accept as5387
+mp-export:      afi ipv4.unicast to as5387 announce {0.0.0.0/0}
 mp-import:      afi ipv4.unicast from as5433 accept as-rokson
 mp-export:      afi ipv4.unicast to as5433 announce any
 mp-import:      afi ipv4.unicast from as5467 accept as-mipt
@@ -179,8 +179,6 @@ mp-import:      afi ipv4.unicast from as30853 accept as30853
 mp-export:      afi ipv4.unicast to as30853 announce as3267:as-nren
 mp-import:      afi ipv4.unicast from as30911 accept as30911
 mp-export:      afi ipv4.unicast to as30911 announce any {0.0.0.0/0}
-mp-import:      afi ipv4.unicast from as31059 accept as-avelacom
-mp-export:      afi ipv4.unicast to as31059 announce as3267:as-customers
 mp-import:      afi any.unicast from as31133 accept as-mf-mgsm
 mp-export:      afi any.unicast to as31133 announce as3267:as-customers
 mp-import:      afi any.unicast from as31430 accept as-tel-net as-tel-net-v6
@@ -353,13 +351,15 @@ mp-import:      afi any.unicast from as212899 accept as212899
 mp-export:      afi any.unicast to as212899 announce any
 mp-import:      afi ipv4.unicast from as215098 accept as215098:as-ssk
 mp-export:      afi ipv4.unicast to as215098 announce as3267:as-cust as3267:as-peer as3267:as-prov
+mp-import:      afi ipv4.unicast from as215182 accept as-avelacom
+mp-export:      afi ipv4.unicast to as215182 announce as3267:as-customers
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         ripe-ncc-end-mnt
 mnt-by:         infr-mnt
 created:        2002-09-09T08:24:32Z
-last-modified:  2025-10-01T08:22:14Z
+last-modified:  2025-11-18T17:05:15Z
 source:         RIPE
 
 as-num:         AS3267

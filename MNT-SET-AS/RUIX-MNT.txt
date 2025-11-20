@@ -529,8 +529,6 @@ members:        AS-TRANSDATA
 members:        AS-FROOT
 # from AS30833:
 members:        AS-TNC
-# from AS31059:
-members:        AS-AVELACOM
 # from AS31133:
 members:        AS-CDN-MEGAFON, AS-MF-MGSM
 # from AS31174:
@@ -1281,6 +1279,8 @@ members:        AS213499
 members:        AS213624
 # from AS213922:
 members:        AS213922
+# from AS215182:
+members:        AS215182:AS-AVELACOM-BUSINESS
 # from AS216262:
 members:        AS216262
 # from AS216334:
@@ -1292,7 +1292,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-11-11T09:49:13Z
+last-modified:  2025-11-18T09:39:59Z
 source:         RIPE
 
 
@@ -4920,9 +4920,6 @@ accept AS-FROOT
 import:         from AS30833
 action pref=100;
 accept AS-TNC
-import:         from AS31059
-action pref=100;
-accept AS-AVELACOM
 import:         from AS31133
 action pref=100;
 accept AS-CDN-MEGAFON AS-MF-MGSM
@@ -6048,6 +6045,9 @@ accept AS213624
 import:         from AS213922
 action pref=100;
 accept AS213922
+import:         from AS215182
+action pref=100;
+accept AS215182:AS-AVELACOM-BUSINESS
 import:         from AS216262
 action pref=100;
 accept AS216262
@@ -6296,8 +6296,6 @@ announce AS-MSKROUTESERVER
 export:         to AS30124
 announce AS-MSKROUTESERVER
 export:         to AS30833
-announce AS-MSKROUTESERVER
-export:         to AS31059
 announce AS-MSKROUTESERVER
 export:         to AS31133
 announce AS-MSKROUTESERVER
@@ -7049,6 +7047,8 @@ export:         to AS213624
 announce AS-MSKROUTESERVER
 export:         to AS213922
 announce AS-MSKROUTESERVER
+export:         to AS215182
+announce AS-MSKROUTESERVER
 export:         to AS216262
 announce AS-MSKROUTESERVER
 export:         to AS216334
@@ -7056,7 +7056,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-11T09:49:17Z
+last-modified:  2025-11-18T09:39:59Z
 source:         RIPE
 
 
