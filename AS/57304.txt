@@ -1051,7 +1051,7 @@ import:         from AS214881 action pref=100; accept   AS214881
 export:         to   AS214881                  announce ANY
 import:         from AS215037 action pref=100; accept   AS215037
 export:         to   AS215037                  announce ANY
-import:         from AS215307 action pref=100; accept   AS215307
+import:         from AS215307 action pref=100; accept   AS215307:AS-MOVETEL-CUSTOMERS
 export:         to   AS215307                  announce ANY
 import:         from AS215376 action pref=100; accept   AS206728:AS-MEDIALANDTECHNOLOGY
 export:         to   AS215376                  announce ANY
@@ -1597,7 +1597,7 @@ mp-import:      afi ipv6.unicast from AS212748 action pref=100; accept   AS-HELI
 mp-export:      afi ipv6.unicast to   AS212748                  announce ANY
 mp-import:      afi ipv6.unicast from AS214294 action pref=100; accept   AS214294:AS-NOOB
 mp-export:      afi ipv6.unicast to   AS214294                  announce ANY
-mp-import:      afi ipv6.unicast from AS215307 action pref=100; accept   AS215307
+mp-import:      afi ipv6.unicast from AS215307 action pref=100; accept   AS215307:AS-MOVETEL-CUSTOMERS
 mp-export:      afi ipv6.unicast to   AS215307                  announce ANY
 mp-import:      afi ipv6.unicast from AS215376 action pref=100; accept   AS206728:AS-MEDIALANDTECHNOLOGY
 mp-export:      afi ipv6.unicast to   AS215376                  announce ANY
@@ -1616,12 +1616,15 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-11-13T19:59:20Z
+last-modified:  2025-11-20T19:59:20Z
 source:         RIPE
 
 as-num:         AS57304
 country:        RU
 as-name:        RETNRU-AS JSC "RetnNet"
+as-num:         AS57304
+country:        RU
+as-name:        null
 as-num:         AS57304
 country:        RU
 as-name:        null

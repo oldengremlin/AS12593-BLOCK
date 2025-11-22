@@ -1640,6 +1640,8 @@ mp-import:      from AS43274 action pref=100; accept AS-TELEOS-1
 mp-export:      to AS43274 announce ANY
 import:         from AS57614 action pref=100; accept AS57614
 export:         to AS57614 announce {0.0.0.0/0}
+import:         from AS205638 action pref=100; accept AS205638
+export:         to AS205638 announce ANY
 import:         from AS47999 action pref=100; accept AS47999
 export:         to AS47999 announce ANY
 import:         from AS57181 action pref=100; accept AS-RUSTELECOM
@@ -3422,10 +3424,6 @@ import:         from AS50003 action pref=100; accept AS50003
 export:         to AS50003 announce {0.0.0.0/0}
 import:         from AS47470 action pref=100; accept AS47470
 export:         to AS47470 announce ANY
-import:         from AS197574 action pref=100; accept AS197574
-export:         to AS197574 announce ANY
-mp-import:      afi ipv6 from AS197574 action pref=100; accept AS197574
-mp-export:      afi ipv6 to AS197574 announce ANY
 import:         from AS43661 action pref=100; accept AS43661
 export:         to AS43661 announce ANY
 import:         from AS35354 action pref=100; accept AS35354
@@ -5251,12 +5249,15 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-11-17T11:57:08Z
+last-modified:  2025-11-20T12:21:26Z
 source:         RIPE
 
 as-num:         AS3216
 country:        RU
 as-name:        SOVAM-AS PJSC "Vimpelcom"
+as-num:         AS3216
+country:        RU
+as-name:        null
 as-num:         AS3216
 country:        RU
 as-name:        null

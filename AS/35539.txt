@@ -3,10 +3,10 @@ as-name:        INFOLINK-T-AS
 descr:          Moscow, Russia
 org:            ORG-OIT1-RIPE
 import:         from AS28917 action pref=110; accept ANY
-import:         from AS35598 action pref=110; accept ANY
-import:         from AS202984 action pref=110; accept ANY
 export:         to AS28917 announce AS-INFOLINK
+import:         from AS35598 action pref=110; accept ANY
 export:         to AS35598 announce AS-INFOLINK
+import:         from AS202984 action pref=110; accept ANY
 export:         to AS202984 announce AS-INFOLINK
 mp-import:      afi ipv6.unicast from AS28917 action pref=110; accept ANY
 mp-export:      afi ipv6.unicast to AS28817 announce AS-INFOLINK
@@ -14,12 +14,6 @@ mp-import:      afi ipv6.unicast from AS35598 action pref=110; accept ANY
 mp-export:      afi ipv6.unicast to AS35598 announce AS-INFOLINK
 import:         from AS8631 action pref=120; accept ANY
 export:         to AS8631 announce AS-INFOLINK
-import:         from AS31500 action pref=125; accept AS31500
-export:         to AS31500 announce AS-INFOLINK
-import:         from AS48166 action pref=125; accept AS48166
-export:         to AS48166 announce AS-INFOLINK
-import:         from AS46489 action pref=125; accept AS46489
-export:         to AS46489 announce AS-INFOLINK
 import:         from AS16509 action pref=125; accept AS16509
 export:         to AS16509 announce AS-INFOLINK
 import:         from AS45102 action pref=125; accept AS45102
@@ -42,6 +36,8 @@ import:         from AS215584 action pref=130; accept AS215584
 export:         to AS215584 announce ANY
 import:         from AS60681 action pref=130; accept AS60681
 export:         to AS60681 announce ANY
+import:         from AS51147 action pref=130; accept AS51147
+export:         to AS51147 announce ANY
 notify:         it@infolink.ru
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -49,12 +45,15 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OIT1-MNT
 created:        2005-08-30T15:50:21Z
-last-modified:  2025-07-02T10:41:20Z
+last-modified:  2025-11-20T08:33:45Z
 source:         RIPE
 
 as-num:         AS35539
 country:        RU
 as-name:        INFOLINK-T-AS Information and Communication Technologies LLC
+as-num:         AS35539
+country:        RU
+as-name:        null
 as-num:         AS35539
 country:        RU
 as-name:        null

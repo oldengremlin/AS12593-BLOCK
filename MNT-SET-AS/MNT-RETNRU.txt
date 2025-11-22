@@ -320,6 +320,7 @@ members:        AS210928:AS-RDB-CLIENT
 members:        AS211914:AS-AERCA
 members:        AS213452:AS-INFRACOM
 members:        AS214294:AS-NOOB
+members:        AS215307:AS-MOVETEL-CUSTOMERS
 members:        AS215601:AS-ALLHOSTINGS
 members:        AS28761:AS-CUSTOMERS
 members:        AS29426:AS-CONNECTO
@@ -554,7 +555,6 @@ members:        AS214822
 members:        AS214856
 members:        AS214881
 members:        AS215037
-members:        AS215307
 members:        AS215455
 members:        AS216262
 members:        AS273045
@@ -563,7 +563,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2025-11-13T19:59:20Z
+last-modified:  2025-11-20T19:59:20Z
 source:         RIPE
 
 
@@ -742,6 +742,7 @@ members:        AS139057:AS-CONE
 members:        AS198310:AS-MOLNIYA
 members:        AS206728:AS-MEDIALANDTECHNOLOGY
 members:        AS214294:AS-NOOB
+members:        AS215307:AS-MOVETEL-CUSTOMERS
 members:        AS215601:AS-ALLHOSTINGS
 members:        AS28761:AS-CUSTOMERS
 members:        AS47502:AS-OPTIMATELECOM-NET
@@ -816,7 +817,6 @@ members:        AS211362
 members:        AS211796
 members:        AS212136
 members:        AS212165
-members:        AS215307
 members:        AS215455
 members:        AS216262
 admin-c:        DUMY-RIPE
@@ -824,7 +824,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2025-11-12T19:59:19Z
+last-modified:  2025-11-20T19:59:20Z
 source:         RIPE
 
 
@@ -2342,7 +2342,7 @@ import:         from AS214881 action pref=100; accept   AS214881
 export:         to   AS214881                  announce ANY
 import:         from AS215037 action pref=100; accept   AS215037
 export:         to   AS215037                  announce ANY
-import:         from AS215307 action pref=100; accept   AS215307
+import:         from AS215307 action pref=100; accept   AS215307:AS-MOVETEL-CUSTOMERS
 export:         to   AS215307                  announce ANY
 import:         from AS215376 action pref=100; accept   AS206728:AS-MEDIALANDTECHNOLOGY
 export:         to   AS215376                  announce ANY
@@ -2888,7 +2888,7 @@ mp-import:      afi ipv6.unicast from AS212748 action pref=100; accept   AS-HELI
 mp-export:      afi ipv6.unicast to   AS212748                  announce ANY
 mp-import:      afi ipv6.unicast from AS214294 action pref=100; accept   AS214294:AS-NOOB
 mp-export:      afi ipv6.unicast to   AS214294                  announce ANY
-mp-import:      afi ipv6.unicast from AS215307 action pref=100; accept   AS215307
+mp-import:      afi ipv6.unicast from AS215307 action pref=100; accept   AS215307:AS-MOVETEL-CUSTOMERS
 mp-export:      afi ipv6.unicast to   AS215307                  announce ANY
 mp-import:      afi ipv6.unicast from AS215376 action pref=100; accept   AS206728:AS-MEDIALANDTECHNOLOGY
 mp-export:      afi ipv6.unicast to   AS215376                  announce ANY
@@ -2907,7 +2907,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-11-13T19:59:20Z
+last-modified:  2025-11-20T19:59:20Z
 source:         RIPE
 
 
