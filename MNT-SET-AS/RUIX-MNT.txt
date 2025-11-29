@@ -513,6 +513,8 @@ members:        AS-CITTEL
 members:        AS-FIORD
 # from AS28968:
 members:        AS-EUT
+# from AS29049:
+members:        as-azersatmembers, as29049
 # from AS29076:
 members:        AS-CITYTELECOM
 # from AS29124:
@@ -1195,6 +1197,8 @@ members:        AS-SKYTELECOM_TSK
 members:        AS-TEAM-HOST
 # from AS203118:
 members:        AS203118:AS-EZERDI
+# from AS203747:
+members:        AS203747
 # from AS204271:
 members:        AS204271
 # from AS204297:
@@ -1296,7 +1300,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-11-21T09:44:35Z
+last-modified:  2025-11-27T13:53:03Z
 source:         RIPE
 
 
@@ -4916,6 +4920,9 @@ accept AS-FIORD
 import:         from AS28968
 action pref=100;
 accept AS-EUT
+import:         from AS29049
+action pref=100;
+accept as-azersatmembers as29049
 import:         from AS29076
 action pref=100;
 accept AS-CITYTELECOM
@@ -5939,6 +5946,9 @@ accept AS-TEAM-HOST
 import:         from AS203118
 action pref=100;
 accept AS203118:AS-EZERDI
+import:         from AS203747
+action pref=100;
+accept AS203747
 import:         from AS204271
 action pref=100;
 accept AS204271
@@ -6304,6 +6314,8 @@ announce AS-MSKROUTESERVER
 export:         to AS28917
 announce AS-MSKROUTESERVER
 export:         to AS28968
+announce AS-MSKROUTESERVER
+export:         to AS29049
 announce AS-MSKROUTESERVER
 export:         to AS29076
 announce AS-MSKROUTESERVER
@@ -6987,6 +6999,8 @@ export:         to AS202984
 announce AS-MSKROUTESERVER
 export:         to AS203118
 announce AS-MSKROUTESERVER
+export:         to AS203747
+announce AS-MSKROUTESERVER
 export:         to AS204271
 announce AS-MSKROUTESERVER
 export:         to AS204297
@@ -7084,7 +7098,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-21T09:44:39Z
+last-modified:  2025-11-27T13:53:05Z
 source:         RIPE
 
 

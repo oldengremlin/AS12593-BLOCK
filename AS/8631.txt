@@ -339,6 +339,9 @@ accept AS-FIORD
 import:         from AS28968
 action pref=100;
 accept AS-EUT
+import:         from AS29049
+action pref=100;
+accept as-azersatmembers as29049
 import:         from AS29076
 action pref=100;
 accept AS-CITYTELECOM
@@ -1362,6 +1365,9 @@ accept AS-TEAM-HOST
 import:         from AS203118
 action pref=100;
 accept AS203118:AS-EZERDI
+import:         from AS203747
+action pref=100;
+accept AS203747
 import:         from AS204271
 action pref=100;
 accept AS204271
@@ -1727,6 +1733,8 @@ announce AS-MSKROUTESERVER
 export:         to AS28917
 announce AS-MSKROUTESERVER
 export:         to AS28968
+announce AS-MSKROUTESERVER
+export:         to AS29049
 announce AS-MSKROUTESERVER
 export:         to AS29076
 announce AS-MSKROUTESERVER
@@ -2410,6 +2418,8 @@ export:         to AS202984
 announce AS-MSKROUTESERVER
 export:         to AS203118
 announce AS-MSKROUTESERVER
+export:         to AS203747
+announce AS-MSKROUTESERVER
 export:         to AS204271
 announce AS-MSKROUTESERVER
 export:         to AS204297
@@ -2507,7 +2517,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-21T09:44:39Z
+last-modified:  2025-11-27T13:53:05Z
 source:         RIPE
 
 as-num:         AS8631
