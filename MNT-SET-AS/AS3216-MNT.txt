@@ -1,5 +1,6 @@
 as-set:         AS-DIRECTNET
 descr:          DirectNet Customers ASes
+members:        AS-ATEL-LTD
 members:        AS-ERLANG
 members:        AS35271
 members:        AS50060
@@ -82,7 +83,7 @@ notify:         noc@sovintel.ru
 mnt-by:         AS8563-MNT
 mnt-by:         AS3216-MNT
 created:        2001-10-22T07:11:15Z
-last-modified:  2025-11-11T11:50:18Z
+last-modified:  2025-11-28T13:34:07Z
 source:         RIPE
 
 
@@ -140,6 +141,7 @@ members:        AS30924
 members:        AS60363
 members:        AS206710
 members:        AS-SET-S-Telecom
+members:        AS60835
 members:        AS-CNLTD
 members:        AS215098
 members:        AS34545
@@ -421,6 +423,7 @@ members:        AS-CDNNOW
 members:        AS50713
 members:        AS57587
 members:        AS-SPDOP
+members:        AS-ATEL-LTD
 members:        AS215634
 members:        AS-CTGNET
 members:        AS209188
@@ -428,6 +431,7 @@ members:        AS12979
 members:        AS49777
 members:        AS-BESTLINE
 members:        AS-RUSTELECOM
+members:        AS50556
 members:        AS-ARVANCLOUD-CDN
 members:        AS212715:AS-BPMSOFT
 members:        AS47323
@@ -1622,7 +1626,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2025-11-27T09:00:14Z
+last-modified:  2025-11-28T13:19:32Z
 source:         RIPE
 
 
@@ -4898,6 +4902,10 @@ import:         from AS211157 action pref=100; accept AS211157
 export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
+import:         from AS197298 action pref=100; accept AS-ATEL-LTD
+export:         to AS197298 announce ANY
+import:         from AS60835 action pref=100; accept AS60835
+export:         to AS60835 announce ANY
 import:         from AS206710 action pref=100; accept AS206710
 export:         to AS206710 announce ANY
 import:         from AS215634 action pref=100; accept AS215634
@@ -4908,6 +4916,8 @@ import:         from AS12979 action pref=100; accept AS12979
 export:         to AS12979 announce ANY
 import:         from AS21105 action pref=100; accept AS-RTKPRIM
 export:         to AS21105 announce ANY
+import:         from AS50556 action pref=100; accept AS50556
+export:         to AS50556 announce ANY
 import:         from AS50804 action pref=100; accept AS-BESTLINE
 export:         to AS50804 announce {0.0.0.0/0}
 import:         from AS23764 action pref=100; accept AS-CTGNET
@@ -8535,7 +8545,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-11-27T08:59:15Z
+last-modified:  2025-11-28T13:18:35Z
 source:         RIPE
 
 

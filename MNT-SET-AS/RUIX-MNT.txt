@@ -1081,6 +1081,8 @@ members:        AS60544
 members:        AS-TKTEL
 # from AS60840:
 members:        AS-TKS-VRN, AS60840
+# from AS60936:
+members:        AS60936
 # from AS61010:
 members:        AS-IPNETPEERS-1
 # from AS61111:
@@ -1300,7 +1302,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-11-27T13:53:03Z
+last-modified:  2025-11-28T13:45:31Z
 source:         RIPE
 
 
@@ -5772,6 +5774,9 @@ accept AS-TKTEL
 import:         from AS60840
 action pref=100;
 accept AS-TKS-VRN AS60840
+import:         from AS60936
+action pref=100;
+accept AS60936
 import:         from AS61010
 action pref=100;
 accept AS-IPNETPEERS-1
@@ -6883,6 +6888,8 @@ export:         to AS60764
 announce AS-MSKROUTESERVER
 export:         to AS60840
 announce AS-MSKROUTESERVER
+export:         to AS60936
+announce AS-MSKROUTESERVER
 export:         to AS61010
 announce AS-MSKROUTESERVER
 export:         to AS61111
@@ -7098,7 +7105,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-27T13:53:05Z
+last-modified:  2025-11-28T13:45:36Z
 source:         RIPE
 
 
