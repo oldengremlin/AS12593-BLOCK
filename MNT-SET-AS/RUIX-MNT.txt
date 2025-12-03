@@ -1047,6 +1047,8 @@ members:        AS-CHTE
 members:        AS58310
 # from AS58715:
 members:        AS-58715
+# from AS59424:
+members:        AS59424
 # from AS59533:
 members:        AS59533
 # from AS59624:
@@ -1259,6 +1261,8 @@ members:        AS209739
 members:        AS209821
 # from AS210063:
 members:        AS210063
+# from AS210135:
+members:        AS210135
 # from AS210171:
 members:        AS210171
 # from AS210357:
@@ -1302,7 +1306,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-11-28T13:45:31Z
+last-modified:  2025-12-01T13:52:17Z
 source:         RIPE
 
 
@@ -5723,6 +5727,9 @@ accept AS58310
 import:         from AS58715
 action pref=100;
 accept AS-58715
+import:         from AS59424
+action pref=100;
+accept AS59424
 import:         from AS59533
 action pref=100;
 accept AS59533
@@ -6041,6 +6048,9 @@ accept AS209821
 import:         from AS210063
 action pref=100;
 accept AS210063
+import:         from AS210135
+action pref=100;
+accept AS210135
 import:         from AS210171
 action pref=100;
 accept AS210171
@@ -6854,6 +6864,8 @@ export:         to AS58310
 announce AS-MSKROUTESERVER
 export:         to AS58715
 announce AS-MSKROUTESERVER
+export:         to AS59424
+announce AS-MSKROUTESERVER
 export:         to AS59533
 announce AS-MSKROUTESERVER
 export:         to AS59624
@@ -7066,6 +7078,8 @@ export:         to AS209821
 announce AS-MSKROUTESERVER
 export:         to AS210063
 announce AS-MSKROUTESERVER
+export:         to AS210135
+announce AS-MSKROUTESERVER
 export:         to AS210171
 announce AS-MSKROUTESERVER
 export:         to AS210357
@@ -7105,7 +7119,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-28T13:45:36Z
+last-modified:  2025-12-01T13:52:18Z
 source:         RIPE
 
 

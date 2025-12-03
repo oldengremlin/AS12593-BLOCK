@@ -161,6 +161,7 @@ members:        AS-ITGRAD
 members:        AS-ITNET33
 members:        AS-ITREGION
 members:        AS-ITSERVICE
+members:        AS-ITSOFT
 members:        AS-IVSTAR
 members:        AS-KDP-RUSSIA
 members:        AS-KIAE
@@ -565,7 +566,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2025-11-28T19:59:20Z
+last-modified:  2025-12-01T19:59:20Z
 source:         RIPE
 
 
@@ -636,6 +637,7 @@ members:        AS-ISTRANET6
 members:        AS-ITERANET
 members:        AS-ITGLOBAL
 members:        AS-ITGRAD
+members:        AS-ITSOFT
 members:        AS-IVSTAR
 members:        AS-KDP-RUSSIA
 members:        AS-KIAE-GRID
@@ -827,7 +829,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2025-11-25T19:59:19Z
+last-modified:  2025-12-01T19:59:20Z
 source:         RIPE
 
 
@@ -1757,6 +1759,8 @@ import:         from  AS48578 action pref=100; accept   AS48578
 export:         to    AS48578                  announce ANY
 import:         from  AS48610 action pref=100; accept   AS48610:AS-OFORO
 export:         to    AS48610                  announce ANY
+import:         from  AS48614 action pref=100; accept   AS-ITSOFT
+export:         to    AS48614                  announce ANY
 import:         from  AS48642 action pref=100; accept   AS-KT-RU
 export:         to    AS48642                  announce ANY
 import:         from  AS48667 action pref=100; accept   AS-AKVILON
@@ -2637,6 +2641,8 @@ mp-import:      afi ipv6.unicast from  AS48479 action pref=100; accept   AS-KUBA
 mp-export:      afi ipv6.unicast to    AS48479                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48610 action pref=100; accept   AS48610:AS-OFORO
 mp-export:      afi ipv6.unicast to    AS48610                  announce ANY
+mp-import:      afi ipv6.unicast from  AS48614 action pref=100; accept   AS-ITSOFT
+mp-export:      afi ipv6.unicast to    AS48614                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48642 action pref=100; accept   AS-KT-RU
 mp-export:      afi ipv6.unicast to    AS48642                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48763 action pref=100; accept   AS48763
@@ -2916,7 +2922,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-11-28T19:59:20Z
+last-modified:  2025-12-01T19:59:21Z
 source:         RIPE
 
 

@@ -1140,6 +1140,9 @@ accept AS58310
 import:         from AS58715
 action pref=100;
 accept AS-58715
+import:         from AS59424
+action pref=100;
+accept AS59424
 import:         from AS59533
 action pref=100;
 accept AS59533
@@ -1458,6 +1461,9 @@ accept AS209821
 import:         from AS210063
 action pref=100;
 accept AS210063
+import:         from AS210135
+action pref=100;
+accept AS210135
 import:         from AS210171
 action pref=100;
 accept AS210171
@@ -2271,6 +2277,8 @@ export:         to AS58310
 announce AS-MSKROUTESERVER
 export:         to AS58715
 announce AS-MSKROUTESERVER
+export:         to AS59424
+announce AS-MSKROUTESERVER
 export:         to AS59533
 announce AS-MSKROUTESERVER
 export:         to AS59624
@@ -2483,6 +2491,8 @@ export:         to AS209821
 announce AS-MSKROUTESERVER
 export:         to AS210063
 announce AS-MSKROUTESERVER
+export:         to AS210135
+announce AS-MSKROUTESERVER
 export:         to AS210171
 announce AS-MSKROUTESERVER
 export:         to AS210357
@@ -2522,7 +2532,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-11-28T13:45:36Z
+last-modified:  2025-12-01T13:52:18Z
 source:         RIPE
 
 as-num:         AS8631

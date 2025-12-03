@@ -367,13 +367,14 @@ members:        AS-GSYST
 members:        AS-WAICORE
 members:        AS44626
 members:        AS-GT
+members:        AS-HOST-TELECOM-CZ
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:05:11Z
-last-modified:  2025-11-28T07:56:00Z
+last-modified:  2025-12-01T11:12:32Z
 source:         RIPE
 
 
@@ -609,6 +610,7 @@ members:        AS205216
 members:        AS205226
 members:        AS207353
 members:        AS47240
+members:        AS-ISP-EXSTREAM
 members:        AS-STOLICA
 members:        AS208992
 members:        AS-SSERV-RU
@@ -1162,7 +1164,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2023-08-15T18:17:57Z
-last-modified:  2025-11-28T07:55:25Z
+last-modified:  2025-12-01T11:07:07Z
 source:         RIPE
 
 
@@ -2608,6 +2610,7 @@ members:        AS60731
 members:        AS61307
 members:        AS62241
 members:        AS6939
+members:        AS-ISP-EXSTREAM
 members:        AS8728
 members:        AS52007
 members:        AS209343
@@ -3082,7 +3085,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2017-11-18T18:58:06Z
-last-modified:  2025-11-28T07:51:55Z
+last-modified:  2025-12-01T11:06:54Z
 source:         RIPE
 
 
@@ -4164,6 +4167,8 @@ import:         from AS51341 accept AS-GSYST
 export:         to AS51341 announce as-piter-ix-fra
 import:         from AS213887 action pref=100; accept AS-WAICORE
 export:         to AS213887 announce as-piter-ix-fra
+import:         from AS51248 action pref=100; accept AS-HOST-TELECOM-CZ
+export:         to AS51248 announce as-piter-ix-fra
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -4171,7 +4176,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T08:46:05Z
-last-modified:  2025-11-28T08:24:49Z
+last-modified:  2025-12-01T11:14:11Z
 source:         RIPE
 
 
@@ -4600,7 +4605,7 @@ export:         to AS209059 announce as-piter-ix-msk
 import:         from AS199524 action pref=100; accept AS-GCORE
 export:         to AS199524 announce as-piter-ix-msk
 import:         from AS47122 action pref=100; accept AS47122:AS-CYBERFIRST
-export:         to AS47122 announce as-piter-ix
+export:         to AS47122 announce as-piter-ix-msk
 import:         from AS196691 action pref=100; accept AS-GET-NET
 export:         to AS196691 announce as-piter-ix-msk
 import:         from AS196642 action pref=100; accept AS196642
@@ -5443,7 +5448,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2025-11-28T08:21:58Z
+last-modified:  2025-12-01T12:24:51Z
 source:         RIPE
 
 
