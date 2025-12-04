@@ -9,6 +9,9 @@ status:         ASSIGNED
 import:         from AS2854
 action pref=100;
 accept AS-OBSRUSSIA6 AS-ROSPRINT
+import:         from AS8749
+action pref=100;
+accept AS-REDCOM
 import:         from AS9049
 action pref=100;
 accept AS-ERTH
@@ -41,6 +44,8 @@ action pref=100;
 accept AS-EDGECENTER
 export:         to AS2854
 announce AS-VLVROUTESERVER
+export:         to AS8749
+announce AS-VLVROUTESERVER
 export:         to AS9049
 announce AS-VLVROUTESERVER
 export:         to AS25091
@@ -65,7 +70,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-12-08T12:37:37Z
-last-modified:  2024-09-27T02:37:22Z
+last-modified:  2025-12-02T02:37:39Z
 source:         RIPE
 
 as-num:         AS48531
