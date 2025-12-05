@@ -1009,6 +1009,8 @@ members:        AS-AVANTA
 members:        AS56814
 # from AS56864:
 members:        AS-WELLSERVER
+# from AS56923:
+members:        AS56923
 # from AS57073:
 members:        AS57073:AS-WILDBERRIES
 # from AS57107:
@@ -1275,6 +1277,8 @@ members:        AS-EDGECENTER
 members:        AS-DHTD-TO-MSK-IX
 # from AS211157:
 members:        AS211157
+# from AS211506:
+members:        AS-SLAVCOM
 # from AS211609:
 members:        AS211609
 # from AS211914:
@@ -1306,7 +1310,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-12-01T13:52:17Z
+last-modified:  2025-12-03T09:46:10Z
 source:         RIPE
 
 
@@ -5677,6 +5681,9 @@ accept AS56814
 import:         from AS56864
 action pref=100;
 accept AS-WELLSERVER
+import:         from AS56923
+action pref=100;
+accept AS56923
 import:         from AS57073
 action pref=100;
 accept AS57073:AS-WILDBERRIES
@@ -6076,6 +6083,9 @@ accept AS-DHTD-TO-MSK-IX
 import:         from AS211157
 action pref=100;
 accept AS211157
+import:         from AS211506
+action pref=100;
+accept AS-SLAVCOM
 import:         from AS211609
 action pref=100;
 accept AS211609
@@ -6833,6 +6843,8 @@ export:         to AS56814
 announce AS-MSKROUTESERVER
 export:         to AS56864
 announce AS-MSKROUTESERVER
+export:         to AS56923
+announce AS-MSKROUTESERVER
 export:         to AS57073
 announce AS-MSKROUTESERVER
 export:         to AS57107
@@ -7099,6 +7111,8 @@ export:         to AS211000
 announce AS-MSKROUTESERVER
 export:         to AS211157
 announce AS-MSKROUTESERVER
+export:         to AS211506
+announce AS-MSKROUTESERVER
 export:         to AS211609
 announce AS-MSKROUTESERVER
 export:         to AS211914
@@ -7126,7 +7140,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-12-01T13:52:18Z
+last-modified:  2025-12-03T09:46:10Z
 source:         RIPE
 
 
