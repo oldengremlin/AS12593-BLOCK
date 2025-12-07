@@ -1373,13 +1373,14 @@ members:        AS48595
 members:        AS-CXXI
 members:        AS-ONLINE-DN
 members:        AS-GSYST
+members:        AS215013:AS-YCCDN
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:09:22Z
-last-modified:  2025-11-20T11:31:57Z
+last-modified:  2025-12-05T16:23:20Z
 source:         RIPE
 
 
@@ -2563,12 +2564,13 @@ members:        AS57629
 members:        AS-ZAO-KES
 members:        AS-YANDEX
 members:        AS60119
+members:        AS215013:AS-YCCDN
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2025-06-05T21:16:17Z
-last-modified:  2025-10-09T11:08:12Z
+last-modified:  2025-12-05T16:24:20Z
 source:         RIPE
 
 
@@ -6479,7 +6481,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2025-12-04T14:56:36Z
+last-modified:  2025-12-05T16:02:33Z
 source:         RIPE
 
 
@@ -6802,6 +6804,8 @@ import:         from AS41268 action pref=100; accept AS41268
 export:         to AS41268 announce as-piter-ix-rov
 import:         from AS51341 accept AS-GSYST
 export:         to AS51341 announce as-piter-ix-rov
+import:         from AS215013 accept AS215013:AS-YCCDN
+export:         to AS215013 announce as-piter-ix-rov
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6810,7 +6814,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2022-01-26T08:41:22Z
-last-modified:  2025-11-11T12:30:25Z
+last-modified:  2025-12-05T16:29:48Z
 source:         RIPE
 
 
@@ -6847,6 +6851,8 @@ import:         from AS13238 accept AS-YANDEX
 export:         to AS13238 announce AS61409:AS-PITER-IX-NSK
 import:         from AS60119 accept AS60119
 export:         to AS60119 announce AS61409:AS-PITER-IX-NSK
+import:         from AS215013 accept AS215013:AS-YCCDN
+export:         to AS215013 announce AS61409:AS-PITER-IX-NSK
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6854,7 +6860,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2023-03-08T15:17:57Z
-last-modified:  2025-10-09T11:07:30Z
+last-modified:  2025-12-05T16:30:50Z
 source:         RIPE
 
 

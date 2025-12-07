@@ -89,7 +89,7 @@ members:        AS-CDNVIDEO
 # from AS57629:
 members:        AS57629
 # from AS62261:
-members:        AS62261
+members:        AS62261:AS-EKT-MEDIAIX
 # from AS62331:
 members:        AS62331
 # from AS201119:
@@ -114,7 +114,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2025-11-19T07:39:25Z
+last-modified:  2025-12-05T12:11:16Z
 source:         RIPE
 
 
@@ -1035,6 +1035,8 @@ members:        AS57531:AS-RICTOMSKIX
 members:        AS57629
 # from AS57724:
 members:        AS-DDOS-GUARD
+# from AS57753:
+members:        AS-RADIST
 # from AS57918:
 members:        AS-ACOD
 # from AS57976:
@@ -1308,7 +1310,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-12-04T09:51:47Z
+last-modified:  2025-12-05T13:50:18Z
 source:         RIPE
 
 
@@ -1339,11 +1341,12 @@ members:        AS62261
 members:        AS51286
 members:        AS21051
 members:        AS43832
+members:        AS215013
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         RUIX-MNT
 created:        2016-07-08T15:34:01Z
-last-modified:  2023-10-02T12:53:19Z
+last-modified:  2025-12-05T09:36:57Z
 source:         RIPE
 
 
@@ -1932,6 +1935,18 @@ mnt-by:         RIPN-MNT
 mnt-by:         RUIX-MNT
 created:        2024-08-30T08:24:26Z
 last-modified:  2024-08-30T08:25:20Z
+source:         RIPE
+
+
+
+as-set:         AS62261:AS-EKT-MEDIAIX
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS62261
+members:        AS215013
+mnt-by:         RUIX-MNT
+created:        2025-12-05T09:42:22Z
+last-modified:  2025-12-05T09:42:22Z
 source:         RIPE
 
 
@@ -3087,7 +3102,7 @@ action pref=100;
 accept AS57629
 import:         from AS62261
 action pref=100;
-accept AS62261
+accept AS62261:AS-EKT-MEDIAIX
 import:         from AS62331
 action pref=100;
 accept AS62331
@@ -3223,7 +3238,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-11-19T07:39:29Z
+last-modified:  2025-12-05T12:11:20Z
 source:         RIPE
 
 
@@ -4574,7 +4589,7 @@ export:         to AS42403 announce AS-NSK-MEDIAIX
 import:         from AS48858 accept ANY
 export:         to AS48858 announce AS-NSK-MEDIAIX
 import:         from AS43213 accept AS-EKTROUTESERVER
-export:         to AS43213 announce AS62261
+export:         to AS43213 announce AS62261:AS-EKT-MEDIAIX
 import:         from AS47882 accept AS-SMRROUTESERVER
 export:         to AS47882 announce AS62261
 import:         from AS48216 accept AS-RNDROUTESERVER
@@ -4588,7 +4603,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         RUIX-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2013-12-05T09:48:36Z
-last-modified:  2023-10-02T12:55:22Z
+last-modified:  2025-12-05T09:45:47Z
 source:         RIPE
 status:         ASSIGNED
 
@@ -5718,6 +5733,9 @@ accept AS57629
 import:         from AS57724
 action pref=100;
 accept AS-DDOS-GUARD
+import:         from AS57753
+action pref=100;
+accept AS-RADIST
 import:         from AS57918
 action pref=100;
 accept AS-ACOD
@@ -6864,6 +6882,8 @@ export:         to AS57629
 announce AS-MSKROUTESERVER
 export:         to AS57724
 announce AS-MSKROUTESERVER
+export:         to AS57753
+announce AS-MSKROUTESERVER
 export:         to AS57918
 announce AS-MSKROUTESERVER
 export:         to AS57976
@@ -7133,7 +7153,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-12-04T09:51:42Z
+last-modified:  2025-12-05T13:50:18Z
 source:         RIPE
 
 
