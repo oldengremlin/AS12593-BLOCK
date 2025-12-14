@@ -48,6 +48,8 @@ import:         from AS202984 action pref=100; accept AS-TEAM-HOST
 export:         to AS202984 announce ANY
 mp-import:      afi ipv6 from AS202984 action pref=100; accept AS-TEAM-HOST
 mp-export:      afi ipv6 to AS202984 announce ANY
+import:         from AS39728 action pref=100; accept AS-LUGANET
+export:         to AS39728 announce ANY
 import:         from AS49281 action pref=100; accept AS-M100
 export:         to AS49281 announce ANY
 mp-import:      from AS49281 action pref=100; accept AS-M100v6
@@ -2214,6 +2216,8 @@ mp-import:      afi ipv6 from AS210756 action pref=100; accept AS-EDGECENTER
 mp-export:      afi ipv6 to AS210756 announce ANY
 mp-import:      afi ipv6 from AS210756 action pref=100; accept AS-EDGECENTER-V6
 mp-export:      afi ipv6 to AS210756 announce {::/0}
+import:         from AS39073 action pref=100; accept AS39073
+export:         to AS39073 announce ANY
 import:         from AS15454 action pref=100; accept AS15454
 export:         to AS15454 announce ANY
 import:         from AS41329 action pref=100; accept AS41329
@@ -5261,7 +5265,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-12-11T06:19:50Z
+last-modified:  2025-12-12T08:20:00Z
 source:         RIPE
 
 as-num:         AS3216
