@@ -399,6 +399,8 @@ mp-export:      afi ipv6.unicast to AS60476 announce ANY;
 mp-import:      afi ipv6.unicast from AS60476 accept AS60476;
 export:         to AS59796 announce {94.139.244.0/24}
 import:         from AS59796 accept AS59796
+export:         to AS203502 announce ANY
+import:         from AS203502 accept AS203502
 export:         to AS207970 announce ANY
 import:         from AS207970 accept ANY
 export:         to AS49281 announce ANY
@@ -418,7 +420,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2025-11-14T11:14:55Z
+last-modified:  2025-12-15T10:32:25Z
 source:         RIPE
 
 as-num:         AS47764

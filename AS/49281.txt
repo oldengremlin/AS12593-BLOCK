@@ -10,6 +10,8 @@ export:         to AS47764 announce AS-M100
 import:         from AS47764 accept ANY
 mp-export:      afi ipv6.unicast to AS47764 announce AS-M100v6;
 mp-import:      afi ipv6.unicast from AS47764 accept ANY;
+import:         from AS203502 accept AS203502
+export:         to AS203502 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         ipncc@corp.mail.ru
@@ -18,7 +20,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2009-05-11T13:13:56Z
-last-modified:  2025-04-23T09:32:40Z
+last-modified:  2025-12-15T09:28:27Z
 source:         RIPE
 
 as-num:         AS49281

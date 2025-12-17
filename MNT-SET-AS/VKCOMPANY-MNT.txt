@@ -3,12 +3,13 @@ members:        AS49281
 members:        AS-MAILRU
 members:        AS47764
 members:        AS21051
+members:        AS203502
 descr:          M100
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         VKCOMPANY-MNT
 created:        2010-03-24T08:52:36Z
-last-modified:  2024-10-10T12:48:39Z
+last-modified:  2025-12-15T09:24:04Z
 source:         RIPE
 
 
@@ -68,12 +69,13 @@ members:        AS199295
 members:        AS205830
 members:        AS201817
 members:        AS207970
+members:        AS203502
 descr:          VK company
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         VKCOMPANY-MNT
 created:        2022-08-17T10:41:26Z
-last-modified:  2025-08-16T11:11:31Z
+last-modified:  2025-12-15T09:22:20Z
 source:         RIPE
 
 
@@ -1126,6 +1128,8 @@ mp-export:      afi ipv6.unicast to AS60476 announce ANY;
 mp-import:      afi ipv6.unicast from AS60476 accept AS60476;
 export:         to AS59796 announce {94.139.244.0/24}
 import:         from AS59796 accept AS59796
+export:         to AS203502 announce ANY
+import:         from AS203502 accept AS203502
 export:         to AS207970 announce ANY
 import:         from AS207970 accept ANY
 export:         to AS49281 announce ANY
@@ -1145,7 +1149,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2025-11-14T11:14:55Z
+last-modified:  2025-12-15T10:32:25Z
 source:         RIPE
 
 
@@ -1162,6 +1166,8 @@ export:         to AS47764 announce AS-M100
 import:         from AS47764 accept ANY
 mp-export:      afi ipv6.unicast to AS47764 announce AS-M100v6;
 mp-import:      afi ipv6.unicast from AS47764 accept ANY;
+import:         from AS203502 accept AS203502
+export:         to AS203502 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         ipncc@corp.mail.ru
@@ -1170,7 +1176,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2009-05-11T13:13:56Z
-last-modified:  2025-04-23T09:32:40Z
+last-modified:  2025-12-15T09:28:27Z
 source:         RIPE
 
 

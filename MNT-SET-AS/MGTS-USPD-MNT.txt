@@ -101,6 +101,7 @@ members:        AS51916
 members:        AS202181
 members:        AS208534
 members:        AS210239
+members:        AS212211
 members:        as-3data_CK19
 members:        AS-MBTECH
 members:        AS-GCX
@@ -113,7 +114,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MGTS-USPD-MNT
 created:        2006-09-11T09:54:32Z
-last-modified:  2025-10-13T14:37:32Z
+last-modified:  2025-12-15T13:07:36Z
 source:         RIPE
 
 
@@ -498,6 +499,8 @@ import:         from AS208534 action pref=100; accept {45.95.136.0/22}
 export:         to AS208534 announce ANY
 import:         from AS209520 action pref=100; accept AS209520
 export:         to AS209520 announce ANY
+import:         from AS212211 action pref=100; accept {194.49.121.0/24}
+export:         to AS212211 announce ANY
 import:         from AS48096 action pref=100; accept AS48096
 export:         to AS48096 announce ANY
 mp-import:      afi ipv6.unicast from AS8359 action pref=100; accept ANY
@@ -514,7 +517,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
 created:        2012-01-12T10:42:42Z
-last-modified:  2025-10-09T13:18:24Z
+last-modified:  2025-12-15T13:05:44Z
 source:         RIPE
 
 
