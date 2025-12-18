@@ -398,6 +398,14 @@ import:         from AS62440 accept ANY
 export:         to AS62440 announce AS57629
 import:         from AS44941 accept ANY
 export:         to AS62440 announce AS57629
+import:         from AS42387 accept ANY
+export:         to AS42387 announce AS57629
+import:         from AS51028 accept ANY
+export:         to AS51028 announce AS57629
+mp-export:      afi ipv6.unicast to AS51028 announce AS57629
+mp-import:      afi ipv6.unicast from AS51028 accept ANY
+import:         from AS42498 accept ANY
+export:         to AS42498 announce AS57629
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS57629
 import:         from AS3267 accept AS-RUNNET
@@ -551,7 +559,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-ivi-1-mnt
 notify:         noc@ivi.ru
 created:        2011-12-19T11:32:01Z
-last-modified:  2025-12-11T12:03:39Z
+last-modified:  2025-12-16T16:48:41Z
 source:         RIPE
 
 as-num:         AS57629

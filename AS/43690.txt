@@ -252,6 +252,9 @@ accept AS200487
 import:         from AS201119
 action pref=100;
 accept AS201119
+import:         from AS201512
+action pref=100;
+accept AS201512
 import:         from AS204600
 action pref=100;
 accept AS204600
@@ -446,6 +449,8 @@ export:         to AS200487
 announce AS-SPBROUTESERVER
 export:         to AS201119
 announce AS-SPBROUTESERVER
+export:         to AS201512
+announce AS-SPBROUTESERVER
 export:         to AS204600
 announce AS-SPBROUTESERVER
 export:         to AS205063
@@ -469,7 +474,7 @@ announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-10-13T14:05:38Z
+last-modified:  2025-12-16T10:06:17Z
 source:         RIPE
 
 as-num:         AS43690

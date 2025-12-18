@@ -314,6 +314,7 @@ members:        AS138915:AS-CUSTOMER
 members:        AS139057:AS-CONE
 members:        AS198310:AS-MOLNIYA
 members:        AS200847:AS-MOBILECARD
+members:        AS203456:AS-BORK
 members:        AS205014:AS-ITSAT
 members:        AS206728:AS-MEDIALANDTECHNOLOGY
 members:        AS207239:AS-GIGNET
@@ -566,7 +567,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2025-12-11T19:59:19Z
+last-modified:  2025-12-16T19:59:22Z
 source:         RIPE
 
 
@@ -2160,6 +2161,8 @@ import:         from AS202629 action pref=100; accept   AS202629
 export:         to   AS202629                  announce ANY
 import:         from AS202696 action pref=100; accept   AS-TRUSTEDNETWORK
 export:         to   AS202696                  announce ANY
+import:         from AS203456 action pref=100; accept   AS203456:AS-BORK
+export:         to   AS203456                  announce ANY
 import:         from AS203832 action pref=100; accept   AS203832
 export:         to   AS203832                  announce ANY
 import:         from AS203972 action pref=100; accept   AS203972
@@ -2923,7 +2926,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-12-11T19:59:19Z
+last-modified:  2025-12-16T19:59:21Z
 source:         RIPE
 
 

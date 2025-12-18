@@ -1588,6 +1588,8 @@ members:        AS-ITK
 members:        AS62261
 # from AS201119:
 members:        AS201119
+# from AS201512:
+members:        AS201512
 # from AS204720:
 members:        AS-CDNETWORKSRU
 # from AS210756:
@@ -1597,7 +1599,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2008-10-27T12:33:38Z
-last-modified:  2025-08-21T09:53:28Z
+last-modified:  2025-12-16T09:54:14Z
 source:         RIPE
 
 
@@ -1828,6 +1830,8 @@ members:        AS-XELENT
 members:        AS200487
 # from AS201119:
 members:        AS201119
+# from AS201512:
+members:        AS201512
 # from AS204600:
 members:        AS204600
 # from AS205063:
@@ -1854,7 +1858,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2025-10-13T14:05:41Z
+last-modified:  2025-12-16T10:06:13Z
 source:         RIPE
 
 
@@ -3504,6 +3508,9 @@ accept AS200487
 import:         from AS201119
 action pref=100;
 accept AS201119
+import:         from AS201512
+action pref=100;
+accept AS201512
 import:         from AS204600
 action pref=100;
 accept AS204600
@@ -3698,6 +3705,8 @@ export:         to AS200487
 announce AS-SPBROUTESERVER
 export:         to AS201119
 announce AS-SPBROUTESERVER
+export:         to AS201512
+announce AS-SPBROUTESERVER
 export:         to AS204600
 announce AS-SPBROUTESERVER
 export:         to AS205063
@@ -3721,7 +3730,7 @@ announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-10-13T14:05:38Z
+last-modified:  2025-12-16T10:06:17Z
 source:         RIPE
 
 
@@ -4192,6 +4201,9 @@ accept AS62261
 import:         from AS201119
 action pref=100;
 accept AS201119
+import:         from AS201512
+action pref=100;
+accept AS201512
 import:         from AS204720
 action pref=100;
 accept AS-CDNETWORKSRU
@@ -4242,6 +4254,8 @@ export:         to AS62261
 announce AS-RNDROUTESERVER
 export:         to AS201119
 announce AS-RNDROUTESERVER
+export:         to AS201512
+announce AS-RNDROUTESERVER
 export:         to AS204720
 announce AS-RNDROUTESERVER
 export:         to AS210756
@@ -4250,7 +4264,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-10-27T08:45:37Z
-last-modified:  2025-08-21T09:53:24Z
+last-modified:  2025-12-16T09:54:14Z
 source:         RIPE
 
 

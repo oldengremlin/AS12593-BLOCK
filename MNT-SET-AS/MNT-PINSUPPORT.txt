@@ -370,13 +370,15 @@ members:        AS-GT
 members:        AS-HOST-TELECOM-CZ
 members:        AS213576:AS-ALL
 members:        AS52025:AS-ALL
+members:        AS-BLIZZARD
+members:        AS210357
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:05:11Z
-last-modified:  2025-12-08T12:58:19Z
+last-modified:  2025-12-16T09:20:58Z
 source:         RIPE
 
 
@@ -511,6 +513,7 @@ members:        AS-WAICORE
 members:        AS44626
 members:        AS-GT
 members:        AS-CREANOVA
+members:        AS210357
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         PITER-IX-MNT
@@ -518,7 +521,7 @@ mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2020-11-06T12:10:10Z
-last-modified:  2025-12-09T13:04:24Z
+last-modified:  2025-12-16T09:19:59Z
 source:         RIPE
 
 
@@ -1161,13 +1164,14 @@ members:        AS139057:AS-CONE
 members:        AS-WAICORE
 members:        AS44626
 members:        AS52025:AS-ALL
+members:        AS210357
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2023-08-15T18:17:57Z
-last-modified:  2025-12-09T13:21:17Z
+last-modified:  2025-12-16T09:16:32Z
 source:         RIPE
 
 
@@ -3083,12 +3087,13 @@ members:        AS-NETFORT
 members:        AS-WAICORE
 members:        AS-IPNETPEERS-1
 members:        AS52025:AS-ALL
+members:        AS210357
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2017-11-18T18:58:06Z
-last-modified:  2025-12-09T13:22:02Z
+last-modified:  2025-12-16T09:17:12Z
 source:         RIPE
 
 
@@ -3870,6 +3875,8 @@ import:         from AS213887 action pref=100; accept AS-WAICORE
 export:         to AS213887 announce AS-PITER-IX-HELSINKI
 import:         from AS51765 action pref=100; accept AS-CREANOVA
 export:         to AS51765 announce AS-PITER-IX-HELSINKI
+import:         from AS210357 action pref=100; accept AS210357
+export:         to AS210357 announce AS-PITER-IX-HELSINKI
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -3878,7 +3885,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-10-08T08:51:37Z
-last-modified:  2025-12-09T13:05:52Z
+last-modified:  2025-12-16T09:24:05Z
 source:         RIPE
 sponsoring-org: ORG-PCL30-RIPE
 
@@ -4180,6 +4187,10 @@ import:         from AS52025 action pref=100; accept AS52025:AS-ALL
 export:         to AS52025 announce as-piter-ix-fra
 import:         from AS61049 action pref=100; accept AS-EXASCALE
 export:         to AS61049 announce as-piter-ix-fra
+import:         from AS57976 action pref=100; accept AS-BLIZZARD
+export:         to AS57976 announce as-piter-ix-fra
+import:         from AS210357 action pref=100; accept AS210357
+export:         to AS210357 announce as-piter-ix-fra
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -4187,7 +4198,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T08:46:05Z
-last-modified:  2025-12-15T13:22:59Z
+last-modified:  2025-12-16T09:25:19Z
 source:         RIPE
 
 
@@ -5451,6 +5462,8 @@ import:         from AS213887 action pref=100; accept AS-WAICORE
 export:         to AS213887 announce as-piter-ix-msk
 import:         from AS52025 action pref=100; accept AS52025:AS-ALL
 export:         to AS52025 announce as-piter-ix-msk
+import:         from AS210357 action pref=100; accept AS210357
+export:         to AS210357 announce as-piter-ix-msk
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -5459,7 +5472,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2025-12-09T13:24:04Z
+last-modified:  2025-12-16T09:22:39Z
 source:         RIPE
 
 
@@ -6481,6 +6494,8 @@ import:         from AS61010 action pref=100; accept AS-IPNETPEERS-1
 export:         to AS61010 announce as-piter-ix
 import:         from AS52025 action pref=100; accept AS52025:AS-ALL
 export:         to AS52025 announce as-piter-ix
+import:         from AS210357 action pref=100; accept AS210357
+export:         to AS210357 announce as-piter-ix
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6489,7 +6504,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2025-12-15T15:31:31Z
+last-modified:  2025-12-16T09:23:24Z
 source:         RIPE
 
 
