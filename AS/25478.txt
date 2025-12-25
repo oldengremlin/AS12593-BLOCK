@@ -137,6 +137,10 @@ import:         from AS34300 action pref=130; accept AS-RU-SPACENET # spacenet
 mp-import:      afi ipv6.unicast from AS34300 accept AS-RU-SPACENET
 export:         to AS34300 announce ANY
 mp-export:      afi ipv6.unicast to AS34300 announce ANY
+import:         from AS42676 action pref=130; accept AS-SMARTKOM # smartkom
+mp-import:      afi ipv6.unicast from AS42676 accept AS-SMARTKOM
+export:         to AS42676 announce ANY
+mp-export:      afi ipv6.unicast to AS42676 announce ANY
 import:         from AS21140 action pref=130; accept AS-FLYTELECOM # flytel
 mp-import:      afi ipv6.unicast from AS21140 accept AS-FLYTELECOM
 export:         to AS21140 announce ANY
@@ -813,8 +817,8 @@ import:         from AS29319 action pref=100; accept ANY # mosnet
 mp-import:      afi ipv6.unicast from AS29319 accept ANY
 export:         to AS29319 announce AS-IHOME
 mp-export:      afi ipv6.unicast to AS29319 announce AS-IHOME6
-import:         from AS205711 action pref=130; accept AS-IGRASERVICE # igraservice
-mp-import:      afi ipv6.unicast from AS205711 accept AS-IGRASERVICE
+import:         from AS205711 action pref=130; accept AS205711 # igraservice
+mp-import:      afi ipv6.unicast from AS205711 accept AS205711
 export:         to AS205711 announce ANY
 mp-export:      afi ipv6.unicast to AS205711 announce ANY
 import:         from AS49106 action pref=130; accept AS49106 # opticom
@@ -856,7 +860,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IHOME-MNT
 status:         ASSIGNED
 created:        2002-12-04T16:28:40Z
-last-modified:  2025-09-19T06:58:34Z
+last-modified:  2025-12-23T09:05:14Z
 source:         RIPE
 
 as-num:         AS25478

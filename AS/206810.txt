@@ -24,6 +24,10 @@ import:         from AS8631 accept ANY
 export:         to AS8631 announce AS206810:AS-CUSTOMERS
 import:         from AS5598 accept AS5598
 export:         to AS5598 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
+import:         from AS214721 at cr1-60 accept AS214721:AS-SUE-ROS
+export:         to AS214721 at cr1-60 announce ANY
+import:         from AS214721 at cr1-89 accept AS214721:AS-SUE-ROS
+export:         to AS214721 at cr1-89 announce ANY
 import:         from AS8274 accept AS8274
 export:         to AS8274 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS12773 at cr1-89 accept AS-MESHNET
@@ -125,7 +129,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MIV-MNT
 mnt-by:         IRA35-MNT
 created:        2022-03-24T13:12:47Z
-last-modified:  2025-11-11T12:55:58Z
+last-modified:  2025-12-23T07:26:24Z
 source:         RIPE
 abuse-c:        ACRO47149-RIPE
 
