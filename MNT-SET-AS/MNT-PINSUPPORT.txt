@@ -372,13 +372,14 @@ members:        AS52025:AS-ALL
 members:        AS-BLIZZARD
 members:        AS210357
 members:        AS215174:AS-PRONOWTECH
+members:        AS-INDIKOM
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:05:11Z
-last-modified:  2025-12-23T09:34:14Z
+last-modified:  2025-12-24T14:44:16Z
 source:         RIPE
 
 
@@ -513,6 +514,7 @@ members:        AS44626
 members:        AS-GT
 members:        AS-CREANOVA
 members:        AS210357
+members:        AS-INDIKOM
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         PITER-IX-MNT
@@ -520,7 +522,7 @@ mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2020-11-06T12:10:10Z
-last-modified:  2025-12-23T09:34:26Z
+last-modified:  2025-12-24T14:43:30Z
 source:         RIPE
 
 
@@ -642,6 +644,7 @@ members:        AS54985
 members:        AS47122:AS-CYBERFIRST
 members:        AS57073
 members:        AS-GT
+members:        AS57113
 members:        AS57246
 members:        AS57456
 members:        AS57629
@@ -653,6 +656,7 @@ members:        AS59504
 members:        AS-BTK
 members:        AS60357
 members:        AS61189
+members:        AS-AVANTRU
 members:        AS-NETFORT
 members:        AS-HANGENKOVONET
 members:        AS60337:AS-MEDIATECH-MSK
@@ -979,7 +983,6 @@ members:        AS42676
 members:        AS-NGENIX
 members:        AS48558
 members:        AS47562
-members:        AS-DRUGOYTEL
 members:        AS-DELFA
 members:        AS-ATMOSPHERICA
 members:        AS-INTAL
@@ -1143,7 +1146,6 @@ members:        AS50015
 members:        AS-UNITTEL
 members:        AS-LETIT
 members:        AS201624
-members:        AS34170:AS-customers
 members:        AS215247
 members:        AS199214
 members:        AS197074
@@ -1168,13 +1170,15 @@ members:        AS-ROSINTEL
 members:        AS213787:AS-CLOUDRACK
 members:        AS42151:AS-P24-CLOUD
 members:        AS214218
+members:        AS214268
+members:        AS-INDIKOM
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2023-08-15T18:17:57Z
-last-modified:  2025-12-23T11:20:49Z
+last-modified:  2025-12-24T14:42:39Z
 source:         RIPE
 
 
@@ -2610,6 +2614,7 @@ members:        AS54985
 members:        AS47122:AS-CYBERFIRST
 members:        AS57073
 members:        AS57246
+members:        AS-AVANTRU
 members:        AS57334
 members:        AS50947
 members:        AS57629
@@ -2976,7 +2981,6 @@ members:        AS35196
 members:        AS47104
 members:        AS59637
 members:        AS50157
-members:        AS50418
 members:        AS-ATMOSPHERICA
 members:        AS61068:AS-SET
 members:        AS206011:AS-FREEDOM-KRD
@@ -3024,7 +3028,6 @@ members:        AS208975
 members:        AS211134:AS-INTERSYS
 members:        AS47181
 members:        AS6856:AS-SETICCUS
-members:        AS212128
 members:        AS56493
 members:        AS214069
 members:        AS50672
@@ -3066,7 +3069,6 @@ members:        AS202999
 members:        AS50015
 members:        AS-LETIT
 members:        AS201624
-members:        AS34170:AS-customers
 members:        AS215247
 members:        AS197074
 members:        AS50029
@@ -3091,12 +3093,14 @@ members:        AS52025:AS-ALL
 members:        AS210357
 members:        AS-ROSINTEL
 members:        AS214218
+members:        AS214268
+members:        AS-INDIKOM
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2017-11-18T18:58:06Z
-last-modified:  2025-12-23T11:20:11Z
+last-modified:  2025-12-24T14:41:19Z
 source:         RIPE
 
 
@@ -3880,6 +3884,8 @@ import:         from AS51765 action pref=100; accept AS-CREANOVA
 export:         to AS51765 announce AS-PITER-IX-HELSINKI
 import:         from AS210357 action pref=100; accept AS210357
 export:         to AS210357 announce AS-PITER-IX-HELSINKI
+import:         from AS59584 action pref=100; accept AS-INDIKOM
+export:         to AS59584 announce AS-PITER-IX-HELSINKI
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -3888,7 +3894,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-10-08T08:51:37Z
-last-modified:  2025-12-16T09:24:05Z
+last-modified:  2025-12-24T14:48:33Z
 source:         RIPE
 sponsoring-org: ORG-PCL30-RIPE
 
@@ -4096,8 +4102,6 @@ import:         from AS47286 action pref=100; accept AS-OTSNET
 export:         to AS47286 announce as-piter-ix-fra
 import:         from AS47211 action pref=100; accept AS-KOLPINONET
 export:         to AS47211 announce as-piter-ix-fra
-import:         from AS48234 action pref=100; accept AS48234
-export:         to AS48234 announce as-piter-ix-fra
 import:         from AS196726 action pref=100; accept AS196726
 export:         to AS196726 announce as-piter-ix-fra
 import:         from AS56690 action pref=100; accept AS-VNET-LLC
@@ -4196,6 +4200,8 @@ import:         from AS210357 action pref=100; accept AS210357
 export:         to AS210357 announce as-piter-ix-fra
 import:         from AS215174 action pref=100; accept AS215174:AS-PRONOWTECH
 export:         to AS215174 announce as-piter-ix-fra
+import:         from AS59584 action pref=100; accept AS-INDIKOM
+export:         to AS59584 announce as-piter-ix-fra
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -4203,7 +4209,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T08:46:05Z
-last-modified:  2025-12-22T09:16:43Z
+last-modified:  2025-12-24T14:49:22Z
 source:         RIPE
 
 
@@ -5423,8 +5429,6 @@ import:         from AS60165 action pref=100; accept AS60165
 export:         to AS60165 announce as-piter-ix-msk
 import:         from AS62314 action pref=100; accept AS-ATMOSPHERICA
 export:         to AS62314 announce as-piter-ix-msk
-import:         from AS201211 action pref=100; accept AS-DRUGOYTEL
-export:         to AS201211 announce as-piter-ix-msk
 import:         from AS3285 action pref=100; accept AS-DELFA
 export:         to AS3285 announce as-piter-ix-msk
 import:         from AS21446 action pref=100; accept AS-ALMAZTELECOM
@@ -5475,6 +5479,10 @@ import:         from AS213787 action pref=100; accept AS213787:AS-CLOUDRACK
 export:         to AS213787 announce as-piter-ix-msk
 import:         from AS42151 action pref=100; accept AS42151:AS-P24-CLOUD
 export:         to AS42151 announce as-piter-ix-msk
+import:         from AS214268 action pref=100; accept AS214268
+export:         to AS214268 announce as-piter-ix-msk
+import:         from AS59584 action pref=100; accept AS-INDIKOM
+export:         to AS59584 announce as-piter-ix-msk
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -5483,7 +5491,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2025-12-17T12:20:30Z
+last-modified:  2025-12-24T14:47:12Z
 source:         RIPE
 
 
@@ -6383,8 +6391,6 @@ import:         from AS50241 action pref=100; accept AS-UNITTEL
 export:         to AS50241 announce as-piter-ix
 import:         from AS47286 action pref=100; accept AS-OTSNET
 export:         to AS47286 announce as-piter-ix
-import:         from AS48234 action pref=100; accept AS48234
-export:         to AS48234 announce as-piter-ix
 import:         from AS196726 action pref=100; accept AS196726
 export:         to AS196726 announce as-piter-ix
 import:         from AS56690 action pref=100; accept AS-VNET-LLC
@@ -6511,6 +6517,10 @@ import:         from AS24689 action pref=100; accept AS-ROSINTEL
 export:         to AS24689 announce as-piter-ix
 import:         from AS214218 action pref=100; accept AS214218
 export:         to AS214218 announce as-piter-ix
+import:         from AS214268 action pref=100; accept AS214268
+export:         to AS214268 announce as-piter-ix
+import:         from AS59584 action pref=100; accept AS-INDIKOM
+export:         to AS59584 announce as-piter-ix
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6519,7 +6529,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2025-12-23T11:20:36Z
+last-modified:  2025-12-24T14:47:50Z
 source:         RIPE
 
 
