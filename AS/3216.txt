@@ -1580,6 +1580,8 @@ import:         from AS32934 action pref=87; accept AS-FACEBOOK
 export:         to AS32934 announce AS-SOVAM
 mp-import:      afi ipv6 from AS32934 action pref=87; accept AS-FACEBOOK
 mp-export:      afi ipv6 to AS32934 announce AS-SOVAM-V6
+import:         from AS58096 action pref=100; accept AS-ELIT-TV
+export:         to AS58096 announce ANY
 import:         from AS197406 action pref=100; accept AS197406
 export:         to AS197406 announce ANY
 import:         from AS20764 action pref=100; accept AS-RASCOM
@@ -1620,6 +1622,8 @@ import:         from AS211157 action pref=100; accept AS211157
 export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
+import:         from AS48035 action pref=100; accept AS48035
+export:         to AS48035 announce AS-SOVAM
 import:         from AS197298 action pref=100; accept AS-ATEL-LTD
 export:         to AS197298 announce ANY
 import:         from AS60835 action pref=100; accept AS60835
@@ -1634,12 +1638,18 @@ import:         from AS49963 action pref=100; accept AS-BELRTS
 export:         to AS49963 announce ANY
 import:         from AS60363 action pref=100; accept AS60363
 export:         to AS60363 announce {0.0.0.0/0}
-import:         from AS213787 action pref=100; accept AS213787
-export:         to AS213787 announce ANY
+import:         from AS203753 action pref=100; accept AS203753:AS-CLOUDRACK
+export:         to AS203753 announce ANY
+mp-import:      from AS203753 action pref=100; accept AS203753:AS-CLOUDRACK-V6
+mp-export:      to AS203753 announce ANY
 import:         from AS12979 action pref=100; accept AS12979
 export:         to AS12979 announce ANY
 import:         from AS21105 action pref=100; accept AS-RTKPRIM
 export:         to AS21105 announce ANY
+import:         from AS200107 action pref=100; accept AS200107
+export:         to AS200107 announce ANY
+mp-import:      from AS200107 action pref=100; accept AS200107
+mp-export:      to AS200107 announce ANY
 import:         from AS50556 action pref=100; accept AS50556
 export:         to AS50556 announce ANY
 import:         from AS208580 action pref=100; accept AS208580
@@ -5275,7 +5285,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2025-12-24T08:12:49Z
+last-modified:  2025-12-26T12:14:21Z
 source:         RIPE
 
 as-num:         AS3216

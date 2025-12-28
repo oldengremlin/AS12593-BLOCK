@@ -1049,6 +1049,8 @@ members:        AS-BLIZZARD
 members:        AS-SI
 # from AS58067:
 members:        AS-CHTE
+# from AS58136:
+members:        AS58136
 # from AS58310:
 members:        AS58310
 # from AS58715:
@@ -1314,7 +1316,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-12-25T09:39:15Z
+last-modified:  2025-12-26T09:37:47Z
 source:         RIPE
 
 
@@ -1403,8 +1405,6 @@ members:        AS-CITNSO-DEPART
 members:        AS-AVANTEL
 # from AS28709:
 members:        AS-VKONTAKTE
-# from AS29547:
-members:        AS-CENTERINFORM-ATLAS
 # from AS31133:
 members:        AS-CDN-MEGAFON
 # from AS31200:
@@ -1521,7 +1521,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2025-12-18T05:41:11Z
+last-modified:  2025-12-26T05:39:37Z
 source:         RIPE
 
 
@@ -2634,9 +2634,6 @@ accept AS-AVANTEL
 import:         from AS28709
 action pref=100;
 accept AS-VKONTAKTE
-import:         from AS29547
-action pref=100;
-accept AS-CENTERINFORM-ATLAS
 import:         from AS31133
 action pref=100;
 accept AS-CDN-MEGAFON
@@ -2844,8 +2841,6 @@ export:         to AS25549
 announce AS-NSKROUTESERVER
 export:         to AS28709
 announce AS-NSKROUTESERVER
-export:         to AS29547
-announce AS-NSKROUTESERVER
 export:         to AS31133
 announce AS-NSKROUTESERVER
 export:         to AS31200
@@ -2958,7 +2953,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2025-12-18T05:41:16Z
+last-modified:  2025-12-26T05:39:41Z
 source:         RIPE
 
 
@@ -5786,6 +5781,9 @@ accept AS-SI
 import:         from AS58067
 action pref=100;
 accept AS-CHTE
+import:         from AS58136
+action pref=100;
+accept AS58136
 import:         from AS58310
 action pref=100;
 accept AS58310
@@ -6934,6 +6932,8 @@ export:         to AS58002
 announce AS-MSKROUTESERVER
 export:         to AS58067
 announce AS-MSKROUTESERVER
+export:         to AS58136
+announce AS-MSKROUTESERVER
 export:         to AS58310
 announce AS-MSKROUTESERVER
 export:         to AS58715
@@ -7195,7 +7195,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-12-25T09:39:11Z
+last-modified:  2025-12-26T09:37:44Z
 source:         RIPE
 
 
