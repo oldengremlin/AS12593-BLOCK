@@ -373,13 +373,14 @@ members:        AS-BLIZZARD
 members:        AS210357
 members:        AS215174:AS-PRONOWTECH
 members:        AS-INDIKOM
+members:        AS62240:AS-CUSTOMERS
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:05:11Z
-last-modified:  2025-12-24T14:44:16Z
+last-modified:  2025-12-29T10:19:16Z
 source:         RIPE
 
 
@@ -656,7 +657,6 @@ members:        AS59504
 members:        AS-BTK
 members:        AS60357
 members:        AS61189
-members:        AS-AVANTRU
 members:        AS-NETFORT
 members:        AS-HANGENKOVONET
 members:        AS60337:AS-MEDIATECH-MSK
@@ -1178,7 +1178,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2023-08-15T18:17:57Z
-last-modified:  2025-12-24T14:42:39Z
+last-modified:  2025-12-29T10:21:56Z
 source:         RIPE
 
 
@@ -1512,34 +1512,41 @@ mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRANSROUTE-DAEMON-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-07-02T13:14:13Z
-last-modified:  2025-10-08T10:30:38Z
+last-modified:  2025-12-29T17:56:43Z
 source:         RIPE
+members:        AS12365
 members:        AS142113
 members:        AS196767
 members:        AS199040
+members:        AS199624
 members:        AS199730
 members:        AS200195
 members:        AS200734
 members:        AS202079
 members:        AS202763
 members:        AS203337
+members:        AS203699
 members:        AS207353
 members:        AS208392
 members:        AS210471
 members:        AS212089
 members:        AS212165
 members:        AS213691
+members:        AS213787
+members:        AS213853
 members:        AS216139
 members:        AS216334
 members:        AS24663
 members:        AS25532
 members:        AS29128
 members:        AS34123
+members:        AS34527
 members:        AS35000
 members:        AS35048
 members:        AS42031
 members:        AS44964
 members:        AS45055
+members:        AS47857
 members:        AS47860
 members:        AS48149
 members:        AS48282
@@ -2572,13 +2579,14 @@ members:        AS57629
 members:        AS-ZAO-KES
 members:        AS-YANDEX
 members:        AS60119
+members:        AS-VKONTAKTE
 members:        AS215013:AS-YCCDN
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2025-06-05T21:16:17Z
-last-modified:  2025-12-05T16:24:20Z
+last-modified:  2025-12-29T12:37:01Z
 source:         RIPE
 
 
@@ -2614,7 +2622,6 @@ members:        AS54985
 members:        AS47122:AS-CYBERFIRST
 members:        AS57073
 members:        AS57246
-members:        AS-AVANTRU
 members:        AS57334
 members:        AS50947
 members:        AS57629
@@ -2641,6 +2648,7 @@ members:        AS-UPITERTELECOM
 members:        AS-BETATELECOM
 members:        AS-BITE
 members:        AS-BONCH-IT
+members:        AS57113
 members:        AS-CDNET-MSK
 members:        AS-CDNET-SPB
 members:        AS-CDNNOW
@@ -3100,7 +3108,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2017-11-18T18:58:06Z
-last-modified:  2025-12-24T14:41:19Z
+last-modified:  2025-12-29T10:21:34Z
 source:         RIPE
 
 
@@ -4202,6 +4210,8 @@ import:         from AS215174 action pref=100; accept AS215174:AS-PRONOWTECH
 export:         to AS215174 announce as-piter-ix-fra
 import:         from AS59584 action pref=100; accept AS-INDIKOM
 export:         to AS59584 announce as-piter-ix-fra
+import:         from AS62240 action pref=100; accept AS62240:AS-CUSTOMERS
+export:         to AS62240 announce as-piter-ix-fra
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -4209,7 +4219,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T08:46:05Z
-last-modified:  2025-12-24T14:49:22Z
+last-modified:  2025-12-29T10:20:45Z
 source:         RIPE
 
 
@@ -6897,6 +6907,8 @@ import:         from AS24811 accept AS-ZAO-KES
 export:         to AS24811 announce AS61409:AS-PITER-IX-NSK
 import:         from AS13238 accept AS-YANDEX
 export:         to AS13238 announce AS61409:AS-PITER-IX-NSK
+import:         from AS28709 accept AS-VKONTAKTE
+export:         to AS28709 announce AS61409:AS-PITER-IX-NSK
 import:         from AS60119 accept AS60119
 export:         to AS60119 announce AS61409:AS-PITER-IX-NSK
 import:         from AS215013 accept AS215013:AS-YCCDN
@@ -6908,7 +6920,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2023-03-08T15:17:57Z
-last-modified:  2025-12-05T16:30:50Z
+last-modified:  2025-12-29T12:39:08Z
 source:         RIPE
 
 
