@@ -9,6 +9,10 @@ import:         from AS2914 action pref=100; accept ANY
 export:         to AS2914 announce AS-NETASSIST
 mp-import:      afi ipv6.unicast from AS2914 accept ANY
 mp-export:      afi ipv6.unicast to AS2914 announce AS-NETASSIST
+import:         from AS3491 action pref=100; accept ANY
+export:         to AS3491 announce AS-NETASSIST
+mp-import:      afi ipv6.unicast from AS3491 accept ANY
+mp-export:      afi ipv6.unicast to AS3491 announce AS-NETASSIST
 import:         from AS3356 action pref=100; accept ANY
 export:         to AS3356 announce AS-NETASSIST
 mp-import:      afi ipv6.unicast from AS2914 accept ANY
@@ -946,7 +950,7 @@ notify:         noc@netassist.ua
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEREZHA-MNT
 created:        2003-10-28T13:43:45Z
-last-modified:  2025-12-16T15:25:34Z
+last-modified:  2025-12-30T16:08:09Z
 source:         RIPE
 
 as-num:         AS29632
