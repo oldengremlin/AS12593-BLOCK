@@ -12,13 +12,17 @@ import:         from AS209533 accept ANY
 export:         to AS209533 announce AS215110
 import:         from AS35708 accept ANY
 export:         to AS35708 announce AS215110:AS-ALL
+import:         from AS24381 accept ANY
+export:         to AS24381 announce AS215110
+mp-import:      afi ipv6.unicast from AS24381 accept ANY
+mp-export:      afi ipv6.unicast to AS24381 announce AS215110
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         janhill-mnt
 created:        2026-01-05T10:19:30Z
-last-modified:  2026-01-06T11:05:03Z
+last-modified:  2026-01-08T20:17:05Z
 source:         RIPE
 
 as-num:         AS215110
@@ -36,6 +40,9 @@ as-name:        KEAZ-AO
 as-num:         AS215110
 country:        RU
 as-name:        KEAZ-AO
+as-num:         AS215110
+country:        DE
+as-name:        null
 as-num:         AS215110
 country:        DE
 as-name:        null
