@@ -163,7 +163,7 @@ mp-import:      afi ipv6.unicast from AS60720 2a00:8d60:0:5::3 action pref=50; a
 mp-export:      afi ipv6.unicast to AS60720 2a00:8d60:0:5::3 announce community(34959:100) OR community (49791:100) OR  AS34959:AS-PROCLOUD
 mp-import:      afi ipv4.unicast from AS34089 194.55.235.245 at 194.55.235.244 action pref=50; accept AS34089
 mp-export:      afi ipv4.unicast to AS34089 194.55.235.245 at 194.55.235.244 announce NOT fltr-martian AND ANY AND NOT community(34959:1)
-mp-import:      afi ipv4.unicast from AS39798 194.55.234.63 action pref=50; community .= {34959:300}; accept { 5.252.179.0/24, 5.252.176.0/24 }
+mp-import:      afi ipv4.unicast from AS39798 194.55.234.63 action pref=50; community .= {34959:300}; accept { 5.252.176.0/24 }
 mp-export:      afi ipv4.unicast to AS39798 194.55.234.63 announce { 0.0.0.0/0 }
 mp-import:      afi ipv6.unicast from AS39798 2a0f:1140:140:68::2 action pref=50; community .= {34959:300}; accept { 2a0a:c802:4::/48 }
 mp-export:      afi ipv6.unicast to AS39798 2a0f:1140:140:68::2 announce { ::/0 }
@@ -183,7 +183,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-kviktel-1
 created:        2019-10-28T15:15:57Z
-last-modified:  2025-03-21T21:10:59Z
+last-modified:  2026-01-12T09:27:12Z
 source:         RIPE
 
 

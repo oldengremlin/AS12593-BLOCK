@@ -62,7 +62,6 @@ members:        AS-ACN
 members:        AS-AEZA
 members:        AS-AKAMAI
 members:        AS-AKVILON
-members:        AS-ALFACOM
 members:        AS-ALTURA
 members:        AS-AMTEL
 members:        AS-ANEXIA
@@ -314,7 +313,6 @@ members:        AS198310:AS-MOLNIYA
 members:        AS200847:AS-MOBILECARD
 members:        AS203456:AS-BORK
 members:        AS205014:AS-ITSAT
-members:        AS206728:AS-MEDIALANDTECHNOLOGY
 members:        AS207239:AS-GIGNET
 members:        AS21051:AS-ASTRUM
 members:        AS210928:AS-RDB-CLIENT
@@ -565,7 +563,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2025-12-24T19:59:12Z
+last-modified:  2026-01-12T19:59:13Z
 source:         RIPE
 
 
@@ -576,7 +574,6 @@ members:        AS57304
 members:        AS-ACN
 members:        AS-AEZA
 members:        AS-AKAMAI
-members:        AS-ALFACOM
 members:        AS-ANEXIA
 members:        AS-ARPNET61
 members:        AS-ARTPLANET
@@ -743,7 +740,6 @@ members:        AS-ZVEZDATEL
 members:        AS138915:AS-CUSTOMER
 members:        AS139057:AS-CONE
 members:        AS198310:AS-MOLNIYA
-members:        AS206728:AS-MEDIALANDTECHNOLOGY
 members:        AS214294:AS-NOOB
 members:        AS215307:AS-MOVETEL-CUSTOMERS
 members:        AS215601:AS-ALLHOSTINGS
@@ -828,7 +824,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2025-12-01T19:59:20Z
+last-modified:  2026-01-12T19:59:13Z
 source:         RIPE
 
 
@@ -1801,8 +1797,6 @@ import:         from  AS49542 action pref=100; accept   AS-ARTPLANET
 export:         to    AS49542                  announce ANY
 import:         from  AS49569 action pref=100; accept   AS49569
 export:         to    AS49569                  announce ANY
-import:         from  AS49641 action pref=100; accept   AS-ALFACOM
-export:         to    AS49641                  announce ANY
 import:         from  AS49729 action pref=100; accept   AS49729
 export:         to    AS49729                  announce ANY
 import:         from  AS49776 action pref=100; accept   AS49776
@@ -2211,8 +2205,6 @@ import:         from AS206631 action pref=100; accept   AS206631
 export:         to   AS206631                  announce ANY
 import:         from AS206653 action pref=100; accept   AS206653
 export:         to   AS206653                  announce ANY
-import:         from AS206728 action pref=100; accept   AS206728:AS-MEDIALANDTECHNOLOGY
-export:         to   AS206728                  announce ANY
 import:         from AS206764 action pref=100; accept   AS206764
 export:         to   AS206764                  announce ANY
 import:         from AS206804 action pref=100; accept   AS206804
@@ -2353,8 +2345,6 @@ import:         from AS215037 action pref=100; accept   AS215037
 export:         to   AS215037                  announce ANY
 import:         from AS215307 action pref=100; accept   AS215307:AS-MOVETEL-CUSTOMERS
 export:         to   AS215307                  announce ANY
-import:         from AS215376 action pref=100; accept   AS206728:AS-MEDIALANDTECHNOLOGY
-export:         to   AS215376                  announce ANY
 import:         from AS215455 action pref=100; accept   AS215455
 export:         to   AS215455                  announce ANY
 import:         from AS215601 action pref=100; accept   AS215601:AS-ALLHOSTINGS
@@ -2661,8 +2651,6 @@ mp-import:      afi ipv6.unicast from  AS49505 action pref=100; accept   AS-SELE
 mp-export:      afi ipv6.unicast to    AS49505                  announce ANY
 mp-import:      afi ipv6.unicast from  AS49542 action pref=100; accept   AS-ARTPLANET
 mp-export:      afi ipv6.unicast to    AS49542                  announce ANY
-mp-import:      afi ipv6.unicast from  AS49641 action pref=100; accept   AS-ALFACOM
-mp-export:      afi ipv6.unicast to    AS49641                  announce ANY
 mp-import:      afi ipv6.unicast from  AS49776 action pref=100; accept   AS49776
 mp-export:      afi ipv6.unicast to    AS49776                  announce ANY
 mp-import:      afi ipv6.unicast from  AS49892 action pref=100; accept   AS-TETATELECOM
@@ -2851,8 +2839,6 @@ mp-import:      afi ipv6.unicast from AS205864 action pref=100; accept   AS20586
 mp-export:      afi ipv6.unicast to   AS205864                  announce ANY
 mp-import:      afi ipv6.unicast from AS205952 action pref=100; accept   AS-CARAVANAERO
 mp-export:      afi ipv6.unicast to   AS205952                  announce ANY
-mp-import:      afi ipv6.unicast from AS206728 action pref=100; accept   AS206728:AS-MEDIALANDTECHNOLOGY
-mp-export:      afi ipv6.unicast to   AS206728                  announce ANY
 mp-import:      afi ipv6.unicast from AS206805 action pref=100; accept   AS206805
 mp-export:      afi ipv6.unicast to   AS206805                  announce ANY
 mp-import:      afi ipv6.unicast from AS206904 action pref=100; accept   AS206904
@@ -2903,8 +2889,6 @@ mp-import:      afi ipv6.unicast from AS214294 action pref=100; accept   AS21429
 mp-export:      afi ipv6.unicast to   AS214294                  announce ANY
 mp-import:      afi ipv6.unicast from AS215307 action pref=100; accept   AS215307:AS-MOVETEL-CUSTOMERS
 mp-export:      afi ipv6.unicast to   AS215307                  announce ANY
-mp-import:      afi ipv6.unicast from AS215376 action pref=100; accept   AS206728:AS-MEDIALANDTECHNOLOGY
-mp-export:      afi ipv6.unicast to   AS215376                  announce ANY
 mp-import:      afi ipv6.unicast from AS215455 action pref=100; accept   AS215455
 mp-export:      afi ipv6.unicast to   AS215455                  announce ANY
 mp-import:      afi ipv6.unicast from AS215601 action pref=100; accept   AS215601:AS-ALLHOSTINGS
@@ -2920,7 +2904,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2025-12-24T19:59:13Z
+last-modified:  2026-01-12T19:59:13Z
 source:         RIPE
 
 

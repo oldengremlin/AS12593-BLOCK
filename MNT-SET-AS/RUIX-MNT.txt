@@ -509,6 +509,8 @@ members:        AS-TTC
 members:        AS-INSYS-EKB
 # from AS28891:
 members:        AS-CITTEL
+# from AS28910:
+members:        AS-INTAL
 # from AS28917:
 members:        AS-FIORD
 # from AS28968:
@@ -1271,6 +1273,8 @@ members:        AS210063
 members:        AS210135
 # from AS210171:
 members:        AS210171
+# from AS210240:
+members:        AS210240
 # from AS210357:
 members:        AS210357
 # from AS210443:
@@ -1314,7 +1318,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2025-12-31T09:37:33Z
+last-modified:  2026-01-12T13:30:25Z
 source:         RIPE
 
 
@@ -4969,6 +4973,9 @@ accept AS-INSYS-EKB
 import:         from AS28891
 action pref=100;
 accept AS-CITTEL
+import:         from AS28910
+action pref=100;
+accept AS-INTAL
 import:         from AS28917
 action pref=100;
 accept AS-FIORD
@@ -6112,6 +6119,9 @@ accept AS210135
 import:         from AS210171
 action pref=100;
 accept AS210171
+import:         from AS210240
+action pref=100;
+accept AS210240
 import:         from AS210357
 action pref=100;
 accept AS210357
@@ -6386,6 +6396,8 @@ announce AS-MSKROUTESERVER
 export:         to AS28890
 announce AS-MSKROUTESERVER
 export:         to AS28891
+announce AS-MSKROUTESERVER
+export:         to AS28910
 announce AS-MSKROUTESERVER
 export:         to AS28917
 announce AS-MSKROUTESERVER
@@ -7149,6 +7161,8 @@ export:         to AS210135
 announce AS-MSKROUTESERVER
 export:         to AS210171
 announce AS-MSKROUTESERVER
+export:         to AS210240
+announce AS-MSKROUTESERVER
 export:         to AS210357
 announce AS-MSKROUTESERVER
 export:         to AS210443
@@ -7188,7 +7202,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2025-12-31T09:37:28Z
+last-modified:  2026-01-12T13:30:20Z
 source:         RIPE
 
 
