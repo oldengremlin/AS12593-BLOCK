@@ -228,9 +228,6 @@ accept AS-SET-WPL
 import:         from AS16143
 action pref=100;
 accept AS-RATEL
-import:         from AS16276
-action pref=100;
-accept AS-OVH
 import:         from AS20483
 action pref=100;
 accept AS-RTNET
@@ -309,6 +306,9 @@ accept AS9056 as25371
 import:         from AS25408
 action pref=100;
 accept AS-WESTCALLSPB
+import:         from AS25437
+action pref=100;
+accept AS-AS25437
 import:         from AS25451
 action pref=100;
 accept AS25451
@@ -603,9 +603,6 @@ accept AS-SIGNALTV
 import:         from AS42518
 action pref=100;
 accept AS-UNETCOMRU
-import:         from AS42532
-action pref=100;
-accept AS-VEESP
 import:         from AS42574
 action pref=100;
 accept AS-NSPLUS
@@ -1506,6 +1503,9 @@ accept AS211609
 import:         from AS211914
 action pref=100;
 accept AS211914
+import:         from AS212136
+action pref=100;
+accept AS212136:AS-NUBES
 import:         from AS212232
 action pref=100;
 accept AS212232
@@ -1687,8 +1687,6 @@ export:         to AS15930
 announce AS-MSKROUTESERVER
 export:         to AS16143
 announce AS-MSKROUTESERVER
-export:         to AS16276
-announce AS-MSKROUTESERVER
 export:         to AS20483
 announce AS-MSKROUTESERVER
 export:         to AS20590
@@ -1740,6 +1738,8 @@ announce AS-MSKROUTESERVER
 export:         to AS25371
 announce AS-MSKROUTESERVER
 export:         to AS25408
+announce AS-MSKROUTESERVER
+export:         to AS25437
 announce AS-MSKROUTESERVER
 export:         to AS25451
 announce AS-MSKROUTESERVER
@@ -1936,8 +1936,6 @@ announce AS-MSKROUTESERVER
 export:         to AS42514
 announce AS-MSKROUTESERVER
 export:         to AS42518
-announce AS-MSKROUTESERVER
-export:         to AS42532
 announce AS-MSKROUTESERVER
 export:         to AS42574
 announce AS-MSKROUTESERVER
@@ -2539,6 +2537,8 @@ export:         to AS211609
 announce AS-MSKROUTESERVER
 export:         to AS211914
 announce AS-MSKROUTESERVER
+export:         to AS212136
+announce AS-MSKROUTESERVER
 export:         to AS212232
 announce AS-MSKROUTESERVER
 export:         to AS212236
@@ -2562,12 +2562,15 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-01-12T13:30:20Z
+last-modified:  2026-01-13T13:34:53Z
 source:         RIPE
 
 as-num:         AS8631
 country:        RU
 as-name:        MSK-IX-RS Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS8631
+country:        RU
+as-name:        null
 as-num:         AS8631
 country:        RU
 as-name:        null

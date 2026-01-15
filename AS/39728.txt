@@ -1,12 +1,16 @@
 aut-num:        AS39728
 as-name:        Luganet
 org:            ORG-LD123-RIPE
+import:         from AS3216   action pref=100; accept   ANY
+export:         to   AS3216                    announce AS-LUGANET
 import:         from AS12389  action pref=100; accept   ANY
 export:         to   AS12389                   announce AS-LUGANET
 import:         from AS50509  action pref=100; accept   ANY
 export:         to   AS50509                   announce AS-LUGANET
 import:         from AS198310 action pref=100; accept   ANY
 export:         to   AS198310                  announce AS-LUGANET
+import:         from AS201706 action pref=100; accept   ANY
+export:         to   AS201706                  announce AS-LUGANET
 import:         from AS8631   action pref=120; accept   AS-MSKROUTESERVER
 export:         to   AS8631                    announce AS-LUGANET
 import:         from AS31500  action pref=120; accept   AS-DATAIX
@@ -62,12 +66,15 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-likhno-1
 mnt-by:         ARTA-MNT
 created:        2006-04-18T13:04:02Z
-last-modified:  2025-12-16T07:11:48Z
+last-modified:  2026-01-13T13:47:14Z
 source:         RIPE
 
 as-num:         AS39728
 country:        RU
 as-name:        Luganet Likhno Dmitriy trading as Luganet
+as-num:         AS39728
+country:        RU
+as-name:        null
 as-num:         AS39728
 country:        RU
 as-name:        null
