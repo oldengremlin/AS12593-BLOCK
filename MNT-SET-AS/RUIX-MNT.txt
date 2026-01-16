@@ -46,6 +46,8 @@ members:        AS-NGENIX-EKT
 members:        AS-GOOGLE
 # from AS39684:
 members:        AS39684
+# from AS41034:
+members:        AS-IMPULS
 # from AS41560:
 members:        AS41560
 # from AS42498:
@@ -114,7 +116,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2025-12-05T12:11:16Z
+last-modified:  2026-01-14T14:09:22Z
 source:         RIPE
 
 
@@ -3056,6 +3058,9 @@ accept AS-GOOGLE
 import:         from AS39684
 action pref=100;
 accept AS39684
+import:         from AS41034
+action pref=100;
+accept AS-IMPULS
 import:         from AS41560
 action pref=100;
 accept AS41560
@@ -3191,6 +3196,8 @@ export:         to AS36040
 announce AS-EKTROUTESERVER
 export:         to AS39684
 announce AS-EKTROUTESERVER
+export:         to AS41034
+announce AS-EKTROUTESERVER
 export:         to AS41560
 announce AS-EKTROUTESERVER
 export:         to AS42498
@@ -3257,7 +3264,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2025-12-05T12:11:20Z
+last-modified:  2026-01-14T14:09:27Z
 source:         RIPE
 
 
