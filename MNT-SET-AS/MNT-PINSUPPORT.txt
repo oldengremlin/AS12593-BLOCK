@@ -375,13 +375,14 @@ members:        AS215174:AS-PRONOWTECH
 members:        AS-INDIKOM
 members:        AS62240:AS-CUSTOMERS
 members:        AS214380
+members:        AS-INTERSVYAZ
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:05:11Z
-last-modified:  2026-01-12T11:55:38Z
+last-modified:  2026-01-15T15:07:38Z
 source:         RIPE
 
 
@@ -518,6 +519,7 @@ members:        AS-CREANOVA
 members:        AS210357
 members:        AS-INDIKOM
 members:        AS30823:AS-AUROLOGIC
+members:        AS-INTERSVYAZ
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         PITER-IX-MNT
@@ -525,7 +527,7 @@ mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2020-11-06T12:10:10Z
-last-modified:  2026-01-14T12:51:50Z
+last-modified:  2026-01-15T15:06:10Z
 source:         RIPE
 
 
@@ -1168,7 +1170,6 @@ members:        AS-WAICORE
 members:        AS44626
 members:        AS52025:AS-ALL
 members:        AS210357
-members:        AS-ROSINTEL
 members:        AS213787:AS-CLOUDRACK
 members:        AS42151:AS-P24-CLOUD
 members:        AS214218
@@ -1176,13 +1177,14 @@ members:        AS214268
 members:        AS-INDIKOM
 members:        AS30823:AS-AUROLOGIC
 members:        AS41718
+members:        AS-INTERSVYAZ
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2023-08-15T18:17:57Z
-last-modified:  2026-01-14T12:52:38Z
+last-modified:  2026-01-15T15:17:22Z
 source:         RIPE
 
 
@@ -3063,17 +3065,17 @@ members:        AS-WAICORE
 members:        AS-IPNETPEERS-1
 members:        AS52025:AS-ALL
 members:        AS210357
-members:        AS-ROSINTEL
 members:        AS214218
 members:        AS214268
 members:        AS-INDIKOM
 members:        AS30823:AS-AUROLOGIC
+members:        AS-INTERSVYAZ
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2017-11-18T18:58:06Z
-last-modified:  2026-01-14T12:50:25Z
+last-modified:  2026-01-15T15:16:54Z
 source:         RIPE
 
 
@@ -3861,6 +3863,8 @@ import:         from AS59584 action pref=100; accept AS-INDIKOM
 export:         to AS59584 announce AS-PITER-IX-HELSINKI
 import:         from AS30823 action pref=100; accept AS30823:AS-AUROLOGIC
 export:         to AS30823 announce AS-PITER-IX-HELSINKI
+import:         from AS8369 action pref=100; accept AS-INTERSVYAZ
+export:         to AS8369 announce AS-PITER-IX-HELSINKI
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -3869,7 +3873,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-10-08T08:51:37Z
-last-modified:  2026-01-14T12:58:20Z
+last-modified:  2026-01-15T15:14:26Z
 source:         RIPE
 sponsoring-org: ORG-PCL30-RIPE
 
@@ -4179,6 +4183,8 @@ import:         from AS59584 action pref=100; accept AS-INDIKOM
 export:         to AS59584 announce as-piter-ix-fra
 import:         from AS62240 action pref=100; accept AS62240:AS-CUSTOMERS
 export:         to AS62240 announce as-piter-ix-fra
+import:         from AS8369 action pref=100; accept AS-INTERSVYAZ
+export:         to AS8369 announce as-piter-ix-fra
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -4186,7 +4192,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T08:46:05Z
-last-modified:  2025-12-29T10:20:45Z
+last-modified:  2026-01-15T15:15:05Z
 source:         RIPE
 
 
@@ -5450,8 +5456,6 @@ import:         from AS52025 action pref=100; accept AS52025:AS-ALL
 export:         to AS52025 announce as-piter-ix-msk
 import:         from AS210357 action pref=100; accept AS210357
 export:         to AS210357 announce as-piter-ix-msk
-import:         from AS24689 action pref=100; accept AS-ROSINTEL
-export:         to AS24689 announce as-piter-ix-msk
 import:         from AS213787 action pref=100; accept AS213787:AS-CLOUDRACK
 export:         to AS213787 announce as-piter-ix-msk
 import:         from AS42151 action pref=100; accept AS42151:AS-P24-CLOUD
@@ -5462,6 +5466,8 @@ import:         from AS59584 action pref=100; accept AS-INDIKOM
 export:         to AS59584 announce as-piter-ix-msk
 import:         from AS30823 action pref=100; accept AS30823:AS-AUROLOGIC
 export:         to AS30823 announce as-piter-ix-msk
+import:         from AS8369 action pref=100; accept AS-INTERSVYAZ
+export:         to AS8369 announce as-piter-ix-msk
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -5470,7 +5476,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2026-01-14T12:57:41Z
+last-modified:  2026-01-15T15:18:43Z
 source:         RIPE
 
 
@@ -6492,8 +6498,6 @@ import:         from AS52025 action pref=100; accept AS52025:AS-ALL
 export:         to AS52025 announce as-piter-ix
 import:         from AS210357 action pref=100; accept AS210357
 export:         to AS210357 announce as-piter-ix
-import:         from AS24689 action pref=100; accept AS-ROSINTEL
-export:         to AS24689 announce as-piter-ix
 import:         from AS214218 action pref=100; accept AS214218
 export:         to AS214218 announce as-piter-ix
 import:         from AS214268 action pref=100; accept AS214268
@@ -6502,6 +6506,8 @@ import:         from AS59584 action pref=100; accept AS-INDIKOM
 export:         to AS59584 announce as-piter-ix
 import:         from AS30823 action pref=100; accept AS30823:AS-AUROLOGIC
 export:         to AS30823 announce as-piter-ix
+import:         from AS8369 action pref=100; accept AS-INTERSVYAZ
+export:         to AS8369 announce as-piter-ix
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6510,7 +6516,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2026-01-14T12:56:38Z
+last-modified:  2026-01-15T15:17:54Z
 source:         RIPE
 
 

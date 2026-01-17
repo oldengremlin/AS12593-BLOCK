@@ -367,8 +367,6 @@ members:        AS-COMCOR
 members:        AS-REDCOM
 # from AS8752:
 members:        AS-ASVT
-# from AS8764:
-members:        AS-LTELECOM, AS-TEO6
 # from AS8932:
 members:        AS8932:AS-ALL
 # from AS8985:
@@ -441,6 +439,8 @@ members:        AS-MAP
 members:        AS-SET-WPL
 # from AS16143:
 members:        AS-RATEL
+# from AS16276:
+members:        AS-OVH
 # from AS20483:
 members:        AS-RTNET
 # from AS20590:
@@ -1320,7 +1320,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-01-13T13:34:54Z
+last-modified:  2026-01-15T13:31:57Z
 source:         RIPE
 
 
@@ -4764,9 +4764,6 @@ accept AS-REDCOM
 import:         from AS8752
 action pref=100;
 accept AS-ASVT
-import:         from AS8764
-action pref=100;
-accept AS-LTELECOM AS-TEO6
 import:         from AS8932
 action pref=100;
 accept AS8932:AS-ALL
@@ -4875,6 +4872,9 @@ accept AS-SET-WPL
 import:         from AS16143
 action pref=100;
 accept AS-RATEL
+import:         from AS16276
+action pref=100;
+accept AS-OVH
 import:         from AS20483
 action pref=100;
 accept AS-RTNET
@@ -6260,8 +6260,6 @@ export:         to AS8749
 announce AS-MSKROUTESERVER
 export:         to AS8752
 announce AS-MSKROUTESERVER
-export:         to AS8764
-announce AS-MSKROUTESERVER
 export:         to AS8932
 announce AS-MSKROUTESERVER
 export:         to AS8985
@@ -6333,6 +6331,8 @@ announce AS-MSKROUTESERVER
 export:         to AS15930
 announce AS-MSKROUTESERVER
 export:         to AS16143
+announce AS-MSKROUTESERVER
+export:         to AS16276
 announce AS-MSKROUTESERVER
 export:         to AS20483
 announce AS-MSKROUTESERVER
@@ -7209,7 +7209,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-01-13T13:34:53Z
+last-modified:  2026-01-15T13:31:53Z
 source:         RIPE
 
 
