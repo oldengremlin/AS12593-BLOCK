@@ -285,6 +285,9 @@ accept AS-COMPLAT
 import:         from AS24689
 action pref=100;
 accept AS-ROSINTEL
+import:         from AS24758
+action pref=100;
+accept AS24758:AS-MICROEL
 import:         from AS24936
 action pref=100;
 accept AS-RIM2000M
@@ -308,7 +311,7 @@ action pref=100;
 accept AS-WESTCALLSPB
 import:         from AS25437
 action pref=100;
-accept AS-AS25437
+accept AS25437
 import:         from AS25451
 action pref=100;
 accept AS25451
@@ -1725,6 +1728,8 @@ export:         to AS24663
 announce AS-MSKROUTESERVER
 export:         to AS24689
 announce AS-MSKROUTESERVER
+export:         to AS24758
+announce AS-MSKROUTESERVER
 export:         to AS24936
 announce AS-MSKROUTESERVER
 export:         to AS25091
@@ -2562,7 +2567,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-01-15T13:31:53Z
+last-modified:  2026-01-16T13:32:25Z
 source:         RIPE
 
 as-num:         AS8631
