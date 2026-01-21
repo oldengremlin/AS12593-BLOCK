@@ -5,6 +5,7 @@ members:        AS29226
 members:        AS8742
 members:        AS8872
 members:        AS15756
+members:        AS24684
 members:        AS25227
 members:        AS31192
 members:        AS34192
@@ -328,7 +329,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MASTERTEL-MNT
 created:        2004-03-19T10:40:20Z
-last-modified:  2025-12-29T10:15:29Z
+last-modified:  2026-01-19T15:41:16Z
 source:         RIPE
 
 
@@ -1281,6 +1282,8 @@ import:         from AS47652 action pref=200; accept AS47652
 export:         to AS47652 announce ANY
 import:         from AS203858 action pref=200; accept AS203858
 export:         to AS203858 announce ANY
+import:         from AS24684 action pref=200; accept AS24684
+export:         to AS24684 announce {0.0.0.0/0}
 mp-import:      afi ipv6 from AS29076 accept ANY;
 mp-export:      afi ipv6 to AS29076 announce AS-MASTERTEL6;
 mp-import:      afi ipv6 from AS9002 accept ANY;
@@ -1350,7 +1353,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2025-12-29T10:17:51Z
+last-modified:  2026-01-19T15:53:14Z
 source:         RIPE
 
 
