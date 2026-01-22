@@ -178,6 +178,7 @@ members:        AS-LIGHTPORT
 members:        AS-LIVECOMM-CORE
 members:        AS-LOFISNET
 members:        AS-LT
+members:        AS-LUGANET
 members:        AS-LUREIT
 members:        AS-MAILRU
 members:        AS-MASTERBIT
@@ -504,7 +505,6 @@ members:        AS206385
 members:        AS206631
 members:        AS206653
 members:        AS206764
-members:        AS206804
 members:        AS206805
 members:        AS206850
 members:        AS206904
@@ -562,7 +562,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2026-01-13T19:59:13Z
+last-modified:  2026-01-20T19:59:13Z
 source:         RIPE
 
 
@@ -643,6 +643,7 @@ members:        AS-KVS
 members:        AS-LANAMAR
 members:        AS-LEVEL-MSK
 members:        AS-LIVECOMM-CORE
+members:        AS-LUGANET
 members:        AS-LUREIT
 members:        AS-MAILRU6
 members:        AS-MASTERBIT
@@ -823,7 +824,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2026-01-12T19:59:13Z
+last-modified:  2026-01-20T19:59:13Z
 source:         RIPE
 
 
@@ -1532,6 +1533,8 @@ import:         from  AS39684 action pref=100; accept   AS39684
 export:         to    AS39684                  announce ANY
 import:         from  AS39688 action pref=100; accept   AS39688
 export:         to    AS39688                  announce ANY
+import:         from  AS39728 action pref=100; accept   AS-LUGANET
+export:         to    AS39728                  announce ANY
 import:         from  AS39735 action pref=100; accept   AS-TMPERM
 export:         to    AS39735                  announce ANY
 import:         from  AS39741 action pref=100; accept   AS-RUSCOM
@@ -2204,8 +2207,6 @@ import:         from AS206653 action pref=100; accept   AS206653
 export:         to   AS206653                  announce ANY
 import:         from AS206764 action pref=100; accept   AS206764
 export:         to   AS206764                  announce ANY
-import:         from AS206804 action pref=100; accept   AS206804
-export:         to   AS206804                  announce ANY
 import:         from AS206805 action pref=100; accept   AS206805
 export:         to   AS206805                  announce ANY
 import:         from AS206850 action pref=100; accept   AS206850
@@ -2508,6 +2509,8 @@ mp-import:      afi ipv6.unicast from  AS39143 action pref=100; accept   AS-BSH2
 mp-export:      afi ipv6.unicast to    AS39143                  announce ANY
 mp-import:      afi ipv6.unicast from  AS39577 action pref=100; accept   AS39577
 mp-export:      afi ipv6.unicast to    AS39577                  announce ANY
+mp-import:      afi ipv6.unicast from  AS39728 action pref=100; accept   AS-LUGANET
+mp-export:      afi ipv6.unicast to    AS39728                  announce ANY
 mp-import:      afi ipv6.unicast from  AS39735 action pref=100; accept   AS-TMPERM
 mp-export:      afi ipv6.unicast to    AS39735                  announce ANY
 mp-import:      afi ipv6.unicast from  AS39741 action pref=100; accept   AS-RUSCOM
@@ -2901,7 +2904,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-01-13T19:59:13Z
+last-modified:  2026-01-20T19:59:13Z
 source:         RIPE
 
 
