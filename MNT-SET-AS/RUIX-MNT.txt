@@ -1249,6 +1249,8 @@ members:        AS207239:AS-GIGNET
 members:        AS207561
 # from AS207785:
 members:        AS-HOSTLINE-IX
+# from AS207883:
+members:        AS207883
 # from AS208129:
 members:        AS208129
 # from AS208349:
@@ -1322,7 +1324,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-01-16T13:32:29Z
+last-modified:  2026-01-21T09:35:17Z
 source:         RIPE
 
 
@@ -6089,6 +6091,9 @@ accept AS207561
 import:         from AS207785
 action pref=100;
 accept AS-HOSTLINE-IX
+import:         from AS207883
+action pref=100;
+accept AS207883
 import:         from AS208129
 action pref=100;
 accept AS208129
@@ -7147,6 +7152,8 @@ export:         to AS207561
 announce AS-MSKROUTESERVER
 export:         to AS207785
 announce AS-MSKROUTESERVER
+export:         to AS207883
+announce AS-MSKROUTESERVER
 export:         to AS208129
 announce AS-MSKROUTESERVER
 export:         to AS208349
@@ -7216,7 +7223,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-01-16T13:32:25Z
+last-modified:  2026-01-21T09:35:13Z
 source:         RIPE
 
 
