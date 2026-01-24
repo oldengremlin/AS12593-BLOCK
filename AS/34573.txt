@@ -2,22 +2,25 @@ aut-num:        AS34573
 as-name:        OBERON-ASN
 org:            ORG-OPL4-RIPE
 import:         from AS31133 accept ANY
-import:         from AS33892 accept AS33892
-import:         from AS49414 accept ANY
-import:         from AS49293 accept AS49293
-import:         from AS12389 accept ANY
-import:         from AS48858 accept ANY
-import:         from AS49980 accept AS49980
 export:         to AS31133 announce AS34573
 export:         to AS31133 announce AS49293
 export:         to AS31133 announce AS49980
-export:         to AS33892 announce AS34573
-export:         to AS49414 announce AS34573
-export:         to AS49293 announce ANY
+import:         from AS12389 accept ANY
 export:         to AS12389 announce AS34573
 export:         to AS12389 announce AS49293
 export:         to AS12389 announce AS49980
-export:         to AS48858 announce as-oberon
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-OBERON
+import:         from AS48858 accept ANY
+export:         to AS48858 announce AS-OBERON
+import:         from AS33892 accept AS33892
+export:         to AS33892 announce AS-OBERON
+import:         from AS49414 accept ANY
+export:         to AS49414 announce AS-OBERON
+import:         from AS49293 accept AS49293
+export:         to AS49293 announce ANY
+import:         from AS49980 accept AS49980
+export:         to AS49980 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -25,13 +28,16 @@ notify:         noc@seversk.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OBERON-MNT-RIPE
 created:        2005-02-16T11:53:30Z
-last-modified:  2022-10-13T07:38:43Z
+last-modified:  2026-01-22T10:43:43Z
 source:         RIPE
 sponsoring-org: ORG-LCIA1-RIPE
 
 as-num:         AS34573
 country:        RU
 as-name:        OBERON-ASN Information-Computer Center Oberon Plus, LLC
+as-num:         AS34573
+country:        RU
+as-name:        null
 as-num:         AS34573
 country:        RU
 as-name:        null
