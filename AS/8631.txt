@@ -1005,6 +1005,9 @@ accept AS-DI-DI
 import:         from AS51218
 action pref=100;
 accept AS51218
+import:         from AS51230
+action pref=100;
+accept AS-ROSINTEH
 import:         from AS51297
 action pref=100;
 accept AS51297
@@ -2211,6 +2214,8 @@ export:         to AS51200
 announce AS-MSKROUTESERVER
 export:         to AS51218
 announce AS-MSKROUTESERVER
+export:         to AS51230
+announce AS-MSKROUTESERVER
 export:         to AS51297
 announce AS-MSKROUTESERVER
 export:         to AS51341
@@ -2572,7 +2577,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-01-21T09:35:13Z
+last-modified:  2026-01-23T09:32:17Z
 source:         RIPE
 
 as-num:         AS8631
