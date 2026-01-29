@@ -1125,6 +1125,9 @@ accept AS57512
 import:         from AS57531
 action pref=100;
 accept AS57531:AS-RICTOMSKIX
+import:         from AS57614
+action pref=100;
+accept AS57614
 import:         from AS57629
 action pref=100;
 accept AS57629
@@ -1230,6 +1233,9 @@ accept AS61280
 import:         from AS61308
 action pref=100;
 accept AS-SKYNETCOM
+import:         from AS61324
+action pref=100;
+accept AS61324
 import:         from AS61400
 action pref=100;
 accept AS-NETRACK
@@ -2294,6 +2300,8 @@ export:         to AS57512
 announce AS-MSKROUTESERVER
 export:         to AS57531
 announce AS-MSKROUTESERVER
+export:         to AS57614
+announce AS-MSKROUTESERVER
 export:         to AS57629
 announce AS-MSKROUTESERVER
 export:         to AS57724
@@ -2363,6 +2371,8 @@ announce AS-MSKROUTESERVER
 export:         to AS61280
 announce AS-MSKROUTESERVER
 export:         to AS61308
+announce AS-MSKROUTESERVER
+export:         to AS61324
 announce AS-MSKROUTESERVER
 export:         to AS61400
 announce AS-MSKROUTESERVER
@@ -2577,7 +2587,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-01-23T09:32:17Z
+last-modified:  2026-01-26T13:37:13Z
 source:         RIPE
 
 as-num:         AS8631

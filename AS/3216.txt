@@ -1622,6 +1622,8 @@ import:         from AS211157 action pref=100; accept AS211157
 export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
+import:         from AS52222 action pref=100; accept AS52222
+export:         to AS52222 announce {0.0.0.0/0}
 import:         from AS48035 action pref=100; accept AS48035
 export:         to AS48035 announce AS-SOVAM
 import:         from AS197298 action pref=100; accept AS-ATEL-LTD
@@ -1782,6 +1784,10 @@ import:         from AS40995 action pref=100; accept AS-CNLTD
 export:         to AS40995 announce ANY
 import:         from AS214257 action pref=100; accept AS214257
 export:         to AS214257 announce ANY
+import:         from AS20499 action pref=100; accept AS20499
+export:         to AS20499 announce {0.0.0.0/0}
+mp-import:      from AS20499 action pref=100; accept AS20499
+mp-export:      to AS20499 announce {::/0}
 import:         from AS57489 action pref=100; accept AS57489
 export:         to AS57489 announce {0.0.0.0/0}
 mp-import:      from AS57489 action pref=100; accept AS57489
@@ -2364,6 +2370,10 @@ import:         from AS207353 action pref=100; accept AS207353
 export:         to AS207353 announce ANY
 mp-import:      from AS207353 action pref=100; accept AS207353
 mp-export:      to AS207353 announce AS-SOVAM-V6
+import:         from AS34170 action pref=100; accept AS34170:AS-customers
+export:         to AS34170 announce ANY
+mp-import:      from AS34170 action pref=100; accept AS34170:AS-customers
+mp-export:      to AS34170 announce ANY
 import:         from AS197275 action pref=100; accept AS-LINKTELECOM
 export:         to AS197275 announce ANY
 import:         from AS39033 action pref=100; accept AS39033
@@ -5283,7 +5293,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-01-18T10:46:30Z
+last-modified:  2026-01-27T14:26:13Z
 source:         RIPE
 
 as-num:         AS3216

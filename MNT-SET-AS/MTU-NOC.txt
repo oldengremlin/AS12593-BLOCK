@@ -137,6 +137,7 @@ members:        AS21266
 members:        AS28712
 members:        AS34389
 members:        AS34464
+members:        AS34887
 members:        AS35013
 members:        AS35928
 members:        AS39575
@@ -177,9 +178,11 @@ members:        AS52086
 members:        AS56533
 members:        AS56557
 members:        AS56721
+members:        AS57107
 members:        AS57503
 members:        AS57923
 members:        AS57953
+members:        AS58037
 members:        AS58163
 members:        AS58225
 members:        AS59561
@@ -259,7 +262,7 @@ notify:         noc@mtu.ru
 mnt-by:         MTU-NOC
 mnt-lower:      MTS-B2B-MNT
 created:        2022-10-18T11:09:38Z
-last-modified:  2026-01-20T11:51:37Z
+last-modified:  2026-01-27T12:25:01Z
 source:         RIPE
 
 
@@ -4665,6 +4668,25 @@ source:         RIPE
 
 
 
+aut-num:        AS51158
+as-name:        MTREND-AS
+org:            ORG-MTL19-RIPE
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS51158
+sponsoring-org: ORG-ZM1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MTU-NOC
+mnt-by:         OOOSET-MNT
+mnt-by:         MTREND-MNT
+created:        2010-06-10T08:37:06Z
+last-modified:  2026-01-26T10:23:25Z
+source:         RIPE
+
+
+
 aut-num:        AS51981
 as-name:        FINSTAR-AS
 org:            ORG-SPIJ1-RIPE
@@ -7138,6 +7160,8 @@ import:         from AS57078 action pref=105; accept AS57078
 export:         to AS57078 announce ANY
 import:         from AS57079 action pref=105; accept AS-VARIANTTV
 export:         to AS57079 announce ANY
+import:         from AS57107 action pref=140; accept AS57107
+export:         to AS57107 announce ANY
 import:         from AS57108 action pref=105; accept AS57108
 export:         to AS57108 announce ANY
 import:         from AS57149 action pref=140; accept AS-IT-KGN
@@ -7696,7 +7720,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MTU-NOC
 created:        2002-09-17T13:20:57Z
-last-modified:  2026-01-20T11:50:51Z
+last-modified:  2026-01-27T12:23:51Z
 source:         RIPE
 
 

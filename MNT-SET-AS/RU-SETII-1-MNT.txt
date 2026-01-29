@@ -46,13 +46,33 @@ members:        AS52184
 members:        AS59801
 members:        AS209759
 members:        AS44199
+members:        AS202599
 members:        AS-SET-MT6-RU
 members:        AS-FTELECOM
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         ru-setii-1-mnt
 created:        2012-05-12T13:55:56Z
-last-modified:  2025-08-28T10:16:53Z
+last-modified:  2026-01-27T11:25:38Z
+source:         RIPE
+
+
+
+aut-num:        AS202599
+as-name:        OTKTEL-AS
+org:            ORG-OTK2-RIPE
+sponsoring-org: ORG-NASJ1-RIPE
+import:         from AS57174 accept ANY
+export:         to AS57174 announce AS202599
+import:         from AS8241 accept ANY
+export:         to AS8241 announce AS202599
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-setii-1-mnt
+created:        2026-01-26T13:31:57Z
+last-modified:  2026-01-26T13:31:57Z
 source:         RIPE
 
 
@@ -72,6 +92,7 @@ import:         from AS39156 action pref=100; accept AS-FTELECOM
 import:         from AS52184 action pref=100; accept AS52184
 import:         from AS59801 action pref=100; accept AS59801
 import:         from AS44199 action pref=100; accept AS44199
+import:         from AS202599 action pref=100; accept AS202599
 export:         to AS25478 announce AS-SSERV-RU
 export:         to AS3216 announce AS-SSERV-RU
 export:         to AS35598 announce AS-SSERV-RU
@@ -84,13 +105,14 @@ export:         to AS39156 announce ANY
 export:         to AS52184 announce ANY
 export:         to AS59801 announce ANY
 export:         to AS44199 announce ANY
+export:         to AS202599 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-setii-1-mnt
 created:        2011-08-12T07:47:37Z
-last-modified:  2025-10-09T19:08:17Z
+last-modified:  2026-01-27T11:31:45Z
 source:         RIPE
 
 
@@ -154,6 +176,7 @@ import:         from AS2895 action pref=100; accept AS-FREENET
 import:         from AS3267 action pref=100; accept AS-RUNNETIX
 import:         from AS9032 action pref=100; accept AS-EDUNET
 import:         from AS44199 action pref=100; accept AS44199
+import:         from AS202599 action pref=100; accept AS202599
 default:        to AS57174 action pref=100; networks ANY
 export:         to AS200955 announce ANY
 export:         to AS201327 announce ANY
@@ -164,6 +187,7 @@ export:         to AS52184 announce ANY
 export:         to AS57482 announce ANY
 export:         to AS59801 announce ANY
 export:         to AS44199 announce ANY
+export:         to AS202599  announce ANY
 export:         to AS12695 announce AS-RELLINE
 export:         to AS20940 announce AS-RELLINE
 export:         to AS2895 announce AS-RELLINE
@@ -180,7 +204,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-setii-1-mnt
 created:        1970-01-01T00:00:00Z
-last-modified:  2025-10-13T10:34:32Z
+last-modified:  2026-01-27T11:30:45Z
 source:         RIPE
 
 

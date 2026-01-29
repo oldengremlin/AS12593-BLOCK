@@ -124,6 +124,7 @@ members:        AS49551
 members:        AS203844
 members:        AS-NTKS
 members:        AS207353
+members:        AS34170:AS-customers
 members:        AS209343
 members:        AS-BELPAK
 members:        AS-CLOUDRU
@@ -150,6 +151,7 @@ members:        AS60835
 members:        AS-CNLTD
 members:        AS215098
 members:        AS34545
+members:        AS52222
 members:        AS-SI
 members:        AS51880
 members:        AS207384
@@ -483,6 +485,7 @@ members:        AS-SIBSET-KEM
 members:        AS60067
 members:        AS197406
 members:        AS214257
+members:        AS20499
 members:        AS57489
 members:        AS202498
 members:        AS49476
@@ -1642,7 +1645,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-01-16T10:12:38Z
+last-modified:  2026-01-27T14:26:41Z
 source:         RIPE
 
 
@@ -1937,6 +1940,7 @@ members:        as-nsplus
 members:        AS213883
 members:        AS-TUT6
 members:        AS197068:AS-SET-V6
+members:        AS34170:AS-customers
 members:        AS21403
 members:        AS-TRYTER
 members:        AS49326
@@ -1953,6 +1957,7 @@ members:        AS-INDIKOM
 members:        AS139057:AS-CONE
 members:        AS42276
 members:        AS213787:AS-CLOUDRACK
+members:        AS20499
 members:        AS204296
 members:        AS-MELBICOM-V6
 members:        AS-ELTEL6
@@ -2030,7 +2035,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-01-14T08:05:16Z
+last-modified:  2026-01-27T14:27:06Z
 source:         RIPE
 
 
@@ -4927,6 +4932,8 @@ import:         from AS211157 action pref=100; accept AS211157
 export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
+import:         from AS52222 action pref=100; accept AS52222
+export:         to AS52222 announce {0.0.0.0/0}
 import:         from AS48035 action pref=100; accept AS48035
 export:         to AS48035 announce AS-SOVAM
 import:         from AS197298 action pref=100; accept AS-ATEL-LTD
@@ -5087,6 +5094,10 @@ import:         from AS40995 action pref=100; accept AS-CNLTD
 export:         to AS40995 announce ANY
 import:         from AS214257 action pref=100; accept AS214257
 export:         to AS214257 announce ANY
+import:         from AS20499 action pref=100; accept AS20499
+export:         to AS20499 announce {0.0.0.0/0}
+mp-import:      from AS20499 action pref=100; accept AS20499
+mp-export:      to AS20499 announce {::/0}
 import:         from AS57489 action pref=100; accept AS57489
 export:         to AS57489 announce {0.0.0.0/0}
 mp-import:      from AS57489 action pref=100; accept AS57489
@@ -5669,6 +5680,10 @@ import:         from AS207353 action pref=100; accept AS207353
 export:         to AS207353 announce ANY
 mp-import:      from AS207353 action pref=100; accept AS207353
 mp-export:      to AS207353 announce AS-SOVAM-V6
+import:         from AS34170 action pref=100; accept AS34170:AS-customers
+export:         to AS34170 announce ANY
+mp-import:      from AS34170 action pref=100; accept AS34170:AS-customers
+mp-export:      to AS34170 announce ANY
 import:         from AS197275 action pref=100; accept AS-LINKTELECOM
 export:         to AS197275 announce ANY
 import:         from AS39033 action pref=100; accept AS39033
@@ -8588,7 +8603,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-01-18T10:46:30Z
+last-modified:  2026-01-27T14:26:13Z
 source:         RIPE
 
 

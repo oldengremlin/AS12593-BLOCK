@@ -57,6 +57,9 @@ accept AS62261
 import:         from AS201211
 action pref=100;
 accept AS-DRUGOYTEL
+import:         from AS201512
+action pref=100;
+accept AS201512
 import:         from AS204720
 action pref=100;
 accept AS-CDNETWORKSRU
@@ -100,6 +103,8 @@ export:         to AS62261
 announce AS-SMRROUTESERVER
 export:         to AS201211
 announce AS-SMRROUTESERVER
+export:         to AS201512
+announce AS-SMRROUTESERVER
 export:         to AS204720
 announce AS-SMRROUTESERVER
 export:         to AS210756
@@ -110,7 +115,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-09-10T14:53:33Z
-last-modified:  2025-01-16T13:32:24Z
+last-modified:  2026-01-27T08:31:32Z
 source:         RIPE
 
 as-num:         AS47882

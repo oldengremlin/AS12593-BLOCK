@@ -112,6 +112,7 @@ members:        AS203725
 members:        AS204219
 members:        AS204492
 members:        AS205221
+members:        AS205264
 members:        AS205454
 members:        AS205489
 members:        AS205701
@@ -153,7 +154,7 @@ admin-c:        DUMY-RIPE
 notify:         noc@comfortel.pro
 mnt-by:         CMFT-MNT
 created:        2021-04-20T09:21:21Z
-last-modified:  2026-01-15T13:38:47Z
+last-modified:  2026-01-26T13:40:32Z
 source:         RIPE
 
 
@@ -386,6 +387,58 @@ source:         RIPE
 
 
 
+aut-num:        AS21367
+as-name:        WILAND-AS
+org:            ORG-TJ113-RIPE
+import:         from AS57304 accept ANY
+export:         to AS57304 announce AS-WILAND
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS-WILAND
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-WILAND
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-WILAND
+mp-import:      afi ipv6.unicast from AS57304 accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-WILAND
+mp-import:      afi ipv6.unicast from AS25478 accept ANY
+mp-export:      afi ipv6.unicast to AS25478 announce AS-WILAND
+mp-import:      afi ipv6.unicast from AS20485 accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-WILAND
+mp-import:      afi ipv6.unicast from AS3216 accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-WILAND
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-WILAND
+import:         from AS50384 accept AS-W-IX
+export:         to AS50384 announce AS-WILAND
+import:         from AS49869 accept AS-PITER-IX
+export:         to AS49869 announce AS-WILAND
+mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-WILAND
+mp-import:      afi ipv6.unicast from AS50384 accept AS-W-IX
+mp-export:      afi ipv6.unicast to AS50384 announce AS-WILAND
+import:         from AS38922 accept AS38922
+export:         to AS38922 announce any
+import:         from AS199549 accept AS199549
+export:         to AS199549 announce any
+import:         from AS201569 accept AS201569
+export:         to AS201569 announce any
+import:         from AS41212 accept AS41212
+export:         to AS41212 announce any
+import:         from AS197526 accept AS197526
+export:         to AS197526 announce any
+import:         from AS200390 accept AS200390
+export:         to AS200390 announce any
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CMFT-MNT
+created:        2011-06-15T09:48:03Z
+last-modified:  2026-01-26T11:59:45Z
+source:         RIPE
+
+
+
 aut-num:        AS2585
 as-name:        OpticTelecom-AS
 org:            ORG-OTL13-RIPE
@@ -429,6 +482,24 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
 created:        2009-11-12T16:28:34Z
 last-modified:  2025-03-05T12:31:33Z
+source:         RIPE
+
+
+
+aut-num:        AS38922
+as-name:        WILAND-AS
+org:            ORG-TJ113-RIPE
+import:         from AS21367 accept ANY
+export:         to AS21367 announce AS-WILAND
+mp-import:      afi ipv6.unicast from AS21367 accept ANY
+mp-export:      afi ipv6.unicast to AS21367 announce AS-WILAND
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CMFT-MNT
+created:        2005-11-15T09:53:18Z
+last-modified:  2026-01-26T11:59:45Z
 source:         RIPE
 
 
@@ -754,6 +825,8 @@ import:         from AS204492 action pref=130; accept AS204492
 export:         to AS204492 announce ANY
 import:         from AS205221 action pref=130; accept AS205221
 export:         to AS205221 announce ANY
+import:         from AS205264 action pref=130; accept AS205264
+export:         to AS205264 announce ANY
 import:         from AS205454 action pref=130; accept AS205454
 export:         to AS205454 announce ANY
 import:         from AS205489 action pref=130; accept AS205489
@@ -867,7 +940,7 @@ notify:         noc@comfortel.pro
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
 created:        2011-03-11T14:49:01Z
-last-modified:  2025-10-29T11:20:05Z
+last-modified:  2026-01-26T13:42:24Z
 source:         RIPE
 
 
