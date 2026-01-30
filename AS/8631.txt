@@ -657,6 +657,9 @@ accept AS-REINFOCOM
 import:         from AS43530
 action pref=100;
 accept AS-IRTELCOM-SET
+import:         from AS43661
+action pref=100;
+accept AS-QIPCONNECT
 import:         from AS43667
 action pref=100;
 accept AS-VERMONT
@@ -837,6 +840,9 @@ accept AS-LINXDATACENTER
 import:         from AS48475
 action pref=100;
 accept AS48475
+import:         from AS48511
+action pref=100;
+accept AS48511
 import:         from AS48524
 action pref=100;
 accept AS-INTERRA
@@ -1461,9 +1467,6 @@ accept AS-O2CLOUD
 import:         from AS208677
 action pref=100;
 accept AS208677:AS-CLOUDRU
-import:         from AS208912
-action pref=100;
-accept AS208912
 import:         from AS209008
 action pref=100;
 accept AS209008
@@ -1988,6 +1991,8 @@ export:         to AS43465
 announce AS-MSKROUTESERVER
 export:         to AS43530
 announce AS-MSKROUTESERVER
+export:         to AS43661
+announce AS-MSKROUTESERVER
 export:         to AS43667
 announce AS-MSKROUTESERVER
 export:         to AS43714
@@ -2107,6 +2112,8 @@ announce AS-MSKROUTESERVER
 export:         to AS48399
 announce AS-MSKROUTESERVER
 export:         to AS48475
+announce AS-MSKROUTESERVER
+export:         to AS48511
 announce AS-MSKROUTESERVER
 export:         to AS48524
 announce AS-MSKROUTESERVER
@@ -2524,8 +2531,6 @@ export:         to AS208349
 announce AS-MSKROUTESERVER
 export:         to AS208677
 announce AS-MSKROUTESERVER
-export:         to AS208912
-announce AS-MSKROUTESERVER
 export:         to AS209008
 announce AS-MSKROUTESERVER
 export:         to AS209030
@@ -2587,12 +2592,15 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-01-26T13:37:13Z
+last-modified:  2026-01-28T13:35:10Z
 source:         RIPE
 
 as-num:         AS8631
 country:        RU
 as-name:        MSK-IX-RS Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS8631
+country:        RU
+as-name:        null
 as-num:         AS8631
 country:        RU
 as-name:        null

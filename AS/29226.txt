@@ -697,6 +697,8 @@ import:         from AS203858 action pref=200; accept AS203858
 export:         to AS203858 announce ANY
 import:         from AS24684 action pref=200; accept AS24684
 export:         to AS24684 announce {0.0.0.0/0}
+import:         from AS202000 action pref=200; accept AS202000
+export:         to AS202000 announce {0.0.0.0/0}
 mp-import:      afi ipv6 from AS29076 accept ANY;
 mp-export:      afi ipv6 to AS29076 announce AS-MASTERTEL6;
 mp-import:      afi ipv6 from AS9002 accept ANY;
@@ -766,12 +768,15 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2026-01-26T12:05:36Z
+last-modified:  2026-01-28T20:51:01Z
 source:         RIPE
 
 as-num:         AS29226
 country:        RU
 as-name:        MASTERTEL-AS JSC Mastertel
+as-num:         AS29226
+country:        RU
+as-name:        null
 as-num:         AS29226
 country:        RU
 as-name:        null

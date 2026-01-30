@@ -1670,6 +1670,7 @@ source:         RIPE
 
 as-set:         AS-SOVAM-V6
 descr:          Sovintel IPv6 customers
+members:        AS-TRUENETWORK
 members:        AS-CTGNET
 members:        AS60827
 members:        AS202234:AS-SEMANTIC
@@ -2035,7 +2036,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-01-27T14:27:06Z
+last-modified:  2026-01-28T07:16:39Z
 source:         RIPE
 
 
@@ -5718,6 +5719,8 @@ import:         from AS209206 action pref=100; accept AS209206
 export:         to AS209206 announce ANY
 import:         from AS49673 action pref=100; accept AS-TRUENETWORK
 export:         to AS49673 announce ANY
+mp-import:      from AS49673 action pref=100; accept AS-TRUENETWORK
+mp-export:      to AS49673 announce ANY
 import:         from AS214780 action pref=100; accept AS214780
 export:         to AS214780 announce ANY
 import:         from AS50029 action pref=100; accept AS50029
@@ -8603,7 +8606,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-01-27T14:26:13Z
+last-modified:  2026-01-28T07:13:54Z
 source:         RIPE
 
 
