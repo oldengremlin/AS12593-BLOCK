@@ -780,6 +780,10 @@ import:         from AS57976 action pref=87; accept AS-BLIZZARD
 export:         to AS57976 announce AS-SOVAM
 mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
 mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
+import:         from AS8365 action pref=87; accept AS-MANDA
+export:         to AS8365 announce AS-SOVAM
+mp-import:      afi ipv6 from AS8365 action pref=87; accept AS-MANDA
+mp-export:      afi ipv6 to AS8365 announce AS-SOVAM-V6
 import:         from AS24961 action pref=87; accept AS-MYLOC
 export:         to AS24961 announce AS-SOVAM
 mp-import:      afi ipv6 from AS24961 action pref=87; accept AS-MYLOC
@@ -2612,8 +2616,6 @@ import:         from AS52090 action pref=100; accept AS52090
 export:         to AS52090 announce {0.0.0.0/0}
 import:         from AS209005 action pref=100; accept AS209005
 export:         to AS209005 announce ANY
-import:         from AS198086 action pref=100; accept AS198086
-export:         to AS198086 announce ANY
 import:         from AS28840 action pref=100; accept AS-TTC
 export:         to AS28840 announce ANY
 import:         from AS41187 action pref=100; accept AS41187
@@ -5295,7 +5297,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-01-28T07:13:54Z
+last-modified:  2026-01-30T14:25:51Z
 source:         RIPE
 
 as-num:         AS3216

@@ -4,7 +4,6 @@ members:        AS39728
 members:        AS-LTC
 members:        AS-M3X
 members:        AS39529
-members:        AS44125
 members:        AS44539:AS-CUST
 members:        AS47204
 members:        AS197129
@@ -15,7 +14,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         mnt-ru-likhno-1
 mnt-by:         ARTA-MNT
 created:        2009-04-22T10:09:08Z
-last-modified:  2025-12-16T07:11:48Z
+last-modified:  2026-01-30T09:19:21Z
 source:         RIPE
 
 
@@ -106,6 +105,8 @@ import:         from AS3216   action pref=100; accept   ANY
 export:         to   AS3216                    announce AS-LUGANET
 import:         from AS12389  action pref=100; accept   ANY
 export:         to   AS12389                   announce AS-LUGANET
+import:         from AS31500  action pref=100; accept   ANY
+export:         to   AS31500                   announce AS-LUGANET
 import:         from AS50509  action pref=100; accept   ANY
 export:         to   AS50509                   announce AS-LUGANET
 import:         from AS198310 action pref=100; accept   ANY
@@ -146,8 +147,6 @@ import:         from AS29031  action pref=500; accept   AS-LTC
 export:         to   AS29031                   announce ANY
 import:         from AS39529  action pref=500; accept   AS-M3X
 export:         to   AS39529                   announce ANY
-import:         from AS44125  action pref=500; accept   AS44125
-export:         to   AS44125                   announce ANY
 import:         from AS44539  action pref=500; accept   AS44539:AS-CUST
 export:         to   AS44539                   announce ANY
 import:         from AS47204  action pref=500; accept   AS47204
@@ -167,7 +166,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-likhno-1
 mnt-by:         ARTA-MNT
 created:        2006-04-18T13:04:02Z
-last-modified:  2026-01-13T13:47:14Z
+last-modified:  2026-01-30T09:20:14Z
 source:         RIPE
 
 
