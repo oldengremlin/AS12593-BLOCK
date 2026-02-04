@@ -1077,6 +1077,8 @@ members:        AS59533
 members:        AS-KIAE-GRID
 # from AS59693:
 members:        AS59693
+# from AS59815:
+members:        AS-TRKMETRO
 # from AS59883:
 members:        AS59883
 # from AS60068:
@@ -1338,7 +1340,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-01-30T13:35:19Z
+last-modified:  2026-02-02T09:40:54Z
 source:         RIPE
 
 
@@ -5863,6 +5865,9 @@ accept AS-KIAE-GRID
 import:         from AS59693
 action pref=100;
 accept AS59693
+import:         from AS59815
+action pref=100;
+accept AS-TRKMETRO
 import:         from AS59883
 action pref=100;
 accept AS59883
@@ -7029,6 +7034,8 @@ export:         to AS59624
 announce AS-MSKROUTESERVER
 export:         to AS59693
 announce AS-MSKROUTESERVER
+export:         to AS59815
+announce AS-MSKROUTESERVER
 export:         to AS59883
 announce AS-MSKROUTESERVER
 export:         to AS60068
@@ -7286,7 +7293,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-01-30T13:35:15Z
+last-modified:  2026-02-02T09:40:54Z
 source:         RIPE
 
 
