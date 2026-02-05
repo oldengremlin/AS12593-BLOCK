@@ -158,7 +158,6 @@ members:        AS-AVANTEL-SPB
 members:        AS-LANTA
 members:        AS-STATION
 members:        AS-LINER
-members:        AS56679
 members:        AS47363
 members:        AS-ENTELE
 members:        AS-UNIONTEL-RU
@@ -380,13 +379,14 @@ members:        AS214380
 members:        AS-INTERSVYAZ
 members:        AS212591:AS-PLTFRMS
 members:        AS205755
+members:        AS214757:AS-ALL
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:05:11Z
-last-modified:  2026-01-29T12:48:29Z
+last-modified:  2026-02-03T14:35:53Z
 source:         RIPE
 
 
@@ -404,7 +404,6 @@ members:        AS205226
 members:        AS-UNIONTEL-RU
 members:        AS-LANTA
 members:        AS-ENTELE
-members:        AS56679
 members:        AS-LENTEL
 members:        AS42291:AS-ISTRANET
 members:        AS50538
@@ -536,7 +535,7 @@ mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2020-11-06T12:10:10Z
-last-modified:  2026-01-27T13:52:53Z
+last-modified:  2026-02-03T14:37:28Z
 source:         RIPE
 
 
@@ -1491,7 +1490,7 @@ mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRANSROUTE-DAEMON-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-07-02T13:14:13Z
-last-modified:  2026-01-31T03:33:21Z
+last-modified:  2026-02-03T03:33:43Z
 source:         RIPE
 members:        AS12365
 members:        AS12389
@@ -1557,6 +1556,7 @@ members:        AS51519
 members:        AS51538
 members:        AS56930
 members:        AS56971
+members:        AS57113
 members:        AS57138
 members:        AS59399
 members:        AS60771
@@ -2670,7 +2670,6 @@ members:        AS-CDNVIDEO
 members:        AS-CGNET
 members:        AS-CHTP
 members:        AS-SET-LN
-members:        AS56679
 members:        AS-CLOUDFLARE
 members:        AS-CNT
 members:        AS-COMITEN
@@ -3124,7 +3123,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2017-11-18T18:58:06Z
-last-modified:  2026-01-29T09:26:42Z
+last-modified:  2026-02-03T14:34:29Z
 source:         RIPE
 
 
@@ -3508,19 +3507,24 @@ source:         RIPE
 
 
 aut-num:        AS210852
-as-name:        SATURNTEHNO
-org:            ORG-SL1330-RIPE
-import:         from AS44050 accept ANY
-export:         to AS44050 announce AS210852
-import:         from AS44068 accept ANY
-export:         to AS44068 announce AS210852
+descr:          layer7 GmbH
+descr:          Reutackerstrasse 42
+descr:          79591 Eimeldingen
+abuse-c:        AR79439-RIPE
+as-name:        LAYER7-MSP
+org:            ORG-LG224-RIPE
+sponsoring-org: ORG-SISG5-RIPE
+import:         from AS200924 accept ANY
+export:         to AS200924 announce AS210852
+import:         from AS33891 accept ANY
+export:         to AS33891 announce AS210852
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         MNT-PINSUPPORT
-created:        2025-04-03T12:42:52Z
-last-modified:  2025-05-06T06:22:01Z
+mnt-by:         LAYER7-MSP-MNT
+created:        2026-02-03T11:53:31Z
+last-modified:  2026-02-03T12:57:33Z
 source:         RIPE
 
 
@@ -4261,6 +4265,8 @@ import:         from AS8369 action pref=100; accept AS-INTERSVYAZ
 export:         to AS8369 announce as-piter-ix-fra
 import:         from AS212591 action pref=100; accept AS212591:AS-PLTFRMS
 export:         to AS212591 announce as-piter-ix-fra
+import:         from AS214757 action pref=100; accept AS214757:AS-ALL
+export:         to AS214757 announce as-piter-ix-fra
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -4268,7 +4274,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T08:46:05Z
-last-modified:  2026-01-29T09:15:45Z
+last-modified:  2026-02-03T10:52:34Z
 source:         RIPE
 
 
