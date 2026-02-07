@@ -1160,14 +1160,15 @@ members:        AS-INTERSVYAZ
 members:        AS215096:AS-MADHOST
 members:        AS-INSITINVEST
 members:        AS-TELESYSTEM
-members:        AS213694:AS-INLAN
+members:        AS213694
+members:        AS214757:AS-ALL
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2023-08-15T18:17:57Z
-last-modified:  2026-02-04T14:33:40Z
+last-modified:  2026-02-05T16:54:06Z
 source:         RIPE
 
 
@@ -1947,13 +1948,14 @@ members:        AS-INTERSVYAZ
 members:        AS215096:AS-MADHOST
 members:        AS-INSITINVEST
 members:        AS-TELESYSTEM
-members:        AS213694:AS-INLAN
+members:        AS213694
+members:        AS214757:AS-ALL
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2017-11-18T18:58:06Z
-last-modified:  2026-02-04T14:34:19Z
+last-modified:  2026-02-05T16:54:35Z
 source:         RIPE
 
 
@@ -3809,6 +3811,10 @@ import:         from AS30823 action pref=100; accept AS30823:AS-AUROLOGIC
 export:         to AS30823 announce as-piter-ix-msk
 import:         from AS8369 action pref=100; accept AS-INTERSVYAZ
 export:         to AS8369 announce as-piter-ix-msk
+import:         from AS57153 action pref=100; accept AS-TELESYSTEM
+export:         to AS57153 announce as-piter-ix-msk
+import:         from AS213694 action pref=100; accept AS213694
+export:         to AS213694 announce as-piter-ix-msk
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -3817,7 +3823,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2026-01-15T15:18:43Z
+last-modified:  2026-02-05T12:43:50Z
 source:         RIPE
 
 
@@ -4851,6 +4857,10 @@ import:         from AS8369 action pref=100; accept AS-INTERSVYAZ
 export:         to AS8369 announce as-piter-ix
 import:         from AS60098 action pref=100; accept AS-INSITINVEST
 export:         to AS60098 announce as-piter-ix
+import:         from AS57153 action pref=100; accept AS-TELESYSTEM
+export:         to AS57153 announce as-piter-ix
+import:         from AS213694 action pref=100; accept AS213694
+export:         to AS213694 announce as-piter-ix
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -4859,7 +4869,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2026-02-04T14:36:17Z
+last-modified:  2026-02-05T12:42:28Z
 source:         RIPE
 
 

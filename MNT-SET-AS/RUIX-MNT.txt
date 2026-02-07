@@ -1267,6 +1267,8 @@ members:        AS205031, AS206846
 members:        AS-RUCOMTECH
 # from AS207239:
 members:        AS207239:AS-GIGNET
+# from AS207353:
+members:        AS207353
 # from AS207561:
 members:        AS207561
 # from AS207785:
@@ -1344,7 +1346,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-02-03T13:51:27Z
+last-modified:  2026-02-05T09:46:31Z
 source:         RIPE
 
 
@@ -6154,6 +6156,9 @@ accept AS-RUCOMTECH
 import:         from AS207239
 action pref=100;
 accept AS207239:AS-GIGNET
+import:         from AS207353
+action pref=100;
+accept AS207353
 import:         from AS207561
 action pref=100;
 accept AS207561
@@ -7234,6 +7239,8 @@ export:         to AS207133
 announce AS-MSKROUTESERVER
 export:         to AS207239
 announce AS-MSKROUTESERVER
+export:         to AS207353
+announce AS-MSKROUTESERVER
 export:         to AS207561
 announce AS-MSKROUTESERVER
 export:         to AS207785
@@ -7307,7 +7314,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-02-03T13:51:27Z
+last-modified:  2026-02-05T09:46:26Z
 source:         RIPE
 
 

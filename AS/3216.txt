@@ -3482,6 +3482,8 @@ import:         from AS8342 action pref=100; accept AS-RT
 export:         to AS8342 announce ANY
 import:         from AS24955 action pref=100; accept AS-UBN
 export:         to AS24955 announce ANY
+mp-import:      from AS24955 action pref=100; accept AS-UBN-V6
+mp-export:      to AS24955 announce ANY
 import:         from AS48719 action pref=100; accept AS-INTELSVYAZ
 export:         to AS48719 announce ANY
 import:         from AS29554 action pref=100; accept AS29554
@@ -5295,7 +5297,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-02-02T06:25:16Z
+last-modified:  2026-02-05T08:12:02Z
 source:         RIPE
 
 as-num:         AS3216
