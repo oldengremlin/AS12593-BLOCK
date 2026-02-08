@@ -30,8 +30,10 @@ aut-num:        AS35558
 as-name:        IZHNET-AS
 import:         from AS3216 action pref=100; accept ANY
 import:         from AS31133 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
 export:         to AS3216 announce AS-IZHNET
 export:         to AS31133 announce AS-IZHNET
+export:         to AS12389 announce AS-IZHNET
 import:         from AS51494 action pref=100; accept AS51494 AND NOT {0.0.0.0/0};
 export:         to AS51494 announce ANY
 org:            ORG-INTL2-RIPE
@@ -42,7 +44,7 @@ mnt-by:         RIPE-NCC-END-MNT
 notify:         noc@izhnet.ru
 mnt-by:         IZHNET-MNT
 created:        2005-09-05T11:38:48Z
-last-modified:  2022-05-17T08:32:10Z
+last-modified:  2026-02-06T05:33:41Z
 source:         RIPE
 
 
