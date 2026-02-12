@@ -564,9 +564,6 @@ accept AS41446
 import:         from AS41601
 action pref=100;
 accept AS-OBLTELECOM
-import:         from AS41616
-action pref=100;
-accept AS41616
 import:         from AS41617
 action pref=100;
 accept AS-SOLID-IFC
@@ -1152,6 +1149,9 @@ accept AS-DDOS-GUARD
 import:         from AS57753
 action pref=100;
 accept AS-RADIST
+import:         from AS57781
+action pref=100;
+accept AS57781
 import:         from AS57918
 action pref=100;
 accept AS-ACOD
@@ -1947,8 +1947,6 @@ export:         to AS41446
 announce AS-MSKROUTESERVER
 export:         to AS41601
 announce AS-MSKROUTESERVER
-export:         to AS41616
-announce AS-MSKROUTESERVER
 export:         to AS41617
 announce AS-MSKROUTESERVER
 export:         to AS41718
@@ -2339,6 +2337,8 @@ export:         to AS57724
 announce AS-MSKROUTESERVER
 export:         to AS57753
 announce AS-MSKROUTESERVER
+export:         to AS57781
+announce AS-MSKROUTESERVER
 export:         to AS57918
 announce AS-MSKROUTESERVER
 export:         to AS57976
@@ -2622,7 +2622,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-02-09T09:43:44Z
+last-modified:  2026-02-10T13:44:20Z
 source:         RIPE
 
 as-num:         AS8631

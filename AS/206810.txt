@@ -22,6 +22,8 @@ import:         from AS59539 accept ANY
 export:         to AS59539 announce AS206810:AS-CUSTOMERS
 import:         from AS8631 accept ANY
 export:         to AS8631 announce AS206810:AS-CUSTOMERS
+import:         from AS213694 at cr1-60 accept AS213694
+export:         to AS213694 at cr1-60 announce ANY
 import:         from AS215503 accept AS215503
 export:         to AS215503 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS5598 accept AS5598
@@ -131,7 +133,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MIV-MNT
 mnt-by:         IRA35-MNT
 created:        2022-03-24T13:12:47Z
-last-modified:  2026-02-03T10:52:25Z
+last-modified:  2026-02-10T13:20:25Z
 source:         RIPE
 abuse-c:        ACRO47149-RIPE
 
