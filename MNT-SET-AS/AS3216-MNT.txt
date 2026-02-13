@@ -351,7 +351,7 @@ members:        AS-COMCOMSYS
 members:        AS206333
 members:        AS-MAROSNET
 members:        AS39927
-members:        AS-LANTA
+members:        AS61436:AS-INTEX
 members:        AS-FLYTECH
 members:        AS208811
 members:        AS49577
@@ -434,6 +434,7 @@ members:        AS-CDNNOW
 members:        AS50713
 members:        AS57587
 members:        AS-SPDOP
+members:        AS-R-LINE
 members:        AS-ELIT-TV
 members:        AS56845
 members:        AS48035
@@ -1646,7 +1647,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-02-10T12:40:20Z
+last-modified:  2026-02-11T14:30:33Z
 source:         RIPE
 
 
@@ -1671,6 +1672,7 @@ source:         RIPE
 
 as-set:         AS-SOVAM-V6
 descr:          Sovintel IPv6 customers
+members:        AS-R-LINE
 members:        AS-TRUENETWORK
 members:        AS-CTGNET
 members:        AS60827
@@ -1689,6 +1691,7 @@ members:        AS57449
 members:        AS-TOMGATE
 members:        AS50317
 members:        AS200107
+members:        AS61436:AS-INTEX
 members:        AS208677
 members:        AS215796
 members:        AS59637
@@ -2037,7 +2040,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-01-28T07:16:39Z
+last-modified:  2026-02-11T14:31:32Z
 source:         RIPE
 
 
@@ -6413,8 +6416,10 @@ import:         from AS38922 action pref=100; accept AS-Wiland-TP
 export:         to AS38922 announce ANY
 import:         from AS15868 action pref=100; accept AS15868
 export:         to AS15868 announce ANY
-import:         from AS47895 action pref=100; accept AS47895
+import:         from AS47895 action pref=100; accept AS-R-LINE
 export:         to AS47895 announce ANY
+mp-import:      from AS47895 action pref=100; accept AS-R-LINE
+mp-export:      to AS47895 announce ANY
 import:         from AS34879 action pref=100; accept AS-NGENIX-MSK
 export:         to AS34879 announce ANY
 mp-import:      afi ipv6 from AS34879 action pref=100; accept AS34879
@@ -8083,8 +8088,10 @@ import:         from AS201285 action pref=100; accept AS-KIRZHACHTELECOM
 export:         to AS201285 announce ANY
 mp-import:      afi ipv6 from AS201285 action pref=100; accept AS-KIRZHACHTELECOM
 mp-export:      afi ipv6 to AS201285 announce ANY
-import:         from AS41268 action pref=100; accept AS-LANTA
+import:         from AS41268 action pref=100; accept AS61436:AS-INTEX
 export:         to AS41268 announce ANY
+mp-import:      from AS41268 action pref=100; accept AS61436:AS-INTEX
+mp-export:      to AS41268 announce ANY
 import:         from AS49569 action pref=100; accept AS49569
 export:         to AS49569 announce ANY
 import:         from AS20619 action pref=100; accept AS20619
@@ -8612,7 +8619,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-02-10T12:39:36Z
+last-modified:  2026-02-11T14:28:29Z
 source:         RIPE
 
 

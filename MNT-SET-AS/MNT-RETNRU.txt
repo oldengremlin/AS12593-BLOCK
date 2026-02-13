@@ -100,6 +100,7 @@ members:        AS-COMCOR
 members:        AS-CONVEYPLUS
 members:        AS-CORPSOFT
 members:        AS-CORTEL
+members:        AS-CRELCOM
 members:        AS-DATAFORT
 members:        AS-DATAPLANET
 members:        AS-DDESTINY
@@ -285,6 +286,7 @@ members:        AS-TZTELECOM
 members:        AS-UBN
 members:        AS-UCANET
 members:        AS-UGO
+members:        AS-UMLC
 members:        AS-UNETCOMRU
 members:        AS-UNITEDNET
 members:        AS-UNITEDNETS
@@ -422,7 +424,6 @@ members:        AS56674
 members:        AS56741
 members:        AS56806
 members:        AS56923
-members:        AS57107
 members:        AS57503
 members:        AS57671
 members:        AS58084
@@ -557,7 +558,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2026-02-04T19:59:13Z
+last-modified:  2026-02-11T19:59:13Z
 source:         RIPE
 
 
@@ -594,6 +595,7 @@ members:        AS-CLOUDLAB
 members:        AS-CMFT6
 members:        AS-COMCOR
 members:        AS-CONVEYPLUS
+members:        AS-CRELCOM-V6
 members:        AS-DATAPLANET
 members:        AS-DDESTINY
 members:        AS-DELFA
@@ -718,6 +720,7 @@ members:        AS-TZTELECOM
 members:        AS-UBN
 members:        AS-UCANETV6
 members:        AS-UGO
+members:        AS-UMLC-V6
 members:        AS-UNITEDNET
 members:        AS-UNITEDNETS
 members:        AS-UNIVERSUMNET-V6
@@ -817,7 +820,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2026-01-21T19:59:13Z
+last-modified:  2026-02-11T19:59:12Z
 source:         RIPE
 
 
@@ -1300,6 +1303,8 @@ import:         from   AS6697 action pref=100; accept   AS-BELPAK
 export:         to     AS6697                  announce ANY
 import:         from   AS6704 action pref=100; accept   AS-CITYLANLLC
 export:         to     AS6704                  announce ANY
+import:         from   AS6789 action pref=100; accept   AS-CRELCOM
+export:         to     AS6789                  announce ANY
 import:         from   AS6801 action pref=100; accept   AS-KIAE
 export:         to     AS6801                  announce ANY
 import:         from   AS6856 action pref=100; accept   AS-SETICCUS
@@ -1710,6 +1715,8 @@ import:         from  AS47819 action pref=100; accept   AS47819
 export:         to    AS47819                  announce ANY
 import:         from  AS48061 action pref=200; accept   AS-RUTUBE
 export:         to    AS48061                  announce AS57304:AS-RETN-RU
+import:         from  AS48084 action pref=100; accept   AS-UMLC
+export:         to    AS48084                  announce ANY
 import:         from  AS48089 action pref=100; accept   AS-INFANET
 export:         to    AS48089                  announce ANY
 import:         from  AS48096 action pref=100; accept   AS-ITGRAD
@@ -1908,8 +1915,6 @@ import:         from  AS56923 action pref=100; accept   AS56923
 export:         to    AS56923                  announce ANY
 import:         from  AS57073 action pref=100; accept   AS57073:AS-WILDBERRIES
 export:         to    AS57073                  announce ANY
-import:         from  AS57107 action pref=100; accept   AS57107
-export:         to    AS57107                  announce ANY
 import:         from  AS57354 action pref=100; accept   AS-SYSTEMA
 export:         to    AS57354                  announce ANY
 import:         from  AS57503 action pref=100; accept   AS57503
@@ -2356,6 +2361,8 @@ mp-import:      afi ipv6.unicast from   AS6697 action pref=100; accept   AS-BELP
 mp-export:      afi ipv6.unicast to     AS6697                  announce ANY
 mp-import:      afi ipv6.unicast from   AS6704 action pref=100; accept   AS-CITYLANLLC
 mp-export:      afi ipv6.unicast to     AS6704                  announce ANY
+mp-import:      afi ipv6.unicast from   AS6789 action pref=100; accept   AS-CRELCOM-V6
+mp-export:      afi ipv6.unicast to     AS6789                  announce ANY
 mp-import:      afi ipv6.unicast from   AS6856 action pref=100; accept   AS-SETICCUS
 mp-export:      afi ipv6.unicast to     AS6856                  announce ANY
 mp-import:      afi ipv6.unicast from   AS8359 action pref=200; accept   AS-MTU-V6
@@ -2602,6 +2609,8 @@ mp-import:      afi ipv6.unicast from  AS47764 action pref=200; accept   AS-MAIL
 mp-export:      afi ipv6.unicast to    AS47764                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS48061 action pref=200; accept   AS-RUTUBE
 mp-export:      afi ipv6.unicast to    AS48061                  announce AS57304:AS-RETN6-RU
+mp-import:      afi ipv6.unicast from  AS48084 action pref=100; accept   AS-UMLC-V6
+mp-export:      afi ipv6.unicast to    AS48084                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48096 action pref=100; accept   AS-ITGRAD
 mp-export:      afi ipv6.unicast to    AS48096                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48108 action pref=100; accept   AS48108:AS-VIRTUALDC-RU
@@ -2887,7 +2896,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-02-04T19:59:13Z
+last-modified:  2026-02-11T19:59:13Z
 source:         RIPE
 
 
