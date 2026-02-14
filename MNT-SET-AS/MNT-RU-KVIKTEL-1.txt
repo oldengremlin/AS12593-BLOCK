@@ -72,7 +72,7 @@ as-name:        PROCLOUD
 descr:          PROCLOUD MSK
 org:            ORG-KL294-RIPE
 mp-import:      afi ipv4.unicast from AS9049 at 31.131.196.81 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
-mp-export:      afi ipv4.unicast to AS9049 at 31.131.196.81 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv4.unicast to AS9049 at 31.131.196.81 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100) AND NOT {5.59.244.0/22}
 mp-import:      afi ipv4.unicast from AS9049 at 188.234.157.179 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
 mp-export:      afi ipv4.unicast to AS9049 at 188.234.157.179 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
 mp-import:      afi ipv6.unicast from AS9049 at 2a02:2698:a100:da:1:3:4959:6 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
@@ -80,7 +80,7 @@ mp-import:      afi ipv6.unicast from AS9049 at 2a02:2698:a100:da:1:3:4959:2 act
 mp-export:      afi ipv6.unicast to AS9049 at 2a02:2698:a100:da:1:3:4959:6 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
 mp-export:      afi ipv6.unicast to AS9049 at 2a02:2698:a100:da:1:3:4959:2 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
 mp-import:      afi ipv4.unicast from AS3216 at 62.141.105.217 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian AND ANY
-mp-export:      afi ipv4.unicast to AS3216 at 62.141.105.217 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100) AND NOT {5.59.244.0/22}
+mp-export:      afi ipv4.unicast to AS3216 at 62.141.105.217 action community .= {3216:5504}; announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100) AND NOT {5.59.244.0/22}
 mp-import:      afi ipv6.unicast from AS3216 at 2a00:1248:7ffc:1::b2 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
 mp-export:      afi ipv6.unicast to AS3216 at 2a00:1248:7ffc:1::b2 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
 mp-import:      afi ipv4.unicast from AS60720 185.26.195.248 action pref=50; accept AS-POLYCOMM
@@ -101,7 +101,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-kviktel-1
 created:        2019-10-28T15:15:57Z
-last-modified:  2026-02-11T10:07:06Z
+last-modified:  2026-02-12T20:50:22Z
 source:         RIPE
 
 

@@ -52,6 +52,9 @@ accept AS-KPS
 import:         from AS13094
 action pref=100;
 accept AS-MILECOM-RS
+import:         from AS15493
+action pref=100;
+accept AS15493
 import:         from AS21030
 action pref=100;
 accept AS-CDNNOW
@@ -268,6 +271,8 @@ export:         to AS12737
 announce AS-NSKROUTESERVER
 export:         to AS13094
 announce AS-NSKROUTESERVER
+export:         to AS15493
+announce AS-NSKROUTESERVER
 export:         to AS21030
 announce AS-NSKROUTESERVER
 export:         to AS25091
@@ -394,12 +399,15 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-01-26T10:14:04Z
+last-modified:  2026-02-12T10:16:19Z
 source:         RIPE
 
 as-num:         AS42403
 country:        RU
 as-name:        NSK-IX-RS Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS42403
+country:        RU
+as-name:        null
 as-num:         AS42403
 country:        RU
 as-name:        null
