@@ -137,6 +137,9 @@ accept AS-CDNVIDEO
 import:         from AS57629
 action pref=100;
 accept AS57629
+import:         from AS61964
+action pref=100;
+accept AS61964
 import:         from AS62261
 action pref=100;
 accept AS62261:AS-EKT-MEDIAIX
@@ -255,6 +258,8 @@ export:         to AS57363
 announce AS-EKTROUTESERVER
 export:         to AS57629
 announce AS-EKTROUTESERVER
+export:         to AS61964
+announce AS-EKTROUTESERVER
 export:         to AS62261
 announce AS-EKTROUTESERVER
 export:         to AS62331
@@ -279,7 +284,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2026-01-30T12:08:17Z
+last-modified:  2026-02-13T07:37:45Z
 source:         RIPE
 
 as-num:         AS43213

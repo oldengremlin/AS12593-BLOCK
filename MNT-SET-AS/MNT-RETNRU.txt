@@ -199,6 +199,7 @@ members:        AS-NCONNECT
 members:        AS-NETANGELS
 members:        AS-NETONERUS
 members:        AS-NETRACK
+members:        AS-NETRACK2
 members:        AS-NEVALINK
 members:        AS-NEW-TC
 members:        AS-NODEX
@@ -558,7 +559,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2026-02-11T19:59:13Z
+last-modified:  2026-02-13T19:59:13Z
 source:         RIPE
 
 
@@ -658,6 +659,7 @@ members:        AS-NCONNECT-V6
 members:        AS-NETANGELS
 members:        AS-NETONERUS
 members:        AS-NETRACK
+members:        AS-NETRACK2
 members:        AS-NEVALINK-IPV6
 members:        AS-NEW-TC
 members:        AS-NODEX
@@ -820,7 +822,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2026-02-11T19:59:12Z
+last-modified:  2026-02-13T19:59:13Z
 source:         RIPE
 
 
@@ -1715,6 +1717,8 @@ import:         from  AS47819 action pref=100; accept   AS47819
 export:         to    AS47819                  announce ANY
 import:         from  AS48061 action pref=200; accept   AS-RUTUBE
 export:         to    AS48061                  announce AS57304:AS-RETN-RU
+import:         from  AS48076 action pref=100; accept   AS-NETRACK2
+export:         to    AS48076                  announce ANY
 import:         from  AS48084 action pref=100; accept   AS-UMLC
 export:         to    AS48084                  announce ANY
 import:         from  AS48089 action pref=100; accept   AS-INFANET
@@ -2609,6 +2613,8 @@ mp-import:      afi ipv6.unicast from  AS47764 action pref=200; accept   AS-MAIL
 mp-export:      afi ipv6.unicast to    AS47764                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS48061 action pref=200; accept   AS-RUTUBE
 mp-export:      afi ipv6.unicast to    AS48061                  announce AS57304:AS-RETN6-RU
+mp-import:      afi ipv6.unicast from  AS48076 action pref=100; accept   AS-NETRACK2
+mp-export:      afi ipv6.unicast to    AS48076                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48084 action pref=100; accept   AS-UMLC-V6
 mp-export:      afi ipv6.unicast to    AS48084                  announce ANY
 mp-import:      afi ipv6.unicast from  AS48096 action pref=100; accept   AS-ITGRAD
@@ -2896,7 +2902,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-02-11T19:59:13Z
+last-modified:  2026-02-13T19:59:13Z
 source:         RIPE
 
 
