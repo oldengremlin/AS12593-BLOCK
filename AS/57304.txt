@@ -953,6 +953,8 @@ import:         from AS208577 action pref=100; accept   AS208577
 export:         to   AS208577                  announce ANY
 import:         from AS208640 action pref=100; accept   AS208640
 export:         to   AS208640                  announce ANY
+import:         from AS208677 action pref=100; accept   AS208677:AS-CLOUDRU
+export:         to   AS208677                  announce ANY
 import:         from AS208803 action pref=100; accept   AS-ACN
 export:         to   AS208803                  announce ANY
 import:         from AS209030 action pref=100; accept   AS-KDP-RUSSIA
@@ -1569,6 +1571,8 @@ mp-import:      afi ipv6.unicast from AS208411 action pref=100; accept   AS20841
 mp-export:      afi ipv6.unicast to   AS208411                  announce ANY
 mp-import:      afi ipv6.unicast from AS208640 action pref=100; accept   AS208640
 mp-export:      afi ipv6.unicast to   AS208640                  announce ANY
+mp-import:      afi ipv6.unicast from AS208677 action pref=100; accept   AS208677:AS-CLOUDRU
+mp-export:      afi ipv6.unicast to   AS208677                  announce ANY
 mp-import:      afi ipv6.unicast from AS208803 action pref=100; accept   AS-ACN
 mp-export:      afi ipv6.unicast to   AS208803                  announce ANY
 mp-import:      afi ipv6.unicast from AS209030 action pref=100; accept   AS-KDP-RUSSIA
@@ -1614,7 +1618,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-02-13T19:59:13Z
+last-modified:  2026-02-16T19:59:13Z
 source:         RIPE
 
 as-num:         AS57304

@@ -314,6 +314,7 @@ members:        AS200847:AS-MOBILECARD
 members:        AS203456:AS-BORK
 members:        AS205014:AS-ITSAT
 members:        AS207239:AS-GIGNET
+members:        AS208677:AS-CLOUDRU
 members:        AS21051:AS-ASTRUM
 members:        AS210928:AS-RDB-CLIENT
 members:        AS211914:AS-AERCA
@@ -559,7 +560,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2026-02-13T19:59:13Z
+last-modified:  2026-02-16T19:59:14Z
 source:         RIPE
 
 
@@ -739,6 +740,7 @@ members:        AS-ZENIT-ARENA
 members:        AS-ZVEZDATEL
 members:        AS139057:AS-CONE
 members:        AS198310:AS-MOLNIYA
+members:        AS208677:AS-CLOUDRU
 members:        AS214294:AS-NOOB
 members:        AS215307:AS-MOVETEL-CUSTOMERS
 members:        AS215601:AS-ALLHOSTINGS
@@ -822,7 +824,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2026-02-13T19:59:13Z
+last-modified:  2026-02-16T19:59:13Z
 source:         RIPE
 
 
@@ -2241,6 +2243,8 @@ import:         from AS208577 action pref=100; accept   AS208577
 export:         to   AS208577                  announce ANY
 import:         from AS208640 action pref=100; accept   AS208640
 export:         to   AS208640                  announce ANY
+import:         from AS208677 action pref=100; accept   AS208677:AS-CLOUDRU
+export:         to   AS208677                  announce ANY
 import:         from AS208803 action pref=100; accept   AS-ACN
 export:         to   AS208803                  announce ANY
 import:         from AS209030 action pref=100; accept   AS-KDP-RUSSIA
@@ -2857,6 +2861,8 @@ mp-import:      afi ipv6.unicast from AS208411 action pref=100; accept   AS20841
 mp-export:      afi ipv6.unicast to   AS208411                  announce ANY
 mp-import:      afi ipv6.unicast from AS208640 action pref=100; accept   AS208640
 mp-export:      afi ipv6.unicast to   AS208640                  announce ANY
+mp-import:      afi ipv6.unicast from AS208677 action pref=100; accept   AS208677:AS-CLOUDRU
+mp-export:      afi ipv6.unicast to   AS208677                  announce ANY
 mp-import:      afi ipv6.unicast from AS208803 action pref=100; accept   AS-ACN
 mp-export:      afi ipv6.unicast to   AS208803                  announce ANY
 mp-import:      afi ipv6.unicast from AS209030 action pref=100; accept   AS-KDP-RUSSIA
@@ -2902,7 +2908,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-02-13T19:59:13Z
+last-modified:  2026-02-16T19:59:13Z
 source:         RIPE
 
 

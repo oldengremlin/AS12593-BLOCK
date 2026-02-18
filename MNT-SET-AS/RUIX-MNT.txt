@@ -995,6 +995,8 @@ members:        AS-UTEX
 members:        AS-KOLT
 # from AS52008:
 members:        AS52008
+# from AS52043:
+members:        AS52043
 # from AS52048:
 members:        AS-DATACLUB
 # from AS52091:
@@ -1348,7 +1350,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-02-10T13:44:20Z
+last-modified:  2026-02-16T13:45:33Z
 source:         RIPE
 
 
@@ -5759,6 +5761,9 @@ accept AS-KOLT
 import:         from AS52008
 action pref=100;
 accept AS52008
+import:         from AS52043
+action pref=100;
+accept AS52043
 import:         from AS52048
 action pref=100;
 accept AS-DATACLUB
@@ -6979,6 +6984,8 @@ export:         to AS51973
 announce AS-MSKROUTESERVER
 export:         to AS52008
 announce AS-MSKROUTESERVER
+export:         to AS52043
+announce AS-MSKROUTESERVER
 export:         to AS52048
 announce AS-MSKROUTESERVER
 export:         to AS52091
@@ -7328,7 +7335,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-02-10T13:44:20Z
+last-modified:  2026-02-16T13:45:37Z
 source:         RIPE
 
 

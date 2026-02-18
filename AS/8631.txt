@@ -1053,6 +1053,9 @@ accept AS-KOLT
 import:         from AS52008
 action pref=100;
 accept AS52008
+import:         from AS52043
+action pref=100;
+accept AS52043
 import:         from AS52048
 action pref=100;
 accept AS-DATACLUB
@@ -2273,6 +2276,8 @@ export:         to AS51973
 announce AS-MSKROUTESERVER
 export:         to AS52008
 announce AS-MSKROUTESERVER
+export:         to AS52043
+announce AS-MSKROUTESERVER
 export:         to AS52048
 announce AS-MSKROUTESERVER
 export:         to AS52091
@@ -2622,7 +2627,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-02-10T13:44:20Z
+last-modified:  2026-02-16T13:45:37Z
 source:         RIPE
 
 as-num:         AS8631
