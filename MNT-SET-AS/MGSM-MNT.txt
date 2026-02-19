@@ -276,7 +276,6 @@ members:        AS-KTCPEERS
 members:        AS-KVANT2
 members:        AS-KVS
 members:        AS-LAI
-members:        AS-LANTA
 members:        AS-LEIVO
 members:        AS-LENTEL
 members:        AS-LIFESTREAM
@@ -473,6 +472,8 @@ members:        AS49732:AS-TYVASVIAZINFORM
 members:        AS57073:AS-WILDBERRIES
 members:        AS57808:AS-SATDV-AMK
 members:        AS60040:AS-LRBS2
+members:        AS61436:AS-INTEX
+members:        AS61436:AS-INTEX-V6
 members:        AS197068:AS-SET
 members:        AS202611:AS-YCTLCDN
 members:        AS206810:AS-CUSTOMERS
@@ -587,7 +588,6 @@ members:        AS41123
 members:        AS41148
 members:        AS41190
 members:        AS41226
-members:        AS41268
 members:        AS41302
 members:        AS41338
 members:        AS41430
@@ -1071,7 +1071,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2007-10-01T11:16:52Z
-last-modified:  2026-02-13T10:54:52Z
+last-modified:  2026-02-17T08:09:23Z
 source:         RIPE
 
 
@@ -1803,7 +1803,9 @@ import:         from AS41190 accept AS-IDEATELECOM
 export:         to AS41190 announce ANY
 import:         from AS41226 accept AS41226
 export:         to AS41226 announce ANY
-import:         from AS41268 accept AS-LANTA
+import:         from AS41268 accept AS61436:AS-INTEX
+export:         to AS41268 announce ANY
+import:         from AS41268 accept AS61436:AS-INTEX-V6
 export:         to AS41268 announce ANY
 import:         from AS41302 accept AS-KVS
 export:         to AS41302 announce ANY
@@ -2942,7 +2944,7 @@ mnt-by:         RIPE-NCC-ENd-MNT
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2004-03-05T14:46:40Z
-last-modified:  2026-02-13T10:49:33Z
+last-modified:  2026-02-17T08:07:54Z
 source:         RIPE
 
 
