@@ -335,6 +335,8 @@ members:        AS-LEIVO
 members:        AS-SETICCUS
 # from AS6866:
 members:        AS-CYTANET
+# from AS6874:
+members:        AS6874
 # from AS6939:
 members:        AS-HURRICANE, AS-HURRICANEv6
 # from AS7713:
@@ -1184,7 +1186,7 @@ members:        AS-2GIS
 # from AS197826:
 members:        AS-SKYNET-MSK
 # from AS197969:
-members:        AS-CTS-MARSAT
+members:        AS197969
 # from AS198076:
 members:        AS-LITEGROUP
 # from AS198185:
@@ -1329,6 +1331,8 @@ members:        AS212232
 members:        AS-KINESCOPE
 # from AS213075:
 members:        AS-STARTFILM, AS213075
+# from AS213348:
+members:        AS213348
 # from AS213452:
 members:        AS213452:AS-INFRACOM
 # from AS213499:
@@ -1350,7 +1354,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-02-16T13:45:33Z
+last-modified:  2026-02-18T13:46:34Z
 source:         RIPE
 
 
@@ -4771,6 +4775,9 @@ accept AS-SETICCUS
 import:         from AS6866
 action pref=100;
 accept AS-CYTANET
+import:         from AS6874
+action pref=100;
+accept AS6874
 import:         from AS6939
 action pref=100;
 accept AS-HURRICANE AS-HURRICANEv6
@@ -6045,7 +6052,7 @@ action pref=100;
 accept AS-SKYNET-MSK
 import:         from AS197969
 action pref=100;
-accept AS-CTS-MARSAT
+accept AS197969
 import:         from AS198076
 action pref=100;
 accept AS-LITEGROUP
@@ -6262,6 +6269,9 @@ accept AS-KINESCOPE
 import:         from AS213075
 action pref=100;
 accept AS-STARTFILM AS213075
+import:         from AS213348
+action pref=100;
+accept AS213348
 import:         from AS213452
 action pref=100;
 accept AS213452:AS-INFRACOM
@@ -6323,6 +6333,8 @@ announce AS-MSKROUTESERVER
 export:         to AS6856
 announce AS-MSKROUTESERVER
 export:         to AS6866
+announce AS-MSKROUTESERVER
+export:         to AS6874
 announce AS-MSKROUTESERVER
 export:         to AS6939
 announce AS-MSKROUTESERVER
@@ -7318,6 +7330,8 @@ export:         to AS212236
 announce AS-MSKROUTESERVER
 export:         to AS213075
 announce AS-MSKROUTESERVER
+export:         to AS213348
+announce AS-MSKROUTESERVER
 export:         to AS213452
 announce AS-MSKROUTESERVER
 export:         to AS213499
@@ -7335,7 +7349,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-02-16T13:45:37Z
+last-modified:  2026-02-18T13:46:34Z
 source:         RIPE
 
 
