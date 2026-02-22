@@ -1332,6 +1332,8 @@ members:        AS212136:AS-NUBES
 members:        AS212232
 # from AS212236:
 members:        AS-KINESCOPE
+# from AS212456:
+members:        AS212456
 # from AS213075:
 members:        AS-STARTFILM, AS213075
 # from AS213348:
@@ -1357,7 +1359,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-02-19T13:47:07Z
+last-modified:  2026-02-20T13:47:37Z
 source:         RIPE
 
 
@@ -6272,6 +6274,9 @@ accept AS212232
 import:         from AS212236
 action pref=100;
 accept AS-KINESCOPE
+import:         from AS212456
+action pref=100;
+accept AS212456
 import:         from AS213075
 action pref=100;
 accept AS-STARTFILM AS213075
@@ -7336,6 +7341,8 @@ export:         to AS212232
 announce AS-MSKROUTESERVER
 export:         to AS212236
 announce AS-MSKROUTESERVER
+export:         to AS212456
+announce AS-MSKROUTESERVER
 export:         to AS213075
 announce AS-MSKROUTESERVER
 export:         to AS213348
@@ -7357,7 +7364,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-02-19T13:47:11Z
+last-modified:  2026-02-20T13:47:38Z
 source:         RIPE
 
 

@@ -1,32 +1,49 @@
 aut-num:        AS204272
 as-name:        ASARTA-SPB-AS
-descr:          St.Petersburg
+descr:          Asarta LLC, St.Petersburg
 org:            ORG-AL369-RIPE
-import:         from AS51178 action pref=300; accept ANY
-export:         to AS51178 announce AS204272
 import:         from AS35598 accept ANY
-export:         to AS35598 announce AS204272
+export:         to AS35598 announce AS204272:AS-ASARTA
+mp-import:      afi ipv6.unicast from AS35598 accept ANY
+mp-export:      afi ipv6.unicast to AS35598 announce AS204272:AS-ASARTA
 import:         from AS29076 accept ANY
-export:         to AS29076 announce AS204272
-import:         from AS50817 action pref=200; accept AS-PITER-IX
-export:         to AS50817 announce AS204272
-import:         from AS49869 action pref=200; accept AS-PITER-IX-MSK
-export:         to AS49869 announce AS204272
-import:         from AS48193 action pref=200; accept AS-PITER-IX-FRA
-export:         to AS48193 announce AS204272
-import:         from AS15169 action pref=400; accept AS-GOOGLE
-export:         to AS15169 announce AS204272
-import:         from AS13238 action pref=400; accept AS-YANDEX
-export:         to AS13238 announce AS204272
-import:         from AS50952 action pref=200; accept AS-DATAIX
-export:         to AS50952 announce AS204272
+export:         to AS29076 announce AS204272:AS-ASARTA
+import:         from AS51178 accept ANY
+export:         to AS51178 announce AS204272:AS-ASARTA
+mp-import:      afi ipv6.unicast from AS51178 accept ANY
+mp-export:      afi ipv6.unicast to AS51178 announce AS204272:AS-ASARTA
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS204272:AS-ASARTA
+import:         from AS50817 accept AS-PITER-IX
+export:         to AS50817 announce AS204272:AS-ASARTA
+mp-import:      afi ipv6.unicast from AS50817 accept AS-PITER-IX
+mp-export:      afi ipv6.unicast to AS50817 announce AS204272:AS-ASARTA
+import:         from AS49869 accept AS-PITER-IX-MSK
+export:         to AS49869 announce AS204272:AS-ASARTA
+mp-import:      afi ipv6.unicast from AS49869 accept AS-PITER-IX-MSK
+mp-export:      afi ipv6.unicast to AS49869 announce AS204272:AS-ASARTA
+import:         from AS48193 accept AS-PITER-IX-FRA
+export:         to AS48193 announce AS204272:AS-ASARTA
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS204272:AS-ASARTA
+import:         from AS15169 accept AS-GOOGLE
+export:         to AS15169 announce AS204272:AS-ASARTA
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS204272:AS-ASARTA
+mp-import:      afi ipv6.unicast from AS13238 accept AS-YANDEX
+mp-export:      afi ipv6.unicast to AS13238 announce AS204272:AS-ASARTA
+import:         from AS211609 accept AS-OKKO
+export:         to AS211609 announce AS204272:AS-ASARTA
+import:         from AS51092 accept AS-TVIP
+export:         to AS51092 announce AS204272:AS-ASARTA
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-ltdasarta-1-mnt
+mnt-by:         ASARTA-MNT
 created:        2015-07-13T11:20:55Z
-last-modified:  2025-05-19T09:35:32Z
+last-modified:  2026-02-20T09:10:47Z
 source:         RIPE
 
 as-num:         AS204272

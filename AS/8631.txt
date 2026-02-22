@@ -1557,6 +1557,9 @@ accept AS212232
 import:         from AS212236
 action pref=100;
 accept AS-KINESCOPE
+import:         from AS212456
+action pref=100;
+accept AS212456
 import:         from AS213075
 action pref=100;
 accept AS-STARTFILM AS213075
@@ -2621,6 +2624,8 @@ export:         to AS212232
 announce AS-MSKROUTESERVER
 export:         to AS212236
 announce AS-MSKROUTESERVER
+export:         to AS212456
+announce AS-MSKROUTESERVER
 export:         to AS213075
 announce AS-MSKROUTESERVER
 export:         to AS213348
@@ -2642,7 +2647,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-02-19T13:47:11Z
+last-modified:  2026-02-20T13:47:38Z
 source:         RIPE
 
 as-num:         AS8631
