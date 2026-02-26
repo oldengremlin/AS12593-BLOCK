@@ -5,8 +5,6 @@ import:         from AS50509 action pref=100; accept ANY
 export:         to AS50509 announce AS-SAMTELECOM
 import:         from AS49869 action pref=100; accept ANY
 export:         to AS49869 announce AS-SAMTELECOM
-import:         from AS2854 action pref=100; accept ANY
-export:         to AS2854 announce AS-SAMTELECOM
 import:         from AS48193 action pref=100; accept ANY
 export:         to AS48193 announce AS-SAMTELECOM
 import:         from AS39607 action pref=100; accept ANY
@@ -27,14 +25,10 @@ import:         from AS51523 action pref=100; accept AS51523
 export:         to AS51523 announce {0.0.0.0/0}
 import:         from AS205773 action pref=100; accept AS205773
 export:         to AS205773 announce ANY
-import:         from AS212234 action pref=100; accept AS212234
-export:         to AS212234 announce ANY
 mp-import:      afi ipv6.unicast from AS50509 accept any
 mp-export:      afi ipv6.unicast to AS50509 announce AS-SAMTELECOM
 mp-import:      afi ipv6.unicast from AS49869 accept any
 mp-export:      afi ipv6.unicast to AS49869 announce AS-SAMTELECOM
-mp-import:      afi ipv6.unicast from AS2854 accept any
-mp-export:      afi ipv6.unicast to AS2854 announce AS-SAMTELECOM
 mp-import:      afi ipv6.unicast from AS50817 accept any
 mp-export:      afi ipv6.unicast to AS50817 announce AS-SAMTELECOM
 mp-import:      afi ipv6.unicast from AS13335 accept any
@@ -51,15 +45,13 @@ mp-import:      afi ipv6.unicast from AS51523 accept AS51523
 mp-export:      afi ipv6.unicast to AS51523 announce {::/0}
 mp-import:      afi ipv6.unicast from AS205773 accept AS205773
 mp-export:      afi ipv6.unicast to AS205773 announce ANY
-mp-import:      afi ipv6.unicast from AS212234 accept AS212234
-mp-export:      afi ipv6.unicast to AS212234 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-llctelecom-service-1-mnt
 created:        2004-04-05T08:19:40Z
-last-modified:  2024-03-19T07:22:05Z
+last-modified:  2026-02-24T11:40:02Z
 source:         RIPE
 
 as-num:         AS31275

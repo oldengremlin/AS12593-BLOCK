@@ -2,6 +2,7 @@ aut-num:        AS47236
 as-name:        CITYLINK-AS
 org:            ORG-Llc9-RIPE
 import:         from AS3216 action pref=100; accept ANY
+import:         from AS8359 action pref=100; accept ANY
 import:         from AS15169 action pref=100; accept ANY
 import:         from AS20485 action pref=100; accept ANY
 import:         from AS20764 action pref=100; accept ANY
@@ -13,7 +14,8 @@ import:         from AS50817 action pref=100; accept ANY
 import:         from AS50952 action pref=100; accept ANY
 import:         from AS57304 action pref=100; accept ANY
 import:         from AS57856 action pref=100; accept AS57856
-export:         to AS3216 announce {178.19.251.0/24}
+export:         to AS3216 announce AS-SET-CL
+export:         to AS8359 announce {94.140.238.0/24, 176.97.98.0/24, 178.19.251.0/24}
 export:         to AS15169 announce {94.140.246.0/24, 185.90.101.0/24}
 export:         to AS20485 announce AS-SET-CL
 export:         to AS20764 announce {94.140.246.0/24, 185.90.101.0/24}
@@ -31,7 +33,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CTLNK-MNT
 created:        2008-05-22T09:01:33Z
-last-modified:  2024-03-12T14:55:49Z
+last-modified:  2026-02-24T14:00:37Z
 source:         RIPE
 
 as-num:         AS47236
