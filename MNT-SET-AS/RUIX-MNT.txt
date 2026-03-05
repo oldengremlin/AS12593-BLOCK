@@ -1763,8 +1763,6 @@ members:        AS-GOOGLE
 members:        AS-AKAMAI
 # from AS21030:
 members:        AS-CDNNOW
-# from AS21416:
-members:        AS21416
 # from AS25091:
 members:        AS-IP-MAX, AS-IP-MAX-V6
 # from AS25408:
@@ -1915,7 +1913,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2025-12-16T10:06:13Z
+last-modified:  2026-03-03T10:15:23Z
 source:         RIPE
 
 
@@ -3404,9 +3402,6 @@ accept AS-AKAMAI
 import:         from AS21030
 action pref=100;
 accept AS-CDNNOW
-import:         from AS21416
-action pref=100;
-accept AS21416
 import:         from AS25091
 action pref=100;
 accept AS-IP-MAX AS-IP-MAX-V6
@@ -3663,8 +3658,6 @@ export:         to AS20940
 announce AS-SPBROUTESERVER
 export:         to AS21030
 announce AS-SPBROUTESERVER
-export:         to AS21416
-announce AS-SPBROUTESERVER
 export:         to AS25091
 announce AS-SPBROUTESERVER
 export:         to AS25408
@@ -3812,7 +3805,7 @@ announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2025-12-16T10:06:17Z
+last-modified:  2026-03-03T10:15:28Z
 source:         RIPE
 
 
