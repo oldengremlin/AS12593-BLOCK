@@ -22,8 +22,6 @@ members:        AS-ERTH
 members:        AS-QUANTUM
 # from AS12668:
 members:        AS-MIRALOGIC
-# from AS15493:
-members:        AS15493
 # from AS21030:
 members:        AS21030
 # from AS25091:
@@ -120,7 +118,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2026-02-13T07:37:46Z
+last-modified:  2026-03-04T07:40:51Z
 source:         RIPE
 
 
@@ -430,8 +428,6 @@ members:        AS13335:AS-CLOUDFLARE
 members:        AS-GOOGLE
 # from AS15428:
 members:        AS-DAGNET
-# from AS15493:
-members:        AS15493
 # from AS15599:
 members:        AS-SET-AS15599
 # from AS15672:
@@ -642,8 +638,6 @@ members:        AS39360
 members:        AS39529
 # from AS39684:
 members:        AS39684
-# from AS39709:
-members:        AS-MARYNONET
 # from AS39728:
 members:        AS-LUGANET
 # from AS39821:
@@ -1361,7 +1355,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-02-25T10:29:17Z
+last-modified:  2026-03-04T10:08:53Z
 source:         RIPE
 
 
@@ -1438,8 +1432,6 @@ members:        AS-MIRALOGIC
 members:        AS-KPS
 # from AS13094:
 members:        AS-MILECOM-RS
-# from AS15493:
-members:        AS15493
 # from AS21030:
 members:        AS-CDNNOW
 # from AS25091:
@@ -1570,7 +1562,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2026-02-12T10:16:15Z
+last-modified:  2026-03-04T10:23:58Z
 source:         RIPE
 
 
@@ -2665,9 +2657,6 @@ accept AS-KPS
 import:         from AS13094
 action pref=100;
 accept AS-MILECOM-RS
-import:         from AS15493
-action pref=100;
-accept AS15493
 import:         from AS21030
 action pref=100;
 accept AS-CDNNOW
@@ -2884,8 +2873,6 @@ export:         to AS12737
 announce AS-NSKROUTESERVER
 export:         to AS13094
 announce AS-NSKROUTESERVER
-export:         to AS15493
-announce AS-NSKROUTESERVER
 export:         to AS21030
 announce AS-NSKROUTESERVER
 export:         to AS25091
@@ -3012,7 +2999,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-02-12T10:16:19Z
+last-modified:  2026-03-04T10:23:53Z
 source:         RIPE
 
 
@@ -3077,9 +3064,6 @@ accept AS-QUANTUM
 import:         from AS12668
 action pref=100;
 accept AS-MIRALOGIC
-import:         from AS15493
-action pref=100;
-accept AS15493
 import:         from AS21030
 action pref=100;
 accept AS21030
@@ -3233,8 +3217,6 @@ export:         to AS12418
 announce AS-EKTROUTESERVER
 export:         to AS12668
 announce AS-EKTROUTESERVER
-export:         to AS15493
-announce AS-EKTROUTESERVER
 export:         to AS21030
 announce AS-EKTROUTESERVER
 export:         to AS25091
@@ -3329,7 +3311,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2026-02-13T07:37:45Z
+last-modified:  2026-03-04T07:40:51Z
 source:         RIPE
 
 
@@ -4916,9 +4898,6 @@ accept AS-GOOGLE
 import:         from AS15428
 action pref=100;
 accept AS-DAGNET
-import:         from AS15493
-action pref=100;
-accept AS15493
 import:         from AS15599
 action pref=100;
 accept AS-SET-AS15599
@@ -5234,9 +5213,6 @@ accept AS39529
 import:         from AS39684
 action pref=100;
 accept AS39684
-import:         from AS39709
-action pref=100;
-accept AS-MARYNONET
 import:         from AS39728
 action pref=100;
 accept AS-LUGANET
@@ -6437,8 +6413,6 @@ export:         to AS15169
 announce AS-MSKROUTESERVER
 export:         to AS15428
 announce AS-MSKROUTESERVER
-export:         to AS15493
-announce AS-MSKROUTESERVER
 export:         to AS15599
 announce AS-MSKROUTESERVER
 export:         to AS15672
@@ -6648,8 +6622,6 @@ announce AS-MSKROUTESERVER
 export:         to AS39529
 announce AS-MSKROUTESERVER
 export:         to AS39684
-announce AS-MSKROUTESERVER
-export:         to AS39709
 announce AS-MSKROUTESERVER
 export:         to AS39728
 announce AS-MSKROUTESERVER
@@ -7364,7 +7336,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-02-25T10:29:13Z
+last-modified:  2026-03-04T10:08:53Z
 source:         RIPE
 
 
