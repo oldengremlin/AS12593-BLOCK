@@ -444,8 +444,6 @@ members:        AS-MAP
 members:        AS-SET-WPL
 # from AS16143:
 members:        AS-RATEL
-# from AS16276:
-members:        AS-OVH
 # from AS20483:
 members:        AS-RTNET
 # from AS20590:
@@ -1353,7 +1351,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-03-09T09:40:26Z
+last-modified:  2026-03-10T13:41:04Z
 source:         RIPE
 
 
@@ -4920,9 +4918,6 @@ accept AS-SET-WPL
 import:         from AS16143
 action pref=100;
 accept AS-RATEL
-import:         from AS16276
-action pref=100;
-accept AS-OVH
 import:         from AS20483
 action pref=100;
 accept AS-RTNET
@@ -6424,8 +6419,6 @@ export:         to AS15930
 announce AS-MSKROUTESERVER
 export:         to AS16143
 announce AS-MSKROUTESERVER
-export:         to AS16276
-announce AS-MSKROUTESERVER
 export:         to AS20483
 announce AS-MSKROUTESERVER
 export:         to AS20590
@@ -7329,7 +7322,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-03-09T09:40:31Z
+last-modified:  2026-03-10T13:41:01Z
 source:         RIPE
 
 
