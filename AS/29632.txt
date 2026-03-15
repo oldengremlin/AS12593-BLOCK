@@ -299,6 +299,8 @@ import:         from AS59729 action pref=100; accept AS-ITLBG
 export:         to AS59729 announce ANY
 import:         from AS61251 action pref=100; accept AS-HOST4BIZ
 export:         to AS61251 announce ANY
+import:         from AS62013 action pref=100; accept AS-CLICKCOM
+export:         to AS62013 announce ANY
 import:         from AS61371 action pref=100; accept AS-UA-STARNET
 export:         to AS61371 announce ANY
 import:         from AS62181 action pref=100; accept AS62181
@@ -473,6 +475,8 @@ mp-import:      afi ipv6.unicast from AS60894 action pref=100; accept AS-REGNETS
 mp-export:      afi ipv6.unicast to AS60894 announce ANY
 mp-import:      afi ipv6.unicast from AS61218 action pref=100; accept AS61218
 mp-export:      afi ipv6.unicast to AS61218 announce ANY
+mp-import:      afi ipv6.unicast from AS62013 action pref=100; accept AS-CLICKCOM
+mp-export:      afi ipv6.unicast to AS62013 announce ANY
 mp-import:      afi ipv6.unicast from AS62075 action pref=100; accept AS-LANNERT
 mp-export:      afi ipv6.unicast to AS62075 announce ANY
 mp-import:      afi ipv6.unicast from AS62309 action pref=100; accept AS62309
@@ -956,7 +960,7 @@ notify:         noc@netassist.ua
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MEREZHA-MNT
 created:        2003-10-28T13:43:45Z
-last-modified:  2026-02-16T15:03:18Z
+last-modified:  2026-03-13T18:01:25Z
 source:         RIPE
 
 as-num:         AS29632
