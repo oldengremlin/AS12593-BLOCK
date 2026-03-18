@@ -492,6 +492,10 @@ import:         from AS6663 action pref=87; accept AS-TTI
 export:         to AS6663 announce AS-SOVAM
 mp-import:      afi ipv6 from AS6663 action pref=87; accept AS-TTI6
 mp-export:      afi ipv6 to AS6663 announce AS-SOVAM-V6
+import:         from AS6204 action pref=87; accept AS-ZETNET
+export:         to AS6204 announce AS-SOVAM
+mp-import:      afi ipv6 from AS6204 action pref=87; accept AS-ZETNET
+mp-export:      afi ipv6 to AS6204 announce AS-SOVAM-V6
 mp-import:      afi ipv6 from AS36236 action pref=90; accept AS-HOSTVIRTUAL
 mp-export:      afi ipv6 to AS36236 announce AS-SOVAM-V6
 import:         from AS36236 action pref=90; accept AS-HOSTVIRTUAL
@@ -784,6 +788,10 @@ import:         from AS8365 action pref=87; accept AS-MANDA
 export:         to AS8365 announce AS-SOVAM
 mp-import:      afi ipv6 from AS8365 action pref=87; accept AS-MANDA
 mp-export:      afi ipv6 to AS8365 announce AS-SOVAM-V6
+import:         from AS6204 action pref=87; accept AS-ZETNET
+export:         to AS6204 announce AS-SOVAM
+mp-import:      afi ipv6 from AS6204 action pref=87; accept AS-ZETNET
+mp-export:      afi ipv6 to AS6204 announce AS-SOVAM-V6
 import:         from AS24961 action pref=87; accept AS-MYLOC
 export:         to AS24961 announce AS-SOVAM
 mp-import:      afi ipv6 from AS24961 action pref=87; accept AS-MYLOC
@@ -1224,6 +1232,10 @@ import:         from AS8365 action pref=87; accept AS-MANDA
 export:         to AS8365 announce AS-SOVAM
 mp-import:      afi ipv6 from AS8365 action pref=87; accept AS-MANDA
 mp-export:      afi ipv6 to AS8365 announce AS-SOVAM-V6
+import:         from AS6204 action pref=87; accept AS-ZETNET
+export:         to AS6204 announce AS-SOVAM
+mp-import:      afi ipv6 from AS6204 action pref=87; accept AS-ZETNET
+mp-export:      afi ipv6 to AS6204 announce AS-SOVAM-V6
 mp-import:      afi ipv6 from AS714 action pref=90; accept AS-APPLE
 mp-export:      afi ipv6 to AS714 announce AS-SOVAM-V6
 import:         from AS714 action pref=90; accept AS-APPLE
@@ -1542,6 +1554,10 @@ import:         from AS20940 action pref=87; accept AS-AKAMAI
 export:         to AS20940 announce AS-SOVAM
 mp-import:      afi ipv6 from AS20940 action pref=87; accept AS-AKAMAI
 mp-export:      afi ipv6 to AS20940 announce AS-SOVAM-V6
+import:         from AS6204 action pref=87; accept AS-ZETNET
+export:         to AS6204 announce AS-SOVAM
+mp-import:      afi ipv6 from AS6204 action pref=87; accept AS-ZETNET
+mp-export:      afi ipv6 to AS6204 announce AS-SOVAM-V6
 import:         from AS3356 action pref=77; accept ANY
 export:         to AS3356 announce AS-SOVAM
 mp-import:      afi ipv6 from AS3356 action pref=77; accept ANY
@@ -5309,7 +5325,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-03-13T12:47:09Z
+last-modified:  2026-03-16T15:41:09Z
 source:         RIPE
 
 as-num:         AS3216
