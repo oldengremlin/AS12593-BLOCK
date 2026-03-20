@@ -1460,6 +1460,8 @@ members:        AS-TELECONNECT
 members:        AS-GOOGLE
 # from AS39684:
 members:        AS39684
+# from AS39927:
+members:        AS-ELIGHT
 # from AS40995:
 members:        AS-CNLTD
 # from AS41794:
@@ -1558,7 +1560,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2026-03-05T10:19:21Z
+last-modified:  2026-03-18T05:42:04Z
 source:         RIPE
 
 
@@ -2701,6 +2703,9 @@ accept AS-GOOGLE
 import:         from AS39684
 action pref=100;
 accept AS39684
+import:         from AS39927
+action pref=100;
+accept AS-ELIGHT
 import:         from AS40995
 action pref=100;
 accept AS-CNLTD
@@ -2901,6 +2906,8 @@ export:         to AS36040
 announce AS-NSKROUTESERVER
 export:         to AS39684
 announce AS-NSKROUTESERVER
+export:         to AS39927
+announce AS-NSKROUTESERVER
 export:         to AS40995
 announce AS-NSKROUTESERVER
 export:         to AS41794
@@ -2995,7 +3002,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-03-05T10:19:26Z
+last-modified:  2026-03-18T05:42:00Z
 source:         RIPE
 
 
