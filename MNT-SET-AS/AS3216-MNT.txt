@@ -2710,6 +2710,7 @@ members:        AS-QTEL-SET
 members:        AS-RDSNET
 members:        AS-RIOT
 members:        AS-ROBLOX
+members:        AS-ROYALE
 members:        AS-RTL
 members:        AS-SERVEREL
 members:        AS-SERVERION
@@ -2762,7 +2763,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2023-05-29T14:56:33Z
-last-modified:  2026-03-16T15:40:23Z
+last-modified:  2026-03-19T21:18:01Z
 source:         RIPE
 
 
@@ -2894,13 +2895,17 @@ members:        AS49418:AS-NETSHIELD
 members:        AS-AEZA
 members:        AS-GBXS
 members:        AS-GBXS6
+members:        AS-IXNT
+members:        AS-LWL
 members:        AS-MIRHOSTING
+members:        AS-ROYALE
+members:        AS-WAICORE
 members:        AS-ZETNET
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2023-11-10T12:41:06Z
-last-modified:  2026-03-13T13:24:35Z
+last-modified:  2026-03-19T21:16:37Z
 source:         RIPE
 
 
@@ -2953,6 +2958,7 @@ members:        AS-INTERACTIVE3D
 members:        AS-IPTP
 members:        AS-IPTRANSIT
 members:        AS-IPX
+members:        AS-IXNT
 members:        AS-IXREACH
 members:        AS-LDCOMNET
 members:        AS-LEASEWEB
@@ -3036,7 +3042,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2023-05-29T14:51:21Z
-last-modified:  2026-03-16T13:48:21Z
+last-modified:  2026-03-19T21:19:05Z
 source:         RIPE
 
 
@@ -3986,6 +3992,10 @@ import:         from AS6204 action pref=87; accept AS-ZETNET
 export:         to AS6204 announce AS-SOVAM
 mp-import:      afi ipv6 from AS6204 action pref=87; accept AS-ZETNET
 mp-export:      afi ipv6 to AS6204 announce AS-SOVAM-V6
+import:         from AS60345 action pref=87; accept AS-IXNT
+export:         to AS60345 announce AS-SOVAM
+mp-import:      afi ipv6 from AS60345 action pref=87; accept AS-IXNT
+mp-export:      afi ipv6 to AS60345 announce AS-SOVAM-V6
 mp-import:      afi ipv6 from AS36236 action pref=90; accept AS-HOSTVIRTUAL
 mp-export:      afi ipv6 to AS36236 announce AS-SOVAM-V6
 import:         from AS36236 action pref=90; accept AS-HOSTVIRTUAL
@@ -4726,6 +4736,10 @@ import:         from AS6204 action pref=87; accept AS-ZETNET
 export:         to AS6204 announce AS-SOVAM
 mp-import:      afi ipv6 from AS6204 action pref=87; accept AS-ZETNET
 mp-export:      afi ipv6 to AS6204 announce AS-SOVAM-V6
+import:         from AS212477 action pref=87; accept AS-ROYALE
+export:         to AS212477 announce AS-SOVAM
+mp-import:      afi ipv6 from AS212477 action pref=87; accept AS-ROYALE
+mp-export:      afi ipv6 to AS212477 announce AS-SOVAM-V6
 mp-import:      afi ipv6 from AS714 action pref=90; accept AS-APPLE
 mp-export:      afi ipv6 to AS714 announce AS-SOVAM-V6
 import:         from AS714 action pref=90; accept AS-APPLE
@@ -4994,6 +5008,10 @@ import:         from AS57976 action pref=87; accept AS-BLIZZARD
 export:         to AS57976 announce AS-SOVAM
 mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
 mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
+import:         from AS60345 action pref=87; accept AS-IXNT
+export:         to AS60345 announce AS-SOVAM
+mp-import:      afi ipv6 from AS60345 action pref=87; accept AS-IXNT
+mp-export:      afi ipv6 to AS60345 announce AS-SOVAM-V6
 import:         from AS14061 action pref=87; accept AS-14061
 export:         to AS14061 announce AS-SOVAM
 mp-import:      afi ipv6 from AS14061 action pref=87; accept AS-14061
@@ -5048,6 +5066,22 @@ import:         from AS6204 action pref=87; accept AS-ZETNET
 export:         to AS6204 announce AS-SOVAM
 mp-import:      afi ipv6 from AS6204 action pref=87; accept AS-ZETNET
 mp-export:      afi ipv6 to AS6204 announce AS-SOVAM-V6
+import:         from AS50629 action pref=87; accept AS-LWL
+export:         to AS50629 announce AS-SOVAM
+mp-import:      afi ipv6 from AS50629 action pref=87; accept AS-LWL
+mp-export:      afi ipv6 to AS50629 announce AS-SOVAM-V6
+import:         from AS60345 action pref=87; accept AS-IXNT
+export:         to AS60345 announce AS-SOVAM
+mp-import:      afi ipv6 from AS60345 action pref=87; accept AS-IXNT
+mp-export:      afi ipv6 to AS60345 announce AS-SOVAM-V6
+import:         from AS213887 action pref=87; accept AS-WAICORE
+export:         to AS213887 announce AS-SOVAM
+mp-import:      afi ipv6 from AS213887 action pref=87; accept AS-WAICORE
+mp-export:      afi ipv6 to AS213887 announce AS-SOVAM-V6
+import:         from AS212477 action pref=87; accept AS-ROYALE
+export:         to AS212477 announce AS-SOVAM
+mp-import:      afi ipv6 from AS212477 action pref=87; accept AS-ROYALE
+mp-export:      afi ipv6 to AS212477 announce AS-SOVAM-V6
 import:         from AS3356 action pref=77; accept ANY
 export:         to AS3356 announce AS-SOVAM
 mp-import:      afi ipv6 from AS3356 action pref=77; accept ANY
@@ -8821,7 +8855,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-03-18T13:22:44Z
+last-modified:  2026-03-19T22:53:27Z
 source:         RIPE
 
 

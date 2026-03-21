@@ -125,8 +125,6 @@ import:         from  AS25532 action pref=200; accept   AS-MASTERHOST
 export:         to    AS25532                  announce AS57304:AS-RETN-RU
 import:         from  AS28709 action pref=200; accept   AS28709
 export:         to    AS28709                  announce AS57304:AS-RETN-RU
-import:         from  AS28761 action pref=100; accept   AS28761:AS-CUSTOMERS
-export:         to    AS28761                  announce ANY
 import:         from  AS28840 action pref=100; accept   AS-TTC
 export:         to    AS28840                  announce ANY
 import:         from  AS28890 action pref=100; accept   AS-INSYS-EKB
@@ -1161,8 +1159,6 @@ mp-import:      afi ipv6.unicast from  AS25532 action pref=200; accept   AS-MAST
 mp-export:      afi ipv6.unicast to    AS25532                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS28709 action pref=200; accept   AS28709
 mp-export:      afi ipv6.unicast to    AS28709                  announce AS57304:AS-RETN6-RU
-mp-import:      afi ipv6.unicast from  AS28761 action pref=100; accept   AS28761:AS-CUSTOMERS
-mp-export:      afi ipv6.unicast to    AS28761                  announce ANY
 mp-import:      afi ipv6.unicast from  AS28890 action pref=100; accept   AS-INSYS6-EKB
 mp-export:      afi ipv6.unicast to    AS28890                  announce ANY
 mp-import:      afi ipv6.unicast from  AS29182 action pref=100; accept   AS-THEFIRST
@@ -1618,12 +1614,15 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-03-18T19:59:13Z
+last-modified:  2026-03-19T19:59:12Z
 source:         RIPE
 
 as-num:         AS57304
 country:        RU
 as-name:        RETNRU-AS JSC "RetnNet"
+as-num:         AS57304
+country:        RU
+as-name:        null
 as-num:         AS57304
 country:        RU
 as-name:        null

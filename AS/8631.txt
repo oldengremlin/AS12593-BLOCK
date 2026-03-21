@@ -870,6 +870,9 @@ accept AS-MCM
 import:         from AS48882
 action pref=100;
 accept AS-IPCOM-NET
+import:         from AS48909
+action pref=100;
+accept AS48909
 import:         from AS48914
 action pref=100;
 accept AS-ZEPPELIN
@@ -2157,6 +2160,8 @@ export:         to AS48848
 announce AS-MSKROUTESERVER
 export:         to AS48882
 announce AS-MSKROUTESERVER
+export:         to AS48909
+announce AS-MSKROUTESERVER
 export:         to AS48914
 announce AS-MSKROUTESERVER
 export:         to AS48940
@@ -2632,12 +2637,15 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-03-16T13:41:11Z
+last-modified:  2026-03-19T13:41:32Z
 source:         RIPE
 
 as-num:         AS8631
 country:        RU
 as-name:        MSK-IX-RS Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS8631
+country:        RU
+as-name:        null
 as-num:         AS8631
 country:        RU
 as-name:        null

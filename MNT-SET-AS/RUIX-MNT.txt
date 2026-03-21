@@ -275,7 +275,6 @@ members:        AS199009
 members:        AS61992:AS-UCI
 members:        AS44554
 members:        AS61280
-members:        AS62295
 members:        AS39688
 members:        AS-NETONERUS
 members:        AS-REGRU
@@ -289,7 +288,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2019-05-20T09:42:08Z
-last-modified:  2026-02-19T14:17:26Z
+last-modified:  2026-03-19T07:49:02Z
 source:         RIPE
 
 
@@ -872,6 +871,8 @@ members:        AS-UNIVERSUMNET, AS-UNIVERSUMNET-V6
 members:        AS-MCM
 # from AS48882:
 members:        AS-IPCOM-NET
+# from AS48909:
+members:        AS48909
 # from AS48914:
 members:        AS-ZEPPELIN
 # from AS48940:
@@ -1351,7 +1352,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-03-16T13:41:15Z
+last-modified:  2026-03-19T13:41:36Z
 source:         RIPE
 
 
@@ -2065,7 +2066,6 @@ import:         from AS57107 action pref=100; accept AS57107
 import:         from AS44816 action pref=100; accept AS-DELFINTELECOM
 import:         from AS24406 action pref=100; accept AS24406
 import:         from AS33871 action pref=100; accept AS33871
-import:         from AS62295 action pref=100; accept AS62295
 import:         from AS8470 action pref=100; accept AS-MACOMNET
 import:         from AS59718 action pref=100; accept AS59718
 import:         from AS50157 action pref=100; accept AS50157
@@ -2125,7 +2125,6 @@ default:        to AS3216 action pref=100; networks ANY
 default:        to AS20485 action pref=100; networks ANY
 default:        to AS39134 action pref=100; networks ANY
 default:        to AS8359 action pref=100; networks ANY
-default:        to AS62295 action pref=100; networks ANY
 default:        to AS62169 action pref=100; networks ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -2133,7 +2132,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2002-06-17T08:40:49Z
-last-modified:  2022-12-23T06:14:53Z
+last-modified:  2026-03-19T08:29:15Z
 source:         RIPE
 
 
@@ -5567,6 +5566,9 @@ accept AS-MCM
 import:         from AS48882
 action pref=100;
 accept AS-IPCOM-NET
+import:         from AS48909
+action pref=100;
+accept AS48909
 import:         from AS48914
 action pref=100;
 accept AS-ZEPPELIN
@@ -6854,6 +6856,8 @@ export:         to AS48848
 announce AS-MSKROUTESERVER
 export:         to AS48882
 announce AS-MSKROUTESERVER
+export:         to AS48909
+announce AS-MSKROUTESERVER
 export:         to AS48914
 announce AS-MSKROUTESERVER
 export:         to AS48940
@@ -7329,7 +7333,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-03-16T13:41:11Z
+last-modified:  2026-03-19T13:41:32Z
 source:         RIPE
 
 
@@ -7437,8 +7441,6 @@ import:         from AS44554 action pref=130; accept AS44554
 export:         to AS44554 announce ANY
 import:         from AS61280 action pref=130; accept AS61280
 export:         to AS61280 announce ANY
-import:         from AS62295 action pref=130; accept AS62295
-export:         to AS62295 announce ANY
 import:         from AS39688 action pref=130; accept AS39688
 export:         to AS39688 announce ANY
 import:         from AS196695 action pref=130; accept AS-NETONERUS
@@ -7461,7 +7463,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2026-02-19T14:17:25Z
+last-modified:  2026-03-19T07:49:00Z
 source:         RIPE
 
 
