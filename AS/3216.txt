@@ -1766,6 +1766,8 @@ import:         from AS207384 action pref=100; accept AS207384
 export:         to AS207384 announce AS-SOVAM
 import:         from AS207608 action pref=100; accept AS207608
 export:         to AS207608 announce {0.0.0.0/0}
+import:         from AS199148 action pref=100; accept AS199148:AS-SET-MHRF-OTHERS
+export:         to AS199148 announce ANY
 import:         from AS49140 action pref=100; accept AS49140
 export:         to AS49140 announce {0.0.0.0/0}
 import:         from AS50553 action pref=100; accept AS50553
@@ -5359,7 +5361,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-03-19T22:53:27Z
+last-modified:  2026-03-20T10:46:19Z
 source:         RIPE
 
 as-num:         AS3216

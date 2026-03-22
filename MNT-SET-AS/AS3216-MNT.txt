@@ -483,6 +483,7 @@ members:        AS-SAFEVALUE-SET
 members:        AS50553
 members:        AS57742
 members:        AS207608
+members:        AS199148:AS-SET-MHRF-OTHERS
 members:        AS212713
 members:        AS207347
 members:        AS206465
@@ -1434,6 +1435,7 @@ members:        AS59614
 members:        AS41123
 members:        AS-ESD
 members:        AS204217
+members:        AS-SET-MHRF-OTHERS
 members:        AS213572
 members:        AS47213
 members:        AS43730
@@ -1652,7 +1654,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-03-18T13:23:08Z
+last-modified:  2026-03-20T10:47:28Z
 source:         RIPE
 
 
@@ -5262,6 +5264,8 @@ import:         from AS207384 action pref=100; accept AS207384
 export:         to AS207384 announce AS-SOVAM
 import:         from AS207608 action pref=100; accept AS207608
 export:         to AS207608 announce {0.0.0.0/0}
+import:         from AS199148 action pref=100; accept AS199148:AS-SET-MHRF-OTHERS
+export:         to AS199148 announce ANY
 import:         from AS49140 action pref=100; accept AS49140
 export:         to AS49140 announce {0.0.0.0/0}
 import:         from AS50553 action pref=100; accept AS50553
@@ -8855,7 +8859,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-03-19T22:53:27Z
+last-modified:  2026-03-20T10:46:19Z
 source:         RIPE
 
 
