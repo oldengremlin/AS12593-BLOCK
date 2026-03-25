@@ -15,11 +15,12 @@ members:        AS48925
 members:        AS203753:AS-FIRSTUNIT
 members:        AS214987
 members:        AS213606
+members:        AS203753:AS-CLOUDPROTECT
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         IP-RIPE
 created:        2022-02-11T12:28:41Z
-last-modified:  2026-03-18T13:03:20Z
+last-modified:  2026-03-23T11:21:41Z
 source:         RIPE
 
 
@@ -919,6 +920,25 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IP-RIPE
 created:        2025-12-16T09:41:33Z
 last-modified:  2026-03-17T07:16:13Z
+source:         RIPE
+
+
+
+aut-num:        AS209579
+as-name:        TNKSERVICES-AS
+org:            ORG-TSL78-RIPE
+sponsoring-org: ORG-SDNS7-RIPE
+import:         from AS13335 accept ANY
+export:         to AS13335 announce AS209579
+import:         from AS21299 accept ANY
+export:         to AS21299 announce AS209579
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+status:         ASSIGNED
+created:        2026-03-23T10:56:52Z
+last-modified:  2026-03-23T11:18:12Z
 source:         RIPE
 
 
@@ -3081,12 +3101,14 @@ import:         from AS30823 accept ANY
 export:         to AS30823 announce AS-CASTLES
 import:         from AS203753 accept AS203753:AS-FIRSTUNIT
 export:         to AS203753 announce ANY
+import:         from AS203753 accept AS203753:AS-CLOUDPROTECT
+export:         to AS203753 announce ANY
 sponsoring-org: ORG-IL934-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IP-RIPE
 status:         ASSIGNED
 created:        2018-07-19T12:43:40Z
-last-modified:  2026-01-07T14:57:51Z
+last-modified:  2026-03-23T11:21:20Z
 source:         RIPE
 
 
