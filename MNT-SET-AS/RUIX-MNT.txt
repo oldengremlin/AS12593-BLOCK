@@ -1279,6 +1279,8 @@ members:        AS-HOSTLINE-IX
 members:        AS207883
 # from AS208129:
 members:        AS208129
+# from AS208142:
+members:        AS208142
 # from AS208349:
 members:        AS-O2CLOUD
 # from AS208677:
@@ -1354,7 +1356,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-03-20T09:41:01Z
+last-modified:  2026-03-24T13:41:53Z
 source:         RIPE
 
 
@@ -6180,6 +6182,9 @@ accept AS207883
 import:         from AS208129
 action pref=100;
 accept AS208129
+import:         from AS208142
+action pref=100;
+accept AS208142
 import:         from AS208349
 action pref=100;
 accept AS-O2CLOUD
@@ -7269,6 +7274,8 @@ export:         to AS207883
 announce AS-MSKROUTESERVER
 export:         to AS208129
 announce AS-MSKROUTESERVER
+export:         to AS208142
+announce AS-MSKROUTESERVER
 export:         to AS208349
 announce AS-MSKROUTESERVER
 export:         to AS208677
@@ -7340,7 +7347,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-03-20T09:40:57Z
+last-modified:  2026-03-24T13:41:54Z
 source:         RIPE
 
 
