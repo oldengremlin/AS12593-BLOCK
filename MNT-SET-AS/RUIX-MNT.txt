@@ -1307,6 +1307,8 @@ members:        AS210135
 members:        AS210171
 # from AS210240:
 members:        AS210240
+# from AS210357:
+members:        AS210357
 # from AS210443:
 members:        AS210443
 # from AS210756:
@@ -1356,7 +1358,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-03-24T13:41:53Z
+last-modified:  2026-03-25T09:42:14Z
 source:         RIPE
 
 
@@ -6224,6 +6226,9 @@ accept AS210171
 import:         from AS210240
 action pref=100;
 accept AS210240
+import:         from AS210357
+action pref=100;
+accept AS210357
 import:         from AS210443
 action pref=100;
 accept AS210443
@@ -7302,6 +7307,8 @@ export:         to AS210171
 announce AS-MSKROUTESERVER
 export:         to AS210240
 announce AS-MSKROUTESERVER
+export:         to AS210357
+announce AS-MSKROUTESERVER
 export:         to AS210443
 announce AS-MSKROUTESERVER
 export:         to AS210756
@@ -7347,7 +7354,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-03-24T13:41:54Z
+last-modified:  2026-03-25T09:42:14Z
 source:         RIPE
 
 
