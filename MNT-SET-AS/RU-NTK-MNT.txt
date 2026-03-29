@@ -73,11 +73,12 @@ members:        AS202770
 members:        AS34479
 members:        AS202216
 members:        AS60081
+members:        AS25549
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         RU-NTK-MNT
 created:        2005-04-07T11:04:19Z
-last-modified:  2026-02-13T11:55:33Z
+last-modified:  2026-03-27T03:37:13Z
 source:         RIPE
 
 
@@ -120,7 +121,6 @@ import:         from AS50928 action pref=100; accept AS-SYNTSIB
 import:         from AS31500 action pref=100; accept AS-GLOBAL-NET
 import:         from AS36040 action pref=100; accept AS36040
 import:         from AS13094 action pref=100; accept ANY
-import:         from AS25549 action pref=100; accept AS-AVANTEL
 export:         to AS41654 announce ANY
 export:         to AS39927 announce ANY
 export:         to AS48858 announce AS-RUNTK-SET
@@ -142,7 +142,8 @@ export:         to AS50928 announce AS-RUNTK-SET
 export:         to AS31500 announce AS-RUNTK-SET
 export:         to AS36040 announce AS-RUNTK-SET
 export:         to AS13094 announce AS-RUNTK-SET
-export:         to AS25549 announce AS-RUNTK-SET
+import:         from AS25549 action pref=100; accept AS-AVANTEL
+export:         to AS25549 announce ANY
 import:         from AS206817 action pref=400; accept AS206817
 export:         to AS206817 announce ANY
 import:         from AS203627 action pref=400; accept AS203627
@@ -230,7 +231,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RU-NTK-MNT
 created:        2004-03-22T10:49:16Z
-last-modified:  2026-02-13T11:54:59Z
+last-modified:  2026-03-27T03:35:56Z
 source:         RIPE
 
 
