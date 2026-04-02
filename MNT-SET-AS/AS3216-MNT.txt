@@ -366,6 +366,8 @@ members:        AS-PODRYAD
 members:        AS203407
 members:        AS39073
 members:        AS206054
+members:        AS205642
+members:        AS207608
 members:        AS204474
 members:        AS203974
 members:        AS216178
@@ -1655,7 +1657,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-03-31T09:58:23Z
+last-modified:  2026-04-01T13:46:53Z
 source:         RIPE
 
 
@@ -1972,6 +1974,7 @@ members:        AS139057:AS-CONE
 members:        AS42276
 members:        AS213787:AS-CLOUDRACK
 members:        AS20499
+members:        AS205642
 members:        AS204296
 members:        AS-MELBICOM-V6
 members:        AS-ELTEL6
@@ -2049,7 +2052,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-03-27T19:32:34Z
+last-modified:  2026-04-01T13:28:29Z
 source:         RIPE
 
 
@@ -8205,6 +8208,12 @@ import:         from AS15632 action pref=100; accept AS15632
 export:         to AS15632 announce ANY
 import:         from AS206054 action pref=100; accept AS206054
 export:         to AS206054 announce ANY
+import:         from AS205642 action pref=100; accept AS205642
+export:         to AS205642 announce ANY
+mp-import:      from AS205642 action pref=100; accept AS205642
+mp-export:      to AS205642 announce ANY
+import:         from AS207608 action pref=100; accept AS207608
+export:         to AS207608 announce {0.0.0.0/0}
 import:         from AS204474 action pref=100; accept AS204474
 export:         to AS204474 announce {0.0.0.0/0}
 import:         from AS203974 action pref=100; accept AS203974
@@ -8856,7 +8865,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-03-31T09:57:48Z
+last-modified:  2026-04-01T13:46:22Z
 source:         RIPE
 
 
