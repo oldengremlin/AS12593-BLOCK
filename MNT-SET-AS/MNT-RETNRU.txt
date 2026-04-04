@@ -53,6 +53,7 @@ source:         RIPE
 as-set:         AS57304:AS-RETN-RU
 descr:          RETN.ru IPv4 downstreams
 members:        AS57304
+members:        AS-135377
 members:        AS-2GIS
 members:        AS-3DATA
 members:        AS-ABS
@@ -284,6 +285,7 @@ members:        AS-TNC
 members:        AS-TRUSTEDNETWORK
 members:        AS-TS
 members:        AS-TTC
+members:        AS-TUT
 members:        AS-TVIPMEDIA
 members:        AS-TZTELECOM
 members:        AS-UBN
@@ -539,7 +541,6 @@ members:        AS212278
 members:        AS212764
 members:        AS212883
 members:        AS212919
-members:        AS212964
 members:        AS213348
 members:        AS213478
 members:        AS213508
@@ -561,7 +562,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2026-04-01T19:59:20Z
+last-modified:  2026-04-03T19:59:20Z
 source:         RIPE
 
 
@@ -569,6 +570,7 @@ source:         RIPE
 as-set:         AS57304:AS-RETN6-RU
 descr:          RETN.ru IPv6 downstreams
 members:        AS57304
+members:        AS-135377
 members:        AS-ACN
 members:        AS-AEZA
 members:        AS-AKAMAI
@@ -719,6 +721,7 @@ members:        AS-TKTEL
 members:        AS-TMK
 members:        AS-TMPERM
 members:        AS-TNC
+members:        AS-TUT
 members:        AS-TVIPMEDIA
 members:        AS-TZTELECOM
 members:        AS-UBN
@@ -826,7 +829,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2026-03-30T19:59:20Z
+last-modified:  2026-04-03T19:59:20Z
 source:         RIPE
 
 
@@ -1549,6 +1552,8 @@ import:         from  AS41185 action pref=100; accept   AS41185
 export:         to    AS41185                  announce ANY
 import:         from  AS41187 action pref=100; accept   AS41187
 export:         to    AS41187                  announce ANY
+import:         from  AS41275 action pref=100; accept   AS-TUT
+export:         to    AS41275                  announce ANY
 import:         from  AS41302 action pref=100; accept   AS-KVS
 export:         to    AS41302                  announce ANY
 import:         from  AS41446 action pref=100; accept   AS41446
@@ -2031,6 +2036,8 @@ import:         from  AS62404 action pref=100; accept   AS62404
 export:         to    AS62404                  announce ANY
 import:         from  AS64432 action pref=100; accept   AS-VARITI
 export:         to    AS64432                  announce ANY
+import:         from AS135377 action pref=100; accept   AS-135377
+export:         to   AS135377                  announce ANY
 import:         from AS139057 action pref=100; accept   AS139057:AS-CONE
 export:         to   AS139057                  announce ANY
 import:         from AS196695 action pref=100; accept   AS-NETONERUS
@@ -2309,8 +2316,6 @@ import:         from AS212883 action pref=100; accept   AS212883
 export:         to   AS212883                  announce ANY
 import:         from AS212919 action pref=100; accept   AS212919
 export:         to   AS212919                  announce ANY
-import:         from AS212964 action pref=100; accept   AS212964
-export:         to   AS212964                  announce ANY
 import:         from AS213348 action pref=100; accept   AS213348
 export:         to   AS213348                  announce ANY
 import:         from AS213452 action pref=100; accept   AS213452:AS-INFRACOM
@@ -2521,6 +2526,8 @@ mp-import:      afi ipv6.unicast from  AS39741 action pref=100; accept   AS-RUSC
 mp-export:      afi ipv6.unicast to    AS39741                  announce ANY
 mp-import:      afi ipv6.unicast from  AS39775 action pref=100; accept   AS-HYPERNET-V6
 mp-export:      afi ipv6.unicast to    AS39775                  announce ANY
+mp-import:      afi ipv6.unicast from  AS41275 action pref=100; accept   AS-TUT
+mp-export:      afi ipv6.unicast to    AS41275                  announce ANY
 mp-import:      afi ipv6.unicast from  AS41302 action pref=100; accept   AS-KVS
 mp-export:      afi ipv6.unicast to    AS41302                  announce ANY
 mp-import:      afi ipv6.unicast from  AS41446 action pref=100; accept   AS41446
@@ -2771,6 +2778,8 @@ mp-import:      afi ipv6.unicast from  AS62316 action pref=100; accept   AS-GRAN
 mp-export:      afi ipv6.unicast to    AS62316                  announce ANY
 mp-import:      afi ipv6.unicast from  AS64432 action pref=100; accept   AS-VARITI
 mp-export:      afi ipv6.unicast to    AS64432                  announce ANY
+mp-import:      afi ipv6.unicast from AS135377 action pref=100; accept   AS-135377
+mp-export:      afi ipv6.unicast to   AS135377                  announce ANY
 mp-import:      afi ipv6.unicast from AS139057 action pref=100; accept   AS139057:AS-CONE
 mp-export:      afi ipv6.unicast to   AS139057                  announce ANY
 mp-import:      afi ipv6.unicast from AS196695 action pref=100; accept   AS-NETONERUS
@@ -2914,7 +2923,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-04-01T19:59:20Z
+last-modified:  2026-04-03T19:59:20Z
 source:         RIPE
 
 
