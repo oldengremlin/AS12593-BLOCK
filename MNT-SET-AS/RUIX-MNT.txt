@@ -787,6 +787,8 @@ members:        AS-KOLPINONET
 members:        AS-IIF
 # from AS47333:
 members:        AS47333
+# from AS47418:
+members:        AS-IZHRTS
 # from AS47478:
 members:        AS-MSTN
 # from AS47531:
@@ -1356,7 +1358,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-03-25T09:42:14Z
+last-modified:  2026-04-08T09:39:49Z
 source:         RIPE
 
 
@@ -5449,6 +5451,9 @@ accept AS-IIF
 import:         from AS47333
 action pref=100;
 accept AS47333
+import:         from AS47418
+action pref=100;
+accept AS-IZHRTS
 import:         from AS47478
 action pref=100;
 accept AS-MSTN
@@ -6789,6 +6794,8 @@ export:         to AS47321
 announce AS-MSKROUTESERVER
 export:         to AS47333
 announce AS-MSKROUTESERVER
+export:         to AS47418
+announce AS-MSKROUTESERVER
 export:         to AS47478
 announce AS-MSKROUTESERVER
 export:         to AS47531
@@ -7354,7 +7361,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-03-25T09:42:14Z
+last-modified:  2026-04-08T09:39:50Z
 source:         RIPE
 
 
