@@ -15,6 +15,18 @@ mp-import:      afi ipv4.unicast from AS3216 at 62.141.105.217 action pref=100; 
 mp-export:      afi ipv4.unicast to AS3216 at 62.141.105.217 action aspath.prepend(AS34959); community .= {3216:5504}; announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100) AND NOT {5.59.244.0/22}
 mp-import:      afi ipv6.unicast from AS3216 at 2a00:1248:7ffc:1::b2 action pref=100; community .= {34959:100, 34959:400}; accept NOT fltr-martian-v6 AND ANY
 mp-export:      afi ipv6.unicast to AS3216 at 2a00:1248:7ffc:1::b2 announce AS34959:AS-PROCLOUD-SHORT AND NOT community(34959:100,49791:100)
+mp-import:      afi ipv4.unicast from AS49869 at 185.0.15.19 action pref=100; community .= {34959:100}; accept NOT fltr-martian AND ANY
+mp-import:      afi ipv4.unicast from AS49869 at 185.0.15.20 action pref=100; community .= {34959:100}; accept NOT fltr-martian AND ANY
+mp-export:      afi ipv4.unicast to AS49869 185.0.12.255 at 185.0.15.19 announce  NOT ANY
+mp-export:      afi ipv4.unicast to AS49869 185.0.13.0 at 185.0.15.19 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv4.unicast to AS49869 185.0.12.255 at 185.0.15.20 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv4.unicast to AS49869 185.0.13.0 at 185.0.15.20 announce NOT ANY
+mp-import:      afi ipv6.unicast from AS49869 at 2001:7f8:eb::888f:1 action pref=100; community .= {34959:100}; accept NOT fltr-martian-v6 AND ANY
+mp-import:      afi ipv6.unicast from AS49869 at 2001:7f8:eb::888f:2 action pref=100; community .= {34959:100}; accept NOT fltr-martian-v6 AND ANY
+mp-export:      afi ipv6.unicast to AS49869 2001:7f8:eb::c2cd:1 at 2001:7f8:eb::888f:1 announce NOT ANY
+mp-export:      afi ipv6.unicast to AS49869 2001:7f8:eb::c2cd:2 at 2001:7f8:eb::888f:1 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv6.unicast to AS49869 2001:7f8:eb::c2cd:1 at 2001:7f8:eb::888f:2 announce AS34959:AS-PROCLOUD AND NOT community(34959:100,49791:100)
+mp-export:      afi ipv6.unicast to AS49869 2001:7f8:eb::c2cd:2 at 2001:7f8:eb::888f:2 announce NOT ANY
 mp-import:      afi ipv4.unicast from AS60720 185.26.195.248 action pref=50; accept AS-POLYCOMM
 mp-export:      afi ipv4.unicast to AS60720 185.26.195.248 announce community(34959:100) OR community (49791:100) OR AS34959:AS-PROCLOUD
 mp-import:      afi ipv4.unicast from AS60720 185.26.195.250 action pref=50; accept AS-POLYCOMM
@@ -33,12 +45,15 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-kviktel-1
 created:        2019-10-28T15:15:57Z
-last-modified:  2026-03-16T11:51:53Z
+last-modified:  2026-04-09T16:37:41Z
 source:         RIPE
 
 as-num:         AS34959
 country:        RU
 as-name:        PROCLOUD KVIKTEL LLC
+as-num:         AS34959
+country:        RU
+as-name:        null
 as-num:         AS34959
 country:        RU
 as-name:        null
