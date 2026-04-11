@@ -5,10 +5,8 @@ members:        AS62356
 members:        AS-INCOMSV
 members:        AS-INTEKM
 members:        AS-LITE-TELECOM
-members:        AS-SOFTVIDEO
 members:        AS-VERMONT
 members:        AS-EAST
-members:        AS50798
 members:        AS201131
 members:        AS204623
 members:        AS-IVSTAR
@@ -16,23 +14,16 @@ members:        AS59584
 members:        AS51009
 members:        AS206764
 members:        AS205595
-members:        as-RegionSv
-members:        AS50182
-members:        AS49106
-members:        AS-ROSINTEK
 members:        AS-NPFROI
-members:        AS49155
 members:        AS39462
 members:        AS47145
 members:        AS-BEST-LINE
 members:        AS-VSHK
 members:        AS-ENGINETPLUS
 members:        AS212490
-members:        AS47759
 members:        AS-PREMIER-GC
 members:        AS-BEIREL
 members:        AS210028
-members:        AS208476
 members:        AS59793
 members:        AS199664
 members:        AS62444
@@ -43,7 +34,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-MTW-HOSTING
 created:        2008-11-14T10:36:21Z
-last-modified:  2026-03-13T13:47:36Z
+last-modified:  2026-04-10T15:52:53Z
 source:         RIPE
 
 
@@ -53,24 +44,24 @@ descr:          MTW.RU IPv6
 members:        AS48347
 members:        AS-EAST
 members:        AS59793
-members:        AS41639
-members:        AS29588
-members:        AS202933
-members:        AS57712
+members:        AS-INCOMSV
+members:        AS-IVSTAR
 members:        AS-NPFROI
-members:        AS-ROSINTEK
 members:        AS-VSHK
 members:        AS59584
-members:        AS212490
 members:        AS-BEIREL
 members:        AS-PREMIER-GC
 members:        AS62444
 members:        AS199664
+members:        AS-DIALOGK
+members:        AS51009
+members:        AS201131
+members:        AS204623
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-MTW-HOSTING
 created:        2014-03-19T11:01:39Z
-last-modified:  2023-04-20T15:55:22Z
+last-modified:  2026-04-10T16:39:02Z
 source:         RIPE
 
 
@@ -104,16 +95,12 @@ mp-import:      afi ipv6.unicast from AS8395 action pref=250; accept AS-EAST
 mp-export:      afi ipv6.unicast to AS8395 announce ANY
 import:         from AS43865 action pref=250; accept AS-INTEKM
 export:         to AS43865 announce ANY
-import:         from AS43659 action pref=250; accept AS-BUDREMYER
-export:         to AS43659 announce ANY
-import:         from AS43791 action pref=250; accept AS-RUBIKON
-export:         to AS43791 announce ANY
 import:         from AS49863 action pref=250; accept AS-LITE-TELECOM
 export:         to AS49863 announce ANY
-import:         from AS57712 action pref=250; accept AS-SOFTVIDEO
-export:         to AS57712 announce ANY
 import:         from AS41639 action pref=250; accept AS-INCOMSV
 export:         to AS41639 announce ANY
+mp-import:      afi ipv6.unicast from AS41639 action pref=250; accept AS-INCOMSV
+mp-export:      afi ipv6.unicast to AS41639 announce ANY
 import:         from AS43667 action pref=250; accept AS-VERMONT
 export:         to AS43667 announce ANY
 import:         from AS201131 action pref=250; accept AS201131
@@ -124,26 +111,18 @@ import:         from AS29588 action pref=250; accept AS-IVSTAR
 export:         to AS29588 announce ANY
 mp-import:      afi ipv6.unicast from AS29588 action pref=250; accept AS29588
 mp-export:      afi ipv6.unicast to AS29588 announce ANY
-import:         from AS50798 action pref=250; accept AS50798
-export:         to AS50798 announce ANY
 import:         from AS59584 action pref=250; accept AS59584
 export:         to AS59584 announce ANY
-import:         from AS51061 action pref=250; accept AS51061
-export:         to AS51061 announce ANY
+mp-import:      afi ipv6.unicast from AS59584 action pref=100; accept AS59584
+mp-export:      afi ipv6.unicast to AS59584 announce ANY
 import:         from AS51009 action pref=250; accept AS51009
 export:         to AS51009 announce ANY
+mp-import:      afi ipv6.unicast from AS51009 action pref=100; accept AS51009
+mp-export:      afi ipv6.unicast to AS51009 announce ANY
 import:         from AS206764 action pref=250; accept AS206764
 export:         to AS206764 announce ANY
-import:         from AS205460 action pref=250; accept as-RegionSv
-export:         to AS205460 announce ANY
 import:         from AS49155 action pref=250; accept AS49155
 export:         to AS49155 announce ANY
-import:         from AS50182 action pref=250; accept AS50182
-export:         to AS50182 announce ANY
-import:         from AS57456 action pref=250; accept AS-ROSINTEK
-export:         to AS57456 announce ANY
-import:         from AS49106 action pref=250; accept AS49106
-export:         to AS49106 announce ANY
 import:         from AS25341 action pref=250; accept AS-NPFROI
 export:         to AS25341 announce ANY
 import:         from AS39462 action pref=250; accept AS39462
@@ -160,8 +139,6 @@ import:         from AS61380 action pref=250; accept AS-ENGINETPLUS
 export:         to AS61380 announce ANY
 import:         from AS212490 action pref=250; accept AS212490
 export:         to AS212490 announce ANY
-import:         from AS47759 action pref=250; accept AS47759
-export:         to AS47759 announce ANY
 import:         from AS47258 action pref=250; accept AS-PREMIER-GC
 export:         to AS47258 announce ANY
 mp-import:      afi ipv6.unicast from AS47258 action pref=250; accept AS-PREMIER-GC
@@ -246,6 +223,10 @@ import:         from AS57363 action pref=110; accept AS57363
 export:         to AS57363 announce AS-MTW
 mp-import:      afi ipv6.unicast from AS57363 action pref=110; accept AS57363
 mp-export:      afi ipv6.unicast to AS57363 announce AS-MTW6
+import:         from AS209739 action pref=110; accept AS209739
+export:         to AS209739 announce AS-MTW
+import:         from AS200976 action pref=110; accept AS200976
+export:         to AS200976 announce AS-MTW
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -254,7 +235,7 @@ notify:         noc@mtw.ru
 mnt-by:         MTW-MNT
 mnt-by:         MNT-MTW-HOSTING
 created:        2008-11-17T11:11:49Z
-last-modified:  2026-03-13T13:48:24Z
+last-modified:  2026-04-10T16:42:43Z
 source:         RIPE
 
 
