@@ -1,0 +1,317 @@
+aut-num:        AS6866
+as-name:        CYTA-NETWORK
+descr:          Internet Services
+import:         from AS31198 action pref=100; accept ANY
+import:         from AS5425 action pref=100; accept ANY
+import:         from AS21185 action pref=100; accept ANY
+import:         from AS15805 action pref=100; accept ANY
+import:         from AS25425 action pref=100; accept ANY
+import:         from AS15666 action pref=100; accept ANY
+import:         from AS24655 action pref=100; accept ANY
+import:         from AS24814 action pref=100; accept ANY
+import:         from AS35660 action pref=100; accept ANY
+import:         from AS5504 action pref=100; accept ANY
+import:         from AS35358 action pref=100; accept ANY
+import:         from AS47760 action pref=100; accept ANY
+import:         from AS43644 action pref=100; accept ANY
+import:         from AS48623 action pref=100; accept ANY
+import:         from AS49338 action pref=100; accept ANY
+import:         from AS5408 action pref=100; accept ANY
+import:         from AS50233 action pref=100; accept ANY
+import:         from AS23456 action pref=100; accept ANY
+import:         from AS51228 action pref=100; accept ANY
+import:         from AS44873 action pref=100; accept ANY
+import:         from AS33777 action pref=100; accept ANY
+import:         from AS52036 action pref=100; accept ANY
+import:         from AS50710 action pref=100; accept ANY
+import:         from AS196676 action pref=100; accept ANY
+import:         from AS196736 action pref=100; accept ANY
+import:         from AS13248 action pref=100; accept ANY
+import:         from AS196992 action pref=100; accept ANY
+import:         from AS42020 action pref=100; accept ANY
+import:         from AS199598 action pref=100; accept ANY
+import:         from AS49004 action pref=100; accept ANY
+import:         from AS196984 action pref=100; accept ANY
+import:         from AS199206 action pref=100; accept ANY
+import:         from AS202232 action pref=100; accept ANY
+import:         from AS202117 action pref=100; accept ANY
+import:         from AS198943 action pref=100; accept ANY
+import:         from AS201444 action pref=100; accept ANY
+import:         from AS200649 action pref=100; accept ANY
+import-via:     AS6777 from AS-ANY EXCEPT AS-CYTANET-AMSIX-EXEPTIONS accept ANY
+import:         from AS197508 action pref=100; accept ANY
+import:         from AS203598 action pref=100; accept ANY
+import:         from AS203397 action pref=100; accept ANY
+import:         from AS203346 action pref=100; accept ANY
+import:         from AS203663 action pref=100; accept ANY
+import:         from AS202534 action pref=100; accept ANY
+import:         from AS206717 action pref=100; accept ANY
+import:         from AS29386 action pref=100; accept ANY
+import:         from AS29256 action pref=100; accept ANY
+import:         from AS205972 action pref=100; accept ANY
+import:         from AS8631 accept AS-MSKROUTESERVER
+import:         from AS52080 action pref=100; accept ANY
+import:         from AS205362 action pref=100; accept ANY
+import:         from AS55222 action pref=100; accept ANY
+import:         from AS51706 accept AS51706:AS-MEMBERS:AS-MRS-RS
+import:         from AS209716 action pref=100; accept ANY
+import:         from AS208601 action pref=100; accept ANY
+import:         from AS25425 action pref=100; accept ANY
+import:         from AS203206 action pref=100; accept ANY
+import:         from AS35247 action pref=100; accept ANY
+import:         from AS207971 action pref=100; accept ANY
+import:         from AS211239 action pref=100; accept ANY
+import:         from AS38176 action pref=100; accept ANY
+import:         from AS25122 action pref=100; accept ANY
+import:         from AS206912 action pref=100; accept ANY
+import:         from AS60524 action pref=100; accept ANY
+import:         from AS38176 action pref=100; accept ANY
+import:         from AS328079 action pref=100; accept ANY
+import:         from AS30987 action pref=100; accept ANY
+import:         from AS57169 action pref=100; accept ANY
+import:         from AS201860 action pref=100; accept ANY
+import:         from AS204528 action pref=100; accept ANY
+import:         from AS37638 action pref=100; accept ANY
+import:         from AS329207 action pref=100; accept ANY
+import:         from AS207431 action pref=100; accept ANY
+import:         from AS216151 action pref=100; accept ANY
+import:         from AS211537 action pref=100; accept ANY
+import:         from AS202448 action pref=100; accept ANY
+export:         to AS31198 announce AS-CYTANET
+export:         to AS5425 announce AS-CYTANET
+export:         to AS21185 announce AS-CYTANET
+export:         to AS15805 announce AS-CYTANET
+export:         to AS25425 announce AS-CYTANET
+export:         to AS15666 announce AS-CYTANET
+export:         to AS24655 announce AS-CYTANET
+export:         to AS24814 announce AS-CYTANET
+export:         to AS35660 announce AS-CYTANET
+export:         to AS5504 announce AS-CYTANET
+export:         to AS35358 announce AS-CYTANET
+export:         to AS47760 announce AS-CYTANET
+export:         to AS43644 announce AS-CYTANET
+export:         to AS48623 announce AS-CYTANET
+export:         to AS49338 announce AS-CYTANET
+export:         to AS5408 announce AS-CYTANET
+export:         to AS50233 announce AS-CYTANET
+export:         to AS23456 announce AS-CYTANET
+export:         to AS51228 announce AS-CYTANET
+export:         to AS44873 announce AS-CYTANET
+export:         to AS33777 announce AS-CYTANET
+export:         to AS52036 announce AS-CYTANET
+export:         to AS50710 announce AS-CYTANET
+export:         to AS196676 announce AS-CYTANET
+export:         to AS196736 announce AS-CYTANET
+export:         to AS13248 announce AS-CYTANET
+export:         to AS196992 announce AS-CYTANET
+export:         to AS42020 announce AS-CYTANET
+export:         to AS199598 announce AS-CYTANET
+export:         to AS49004 announce AS-CYTANET
+export:         to AS196984 announce AS-CYTANET
+export:         to AS199206 announce AS-CYTANET
+export:         to AS202232 announce AS-CYTANET
+export:         to AS202117 announce AS-CYTANET
+export:         to AS198943 announce AS-CYTANET
+export:         to AS201444 announce AS-CYTANET
+export:         to AS200649 announce AS-CYTANET
+export:         to AS208601 announce AS-CYTANET
+export-via:     AS6777 to AS-ANY EXCEPT AS-CYTANET-AMSIX-EXEPTIONS announce AS-CYTANET
+export:         to AS197508 announce AS-CYTANET
+export:         to AS203598 announce AS-CYTANET
+export:         to AS203397 announce AS-CYTANET
+export:         to AS203346 announce AS-CYTANET
+export:         to AS203663 announce AS-CYTANET
+export:         to AS202534 announce AS-CYTANET
+export:         to AS206717 announce AS-CYTANET
+export:         to AS29386 announce AS-CYTANET
+export:         to AS29256 announce AS-CYTANET
+export:         to AS205972 announce AS-CYTANET
+export:         to AS8631 announce AS-CYTANET
+export:         to AS52080 announce AS-CYTANET
+export:         to AS205362 announce AS-CYTANET
+export:         to AS55222 announce AS-CYTANET
+export:         to AS51706 announce AS-CYTANET
+export:         to AS209716 announce AS-CYTANET
+export:         to AS25425 announce AS-CYTANET
+export:         to AS203206 announce AS-CYTANET
+export:         to AS35247 announce AS-CYTANET
+export:         to AS207971 announce AS-CYTANET
+export:         to AS211239 announce AS-CYTANET
+export:         to AS38176 announce AS-CYTANET
+export:         to AS25122 announce AS-CYTANET
+export:         to AS206912 announce AS-CYTANET
+export:         to AS60524 announce AS-CYTANET
+export:         to AS38176 announce AS-CYTANET
+export:         to AS328079 announce AS-CYTANET
+export:         to AS30987 announce AS-CYTANET
+export:         to AS57169 announce AS-CYTANET
+export:         to AS201860 announce AS-CYTANET
+export:         to AS204528 announce AS-CYTANET
+export:         to AS37638 announce AS-CYTANET
+export:         to AS329207 announce AS-CYTANET
+export:         to AS207431 announce AS-CYTANET
+export:         to AS216151 announce AS-CYTANET
+export:         to AS211537 announce AS-CYTANET
+export:         to AS202448 announce AS-CYTANET
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+org:            ORG-CTA2-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CYTANET-NOC
+created:        1970-01-01T00:00:00Z
+last-modified:  2025-10-29T09:10:03Z
+source:         RIPE
+
+as-num:         AS6866
+country:        CY
+as-name:        CYTA-NETWORK Cyprus Telecommunications Authority
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+as-num:         AS6866
+country:        CY
+as-name:        null
+
+organisation:   ORG-CTA2-RIPE
+org-name:       Cyprus Telecommunications Authority
+country:        CY
+org-type:       LIR
+address:        Dummy address for ORG-CTA2-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        CA5444-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        CYTANET-NOC
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         CYTANET-NOC
+created:        2004-04-17T11:03:52Z
+last-modified:  2024-08-30T09:03:22Z
+source:         RIPE
+
+

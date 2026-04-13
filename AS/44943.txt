@@ -1,0 +1,198 @@
+aut-num:        AS44943
+as-name:        RAMNET-AS
+descr:          Internet Service Provider "RamNet"
+org:            ORG-RL79-RIPE
+import:         from AS57304 action pref=100; accept ANY # RETN
+export:         to AS57304 announce AS-RAMNET
+import:         from AS20485 action pref=100; accept ANY # TTK
+export:         to AS20485 announce AS-RAMNET
+import:         from AS31500 action pref=100; accept ANY # GLOBALNET
+export:         to AS31500 announce AS-RAMNET
+import:         from AS3216 action pref=100; accept ANY # BeeLine
+export:         to AS3216 announce AS-RAMNET
+mp-import:      afi ipv6.unicast from AS57304 action pref=100; accept ANY # RETN v6
+mp-export:      afi ipv6.unicast to AS57304 announce AS-RAMNET6 # RETN v6
+import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER # MSK-IX
+export:         to AS8631 announce AS-RAMNET
+import:         from AS50952 action pref=200; accept AS-DATAIX # Data-IX
+export:         to AS50952 announce AS-RAMNET
+import:         from AS15169 action pref=300; accept AS-GOOGLE # Google
+export:         to AS15169 announce AS-RAMNET
+import:         from AS13238 action pref=300; accept AS-YANDEX # YANDEX
+export:         to AS13238 announce AS-RAMNET
+import:         from AS47764 action pref=300; accept AS-MAILRU # Mail.RU
+export:         to AS47764 announce AS-RAMNET
+import:         from AS48061 action pref=300; accept AS48061 # Gazprom Media
+export:         to AS48061 announce AS-RAMNET
+mp-import:      afi ipv6.unicast from AS8631 action pref=300; accept ANY # MSK-IX
+mp-export:      afi ipv6.unicast to AS8631 announce AS-RAMNET6 # MSK-IX
+mp-import:      afi ipv6.unicast from AS50952 action pref=300; accept AS-DATAIX # Data-IX
+mp-export:      afi ipv6.unicast to AS50952 announce AS-RAMNET6 # Data-IX
+mp-import:      afi ipv6.unicast from AS15169 action pref=300; accept AS-GOOGLE # Google
+mp-export:      afi ipv6.unicast to AS15169 announce AS-RAMNET6 # Google
+mp-import:      afi ipv6.unicast from AS13238 action pref=300; accept AS-YANDEX # Yandex
+mp-export:      afi ipv6.unicast to AS13238 announce AS-RAMNET6 # Yandex
+mp-import:      afi ipv6.unicast from AS47764 action pref=300; accept AS-MAILRU6 # Mail.RU
+mp-export:      afi ipv6.unicast to AS47764 announce AS-RAMNET6 # Mail.RU
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@ramnet.ru
+mnt-by:         MNT-RAMNET
+mnt-by:         RIPE-NCC-END-MNT
+created:        2008-04-04T12:31:41Z
+last-modified:  2025-09-18T13:08:57Z
+source:         RIPE
+
+as-num:         AS44943
+country:        RU
+as-name:        RAMNET-AS Ramtel Ltd.
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+as-num:         AS44943
+country:        RU
+as-name:        null
+
+organisation:   ORG-RL79-RIPE
+org-name:       Ramtel Ltd.
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-RL79-RIPE
+e-mail:         unread@ripe.net
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-RAMNET
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-RAMNET
+abuse-c:        RNOC7-RIPE
+created:        2010-02-22T16:25:37Z
+last-modified:  2025-09-19T11:08:08Z
+source:         RIPE
+
+
