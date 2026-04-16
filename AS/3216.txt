@@ -1696,6 +1696,8 @@ import:         from AS209343 action pref=100; accept AS209343
 export:         to AS209343 announce ANY
 import:         from AS49814 action pref=100; accept AS-TOMGATE
 export:         to AS49814 announce ANY
+import:         from AS204531 action pref=100; accept AS204531:AS-RUBIT
+export:         to AS204531 announce ANY
 import:         from AS49963 action pref=100; accept AS-BELRTS
 export:         to AS49963 announce ANY
 import:         from AS60363 action pref=100; accept AS60363
@@ -4804,6 +4806,8 @@ import:         from AS59515 action pref=100; accept AS59515
 export:         to AS59515 announce ANY
 import:         from AS35608 action pref=100; accept AS35608
 export:         to AS35608 announce {0.0.0.0/0}
+import:         from AS59515 action pref=100; accept AS59515
+export:         to AS59515 announce ANY
 import:         from AS57396 action pref=100; accept AS57396
 export:         to AS57396 announce ANY
 import:         from AS208955 action pref=100; accept AS208955
@@ -5359,12 +5363,15 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-04-13T07:22:00Z
+last-modified:  2026-04-14T06:20:28Z
 source:         RIPE
 
 as-num:         AS3216
 country:        RU
 as-name:        SOVAM-AS PJSC "Vimpelcom"
+as-num:         AS3216
+country:        RU
+as-name:        null
 as-num:         AS3216
 country:        RU
 as-name:        null
