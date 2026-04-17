@@ -14,6 +14,8 @@ import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-MIRAN
 mp-import:      afi ipv6.unicast from AS12389 accept ANY
 mp-export:      afi ipv6.unicast to AS12389 announce AS-MIRAN
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS-MIRAN
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-MIRAN
 mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER
@@ -94,15 +96,17 @@ import:         from AS12654 accept AS12654
 export:         to AS12654 announce ANY
 mp-import:      afi ipv6.unicast from AS12654 accept AS12654
 mp-export:      afi ipv6.unicast to AS12654 announce ANY
-import:         from AS201706 accept NOT ANY
-export:         to AS201706 announce AS-MIRAN
+import:         from AS212232 accept AS212232
+export:         to AS212232 announce ANY
+mp-import:      afi ipv6.unicast from AS212232 accept AS212232
+mp-export:      afi ipv6.unicast to AS212232 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-MIRAN
 created:        2006-10-13T14:21:32Z
-last-modified:  2026-04-02T10:48:24Z
+last-modified:  2026-04-15T12:21:01Z
 source:         RIPE
 
 as-num:         AS41722
