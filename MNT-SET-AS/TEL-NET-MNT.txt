@@ -184,6 +184,14 @@ import:         from AS39607 accept as-piter-ix-helsinki
 export:         to AS39607 announce AS-TEL-NET
 import:         from AS50817 accept as-piter-ix
 export:         to AS50817 announce AS-TEL-NET
+import:         from AS48193 accept as-piter-ix-fra
+export:         to AS48193 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS48193 accept as-piter-ix-fra
+mp-export:      afi ipv6 to AS48193 announce AS-TEL-NET-V6
+import:         from AS213449 accept AS213449:AS-JOW
+export:         to AS213449 announce AS-TEL-NET
+mp-import:      afi ipv6 from AS213449 accept AS213449:AS-JOW
+mp-export:      afi ipv6 to AS213449 announce AS-TEL-NET-V6
 import:         from AS56931 accept AS-EURASIAPEERING_RS
 export:         to AS56931 announce AS-TEL-NET
 mp-import:      afi ipv6 from AS56931 accept AS-EURASIAPEERING_RS
@@ -215,7 +223,7 @@ notify:         noc@tel.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TEL-NET-MNT
 created:        2010-09-29T10:52:42Z
-last-modified:  2025-10-01T15:05:03Z
+last-modified:  2026-04-16T11:58:17Z
 source:         RIPE
 
 

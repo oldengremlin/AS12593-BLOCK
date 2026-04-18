@@ -5,6 +5,10 @@ import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS-GSYST
 import:         from AS20764 action pref=100; accept ANY
 export:         to AS20764 announce AS-GSYST
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS-GSYST
+import:         from AS1299 action pref=100; accept ANY
+export:         to AS1299 announce AS-GSYST
 import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-GSYST
 import:         from AS15169 action pref=300; accept AS-GOOGLE
@@ -23,6 +27,12 @@ import:         from AS49869 action pref=300; accept AS-PITER-IX-MSK
 export:         to AS49869 announce AS-GSYST
 import:         from AS50817 action pref=300; accept AS-PITER-IX
 export:         to AS50817 announce AS-GSYST
+import:         from AS47764 action pref=300; accept AS-VK
+export:         to AS47764 announce AS-GSYST
+import:         from AS209739 action pref=300; accept AS209739
+export:         to AS209739 announce AS-GSYST
+import:         from AS41718 action pref=300; accept AS41718
+export:         to AS41718 announce AS-GSYST
 import:         from AS62446 action pref=50; accept AS62446
 export:         to AS62446 announce ANY
 admin-c:        DUMY-RIPE
@@ -31,7 +41,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         GSYST-MNT
 created:        2010-07-27T14:05:51Z
-last-modified:  2023-11-22T19:11:49Z
+last-modified:  2026-04-16T12:59:48Z
 source:         RIPE
 
 as-num:         AS51341

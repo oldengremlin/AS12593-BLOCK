@@ -1087,6 +1087,8 @@ members:        AS59883
 members:        AS-CDN77
 # from AS60072:
 members:        AS60072
+# from AS60098:
+members:        AS60098
 # from AS60246:
 members:        AS-PG19
 # from AS60280:
@@ -1358,7 +1360,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-04-14T09:41:33Z
+last-modified:  2026-04-16T09:43:32Z
 source:         RIPE
 
 
@@ -5901,6 +5903,9 @@ accept AS-CDN77
 import:         from AS60072
 action pref=100;
 accept AS60072
+import:         from AS60098
+action pref=100;
+accept AS60098
 import:         from AS60246
 action pref=100;
 accept AS-PG19
@@ -7094,6 +7099,8 @@ export:         to AS60068
 announce AS-MSKROUTESERVER
 export:         to AS60072
 announce AS-MSKROUTESERVER
+export:         to AS60098
+announce AS-MSKROUTESERVER
 export:         to AS60246
 announce AS-MSKROUTESERVER
 export:         to AS60280
@@ -7361,7 +7368,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-04-14T09:41:33Z
+last-modified:  2026-04-16T09:43:27Z
 source:         RIPE
 
 

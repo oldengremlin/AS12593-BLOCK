@@ -177,7 +177,6 @@ members:        AS48733
 members:        AS209657
 members:        AS49156
 members:        AS50060
-members:        AS61140
 members:        AS-TIMEWEB
 members:        AS50060
 members:        AS-TUT
@@ -362,7 +361,6 @@ members:        AS49577
 members:        AS44552
 members:        AS199194
 members:        AS-OCTOPUSNET
-members:        AS44963
 members:        AS-PODRYAD
 members:        AS203407
 members:        AS39073
@@ -1657,7 +1655,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-04-14T06:24:54Z
+last-modified:  2026-04-16T11:21:05Z
 source:         RIPE
 
 
@@ -5387,8 +5385,6 @@ mp-import:      from AS39927 action pref=100; accept AS-ELIGHT
 mp-export:      to AS39927 announce ANY
 import:         from AS40966 action pref=100; accept AS40966:AS-L7GUARD
 export:         to AS40966 announce ANY
-import:         from AS61140 action pref=100; accept AS61140
-export:         to AS61140 announce {0.0.0.0/0}
 import:         from AS214283 action pref=100; accept AS214283
 export:         to AS214283 announce ANY
 import:         from AS34545 action pref=100; accept AS34545
@@ -6351,8 +6347,6 @@ import:         from AS42358 action pref=100; accept AS42358
 export:         to AS42358 announce ANY
 mp-import:      afi ipv6 from AS42358 action pref=100; accept AS42358
 mp-export:      afi ipv6 to AS42358 announce ANY
-import:         from AS44963 action pref=100; accept AS44963
-export:         to AS44963 announce ANY
 import:         from AS12686 action pref=100; accept AS12686
 export:         to AS12686 announce ANY
 import:         from AS28775 action pref=100; accept AS-TTCNET
@@ -8282,7 +8276,7 @@ export:         to AS48951 announce ANY
 mp-import:      afi ipv6 from AS48951 action pref=100; accept AS48951
 mp-export:      afi ipv6 to AS48951 announce ANY
 import:         from AS44963 action pref=100; accept AS-POTOK
-export:         to AS44963 announce ANY
+export:         to AS44963 announce {0.0.0.0/0}
 import:         from AS42478 action pref=100; accept AS-YUG-LINK
 export:         to AS42478 announce ANY
 import:         from AS197756 action pref=100; accept AS197756
@@ -8864,7 +8858,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-04-14T06:20:28Z
+last-modified:  2026-04-16T11:20:20Z
 source:         RIPE
 
 
