@@ -128,6 +128,7 @@ members:        AS49551
 members:        AS203844
 members:        AS-NTKS
 members:        AS207353
+members:        AS-SELECTEL-MSK
 members:        AS34170:AS-customers
 members:        AS209343
 members:        AS-BELPAK
@@ -1457,7 +1458,6 @@ members:        AS202835
 members:        AS-FACTORIAL-INTERNET
 members:        AS-SMARTCOM
 members:        AS-NTX
-members:        AS202873
 members:        AS58147
 members:        AS202752
 members:        AS47737
@@ -1655,7 +1655,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-04-16T11:21:05Z
+last-modified:  2026-04-17T10:00:07Z
 source:         RIPE
 
 
@@ -1974,6 +1974,7 @@ members:        AS42276
 members:        AS213787:AS-CLOUDRACK
 members:        AS20499
 members:        AS205642
+members:        AS-SELECTEL-MSK
 members:        AS204296
 members:        AS-MELBICOM-V6
 members:        AS-ELTEL6
@@ -2051,7 +2052,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-04-03T13:28:16Z
+last-modified:  2026-04-17T10:00:46Z
 source:         RIPE
 
 
@@ -5935,6 +5936,10 @@ import:         from AS207353 action pref=100; accept AS207353
 export:         to AS207353 announce ANY
 mp-import:      from AS207353 action pref=100; accept AS207353
 mp-export:      to AS207353 announce AS-SOVAM-V6
+import:         from AS50340 action pref=100; accept AS-SELECTEL-MSK
+export:         to AS50340 announce AS-SOVAM
+mp-import:      from AS50340 action pref=100; accept AS-SELECTEL-MSK
+mp-export:      to AS50340 announce AS-SOVAM-V6
 import:         from AS34170 action pref=100; accept AS34170:AS-customers
 export:         to AS34170 announce ANY
 mp-import:      from AS34170 action pref=100; accept AS34170:AS-customers
@@ -8697,8 +8702,6 @@ import:         from AS50113 action pref=100; accept AS-NTX
 export:         to AS50113 announce ANY
 mp-import:      afi ipv6 from AS50113 action pref=100; accept AS-NTX6
 mp-export:      afi ipv6 to AS50113 announce ANY
-import:         from AS202873 action pref=100; accept AS202873
-export:         to AS202873 announce {0.0.0.0/0}
 import:         from AS58147 action pref=100; accept AS58147
 export:         to AS58147 announce {0.0.0.0/0}
 import:         from AS202752 action pref=100; accept AS202752
@@ -8858,7 +8861,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-04-16T11:20:20Z
+last-modified:  2026-04-17T09:59:37Z
 source:         RIPE
 
 

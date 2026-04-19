@@ -365,8 +365,6 @@ members:        AS-MAX
 members:        AS-NAUKANET
 # from AS8732:
 members:        AS-COMCOR
-# from AS8749:
-members:        AS-REDCOM
 # from AS8752:
 members:        AS-ASVT
 # from AS8932:
@@ -1360,7 +1358,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-04-16T09:43:32Z
+last-modified:  2026-04-17T13:44:08Z
 source:         RIPE
 
 
@@ -4820,9 +4818,6 @@ accept AS-NAUKANET
 import:         from AS8732
 action pref=100;
 accept AS-COMCOR
-import:         from AS8749
-action pref=100;
-accept AS-REDCOM
 import:         from AS8752
 action pref=100;
 accept AS-ASVT
@@ -6377,8 +6372,6 @@ export:         to AS8641
 announce AS-MSKROUTESERVER
 export:         to AS8732
 announce AS-MSKROUTESERVER
-export:         to AS8749
-announce AS-MSKROUTESERVER
 export:         to AS8752
 announce AS-MSKROUTESERVER
 export:         to AS8932
@@ -7368,7 +7361,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-04-16T09:43:27Z
+last-modified:  2026-04-17T13:44:04Z
 source:         RIPE
 
 
