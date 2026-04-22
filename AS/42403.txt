@@ -25,9 +25,6 @@ accept AS-MTU
 import:         from AS8410
 action pref=100;
 accept AS8410
-import:         from AS8749
-action pref=100;
-accept AS-REDCOM
 import:         from AS8985
 action pref=100;
 accept AS-MSK-IX-SERVICES
@@ -250,8 +247,6 @@ export:         to AS8359
 announce AS-NSKROUTESERVER
 export:         to AS8410
 announce AS-NSKROUTESERVER
-export:         to AS8749
-announce AS-NSKROUTESERVER
 export:         to AS8985
 announce AS-NSKROUTESERVER
 export:         to AS9049
@@ -394,7 +389,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-03-31T10:12:10Z
+last-modified:  2026-04-20T05:42:22Z
 source:         RIPE
 
 as-num:         AS42403

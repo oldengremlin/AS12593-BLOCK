@@ -595,6 +595,8 @@ import:         from  AS51764 action pref=100; accept   AS-AMTEL
 export:         to    AS51764                  announce ANY
 import:         from  AS51771 action pref=100; accept   AS51771
 export:         to    AS51771                  announce ANY
+import:         from  AS51789 action pref=100; accept   AS-TIMEWEB
+export:         to    AS51789                  announce ANY
 import:         from  AS51904 action pref=100; accept   AS-UTEX
 export:         to    AS51904                  announce ANY
 import:         from  AS52016 action pref=100; accept   AS52016
@@ -859,6 +861,8 @@ import:         from AS201916 action pref=100; accept   AS201916
 export:         to   AS201916                  announce ANY
 import:         from AS202079 action pref=100; accept   AS202079
 export:         to   AS202079                  announce ANY
+import:         from AS202345 action pref=100; accept   AS202345
+export:         to   AS202345                  announce ANY
 import:         from AS202498 action pref=100; accept   AS202498
 export:         to   AS202498                  announce ANY
 import:         from AS202619 action pref=100; accept   AS-DOVECOM-RU
@@ -1407,6 +1411,8 @@ mp-import:      afi ipv6.unicast from  AS51352 action pref=100; accept   AS51352
 mp-export:      afi ipv6.unicast to    AS51352                  announce ANY
 mp-import:      afi ipv6.unicast from  AS51698 action pref=100; accept   AS51698
 mp-export:      afi ipv6.unicast to    AS51698                  announce ANY
+mp-import:      afi ipv6.unicast from  AS51789 action pref=100; accept   AS-TIMEWEB
+mp-export:      afi ipv6.unicast to    AS51789                  announce ANY
 mp-import:      afi ipv6.unicast from  AS52016 action pref=100; accept   AS52016
 mp-export:      afi ipv6.unicast to    AS52016                  announce ANY
 mp-import:      afi ipv6.unicast from  AS52091 action pref=100; accept   AS-LEVEL-MSK
@@ -1630,7 +1636,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-04-16T19:59:20Z
+last-modified:  2026-04-20T19:59:19Z
 source:         RIPE
 
 as-num:         AS57304

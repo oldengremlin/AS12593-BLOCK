@@ -1221,6 +1221,8 @@ members:        AS201147:AS-MSK-SET
 members:        AS-DRUGOYTEL
 # from AS201302:
 members:        AS201302
+# from AS201624:
+members:        AS201624
 # from AS201706:
 members:        AS-SERVICEPIPE
 # from AS201776:
@@ -1344,7 +1346,7 @@ members:        AS213499
 # from AS213624:
 members:        AS213624
 # from AS213922:
-members:        AS213922
+members:        AS213922:AS-VOLTA
 # from AS215182:
 members:        AS215182:AS-AVELACOM-BUSINESS
 # from AS216262:
@@ -1358,7 +1360,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-04-17T13:44:08Z
+last-modified:  2026-04-20T09:43:26Z
 source:         RIPE
 
 
@@ -1417,8 +1419,6 @@ members:        AS-NSC-NSKIX-SET, AS-NSC6-SET
 members:        AS-MTU
 # from AS8410:
 members:        AS8410
-# from AS8749:
-members:        AS-REDCOM
 # from AS8985:
 members:        AS-MSK-IX-SERVICES
 # from AS9049:
@@ -1565,7 +1565,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2026-03-31T10:12:13Z
+last-modified:  2026-04-20T05:42:26Z
 source:         RIPE
 
 
@@ -2635,9 +2635,6 @@ accept AS-MTU
 import:         from AS8410
 action pref=100;
 accept AS8410
-import:         from AS8749
-action pref=100;
-accept AS-REDCOM
 import:         from AS8985
 action pref=100;
 accept AS-MSK-IX-SERVICES
@@ -2860,8 +2857,6 @@ export:         to AS8359
 announce AS-NSKROUTESERVER
 export:         to AS8410
 announce AS-NSKROUTESERVER
-export:         to AS8749
-announce AS-NSKROUTESERVER
 export:         to AS8985
 announce AS-NSKROUTESERVER
 export:         to AS9049
@@ -3004,7 +2999,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-03-31T10:12:10Z
+last-modified:  2026-04-20T05:42:22Z
 source:         RIPE
 
 
@@ -6102,6 +6097,9 @@ accept AS-DRUGOYTEL
 import:         from AS201302
 action pref=100;
 accept AS201302
+import:         from AS201624
+action pref=100;
+accept AS201624
 import:         from AS201706
 action pref=100;
 accept AS-SERVICEPIPE
@@ -6287,7 +6285,7 @@ action pref=100;
 accept AS213624
 import:         from AS213922
 action pref=100;
-accept AS213922
+accept AS213922:AS-VOLTA
 import:         from AS215182
 action pref=100;
 accept AS215182:AS-AVELACOM-BUSINESS
@@ -7228,6 +7226,8 @@ export:         to AS201211
 announce AS-MSKROUTESERVER
 export:         to AS201302
 announce AS-MSKROUTESERVER
+export:         to AS201624
+announce AS-MSKROUTESERVER
 export:         to AS201706
 announce AS-MSKROUTESERVER
 export:         to AS201776
@@ -7361,7 +7361,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-04-17T13:44:04Z
+last-modified:  2026-04-20T09:43:26Z
 source:         RIPE
 
 
