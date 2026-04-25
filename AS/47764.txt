@@ -337,6 +337,10 @@ export:         to AS51341 announce AS-VK
 import:         from AS51341 accept AS-GSYST
 export:         to AS34602 announce AS-VK
 import:         from AS34602 accept AS-STARLNK
+export:         to AS44020 announce AS-VK
+import:         from AS44020 accept AS-CLN
+mp-export:      afi ipv6.unicast to AS44020 announce AS-VK;
+mp-import:      afi ipv6.unicast from AS44020 accept AS-CLN;
 export:         to AS8631 announce AS-VK
 import:         from AS8631 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS-VK;
@@ -424,7 +428,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2026-03-12T14:52:48Z
+last-modified:  2026-04-23T15:20:38Z
 source:         RIPE
 
 as-num:         AS47764

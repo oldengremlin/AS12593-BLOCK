@@ -1,20 +1,23 @@
 aut-num:        AS198526
-as-name:        GAZ-IS-AS
-org:            ORG-GL99-RIPE
-import:         from AS8492 action pref=100; accept ANY
-import:         from AS9002 action pref=100; accept ANY
-export:         to AS8492 announce AS198526
-export:         to AS9002 announce AS198526
+as-name:        GREAT-SCOTT-CONSULTING
+org:            ORG-SEAT6-RIPE
+sponsoring-org: ORG-VSS29-RIPE
+import:         from AS21641 accept ANY
+import:         from AS35661 accept ANY
+export:         to AS21641 announce AS198526
+export:         to AS35661 announce AS198526
+mp-import:      afi ipv6.unicast from AS21641 accept ANY
+mp-import:      afi ipv6.unicast from AS35661 accept ANY
+mp-export:      afi ipv6.unicast to AS21641 announce AS198526
+mp-export:      afi ipv6.unicast to AS35661 announce AS198526
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
-notify:         noc@obit.ru
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         OBIT-MNT
-created:        2012-02-23T13:33:27Z
-last-modified:  2018-09-04T11:09:38Z
+mnt-by:         VIA-REGISTRY-MNT
+created:        2026-04-23T10:38:02Z
+last-modified:  2026-04-23T10:46:03Z
 source:         RIPE
-sponsoring-org: ORG-OL12-RIPE
 
 as-num:         AS198526
 country:        RU
@@ -88,18 +91,21 @@ as-name:        GAZ-IS-AS
 as-num:         AS198526
 country:        RU
 as-name:        GAZ-IS-AS
+as-num:         AS198526
+country:        US
+as-name:        null
 
-organisation:   ORG-GL99-RIPE
-org-name:       Gazinformservice Ltd.
-country:        RU
-org-type:       OTHER
-address:        Dummy address for ORG-GL99-RIPE
+organisation:   ORG-SEAT6-RIPE
+org-name:       ERIN ALLEN SCOTT trading as Great Scott Consulting Services
+address:        Dummy address for ORG-SEAT6-RIPE
+country:        US
 e-mail:         unread@ripe.net
-abuse-c:        AR27443-RIPE
-mnt-ref:        OBIT-MNT
-mnt-by:         OBIT-MNT
-created:        2012-02-20T08:09:48Z
-last-modified:  2022-12-01T16:27:38Z
+org-type:       OTHER
+abuse-c:        AR79926-RIPE
+mnt-ref:        VIA-REGISTRY-MNT
+mnt-by:         VIA-REGISTRY-MNT
+created:        2026-04-10T00:42:02Z
+last-modified:  2026-04-23T10:26:26Z
 source:         RIPE
 
 

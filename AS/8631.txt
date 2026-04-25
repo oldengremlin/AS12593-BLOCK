@@ -384,6 +384,9 @@ accept AS31174
 import:         from AS31214
 action pref=100;
 accept AS-TISDIALOG
+import:         from AS31257
+action pref=100;
+accept AS-ORIONNET
 import:         from AS31294
 action pref=100;
 accept AS-LANTECH
@@ -663,6 +666,9 @@ accept AS-EPL
 import:         from AS43727
 action pref=100;
 accept AS-SETKT
+import:         from AS43728
+action pref=100;
+accept AS43728
 import:         from AS43798
 action pref=100;
 accept AS43798
@@ -1485,9 +1491,6 @@ accept AS-HOSTLINE-IX
 import:         from AS207883
 action pref=100;
 accept AS207883
-import:         from AS208129
-action pref=100;
-accept AS208129
 import:         from AS208142
 action pref=100;
 accept AS208142
@@ -1851,6 +1854,8 @@ export:         to AS31174
 announce AS-MSKROUTESERVER
 export:         to AS31214
 announce AS-MSKROUTESERVER
+export:         to AS31257
+announce AS-MSKROUTESERVER
 export:         to AS31294
 announce AS-MSKROUTESERVER
 export:         to AS31370
@@ -2036,6 +2041,8 @@ announce AS-MSKROUTESERVER
 export:         to AS43714
 announce AS-MSKROUTESERVER
 export:         to AS43727
+announce AS-MSKROUTESERVER
+export:         to AS43728
 announce AS-MSKROUTESERVER
 export:         to AS43798
 announce AS-MSKROUTESERVER
@@ -2585,8 +2592,6 @@ export:         to AS207785
 announce AS-MSKROUTESERVER
 export:         to AS207883
 announce AS-MSKROUTESERVER
-export:         to AS208129
-announce AS-MSKROUTESERVER
 export:         to AS208142
 announce AS-MSKROUTESERVER
 export:         to AS208349
@@ -2662,7 +2667,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-04-20T09:43:26Z
+last-modified:  2026-04-23T09:43:44Z
 source:         RIPE
 
 as-num:         AS8631

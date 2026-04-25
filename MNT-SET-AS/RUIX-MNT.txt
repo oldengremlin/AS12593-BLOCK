@@ -545,6 +545,8 @@ members:        AS-CDN-MEGAFON, AS-MF-MGSM
 members:        AS31174
 # from AS31214:
 members:        AS-TISDIALOG
+# from AS31257:
+members:        AS-ORIONNET
 # from AS31294:
 members:        AS-LANTECH
 # from AS31370:
@@ -731,6 +733,8 @@ members:        AS-VERMONT
 members:        AS-EPL
 # from AS43727:
 members:        AS-SETKT
+# from AS43728:
+members:        AS43728
 # from AS43798:
 members:        AS43798
 # from AS43832:
@@ -1279,8 +1283,6 @@ members:        AS207561
 members:        AS-HOSTLINE-IX
 # from AS207883:
 members:        AS207883
-# from AS208129:
-members:        AS208129
 # from AS208142:
 members:        AS208142
 # from AS208349:
@@ -1360,7 +1362,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-04-20T09:43:26Z
+last-modified:  2026-04-23T09:43:44Z
 source:         RIPE
 
 
@@ -1944,8 +1946,6 @@ descr:          permitted to originate prefixes accepted
 descr:          from each route server customer. # from AS2854:
 # from AS2854:
 members:        AS-OBSRUSSIA6, AS-ROSPRINT
-# from AS8749:
-members:        AS-REDCOM
 # from AS9049:
 members:        AS-ERTH
 # from AS25091:
@@ -1971,7 +1971,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2008-12-29T14:15:27Z
-last-modified:  2025-12-02T02:37:35Z
+last-modified:  2026-04-22T02:37:10Z
 source:         RIPE
 
 
@@ -4347,9 +4347,6 @@ status:         ASSIGNED
 import:         from AS2854
 action pref=100;
 accept AS-OBSRUSSIA6 AS-ROSPRINT
-import:         from AS8749
-action pref=100;
-accept AS-REDCOM
 import:         from AS9049
 action pref=100;
 accept AS-ERTH
@@ -4382,8 +4379,6 @@ action pref=100;
 accept AS-EDGECENTER
 export:         to AS2854
 announce AS-VLVROUTESERVER
-export:         to AS8749
-announce AS-VLVROUTESERVER
 export:         to AS9049
 announce AS-VLVROUTESERVER
 export:         to AS25091
@@ -4408,7 +4403,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-12-08T12:37:37Z
-last-modified:  2025-12-02T02:37:39Z
+last-modified:  2026-04-22T02:37:10Z
 source:         RIPE
 
 
@@ -5083,6 +5078,9 @@ accept AS31174
 import:         from AS31214
 action pref=100;
 accept AS-TISDIALOG
+import:         from AS31257
+action pref=100;
+accept AS-ORIONNET
 import:         from AS31294
 action pref=100;
 accept AS-LANTECH
@@ -5362,6 +5360,9 @@ accept AS-EPL
 import:         from AS43727
 action pref=100;
 accept AS-SETKT
+import:         from AS43728
+action pref=100;
+accept AS43728
 import:         from AS43798
 action pref=100;
 accept AS43798
@@ -6184,9 +6185,6 @@ accept AS-HOSTLINE-IX
 import:         from AS207883
 action pref=100;
 accept AS207883
-import:         from AS208129
-action pref=100;
-accept AS208129
 import:         from AS208142
 action pref=100;
 accept AS208142
@@ -6550,6 +6548,8 @@ export:         to AS31174
 announce AS-MSKROUTESERVER
 export:         to AS31214
 announce AS-MSKROUTESERVER
+export:         to AS31257
+announce AS-MSKROUTESERVER
 export:         to AS31294
 announce AS-MSKROUTESERVER
 export:         to AS31370
@@ -6735,6 +6735,8 @@ announce AS-MSKROUTESERVER
 export:         to AS43714
 announce AS-MSKROUTESERVER
 export:         to AS43727
+announce AS-MSKROUTESERVER
+export:         to AS43728
 announce AS-MSKROUTESERVER
 export:         to AS43798
 announce AS-MSKROUTESERVER
@@ -7284,8 +7286,6 @@ export:         to AS207785
 announce AS-MSKROUTESERVER
 export:         to AS207883
 announce AS-MSKROUTESERVER
-export:         to AS208129
-announce AS-MSKROUTESERVER
 export:         to AS208142
 announce AS-MSKROUTESERVER
 export:         to AS208349
@@ -7361,7 +7361,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-04-20T09:43:26Z
+last-modified:  2026-04-23T09:43:44Z
 source:         RIPE
 
 

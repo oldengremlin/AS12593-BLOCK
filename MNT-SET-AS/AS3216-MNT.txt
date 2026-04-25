@@ -444,6 +444,7 @@ members:        AS-R-LINE
 members:        AS-ELIT-TV
 members:        AS56845
 members:        AS48035
+members:        AS199365
 members:        AS200122
 members:        AS-ATEL-LTD
 members:        AS215634
@@ -1656,7 +1657,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-04-21T13:05:34Z
+last-modified:  2026-04-23T14:02:05Z
 source:         RIPE
 
 
@@ -1689,6 +1690,7 @@ members:        AS202234:AS-SEMANTIC
 members:        AS30058:AS-CONE
 members:        AS-TT-Mobile
 members:        AS57861
+members:        AS199365
 members:        AS-PIN
 members:        AS-PINDC
 members:        AS214525
@@ -2054,7 +2056,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-04-21T13:06:02Z
+last-modified:  2026-04-23T14:02:37Z
 source:         RIPE
 
 
@@ -5172,10 +5174,16 @@ import:         from AS211157 action pref=100; accept AS211157
 export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
+import:         from AS44112 action pref=100; accept AS-RUCENTER
+export:         to AS44112 announce AS-SOVAM
 import:         from AS201706 action pref=100; accept AS-SERVICEPIPE
 export:         to AS201706 announce ANY
 mp-import:      from AS201706 action pref=100; accept AS-SERVICEPIPE
 mp-export:      to AS201706 announce ANY
+import:         from AS199365 action pref=100; accept AS199365
+export:         to AS199365 announce ANY
+mp-import:      from AS199365 action pref=100; accept AS199365
+mp-export:      to AS199365 announce ANY
 import:         from AS52222 action pref=100; accept AS52222
 export:         to AS52222 announce {0.0.0.0/0}
 import:         from AS48035 action pref=100; accept AS48035
@@ -8867,7 +8875,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-04-21T13:05:11Z
+last-modified:  2026-04-23T14:01:20Z
 source:         RIPE
 
 
