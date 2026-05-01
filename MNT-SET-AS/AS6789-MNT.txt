@@ -252,6 +252,8 @@ import:         from AS50384 accept AS-W-IX
 export:         to AS50384 announce AS-CRELCOM
 import:         from AS49869 accept AS-PITER-IX-MSK
 export:         to AS49869 announce AS-CRELCOM
+import:         from AS50817 accept AS-PITER-IX
+export:         to AS50817 announce AS-CRELCOM
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS-CRELCOM
 mp-import:      afi ipv6.unicast from AS8631 action pref=120; accept AS-MSKROUTESERVER
@@ -264,6 +266,8 @@ mp-import:      afi ipv6.unicast from AS207979 accept AS207979
 mp-export:      afi ipv6.unicast to AS207979 announce ANY
 mp-import:      afi ipv6.unicast from AS31133 accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS-CRELCOM-V6
+mp-import:      afi ipv6.unicast from AS50817 accept ANY
+mp-export:      afi ipv6.unicast to AS50817 announce AS-CRELCOM-V6
 import:         from AS205515 accept AS205515
 export:         to AS205515 announce AS-CRELCOM
 import:         from AS35816 accept AS-LANCOM
@@ -459,7 +463,7 @@ notify:         noc@crimea.net
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS6789-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2026-04-06T04:54:55Z
+last-modified:  2026-04-29T13:47:13Z
 source:         RIPE
 
 
