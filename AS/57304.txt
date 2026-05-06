@@ -263,8 +263,6 @@ import:         from  AS41275 action pref=100; accept   AS-TUT
 export:         to    AS41275                  announce ANY
 import:         from  AS41302 action pref=100; accept   AS-KVS
 export:         to    AS41302                  announce ANY
-import:         from  AS41446 action pref=100; accept   AS41446
-export:         to    AS41446                  announce ANY
 import:         from  AS41535 action pref=100; accept   AS-RUSONYX
 export:         to    AS41535                  announce ANY
 import:         from  AS41617 action pref=100; accept   AS-SOLID-IFC
@@ -327,6 +325,8 @@ import:         from  AS43045 action pref=100; accept   AS-SVHOLDING
 export:         to    AS43045                  announce ANY
 import:         from  AS43048 action pref=100; accept   AS-MITIGATOR-CLOUD
 export:         to    AS43048                  announce ANY
+import:         from  AS43278 action pref=100; accept   AS-CASTLES
+export:         to    AS43278                  announce ANY
 import:         from  AS43299 action pref=100; accept   AS-TELECONTACT
 export:         to    AS43299                  announce ANY
 import:         from  AS43399 action pref=100; accept   AS-TINKOFF
@@ -795,8 +795,6 @@ import:         from AS199424 action pref=100; accept   AS199424
 export:         to   AS199424                  announce ANY
 import:         from AS199430 action pref=100; accept   AS199430
 export:         to   AS199430                  announce ANY
-import:         from AS199572 action pref=100; accept   AS199572
-export:         to   AS199572                  announce ANY
 import:         from AS199599 action pref=100; accept   AS-CIREX
 export:         to   AS199599                  announce ANY
 import:         from AS199669 action pref=100; accept   AS-ATLEX
@@ -1241,8 +1239,6 @@ mp-import:      afi ipv6.unicast from  AS41275 action pref=100; accept   AS-TUT
 mp-export:      afi ipv6.unicast to    AS41275                  announce ANY
 mp-import:      afi ipv6.unicast from  AS41302 action pref=100; accept   AS-KVS
 mp-export:      afi ipv6.unicast to    AS41302                  announce ANY
-mp-import:      afi ipv6.unicast from  AS41446 action pref=100; accept   AS41446
-mp-export:      afi ipv6.unicast to    AS41446                  announce ANY
 mp-import:      afi ipv6.unicast from  AS41617 action pref=100; accept   AS-SOLID-IFC
 mp-export:      afi ipv6.unicast to    AS41617                  announce ANY
 mp-import:      afi ipv6.unicast from  AS41743 action pref=100; accept   AS-OPTIMANET
@@ -1275,6 +1271,8 @@ mp-import:      afi ipv6.unicast from  AS43045 action pref=100; accept   AS-SVHO
 mp-export:      afi ipv6.unicast to    AS43045                  announce ANY
 mp-import:      afi ipv6.unicast from  AS43048 action pref=100; accept   AS-MITIGATOR-CLOUD
 mp-export:      afi ipv6.unicast to    AS43048                  announce ANY
+mp-import:      afi ipv6.unicast from  AS43278 action pref=100; accept   AS-CASTLES
+mp-export:      afi ipv6.unicast to    AS43278                  announce ANY
 mp-import:      afi ipv6.unicast from  AS43299 action pref=100; accept   AS-TELECONTACT
 mp-export:      afi ipv6.unicast to    AS43299                  announce ANY
 mp-import:      afi ipv6.unicast from  AS43404 action pref=100; accept   AS-UCANETV6
@@ -1634,7 +1632,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-04-30T19:59:21Z
+last-modified:  2026-05-04T19:59:19Z
 source:         RIPE
 
 as-num:         AS57304
