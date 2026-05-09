@@ -5,7 +5,9 @@ import:         from AS34123 action pref=100; accept ANY
 import:         from AS34771 action pref=100; accept AS34771
 import:         from AS20485 action pref=100; accept ANY
 import:         from AS56676 action pref=100; accept AS56676
+import:         from AS31500 action pref=100; accept ANY
 export:         to AS34771 announce ANY
+export:         to AS31500 announce AS-TRYTEK
 export:         to AS31133 announce AS-TRYTEK
 import:         from AS28917 action pref=100; accept ANY
 import:         from AS31133 action pref=100; accept ANY
@@ -27,12 +29,15 @@ notify:         support@trytek.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-TRYTECH
 created:        2007-11-12T07:39:15Z
-last-modified:  2026-05-06T14:24:22Z
+last-modified:  2026-05-07T06:17:32Z
 source:         RIPE
 
 as-num:         AS44056
 country:        RU
 as-name:        TRYTECH-AS Trytek LLC
+as-num:         AS44056
+country:        RU
+as-name:        null
 as-num:         AS44056
 country:        RU
 as-name:        null
