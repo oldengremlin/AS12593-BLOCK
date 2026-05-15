@@ -1133,8 +1133,6 @@ members:        AS61324
 members:        AS-NETRACK
 # from AS61964:
 members:        AS61964
-# from AS62040:
-members:        AS-ITK
 # from AS62044:
 members:        AS-ZSCALER-EMEA
 # from AS62103:
@@ -1362,7 +1360,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-05-12T13:40:42Z
+last-modified:  2026-05-13T09:41:06Z
 source:         RIPE
 
 
@@ -1528,7 +1526,7 @@ members:        AS-ADMAN
 # from AS57629:
 members:        AS57629
 # from AS60119:
-members:        AS60119
+members:        AS-EDINOS
 # from AS60388:
 members:        AS-SIGMA-TELECOM
 # from AS61976:
@@ -1567,7 +1565,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2026-04-20T05:42:26Z
+last-modified:  2026-05-13T10:13:07Z
 source:         RIPE
 
 
@@ -1694,7 +1692,7 @@ members:        AS60072
 # from AS60764:
 members:        AS-TKTEL
 # from AS62261:
-members:        AS62261
+members:        AS62261:AS-SMR-MEDIAIX
 # from AS201211:
 members:        AS-DRUGOYTEL
 # from AS201512:
@@ -1710,7 +1708,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2008-11-24T15:16:26Z
-last-modified:  2026-01-27T08:31:36Z
+last-modified:  2026-05-13T08:32:09Z
 source:         RIPE
 
 
@@ -2006,6 +2004,8 @@ mnt-by:         RUIX-MNT
 created:        2025-12-05T09:42:22Z
 last-modified:  2025-12-05T09:42:22Z
 source:         RIPE
+
+
 
 
 
@@ -2794,7 +2794,7 @@ action pref=100;
 accept AS57629
 import:         from AS60119
 action pref=100;
-accept AS60119
+accept AS-EDINOS
 import:         from AS60388
 action pref=100;
 accept AS-SIGMA-TELECOM
@@ -2997,7 +2997,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-04-20T05:42:22Z
+last-modified:  2026-05-13T10:13:12Z
 source:         RIPE
 
 
@@ -4120,7 +4120,7 @@ action pref=100;
 accept AS-TKTEL
 import:         from AS62261
 action pref=100;
-accept AS62261
+accept AS62261:AS-SMR-MEDIAIX
 import:         from AS201211
 action pref=100;
 accept AS-DRUGOYTEL
@@ -4182,7 +4182,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-09-10T14:53:33Z
-last-modified:  2026-01-27T08:31:32Z
+last-modified:  2026-05-13T08:32:05Z
 source:         RIPE
 
 
@@ -4667,7 +4667,7 @@ export:         to AS48858 announce AS-NSK-MEDIAIX
 import:         from AS43213 accept AS-EKTROUTESERVER
 export:         to AS43213 announce AS62261:AS-EKT-MEDIAIX
 import:         from AS47882 accept AS-SMRROUTESERVER
-export:         to AS47882 announce AS62261
+export:         to AS47882 announce AS62261:AS-SMR-MEDIAIX
 import:         from AS48216 accept AS-RNDROUTESERVER
 export:         to AS48216 announce AS62261
 import:         from AS48531 accept AS-VLVROUTESERVER
@@ -4679,7 +4679,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         RUIX-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2013-12-05T09:48:36Z
-last-modified:  2025-12-05T09:45:47Z
+last-modified:  2026-05-13T07:32:45Z
 source:         RIPE
 status:         ASSIGNED
 
@@ -5953,9 +5953,6 @@ accept AS-NETRACK
 import:         from AS61964
 action pref=100;
 accept AS61964
-import:         from AS62040
-action pref=100;
-accept AS-ITK
 import:         from AS62044
 action pref=100;
 accept AS-ZSCALER-EMEA
@@ -7129,8 +7126,6 @@ export:         to AS61400
 announce AS-MSKROUTESERVER
 export:         to AS61964
 announce AS-MSKROUTESERVER
-export:         to AS62040
-announce AS-MSKROUTESERVER
 export:         to AS62044
 announce AS-MSKROUTESERVER
 export:         to AS62103
@@ -7354,7 +7349,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-05-12T13:40:46Z
+last-modified:  2026-05-13T09:41:11Z
 source:         RIPE
 
 
