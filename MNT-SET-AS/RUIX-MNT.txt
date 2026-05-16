@@ -1317,6 +1317,8 @@ members:        AS210443
 members:        AS-EDGECENTER
 # from AS211000:
 members:        AS-DHTD-TO-MSK-IX
+# from AS211101:
+members:        AS211101:AS-TERCOMRU
 # from AS211150:
 members:        AS211150
 # from AS211157:
@@ -1360,7 +1362,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-05-13T09:41:06Z
+last-modified:  2026-05-14T09:42:34Z
 source:         RIPE
 
 
@@ -2006,6 +2008,16 @@ last-modified:  2025-12-05T09:42:22Z
 source:         RIPE
 
 
+
+as-set:         AS62261:AS-SMR-MEDIAIX
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS62261
+members:        AS215013
+created:        2026-05-13T07:31:52Z
+last-modified:  2026-05-13T07:31:52Z
+source:         RIPE
+mnt-by:         RUIX-MNT
 
 
 
@@ -6229,6 +6241,9 @@ accept AS-EDGECENTER
 import:         from AS211000
 action pref=100;
 accept AS-DHTD-TO-MSK-IX
+import:         from AS211101
+action pref=100;
+accept AS211101:AS-TERCOMRU
 import:         from AS211150
 action pref=100;
 accept AS211150
@@ -7310,6 +7325,8 @@ export:         to AS210756
 announce AS-MSKROUTESERVER
 export:         to AS211000
 announce AS-MSKROUTESERVER
+export:         to AS211101
+announce AS-MSKROUTESERVER
 export:         to AS211150
 announce AS-MSKROUTESERVER
 export:         to AS211157
@@ -7349,7 +7366,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-05-13T09:41:11Z
+last-modified:  2026-05-14T09:42:36Z
 source:         RIPE
 
 
