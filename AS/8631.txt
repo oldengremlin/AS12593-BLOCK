@@ -1575,6 +1575,9 @@ accept AS212456
 import:         from AS213075
 action pref=100;
 accept AS-STARTFILM AS213075
+import:         from AS213220
+action pref=100;
+accept AS-DELTA-DED-SET AS16262:AS-DELTAIPV6
 import:         from AS213348
 action pref=100;
 accept AS213348
@@ -2648,6 +2651,8 @@ export:         to AS212456
 announce AS-MSKROUTESERVER
 export:         to AS213075
 announce AS-MSKROUTESERVER
+export:         to AS213220
+announce AS-MSKROUTESERVER
 export:         to AS213348
 announce AS-MSKROUTESERVER
 export:         to AS213452
@@ -2667,7 +2672,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-05-14T09:42:36Z
+last-modified:  2026-05-15T09:38:01Z
 source:         RIPE
 
 as-num:         AS8631

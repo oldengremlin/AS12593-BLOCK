@@ -4,17 +4,17 @@ descr:          Internet Network Services
 descr:          https://cloudrack.ru
 org:            ORG-IEMG1-RIPE
 sponsoring-org: ORG-LI85-RIPE
-import:         from AS35598 accept ANY
-export:         to AS35598 announce AS199651:AS-CLOUDTRANSIT
-import:         from AS12695 accept ANY
-export:         to AS12695 announce AS199651:AS-CLOUDTRANSIT
-import:         from AS50509 accept ANY
-export:         to AS50509 announce AS199651:AS-CLOUDTRANSIT
-import:         from AS31500 accept ANY
-export:         to AS31500 announce AS199651:AS-CLOUDTRANSIT
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS199651:AS-CLOUDTRANSIT
-import:         from AS49869 accept as-piter-ix-msk
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS199651:AS-CLOUDTRANSIT
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS199651:AS-CLOUDTRANSIT
+import:         from AS50509 accept ANY
+export:         to AS50509 announce AS199651:AS-CLOUDTRANSIT
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS199651:AS-CLOUDTRANSIT
+import:         from AS49869 accept AS-PITER-IX-MSK
 export:         to AS49869 announce AS199651:AS-CLOUDTRANSIT
 import:         from AS49869 accept AS-DATAIX
 export:         to AS49869 announce AS199651:AS-CLOUDTRANSIT
@@ -24,7 +24,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CLOUDRACK-MNT
 created:        2026-03-27T13:31:51Z
-last-modified:  2026-03-31T14:29:08Z
+last-modified:  2026-05-15T10:19:50Z
 source:         RIPE
 
 as-num:         AS199651
