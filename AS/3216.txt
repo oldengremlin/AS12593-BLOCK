@@ -5286,10 +5286,10 @@ import:         from AS41722 action pref=100; accept AS-MIRAN
 export:         to AS41722 announce AS-SOVAM
 import:         from AS206728 action pref=100; accept AS206728
 export:         to AS206728 announce ANY
-import:         from AS62218 action pref=100; accept AS62218
+import:         from AS62218 action pref=100; accept AS-ULTRATELECOM
 export:         to AS62218 announce ANY
-mp-import:      afi ipv6 from AS62218 action pref=100; accept AS62218
-mp-export:      afi ipv6 to AS62218 announce ANY
+mp-import:      from AS62218 action pref=100; accept AS-ULTRATELECOM
+mp-export:      to AS62218 announce ANY
 import:         from AS62316 action pref=100; accept AS62316
 export:         to AS62316 announce ANY
 import:         from AS31444 action pref=100; accept AS-SEANET
@@ -5377,7 +5377,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-05-13T13:01:55Z
+last-modified:  2026-05-18T07:11:22Z
 source:         RIPE
 
 as-num:         AS3216
