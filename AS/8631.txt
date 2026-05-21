@@ -1368,6 +1368,9 @@ accept AS-CIREX
 import:         from AS199624
 action pref=100;
 accept AS199624:AS-DKTEL
+import:         from AS199651
+action pref=100;
+accept AS199651:AS-CLOUDTRANSIT
 import:         from AS199669
 action pref=100;
 accept AS-ATLEX
@@ -2513,6 +2516,8 @@ export:         to AS199599
 announce AS-MSKROUTESERVER
 export:         to AS199624
 announce AS-MSKROUTESERVER
+export:         to AS199651
+announce AS-MSKROUTESERVER
 export:         to AS199669
 announce AS-MSKROUTESERVER
 export:         to AS199961
@@ -2672,7 +2677,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-05-15T09:38:01Z
+last-modified:  2026-05-19T13:39:12Z
 source:         RIPE
 
 as-num:         AS8631

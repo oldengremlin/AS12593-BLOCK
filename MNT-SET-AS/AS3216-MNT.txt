@@ -1228,7 +1228,6 @@ members:        AS-STAVSET
 members:        AS198817
 members:        AS31357
 members:        AS-VTKNET
-members:        AS-LIVECOMM
 members:        AS58258
 members:        AS3167
 members:        AS33892
@@ -1661,7 +1660,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-05-18T12:26:06Z
+last-modified:  2026-05-19T10:35:03Z
 source:         RIPE
 
 
@@ -6355,12 +6354,12 @@ export:         to AS206905 announce ANY
 export:         to AS31582 announce ANY
 import:         from AS24823 action pref=100; accept AS24823
 export:         to AS24823 announce ANY
+import:         from AS49558 action pref=100; accept AS-LIVECOMM
+export:         to AS49558 announce ANY
 mp-import:      afi ipv6 from AS49558 action pref=100; accept AS-LIVECOMM
 mp-export:      afi ipv6 to AS49558 announce ANY
 import:         from AS35377 action pref=100; accept AS-ABNJSC-SET
 export:         to AS35377 announce ANY
-import:         from AS49558 action pref=100; accept AS-LIVECOMM
-export:         to AS49558 announce AS-SOVAM
 mp-import:      afi ipv6 from AS24823 action pref=100; accept AS24823
 mp-export:      afi ipv6 to AS24823 announce ANY
 import:         from AS8662 action pref=100; accept AS8662
@@ -7455,12 +7454,8 @@ import:         from AS60075 action pref=100; accept AS60075
 export:         to AS60075 announce ANY
 import:         from AS41789 action pref=100; accept AS41789
 export:         to AS41789 announce ANY
-import:         from AS212421 action pref=100; accept AS-LIVECOMM
-export:         to AS212421 announce AS-SOVAM
 import:         from AS60980 action pref=100; accept AS60980
 export:         to AS60980 announce ANY
-mp-import:      afi ipv6 from AS212421 action pref=100; accept AS-LIVECOMM
-mp-export:      afi ipv6 to AS212421 announce AS-SOVAM-V6
 import:         from AS213077 action pref=100; accept AS213077
 export:         to AS213077 announce {0.0.0.0/0}
 import:         from AS207547 action pref=100; accept AS-SVTELECOM
@@ -8886,7 +8881,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-05-18T07:11:22Z
+last-modified:  2026-05-19T10:32:56Z
 source:         RIPE
 
 
