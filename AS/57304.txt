@@ -509,6 +509,8 @@ import:         from  AS49505 action pref=100; accept   AS-SELECTEL
 export:         to    AS49505                  announce ANY
 import:         from  AS49542 action pref=100; accept   AS-ARTPLANET
 export:         to    AS49542                  announce ANY
+import:         from  AS49558 action pref=100; accept   AS-LIVECOMM-CORE
+export:         to    AS49558                  announce ANY
 import:         from  AS49569 action pref=100; accept   AS49569
 export:         to    AS49569                  announce ANY
 import:         from  AS49729 action pref=100; accept   AS49729
@@ -1013,8 +1015,6 @@ import:         from AS212236 action pref=100; accept   AS-KINESCOPE
 export:         to   AS212236                  announce ANY
 import:         from AS212278 action pref=100; accept   AS212278
 export:         to   AS212278                  announce ANY
-import:         from AS212421 action pref=100; accept   AS-LIVECOMM-CORE
-export:         to   AS212421                  announce ANY
 import:         from AS212748 action pref=100; accept   AS-HELIX-RU
 export:         to   AS212748                  announce ANY
 import:         from AS212764 action pref=100; accept   AS212764
@@ -1373,6 +1373,8 @@ mp-import:      afi ipv6.unicast from  AS49505 action pref=100; accept   AS-SELE
 mp-export:      afi ipv6.unicast to    AS49505                  announce ANY
 mp-import:      afi ipv6.unicast from  AS49542 action pref=100; accept   AS-ARTPLANET
 mp-export:      afi ipv6.unicast to    AS49542                  announce ANY
+mp-import:      afi ipv6.unicast from  AS49558 action pref=100; accept   AS-LIVECOMM-CORE
+mp-export:      afi ipv6.unicast to    AS49558                  announce ANY
 mp-import:      afi ipv6.unicast from  AS49776 action pref=100; accept   AS49776
 mp-export:      afi ipv6.unicast to    AS49776                  announce ANY
 mp-import:      afi ipv6.unicast from  AS49892 action pref=100; accept   AS-TETATELECOM
@@ -1607,8 +1609,6 @@ mp-import:      afi ipv6.unicast from AS212136 action pref=100; accept   AS21213
 mp-export:      afi ipv6.unicast to   AS212136                  announce ANY
 mp-import:      afi ipv6.unicast from AS212165 action pref=100; accept   AS212165
 mp-export:      afi ipv6.unicast to   AS212165                  announce ANY
-mp-import:      afi ipv6.unicast from AS212421 action pref=100; accept   AS-LIVECOMM-CORE
-mp-export:      afi ipv6.unicast to   AS212421                  announce ANY
 mp-import:      afi ipv6.unicast from AS212748 action pref=100; accept   AS-HELIX-RU
 mp-export:      afi ipv6.unicast to   AS212748                  announce ANY
 mp-import:      afi ipv6.unicast from AS214294 action pref=100; accept   AS214294:AS-NOOB
@@ -1632,7 +1632,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-05-15T19:59:20Z
+last-modified:  2026-05-20T19:59:20Z
 source:         RIPE
 
 as-num:         AS57304
