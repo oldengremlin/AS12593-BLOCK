@@ -178,6 +178,7 @@ import:         from AS209867 accept AS209867
 import:         from AS60980 accept AS60980
 import:         from AS201786 accept AS201786
 mp-import:      afi ipv6.unicast from AS201786 accept AS201786;
+import:         from AS52085 accept AS52085
 export:         to AS50439 announce ANY
 export:         to AS50427 announce ANY
 mp-export:      afi ipv6.unicast to AS50427 announce ANY;
@@ -190,13 +191,14 @@ export:         to AS201786 announce ANY
 mp-export:      afi ipv6.unicast to AS201786 announce ANY;
 import:         from AS48699 accept AS48699
 export:         to AS48699 announce ANY
+export:         to AS52085 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MORNING-MNT
 created:        2004-03-31T12:46:47Z
-last-modified:  2026-04-22T04:22:09Z
+last-modified:  2026-05-21T11:13:51Z
 source:         RIPE
 
 
