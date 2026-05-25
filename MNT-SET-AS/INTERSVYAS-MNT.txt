@@ -1,227 +1,67 @@
-as-set:         AS-INTERSVYAS
-descr:          ASes routed by INTERSVYAS
-members:        AS8369
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-mnt-by:         INTERSVYAS-MNT
-created:        2004-11-26T06:07:17Z
-last-modified:  2004-11-26T06:07:17Z
-source:         RIPE
-
-
-
-as-set:         AS-INTERSVYAZ
-descr:          INTERSVYAZ and it's customers AS set
-members:        AS8369
-members:        AS198856
-members:        AS199153
-members:        AS57418
-members:        AS51690
-members:        AS34291
-members:        AS47842
-members:        AS202800
-members:        AS198683
-members:        AS207124
-members:        AS57425
-members:        AS204713
-members:        AS202423
-members:        AS207935
-members:        AS58231
-members:        AS57629
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-mnt-by:         INTERSVYAS-MNT
-created:        2005-05-31T04:07:16Z
-last-modified:  2025-04-21T09:20:28Z
-source:         RIPE
-
-
-
-as-set:         AS-ISDNETRU
-descr:          ISDNET internal networks and customers
-members:        AS8369, AS24665
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-notify:         hostmaster@chel.com.ru
-mnt-by:         INTERSVYAS-MNT
-mnt-by:         DION-MNT-RIPE
-created:        2002-03-21T11:16:14Z
-last-modified:  2002-03-21T11:16:14Z
-source:         RIPE
-
-
-
-aut-num:        AS198856
-as-name:        VALMAKS-AS
-org:            ORG-VL114-RIPE
-import:         from AS8369 action pref=150; accept ANY;
-import:         from AS28703 action pref=100; accept ANY;
-export:         to AS8369 announce AS198856
-export:         to AS28703 announce AS198856
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-notify:         noc@is74.ru
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         INTERSVYAS-MNT
-created:        2012-06-01T09:41:48Z
-last-modified:  2018-09-04T11:12:32Z
-source:         RIPE
-sponsoring-org: ORG-IJ7-RIPE
-
-
-
-aut-num:        AS199153
-as-name:        PSF-MAXIMUM-AS
-org:            ORG-PML5-RIPE
-import:         from AS8369 action pref=150; accept ANY;
-import:         from AS43031 action pref=100; accept ANY;
-export:         to AS8369 announce AS199153
-export:         to AS43031 announce AS199153
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-notify:         noc@is74.ru
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         INTERSVYAS-MNT
-created:        2012-08-24T14:00:12Z
-last-modified:  2018-09-04T11:15:21Z
-source:         RIPE
-sponsoring-org: ORG-IJ7-RIPE
-
-
-
-aut-num:        AS202800
-as-name:        TECHNOKOM
-org:            ORG-TL383-RIPE
-import:         from AS8369 accept ANY
-export:         to AS8369 announce AS202800
-import:         from AS20485 accept ANY
-export:         to AS20485 announce AS202800
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         INTERSVYAS-MNT
-created:        2016-06-01T12:35:25Z
-last-modified:  2020-11-16T17:51:17Z
-source:         RIPE
-sponsoring-org: ORG-IJ7-RIPE
-
-
-
-aut-num:        AS204713
-as-name:        UKK-AS
-org:            ORG-UCCL2-RIPE
-import:         from AS204713 accept ANY
-export:         to AS204713 announce AS204713
-import:         from AS8369 accept ANY
-export:         to AS8369 announce AS204713
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         INTERSVYAS-MNT
-created:        2018-01-22T15:51:20Z
-last-modified:  2024-01-06T06:34:21Z
-source:         RIPE
-sponsoring-org: ORG-IJ7-RIPE
-
-
-
-aut-num:        AS207124
-as-name:        MAKFA-AS
-org:            ORG-OM39-RIPE
-import:         from AS8369 accept ANY
-export:         to AS8369 announce AS207124
-import:         from AS3239 accept ANY
-export:         to AS3239 announce AS207124
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         INTERSVYAS-MNT
-mnt-by:         makfa-mnt
-created:        2016-08-25T14:14:59Z
-last-modified:  2020-11-16T17:53:59Z
-source:         RIPE
-sponsoring-org: ORG-IJ7-RIPE
-
-
-
-aut-num:        AS8369
-org:            ORG-IJ7-RIPE
-as-name:        INTERSVYAZ-AS
-descr:          38-B, Komsomolsky prospekt,
-descr:          Chelyabinsk, 454138, Russia
-import:         from AS8631 accept ANY;
-import:         from AS57304 action pref=100; accept ANY;
-import:         from AS28917 action pref=100; accept ANY;
-import:         from AS12389 action pref=100; accept ANY;
-import:         from AS9049 action pref=130; accept ANY;
-import:         from AS20485 action pref=100; accept ANY;
-import:         from AS31133 action pref=100; accept ANY;
-import:         from AS34291 action pref=250; accept ANY;
-import:         from AS39775 action pref=100; accept ANY;
-import:         from AS43213 action pref=130; accept ANY;
-import:         from AS47842 action pref=150; accept AS47842;
-import:         from AS57629 action pref=100; accept AS57629
-import:         from AS50384 action pref=100; accept ANY;
-import:         from AS50952 action pref=130; accept ANY;
-import:         from AS51028 action pref=130; accept ANY;
-import:         from AS51690 action pref=150; accept AS51690;
-import:         from AS57418 action pref=150; accept AS57418;
-import:         from AS57425 accept AS57425;
-import:         from AS59712 action pref=130; accept ANY;
-import:         from AS198683 action pref=150; accept AS198683;
-import:         from AS198856 action pref=150; accept AS198856;
-import:         from AS199153 action pref=150; accept AS199153;
-import:         from AS202800 action pref=150; accept AS202800;
-import:         from AS204713 action pref=150; accept AS204713;
-import:         from AS207124 action pref=150; accept AS207124;
-import:         from AS202423 action pref=100 ; accept AS202423;
-import:         from AS207935 action pref=100 ; accept AS207935;
-import:         from AS58231 action pref=110 ; accept AS58231;
-import:         from AS49869 action pref=100 ; accept ANY;
-import:         from AS59796 action pref=100 ; accept ANY;
-export:         to AS8631 announce AS-INTERSVYAZ;
-export:         to AS57304 announce AS-INTERSVYAZ;
-export:         to AS9049 announce AS-INTERSVYAZ;
-export:         to AS57629 announce ANY;
-export:         to AS20485 announce AS-INTERSVYAZ;
-export:         to AS31133 announce AS-INTERSVYAZ;
-export:         to AS12389 announce AS-INTERSVYAZ;
-export:         to AS34291 announce ANY;
-export:         to AS39775 announce AS-INTERSVYAZ;
-export:         to AS43213 announce AS-INTERSVYAZ;
-export:         to AS47842 announce {0.0.0.0/0};
-export:         to AS50384 announce AS-INTERSVYAZ;
-export:         to AS50952 announce AS-INTERSVYAZ;
-export:         to AS51028 announce AS-INTERSVYAZ;
-export:         to AS51690 announce ANY;
-export:         to AS57418 announce ANY;
-export:         to AS57425 announce ANY;
-export:         to AS59712 announce AS-INTERSVYAZ;
-export:         to AS199153 announce {0.0.0.0/0};
-export:         to AS198683 announce ANY;
-export:         to AS198856 announce ANY;
-export:         to AS202800 announce ANY;
-export:         to AS204713 announce {0.0.0.0/0};
-export:         to AS207124 announce ANY;
-export:         to AS202423 announce {0.0.0.0/0};
-export:         to AS28917 announce AS-INTERSVYAZ;
-export:         to AS49869 announce AS-INTERSVYAZ;
-export:         to AS58231 announce AS-INTERSVYAZ;
-export:         to AS207935 announce {0.0.0.0/0};
-export:         to AS59796 announce AS-INTERSVYAZ;
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         INTERSVYAS-MNT
-created:        2002-08-21T15:26:00Z
-last-modified:  2025-04-21T20:36:06Z
-source:         RIPE
-
-
-
+2026-05-26 02:27:48 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+2026-05-26 02:27:48 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+2026-05-26 02:27:48 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted

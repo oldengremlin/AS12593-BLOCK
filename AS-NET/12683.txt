@@ -1,94 +1,67 @@
-route:          109.168.128.0/17
-descr:          IP block routed by Stavropol branch of OJSC Rostelecom
-origin:         AS12683
-mnt-by:         ROSTELECOM-MNT
-created:        2009-11-02T13:29:06Z
-last-modified:  2024-12-10T07:31:23Z
-source:         RIPE
-
-
-route:          212.96.96.0/19
-descr:          Stavropol branch of PJSC "STC"
-origin:         AS12683
-notify:         stv.monitoring@south.rt.ru
-mnt-by:         ROSTELECOM-MNT
-created:        1970-01-01T00:00:00Z
-last-modified:  2024-12-10T09:50:16Z
-source:         RIPE
-
-
-route:          46.45.192.0/18
-descr:          PJSC "Southern Telecommunications Company"
-origin:         AS12683
-mnt-by:         ROSTELECOM-MNT
-created:        2010-09-17T06:41:10Z
-last-modified:  2024-12-10T09:48:29Z
-source:         RIPE
-
-
-route:          46.63.128.0/17
-descr:          Stavropol branch of OJSC Rostelecom
-origin:         AS12683
-mnt-by:         ROSTELECOM-MNT
-created:        2010-11-03T13:10:45Z
-last-modified:  2024-12-10T09:49:19Z
-source:         RIPE
-
-
-route:          77.39.0.0/17
-descr:          IP block routed by Stavropol branch of OJSC Rostelecom
-origin:         AS12683
-notify:         ai@stv.ru
-mnt-by:         ROSTELECOM-MNT
-created:        2007-03-29T04:37:27Z
-last-modified:  2024-12-10T09:29:52Z
-source:         RIPE
-
-
-route:          82.119.128.0/19
-descr:          Multihomed AS talking to AS8342 and AS8263
-origin:         AS12683
-notify:         lnv@statel.stavropol.ru
-mnt-by:         ROSTELECOM-MNT
-created:        2004-04-14T09:09:15Z
-last-modified:  2024-12-10T09:36:48Z
-source:         RIPE
-
-
-route:          84.54.192.0/18
-descr:          IP block routed by Stavropol branch of OJSC Rostelecom
-origin:         AS12683
-notify:         ai@stv.ru
-mnt-by:         ROSTELECOM-MNT
-created:        2004-11-12T08:18:27Z
-last-modified:  2024-12-10T09:40:56Z
-source:         RIPE
-
-
-route:          85.159.32.0/21
-origin:         AS12683
-mnt-by:         ROSTELECOM-MNT
-created:        2019-03-04T10:34:36Z
-last-modified:  2019-03-04T10:34:36Z
-source:         RIPE
-
-
-route:          88.215.128.0/18
-descr:          Multihomed AS talking to AS8342 and AS20485
-origin:         AS12683
-notify:         lnv@statel.stavropol.ru
-mnt-by:         ROSTELECOM-MNT
-created:        2006-01-25T04:56:56Z
-last-modified:  2024-12-10T09:42:43Z
-source:         RIPE
-
-
-route:          94.255.0.0/17
-descr:          Stavropol branch of PJSC "STC"
-origin:         AS12683
-mnt-by:         ROSTELECOM-MNT
-created:        2008-10-21T13:11:29Z
-last-modified:  2024-12-10T09:46:43Z
-source:         RIPE
-
-
+2026-05-26 01:43:31 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
+2026-05-26 01:43:31 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
+2026-05-26 01:43:31 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted
