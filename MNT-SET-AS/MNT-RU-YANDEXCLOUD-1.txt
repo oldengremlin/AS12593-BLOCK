@@ -1,67 +1,196 @@
-2026-05-26 02:32:15 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:32:15 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:32:15 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+as-set:         AS-YACLOUD
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         mnt-ru-yandexcloud-1
+created:        2019-09-16T11:08:38Z
+last-modified:  2024-08-06T15:12:42Z
+source:         RIPE
+members:        AS200350
+members:        AS208795
+members:        AS210656
+members:        AS215013
+
+
+
+as-set:         AS-YACLOUD-INTRCNCT
+members:        AS208008
+members:        AS13879
+members:        AS200350
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         mnt-ru-yandexcloud-1
+mnt-by:         ru-yacloud-1-mnt
+created:        2020-03-12T07:27:04Z
+last-modified:  2021-07-26T16:06:14Z
+source:         RIPE
+
+
+
+as-set:         AS200350:AS-YC-CIC
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         mnt-ru-yandexcloud-1
+created:        2025-11-21T15:39:32Z
+last-modified:  2025-11-21T15:40:20Z
+source:         RIPE
+members:        AS-YACLOUD
+members:        AS-YACLOUD-INTRCNCT
+
+
+
+as-set:         AS210656:AS-YACLOUDBMS
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS210656
+mnt-by:         mnt-ru-yandexcloud-1
+created:        2024-08-06T15:38:36Z
+last-modified:  2024-08-06T15:38:36Z
+source:         RIPE
+
+
+
+as-set:         AS215013:AS-YCCDN
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         mnt-ru-yandexcloud-1
+created:        2024-05-20T21:49:11Z
+last-modified:  2024-05-20T21:49:11Z
+source:         RIPE
+members:        AS215013
+
+
+
+aut-num:        AS200350
+as-name:        YandexCloud
+org:            ORG-YL62-RIPE
+import:         from AS57304 accept ANY
+export:         to AS57304 announce AS-YACLOUD
+import:         from AS1299 accept ANY
+export:         to AS1299 announce AS-YACLOUD
+import:         from AS20764 accept ANY
+export:         to AS20764 announce AS-YACLOUD
+import:         from AS202611 accept AS202611:AS-YCTL
+export:         to AS202611 announce AS-YACLOUD
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-YACLOUD
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-YACLOUD
+import:         from AS31133 accept AS-MF-MGSM
+export:         to AS31133 announce AS-YACLOUD
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-YACLOUD
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS-YACLOUD
+import:         from AS3216 accept AS-SOVAM
+export:         to AS3216 announce AS-YACLOUD
+import:         from AS15169 accept AS-GOOGLE
+export:         to AS15169 announce AS-YACLOUD
+import:         from AS47764 accept AS-MAILRU
+export:         to AS47764 announce AS-YACLOUD
+import:         from AS57724 accept AS-DDOS-GUARD
+export:         to AS57724 announce AS-YACLOUD
+import:         from AS13335 accept AS13335:AS-CLOUDFLARE
+export:         to AS13335 announce AS-YACLOUD
+import:         from AS20940 accept AS-AKAMAI
+export:         to AS20940 announce AS-YACLOUD
+import:         from AS45102 accept AS-ALIBABA-CN-NET
+export:         to AS45102 announce AS-YACLOUD
+import:         from AS6939 accept AS6939
+export:         to AS6939 announce AS-YACLOUD
+import:         from AS16276 accept AS-OVH
+export:         to AS16276 announce AS-YACLOUD
+import:         from AS16509 accept AS16509:AS-AMAZON
+export:         to AS16509 announce AS-YACLOUD
+import:         from AS24940 accept AS-HETZNER
+export:         to AS24940 announce AS-YACLOUD
+import:         from AS62041 accept AS62041
+export:         to AS62041 announce AS-YACLOUD
+import:         from AS8636 accept AS-MAX
+export:         to AS8636 announce AS-YACLOUD
+import:         from AS50340 accept AS-SELECTEL-MSK
+export:         to AS50340 announce AS-YACLOUD
+import:         from AS12695 accept AS-DINET
+export:         to AS12695 announce AS-YACLOUD
+import:         from AS42632 accept AS-MNOGOBYTE
+export:         to AS42632 announce AS-YACLOUD
+import:         from AS43399 accept AS-TINKOFF
+export:         to AS43399 announce AS-YACLOUD
+import:         from AS44534 accept AS44534
+export:         to AS44534 announce AS-YACLOUD
+import:         from AS208795 accept ANY
+export:         to AS208795 announce AS-YACLOUD
+import:         from AS197068 accept AS197068:AS-SET
+export:         to AS197068 announce AS-YACLOUD
+import:         from AS206846 accept AS206846
+export:         to AS206846 announce AS-YACLOUD
+import:         from AS216262 accept AS216262
+export:         to AS216262 announce AS-YACLOUD
+import:         from AS9123 accept AS9123
+export:         to AS9123 announce AS-YACLOUD
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-YACLOUD
+import:         from AS29076 accept AS-CITYTELECOM
+export:         to AS29076 announce AS-YACLOUD
+import:         from AS49869 accept AS-PITER-IX-MSK
+export:         to AS49869 announce AS-YACLOUD
+import:         from AS50817 accept AS-PITER-IX-SPB
+export:         to AS50817 announce AS-YACLOUD
+import:         from AS39607 accept AS-PITER-IX-HEL
+export:         to AS39607 announce AS-YACLOUD
+import:         from AS49634 accept AS-PITER-IX-RIGA
+export:         to AS49634 announce AS-YACLOUD
+import:         from AS48193 accept AS-PITER-IX-FRA
+export:         to AS48193 announce AS-YACLOUD
+import:         from AS31500 accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-YACLOUD
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-YACLOUD
+import:         from AS56931 accept AS-EURASIAPEERING_RS
+export:         to AS56931 announce AS-YACLOUD
+import:         from AS215013 accept AS215013:AS-YCCDN
+export:         to AS215013 announce ANY
+import:         from AS210656 accept AS210656:AS-YACLOUDBMS
+export:         to AS210656 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-yandexcloud-1
+created:        2018-08-02T07:20:49Z
+last-modified:  2026-05-12T19:27:47Z
+source:         RIPE
+
+
+
+aut-num:        AS210656
+as-name:        YACLOUDBMS
+org:            ORG-YL62-RIPE
+import:         from AS200350 accept ANY
+export:         to AS200350 announce AS210656:AS-YACLOUDBMS
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-yandexcloud-1
+created:        2021-10-11T11:03:32Z
+last-modified:  2024-08-07T08:24:58Z
+source:         RIPE
+
+
+
+aut-num:        AS215013
+as-name:        YACLOUDCDN
+org:            ORG-YL62-RIPE
+import:         from AS200350 accept ANY
+export:         to AS200350 announce AS215013:AS-YCCDN
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-yandexcloud-1
+created:        2024-04-29T10:52:25Z
+last-modified:  2026-04-07T16:41:17Z
+source:         RIPE
+
+
+

@@ -1,67 +1,569 @@
-2026-05-26 02:26:22 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:26:22 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:26:22 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+as-set:         AS-DINET
+descr:          DINET downstreams
+members:        AS12695
+members:        AS201186
+members:        AS-BYTESERVICE
+members:        AS-GLOBAL-CONSULT
+members:        AS-GT
+members:        AS-IMT
+members:        AS-INTERPROEKT
+members:        AS-KDP-RUSSIA
+members:        AS-LANCRONIX
+members:        AS-LIFESTREAM
+members:        AS-LT
+members:        AS-MIRAN
+members:        AS-NETORN
+members:        AS-NIISA
+members:        AS-NTX
+members:        AS-ONLANTA
+members:        AS-PigNetwork
+members:        AS-PROSTOY
+members:        AS-PSK
+members:        AS-SET-PROCENTER
+members:        AS-SIRIUS
+members:        AS-SRVCORE
+members:        AS-SUPPORTIT
+members:        AS-THEFIRST
+members:        AS-THEFIRST
+members:        AS-TTS
+members:        AS-VOXYS
+members:        AS-ZVEZDA
+members:        AS13079
+members:        AS15850
+members:        AS15867
+members:        AS24684
+members:        AS34121
+members:        AS34192
+members:        AS42151:AS-P24-CLOUD
+members:        AS42661
+members:        AS43297
+members:        AS43297
+members:        AS43696
+members:        AS43912
+members:        AS43993
+members:        AS44555
+members:        AS44835
+members:        AS47270
+members:        AS47768
+members:        AS47839
+members:        AS48050
+members:        AS48199
+members:        AS49400
+members:        AS50619
+members:        AS50955
+members:        AS51229
+members:        AS51289
+members:        AS51410
+members:        AS56536
+members:        AS57586
+members:        AS60580
+members:        AS61249
+members:        AS62222
+members:        AS198083
+members:        AS198226
+members:        AS198354
+members:        AS199521
+members:        AS201119
+members:        AS201606
+members:        AS203747
+members:        AS204495
+members:        AS204525
+members:        AS204703
+members:        AS204980
+members:        AS205442
+members:        AS206661
+members:        AS206846
+members:        AS207209
+members:        AS207634
+members:        AS210553
+members:        AS210931
+members:        AS211399:AS-DIGITALKPD
+members:        AS211866
+members:        AS212095
+members:        AS212702
+members:        AS213787:AS-CLOUDRACK
+members:        AS214881
+members:        AS215096
+members:        AS206224
+members:        AS42151:AS-P24-CLOUD
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+created:        2002-08-06T10:31:28Z
+last-modified:  2026-04-03T07:18:09Z
+source:         RIPE
+mnt-by:         DN-MNT
+
+
+
+as-set:         AS-DINET-V6
+descr:          DINET downstreams
+members:        AS12695
+members:        AS8592
+members:        AS207209
+members:        AS12722
+members:        AS25152
+members:        AS29182
+members:        AS41323
+members:        AS44555
+members:        AS47501
+members:        AS49352
+members:        AS49352
+members:        AS56504
+members:        AS-BITERIKA
+members:        AS199386
+members:        AS205442
+members:        AS-GT
+members:        AS-MAILRU6
+members:        AS-MEGANET-2003
+members:        AS-NETORN
+members:        AS-NTX
+members:        AS205125
+members:        AS211849
+members:        AS213787
+members:        AS50619
+members:        AS42151:AS-P24-CLOUD
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         DN-MNT
+created:        2010-04-05T09:26:07Z
+last-modified:  2025-12-05T13:41:28Z
+source:         RIPE
+
+
+
+as-set:         AS-MXTEL
+descr:          MX Telecom downstreams
+members:        AS44429
+members:        AS49583
+members:        AS44020
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         DN-MNT
+mnt-by:         RIPE-DB-MNT
+created:        2009-07-30T07:29:10Z
+last-modified:  2020-02-19T09:16:07Z
+source:         RIPE
+
+
+
+as-set:         AS-NTP
+descr:          NETPLUS downstreams
+members:        AS200524
+members:        AS208503
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         DN-MNT
+created:        2019-09-16T08:18:11Z
+last-modified:  2019-09-16T08:18:11Z
+source:         RIPE
+
+
+
+as-set:         AS-SLAVIYA
+descr:          SLAVIYA
+members:        AS204217
+members:        AS200489
+members:        AS48788
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         DN-MNT
+created:        2020-01-21T14:25:23Z
+last-modified:  2020-01-21T15:56:02Z
+source:         RIPE
+
+
+
+aut-num:        AS12695
+as-name:        DINET-AS
+org:            ORG-DNJ1-RIPE
+import:         { from AS3216 action pref=200; from AS8359 action pref=200; from AS8732 action pref=200; from AS31133 action pref=200; accept ANY; }
+export:         { to AS3216 to AS8359 to AS8732 to AS31133 announce AS-DINET^+; }
+import:         { from AS12695:PRNG-MSK-IX action pref=400; accept AS12695:FLTR-PEERS-IN; }
+export:         { to AS8631 announce AS-DINET; to AS12695:PRNG-MSK-IX announce AS-DINET^+; }
+import:         { from AS12695:PRNG-PITER-IX action pref=400; accept AS12695:FLTR-PEERS-IN; }
+export:         { to AS49869 announce AS-DINET; to AS12695:PRNG-PITER-IX announce AS-DINET^+; }
+import:         from AS6777 action pref=390; accept ANY AND NOT <^[AS21414]>
+export:         to AS6777 action community .= { 6777:6777, 6777:21414, 6777:20485 }; announce AS-DINET
+mp-import:      afi ipv6.unicast from AS9002 action pref=340; accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS6939 action pref=340; accept ANY
+mp-export:      afi ipv6.unicast to AS6939 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS13030 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS13030 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS1764 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS1764 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS2857 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS2857 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS5577 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS5577 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS6724 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS6724 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS8365 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS8365 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS8763 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS8763 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS8767 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS8767 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS9063 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS9063 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS24724 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS24724 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS25279 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS25279 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS39912 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS39912 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS44654 action pref=400; accept ANY
+mp-export:      afi ipv6.unicast to AS44654 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS8631 action pref=400; accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS43690 action pref=400; accept AS-SPBROUTESERVER
+mp-export:      afi ipv6.unicast to AS43690 announce AS-DINET-V6
+mp-import:      afi ipv6.unicast from AS29182 action pref=700; accept AS29182
+mp-export:      afi ipv6.unicast to AS29182 announce ANY
+mp-import:      afi ipv6.unicast from AS34123 action pref=700; accept AS-NETORN
+mp-export:      afi ipv6.unicast to AS34123 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ncc@tech.ru
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2002-08-06T10:41:40Z
+last-modified:  2025-12-24T15:23:43Z
+source:         RIPE
+
+
+
+aut-num:        AS197468
+as-name:        NETPLUS-AS
+org:            ORG-NA386-RIPE
+import:         from AS12695 accept ANY
+import:         from AS34123 accept ANY
+export:         to AS12695 announce AS197468
+export:         to AS34123 announce AS197468
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2010-12-14T09:36:24Z
+last-modified:  2022-05-05T15:35:02Z
+source:         RIPE
+
+
+
+aut-num:        AS200524
+as-name:        NETPLUS2-AS
+org:            ORG-NA386-RIPE
+import:         from AS57639 accept ANY
+export:         to AS57639 announce AS200524
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS200524
+import:         from AS8732 accept ANY
+export:         to AS8732 announce AS200524
+import:         from AS208503 accept ANY
+export:         to AS208503 announce AS200524
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2015-06-16T09:06:24Z
+last-modified:  2022-05-05T15:35:02Z
+source:         RIPE
+
+
+
+aut-num:        AS201186
+as-name:        DINET-PROTECT-AS
+org:            ORG-DNJ1-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS201186
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2015-01-02T08:39:18Z
+last-modified:  2021-06-28T11:59:44Z
+source:         RIPE
+
+
+
+aut-num:        AS201564
+as-name:        STG
+org:            ORG-CA1490-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS201564
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS201564
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS201564
+import:         from AS31430 accept ANY
+export:         to AS31430 announce AS201564
+status:         ASSIGNED
+created:        2014-09-22T09:57:39Z
+last-modified:  2018-09-04T11:28:56Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS201974
+as-name:        CLOUD_SOLUTIONS
+org:            ORG-LLCC8-RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS201974
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS201974
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CLOUDSOLUTIONS-MNT
+mnt-by:         DN-MNT
+created:        2022-10-21T14:36:53Z
+last-modified:  2026-04-08T11:07:39Z
+source:         RIPE
+
+
+
+aut-num:        AS202432
+as-name:        AS202432
+org:            ORG-ISPO1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2018-05-17T08:29:09Z
+last-modified:  2025-09-09T21:50:43Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS203747
+as-name:        BURANTEL-AS
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS203747
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS203747
+org:            ORG-LS571-RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SMARTFONIO-MNT
+created:        2015-11-09T14:06:13Z
+last-modified:  2026-02-03T14:53:55Z
+source:         RIPE
+
+
+
+aut-num:        AS204217
+as-name:        SLAVIA-AS
+org:            ORG-LA933-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS204217
+import:         from AS8732 accept ANY
+export:         to AS8732 announce AS204217
+import:         from AS33842 accept ANY
+export:         to AS33842 announce AS204217
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2016-02-08T10:03:45Z
+last-modified:  2020-11-16T17:52:05Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS204525
+as-name:        DIGITALLAB-AS
+org:            ORG-LD101-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS204525
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS204525
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2018-02-23T08:45:34Z
+last-modified:  2020-11-16T17:52:16Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS204941
+as-name:        TGS-AS
+org:            ORG-TGS20-RIPE
+import:         from AS8641 action pref=210; accept ANY
+export:         to AS8641 announce AS-CGNET
+import:         from AS31500 action pref=180; accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-CGNET
+import:         from AS50509 action pref=140; accept ANY
+export:         to AS50509 announce AS-CGNET
+import:         from AS49869 action pref=300; accept ANY
+export:         to AS49869 announce AS-CGNET
+import:         from AS41109 accept AS41109
+export:         to AS41109 announce ANY
+import:         from AS43714 accept AS43714
+export:         to AS41109 announce ANY
+import:         from AS49371 accept AS49371
+export:         to AS49371 announce ANY
+import:         from AS59734 accept AS59734
+import:         from AS197971 accept AS197971
+import:         from AS207676 accept AS207676
+import:         from AS210063 accept AS210063
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+mnt-by:         CGNET-MNT
+created:        2017-12-04T10:57:56Z
+last-modified:  2025-05-20T13:36:26Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS208252
+as-name:        EVRAZ
+org:            ORG-ESB12-RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS208252
+import:         from as8359 accept ANY
+export:         to as8359 announce AS208252
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2026-05-21T08:50:48Z
+last-modified:  2026-05-21T08:50:48Z
+source:         RIPE
+
+
+
+aut-num:        AS210725
+as-name:        GLAVKINO-AS
+org:            ORG-GA1015-RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS210725
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS210725
+import:         from AS12739 accept ANY
+export:         to AS12739 announce AS210725
+import:         from AS39153 accept ANY
+export:         to AS39153 announce AS210725
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         GLAVKINO-MNT
+mnt-by:         DN-MNT
+created:        2021-09-23T08:16:56Z
+last-modified:  2021-09-29T13:37:57Z
+source:         RIPE
+
+
+
+aut-num:        AS214362
+as-name:        MYGAMES-MENA-FZ
+org:            ORG-MMFL2-RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS214362
+import:         from AS8985 accept ANY
+export:         to AS8985 announce AS214362
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+mnt-by:         MYGAMES-MENA-MNT
+created:        2026-05-18T07:58:54Z
+last-modified:  2026-05-18T07:58:54Z
+source:         RIPE
+
+
+
+aut-num:        AS24684
+as-name:        IPPORT-NET
+org:            ORG-IZ8-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS24684
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS24684
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS24684
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+created:        2005-07-20T11:52:06Z
+last-modified:  2026-01-19T08:45:51Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS48946
+as-name:        KOMF
+org:            ORG-INFO8-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS48946
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS48946
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS48946
+import:         from AS60347 accept ANY
+export:         to AS60347 announce AS48946
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         DN-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2009-03-04T10:54:16Z
+last-modified:  2026-02-09T11:25:46Z
+source:         RIPE
+sponsoring-org: ORG-DNJ1-RIPE
+
+
+
+aut-num:        AS57639
+as-name:        NETPLUS-AS
+org:            ORG-NA386-RIPE
+import:         from AS12695 accept ANY
+import:         from AS8732 accept ANY
+export:         to AS12695 announce AS57639
+export:         to AS8372 announce AS57639
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         DN-MNT
+mnt-by:         MNT-NTP
+created:        2011-12-22T12:37:37Z
+last-modified:  2022-05-05T15:35:02Z
+source:         RIPE
+
+
+

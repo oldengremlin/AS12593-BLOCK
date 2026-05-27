@@ -1,67 +1,216 @@
-2026-05-26 02:35:48 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:35:48 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:35:48 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+as-set:         AS-RELLINE
+descr:          Relline JSC AS-Set
+members:        AS8241
+members:        AS-SSERV-RU
+members:        AS200955
+members:        AS44199
+members:        AS44595
+members:        AS52184
+members:        AS-MBTECH
+members:        AS57482
+members:        AS59801
+members:        AS-SET-MT6-RU
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         RELLINE-MNT
+mnt-by:         ru-setii-1-mnt
+created:        2001-11-23T15:27:01Z
+last-modified:  2025-12-30T14:04:30Z
+source:         RIPE
+
+
+
+as-set:         AS-SET-MT6-RU
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+descr:          Moy Telecom LLC AS-Macro
+members:        AS209759
+members:        AS210989
+members:        AS209938
+mnt-by:         ru-mt6ru-1-mnt
+mnt-by:         ru-setii-1-mnt
+mnt-by:         lir-ru-moytelecom-1-MNT
+created:        2019-10-22T13:54:02Z
+last-modified:  2025-04-24T07:57:51Z
+source:         RIPE
+
+
+
+as-set:         AS-SSERV-RU
+descr:          SServ-RU JSC AS-Macro
+members:        AS57174
+members:        AS-RELLINE
+members:        AS8241
+members:        AS48009
+members:        AS52184
+members:        AS59801
+members:        AS209759
+members:        AS44199
+members:        AS202599
+members:        AS47333
+members:        AS-SET-MT6-RU
+members:        AS-FTELECOM
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ru-setii-1-mnt
+created:        2012-05-12T13:55:56Z
+last-modified:  2026-03-20T09:55:45Z
+source:         RIPE
+
+
+
+aut-num:        AS202599
+as-name:        OTKTEL-AS
+org:            ORG-OTK2-RIPE
+sponsoring-org: ORG-NASJ1-RIPE
+import:         from AS57174 accept ANY
+export:         to AS57174 announce AS202599
+import:         from AS8241 accept ANY
+export:         to AS8241 announce AS202599
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-setii-1-mnt
+created:        2026-01-26T13:31:57Z
+last-modified:  2026-01-26T13:31:57Z
+source:         RIPE
+
+
+
+aut-num:        AS57174
+as-name:        SETISERVISY
+org:            ORG-NASJ1-RIPE
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS25478 action pref=100; accept ANY
+import:         from AS44020 action pref=100; accept ANY
+import:         from AS35598 action pref=100; accept ANY
+import:         from AS49869 action pref=100; accept ANY
+import:         from AS8595 action pref=100; accept ANY
+import:         from AS8241 action pref=100; accept AS-RELLINE
+import:         from AS209759 action pref=100; accept AS-SET-MT6-RU
+import:         from AS39156 action pref=100; accept AS-FTELECOM
+import:         from AS52184 action pref=100; accept AS52184
+import:         from AS59801 action pref=100; accept AS59801
+import:         from AS44199 action pref=100; accept AS44199
+import:         from AS202599 action pref=100; accept AS202599
+import:         from AS473339 action pref=100; accept AS47333
+export:         to AS25478 announce AS-SSERV-RU
+export:         to AS3216 announce AS-SSERV-RU
+export:         to AS35598 announce AS-SSERV-RU
+export:         to AS44020 announce AS-SSERV-RU
+export:         to AS49869 announce AS-SSERV-RU
+export:         to AS8595 announce AS-SSERV-RU
+export:         to AS8241 announce ANY
+export:         to AS209759 announce ANY
+export:         to AS39156 announce ANY
+export:         to AS52184 announce ANY
+export:         to AS59801 announce ANY
+export:         to AS44199 announce ANY
+export:         to AS202599 announce ANY
+export:         to AS47333 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-setii-1-mnt
+created:        2011-08-12T07:47:37Z
+last-modified:  2026-03-20T09:53:33Z
+source:         RIPE
+
+
+
+aut-num:        AS57482
+as-name:        SMP-AS
+org:            ORG-PSB3-RIPE
+sponsoring-org: ORG-ES15-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         PROMSVYAZBANK-MNT
+mnt-by:         ru-setii-1-mnt
+created:        2011-11-08T10:56:15Z
+last-modified:  2025-01-30T10:20:10Z
+source:         RIPE
+abuse-c:        AR28426-RIPE
+
+
+
+aut-num:        AS58108
+as-name:        USC-AS
+org:            ORG-USCJ1-RIPE
+import:         from AS5431 action pref=100; accept ANY
+import:         from AS48719 action pref=100; accept ANY
+export:         to AS5431 announce AS58108
+export:         to AS48719 announce AS58108
+sponsoring-org: ORG-NASJ1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@relline.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-setii-1-mnt
+created:        2012-04-24T13:09:29Z
+last-modified:  2022-07-13T14:28:42Z
+source:         RIPE
+
+
+
+aut-num:        AS8241
+as-name:        RELLINE-AS
+org:            ORG-NASJ1-RIPE
+import:         from AS8631 action pref=100; accept ANY
+import:         from AS35598 action pref=100; accept ANY
+import:         from AS57174 action pref=100; accept ANY
+import:         from AS49869 action pref=100; accept ANY
+import:         from AS8595 action pref=100; accept ANY
+import:         from AS20940 action pref=100; accept AS-AKAMAI
+import:         from AS209759 action pref=100; accept AS-SET-MT6-RU
+import:         from AS200955 action pref=100; accept AS200955
+import:         from AS201327 action pref=100; accept AS201327
+import:         from AS44595 action pref=100; accept AS44595
+import:         from AS48009 action pref=100; accept AS-MBTECH
+import:         from AS52184 action pref=100; accept AS52184
+import:         from AS59801 action pref=100; accept AS59801
+import:         from AS57482 action pref=100; accept AS57482
+import:         from AS12695 action pref=100; accept AS-DINET
+import:         from AS2895 action pref=100; accept AS-FREENET
+import:         from AS3267 action pref=100; accept AS-RUNNETIX
+import:         from AS9032 action pref=100; accept AS-EDUNET
+import:         from AS44199 action pref=100; accept AS44199
+import:         from AS202599 action pref=100; accept AS202599
+import:         from AS47333 action pref=100; accept AS47333
+default:        to AS57174 action pref=100; networks ANY
+export:         to AS200955 announce ANY
+export:         to AS201327 announce ANY
+export:         to AS209759 announce ANY
+export:         to AS44595 announce ANY
+export:         to AS48009 announce ANY
+export:         to AS52184 announce ANY
+export:         to AS57482 announce ANY
+export:         to AS59801 announce ANY
+export:         to AS44199 announce ANY
+export:         to AS202599 announce ANY
+export:         to AS47333  announce ANY
+export:         to AS12695 announce AS-RELLINE
+export:         to AS20940 announce AS-RELLINE
+export:         to AS2895 announce AS-RELLINE
+export:         to AS3267 announce AS-RELLINE
+export:         to AS35598 announce AS-RELLINE
+export:         to AS57174 announce AS-RELLINE
+export:         to AS9032 announce AS-RELLINE
+export:         to AS8631 announce AS-RELLINE
+export:         to AS49869 announce AS-RELLINE
+export:         to AS8595 announce AS-RELLINE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ru-setii-1-mnt
+created:        1970-01-01T00:00:00Z
+last-modified:  2026-03-20T10:00:55Z
+source:         RIPE
+
+
+

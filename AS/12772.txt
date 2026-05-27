@@ -1,67 +1,307 @@
-2026-05-26 01:01:49 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:01:49 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:01:49 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS12772
+as-name:        ENFORTA-AS
+descr:          Enforta Autonomous System
+descr:          Moscow, Russia
+descr:          == Uplinks ==
+import:         from AS9049 action pref=100; accept ANY
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS51501 action pref=100; accept ANY
+import:         from AS20730 action pref=100; accept ANY
+import:         from AS21127 action pref=100; accept ANY
+import:         from AS8691 action pref=100; accept ANY
+import:         from AS58067 action pref=100; accept ANY
+import:         from AS34467 action pref=100; accept ANY
+import:         from AS28745 action pref=100; accept ANY
+import:         from AS35641 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+import:         from AS56702 action pref=100; accept ANY
+import:         from AS12332 action pref=100; accept ANY
+import:         from AS16343 action pref=100; accept ANY
+import:         from AS25008 action pref=100; accept ANY
+import:         from AS44987 action pref=100; accept ANY
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS2854 action pref=100; accept ANY
+import:         from AS47218 action pref=100; accept ANY
+import:         from AS8744 action pref=100; accept ANY
+import:         from AS13118 action pref=100; accept ANY
+import:         from AS35645 action pref=100; accept ANY
+import:         from AS24923 action pref=100; accept ANY
+import:         from AS56341 action pref=100; accept ANY
+import:         from AS25221 action pref=100; accept ANY
+import:         from AS43975 action pref=100; accept ANY
+import:         from AS31195 action pref=100; accept ANY
+import:         from AS39811 action pref=100; accept ANY
+import:         from AS13257 action pref=100; accept ANY
+import:         from AS44257 action pref=100; accept ANY
+import:         from AS25490 action pref=100; accept ANY
+import:         from AS47438 action pref=100; accept ANY
+import:         from AS24810 action pref=100; accept ANY
+import:         from AS8359 action pref=100; accept ANY
+import:         from AS9002 action pref=100; accept ANY
+import:         from AS21332 action pref=100; accept ANY
+import:         from AS16094 action pref=100; accept ANY
+import:         from AS201620 action pref=100; accept AS201620
+import:         from AS48118 action pref=100; accept AS48118
+import:         from AS35162 action pref=100; accept AS35162
+import:         from AS59672 action pref=100; accept AS59672
+import:         from AS52054 action pref=100; accept AS52054
+import:         from AS56341 action pref=100; accept AS56341
+import:         from AS16343 action pref=100; accept AS16343
+import:         from AS48197 action pref=100; accept AS48197
+import:         from AS58008 action pref=100; accept AS58008
+import:         from AS58027 action pref=100; accept AS58027
+import:         from AS203514 action pref=100; accept AS203514
+import:         { from AS42149 action pref=100; accept AS42149; from AS42582 action pref=100; accept AS42582; }
+import:         from AS13094 action pref=100; accept AS-MILECOM-RS
+import:         from AS42403 accept AS-NSKROUTESERVER
+export:         to AS9049 announce AS-ENFORTA
+export:         to AS12389 announce AS-ENFORTA
+export:         to AS3216 announce AS-ENFORTA
+export:         to AS51501 announce AS-ENFORTA
+export:         to AS20730 announce AS12772
+export:         to AS21127 announce AS-ENFORTA
+export:         to AS8691 announce AS-ENFORTA
+export:         to AS34467 announce AS-ENFORTA
+export:         to AS20485 announce AS-ENFORTA
+export:         to AS56702 announce AS-ENFORTA
+export:         to AS8342 announce AS-ENFORTA
+export:         { to AS21127 announce AS42149; to AS21127 announce AS42582; }
+export:         { to AS20485 announce AS42149; to AS20485 announce AS42582; }
+export:         { to AS42149 announce ANY; to AS42582 announce ANY; }
+export:         to AS28745 announce AS-ENFORTA
+export:         to AS58067 announce AS-ENFORTA
+export:         to AS28745 announce AS42149
+export:         to AS35641 announce AS-ENFORTA
+export:         to AS12332 announce AS-ENFORTA
+export:         to AS42403 announce AS12772
+export:         to AS16343 announce AS12772
+export:         to AS25008 announce AS12772
+export:         to AS44987 announce AS12772
+export:         to AS31133 announce AS-ENFORTA
+export:         to AS2854 announce AS12772
+export:         to AS47218 announce AS12772
+export:         to AS13118 announce AS12772
+export:         to AS8744 announce AS-ENFORTA
+export:         to AS35645 announce AS-ENFORTA
+export:         to AS24923 announce AS12772
+export:         to AS15468 announce AS-ENFORTA
+export:         to AS56341 announce AS-ENFORTA
+export:         to AS43975 announce AS-ENFORTA
+export:         to AS31195 announce AS-ENFORTA
+export:         to AS39811 announce AS-ENFORTA
+export:         to AS13257 announce AS12772
+export:         to AS13094 announce AS-ENFORTA
+export:         to AS44257 announce AS-ENFORTA
+export:         to AS25490 announce AS-ENFORTA
+export:         to AS47438 announce AS-ENFORTA
+export:         to AS24810 announce AS-ENFORTA
+export:         to AS8359 announce AS-ENFORTA
+export:         to AS9002 announce AS-ENFORTA
+export:         to AS21332 announce AS-ENFORTA
+export:         to AS59672 announce ANY
+export:         to AS35162 announce ANY
+export:         to AS201620 announce ANY
+export:         to AS203514 announce ANY
+export:         to AS16343 announce ANY
+export:         to AS48197 announce ANY
+export:         to AS25221 announce ANY
+export:         to AS58008 announce ANY
+export:         to AS58027 announce ANY
+export:         to AS52054 announce ANY
+descr:          # Clients
+import:         from AS61206 action pref=100; accept AS61206
+export:         to AS61206 announce ANY
+export:         to AS16094 announce ANY
+export:         to AS50928 announce AS-ENFORTA
+import:         from AS50928 action pref=100; accept ANY
+export:         to AS8443 announce AS-ENFORTA
+import:         from AS8443 action pref=100; accept ANY
+import:         from AS62287 action pref=100; accept AS62287
+export:         to AS62287 announce ANY
+export:         to AS48118 announce ANY
+import:         from AS51034 action pref=100; accept ANY
+export:         to AS51034 announce AS12772
+org:            ORG-RA21-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RAID-MNT
+created:        2005-07-07T09:53:40Z
+last-modified:  2026-04-17T04:11:00Z
+source:         RIPE
+
+as-num:         AS12772
+country:        RU
+as-name:        ENFORTA-AS JSC "ER-Telecom Holding"
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+as-num:         AS12772
+country:        RU
+as-name:        null
+
+organisation:   ORG-RA21-RIPE
+org-name:       JSC "ER-Telecom Holding"
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-RA21-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        RAID1-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        RAID-MNT
+mnt-ref:        ENFORTA-MNT
+mnt-ref:        AS8345-MNT
+mnt-ref:        RU-NTK-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         RAID-MNT
+created:        2004-04-17T11:56:55Z
+last-modified:  2026-05-13T07:07:54Z
+source:         RIPE
+
+

@@ -1,67 +1,239 @@
-2026-05-26 01:12:06 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:12:06 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:12:06 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS44158
+as-name:        ALTURA-AS
+org:            ORG-DL87-RIPE
+import:         from AS50384 accept ANY
+export:         to AS50384 announce AS-ALTURA
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-ALTURA
+import:         from AS8744 accept ANY
+export:         to AS8744 announce AS-ALTURA
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-ALTURA
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-ALTURA
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS-ALTURA
+import:         from AS39792 accept ANY
+export:         to AS39792 announce AS-ALTURA
+import:         from AS43727 accept ANY
+export:         to AS43727 announce AS-ALTURA
+import:         from AS60299 accept ANY
+export:         to AS60299 announce AS-ALTURA
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-ALTURA
+import:         from AS34703 accept AS34703
+export:         to AS34703 announce ANY
+import:         from AS48607 accept AS48607
+export:         to AS48607 announce ANY
+import:         from AS61971 accept AS61971
+export:         to AS61971 announce ANY
+import:         from AS42955 accept AS42955
+export:         to AS42955 announce ANY
+import:         from AS47789 accept AS47789
+export:         to AS47789 announce ANY
+import:         from AS48143 accept AS48143
+export:         to AS48143 announce ANY
+import:         from AS39256 accept AS-FANNET
+export:         to AS39256 announce ANY
+import:         from AS50647 accept as-50647-net
+export:         to AS50647 announce ANY
+import:         from AS60377 accept AS60377
+export:         to AS60377 announce ANY
+import:         from AS203794 accept AS203794
+export:         to AS203794 announce ANY
+import:         from AS29190 accept AS-OVERTA
+export:         to AS29190 announce AS-ALTURA
+import:         from AS15974 accept AS-UIX
+export:         to AS15974 announce AS-ALTURA
+import:         from AS39229 accept AS-SARATOV-VT
+export:         to AS39229 announce AS-ALTURA
+import:         from AS12772 accept AS12772
+export:         to AS12772 announce AS-ALTURA
+import:         from AS50543 accept AS-SARATOV
+export:         to AS50543 announce AS-ALTURA
+import:         from AS44552 accept AS-SCTS
+export:         to AS44552 announce AS-ALTURA
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS-ALTURA
+import:         from AS30936 accept AS-RENET
+export:         to AS30936 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         hostmaster@altura.ru
+mnt-by:         MNT-DSA
+created:        2007-11-27T12:38:07Z
+last-modified:  2023-12-21T19:22:29Z
+source:         RIPE
+
+as-num:         AS44158
+country:        RU
+as-name:        ALTURA-AS "Altura" ltd.
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+as-num:         AS44158
+country:        RU
+as-name:        null
+
+organisation:   ORG-DL87-RIPE
+org-name:       "Altura" ltd.
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-DL87-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        AR16549-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-DSA
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-DSA
+created:        2009-05-27T09:16:52Z
+last-modified:  2026-05-13T07:24:09Z
+source:         RIPE
+
+

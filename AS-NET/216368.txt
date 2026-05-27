@@ -1,67 +1,183 @@
-2026-05-26 02:24:19 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 02:24:19 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 02:24:19 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          146.185.244.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:39Z
+last-modified:  2025-10-01T11:47:39Z
+source:         RIPE
+
+
+route:          146.185.245.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:39Z
+last-modified:  2025-10-01T11:47:39Z
+source:         RIPE
+
+
+route6:         2001:67c:a40::/48
+origin:         AS216368
+mnt-by:         MNT-PINSUPPORT
+created:        2025-09-24T06:46:02Z
+last-modified:  2025-09-24T06:46:02Z
+source:         RIPE
+
+
+route6:         2a0f:3180::/29
+origin:         AS216368
+mnt-by:         PITER-IX-MNT
+mnt-by:         MNT-PIN
+created:        2025-09-24T16:03:19Z
+last-modified:  2025-09-24T16:03:19Z
+source:         RIPE
+
+
+route:          5.101.44.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:38Z
+last-modified:  2025-10-01T11:47:38Z
+source:         RIPE
+
+
+route:          5.101.45.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:38Z
+last-modified:  2025-10-01T11:47:38Z
+source:         RIPE
+
+
+route:          5.101.46.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:38Z
+last-modified:  2025-10-01T11:47:38Z
+source:         RIPE
+
+
+route:          5.188.62.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:38Z
+last-modified:  2025-10-01T11:47:38Z
+source:         RIPE
+
+
+route:          5.188.68.0/23
+descr:          PINVDS
+origin:         AS216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-09-24T06:42:11Z
+last-modified:  2025-09-24T06:42:11Z
+source:         RIPE
+
+
+route:          5.188.68.0/24
+descr:          PINVDS
+origin:         AS216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-09-24T06:42:10Z
+last-modified:  2025-09-24T06:42:10Z
+source:         RIPE
+
+
+route:          5.188.69.0/24
+descr:          PINVDS
+origin:         AS216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-09-24T06:42:11Z
+last-modified:  2025-09-24T06:42:11Z
+source:         RIPE
+
+
+route:          5.188.88.0/22
+descr:          PINVDS
+origin:         AS216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-09-24T06:42:10Z
+last-modified:  2025-09-24T06:42:10Z
+source:         RIPE
+
+
+route:          5.8.4.0/22
+origin:         AS216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-07T05:23:09Z
+last-modified:  2025-10-07T05:23:09Z
+source:         RIPE
+
+
+route:          5.8.88.0/22
+origin:         AS216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-07T05:19:13Z
+last-modified:  2025-10-07T05:19:13Z
+source:         RIPE
+
+
+route:          91.243.40.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:38Z
+last-modified:  2025-10-01T11:47:38Z
+source:         RIPE
+
+
+route:          91.243.41.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:39Z
+last-modified:  2025-10-01T11:47:39Z
+source:         RIPE
+
+
+route:          91.243.42.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:39Z
+last-modified:  2025-10-01T11:47:39Z
+source:         RIPE
+
+
+route:          91.243.43.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:39Z
+last-modified:  2025-10-01T11:47:39Z
+source:         RIPE
+
+
+route:          91.243.62.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:39Z
+last-modified:  2025-10-01T11:47:39Z
+source:         RIPE
+
+
+route:          91.243.63.0/24
+origin:         as216368
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-01T11:47:39Z
+last-modified:  2025-10-01T11:47:39Z
+source:         RIPE
+
+

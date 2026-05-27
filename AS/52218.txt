@@ -1,67 +1,215 @@
-2026-05-26 01:20:59 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:20:59 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:20:59 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS52218
+as-name:        CHYUS-NET-AS
+org:            ORG-PCYS1-RIPE
+import:         from AS43222 action pref=50; accept ANY
+export:         to AS43222 announce AS-CHYUS-NET
+import:         from AS28761 action pref=90; accept ANY
+export:         to AS28761 announce AS-CHYUS-NET
+import:         from AS8359 action pref=100; accept ANY
+export:         to AS8359 announce AS-CHYUS-NET
+import:         from AS9002 action pref=100; accept ANY
+export:         to AS9002 announce AS-CHYUS-NET
+import:         from AS21219 action pref=100; accept ANY
+export:         to AS21219 announce AS-CHYUS-NET
+import:         from AS174 action pref=110; accept ANY
+export:         to AS174 announce AS-CHYUS-NET
+import:         from AS13249 action pref=100; accept ANY
+export:         to AS13249 announce AS-CHYUS-NET
+import:         from AS29632 action pref=150; accept ANY
+export:         to AS29632 announce AS-CHYUS-NET
+import:         from AS48533 action pref=130; accept ANY
+export:         to AS48533 announce AS-CHYUS-NET
+import:         from AS42896 action pref=130; accept ANY
+export:         to AS42896 announce AS-CHYUS-NET
+import:         from AS50949 action pref=120; accept ANY
+export:         to AS50949 announce AS-CHYUS-NET
+import:         from AS42896 action pref=120; accept ANY
+export:         to AS42896 announce AS-CHYUS-NET
+import:         from AS21011 action pref=100; accept ANY
+export:         to AS21011 announce AS-CHYUS-NET
+import:         from AS48004 action pref=100; accept ANY
+export:         to AS48004 announce AS-CHYUS-NET
+import:         from AS50949 action pref=100; accept AS-AGRONET
+export:         to AS50949 announce ANY
+import:         from AS51917 action pref=100; accept AS-ICENET-UA
+export:         to AS51917 announce ANY
+import:         from AS42896 action pref=100; accept AS-ACSGROUP
+export:         to AS42896 announce ANY
+sponsoring-org: ORG-NAA17-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-CYS
+created:        2011-01-27T15:52:27Z
+last-modified:  2025-06-16T08:46:17Z
+source:         RIPE
+
+as-num:         AS52218
+country:        RU
+as-name:        CHYUS-NET-AS Cherkasov Yuriy Sergiyovuch
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+as-num:         AS52218
+country:        RU
+as-name:        null
+
+organisation:   ORG-PCYS1-RIPE
+org-name:       Cherkasov Yuriy Sergiyovuch
+country:        RU
+org-type:       OTHER
+address:        Dummy address for ORG-PCYS1-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        AR29041-RIPE
+mnt-ref:        MNT-CYS
+mnt-by:         MNT-CYS
+created:        2011-01-21T18:20:21Z
+last-modified:  2026-05-13T06:09:33Z
+source:         RIPE
+
+

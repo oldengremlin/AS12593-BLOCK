@@ -1,67 +1,494 @@
-2026-05-26 01:43:59 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 01:43:59 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 01:43:59 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          109.225.0.0/18
+descr:          RU-KLGELECS-20081021 Block
+descr:          JSC CenterTelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+mnt-lower:      KLGELECS-MNT
+created:        2010-01-18T13:07:46Z
+last-modified:  2024-12-23T06:13:10Z
+source:         RIPE
+
+
+route:          109.225.0.0/19
+descr:          RU-KLGELECS-20100118-1
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-06-23T04:47:18Z
+last-modified:  2024-12-23T06:13:24Z
+source:         RIPE
+
+
+route:          109.225.0.0/20
+descr:          RU-KLGELECS-20100118-1
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:55:14Z
+last-modified:  2024-12-23T06:13:38Z
+source:         RIPE
+
+
+route:          109.225.16.0/20
+descr:          RU-KLGELECS-20100118-2
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:56:24Z
+last-modified:  2024-12-23T06:13:54Z
+source:         RIPE
+
+
+route:          109.225.32.0/19
+descr:          RU-KLGELECS-20100118-2
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-06-23T04:47:59Z
+last-modified:  2024-12-23T06:14:11Z
+source:         RIPE
+
+
+route:          109.225.32.0/20
+descr:          RU-KLGELECS-20100118-3
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:58:56Z
+last-modified:  2024-12-23T06:14:24Z
+source:         RIPE
+
+
+route:          109.225.48.0/20
+descr:          RU-KLGELECS-20100118-4
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:59:17Z
+last-modified:  2024-12-23T06:14:39Z
+source:         RIPE
+
+
+route:          212.106.32.0/19
+descr:          RU-KLGELECS-20080523 Block
+descr:          JSC CenterTelecom Kaluga branch
+origin:         AS15468
+notify:         noc@kaluga.ru
+mnt-by:         ROSTELECOM-MNT
+created:        2008-05-23T10:37:48Z
+last-modified:  2024-12-23T06:15:16Z
+source:         RIPE
+
+
+route:          212.106.32.0/20
+descr:          RU-CTC-20080523-1
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-06-22T11:13:58Z
+last-modified:  2024-12-23T06:15:30Z
+source:         RIPE
+
+
+route:          212.106.32.0/21
+descr:          RU-CTC-20080523-1
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:47:16Z
+last-modified:  2024-12-23T06:15:42Z
+source:         RIPE
+
+
+route:          212.106.40.0/21
+descr:          RU-CTC-20080523-2
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:47:51Z
+last-modified:  2024-12-23T06:15:56Z
+source:         RIPE
+
+
+route:          212.106.48.0/20
+descr:          RU-CTC-20080523-2
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-06-22T11:15:34Z
+last-modified:  2024-12-23T06:16:16Z
+source:         RIPE
+
+
+route:          212.106.48.0/21
+descr:          RU-CTC-20080523-3
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-routes:     ROSTELECOM-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:48:32Z
+last-modified:  2024-12-23T06:16:30Z
+source:         RIPE
+
+
+route:          212.106.56.0/21
+descr:          RU-CTC-20080523-4
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-routes:     ROSTELECOM-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:49:00Z
+last-modified:  2024-12-23T06:16:44Z
+source:         RIPE
+
+
+route:          31.172.192.0/19
+descr:          RU-CTC-20110405
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-05-03T04:19:55Z
+last-modified:  2024-12-23T05:48:30Z
+source:         RIPE
+
+
+route:          31.172.192.0/20
+descr:          RU-CTC-20110405-1
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-06-23T04:56:27Z
+last-modified:  2024-12-23T05:48:46Z
+source:         RIPE
+
+
+route:          31.172.192.0/21
+descr:          RU-CTC-20110405-1
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T07:00:34Z
+last-modified:  2024-12-23T05:49:03Z
+source:         RIPE
+
+
+route:          31.172.200.0/21
+descr:          RU-CTC-20110405-2
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T07:01:04Z
+last-modified:  2024-12-23T05:49:18Z
+source:         RIPE
+
+
+route:          31.172.208.0/20
+descr:          RU-CTC-20110405-2
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-06-23T04:56:52Z
+last-modified:  2024-12-23T05:49:37Z
+source:         RIPE
+
+
+route:          31.172.208.0/21
+descr:          RU-CTC-20110405-3
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T07:01:35Z
+last-modified:  2024-12-23T05:49:52Z
+source:         RIPE
+
+
+route:          31.172.216.0/21
+descr:          RU-CTC-20110405-4
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T07:02:43Z
+last-modified:  2024-12-23T05:50:08Z
+source:         RIPE
+
+
+route:          5.143.176.0/20
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2013-03-18T09:31:48Z
+last-modified:  2024-12-23T05:47:33Z
+source:         RIPE
+
+
+route:          5.143.176.0/21
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2013-11-06T06:32:11Z
+last-modified:  2024-12-23T05:47:53Z
+source:         RIPE
+
+
+route:          5.143.184.0/21
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2013-11-06T06:32:26Z
+last-modified:  2024-12-23T05:48:09Z
+source:         RIPE
+
+
+route:          62.148.128.0/19
+descr:          RU-KLGELECS Block
+descr:          JSC CenterTelecom Kaluga branch
+origin:         AS15468
+notify:         noc@kaluga.ru
+mnt-by:         ROSTELECOM-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2024-12-23T05:50:26Z
+source:         RIPE
+
+
+route:          62.148.128.0/20
+descr:          RU-KLGELECS Block 1
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-06-23T04:30:39Z
+last-modified:  2024-12-23T05:50:43Z
+source:         RIPE
+
+
+route:          62.148.144.0/20
+descr:          RU-KLGELECS Block 2
+mnt-routes:     ROSTELECOM-MNT
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-06-23T04:31:05Z
+last-modified:  2024-12-23T05:50:58Z
+source:         RIPE
+
+
+route:          94.242.128.0/18
+descr:          RU-KLGELECS-20081021 Block
+descr:          JSC CenterTelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+mnt-lower:      KLGELECS-MNT
+created:        2008-10-22T06:26:48Z
+last-modified:  2024-12-23T05:51:18Z
+source:         RIPE
+
+
+route:          94.242.128.0/19
+descr:          RU-KLGELECS-20081021 Block 1
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-06-23T04:40:30Z
+last-modified:  2024-12-23T05:51:34Z
+source:         RIPE
+
+
+route:          94.242.128.0/20
+descr:          RU-KLGELECS-20081021 Block 1
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:51:37Z
+last-modified:  2024-12-23T05:51:53Z
+source:         RIPE
+
+
+route:          94.242.144.0/20
+descr:          RU-KLGELECS-20081021 Block 2
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:52:08Z
+last-modified:  2024-12-23T06:04:10Z
+source:         RIPE
+
+
+route:          94.242.144.0/24
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2024-12-23T06:05:28Z
+last-modified:  2024-12-23T06:05:28Z
+source:         RIPE
+
+
+route:          94.242.145.0/24
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2024-12-23T06:06:37Z
+last-modified:  2024-12-23T06:06:37Z
+source:         RIPE
+
+
+route:          94.242.146.0/24
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2024-12-23T06:07:19Z
+last-modified:  2024-12-23T06:07:19Z
+source:         RIPE
+
+
+route:          94.242.147.0/24
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2024-12-23T06:08:35Z
+last-modified:  2024-12-23T06:08:35Z
+source:         RIPE
+
+
+route:          94.242.148.0/24
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2024-12-23T06:09:17Z
+last-modified:  2024-12-23T06:09:17Z
+source:         RIPE
+
+
+route:          94.242.149.0/24
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2024-12-23T06:09:58Z
+last-modified:  2024-12-23T06:09:58Z
+source:         RIPE
+
+
+route:          94.242.150.0/24
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2024-12-23T06:10:32Z
+last-modified:  2024-12-23T06:10:32Z
+source:         RIPE
+
+
+route:          94.242.160.0/19
+descr:          RU-KLGELECS-20081021 Block 1
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2011-06-23T04:40:50Z
+last-modified:  2024-12-23T06:10:53Z
+source:         RIPE
+
+
+route:          94.242.160.0/20
+descr:          RU-KLGELECS-20081021 Block 3
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:53:00Z
+last-modified:  2024-12-23T06:11:06Z
+source:         RIPE
+
+
+route:          94.242.176.0/20
+descr:          RU-KLGELECS-20081021 Block 4
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-09-25T06:54:07Z
+last-modified:  2024-12-23T06:11:20Z
+source:         RIPE
+
+
+route:          95.107.112.0/20
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2013-01-23T01:40:00Z
+last-modified:  2024-12-23T06:12:21Z
+source:         RIPE
+
+
+route:          95.107.112.0/21
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2013-11-06T06:37:03Z
+last-modified:  2024-12-23T06:12:37Z
+source:         RIPE
+
+
+route:          95.107.120.0/21
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2013-11-06T06:37:31Z
+last-modified:  2024-12-23T06:12:51Z
+source:         RIPE
+
+
+route:          95.107.16.0/20
+descr:          JSC Rostelecomelecom Kaluga branch
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2012-12-14T13:35:55Z
+last-modified:  2024-12-23T06:11:38Z
+source:         RIPE
+
+
+route:          95.107.16.0/21
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2013-11-06T06:34:01Z
+last-modified:  2024-12-23T06:11:52Z
+source:         RIPE
+
+
+route:          95.107.24.0/21
+descr:          JSC Rostelecomelecom Kaluga branch
+mnt-lower:      ROSTELECOM-MNT
+mnt-routes:     ROSTELECOM-MNT
+origin:         AS15468
+mnt-by:         ROSTELECOM-MNT
+created:        2013-11-06T06:34:21Z
+last-modified:  2024-12-23T06:12:07Z
+source:         RIPE
+
+

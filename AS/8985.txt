@@ -1,67 +1,297 @@
-2026-05-26 01:01:24 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:01:24 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:01:24 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS8985
+as-name:        MSK-IX_Services
+org:            ORG-JCE1-RIPE
+import:         from AS3316 action pref=100; accept ANY
+export:         to AS3316 announce AS8985
+import:         from AS42385 action pref=100; accept ANY
+export:         to AS42385 announce AS8985
+import:         from AS45029 action pref=100; accept ANY
+export:         to AS45029 announce AS8985
+import:         from AS9002 action pref=60; accept ANY
+export:         to AS9002 announce AS-MSK-IX-SERVICES
+import:         from AS8359 action pref=60; accept ANY
+export:         to AS8359 announce AS-MSK-IX-SERVICES
+import:         from AS20485 action pref=60; accept ANY
+export:         to AS20485 announce AS-MSK-IX-SERVICES
+import:         from AS202984 action pref=60; accept ANY
+export:         to AS202984 announce AS-MSK-IX-SERVICES
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-MSK-IX-SERVICES
+import:         from AS43690 action pref=100; accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-MSK-IX-SERVICES
+import:         from AS43213 action pref=100; accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS-MSK-IX-SERVICES
+import:         from AS42403 action pref=100; accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-MSK-IX-SERVICES
+import:         from AS48216 action pref=100; accept AS-RNDROUTESERVER
+export:         to AS48216 announce AS-MSK-IX-SERVICES
+import:         from AS50706 action pref=100; accept AS-KZNROUTESERVER
+export:         to AS50706 announce AS-MSK-IX-SERVICES
+import:         from AS5568 action pref=130; accept AS-RBNET
+export:         to AS5568 announce ANY
+import:         from AS43832 action pref=130; accept AS-NS5_RIPN_NET
+export:         to AS43832 announce ANY
+import:         from AS42385 action pref=130; accept AS-NS9_RIPN_NET
+export:         to AS42385 announce ANY
+import:         from AS204582 action pref=130; accept AS204582
+export:         to AS204582 announce ANY
+import:         from AS30124 action pref=130; accept AS30124
+export:         to AS30124 announce ANY
+import:         from AS59718 action pref=130; accept AS59718
+export:         to AS59718 announce ANY
+import:         from AS24406 action pref=130; accept AS24406
+export:         to AS24406 announce ANY
+import:         from AS207561 action pref=130; accept AS207561
+export:         to AS207561 announce ANY
+import:         from AS5473 action pref=130; accept AS5473
+export:         to AS5473 announce ANY
+import:         from AS57182 action pref=130; accept AS57182
+export:         to AS57182 announce ANY
+import:         from AS21416 action pref=130; accept AS21416
+export:         to AS21416 announce ANY
+import:         from AS62169 action pref=130; accept AS-SMARTENGINEERING
+export:         to AS62169 announce ANY
+import:         from AS200362 action pref=130; accept AS200362
+export:         to AS200362 announce ANY
+import:         from AS61043 action pref=130; accept AS61043
+export:         to AS61043 announce ANY
+import:         from AS43226 action pref=130; accept AS-SAFEDATA
+export:         to AS43226 announce ANY
+import:         from AS50157 action pref=130; accept AS50157
+export:         to AS50157 announce ANY
+import:         from AS15835 action pref=130; accept AS-MAP
+export:         to AS15835 announce ANY
+import:         from AS3316 action pref=130; accept AS-RELARN
+export:         to AS3316 announce ANY
+import:         from AS56564 action pref=130; accept AS56564
+export:         to AS56564 announce ANY
+import:         from AS201052 action pref=130; accept AS201052
+export:         to AS201052 announce ANY
+import:         from AS25371 action pref=130; accept AS25371 AS9056
+export:         to AS25371 announce ANY
+import:         from AS57931 action pref=130; accept AS57931
+export:         to AS57931 announce ANY
+import:         from AS62261 action pref=130; accept AS62261
+export:         to AS62261 announce ANY
+import:         from AS205401 action pref=130; accept AS205401
+export:         to AS205401 announce ANY
+import:         from AS51833 action pref=130; accept AS51833
+export:         to AS51833 announce ANY
+import:         from AS48389 action pref=130; accept AS48389
+export:         to AS48389 announce ANY
+import:         from AS62135 action pref=130; accept AS62135
+export:         to AS62135 announce ANY
+import:         from AS8291 action pref=130; accept AS8291
+export:         to AS8291 announce ANY
+import:         from AS207133 action pref=130; accept AS-RUCOMTECH
+export:         to AS207133 announce ANY
+import:         from AS211311 action pref=130; accept AS211311
+export:         to AS211311 announce ANY
+import:         from AS212936 action pref=130; accept AS212936
+export:         to AS212936 announce ANY
+import:         from AS49063 action pref=130; accept AS49063
+export:         to AS49063 announce ANY
+import:         from AS45046 action pref=130; accept AS45046
+export:         to AS45046 announce ANY
+import:         from AS199009 action pref=130; accept AS199009
+export:         to AS199009 announce ANY
+import:         from AS61992 action pref=130; accept AS61992:AS-UCI
+export:         to AS61992 announce ANY
+import:         from AS44554 action pref=130; accept AS44554
+export:         to AS44554 announce ANY
+import:         from AS61280 action pref=130; accept AS61280
+export:         to AS61280 announce ANY
+import:         from AS39688 action pref=130; accept AS39688
+export:         to AS39688 announce ANY
+import:         from AS196695 action pref=130; accept AS-NETONERUS
+export:         to AS196695 announce ANY
+import:         from AS197695 action pref=130; accept AS-REGRU
+export:         to AS197695 announce ANY
+import:         from AS207207 action pref=130; accept AS207207
+export:         to AS207207 announce ANY
+import:         from AS214612 action pref=130; accept AS214612
+export:         to AS214612 announce ANY
+import:         from AS50687 action pref=130; accept AS50687
+export:         to AS50687 announce ANY
+import:         from AS41601 action pref=130; accept AS41601
+export:         to AS41601 announce ANY
+notify:         msk-ix-noc@ripn.net
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS3316-MNT
+mnt-by:         RUIX-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2026-03-19T07:49:00Z
+source:         RIPE
+
+as-num:         AS8985
+country:        RU
+as-name:        MSK-IX_Services Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+as-num:         AS8985
+country:        RU
+as-name:        null
+
+organisation:   ORG-JCE1-RIPE
+org-name:       Join-stock company "Internet Exchange"MSK-IX"
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-JCE1-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        AR49378-RIPE
+mnt-ref:        RUIX-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         RUIX-MNT
+created:        2018-11-16T14:06:09Z
+last-modified:  2026-05-13T07:11:35Z
+source:         RIPE
+
+

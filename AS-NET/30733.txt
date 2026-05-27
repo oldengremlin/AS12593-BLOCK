@@ -1,67 +1,205 @@
-2026-05-26 01:46:22 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 01:46:22 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 01:46:22 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          178.255.232.0/23
+descr:          GLOBUS-ROUTE-MSK
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2019-02-14T07:59:26Z
+last-modified:  2019-02-14T07:59:26Z
+source:         RIPE
+
+
+route:          178.255.232.0/24
+descr:          GLOBUS-ROUTE-MSK-Interconnect
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2013-07-18T09:21:49Z
+last-modified:  2013-07-18T09:21:49Z
+source:         RIPE
+
+
+route:          178.255.236.0/22
+descr:          GLOBUS-ROUTE
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2019-02-14T08:00:02Z
+last-modified:  2019-02-14T08:00:02Z
+source:         RIPE
+
+
+route:          178.255.236.0/24
+descr:          GLOBUS-ROUTE-MSK
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2018-01-24T10:26:25Z
+last-modified:  2018-01-24T10:26:25Z
+source:         RIPE
+
+
+route:          178.255.238.0/23
+descr:          GLOBUS-ROUTE-MSK-Link
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2013-07-18T09:28:46Z
+last-modified:  2013-07-18T09:28:46Z
+source:         RIPE
+
+
+route:          178.255.239.0/24
+descr:          GLOBUS-ROUTE-MSK
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2019-02-27T07:28:20Z
+last-modified:  2019-02-27T07:28:20Z
+source:         RIPE
+
+
+route:          185.15.96.0/22
+descr:          GLOBUS-ROUTE-22
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2013-01-15T11:29:59Z
+last-modified:  2013-03-18T13:11:53Z
+source:         RIPE
+
+
+route:          185.15.97.0/24
+descr:          GLOBUS-ROUTE-24
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2016-02-18T12:18:29Z
+last-modified:  2016-02-18T12:18:29Z
+source:         RIPE
+
+
+route:          194.146.113.0/24
+descr:          VECTOR INFO,  OOO
+origin:         AS30733
+notify:         noc@globus-telecom.com
+mnt-by:         GLOBUS-MNT
+created:        2017-05-18T07:19:12Z
+last-modified:  2017-05-18T07:19:12Z
+source:         RIPE
+
+
+route:          212.33.0.0/20
+descr:          GLOBUS-ROUTE-MSK
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2019-02-14T07:55:01Z
+last-modified:  2019-02-14T07:55:01Z
+source:         RIPE
+
+
+route:          212.33.0.0/22
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2020-02-13T13:40:37Z
+last-modified:  2020-02-13T13:40:37Z
+source:         RIPE
+
+
+route:          212.33.16.0/23
+descr:          GLOBUS-ROUTE-MSK
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2019-02-14T07:55:51Z
+last-modified:  2019-02-14T07:55:51Z
+source:         RIPE
+
+
+route:          212.33.20.0/22
+descr:          GLOBUS-ROUTE-MSK
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2019-02-14T07:56:28Z
+last-modified:  2019-02-14T07:56:28Z
+source:         RIPE
+
+
+route:          212.33.24.0/21
+descr:          GLOBUS-ROUTE-MSK
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2019-02-14T07:56:59Z
+last-modified:  2019-02-14T07:56:59Z
+source:         RIPE
+
+
+route:          212.33.4.0/23
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2020-02-13T13:41:02Z
+last-modified:  2020-02-13T13:41:02Z
+source:         RIPE
+
+
+route:          212.33.6.0/24
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2020-02-13T13:39:07Z
+last-modified:  2020-02-13T13:39:07Z
+source:         RIPE
+
+
+route:          212.33.8.0/21
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2020-02-13T10:09:40Z
+last-modified:  2020-02-13T10:09:40Z
+source:         RIPE
+
+
+route6:         2a02:2910::/32
+descr:          Globus-Telecom Route
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2010-11-10T14:55:36Z
+last-modified:  2010-11-10T14:55:36Z
+source:         RIPE
+
+
+route:          82.198.160.0/19
+descr:          GLOBUS-ROUTE-19
+origin:         AS30733
+notify:         noc@globus-telecom.com
+mnt-by:         GLOBUS-MNT
+created:        2003-11-20T16:54:50Z
+last-modified:  2003-11-20T16:54:50Z
+source:         RIPE
+
+
+route:          82.198.164.0/24
+descr:          GLOBUS-ROUTE-COLO
+origin:         AS30733
+created:        2026-02-24T11:31:00Z
+last-modified:  2026-02-24T11:31:00Z
+source:         RIPE
+mnt-by:         GLOBUS-MNT
+
+
+route:          82.198.165.0/24
+descr:          GLOBUS-ROUTE-COLO
+origin:         AS30733
+created:        2026-02-24T11:31:48Z
+last-modified:  2026-02-24T11:31:48Z
+source:         RIPE
+mnt-by:         GLOBUS-MNT
+
+
+route:          82.198.166.0/23
+descr:          GLOBUS-ROUTE-VOIP
+origin:         AS30733
+notify:         noc@globus-telecom.com
+mnt-by:         GLOBUS-MNT
+created:        2013-11-12T14:34:24Z
+last-modified:  2013-11-12T14:34:24Z
+source:         RIPE
+
+
+route:          83.217.16.0/22
+origin:         AS30733
+mnt-by:         GLOBUS-MNT
+created:        2019-09-09T08:19:22Z
+last-modified:  2019-09-09T08:19:22Z
+source:         RIPE
+
+

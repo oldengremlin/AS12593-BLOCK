@@ -1,67 +1,208 @@
-2026-05-26 02:16:00 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 02:16:00 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 02:16:00 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          185.117.144.0/22
+origin:         AS203972
+descr:          tatais-route-main
+mnt-by:         LLC-AIS-MNT
+created:        2016-07-12T07:09:12Z
+last-modified:  2016-07-12T07:09:12Z
+source:         RIPE
+
+
+route:          185.117.144.0/24
+origin:         AS203972
+descr:          tatais-route-bal1
+mnt-by:         LLC-AIS-MNT
+created:        2016-07-11T08:46:32Z
+last-modified:  2016-07-11T08:46:32Z
+source:         RIPE
+
+
+route:          185.117.145.0/24
+origin:         AS203972
+descr:          tatais-route-bal2
+mnt-by:         LLC-AIS-MNT
+created:        2016-07-11T08:47:24Z
+last-modified:  2016-07-11T08:47:24Z
+source:         RIPE
+
+
+route:          185.117.146.0/24
+origin:         AS203972
+descr:          tatais-route-bal3
+mnt-by:         LLC-AIS-MNT
+created:        2016-07-11T08:47:57Z
+last-modified:  2016-07-11T08:47:57Z
+source:         RIPE
+
+
+route:          185.117.147.0/24
+origin:         AS203972
+descr:          tatais-route-bal4
+mnt-by:         LLC-AIS-MNT
+created:        2016-07-11T08:48:45Z
+last-modified:  2016-07-11T08:48:45Z
+source:         RIPE
+
+
+route:          185.148.216.0/22
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-27T12:23:05Z
+last-modified:  2016-06-27T12:23:05Z
+source:         RIPE
+
+
+route:          185.148.216.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:10:41Z
+last-modified:  2016-06-28T13:10:41Z
+source:         RIPE
+
+
+route:          185.148.217.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:11:12Z
+last-modified:  2016-06-28T13:11:12Z
+source:         RIPE
+
+
+route:          185.148.218.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:11:33Z
+last-modified:  2016-06-28T13:11:33Z
+source:         RIPE
+
+
+route:          185.148.219.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:11:58Z
+last-modified:  2016-06-28T13:11:58Z
+source:         RIPE
+
+
+route:          185.148.220.0/22
+origin:         AS203972
+descr:          Tatintec_route
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-27T12:02:36Z
+last-modified:  2016-06-27T12:02:36Z
+source:         RIPE
+
+
+route:          185.148.220.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:13:10Z
+last-modified:  2016-06-28T13:13:10Z
+source:         RIPE
+
+
+route:          185.148.221.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:13:47Z
+last-modified:  2016-06-28T13:13:47Z
+source:         RIPE
+
+
+route:          185.148.222.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:14:08Z
+last-modified:  2016-06-28T13:14:08Z
+source:         RIPE
+
+
+route:          185.148.223.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:14:29Z
+last-modified:  2016-06-28T13:14:29Z
+source:         RIPE
+
+
+route:          185.149.64.0/22
+origin:         AS203972
+descr:          Tatasu_route
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-27T12:12:33Z
+last-modified:  2016-06-27T12:12:33Z
+source:         RIPE
+
+
+route:          185.149.64.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:15:00Z
+last-modified:  2016-06-28T13:15:00Z
+source:         RIPE
+
+
+route:          185.149.65.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:15:23Z
+last-modified:  2016-06-28T13:15:23Z
+source:         RIPE
+
+
+route:          185.149.66.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:15:53Z
+last-modified:  2016-06-28T13:15:53Z
+source:         RIPE
+
+
+route:          185.149.67.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:16:35Z
+last-modified:  2016-06-28T13:16:35Z
+source:         RIPE
+
+
+route:          185.150.12.0/22
+origin:         AS203972
+descr:          tatauto_route
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-27T12:20:30Z
+last-modified:  2016-06-27T12:20:30Z
+source:         RIPE
+
+
+route:          185.150.12.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:18:07Z
+last-modified:  2016-06-28T13:18:07Z
+source:         RIPE
+
+
+route:          185.150.13.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:18:19Z
+last-modified:  2016-06-28T13:18:19Z
+source:         RIPE
+
+
+route:          185.150.14.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:18:45Z
+last-modified:  2016-06-28T13:18:45Z
+source:         RIPE
+
+
+route:          185.150.15.0/24
+origin:         AS203972
+mnt-by:         LLC-AIS-MNT
+created:        2016-06-28T13:19:52Z
+last-modified:  2016-06-28T13:19:52Z
+source:         RIPE
+
+

@@ -1,67 +1,437 @@
-2026-05-26 02:25:00 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntner.printMntner(retrieveMntner.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntner(WhoisLiteLocal.java:91)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:42)
-2026-05-26 02:25:00 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntner.printMntner(retrieveMntner.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntner(WhoisLiteLocal.java:91)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:42)
-2026-05-26 02:25:00 ERROR [main] [printMntner] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntner.printMntner(retrieveMntner.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntner(WhoisLiteLocal.java:91)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:42)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+mntner:         AS8342-MNT
+admin-c:        DUMY-RIPE
+upd-to:         unread@ripe.net
+auth:           MD5-PW $1$SaltSalt$DummifiedMD5HashValue.   # Real value hidden for security
+mnt-by:         AS8342-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2023-05-15T05:39:32Z
+source:         RIPE
+
+
+role:           ATF customer
+address:        Dummy address for AC35279-RIPE
+phone:          +31205354444
+e-mail:         unread@ripe.net
+nic-hdl:        AC35279-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  flot@oaoatf.ru
+mnt-by:         AS8342-MNT
+created:        2018-01-12T08:35:21Z
+last-modified:  2018-01-12T08:35:21Z
+source:         RIPE
+
+
+
+role:           Avguro Technologies Abuse
+address:        Dummy address for ATA95-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        ATA95-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  abuse@jino.ru
+mnt-by:         AS8342-MNT
+created:        2018-09-06T13:45:14Z
+last-modified:  2018-09-06T13:45:14Z
+source:         RIPE
+
+
+
+role:           IP Fernando Emil Railovich
+address:        Dummy address for IFER1-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  soberu.webmaster@gmail.com
+nic-hdl:        IFER1-RIPE
+mnt-by:         AS8342-MNT
+created:        2018-04-26T09:36:30Z
+last-modified:  2018-04-26T09:36:30Z
+source:         RIPE
+
+
+
+role:           Institute of Astronomy of the Russian Academy of Sciences support
+address:        Dummy address for IOAO1-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        IOAO1-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  admin@inasan.rssi.ru
+mnt-by:         AS8342-MNT
+created:        2015-12-04T10:22:45Z
+last-modified:  2015-12-04T10:22:45Z
+source:         RIPE
+
+
+
+role:           JSC "RTComm-Sibir" support
+address:        Dummy address for JS18236-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        JS18236-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  abuse@rtcomm-sibir.ru
+mnt-by:         AS8342-MNT
+created:        2016-05-26T12:28:48Z
+last-modified:  2016-05-26T12:28:48Z
+source:         RIPE
+
+
+
+role:           JSC "Special Economic Zones"
+address:        Dummy address for JEZ21-RIPE
+phone:          +31205354444
+fax-no:         +31205354444
+e-mail:         unread@ripe.net
+nic-hdl:        JEZ21-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  sez@russez.ru
+mnt-by:         AS8342-MNT
+created:        2015-04-15T14:08:05Z
+last-modified:  2015-04-15T14:08:05Z
+source:         RIPE
+
+
+
+role:           JSC TVTorg support
+address:        Dummy address for JTS53-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  admin@shopandshow.ru
+nic-hdl:        JTS53-RIPE
+notify:         lir@rtcomm.ru
+mnt-by:         AS8342-MNT
+created:        2016-11-10T08:59:28Z
+last-modified:  2016-11-10T08:59:28Z
+source:         RIPE
+
+
+
+role:           LLC "Consaltex" support
+address:        Dummy address for LS12255-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        LS12255-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  support@consaltex.ru
+mnt-by:         AS8342-MNT
+created:        2015-07-31T08:30:46Z
+last-modified:  2015-07-31T08:30:46Z
+source:         RIPE
+
+
+
+role:           LLC "Fatum-plus" support
+address:        Dummy address for LS14130-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        LS14130-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  fatumonline@yandex.ru
+mnt-by:         AS8342-MNT
+created:        2018-07-13T10:38:16Z
+last-modified:  2018-07-13T10:38:16Z
+source:         RIPE
+
+
+
+role:           LLC "NN-Infocom" support
+address:        Dummy address for LS12771-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        LS12771-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  info@zf.nn-infocom.ru
+mnt-by:         AS8342-MNT
+created:        2016-05-13T12:39:26Z
+last-modified:  2016-05-13T12:39:26Z
+source:         RIPE
+
+
+
+role:           LLC "O2" support
+address:        Dummy address for LS12100-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        LS12100-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  support@walletone.com
+mnt-by:         AS8342-MNT
+created:        2015-05-07T11:04:34Z
+last-modified:  2015-05-07T11:04:34Z
+source:         RIPE
+
+
+
+role:           LLC "Sovrudnik" support
+address:        Dummy address for LS12674-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        LS12674-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  vvg@sovrudnik.ru
+mnt-by:         AS8342-MNT
+created:        2016-03-24T14:32:47Z
+last-modified:  2016-03-24T14:32:47Z
+source:         RIPE
+
+
+
+role:           LLC "Tomskburneftegaz" support
+address:        Dummy address for LS12595-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        LS12595-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  adi@tbng.ru
+mnt-by:         AS8342-MNT
+created:        2016-02-18T08:31:22Z
+last-modified:  2016-02-18T08:31:22Z
+source:         RIPE
+
+
+
+role:           LLC "VisCom Tec" support
+address:        Dummy address for LTS76-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        LTS76-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  info@viscomtec.ru
+mnt-by:         AS8342-MNT
+created:        2015-11-19T14:19:24Z
+last-modified:  2015-11-19T14:19:24Z
+source:         RIPE
+
+
+
+role:           LLC Cifrovaya Artel abuse
+address:        Dummy address for CARU-RIPE
+nic-hdl:        CARU-RIPE
+abuse-mailbox:  client-artel@yandex.ru
+e-mail:         unread@ripe.net
+notify:         lir@rtcomm.ru
+mnt-by:         AS8342-MNT
+created:        2014-02-10T15:41:15Z
+last-modified:  2018-10-16T06:23:40Z
+source:         RIPE
+
+
+
+role:           LLC Comar abuse handler
+address:        Dummy address for CMR38-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@rtcomm.ru
+nic-hdl:        CMR38-RIPE
+mnt-by:         AS8342-MNT
+notify:         lir@rtcomm.ru
+created:        2014-04-24T08:52:15Z
+last-modified:  2020-11-23T07:45:25Z
+source:         RIPE
+
+
+
+role:           LLC GASK support
+address:        Dummy address for LGS74-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  gaskpevek@gmail.com
+nic-hdl:        LGS74-RIPE
+notify:         lir@rtcomm.ru
+mnt-by:         AS8342-MNT
+created:        2016-11-29T08:17:38Z
+last-modified:  2016-11-29T08:17:38Z
+source:         RIPE
+
+
+
+role:           LLC Siyanie support
+address:        Dummy address for LSS108-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        LSS108-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  RadianceLlc@yandex.ru
+mnt-by:         AS8342-MNT
+created:        2016-06-30T13:18:08Z
+last-modified:  2016-06-30T13:18:08Z
+source:         RIPE
+
+
+
+role:           LLC Telekom Onair
+address:        Dummy address for LTO5-RIPE
+phone:          +31205354444
+fax-no:         +31205354444
+e-mail:         unread@ripe.net
+nic-hdl:        LTO5-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  info@telecomonair.ru
+mnt-by:         AS8342-MNT
+created:        2017-10-11T09:02:09Z
+last-modified:  2017-10-11T09:02:09Z
+source:         RIPE
+
+
+
+role:           LLC UK "SkyTek" support
+address:        Dummy address for LUS4-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        LUS4-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  ovcharov.andrey@gmail.com
+mnt-by:         AS8342-MNT
+created:        2015-11-03T13:19:56Z
+last-modified:  2015-11-03T13:19:56Z
+source:         RIPE
+
+
+
+role:           LLC VapTak support
+address:        Dummy address for LVS95-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  admin@iricom.ru
+nic-hdl:        LVS95-RIPE
+notify:         lir@rtcomm.ru
+mnt-by:         AS8342-MNT
+created:        2016-11-23T11:30:47Z
+last-modified:  2016-11-23T11:30:47Z
+source:         RIPE
+
+
+
+role:           NETPLACE Abuse
+address:        Dummy address for NA6147-RIPE
+e-mail:         unread@ripe.net
+notify:         lir@rtcomm.ru
+abuse-mailbox:  abuse@netplace.ru
+mnt-by:         AS8342-MNT
+created:        2018-12-17T06:27:52Z
+last-modified:  2018-12-17T06:27:52Z
+source:         RIPE
+nic-hdl:        NA6147-RIPE
+
+
+
+role:           NETPLACE Support
+address:        Dummy address for NS7481-RIPE
+e-mail:         unread@ripe.net
+notify:         lir@rtcomm.ru
+abuse-mailbox:  support@netplace.ru
+mnt-by:         AS8342-MNT
+created:        2018-12-17T06:28:39Z
+last-modified:  2018-12-17T06:28:39Z
+source:         RIPE
+nic-hdl:        NS7481-RIPE
+
+
+
+role:           OJSC "ANGS" support
+address:        Dummy address for OS4758-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        OS4758-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  svyaz@angs.su
+mnt-by:         AS8342-MNT
+created:        2016-03-23T08:41:24Z
+last-modified:  2016-03-23T08:41:24Z
+source:         RIPE
+
+
+
+role:           OOO Ugo-Vostochnaya Proizvodstvennaya Kompaniya
+address:        Dummy address for OUPK1-RIPE
+phone:          +31205354444
+fax-no:         +31205354444
+e-mail:         unread@ripe.net
+nic-hdl:        OUPK1-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  abuse@rtcomm.ru
+mnt-by:         AS8342-MNT
+created:        2019-02-08T08:17:41Z
+last-modified:  2022-10-17T07:23:55Z
+source:         RIPE
+
+
+
+role:           PFR NOC
+address:        Dummy address for PFR23-RIPE
+phone:          +31205354444
+e-mail:         unread@ripe.net
+nic-hdl:        PFR23-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  abuse@rtcomm.ru
+mnt-by:         AS8342-MNT
+created:        2013-09-27T09:26:15Z
+last-modified:  2024-01-10T04:34:31Z
+source:         RIPE
+
+
+
+role:           PJSC SELIGDAR admin
+address:        Dummy address for PSA92-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  ok@seligdar.ru
+nic-hdl:        PSA92-RIPE
+notify:         lir@rtcomm.ru
+mnt-by:         AS8342-MNT
+created:        2016-12-12T10:13:31Z
+last-modified:  2016-12-12T10:13:31Z
+source:         RIPE
+
+
+
+role:           RTComm.RU Internet Center
+address:        Dummy address for RT-RU
+phone:          +31205354444
+fax-no:         +31205354444
+e-mail:         unread@ripe.net
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        RT-RU
+mnt-by:         AS8342-MNT
+abuse-mailbox:  abuse@rtcomm.ru
+created:        2002-12-25T12:11:11Z
+last-modified:  2023-01-17T05:30:21Z
+source:         RIPE
+
+
+
+role:           RTComm.RU abuse
+address:        Dummy address for RTC-RU
+e-mail:         unread@ripe.net
+nic-hdl:        RTC-RU
+abuse-mailbox:  abuse@rtcomm.ru
+mnt-by:         AS8342-MNT
+created:        2013-03-20T09:12:42Z
+last-modified:  2013-03-20T09:12:42Z
+source:         RIPE
+
+
+
+role:           VYMPEL customer
+address:        Dummy address for VC5651-RIPE
+phone:          +31205354444
+e-mail:         unread@ripe.net
+nic-hdl:        VC5651-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  vimpel-nera@yandex.ru
+mnt-by:         AS8342-MNT
+created:        2018-03-23T06:51:58Z
+last-modified:  2018-03-23T06:51:58Z
+source:         RIPE
+
+
+
+role:           Vitrina.TV Abuse
+address:        Dummy address for VA33646-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        VA33646-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  abuse@vitrina.tv
+mnt-by:         AS8342-MNT
+created:        2018-12-10T09:16:42Z
+last-modified:  2018-12-10T09:16:42Z
+source:         RIPE
+
+
+
+role:           ZVEZDA customer
+address:        Dummy address for ZC928-RIPE
+phone:          +31205354444
+e-mail:         unread@ripe.net
+nic-hdl:        ZC928-RIPE
+notify:         lir@rtcomm.ru
+abuse-mailbox:  zaosarylah@mail.ru
+mnt-by:         AS8342-MNT
+created:        2018-03-23T06:52:23Z
+last-modified:  2018-03-23T06:52:23Z
+source:         RIPE
+
+
+

@@ -1,67 +1,403 @@
-2026-05-26 02:31:10 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntner.printMntner(retrieveMntner.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntner(WhoisLiteLocal.java:91)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:42)
-2026-05-26 02:31:10 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntner.printMntner(retrieveMntner.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntner(WhoisLiteLocal.java:91)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:42)
-2026-05-26 02:31:10 ERROR [main] [printMntner] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntner.printMntner(retrieveMntner.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntner(WhoisLiteLocal.java:91)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:42)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+mntner:         MNT-NETART
+admin-c:        DUMY-RIPE
+upd-to:         unread@ripe.net
+auth:           MD5-PW $1$SaltSalt$DummifiedMD5HashValue.   # Real value hidden for security
+mnt-by:         MNT-NETART
+created:        2009-01-22T00:33:07Z
+last-modified:  2023-02-20T05:35:17Z
+source:         RIPE
+
+
+role:           ACER-COM S.R.L.
+address:        Dummy address for AS31764-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        AS31764-RIPE
+abuse-mailbox:  info@next.md
+mnt-by:         MNT-NETART
+created:        2014-01-23T14:45:28Z
+last-modified:  2016-01-25T13:25:05Z
+source:         RIPE
+
+
+
+role:           Abuse Contact
+address:        Dummy address for AC45191-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        AC45191-RIPE
+created:        2026-04-28T09:49:58Z
+last-modified:  2026-04-28T09:49:58Z
+source:         RIPE
+abuse-mailbox:  abuse@inet-cloud.com
+mnt-by:         INETCLOUD-MNT
+
+
+
+role:           Abuse Role
+abuse-mailbox:  kshopo@web.de
+e-mail:         unread@ripe.net
+nic-hdl:        AR80041-RIPE
+created:        2026-05-04T12:22:44Z
+last-modified:  2026-05-04T12:24:02Z
+source:         RIPE
+mnt-by:         ipv4center-mnt
+mnt-by:         stefan-hottman-mnt
+
+
+
+role:           Abuse Contact
+address:        Dummy address for AC45191-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        AC45191-RIPE
+created:        2026-04-28T09:49:58Z
+last-modified:  2026-04-28T09:49:58Z
+source:         RIPE
+abuse-mailbox:  abuse@inet-cloud.com
+mnt-by:         INETCLOUD-MNT
+
+
+
+role:           Abuse contact role object
+address:        Dummy address for ACRO64699-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@serververs.com
+nic-hdl:        ACRO64699-RIPE
+mnt-by:         REENA-DEVI-MNT
+created:        2026-05-25T18:00:23Z
+last-modified:  2026-05-25T18:03:21Z
+source:         RIPE
+
+
+
+role:           Abuse Role
+abuse-mailbox:  kshopo@web.de
+e-mail:         unread@ripe.net
+nic-hdl:        AR80041-RIPE
+created:        2026-05-04T12:22:44Z
+last-modified:  2026-05-04T12:24:02Z
+source:         RIPE
+mnt-by:         ipv4center-mnt
+mnt-by:         stefan-hottman-mnt
+
+
+
+role:           Abuse-C Role
+address:        Dummy address for AR80114-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@citylink.pro
+nic-hdl:        AR80114-RIPE
+mnt-by:         lir-ru-msvyaz-1-MNT
+created:        2026-05-25T11:00:23Z
+last-modified:  2026-05-25T11:00:23Z
+source:         RIPE
+
+
+
+role:           Andrey Slesarev
+address:        Dummy address for AS50462-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  andrewslesarev@yandex.ru
+nic-hdl:        AS50462-RIPE
+created:        2026-03-31T07:55:36Z
+last-modified:  2026-03-31T07:55:36Z
+source:         RIPE
+mnt-by:         MNT-NETART
+
+
+
+role:           Avantek Plus role
+address:        Dummy address for APR29-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        APR29-RIPE
+abuse-mailbox:  mihinet@yandex.ru
+mnt-by:         MNT-NETART
+created:        2014-02-28T14:50:15Z
+last-modified:  2014-02-28T14:50:15Z
+source:         RIPE
+
+
+
+role:           AzimutTelecom role
+address:        Dummy address for AR12943-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        AR12943-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+abuse-mailbox:  sv@azimuttelecom.ru
+mnt-by:         MNT-NETART
+mnt-by:         MNT-AZIMUT
+created:        2013-07-02T11:51:45Z
+last-modified:  2017-07-07T08:50:49Z
+source:         RIPE
+
+
+
+role:           BCM Capital Sp. z o.o.
+address:        Dummy address for SN10375-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  office@polhoster.com
+nic-hdl:        SN10375-RIPE
+mnt-by:         MNT-NETART
+created:        2025-05-15T13:20:51Z
+last-modified:  2025-05-21T08:32:22Z
+source:         RIPE
+
+
+
+role:           CloudBackbone NOC
+address:        Dummy address for RA11804-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@cloudbackbone.net
+nic-hdl:        RA11804-RIPE
+mnt-by:         MNT-NETART
+created:        2024-05-27T14:57:36Z
+last-modified:  2024-06-03T08:08:57Z
+source:         RIPE
+
+
+
+role:           DATO VARIABLE
+address:        Dummy address for DV3650-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        DV3650-RIPE
+abuse-mailbox:  abuse@hosters.es
+mnt-by:         MNT-NETART
+created:        2014-02-11T17:18:14Z
+last-modified:  2014-03-12T16:33:51Z
+source:         RIPE
+
+
+
+role:           Gutkin Vladyslav
+address:        Dummy address for GVP58-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  arilot@gmail.com
+nic-hdl:        GVP58-RIPE
+mnt-by:         MNT-NETART
+created:        2023-05-09T14:11:28Z
+last-modified:  2023-05-18T14:39:15Z
+source:         RIPE
+
+
+
+role:           Individual Entrepreneur Lukyanov Maksim
+address:        Dummy address for IELM1-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  1178800@gmail.com
+nic-hdl:        IELM1-RIPE
+created:        2026-04-28T10:10:50Z
+last-modified:  2026-04-28T10:11:48Z
+source:         RIPE
+mnt-by:         MNT-NETART
+
+
+
+role:           Internet technologies
+address:        Dummy address for IT3241-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@nocsu.com
+nic-hdl:        IT3241-RIPE
+mnt-by:         MNT-NETART
+created:        2023-12-05T18:15:30Z
+last-modified:  2023-12-05T18:15:30Z
+source:         RIPE
+
+
+
+role:           KTUO abuse role
+address:        Dummy address for KAR68-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@ktuo.cz
+nic-hdl:        KAR68-RIPE
+mnt-by:         MNT-NETART
+created:        2014-11-03T16:35:03Z
+last-modified:  2014-11-03T16:36:52Z
+source:         RIPE
+
+
+
+role:           Krutsova Yulia
+address:        Dummy address for KY763-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  8121137007u@gmail.com
+nic-hdl:        KY763-RIPE
+mnt-by:         MNT-NETART
+created:        2024-04-09T08:41:12Z
+last-modified:  2024-04-09T08:47:23Z
+source:         RIPE
+
+
+
+role:           LAN-Service role
+address:        Dummy address for LR5590-RIPE
+e-mail:         unread@ripe.net
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        LR5590-RIPE
+abuse-mailbox:  tevs@lan-servis.ru
+mnt-by:         MNT-NETART
+mnt-by:         MNT-LSVC
+created:        2013-07-03T09:01:45Z
+last-modified:  2013-07-03T09:04:28Z
+source:         RIPE
+
+
+
+role:           Mediabay Asia
+address:        Dummy address for MA15282-RIPE
+e-mail:         unread@ripe.net
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        MA15282-RIPE
+abuse-mailbox:  tech@mediabay.uz
+mnt-by:         MNT-NETART
+created:        2014-01-09T13:05:38Z
+last-modified:  2014-01-09T13:05:38Z
+source:         RIPE
+
+
+
+role:           Michal Blahout
+address:        Dummy address for MB58053-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  michal.blahout@mija.cz
+nic-hdl:        MB58053-RIPE
+mnt-by:         MNT-NETART
+created:        2025-10-08T16:01:11Z
+last-modified:  2025-10-08T16:01:11Z
+source:         RIPE
+
+
+
+role:           Michal Kolar
+address:        Dummy address for MK25601-RIPE
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@wvg.cloud
+nic-hdl:        MK25601-RIPE
+mnt-by:         MNT-NETART
+created:        2022-12-22T15:49:45Z
+last-modified:  2024-02-23T11:03:19Z
+source:         RIPE
+
+
+
+role:           NetArt Group hostmasters team
+address:        Dummy address for NET
+org:            ORG-NGs2-RIPE
+phone:          +31205354444
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        NET
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@net-art.cz
+mnt-by:         MNT-NETART
+created:        2009-01-22T00:28:51Z
+last-modified:  2025-09-25T03:58:10Z
+source:         RIPE
+
+
+
+role:           NetArt Group local team
+address:        Dummy address for NET-IE
+phone:          +31205354444
+e-mail:         unread@ripe.net
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        NET-IE
+abuse-mailbox:  abuse@netartgroup.com
+mnt-by:         MNT-NETART
+created:        2014-12-16T18:56:31Z
+last-modified:  2016-03-14T20:24:13Z
+source:         RIPE
+
+
+
+role:           Redline Admin
+address:        Dummy address for RA10844-RIPE
+phone:          +31205354444
+e-mail:         unread@ripe.net
+nic-hdl:        RA10844-RIPE
+abuse-mailbox:  tech@redln.ru
+mnt-by:         MNT-NETART
+created:        2022-03-16T09:04:26Z
+last-modified:  2022-03-16T09:05:50Z
+source:         RIPE
+
+
+
+role:           Southern Telecommunication Company role
+address:        Dummy address for STCR4-RIPE
+phone:          +31205354444
+e-mail:         unread@ripe.net
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        STCR4-RIPE
+abuse-mailbox:  admin@soho.net.ua
+mnt-by:         MNT-NETART
+created:        2013-06-22T09:48:14Z
+last-modified:  2015-06-17T12:31:39Z
+source:         RIPE
+
+
+
+role:           SpetsSvyaz ROLE
+nic-hdl:        SR10684-RIPE
+org:            ORG-SL329-RIPE
+abuse-mailbox:  support@sp-com.ru
+mnt-by:         MNT-NETART
+address:        Dummy address for SR10684-RIPE
+e-mail:         unread@ripe.net
+created:        2014-07-23T16:10:32Z
+last-modified:  2014-07-23T16:10:32Z
+source:         RIPE
+
+
+
+role:           Svyaz role
+address:        Dummy address for SR9856-RIPE
+e-mail:         unread@ripe.net
+nic-hdl:        SR9856-RIPE
+abuse-mailbox:  admin@prk-net.ru
+mnt-by:         MNT-NETART
+created:        2013-09-10T10:57:11Z
+last-modified:  2015-03-20T14:27:04Z
+source:         RIPE
+
+
+
+role:           TopCom Abuse
+address:        Dummy address for TA4712-RIPE
+e-mail:         unread@ripe.net
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        TA4712-RIPE
+abuse-mailbox:  buh@tkvv.org
+mnt-by:         MNT-NETART
+created:        2014-02-18T17:49:38Z
+last-modified:  2025-06-30T08:04:07Z
+source:         RIPE
+
+
+
+role:           Abuse Role
+abuse-mailbox:  kshopo@web.de
+e-mail:         unread@ripe.net
+nic-hdl:        AR80041-RIPE
+created:        2026-05-04T12:22:44Z
+last-modified:  2026-05-04T12:24:02Z
+source:         RIPE
+mnt-by:         ipv4center-mnt
+mnt-by:         stefan-hottman-mnt
+
+
+
+role:           role
+e-mail:         unread@ripe.net
+abuse-mailbox:  team@hostvds.com
+nic-hdl:        RA12704-RIPE
+created:        2026-05-20T13:31:51Z
+last-modified:  2026-05-20T13:31:51Z
+source:         RIPE
+mnt-by:         MNT-NETART
+
+
+

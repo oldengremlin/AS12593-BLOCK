@@ -1,67 +1,183 @@
-2026-05-26 01:46:23 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 01:46:23 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 01:46:23 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          193.25.12.0/23
+descr:          SITE-NETWORK
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2009-06-23T00:36:25Z
+last-modified:  2009-06-23T00:36:25Z
+source:         RIPE
+
+
+route:          193.25.14.0/24
+descr:          SITE-NETWORK
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2005-03-17T04:11:29Z
+last-modified:  2005-03-17T04:11:29Z
+source:         RIPE
+
+
+route:          193.25.8.0/22
+descr:          SITE ISP LLC Yuzhno-Sakhalinsk
+descr:          SITE-NETWORK
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2009-06-23T00:35:33Z
+last-modified:  2015-03-15T12:13:47Z
+source:         RIPE
+
+
+route6:         2a0b:6e80::/32
+descr:          SITE ISP LLC Yuzhno-Sakhalinsk
+descr:          SITE ISP IPV6 Block
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2018-02-14T00:01:26Z
+last-modified:  2018-02-14T00:01:26Z
+source:         RIPE
+
+
+route6:         2a0b:6e81::/32
+descr:          SITE ISP LLC Yuzhno-Sakhalinsk
+descr:          SITE ISP IPV6 Block
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2021-08-07T15:36:29Z
+last-modified:  2021-08-07T15:36:58Z
+source:         RIPE
+
+
+route6:         2a0b:6e82::/32
+descr:          SITE ISP LLC Yuzhno-Sakhalinsk
+descr:          SITE ISP IPV6 Block
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2021-08-07T15:38:36Z
+last-modified:  2021-08-07T15:38:36Z
+source:         RIPE
+
+
+route6:         2a0b:6e83::/32
+descr:          SITE ISP LLC Yuzhno-Sakhalinsk
+descr:          SITE ISP IPV6 Block
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2021-08-07T15:39:06Z
+last-modified:  2021-08-07T15:39:06Z
+source:         RIPE
+
+
+route6:         2a0b:6e84::/32
+descr:          SITE ISP LLC Yuzhno-Sakhalinsk
+descr:          SITE ISP IPV6 Block
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2021-08-07T15:39:36Z
+last-modified:  2021-08-07T15:39:36Z
+source:         RIPE
+
+
+route6:         2a0b:6e85::/32
+descr:          SITE ISP LLC Yuzhno-Sakhalinsk
+descr:          SITE ISP IPV6 Block
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2021-08-07T15:40:39Z
+last-modified:  2021-08-07T15:40:39Z
+source:         RIPE
+
+
+route6:         2a0b:6e86::/32
+descr:          SITE ISP LLC Yuzhno-Sakhalinsk
+descr:          SITE ISP IPV6 Block
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2021-08-07T15:41:11Z
+last-modified:  2021-08-07T15:41:11Z
+source:         RIPE
+
+
+route6:         2a0b:6e87::/32
+descr:          SITE ISP LLC Yuzhno-Sakhalinsk
+descr:          SITE ISP IPV6 Block
+origin:         AS30745
+notify:         noc@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2021-08-07T15:41:39Z
+last-modified:  2021-08-07T15:41:39Z
+source:         RIPE
+
+
+route:          82.202.132.0/22
+descr:          SITE ISP LLC
+origin:         AS30745
+notify:         noc@svtc.ru
+notify:         smm@svtc.ru
+notify:         igor@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2025-02-14T00:49:33Z
+last-modified:  2025-02-15T05:10:55Z
+source:         RIPE
+
+
+route:          82.202.144.0/21
+descr:          SITE ISP LLC
+origin:         AS30745
+notify:         noc@svtc.ru
+notify:         smm@svtc.ru
+notify:         igor@svtc.ru
+mnt-by:         AS30745-MNT
+created:        2024-07-25T02:21:35Z
+last-modified:  2024-07-25T02:21:35Z
+source:         RIPE
+
+
+route:          82.202.144.0/22
+descr:          SITE ISP LLC
+descr:          Sakhalin, Russia
+origin:         AS30745
+mnt-by:         AS30745-MNT
+created:        2011-08-16T05:14:20Z
+last-modified:  2011-08-16T05:14:20Z
+source:         RIPE
+
+
+route:          82.202.152.0/22
+descr:          SITE ISP LLC
+descr:          Sakhalin, Russia
+origin:         AS30745
+mnt-by:         AS30745-MNT
+created:        2024-07-25T02:37:20Z
+last-modified:  2024-07-25T02:37:20Z
+source:         RIPE
+
+
+route:          89.232.128.0/20
+descr:          SITE ISP LLC
+descr:          Sakhalin, Russia
+origin:         AS30745
+mnt-by:         AS30745-MNT
+created:        2006-05-26T01:59:25Z
+last-modified:  2006-05-26T01:59:25Z
+source:         RIPE
+
+
+route:          89.232.144.0/20
+descr:          SITE ISP LLC
+descr:          Sakhalin, Russia
+origin:         AS30745
+mnt-by:         AS30745-MNT
+created:        2011-06-13T23:57:01Z
+last-modified:  2011-06-13T23:57:01Z
+source:         RIPE
+
+

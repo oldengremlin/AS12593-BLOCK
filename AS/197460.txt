@@ -1,67 +1,212 @@
-2026-05-26 01:28:27 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:28:27 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:28:27 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS197460
+as-name:        ZENCOM-AS
+org:            ORG-ZL11-RIPE
+descr:          FORTEX
+import:         from AS48166 accept ANY
+export:         to AS48166 announce AS-ZENCOM
+descr:          NAUKANET
+import:         from AS8641 accept ANY
+export:         to AS8641 announce AS-ZENCOM
+descr:          ZENCOM-TELECOMNET
+import:         from AS28736 action pref=111; accept AS28736
+export:         to AS28736 announce ANY
+descr:          GOLITSYNO TELECOM
+import:         from AS49320 action pref=111; accept AS49320
+export:         to AS49320 announce AS-ZENCOM
+descr:          DREAMLINE
+import:         from AS56493 action pref=111; accept AS56493
+export:         to AS56493 announce AS197460
+descr:          TRC Odincovo
+import:         from AS61121 action pref=111; accept AS61121
+export:         to AS61121 announce AS197460
+descr:          LIFESTREAM
+import:         from AS200976 action pref=111; accept AS200976
+export:         to AS200976 announce AS-ZENCOM
+descr:          Piter-IX MSK
+import:         from AS49869 accept ANY
+export:         to AS49869 announce AS-ZENCOM
+descr:          Piter-IX SPB
+import:         from AS50817 action pref=50; accept ANY
+export:         to AS50817 announce AS-ZENCOM
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         admin@zencom.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ARTX-RIPE-MNT
+mnt-by:         ZENCOM-RIPE-MNT
+mnt-by:         ZENC-MNT
+created:        2010-12-10T15:23:09Z
+last-modified:  2024-12-26T11:17:06Z
+source:         RIPE
+sponsoring-org: ORG-LT104-RIPE
+
+as-num:         AS197460
+country:        RU
+as-name:        ZENCOM-AS Zencom LTD
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+as-num:         AS197460
+country:        RU
+as-name:        null
+
+organisation:   ORG-ZL11-RIPE
+org-name:       Zencom LTD
+country:        RU
+org-type:       OTHER
+address:        Dummy address for ORG-ZL11-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        AC29945-RIPE
+mnt-ref:        ZENC-MNT
+mnt-by:         ARTX-RIPE-MNT
+mnt-by:         ZENCOM-RIPE-MNT
+created:        2010-12-09T11:46:50Z
+last-modified:  2026-05-13T06:07:08Z
+source:         RIPE
+
+

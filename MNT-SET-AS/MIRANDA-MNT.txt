@@ -1,67 +1,380 @@
-2026-05-26 02:29:45 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:29:45 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:29:45 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+as-set:         AS-MRNDA
+descr:          Miranda-media AS-SET
+members:        AS204829
+members:        AS203565
+members:        AS57899
+members:        AS215623
+members:        AS201776
+members:        AS8274
+members:        AS8381
+members:        AS21403
+members:        AS25082
+members:        AS25482:AS-CUSTOMERS
+members:        AS25591
+members:        AS29031
+members:        AS31387
+members:        AS31531
+members:        AS34280
+members:        AS34990
+members:        AS39047
+members:        AS39529
+members:        AS39667
+members:        AS39772
+members:        AS41039
+members:        AS41269
+members:        AS41430
+members:        AS42074
+members:        AS42238
+members:        AS42250
+members:        AS43022
+members:        AS43400
+members:        AS43564
+members:        AS43972
+members:        AS44125
+members:        AS44139
+members:        AS44539
+members:        AS44710
+members:        AS44884
+members:        AS47694
+members:        AS47939
+members:        AS49444
+members:        AS49465
+members:        AS49617
+members:        AS50204
+members:        AS52213
+members:        AS56359
+members:        AS56386
+members:        AS56587
+members:        AS56663
+members:        AS56766
+members:        AS56915
+members:        AS57164
+members:        AS57460
+members:        AS57615
+members:        AS57641
+members:        AS57679
+members:        AS57847
+members:        AS57899
+members:        AS57982
+members:        AS59744
+members:        AS59815
+members:        AS59833
+members:        AS61421
+members:        AS196638
+members:        AS197002
+members:        AS197152
+members:        AS197335
+members:        AS197714
+members:        AS197960
+members:        AS198793
+members:        AS199827
+members:        AS199961:AS-MULTSYS
+members:        AS200467
+members:        AS202279
+members:        AS203451
+members:        AS203528
+members:        AS203561
+members:        AS204144
+members:        AS204161
+members:        AS204485
+members:        AS204634
+members:        AS205515
+members:        AS207889
+members:        AS207967
+members:        AS208232
+members:        AS208435
+members:        AS208701
+members:        AS209074
+members:        AS209720
+members:        AS209747
+members:        AS211101
+members:        AS213278
+members:        AS213890
+members:        AS214210
+members:        AS214218
+members:        AS214221
+members:        AS214883
+members:        AS215503
+members:        AS215654
+members:        AS215678
+members:        AS216062
+members:        AS216264
+members:        AS-AGRONET
+members:        AS-AMIK
+members:        AS-CRELCOM
+members:        AS-CRIMEAINFOCOM
+members:        AS-CRIMEATEL
+members:        AS-CRIS
+members:        AS-CRISTAL-NET
+members:        AS-DIGIUA
+members:        AS-DON
+members:        AS-DOVECOM-RU
+members:        AS-DVCOM
+members:        AS-ENTELE
+members:        AS-FARLINE
+members:        AS-FEONET
+members:        AS-GIGABYTE
+members:        AS-IPCOM-NET
+members:        AS-KHERSONTELECOM
+members:        AS-KTKRU
+members:        AS-LANCOM
+members:        AS-LEVEL-MSK-NR
+members:        AS-LTC
+members:        AS-M3X
+members:        AS-REEDLAN
+members:        AS-PE_ARZANOVA
+members:        AS-SET-APEX
+members:        AS-SIVASH
+members:        AS-STATUS-V6
+members:        AS-TRKMETRO
+members:        AS-YALTAONLINE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MIRANDA-MNT
+created:        2014-07-17T06:27:21Z
+last-modified:  2025-12-29T06:06:12Z
+source:         RIPE
+
+
+
+aut-num:        AS201776
+as-name:        MIRANDA-AS
+org:            ORG-ML281-RIPE
+descr:          Miranda-Media LLC
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-MRNDA
+import:         from AS28917 action pref=100; accept ANY
+export:         to AS28917 announce AS-MRNDA
+import:         from AS9002 action pref=100; accept ANY
+export:         to AS9002 announce AS-MRNDA
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-MRNDA
+import:         from AS47764 accept AS-MAILRU
+export:         to AS47764 announce AS-MRNDA
+import:         from AS47542 accept AS-VKONTAKTE
+export:         to AS47542 announce AS-MRNDA
+import:         from AS50817 accept as-piter-ix
+export:         to AS5081 announce AS-MRNDA
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-MRNDA
+import:         from AS50952 action pref=100; accept AS-DATAIX
+export:         to AS50952 announce AS-MRNDA
+import:         from AS5593 accept AS-CRIS
+export:         to AS5593 announce ANY
+import:         from AS6789 accept AS-CRELCOM
+export:         to AS6789 announce ANY
+import:         from AS8381 accept AS8381
+export:         to AS8381 announce ANY
+import:         from AS8654 accept AS-CRIMEAINFOCOM
+export:         to AS8654 announce ANY
+import:         from AS20916 accept AS-PE_ARZANOVA
+export:         to AS20916 announce ANY
+import:         from AS21403 accept AS21403
+export:         to AS21403 announce ANY
+import:         from AS25000 accept AS25000
+export:         to AS25000 announce ANY
+import:         from AS25082 accept AS25082
+export:         to AS25082 announce ANY
+import:         from AS25482 accept AS25482:AS-CUSTOMERS
+export:         to AS25482 announce ANY
+import:         from AS25591 accept AS25591
+export:         to AS25591 announce ANY
+import:         from AS29031 accept AS29031
+export:         to AS29031 announce ANY
+import:         from AS31387 accept AS31387
+export:         to AS31387 announce ANY
+import:         from AS31531 accept AS31531
+export:         to AS31531 announce ANY
+import:         from AS34280 accept AS34280
+export:         to AS34280 announce ANY
+import:         from AS34990 accept AS34990
+export:         to AS34990 announce ANY
+import:         from AS35816 accept AS-LANCOM
+export:         to AS35816 announce ANY
+import:         from AS39047 accept AS39047
+export:         to AS39047 announce ANY
+import:         from AS39248 accept AS-SIVASH
+export:         to AS39248 announce ANY
+import:         from AS39667 accept AS39667
+export:         to AS39667 announce ANY
+import:         from AS39772 accept AS39772
+export:         to AS39772 announce ANY
+import:         from AS39862 accept AS-DIGIUA
+export:         to AS39862 announce ANY
+import:         from AS42074 accept AS42074
+export:         to AS42074 announce ANY
+import:         from AS41269 accept AS41269
+export:         to AS41269 announce ANY
+import:         from AS41430 accept AS41430
+export:         to AS41430 announce ANY
+import:         from AS41914 accept AS-YALTAONLINE
+export:         to AS41914 announce ANY
+import:         from AS42238 accept AS42238
+export:         to AS42238 announce ANY
+import:         from AS42239 accept AS-FARLINE
+export:         to AS42239 announce ANY
+import:         from AS42250 accept AS42250
+export:         to AS42250 announce ANY
+import:         from AS42975 accept AS-FEONET
+export:         to AS42975 announce ANY
+import:         from AS43022 accept AS43022
+export:         to AS43022 announce ANY
+import:         from AS43400 accept AS43400
+export:         to AS43400 announce ANY
+import:         from AS43564 accept AS43564
+export:         to AS43564 announce ANY
+import:         from AS44139 accept AS44139
+export:         to AS44139 announce ANY
+import:         from AS44387 accept AS-REEDLAN
+export:         to AS44387 announce ANY
+import:         from AS44539 accept AS44539
+export:         to AS44539 announce ANY
+import:         from AS47203 accept AS-KTKRU
+export:         to AS47203 announce ANY
+import:         from AS47598 accept AS-KHERSONTELECOM
+export:         to AS47598 announce ANY
+import:         from AS47694 accept AS47694
+export:         to AS47694 announce ANY
+import:         from AS44774 accept AS44774
+export:         to AS44774 announce ANY
+import:         from AS47939 accept AS47939
+export:         to AS47939 announce ANY
+import:         from AS48084 accept AS48084
+export:         to AS48084 announce ANY
+import:         from AS48722 accept AS-CRISTAL-NET
+export:         to AS48722 announce ANY
+import:         from AS49465 accept AS49465
+export:         to AS49465 announce ANY
+import:         from AS49617 accept AS49617
+export:         to AS49617 announce ANY
+import:         from AS50949 accept AS-AGRONET
+export:         to AS50949 announce ANY
+import:         from AS52091 accept AS-LEVEL-MSK-NR
+export:         to AS52091 announce ANY
+import:         from AS56359 accept AS56359
+export:         to AS56359 announce ANY
+import:         from AS56386 accept AS56386
+export:         to AS56386 announce ANY
+import:         from AS56587 accept AS56587
+export:         to AS56587 announce ANY
+import:         from AS56663 accept AS56663
+export:         to AS56663 announce ANY
+import:         from AS57164 accept AS57164
+export:         to AS57164 announce ANY
+import:         from AS57615 accept AS57615
+export:         to AS57615 announce ANY
+import:         from AS57641 accept AS57641
+export:         to AS57641 announce ANY
+import:         from AS57679 accept AS57679
+export:         to AS57679 announce ANY
+import:         from AS57847 accept AS57847
+export:         to AS57847 announce ANY
+import:         from AS59744 accept AS-CRIMEATEL
+export:         to AS59744 announce ANY
+import:         from AS59815 accept AS59815
+export:         to AS59815 announce ANY
+import:         from AS59833 accept AS59833
+export:         to AS59833 announce ANY
+import:         from AS61421 accept AS61421
+export:         to AS61421 announce ANY
+import:         from AS196638 accept AS196638
+export:         to AS196638 announce ANY
+import:         from AS197002 accept AS197002
+export:         to AS197002 announce ANY
+import:         from AS197960 accept AS197960
+export:         to AS197960 announce ANY
+import:         from AS198293 accept AS198293
+export:         to AS198293 announce ANY
+import:         from AS198793 accept AS198793
+export:         to AS198793 announce ANY
+import:         from AS199827 accept AS199827
+export:         to AS199827 announce ANY
+import:         from AS199961 accept AS199961
+export:         to AS199961 announce ANY
+import:         from AS200467 accept AS200467
+export:         to AS200467 announce ANY
+import:         from AS201069 accept AS-SET-APEX
+export:         to AS201069 announce ANY
+import:         from AS202279 accept AS202279
+export:         to AS202279 announce ANY
+import:         from AS203528 accept AS203528
+export:         to AS203528 announce ANY
+import:         from AS203561 accept AS203561
+export:         to AS203561 announce ANY
+import:         from AS204144 accept AS204144
+export:         to AS204144 announce ANY
+import:         from AS204161 accept AS204161
+export:         to AS204161 announce ANY
+import:         from AS204485 accept AS204485
+export:         to AS204485 announce ANY
+import:         from AS204634 accept AS204634
+export:         to AS204634 announce ANY
+import:         from AS205515 accept AS205515
+export:         to AS205515 announce ANY
+import:         from AS207889 accept AS207889
+export:         to AS207889 announce ANY
+import:         from AS207967 accept AS207967
+export:         to AS207967 announce ANY
+import:         from AS208232 accept AS208232
+export:         to AS208232 announce ANY
+import:         from AS208701 accept AS208701
+export:         to AS208701 announce ANY
+import:         from AS209074 accept AS209074
+export:         to AS209074 announce ANY
+import:         from AS213278 accept ANY
+export:         to AS213278 announce ANY
+import:         from AS216264 accept AS216264
+export:         to AS216264 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MIRANDA-MNT
+created:        2014-07-16T12:36:48Z
+last-modified:  2025-04-16T06:38:14Z
+source:         RIPE
+
+
+
+aut-num:        AS21445
+as-name:        MIRANDA-IX
+org:            ORG-ML281-RIPE
+descr:          Miranda-Media LLC
+import:         from as201776 accept ANY
+export:         to as201776 announce AS21445
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MIRANDA-MNT
+created:        2015-07-17T13:19:45Z
+last-modified:  2025-04-16T06:36:36Z
+source:         RIPE
+
+
+
+aut-num:        AS47203
+as-name:        KTKRU-AS
+org:            ORG-ML281-RIPE
+descr:          JSC  "CrimeaTelecom"
+import:         from AS48084 accept ANY
+export:         to AS48084 announce AS-KTKRU
+import:         from AS201776 accept ANY
+export:         to AS201776 announce AS-KTKRU
+import:         from AS43222 accept AS-CRIMEA-IX
+export:         to AS43222 announce AS47203
+import:         from AS198899 accept AS198899
+export:         to AS198899 announce ANY
+import:         from AS34180 accept AS34180
+export:         to AS34180 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MIRANDA-MNT
+created:        2015-04-07T10:05:42Z
+last-modified:  2025-04-16T06:37:10Z
+source:         RIPE
+
+
+

@@ -1,67 +1,1686 @@
-2026-05-26 02:27:52 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:27:52 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:27:52 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+as-set:         AS-GDC
+descr:          GDC peers
+members:        AS34901
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         IPADDRESS-RU
+created:        2020-06-08T11:02:46Z
+last-modified:  2021-02-21T14:07:03Z
+source:         RIPE
+
+
+
+as-set:         AS-PICUNDA-NET
+members:        AS56529
+members:        AS198816
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         IPADDRESS-RU
+created:        2019-02-28T16:16:47Z
+last-modified:  2019-02-28T16:16:47Z
+source:         RIPE
+
+
+
+aut-num:        AS198645
+as-name:        IAK-NET
+org:            ORG-JIaK1-RIPE
+import:         from AS2854 accept ANY
+import:         from AS47218 accept ANY
+import:         from AS12389 accept ANY
+import:         from AS209030 accept ANY
+export:         to AS2854 announce AS198645
+export:         to AS47218 announce AS198645
+export:         to AS12389 announce AS198645
+export:         to AS209030 announce AS198645
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2012-04-02T13:16:40Z
+last-modified:  2025-12-30T08:15:44Z
+source:         RIPE
+
+
+
+aut-num:        AS200120
+as-name:        PETROVICH2-AS
+org:            ORG-SPL29-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2023-02-21T13:32:19Z
+last-modified:  2026-02-06T15:44:42Z
+source:         RIPE
+
+
+
+aut-num:        AS202250
+as-name:        CDEK5-AS
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS202250
+import:         from AS196695 accept ANY
+export:         to AS196695 announce AS202250
+org:            ORG-CL562-RIPE
+sponsoring-org: ORG-IL934-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2022-10-14T13:45:07Z
+last-modified:  2025-12-30T08:15:52Z
+source:         RIPE
+
+
+
+aut-num:        AS209755
+as-name:        NEWLIME-AS
+org:            ORG-NL395-RIPE
+import:         from AS49403 accept ANY
+export:         to AS49403 announce AS209755
+import:         from AS8641 accept ANY
+export:         to AS8641 announce AS209755
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2018-12-10T13:38:31Z
+last-modified:  2025-12-30T08:16:15Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS210787
+as-name:        CDEK4-AS
+org:            ORG-CL562-RIPE
+sponsoring-org: ORG-IL934-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS210787
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS210787
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2021-09-08T13:03:55Z
+last-modified:  2025-12-30T08:15:45Z
+source:         RIPE
+
+
+
+aut-num:        AS212211
+as-name:        CDEK3-AS
+org:            ORG-CL562-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS212211
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS212211
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS212211
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2020-12-08T09:55:37Z
+last-modified:  2025-12-30T08:15:54Z
+source:         RIPE
+
+
+
+aut-num:        AS212214
+as-name:        CDEK2-AS
+org:            ORG-CL562-RIPE
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS212214
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS212214
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2020-12-07T12:34:38Z
+last-modified:  2025-12-30T08:15:28Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS31379
+as-name:        FPF-AS
+descr:          Federal Agency for State Property Management
+import:         from AS8615 action pref=100; accept ANY
+export:         to AS8615 announce AS31379
+import:         from AS20485 action pref=200; accept ANY
+export:         to AS20485 announce AS31379
+org:            ORG-PFP1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2004-04-28T13:26:48Z
+last-modified:  2025-12-30T08:15:37Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS34639
+as-name:        SAMOLET-AS
+org:            ORG-SSDL1-RIPE
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS34639
+import:         from AS196695 accept ANY
+export:         to AS196695 announce AS34639
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS34639
+import:         from AS8492 accept ANY
+export:         to AS8492 announce AS34639
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+status:         ASSIGNED
+created:        2019-11-06T10:05:25Z
+last-modified:  2025-12-30T08:15:26Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS34706
+as-name:        NPFSAFMAR-AS
+org:            ORG-NBJ1-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS34706
+import:         from AS25227 accept ANY
+export:         to AS25227 announce AS34706
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS34706
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2019-10-11T12:49:15Z
+last-modified:  2025-12-30T08:15:13Z
+source:         RIPE
+
+
+
+aut-num:        AS34901
+as-name:        GDC-AS
+org:            ORG-GSL30-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS34901
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS34901
+import:         from AS8888 accept AS8888
+export:         to AS8888 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+status:         ASSIGNED
+created:        2019-07-23T14:48:56Z
+last-modified:  2025-12-30T08:15:15Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS34910
+as-name:        PGK-AS
+org:            ORG-JP74-RIPE
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS34910
+import:         from AS31261 accept ANY
+export:         to AS31261 announce AS34910
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-07-19T13:24:23Z
+last-modified:  2020-11-16T17:58:50Z
+source:         RIPE
+sponsoring-org: ORG-IL432-RIPE
+
+
+
+aut-num:        AS34990
+as-name:        SKYINET-AS
+import:         from AS42239 action pref=100; accept ANY
+export:         to AS42239 announce AS34990
+import:         from AS201776 action pref=100; accept ANY
+export:         to AS201776 announce AS34990
+import:         from AS43222 action pref=110; accept ANY
+export:         to AS43222 announce AS34990
+import:         from AS28761 action pref=90; accept ANY
+export:         to AS28761 announce AS34990
+org:            ORG-OA163-RIPE
+sponsoring-org: ORG-IL934-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2005-05-13T08:17:43Z
+last-modified:  2025-12-30T08:14:37Z
+source:         RIPE
+
+
+
+aut-num:        AS35644
+as-name:        IQMEN-AS
+org:            ORG-IBIJ1-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS35644
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS35644
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-01-24T14:38:04Z
+last-modified:  2025-12-30T08:14:30Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS39036
+as-name:        SHORO-AS
+org:            ORG-SC531-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+import:         from AS12764 accept ANY
+export:         to AS12764 announce AS39036
+import:         from AS8449 accept ANY
+export:         to AS8449 announce AS39036
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS12764-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-09-25T13:17:41Z
+last-modified:  2022-08-10T08:04:23Z
+source:         RIPE
+sponsoring-org: ORG-AL6-RIPE
+
+
+
+aut-num:        AS39092
+as-name:        VENA-AS
+org:            ORG-BO11-RIPE
+import:         from AS31444 accept ANY
+export:         to AS31444 announce AS39092
+import:         from AS20632 accept ANY
+export:         to AS20632 announce AS39092
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2005-12-12T15:34:21Z
+last-modified:  2025-12-30T08:15:39Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS39410
+as-name:        FN2-AS
+org:            ORG-FL351-RIPE
+import:         from AS25369 accept ANY
+export:         to AS25369 announce AS39410
+import:         from AS16276 accept ANY
+export:         to AS16276 announce AS39410
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         FN-MNT
+status:         ASSIGNED
+created:        2017-12-15T15:00:37Z
+last-modified:  2025-09-29T19:02:21Z
+source:         RIPE
+
+
+
+aut-num:        AS39510
+as-name:        BANKRBK-AS
+org:            ORG-BRJ2-RIPE
+import:         from AS9198 accept ANY
+export:         to AS9198 announce AS39510
+import:         from AS35104 accept ANY
+export:         to AS35104 announce AS39510
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2019-06-07T15:15:10Z
+last-modified:  2026-01-12T16:29:14Z
+source:         RIPE
+
+
+
+aut-num:        AS39562
+as-name:        TVERREG-AS
+org:            ORG-CIT7-RIPE
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS39562
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS39562
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+mnt-by:         NEWSYS-MNT
+mnt-by:         CIT-TVER-MNT
+created:        2020-10-14T11:31:41Z
+last-modified:  2025-04-21T12:56:58Z
+source:         RIPE
+sponsoring-org: ORG-CS216-RIPE
+
+
+
+aut-num:        AS39577
+as-name:        GOODNET-AS
+org:            ORG-GL299-RIPE
+import:         from AS49037 accept ANY
+import:         from AS59428 accept ANY
+import:         from AS12389 accept ANY
+export:         to AS49037 announce AS39577
+export:         to AS59428 announce AS39577
+export:         to AS12389 announce AS39577
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2017-11-08T13:41:52Z
+last-modified:  2025-12-30T08:15:43Z
+source:         RIPE
+
+
+
+aut-num:        AS39580
+as-name:        MIAC_YaNAO-AS
+org:            ORG-GMY1-RIPE
+import:         from AS49377 accept ANY
+export:         to AS49377 announce AS39580
+import:         from AS34875 accept ANY
+export:         to AS34875 announce AS39580
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         IPADDRESS-RU
+mnt-by:         RIPE-NCC-END-MNT
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2015-01-28T15:11:25Z
+last-modified:  2025-12-30T08:16:04Z
+source:         RIPE
+
+
+
+aut-num:        AS39697
+as-name:        INCHCAPE-AS
+org:            ORG-IHL11-RIPE
+import:         from AS49063 accept ANY
+export:         to AS49063 announce AS39697
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2017-10-30T15:56:42Z
+last-modified:  2025-12-30T08:16:16Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS41029
+as-name:        SHM-AS
+org:            ORG-SHM4-RIPE
+import:         from AS25159 accept ANY
+export:         to AS25159 announce AS41029
+import:         from AS8615 accept ANY
+export:         to AS8615 announce AS41029
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS41029
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2018-05-24T10:41:29Z
+last-modified:  2025-12-30T08:16:09Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS41162
+as-name:        FRP-AS
+org:            ORG-FSAI1-RIPE
+import:         from AS21418 accept ANY
+export:         to AS21418 announce AS41162
+import:         from AS39153 accept ANY
+export:         to AS39153 announce AS41162
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2018-07-24T08:51:51Z
+last-modified:  2026-01-12T16:32:59Z
+source:         RIPE
+
+
+
+aut-num:        AS41361
+as-name:        GOZNAK-AS
+org:            ORG-JSCG3-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS41361
+import:         from AS65001 accept ANY
+export:         to AS65001 announce AS41361
+import:         from AS57724 accept ANY
+export:         to AS57724 announce AS41361
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS41361
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2018-07-26T08:17:33Z
+last-modified:  2025-12-30T08:14:43Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS41388
+as-name:        ORIGINAL-AS
+org:            ORG-ORIG1-RIPE
+sponsoring-org: ORG-IL934-RIPE
+import:         from AS12695 accept ANY
+export:         to AS12695 announce AS41388
+import:         from AS197695 accept ANY
+export:         to AS197695 announce AS41388
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2021-03-06T12:04:34Z
+last-modified:  2025-12-30T08:15:54Z
+source:         RIPE
+
+
+
+aut-num:        AS41411
+as-name:        LNRA-AS
+org:            ORG-RLNR1-RIPE
+import:         from AS50928 accept ANY
+export:         to AS50928 announce AS41411
+import:         from AS8342 accept ANY
+export:         to AS8342 announce AS41411
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2017-08-02T15:26:25Z
+last-modified:  2026-01-12T16:50:12Z
+source:         RIPE
+
+
+
+aut-num:        AS41619
+as-name:        KOMMERSANT-AS
+org:            ORG-AK134-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS41619
+import:         from AS25159 accept ANY
+export:         to AS25159 announce AS41619
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2017-07-19T12:49:51Z
+last-modified:  2026-01-12T16:21:48Z
+source:         RIPE
+
+
+
+aut-num:        AS41774
+as-name:        KAPLIFE-AS
+org:            ORG-LA1131-RIPE
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS41774
+import:         from AS31261 accept ANY
+export:         to AS31261 announce AS41774
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2017-07-04T13:38:10Z
+last-modified:  2025-12-30T08:15:45Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS42027
+as-name:        VOLMA-AS
+org:            ORG-MCVL1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS42027
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS42027
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS42027
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-07-26T14:54:48Z
+last-modified:  2025-12-30T08:16:03Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS42119
+as-name:        MELONFASHION-AS
+org:            ORG-MFGJ1-RIPE
+import:         from AS35000 accept ANY
+export:         to AS35000 announce AS42119
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS42119
+import:         from AS8492 accept ANY
+export:         to AS8492 announce AS42119
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-12-24T11:46:32Z
+last-modified:  2025-12-30T08:16:05Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS42239
+as-name:        FARLINE-AS
+org:            ORG-OA163-RIPE
+import:         from AS57304 action pref=100; accept ANY
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS28917 action pref=100; accept ANY
+import:         from AS28761 action pref=100; accept ANY
+import:         from AS201776 action pref=100; accept ANY
+import:         from AS48084 action pref=100; accept ANY
+export:         to AS57304 announce AS-FARLINE
+export:         to AS31133 announce AS-FARLINE
+export:         to AS28917 announce AS-FARLINE
+export:         to AS28761 announce AS-FARLINE
+export:         to AS201776 announce AS-FARLINE
+export:         to AS48084 announce AS-FARLINE
+import:         from AS43222 action pref=50; accept AS-CRIMEAIX
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+import:         from AS50952 action pref=100; accept AS-DATAIX
+import:         from AS49869 action pref=100; accept AS-PITER-IX-MSK
+import:         from AS50817 action pref=100; accept AS-PITER-IX
+import:         from AS39751 action pref=50; accept AS-M-IX
+export:         to AS43222 announce AS-FARLINE
+export:         to AS8631 announce AS-FARLINE
+export:         to AS50952 announce AS-FARLINE
+export:         to AS49869 announce AS-FARLINE
+export:         to AS50817 announce AS-FARLINE
+export:         to AS39751 announce AS-FARLINE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-FARLINE
+mnt-by:         IPADDRESS-RU
+created:        2007-01-22T11:10:29Z
+last-modified:  2026-02-20T21:25:22Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS42268
+as-name:        ROSNET-AS
+descr:          ROSNET (ros-inet.ru)
+org:            ORG-SKAI1-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS42268
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS42268
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS42268
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2019-01-30T12:26:54Z
+last-modified:  2026-01-12T16:53:44Z
+source:         RIPE
+
+
+
+aut-num:        AS42483
+as-name:        SOTEX-AS
+org:            ORG-PSJ6-RIPE
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS42483
+import:         from AS8334 accept ANY
+export:         to AS8334 announce AS42483
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2020-03-11T15:21:24Z
+last-modified:  2025-12-30T08:15:32Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS42524
+as-name:        CDEK-AS
+org:            ORG-CL562-RIPE
+import:         from AS21127 accept ANY
+export:         to AS21127 announce AS42524
+import:         from AS8342 accept ANY
+export:         to AS8342 announce AS42524
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS42524
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2017-04-26T15:20:06Z
+last-modified:  2025-12-30T08:14:24Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS42628
+as-name:        NPFSBERBANKA-AS
+org:            ORG-JSCN2-RIPE
+import:         from AS9110 accept ANY
+export:         to AS9110 announce AS42628
+import:         from AS8615 accept ANY
+export:         to AS8615 announce AS42628
+import:         from AS31261 accept ANY
+export:         to AS31261 announce AS42628
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS42628
+import:         from AS6731 accept ANY
+export:         to AS6731 announce AS42628
+import:         from AS8470 accept ANY
+export:         to AS8470 announce AS42628
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2018-05-17T12:48:59Z
+last-modified:  2025-12-30T08:15:13Z
+source:         RIPE
+
+
+
+aut-num:        AS43170
+as-name:        ATES-AS
+org:            ORG-AL463-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS43170
+import:         from AS8342 accept ANY
+export:         to AS8342 announce AS43170
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2017-02-08T14:13:43Z
+last-modified:  2025-12-30T08:16:23Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS43454
+as-name:        ROSAKHUTOR-AS
+org:            ORG-RKL5-RIPE
+import:         from AS25490 accept ANY
+export:         to AS25490 announce AS43454
+import:         from AS31163 accept ANY
+export:         to AS31163 announce AS43454
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2020-08-28T13:49:21Z
+last-modified:  2025-12-30T08:14:39Z
+source:         RIPE
+
+
+
+aut-num:        AS43526
+as-name:        NOVIKOM-AS
+org:            ORG-JCB4-RIPE
+import:         from AS8331 accept ANY
+export:         to AS8331 announce AS43526
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS43526
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2017-06-20T08:09:06Z
+last-modified:  2026-01-12T16:33:51Z
+source:         RIPE
+
+
+
+aut-num:        AS43628
+as-name:        UNITEDMOTORS-AS
+org:            ORG-ATD5-RIPE
+import:         from AS60691 accept ANY
+export:         to AS60691 announce AS43628
+import:         from AS8631 accept ANY
+export:         to AS8631 announce AS43628
+sponsoring-org: ORG-IL934-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-06-19T13:18:05Z
+last-modified:  2025-12-30T08:16:14Z
+source:         RIPE
+
+
+
+aut-num:        AS43917
+as-name:        UPEONET
+org:            ORG-UL159-RIPE
+import:         from AS8732 accept ANY
+import:         from AS8595 accept ANY
+export:         to AS8732 announce AS43917
+export:         to AS8595 announce AS43917
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2017-11-22T10:02:47Z
+last-modified:  2025-12-30T08:14:50Z
+source:         RIPE
+
+
+
+aut-num:        AS44162
+as-name:        TAVRIA-AS
+org:            ORG-SCYV1-RIPE
+import:         from AS29648 accept ANY
+export:         to AS29648 announce AS44162
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS44162
+import:         from AS43031 accept ANY
+export:         to AS43031 announce AS44162
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2016-11-24T15:35:56Z
+last-modified:  2025-12-30T08:15:48Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS44362
+as-name:        PENTABOX-AS
+org:            ORG-PL457-RIPE
+descr:          --- uplink ---
+import:         from AS8905 action pref=100; accept ANY
+export:         to AS8905 announce AS-PENTABOX
+import:         from AS8615 action pref=100; accept ANY
+export:         to AS8615 announce AS-PENTABOX
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2010-04-01T15:34:04Z
+last-modified:  2025-12-30T08:15:05Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS44505
+as-name:        BETA-AS
+org:            ORG-BGL34-RIPE
+import:         from AS42132 accept ANY
+export:         to AS42132 announce AS44505
+import:         from AS8641 accept ANY
+export:         to AS8641 announce AS44505
+import:         from AS57681 accept ANY
+export:         to AS57681 announce AS44505
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-12-24T11:35:37Z
+last-modified:  2025-12-30T08:15:53Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS44661
+as-name:        PETROVICH-AS
+org:            ORG-SPL29-RIPE
+import:         from AS49505 accept ANY
+export:         to AS49505 announce AS44661
+import:         from AS50340 accept ANY
+export:         to AS50340 announce AS44661
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2017-12-29T09:07:40Z
+last-modified:  2026-02-06T15:44:42Z
+source:         RIPE
+
+
+
+aut-num:        AS44662
+as-name:        ARKHTELECENTR-AS
+org:            ORG-GAO2-RIPE
+sponsoring-org: ORG-IL934-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS44662
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS44662
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2023-11-21T12:53:31Z
+last-modified:  2025-12-30T08:15:50Z
+source:         RIPE
+
+
+
+aut-num:        AS44840
+as-name:        KRONSHTADT-AS
+org:            ORG-KJ98-RIPE
+import:         from AS209024 accept ANY
+export:         to AS209024 announce AS44840
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS44840
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         IPADDRESS-RU
+mnt-by:         RIPE-NCC-END-MNT
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2008-03-19T10:49:59Z
+last-modified:  2025-12-30T08:16:20Z
+source:         RIPE
+
+
+
+aut-num:        AS47560
+as-name:        KIT-MAGADAN
+org:            ORG-KL241-RIPE
+import:         from AS15454 accept ANY
+export:         to AS15454 announce AS47560
+import:         from AS48441 accept ANY
+export:         to AS48441 announce AS47560
+import:         from AS31195 accept ANY
+export:         to AS31195 announce AS47560
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2018-04-18T11:30:44Z
+last-modified:  2026-01-12T16:46:21Z
+source:         RIPE
+
+
+
+aut-num:        AS47634
+as-name:        UDOKANCOPPER-AS
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS47634
+import:         from AS31195 accept ANY
+export:         to AS31195 announce AS47634
+org:            ORG-UCL18-RIPE
+sponsoring-org: ORG-IL934-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2023-09-01T07:22:49Z
+last-modified:  2025-12-30T08:16:26Z
+source:         RIPE
+
+
+
+aut-num:        AS48032
+as-name:        UMSN-AS
+org:            ORG-UMNL2-RIPE
+import:         from AS2854 accept ANY
+import:         from AS21127 accept ANY
+export:         to AS2854 announce AS48032
+export:         to AS21127 announce AS48032
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2008-10-02T08:40:20Z
+last-modified:  2025-12-30T08:15:14Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS48122
+as-name:        MIHELICOPTER-AS
+org:            ORG-JMH3-RIPE
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS48122
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS48122
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-11-20T13:47:50Z
+last-modified:  2025-12-30T08:14:58Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS48666
+as-name:        CSPFMBA-AS
+org:            ORG-CSP7-RIPE
+sponsoring-org: ORG-IL934-RIPE
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS48666
+import:         from AS25513 accept ANY
+export:         to AS25513 announce AS48666
+import:         from AS65535 accept ANY
+export:         to AS65535 announce AS48666
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2021-09-02T08:35:08Z
+last-modified:  2025-12-30T08:15:41Z
+source:         RIPE
+
+
+
+aut-num:        AS48853
+as-name:        SEVMASH-AS
+org:            ORG-JPS4-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+import:         from AS20632 accept ANY
+import:         from AS12389 accept ANY
+export:         to AS20632 announce AS48853
+export:         to AS12389 announce AS48853
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2018-06-28T07:16:07Z
+last-modified:  2026-01-12T16:44:13Z
+source:         RIPE
+
+
+
+aut-num:        AS49093
+as-name:        PRIMORSKY-AS
+org:            ORG-KIPK1-RIPE
+sponsoring-org: ORG-IL934-RIPE
+import:         from AS12332 accept ANY
+export:         to AS12332 announce AS49093
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS49093
+import:         from AS21105 accept ANY
+export:         to AS21105 announce AS49093
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2021-12-17T11:06:06Z
+last-modified:  2025-12-30T08:16:21Z
+source:         RIPE
+
+
+
+aut-num:        AS49098
+as-name:        KVAZAR-AS
+org:            ORG-NOVA3-RIPE
+import:         from AS42742 action pref=100; accept ANY
+export:         to AS42742 announce AS49098
+import:         from AS31133 action pref=100; accept ANY
+export:         to AS31133 announce AS49098
+sponsoring-org: ORG-IL934-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+status:         ASSIGNED
+created:        2009-04-14T08:14:09Z
+last-modified:  2025-12-30T08:14:29Z
+source:         RIPE
+
+
+
+aut-num:        AS50164
+as-name:        TATNEFT-AS
+org:            ORG-TATN1-RIPE
+sponsoring-org: ORG-MT199-RIPE
+import:         from AS197394 accept ANY
+export:         to AS197394 announce AS50164
+import:         from AS28840 accept ANY
+export:         to AS28840 announce AS50164
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPMAGNAT-MNT
+created:        2021-12-16T15:38:01Z
+last-modified:  2026-01-29T12:14:26Z
+source:         RIPE
+
+
+
+aut-num:        AS50645
+as-name:        TELEDYNAMIC-AS
+org:            ORG-TL543-RIPE
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS50645
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS50645
+import:         from AS196914 accept ANY
+export:         to AS196914 announce AS50645
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2018-12-11T11:08:26Z
+last-modified:  2026-01-12T16:56:34Z
+source:         RIPE
+
+
+
+aut-num:        AS50690
+as-name:        DOCROBOT-AS
+org:            ORG-zpsk1-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS50690
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS50690
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NO9784-MNT
+created:        2010-03-10T09:52:44Z
+last-modified:  2026-03-16T15:08:05Z
+source:         RIPE
+
+
+
+aut-num:        AS50787
+as-name:        KRSK-SBIT-AS
+org:            ORG-JK24-RIPE
+import:         from AS41440 action pref=100; accept ANY
+import:         from AS12418 action pref=100; accept ANY
+import:         from AS21226 action pref=100; accept ANY
+import:         from AS21483 action pref=100; accept ANY
+export:         to AS41440 announce AS50787
+export:         to AS12418 announce AS50787
+export:         to AS21226 announce AS50787
+export:         to AS21483 announce AS50787
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2010-03-24T16:17:08Z
+last-modified:  2026-01-12T16:39:19Z
+source:         RIPE
+
+
+
+aut-num:        AS51156
+as-name:        ONGNET-AS
+org:            ORG-OPL8-RIPE
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS13094 action pref=100; accept ANY
+export:         to AS31133 announce AS51156
+export:         to AS12389 announce AS51156
+export:         to AS13094 announce AS51156
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2010-06-09T15:24:10Z
+last-modified:  2025-12-30T08:14:26Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS51780
+as-name:        VNIIKR-AS
+org:            ORG-FV27-RIPE
+import:         from AS16143 accept ANY
+export:         to AS16143 announce AS51780
+import:         from AS50577 accept ANY
+export:         to AS50577 announce AS51780
+import:         from AS59637 accept ANY
+export:         to AS59637 announce AS51780
+import:         from AS8641 accept ANY
+export:         to AS8641 announce AS51780
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS51780
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-08-29T13:19:31Z
+last-modified:  2025-12-30T08:15:13Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS51977
+as-name:        ROSGEOLFOND-AS
+org:            ORG-FR46-RIPE
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS51977
+import:         from AS50299 accept ANY
+export:         to AS50299 announce AS51977
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2018-12-18T09:00:12Z
+last-modified:  2025-12-30T08:15:48Z
+source:         RIPE
+
+
+
+aut-num:        AS52046
+as-name:        RN-GRD-AS
+org:            ORG-RL667-RIPE
+sponsoring-org: ORG-IL934-RIPE
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS52046
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS52046
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+status:         ASSIGNED
+created:        2021-12-27T15:39:56Z
+last-modified:  2026-05-19T13:57:02Z
+source:         RIPE
+
+
+
+aut-num:        AS52166
+as-name:        RUSAGRO-PRIMORIE
+org:            ORG-RL301-RIPE
+import:         from AS39811 accept ANY
+import:         from AS12332 accept ANY
+import:         from AS203533 accept ANY
+export:         to AS39811 announce AS52166
+export:         to AS12332 announce AS52166
+export:         to AS203533 announce AS52166
+import:         from AS31195 accept ANY
+export:         to AS31195 announce AS52166
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+mnt-by:         TELEDISCOUNT-MNT
+created:        2018-06-12T13:44:56Z
+last-modified:  2021-06-22T10:04:32Z
+source:         RIPE
+sponsoring-org: ORG-TZ1-RIPE
+
+
+
+aut-num:        AS52208
+as-name:        FIBER-AS
+org:            ORG-FL428-RIPE
+import:         from AS51659 accept ANY
+export:         to AS51659 announce AS52208
+import:         from AS30788 accept ANY
+export:         to AS30788 announce AS52208
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         FIBRE-MNT
+status:         ASSIGNED
+created:        2011-01-26T12:32:43Z
+last-modified:  2026-02-16T10:53:46Z
+source:         RIPE
+
+
+
+aut-num:        AS56383
+as-name:        NORDSKY-AS
+org:            ORG-NL341-RIPE
+import:         from AS3216 accept ANY
+import:         from AS50817 accept ANY
+import:         from AS29182 accept ANY
+export:         to AS3216 announce AS56383
+export:         to AS50817 announce AS56383
+export:         to AS29182 announce AS56383
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2017-11-21T09:23:03Z
+last-modified:  2026-01-12T17:02:16Z
+source:         RIPE
+
+
+
+aut-num:        AS56390
+as-name:        KEMOMS-AS
+org:            ORG-TKOK3-RIPE
+sponsoring-org: ORG-IL934-RIPE
+import:         from AS42187 accept ANY
+export:         to AS42187 announce AS56390
+import:         from AS39927 accept ANY
+export:         to AS39927 announce AS56390
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+mnt-by:         KEMOMS-MNT
+status:         ASSIGNED
+created:        2022-08-17T11:51:03Z
+last-modified:  2025-12-30T08:15:16Z
+source:         RIPE
+
+
+
+aut-num:        AS56529
+as-name:        RUAD-AS
+org:            ORG-RL346-RIPE
+import:         from AS198816 accept AS-ATKGAGRA
+export:         to AS198816 announce ANY
+import:         from AS60005 accept ANY
+export:         to AS60005 announce AS56529
+import:         from AS47586 accept ANY
+export:         to AS47586 announce AS56529
+import:         from AS50257 accept ANY
+export:         to AS50257 announce AS-PICUNDANET
+import:         from AS56529 accept ANY
+export:         to AS56529 announce AS-PICUNDANET
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS56529
+import:         from AS8631 accept ANY
+export:         to AS8631 announce AS56529
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2018-12-28T11:32:32Z
+last-modified:  2026-02-02T15:13:29Z
+source:         RIPE
+
+
+
+aut-num:        AS56537
+as-name:        CPL-AS
+org:            ORG-JCPL1-RIPE
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS56537
+import:         from AS197453 accept ANY
+export:         to AS197453 announce AS56537
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2019-09-02T14:31:25Z
+last-modified:  2026-01-12T16:38:14Z
+source:         RIPE
+
+
+
+aut-num:        AS56565
+as-name:        CRPT-AS
+org:            ORG-CRPT1-RIPE
+sponsoring-org: ORG-IL934-RIPE
+import:         from AS209024 accept ANY
+export:         to AS209024 announce AS56565
+import:         from AS47737 accept ANY
+export:         to AS47737 announce AS56565
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS56565
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2021-06-30T08:45:42Z
+last-modified:  2025-12-30T08:16:23Z
+source:         RIPE
+
+
+
+aut-num:        AS56671
+as-name:        MEDIS-AS
+import:         from AS200044 accept ANY
+export:         to AS200044 announce AS56671
+org:            ORG-ML495-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2018-02-27T15:08:42Z
+last-modified:  2026-01-12T17:00:30Z
+source:         RIPE
+
+
+
+aut-num:        AS57036
+as-name:        AVILON-AS
+org:            ORG-JAA19-RIPE
+import:         from AS15886 accept ANY
+export:         to AS15886 announce AS57036
+import:         from AS8359 accept ANY
+export:         to AS8359 announce AS57036
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS57036
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-10-17T11:08:40Z
+last-modified:  2025-12-30T08:15:08Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS57501
+as-name:        UNECO-AS
+org:            ORG-JU13-RIPE
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS57501
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS57501
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2020-01-23T14:36:18Z
+last-modified:  2025-12-30T08:14:22Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS57996
+as-name:        ROSGEOLOGIA-AS
+org:            ORG-JSCR6-RIPE
+import:         from AS39153 accept ANY
+export:         to AS39153 announce AS57996
+import:         from AS8595 accept ANY
+export:         to AS8595 announce AS57996
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+status:         ASSIGNED
+created:        2018-07-17T08:19:09Z
+last-modified:  2025-12-30T08:15:40Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS58207
+as-name:        POLYUS-AS
+org:            ORG-JPK8-RIPE
+import:         from AS2854 accept ANY
+export:         to AS2854 announce AS58207
+import:         from AS199599 accept ANY
+export:         to AS199599 announce AS58207
+import:         from AS49063 accept ANY
+export:         to AS49063 announce AS58207
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2019-03-26T14:40:02Z
+last-modified:  2025-12-30T08:15:35Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS60452
+as-name:        ENPLUSHYDRO-AS
+org:            ORG-ESEH1-RIPE
+sponsoring-org: ORG-IL934-RIPE
+import:         from AS44267 accept ANY
+export:         to AS44267 announce AS60452
+import:         from AS51034 accept ANY
+export:         to AS51034 announce AS60452
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+status:         ASSIGNED
+created:        2021-06-03T09:38:42Z
+last-modified:  2025-12-30T08:16:27Z
+source:         RIPE
+
+
+
+aut-num:        AS60553
+as-name:        RIGLA-MO-AS
+org:            ORG-RL292-RIPE
+import:         from AS50218 accept ANY
+export:         to AS50218 announce AS60553
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2018-02-15T09:48:55Z
+last-modified:  2025-12-30T08:15:12Z
+source:         RIPE
+sponsoring-org: ORG-IL934-RIPE
+
+
+
+aut-num:        AS60561
+as-name:        MONUMENT-A-AS
+org:            ORG-ML740-RIPE
+import:         from AS24663 accept ANY
+export:         to AS24663 announce AS60561
+import:         from AS3175 accept ANY
+export:         to AS3175 announce AS60561
+import:         from AS29076 accept ANY
+export:         to AS29076 announce AS60561
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         lir-ru-monument-a-1-MNT
+mnt-by:         IPADDRESS-RU
+created:        2020-05-12T07:19:57Z
+last-modified:  2024-05-15T05:54:24Z
+source:         RIPE
+
+
+
+aut-num:        AS60956
+as-name:        OTHREE-AS
+org:            ORG-DCOL1-RIPE
+import:         from AS50218 accept ANY
+export:         to AS50218 announce AS60956
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IP-RIPE
+sponsoring-org: ORG-IL934-RIPE
+status:         ASSIGNED
+created:        2018-02-21T14:44:55Z
+last-modified:  2026-01-12T16:30:43Z
+source:         RIPE
+
+
+
+aut-num:        AS62036
+as-name:        ITLABS-AS
+org:            ORG-ILL12-RIPE
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS62036
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS62036
+import:         from AS44257 accept ANY
+export:         to AS44257 announce AS62036
+sponsoring-org: ORG-IL934-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+status:         ASSIGNED
+created:        2021-06-09T11:43:38Z
+last-modified:  2025-12-30T08:15:49Z
+source:         RIPE
+
+
+
+aut-num:        AS62402
+as-name:        KLGD-AS
+org:            ORG-MKUT1-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS62402
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS62402
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RADIO-FSU-MSU-MNT
+created:        2019-12-04T12:02:40Z
+last-modified:  2025-12-04T09:03:25Z
+source:         RIPE
+sponsoring-org: ORG-RN2-RIPE
+
+
+
+aut-num:        AS64450
+as-name:        YADRO-AS
+org:            ORG-GYL1-RIPE
+sponsoring-org: ORG-IL934-RIPE
+import:         from AS28891 accept ANY
+export:         to AS28891 announce AS64450
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS64450
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         IPADDRESS-RU
+created:        2022-08-22T08:43:04Z
+last-modified:  2025-12-30T08:15:21Z
+source:         RIPE
+
+
+

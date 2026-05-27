@@ -1,67 +1,299 @@
-2026-05-26 01:16:50 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:16:50 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:16:50 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS49505
+as-name:        SELECTEL
+org:            ORG-SL223-RIPE
+import:         from AS1299 accept ANY
+export:         to AS1299 announce AS-SELECTEL
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-SELECTEL
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-SELECTEL
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-SELECTEL
+import:         from AS20764 accept ANY
+export:         to AS20764 announce AS-SELECTEL
+import:         from AS50340 accept ANY
+export:         to AS50340 announce ANY
+import:         from AS42 accept AS-PCH
+export:         to AS42 announce AS-SELECTEL
+import:         from AS714 accept AS-APPLE
+export:         to AS714 announce AS-SELECTEL
+import:         from AS3216 accept AS-SOVAM
+export:         to AS3216 announce AS-SELECTEL
+import:         from AS4651 accept AS4651
+export:         to AS4651 announce AS-SELECTEL
+import:         from AS6695 accept AS-DECIX
+export:         to AS6695 announce AS-SELECTEL
+import:         from AS6939 accept AS6939
+export:         to AS6939 announce AS-SELECTEL
+import:         from AS8075 accept AS-MICROSOFT
+export:         to AS8075 announce AS-SELECTEL
+import:         from AS8455 accept AS-ATOM86
+export:         to AS8455 announce AS-SELECTEL
+import:         from AS8492 accept AS8492
+export:         to AS8492 announce AS-SELECTEL
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-SELECTEL
+import:         from AS8714 accept ANY
+export:         to AS8714 announce AS-SELECTEL
+import:         from AS8966 accept AS-EMIX
+export:         to AS8966 announce AS-SELECTEL
+import:         from AS9049 accept AS-ERTH
+export:         to AS9049 announce AS-SELECTEL
+import:         from AS9123 accept AS-TIMEWEB
+export:         to AS9123 announce AS-SELECTEL
+import:         from AS13335 accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-SELECTEL
+import:         from AS15169 accept AS-GOOGLE
+export:         to AS15169 announce AS-SELECTEL
+import:         from AS16509 accept AS16509
+export:         to AS16509 announce AS-SELECTEL
+import:         from AS24940 accept AS-HETZNER
+export:         to AS24940 announce AS-SELECTEL
+import:         from AS26415 accept AS26415
+export:         to AS26415 announce AS-SELECTEL
+import:         from AS28917 accept AS-FIORD
+export:         to AS28917 announce AS-SELECTEL
+import:         from AS31500 accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-SELECTEL
+import:         from AS32934 accept AS-FACEBOOK
+export:         to AS32934 announce AS-SELECTEL
+import:         from AS35237 accept AS-SBRF
+export:         to AS35237 announce AS-SELECTEL
+import:         from AS35807 accept AS-SKYNET-SPB
+export:         to AS35807 announce AS-SELECTEL
+import:         from AS43690 accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-SELECTEL
+import:         from AS43727 accept AS-SETKT
+export:         to AS43727 announce AS-SELECTEL
+import:         from AS47541 accept AS-VKONTAKTE
+export:         to AS47541 announce AS-SELECTEL
+import:         from AS50384 accept AS-W-IX
+export:         to AS50384 announce AS-SELECTEL
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-SELECTEL
+import:         from AS59796 accept AS-STORMWALL-SET
+export:         to AS59796 announce AS-SELECTEL
+import:         from AS49675 accept AS49675
+export:         to AS49675 announce AS-SELECTEL
+import:         from AS62041 accept AS62041
+export:         to AS62041 announce AS-SELECTEL
+import:         from AS31133 accept AS-MF-MGSM
+export:         to AS31133 announce AS-SELECTEL
+import:         from AS50509 accept AS-TRANSROUTE
+export:         to AS50509 announce AS-SELECTEL
+import:         from AS20611 accept AS20611
+export:         to AS20611 announce ANY
+import:         from AS21314 accept AS21314
+export:         to AS21314 announce ANY
+import:         from AS25152 accept RS-KROOT-ANYCAST
+export:         to AS25152 announce ANY
+import:         from AS44661 accept AS44661
+export:         to AS44661 announce ANY
+import:         from AS48235 accept AS48235
+export:         to AS48235 announce ANY
+import:         from AS48277 accept AS48277
+export:         to AS48277 announce ANY
+import:         from AS62300 accept AS62300
+export:         to AS62300 announce ANY
+import:         from AS200172 accept AS200172
+export:         to AS200172 announce ANY
+import:         from AS200487 accept AS200487
+export:         to AS200487 announce ANY
+import:         from AS201499 accept AS201499
+export:         to AS201499 announce ANY
+import:         from AS202144 accept AS202144
+export:         to AS202144 announce ANY
+import:         from AS43278 accept AS-CASTLES
+export:         to AS43278 announce ANY
+import:         from AS51289 accept AS51289
+export:         to AS51289 announce ANY
+import:         from AS214294 accept AS214294
+export:         to AS214294 announce ANY
+import:         from AS214180 accept AS214180
+export:         to AS214180 announce ANY
+import:         from AS204343 accept AS204343
+export:         to AS204343 announce ANY
+import:         from AS215745 accept AS215745
+export:         to AS215745 announce ANY
+import:         from AS199184 accept AS199184
+export:         to AS199184 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@selectel.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-SELECTEL
+created:        2009-06-18T15:53:26Z
+last-modified:  2026-04-20T10:07:57Z
+source:         RIPE
+
+as-num:         AS49505
+country:        RU
+as-name:        SELECTEL JSC Selectel
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+as-num:         AS49505
+country:        RU
+as-name:        null
+
+organisation:   ORG-SL223-RIPE
+org-name:       JSC Selectel
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-SL223-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        AR12863-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-SELECTEL
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-SELECTEL
+created:        2009-05-05T13:00:18Z
+last-modified:  2026-05-13T07:32:39Z
+source:         RIPE
+
+

@@ -1,67 +1,311 @@
-2026-05-26 02:03:04 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 02:03:04 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 02:03:04 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          109.248.0.0/24
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2020-10-01T14:43:55Z
+last-modified:  2020-10-01T14:43:55Z
+source:         RIPE
+
+
+route:          109.248.1.0/24
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2020-10-01T14:44:46Z
+last-modified:  2020-10-01T14:44:46Z
+source:         RIPE
+
+
+route:          109.248.171.0/24
+origin:         AS56340
+created:        2022-12-15T11:57:13Z
+last-modified:  2022-12-15T11:57:41Z
+source:         RIPE
+mnt-by:         UMNYESETI-MNT
+
+
+route:          109.248.2.0/24
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2020-10-01T14:45:32Z
+last-modified:  2020-10-01T14:45:32Z
+source:         RIPE
+
+
+route:          109.248.217.0/24
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2020-09-23T06:30:46Z
+last-modified:  2020-09-23T06:30:46Z
+source:         RIPE
+
+
+route:          176.96.230.0/24
+origin:         AS56340
+mnt-by:         mnt-ru-gsystem-1
+created:        2025-01-13T20:01:00Z
+last-modified:  2025-01-13T20:01:00Z
+source:         RIPE
+
+
+route:          176.96.231.0/24
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2022-09-26T10:13:31Z
+last-modified:  2022-09-26T10:13:31Z
+source:         RIPE
+
+
+route:          176.96.238.0/24
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2022-09-26T10:34:11Z
+last-modified:  2022-09-26T10:34:11Z
+source:         RIPE
+
+
+route:          178.211.153.0/24
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2022-01-26T06:12:15Z
+last-modified:  2024-09-30T13:15:36Z
+source:         RIPE
+
+
+route:          185.17.152.0/22
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2016-03-03T13:11:22Z
+last-modified:  2016-03-03T13:11:22Z
+source:         RIPE
+
+
+route:          185.218.205.0/24
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2023-07-10T18:09:39Z
+last-modified:  2025-08-04T15:51:33Z
+source:         RIPE
+
+
+route:          185.248.16.0/22
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2020-04-30T15:05:49Z
+last-modified:  2020-04-30T15:05:49Z
+source:         RIPE
+
+
+route:          193.111.160.0/24
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2024-02-13T08:59:42Z
+last-modified:  2024-02-13T08:59:42Z
+source:         RIPE
+
+
+route:          193.111.45.0/24
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2024-02-13T08:59:09Z
+last-modified:  2024-02-13T08:59:09Z
+source:         RIPE
+
+
+route:          193.111.80.0/24
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2024-02-13T09:00:16Z
+last-modified:  2024-02-13T09:00:16Z
+source:         RIPE
+
+
+route:          193.111.86.0/24
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2024-02-13T08:58:28Z
+last-modified:  2024-02-13T08:58:28Z
+source:         RIPE
+
+
+route:          193.233.96.0/22
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         MNT-GCX
+mnt-by:         UMNYESETI-MNT
+created:        2023-03-13T19:56:23Z
+last-modified:  2023-03-13T19:57:05Z
+source:         RIPE
+
+
+route:          193.84.113.0/24
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2019-11-15T13:14:50Z
+last-modified:  2021-12-07T12:10:22Z
+source:         RIPE
+
+
+route:          193.84.180.0/24
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2019-11-15T13:15:59Z
+last-modified:  2021-12-07T12:10:40Z
+source:         RIPE
+
+
+route:          193.84.187.0/24
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2019-11-15T13:16:48Z
+last-modified:  2021-12-07T12:11:03Z
+source:         RIPE
+
+
+route:          193.84.244.0/24
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2019-11-15T13:17:42Z
+last-modified:  2021-12-07T12:10:02Z
+source:         RIPE
+
+
+route6:         2a0f::/29
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2024-10-28T15:46:59Z
+last-modified:  2024-10-28T15:46:59Z
+source:         RIPE
+
+
+route:          37.9.40.0/21
+origin:         AS56340
+mnt-by:         MNT-PINSUPPORT
+created:        2025-06-18T07:46:39Z
+last-modified:  2025-06-18T07:46:39Z
+source:         RIPE
+
+
+route:          45.143.20.0/22
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2019-08-26T14:59:39Z
+last-modified:  2024-10-28T13:30:29Z
+source:         RIPE
+
+
+route:          45.150.148.0/24
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2022-09-08T06:41:38Z
+last-modified:  2022-09-08T06:41:38Z
+source:         RIPE
+
+
+route:          46.8.0.0/22
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2020-10-01T14:42:42Z
+last-modified:  2020-10-01T14:42:42Z
+source:         RIPE
+
+
+route:          5.101.128.0/21
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2013-10-11T14:10:58Z
+last-modified:  2013-10-11T14:10:58Z
+source:         RIPE
+
+
+route:          5.101.192.0/21
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2014-09-16T10:07:22Z
+last-modified:  2014-09-16T10:07:22Z
+source:         RIPE
+
+
+route:          5.101.8.0/21
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2016-05-11T13:17:07Z
+last-modified:  2016-05-11T13:17:07Z
+source:         RIPE
+
+
+route:          5.188.96.0/21
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2017-08-04T14:55:45Z
+last-modified:  2017-08-04T14:55:45Z
+source:         RIPE
+
+
+route:          5.35.48.0/20
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2023-07-31T16:20:10Z
+last-modified:  2023-07-31T16:20:10Z
+source:         RIPE
+
+
+route:          5.8.80.0/21
+origin:         AS56340
+mnt-by:         MNT-PINSUPPORT
+created:        2025-10-16T09:57:11Z
+last-modified:  2025-10-16T09:57:11Z
+source:         RIPE
+
+
+route:          77.91.104.0/21
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2021-04-26T14:01:49Z
+last-modified:  2021-04-26T14:01:55Z
+source:         RIPE
+
+
+route:          80.72.28.0/22
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         UMNYESETI-MNT
+created:        2020-05-14T12:50:19Z
+last-modified:  2020-05-14T12:50:19Z
+source:         RIPE
+
+
+route:          91.243.88.0/21
+origin:         AS56340
+mnt-by:         MNT-PINSUPPORT
+mnt-by:         umnyeseti-mnt
+created:        2025-06-09T10:20:55Z
+last-modified:  2025-06-18T10:18:04Z
+source:         RIPE
+
+
+route:          92.51.8.0/22
+descr:          UMNYESETI-NET
+origin:         AS56340
+mnt-by:         MNT-GCX
+created:        2023-05-19T13:04:58Z
+last-modified:  2023-05-19T13:04:58Z
+source:         RIPE
+
+

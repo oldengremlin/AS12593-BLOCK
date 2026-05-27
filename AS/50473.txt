@@ -1,67 +1,254 @@
-2026-05-26 01:18:19 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:18:19 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:18:19 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS50473
+as-name:        ECO-AS
+org:            ORG-AC64-RIPE
+import:         from AS29076 action pref=109; accept ANY
+export:         to AS29076 announce AS-ECO
+import:         from AS35598 action pref=110; accept ANY
+export:         to AS35598  announce AS-ECO
+import:         from AS31133 action pref=110; accept ANY
+export:         to AS31133 announce AS-ECO
+import:         from AS20764 action pref=110; accept ANY
+export:         to AS20764 announce AS-ECO
+import:         from AS50384 action pref=900; accept ANY
+export:         to AS50384 announce AS-ECO
+import:         from AS50817 action pref=900; accept ANY
+export:         to AS50817 announce AS-ECO
+import:         from AS50952 action pref=900; accept AS-DATAIX
+export:         to AS50952 announce AS-ECO
+import:         from AS8631 action pref=1100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-ECO
+import:         from AS13238 action pref=2000; accept AS-YANDEX
+export:         to AS13238 announce AS-ECO
+import:         from AS15169 action pref=2000; accept ANY
+export:         to AS15169 announce AS-ECO
+import:         from AS200976 action pref=2000; accept AS200976
+export:         to AS200976 announce AS-ECO
+import:         from AS47635 action pref=2000; accept AS47635
+export:         to AS47635 announce ANY
+import:         from AS49608 action pref=2000; accept AS49608
+export:         to AS49608 announce ANY
+import:         from AS51596 action pref=2000; accept AS-RUSTEKO
+export:         to AS51596 announce ANY
+import:         from AS35377 action pref=2000; accept AS35377
+export:         to AS35377 announce ANY
+import:         from AS31626 action pref=2000; accept AS31626
+export:         to AS31626 announce ANY
+import:         from AS50092 action pref=2000; accept AS50092
+export:         to AS50092 announce ANY
+import:         from AS42429 action pref=2000; accept AS42429
+export:         to AS42429 announce ANY
+import:         from AS51904 action pref=2000; accept AS-UTEX
+export:         to AS51904 announce AS-ECO
+import:         from AS16143 action pref=2000; accept AS16143
+export:         to AS16143 announce AS-ECO
+import:         from AS47104 action pref=2000; accept AS47104
+export:         to AS47104 announce AS-ECO
+import:         from AS49261 action pref=2000; accept AS49261
+export:         to AS49261 announce AS-ECO
+import:         from AS41802 action pref=2000; accept AS41802
+export:         to AS41802 announce AS-ECO
+import:         from AS50289 action pref=2000; accept AS50289
+export:         to AS50289 announce AS-ECO
+import:         from AS60986 action pref=2000; accept AS60986
+export:         to AS60986 announce AS-ECO
+import:         from AS21453 action pref=2000; accept AS21453
+export:         to AS21453 announce AS-ECO
+import:         from AS48293 action pref=2000; accept AS48293
+export:         to AS48293 announce AS-ECO
+import:         from AS44020 action pref=2000; accept AS44020
+export:         to AS44020 announce AS-ECO
+import:         from AS39709 action pref=2000; accept AS39709
+export:         to AS39709 announce AS-ECO
+import:         from AS45051 action pref=2000; accept AS45051
+export:         to AS45051 announce AS-ECO
+import:         from AS51011 action pref=2000; accept AS51011
+export:         to AS51011 announce AS-ECO
+import:         from AS35165 action pref=2000; accept AS35165
+export:         to AS35165 announce AS-ECO
+import:         from AS12695 action pref=2000; accept AS12695
+export:         to AS12695 announce AS-ECO
+import:         from AS48781 action pref=2000; accept AS48781
+export:         to AS48781 announce AS-ECO
+import:         from AS8492 action pref=2000; accept AS8492
+export:         to AS8492 announce AS-ECO
+import:         from AS25308 action pref=2000; accept AS25308
+export:         to AS25308 announce AS-ECO
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ECO-MNT
+created:        2010-01-22T10:51:54Z
+last-modified:  2024-01-09T13:14:01Z
+source:         RIPE
+
+as-num:         AS50473
+country:        RU
+as-name:        ECO-AS Altagen JSC
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+as-num:         AS50473
+country:        RU
+as-name:        null
+
+organisation:   ORG-AC64-RIPE
+org-name:       Altagen JSC
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-AC64-RIPE
+abuse-c:        AR16548-RIPE
+mnt-ref:        ECO-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ECO-MNT
+created:        2013-05-21T09:54:30Z
+last-modified:  2026-05-13T07:03:05Z
+source:         RIPE
+e-mail:         unread@ripe.net
+
+

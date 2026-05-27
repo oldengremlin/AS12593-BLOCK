@@ -1,67 +1,554 @@
-2026-05-26 02:33:23 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:33:23 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-05-26 02:33:23 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+as-set:         AS-EXPERT
+tech-c:         DUMY-RIPE
+members:        AS207498
+admin-c:        DUMY-RIPE
+mnt-by:         NETRACK-MNT
+mnt-by:         MG67650-MNT
+created:        2020-04-27T13:48:05Z
+last-modified:  2020-04-27T13:48:22Z
+source:         RIPE
+
+
+
+as-set:         AS-ModernIT
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS48076
+members:        AS48708
+members:        AS196678
+members:        AS196780
+members:        AS200430
+members:        AS200505
+members:        AS208107
+members:        AS208300
+members:        AS209406
+members:        AS210331
+mnt-by:         NETRACK-MNT
+mnt-by:         MG67650-MNT
+created:        2017-09-27T14:46:59Z
+last-modified:  2021-06-25T05:23:57Z
+source:         RIPE
+
+
+
+as-set:         AS-NETRACK
+descr:          Start LLC AS-SET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NETRACK-MNT
+members:        AS61400
+members:        AS-NTX
+members:        AS-LIFESTREAM
+members:        AS-VPSVILLE
+members:        AS200993:AS-CORE
+members:        AS48708
+members:        AS50113
+members:        AS39317
+members:        AS42762
+members:        AS50790
+members:        AS50889
+members:        AS57363
+members:        AS58045
+members:        AS59730
+members:        AS61302
+members:        AS61306
+members:        AS200815
+members:        AS199274
+members:        AS200107
+members:        AS200457
+members:        AS202532
+members:        AS198562
+members:        AS196780
+members:        AS60580
+members:        AS200430
+members:        AS44670
+members:        AS41775
+members:        AS205387
+members:        AS200952
+members:        AS60283
+members:        AS210331
+members:        AS21030
+members:        AS39900
+members:        AS204553
+members:        AS204703
+members:        AS200505
+members:        AS42972
+members:        AS202268
+members:        AS209406
+members:        AS210188
+members:        AS9210
+members:        AS203410
+members:        AS208300
+members:        AS208360
+members:        AS208417
+members:        AS204720
+members:        AS204997
+members:        AS208107
+members:        AS197756
+members:        AS207353
+members:        AS207415
+members:        AS56516
+members:        AS59788
+members:        AS211406
+members:        AS212236
+members:        AS212352
+members:        AS212940
+members:        AS212742
+members:        AS212737
+members:        AS214664
+members:        AS199280
+created:        2012-10-25T16:50:26Z
+last-modified:  2026-04-20T16:49:51Z
+source:         RIPE
+members:        AS8484
+members:        AS200195
+members:        AS216158
+members:        AS207718
+
+
+
+as-set:         AS-NETRACK2
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         NETRACK-MNT
+members:        AS48076
+members:        AS9210
+members:        AS48708
+members:        AS196678
+members:        AS196780
+members:        AS198310
+members:        AS200430
+members:        AS200505
+members:        AS208107
+members:        AS208300
+members:        AS209406
+members:        AS210331
+members:        AS212742
+members:        AS212940
+created:        2020-10-08T08:25:44Z
+last-modified:  2021-11-04T08:01:36Z
+source:         RIPE
+
+
+
+aut-num:        AS200505
+as-name:        Uservice
+org:            ORG-UL168-RIPE
+import:         from AS61400 accept ANY
+export:         to AS61400 announce AS200505
+import:         from AS8603 accept ANY
+export:         to AS8603 announce AS200505
+import:         from AS48076 accept ANY
+export:         to AS48076 announce AS200505
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+created:        2018-07-23T07:58:25Z
+last-modified:  2025-08-13T12:59:31Z
+source:         RIPE
+sponsoring-org: ORG-SL744-RIPE
+
+
+
+aut-num:        AS200622
+as-name:        GPRM
+org:            ORG-GL182-RIPE
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS200622
+import:         from AS31261 accept ANY
+export:         to AS31261 announce AS200622
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+mnt-by:         GPRM-MNT
+created:        2015-05-20T09:21:02Z
+last-modified:  2025-08-13T12:59:32Z
+source:         RIPE
+sponsoring-org: ORG-SL744-RIPE
+
+
+
+aut-num:        AS208107
+as-name:        EvseevPavelNikolaevich
+org:            ORG-EPN2-RIPE
+import:         from as61400 accept ANY
+export:         to as61400 announce AS208107
+import:         from as8603 accept ANY
+export:         to as8603 announce AS208107
+import:         from as48076 accept ANY
+export:         to as48076 announce AS208107
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+created:        2019-10-02T08:55:00Z
+last-modified:  2025-08-13T12:59:32Z
+source:         RIPE
+sponsoring-org: ORG-SL744-RIPE
+
+
+
+aut-num:        AS208300
+as-name:        Sokirkin
+org:            ORG-SVU2-RIPE
+import:         from AS61400 accept ANY
+export:         to AS61400 announce AS208300
+import:         from AS8603 accept ANY
+export:         to AS8603 announce AS208300
+import:         from AS48076 accept ANY
+export:         to AS48076 announce AS208300
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+created:        2019-08-30T14:53:17Z
+last-modified:  2025-08-13T12:59:31Z
+source:         RIPE
+sponsoring-org: ORG-SL744-RIPE
+
+
+
+aut-num:        AS208752
+as-name:        BaykonurSvyazInform-AS
+org:            ORG-SA4896-RIPE
+sponsoring-org: ORG-SL744-RIPE
+import:         from as61400 accept ANY
+export:         to as61400 announce AS208752
+import:         from as48076 accept ANY
+export:         to as48076 announce AS208752
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+created:        2022-02-08T14:00:38Z
+last-modified:  2025-08-13T12:59:31Z
+source:         RIPE
+
+
+
+aut-num:        AS209406
+as-name:        ipway
+org:            ORG-IL568-RIPE
+import:         from AS61400 accept ANY
+export:         to AS61400 announce AS209406
+import:         from AS8603 accept ANY
+export:         to AS8603 announce AS209406
+import:         from AS48076 accept ANY
+export:         to AS48076 announce AS209406
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+created:        2019-02-15T06:59:43Z
+last-modified:  2025-08-13T12:59:32Z
+source:         RIPE
+sponsoring-org: ORG-SL744-RIPE
+
+
+
+aut-num:        AS211406
+as-name:        REANTACLOUD-AS
+org:            ORG-CPL29-RIPE
+sponsoring-org: ORG-SL744-RIPE
+import:         from AS61400 accept ANY
+export:         to AS61400 announce AS211406
+import:         from AS29076 accept ANY
+export:         to AS29076 announce AS211406
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+created:        2021-04-29T09:01:55Z
+last-modified:  2021-12-14T14:48:38Z
+source:         RIPE
+
+
+
+aut-num:        AS212352
+as-name:        Reshenie-AS
+org:            ORG-RL474-RIPE
+import:         from as61400 accept ANY
+export:         to as61400 announce AS212352
+import:         from as48076 accept ANY
+export:         to as48076 announce AS212352
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+created:        2020-11-17T08:14:19Z
+last-modified:  2021-12-14T14:48:38Z
+source:         RIPE
+sponsoring-org: ORG-SL744-RIPE
+
+
+
+aut-num:        AS216158
+as-name:        TeleportMedia-AS
+org:            ORG-TRL13-RIPE
+sponsoring-org: ORG-SL744-RIPE
+import:         from as61400 accept ANY
+export:         to as61400 announce AS216158
+import:         from AS48076 accept ANY
+export:         to AS48076 announce AS216158
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+created:        2023-10-12T11:41:10Z
+last-modified:  2023-10-12T11:41:10Z
+source:         RIPE
+
+
+
+aut-num:        AS48076
+as-name:        Netrack2-AS
+org:            ORG-SL744-RIPE
+import:         from AS61400 accept ANY
+export:         to AS61400 announce AS-NETRACK2
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS-NETRACK2
+import:         from AS202984  accept ANY
+export:         to AS202984 announce AS-NETRACK2
+import:         from AS9210 accept AS210188
+export:         to AS9210 announce ANY
+import:         from AS48708 accept AS210188
+export:         to AS48708 announce ANY
+import:         from AS196678 accept AS210188
+export:         to AS196678 announce ANY
+import:         from AS196780 accept AS210188
+export:         to AS196780 announce ANY
+import:         from AS198310 accept AS-PWS
+export:         to AS198310 announce ANY
+import:         from AS200430 accept AS210188
+export:         to AS200430 announce ANY
+import:         from AS200505 accept AS210188
+export:         to AS200505 announce ANY
+import:         from AS208107 accept AS210188
+export:         to AS208107 announce ANY
+import:         from AS208300 accept AS210188
+export:         to AS208300 announce ANY
+import:         from AS209406 accept AS210188
+export:         to AS209406 announce ANY
+import:         from AS210331 accept AS210188
+export:         to AS210331 announce ANY
+import:         from AS212742 accept AS210188
+export:         to AS212742 announce ANY
+import:         from AS212940 accept AS210188
+export:         to AS212940 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+created:        2020-07-24T13:44:40Z
+last-modified:  2025-08-13T13:02:04Z
+source:         RIPE
+
+
+
+aut-num:        AS61400
+as-name:        NETRACK-AS
+org:            ORG-SL744-RIPE
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-NETRACK
+import:         from AS3356 accept ANY
+export:         to AS3356 announce AS-NETRACK
+export:         to AS8359 announce AS-NETRACK
+import:         from AS8359 accept ANY
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS-NETRACK
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-NETRACK
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-NETRACK
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS-NETRACK
+import:         from AS9002 action pref=150; accept AS-RETN
+export:         to AS9002 announce AS-NETRACK
+import:         from AS31500 action pref=150; accept AS-GLOBALNET
+import:         from AS8631 action pref=150; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-NETRACK
+import:         from AS50952 action pref=150; accept ANY
+export:         to AS50952 announce AS-NETRACK
+import:         from AS60299 action pref=150; accept AS-MMTS
+export:         to AS60299 announce AS-NETRACK
+import:         from AS714 action pref=150; accept AS-APPLE
+export:         to AS714 announce AS-NETRACK
+import:         from AS8732 action pref=150; accept AS-COMCOR
+export:         to AS8732 announce AS-NETRACK
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-NETRACK
+import:         from AS8603 action pref=200; accept AS-MODERNIT
+import:         from AS9210 action pref=200; accept AS9210
+import:         from AS21030 action pref=200; accept AS21030
+import:         from AS39317 action pref=200; accept AS39317
+import:         from AS39900 action pref=200; accept AS39900
+import:         from AS41775 action pref=200; accept AS41775
+import:         from AS42481 action pref=200; accept AS42481
+import:         from AS42972 action pref=200; accept AS42762
+import:         from AS44401 action pref=200; accept AS44401
+import:         from AS44670 action pref=200; accept AS44670
+import:         from AS47723 action pref=200; accept AS47723
+import:         from AS47746 action pref=200; accept AS47746
+import:         from AS48708 action pref=200; accept AS48708
+import:         from AS49813 action pref=200; accept AS49813
+import:         from AS50113 action pref=200; accept AS-NTX
+import:         from AS50790 action pref=200; accept AS50790
+import:         from AS50889 action pref=200; accept AS50889
+import:         from AS56516 action pref=200; accept AS56516
+import:         from AS56788 action pref=200; accept AS56788
+import:         from AS58045 action pref=200; accept AS58045
+import:         from AS57363 action pref=200; accept  AS-CDNETWORKSRU
+import:         from AS59730 action pref=200; accept AS59730
+import:         from AS59788 action pref=200; accept AS59788
+import:         from AS60283 action pref=200; accept AS60283
+import:         from AS60580 action pref=200; accept AS60580
+import:         from AS61302 action pref=200; accept AS61302
+import:         from AS61306 action pref=200; accept AS61306
+import:         from AS199472 action pref=200; accept AS199472
+import:         from AS199274 action pref=200; accept AS199274
+import:         from AS200107 action pref=200; accept AS200107
+import:         from AS200430 action pref=200; accept AS200430
+import:         from AS200457 action pref=200; accept AS200457
+import:         from AS200815 action pref=200; accept AS200815
+import:         from AS200952 action pref=200; accept AS200952
+import:         from AS200952 action pref=200; accept AS200952
+import:         from AS202532 action pref=200; accept AS202532
+import:         from AS205387 action pref=200; accept AS205387
+import:         from AS198562 action pref=200; accept AS198562
+import:         from AS196780 action pref=200; accept AS196780
+import:         from AS197756 action pref=200; accept AS197756
+import:         from AS199280 action pref=200; accept AS199280
+import:         from AS200993 action pref=200; accept AS200993:AS-CORE
+import:         from AS204703 action pref=200; accept AS204703
+import:         from AS204720 action pref=200; accept AS-CDNETWORKSRU
+import:         from AS207353 action pref=200; accept AS207353
+import:         from AS209406 action pref=200; accept AS209406
+import:         from AS203410 action pref=200; accept AS203410
+import:         from AS207415 action pref=200; accept AS207415
+import:         from AS208107 action pref=200; accept AS208107
+import:         from AS208300 action pref=200; accept AS208300
+import:         from AS208360 action pref=200; accept AS208360
+import:         from AS208417 action pref=200; accept AS208417
+import:         from AS211406 action pref=200; accept AS211406
+import:         from AS211406 action pref=200; accept AS212236
+import:         from AS212352 action pref=200; accept AS212352
+import:         from AS212940 action pref=200; accept AS212940
+import:         from AS212737 action pref=200; accept AS212737
+import:         from AS212742 action pref=200; accept AS212742
+import:         from AS214664 action pref=200; accept AS214664
+export:         to AS8603 announce ANY
+export:         to AS9210 announce ANY
+export:         to AS21030 announce ANY
+export:         to AS39317 announce ANY
+export:         to AS39900 announce ANY
+export:         to AS41775 announce ANY
+export:         to AS42481 announce ANY
+export:         to AS42972 announce ANY
+export:         to AS44401 announce ANY
+export:         to AS44670 announce ANY
+export:         to AS48708 announce ANY
+export:         to AS47723 announce ANY
+export:         to AS47746 announce ANY
+export:         to AS49813 announce ANY
+export:         to AS50113 announce ANY
+export:         to AS50790 announce ANY
+export:         to AS50889 announce ANY
+export:         to AS56788 announce ANY
+export:         to AS56516 announce ANY
+export:         to AS57363 announce ANY
+export:         to AS58045 announce ANY
+export:         to AS59730 announce ANY
+export:         to AS59788 announce ANY
+export:         to AS60283 announce ANY
+export:         to AS60580 announce ANY
+export:         to AS61302 announce ANY
+export:         to AS61306 announce ANY
+export:         to AS197756 announce ANY
+export:         to AS199472 announce ANY
+export:         to AS199274 announce ANY
+export:         to AS200430 announce ANY
+export:         to AS200457 announce ANY
+export:         to AS200815 announce ANY
+export:         to AS200952 announce ANY
+export:         to AS202532 announce ANY
+export:         to AS198562 announce ANY
+export:         to AS196780 announce ANY
+export:         to AS199280 announce ANY
+export:         to AS59730 announce ANY
+export:         to AS200993 announce ANY
+export:         to AS204703 announce ANY
+export:         to AS204720 announce ANY
+export:         to AS205387 announce ANY
+export:         to AS209406 announce ANY
+export:         to AS207353 announce ANY
+export:         to AS207415 announce ANY
+export:         to AS208107 announce ANY
+export:         to AS208300 announce ANY
+export:         to AS208360 announce ANY
+export:         to AS208417 announce ANY
+export:         to AS211406 announce ANY
+export:         to AS212236 announce ANY
+export:         to AS212352 announce ANY
+export:         to AS212737 announce ANY
+export:         to AS212742 announce ANY
+export:         to AS212940 announce ANY
+export:         to AS214664 announce ANY
+mp-import:      afi ipv6.unicast from AS8939 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS8939 announce AS-NETRACK
+mp-import:      afi ipv6.unicast from AS9002 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS9002 announce AS-NETRACK
+mp-import:      afi ipv6.unicast from AS3356 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS3356 announce AS-NETRACK
+mp-import:      afi ipv6.unicast from AS31500 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS31500 announce AS-NETRACK
+mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS-NETRACK
+mp-import:      afi ipv6.unicast from AS50592 action pref=150; accept ANY
+mp-export:      afi ipv6.unicast to AS50592 announce AS-NETRACK
+mp-import:      afi ipv6.unicast from AS8631 action pref=150; accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-NETRACK
+mp-import:      afi ipv6.unicast from AS201183 action pref=200; accept AS201183
+mp-export:      afi ipv6.unicast to AS201183 announce ANY
+mp-import:      afi ipv6.unicast from AS196678 action pref=200; accept AS196678
+mp-export:      afi ipv6.unicast to AS196678 announce AS-NETRACK
+mp-import:      afi ipv6.unicast from AS200430 action pref=200; accept AS200430
+mp-export:      afi ipv6.unicast to AS200430 announce ANY
+mp-import:      afi ipv6.unicast from AS62222 action pref=200; accept AS62222
+mp-export:      afi ipv6.unicast to AS62222 announce ANY
+mp-import:      afi ipv6.unicast from AS51218 action pref=200; accept AS51218
+mp-export:      afi ipv6.unicast to AS51218 announce ANY
+mp-import:      afi ipv6.unicast from AS8603 action pref=200; accept AS-MODERNIT
+mp-export:      afi ipv6.unicast to AS8603 announce ANY
+mp-import:      afi ipv6.unicast from AS204703 action pref=200; accept AS204703
+mp-export:      afi ipv6.unicast to AS204703 announce ANY
+mp-import:      afi ipv6.unicast from AS204292 action pref=200; accept AS204292
+mp-export:      afi ipv6.unicast to AS204292 announce ANY
+mp-import:      afi ipv6.unicast from AS209406 action pref=200; accept AS209406
+mp-export:      afi ipv6.unicast to AS209406 announce ANY
+mp-import:      afi ipv6.unicast from AS203410 action pref=200; accept AS203410
+mp-export:      afi ipv6.unicast to AS203410 announce ANY
+mp-import:      afi ipv6.unicast from AS207353 action pref=200; accept AS207353
+mp-export:      afi ipv6.unicast to AS207353 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         NETRACK-MNT
+created:        2012-10-25T07:55:22Z
+last-modified:  2026-04-20T16:49:20Z
+source:         RIPE
+
+
+

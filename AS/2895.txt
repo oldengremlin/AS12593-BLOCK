@@ -1,67 +1,235 @@
-2026-05-26 01:00:07 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:00:07 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:00:07 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS2895
+as-name:        FREE-NET-AS
+descr:          FREEnet
+org:            ORG-FG2-RIPE
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS8732 action pref=200; accept ANY
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS8732 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS3267 action pref=200; accept ANY
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS3267 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS2587 action pref=80; accept AS2587
+mp-export:      afi ipv4.unicast to AS2587 announce ANY
+import:         from AS201842 action pref=80; accept {147.45.206.0/24, 193.233.79.0/24}
+export:         to AS201842 announce AS-FREENET {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from AS204039 action pref=80; accept {31.28.22.0/24}
+mp-export:      afi ipv4.unicast to AS204039 announce {0.0.0.0/0}
+mp-import:      afi ipv4.unicast from AS3218 action pref=100; accept AS-COSMOS
+mp-export:      afi ipv4.unicast to AS3218 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS3316 action pref=100; accept AS-RELARN
+mp-export:      afi ipv4.unicast to AS3316 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS45102 action pref=100; accept AS45102
+mp-export:      afi ipv4.unicast to AS45102 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS5431 action pref=100; accept ANY
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS5431 announce AS-FREENET
+import:         from AS5467 action pref=100; accept AS-MIPT
+export:         to AS5467 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS5568 action pref=100; accept AS-RBNET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS5568 announce AS-FREENET
+import:         from AS8241 action pref=100; accept AS-RELLINE
+export:         to AS8241 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS8470 action pref=100; accept AS-MACOMNET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS8470 announce AS-FREENET
+import-via:     afi ipv4.unicast, ipv6.unicast AS8631 from AS-MSKROUTESERVER action pref=100; accept AS-MSKROUTESERVER
+export-via:     afi ipv4.unicast, ipv6.unicast AS8631 to AS-MSKROUTESERVER announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS12695 action pref=100; accept AS-DINET
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS12695 announce AS-FREENET
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS13238 action pref=100; accept AS-YANDEX
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS13238 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS30124 action pref=90; accept {192.5.5.0/24}
+mp-import:      afi ipv6.unicast from AS30124 action pref=90; accept {2001:500:2f::/48}
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS215182 announce AS-FREENET
+mp-import:      afi ipv4.unicast from AS215182 action pref=100; accept AS-AVELACOM
+mp-import:      afi ipv6.unicast from AS215182 action pref=100; accept AS-AVELACOM6
+import:         from AS43832 action pref=100; accept AS43832
+export:         to AS43832 announce AS-FREENET
+import-via:     afi ipv4.unicast, ipv6.unicast AS49869 from AS-PITER-IX-MSK action pref=100; accept AS-PITER-IX-MSK
+export-via:     afi ipv4.unicast, ipv6.unicast AS49869 to AS-PITER-IX-MSK announce AS-FREENET
+import-via:     afi ipv4.unicast, ipv6.unicast AS50817 from AS-PITER-IX action pref=100; accept AS-PITER-IX
+export-via:     afi ipv4.unicast, ipv6.unicast AS50817 to AS-PITER-IX announce AS-FREENET
+import-via:     afi ipv4.unicast AS39607 from AS-PITER-IX-HELSINKI action pref=100; accept AS-PITER-IX-HELSINKI
+export-via:     afi ipv4.unicast AS39607 to AS-PITER-IX-HELSINKI announce AS-FREENET
+import-via:     afi ipv4.unicast AS57936 from AS-PITER-IX-TLL action pref=100; accept AS-PITER-IX-TLL
+export-via:     afi ipv4.unicast AS57936 to AS-PITER-IX-TLL announce AS-FREENET
+import-via:     afi ipv4.unicast AS49634 from AS-PITER-IX-RIGA action pref=100; accept AS-PITER-IX-RIGA
+export-via:     afi ipv4.unicast AS49634 to AS-PITER-IX-RIGA announce AS-FREENET
+import-via:     afi ipv4.unicast AS48193 from AS-PITER-IX-FRA action pref=100; accept AS-PITER-IX-RIGA
+export-via:     afi ipv4.unicast AS48193 to AS-PITER-IX-FRA announce AS-FREENET
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         LEGACY
+mnt-by:         RIPE-NCC-LEGACY-MNT
+mnt-by:         AS2895-MNT
+mnt-by:         FREENET-MNT
+created:        2002-09-10T15:26:09Z
+last-modified:  2025-11-18T10:47:41Z
+source:         RIPE
+
+as-num:         AS2895
+country:        RU
+as-name:        FREE-NET-AS OOO FREEnet Group
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+as-num:         AS2895
+country:        RU
+as-name:        null
+
+organisation:   ORG-FG2-RIPE
+org-name:       OOO FREEnet Group
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-FG2-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        FRAB1-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        FREENET-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         FREENET-MNT
+created:        2004-04-17T11:52:42Z
+last-modified:  2026-05-13T07:13:22Z
+source:         RIPE
+
+

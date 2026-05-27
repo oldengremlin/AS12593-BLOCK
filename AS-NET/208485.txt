@@ -1,67 +1,435 @@
-2026-05-26 02:19:04 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 02:19:04 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 02:19:04 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          185.148.243.0/24
+origin:         AS208185
+mnt-by:         tr-moondc-1-mnt
+created:        2025-10-17T09:34:17Z
+last-modified:  2025-10-17T09:34:17Z
+source:         RIPE
+
+
+route:          185.230.13.0/24
+origin:         AS2856
+mnt-by:         MNT-RAPIDNET
+created:        2025-09-26T14:59:44Z
+last-modified:  2025-09-26T14:59:44Z
+source:         RIPE
+
+
+route:          185.230.15.0/24
+origin:         AS2856
+mnt-by:         MNT-RAPIDNET
+created:        2025-09-26T14:59:44Z
+last-modified:  2025-09-26T14:59:44Z
+source:         RIPE
+
+
+route:          185.84.156.0/24
+origin:         as49581
+created:        2026-01-31T20:27:17Z
+last-modified:  2026-01-31T20:27:17Z
+source:         RIPE
+mnt-by:         EGRK
+
+
+route:          185.84.159.0/24
+origin:         as208185
+created:        2026-04-22T05:45:02Z
+last-modified:  2026-04-22T05:45:02Z
+source:         RIPE
+mnt-by:         IR-EGRK-20150615
+
+
+route:          188.215.72.0/24
+origin:         AS208185
+created:        2026-02-12T11:47:16Z
+last-modified:  2026-02-12T11:47:16Z
+source:         RIPE
+mnt-by:         WORLD-NET-MNT
+
+
+route:          188.215.95.0/24
+origin:         AS34450
+mnt-by:         WORLD-NET-MNT
+created:        2025-09-19T14:32:48Z
+last-modified:  2025-09-19T14:32:48Z
+source:         RIPE
+
+
+route:          193.106.191.0/24
+origin:         as202391
+mnt-by:         EGRK
+created:        2025-08-19T00:01:11Z
+last-modified:  2025-08-19T00:01:11Z
+source:         RIPE
+
+
+route:          193.24.121.0/24
+origin:         AS208185
+created:        2026-04-22T05:37:37Z
+last-modified:  2026-04-22T05:37:37Z
+source:         RIPE
+mnt-by:         IR-EGRK-20150615
+
+
+route:          194.246.34.0/24
+origin:         AS212077
+mnt-by:         lir-ir-aidaahmadi-1-MNT
+created:        2025-10-05T09:14:13Z
+last-modified:  2025-10-05T09:14:13Z
+source:         RIPE
+
+
+route:          194.33.28.0/24
+origin:         AS59711
+created:        2026-03-10T11:22:54Z
+last-modified:  2026-03-10T11:22:54Z
+source:         RIPE
+mnt-by:         HZ-HOSTING-LTD
+
+
+route:          195.211.188.0/24
+origin:         AS203963
+created:        2026-03-26T17:23:34Z
+last-modified:  2026-03-26T17:23:34Z
+source:         RIPE
+mnt-by:         PITLINE-MNT
+
+
+route:          195.234.153.0/24
+origin:         AS215419
+mnt-by:         lir-ir-behdad1-1-MNT
+created:        2025-06-21T11:26:42Z
+last-modified:  2025-06-21T11:26:42Z
+source:         RIPE
+
+
+route:          195.5.105.0/24
+origin:         As212077
+mnt-by:         EGRK
+created:        2025-10-19T20:24:42Z
+last-modified:  2025-10-19T20:24:42Z
+source:         RIPE
+
+
+route:          212.30.44.0/24
+origin:         AS208485
+mnt-by:         Mnets-Admin
+created:        2025-06-03T09:39:17Z
+last-modified:  2025-06-03T09:39:17Z
+source:         RIPE
+
+
+route:          213.209.157.0/24
+origin:         AS208185
+mnt-by:         MNT-RAPIDNET
+created:        2026-04-07T18:36:14Z
+last-modified:  2026-04-07T18:36:14Z
+source:         RIPE
+
+
+route:          217.60.239.0/24
+origin:         AS25098
+descr:          Netcalibre LTD
+mnt-by:         lir-ae-goldip-1-MNT
+mnt-by:         GOLD-MNT
+created:        2025-08-23T17:01:15Z
+last-modified:  2025-08-23T17:01:15Z
+source:         RIPE
+
+
+route:          217.60.246.0/23
+origin:         AS208485
+mnt-by:         lir-ae-goldip-1-MNT
+mnt-by:         GOLD-MNT
+created:        2025-06-13T08:48:30Z
+last-modified:  2025-06-13T08:48:30Z
+source:         RIPE
+descr:          Eksen Bilishim
+
+
+route6:         2a12:cb41:10ff::/48
+origin:         AS208485
+created:        2026-05-12T01:03:15Z
+last-modified:  2026-05-12T01:03:15Z
+source:         RIPE
+mnt-by:         PINHOUSE-MNT
+
+
+route:          31.133.88.0/24
+origin:         AS208185
+created:        2026-04-14T18:11:36Z
+last-modified:  2026-04-14T18:11:36Z
+source:         RIPE
+mnt-by:         PITLINE-MNT
+
+
+route:          31.133.89.0/24
+origin:         AS208185
+created:        2026-04-14T18:11:45Z
+last-modified:  2026-04-14T18:11:45Z
+source:         RIPE
+mnt-by:         PITLINE-MNT
+
+
+route:          31.133.90.0/24
+origin:         AS208185
+created:        2026-04-14T18:11:56Z
+last-modified:  2026-04-14T18:11:56Z
+source:         RIPE
+mnt-by:         PITLINE-MNT
+
+
+route:          31.133.91.0/24
+origin:         AS208185
+created:        2026-04-14T18:12:06Z
+last-modified:  2026-04-14T18:12:06Z
+source:         RIPE
+mnt-by:         PITLINE-MNT
+
+
+route:          45.132.180.0/24
+origin:         AS202412
+created:        2026-01-21T12:40:56Z
+last-modified:  2026-01-21T12:40:56Z
+source:         RIPE
+mnt-by:         PITLINE-MNT
+
+
+route:          45.133.39.0/24
+origin:         AS48678
+mnt-by:         tr-moondc-1-mnt
+created:        2025-07-26T21:00:33Z
+last-modified:  2025-07-26T21:00:33Z
+source:         RIPE
+
+
+route:          45.156.116.0/24
+origin:         AS210707
+mnt-by:         lir-ir-pishgam1-1-MNT
+created:        2026-01-02T15:38:57Z
+last-modified:  2026-01-02T15:38:57Z
+source:         RIPE
+
+
+route:          45.156.118.0/24
+origin:         AS214570
+created:        2026-01-04T07:56:16Z
+last-modified:  2026-01-04T07:56:16Z
+source:         RIPE
+mnt-by:         lir-ir-pishgam1-1-MNT
+
+
+route:          45.156.119.0/24
+origin:         AS214570
+created:        2026-01-04T07:56:53Z
+last-modified:  2026-01-04T07:56:53Z
+source:         RIPE
+mnt-by:         lir-ir-pishgam1-1-MNT
+
+
+route:          45.89.223.0/24
+origin:         as208185
+created:        2026-04-22T05:45:39Z
+last-modified:  2026-04-22T05:45:39Z
+source:         RIPE
+mnt-by:         IR-EGRK-20150615
+
+
+route:          77.110.64.0/24
+origin:         AS209372
+created:        2026-01-23T20:59:47Z
+last-modified:  2026-01-23T20:59:47Z
+source:         RIPE
+mnt-by:         lir-ae-technology-1-MNT
+
+
+route:          77.47.178.0/24
+origin:         AS3319
+mnt-by:         URAN-MNT
+created:        2026-05-13T14:33:07Z
+last-modified:  2026-05-13T14:33:07Z
+source:         RIPE
+
+
+route:          77.47.242.0/24
+origin:         AS3319
+mnt-by:         URAN-MNT
+created:        2026-03-31T18:23:39Z
+last-modified:  2026-03-31T18:23:39Z
+source:         RIPE
+
+
+route:          77.90.142.0/24
+origin:         AS42821
+mnt-by:         MNT-RAPIDNET
+created:        2026-05-04T15:25:25Z
+last-modified:  2026-05-04T15:25:25Z
+source:         RIPE
+
+
+route:          77.90.145.0/24
+origin:         AS2856
+mnt-by:         MNT-RAPIDNET
+created:        2025-09-26T14:59:43Z
+last-modified:  2025-09-26T14:59:43Z
+source:         RIPE
+
+
+route:          77.90.148.0/24
+origin:         AS208185
+mnt-by:         MNT-RAPIDNET
+created:        2026-02-26T13:40:46Z
+last-modified:  2026-02-26T13:40:46Z
+source:         RIPE
+
+
+route:          77.90.164.0/24
+origin:         AS2856
+mnt-by:         MNT-RAPIDNET
+created:        2025-09-26T14:59:44Z
+last-modified:  2025-09-26T14:59:44Z
+source:         RIPE
+
+
+route:          77.90.188.0/24
+origin:         AS201814
+mnt-by:         MNT-RAPIDNET
+created:        2026-03-26T18:16:11Z
+last-modified:  2026-03-26T18:16:11Z
+source:         RIPE
+
+
+route:          86.106.80.0/24
+origin:         AS3257
+created:        2026-05-21T11:21:22Z
+last-modified:  2026-05-21T11:21:22Z
+source:         RIPE
+mnt-by:         WORLD-NET-MNT
+
+
+route:          89.23.126.0/24
+origin:         AS210707
+mnt-by:         lir-ir-egrk-ertebat1-1-MNT
+created:        2025-09-21T12:25:50Z
+last-modified:  2025-09-21T12:25:50Z
+source:         RIPE
+
+
+route:          89.44.209.0/24
+origin:         AS397563
+created:        2026-04-10T07:00:50Z
+last-modified:  2026-04-10T07:00:50Z
+source:         RIPE
+mnt-by:         WORLD-NET-MNT
+
+
+route:          89.45.34.0/24
+origin:         AS34450
+created:        2026-04-16T17:38:40Z
+last-modified:  2026-04-16T17:38:40Z
+source:         RIPE
+mnt-by:         WORLD-NET-MNT
+
+
+route:          91.217.241.0/24
+origin:         As212077
+mnt-by:         EGRK
+created:        2025-10-14T06:31:08Z
+last-modified:  2025-10-14T06:31:08Z
+source:         RIPE
+
+
+route:          91.223.110.0/24
+org:            ORG-PL585-RIPE
+origin:         AS208241
+mnt-by:         PITLINE-MNT
+created:        2025-11-06T07:31:54Z
+last-modified:  2025-11-06T07:31:54Z
+source:         RIPE
+
+
+route:          91.228.168.0/24
+origin:         As208485
+mnt-by:         lir-ir-saeed-1-MNT
+created:        2025-05-14T19:14:06Z
+last-modified:  2025-05-14T19:14:06Z
+source:         RIPE
+
+
+route:          91.239.192.0/24
+origin:         as208185
+created:        2026-04-22T05:41:23Z
+last-modified:  2026-04-22T05:41:23Z
+source:         RIPE
+mnt-by:         IR-EGRK-20150615
+
+
+route:          93.114.187.0/24
+origin:         AS208185
+created:        2026-04-09T19:15:02Z
+last-modified:  2026-04-09T19:15:02Z
+source:         RIPE
+mnt-by:         WORLD-NET-MNT
+
+
+route:          94.154.33.0/24
+org:            ORG-SL1358-RIPE
+descr:          Skayvin LLC fixed broadband access network
+descr:          Residential and business customer access network
+descr:          Dynamic and static IP assignments for ISP clients
+descr:          This network is not used for hosting, VPN or proxy services
+origin:         AS206259
+mnt-by:         PITLINE-MNT
+mnt-by:         SKAYVIN-MNT
+created:        2025-08-06T07:45:54Z
+last-modified:  2026-02-10T19:08:34Z
+source:         RIPE
+
+
+route:          94.154.37.0/24
+origin:         AS203963
+created:        2026-03-26T17:23:05Z
+last-modified:  2026-03-26T17:23:05Z
+source:         RIPE
+mnt-by:         PITLINE-MNT
+
+
+route:          94.154.41.0/24
+origin:         AS203963
+created:        2026-03-26T17:23:24Z
+last-modified:  2026-03-26T17:23:24Z
+source:         RIPE
+mnt-by:         PITLINE-MNT
+
+
+route:          94.154.43.0/24
+origin:         AS208185
+created:        2026-04-10T09:58:14Z
+last-modified:  2026-04-10T09:58:14Z
+source:         RIPE
+mnt-by:         PITLINE-MNT
+
+
+route:          95.128.196.0/24
+origin:         as198154
+mnt-by:         EGRK
+created:        2025-11-27T09:28:53Z
+last-modified:  2025-11-27T09:28:53Z
+source:         RIPE
+
+
+route:          95.128.197.0/24
+origin:         AS202269
+mnt-by:         EGRK
+created:        2025-07-02T06:44:25Z
+last-modified:  2025-07-02T06:44:25Z
+source:         RIPE
+
+
+route:          95.128.198.0/24
+origin:         as202391
+mnt-by:         EGRK
+created:        2025-07-17T07:42:22Z
+last-modified:  2025-07-17T07:42:22Z
+source:         RIPE
+
+

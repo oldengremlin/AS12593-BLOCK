@@ -1,67 +1,648 @@
-2026-05-26 02:17:21 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 02:17:21 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-05-26 02:17:21 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route6:         2a05:1e41::/32
+origin:         AS209641
+mnt-by:         IP-RIPE
+created:        2025-08-11T09:14:41Z
+last-modified:  2025-08-11T09:14:41Z
+source:         RIPE
+
+
+route6:         2a05:1e46::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-05T14:32:12Z
+last-modified:  2025-08-05T14:32:12Z
+source:         RIPE
+
+
+route6:         2a06:4385::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-05T14:32:14Z
+last-modified:  2025-08-05T14:32:14Z
+source:         RIPE
+
+
+route6:         2a09:8b83::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-19T20:07:04Z
+last-modified:  2025-08-19T20:07:04Z
+source:         RIPE
+
+
+route6:         2a09:a202::/32
+origin:         AS42375
+mnt-by:         mnt-ru-auction-1
+created:        2025-12-15T19:53:26Z
+last-modified:  2025-12-15T19:53:26Z
+source:         RIPE
+
+
+route6:         2a09:a204::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-12T22:32:08Z
+last-modified:  2025-08-12T22:32:08Z
+source:         RIPE
+
+
+route6:         2a09:a502::/32
+origin:         AS42375
+mnt-by:         mnt-ru-auction-1
+created:        2025-12-15T20:17:44Z
+last-modified:  2025-12-15T20:17:44Z
+source:         RIPE
+
+
+route6:         2a09:bc07::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-29T19:58:29Z
+last-modified:  2025-09-29T19:58:29Z
+source:         RIPE
+
+
+route6:         2a09:cf01::/32
+origin:         AS209641
+mnt-by:         IP-RIPE
+created:        2025-08-11T09:14:42Z
+last-modified:  2025-08-11T09:14:42Z
+source:         RIPE
+
+
+route6:         2a09:cf04::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-05T14:32:13Z
+last-modified:  2025-08-05T14:32:13Z
+source:         RIPE
+
+
+route6:         2a09:e703::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-05T14:32:11Z
+last-modified:  2025-08-05T14:32:11Z
+source:         RIPE
+
+
+route6:         2a09:f1c4::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-01T16:57:58Z
+last-modified:  2025-09-01T16:57:58Z
+source:         RIPE
+
+
+route6:         2a09:f1c5::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-16T19:28:07Z
+last-modified:  2025-09-16T19:28:07Z
+source:         RIPE
+
+
+route6:         2a09:f9c3::/32
+origin:         AS42375
+mnt-by:         mnt-ru-lir-1
+created:        2025-12-02T17:41:53Z
+last-modified:  2025-12-02T17:41:53Z
+source:         RIPE
+
+
+route6:         2a0a:c0c7::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-05T14:32:14Z
+last-modified:  2025-08-05T14:32:14Z
+source:         RIPE
+
+
+route6:         2a0c:2845::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-12T22:25:35Z
+last-modified:  2025-08-12T22:25:35Z
+source:         RIPE
+
+
+route6:         2a0c:9484::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-05T18:42:21Z
+last-modified:  2025-08-05T18:42:21Z
+source:         RIPE
+
+
+route6:         2a0d:6a40::/29
+origin:         AS205866
+mnt-by:         TELECOM-MNT
+created:        2025-10-28T12:36:17Z
+last-modified:  2025-10-28T12:36:17Z
+source:         RIPE
+
+
+route6:         2a0d:cc40::/29
+origin:         AS205866
+mnt-by:         TELECOM-MNT
+created:        2025-11-14T18:32:43Z
+last-modified:  2025-11-14T18:32:43Z
+source:         RIPE
+
+
+route6:         2a0d:e1c0::/29
+origin:         AS205866
+mnt-by:         TELECOM-MNT
+created:        2025-11-14T18:32:43Z
+last-modified:  2025-11-14T18:32:43Z
+source:         RIPE
+
+
+route6:         2a0d:e241::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2026-04-24T19:13:33Z
+last-modified:  2026-04-24T19:13:33Z
+source:         RIPE
+
+
+route6:         2a0d:f843::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-05T14:32:16Z
+last-modified:  2025-08-05T14:32:16Z
+source:         RIPE
+
+
+route6:         2a0d:fbc0::/29
+origin:         AS205866
+mnt-by:         TELECOM-MNT
+created:        2025-10-28T12:36:17Z
+last-modified:  2025-10-28T12:36:17Z
+source:         RIPE
+
+
+route6:         2a0d:fcc0::/32
+origin:         AS42375
+mnt-by:         mnt-ru-auction-1
+created:        2025-12-15T19:53:03Z
+last-modified:  2025-12-15T19:53:03Z
+source:         RIPE
+
+
+route6:         2a0e:19c3::/32
+origin:         AS206306
+mnt-by:         IP-RIPE
+created:        2025-12-29T18:06:45Z
+last-modified:  2025-12-29T18:06:45Z
+source:         RIPE
+
+
+route6:         2a0e:4785::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-29T19:54:40Z
+last-modified:  2025-09-29T19:54:40Z
+source:         RIPE
+
+
+route6:         2a0e:5cc1::/32
+origin:         AS42375
+mnt-by:         mnt-ru-lir-1
+created:        2025-12-02T17:41:56Z
+last-modified:  2025-12-02T17:41:56Z
+source:         RIPE
+
+
+route6:         2a0e:6745::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-19T20:07:03Z
+last-modified:  2025-08-19T20:07:03Z
+source:         RIPE
+
+
+route6:         2a0e:7344::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-01T16:57:58Z
+last-modified:  2025-09-01T16:57:58Z
+source:         RIPE
+
+
+route6:         2a0e:adc0::/29
+origin:         AS205866
+mnt-by:         TELECOM-MNT
+created:        2025-10-28T12:35:41Z
+last-modified:  2025-10-28T12:35:41Z
+source:         RIPE
+
+
+route6:         2a0e:c442::/32
+origin:         AS42375
+mnt-by:         IP-RIPE
+created:        2025-11-07T18:38:25Z
+last-modified:  2025-11-07T18:38:25Z
+source:         RIPE
+
+
+route6:         2a0f:9a40::/29
+origin:         AS205866
+mnt-by:         TELECOM-MNT
+created:        2025-10-28T12:35:42Z
+last-modified:  2025-10-28T12:35:42Z
+source:         RIPE
+
+
+route6:         2a11:1340::/32
+origin:         AS42375
+mnt-by:         ru-telenetwork-1-mnt
+created:        2025-11-07T18:55:31Z
+last-modified:  2025-11-11T18:14:16Z
+source:         RIPE
+
+
+route6:         2a11:1540::/29
+origin:         AS205866
+mnt-by:         mnt-ru-auction-1
+created:        2025-10-07T17:20:52Z
+last-modified:  2026-01-08T17:52:50Z
+source:         RIPE
+
+
+route6:         2a11:3441::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-10-06T15:16:25Z
+last-modified:  2025-10-06T15:16:25Z
+source:         RIPE
+
+
+route6:         2a11:3446::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-10-20T12:39:15Z
+last-modified:  2025-10-20T12:39:15Z
+source:         RIPE
+
+
+route6:         2a11:34c7::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-10-06T15:08:22Z
+last-modified:  2025-10-06T15:08:22Z
+source:         RIPE
+
+
+route6:         2a11:4041::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-10-20T12:45:14Z
+last-modified:  2025-10-20T12:45:14Z
+source:         RIPE
+
+
+route6:         2a11:4340::/32
+origin:         AS42375
+mnt-by:         ru-telenetwork-1-mnt
+created:        2025-11-07T18:49:44Z
+last-modified:  2025-11-11T18:14:25Z
+source:         RIPE
+
+
+route6:         2a11:4640::/29
+origin:         AS207459
+mnt-by:         mnt-ru-lir-1
+created:        2026-02-25T17:21:06Z
+last-modified:  2026-02-25T17:21:06Z
+source:         RIPE
+
+
+route6:         2a11:4a80::/29
+origin:         AS205866
+mnt-by:         mnt-ru-auction-1
+created:        2025-10-14T20:39:20Z
+last-modified:  2026-01-08T17:54:45Z
+source:         RIPE
+
+
+route6:         2a11:6346::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-16T19:53:27Z
+last-modified:  2025-09-16T19:53:27Z
+source:         RIPE
+
+
+route6:         2a11:6547::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-10-20T12:45:13Z
+last-modified:  2025-10-20T12:45:13Z
+source:         RIPE
+
+
+route6:         2a11:6580::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-10-20T12:45:13Z
+last-modified:  2025-10-20T12:45:13Z
+source:         RIPE
+
+
+route6:         2a11:6d01::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-29T19:58:31Z
+last-modified:  2025-09-29T19:58:31Z
+source:         RIPE
+
+
+route6:         2a11:6d02::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-10-06T15:10:06Z
+last-modified:  2025-10-06T15:10:06Z
+source:         RIPE
+
+
+route6:         2a11:8946::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-10-06T15:11:18Z
+last-modified:  2025-10-06T15:11:18Z
+source:         RIPE
+
+
+route6:         2a11:9044::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2026-05-13T18:30:22Z
+last-modified:  2026-05-13T18:30:22Z
+source:         RIPE
+
+
+route6:         2a11:9380::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-05T21:06:45Z
+last-modified:  2025-09-05T21:06:45Z
+source:         RIPE
+
+
+route6:         2a11:a185::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-10-28T12:29:18Z
+last-modified:  2025-10-28T12:29:18Z
+source:         RIPE
+
+
+route6:         2a11:c442::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-01T16:56:13Z
+last-modified:  2025-09-01T16:56:13Z
+source:         RIPE
+
+
+route6:         2a11:c443::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-19T19:56:44Z
+last-modified:  2025-08-19T19:56:44Z
+source:         RIPE
+
+
+route6:         2a11:c541::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-01T16:56:12Z
+last-modified:  2025-09-01T16:56:12Z
+source:         RIPE
+
+
+route6:         2a11:c544::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-05T20:52:37Z
+last-modified:  2025-09-05T20:52:37Z
+source:         RIPE
+
+
+route6:         2a11:e2c7::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2026-04-09T19:16:38Z
+last-modified:  2026-04-09T19:16:38Z
+source:         RIPE
+
+
+route6:         2a11:e540::/29
+origin:         AS56325
+mnt-by:         mnt-ru-lir-1
+created:        2026-02-25T17:21:39Z
+last-modified:  2026-02-25T17:21:39Z
+source:         RIPE
+
+
+route6:         2a11:e7c4::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-01T16:56:13Z
+last-modified:  2025-09-01T16:56:13Z
+source:         RIPE
+
+
+route6:         2a11:e7c6::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-05T20:52:36Z
+last-modified:  2025-09-05T20:52:36Z
+source:         RIPE
+
+
+route6:         2a11:ec2::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2026-04-24T19:13:32Z
+last-modified:  2026-04-24T19:13:32Z
+source:         RIPE
+
+
+route6:         2a12:1142::/32
+origin:         AS42375
+mnt-by:         mnt-ru-lir-1
+created:        2025-12-02T17:57:08Z
+last-modified:  2025-12-05T16:44:41Z
+source:         RIPE
+
+
+route6:         2a12:1145::/32
+origin:         AS42375
+mnt-by:         mnt-ru-lir-1
+created:        2025-12-02T17:57:13Z
+last-modified:  2025-12-05T16:44:42Z
+source:         RIPE
+
+
+route6:         2a12:1a46::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-05T21:00:31Z
+last-modified:  2025-09-05T21:00:31Z
+source:         RIPE
+
+
+route6:         2a12:2806::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2026-04-06T19:01:54Z
+last-modified:  2026-04-06T19:01:54Z
+source:         RIPE
+
+
+route6:         2a12:2e41::/32
+origin:         AS42375
+mnt-by:         IP-RIPE
+created:        2025-11-07T18:41:10Z
+last-modified:  2025-11-07T18:41:10Z
+source:         RIPE
+
+
+route6:         2a12:2e43::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-05T21:00:32Z
+last-modified:  2025-09-05T21:00:32Z
+source:         RIPE
+
+
+route6:         2a12:2fc3::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-05T14:32:15Z
+last-modified:  2025-08-05T14:32:15Z
+source:         RIPE
+
+
+route6:         2a12:2fc4::/32
+origin:         AS209641
+mnt-by:         IP-RIPE
+created:        2025-08-11T09:14:42Z
+last-modified:  2025-08-11T09:14:42Z
+source:         RIPE
+
+
+route6:         2a12:3043::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-16T19:47:58Z
+last-modified:  2025-09-16T19:47:58Z
+source:         RIPE
+
+
+route6:         2a12:3045::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-29T19:58:29Z
+last-modified:  2025-09-29T19:58:29Z
+source:         RIPE
+
+
+route6:         2a12:3046::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-10-06T15:10:06Z
+last-modified:  2025-10-06T15:10:06Z
+source:         RIPE
+
+
+route6:         2a12:39c3::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-16T19:47:59Z
+last-modified:  2025-09-16T19:47:59Z
+source:         RIPE
+
+
+route6:         2a12:39c7::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-29T19:58:30Z
+last-modified:  2025-09-29T19:58:30Z
+source:         RIPE
+
+
+route6:         2a12:3ac0::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-19T19:56:45Z
+last-modified:  2025-08-19T19:56:45Z
+source:         RIPE
+
+
+route6:         2a12:3ac1::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-12T22:29:51Z
+last-modified:  2025-08-12T22:29:51Z
+source:         RIPE
+
+
+route6:         2a12:3bc5::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-12T22:25:36Z
+last-modified:  2025-08-12T22:25:36Z
+source:         RIPE
+
+
+route6:         2a12:3cc4::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-08-19T20:07:04Z
+last-modified:  2025-08-19T20:07:04Z
+source:         RIPE
+
+
+route6:         2a12:645::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2026-05-13T18:30:23Z
+last-modified:  2026-05-13T18:30:23Z
+source:         RIPE
+
+
+route6:         2a12:8781::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2026-04-24T19:13:34Z
+last-modified:  2026-04-24T19:13:34Z
+source:         RIPE
+
+
+route6:         2a12:8802::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-05T20:52:37Z
+last-modified:  2025-09-05T20:52:37Z
+source:         RIPE
+
+
+route6:         2a12:8803::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2025-09-01T16:56:11Z
+last-modified:  2025-09-01T16:56:11Z
+source:         RIPE
+
+
+route6:         2a12:cf83::/32
+origin:         AS205866
+mnt-by:         IP-RIPE
+created:        2026-04-24T19:13:32Z
+last-modified:  2026-04-24T19:13:32Z
+source:         RIPE
+
+

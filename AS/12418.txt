@@ -1,67 +1,274 @@
-2026-05-26 01:01:37 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:01:37 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-05-26 01:01:37 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:42)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS12418
+as-name:        QUANTUM
+org:            ORG-QISP1-RIPE
+import:         from AS2118 action pref=100; accept ANY
+import:         from AS212491 action pref=100; accept AS212491
+import:         from AS210787 action pref=100; accept AS210787
+import:         from AS3277 action pref=100; accept AS3277
+import:         from AS210380 action pref=100; accept AS210380
+import:         from AS5433 action pref=100; accept AS5433
+import:         from AS200054 action pref=100; accept AS200054
+import:         from AS197150 action pref=100; accept AS197150
+import:         from AS8377 action pref=100; accept AS8377
+import:         from AS31703 action pref=100; accept AS31703
+import:         from AS58163 action pref=100; accept AS58163
+import:         from AS51017 action pref=100; accept ANY
+import:         from AS8755 action pref=100; accept AS8755
+import:         from AS6820 action pref=100; accept AS6820
+import:         from AS60797 action pref=100; accept AS60797
+import:         from AS2854 action pref=100; accept ANY
+import:         from AS3267 action pref=100; accept AS-RUNNET
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS8348 action pref=100; accept ANY
+import:         from AS35000 action pref=100; accept AS-PROMETEY
+import:         from AS49238 action pref=100; accept ANY
+import:         from AS48890 action pref=100; accept ANY
+import:         from AS49012 action pref=100; accept ANY
+import:         from AS57573 action pref=100; accept ANY
+import:         from AS45029 action pref=100; accept ANY
+import:         from AS50358 action pref=100; accept ANY
+import:         from AS31191 action pref=100; accept ANY
+import:         from AS43951 action pref=100; accept ANY
+import:         from AS43690 action pref=100; accept AS-SPBROUTESERVER
+import:         from AS50787 action pref=100; accept ANY
+import:         from AS52197 action pref=100; accept ANY
+import:         from AS50403 action pref=100; accept ANY
+import:         from AS58178 action pref=100; accept ANY
+import:         from AS20632 action pref=100; accept ANY
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS213457 action pref=100; accept ANY
+import:         from AS43267 action pref=100; accept ANY
+import:         from AS196914 action pref=100; accept AS196914
+import:         from AS30924 action pref=100; accept ANY
+import:         from AS31500 action pref=100; accept ANY
+import:         from AS31133 action pref=100; accept ANY
+import:         from AS57056 action pref=100; accept AS-STWROUTESERVER
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+import:         from AS42762 action pref=100; accept AS42762
+import:         from AS204048 action pref=100; accept AS204048
+import:         from AS9002 action pref=100; accept ANY
+import:         from AS197097 action pref=100; accept AS197097
+import:         from AS47855 action pref=100; accept AS47855
+import:         from AS206845 action pref=100; accept AS206845
+export:         to AS8348 announce AS-QUANTUM
+export:         to AS3216 announce AS-QUANTUM
+export:         to AS2118 announce AS-QUANTUM
+export:         to AS3277 announce AS-QUANTUM
+export:         to AS212491 announce AS-QUANTUM
+export:         to AS5433 announce AS-QUANTUM
+export:         to AS3267 announce AS-QUANTUM
+export:         to AS200054 announce AS-QUANTUM
+export:         to AS2854 announce AS-QUANTUM
+export:         to AS6820 announce AS-QUANTUM
+export:         to AS51017 announce AS-QUANTUM
+export:         to AS8755 announce AS-QUANTUM
+export:         to AS8377 announce AS-QUANTUM
+export:         to AS20485 announce AS-QUANTUM
+export:         to AS45029 announce AS-QUANTUM
+export:         to AS35598 announce AS-QUANTUM
+export:         to AS43690 announce AS-QUANTUM
+export:         to AS47241 announce AS-QUANTUM
+export:         to AS29456 announce AS-QUANTUM
+export:         to AS30924 announce AS-QUANTUM
+export:         to AS20632 announce AS-QUANTUM
+export:         to AS197150 announce AS-QUANTUM
+export:         to AS210380 announce AS-QUANTUM
+export:         to AS12389 announce AS-QUANTUM
+export:         to AS43267 announce AS-QUANTUM
+export:         to AS196914 announce AS-QUANTUM
+export:         to AS43690 announce AS-QUANTUM
+export:         to AS48216 announce AS-QUANTUM
+export:         to AS43213 announce AS-QUANTUM
+export:         to AS42403 announce AS-QUANTUM
+export:         to AS31500 announce AS-QUANTUM
+export:         to AS31133 announce AS-QUANTUM
+export:         to AS57056 announce AS-QUANTUM
+export:         to AS8631 announce AS-QUANTUM
+export:         to AS42762 announce AS-QUANTUM
+export:         to AS204048 announce ANY
+export:         to AS9002 announce AS-QUANTUM
+export:         to AS60365 announce ANY
+export:         to AS197097 announce ANY
+export:         to AS47855 announce ANY
+export:         to AS206845 announce ANY
+default:        to AS2118 action pref=100; networks ANY
+default:        to AS2854 action pref=100; networks ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         AS12418-MNT
+mnt-by:         RIPE-NCC-END-MNT
+created:        2002-02-16T11:23:19Z
+last-modified:  2025-10-30T13:38:37Z
+source:         RIPE
+
+as-num:         AS12418
+country:        RU
+as-name:        QUANTUM Quantum CJSC
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+as-num:         AS12418
+country:        RU
+as-name:        null
+
+organisation:   ORG-QISP1-RIPE
+org-name:       Quantum CJSC
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-QISP1-RIPE
+e-mail:         unread@ripe.net
+mnt-ref:        QUANTUM-RIPE-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         QUANTUM-RIPE-MNT
+abuse-c:        RA6709-RIPE
+created:        2004-04-17T11:56:51Z
+last-modified:  2026-05-13T07:13:11Z
+source:         RIPE
+
+
