@@ -636,7 +636,7 @@ members:        AS39684
 # from AS39728:
 members:        AS-LUGANET
 # from AS39775:
-members:        AS-HYPERNET, AS-HYPERNET-V6
+members:        AS-HYPERNET
 # from AS39821:
 members:        AS-CANMOS
 # from AS40676:
@@ -1009,6 +1009,8 @@ members:        AS-55805
 members:        AS55818:AS-NAPINFO-MCIX
 # from AS56407:
 members:        AS-ZHIGULINET
+# from AS56447:
+members:        AS56447
 # from AS56529:
 members:        AS56529
 # from AS56534:
@@ -1237,6 +1239,8 @@ members:        AS-MRNDA
 members:        AS-MAXIMA, AS202173
 # from AS202486:
 members:        AS-SKYTELECOM_TSK
+# from AS202838:
+members:        AS-ICOM
 # from AS202984:
 members:        AS-TEAM-HOST
 # from AS203118:
@@ -1368,7 +1372,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-05-20T09:39:31Z
+last-modified:  2026-05-26T13:40:20Z
 source:         RIPE
 
 
@@ -5226,7 +5230,7 @@ action pref=100;
 accept AS-LUGANET
 import:         from AS39775
 action pref=100;
-accept AS-HYPERNET AS-HYPERNET-V6
+accept AS-HYPERNET
 import:         from AS39821
 action pref=100;
 accept AS-CANMOS
@@ -5785,6 +5789,9 @@ accept AS55818:AS-NAPINFO-MCIX
 import:         from AS56407
 action pref=100;
 accept AS-ZHIGULINET
+import:         from AS56447
+action pref=100;
+accept AS56447
 import:         from AS56529
 action pref=100;
 accept AS56529
@@ -6127,6 +6134,9 @@ accept AS-MAXIMA AS202173
 import:         from AS202486
 action pref=100;
 accept AS-SKYTELECOM_TSK
+import:         from AS202838
+action pref=100;
+accept AS-ICOM
 import:         from AS202984
 action pref=100;
 accept AS-TEAM-HOST
@@ -7032,6 +7042,8 @@ export:         to AS55818
 announce AS-MSKROUTESERVER
 export:         to AS56407
 announce AS-MSKROUTESERVER
+export:         to AS56447
+announce AS-MSKROUTESERVER
 export:         to AS56529
 announce AS-MSKROUTESERVER
 export:         to AS56534
@@ -7260,6 +7272,8 @@ export:         to AS202173
 announce AS-MSKROUTESERVER
 export:         to AS202486
 announce AS-MSKROUTESERVER
+export:         to AS202838
+announce AS-MSKROUTESERVER
 export:         to AS202984
 announce AS-MSKROUTESERVER
 export:         to AS203118
@@ -7387,7 +7401,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-05-20T09:39:32Z
+last-modified:  2026-05-26T13:40:24Z
 source:         RIPE
 
 
