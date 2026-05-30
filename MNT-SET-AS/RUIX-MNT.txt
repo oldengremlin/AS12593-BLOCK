@@ -276,6 +276,7 @@ members:        AS61280
 members:        AS39688
 members:        AS-NETONERUS
 members:        AS-REGRU
+members:        AS-RYA
 members:        AS207207
 members:        AS214612
 members:        AS50687
@@ -286,7 +287,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2019-05-20T09:42:08Z
-last-modified:  2026-03-19T07:49:02Z
+last-modified:  2026-05-28T14:07:52Z
 source:         RIPE
 
 
@@ -409,14 +410,14 @@ members:        AS-NETIA-MSK-IX
 members:        AS-RUCWSVYAZ
 # from AS12993:
 members:        AS-DEAC
-# from AS13002:
-members:        AS-ISIX
 # from AS13094:
 members:        AS-MILECOM-RS
 # from AS13215:
 members:        AS-CONVEYPLUS
 # from AS13238:
 members:        AS-YANDEX
+# from AS13302:
+members:        AS13302
 # from AS13335:
 members:        AS13335:AS-CLOUDFLARE
 # from AS15169:
@@ -1372,7 +1373,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-05-26T13:40:20Z
+last-modified:  2026-05-28T09:39:10Z
 source:         RIPE
 
 
@@ -1485,8 +1486,6 @@ members:        AS-ELIGHT
 members:        AS-CNLTD
 # from AS41794:
 members:        AS-SIBSET-BARN
-# from AS42038:
-members:        AS-VLADLINK
 # from AS42139:
 members:        AS-NS9_RIPN_NET
 # from AS42498:
@@ -1577,7 +1576,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2026-05-13T10:13:07Z
+last-modified:  2026-05-28T05:41:06Z
 source:         RIPE
 
 
@@ -2736,9 +2735,6 @@ accept AS-CNLTD
 import:         from AS41794
 action pref=100;
 accept AS-SIBSET-BARN
-import:         from AS42038
-action pref=100;
-accept AS-VLADLINK
 import:         from AS42139
 action pref=100;
 accept AS-NS9_RIPN_NET
@@ -2931,8 +2927,6 @@ export:         to AS40995
 announce AS-NSKROUTESERVER
 export:         to AS41794
 announce AS-NSKROUTESERVER
-export:         to AS42038
-announce AS-NSKROUTESERVER
 export:         to AS42139
 announce AS-NSKROUTESERVER
 export:         to AS42498
@@ -3019,7 +3013,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-05-13T10:13:12Z
+last-modified:  2026-05-28T05:41:10Z
 source:         RIPE
 
 
@@ -4889,9 +4883,6 @@ accept AS-RUCWSVYAZ
 import:         from AS12993
 action pref=100;
 accept AS-DEAC
-import:         from AS13002
-action pref=100;
-accept AS-ISIX
 import:         from AS13094
 action pref=100;
 accept AS-MILECOM-RS
@@ -4901,6 +4892,9 @@ accept AS-CONVEYPLUS
 import:         from AS13238
 action pref=100;
 accept AS-YANDEX
+import:         from AS13302
+action pref=100;
+accept AS13302
 import:         from AS13335
 action pref=100;
 accept AS13335:AS-CLOUDFLARE
@@ -6442,13 +6436,13 @@ export:         to AS12976
 announce AS-MSKROUTESERVER
 export:         to AS12993
 announce AS-MSKROUTESERVER
-export:         to AS13002
-announce AS-MSKROUTESERVER
 export:         to AS13094
 announce AS-MSKROUTESERVER
 export:         to AS13215
 announce AS-MSKROUTESERVER
 export:         to AS13238
+announce AS-MSKROUTESERVER
+export:         to AS13302
 announce AS-MSKROUTESERVER
 export:         to AS13335
 announce AS-MSKROUTESERVER
@@ -7401,7 +7395,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-05-26T13:40:24Z
+last-modified:  2026-05-28T09:39:10Z
 source:         RIPE
 
 
@@ -7515,6 +7509,8 @@ import:         from AS196695 action pref=130; accept AS-NETONERUS
 export:         to AS196695 announce ANY
 import:         from AS197695 action pref=130; accept AS-REGRU
 export:         to AS197695 announce ANY
+import:         from AS199070 action pref=130; accept AS-RYA
+export:         to AS199070 announce ANY
 import:         from AS207207 action pref=130; accept AS207207
 export:         to AS207207 announce ANY
 import:         from AS214612 action pref=130; accept AS214612
@@ -7531,7 +7527,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2026-03-19T07:49:00Z
+last-modified:  2026-05-28T14:07:51Z
 source:         RIPE
 
 
