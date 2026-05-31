@@ -194,7 +194,6 @@ members:        AS204507
 members:        AS204520
 members:        AS204564
 members:        AS204610
-members:        AS204665
 members:        AS204827
 members:        AS204841
 members:        AS204980
@@ -279,6 +278,7 @@ members:        AS48018:AS-FORNEX-RU
 members:        AS51444:AS-ITLITE
 members:        AS59740:AS-GORSETI
 members:        AS199148:AS-SET-MHRF-OTHERS
+members:        AS204665:AS-3DATA-S21
 members:        AS205014:AS-ITSAT
 members:        AS210471:AS-MASTERTELECOM
 members:        AS211724:AS-SYS
@@ -289,6 +289,7 @@ members:        AS-3DATA
 members:        AS-3DATA-B17
 members:        AS-3DATA_MR4
 members:        as-3data_CK19
+members:        AS-3DATA-S21
 members:        AS-APTK
 members:        AS-AZIMUT
 members:        AS-BIZTEL
@@ -331,7 +332,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MASTERTEL-MNT
 created:        2004-03-19T10:40:20Z
-last-modified:  2026-05-15T10:58:22Z
+last-modified:  2026-05-29T14:06:02Z
 source:         RIPE
 
 
@@ -857,7 +858,7 @@ import:         from AS56351 action pref=200; accept AS56351;
 export:         to AS56351 announce {0.0.0.0/0};
 import:         from AS61111 action pref=200; accept AS-RTCLOUD-MSK;
 export:         to AS61111 announce ANY
-import:         from AS204665 action pref=200; accept AS204665;
+import:         from AS204665 action pref=200; accept AS204665:AS-3DATA-S21;
 export:         to AS204665 announce {0.0.0.0/0}
 import:         from AS57573 action pref=200; accept AS57573;
 export:         to AS57573 announce {0.0.0.0/0}
@@ -1359,7 +1360,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2026-05-15T11:00:38Z
+last-modified:  2026-05-29T14:07:24Z
 source:         RIPE
 
 
