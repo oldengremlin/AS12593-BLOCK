@@ -21,9 +21,6 @@ accept AS-OBSRUSSIA6 AS-ROSPRINT
 import:         from AS2895
 action pref=100;
 accept AS-FREENET
-import:         from AS3218
-action pref=100;
-accept AS-COSMOS
 import:         from AS3267
 action pref=100;
 accept AS3267:AS-CUSTOMERS
@@ -237,9 +234,6 @@ accept AS-EST
 import:         from AS20698
 action pref=100;
 accept AS-AVTODOR
-import:         from AS20702
-action pref=100;
-accept AS20702
 import:         from AS20764
 action pref=100;
 accept AS20764:AS-RASCOM
@@ -1627,8 +1621,6 @@ export:         to AS2854
 announce AS-MSKROUTESERVER
 export:         to AS2895
 announce AS-MSKROUTESERVER
-export:         to AS3218
-announce AS-MSKROUTESERVER
 export:         to AS3267
 announce AS-MSKROUTESERVER
 export:         to AS3316
@@ -1770,8 +1762,6 @@ announce AS-MSKROUTESERVER
 export:         to AS20655
 announce AS-MSKROUTESERVER
 export:         to AS20698
-announce AS-MSKROUTESERVER
-export:         to AS20702
 announce AS-MSKROUTESERVER
 export:         to AS20764
 announce AS-MSKROUTESERVER
@@ -2692,7 +2682,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-05-28T09:39:10Z
+last-modified:  2026-06-01T13:38:11Z
 source:         RIPE
 
 as-num:         AS8631
