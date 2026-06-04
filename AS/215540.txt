@@ -6,8 +6,6 @@ import:         from AS207713 accept ANY
 export:         to AS207713 announce AS215540
 import:         from AS174 accept ANY
 export:         to AS174 announce AS215540
-import:         from AS44477 accept ANY
-export:         to AS44477 announce AS215540
 import:         from AS44222 accept ANY
 export:         to AS44222 announce AS215540
 import:         from AS215540 accept ANY
@@ -18,13 +16,17 @@ import:         from AS48014 accept ANY
 export:         to AS48014 announce AS215540
 import:         from AS209847 accept ANY
 export:         to AS209847 announce AS215540
+import:         from AS26383 accept <AS26383>
+export:         to AS26383 announce ANY
+mp-import:      afi ipv6.unicast from AS26383 accept <AS26383>
+mp-export:      afi ipv6.unicast to AS26383  announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         GCS-MNT
 created:        2024-02-09T12:26:32Z
-last-modified:  2025-09-15T12:30:03Z
+last-modified:  2026-06-02T13:46:08Z
 source:         RIPE
 
 as-num:         AS215540
