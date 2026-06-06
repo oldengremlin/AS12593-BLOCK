@@ -1078,6 +1078,8 @@ members:        AS-58715
 members:        AS59424
 # from AS59533:
 members:        AS59533
+# from AS59600:
+members:        AS59600:AS-CUSTOMERS
 # from AS59624:
 members:        AS-KIAE-GRID
 # from AS59693:
@@ -1369,7 +1371,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-06-01T13:38:07Z
+last-modified:  2026-06-04T13:37:27Z
 source:         RIPE
 
 
@@ -5881,6 +5883,9 @@ accept AS59424
 import:         from AS59533
 action pref=100;
 accept AS59533
+import:         from AS59600
+action pref=100;
+accept AS59600:AS-CUSTOMERS
 import:         from AS59624
 action pref=100;
 accept AS-KIAE-GRID
@@ -7094,6 +7099,8 @@ export:         to AS59424
 announce AS-MSKROUTESERVER
 export:         to AS59533
 announce AS-MSKROUTESERVER
+export:         to AS59600
+announce AS-MSKROUTESERVER
 export:         to AS59624
 announce AS-MSKROUTESERVER
 export:         to AS59693
@@ -7381,7 +7388,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-01T13:38:11Z
+last-modified:  2026-06-04T13:37:30Z
 source:         RIPE
 
 

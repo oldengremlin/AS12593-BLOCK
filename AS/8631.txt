@@ -1182,6 +1182,9 @@ accept AS59424
 import:         from AS59533
 action pref=100;
 accept AS59533
+import:         from AS59600
+action pref=100;
+accept AS59600:AS-CUSTOMERS
 import:         from AS59624
 action pref=100;
 accept AS-KIAE-GRID
@@ -2395,6 +2398,8 @@ export:         to AS59424
 announce AS-MSKROUTESERVER
 export:         to AS59533
 announce AS-MSKROUTESERVER
+export:         to AS59600
+announce AS-MSKROUTESERVER
 export:         to AS59624
 announce AS-MSKROUTESERVER
 export:         to AS59693
@@ -2682,12 +2687,15 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-01T13:38:11Z
+last-modified:  2026-06-04T13:37:30Z
 source:         RIPE
 
 as-num:         AS8631
 country:        RU
 as-name:        MSK-IX-RS Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS8631
+country:        RU
+as-name:        null
 as-num:         AS8631
 country:        RU
 as-name:        null
