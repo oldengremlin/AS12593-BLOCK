@@ -1346,8 +1346,6 @@ members:        AS-KINESCOPE
 members:        AS212456
 # from AS213075:
 members:        AS-STARTFILM, AS213075
-# from AS213220:
-members:        AS-DELTA-DED-SET, AS16262:AS-DELTAIPV6
 # from AS213348:
 members:        AS213348
 # from AS213452:
@@ -1371,7 +1369,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-06-04T13:37:27Z
+last-modified:  2026-06-08T13:38:28Z
 source:         RIPE
 
 
@@ -1644,7 +1642,7 @@ members:        AS-DDOS-GUARD
 # from AS60246:
 members:        AS-PG19
 # from AS62261:
-members:        AS62261
+members:        AS62261:AS-RND-MEDIAIX
 # from AS201119:
 members:        AS201119
 # from AS201512:
@@ -1658,7 +1656,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2008-10-27T12:33:38Z
-last-modified:  2026-05-08T14:35:53Z
+last-modified:  2026-06-08T11:31:22Z
 source:         RIPE
 
 
@@ -2013,6 +2011,18 @@ mnt-by:         RUIX-MNT
 created:        2025-12-05T09:42:22Z
 last-modified:  2025-12-05T09:42:22Z
 source:         RIPE
+
+
+
+as-set:         AS62261:AS-RND-MEDIAIX
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS62261
+members:        AS215013
+created:        2026-06-08T11:07:37Z
+last-modified:  2026-06-08T11:07:37Z
+source:         RIPE
+mnt-by:         RUIX-MNT
 
 
 
@@ -4271,7 +4281,7 @@ action pref=100;
 accept AS-PG19
 import:         from AS62261
 action pref=100;
-accept AS62261
+accept AS62261:AS-RND-MEDIAIX
 import:         from AS201119
 action pref=100;
 accept AS201119
@@ -4338,7 +4348,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-10-27T08:45:37Z
-last-modified:  2026-05-08T14:35:54Z
+last-modified:  2026-06-08T11:31:27Z
 source:         RIPE
 
 
@@ -4683,7 +4693,7 @@ export:         to AS43213 announce AS62261:AS-EKT-MEDIAIX
 import:         from AS47882 accept AS-SMRROUTESERVER
 export:         to AS47882 announce AS62261:AS-SMR-MEDIAIX
 import:         from AS48216 accept AS-RNDROUTESERVER
-export:         to AS48216 announce AS62261
+export:         to AS48216 announce AS62261:AS-RND-MEDIAIX
 import:         from AS48531 accept AS-VLVROUTESERVER
 export:         to AS48531 announce AS62261
 import:         from AS8985 accept ANY
@@ -4693,7 +4703,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         RUIX-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2013-12-05T09:48:36Z
-last-modified:  2026-05-13T07:32:45Z
+last-modified:  2026-06-08T11:09:19Z
 source:         RIPE
 status:         ASSIGNED
 
@@ -6285,9 +6295,6 @@ accept AS212456
 import:         from AS213075
 action pref=100;
 accept AS-STARTFILM AS213075
-import:         from AS213220
-action pref=100;
-accept AS-DELTA-DED-SET AS16262:AS-DELTAIPV6
 import:         from AS213348
 action pref=100;
 accept AS213348
@@ -7367,8 +7374,6 @@ export:         to AS212456
 announce AS-MSKROUTESERVER
 export:         to AS213075
 announce AS-MSKROUTESERVER
-export:         to AS213220
-announce AS-MSKROUTESERVER
 export:         to AS213348
 announce AS-MSKROUTESERVER
 export:         to AS213452
@@ -7388,7 +7393,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-04T13:37:30Z
+last-modified:  2026-06-08T13:38:25Z
 source:         RIPE
 
 

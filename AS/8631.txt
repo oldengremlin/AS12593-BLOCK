@@ -1584,9 +1584,6 @@ accept AS212456
 import:         from AS213075
 action pref=100;
 accept AS-STARTFILM AS213075
-import:         from AS213220
-action pref=100;
-accept AS-DELTA-DED-SET AS16262:AS-DELTAIPV6
 import:         from AS213348
 action pref=100;
 accept AS213348
@@ -2666,8 +2663,6 @@ export:         to AS212456
 announce AS-MSKROUTESERVER
 export:         to AS213075
 announce AS-MSKROUTESERVER
-export:         to AS213220
-announce AS-MSKROUTESERVER
 export:         to AS213348
 announce AS-MSKROUTESERVER
 export:         to AS213452
@@ -2687,12 +2682,15 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-04T13:37:30Z
+last-modified:  2026-06-08T13:38:25Z
 source:         RIPE
 
 as-num:         AS8631
 country:        RU
 as-name:        MSK-IX-RS Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS8631
+country:        RU
+as-name:        null
 as-num:         AS8631
 country:        RU
 as-name:        null
