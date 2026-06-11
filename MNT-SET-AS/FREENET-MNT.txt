@@ -434,6 +434,10 @@ mp-import:      afi ipv4.unicast, ipv6.unicast from AS2895 action pref=10; accep
 mp-export:      afi ipv4.unicast, ipv6.unicast to AS2895 announce ANY
 import-via:     afi ipv4.unicast, ipv6.unicast AS8631 from AS-MSKROUTESERVER action pref=100; accept AS-MSKROUTESERVER
 export-via:     afi ipv4.unicast, ipv6.unicast AS8631 to AS-MSKROUTESERVER announce AS-FGNET
+import:         from AS6869 action pref=100; accept AS6869
+export:         to AS6869 announce ANY
+import:         from AS8325 action pref=100; accept AS8325
+export:         to AS8325 announce ANY
 org:            ORG-FG2-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -441,7 +445,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2022-07-06T14:11:14Z
+last-modified:  2026-06-09T10:31:24Z
 source:         RIPE
 
 
@@ -449,19 +453,15 @@ source:         RIPE
 aut-num:        AS6869
 as-name:        FREE-6869
 org:            ORG-FG2-RIPE
-abuse-c:        KUZ1-RIPE
-import:         from AS12389 action pref=100; accept ANY
-export:         to AS12389 announce {193.233.152.0/24}
-import:         from AS39927 action pref=100; accept ANY
-export:         to AS39927 announce {193.233.152.0/24}
+import:         from AS5431 action pref=100; accept ANY
+export:         to AS5431 announce AS6869
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
-notify:         support@kuzstu.ru
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
 created:        2001-12-25T14:05:42Z
-last-modified:  2023-03-14T19:54:02Z
+last-modified:  2026-06-09T10:03:27Z
 source:         RIPE
 
 

@@ -4,6 +4,10 @@ mp-import:      afi ipv4.unicast, ipv6.unicast from AS2895 action pref=10; accep
 mp-export:      afi ipv4.unicast, ipv6.unicast to AS2895 announce ANY
 import-via:     afi ipv4.unicast, ipv6.unicast AS8631 from AS-MSKROUTESERVER action pref=100; accept AS-MSKROUTESERVER
 export-via:     afi ipv4.unicast, ipv6.unicast AS8631 to AS-MSKROUTESERVER announce AS-FGNET
+import:         from AS6869 action pref=100; accept AS6869
+export:         to AS6869 announce ANY
+import:         from AS8325 action pref=100; accept AS8325
+export:         to AS8325 announce ANY
 org:            ORG-FG2-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -11,7 +15,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         FREENET-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2022-07-06T14:11:14Z
+last-modified:  2026-06-09T10:31:24Z
 source:         RIPE
 
 as-num:         AS5431
