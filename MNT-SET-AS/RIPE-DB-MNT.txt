@@ -6959,6 +6959,8 @@ import:         from AS31210 action pref=100; accept AS-DTEL-IX
 export:         to AS31210 announce AS-SOYUZTELECOM
 import:         from AS59613 action pref=100; accept AS-UBNIX
 export:         to AS59613 announce AS-SOYUZTELECOM
+import:         from AS210461 action pref=100; accept AS-RUDAKI-IX
+export:         to AS210461 announce AS-SOYUZTELECOM
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6967,7 +6969,7 @@ mnt-by:         RIPE-DB-MNT
 mnt-by:         MNT-SOYUZTELECOM
 mnt-by:         BRV-MNT
 created:        2017-07-31T12:03:56Z
-last-modified:  2025-04-08T08:32:24Z
+last-modified:  2026-06-10T11:48:50Z
 source:         RIPE
 sponsoring-org: ORG-ATS13-RIPE
 
@@ -7492,28 +7494,27 @@ source:         RIPE
 aut-num:        AS59718
 as-name:        UPECO-AS
 org:            ORG-UL224-RIPE
+sponsoring-org: ORG-ATS13-RIPE
 import:         from AS8985 accept ANY
-import:         from AS50509 accept ANY
-import:         from AS56931 action pref=110; accept ANY
-import:         from AS49869 action pref=110; accept ANY
-import:         from AS39607 action pref=110; accept ANY
-import:         from AS25091 action pref=150; accept AS25091
 export:         to AS8985 announce AS59718
+import:         from AS50952 accept ANY
+export:         to AS50952 announce AS59718
+import:         from AS50509 accept ANY
 export:         to AS50509 announce AS59718
+import:         from AS56931 action pref=110; accept ANY
 export:         to AS56931 announce AS59718
-export:         to AS25091 announce AS59718
+import:         from AS49869 action pref=110; accept ANY
 export:         to AS49869 announce AS59718
+import:         from AS39607 action pref=110; accept ANY
 export:         to AS39607 announce AS59718
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         MNT-UPECO
 mnt-by:         RIPE-DB-MNT
 created:        2012-10-08T11:40:03Z
-last-modified:  2025-06-18T14:30:17Z
+last-modified:  2026-06-10T10:42:56Z
 source:         RIPE
-sponsoring-org: ORG-ATS13-RIPE
 
 
 
