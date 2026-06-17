@@ -143,6 +143,29 @@ source:         RIPE
 
 
 
+as-set:         AS-CTCTVER
+descr:          JSC "CenterTelecom", Tver branch
+members:        AS33969
+members:        AS203290
+members:        AS21378
+members:        AS47763
+members:        AS48466
+members:        AS49358
+members:        AS56685
+members:        AS43761
+members:        AS201576
+members:        AS58178
+members:        AS211716
+members:        AS211221
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2007-10-19T07:34:21Z
+last-modified:  2026-06-15T06:04:12Z
+source:         RIPE
+
+
+
 as-set:         AS-EFES
 descr:          OJSC Uralsvyazinform, Ekaterinburg subsidiary
 members:        AS6828
@@ -293,6 +316,20 @@ created:        2009-11-24T09:26:40Z
 last-modified:  2026-05-25T02:57:46Z
 source:         RIPE
 members:        AS41460
+
+
+
+as-set:         AS-ISDNETRU
+descr:          ISDNET internal networks and customers
+members:        AS8369
+members:        AS24665
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         hostmaster@chel.com.ru
+mnt-by:         ROSTELECOM-MNT
+created:        2002-03-21T11:16:14Z
+last-modified:  2026-06-15T07:18:57Z
+source:         RIPE
 
 
 
@@ -3355,6 +3392,48 @@ source:         RIPE
 
 
 
+as-set:         AS-SUTC
+descr:          SUTC AS
+members:        AS24665
+members:        AS28890
+members:        AS28970
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2007-09-06T10:21:09Z
+last-modified:  2026-06-15T07:18:42Z
+source:         RIPE
+
+
+
+as-set:         AS-SUTC-CUST
+descr:          SUTC Peering AS
+members:        AS-SUTC
+members:        AS-CHELYABINSK-IX
+members:        AS-HYPERNET
+members:        AS-CHEL-IX-ROUTESERVER
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2008-03-04T13:01:35Z
+last-modified:  2026-06-15T07:18:33Z
+source:         RIPE
+
+
+
+as-set:         AS-SUTC-PEERING
+descr:          SUTC Peering AS
+members:        AS-SUTC
+members:        AS-CHICS
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2008-02-28T09:56:08Z
+last-modified:  2026-06-15T07:18:24Z
+source:         RIPE
+
+
+
 as-set:         AS-TFES
 descr:          AS-set Tyumen branch, OJSC Uralsvyazinform
 members:        AS31094
@@ -3384,6 +3463,20 @@ admin-c:        DUMY-RIPE
 mnt-by:         ROSTELECOM-MNT
 created:        2009-11-23T06:40:03Z
 last-modified:  2026-05-25T02:52:40Z
+source:         RIPE
+
+
+
+as-set:         AS-TN
+descr:          JSC TeleNET AS list
+members:        AS21378
+members:        AS33969
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@tvcom.ru
+mnt-by:         ROSTELECOM-MNT
+created:        2002-03-28T08:43:17Z
+last-modified:  2026-06-15T06:03:53Z
 source:         RIPE
 
 
@@ -3570,6 +3663,119 @@ notify:         noc-as@minzdrav.gov.ru
 mnt-by:         ROSTELECOM-MNT
 created:        2024-07-25T13:58:10Z
 last-modified:  2024-07-25T13:58:10Z
+source:         RIPE
+
+
+
+as-set:         AS24665:AS-CUST
+descr:          We receive announces from these customers and reannounce its to the upstreams
+members:        AS28970 # TRANSRS-AS
+members:        AS28890 # INSYS-AS
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2007-10-28T17:44:39Z
+last-modified:  2026-06-15T07:18:15Z
+source:         RIPE
+
+
+
+as-set:         AS24665:AS-IN
+descr:          AS list to accept from peer or customer
+descr:          Accept PeerAS only from the PeerAS if
+descr:          AS24665:AS-IN:PeerAS objects is not defined
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2007-10-28T17:44:40Z
+last-modified:  2026-06-15T07:18:06Z
+source:         RIPE
+
+
+
+as-set:         AS24665:AS-OUT
+descr:          AS list to announce to customer
+descr:          Announce AS-SUTC to the PeerAS if
+descr:          AS24665:AS-OUT:PeerAS objects is not defined
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2007-10-28T17:44:40Z
+last-modified:  2026-06-15T07:17:56Z
+source:         RIPE
+
+
+
+as-set:         AS24665:AS-OUT-DEFAULT
+descr:          We announce default route to these customers
+members:        AS28970 # TRANSRS-AS
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2008-01-25T19:46:36Z
+last-modified:  2026-06-15T07:17:45Z
+source:         RIPE
+
+
+
+as-set:         AS24665:AS-OUT-FULL
+descr:          We announce full routing table to these customers
+members:        AS28890 # INSYS-AS
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2007-10-28T17:45:09Z
+last-modified:  2026-06-15T07:17:35Z
+source:         RIPE
+
+
+
+as-set:         AS24665:AS-PEER
+descr:          We receive announces from these peering and reannounce its to the peering
+members:        AS65500 # CHELYABINSK-IX
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2008-02-28T11:59:33Z
+last-modified:  2026-06-15T07:17:24Z
+source:         RIPE
+
+
+
+as-set:         AS24665:AS-PEER-IN
+descr:          AS list to accept from peer
+descr:          Accept PeerAS only from the PeerAS if
+descr:          AS24665:AS-PEER-IN:PeerAS objects is not defined
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2008-02-28T10:07:37Z
+last-modified:  2026-06-15T07:17:15Z
+source:         RIPE
+
+
+
+as-set:         AS24665:AS-PEER-IN:AS65500
+descr:          AS list to accept from peer AS65500 CHELYABINSK-IX
+members:        AS-CHELYABINSK-IX
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2009-01-13T04:40:28Z
+last-modified:  2026-06-15T07:17:07Z
+source:         RIPE
+
+
+
+as-set:         AS24665:AS-PEER-OUT
+descr:          AS list to announce to peering
+descr:          Announce AS-SUTC-PEERING to the PeerAS if
+descr:          AS24665:AS-PEER-OUT:PeerAS objects is not defined
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ROSTELECOM-MNT
+created:        2008-02-28T10:02:15Z
+last-modified:  2026-06-15T07:16:58Z
 source:         RIPE
 
 
@@ -11453,6 +11659,30 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
 created:        2002-06-25T12:28:04Z
 last-modified:  2024-12-13T09:49:28Z
+source:         RIPE
+
+
+
+aut-num:        AS24665
+as-name:        SUTC-AS
+descr:          PJSC "Rostelecom". Technical Team
+import:         { from AS-ANY action community .= {24665:2000}; accept NOT {0.0.0.0/0}; } refine { from AS-ANY action pref=25; accept community(24665:75); from AS-ANY action pref=50; accept community(24665:50); from AS-ANY action pref=75; accept community(24665:25); from AS-ANY action pref=0; accept ANY; } refine { from AS24665:AS-CUST accept (AS24665:AS-IN:PeerAS OR PeerAS) AND (<AS24665:AS-IN:PeerAS$> OR <PeerAS$>); } refine { from AS-ANY accept PeerAS AND (NOT AS28890 OR {83.167.0.0/20^20-32, 88.86.192.0/20^20-32}); }
+export:         { to AS24665:AS-CUST announce (AS24665:AS-OUT:PeerAS OR (AS-SUTC-CUST AND (NOT AS28890 OR {83.167.0.0/20^20-32, 88.86.192.0/20^20-32}))) AND community(24665:300, 24665:1000, 24665:2000); to AS24665:AS-OUT-DEFAULT announce {0.0.0.0/0}; to AS24665:AS-OUT-FULL announce NOT AS24665:RS-MARTIANS; }
+import:         { from AS-ANY action pref=25; community .= {24665:300}; accept NOT {0.0.0.0/0}; } refine { from AS24665:AS-PEER accept (AS24665:AS-PEER-IN:PeerAS OR PeerAS) AND (<AS24665:AS-PEER-IN:PeerAS$> OR <PeerAS$>); }
+export:         { to AS-ANY announce NOT community(24665:200, 24665:1000); } refine { to AS24665:AS-PEER announce (AS24665:AS-PEER-OUT:PeerAS AND (NOT AS28890 OR {83.167.0.0/20^20-32, 88.86.192.0/20^20-32})) OR (AS-SUTC-PEERING AND (NOT AS28890 OR {83.167.0.0/20^20-32, 88.86.192.0/20^20-32})); }
+import:         { from AS-ANY action pref=25; community .= {24665:1000}; accept ANY; } refine { from AS3239 action community .= {24665:204}; accept {212.220.120.0/21^21-24, 90.151.160.0/24, 90.150.2.232/30, 90.150.2.236/30} AND (<^AS3239$> OR <^AS3239 AS35400$>); from AS39775 action community .= {24665:205}; accept AS-HYPERNET OR AS-CHEL-IX-ROUTESERVER OR AS8324; }
+export:         { to AS-ANY announce NOT community(24665:200, 24665:300); } refine { to AS3239 announce (AS24665 OR (AS28890 AND {83.167.0.0/20^20-32, 88.86.192.0/20^20-32})) AND NOT community(24665:105); to AS39775 announce AS-SUTC AND (NOT AS28890 OR {83.167.0.0/20^20-32, 88.86.192.0/20^20-32}); }
+import:         { from AS-ANY action community .= {24665:200}; accept ANY; } refine { from AS29648 217.115.80.89 at 217.115.92.214 action pref=50; community .= {24665:201}; accept NOT AS24665:RS-MARTIANS; from AS29648 217.115.82.37 at 217.115.82.38 action pref=50; community .= {24665:202}; accept NOT ANY; from AS29648 217.115.92.213 at 217.115.92.214 action pref=50; community .= {24665:203}; accept <^AS29648$> NOT AS24665:RS-MARTIANS; from AS3216 action pref=75; community .= {24665:203}; accept NOT AS24665:RS-MARTIANS; }
+export:         { to AS29648 217.115.82.37 at 217.115.82.38 announce {81.20.170.0/24}; }
+export:         { to AS-ANY announce AS-SUTC AND NOT {0.0.0.0/0} AND NOT community(24665:100, 24665:200, 24665:300, 24665:1000) AND NOT AS24665:RS-MARTIANS AND (NOT AS28890 OR {83.167.0.0/20^20-32, 88.86.192.0/20^20-32}); } refine { to AS29648 217.115.80.89 at 217.115.92.213 announce NOT ANY; to AS29648 217.115.92.213 at 217.115.92.214 announce NOT community(24665:102) and NOT {81.20.170.0/24}; to AS3216 action community .= {3216:5870}; announce NOT community(24665:103); }
+org:            ORG-JR8-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2002-02-11T13:13:26Z
+last-modified:  2026-06-15T07:19:34Z
 source:         RIPE
 
 

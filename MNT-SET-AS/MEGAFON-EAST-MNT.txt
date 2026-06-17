@@ -96,6 +96,7 @@ members:        AS-BALTTELECOM
 members:        AS-BITRACE
 members:        AS-BTPORT
 members:        AS-CARAVANAERO
+members:        AS-CASTLES
 members:        AS-CENTRLAN
 members:        AS-CENTRSVYAZ
 members:        AS-CITTEL
@@ -285,6 +286,7 @@ members:        AS-SELECTEL
 members:        AS-SELECTEL-MSK
 members:        AS-SET-AQUAFON
 members:        AS-SET-COLTEL
+members:        AS-SET-COREDATANET
 members:        AS-SET-KMTN
 members:        AS-SET-RIGHTSIDE
 members:        AS-SET-TCLOUD
@@ -979,7 +981,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2007-10-01T11:16:52Z
-last-modified:  2026-06-08T06:47:45Z
+last-modified:  2026-06-15T07:57:13Z
 source:         RIPE
 
 
@@ -1774,6 +1776,8 @@ import:         from AS43264 accept AS43264
 export:         to AS43264 announce ANY
 import:         from AS43270 accept AS43270
 export:         to AS43270 announce ANY
+import:         from AS43278 accept AS-CASTLES
+export:         to AS43278 announce ANY
 import:         from AS43321 accept AS43321
 export:         to AS43321 announce ANY
 import:         from AS43330 accept AS43330
@@ -2172,6 +2176,8 @@ import:         from AS52043 accept AS52043
 export:         to AS52043 announce ANY
 import:         from AS52060 accept AS-MAXIMA
 export:         to AS52060 announce ANY
+import:         from AS52086 accept AS-SET-COREDATANET
+export:         to AS52086 announce ANY
 import:         from AS52094 accept AS52094
 export:         to AS52094 announce ANY
 import:         from AS52193 accept AS-EVROKONTAKT
@@ -2827,7 +2833,7 @@ mnt-by:         RIPE-NCC-ENd-MNT
 mnt-by:         MGSM-MNT
 mnt-by:         MEGAFON-EAST-MNT
 created:        2004-03-05T14:46:40Z
-last-modified:  2026-06-08T06:43:40Z
+last-modified:  2026-06-15T07:56:06Z
 source:         RIPE
 
 

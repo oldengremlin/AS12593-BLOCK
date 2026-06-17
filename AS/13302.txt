@@ -3,25 +3,38 @@ org:            ORG-LL4-RIPE
 as-name:        LINKEY-CLOUD
 descr:          St.-Petersburg, Russia
 import:         from AS13002 action pref=100; accept ANY
-export:         to AS13002 announce AS13302
+export:         to AS13002 announce AS-LINKEYCLOUD
 import:         from AS20764 action pref=100; accept ANY
-export:         to AS20764 announce AS13302
+export:         to AS20764 announce AS-LINKEYCLOUD
+import:         from AS35598 action pref=100; accept ANY
+export:         to AS35598 announce AS-LINKEYCLOUD
 import:         from AS8631 action pref=150; accept AS-MSKROUTESERVER
-export:         to AS8631 announce AS13302
+export:         to AS8631 announce AS-LINKEYCLOUD
 mp-import:      afi ipv6.unicast from AS8631 action pref=150; accept AS-MSKROUTESERVER
-mp-export:      afi ipv6.unicast to AS8631 announce AS13302
+mp-export:      afi ipv6.unicast to AS8631 announce AS-LINKEYCLOUD
+import:         from AS49869 action pref=150; accept as-piter-ix-msk
+export:         to AS49869 announce AS-LINKEYCLOUD
+mp-import:      afi ipv6.unicast from AS49869 action pref=150; accept as-piter-ix-msk
+mp-export:      afi ipv6.unicast to AS49869 announce AS-LINKEYCLOUD
+import:         from AS50817 action pref=150; accept as-piter-ix
+export:         to AS50817 announce AS-LINKEYCLOUD
+mp-import:      afi ipv6.unicast from AS50817 action pref=150; accept as-piter-ix
+mp-export:      afi ipv6.unicast to AS50817 announce AS-LINKEYCLOUD
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LINKEY-MNT
 created:        2002-10-22T10:27:16Z
-last-modified:  2026-05-27T10:26:58Z
+last-modified:  2026-06-15T20:30:05Z
 source:         RIPE
 
 as-num:         AS13302
 country:        RU
 as-name:        LINKEY-CLOUD Linkey Ltd
+as-num:         AS13302
+country:        RU
+as-name:        null
 as-num:         AS13302
 country:        RU
 as-name:        null
