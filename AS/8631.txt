@@ -135,6 +135,9 @@ accept AS-TIMEWEB
 import:         from AS9177
 action pref=100;
 accept AS-RTASVYAZ
+import:         from AS9198
+action pref=100;
+accept AS-KAZTELECOMPEERS
 import:         from AS9498
 action pref=100;
 accept AS9498:AS-BHARTI-IN
@@ -188,7 +191,7 @@ action pref=100;
 accept AS-YANDEX
 import:         from AS13302
 action pref=100;
-accept AS13302
+accept AS-LINKEYCLOUD
 import:         from AS13335
 action pref=100;
 accept AS13335:AS-CLOUDFLARE
@@ -1697,6 +1700,8 @@ export:         to AS9123
 announce AS-MSKROUTESERVER
 export:         to AS9177
 announce AS-MSKROUTESERVER
+export:         to AS9198
+announce AS-MSKROUTESERVER
 export:         to AS9498
 announce AS-MSKROUTESERVER
 export:         to AS10099
@@ -2682,7 +2687,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-08T13:38:25Z
+last-modified:  2026-06-16T09:40:06Z
 source:         RIPE
 
 as-num:         AS8631

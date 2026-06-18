@@ -380,6 +380,8 @@ members:        AS-AGTEL-RUS
 members:        AS-TIMEWEB
 # from AS9177:
 members:        AS-RTASVYAZ
+# from AS9198:
+members:        AS-KAZTELECOMPEERS
 # from AS9498:
 members:        AS9498:AS-BHARTI-IN
 # from AS10099:
@@ -415,7 +417,7 @@ members:        AS-CONVEYPLUS
 # from AS13238:
 members:        AS-YANDEX
 # from AS13302:
-members:        AS13302
+members:        AS-LINKEYCLOUD
 # from AS13335:
 members:        AS13335:AS-CLOUDFLARE
 # from AS15169:
@@ -1369,7 +1371,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-06-08T13:38:28Z
+last-modified:  2026-06-16T09:40:09Z
 source:         RIPE
 
 
@@ -1769,8 +1771,6 @@ members:        AS-CDNNOW
 members:        AS-IP-MAX, AS-IP-MAX-V6
 # from AS25408:
 members:        AS-WESTCALLSPB
-# from AS25549:
-members:        AS-AVANTEL
 # from AS28917:
 members:        AS-FIORD
 # from AS29076:
@@ -1917,7 +1917,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2026-04-06T10:04:59Z
+last-modified:  2026-06-16T14:04:09Z
 source:         RIPE
 
 
@@ -3407,9 +3407,6 @@ accept AS-IP-MAX AS-IP-MAX-V6
 import:         from AS25408
 action pref=100;
 accept AS-WESTCALLSPB
-import:         from AS25549
-action pref=100;
-accept AS-AVANTEL
 import:         from AS28917
 action pref=100;
 accept AS-FIORD
@@ -3664,8 +3661,6 @@ export:         to AS25091
 announce AS-SPBROUTESERVER
 export:         to AS25408
 announce AS-SPBROUTESERVER
-export:         to AS25549
-announce AS-SPBROUTESERVER
 export:         to AS28917
 announce AS-SPBROUTESERVER
 export:         to AS29076
@@ -3809,7 +3804,7 @@ announce AS-SPBROUTESERVER
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2026-04-06T10:05:03Z
+last-modified:  2026-06-16T14:04:14Z
 source:         RIPE
 
 
@@ -4846,6 +4841,9 @@ accept AS-TIMEWEB
 import:         from AS9177
 action pref=100;
 accept AS-RTASVYAZ
+import:         from AS9198
+action pref=100;
+accept AS-KAZTELECOMPEERS
 import:         from AS9498
 action pref=100;
 accept AS9498:AS-BHARTI-IN
@@ -4899,7 +4897,7 @@ action pref=100;
 accept AS-YANDEX
 import:         from AS13302
 action pref=100;
-accept AS13302
+accept AS-LINKEYCLOUD
 import:         from AS13335
 action pref=100;
 accept AS13335:AS-CLOUDFLARE
@@ -6408,6 +6406,8 @@ export:         to AS9123
 announce AS-MSKROUTESERVER
 export:         to AS9177
 announce AS-MSKROUTESERVER
+export:         to AS9198
+announce AS-MSKROUTESERVER
 export:         to AS9498
 announce AS-MSKROUTESERVER
 export:         to AS10099
@@ -7393,7 +7393,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-08T13:38:25Z
+last-modified:  2026-06-16T09:40:06Z
 source:         RIPE
 
 
