@@ -312,9 +312,6 @@ accept AS25451
 import:         from AS25532
 action pref=100;
 accept AS-MASTERHOST
-import:         from AS25549
-action pref=100;
-accept AS-AVANTEL
 import:         from AS26415
 action pref=100;
 accept AS-GTLD
@@ -1119,6 +1116,9 @@ accept AS57107
 import:         from AS57164
 action pref=100;
 accept AS-HELITELE
+import:         from AS57214
+action pref=100;
+accept AS57214:AS-VID
 import:         from AS57233
 action pref=100;
 accept AS57233:AS-KOMPA
@@ -1818,8 +1818,6 @@ export:         to AS25451
 announce AS-MSKROUTESERVER
 export:         to AS25532
 announce AS-MSKROUTESERVER
-export:         to AS25549
-announce AS-MSKROUTESERVER
 export:         to AS26415
 announce AS-MSKROUTESERVER
 export:         to AS28761
@@ -2356,6 +2354,8 @@ export:         to AS57107
 announce AS-MSKROUTESERVER
 export:         to AS57164
 announce AS-MSKROUTESERVER
+export:         to AS57214
+announce AS-MSKROUTESERVER
 export:         to AS57233
 announce AS-MSKROUTESERVER
 export:         to AS57277
@@ -2687,12 +2687,15 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-16T09:40:06Z
+last-modified:  2026-06-17T13:40:35Z
 source:         RIPE
 
 as-num:         AS8631
 country:        RU
 as-name:        MSK-IX-RS Join-stock company "Internet Exchange"MSK-IX"
+as-num:         AS8631
+country:        RU
+as-name:        null
 as-num:         AS8631
 country:        RU
 as-name:        null

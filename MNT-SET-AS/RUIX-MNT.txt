@@ -498,8 +498,6 @@ members:        AS25437
 members:        AS25451
 # from AS25532:
 members:        AS-MASTERHOST
-# from AS25549:
-members:        AS-AVANTEL
 # from AS26415:
 members:        AS-GTLD
 # from AS28761:
@@ -1036,6 +1034,8 @@ members:        AS57073:AS-WILDBERRIES
 members:        AS57107
 # from AS57164:
 members:        AS-HELITELE
+# from AS57214:
+members:        AS57214:AS-VID
 # from AS57233:
 members:        AS57233:AS-KOMPA
 # from AS57277:
@@ -1371,7 +1371,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-06-16T09:40:09Z
+last-modified:  2026-06-17T13:40:31Z
 source:         RIPE
 
 
@@ -1454,8 +1454,6 @@ members:        AS-IP-MAX, AS-IP-MAX-V6
 members:        AS25152
 # from AS25231:
 members:        AS-CITNSO-DEPART
-# from AS25549:
-members:        AS-AVANTEL
 # from AS28709:
 members:        AS-VKONTAKTE
 # from AS31133:
@@ -1574,7 +1572,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2026-05-28T05:41:06Z
+last-modified:  2026-06-17T05:40:24Z
 source:         RIPE
 
 
@@ -2698,9 +2696,6 @@ accept AS25152
 import:         from AS25231
 action pref=100;
 accept AS-CITNSO-DEPART
-import:         from AS25549
-action pref=100;
-accept AS-AVANTEL
 import:         from AS28709
 action pref=100;
 accept AS-VKONTAKTE
@@ -2905,8 +2900,6 @@ export:         to AS25152
 announce AS-NSKROUTESERVER
 export:         to AS25231
 announce AS-NSKROUTESERVER
-export:         to AS25549
-announce AS-NSKROUTESERVER
 export:         to AS28709
 announce AS-NSKROUTESERVER
 export:         to AS31133
@@ -3021,7 +3014,7 @@ export:         to AS211609
 announce AS-NSKROUTESERVER
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-05-28T05:41:10Z
+last-modified:  2026-06-17T05:40:28Z
 source:         RIPE
 
 
@@ -5018,9 +5011,6 @@ accept AS25451
 import:         from AS25532
 action pref=100;
 accept AS-MASTERHOST
-import:         from AS25549
-action pref=100;
-accept AS-AVANTEL
 import:         from AS26415
 action pref=100;
 accept AS-GTLD
@@ -5825,6 +5815,9 @@ accept AS57107
 import:         from AS57164
 action pref=100;
 accept AS-HELITELE
+import:         from AS57214
+action pref=100;
+accept AS57214:AS-VID
 import:         from AS57233
 action pref=100;
 accept AS57233:AS-KOMPA
@@ -6524,8 +6517,6 @@ export:         to AS25451
 announce AS-MSKROUTESERVER
 export:         to AS25532
 announce AS-MSKROUTESERVER
-export:         to AS25549
-announce AS-MSKROUTESERVER
 export:         to AS26415
 announce AS-MSKROUTESERVER
 export:         to AS28761
@@ -7062,6 +7053,8 @@ export:         to AS57107
 announce AS-MSKROUTESERVER
 export:         to AS57164
 announce AS-MSKROUTESERVER
+export:         to AS57214
+announce AS-MSKROUTESERVER
 export:         to AS57233
 announce AS-MSKROUTESERVER
 export:         to AS57277
@@ -7393,7 +7386,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-16T09:40:06Z
+last-modified:  2026-06-17T13:40:35Z
 source:         RIPE
 
 
