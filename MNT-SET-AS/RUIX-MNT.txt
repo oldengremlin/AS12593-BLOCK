@@ -656,6 +656,8 @@ members:        AS61436:AS-INTEX, AS61436:AS-INTEX-V6
 members:        AS-TUT, AS41275
 # from AS41327:
 members:        AS41327:AS-CUSTOMERS
+# from AS41560:
+members:        AS41560
 # from AS41601:
 members:        AS-OBLTELECOM
 # from AS41617:
@@ -1360,6 +1362,8 @@ members:        AS213624
 members:        AS213922:AS-VOLTA
 # from AS215182:
 members:        AS215182:AS-AVELACOM-BUSINESS
+# from AS215248:
+members:        AS215248
 # from AS216262:
 members:        AS216262
 # from AS216334:
@@ -1371,7 +1375,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-06-17T13:40:31Z
+last-modified:  2026-06-25T13:49:03Z
 source:         RIPE
 
 
@@ -5248,6 +5252,9 @@ accept AS-TUT AS41275
 import:         from AS41327
 action pref=100;
 accept AS41327:AS-CUSTOMERS
+import:         from AS41560
+action pref=100;
+accept AS41560
 import:         from AS41601
 action pref=100;
 accept AS-OBLTELECOM
@@ -6304,6 +6311,9 @@ accept AS213922:AS-VOLTA
 import:         from AS215182
 action pref=100;
 accept AS215182:AS-AVELACOM-BUSINESS
+import:         from AS215248
+action pref=100;
+accept AS215248
 import:         from AS216262
 action pref=100;
 accept AS216262
@@ -6674,6 +6684,8 @@ announce AS-MSKROUTESERVER
 export:         to AS41275
 announce AS-MSKROUTESERVER
 export:         to AS41327
+announce AS-MSKROUTESERVER
+export:         to AS41560
 announce AS-MSKROUTESERVER
 export:         to AS41601
 announce AS-MSKROUTESERVER
@@ -7379,6 +7391,8 @@ export:         to AS213922
 announce AS-MSKROUTESERVER
 export:         to AS215182
 announce AS-MSKROUTESERVER
+export:         to AS215248
+announce AS-MSKROUTESERVER
 export:         to AS216262
 announce AS-MSKROUTESERVER
 export:         to AS216334
@@ -7386,7 +7400,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-17T13:40:35Z
+last-modified:  2026-06-25T13:49:07Z
 source:         RIPE
 
 

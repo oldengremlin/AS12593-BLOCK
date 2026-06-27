@@ -446,6 +446,7 @@ members:        AS57587
 members:        AS-SPDOP
 members:        AS-WBT
 members:        AS41338
+members:        AS216290
 members:        AS60642
 members:        AS-ROSINTEH
 members:        AS-R-LINE
@@ -1667,7 +1668,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-06-24T15:08:05Z
+last-modified:  2026-06-25T13:25:03Z
 source:         RIPE
 
 
@@ -3311,11 +3312,12 @@ members:        AS15830:AS-EQUINIX
 members:        AS36236:AS-NETACTUATE
 members:        AS3303:AS-SWCMGLOBAL
 members:        AS6774:AS-BICS-TRANSIT
+members:        AS31898
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2023-03-06T09:56:45Z
-last-modified:  2026-03-16T15:17:25Z
+last-modified:  2026-06-25T17:38:34Z
 source:         RIPE
 
 
@@ -4015,6 +4017,10 @@ import:         from AS60345 action pref=87; accept AS-IXNT
 export:         to AS60345 announce AS-SOVAM
 mp-import:      afi ipv6 from AS60345 action pref=87; accept AS-IXNT
 mp-export:      afi ipv6 to AS60345 announce AS-SOVAM-V6
+import:         from AS31898 action pref=100; accept AS31898
+export:         to AS31898 announce AS-SOVAM
+mp-import:      from AS31898 action pref=100; accept AS31898
+mp-export:      to AS31898 announce AS-SOVAM-V6
 mp-import:      afi ipv6 from AS36236 action pref=90; accept AS-HOSTVIRTUAL
 mp-export:      afi ipv6 to AS36236 announce AS-SOVAM-V6
 import:         from AS36236 action pref=90; accept AS-HOSTVIRTUAL
@@ -5205,6 +5211,8 @@ mp-import:      from AS199365 action pref=100; accept AS199365
 mp-export:      to AS199365 announce ANY
 import:         from AS52222 action pref=100; accept AS52222
 export:         to AS52222 announce {0.0.0.0/0}
+import:         from AS216290 action pref=100; accept AS216290
+export:         to AS216290 announce ANY
 import:         from AS48035 action pref=100; accept AS48035
 export:         to AS48035 announce AS-SOVAM
 import:         from AS35738 action pref=100; accept AS-KVANT
@@ -8896,7 +8904,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-06-24T15:06:30Z
+last-modified:  2026-06-25T16:19:17Z
 source:         RIPE
 
 
