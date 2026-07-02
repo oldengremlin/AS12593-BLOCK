@@ -92,8 +92,6 @@ members:        AS57629
 members:        AS61964
 # from AS62261:
 members:        AS62261:AS-EKT-MEDIAIX
-# from AS62331:
-members:        AS62331
 # from AS201119:
 members:        AS201119
 # from AS201512:
@@ -116,7 +114,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2026-04-01T07:36:32Z
+last-modified:  2026-06-30T12:10:17Z
 source:         RIPE
 
 
@@ -238,7 +236,7 @@ members:        AS8985
 members:        AS-RBNET
 members:        AS-NS5_RIPN_NET
 members:        AS-NS9_RIPN_NET
-members:        AS204582
+members:        AS204582:AS-TCI
 members:        AS30124
 members:        AS59718
 members:        AS24406
@@ -287,7 +285,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2019-05-20T09:42:08Z
-last-modified:  2026-05-28T14:07:52Z
+last-modified:  2026-06-30T14:24:36Z
 source:         RIPE
 
 
@@ -1152,8 +1150,6 @@ members:        AS-UNITELECOM-NET
 members:        AS-BTK
 # from AS62314:
 members:        AS-ATMOSPHERICA
-# from AS62331:
-members:        AS62331
 # from AS62379:
 members:        AS62379:AS-FREEWAY
 # from AS64433:
@@ -1257,7 +1253,7 @@ members:        AS204297
 # from AS204496:
 members:        AS-GAGRATEL, AS204496
 # from AS204582:
-members:        AS204582
+members:        AS204582:AS-TCI
 # from AS204600:
 members:        AS204600
 # from AS204720:
@@ -1375,7 +1371,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-06-26T09:48:24Z
+last-modified:  2026-06-30T13:55:16Z
 source:         RIPE
 
 
@@ -3188,9 +3184,6 @@ accept AS61964
 import:         from AS62261
 action pref=100;
 accept AS62261:AS-EKT-MEDIAIX
-import:         from AS62331
-action pref=100;
-accept AS62331
 import:         from AS201119
 action pref=100;
 accept AS201119
@@ -3303,8 +3296,6 @@ export:         to AS61964
 announce AS-EKTROUTESERVER
 export:         to AS62261
 announce AS-EKTROUTESERVER
-export:         to AS62331
-announce AS-EKTROUTESERVER
 export:         to AS201119
 announce AS-EKTROUTESERVER
 export:         to AS201512
@@ -3325,7 +3316,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2026-04-01T07:36:37Z
+last-modified:  2026-06-30T12:10:21Z
 source:         RIPE
 
 
@@ -5996,9 +5987,6 @@ accept AS-BTK
 import:         from AS62314
 action pref=100;
 accept AS-ATMOSPHERICA
-import:         from AS62331
-action pref=100;
-accept AS62331
 import:         from AS62379
 action pref=100;
 accept AS62379:AS-FREEWAY
@@ -6154,7 +6142,7 @@ action pref=100;
 accept AS-GAGRATEL AS204496
 import:         from AS204582
 action pref=100;
-accept AS204582
+accept AS204582:AS-TCI
 import:         from AS204600
 action pref=100;
 accept AS204600
@@ -7181,8 +7169,6 @@ export:         to AS62247
 announce AS-MSKROUTESERVER
 export:         to AS62314
 announce AS-MSKROUTESERVER
-export:         to AS62331
-announce AS-MSKROUTESERVER
 export:         to AS62379
 announce AS-MSKROUTESERVER
 export:         to AS64433
@@ -7400,7 +7386,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-26T09:48:28Z
+last-modified:  2026-06-30T13:51:24Z
 source:         RIPE
 
 
@@ -7440,7 +7426,7 @@ import:         from AS43832 action pref=130; accept AS-NS5_RIPN_NET
 export:         to AS43832 announce ANY
 import:         from AS42385 action pref=130; accept AS-NS9_RIPN_NET
 export:         to AS42385 announce ANY
-import:         from AS204582 action pref=130; accept AS204582
+import:         from AS204582 action pref=130; accept AS204582:AS-TCI
 export:         to AS204582 announce ANY
 import:         from AS30124 action pref=130; accept AS30124
 export:         to AS30124 announce ANY
@@ -7532,7 +7518,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2026-05-28T14:07:51Z
+last-modified:  2026-06-30T14:24:35Z
 source:         RIPE
 
 

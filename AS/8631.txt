@@ -1293,9 +1293,6 @@ accept AS-BTK
 import:         from AS62314
 action pref=100;
 accept AS-ATMOSPHERICA
-import:         from AS62331
-action pref=100;
-accept AS62331
 import:         from AS62379
 action pref=100;
 accept AS62379:AS-FREEWAY
@@ -1451,7 +1448,7 @@ action pref=100;
 accept AS-GAGRATEL AS204496
 import:         from AS204582
 action pref=100;
-accept AS204582
+accept AS204582:AS-TCI
 import:         from AS204600
 action pref=100;
 accept AS204600
@@ -2478,8 +2475,6 @@ export:         to AS62247
 announce AS-MSKROUTESERVER
 export:         to AS62314
 announce AS-MSKROUTESERVER
-export:         to AS62331
-announce AS-MSKROUTESERVER
 export:         to AS62379
 announce AS-MSKROUTESERVER
 export:         to AS64433
@@ -2697,7 +2692,7 @@ announce AS-MSKROUTESERVER
 export:         to AS266925
 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-06-26T09:48:28Z
+last-modified:  2026-06-30T13:51:24Z
 source:         RIPE
 
 as-num:         AS8631

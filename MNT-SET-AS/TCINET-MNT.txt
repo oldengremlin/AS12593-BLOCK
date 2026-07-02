@@ -9,6 +9,18 @@ source:         RIPE
 
 
 
+as-set:         AS204582:AS-TCI
+members:        AS204582
+members:        AS61992
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+created:        2026-06-30T10:11:36Z
+last-modified:  2026-06-30T10:11:36Z
+source:         RIPE
+mnt-by:         TCINET-MNT
+
+
+
 as-set:         AS61992:AS-UCI
 members:        AS61992
 members:        AS204582
@@ -44,13 +56,15 @@ aut-num:        AS204582
 as-name:        TCI-AS
 org:            ORG-TCOI4-RIPE
 import:         from AS42610 accept ANY
-import:         from AS61992 action pref=130; accept AS61992:AS-UCI
+import:         from AS61992 action pref=130; accept AS61992
 export:         to AS42610 announce AS204582
 export:         to AS61992 announce ANY
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS204582
 import:         from AS8631 accept AS-MSKROUTESERVER
-export:         to AS8631 announce AS204582
+export:         to AS8631 announce AS204582:AS-TCI
+import:         from AS8985 accept ANY
+export:         to AS8985 announce AS204582:AS-TCI
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 status:         ASSIGNED
@@ -58,7 +72,7 @@ notify:         ripe@tcinet.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TCINET-MNT
 created:        2018-02-14T13:54:47Z
-last-modified:  2026-06-29T12:48:52Z
+last-modified:  2026-06-30T13:55:41Z
 source:         RIPE
 
 

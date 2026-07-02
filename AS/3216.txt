@@ -1680,10 +1680,6 @@ import:         from AS60642 action pref=100; accept AS60642
 export:         to AS60642 announce ANY
 import:         from AS51230 action pref=100; accept AS-ROSINTEH
 export:         to AS51230 announce ANY
-import:         from AS44112 action pref=100; accept AS-RUCENTER
-export:         to AS44112 announce AS-SOVAM
-mp-import:      from AS44112 action pref=100; accept AS-RUCENTER
-mp-export:      to AS44112 announce AS-SOVAM-V6
 import:         from AS201706 action pref=100; accept AS-SERVICEPIPE
 export:         to AS201706 announce ANY
 mp-import:      from AS201706 action pref=100; accept AS-SERVICEPIPE
@@ -1692,6 +1688,10 @@ import:         from AS199365 action pref=100; accept AS199365
 export:         to AS199365 announce ANY
 mp-import:      from AS199365 action pref=100; accept AS199365
 mp-export:      to AS199365 announce ANY
+import:         from AS34573 action pref=100; accept AS-OBERON
+export:         to AS34573 announce ANY
+mp-import:      from AS34573 action pref=100; accept AS-OBERON
+mp-export:      to AS34573 announce ANY
 import:         from AS52222 action pref=100; accept AS52222
 export:         to AS52222 announce {0.0.0.0/0}
 import:         from AS216290 action pref=100; accept AS216290
@@ -5387,7 +5387,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-06-25T16:19:17Z
+last-modified:  2026-06-30T13:20:52Z
 source:         RIPE
 
 as-num:         AS3216
