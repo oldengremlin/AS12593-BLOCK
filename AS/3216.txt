@@ -1674,6 +1674,10 @@ import:         from AS211157 action pref=100; accept AS211157
 export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
+import:         from AS203753 action pref=100; accept AS203753:AS-VOLGADC
+export:         to AS203753 announce ANY
+mp-import:      from AS203753 action pref=100; accept AS203753:AS-VOLGADC
+mp-export:      to AS203753 announce ANY
 import:         from AS41338 action pref=100; accept AS41338
 export:         to AS41338 announce ANY
 import:         from AS60642 action pref=100; accept AS60642
@@ -1696,6 +1700,8 @@ import:         from AS52222 action pref=100; accept AS52222
 export:         to AS52222 announce {0.0.0.0/0}
 import:         from AS216290 action pref=100; accept AS216290
 export:         to AS216290 announce ANY
+import:         from AS51612 action pref=100; accept AS51612
+export:         to AS51612 announce ANY
 import:         from AS48035 action pref=100; accept AS48035
 export:         to AS48035 announce AS-SOVAM
 import:         from AS35738 action pref=100; accept AS-KVANT
@@ -5387,7 +5393,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-06-30T13:20:52Z
+last-modified:  2026-07-01T14:40:46Z
 source:         RIPE
 
 as-num:         AS3216

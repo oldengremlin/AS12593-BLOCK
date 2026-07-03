@@ -4,6 +4,7 @@ members:        AS12494
 members:        AS12484
 members:        AS41816
 members:        AS48530
+members:        AS50712
 members:        AS50727
 members:        AS57629
 members:        AS57683
@@ -13,7 +14,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         POSTLTD-MNT
 created:        2009-09-10T11:06:49Z
-last-modified:  2025-10-15T07:03:07Z
+last-modified:  2026-07-01T12:47:40Z
 source:         RIPE
 
 
@@ -53,8 +54,6 @@ default:        to AS3216 action pref=98; networks ANY
 default:        to AS20485 action pref=100; networks ANY
 default:        to AS31133 action pref=200; networks ANY
 default:        to AS8631 action pref=204; networks ANY
-import:         from AS50712 accept AS50712
-export:         to AS50712 announce AS-POSTLTD-PEERS
 import:         from AS51880 accept AS51880
 export:         to AS51880 announce AS-POSTLTD-PEERS
 import:         from AS41837 accept AS41837
@@ -65,6 +64,8 @@ import:         from AS12484 accept AS12484
 export:         to AS12484 announce ANY
 import:         from AS41816 accept AS41816
 export:         to AS41816 announce ANY
+import:         from AS50712 accept AS50712
+export:         to AS50712 announce ANY
 import:         from AS50727 accept AS50727
 export:         to AS50727 announce ANY
 import:         from AS48530 accept AS48530
@@ -75,7 +76,7 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 created:        2002-11-04T11:13:17Z
-last-modified:  2024-05-07T10:44:34Z
+last-modified:  2026-07-01T12:44:45Z
 source:         RIPE
 
 
