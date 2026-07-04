@@ -36,6 +36,9 @@ accept AS62261
 import:         from AS196949
 action pref=100;
 accept AS-PODRYAD
+import:         from AS201512
+action pref=100;
+accept AS201512
 import:         from AS210756
 action pref=100;
 accept AS-EDGECENTER
@@ -59,13 +62,15 @@ export:         to AS62261
 announce AS-VLVROUTESERVER
 export:         to AS196949
 announce AS-VLVROUTESERVER
+export:         to AS201512
+announce AS-VLVROUTESERVER
 export:         to AS210756
 announce AS-VLVROUTESERVER
 notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-12-08T12:37:37Z
-last-modified:  2026-04-22T02:37:10Z
+last-modified:  2026-07-02T02:38:07Z
 source:         RIPE
 
 as-num:         AS48531

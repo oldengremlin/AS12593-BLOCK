@@ -80,11 +80,12 @@ import:         from AS203784 action pref=400; accept ANY
 import:         from AS205063 action pref=700; accept AS-CORTEL
 import:         from AS205523 action pref=400; accept ANY
 import:         from AS207036 action pref=400; accept ANY
-import:         from AS209133 action pref=700; accept AS209133
+import:         from AS209133 action pref=700; accept AS209133:AS-DATAHALL
 import:         from AS209417 action pref=400; accept ANY
 import:         from AS209762 action pref=400; accept ANY
 import:         from AS209864 action pref=400; accept ANY
 import:         from AS214317 action pref=700; accept AS214317:AS-KEYPOINT
+import:         from AS219291 action pref=700; accept AS219291
 import:         from AS396503 action pref=400; accept ANY
 export:         to AS112 announce ANY
 export:         to AS1299 announce AS-TRUENETWORK
@@ -170,6 +171,7 @@ export:         to AS209417 announce AS-TRUENETWORK
 export:         to AS209762 announce AS-TRUENETWORK
 export:         to AS209864 announce AS-TRUENETWORK
 export:         to AS214317 announce ANY
+export:         to AS219291 announce ANY
 export:         to AS396503 announce AS-TRUENETWORK
 mp-import:      afi ipv6.unicast from AS112 action pref=700; accept AS112
 mp-export:      afi ipv6.unicast to AS112 announce ANY
@@ -196,7 +198,7 @@ org:            ORG-CL261-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-TN
 created:        2016-02-04T13:46:38Z
-last-modified:  2026-05-06T11:13:04Z
+last-modified:  2026-07-02T11:35:25Z
 source:         RIPE
 
 as-num:         AS49673
