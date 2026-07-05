@@ -44,25 +44,6 @@ source:         RIPE
 
 
 
-aut-num:        AS51639
-as-name:        FIABANKRUS-ASN
-org:            ORG-FA357-RIPE
-import:         from AS8416 accept ANY
-import:         from AS8249 accept ANY
-export:         to AS8416 announce AS51639
-export:         to AS8249 announce AS51639
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         IFLN-MNT
-mnt-by:         FIABNK-NET
-created:        2010-10-12T15:08:15Z
-last-modified:  2025-11-19T10:27:50Z
-source:         RIPE
-
-
-
 aut-num:        AS52108
 as-name:        ITC-AS
 org:            ORG-ITC6-RIPE
@@ -81,48 +62,6 @@ created:        2010-12-29T09:17:55Z
 last-modified:  2025-09-24T07:30:01Z
 source:         RIPE
 sponsoring-org: ORG-IL921-RIPE
-
-
-
-aut-num:        AS8416
-as-name:        INFOLINE-AS
-org:            ORG-IL921-RIPE
-import:         from AS31133 action pref=100; accept ANY
-import:         from AS20485 action pref=100; accept ANY
-import:         from AS3216 action pref=100; accept ANY
-import:         from AS12389 action pref=100; accept ANY
-import:         from AS57629 action pref=100; accept ANY
-mp-import:      afi ipv6.unicast from AS57629 action pref=100; accept ANY
-import:         from AS30852 action pref=200; accept ANY
-import:         from AS28709 action pref=100; accept ANY
-import:         from AS50775 action pref=100; accept ANY
-import:         from AS8439 action pref=200; accept AS8439
-import:         from AS43273 action pref=200; accept AS43273
-import:         from AS52108 action pref=200; accept AS52108
-import:         from AS48236 action pref=200; accept AS48236
-import:         from AS210408 action pref=200; accept AS210408
-export:         to AS31133 announce as-infolada
-export:         to AS20485 announce as-infolada
-export:         to AS3216 announce as-infolada
-export:         to AS12389 announce as-infolada
-export:         to AS57629 announce as-infolada
-mp-export:      afi ipv6.unicast to AS57629 announce as-infolada
-export:         to AS28709 announce as-infolada
-export:         to AS30852 announce AS8416
-export:         to AS50775 announce AS8416
-export:         to AS8439 announce as-iltopeers
-export:         to AS43273 announce ANY
-export:         to AS52108 announce ANY
-export:         to AS48236 announce ANY
-export:         to AS210408 announce ANY
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         lir-ru-infolada-1-MNT
-created:        1970-01-01T00:00:00Z
-last-modified:  2025-12-18T05:01:54Z
-source:         RIPE
 
 
 

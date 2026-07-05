@@ -109,28 +109,28 @@ aut-num:        AS16043
 org:            ORG-ES15-RIPE
 as-name:        SAMARA-TELECOM-AS
 import:         from AS39042
-action pref=100;
-accept AS39042
+                action pref=100;
+                accept AS39042
 import:         from AS3216
-action pref=100;
-accept ANY
+                action pref=100;
+                accept ANY
 import:         from AS30852
-action pref=100;
-accept AS30852
+                action pref=100;
+                accept AS30852
 import:         from AS51523
-action pref=100;
-accept AS51523
+                action pref=100;
+                accept AS51523
 export:         to AS3216
-announce AS-SMRTLC
+                announce AS-SMRTLC
 export:         to AS30852
-announce ANY
+                announce ANY
 export:         to AS39042
-announce AS-SMRTLC
+                announce AS-SMRTLC
 export:         to AS51523
-announce AS-SMRTLC
+                announce AS-SMRTLC
 default:        to AS3216
-action pref=100;
-networks ANY
+                action pref=100;
+                networks ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -146,15 +146,15 @@ aut-num:        AS16173
 as-name:        CQGI-Rus
 org:            ORG-OCR1-RIPE
 import:         from AS8773
-action pref=100;
-accept ANY
+                action pref=100;
+                accept ANY
 import:         from AS8470
-action pref=100;
-accept ANY
+                action pref=100;
+                accept ANY
 export:         to AS8773
-announce AS16173
+                announce AS16173
 export:         to AS8740
-announce AS16173
+                announce AS16173
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
