@@ -43,11 +43,8 @@ import:         from AS8631 action pref=50; accept AS-MSKROUTESERVER;
 export:         to AS8631 announce AS-WEBA;
 import:         from AS43362 action pref=50; accept AS43362;
 export:         to AS43362 announce ANY;
-import:         from AS43362 action pref=50; accept AS43362;
 export:         to AS43362 announce AS-WEBA;
-import:         from AS56534 action pref=200; accept ANY;
 export:         to AS56534 announce AS43362;
-import:         from AS8631 action pref=50; accept AS-MSKROUTESERVER;
 export:         to AS8631 announce AS43362;
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE

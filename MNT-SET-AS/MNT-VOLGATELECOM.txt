@@ -57,7 +57,6 @@ descr:          OJSC Rostelecom-Volga
 descr:          Multiregional service network
 descr:          Directly connected customers AS
 descr:          IPv4 Downstreams
-descr:          *******************************
 descr:          Kirov branch
 members:        AS197856
 members:        AS48025
@@ -66,16 +65,13 @@ members:        AS-INSYS
 members:        AS199476
 members:        AS49055
 members:        AS199080
-descr:          *******************************
 descr:          Mariel branch
 members:        AS48421
 members:        AS30812
-descr:          *******************************
 descr:          Mordovia branch
 members:        AS48092
 members:        AS-DARTEL
 members:        AS-EMORDOVIA
-descr:          *******************************
 descr:          NNovgorod branch
 members:        AS198842
 members:        AS44734
@@ -108,7 +104,6 @@ members:        AS43724
 members:        AS-MERANN
 members:        AS201516
 members:        AS57045
-descr:          *******************************
 descr:          Orenburg branch
 members:        AS47240
 members:        AS48612
@@ -120,13 +115,10 @@ members:        AS50353
 members:        AS44556
 members:        AS48909
 members:        AS48160
-members:        AS49369
-descr:          *******************************
 descr:          Penza branch
 members:        AS47618
 members:        AS57006
 members:        AS58026
-descr:          *******************************
 descr:          Samara branch
 members:        AS-SAMTELECOM
 members:        AS39575
@@ -141,12 +133,10 @@ members:        AS49032
 members:        AS16064
 members:        AS-SMARTS
 members:        AS197467
-descr:          *******************************
 descr:          Saratov branch
 members:        AS50647
 members:        AS35682
 members:        AS34703
-members:        AS-NCC-48092
 members:        AS-RENET
 members:        AS-OVERTA
 members:        AS51751
@@ -158,7 +148,6 @@ members:        AS48013
 members:        AS21375
 members:        AS12669
 members:        AS-CMST-BLKV
-descr:          *******************************
 descr:          Udmurtia branch
 members:        AS-NEWIT
 members:        AS43592
@@ -169,7 +158,6 @@ members:        AS61302
 members:        AS-IZHTELEPORT
 members:        AS38959
 members:        AS52217
-descr:          *******************************
 descr:          Ulyanovsk branch
 members:        AS44711
 members:        AS3217
@@ -179,12 +167,9 @@ members:        AS196991
 members:        AS8706
 members:        AS198207
 members:        AS-ULY
-descr:          *******************************
 descr:          Chuvashia branch
 members:        AS13029
-members:        AS48092
 members:        AS48089
-descr:          *******************************
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-VOLGATELECOM
@@ -201,30 +186,18 @@ descr:          OJSC VolgaTelecom
 descr:          Multiregional service network
 descr:          Directly connected customers AS
 descr:          IPv6 Downstreams
-descr:          *******************************
 descr:          Kirov branch
-descr:          *******************************
 descr:          Mariel branch
-descr:          *******************************
 descr:          Mordovia branch
-descr:          *******************************
 descr:          NNovgorod branch
-descr:          *******************************
 descr:          Orenburg branch
-descr:          *******************************
 descr:          Penza branch
-descr:          *******************************
 descr:          Samara branch
-descr:          *******************************
 descr:          Saratov branch
-descr:          *******************************
 descr:          Udmurtia branch
-descr:          *******************************
 descr:          Ulyanovsk branch
 members:        AS57079
-descr:          *******************************
 descr:          Chuvashia branch
-descr:          *******************************
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-VOLGATELECOM
@@ -417,7 +390,6 @@ export:         to AS52108 announce {0.0.0.0/0}
 import:         from AS49032 accept AS49032
 export:         to AS49032 announce ANY
 import:         from AS34352 accept AS-MCN
-export:         to AS34352 announce ANY
 import:         from AS43583 accept AS43583
 export:         to AS43583 announce ANY
 import:         from AS39575 accept AS39575
@@ -446,7 +418,6 @@ import:         from AS197467 accept AS44982
 export:         to AS197467 announce ANY
 import:         from AS48013 accept AS48013
 export:         to AS48013 announce ANY
-import:         from AS34879 accept AS-NGENIX-SMR
 export:         to AS34879 announce AS-VOLGATELECOM and {0.0.0.0/0}
 import:         from AS29190 accept AS-OVERTA
 export:         to AS29190 announce ANY
@@ -482,7 +453,6 @@ import:         from AS198207 accept AS198207
 export:         to AS198207 announce ANY
 import:         from AS13029 accept AS13029
 export:         to AS13029 announce {0.0.0.0/0}
-import:         from AS44408 accept AS44408
 export:         to AS44408 announce {0.0.0.0/0}
 import:         { from AS48092 79.126.122.134 at 79.126.127.55 accept AS48092; from AS48092 79.126.122.162 at 79.126.127.36 accept AS48092; from AS48092 79.126.122.166 at 79.126.127.37 accept AS48092; from AS48092 79.126.122.154 at 79.126.127.58 accept AS48092; from AS48092 79.126.122.158 at 79.126.127.59 accept AS48092; from AS48092 79.126.122.150 at 79.126.127.34 accept AS48092; from AS48092 79.126.122.146 at 79.126.127.35 accept AS48092; from AS44711 79.126.122.106 at 79.126.127.42 accept AS44711; from AS44711 79.126.122.170 at 79.126.127.43 accept AS44711; from AS44711 79.126.122.138 at 79.126.127.50 accept AS48092; from AS44711 79.126.122.142 at 79.126.127.51 accept AS48092; }
 export:         { to AS48092 79.126.122.134 at 79.126.127.55 announce {0.0.0.0/0}; to AS48092 79.126.122.162 at 79.126.127.36 announce {0.0.0.0/0}; to AS48092 79.126.122.166 at 79.126.127.37 announce {0.0.0.0/0}; to AS48092 79.126.122.154 at 79.126.127.58 announce {0.0.0.0/0}; to AS48092 79.126.122.158 at 79.126.127.59 announce {0.0.0.0/0}; to AS48092 79.126.122.150 at 79.126.127.34 announce {0.0.0.0/0}; to AS48092 79.126.122.146 at 79.126.127.35 announce {0.0.0.0/0}; to AS48092 79.126.122.138 at 79.126.127.50 announce {0.0.0.0/0}; to AS48092 79.126.122.142 at 79.126.127.51 announce {0.0.0.0/0}; to AS44711 79.126.122.106 at 79.126.127.42 announce ANY; to AS44711 79.126.122.170 at 79.126.127.43 announce ANY; }

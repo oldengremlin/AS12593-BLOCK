@@ -98,7 +98,6 @@ members:        AS25511
 members:        AS25534
 members:        AS25436
 members:        AS25451
-members:        AS25534
 members:        AS25580
 members:        AS28899
 members:        AS28927
@@ -245,7 +244,6 @@ members:        AS57631
 members:        AS57531
 members:        AS16179
 members:        AS24913
-members:        AS24913
 members:        AS50878
 members:        AS51384
 members:        AS20543
@@ -273,7 +271,6 @@ members:        AS-2GIS
 members:        AS57589
 members:        AS198645
 members:        AS51721
-members:        AS51193
 members:        AS61197
 members:        AS57247
 members:        AS42559
@@ -319,7 +316,6 @@ members:        AS199537
 members:        AS205080
 members:        AS205153
 members:        AS204696
-members:        AS199537
 members:        AS208177
 members:        AS204492
 members:        AS205616
@@ -336,7 +332,6 @@ members:        AS212264
 members:        AS211697
 members:        AS211730
 members:        AS59957
-members:        AS25227
 members:        AS25227
 members:        AS213304
 members:        AS48891
@@ -885,44 +880,16 @@ mp-import:      afi ipv6 from AS63541 accept AS63541
 mp-export:      afi ipv6 to AS63541 announce AS-OBSRUSSIA6
 import:         from AS39533 accept AS-ALL
 export:         to AS39533 announce AS-ROSPRINT
-import:         from AS8075 accept AS-MICROSOFT
-export:         to AS8075 announce AS-ROSPRINT
-mp-import:      afi ipv6 from AS8075 accept AS-MICROSOFT
-mp-export:      afi ipv6 to AS8075 announce AS-OBSRUSSIA6
-import:         from AS3223 accept AS-VOXILITY-SET
-export:         to AS3223 announce AS-ROSPRINT
-import:         from AS61955 accept AS-COLOCATIONIX
-export:         to AS61955 announce AS-ROSPRINT
 import:         from AS33873 accept AS-ARVATO
 export:         to AS33873 announce AS-ROSPRINT
-import:         from AS16509 accept AS-AMAZON
-export:         to AS16509 announce AS-ROSPRINT
-import:         from AS8365 accept AS-MANDA
-export:         to AS8365 announce AS-ROSPRINT
-import:         from AS8220 accept AS-COLT
-export:         to AS8220 announce AS-ROSPRINT
 import:         from AS12678 accept AS-BADOO
 export:         to AS12678 announce AS-ROSPRINT
 mp-import:      afi ipv6 from AS12678 accept AS-BADOO
 mp-export:      afi ipv6 to AS12678 announce AS-OBSRUSSIA6
-import:         from AS13335 accept AS-CLOUDFLARE
-export:         to AS13335 announce AS-ROSPRINT
-import:         from AS714 accept AS-APPLE
-export:         to AS714 announce AS-ROSPRINT
 import:         from AS136907 accept AS-HUAWEI
 export:         to AS136907 announce AS-ROSPRINT
-import:         from AS39533 accept AS-ALL
-export:         to AS39533 announce AS-ROSPRINT
-import:         from AS16509 accept AS-AMAZON
-export:         to AS16509 announce AS-ROSPRINT
 mp-import:      afi ipv6 from AS16509 accept AS-AMAZON
 mp-export:      afi ipv6 to AS16509 announce AS-OBSRUSSIA6
-import:         from AS8075 accept AS-MICROSOFT
-export:         to AS8075 announce AS-ROSPRINT
-mp-import:      afi ipv6 from AS8075 accept AS-MICROSOFT
-mp-export:      afi ipv6 to AS8075 announce AS-OBSRUSSIA6
-import:         from AS13335 accept AS-CLOUDFLARE
-export:         to AS13335 announce AS-ROSPRINT
 import:         from AS2578 accept AS-DEMOS AS-RUDEMOS
 export:         to AS2578 announce AS-ROSPRINT
 import:         from AS2683 accept AS-RADIOMSU
@@ -1011,14 +978,10 @@ import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-ROSPRINT
 mp-import:      afi ipv6 from AS50952 accept AS-DATAIX
 mp-export:      afi ipv6 to AS50952 announce AS-OBSRUSSIA6
-import:         from AS50952 accept AS-DATAIX
-export:         to AS50952 announce AS-ROSPRINT
 import:         from AS6939 accept AS-HURRICANE
 export:         to AS6939 announce AS-ROSPRINT
 mp-import:      afi ipv6 from AS6939 accept AS-HURRICANE
 mp-export:      afi ipv6 to AS6939 announce AS-OBSRUSSIA6
-mp-import:      afi ipv6 from AS50952 accept AS-DATAIX
-mp-export:      afi ipv6 to AS50952 announce AS-OBSRUSSIA6
 import:         from AS12714 accept AS-TI
 export:         to AS12714 announce AS-ROSPRINT
 import:         from AS31500 accept AS-GLOBAL-NET
@@ -1037,8 +1000,6 @@ import:         from AS35000 accept AS-PROMETEY-IX
 export:         to AS35000 announce AS-ROSPRINT
 import:         from AS45029 accept AS-NS9_RIPN_NET
 export:         to AS45029 announce AS-ROSPRINT
-import:         from AS13238 accept AS-YANDEX
-export:         to AS13238 announce AS-ROSPRINT
 import:         from AS43690 accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-ROSPRINT
 mp-import:      afi ipv6 from AS43690 accept AS-SPBROUTESERVER
@@ -1051,8 +1012,6 @@ import:         from AS8371 accept AS-KIS
 export:         to AS8371 announce AS-ROSPRINT
 import:         from AS34821 accept AS-PSN
 export:         to AS34821 announce AS-ROSPRINT
-import:         from AS13238 accept AS-YANDEX
-export:         to AS13238 announce AS-ROSPRINT
 import:         from AS42385 accept AS42385
 export:         to AS42385 announce AS-ROSPRINT
 import:         from AS50706 accept AS-KZNROUTESERVER
@@ -1061,8 +1020,6 @@ mp-import:      afi ipv6 from AS50706 accept AS-KZNROUTESERVER
 mp-export:      afi ipv6 to AS50706 announce AS-OBSRUSSIA6
 import:         from AS44597 accept AS-NS9_RIPN_NET
 export:         to AS44597 announce AS-ROSPRINT
-import:         from AS13238 accept AS-YANDEX
-export:         to AS13238 announce AS-ROSPRINT
 import:         from AS39042 accept AS-GLOBAL63RU
 export:         to AS39042 announce AS-ROSPRINT
 import:         from AS47882 accept AS-SMRROUTESERVER
@@ -1071,8 +1028,6 @@ mp-import:      afi ipv6 from AS47882 accept AS-SMRROUTESERVER
 mp-export:      afi ipv6 to AS47882 announce AS-OBSRUSSIA6
 import:         from AS47445 accept AS-NS9_RIPN_NET
 export:         to AS47445 announce AS-ROSPRINT
-import:         from AS13238 accept AS-YANDEX
-export:         to AS13238 announce AS-ROSPRINT
 import:         from AS48216 accept AS-RNDROUTESERVER
 export:         to AS48216 announce AS-ROSPRINT
 mp-import:      afi ipv6 from AS48216 accept AS-RNDROUTESERVER
@@ -1081,8 +1036,6 @@ import:         from AS15974 accept AS-VTT
 export:         to AS15974 announce AS-ROSPRINT
 mp-import:      afi ipv6 from AS15974 accept AS-VTT
 mp-export:      afi ipv6 to AS15974 announce AS-OBSRUSSIA6
-import:         from AS13238 accept AS-YANDEX
-export:         to AS13238 announce AS-ROSPRINT
 import:         from AS42728 accept AS-NS9_RIPN_NET
 export:         to AS42728 announce AS-ROSPRINT
 import:         from AS36040 accept AS36040
@@ -1091,14 +1044,11 @@ import:         from AS43213 accept AS-EKTROUTESERVER
 export:         to AS43213 announce AS-ROSPRINT
 mp-import:      afi ipv6 from AS43213 accept AS-EKTROUTESERVER
 mp-export:      afi ipv6 to AS43213 announce AS-OBSRUSSIA6
-import:         from AS13238 accept AS-YANDEX
-export:         to AS13238 announce AS-ROSPRINT
 import:         from AS25535 accept AS25535
 export:         to AS25535 announce AS-ROSPRINT
 import:         from AS42139 accept AS-NS9_RIPN_NET
 export:         to AS42139 announce AS-ROSPRINT
 import:         from AS34879 accept AS-NGENIX-NSK
-export:         to AS34879 announce AS-ROSPRINT
 import:         from AS3216 accept AS-SOVAM
 export:         to AS3216 announce AS-ROSPRINT
 import:         from AS42403 accept AS-NSKROUTESERVER
@@ -1111,8 +1061,6 @@ import:         from AS48531 accept AS-VLVROUTESERVER
 export:         to AS48531 announce AS-ROSPRINT
 import:         from AS45018 accept AS-NS9_RIPN_NET
 export:         to AS45018 announce AS-ROSPRINT
-import:         from AS13238 accept AS-YANDEX
-export:         to AS13238 announce AS-ROSPRINT
 mp-import:      afi ipv6 from AS48531 accept AS-VLVROUTESERVER
 mp-export:      afi ipv6 to AS48531 announce AS-OBSRUSSIA6
 import:         from AS50125 accept AS-ULNIX
@@ -1199,8 +1147,6 @@ import:         from AS62389 accept AS62389
 export:         to AS62389 announce ANY
 import:         from AS11414 accept AS11414
 export:         to AS11414 announce ANY
-import:         from AS15632 accept AS15632
-export:         to AS15632 announce ANY
 import:         from AS15707 accept AS15707
 export:         to AS15707 announce ANY
 import:         from AS16173 accept AS16173
@@ -1311,8 +1257,6 @@ import:         from AS57631 accept AS57631
 export:         to AS57631 announce ANY
 import:         from AS57531 accept AS57531
 export:         to AS57531 announce ANY
-import:         from AS51193 accept AS51193
-export:         to AS51193 announce ANY
 import:         from AS58231 accept AS58231
 export:         to AS58231 announce ANY
 import:         from AS51721 accept AS51721
@@ -1449,8 +1393,6 @@ mp-import:      afi ipv6 from AS136907 accept AS-HUAWEI
 mp-export:      afi ipv6 to AS136907 announce AS-OBSRUSSIA6
 mp-import:      afi ipv6 from AS39533 accept AS-ALL
 mp-export:      afi ipv6 to AS39533 announce AS-OBSRUSSIA6
-mp-import:      afi ipv6 from AS39533 accept AS-ALL
-mp-export:      afi ipv6 to AS39533 announce AS-OBSRUSSIA6
 mp-import:      afi ipv6 from AS3573 accept AS3573
 mp-export:      afi ipv6 to AS3573 announce ANY
 mp-import:      afi ipv6 from AS47764 accept AS-MAILRU6
@@ -1477,8 +1419,6 @@ mp-import:      afi ipv6 from AS8470 accept AS-MACOMNET
 mp-export:      afi ipv6 to AS8470 announce AS-OBSRUSSIA6
 mp-import:      afi ipv6 from AS6777 accept AS-AMS-IX-RS-SETS-V6
 mp-export:      afi ipv6 to AS6777 announce AS-OBSRUSSIA6
-mp-import:      afi ipv6 from AS16509 accept AS-AMAZON
-mp-export:      afi ipv6 to AS16509 announce AS-OBSRUSSIA6
 mp-import:      afi ipv6 from AS8365 accept AS-MANDA
 mp-export:      afi ipv6 to AS8365 announce AS-OBSRUSSIA6
 mp-import:      afi ipv6 from AS8220 accept AS-COLT

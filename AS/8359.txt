@@ -37,8 +37,6 @@ import:         from AS1764 action pref=105; accept AS-NEXTLAYER
 export:         to AS1764 announce AS-MTU
 import:         from AS1784 action pref=105; accept AS1784
 export:         to AS1784 announce AS-MTU
-import:         from AS1784 action pref=105; accept AS1784
-export:         to AS1784 announce AS-MTU
 import:         from AS1836 action pref=105; accept AS-GREEN
 export:         to AS1836 announce AS-MTU
 import:         from AS1880 action pref=105; accept AS-STUPI
@@ -202,7 +200,6 @@ export:         to AS6731 announce ANY
 import:         from AS6735 action pref=105; accept AS-SDTDECIX
 export:         to AS6735 announce AS-MTU
 import:         from AS6735 action pref=105; accept AS-SDTAMSIX
-export:         to AS6735 announce AS-MTU
 import:         from AS6767 action pref=105; accept AS-CTSRND
 export:         to AS6767 announce ANY
 import:         from AS6774 action pref=105; accept AS-BELBONETOPEERS
@@ -358,7 +355,6 @@ export:         to AS8879 announce AS-MTU
 import:         from AS8881 action pref=105; accept AS-VT-TRANSIT
 export:         to AS8881 announce AS-MTU
 import:         from AS8881 action pref=105; accept AS8881
-export:         to AS8881 announce AS-MTU
 import:         from AS8920 action pref=105; accept AS-VTC
 export:         to AS8920 announce ANY
 import:         from AS8928 action pref=105; accept RS-INTEROUTE
@@ -734,9 +730,6 @@ export:         to AS21949 announce AS-MTU
 import:         from AS22212 action pref=105; accept AS-INTERNAP
 export:         to AS22212 announce AS-MTU
 import:         from AS22212 action pref=105; accept AS22212
-export:         to AS22212 announce AS-MTU
-import:         from AS22212 action pref=105; accept AS-INTERNAP
-export:         to AS22212 announce AS-MTU
 import:         from AS22691 action pref=105; accept AS-ISPNET
 export:         to AS22691 announce AS-MTU
 import:         from AS22773 action pref=105; accept AS-COX-TRANSIT
@@ -1018,7 +1011,6 @@ export:         to AS32787 announce AS-MTU
 import:         from AS32934 action pref=105; accept AS-FACEBOOK
 export:         to AS32934 announce AS-MTU
 import:         from AS32934 action pref=105; accept AS32934
-export:         to AS32934 announce AS-MTU
 import:         from AS33082 action pref=105; accept AS33082
 export:         to AS33082 announce AS-MTU
 import:         from AS33419 action pref=105; accept AS-EXPN
@@ -1159,8 +1151,6 @@ import:         from AS35928 action pref=105; accept AS35928
 export:         to AS35928 announce ANY
 import:         from AS36119 action pref=105; accept AS-IMEEM
 export:         to AS36119 announce AS-MTU
-import:         from AS36351 action pref=105; accept AS36351
-export:         to AS36351 announce AS-MTU
 import:         from AS36351 action pref=105; accept AS36351
 export:         to AS36351 announce AS-MTU
 import:         from AS36408 action pref=105; accept AS-PANTHER
@@ -2049,7 +2039,6 @@ import:         from AS58073 action pref=105; accept AS58073
 export:         to AS58073 announce AS-MTU
 import:         from AS58084 action pref=105; accept AS58084
 export:         to AS58084 announce AS-MTU
-import:         from AS58084 action pref=105; accept AS58084
 export:         to AS58084 announce ANY
 import:         from AS58096 action pref=140; accept AS58096
 export:         to AS58096 announce ANY

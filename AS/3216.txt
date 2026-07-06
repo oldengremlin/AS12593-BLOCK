@@ -178,8 +178,6 @@ import:         from AS8447 action pref=90; accept AS-PTA
 export:         to AS8447 announce AS-SOVAM
 import:         from AS8560 action pref=90; accept AS-1AND1
 export:         to AS8560 announce AS-SOVAM
-import:         from AS10310 action pref=90; accept AS-YAHOO
-export:         to AS10310 announce AS-SOVAM
 import:         from AS8218 action pref=90; accept AS-NEOT
 export:         to AS8218 announce AS-SOVAM
 mp-import:      afi ipv6 from AS8218 action pref=90; accept AS-NEOT6
@@ -436,8 +434,6 @@ mp-import:      afi ipv6 from AS22697 action pref=87; accept AS-ROBLOX
 mp-export:      afi ipv6 to AS22697 announce AS-SOVAM-V6
 import:         from AS49958 action pref=87; accept AS49958
 export:         to AS49958 announce AS-SOVAM
-import:         from AS49958 action pref=87; accept AS49958
-export:         to AS49958 announce AS-SOVAM
 import:         from AS52320 action pref=87; accept AS-GNT
 export:         to AS52320 announce AS-SOVAM
 mp-import:      afi ipv6 from AS52320 action pref=87; accept AS-GNT
@@ -508,14 +504,6 @@ mp-import:      afi ipv6 from AS36236 action pref=90; accept AS-HOSTVIRTUAL
 mp-export:      afi ipv6 to AS36236 announce AS-SOVAM-V6
 import:         from AS36236 action pref=90; accept AS-HOSTVIRTUAL
 export:         to AS36236 announce AS-SOVAM
-mp-import:      afi ipv6 from AS26496 action pref=90; accept AS-GDG
-mp-export:      afi ipv6 to AS26496 announce AS-SOVAM-V6
-import:         from AS26496 action pref=90; accept AS-GDG
-export:         to AS26496 announce AS-SOVAM
-mp-import:      afi ipv6 from AS50245 action pref=90; accept AS-SERVEREL
-mp-export:      afi ipv6 to AS50245 announce AS-SOVAM-V6
-import:         from AS50245 action pref=90; accept AS-SERVEREL
-export:         to AS50245 announce AS-SOVAM
 import:         from AS50877 action pref=87; accept AS-AIRBEAM
 export:         to AS50877 announce AS-SOVAM
 mp-import:      afi ipv6 from AS50877 action pref=87; accept AS-AIRBEAM
@@ -524,30 +512,8 @@ mp-import:      afi ipv6 from AS41695 action pref=90; accept AS-VOSTRON
 mp-export:      afi ipv6 to AS41695 announce AS-SOVAM-V6
 import:         from AS41695 action pref=90; accept AS-VOSTRON
 export:         to AS41695 announce AS-SOVAM
-mp-import:      afi ipv6 from AS42708 action pref=90; accept AS-PORTLANE
-mp-export:      afi ipv6 to AS42708 announce AS-SOVAM-V6
-import:         from AS42708 action pref=90; accept AS-PORTLANE
-export:         to AS42708 announce AS-SOVAM
-mp-import:      afi ipv6 from AS43996 action pref=90; accept AS-BOOKING
-mp-export:      afi ipv6 to AS43996 announce AS-SOVAM-V6
-import:         from AS43996 action pref=90; accept AS-BOOKING
-export:         to AS43996 announce AS-SOVAM
-mp-import:      afi ipv6 from AS2484 action pref=90; accept AS-AFNIC
-mp-export:      afi ipv6 to AS2484 announce AS-SOVAM-V6
-import:         from AS2484 action pref=90; accept AS-AFNIC
-export:         to AS2484 announce AS-SOVAM
-mp-import:      afi ipv6 from AS7342 action pref=90; accept AS-GTLD
-mp-export:      afi ipv6 to AS7342 announce AS-SOVAM-V6
-import:         from AS7342 action pref=90; accept AS-GTLD
-export:         to AS7342 announce AS-SOVAM
-import:         from AS46489 action pref=90; accept AS46489
-export:         to AS46489 announce AS-SOVAM
-import:         from AS39743 action pref=90; accept AS-VOXILITY-SET
-export:         to AS39743 announce AS-SOVAM
 import:         from AS5459 action pref=90; accept AS5459
 export:         to AS5459 announce AS-SOVAM
-import:         from AS2818 action pref=90; accept AS-BBC
-export:         to AS2818 announce AS-SOVAM
 import:         from AS8607 action pref=90; accept AS-TIMICO
 export:         to AS8607 announce AS-SOVAM
 mp-import:      afi ipv6 from AS8607 action pref=87; accept AS-TIMICO
@@ -558,10 +524,6 @@ import:         from AS6320 action pref=90; accept AS-TELECOMPLETE
 export:         to AS6320 announce AS-SOVAM
 import:         from AS6871 action pref=90; accept AS-PLUSNETUK
 export:         to AS6871 announce AS-SOVAM
-import:         from AS20940 action pref=90; accept AS-AKAMAI
-export:         to AS20940 announce AS-SOVAM
-import:         from AS8422 action pref=90; accept AS-NETCOLOGNE
-export:         to AS8422 announce AS-SOVAM
 import:         from AS9318 action pref=90; accept AS9318
 export:         to AS9318 announce AS-SOVAM
 import:         from AS3741 action pref=90; accept AS-IS
@@ -570,52 +532,22 @@ import:         from AS25577 action pref=90; accept AS-C4L
 export:         to AS25577 announce AS-SOVAM
 import:         from AS6327 action pref=90; accept AS-BIGPIPE
 export:         to AS6327 announce AS-SOVAM
-import:         from AS9009 action pref=90; accept AS-GBXS
-export:         to AS9009 announce AS-SOVAM
 import:         from AS16150 action pref=90; accept AS16150:AS-CUSTOMERS
 export:         to AS16150 announce AS-SOVAM
-import:         from AS34305 action pref=90; accept AS-EUROACCESS
-export:         to AS34305 announce AS-SOVAM
-import:         from AS8218 action pref=90; accept AS-NEOT
-export:         to AS8218 announce AS-SOVAM
-mp-import:      afi ipv6 from AS8218 action pref=90; accept AS-NEOT6
-mp-export:      afi ipv6 to AS8218 announce AS-SOVAM-V6
-import:         from AS8708 action pref=90; accept AS-RDSNET
-export:         to AS8708 announce AS-SOVAM
 import:         from AS8683 action pref=90; accept AS-NOMINET
 export:         to AS8683 announce AS-SOVAM
 import:         from AS8001 action pref=90; accept AS-NETACCESS
 export:         to AS8001 announce AS-SOVAM
-import:         from AS9505 action pref=90; accept AS-TWIG
-export:         to AS9505 announce AS-SOVAM
-import:         from AS6661 action pref=90; accept AS-PTLU
-export:         to AS6661 announce AS-SOVAM
 import:         from AS21371 action pref=90; accept AS-EQUINIX-UK
 export:         to AS21371 announce AS-SOVAM
-import:         from AS34655 action pref=90; accept AS-DOCLER
-export:         to AS34655 announce AS-SOVAM
 import:         from AS34245 action pref=90; accept AS-MAGNETLOCAL
 export:         to AS34245 announce AS-SOVAM
-import:         from AS4589 action pref=90; accept AS-EASYNET
-export:         to AS4589 announce AS-SOVAM
-import:         from AS6667 action pref=90; accept AS-EUNETIP
-export:         to AS6667 announce AS-SOVAM
-import:         from AS5466 action pref=90; accept AS-EIRCOM
-export:         to AS5466 announce AS-SOVAM
-import:         from AS15444 action pref=90; accept AS-NETSERVICES
-export:         to AS15444 announce AS-SOVAM
 import:         from AS8897 action pref=90; accept AS-MISTRAL
 export:         to AS8897 announce AS-SOVAM
 import:         from AS15290 action pref=90; accept AS-ALLSTREAM
 export:         to AS15290 announce AS-SOVAM
 import:         from AS13122 action pref=90; accept AS-MANX
 export:         to AS13122 announce AS-SOVAM
-import:         from AS1267 action pref=90; accept AS-INFOSTRADA
-export:         to AS1267 announce AS-SOVAM
-import:         from AS12859 action pref=90; accept AS-BIT
-export:         to AS12859 announce AS-SOVAM
-import:         from AS6730 action pref=90; accept AS-GLOBAL
-export:         to AS6730 announce AS-SOVAM
 import:         from AS3213 action pref=90; accept AS-BOGONS
 export:         to AS3213 announce AS-SOVAM
 import:         from AS13680 action pref=90; accept AS-HGTN
@@ -628,40 +560,22 @@ import:         from AS15412 action pref=90; accept AS-FLAGP
 export:         to AS15412 announce AS-SOVAM
 import:         from AS6894 action pref=90; accept AS-KDDIEU
 export:         to AS6894 announce AS-SOVAM
-import:         from AS15830 action pref=90; accept AS-TELECITYLON
-export:         to AS15830 announce AS-SOVAM
 import:         from AS2119 action pref=90; accept AS-TELENOR
 export:         to AS2119 announce AS-SOVAM
 import:         from AS21055 action pref=90; accept AS-WEBTAPESTRY
 export:         to AS21055 announce AS-SOVAM
-import:         from AS2686 action pref=90; accept AS-IGNEMEA
-export:         to AS2686 announce AS-SOVAM
-import:         from AS6774 action pref=90; accept AS6774:AS-BICS-TRANSIT
-export:         to AS6774 announce AS-SOVAM
-import:         from AS5588 action pref=90; accept AS-GTS-CE
-export:         to AS5588 announce AS-SOVAM
 import:         from AS29550 action pref=90; accept AS-BLUECONNEX
 export:         to AS29550 announce AS-SOVAM
-import:         from AS12713 action pref=90; accept AS-OTEGLOBE
-export:         to AS12713 announce AS-SOVAM
 import:         from AS44444 action pref=90; accept AS-WHS-EU
 export:         to AS44444 announce AS-SOVAM
-import:         from AS13285 action pref=90; accept AS-OPAL
-export:         to AS13285 announce AS-SOVAM
 import:         from AS786 action pref=90; accept AS-JANETPLUS
 export:         to AS786 announce AS-SOVAM
 import:         from AS29009 action pref=90; accept AS-UKBB
 export:         to AS29009 announce AS-SOVAM
 import:         from AS2529 action pref=90; accept AS-DEMON
 export:         to AS2529 announce AS-SOVAM
-import:         from AS8586 action pref=90; accept AS-REDNET
-export:         to AS8586 announce AS-SOVAM
 import:         from AS6677 action pref=90; accept AS-ICENET
 export:         to AS6677 announce AS-SOVAM
-import:         from AS42 action pref=90; accept AS-PCH
-export:         to AS42 announce AS-SOVAM
-import:         from AS3856 action pref=90; accept AS-PCH
-export:         to AS3856 announce AS-SOVAM
 import:         from AS13768 action pref=90; accept AS13768:AS-CUSTOMERS
 export:         to AS13768 announce AS-SOVAM
 import:         from AS30094 action pref=90; accept AS-GIGANEWS-ALL
@@ -678,52 +592,14 @@ import:         from AS25562 action pref=90; accept AS-SCEE
 export:         to AS25562 announce AS-SOVAM
 import:         from AS8912 action pref=90; accept AS-NETBENEFIT
 export:         to AS8912 announce AS-SOVAM
-import:         from AS25525 action pref=90; accept AS-REASONNET
-export:         to AS25525 announce AS-SOVAM
-import:         from AS28753 action pref=90; accept AS-NETDIRECT
-export:         to AS28753 announce AS-SOVAM
-import:         from AS8220 action pref=90; accept AS-COLT
-export:         to AS8220 announce AS-SOVAM
-import:         from AS5089 action pref=90; accept AS-NTLI
-export:         to AS5089 announce AS-SOVAM
-import:         from AS33926 action pref=90; accept AS-EUROTRANSIT
-export:         to AS33926 announce AS-SOVAM
-import:         from AS10310 action pref=90; accept AS-YAHOO
-export:         to AS10310 announce AS-SOVAM
-import:         from AS8551 action pref=90; accept AS-BEZEQINT
-export:         to AS8551 announce AS-SOVAM
 import:         from AS4004 action pref=90; accept AS-GLOBALONE-UK
 export:         to AS4004 announce AS-SOVAM
-mp-import:      afi ipv6 from AS22822 action pref=90; accept AS-LLNW
-mp-export:      afi ipv6 to AS22822 announce AS-SOVAM-V6
-import:         from AS22822 action pref=90; accept AS-LLNW
-export:         to AS22822 announce AS-SOVAM
-import:         from AS41095 action pref=90; accept AS-IPTP
-export:         to AS41095 announce AS-SOVAM
-import:         from AS9121 action pref=90; accept AS-TTNET^0-24
-export:         to AS9121 announce AS-SOVAM
-import:         from AS13030 action pref=90; accept AS-INIT7
-export:         to AS13030 announce AS-SOVAM
-import:         from AS5430 action pref=90; accept AS-FREENETDE
-export:         to AS5430 announce AS-SOVAM
-import:         from AS12322 action pref=90; accept AS-PROXAD
-export:         to AS12322 announce AS-SOVAM
-import:         from AS6805 action pref=90; accept AS-TDDE
-export:         to AS6805 announce AS-SOVAM
-import:         from AS3303 action pref=90; accept AS-SWCMGLOBAL
-export:         to AS3303 announce AS-SOVAM
 import:         from AS35228 action pref=90; accept AS-BEUNLIMITED
 export:         to AS35228 announce AS-SOVAM
-import:         from AS8657 action pref=90; accept AS-CPRM
-export:         to AS8657 announce AS-SOVAM
 import:         from AS46786 action pref=90; accept AS-IPTRANSIT
 export:         to AS46786 announce AS-SOVAM
-import:         from AS15133 action pref=90; accept AS-EDGECAST
-export:         to AS15133 announce AS-SOVAM
 import:         from AS12715 action pref=90; accept AS-JAZZTRANS
 export:         to AS12715 announce AS-SOVAM
-import:         from AS2914 action pref=90; accept AS2914:AS-GLOBAL
-export:         to AS2914 announce AS-SOVAM
 import:         from AS8426 action pref=90; accept AS-CLARANET
 export:         to AS8426 announce AS-SOVAM
 import:         from AS33081 action pref=90; accept AS33081
@@ -732,14 +608,8 @@ import:         from AS12874 action pref=90; accept AS-FASTWEB
 export:         to AS12874 announce AS-SOVAM
 import:         from AS34419 action pref=90; accept AS-VODAFONE
 export:         to AS34419 announce AS-SOVAM
-import:         from AS5459 action pref=90; accept AS5459
-export:         to AS5459 announce AS-SOVAM
 import:         from AS12552 action pref=90; accept AS-IPO
 export:         to AS12552 announce AS-SOVAM
-import:         from AS5577 action pref=90; accept AS-ROOT
-export:         to AS5577 announce AS-SOVAM
-mp-import:      afi ipv6 from AS12859 action pref=90; accept AS12859
-mp-export:      afi ipv6 to AS12859 announce AS-SOVAM-V6
 import:         from AS13445 action pref=90; accept AS13445
 export:         to AS13445 announce AS-SOVAM
 import:         from AS8553 action pref=90; accept AS-AVENSYS
@@ -761,103 +631,33 @@ export:         to AS37468 announce AS-SOVAM
 mp-import:      afi ipv6 from AS37468 action pref=87; accept AS-ANGOLACABLES
 mp-export:      afi ipv6 to AS37468 announce AS-SOVAM-V6
 import:         from AS35228 action pref=87; accept AS35228
-export:         to AS35228 announce AS-SOVAM
 import:         from AS43531 action pref=87; accept AS-IXREACH
 export:         to AS43531 announce AS-SOVAM
 mp-import:      afi ipv6 from AS43531 action pref=87; accept AS-IXREACH
 mp-export:      afi ipv6 to AS43531 announce AS-SOVAM-V6
-import:         from AS200052 action pref=87; accept AS-FERAL
-export:         to AS200052 announce AS-SOVAM
-mp-import:      afi ipv6 from AS200052 action pref=87; accept AS-FERAL
-mp-export:      afi ipv6 to AS200052 announce AS-SOVAM-V6
-import:         from AS22697 action pref=87; accept AS-ROBLOX
-export:         to AS22697 announce AS-SOVAM
-mp-import:      afi ipv6 from AS22697 action pref=87; accept AS-ROBLOX
-mp-export:      afi ipv6 to AS22697 announce AS-SOVAM-V6
 import:         from AS36131 action pref=87; accept AS36131
 export:         to AS36131 announce AS-SOVAM
-import:         from AS14061 action pref=87; accept AS-14061
-export:         to AS14061 announce AS-SOVAM
-mp-import:      afi ipv6 from AS14061 action pref=87; accept AS-14061
-mp-export:      afi ipv6 to AS14061 announce AS-SOVAM-V6
-import:         from AS2906 action pref=87; accept AS-NFLX
-export:         to AS2906 announce AS-SOVAM
-mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
-mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
-import:         from AS13213 action pref=87; accept AS-UK2NET
-export:         to AS13213 announce AS-SOVAM
-mp-import:      afi ipv6 from AS13213 action pref=87; accept AS-UK2NET
-mp-export:      afi ipv6 to AS13213 announce AS-SOVAM-V6
 import:         from AS57976 action pref=87; accept AS-BLIZZARD
 export:         to AS57976 announce AS-SOVAM
 mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
 mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
-import:         from AS8365 action pref=87; accept AS-MANDA
-export:         to AS8365 announce AS-SOVAM
 mp-import:      afi ipv6 from AS8365 action pref=87; accept AS-MANDA
-mp-export:      afi ipv6 to AS8365 announce AS-SOVAM-V6
-import:         from AS6204 action pref=87; accept AS-ZETNET
-export:         to AS6204 announce AS-SOVAM
-mp-import:      afi ipv6 from AS6204 action pref=87; accept AS-ZETNET
-mp-export:      afi ipv6 to AS6204 announce AS-SOVAM-V6
-import:         from AS24961 action pref=87; accept AS-MYLOC
-export:         to AS24961 announce AS-SOVAM
-mp-import:      afi ipv6 from AS24961 action pref=87; accept AS-MYLOC
-mp-export:      afi ipv6 to AS24961 announce AS-SOVAM-V6
 mp-import:      afi ipv6 from AS57976 action pref=90; accept AS57976
-mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
 import:         from AS57976 action pref=90; accept AS57976
-export:         to AS57976 announce AS-SOVAM
 import:         from AS199636 action pref=87; accept AS-KODDOS
 export:         to AS199636 announce AS-SOVAM
 mp-import:      afi ipv6 from AS199636 action pref=87; accept AS-KODDOS
 mp-export:      afi ipv6 to AS199636 announce AS-SOVAM-V6
-mp-import:      afi ipv6 from AS36236 action pref=90; accept AS-HOSTVIRTUAL
-mp-export:      afi ipv6 to AS36236 announce AS-SOVAM-V6
-import:         from AS36236 action pref=90; accept AS-HOSTVIRTUAL
-export:         to AS36236 announce AS-SOVAM
 mp-import:      afi ipv6 from AS714 action pref=90; accept AS-APPLE
 mp-export:      afi ipv6 to AS714 announce AS-SOVAM-V6
 import:         from AS714 action pref=90; accept AS-APPLE
 export:         to AS714 announce AS-SOVAM
-mp-import:      afi ipv6 from AS48526 action pref=90; accept AS-TANGO
-mp-export:      afi ipv6 to AS48526 announce AS-SOVAM-V6
-import:         from AS48526 action pref=90; accept AS-TANGO
-export:         to AS48526 announce AS-SOVAM
-mp-import:      afi ipv6 from AS199524 action pref=90; accept AS-WGI
-mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
-import:         from AS199524 action pref=90; accept AS-WGI
-export:         to AS199524 announce AS-SOVAM
-mp-import:      afi ipv6 from AS26496 action pref=90; accept AS-GDG
-mp-export:      afi ipv6 to AS26496 announce AS-SOVAM-V6
-import:         from AS26496 action pref=90; accept AS-GDG
-export:         to AS26496 announce AS-SOVAM
-mp-import:      afi ipv6 from AS50245 action pref=90; accept AS-SERVEREL
-mp-export:      afi ipv6 to AS50245 announce AS-SOVAM-V6
-import:         from AS50245 action pref=90; accept AS-SERVEREL
-export:         to AS50245 announce AS-SOVAM
-import:         from AS9066 action pref=90; accept AS-BCC
-export:         to AS9066 announce AS-SOVAM
 import:         from AS39651 action pref=90; accept AS-COMHEM
 export:         to AS39651 announce AS-SOVAM
 mp-import:      afi ipv6 from AS39832 action pref=90; accept AS-OPERA
 mp-export:      afi ipv6 to AS39832 announce AS-SOVAM-V6
-import:         from AS31216 action pref=90; accept AS-BSOCOM
-export:         to AS31216 announce AS-SOVAM
 import:         from AS39832 action pref=90; accept AS-OPERA
 export:         to AS39832 announce AS-SOVAM
-mp-import:      afi ipv6 from AS32590 action pref=90; accept AS-VALVE
-mp-export:      afi ipv6 to AS32590 announce AS-SOVAM-V6
-import:         from AS32590 action pref=90; accept AS-VALVE
-export:         to AS32590 announce AS-SOVAM
-mp-import:      afi ipv6 from AS42708 action pref=90; accept AS-PORTLANE
-mp-export:      afi ipv6 to AS42708 announce AS-SOVAM-V6
-import:         from AS42708 action pref=90; accept AS-PORTLANE
-export:         to AS42708 announce AS-SOVAM
-mp-import:      afi ipv6 from AS51468 action pref=90; accept AS-ONECOM
-mp-export:      afi ipv6 to AS51468 announce AS-SOVAM-V6
-import:         from AS51468 action pref=90; accept AS-ONECOM
-export:         to AS51468 announce AS-SOVAM
 mp-import:      afi ipv6 from AS44034 action pref=90; accept AS-Hi3G
 mp-export:      afi ipv6 to AS44034 announce AS-SOVAM-V6
 import:         from AS44034 action pref=90; accept AS-Hi3G
@@ -874,10 +674,6 @@ mp-import:      afi ipv6 from AS49562 action pref=90; accept AS-XMS
 mp-export:      afi ipv6 to AS49562 announce AS-SOVAM-V6
 import:         from AS49562 action pref=90; accept AS-XMS
 export:         to AS49562 announce AS-SOVAM
-mp-import:      afi ipv6 from AS7342 action pref=90; accept AS-GTLD
-mp-export:      afi ipv6 to AS7342 announce AS-SOVAM-V6
-import:         from AS7342 action pref=90; accept AS-GTLD
-export:         to AS7342 announce AS-SOVAM
 mp-import:      afi ipv6 from AS29073 action pref=90; accept AS-ECATEL
 mp-export:      afi ipv6 to AS29073 announce AS-SOVAM-V6
 import:         from AS29073 action pref=90; accept AS-ECATEL
@@ -890,34 +686,11 @@ mp-import:      afi ipv6 from AS198792 action pref=90; accept AS-DSTORAGE
 mp-export:      afi ipv6 to AS198792 announce AS-SOVAM-V6
 import:         from AS198792 action pref=90; accept AS-DSTORAGE
 export:         to AS198792 announce AS-SOVAM
-import:         from AS46489 action pref=90; accept AS46489
-export:         to AS46489 announce AS-SOVAM
-import:         from AS39743 action pref=90; accept AS-VOXILITY-SET
-export:         to AS39743 announce AS-SOVAM
 import:         from AS1200 action pref=90; accept AS1200
 export:         to AS1200 announce AS-SOVAM
 mp-import:      afi ipv6 from AS1200 action pref=90; accept AS1200
 mp-export:      afi ipv6 to AS1200 announce AS-SOVAM-V6
-import:         from AS15830 action pref=90; accept AS-TELECITYLON
-export:         to AS15830 announce AS-SOVAM
-import:         from AS6327 action pref=90; accept AS-BIGPIPE
-export:         to AS6327 announce AS-SOVAM
-import:         from AS8468 action pref=90; accept AS-ENTANET
-export:         to AS8468 announce AS-SOVAM
-import:         from AS19151 action pref=90; accept AS-WVFIBER
-export:         to AS19151 announce AS-SOVAM
-import:         from AS6939 action pref=90; accept AS-HURRICANE
-export:         to AS6939 announce AS-SOVAM
-import:         from AS8218 action pref=90; accept AS-NEOT
-export:         to AS8218 announce AS-SOVAM
-mp-import:      afi ipv6 from AS8218 action pref=90; accept AS-NEOT6
-mp-export:      afi ipv6 to AS8218 announce AS-SOVAM-V6
 import:         from AS1267 action pref=87; accept AS-WINDTRE
-export:         to AS1267 announce AS-SOVAM
-import:         from AS20940 action pref=90; accept AS-AKAMAI
-export:         to AS20940 announce AS-SOVAM
-import:         from AS13030 action pref=90; accept AS-INIT7
-export:         to AS13030 announce AS-SOVAM
 import:         from AS5390 action pref=90; accept AS-EURONETNL
 export:         to AS5390 announce AS-SOVAM
 import:         from AS25459 action pref=90; accept AS-NEDZONE
@@ -927,65 +700,28 @@ export:         to AS12399 announce AS-SOVAM
 import:         from AS41692 action pref=90; accept AS-OPENCARRIER
 export:         to AS41692 announce AS-SOVAM
 import:         from AS2119 action pref=87; accept AS-TELENOR
-export:         to AS2119 announce AS-SOVAM
 import:         from AS39556 action pref=90; accept AS-EASYHOSTING
 export:         to AS39556 announce AS-SOVAM
 import:         from AS16265 action pref=90; accept AS-LEASEWEB-AMX
-export:         to AS16265 announce AS-SOVAM
-import:         from AS8447 action pref=90; accept AS-PTA
-export:         to AS8447 announce AS-SOVAM
 import:         from AS2686 action pref=87; accept AS-IGNEMEA
-export:         to AS2686 announce AS-SOVAM
 import:         from AS15435 action pref=90; accept AS-KABELFOON
 export:         to AS15435 announce AS-SOVAM
-import:         from AS5390 action pref=90; accept AS-EURONETNL
-export:         to AS5390 announce AS-SOVAM
-import:         from AS6774 action pref=90; accept AS6774:AS-BICS-TRANSIT
-export:         to AS6774 announce AS-SOVAM
-import:         from AS5588 action pref=90; accept AS-GTS-CE
-export:         to AS5588 announce AS-SOVAM
-import:         from AS12713 action pref=90; accept AS-OTEGLOBE
-export:         to AS12713 announce AS-SOVAM
-import:         from AS10310 action pref=90; accept AS-YAHOO
-export:         to AS10310 announce AS-SOVAM
-import:         from AS34305 action pref=90; accept AS-EUROACCESS
-export:         to AS34305 announce AS-SOVAM
-import:         from AS12859 action pref=90; accept AS-BIT
-export:         to AS12859 announce AS-SOVAM
 import:         from AS20504 action pref=90; accept AS-RTL
 export:         to AS20504 announce AS-SOVAM
-mp-import:      afi ipv6 from AS22822 action pref=90; accept AS-LLNW
-mp-export:      afi ipv6 to AS22822 announce AS-SOVAM-V6
-import:         from AS22822 action pref=90; accept AS-LLNW
-export:         to AS22822 announce AS-SOVAM
 import:         from AS20562 action pref=90; accept AS-OPENPEERING
 export:         to AS20562 announce AS-SOVAM
 import:         from AS16237 action pref=90; accept AS-NXS
 export:         to AS16237 announce AS-SOVAM
 import:         from AS25182 action pref=90; accept AS-PUBLIEKEOMROEP
 export:         to AS25182 announce AS-SOVAM
-import:         from AS13285 action pref=90; accept AS-OPAL
-export:         to AS13285 announce AS-SOVAM
 import:         from AS21392 action pref=90; accept AS-MUNTINTERNET
 export:         to AS21392 announce AS-SOVAM
 import:         from AS30132 action pref=90; accept AS-ISC
 export:         to AS30132 announce AS-SOVAM
 import:         from AS2852 action pref=90; accept AS-CESNET
 export:         to AS2852 announce AS-SOVAM
-import:         from AS2529 action pref=90; accept AS-DEMON
-export:         to AS2529 announce AS-SOVAM
 import:         from AS30889 action pref=90; accept AS-WAYCOM
 export:         to AS30889 announce AS-SOVAM
-import:         from AS8586 action pref=90; accept AS-REDNET
-export:         to AS8586 announce AS-SOVAM
-import:         from AS6677 action pref=90; accept AS-ICENET
-export:         to AS6677 announce AS-SOVAM
-import:         from AS42 action pref=90; accept AS-PCH
-export:         to AS42 announce AS-SOVAM
-import:         from AS3856 action pref=90; accept AS-PCH
-export:         to AS3856 announce AS-SOVAM
-import:         from AS13768 action pref=90; accept AS13768:AS-CUSTOMERS
-export:         to AS13768 announce AS-SOVAM
 import:         from AS24586 action pref=90; accept AS-INTERMAX
 export:         to AS24586 announce AS-SOVAM
 import:         from AS21221 action pref=90; accept AS-INFOPACT
@@ -996,20 +732,12 @@ import:         from AS8368 action pref=90; accept AS-BENESOL
 export:         to AS8368 announce AS-SOVAM
 import:         from AS29791 action pref=90; accept AS-VOXEL
 export:         to AS29791 announce AS-SOVAM
-import:         from AS30094 action pref=90; accept AS-GIGANEWS-ALL
-export:         to AS30094 announce AS-SOVAM
 import:         from AS2603 action pref=87; accept AS-NORDUNET
-export:         to AS2603 announce AS-SOVAM
 mp-import:      afi ipv6 from AS2603 action pref=87; accept AS-NORDUNET
-mp-export:      afi ipv6 to AS2603 announce AS-SOVAM-V6
-import:         from AS8582 action pref=90; accept AS-SUPPORT
-export:         to AS8582 announce AS-SOVAM
 import:         from AS15535 action pref=90; accept AS-VIRTUALXS
 export:         to AS15535 announce AS-SOVAM
 import:         from AS12902 action pref=90; accept AS-LUNA
 export:         to AS12902 announce AS-SOVAM
-import:         from AS8075 action pref=90; accept AS-MICROSOFT
-export:         to AS8075 announce AS-SOVAM
 import:         from AS34486 action pref=90; accept AS-IP2
 export:         to AS34486 announce AS-SOVAM
 import:         from AS28878 action pref=90; accept AS-SIGNET
@@ -1018,124 +746,32 @@ import:         from AS25596 action pref=90; accept AS-CAMBRIUM
 export:         to AS25596 announce AS-SOVAM
 import:         from AS34430 action pref=90; accept AS-QORE
 export:         to AS34430 announce AS-SOVAM
-import:         from AS25525 action pref=90; accept AS-REASONNET
-export:         to AS25525 announce AS-SOVAM
-import:         from AS12989 action pref=90; accept AS-HWNG
-export:         to AS12989 announce AS-SOVAM
 import:         from AS3209 action pref=90; accept AS-ARCORGLOBAL
 export:         to AS3209 announce AS-SOVAM
-import:         from AS28753 action pref=90; accept AS-NETDIRECT
-export:         to AS28753 announce AS-SOVAM
 import:         from AS29640 action pref=90; accept AS-COMNED
 export:         to AS29640 announce AS-SOVAM
 import:         from AS33915 action pref=90; accept AS-TNF
 export:         to AS33915 announce AS-SOVAM
-import:         from AS8220 action pref=90; accept AS-COLT
-export:         to AS8220 announce AS-SOVAM
-import:         from AS33926 action pref=90; accept AS-EUROTRANSIT
-export:         to AS33926 announce AS-SOVAM
 import:         from AS31477 action pref=90; accept AS-DUOCAST
 export:         to AS31477 announce AS-SOVAM
-import:         from AS2818 action pref=90; accept AS-BBC
-export:         to AS2818 announce AS-SOVAM
-import:         from AS13101 action pref=90; accept AS-TNG
-export:         to AS13101 announce AS-SOVAM
-import:         from AS41095 action pref=90; accept AS-IPTP
-export:         to AS41095 announce AS-SOVAM
-import:         from AS9121 action pref=90; accept AS-TTNET^0-24
-export:         to AS9121 announce AS-SOVAM
-import:         from AS6667 action pref=90; accept AS-EUNETIP
-export:         to AS6667 announce AS-SOVAM
-import:         from AS5430 action pref=90; accept AS-FREENETDE
-export:         to AS5430 announce AS-SOVAM
-import:         from AS12322 action pref=90; accept AS-PROXAD
-export:         to AS12322 announce AS-SOVAM
-import:         from AS6805 action pref=90; accept AS-TDDE
-export:         to AS6805 announce AS-SOVAM
 import:         from AS3303 action pref=87; accept AS3303:AS-SWCMGLOBAL
-export:         to AS3303 announce AS-SOVAM
-import:         from AS8708 action pref=90; accept AS-RDSNET
-export:         to AS8708 announce AS-SOVAM
-import:         from AS24724 action pref=90; accept AS24724:AS-FOREIGN
-export:         to AS24724 announce AS-SOVAM
-import:         from AS8422 action pref=90; accept AS-NETCOLOGNE
-export:         to AS8422 announce AS-SOVAM
-import:         from AS3209 action pref=90; accept AS-ARCORGLOBAL
-export:         to AS3209 announce AS-SOVAM
 import:         from AS25466 action pref=90; accept AS-LIDERONET
 export:         to AS25466 announce AS-SOVAM
-import:         from AS35228 action pref=90; accept AS-BEUNLIMITED
-export:         to AS35228 announce AS-SOVAM
-import:         from AS8657 action pref=90; accept AS-CPRM
-export:         to AS8657 announce AS-SOVAM
 import:         from AS8473 action pref=90; accept AS-BAHNHOF
 export:         to AS8473 announce AS-SOVAM
-import:         from AS15133 action pref=90; accept AS-EDGECAST
-export:         to AS15133 announce AS-SOVAM
-mp-import:      afi ipv6 from AS15133 action pref=90; accept AS-EDGECAST
-mp-export:      afi ipv6 to AS15133 announce AS-SOVAM-V6
-import:         from AS2914 action pref=90; accept AS2914:AS-GLOBAL
-export:         to AS2914 announce AS-SOVAM
-import:         from AS34419 action pref=90; accept AS-VODAFONE
-export:         to AS34419 announce AS-SOVAM
 import:         from AS5583 action pref=87; accept AS-OBS-BENELUX
 export:         to AS5583 announce AS-SOVAM
-import:         from AS12552 action pref=90; accept AS-IPO
-export:         to AS12552 announce AS-SOVAM
 import:         from AS34288 action pref=90; accept AS34288:AS-IX:AS-AMSIX
 export:         to AS34288 announce AS-SOVAM
-import:         from AS5577 action pref=90; accept AS-ROOT
-export:         to AS5577 announce AS-SOVAM
-import:         from AS24482 action pref=90; accept AS-SGGS
-export:         to AS24482 announce AS-SOVAM
-mp-import:      afi ipv6 from AS24482 action pref=90; accept AS-SGGS
-mp-export:      afi ipv6 to AS24482 announce AS-SOVAM-V6
-import:         from AS57928 action pref=87; accept AS-PRODWARE
-export:         to AS57928 announce AS-SOVAM
-mp-import:      afi ipv6 from AS57928 action pref=87; accept AS-PRODWARE
-mp-export:      afi ipv6 to AS57928 announce AS-SOVAM-V6
 import:         from AS30781 action pref=87; accept AS-JAGUAR
 export:         to AS30781 announce AS-SOVAM
 mp-import:      afi ipv6 from AS30781 action pref=87; accept AS-JAGUAR-V6
 mp-export:      afi ipv6 to AS30781 announce AS-SOVAM-V6
-import:         from AS37100 action pref=87; accept AS-SET-SEACOM
-export:         to AS37100 announce AS-SOVAM
-mp-import:      afi ipv6 from AS37100 action pref=87; accept AS-SET-SEACOM
-mp-export:      afi ipv6 to AS37100 announce AS-SOVAM-V6
-import:         from AS37662 action pref=87; accept AS-WIOCC
-export:         to AS37662 announce AS-SOVAM
-mp-import:      afi ipv6 from AS37662 action pref=87; accept AS-WIOCC
-mp-export:      afi ipv6 to AS37662 announce AS-SOVAM-V6
-import:         from AS49605 action pref=87; accept AS-DTSRETEIVO
-export:         to AS49605 announce AS-SOVAM
-mp-import:      afi ipv6 from AS49605 action pref=87; accept AS-DTSRETEIVO
-mp-export:      afi ipv6 to AS49605 announce AS-SOVAM-V6
-import:         from AS6507 action pref=87; accept AS-RIOT
-export:         to AS6507 announce AS-SOVAM
-import:         from AS8400 action pref=87; accept AS-TELEKOM
-export:         to AS8400 announce AS-SOVAM
-mp-import:      afi ipv6 from AS8400 action pref=87; accept AS-TELEKOM
-mp-export:      afi ipv6 to AS8400 announce AS-SOVAM-V6
-import:         from AS49981 action pref=87; accept AS-WORLDSTREAM
-export:         to AS49981 announce AS-SOVAM
-mp-import:      afi ipv6 from AS49981 action pref=87; accept AS-WORLDSTREAM
-mp-export:      afi ipv6 to AS49981 announce AS-SOVAM-V6
-import:         from AS29169 action pref=87; accept AS-GANDI
-export:         to AS29169 announce AS-SOVAM
-mp-import:      afi ipv6 from AS29169 action pref=87; accept AS-GANDI
-mp-export:      afi ipv6 to AS29169 announce AS-SOVAM-V6
 import:         from AS41690 action pref=87; accept AS-DAILYMOTION
-export:         to AS41690 announce AS-SOVAM
 mp-import:      afi ipv6 from AS41690 action pref=87; accept AS-DAILYMOTION
 mp-export:      afi ipv6 to AS41690 announce AS-SOVAM-V6
 import:         from AS32934 action pref=87; accept AS-FACEBOOK
-export:         to AS32934 announce AS-SOVAM
 mp-import:      afi ipv6 from AS32934 action pref=87; accept AS-FACEBOOK
-mp-export:      afi ipv6 to AS32934 announce AS-SOVAM-V6
-import:         from AS29467 action pref=87; accept AS-LUXNETWORK
-export:         to AS29467 announce AS-SOVAM
-mp-import:      afi ipv6 from AS29467 action pref=87; accept AS-LUXNETWORK
-mp-export:      afi ipv6 to AS29467 announce AS-SOVAM-V6
 import:         from AS12876 action pref=87; accept AS12876
 export:         to AS12876 announce AS-SOVAM
 mp-import:      afi ipv6 from AS12876 action pref=87; accept AS12876
@@ -1144,16 +780,8 @@ import:         from AS8455 action pref=87; accept AS-ATOM86
 export:         to AS8455 announce AS-SOVAM
 mp-import:      afi ipv6 from AS8455 action pref=87; accept AS-ATOM86
 mp-export:      afi ipv6 to AS8455 announce AS-SOVAM-V6
-import:         from AS19551 action pref=87; accept AS-INCAPSULA
-export:         to AS19551 announce AS-SOVAM
-mp-import:      afi ipv6 from AS19551 action pref=87; accept AS-INCAPSULA
-mp-export:      afi ipv6 to AS19551 announce AS-SOVAM-V6
 import:         from AS54113 action pref=87; accept AS-FASTLY
 export:         to AS54113 announce AS-SOVAM
-import:         from AS59605 action pref=87; accept AS-ZAINGP
-export:         to AS59605 announce AS-SOVAM
-mp-import:      afi ipv6 from AS59605 action pref=87; accept AS-ZAINGP
-mp-export:      afi ipv6 to AS59605 announce AS-SOVAM-V6
 import:         from AS50673 action pref=87; accept AS-SERVERIUS
 export:         to AS50673 announce AS-SOVAM
 mp-import:      afi ipv6 from AS50673 action pref=87; accept AS-SERVERIUS
@@ -1171,9 +799,7 @@ export:         to AS21320 announce AS-SOVAM
 mp-import:      afi ipv6 from AS21320 action pref=87; accept AS-GEANT-EUPEER
 mp-export:      afi ipv6 to AS21320 announce AS-SOVAM-V6
 import:         from AS14061 action pref=87; accept AS-DIGITALOCEAN
-export:         to AS14061 announce AS-SOVAM
 mp-import:      afi ipv6 from AS14061 action pref=87; accept AS-DIGITALOCEAN
-mp-export:      afi ipv6 to AS14061 announce AS-SOVAM-V6
 import:         from AS3223 action pref=87; accept AS-VOXILITY-SET
 export:         to AS3223 announce AS-SOVAM
 import:         from AS64050 action pref=87; accept AS64050
@@ -1192,30 +818,9 @@ import:         from AS6461 action pref=87; accept AS-MFNX
 export:         to AS6461 announce AS-SOVAM
 mp-import:      afi ipv6 from AS6461 action pref=87; accept AS-MFNX
 mp-export:      afi ipv6 to AS6461 announce AS-SOVAM-V6
-import:         from AS63949 action pref=87; accept AS-LINODE
-export:         to AS63949 announce AS-SOVAM
-mp-import:      afi ipv6 from AS63949 action pref=87; accept AS-LINODE
-mp-export:      afi ipv6 to AS63949 announce AS-SOVAM-V6
 import:         from AS16276 action pref=87; accept AS-OVH
-export:         to AS16276 announce AS-SOVAM
 mp-import:      afi ipv6 from AS16276 action pref=87; accept AS-OVH
 mp-export:      afi ipv6 to AS16276 announce AS-SOVAM-V6
-import:         from AS200052 action pref=87; accept AS-FERAL
-export:         to AS200052 announce AS-SOVAM
-mp-import:      afi ipv6 from AS200052 action pref=87; accept AS-FERAL
-mp-export:      afi ipv6 to AS200052 announce AS-SOVAM-V6
-import:         from AS43531 action pref=87; accept AS-IXREACH
-export:         to AS43531 announce AS-SOVAM
-mp-import:      afi ipv6 from AS43531 action pref=87; accept AS-IXREACH
-mp-export:      afi ipv6 to AS43531 announce AS-SOVAM-V6
-import:         from AS22697 action pref=87; accept AS-ROBLOX
-export:         to AS22697 announce AS-SOVAM
-mp-import:      afi ipv6 from AS22697 action pref=87; accept AS-ROBLOX
-mp-export:      afi ipv6 to AS22697 announce AS-SOVAM-V6
-import:         from AS52320 action pref=87; accept AS-GNT
-export:         to AS52320 announce AS-SOVAM
-mp-import:      afi ipv6 from AS52320 action pref=87; accept AS-GNT
-mp-export:      afi ipv6 to AS52320 announce AS-SOVAM-V6
 import:         from AS29535 action pref=87; accept AS29535:AS-MIX2
 export:         to AS29535 announce AS-SOVAM
 mp-import:      afi ipv6 from AS29535 action pref=87; accept AS29535:AS-MIX2
@@ -1228,90 +833,26 @@ import:         from AS48925 action pref=87; accept AS48925:AS-VIBEGAMES
 export:         to AS48925 announce AS-SOVAM
 mp-import:      afi ipv6 from AS48925 action pref=87; accept AS48925:AS-VIBEGAMES
 mp-export:      afi ipv6 to AS48925 announce AS-SOVAM-V6
-import:         from AS13213 action pref=87; accept AS-UK2NET
-export:         to AS13213 announce AS-SOVAM
-mp-import:      afi ipv6 from AS13213 action pref=87; accept AS-UK2NET
-mp-export:      afi ipv6 to AS13213 announce AS-SOVAM-V6
-import:         from AS5405 action pref=87; accept AS5405:AS-INTERDOTLINK
-export:         to AS5405 announce AS-SOVAM
-mp-import:      afi ipv6 from AS5405 action pref=87; accept AS5405:AS-INTERDOTLINK
-mp-export:      afi ipv6 to AS5405 announce AS-SOVAM-V6
-import:         from AS8365 action pref=87; accept AS-MANDA
-export:         to AS8365 announce AS-SOVAM
-mp-import:      afi ipv6 from AS8365 action pref=87; accept AS-MANDA
-mp-export:      afi ipv6 to AS8365 announce AS-SOVAM-V6
-import:         from AS6204 action pref=87; accept AS-ZETNET
-export:         to AS6204 announce AS-SOVAM
-mp-import:      afi ipv6 from AS6204 action pref=87; accept AS-ZETNET
-mp-export:      afi ipv6 to AS6204 announce AS-SOVAM-V6
 import:         from AS212477 action pref=87; accept AS-ROYALE
 export:         to AS212477 announce AS-SOVAM
 mp-import:      afi ipv6 from AS212477 action pref=87; accept AS-ROYALE
 mp-export:      afi ipv6 to AS212477 announce AS-SOVAM-V6
-mp-import:      afi ipv6 from AS714 action pref=90; accept AS-APPLE
-mp-export:      afi ipv6 to AS714 announce AS-SOVAM-V6
-import:         from AS714 action pref=90; accept AS-APPLE
-export:         to AS714 announce AS-SOVAM
 mp-import:      afi ipv6 from AS23274 action pref=90; accept AS-PRICELINE
 mp-export:      afi ipv6 to AS23274 announce AS-SOVAM-V6
 import:         from AS23274 action pref=90; accept AS-PRICELINE
 export:         to AS23274 announce AS-SOVAM
-mp-import:      afi ipv6 from AS199524 action pref=90; accept AS-WGI
-mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
-import:         from AS199524 action pref=90; accept AS-WGI
-export:         to AS199524 announce AS-SOVAM
 mp-import:      afi ipv6 from AS13489 action pref=90; accept AS-UNE
 mp-export:      afi ipv6 to AS13489 announce AS-SOVAM-V6
 import:         from AS13489 action pref=90; accept AS-UNE
 export:         to AS13489 announce AS-SOVAM
-mp-import:      afi ipv6 from AS26496 action pref=90; accept AS-GDG
-mp-export:      afi ipv6 to AS26496 announce AS-SOVAM-V6
-import:         from AS26496 action pref=90; accept AS-GDG
-export:         to AS26496 announce AS-SOVAM
 mp-import:      afi ipv6 from AS14361 action pref=90; accept AS-HOPONE
 mp-export:      afi ipv6 to AS14361 announce AS-SOVAM-V6
 import:         from AS14361 action pref=90; accept AS-HOPONE
 export:         to AS14361 announce AS-SOVAM
-mp-import:      afi ipv6 from AS5580 action pref=90; accept AS-ATRATO
-mp-export:      afi ipv6 to AS5580 announce AS-SOVAM-V6
-import:         from AS5580 action pref=90; accept AS-ATRATO
-export:         to AS5580 announce AS-SOVAM
-mp-import:      afi ipv6 from AS2603 action pref=90; accept AS-NORDUNET
-mp-export:      afi ipv6 to AS2603 announce AS-SOVAM-V6
-import:         from AS2603 action pref=90; accept AS-NORDUNET
-export:         to AS2603 announce AS-SOVAM
-mp-import:      afi ipv6 from AS32590 action pref=90; accept AS-VALVE
-mp-export:      afi ipv6 to AS32590 announce AS-SOVAM-V6
-import:         from AS32590 action pref=90; accept AS-VALVE
-export:         to AS32590 announce AS-SOVAM
-mp-import:      afi ipv6 from AS7342 action pref=90; accept AS-GTLD
-mp-export:      afi ipv6 to AS7342 announce AS-SOVAM-V6
-import:         from AS7342 action pref=90; accept AS-GTLD
-export:         to AS7342 announce AS-SOVAM
-import:         from AS46489 action pref=90; accept AS46489
-export:         to AS46489 announce AS-SOVAM
-import:         from AS32787 action pref=90; accept AS-PROLE
-export:         to AS32787 announce AS-SOVAM
-import:         from AS22822 action pref=90; accept AS-LLNW
-export:         to AS22822 announce AS-SOVAM
-import:         from AS39743 action pref=90; accept AS-VOXILITY-SET
-export:         to AS39743 announce AS-SOVAM
 import:         from AS31800 action pref=90; accept AS31800
 export:         to AS31800 announce AS-SOVAM
-import:         from AS41095 action pref=90; accept AS-IPTP
-export:         to AS41095 announce AS-SOVAM
-import:         from AS46786 action pref=90; accept AS-IPTRANSIT
-export:         to AS46786 announce AS-SOVAM
-import:         from AS6939 action pref=90; accept AS-HURRICANE
-export:         to AS6939 announce AS-SOVAM
 import:         from AS812 action pref=90; accept AS-ROGERS
 export:         to AS812 announce AS-SOVAM
-import:         from AS8075 action pref=90; accept AS-MICROSOFT
-export:         to AS8075 announce AS-SOVAM
-import:         from AS8657 action pref=90; accept AS-CPRM
-export:         to AS8657 announce AS-SOVAM
-import:         from AS15133 action pref=90; accept AS-EDGECAST
-export:         to AS15133 announce AS-SOVAM
 import:         from AS16509 action pref=90; accept AS-AMAZON
 export:         to AS16509 announce AS-SOVAM
 import:         from AS5769 action pref=90; accept AS-VTL
@@ -1320,24 +861,10 @@ import:         from AS36351 action pref=90; accept RS-SOFTLAYER
 export:         to AS36351 announce AS-SOVAM
 import:         from AS35788 action pref=90; accept AS-WHS-US
 export:         to AS35788 announce AS-SOVAM
-import:         from AS45102 action pref=87; accept AS45102
-export:         to AS45102 announce AS-SOVAM
 import:         from AS24940 action pref=87; accept AS-HETZNER
 export:         to AS24940 announce AS-SOVAM
 mp-import:      afi ipv6 from AS24940 action pref=87; accept AS-HETZNER
 mp-export:      afi ipv6 to AS24940 announce AS-SOVAM-V6
-import:         from AS52320 action pref=87; accept AS-GNT
-export:         to AS52320 announce AS-SOVAM
-mp-import:      afi ipv6 from AS52320 action pref=87; accept AS-GNT
-mp-export:      afi ipv6 to AS52320 announce AS-SOVAM-V6
-import:         from AS36459 action pref=87; accept AS-GITHUB
-export:         to AS36459 announce AS-SOVAM
-mp-import:      afi ipv6 from AS36459 action pref=87; accept AS-GITHUB
-mp-export:      afi ipv6 to AS36459 announce AS-SOVAM-V6
-import:         from AS2906 action pref=87; accept AS-NFLX
-export:         to AS2906 announce AS-SOVAM
-mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
-mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
 import:         from AS63023 action pref=87; accept AS-GTHOST
 export:         to AS63023 announce AS-SOVAM
 mp-import:      afi ipv6 from AS63023 action pref=87; accept AS-GTHOST
@@ -1346,50 +873,28 @@ import:         from AS396986 action pref=87; accept AS-BYTEDANCE
 export:         to AS396986 announce AS-SOVAM
 mp-import:      afi ipv6 from AS396986 action pref=87; accept AS-BYTEDANCE
 mp-export:      afi ipv6 to AS396986 announce AS-SOVAM-V6
-import:         from AS21859 action pref=87; accept AS-C3
-export:         to AS21859 announce AS-SOVAM
 import:         from AS18403 action pref=87; accept AS-FPT
 export:         to AS18403 announce AS-SOVAM
 mp-import:      afi ipv6 from AS18403 action pref=87; accept AS-FPT
 mp-export:      afi ipv6 to AS18403 announce AS-SOVAM-V6
 import:         from AS58879 action pref=87; accept AS58879
 export:         to AS58879 announce AS-SOVAM
-import:         from AS45102 action pref=87; accept AS45102
-export:         to AS45102 announce AS-SOVAM
 import:         from AS32590 action pref=87; accept AS-VALVE
-export:         to AS32590 announce AS-SOVAM
 mp-import:      afi ipv6 from AS32590 action pref=87; accept AS-VALVE
-mp-export:      afi ipv6 to AS32590 announce AS-SOVAM-V6
 import:         from AS36351 action pref=87; accept AS-SOFTLAYER
-export:         to AS36351 announce AS-SOVAM
 mp-import:      afi ipv6 from AS36351 action pref=87; accept AS-SOFTLAYER
 mp-export:      afi ipv6 to AS36351 announce AS-SOVAM-V6
 import:         from AS16509 action pref=87; accept AS-AMAZON
-export:         to AS16509 announce AS-SOVAM
 mp-import:      afi ipv6 from AS16509 action pref=87; accept AS-AMAZON
 mp-export:      afi ipv6 to AS16509 announce AS-SOVAM-V6
 import:         from AS8075 action pref=87; accept AS-MICROSOFT
-export:         to AS8075 announce AS-SOVAM
 mp-import:      afi ipv6 from AS8075 action pref=87; accept AS-MICROSOFT
 mp-export:      afi ipv6 to AS8075 announce AS-SOVAM-V6
-import:         from AS6507 action pref=87; accept AS-RIOT
-export:         to AS6507 announce AS-SOVAM
-import:         from AS57976 action pref=87; accept AS-BLIZZARD
-export:         to AS57976 announce AS-SOVAM
-mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
-mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
-import:         from AS2906 action pref=87; accept AS-NFLX
-export:         to AS2906 announce AS-SOVAM
-mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
-mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
 import:         from AS46489 action pref=87; accept AS-TWITCH
-export:         to AS46489 announce AS-SOVAM
 mp-import:      afi ipv6 from AS46489 action pref=87; accept AS-TWITCH
 mp-export:      afi ipv6 to AS46489 announce AS-SOVAM-V6
 import:         from AS199524 action pref=87; accept AS-GCORE
-export:         to AS199524 announce AS-SOVAM
 mp-import:      afi ipv6 from AS199524 action pref=87; accept AS-GCORE
-mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
 import:         from AS63199 action pref=87; accept AS-CAPITALONLINEDATA
 export:         to AS63199 announce AS-SOVAM
 mp-import:      afi ipv6 from AS63199 action pref=87; accept AS-CAPITALONLINEDATA
@@ -1399,37 +904,8 @@ export:         to AS131477 announce AS-SOVAM
 mp-import:      afi ipv6 from AS131477 action pref=87; accept AS-BETAIDC
 mp-export:      afi ipv6 to AS131477 announce AS-SOVAM-Vi6
 import:         from AS15169 action pref=87; accept AS-GOOGLE
-export:         to AS15169 announce AS-SOVAM
 mp-import:      afi ipv6 from AS15169 action pref=87; accept AS-GOOGLE
 mp-export:      afi ipv6 to AS15169 announce AS-SOVAM-V6
-import:         from AS32934 action pref=87; accept AS-FACEBOOK
-export:         to AS32934 announce AS-SOVAM
-mp-import:      afi ipv6 from AS32934 action pref=87; accept AS-FACEBOOK
-mp-export:      afi ipv6 to AS32934 announce AS-SOVAM-V6
-import:         from AS16509 action pref=87; accept AS-AMAZON
-export:         to AS16509 announce AS-SOVAM
-mp-import:      afi ipv6 from AS16509 action pref=87; accept AS-AMAZON
-mp-export:      afi ipv6 to AS16509 announce AS-SOVAM-V6
-import:         from AS2497 action pref=87; accept AS-IIJ
-export:         to AS2497 announce AS-SOVAM
-mp-import:      afi ipv6 from AS2497 action pref=87; accept AS-IIJ6
-mp-export:      afi ipv6 to AS2497 announce AS-SOVAM-V6
-import:         from AS2906 action pref=87; accept AS-NFLX
-export:         to AS2906 announce AS-SOVAM
-mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
-mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
-import:         from AS46489 action pref=87; accept AS-TWITCH
-export:         to AS46489 announce AS-SOVAM
-mp-import:      afi ipv6 from AS46489 action pref=87; accept AS-TWITCH
-mp-export:      afi ipv6 to AS46489 announce AS-SOVAM-V6
-import:         from AS199524 action pref=87; accept AS-GCORE
-export:         to AS199524 announce AS-SOVAM
-mp-import:      afi ipv6 from AS199524 action pref=87; accept AS-GCORE
-mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
-import:         from AS63199 action pref=87; accept AS-CAPITALONLINEDATA
-export:         to AS63199 announce AS-SOVAM
-mp-import:      afi ipv6 from AS63199 action pref=87; accept AS-CAPITALONLINEDATA
-mp-export:      afi ipv6 to AS63199 announce AS-SOVAM-V6
 mp-import:      afi ipv6 from AS44581 action pref=90; accept AS-ALLTELE
 mp-export:      afi ipv6 to AS44581 announce AS-SOVAM-V6
 import:         from AS44581 action pref=90; accept AS-ALLTELE
@@ -1438,20 +914,6 @@ mp-import:      afi ipv6 from AS35706 action pref=90; accept AS-NAO
 mp-export:      afi ipv6 to AS35706 announce AS-SOVAM-V6
 import:         from AS35706 action pref=90; accept AS-NAO
 export:         to AS35706 announce AS-SOVAM
-mp-import:      afi ipv6 from AS5580 action pref=90; accept AS-ATRATO
-mp-export:      afi ipv6 to AS5580 announce AS-SOVAM-V6
-import:         from AS5580 action pref=90; accept AS-ATRATO
-export:         to AS5580 announce AS-SOVAM
-mp-import:      afi ipv6 from AS2603 action pref=90; accept AS-NORDUNET
-mp-export:      afi ipv6 to AS2603 announce AS-SOVAM-V6
-import:         from AS2603 action pref=90; accept AS-NORDUNET
-export:         to AS2603 announce AS-SOVAM
-import:         from AS39651 action pref=90; accept AS-COMHEM
-export:         to AS39651 announce AS-SOVAM
-mp-import:      afi ipv6 from AS42708 action pref=90; accept AS-PORTLANE
-mp-export:      afi ipv6 to AS42708 announce AS-SOVAM-V6
-import:         from AS42708 action pref=90; accept AS-PORTLANE
-export:         to AS42708 announce AS-SOVAM
 mp-import:      afi ipv6 from AS13189 action pref=90; accept AS-LIDERO
 mp-export:      afi ipv6 to AS13189 announce AS-SOVAM-V6
 import:         from AS13189 action pref=90; accept AS-LIDERO
@@ -1459,179 +921,50 @@ export:         to AS13189 announce AS-SOVAM
 mp-import:      afi ipv6 from AS6939 action pref=90; accept AS6939:AS-CUSTOMERS
 mp-export:      afi ipv6 to AS6939 announce AS-SOVAM-V6
 import:         from AS6939 action pref=90; accept AS6939:AS-CUSTOMERS
-export:         to AS6939 announce AS-SOVAM
 mp-import:      afi ipv6 from AS16509 action pref=90; accept AS-AMAZON
-mp-export:      afi ipv6 to AS16509 announce AS-SOVAM-V6
-import:         from AS16509 action pref=90; accept AS-AMAZON
-export:         to AS16509 announce AS-SOVAM
 mp-import:      afi ipv6 from AS33438 action pref=90; accept AS33438
 mp-export:      afi ipv6 to AS33438 announce AS-SOVAM-V6
 import:         from AS33438 action pref=90; accept AS33438
 export:         to AS33438 announce AS-SOVAM
 mp-import:      afi ipv6 from AS33438 action pref=90; accept AS-HIGHWINDS
-mp-export:      afi ipv6 to AS33438 announce AS-SOVAM-V6
 import:         from AS33438 action pref=90; accept AS-HIGHWINDS
-export:         to AS33438 announce AS-SOVAM
 mp-import:      afi ipv6 from AS20940 action pref=90; accept AS-AKAMAI
 mp-export:      afi ipv6 to AS20940 announce AS-SOVAM-V6
-import:         from AS20940 action pref=90; accept AS-AKAMAI
-export:         to AS20940 announce AS-SOVAM
 mp-import:      afi ipv6 from AS46489 action pref=90; accept AS46489
-mp-export:      afi ipv6 to AS46489 announce AS-SOVAM-V6
-import:         from AS46489 action pref=90; accept AS46489
-export:         to AS46489 announce AS-SOVAM
 mp-import:      afi ipv6 from AS8473 action pref=90; accept AS-BAHNHOF
 mp-export:      afi ipv6 to AS8473 announce AS-SOVAM-V6
-import:         from AS8473 action pref=90; accept AS-BAHNHOF
-export:         to AS8473 announce AS-SOVAM
 mp-import:      afi ipv6 from AS29518 action pref=90; accept AS-BREDBAND2
 mp-export:      afi ipv6 to AS29518 announce AS-SOVAM-V6
 import:         from AS29518 action pref=90; accept AS-BREDBAND2
 export:         to AS29518 announce AS-SOVAM
-mp-import:      afi ipv6 from AS51468 action pref=90; accept AS-ONECOM
-mp-export:      afi ipv6 to AS51468 announce AS-SOVAM-V6
-import:         from AS51468 action pref=90; accept AS-ONECOM
-export:         to AS51468 announce AS-SOVAM
-mp-import:      afi ipv6 from AS44034 action pref=90; accept AS-Hi3G
-mp-export:      afi ipv6 to AS44034 announce AS-SOVAM-V6
-import:         from AS44034 action pref=90; accept AS-Hi3G
-export:         to AS44034 announce AS-SOVAM
-import:         from AS13194 action pref=87; accept AS-BITE
-export:         to AS13194 announce AS-SOVAM
-mp-import:      afi ipv6 from AS13194 action pref=87; accept AS-BITE
-mp-export:      afi ipv6 to AS13194 announce AS-SOVAM-V6
-import:         from AS394354 action pref=87; accept AS-394354
-export:         to AS394354 announce AS-SOVAM
-mp-import:      afi ipv6 from AS394354 action pref=87; accept AS-394354
-mp-export:      afi ipv6 to AS394354 announce AS-SOVAM-V6
-import:         from AS2906 action pref=87; accept AS-NFLX
-export:         to AS2906 announce AS-SOVAM
-mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
-mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
-import:         from AS5405 action pref=87; accept AS5405:AS-INTERDOTLINK
-export:         to AS5405 announce AS-SOVAM
-mp-import:      afi ipv6 from AS5405 action pref=87; accept AS5405:AS-INTERDOTLINK
-mp-export:      afi ipv6 to AS5405 announce AS-SOVAM-V6
-import:         from AS57976 action pref=87; accept AS-BLIZZARD
-export:         to AS57976 announce AS-SOVAM
-mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
-mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
-import:         from AS60345 action pref=87; accept AS-IXNT
-export:         to AS60345 announce AS-SOVAM
-mp-import:      afi ipv6 from AS60345 action pref=87; accept AS-IXNT
-mp-export:      afi ipv6 to AS60345 announce AS-SOVAM-V6
-import:         from AS14061 action pref=87; accept AS-14061
-export:         to AS14061 announce AS-SOVAM
-mp-import:      afi ipv6 from AS14061 action pref=87; accept AS-14061
-mp-export:      afi ipv6 to AS14061 announce AS-SOVAM-V6
-import:         from AS49981 action pref=87; accept AS-WORLDSTREAM
-export:         to AS49981 announce AS-SOVAM
-mp-import:      afi ipv6 from AS49981 action pref=87; accept AS-WORLDSTREAM
-mp-export:      afi ipv6 to AS49981 announce AS-SOVAM-V6
-import:         from AS57976 action pref=87; accept AS-BLIZZARD
-export:         to AS57976 announce AS-SOVAM
-mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
-mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
-import:         from AS45102 action pref=87; accept AS45102
-export:         to AS45102 announce AS-SOVAM
-import:         from AS2906 action pref=87; accept AS-NFLX
-export:         to AS2906 announce AS-SOVAM
-mp-import:      afi ipv6 from AS2906 action pref=87; accept AS-NFLX
-mp-export:      afi ipv6 to AS2906 announce AS-SOVAM-V6
-import:         from AS199524 action pref=87; accept AS-GCORE
-export:         to AS199524 announce AS-SOVAM
-mp-import:      afi ipv6 from AS199524 action pref=87; accept AS-GCORE
-mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
-import:         from AS137409 action pref=87; accept AS137409:AS-ALL
-export:         to AS137409 announce AS-SOVAM
-mp-import:      afi ipv6 from AS137409 action pref=87; accept AS137409:AS-ALL
-mp-export:      afi ipv6 to AS137409 announce AS-SOVAM-V6
-import:         from AS57976 action pref=87; accept AS-BLIZZARD
-export:         to AS57976 announce AS-SOVAM
-mp-import:      afi ipv6 from AS57976 action pref=87; accept AS-BLIZZARD
-mp-export:      afi ipv6 to AS57976 announce AS-SOVAM-V6
-import:         from AS32934 action pref=87; accept AS-FACEBOOK
-export:         to AS32934 announce AS-SOVAM
-mp-import:      afi ipv6 from AS32934 action pref=87; accept AS-FACEBOOK
-mp-export:      afi ipv6 to AS32934 announce AS-SOVAM-V6
-import:         from AS46489 action pref=87; accept AS-TWITCH
-export:         to AS46489 announce AS-SOVAM
-mp-import:      afi ipv6 from AS46489 action pref=87; accept AS-TWITCH
-mp-export:      afi ipv6 to AS46489 announce AS-SOVAM-V6
-import:         from AS199524 action pref=87; accept AS-GCORE
-export:         to AS199524 announce AS-SOVAM
-mp-import:      afi ipv6 from AS199524 action pref=87; accept AS-GCORE
-mp-export:      afi ipv6 to AS199524 announce AS-SOVAM-V6
-import:         from AS63199 action pref=87; accept AS-CAPITALONLINEDATA
-export:         to AS63199 announce AS-SOVAM
-mp-import:      afi ipv6 from AS63199 action pref=87; accept AS-CAPITALONLINEDATA
-mp-export:      afi ipv6 to AS63199 announce AS-SOVAM-V6
 import:         from AS20940 action pref=87; accept AS-AKAMAI
-export:         to AS20940 announce AS-SOVAM
 mp-import:      afi ipv6 from AS20940 action pref=87; accept AS-AKAMAI
-mp-export:      afi ipv6 to AS20940 announce AS-SOVAM-V6
-import:         from AS6204 action pref=87; accept AS-ZETNET
-export:         to AS6204 announce AS-SOVAM
-mp-import:      afi ipv6 from AS6204 action pref=87; accept AS-ZETNET
-mp-export:      afi ipv6 to AS6204 announce AS-SOVAM-V6
 import:         from AS50629 action pref=87; accept AS-LWL
 export:         to AS50629 announce AS-SOVAM
 mp-import:      afi ipv6 from AS50629 action pref=87; accept AS-LWL
 mp-export:      afi ipv6 to AS50629 announce AS-SOVAM-V6
-import:         from AS60345 action pref=87; accept AS-IXNT
-export:         to AS60345 announce AS-SOVAM
-mp-import:      afi ipv6 from AS60345 action pref=87; accept AS-IXNT
-mp-export:      afi ipv6 to AS60345 announce AS-SOVAM-V6
 import:         from AS213887 action pref=87; accept AS-WAICORE
 export:         to AS213887 announce AS-SOVAM
 mp-import:      afi ipv6 from AS213887 action pref=87; accept AS-WAICORE
 mp-export:      afi ipv6 to AS213887 announce AS-SOVAM-V6
-import:         from AS212477 action pref=87; accept AS-ROYALE
-export:         to AS212477 announce AS-SOVAM
-mp-import:      afi ipv6 from AS212477 action pref=87; accept AS-ROYALE
-mp-export:      afi ipv6 to AS212477 announce AS-SOVAM-V6
-import:         from AS3356 action pref=77; accept ANY
-export:         to AS3356 announce AS-SOVAM
-mp-import:      afi ipv6 from AS3356 action pref=77; accept ANY
-mp-export:      afi ipv6 to AS3356 announce AS-SOVAM-V6
 import:         from AS58073 action pref=87; accept ANY
 export:         to AS58073 announce AS-SOVAM
 import:         from AS42532 action pref=87; accept ANY
 export:         to AS42532 announce AS-SOVAM
 mp-import:      afi ipv6 from AS42532 action pref=87; accept ANY
 mp-export:      afi ipv6 to AS42532 announce AS-SOVAM-V6
-import:         from AS3356 action pref=77; accept ANY
-export:         to AS3356 announce AS-SOVAM
-mp-import:      afi ipv6 from AS3356 action pref=77; accept ANY
-mp-export:      afi ipv6 to AS3356 announce AS-SOVAM-V6
-import:         from AS3356 action pref=77; accept ANY
-export:         to AS3356 announce AS-SOVAM
-mp-import:      afi ipv6 from AS3356 action pref=77; accept ANY
-mp-export:      afi ipv6 to AS3356 announce AS-SOVAM-V6
-import:         from AS15169 action pref=90; accept AS-GOOGLE
-export:         to AS15169 announce AS-SOVAM
-import:         from AS46489 action pref=90; accept AS46489
-export:         to AS46489 announce AS-SOVAM
-import:         from AS714 action pref=90; accept AS-APPLE
-export:         to AS714 announce AS-SOVAM
 import:         from AS3257 action pref=90; accept ANY
 export:         to AS3257 announce AS-SOVAM
 import:         from AS33891 action pref=87; accept AS-CORE-BACKBONE
-export:         to AS33891 announce AS-SOVAM
 mp-import:      afi ipv6 from AS33891 action pref=87; accept AS-CORE-BACKBONE
 mp-export:      afi ipv6 to AS33891 announce AS-SOVAM-V6
 import:         from AS16265 action pref=87; accept AS-LEASEWEB
-export:         to AS16265 announce AS-SOVAM
 mp-import:      afi ipv6 from AS16265 action pref=87; accept AS-LEASEWEB
 mp-export:      afi ipv6 to AS16265 announce AS-SOVAM-V6
 import:         from AS211157 action pref=95; accept ANY
 export:         to AS211157 announce AS-SOVAM
 mp-import:      afi ipv6 from AS211157 action pref=95; accept ANY
 mp-export:      afi ipv6 to AS211157 announce AS-SOVAM-V6
-import:         from AS32934 action pref=87; accept AS-FACEBOOK
-export:         to AS32934 announce AS-SOVAM
-mp-import:      afi ipv6 from AS32934 action pref=87; accept AS-FACEBOOK
-mp-export:      afi ipv6 to AS32934 announce AS-SOVAM-V6
 import:         from AS58096 action pref=100; accept AS-ELIT-TV
 export:         to AS58096 announce ANY
 import:         from AS197406 action pref=100; accept AS197406
@@ -1658,20 +991,11 @@ import:         from AS3316 action pref=95; accept AS-RELARN
 export:         to AS3316 announce AS-SOVAM
 import:         from AS30124 action pref=95; accept AS30124
 export:         to AS30124 announce AS-SOVAM
-import:         from AS6507 action pref=87; accept AS-RIOT
-export:         to AS6507 announce AS-SOVAM
-import:         from AS32934 action pref=87; accept AS-FACEBOOK
-export:         to AS32934 announce AS-SOVAM
-mp-import:      afi ipv6 from AS32934 action pref=87; accept AS-FACEBOOK
-mp-export:      afi ipv6 to AS32934 announce AS-SOVAM-V6
 import:         from AS9002 action pref=87; accept AS-RETN
-export:         to AS9002 announce AS-SOVAM
 mp-import:      afi ipv6 from AS9002 action pref=95; accept AS-RETN6
-mp-export:      afi ipv6 to AS9002 announce AS-SOVAM-V6
 import:         from AS51004 action pref=95; accept AS-SOLNCE
 export:         to AS51004 announce AS-SOVAM
 import:         from AS211157 action pref=100; accept AS211157
-export:         to AS211157 announce AS-SOVAM
 mp-import:      from AS211157 action pref=100; accept AS211157
 mp-export:      to AS211157 announce AS-SOVAM-V6
 import:         from AS203753 action pref=100; accept AS203753:AS-VOLGADC
@@ -2294,8 +1618,6 @@ mp-import:      afi ipv6 from AS207133 action pref=100; accept AS207133
 mp-export:      afi ipv6 to AS207133 announce ANY
 import:         from AS50060 action pref=100; accept AS50060
 export:         to AS50060 announce {0.0.0.0/0}
-import:         from AS50060 action pref=100; accept AS50060
-export:         to AS50060 announce {0.0.0.0/0}
 import:         from AS209059 action pref=100; accept AS-GCOM
 export:         to AS209059 announce ANY
 mp-import:      afi ipv6 from AS209059 action pref=100; accept AS209059
@@ -2433,7 +1755,6 @@ export:         to AS34959 announce ANY
 mp-import:      afi ipv6 from AS34959 action pref=100; accept AS-KVIKTEL
 mp-export:      afi ipv6 to AS34959 announce ANY
 import:         from AS34959 action pref=100; accept AS34959:AS-PROCLOUD
-export:         to AS34959 announce ANY
 mp-import:      from AS34959 action pref=100; accept AS34959:AS-PROCLOUD
 mp-export:      to AS34959 announce ANY
 import:         from AS49326 action pref=100; accept AS49326
@@ -2631,9 +1952,7 @@ export:         to AS8636 announce AS-SOVAM
 mp-import:      afi ipv6 from AS8636 action pref=100; accept AS-MAX
 mp-export:      afi ipv6 to AS8636 announce AS-SOVAM-V6
 import:         from AS43832 action pref=100; accept AS-IXDNS
-export:         to AS43832 announce ANY
 mp-import:      afi ipv6 from AS43832 action pref=100; accept AS-IXDNS-V6
-mp-export:      afi ipv6 to AS43832 announce ANY
 import:         from AS48498 action pref=100; accept AS-SOCHI-ONLINE
 export:         to AS48498 announce ANY
 import:         from AS60544 action pref=100; accept AS60544
@@ -2790,7 +2109,6 @@ import:         from AS61206 action pref=100; accept AS61206
 export:         to AS61206 announce ANY
 import:         from AS31336 action pref=100; accept AS31336
 export:         to AS31336 announce ANY
-import:         from AS51213 action pref=100; accept AS51213
 export:         to AS51213 announce ANY
 import:         from AS57212 action pref=100; accept AS-57212
 export:         to AS57212 announce ANY
@@ -2821,13 +2139,11 @@ mp-export:      afi ipv6 to AS33991 announce ANY
 import:         from AS57363 action pref=100; accept AS57363
 export:         to AS57363 announce ANY
 import:         from AS57363 action pref=100; accept AS-CDNETWORKSRU
-export:         to AS57363 announce ANY
 mp-import:      from AS57363 action pref=100; accept AS-CDNETWORKSRU
 mp-export:      to AS57363 announce ANY
 mp-import:      afi ipv6 from AS57363 action pref=100; accept AS57363
 mp-export:      afi ipv6 to AS57363 announce {::/0}
 mp-import:      afi ipv6 from AS57363 action pref=100; accept AS-CDNVIDEO
-mp-export:      afi ipv6 to AS57363 announce {::/0}
 import:         from AS48757 action pref=100; accept AS-TRUSTINFO
 export:         to AS48757 announce ANY
 mp-import:      afi ipv6 from AS48757 action pref=100; accept AS-TRUSTINFO_8-24-V6
@@ -2999,7 +2315,6 @@ export:         to AS62069 announce ANY
 import:         from AS16173 action pref=100; accept AS16173
 export:         to AS16173 announce AS-SOVAM
 import:         from AS16143 action pref=100; accept AS16143
-export:         to AS16143 announce ANY
 import:         from AS196699 action pref=100; accept AS196699
 export:         to AS196699 announce ANY
 import:         from AS196914 action pref=100; accept AS-Don-plus
@@ -3054,8 +2369,6 @@ import:         from AS50477 action pref=100; accept AS-SET-SVEN
 export:         to AS50477 announce ANY
 import:         from AS51721 action pref=100; accept AS51721
 export:         to AS51721 announce ANY
-import:         from AS51213 action pref=100; accept AS51213
-export:         to AS51213 announce ANY
 import:         from AS58341 action pref=100; accept AS58341
 export:         to AS58341 announce ANY
 import:         from AS34580 action pref=100; accept AS34580
@@ -3074,8 +2387,6 @@ import:         from AS198639 action pref=100; accept AS198639
 export:         to AS198639 announce ANY
 import:         from AS34098 action pref=100; accept AS34098
 export:         to AS34098 announce ANY
-import:         from AS13105 action pref=100; accept AS-LUKOIL
-export:         to AS13105 announce ANY
 import:         from AS72 action pref=100; accept AS72
 export:         to AS72 announce {0.0.0.0/0}
 import:         from AS49155 action pref=100; accept AS49155
@@ -3110,12 +2421,9 @@ import:         from AS199782 action pref=100; accept AS-TTNET-TELETIME
 export:         to AS199782 announce ANY
 import:         from AS50760 action pref=100; accept AS50760
 export:         to AS50760 announce ANY
-import:         from AS57645 action pref=100; accept AS57645
 export:         to AS57645 announce ANY
 import:         from AS56361 action pref=100; accept AS56361
 export:         to AS56361 announce ANY
-import:         from AS39134 action pref=100; accept AS-UNITEDNET
-export:         to AS39134 announce ANY
 import:         from AS56776 action pref=100; accept AS56776
 export:         to AS56776 announce ANY
 import:         from AS42478 action pref=100; accept AS-YL1123
@@ -3138,8 +2446,6 @@ import:         from AS34838 action pref=100; accept AS34838
 export:         to AS34838 announce ANY
 import:         from AS56674 action pref=100; accept AS56674
 export:         to AS56674 announce ANY
-import:         from AS39442 action pref=100; accept AS-UNICO
-export:         to AS39442 announce ANY
 import:         from AS51032 action pref=100; accept AS-NEVOD
 export:         to AS51032 announce ANY
 mp-import:      afi ipv6 from AS51032 action pref=100; accept AS-NEVOD
@@ -3201,7 +2507,6 @@ export:         to AS34879 announce ANY
 mp-import:      afi ipv6 from AS34879 action pref=100; accept AS34879
 mp-export:      afi ipv6 to AS34879 announce AS-SOVAM-V6
 import:         from AS57038 action pref=100; accept AS57038
-export:         to AS57038 announce ANY
 import:         from AS41668 action pref=100; accept AS41668
 export:         to AS-KAZAN announce ANY
 mp-import:      afi ipv6 from AS31261 action pref=100; accept AS-GARSV6
@@ -3239,7 +2544,6 @@ export:         to AS8334 announce ANY
 import:         from AS29125 action pref=100; accept AS-TIC
 export:         to AS29125 announce ANY
 import:         from AS62440 action pref=100; accept AS-TERRALINK
-export:         to AS62440 announce ANY
 import:         from AS41310 action pref=100; accept AS41310
 export:         to AS41310 announce ANY
 import:         from AS12543 action pref=100; accept AS-KUBTELECOM
@@ -3259,7 +2563,6 @@ mp-export:      afi ipv6 to AS20895 announce ANY
 import:         from AS42245 action pref=100; accept AS-SET-ITECH
 export:         to AS42245 announce ANY
 import:         from AS42245 action pref=100; accept AS42245
-export:         to AS42245 announce ANY
 import:         from AS42296 action pref=100; accept AS42296
 export:         to AS42296 announce ANY
 import:         from AS31208 action pref=100; accept AS31208
@@ -3279,7 +2582,6 @@ export:         to AS15850 announce ANY
 import:         from AS199537 action pref=100; accept AS-KITNPF
 export:         to AS199537 announce ANY
 import:         from AS199537 action pref=100; accept AS199537
-export:         to AS199537 announce ANY
 import:         from AS39684 action pref=100; accept AS39684
 export:         to AS39684 announce ANY
 import:         from AS39688 action pref=100; accept AS39688
@@ -3322,7 +2624,6 @@ import:         from AS57323 action pref=100; accept AS57323
 export:         to AS57323 announce ANY
 import:         from AS57296 action pref=100; accept AS57296
 export:         to AS57296 announce ANY
-import:         from AS9110 action pref=100; accept AS-AGTEL-INT
 export:         to AS9110 announce ANY
 import:         from AS42322 action pref=100; accept AS42322
 export:         to AS42322 announce ANY
@@ -3333,7 +2634,6 @@ export:         to AS41185 announce {0.0.0.0/0}
 import:         from AS12772 action pref=100; accept AS-ENFORTA
 export:         to AS12772 announce ANY
 import:         from AS12772 action pref=100; accept AS12772
-export:         to AS12772 announce ANY
 import:         from AS43087 action pref=100; accept AS43087
 export:         to AS43087 announce ANY
 import:         from AS42758 action pref=100; accept AS42758
@@ -3407,8 +2707,6 @@ mp-export:      afi ipv6 to AS28709 announce ANY
 import:         from AS12418 action pref=100; accept AS-QUANTUM
 export:         to AS12418 announce ANY
 import:         from AS12418 action pref=100; accept AS12418
-export:         to AS12418 announce ANY
-import:         from AS12418 action pref=100; accept AS12418
 export:         to AS12418 announce {0.0.0.0/0}
 import:         from AS200907 action pref=100; accept AS200907
 export:         to AS200907 announce ANY
@@ -3454,7 +2752,6 @@ import:         from AS45055 action pref=100; accept AS45055
 export:         to AS45055 announce ANY
 import:         from AS48995 action pref=100; accept AS48995
 export:         to AS48995 announce ANY
-import:         from AS41560 action pref=100; accept AS-UT-SVR
 export:         to AS41560 announce {0.0.0.0/0}
 import:         from AS48470 action pref=100; accept AS48470
 export:         to AS48470 announce ANY
@@ -3538,8 +2835,6 @@ import:         from AS39660 action pref=100; accept AS-NETTRANS
 export:         to AS39660 announce ANY
 import:         from AS50038 action pref=100; accept AS50038
 export:         to AS50038 announce ANY
-import:         from AS34352 action pref=100; accept AS-MCN
-export:         to AS34352 announce ANY
 import:         from AS31133 action pref=100; accept AS-MF-MGSM
 export:         to AS31133 announce ANY
 import:         from AS50639 action pref=100; accept AS-ARSNET
@@ -3553,17 +2848,12 @@ export:         to AS31480 announce ANY
 import:         from AS49897 action pref=100; accept AS-ALLTELECOM
 export:         to AS49897 announce ANY
 import:         from AS34485 action pref=100; accept AS34485
-export:         to AS34485 announce ANY
 import:         from AS39266 action pref=100; accept AS39266
 export:         to AS39266 announce {0.0.0.0/0}
 import:         from AS35287 action pref=100; accept AS-BGT-NOGLIKI
 export:         to AS35287 announce {0.0.0.0/0}
 import:         from AS34894 action pref=100; accept AS-PATH-03
 export:         to AS34894 announce ANY
-import:         from AS42245 action pref=100; accept AS-SET-ITECH
-export:         to AS42245 announce ANY
-import:         from AS42296 action pref=100; accept AS42296
-export:         to AS42296 announce ANY
 import:         from AS8764 action pref=100; accept AS-TEO-GT
 export:         to AS8764 announce ANY
 import:         from AS50003 action pref=100; accept AS50003
@@ -3673,10 +2963,8 @@ export:         to AS51536 announce {0.0.0.0/0}
 import:         from AS51200 action pref=100; accept AS51200
 export:         to AS51200 announce ANY
 import:         from AS51200 action pref=100; accept AS-DIDI
-export:         to AS51200 announce ANY
 import:         from AS34557 action pref=100; accept AS-SET-TACOM
 export:         to AS34557 announce ANY
-import:         from AS34557 action pref=100; accept AS-SET-TACOM
 export:         to AS34557 announce {0.0.0.0/0}
 mp-import:      afi ipv6 from AS34557 action pref=100; accept AS-SET-TACOM-V6
 mp-export:      afi ipv6 to AS34557 announce {::/0}
@@ -3770,8 +3058,6 @@ mp-import:      afi ipv6 from AS24955 action pref=100; accept AS-UBN-V6
 mp-export:      afi ipv6 to AS24955 announce ANY
 import:         from AS56755 action pref=100; accept AS-CYCLON-S
 export:         to AS56755 announce ANY
-import:         from AS42554 action pref=100; accept AS42554
-export:         to AS42554 announce ANY
 import:         from AS43673 action pref=100; accept AS43673
 export:         to AS43673 announce ANY
 import:         from AS48061 action pref=100; accept AS48061
@@ -3858,10 +3144,6 @@ mp-import:      afi ipv6 from AS50923 action pref=100; accept AS-METRO-SET6
 mp-export:      afi ipv6 to AS50923 announce ANY
 import:         from AS57631 action pref=100; accept AS57631
 export:         to AS57631 announce ANY
-import:         from AS57629 action pref=100; accept AS57629
-export:         to AS57629 announce ANY
-mp-import:      afi ipv6 from AS57629 action pref=100; accept AS57629
-mp-export:      afi ipv6 to AS57629 announce ANY
 import:         from AS43793 action pref=100; accept AS43793
 export:         to AS43793 announce ANY
 import:         from AS57781 action pref=100; accept AS57781
@@ -3924,10 +3206,6 @@ mp-import:      afi ipv6 from AS57277 action pref=100; accept AS-BAIKAL-IX-TRANS
 mp-export:      afi ipv6 to AS57277 announce ANY
 import:         from AS48479 action pref=100; accept AS-KUBAN-TELECOM
 export:         to AS48479 announce ANY
-import:         from AS38917 action pref=100; accept AS-INTERCOMTEL
-export:         to AS38917 announce ANY
-import:         from AS43849 action pref=100; accept AS-SEVER-SVYAZ
-export:         to AS43849 announce ANY
 mp-import:      afi ipv6 from AS43849 action pref=100; accept AS-SEVER-SVYAZ
 mp-export:      afi ipv6 to AS43849 announce ANY
 import:         from AS213381 action pref=100; accept AS213381
@@ -3988,7 +3266,6 @@ import:         from AS204477 action pref=100; accept AS204477
 export:         to AS204477 announce AS-SOVAM
 import:         from AS48877 action pref=100; accept AS48877
 export:         to AS48877 announce ANY
-import:         from AS57212 action pref=100; accept AS-57212
 export:         to AS57212 announce {0.0.0.0/0}
 import:         from AS58187 action pref=100; accept AS-IRCN
 export:         to AS58187 announce ANY
@@ -4077,7 +3354,6 @@ export:         to AS20543 announce {0.0.0.0/0}
 import:         from AS8905 action pref=100; accept AS8905
 export:         to AS8905 announce ANY
 import:         from AS8905 action pref=100; accept AS-DIGIT1
-export:         to AS8905 announce ANY
 import:         from AS60864 action pref=100; accept AS60864
 export:         to AS60864 announce ANY
 import:         from AS39864 action pref=100; accept AS-DPC24
@@ -4134,8 +3410,6 @@ import:         from AS60482 action pref=100; accept AS60482
 export:         to AS60482 announce AS-SOVAM
 import:         from AS44905 action pref=100; accept AS-SETSKV
 export:         to AS44905 announce ANY
-import:         from AS49055 action pref=100; accept AS-NEWIT
-export:         to AS49055 announce ANY
 import:         from AS21332 action pref=100; accept AS-NTC
 export:         to AS21332 announce ANY
 import:         from AS42516 action pref=100; accept AS-SOVTEST
@@ -4167,19 +3441,13 @@ export:         to AS56506 announce ANY
 import:         from AS202202 action pref=100; accept AS202202
 export:         to AS202202 announce {0.0.0.0/0}
 import:         from AS15850 action pref=100; accept AS15850
-export:         to AS15850 announce ANY
-import:         from AS13105 action pref=100; accept AS13105
-export:         to AS13105 announce ANY
 import:         from AS9979 action pref=100; accept AS9979
 export:         to AS9979 announce ANY
-import:         from AS56674 action pref=100; accept AS56674
-export:         to AS56674 announce ANY
 import:         from AS43600 action pref=100; accept AS43600
 export:         to AS43600 announce ANY
 import:         from AS20919 action pref=100; accept AS-IBS
 export:         to AS20919 announce ANY
 import:         from AS20919 action pref=100; accept AS-DataFort
-export:         to AS20919 announce ANY
 import:         from AS43045 action pref=100; accept AS-SvHolding
 export:         to AS43045 announce ANY
 import:         from AS62133 action pref=100; accept AS62133
@@ -4358,7 +3626,6 @@ mp-import:      afi ipv6 from AS50166 action pref=100; accept AS-RTCLOUD-V6
 mp-export:      afi ipv6 to AS50166 announce ANY
 import:         from AS56535 action pref=100; accept AS56535
 export:         to AS56535 announce ANY
-import:         from AS56535 action pref=100; accept AS56535
 export:         to AS56535 announce {0.0.0.0/0}
 import:         from AS198212 action pref=100; accept AS198212
 export:         to AS198212 announce ANY
@@ -4398,14 +3665,12 @@ import:         from AS200152 action pref=100; accept AS200152
 export:         to AS200152 announce {0.0.0.0/0}
 import:         from AS59525 action pref=100; accept AS59525
 export:         to AS59525 announce {0.0.0.0/0}
-import:         from AS59525 action pref=100; accept AS59525
 export:         to AS59525 announce ANY
 import:         from AS207078 action pref=100; accept AS207078
 export:         to AS207078 announce {0.0.0.0/0}
 import:         from AS204304 action pref=100; accept AS204304
 export:         to AS2040304 announce AS-SOVAM
 import:         from AS198415 action pref=100; accept AS-Komplex-Info
-export:         to AS198415 announce ANY
 import:         from AS207104 action pref=100; accept AS207104
 export:         to AS207104 announce {0.0.0.0/0}
 import:         from AS206756 action pref=100; accept AS206756
@@ -4556,10 +3821,7 @@ import:         from AS39488 action pref=100; accept AS39488
 export:         to AS39488 announce ANY
 mp-import:      afi ipv6 from AS207228 action pref=100; accept AS207228
 mp-export:      afi ipv6 to AS207228 announce ANY
-import:         from AS51655 action pref=100; accept AS51655:AS-ILIMTELECOM
-export:         to AS51655 announce ANY
 mp-import:      from AS51655 action pref=100; accept AS51655
-mp-export:      to AS51655 announce ANY
 import:         from AS57380 action pref=100; accept AS-TELENET-CHITA
 export:         to AS57380 announce ANY
 import:         from AS41704 action pref=100; accept AS-UBN
@@ -4643,7 +3905,6 @@ export:         to AS52091 announce ANY
 mp-import:      from AS52091 action pref=100; accept AS52091
 mp-export:      to AS52091 announce ANY
 import:         from AS49063 action pref=100; accept AS-DTLN
-export:         to AS49064 announce ANY
 import:         from AS51520 action pref=100; accept AS-RH
 export:         to AS51520 announce AS-SOVAM
 mp-import:      afi ipv6 from AS51520 action pref=100; accept AS-RH
@@ -4707,7 +3968,6 @@ export:         to AS204297 announce ANY
 import:         from AS204720 action pref=100; accept AS204720
 export:         to AS204720 announce ANY
 import:         from AS204720 action pref=100; accept AS-CDNETWORKSRU
-export:         to AS204720 announce ANY
 mp-import:      afi ipv6 from AS204720 action pref=100; accept AS204720
 mp-export:      afi ipv6 to AS204720 announce ANY
 import:         from AS201267 action pref=100; accept AS201267
@@ -4742,8 +4002,6 @@ import:         from AS205642 action pref=100; accept AS205642
 export:         to AS205642 announce ANY
 mp-import:      from AS205642 action pref=100; accept AS205642
 mp-export:      to AS205642 announce ANY
-import:         from AS207608 action pref=100; accept AS207608
-export:         to AS207608 announce {0.0.0.0/0}
 import:         from AS204474 action pref=100; accept AS204474
 export:         to AS204474 announce {0.0.0.0/0}
 import:         from AS203974 action pref=100; accept AS203974
@@ -4758,8 +4016,6 @@ import:         from AS201512 action pref=100; accept AS201512
 export:         to AS201512 announce ANY
 import:         from AS208912 action pref=100; accept AS-STARTELECOMTEL
 export:         to AS208912 announce ANY
-import:         from AS21859 action pref=100; accept AS-ZENLAYER
-export:         to AS21859 announce ANY
 mp-import:      afi ipv6 from AS21859 action pref=100; accept AS-ZENLAYER
 mp-export:      afi ipv6 to AS21859 announce ANY
 import:         from AS49813 action pref=100; accept AS-INN
@@ -4771,11 +4027,8 @@ mp-export:      to AS202486 announce ANY
 import:         from AS196695 action pref=100; accept AS-NETONERUS
 export:         to AS196695 announce ANY
 import:         from AS49218 action pref=100; accept AS49218
-export:         to AS49218 announce ANY
 import:         from AS212750 action pref=100; accept AS212750
 export:         to AS212750 announce ANY
-mp-import:      afi ipv6 from AS199524 action pref=100; accept AS-GCORE-V6
-mp-export:      afi ipv6 to AS199524 announce ANY
 import:         from AS21446 action pref=100; accept AS-ALMAZTELECOM
 export:         to AS21446 announce ANY
 mp-import:      afi ipv6 from AS21446 action pref=100; accept AS-ALMAZTELECOM
@@ -4799,12 +4052,9 @@ export:         to AS42529 announce ANY
 import:         from AS39927 action pref=100; accept AS39927
 export:         to AS39927 announce ANY
 import:         from AS43550 action pref=100; accept AS43550
-export:         to AS43550 announce ANY
-import:         from AS43907 action pref=100; accept AS43907
 export:         to AS43907 announce {0.0.0.0/0}
 import:         from AS44470 action pref=100; accept AS44470
 export:         to AS44470 announce {0.0.0.0/0}
-import:         from AS41775 action pref=100; accept AS41775
 export:         to AS41775 announce ANY
 import:         from AS48951 action pref=100; accept AS48951
 export:         to AS48951 announce ANY
@@ -4813,7 +4063,6 @@ mp-export:      afi ipv6 to AS48951 announce ANY
 import:         from AS44963 action pref=100; accept AS-POTOK
 export:         to AS44963 announce ANY
 import:         from AS42478 action pref=100; accept AS-YUG-LINK
-export:         to AS42478 announce ANY
 import:         from AS197756 action pref=100; accept AS197756
 export:         to AS197756 announce ANY
 import:         from AS216365 action pref=100; accept AS216365
@@ -4822,12 +4071,8 @@ mp-import:      from AS216365 action pref=100; accept AS216365
 mp-export:      to AS216365 announce ANY
 import:         from AS51193 action pref=100; accept AS51193
 export:         to AS51193 announce ANY
-import:         from AS196949 action pref=100; accept AS-PODRYAD
-export:         to AS196949 announce ANY
 import:         from AS208541 action pref=100; accept AS208541
 export:         to AS208541 announce ANY
-import:         from AS199524 action pref=100; accept AS-GCORE
-export:         to AS199524 announce ANY
 import:         from AS208811 action pref=100; accept AS208811
 export:         to AS208811 announce ANY
 import:         from AS28968 action pref=100; accept AS-EUT
@@ -4836,8 +4081,6 @@ import:         from AS59515 action pref=100; accept AS59515
 export:         to AS59515 announce ANY
 import:         from AS35608 action pref=100; accept AS35608
 export:         to AS35608 announce {0.0.0.0/0}
-import:         from AS59515 action pref=100; accept AS59515
-export:         to AS59515 announce ANY
 import:         from AS57396 action pref=100; accept AS57396
 export:         to AS57396 announce ANY
 import:         from AS208955 action pref=100; accept AS208955
@@ -4972,18 +4215,12 @@ import:         from AS44843 action pref=100; accept AS-MALOCO
 export:         to AS44843 announce ANY
 import:         from AS42119 action pref=100; accept AS42119
 export:         to AS42119 announce AS-SOVAM
-import:         from AS50157 action pref=100; accept AS50157
-export:         to AS50157 announce ANY
-import:         from AS31503 action pref=100; accept AS31503
-export:         to AS31503 announce ANY
 import:         from AS31512 action pref=100; accept AS31512
 export:         to AS31512 announce ANY
 import:         from AS51477 action pref=100; accept AS51477
 export:         to AS51477 announce ANY
 import:         from AS200847 action pref=100; accept AS200847
 export:         to AS200847 announce {0.0.0.0/0}
-import:         from AS16345 action pref=100; accept AS16345
-export:         to AS16345 announce ANY
 import:         from AS21180 action pref=100; accept AS21180
 export:         to AS21180 announce ANY
 import:         from AS12695 action pref=100; accept AS-DINET^+
@@ -5000,8 +4237,6 @@ import:         from AS34042 action pref=100; accept AS34042
 export:         to AS34042 announce ANY
 import:         from AS41377 action pref=100; accept AS41377^+
 export:         to AS41377 announce ANY
-import:         from AS12418 action pref=100; accept AS-QUANTUM
-export:         to AS12418 announce ANY
 import:         from AS42339 action pref=100; accept AS-CHTP
 export:         to AS42339 announce ANY
 import:         from AS35357 action pref=100; accept AS-RTS
@@ -5021,7 +4256,6 @@ export:         to AS35631 announce ANY
 import:         from AS29076 action pref=100; accept AS-CITYTELECOM
 export:         to AS29076 announce AS-SOVAM
 import:         from AS29076 action pref=100; accept AS-CITYTELECOM-UPSTREAMS
-export:         to AS29076 announce ANY
 mp-import:      afi ipv6 from AS29076 action pref=100; accept AS-CITYTELECOM-UPSTREAMS
 mp-export:      afi ipv6 to AS29076 announce ANY
 import:         from AS49821 action pref=100; accept AS-BAZA35
@@ -5062,8 +4296,6 @@ mp-import:      afi ipv6 from AS6679 action pref=100; accept AS-SKADI-V6
 mp-export:      afi ipv6 to AS6679 announce ANY
 import:         from AS57274 action pref=100; accept AS57274
 export:         to AS57274 announce ANY
-import:         from AS33936 action pref=100; accept AS33936
-export:         to AS33936 announce ANY
 import:         from AS24683 action pref=100; accept AS24683
 export:         to AS24683 announce ANY
 import:         from AS49288 action pref=100; accept AS49288
@@ -5110,8 +4342,6 @@ import:         from AS59722 action pref=100; accept AS59722
 export:         to AS59722 announce ANY
 import:         from AS200015 action pref=100; accept AS-LIVETEX
 export:         to AS200015 announce ANY
-import:         from AS8662 action pref=100; accept AS8662
-export:         to AS8662 announce ANY
 import:         from AS62378 action pref=100; accept AS62378
 export:         to AS62378 announce ANY
 import:         from AS59846 action pref=100; accept AS59846
@@ -5142,22 +4372,17 @@ import:         from AS16249 action pref=100; accept AS16249
 export:         to AS16249 announce {0.0.0.0/0}
 import:         from AS198117 action pref=100; accept AS198117
 export:         to AS198117 announce {0.0.0.0/0}
-import:         from AS43314 action pref=100; accept AS43314
-export:         to AS43314 announce ANY
 import:         from AS56533 action pref=100; accept AS56533
 export:         to AS56533 announce {0.0.0.0/0}
 import:         from AS60879 action pref=100; accept AS-SYSTEMPROJECTS
 export:         to AS60879 announce ANY
 mp-import:      afi ipv6 from AS60879 action pref=100; accept AS-SYSTEMPROJECTS-V6
 mp-export:      afi ipv6 to AS60879 announce ANY
-import:         from AS15884 action pref=100; accept AS15884
 export:         to AS15884 announce {0.0.0.0/0}
 import:         from AS203517 action pref=100; accept AS203517
 export:         to AS203517 announce ANY
 import:         from AS203549 action pref=100; accept AS203549
 export:         to AS203549 announce ANY
-import:         from AS208838 action pref=100; accept AS-DOMSET
-export:         to AS208838 announce ANY
 mp-import:      afi ipv6 from AS203517 action pref=100; accept AS203517
 mp-export:      afi ipv6 to AS203517 announce ANY
 import:         from AS8641 action pref=100; accept AS-NaukaNet
@@ -5199,7 +4424,6 @@ export:         to AS61259 announce ANY
 import:         from AS21030 action pref=100; accept AS21030
 export:         to AS21030 announce ANY
 import:         from AS21030 action pref=100; accept AS-CDNNOW
-export:         to AS21030 announce ANY
 import:         from AS204112 action pref=100; accept AS204112
 export:         to AS204112 announce ANY
 import:         from AS41123 action pref=100; accept AS41123
@@ -5282,8 +4506,6 @@ mp-import:      afi ipv6 from AS39586 action pref=100; accept AS39586
 mp-export:      afi ipv6 to AS39586 announce ANY
 import:         from AS51288 action pref=100; accept AS51288
 export:         to AS51288 announce ANY
-import:         from AS58197 action pref=100; accept AS58197
-export:         to AS58197 announce {0.0.0.0/0}
 import:         from AS52007 action pref=100; accept AS52007
 export:         to AS52007 announce ANY
 import:         from AS206631 action pref=100; accept AS206631
@@ -5323,9 +4545,6 @@ export:         to AS41895 announce ANY
 import:         from AS52046 action pref=100; accept AS52046
 export:         to AS52046 announce ANY
 import:         from AS13105 action pref=100; accept AS13105^+
-export:         to AS13105 announce ANY
-import:         from AS201394 action pref=100; accept AS201394
-export:         to AS201394 announce {0.0.0.0/0}
 import:         from AS60684 action pref=100; accept AS60684
 export:         to AS60684 announce {0.0.0.0/0}
 import:         from AS16477 action pref=100; accept AS16477
@@ -5348,20 +4567,14 @@ import:         from AS34644 action pref=100; accept AS-EXTEL
 export:         to AS34644 announce ANY
 import:         from AS9124 action pref=100; accept AS9124
 export:         to AS9124 announce {0.0.0.0/0}
-import:         from AS13105 action pref=100; accept AS13105
-export:         to AS13105 announce ANY
 import:         from AS21480 action pref=100; accept AS-WBT
 export:         to AS21480 announce ANY
-import:         from AS21030 action pref=100; accept AS-CDNNOW
-export:         to AS21030 announce ANY
 import:         from AS29038 action pref=100; accept AS29038
 export:         to AS29038 announce ANY
 import:         from AS59494 action pref=100; accept AS59494
 export:         to AS59494 announce {0.0.0.0/0}
 mp-import:      afi ipv6 from AS59494 action pref=100; accept AS59494
 mp-export:      afi ipv6 to AS59494 announce {::/0}
-import:         from AS39045 action pref=100; accept AS-GAZTELECOM
-export:         to AS39045 announce ANY
 import:         from AS42151 action pref=100; accept AS42151
 export:         to AS42151 announce {0.0.0.0/0}
 import:         from AS56699 action pref=100; accept AS56699

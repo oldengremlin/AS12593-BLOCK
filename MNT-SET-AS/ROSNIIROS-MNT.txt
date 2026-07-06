@@ -1,3 +1,16 @@
+as-set:         as-ALTEN
+descr:          OJSC Altaienergo
+members:        AS35061, AS21127, AS20977
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         adm@alten.elektra.ru
+mnt-by:         ROSNIIROS-MNT
+created:        2005-11-11T10:12:42Z
+last-modified:  2005-11-11T10:12:42Z
+source:         RIPE
+
+
+
 as-set:         AS-E1RU
 descr:          E1.RU AS-set
 members:        AS60600
@@ -120,6 +133,19 @@ source:         RIPE
 
 
 
+as-set:         as-zvi
+descr:          ZVI Telecom
+members:        AS31626
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         ELECTRO-COM-MNT
+mnt-by:         rosniiros-mnt
+created:        2010-07-09T10:41:50Z
+last-modified:  2010-07-09T10:45:09Z
+source:         RIPE
+
+
+
 as-set:         AS200847:AS-MOBILECARD
 descr:          NBFC MobileCard Ltd.
 members:        AS200847
@@ -130,32 +156,6 @@ mnt-by:         MOBILECARD-MNT
 mnt-by:         ROSNIIROS-MNT
 created:        2025-02-24T14:31:53Z
 last-modified:  2025-02-24T14:32:40Z
-source:         RIPE
-
-
-
-as-set:         as-ALTEN
-descr:          OJSC Altaienergo
-members:        AS35061, AS21127, AS20977
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-notify:         adm@alten.elektra.ru
-mnt-by:         ROSNIIROS-MNT
-created:        2005-11-11T10:12:42Z
-last-modified:  2005-11-11T10:12:42Z
-source:         RIPE
-
-
-
-as-set:         as-zvi
-descr:          ZVI Telecom
-members:        AS31626
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-mnt-by:         ELECTRO-COM-MNT
-mnt-by:         rosniiros-mnt
-created:        2010-07-09T10:41:50Z
-last-modified:  2010-07-09T10:45:09Z
 source:         RIPE
 
 
@@ -1389,8 +1389,6 @@ import:         from AS8402 accept ANY
 export:         to AS8402 announce AS41184
 import:         from AS6731 accept ANY
 export:         to AS6731 announce AS41184
-import:         from AS6731 accept ANY
-export:         to AS6731 announce AS41184
 import:         from AS20919 accept ANY
 export:         to AS20919 announce AS41184
 admin-c:        DUMY-RIPE
@@ -1455,7 +1453,6 @@ export:         to AS8075 announce AS-SOLID-IFC
 import:         from AS714 action pref=100; accept AS-APPLE
 export:         to AS714 announce AS-SOLID-IFC
 import:         from AS8470 action pref=100; accept AS-MACOMNET
-export:         to AS8470 announce AS-SOLID-IFC
 mp-import:      afi ipv6.unicast from AS9002 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS9002 announce AS-SOLID-IFC
 mp-import:      afi ipv6.unicast from AS31261 action pref=100; accept ANY
@@ -2391,16 +2388,12 @@ export:         to AS3216 announce AS56619
 import:         from AS3216 accept ANY
 export:         to AS25227 announce AS56619
 import:         from AS25227 accept ANY
-export:         to AS20485 announce AS56619
-import:         from AS20485 accept ANY
 export:         to AS9049 announce AS56619
 import:         from AS9049 accept ANY
 export:         to AS31195 announce AS56619
 import:         from AS31195 accept ANY
 export:         to AS31163 announce AS56619
 import:         from AS31163 accept ANY
-export:         to AS25159 announce AS56619
-import:         from AS25159 accept ANY
 export:         to AS20632 announce AS56619
 import:         from AS20632 accept ANY
 export:         to AS49724 announce AS56619
@@ -2667,7 +2660,6 @@ as-name:        REA-AS
 org:            ORG-PRUO1-RIPE
 export:         to AS8595 announce AS57867
 import:         from AS8595 accept ANY
-export:         to AS8595 announce AS57867
 import:         from AS29226 accept ANY
 export:         to AS29226 announce AS57867
 import:         from AS3267 accept ANY

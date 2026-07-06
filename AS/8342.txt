@@ -21,7 +21,6 @@ export:         to AS3267 announce AS-RT
 import:         from AS12389 195.161.4.138 at 195.161.1.30 action pref=500; accept AS-ROSTELECOM
 import:         from AS12389 213.59.5.110 at 195.161.1.30 action pref=500; accept AS-ROSTELECOM
 import:         from AS12389 188.254.8.153 at 195.161.1.27 action pref=500; accept AS-ROSTELECOM
-export:         to AS12389 announce AS-RT
 import:         from AS15169 193.232.244.232 at 195.161.1.30 action pref=500; accept AS-GOOGLE
 export:         to AS15169 announce AS-RT
 import:         from AS50952 178.18.224.100 at 195.161.1.141 action pref=500; accept AS-DATAIX
@@ -74,7 +73,6 @@ mp-export:      afi ipv6.unicast to AS12389 announce AS-RT-IPV6
 mp-import:      afi ipv6.unicast from AS12389 2a01:620:1:200a::1 at 195.161.1.30 action pref=500; accept AS-ROSTELECOM
 mp-import:      afi ipv6.unicast from AS12389 2a01:620:1:200e::1 at 195.161.1.30 action pref=500; accept AS-ROSTELECOM
 mp-import:      afi ipv6.unicast from AS12389 2a01:620:1:201c::1 at 195.161.1.27 action pref=500; accept AS-ROSTELECOM
-mp-export:      afi ipv6.unicast to AS12389 announce AS-RT-IPV6
 mp-import:      afi ipv6.unicast from AS50952 2a03:5f80:4::224:100 at 195.161.1.141 action pref=500; accept AS-DATAIX6
 mp-import:      afi ipv6.unicast from AS50952 2a03:5f80:4::227:100 at 195.161.1.141 action pref=500; accept AS-DATAIX6
 mp-export:      afi ipv6.unicast to AS50952 announce AS-RT-IPV6

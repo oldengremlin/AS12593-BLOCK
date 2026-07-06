@@ -21,8 +21,6 @@ import:         from AS16302 action pref=100; accept ANY
 export:         to AS16302 announce AS-HOSTKEYBV
 import:         from AS5405 action pref=100; accept ANY
 export:         to AS5405 announce AS-HOSTKEYBV
-import:         from AS6677 action pref=100; accept ANY
-export:         to AS6677 announce AS-HOSTKEYBV
 import:         from AS1200 action pref=150; accept AS1200
 export:         to AS1200 announce AS-HOSTKEYBV
 import:         from AS6777 action pref=150; accept ANY
@@ -96,7 +94,6 @@ mp-export:      afi ipv6.unicast to AS16302 announce AS-HOSTKEYBV
 mp-import:      afi ipv6.unicast from AS1200 action pref=150; accept AS1200
 mp-export:      afi ipv6.unicast to AS1200 announce AS-HOSTKEYBV
 mp-import:      afi ipv6.unicast from AS1200 action pref=150; accept ANY
-mp-export:      afi ipv6.unicast to AS1200 announce AS-HOSTKEYBV
 mp-import:      afi ipv6.unicast from AS39619 action pref=200; accept AS39619
 mp-export:      afi ipv6.unicast to AS39619 announce ANY
 admin-c:        DUMY-RIPE

@@ -12,11 +12,9 @@ import:         from AS20485 217.150.47.45 at 217.150.47.46 action pref=100; acc
 export:         to AS20485 217.150.47.45 at 217.150.47.46 announce AS-VTT-V
 import:         from AS20485 217.150.46.214 at 217.150.46.213 action pref=100; accept { 0.0.0.0/0 }
 export:         to AS20485 217.150.46.214 at 217.150.46.213 announce AS-VTT-V
-mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-VTT-V
 import:         from AS20485 217.150.50.114 at 217.150.50.113 action pref=100; accept ANY
 export:         to AS20485 217.150.50.114 at 217.150.50.113 announce AS-VTT-A
-mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-VTT-A
 import:         from AS9049 action pref=200; accept AS-ERTH
 export:         to AS9049 announce AS-VTT
@@ -26,12 +24,8 @@ import:         from AS9111 action pref=200; accept AS9111 { 212.193.32.0/19^19-
 export:         to AS9111 announce AS-VTT
 mp-import:      afi ipv6.unicast from AS9111 action pref=200; accept AS9111
 mp-export:      afi ipv6.unicast to AS9111 announce AS-VTT
-import:         from AS9049 action pref=200; accept AS-ERTH
-export:         to AS9049 announce AS-VTT
 import:         from AS198778 action pref=200; accept AS-EROS { 91.246.24.0/24 }
 export:         to AS198778 announce ANY
-import:         from AS58084 action pref=200; accept AS58084 { 37.221.184.0/21^21-24 }
-export:         to AS58084 announce ANY
 import:         from AS58084 action pref=200; accept AS58084 { 37.221.184.0/21^21-24 }
 export:         to AS58084 announce ANY
 org:            ORG-CJSC19-RIPE

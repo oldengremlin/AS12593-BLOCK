@@ -15,8 +15,6 @@ mp-import:      afi ipv6.unicast from AS3491 accept ANY
 mp-export:      afi ipv6.unicast to AS3491 announce AS-NETASSIST
 import:         from AS3356 action pref=100; accept ANY
 export:         to AS3356 announce AS-NETASSIST
-mp-import:      afi ipv6.unicast from AS2914 accept ANY
-mp-export:      afi ipv6.unicast to AS2914 announce AS-NETASSIST
 import:         from AS6695 action pref=20; accept AS-DECIX
 export:         to AS6695 announce AS-NETASSIST
 mp-import:      afi ipv6.unicast from AS6695 accept AS-DECIX
@@ -872,7 +870,6 @@ mp-export:      afi ipv6.unicast to AS214022 announce ANY
 mp-import:      afi ipv6.unicast from AS214161 action pref=100; accept as214161
 mp-export:      afi ipv6.unicast to AS214161 announce ANY
 mp-import:      afi ipv6.unicast from AS214205 action pref=100; accept AS214205:AS-ZVSHOSTING
-mp-export:      afi ipv6.unicast to AS214205 announce ANY
 mp-import:      afi ipv6.unicast from AS214675 action pref=100; accept AS214675:AS-STARLAMP
 mp-export:      afi ipv6.unicast to AS214675 announce ANY
 mp-import:      afi ipv6.unicast from AS214871 action pref=100; accept AS214871

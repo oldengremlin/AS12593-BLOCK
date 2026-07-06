@@ -72,7 +72,6 @@ mp-export:      afi ipv6.unicast to AS15169 announce AS-NODEX
 mp-import:      afi ipv6.unicast from AS6939 action pref=130; med=7; accept AS-HURRICANE
 mp-export:      afi ipv6.unicast to AS6939 announce AS-NODEX
 mp-import:      afi ipv6.unicast from AS714 action pref=130; med=7; accept AS-APPLE
-export:         to AS714 announce AS-NODEX
 mp-import:      afi ipv6.unicast from AS8075 action pref=130; med=7; accept AS-MICROSOFT
 mp-export:      afi ipv6.unicast to AS8075 announce AS-NODEX
 mp-import:      afi ipv6.unicast from AS13335 action pref=130; med=7; accept AS-CLOUDFLARE
@@ -88,7 +87,6 @@ export:         to AS13002 announce AS-NODEX
 import:         from AS13238 action pref=130; med=6; accept AS-YANDEX
 export:         to AS13238 announce AS-NODEX
 import:         from AS15169 action pref=130; med=6; accept AS-GOOGLE
-export:         to AS15169 announce AS-NODEX
 import:         from AS20807 action pref=130; med=6; accept AS-CREDOLINK
 export:         to AS20807 announce AS-NODEX
 import:         from AS25408 action pref=130; med=6; accept AS-WestCallSPB
@@ -110,9 +108,7 @@ export:         to AS3267 announce AS-NODEX
 import:         from AS50952 action pref=120; med=6; accept ANY
 export:         to AS50952 announce AS-NODEX
 import:         from AS15169 action pref=120; med=6; accept AS-GOOGLE
-export:         to AS15169 announce AS-NODEX
 mp-import:      afi ipv6.unicast from AS15169 action pref=120; med=6; accept AS-GOOGLE
-mp-export:      afi ipv6.unicast to AS15169 announce AS-NODEX
 import:         from AS208954 action pref=50; accept AS-UPITERTELECOM
 export:         to AS208954 announce ANY
 admin-c:        DUMY-RIPE

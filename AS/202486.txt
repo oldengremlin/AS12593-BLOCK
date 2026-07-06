@@ -10,7 +10,6 @@ descr:          +
 descr:          +--- Mobile TeleSystems PJSC --------------------------------------------+
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-SKYTELECOM_TSK
-descr:          +
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-SKYTELECOM_TSK
 mp-import:      afi ipv6.unicast from AS12389 accept ANY
@@ -18,13 +17,11 @@ mp-export:      afi ipv6.unicast to AS12389 announce AS-SKYTELECOM_TSK
 descr:          +--- SEA-IX -------------------------------------------------------------+
 import:         from AS59428 action pref=100; accept ANY
 export:         to AS59428 announce AS-SKYTELECOM_TSK
-descr:          +
 descr:          +--- MSK-IX -------------------------------------------------------------+
 import:         from AS8631 action pref=100; accept ANY
 export:         to AS8631 announce AS-SKYTELECOM_TSK
 mp-import:      afi ipv6.unicast from AS8631 accept ANY
 mp-export:      afi ipv6.unicast to AS8631 announce AS-SKYTELECOM_TSK
-descr:          +
 descr:          +--- SKYTELECOM ---------------------------------------------------------+
 mp-import:      afi ipv6 from AS207954 accept AS207954
 mp-export:      afi ipv6 to AS207954 announce ANY

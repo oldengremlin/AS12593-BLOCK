@@ -183,7 +183,6 @@ members:        AS-DataFort
 members:        AS-DELFINTELECOM
 members:        AS-DemoAltegro
 members:        AS-DEPO40
-members:        AS-DemoAltegro
 members:        AS-DIANET
 members:        AS-DIDI
 members:        AS-DELFIN-TELECOM
@@ -315,7 +314,6 @@ members:        AS-MGL6
 members:        AS-MILECOM
 members:        AS-MIRAN
 members:        AS-MIRTELECOM
-members:        AS-MLINE
 members:        AS-MLINE
 members:        AS-MNOGOBYTE
 members:        AS-MOBILON
@@ -569,7 +567,6 @@ members:        AS9177
 members:        AS10099
 members:        AS12418
 members:        AS12770
-members:        AS12772
 members:        AS12772
 members:        AS13105
 members:        AS15632
@@ -942,7 +939,6 @@ members:        AS198592
 members:        AS198639
 members:        AS198670
 members:        AS198715
-members:        AS198716
 members:        AS198757
 members:        AS198791
 members:        AS198832
@@ -1220,11 +1216,9 @@ import:         from AS20485 217.150.47.45 at 217.150.47.46 action pref=100; acc
 export:         to AS20485 217.150.47.45 at 217.150.47.46 announce AS-VTT-V
 import:         from AS20485 217.150.46.214 at 217.150.46.213 action pref=100; accept { 0.0.0.0/0 }
 export:         to AS20485 217.150.46.214 at 217.150.46.213 announce AS-VTT-V
-mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-VTT-V
 import:         from AS20485 217.150.50.114 at 217.150.50.113 action pref=100; accept ANY
 export:         to AS20485 217.150.50.114 at 217.150.50.113 announce AS-VTT-A
-mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-VTT-A
 import:         from AS9049 action pref=200; accept AS-ERTH
 export:         to AS9049 announce AS-VTT
@@ -1234,12 +1228,8 @@ import:         from AS9111 action pref=200; accept AS9111 { 212.193.32.0/19^19-
 export:         to AS9111 announce AS-VTT
 mp-import:      afi ipv6.unicast from AS9111 action pref=200; accept AS9111
 mp-export:      afi ipv6.unicast to AS9111 announce AS-VTT
-import:         from AS9049 action pref=200; accept AS-ERTH
-export:         to AS9049 announce AS-VTT
 import:         from AS198778 action pref=200; accept AS-EROS { 91.246.24.0/24 }
 export:         to AS198778 announce ANY
-import:         from AS58084 action pref=200; accept AS58084 { 37.221.184.0/21^21-24 }
-export:         to AS58084 announce ANY
 import:         from AS58084 action pref=200; accept AS58084 { 37.221.184.0/21^21-24 }
 export:         to AS58084 announce ANY
 org:            ORG-CJSC19-RIPE
@@ -1497,7 +1487,6 @@ import:         from AS16285 action pref=50; accept AS-UMN-SRG6
 import:         from AS16285 action pref=50; accept AS-UMN-PYT6
 import:         from AS16285 action pref=50; accept AS-UMN-PRM6
 import:         from AS16285 action pref=50; accept AS-UMN-YAL6
-import:         from AS16285 action pref=50; accept AS-UMN-ISH6
 import:         from AS16300 action pref=50; accept AS-INTERTAX
 import:         from AS16345 action pref=50; accept AS16345
 import:         from AS20533 action pref=50; accept AS-SAKHTEL
@@ -2981,8 +2970,6 @@ export:         to AS212747 announce ANY
 export:         to AS213067 announce ANY
 export:         to AS213334 announce ANY
 export:         to AS212022 announce ANY
-export:         to AS198716 announce ANY
-export:         to AS198817 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -3102,7 +3089,6 @@ import:         from AS51574 action pref=110; accept AS51574;
 import:         from AS44130 action pref=110; accept AS44130;
 import:         from AS196986 action pref=110; accept AS196986;
 import:         from AS51506 action pref=110; accept AS51506;
-import:         from AS51574 action pref=110; accept AS51574;
 import:         from AS51583 action pref=110; accept AS51583;
 import:         from AS48858 action pref=110; accept AS-MILECOM;
 import:         from AS47144 action pref=110; accept AS47144;
@@ -3263,7 +3249,6 @@ export:         to AS47530 announce ANY;
 export:         to AS44436 announce ANY;
 export:         to AS35711 announce ANY;
 export:         to AS47651 announce ANY;
-export:         to AS31357 announce ANY;
 export:         to AS48032 announce ANY;
 export:         to AS9177 announce ANY;
 export:         to AS8510 announce ANY;
@@ -3303,7 +3288,6 @@ export:         to AS51574 announce ANY;
 export:         to AS44130 announce ANY;
 export:         to AS196986 announce ANY;
 export:         to AS51506 announce ANY;
-export:         to AS51574 announce ANY;
 export:         to AS51583 announce ANY;
 export:         to AS49996 announce ANY;
 export:         to AS48858 announce ANY;
@@ -3315,7 +3299,6 @@ export:         to AS50001 announce ANY;
 export:         to AS197445 announce ANY;
 export:         to AS6683 announce ANY;
 export:         to AS52175 announce ANY;
-export:         to AS42187 announce ANY;
 export:         to AS15880 announce ANY;
 export:         to AS56341 announce ANY;
 export:         to AS39701 announce ANY;
@@ -3335,7 +3318,6 @@ export:         to AS56957 announce ANY;
 export:         to AS197880 announce ANY;
 export:         to AS197482 announce ANY;
 export:         to AS57575 announce ANY;
-export:         to AS43314 announce ANY;
 export:         to AS51245 announce ANY;
 export:         to AS56776 announce ANY;
 export:         to AS8279 announce ANY;
@@ -3493,7 +3475,6 @@ import:         from AS44572 action pref=100; accept AS44572
 import:         from AS41733 action pref=100; accept AS41733
 import:         from AS51592 action pref=100; accept AS51592
 import:         from AS34875 action pref=100; accept AS34875
-import:         from AS198832 action pref=100; accept AS198832
 import:         from AS201296 action pref=100; accept AS201296
 import:         from AS60139 action pref=100; accept AS60139
 export:         to AS20485 announce AS-STTK
@@ -3697,8 +3678,6 @@ import:         from AS59557 action pref=100; accept AS59557
 export:         to AS59557 announce ANY
 import:         from AS199427 action pref=100; accept AS199427
 export:         to AS199427 announce ANY
-import:         from AS196991 action pref=100; accept AS196991
-export:         to AS196991 announce ANY
 import:         from AS198076 action pref=100; accept AS-LITEGROUP
 export:         to AS198076 announce ANY
 import:         from AS197349 action pref=100; accept AS197349
@@ -3874,7 +3853,6 @@ export:         to AS-MKS-CHEL announce ANY
 export:         to AS-S-INFORM announce ANY
 export:         to AS47972 announce ANY
 export:         to AS48160 announce ANY
-export:         to AS41704 announce ANY
 export:         to AS47733 announce ANY
 export:         to AS48527 announce ANY
 export:         to AS12418 announce ANY
@@ -4100,7 +4078,6 @@ export:         to AS35422 announce AS-ELECTROCOM
 import:         from AS49813 action pref=100; accept AS-INN
 export:         to AS49813 announce AS-ELECTROCOM
 import:         from AS35422 action pref=100; accept AS-MASTERHOST
-export:         to AS35422 announce AS-ELECTROCOM
 import:         from AS28809 action pref=100; accept ANY
 export:         to AS28809 announce AS-ELECTROCOM
 import:         from AS50952 action pref=100; accept AS-DATAIX
@@ -4356,7 +4333,6 @@ import:         from AS47924 action pref=40; accept AS47924
 import:         from AS34017 action pref=40; accept AS34017
 import:         from AS62143 action pref=40; accept AS62143
 import:         from AS21184 action pref=40; accept AS21184
-import:         from AS57898 action pref=40; accept AS57898
 import:         from AS44674 action pref=40; accept AS44674
 export:         to AS20485 announce AS49301
 export:         to AS35304 announce ANY
@@ -4389,7 +4365,6 @@ export:         to AS47924 announce ANY
 export:         to AS34017 announce ANY
 export:         to AS62143 announce ANY
 export:         to AS21184 announce ANY
-export:         to AS57898 announce ANY
 export:         to AS44674 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -4557,11 +4532,9 @@ org:            ORG-CJSC19-RIPE
 import:         from AS5543 action pref=100; accept ANY
 export:         to AS5543 announce AS8485
 import:         from AS5543 action pref=200; accept ANY
-export:         to AS5543 announce AS8485
 mp-import:      afi ipv6.unicast from AS5543 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS5543 announce AS8485
 mp-import:      afi ipv6.unicast from AS5543 action pref=200; accept ANY
-mp-export:      afi ipv6.unicast to AS5543 announce AS8485
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED

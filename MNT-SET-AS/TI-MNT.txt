@@ -169,6 +169,34 @@ source:         RIPE
 
 
 
+as-set:         AS-surguttel
+descr:          ASes routed by Surguttel
+members:        AS15599
+members:        AS198350
+members:        AS28899
+members:        AS30855
+members:        AS39428
+members:        AS41822
+members:        AS43912
+members:        AS49339
+members:        AS49361
+members:        AS49533
+members:        AS51535
+members:        AS57754
+members:        AS59559
+members:        AS21353
+members:        AS199576
+members:        AS13105
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         ripe@ti.ru
+mnt-by:         TI-MNT
+created:        2007-09-20T10:49:57Z
+last-modified:  2016-03-03T13:27:12Z
+source:         RIPE
+
+
+
 as-set:         AS-SYNTERRA-UG
 descr:          SYNTERRA-UG
 members:        AS47218
@@ -277,7 +305,6 @@ members:        AS199576
 members:        AS-MLINK
 members:        AS28899
 members:        AS49361
-members:        AS12418
 members:        AS8630
 members:        AS-DELTELECOM
 members:        AS201511
@@ -352,34 +379,6 @@ notify:         ripe-notify@ti.ru
 
 
 
-as-set:         AS-surguttel
-descr:          ASes routed by Surguttel
-members:        AS15599
-members:        AS198350
-members:        AS28899
-members:        AS30855
-members:        AS39428
-members:        AS41822
-members:        AS43912
-members:        AS49339
-members:        AS49361
-members:        AS49533
-members:        AS51535
-members:        AS57754
-members:        AS59559
-members:        AS21353
-members:        AS199576
-members:        AS13105
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-notify:         ripe@ti.ru
-mnt-by:         TI-MNT
-created:        2007-09-20T10:49:57Z
-last-modified:  2016-03-03T13:27:12Z
-source:         RIPE
-
-
-
 aut-num:        AS12714
 as-name:        MEGAFON-AS
 descr:          Moscow, Russia
@@ -388,7 +387,6 @@ org:            ORG-OM1-RIPE
 import:         from AS31133 action pref=200; accept ANY
 export:         to AS31133 announce AS-TI^+
 import:         from AS31133 action pref=400; accept AS-MF-IX
-export:         to AS31133 announce AS-TI^+
 import:         from AS43319 action pref=700; accept AS43319
 export:         to AS43319 announce ANY
 import:         from AS38978 action pref=700; accept AS38978
@@ -403,7 +401,6 @@ import:         from AS62309 action pref=700; accept AS62309
 export:         to AS62309 announce ANY
 import:         from AS47218 action pref=700; accept AS47218
 export:         to AS47218 announce ANY
-import:         from AS38978 action pref=700; accept AS38978
 export:         to AS38978 announce { 0.0.0.0/0 }
 import:         from AS41275 action pref=700; accept AS-TUT
 export:         to AS41275 announce ANY
@@ -559,7 +556,6 @@ import:         from AS39134 action pref=160; accept AS-UNITEDNET
 import:         from AS29076 action pref=160; accept AS-CITYTELECOM
 import:         from AS39221 action pref=160; accept AS39221
 import:         from AS203921 action pref=160; accept AS-ELBA-IX-ROUTESERVER
-export:         to AS8631 announce AS-GARS
 export:         to AS13238 announce AS-GARS
 export:         to AS39134 announce AS-GARS
 export:         to AS29076 announce AS-GARSNW
@@ -695,9 +691,7 @@ import:         from AS206850 action pref=250; accept AS206850
 import:         from AS51680 action pref=250; accept AS51680
 import:         from AS41122 action pref=250; accept AS41122
 import:         from AS58084 action pref=250; accept AS58084
-import:         from AS44900 action pref=250; accept AS44900
 import:         from AS201018 action pref=250; accept AS201018
-import:         from AS60062 action pref=250; accept AS-3DATA
 import:         from AS202857 action pref=250; accept AS202857
 import:         from AS43287 action pref=250; accept AS-VITNET
 import:         from AS42628 action pref=250; accept AS42628
@@ -740,7 +734,6 @@ import:         from AS56537 action pref=250; accept AS56537
 import:         from AS47470 action pref=250; accept AS47470
 import:         from AS216214 action pref=250; accept AS216214
 import:         from AS39678 action pref=250; accept AS39678
-import:         from AS210914 action pref=250; accept AS210914
 import:         from AS44102 action pref=250; accept AS44102
 import:         from AS197379 action pref=250; accept AS197379
 import:         from AS203203 action pref=250; accept AS203203
@@ -876,7 +869,6 @@ export:         to AS206850 announce ANY
 export:         to AS51680 announce ANY
 export:         to AS41122 announce ANY
 export:         to AS58084 announce ANY
-export:         to AS44900 announce ANY
 export:         to AS201018 announce ANY
 export:         to AS-3DATA announce ANY
 export:         to AS202857 announce ANY
@@ -912,7 +904,6 @@ export:         to AS41388 announce ANY
 export:         to AS211532 announce ANY
 export:         to AS211247 announce ANY
 export:         to AS211076 announce ANY
-export:         to AS210914 announce ANY
 export:         to AS50024 announce ANY
 export:         to AS34910 announce ANY
 export:         to AS212764 announce ANY

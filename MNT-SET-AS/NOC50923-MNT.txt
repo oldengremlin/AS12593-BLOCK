@@ -82,15 +82,12 @@ export:         to AS45102 announce AS-METRO-SET
 import:         from AS210756 accept AS210756
 export:         to AS210756 announce AS-METRO-SET
 import:         from AS31500 accept AS-GLOBAL-NET
-export:         to AS31500 announce AS-METRO-SET
 import:         from AS47541 accept AS47541
 export:         to AS47541 announce AS-METRO-SET
 import:         from AS47542 accept AS47542
 export:         to AS47542 announce AS-METRO-SET
 import:         from AS43213 accept AS-EKTROUTESERVER
 export:         to AS43213 announce AS-METRO-SET
-import:         from AS210756 accept AS210756
-export:         to AS210756 announce AS-METRO-SET
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-METRO-SET
 import:         from AS42403 accept AS-NSKROUTESERVER
@@ -102,7 +99,6 @@ export:         to AS8075 announce AS-METRO-SET
 import:         from AS714 accept AS714
 export:         to AS714 announce AS-METRO-SET
 import:         from AS20940 accept AS20940
-export:         to AS20940 announce AS-METRO-SET
 import:         from AS49544 accept AS49544
 export:         to AS49544 announce AS-METRO-SET
 import:         from AS16276 accept AS16276
@@ -110,22 +106,11 @@ export:         to AS16276 announce AS-METRO-SET
 import:         from AS52005 accept ANY
 export:         to AS52005 announce AS-METRO-SET
 import:         from AS16509 accept AS-AMAZON
-export:         to AS16509 announce AS-METRO-SET
-import:         from AS8075 accept AS-MICROSOFT
-export:         to AS8075 announce AS-METRO-SET
 import:         from AS6507 accept AS-RIOT
 export:         to AS6507 announce AS-METRO-SET
-import:         from AS714 accept AS714
-export:         to AS714 announce AS-METRO-SET
-import:         from AS20940 accept AS20940
-export:         to AS20940 announce AS-METRO-SET
-import:         from AS49544 accept AS49544
-export:         to AS49544 announce AS-METRO-SET
 import:         from AS6777 accept ANY
 export-via:     AS6777 to AS-ANY announce AS-METRO-SET
 export:         to AS6777 announce AS-METRO-SET
-import:         from AS714 accept AS714
-export:         to AS714 announce AS-METRO-SET
 import:         from AS25172 accept AS-SOLIX-RS
 export:         to AS25172 announce AS-METRO-SET
 import:         from AS13094 accept AS-MILECOM-RS
@@ -179,9 +164,6 @@ mp-export:      afi ipv6.unicast to AS16276 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS210756 accept AS210756
 mp-export:      afi ipv6.unicast to AS210756 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS31500 accept AS-GLOBAL-NET
-mp-export:      afi ipv6.unicast to AS31500 announce AS-METRO-SET6
-mp-import:      afi ipv6.unicast from AS13335 accept AS13335
-mp-export:      afi ipv6.unicast to AS13335 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS43213 accept AS-EKTROUTESERVER
 mp-export:      afi ipv6.unicast to AS43213 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS50952 accept AS-DATAIX
@@ -190,36 +172,18 @@ mp-import:      afi ipv6.unicast from AS42403 accept ANY
 mp-export:      afi ipv6.unicast to AS42403 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS6695 accept AS-DECIX-V6
 mp-export:      afi ipv6.unicast to AS6695 announce AS-METRO-SET6
-mp-import:      afi ipv6.unicast from AS16509 accept AS-AMAZON
-mp-export:      afi ipv6.unicast to AS16509 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS8075 accept AS-MICROSOFT
 mp-export:      afi ipv6.unicast to AS8075 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS714 accept AS714
 mp-export:      afi ipv6.unicast to AS714 announce AS-METRO-SET6
-mp-import:      afi ipv6.unicast from AS20940 accept AS-AKAMAI
-mp-export:      afi ipv6.unicast to AS20940 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS49544 accept AS49544
 mp-export:      afi ipv6.unicast to AS49544 announce AS-METRO-SET6
-mp-import:      afi ipv6.unicast from AS16276 accept AS16276
-mp-export:      afi ipv6.unicast to AS16276 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS52005 accept ANY
 mp-export:      afi ipv6.unicast to AS52005 announce AS-METRO-SET6
-mp-import:      afi ipv6.unicast from AS8075 accept AS-MICROSOFT
-mp-export:      afi ipv6.unicast to AS8075 announce AS-METRO-SET6
-mp-import:      afi ipv6.unicast from AS714 accept AS714
-mp-export:      afi ipv6.unicast to AS714 announce AS-METRO-SET6
-mp-import:      afi ipv6.unicast from AS20940 accept AS-AKAMAI
-mp-export:      afi ipv6.unicast to AS20940 announce AS-METRO-SET6
-mp-import:      afi ipv6.unicast from AS49544 accept AS49544
-mp-export:      afi ipv6.unicast to AS49544 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS6507 accept AS6507
 mp-export:      afi ipv6.unicast to AS6507 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS6777 accept ANY
 mp-export:      afi ipv6.unicast to AS6777 announce AS-METRO-SET6
-mp-import:      afi ipv6.unicast from AS714 accept AS714
-mp-export:      afi ipv6.unicast to AS714 announce AS-METRO-SET6
-mp-import:      afi ipv6.unicast from AS16276 accept AS16276
-mp-export:      afi ipv6.unicast to AS16276 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS25172 accept AS-SOLIX-RS
 mp-export:      afi ipv6.unicast to AS25172 announce AS-METRO-SET6
 mp-import:      afi ipv6.unicast from AS48061 accept AS-RUTUBE

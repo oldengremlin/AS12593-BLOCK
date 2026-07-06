@@ -20,8 +20,6 @@ import:         from AS50817 accept ANY
 export:         to AS50817 announce AS206810:AS-CUSTOMERS
 import:         from AS59539 accept ANY
 export:         to AS59539 announce AS206810:AS-CUSTOMERS
-import:         from AS8631 accept ANY
-export:         to AS8631 announce AS206810:AS-CUSTOMERS
 import:         from AS213694 at cr1-60 accept AS213694
 export:         to AS213694 at cr1-60 announce ANY
 import:         from AS215503 accept AS215503
@@ -74,11 +72,9 @@ import:         from AS56915 accept AS56915
 export:         to AS56915 announce { 0.0.0.0/0 }
 import:         from AS57164 at cr1-60 accept AS-HELITELE
 export:         to AS57164 at cr1-60 announce ANY
-import:         from AS57164 at cr1-60 accept AS-HELITELE
 export:         to AS57164 at cr1-60 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS57164 at cr1-89 accept AS-HELITELE
 export:         to AS57164 at cr1-89 announce ANY
-import:         from AS57164 at cr1-89 accept AS-HELITELE
 export:         to AS57164 at cr1-89 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS57460 accept AS-LINKNET
 export:         to AS57460 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
@@ -88,7 +84,6 @@ import:         from AS59392 accept AS59392
 export:         to AS59392 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS59815 accept AS-TRKMETRO
 export:         to AS59815 announce ANY
-import:         from AS59815 accept AS-TRKMETRO
 export:         to AS59815 announce { 0.0.0.0/0 }
 import:         from AS59867 accept AS59867
 export:         to AS59867 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS

@@ -47,8 +47,6 @@ import:         from AS48193 action pref=150; accept as-piter-ix-fra
 export:         to AS48193 announce AS-MOSLINE
 import:         from AS50952 action pref=150; accept AS-DATAIX
 export:         to AS50952 announce AS-MOSLINE
-import:         from AS15169 action pref=170; accept AS-GOOGLE
-export:         to AS15169 announce AS-MOSLINE
 import:         from AS196667 action pref=170; accept AS196667
 export:         to AS196667 announce AS-MOSLINE
 import:         from AS12841 action pref=170; accept AS12841
@@ -79,8 +77,6 @@ mp-import:      afi ipv6.unicast from AS15169 action pref=100; accept AS-GOOGLE
 mp-export:      afi ipv6.unicast to AS15169 announce AS-MOSLINE
 mp-import:      afi ipv6.unicast from AS57976 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS57976 announce AS-MOSLINE
-mp-import:      afi ipv6.unicast from AS15169 action pref=100; accept AS-GOOGLE
-mp-export:      afi ipv6.unicast to AS15169 announce AS-MOSLINE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED

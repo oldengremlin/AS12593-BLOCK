@@ -25,11 +25,51 @@ source:         RIPE
 
 
 
+as-set:         as-megamax
+descr:          LLC MegaMax
+members:        AS39289
+descr:          MEGAMAX-AS
+members:        AS57045
+descr:          NGS
+members:        AS42940
+descr:          UNITLINE_NNG_NET1
+members:        AS48733
+descr:          OKBM-AFRIKANTOV-AS
+members:        AS59535
+descr:          Orange_Group_HH-AS
+members:        AS62444
+descr:          LUIS-NN-AS
+members:        AS201377
+members:        AS198842
+descr:          Product-Service-AS
+members:        AS199459
+members:        AS28900
+descr:          ATLASNN-AS
+members:        AS8744
+descr:          MegaMax-AS
+members:        AS42178
+descr:          ONETEK-AS
+members:        AS206239
+descr:          PIONIER-IX
+members:        AS209676
+descr:          ECMZ-AS
+members:        AS31008
+descr:          ENIN
+members:        AS-NIS
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MEGAMAX-MNT
+mnt-by:         UNITLINE
+created:        2014-02-28T08:56:11Z
+last-modified:  2022-08-31T10:05:57Z
+source:         RIPE
+
+
+
 as-set:         AS-NIS
 descr:          Set of Nizhniy Novgorod clients
 descr:          ---------------------------------
 descr:          ru.unitline
-descr:          ---------------------------------
 members:        AS8744
 members:        AS61039
 members:        AS198932
@@ -46,6 +86,18 @@ notify:         ripe-db@vconnect.ru
 mnt-by:         UNITLINE
 created:        1970-01-01T00:00:00Z
 last-modified:  2019-08-06T10:57:01Z
+source:         RIPE
+
+
+
+as-set:         as-set-kgic
+members:        AS42819
+members:        AS42771
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         UNITLINE
+created:        2016-03-26T06:07:38Z
+last-modified:  2018-10-15T12:33:38Z
 source:         RIPE
 
 
@@ -70,7 +122,6 @@ as-set:         AS-STNN
 descr:          Autonomous Systems of Stattelecom PF
 descr:          ------------------------------------
 descr:          StartTelecom N.Novgorod
-descr:          ------------------------------------
 members:        AS47614
 members:        AS51221
 members:        AS52222
@@ -91,7 +142,6 @@ as-set:         AS-STSHPD
 descr:          Autonomous Systems of StartTelecom ShPD
 descr:          ---------------------------------------
 descr:          StartTelecom
-descr:          ---------------------------------------
 members:        AS8744
 members:        AS57573
 members:        AS-EPL
@@ -113,7 +163,6 @@ admin-c:        DUMY-RIPE
 descr:          ---------------------------------
 descr:          AS Mediaseti
 members:        AS34580
-descr:          ---------------------------------
 mnt-by:         UNITLINE
 created:        2016-06-01T07:49:24Z
 last-modified:  2019-08-06T12:12:11Z
@@ -125,7 +174,6 @@ as-set:         AS-WIMAX
 descr:          Autonomous Systems of our clients
 descr:          ---------------------------------
 descr:          StartTelecom
-descr:          ---------------------------------
 members:        AS57045
 members:        AS8744
 members:        AS34452
@@ -248,59 +296,6 @@ admin-c:        DUMY-RIPE
 mnt-by:         UNITLINE
 created:        2008-08-07T12:10:08Z
 last-modified:  2008-08-07T12:10:08Z
-source:         RIPE
-
-
-
-as-set:         as-megamax
-descr:          LLC MegaMax
-members:        AS39289
-descr:          MEGAMAX-AS
-members:        AS57045
-descr:          NGS
-members:        AS42940
-descr:          UNITLINE_NNG_NET1
-members:        AS48733
-descr:          OKBM-AFRIKANTOV-AS
-members:        AS59535
-descr:          Orange_Group_HH-AS
-members:        AS62444
-descr:          LUIS-NN-AS
-members:        AS201377
-members:        AS198842
-descr:          Product-Service-AS
-members:        AS199459
-members:        AS28900
-descr:          ATLASNN-AS
-members:        AS8744
-descr:          MegaMax-AS
-members:        AS42178
-descr:          ONETEK-AS
-members:        AS206239
-descr:          PIONIER-IX
-members:        AS209676
-descr:          ECMZ-AS
-members:        AS31008
-descr:          ENIN
-members:        AS-NIS
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-mnt-by:         MEGAMAX-MNT
-mnt-by:         UNITLINE
-created:        2014-02-28T08:56:11Z
-last-modified:  2022-08-31T10:05:57Z
-source:         RIPE
-
-
-
-as-set:         as-set-kgic
-members:        AS42819
-members:        AS42771
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-mnt-by:         UNITLINE
-created:        2016-03-26T06:07:38Z
-last-modified:  2018-10-15T12:33:38Z
 source:         RIPE
 
 
@@ -674,7 +669,6 @@ mp-export:      afi ipv6.unicast to AS9009 announce AS-WIMAX
 mp-export:      afi ipv6.unicast to AS19151 announce AS-WIMAX
 mp-export:      afi ipv6.unicast to AS49544 announce AS-WIMAX
 mp-export:      afi ipv6.unicast to AS20773 announce AS-WIMAX
-mp-export:      afi ipv6.unicast to AS3327 announce AS-WIMAX
 mp-export:      afi ipv6.unicast to AS5430 announce AS-WIMAX
 mp-export:      afi ipv6.unicast to AS20940 announce AS-WIMAX
 mp-export:      afi ipv6.unicast to AS31400 announce AS-WIMAX
@@ -691,8 +685,6 @@ mp-import:      afi ipv6.unicast from AS56665 2001:7f8:1::a505:6665:1 accept AS-
 mp-export:      afi ipv6.unicast to AS6777 announce AS-WIMAX
 mp-export:      afi ipv6.unicast to AS24904 announce AS-WIMAX
 mp-export:      afi ipv6.unicast to AS6327 announce AS-WIMAX
-mp-export:      afi ipv6.unicast to AS44788 announce AS-WIMAX
-mp-export:      afi ipv6.unicast to AS56665 announce AS-WIMAX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         ripe-db@vconnect.ru

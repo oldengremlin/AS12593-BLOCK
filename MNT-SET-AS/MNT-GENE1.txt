@@ -17,7 +17,6 @@ aut-num:        AS31499
 as-name:        YCC-AS
 descr:          +-------------------------------------------------------
 descr:          | Upstream
-descr:          +-------------------------------------------------------
 descr:          -- iHome --
 import:         from AS25478 action pref=100; accept any
 export:         to AS25478 announce AS-MOTIV
@@ -30,9 +29,7 @@ export:         to AS31500 announce AS-MOTIV
 descr:          -- SVOLS --
 import:         from AS51028 action pref=100; accept any
 export:         to AS51028 announce AS-MOTIV
-descr:          +-------------------------------------------------------
 descr:          | Peering
-descr:          +-------------------------------------------------------
 import:         from AS5563 action pref=100; accept AS-URAL
 export:         to AS5563 announce AS-MOTIV
 import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
@@ -65,9 +62,7 @@ import:         from AS207353 action pref=100; accept AS207353
 export:         to AS207353 announce AS-MOTIV
 import:         from AS57629 action pref=100; accept AS57629
 export:         to AS57629 announce AS-MOTIV
-descr:          +-------------------------------------------------------
 descr:          | Clients
-descr:          +-------------------------------------------------------
 descr:          -- IZHTELEPORT --
 import:         from AS58310 action pref=100; accept{ 91.109.226.0/23 }
 export:         to AS58310 announce any

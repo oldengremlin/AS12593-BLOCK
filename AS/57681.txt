@@ -109,8 +109,6 @@ import:         from AS212211 action pref=100; accept {194.49.121.0/24}
 export:         to AS212211 announce ANY
 import:         from AS2122114 action pref=100; accept {176.100.252.0/24}
 export:         to AS212114 announce {0.0.0.0/0}
-import:         from AS48096 action pref=100; accept AS48096
-export:         to AS48096 announce ANY
 mp-import:      afi ipv6.unicast from AS8359 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS-SPDOP
 mp-import:      afi ipv6.unicast from AS35455 action pref=100; accept AS35455
