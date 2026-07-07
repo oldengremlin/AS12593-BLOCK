@@ -1,107 +1,67 @@
-aut-num:        AS200430
-as-name:        airee
-org:            ORG-WL109-RIPE
-descr:          ------------------------------------
-descr:          IPv4 RU01 Upstream RTCOMM
-import:         from AS8342 accept ANY
-export:         to AS8342 announce AS200430
-descr:          IPv4 RU14 Upstream VLV-IX
-import:         from AS48531 accept ANY
-export:         to AS48531 announce AS200430
-descr:          IPv4 RU10 Upstream SEA-IX
-import:         from AS59428 accept AS-KRD-RS
-export:         to AS59428 announce AS200430
-descr:          IPv4 RU05 Upstream RASCOM
-import:         from AS20764 accept ANY
-export:         to AS20764 announce AS200430
-descr:          IPv4 RU11 Upstream NSK-IX
-import:         from AS42403 accept AS-NSKROUTESERVER
-export:         to AS42403 announce AS200430
-descr:          IPv4 RU09 Upstream RETN
-import:         from AS9002 accept ANY
-export:         to AS9002 announce AS200430
-descr:          IPv4 RU06 Upstream Filanco
-import:         from AS29076 accept ANY
-export:         to AS29076 announce AS200430
-descr:          IPv4 US40 Upstream Hostkey
-import:         from AS395839 accept ANY
-export:         to AS395839 announce AS200430
-descr:          IPv4 RU08 Upstream EKT-IX
-import:         from AS43213 accept AS-EKTROUTESERVER
-export:         to AS43213 announce AS200430
-descr:          IPv4 UA20 Upstream DTEL-IX
-import:         from AS31210 accept AS-DTEL-IX
-export:         to AS31210 announce AS200430
-descr:          IPv4 BY22 Upstream Megadata
-import:         from AS206428 accept ANY
-export:         to AS206428 announce AS200430
-import:         from AS25372 accept ANY
-export:         to AS25372 announce AS200430
-descr:          IPv4 RU12 Upstream WEBRA RED-IX
-import:         from AS43097 accept ANY
-export:         to AS43097 announce AS200430
-descr:          IPv4 RU02 Upstream MSKIX
-import:         from AS8631 accept ANY
-export:         to AS8631 announce AS200430
-descr:          IPv6 RU01 Upstream RTCOMM
-mp-import:      afi ipv6.unicast from AS8342 accept ANY
-mp-export:      afi ipv6.unicast to AS8342 announce AS-WEBOGROUP-V6
-descr:          IPv6 RU02 Upstream MSK-IX
-mp-import:      afi ipv6.unicast from AS8631 accept ANY
-mp-export:      afi ipv6.unicast to AS8631 announce AS-WEBOGROUP-V6
-descr:          IPv6 RU05 Upstream RASCOM
-mp-import:      afi ipv6.unicast from AS20764 accept ANY
-mp-export:      afi ipv6.unicast to AS20764 announce AS-WEBOGROUP-V6
-descr:          IPv6 RU06 Upstream Filanco
-mp-import:      afi ipv6.unicast from AS29076 accept ANY
-mp-export:      afi ipv6.unicast to AS29076 announce AS-WEBOGROUP-V6
-descr:          IPv6 RU08 Upstream EKT-IX
-mp-import:      afi ipv6.unicast from AS43213 accept ANY
-mp-export:      afi ipv6.unicast to AS43213 announce AS-WEBOGROUP-V6
-descr:          IPv6 RU09 Upstream RETN
-mp-import:      afi ipv6.unicast from AS9002 accept ANY
-mp-export:      afi ipv6.unicast to AS9002 announce AS-WEBOGROUP-V6
-descr:          IPv6 RU11 Upstream NSK-IX
-mp-import:      afi ipv6.unicast from AS42403 accept ANY
-mp-export:      afi ipv6.unicast to AS42403 announce AS-WEBOGROUP-V6
-descr:          IPv6 RU12 Upstream WEBRA RED-IX
-mp-import:      afi ipv6.unicast from AS43097 accept ANY
-mp-export:      afi ipv6.unicast to AS43097 announce AS-WEBOGROUP-V6
-descr:          IPv6 RU14 Upstream VLV-IX
-mp-import:      afi ipv6.unicast from AS48531 accept ANY
-mp-export:      afi ipv6.unicast to AS48531 announce AS-WEBOGROUP-V6
-descr:          IPv6 UA20 Upstream DTEL-IX
-mp-import:      afi ipv6.unicast from AS31210 accept ANY
-mp-export:      afi ipv6.unicast to AS31210 announce AS-WEBOGROUP-V6
-descr:          IPv6 US40 Hostkey
-mp-import:      afi ipv6.unicast from AS395839 accept ANY
-mp-export:      afi ipv6.unicast to AS395839 announce AS-WEBOGROUP-V6
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         ru-webogroup-1-mnt
-created:        2015-07-03T13:52:36Z
-last-modified:  2019-01-21T00:39:45Z
-source:         RIPE
-
-as-num:         AS200430
-country:        RU
-as-name:        airee WEBO LLC
-
-organisation:   ORG-WL109-RIPE
-org-name:       WEBO LLC
-country:        RU
-org-type:       LIR
-address:        Dummy address for ORG-WL109-RIPE
-e-mail:         unread@ripe.net
-abuse-c:        AR32744-RIPE
-mnt-ref:        ru-webogroup-1-mnt
-mnt-by:         RIPE-NCC-HM-MNT
-mnt-by:         ru-webogroup-1-mnt
-mnt-ref:        RIPE-NCC-HM-MNT
-created:        2015-07-02T12:51:21Z
-last-modified:  2026-05-13T07:16:37Z
-source:         RIPE
-
-
+2026-07-08 01:32:07 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:32:07 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:32:07 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted

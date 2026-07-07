@@ -1,53 +1,67 @@
-as-set:         AS-ISP-MEGANET
-members:        AS-MEGA-NET-RU
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-mnt-by:         MNT-MEGANET-DN-UA
-mnt-by:         MNT-MEGA-NET-RU
-created:        2017-10-13T19:37:37Z
-last-modified:  2025-04-17T17:26:36Z
-source:         RIPE
-
-
-
-as-set:         AS-MEGA-NET-RU
-members:        AS-ISP-MEGANET
-members:        AS57460
-members:        AS197960
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-mnt-by:         MNT-MEGA-NET-RU
-created:        2018-02-07T19:09:32Z
-last-modified:  2025-04-17T17:25:58Z
-source:         RIPE
-
-
-
-aut-num:        AS197960
-as-name:        MEGANET
-org:            ORG-LLCS11-RIPE
-sponsoring-org: ORG-OAN1-RIPE
-import:         from AS44539 accept ANY
-export:         to AS44539 announce AS-MEGA-NET-RU
-import:         from AS201776 accept ANY
-export:         to AS201776 announce AS-MEGA-NET-RU
-import:         from AS206810 accept ANY
-export:         to AS206810 announce AS-MEGA-NET-RU
-import:         from AS50817 accept ANY
-export:         to AS50817 announce AS-MEGA-NET-RU
-import:         from AS49869 accept ANY
-export:         to AS49869 announce AS-MEGA-NET-RU
-import:         from AS57460 action pref=900; accept AS57460
-export:         to AS57460 announce ANY
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         MNT-MEGA-NET-RU
-mnt-by:         KOR4-MNT
-created:        2023-07-03T12:50:45Z
-last-modified:  2025-04-18T06:53:13Z
-source:         RIPE
-
-
-
+2026-07-08 02:34:44 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+2026-07-08 02:34:44 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+2026-07-08 02:34:44 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted

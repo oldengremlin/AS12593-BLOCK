@@ -1,69 +1,67 @@
-aut-num:        AS39927
-org:            ORG-EA385-RIPE
-as-name:        Elight-AS
-import:         from AS31133 action pref=100; accept ANY
-import:         from AS1299 action pref=100; accept ANY
-import:         from AS9049 action pref=100; accept ANY
-import:         from AS48858 action pref=100; accept ANY
-import:         from AS25478 action pref=100; accept ANY
-import:         from AS50384 action pref=100; accept ANY
-import:         from AS12389 action pref=100; accept ANY
-import:         from AS3216 action pref=100; accept ANY
-export:         to AS31133 announce AS-ELIGHT
-export:         to AS1299 announce AS-ELIGHT
-export:         to AS9049 announce AS39927
-export:         to AS48858 announce AS-ELIGHT
-export:         to AS25478 announce AS-ELIGHT
-export:         to AS50384 announce AS-ELIGHT
-export:         to AS12389 announce AS-ELIGHT
-export:         to AS3216 announce AS-ELIGHT
-import:         from AS42403 action pref=100; accept ANY
-import:         from AS13094 action pref=100; accept ANY
-import:         from AS61409 action pref=100; accept ANY
-export:         to AS42403 announce AS-ELIGHT
-export:         to AS13094 announce AS-ELIGHT
-export:         to AS61409 announce AS-ELIGHT
-import:         from AS60482 action pref=200; accept AS60482
-import:         from AS200697 action pref=200; accept AS200697
-import:         from AS203493 action pref=200; accept AS203493
-import:         from AS49569 action pref=200; accept AS49569
-import:         from AS205682 action pref=200; accept AS205682
-import:         from AS35835 action pref=200; accept AS35835
-import:         from AS56390 action pref=200; accept AS56390
-export:         to AS60482 announce ANY
-export:         to AS200697 announce ANY
-export:         to AS203493 announce ANY
-export:         to AS49569 announce ANY
-export:         to AS205682 announce ANY
-export:         to AS35835 announce ANY
-export:         to AS56390 announce ANY
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         ELT-MNT
-notify:         info@eltc.ru
-created:        2006-05-18T16:13:18Z
-last-modified:  2026-06-08T10:27:00Z
-source:         RIPE
-
-as-num:         AS39927
-country:        RU
-as-name:        Elight-AS E-Light-Telecom Ltd.
-
-organisation:   ORG-EA385-RIPE
-org-name:       E-Light-Telecom Ltd.
-country:        RU
-org-type:       LIR
-address:        Dummy address for ORG-EA385-RIPE
-e-mail:         unread@ripe.net
-abuse-c:        AR16650-RIPE
-mnt-ref:        ELT-MNT
-mnt-ref:        RIPE-NCC-HM-MNT
-mnt-by:         RIPE-NCC-HM-MNT
-mnt-by:         ELT-MNT
-created:        2008-09-15T12:23:31Z
-last-modified:  2026-05-13T07:32:23Z
-source:         RIPE
-
-
+2026-07-08 01:08:25 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:08:25 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:08:25 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted

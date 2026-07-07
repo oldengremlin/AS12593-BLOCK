@@ -1,133 +1,67 @@
-as-set:         AS-DIANET
-descr:          DIANET Ltd
-members:        AS43314
-members:        AS51245
-members:        AS206572
-members:        AS204323
-members:        AS200364
-members:        AS209885
-members:        AS5387
-members:        AS207373
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-mnt-by:         MNT-DIANET
-created:        2007-08-27T09:24:32Z
-last-modified:  2022-01-13T04:22:19Z
-source:         RIPE
-
-
-
-aut-num:        AS200364
-as-name:        ALTAY-ADM-AS
-org:            ORG-DOCA4-RIPE
-import:         from AS43314 accept ANY
-export:         to AS43314 announce AS200364
-import:         from AS48858 accept ANY
-export:         to AS48858 announce AS200364
-sponsoring-org: ORG-DA1282-RIPE
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         MNT-DIANET
-created:        2018-07-31T11:16:53Z
-last-modified:  2023-03-20T10:03:28Z
-source:         RIPE
-
-
-
-aut-num:        AS206572
-as-name:        BARNAUL-ADM-AS
-org:            ORG-AOBC3-RIPE
-import:         from AS43314 accept ANY
-export:         to AS43314 announce AS206572
-import:         from AS8711 accept ANY
-export:         to AS8711 announce AS206572
-import:         from AS9049 accept ANY
-export:         to AS9049 announce AS206572
-sponsoring-org: ORG-DA1282-RIPE
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         MNT-DIANET
-created:        2016-12-19T12:04:57Z
-last-modified:  2024-10-11T09:05:03Z
-source:         RIPE
-
-
-
-aut-num:        AS209885
-as-name:        AKIAC-AS
-org:            ORG-ARIA2-RIPE
-import:         from AS9049 accept ANY
-export:         to AS9049 announce AS209885
-import:         from AS12389 accept ANY
-export:         to AS12389 announce AS209885
-sponsoring-org: ORG-DA1282-RIPE
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         MNT-DIANET
-created:        2018-11-15T08:19:56Z
-last-modified:  2024-08-14T07:51:17Z
-source:         RIPE
-
-
-
-aut-num:        AS43314
-as-name:        DIANET-AS
-org:            ORG-RA21-RIPE
-import:         from AS9049 accept ANY
-export:         to AS9049 announce AS-DIANET
-import:         from AS48858 accept ANY
-export:         to AS48858 announce AS-DIANET
-import:         from AS50512 action pref=500; accept AS50512
-export:         to AS50512 announce AS-DIANET
-import:         from AS13094 action pref=300; accept ANY
-export:         to AS13094 announce AS-DIANET
-import:         from AS31200 action pref=500; accept AS31200
-export:         to AS31200 announce AS-DIANET
-import:         from AS31364 action pref=500; accept AS31364
-export:         to AS31364 announce AS-DIANET
-import:         from AS41794 action pref=500; accept AS41794
-export:         to AS41794 announce AS-DIANET
-import:         from AS50384 action pref=300; accept ANY
-export:         to AS50384 announce AS-DIANET
-import:         from AS50952 action pref=300; accept ANY
-export:         to AS50952 announce AS-DIANET
-import:         from AS56776 action pref=500; accept AS56776
-export:         to AS56776 announce AS-DIANET
-import:         from AS25549 action pref=500; accept AS25549
-export:         to AS25549 announce AS-DIANET
-import:         from AS42403 action pref=500; accept AS42403
-export:         to AS42403 announce AS-DIANET
-import:         from AS29581 action pref=500; accept AS29581
-export:         to AS29581 announce ANY
-import:         from AS51245 action pref=500; accept AS51245
-export:         to AS51245 announce ANY
-import:         from AS206572 action pref=500; accept AS206572
-export:         to AS206572 announce ANY
-import:         from AS204323 action pref=500; accept AS204323
-export:         to AS204323 announce ANY
-import:         from AS200364 action pref=500; accept AS200364
-export:         to AS200364 announce ANY
-import:         from AS209885 action pref=500; accept AS209885
-export:         to AS209885 announce ANY
-import:         from AS5387 action pref=500; accept AS5387
-export:         to AS5387 announce ANY
-import:         from AS207373 action pref=500; accept AS207373
-export:         to AS207373 announce ANY
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         RAID-MNT
-mnt-by:         MNT-DIANET
-created:        2007-07-12T07:37:29Z
-last-modified:  2022-01-13T04:37:43Z
-source:         RIPE
-
-
-
+2026-07-08 02:33:54 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+2026-07-08 02:33:54 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+2026-07-08 02:33:54 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted

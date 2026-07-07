@@ -1,70 +1,67 @@
-aut-num:        AS60720
-as-name:        POLYCOMM-AS
-org:            ORG-TSL36-RIPE
-mp-import:      afi ipv4.unicast from AS8732 at 82.138.44.53 action pref=100; community .= {60720:100}; accept NOT fltr-martian AND ANY
-mp-export:      afi ipv4.unicast to AS8732 at 82.138.44.53 announce AS-POLYCOMM AND NOT community(60720:100);
-mp-import:      afi ipv6.unicast from AS8732 at 2a02:290:2::1f:3 action pref=100; community .= {60720:100}; accept NOT fltr-martian-v6 AND ANY
-mp-export:      afi ipv6.unicast to AS8732 at 2a02:290:2::1f:3 announce AS-POLYCOMM AND NOT community(60720:100);
-mp-import:      afi ipv4.unicast from AS35598 at 100.105.104.58 action pref=100; community .= {60720:100}; accept NOT fltr-martian AND ANY
-mp-export:      afi ipv4.unicast to AS35598 at 100.105.104.58 announce AS-POLYCOMM AND NOT community(60720:100);
-mp-import:      afi ipv4.unicast from AS35598 at 100.105.104.62 action pref=100; community .= {60720:100}; accept NOT fltr-martian AND ANY
-mp-export:      afi ipv4.unicast to AS35598 at 100.105.104.62 announce AS-POLYCOMM AND NOT community(60720:100);
-mp-import:      afi ipv6.unicast from AS35598 at 2a10:3100:0:2::313 action pref=100; community .= {60720:100}; accept NOT fltr-martian-v6 AND ANY
-mp-export:      afi ipv6.unicast to AS35598 at 2a10:3100:0:2::313 announce AS-POLYCOMM AND NOT community(60720:100);
-mp-import:      afi ipv6.unicast from AS35598 at 2a10:3100:0:2::315 action pref=100; community .= {60720:100}; accept NOT fltr-martian-v6 AND ANY
-mp-export:      afi ipv6.unicast to AS35598 at 2a10:3100:0:2::315 announce AS-POLYCOMM AND NOT community(60720:100);
-mp-import:      afi ipv4.unicast from AS34959 at 185.26.194.11 action pref=90; community .= {60720:100}; accept <AS15169>
-mp-import:      afi ipv4.unicast from AS34959 at 185.26.194.11 action pref=90; community .= {60720:100}; accept community(49791:100)
-mp-import:      afi ipv4.unicast from AS34959 at 185.26.194.11 action pref=50; community .= {60720:100}; accept AS34959:AS-PROCLOUD
-mp-import:      afi ipv4.unicast from AS34959 at 185.26.194.11 action pref=100; community .= {60720:100}; accept NOT fltr-martian AND ANY
-mp-export:      afi ipv4.unicast to AS34959 at 185.26.194.11 announce AS-POLYCOMM AND NOT community(60720:100);
-mp-import:      afi ipv6.unicast from AS34959 at 2a00:8d60:0:5::3 action pref=90; community .= {60720:100}; accept <AS15169>
-mp-import:      afi ipv6.unicast from AS34959 at 2a00:8d60:0:5::3 action pref=90; community .= {60720:100}; accept community(49791:100)
-mp-import:      afi ipv6.unicast from AS34959 at 2a00:8d60:0:5::3 action pref=90; community .= {60720:100}; accept AS34959:AS-PROCLOUD
-mp-import:      afi ipv6.unicast from AS34959 at 2a00:8d60:0:5::3 action pref=100; community .= {60720:100}; accept NOT fltr-martian-v6 AND ANY
-mp-export:      afi ipv6.unicast to AS34959 at 2a00:8d60:0:5::3 announce AS-POLYCOMM AND NOT community(60720:100);
-mp-import:      afi ipv4.unicast from AS49869 at 185.0.14.13 action pref=100; community .= {60720:100}; accept NOT fltr-martian AND ANY
-mp-export:      afi ipv4.unicast to AS49869 at 185.0.14.13 announce AS-POLYCOMM AND NOT community(60720:100);
-mp-import:      afi ipv6.unicast from AS49869 at 2001:7f8:eb::ed30:1 action pref=100; community .= {60720:100}; accept NOT fltr-martian-v6 AND ANY
-mp-export:      afi ipv6.unicast to AS49869 at 2001:7f8:eb::ed30:1 announce AS-POLYCOMM AND NOT community(60720:100);
-import:         from AS41842 accept rs-ma-ipv4m-int-rpf OR rs-ma-ipv4m-rpf;
-export:         to AS41842 announce { }
-import:         from AS39684 action pref=50; accept AS39684
-export:         to AS39684 announce AS60720
-import:         from AS56996 action pref=50; accept AS56996
-export:         to AS56996 announce { 0.0.0.0/0 }
-import:         from AS15556 action pref=50; accept AS15556
-export:         to AS15556 announce { 0.0.0.0/0 }
-import:         from AS61326 action pref=50; accept AS61326
-export:         to AS61326 announce NOT fltr-martian AND ANY
-import:         from AS42413 action pref=50; accept AS-PRIVAT-TELECOM
-export:         to AS42413 announce { 0.0.0.0/0 }
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         ru-polycomm-1-mnt
-created:        2013-05-23T08:59:41Z
-last-modified:  2024-12-27T08:37:46Z
-source:         RIPE
-
-as-num:         AS60720
-country:        RU
-as-name:        POLYCOMM-AS Telenet Solution Ltd
-
-organisation:   ORG-TSL36-RIPE
-org-name:       Telenet Solution Ltd
-country:        RU
-org-type:       LIR
-address:        Dummy address for ORG-TSL36-RIPE
-e-mail:         unread@ripe.net
-abuse-c:        AR33439-RIPE
-mnt-ref:        ru-polycomm-1-mnt
-mnt-ref:        RIPE-NCC-HM-MNT
-mnt-by:         RIPE-NCC-HM-MNT
-mnt-by:         ru-polycomm-1-mnt
-created:        2015-09-09T07:09:02Z
-last-modified:  2026-05-13T07:14:19Z
-source:         RIPE
-
-
+2026-07-08 01:26:44 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:26:44 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:26:44 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted

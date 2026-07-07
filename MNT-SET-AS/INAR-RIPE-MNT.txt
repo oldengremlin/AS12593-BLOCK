@@ -1,134 +1,67 @@
-as-set:         AS-INAR
-descr:          Internet-Arkhangelsk AS's
-members:        AS20663
-members:        AS12396
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-notify:         lir@megafon.ru
-mnt-by:         INAR-RIPE-MNT
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2001-12-25T06:40:29Z
-last-modified:  2019-05-07T12:39:39Z
-source:         RIPE
-
-
-
-as-set:         AS-INAR-ARH
-descr:          Internet-Arkhangelsk and clients in ARH AS's
-members:        AS12396
-members:        AS38976
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-notify:         lir@megafon.ru
-mnt-by:         INAR-RIPE-MNT
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2002-03-06T17:16:28Z
-last-modified:  2017-12-04T05:41:28Z
-source:         RIPE
-
-
-
-as-set:         AS-INAR-IVN
-descr:          Internet-Arkhangelsk IVN AS's
-members:        AS-INAR
-members:        AS28811
-members:        AS34351
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-notify:         lir@megafon.ru
-mnt-by:         INAR-RIPE-MNT
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2004-12-30T19:17:53Z
-last-modified:  2019-05-07T12:38:47Z
-source:         RIPE
-
-
-
-as-set:         AS-INAR-MSK
-descr:          Internet-Arkhangelsk MSK AS's
-members:        AS-INAR
-members:        AS13095
-members:        AS21191
-members:        AS28811
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-notify:         lir@megafon.ru
-mnt-by:         INAR-RIPE-MNT
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2002-05-31T13:30:30Z
-last-modified:  2019-05-07T12:39:59Z
-source:         RIPE
-
-
-
-as-set:         AS-INAR-SPB
-descr:          Internet-Arkhangelsk SPB AS's
-members:        AS-INAR
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-notify:         lir@megafon.ru
-mnt-by:         INAR-RIPE-MNT
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2002-03-15T09:59:54Z
-last-modified:  2019-05-07T12:39:50Z
-source:         RIPE
-
-
-
-as-set:         AS-INAR-VOL
-descr:          Internet-Arkhangelsk and clients in VOL AS's
-members:        AS20663
-members:        AS49821
-members:        AS49723
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-notify:         lir@megafon.ru
-mnt-by:         INAR-RIPE-MNT
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2003-05-30T15:02:58Z
-last-modified:  2019-06-04T12:57:49Z
-source:         RIPE
-
-
-
-as-set:         AS-INAR-YAR
-descr:          Internet-Arkhangelsk YAR AS's
-members:        AS-INAR
-members:        AS-CTK
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-notify:         lir@megafon.ru
-mnt-by:         INAR-RIPE-MNT
-mnt-by:         MEGAFON-RIPE-MNT
-created:        2004-12-30T19:17:36Z
-last-modified:  2019-05-07T12:39:27Z
-source:         RIPE
-
-
-
-aut-num:        AS20663
-as-name:        INAR-VOLOGDA-AS
-org:            ORG-OM1-RIPE
-import:         from AS8342 action pref=100; accept AS8342
-export:         to AS8342 announce AS20663
-import:         from AS12396 action pref=100; accept AS12396
-export:         to AS12396 announce AS20663
-import:         from AS13095 action pref=100; accept AS13095 AS21191
-export:         to AS13095 announce ANY
-import:         from AS12389 action pref=100; accept AS-ROSTELECOM
-export:         to AS12389 announce AS20663
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-notify:         lir@megafon.ru
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         INAR-RIPE-MNT
-mnt-by:         MEGAFON-RIPE-MNT
-mnt-by:         MEGAFON-GNOC-MNT
-mnt-by:         MEGAFON-WEST-MNT
-created:        2002-05-31T13:35:04Z
-last-modified:  2017-11-15T09:17:21Z
-source:         RIPE
-
-
-
+2026-07-08 02:31:04 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+2026-07-08 02:31:04 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+2026-07-08 02:31:04 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted

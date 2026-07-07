@@ -1,452 +1,67 @@
-as-set:         AS-RN
-descr:          Sibintek Sof.
-members:        AS50374
-members:        AS41706
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-mnt-by:         SIBINTEK-NOC
-created:        2020-02-26T13:00:37Z
-last-modified:  2020-02-26T13:04:01Z
-source:         RIPE
-
-
-
-as-set:         AS-SIBINTEK
-descr:          Sibintek downlinks
-members:        AS13165
-members:        AS34709
-members:        AS30745
-members:        AS60057
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-notify:         noc@sibintek.net
-mnt-by:         SIBINTEK-NOC
-created:        2002-09-12T08:38:13Z
-last-modified:  2015-08-06T09:50:53Z
-source:         RIPE
-
-
-
-as-set:         AS-SIBINTEK-SAMARA
-descr:          SIBINTEK-SAMARA AS-SET
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-members:        AS50691
-members:        AS201507
-members:        AS39575
-mnt-by:         SIBINTEK-NOC
-created:        2019-03-19T08:31:50Z
-last-modified:  2019-07-08T11:51:31Z
-source:         RIPE
-
-
-
-as-set:         AS-SIBINTEK-VORONEZH
-descr:          Sibintek Voronezh
-members:        AS42870
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-notify:         noc@sibintek.net
-notify:         voronezh-noc@sibintek.net
-mnt-by:         SIBINTEK-NOC
-created:        2007-05-30T10:09:31Z
-last-modified:  2009-02-05T07:54:35Z
-source:         RIPE
-
-
-
-as-set:         AS-SIK-YS
-tech-c:         DUMY-RIPE
-admin-c:        DUMY-RIPE
-members:        AS198974
-members:        AS198973
-members:        AS198960
-mnt-by:         SIBINTEK-NOC
-created:        2021-08-31T08:49:58Z
-last-modified:  2021-08-31T08:49:58Z
-source:         RIPE
-
-
-
-aut-num:        AS13165
-org:            ORG-SIC1-RIPE
-as-name:        SIBINTEK-AS
-descr:          Moscow Russia
-import:         { from AS3216 action pref=100; from AS8470 action pref=100; from AS12695 action pref=100; from AS12976 action pref=100; accept ANY; }
-export:         { to AS3216 to AS8470 to AS12695 to AS12976 announce AS-SIBINTEK; }
-import:         from AS34709 action pref=90; accept AS34709 AS30745
-export:         to AS34709 announce ANY
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-notify:         noc@sibintek.net
-mnt-by:         SIBINTEK-NOC
-created:        2002-09-11T15:55:16Z
-last-modified:  2023-11-28T11:26:33Z
-source:         RIPE
-
-
-
-aut-num:        AS197693
-as-name:        RU-RN-INFORM-VORONEZH
-descr:          Branch in Voronezh
-org:            ORG-SIC1-RIPE
-import:         from AS24923 accept ANY
-export:         to AS24923 announce AS-RNI-VORONEZH
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2011-03-28T13:02:23Z
-last-modified:  2018-10-31T09:30:03Z
-source:         RIPE
-
-
-
-aut-num:        AS198350
-as-name:        RU-RN-INFORM-NEFTEUGANSK
-org:            ORG-SIC1-RIPE
-import:         from AS29648 accept ANY
-import:         from AS15599 accept ANY
-import:         from AS28719 accept ANY
-import:         from AS41822 accept ANY
-export:         to AS29648 announce AS198350
-export:         to AS15599 announce AS198350
-export:         to AS28719 announce AS198350
-export:         to AS41822 announce AS198350
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2011-12-21T09:09:06Z
-last-modified:  2018-10-31T09:30:02Z
-source:         RIPE
-
-
-
-aut-num:        AS198960
-as-name:        RU-RN-INFORM-YUZHNO-SAKHALINSK
-org:            ORG-SIC1-RIPE
-import:         from AS43550 accept ANY
-export:         to AS43550 announce AS-SIK-YS
-import:         from AS31195 accept ANY
-export:         to AS31195 announce AS-SIK-YS
-import:         from AS8443 accept ANY
-export:         to AS8443 announce AS-SIK-YS
-import:         from AS20485 accept ANY
-export:         to AS20485 announce AS-SIK-YS
-import:         from AS198974 accept AS198974
-export:         to AS198974 announce ANY
-import:         from AS198973 accept AS198973
-export:         to AS198973 announce ANY
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2012-07-03T12:51:14Z
-last-modified:  2021-12-01T09:59:23Z
-source:         RIPE
-
-
-
-aut-num:        AS198973
-as-name:        RU-RN-INFORM-OHA
-org:            ORG-SIC1-RIPE
-import:         from AS8443 accept ANY
-export:         to AS8443 announce AS198973
-import:         from AS43550 accept ANY
-export:         to AS43550 announce AS198973
-import:         from AS198960 accept ANY
-export:         to AS198960 announce AS198973
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2012-07-04T14:10:17Z
-last-modified:  2021-08-31T08:53:31Z
-source:         RIPE
-
-
-
-aut-num:        AS198974
-as-name:        RU-RN-INFORM-NOGLIKI
-org:            ORG-SIC1-RIPE
-import:         from AS43746 accept ANY
-export:         to AS43746 announce AS198974
-import:         from AS8443 accept ANY
-export:         to AS8443 announce AS198974
-import:         from AS198960 accept ANY
-export:         to AS198960 announce AS198974
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2012-07-04T14:13:37Z
-last-modified:  2021-08-31T08:52:34Z
-source:         RIPE
-
-
-
-aut-num:        AS34249
-as-name:        TNKBP-AS
-notify:         IT_Operator@rosneft.ru
-notify:         NOC@rosneft.ru
-org:            ORG-OR14-RIPE
-sponsoring-org: ORG-SIC1-RIPE
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2004-11-26T16:09:08Z
-last-modified:  2023-11-29T05:33:37Z
-source:         RIPE
-
-
-
-aut-num:        AS39575
-as-name:        SIBINTEK-MR-CENTER-AS
-descr:          Makroregion Center
-org:            ORG-SIC1-RIPE
-import:         from AS41209 accept ANY
-import:         from AS51543 accept ANY
-import:         from AS12389 accept ANY
-import:         from AS50691 accept ANY
-export:         to AS41209 announce AS39575
-export:         to AS51543 announce AS39575
-export:         to AS12389 announce AS39575
-export:         to AS50691 announce AS39575
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-notify:         noc@sibintek.ru
-notify:         noc2@sibintek.ru
-mnt-by:         SIBINTEK-NOC
-created:        2006-03-21T11:37:20Z
-last-modified:  2023-11-28T11:26:59Z
-source:         RIPE
-
-
-
-aut-num:        AS41706
-as-name:        ROSNEFT-AS
-notify:         NOC@rosneft.ru
-notify:         IT_Operator@rosneft.ru
-org:            ORG-OR14-RIPE
-import:         from AS20485 accept ANY
-export:         to AS20485 announce AS41706
-import:         from AS50374 accept ANY
-export:         to AS50374 announce AS41706
-import:         from AS25159 accept ANY
-export:         to AS25159 announce AS41706
-import:         from AS209030 accept ANY
-export:         to AS209030 announce AS41706
-import:         from AS197068 accept ANY
-export:         to AS197068 announce AS41706
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2010-09-10T13:20:46Z
-last-modified:  2023-11-22T11:45:24Z
-source:         RIPE
-sponsoring-org: ORG-SIC1-RIPE
-
-
-
-aut-num:        AS41826
-as-name:        BN-NET
-org:            ORG-SIC1-RIPE
-import:         from AS12389 action pref=100; accept ANY
-export:         to AS12389 announce AS41826
-import:         from AS9049 action pref=100; accept ANY
-export:         to AS9049 announce AS41826
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-mnt-by:         MNT-SIBINTEK
-created:        2013-08-15T10:15:46Z
-last-modified:  2024-01-09T13:14:04Z
-source:         RIPE
-
-
-
-aut-num:        AS42870
-org:            ORG-SIC1-RIPE
-as-name:        SIBINTEK-STAVROPOL-AS
-descr:          Stavropol MRU
-import:         from AS8359 action pref=100; accept ANY
-export:         to AS8359 announce AS42870
-import:         from AS20485 action pref=100; accept ANY
-export:         to AS20485 announce AS42870
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-notify:         noc@sibintek.net
-mnt-by:         SIBINTEK-NOC
-created:        2007-04-27T11:38:19Z
-last-modified:  2020-07-22T12:01:04Z
-source:         RIPE
-
-
-
-aut-num:        AS50374
-as-name:        RN-INFORM
-org:            ORG-SIC1-RIPE
-import:         from AS201706 accept ANY
-export:         to AS201706 announce AS-RN
-import:         from AS25159 accept ANY
-export:         to AS25159 announce AS-RN
-import:         from AS31133 accept ANY
-export:         to AS31133 announce AS-RN
-import:         from AS28917 accept ANY
-export:         to AS28917 announce AS-RN
-import:         from AS12389 accept ANY
-export:         to AS12389 announce AS-RN
-import:         from AS41706 accept AS41706
-export:         to AS41706 announce ANY
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-notify:         aksenovbi@sibintek.ru
-notify:         babkinaa@sibintek.ru
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2009-12-30T12:25:53Z
-last-modified:  2023-11-28T11:27:26Z
-source:         RIPE
-
-
-
-aut-num:        AS50443
-as-name:        RU-SIBINTEK-KRSK
-org:            ORG-SIC1-RIPE
-import:         from AS20485 accept ANY
-export:         to AS20485 announce AS50443
-import:         from AS9049 accept ANY
-export:         to AS9049 announce AS50443
-import:         from AS31133 accept ANY
-export:         to AS31133 announce AS50443
-import:         from AS60430 accept ANY
-export:         to AS60430 announce AS50443
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2010-01-18T14:24:48Z
-last-modified:  2024-03-11T06:35:13Z
-source:         RIPE
-
-
-
-aut-num:        AS50691
-as-name:        RU-RN-INFORM-SAMARA
-descr:          Branch in Samara
-org:            ORG-SIC1-RIPE
-import:         from AS12389 accept ANY
-export:         to AS12389 announce AS-SIBINTEK-SAMARA
-import:         from AS197235 accept ANY
-export:         to AS197235 announce AS-SIBINTEK-SAMARA
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2010-07-05T13:15:56Z
-last-modified:  2020-01-10T12:56:37Z
-source:         RIPE
-
-
-
-aut-num:        AS50753
-as-name:        RU-RN-INFORM-IRK
-org:            ORG-SIC1-RIPE
-import:         from AS8345 accept ANY
-export:         to AS8345 announce AS50753
-import:         from AS31195 accept ANY
-export:         to AS31195 announce AS50753
-import:         from AS12389 accept ANY
-export:         to AS12389 announce AS50753
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2010-03-19T09:55:43Z
-last-modified:  2023-04-21T05:26:51Z
-source:         RIPE
-
-
-
-aut-num:        AS51209
-as-name:        RN-GOSA
-org:            ORG-SIC1-RIPE
-import:         from AS29329 accept ANY
-export:         to AS29329 announce AS51209
-import:         from AS20632 accept ANY
-export:         to AS20632 announce AS51209
-import:         from AS3216 accept ANY
-export:         to AS3216 announce AS51209
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2010-06-23T12:25:55Z
-last-modified:  2021-11-24T16:20:53Z
-source:         RIPE
-
-
-
-aut-num:        AS51238
-as-name:        KRASNODAR-RN-INFORM-AS
-descr:          Branch in Krasnodar
-org:            ORG-SIC1-RIPE
-import:         from AS48479 accept ANY
-export:         to AS48479 announce AS51238
-import:         from AS8359 accept ANY
-export:         to AS8359 announce AS51238
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2010-06-29T11:09:17Z
-last-modified:  2018-10-31T09:30:02Z
-source:         RIPE
-
-
-
-aut-num:        AS60513
-as-name:        RU-RN-INFORM-KOMSOMOLSK
-descr:          branch in Komsomolsk
-org:            ORG-SIC1-RIPE
-import:         from AS12389 accept ANY
-export:         to AS12389 announce AS60513
-import:         from AS31195 accept ANY
-export:         to AS31195 announce AS60513
-import:         from AS20485 accept ANY
-export:         to AS20485 announce AS60513
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         SIBINTEK-NOC
-created:        2013-07-08T09:56:54Z
-last-modified:  2018-10-31T09:30:01Z
-source:         RIPE
-
-
-
+2026-07-08 02:40:23 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+2026-07-08 02:40:23 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+2026-07-08 02:40:23 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted

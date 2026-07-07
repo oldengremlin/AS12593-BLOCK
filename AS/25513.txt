@@ -1,117 +1,67 @@
-aut-num:        AS25513
-as-name:        ASN-MGTS-USPD
-org:            ORG-OMct1-RIPE
-import:         from AS8359 action pref=100; accept ANY
-import:         from AS39143 action pref=100; accept ANY
-import:         from AS20985 action pref=100; accept ANY
-import:         from AS29285 action pref=100; accept AS29285
-import:         from AS39415 action pref=100; accept AS39415
-import:         from AS49179 action pref=100; accept AS49179
-import:         from AS61436 action pref=100; accept AS61436
-import:         from AS56619 action pref=100; accept AS56619
-import:         from AS51893 action pref=100; accept AS51893
-import:         from AS56483 action pref=100; accept {91.223.176.0/24}
-import:         from AS211616 action pref=100; accept AS211616
-import:         from AS199809 action pref=100; accept {80.240.110.0/24}
-import:         from AS43993 action pref=100; accept AS43993
-import:         from AS16020 action pref=100; accept AS-TASCOM
-import:         from AS60375 action pref=100; accept {195.209.104.0/24}
-import:         from AS49246 action pref=100; accept AS49246
-import:         from AS42056 action pref=100; accept AS42056
-import:         from AS56794 action pref=100; accept AS56794
-import:         from AS28912 action pref=100; accept AS28912
-import:         from AS49170 action pref=100; accept {95.64.128.0/17}
-import:         from AS205576 action pref=100; accept {46.61.184.0/24}
-import:         from AS206054 action pref=100; accept AS206054
-import:         from AS35312 action pref=100; accept {141.101.229.0/24}
-import:         from AS34500 action pref=100; accept AS34500
-import:         from AS58072 action pref=100; accept AS58072
-import:         from AS8901 action pref=100; accept {185.173.0.0/23, 212.11.145.0/24}
-import:         from AS35455 action pref=100; accept AS35455
-import:         from AS44088 action pref=100; accept AS44088
-import:         from AS199093 action pref=100; accept {78.31.210.0/24}
-import:         from AS211247 action pref=100; accept AS211247
-import:         from AS211532 action pref=100; accept {194.226.28.0/24}
-import:         from AS58139 action pref=100; accept {91.219.181.0/24}
-import:         from AS48666 action pref=100; accept {91.223.144.0/24}
-import:         from AS58139 action pref=100; accept {176.96.238.0/24}
-import:         from AS56537 action pref=100; accept {193.22.88.0/24}
-import:         from AS210989 action pref=100; accept {78.40.222.0/24}
-import:         from AS60827 action pref=100; accept {62.76.4.0/24}
-import:         from AS201244 action pref=100; accept {46.243.175.0/24}
-import:         from AS58071 action pref=100; accept AS58071
-import:         from AS198712 action pref=100; accept AS198712
-import:         from AS210239 action pref=100; accept AS210239
-import:         from AS212114 action pref=100; accept AS212114
-import:         from AS5548 action pref=100; accept AS5548
-export:         to AS8359 announce AS-SPDOP
-export:         to AS49179 announce ANY
-export:         to AS39143 announce AS-SPDOP
-export:         to AS20985 announce AS25513 AS8491 AS39143
-export:         to AS61436 announce ANY
-export:         to AS51893 announce ANY
-export:         to AS29285 announce {0.0.0.0/0}
-export:         to AS39415 announce {0.0.0.0/0}
-export:         to AS56483 announce {0.0.0.0/0}
-export:         to AS56619 announce {0.0.0.0/0}
-export:         to AS199809 announce {0.0.0.0/0}
-export:         to AS43993 announce {0.0.0.0/0}
-export:         to AS16020 announce AS25513 {0.0.0.0/0}
-export:         to AS60375 announce {0.0.0.0/0}
-export:         to AS49246 announce {0.0.0.0/0}
-export:         to AS42056 announce {0.0.0.0/0}
-export:         to AS56794 announce {0.0.0.0/0}
-export:         to AS28912 announce {0.0.0.0/0}
-export:         to AS49170 announce {0.0.0.0/0}
-export:         to AS211616 announce {0.0.0.0/0}
-export:         to AS205576 announce {0.0.0.0/0}
-export:         to AS206054 announce {0.0.0.0/0}
-export:         to AS35312 announce {0.0.0.0/0}
-export:         to AS34500 announce {0.0.0.0/0}
-export:         to AS58072 announce {0.0.0.0/0}
-export:         to AS8901 announce {0.0.0.0/0}
-export:         to AS35455 announce {0.0.0.0/0}
-export:         to AS44088 announce {0.0.0.0/0}
-export:         to AS199093 announce {0.0.0.0/0}
-export:         to AS211247 announce {0.0.0.0/0}
-export:         to AS211532 announce {0.0.0.0/0}
-export:         to AS58139 announce {0.0.0.0/0}
-export:         to AS48666 announce {0.0.0.0/0}
-export:         to AS56537 announce {0.0.0.0/0}
-export:         to AS210989 announce {0.0.0.0/0}
-export:         to AS60827 announce {0.0.0.0/0}
-export:         to AS201244 announce {0.0.0.0/0}
-export:         to AS58071 announce {0.0.0.0/0}
-export:         to AS198712 announce {0.0.0.0/0}
-export:         to AS210239 announce {0.0.0.0/0}
-export:         to AS212114 announce {0.0.0.0/0}
-export:         to AS5548 announce {0.0.0.0/0}
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         MGTS-USPD-MNT
-mnt-by:         RIPE-NCC-END-MNT
-created:        2002-12-17T16:08:58Z
-last-modified:  2026-05-06T09:06:21Z
-source:         RIPE
-
-as-num:         AS25513
-country:        RU
-as-name:        ASN-MGTS-USPD PJSC Moscow city telephone network
-
-organisation:   ORG-OMct1-RIPE
-org-name:       PJSC Moscow city telephone network
-country:        RU
-org-type:       LIR
-address:        Dummy address for ORG-OMct1-RIPE
-mnt-ref:        MGTS-USPD-MNT
-mnt-ref:        RIPE-NCC-HM-MNT
-mnt-by:         RIPE-NCC-HM-MNT
-mnt-by:         MGTS-USPD-MNT
-abuse-c:        USPD-RIPE
-e-mail:         unread@ripe.net
-created:        2004-04-17T11:55:11Z
-last-modified:  2026-05-13T07:26:26Z
-source:         RIPE
-
-
+2026-07-08 01:03:52 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:03:52 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:03:52 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted

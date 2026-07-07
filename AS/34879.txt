@@ -1,263 +1,67 @@
-aut-num:        AS34879
-as-name:        CCT-AS
-descr:          NGENIX
-org:            ORG-CCT1-RIPE
-import:         from AS15835 accept ANY
-export:         to AS15835 announce AS-NGENIX
-import:         from AS8359 accept ANY
-export:         to AS8359 announce AS-NGENIX
-import:         from AS12389 accept ANY
-export:         to AS12389 announce AS-NGENIX
-import:         from AS3216 accept ANY
-export:         to AS3216 announce AS-NGENIX
-import:         from AS61400 accept ANY
-export:         to AS61400 announce { 46.235.187.0/24 }
-import:         from AS20485 accept ANY
-export:         to AS20485 announce AS-NGENIX
-import:         from AS2848 action pref=120; community.append(34879:30100); accept AS-MSURUNNET
-export:         to AS2848 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS2854 at 193.232.244.74 action pref=120; community.append(34879:30100); accept AS-ROSPRINT
-export:         to AS2854 at 193.232.244.74 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS3267 at 193.232.244.74 action pref=120; community.append(34879:30100); accept AS-RUNNET
-export:         to AS3267 at 193.232.244.74 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS5537 action pref=120; community.append(34879:30100); accept AS-GPT
-export:         to AS5537 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS6850 action pref=120; community.append(34879:30100); accept AS-METROCOM
-export:         to AS6850 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS6854 action pref=120; community.append(34879:30100); accept AS-SYNTERRA
-export:         to AS6854 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS8432 at 193.232.244.74 action pref=120; community.append(34879:30100); accept AS-OBIT
-export:         to AS8432 at 193.232.244.74 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS8631 action pref=120; community.append(34879:30100); accept AS-MSKROUTESERVER
-export:         to AS8631 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS8905 action pref=120; community.append(34879:30100); accept AS-SITEK
-export:         to AS8905 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS9032 action pref=120; community.append(34879:30100); accept AS-EDUNET
-export:         to AS9032 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS12979 action pref=120; community.append(34879:30100); accept AS12979
-export:         to AS12979 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS13105 action pref=120; community.append(34879:30100); accept AS-LUKOIL
-export:         to AS13105 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS13238 at 193.232.244.74 action pref=120; community.append(34879:30100); accept AS-YANDEX
-export:         to AS13238 at 193.232.244.74 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS20632 at 193.232.244.74 action pref=120; community.append(34879:30100); accept AS-PETERSTAR
-export:         to AS20632 at 193.232.244.74 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS20764 at 193.232.244.74 action pref=120; community.append(34879:30100); accept AS-RASCOM
-export:         to AS20764 at 193.232.244.74 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS25032 action pref=120; community.append(34879:30100); accept AS25032
-export:         to AS25032 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS29329 action pref=120; community.append(34879:30100); accept AS-NODEX
-export:         to AS29329 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS30124 action pref=120; community.append(34879:30100); accept AS30124
-export:         to AS30124 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS34456 action pref=120; community.append(34879:30100); accept AS-RCPEERS
-export:         to AS34456 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS39087 at 193.232.244.74 action pref=120; community.append(34879:30700); accept AS-PAKT
-export:         to AS39087 at 193.232.244.74 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS39102 at 193.232.244.74 action pref=120; community.append(34879:30100); accept AS39102
-export:         to AS39102 at 193.232.244.74 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS41145 at 193.232.244.74 action pref=120; community.append(34879:30700); accept AS41145
-export:         to AS41145 at 193.232.244.74 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS44050 at 193.232.244.74 action pref=120; community.append(34879:30700); accept AS-PIN-MSKIX
-export:         to AS44050 at 193.232.244.74 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS44283 action pref=120; community.append(34879:30100); accept AS44283
-export:         to AS44283 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS48842 action pref=120; community.append(34879:30100); accept AS-FRIENDIT
-export:         to AS48842 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS49813 action pref=120; community.append(34879:30100); accept AS-INN
-export:         to AS49813 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS16179 217.119.90.241 at 217.119.90.242 action pref=150; community.append(34879:40201); accept ANY
-export:         to AS16179 217.119.90.241 at 217.119.90.242 announce AS-NGENIX-EKT
-import:         from AS8744 81.16.123.181 at 81.16.123.182 action pref=150; community.append(34879:40203); accept ANY
-export:         to AS8744 81.16.123.181 at 81.16.123.182 announce AS-NGENIX-EKT
-import:         from AS29648 77.233.170.49 at 77.233.170.50 action pref=150; community.append(34879:40202); accept ANY
-export:         to AS29648 77.233.170.49 at 77.233.170.50 announce AS-NGENIX-EKT
-import:         from AS5563 action pref=120; community.append(34879:30200); accept AS5563
-export:         to AS5563 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
-import:         from AS16230 action pref=120; community.append(34879:30200); accept AS16230
-export:         to AS16230 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
-import:         from AS31499 action pref=120; community.append(34879:30200); accept AS-MOTIV
-export:         to AS31499 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
-import:         from AS35154 action pref=120; community.append(34879:3200); accept AS-KABINET
-export:         to AS35154 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
-import:         from AS35400 action pref=120; community.append(34879:3200); accept AS-USI
-export:         to AS35400 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
-import:         from AS39741 action pref=120; community.append(34879:3200); accept AS39741
-export:         to AS39741 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
-import:         from AS43213 action pref=120; community.append(34879:30200); accept AS-EKTROUTESERVER
-export:         to AS43213 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
-import:         from AS43218 action pref=120; community.append(34879:30200); accept AS43218
-export:         to AS43218 announce AS-NGENIX-EKT AND NOT community.contains(34879:52000,34879:52020)
-import:         from AS31363 action pref=150; community.append(34879:30201); accept ANY
-export:         to AS31363 announce AS-NGENIX-EKT
-import:         from AS8342 213.24.141.193 at 213.24.141.194 action pref=150; community.append(34879:40301); accept ANY
-export:         to AS8342 213.24.141.193 at 213.24.141.194 announce AS-NGENIX-NSK
-import:         from AS2854 at 193.232.87.70 action pref=120; community.append(34879:30300); accept AS-ROSPRINT
-export:         to AS2854 at 193.232.87.70 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS3216 at 193.232.87.70 action pref=120; community.append(34879:30300); accept AS3216
-export:         to AS3216 at 193.232.87.70 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS3267 action pref=120; community.append(34879:30300); accept AS-RUNNET
-export:         to AS3267 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS8410 action pref=120; community.append(34879:30300); accept AS-NIR
-export:         to AS8410 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS8711 action pref=120; community.append(34879:30300); accept AS-MAGTEL
-export:         to AS8711 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS9107 action pref=120; community.append(34879:30300); accept AS-CIS
-export:         to AS9107 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS20803 action pref=120; community.append(34879:30300); accept AS20803
-export:         to AS20803 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS29175 action pref=120; community.append(34879:30300); accept AS29175
-export:         to AS29175 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS29407 action pref=120; community.append(34879:30300); accept AS29407
-export:         to AS29407 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS31738 action pref=120; community.append(34879:30300); accept AS-NSTU
-export:         to AS31738 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS34757 action pref=120; community.append(34879:30300); accept AS34757
-export:         to AS34757 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS41787 action pref=120; community.append(34879:30300); accept AS41787
-export:         to AS41787 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS42108 action pref=120; community.append(34879:30300); accept AS42108
-export:         to AS42108 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS42403 action pref=120; community.append(34879:30300); accept AS-NSKROUTESERVER
-export:         to AS42403 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS43053 action pref=120; community.append(34879:30300); accept AS43053
-export:         to AS43053 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS43478 action pref=120; community.append(34879:30300); accept AS-NSK
-export:         to AS43478 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS44634 action pref=120; community.append(34879:30300); accept AS44634
-export:         to AS44634 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS48100 action pref=120; community.append(34879:30300); accept AS48100
-export:         to AS48100 announce AS-NGENIX-NSK AND NOT community.contains(34879:52000,34879:52030)
-import:         from AS39293 195.248.236.233 at 195.248.236.234 action pref=150; community.append(34879:40401); accept ANY
-export:         to AS39293 195.248.236.233 at 195.248.236.234 announce AS-NGENIX-SMR
-import:         from AS6800 action pref=120; community.append(34879:30400); accept AS-SAMARA
-export:         to AS6800 announce AS-NGENIX-SMR AND NOT community.contains(34879:52000,34879:52040)
-import:         from AS8439 action pref=120; community.append(34879:30400); accept AS8439
-export:         to AS8439 announce AS-NGENIX-SMR AND NOT community.contains(34879:52000,34879:52040)
-import:         from AS13227 action pref=120; community.append(34879:30400); accept AS-KRAFT-S
-export:         to AS13227 announce AS-NGENIX-SMR AND NOT community.contains(34879:52000,34879:52040)
-import:         from AS15500 action pref=120; community.append(34879:30400); accept AS15500
-export:         to AS15500 announce AS-NGENIX-SMR AND NOT community.contains(34879:52000,34879:52040)
-import:         from AS34533 action pref=120; community.append(34879:30400); accept AS-ESAM
-export:         to AS34533 announce AS-NGENIX-SMR AND NOT community.contains(34879:52000,34879:52040)
-import:         from AS39042 action pref=120; community.append(34879:30400); accept AS39042
-export:         to AS39042 announce AS-NGENIX-SMR AND NOT community.contains(34879:52000,34879:52040)
-import:         from AS47882 action pref=120; community.append(34879:30400); accept AS-SMRROUTESERVER
-export:         to AS47882 announce AS-NGENIX-SMR AND NOT community.contains(34879:52000,34879:52040)
-import:         from AS3216 194.186.155.89 at 194.186.155.90 action pref=150; community.append(34879:40705); accept ANY
-export:         to AS3216 194.186.155.89 at 194.186.155.90 announce AS-NGENIX-SPB
-import:         from AS2854 at 194.85.177.109 action pref=120; community.append(34879:30700); accept AS-ROSPRINT
-export:         to AS2854 at 194.85.177.109 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS3267 at 194.85.177.109 action pref=120; community.append(34879:30700); accept AS-RUNNET
-export:         to AS3267 at 194.85.177.109 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS3327 action pref=120; community.append(34879:30700); accept AS-RUSNETIX
-export:         to AS3327 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS5433 action pref=120; community.append(34879:30700); accept AS-ROKSON
-export:         to AS5433 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS8492 at 194.85.177.109 action pref=120; community.append(34879:30700); accept AS-OBIT
-export:         to AS8492 at 194.85.177.109 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS8744 action pref=120; community.append(34879:30700); accept AS-WIMAX
-export:         to AS8744 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS8997 action pref=120; community.append(34879:30700); accept AS-SPBNIT
-export:         to AS8997 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS9031 action pref=120; community.append(34879:30700); accept AS-EDPNET
-export:         to AS9031 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS12418 action pref=120; community.append(34879:30700); accept AS-QUANTUM
-export:         to AS12418 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS13238 at 194.85.177.109 action pref=120; community.append(34879:30100); accept AS-YANDEX
-export:         to AS13238 at 194.85.177.109 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS20632 at 194.85.177.109 action pref=120; community.append(34879:30700); accept AS-PETERSTAR
-export:         to AS20632 at 194.85.177.109 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS20807 action pref=120; community.append(34879:30700); accept AS-CREDOLINK
-export:         to AS20807 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS25520 action pref=120; community.append(34879:30700); accept AS-FUTURES
-export:         to AS25520 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS28968 action pref=120; community.append(34879:30700); accept AS-EUT
-export:         to AS28968 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS29076 at 194.85.177.109 action pref=120; community.append(34879:30100); accept AS-CITYTELECOM
-export:         to AS29076 at 194.85.177.109 announce AS-NGENIX-MSK AND NOT community.contains(34879:52000,34879:52010)
-import:         from AS29329 action pref=120; community.append(34879:30700); accept AS-NODEX
-export:         to AS29329 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS31323 action pref=120; community.append(34879:30700); accept AS-UNNET
-export:         to AS31323 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS31500 action pref=120; community.append(34879:30700); accept AS-GLOBAL-NET
-export:         to AS31500 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS34102 action pref=120; community.append(34879:30700); accept AS-AWANTI
-export:         to AS34102 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS34217 action pref=120; community.append(34879:30700); accept AS-ALFATELECOM
-export:         to AS34217 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS35807 action pref=120; community.append(34879:30700); accept AS-SKYNET-SPB
-export:         to AS35807 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS38951 action pref=120; community.append(34879:30700); accept AS-TKT
-export:         to AS38951 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS39087 at 194.85.177.109 action pref=120; community.append(34879:30700); accept AS-PAKT
-export:         to AS39087 at 194.85.177.109 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS39102 at 194.85.177.109 action pref=120; community.append(34879:30700); accept AS39102
-export:         to AS39102 at 194.85.177.109 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS39598 action pref=120; community.append(34879:30700); accept AS-TIERA
-export:         to AS39598 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS41145 at 194.85.177.109 action pref=120; community.append(34879:30700); accept AS41145
-export:         to AS41145 at 194.85.177.109 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS41337 action pref=120; community.append(34879:30700); accept AS-PROSERV
-export:         to AS41337 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS42518 action pref=120; community.append(34879:30700); accept AS-UNETCOMRU
-export:         to AS42518 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS42893 action pref=120; community.append(34879:30700); accept AS42893
-export:         to AS42893 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS43317 action pref=120; community.append(34879:30700); accept AS43317
-export:         to AS43317 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS43690 action pref=120; community.append(34879:30700); accept AS-SPBROUTESERVER
-export:         to AS43690 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS44030 action pref=120; community.append(34879:30700); accept AS-LENTEL
-export:         to AS44030 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS44050 at 194.85.177.109 action pref=120; community.append(34879:30700); accept AS-PIN-SPBIX
-export:         to AS44050 at 194.85.177.109 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS44720 action pref=120; community.append(34879:30700); accept AS44720
-export:         to AS44720 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS47211 action pref=120; community.append(34879:30700); accept AS47211
-export:         to AS47211 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS48416 action pref=120; community.append(34879:30700); accept AS-INFOLAN
-export:         to AS48416 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS50258 action pref=120; community.append(34879:30700); accept AS-TEYLA
-export:         to AS50258 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS8402 action pref=120; community.append(34879:30700); accept AS8402
-export:         to AS8402 announce AS-NGENIX-SPB AND NOT community.contains(34879:52000,34879:52070)
-import:         from AS48531 action pref=120; accept AS-VLVROUTESERVER
-export:         to AS48531 announce AS-NGENIX-VVO
-import:         from AS208407 action pref=120; accept AS208407
-export:         to AS208407 announce AS-NGENIX-NET
-import:         from AS28761 accept ANY
-export:         to AS28761 announce AS34879
-import:         from AS43222 accept ANY
-export:         to AS43222 announce AS34879
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-notify:         hostmaster@ngenix.net
-mnt-by:         CCT-MNT
-created:        2005-04-22T13:09:41Z
-last-modified:  2023-06-09T06:50:06Z
-source:         RIPE
-
-as-num:         AS34879
-country:        RU
-as-name:        CCT-AS OOO "Sovremennye setevye tekhnologii"
-
-organisation:   ORG-CCT1-RIPE
-org-name:       OOO "Sovremennye setevye tekhnologii"
-country:        RU
-org-type:       LIR
-address:        Dummy address for ORG-CCT1-RIPE
-e-mail:         unread@ripe.net
-mnt-ref:        CCT-MNT
-mnt-ref:        ROSNIIROS-MNT
-mnt-ref:        RIPE-NCC-HM-MNT
-mnt-by:         RIPE-NCC-HM-MNT
-mnt-by:         CCT-MNT
-abuse-c:        NGNX-RIPE
-created:        2005-04-21T15:21:59Z
-last-modified:  2026-05-13T07:17:05Z
-source:         RIPE
-
-
+2026-07-08 01:06:28 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:06:28 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:06:28 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted

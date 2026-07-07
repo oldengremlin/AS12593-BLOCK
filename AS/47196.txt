@@ -1,82 +1,67 @@
-aut-num:        AS47196
-as-name:        Garant-Park-Internet
-org:            ORG-GL395-RIPE
-import:         from AS56364 accept ANY
-export:         to AS56364 announce ANY
-import:         from AS9002 accept ANY
-export:         to AS9002 announce AS-GPI
-import:         from AS31133 accept ANY
-export:         to AS31133 announce AS-GPI
-import:         from AS29076 accept ANY
-export:         to AS29076 announce AS-GPI
-import:         from AS8359 accept AS-MTU
-export:         to AS8359 announce AS-GPI
-import:         from AS50952 accept ANY
-export:         to AS50952 announce AS47196
-import:         from AS59712 accept AS59712
-export:         to AS59712 announce AS47196
-import:         from AS49502 accept AS-ART-INVEST
-export:         to AS49502 announce AS47196
-import:         from AS60764 accept AS-TKTEL
-export:         to AS60764 announce AS47196
-import:         from AS50923 accept ANY
-export:         to AS50923 announce AS47196
-import:         from AS49476 accept AS-MTT
-export:         to AS49476 announce AS47196
-import:         from AS60299 accept ANY
-export:         to AS60299 announce AS47196
-import:         from AS9049 accept AS-ERTELECOM
-export:         to AS9049 announce AS47196
-import:         from AS8631 accept AS-MSKROUTESERVER
-export:         to AS8631 announce AS-GPI
-import:         from AS201706 accept any
-export:         to AS201706 announce AS-GPI
-import:         from AS8470 accept AS-MACOMNET
-export:         to AS8470 announce AS47196
-import:         from AS58002 accept AS-SI
-export:         to AS58002 announce AS47196
-import:         from AS42403 accept AS-NSKROUTESERVER
-export:         to AS42403 announce AS47196
-import:         from AS48216 accept AS-RNDROUTESERVER
-export:         to AS48216 announce AS47196
-import:         from AS50706 accept AS-KZNROUTESERVER
-export:         to AS50706 announce AS47196
-import:         from AS43213 accept AS-EKTROUTESERVER
-export:         to AS43213 announce AS47196
-import:         from AS201826 accept AS-ERATEL
-export:         to AS201826 announce AS47196
-import:         from AS50384 accept ANY
-export:         to AS50384 announce AS47196
-import:         from AS13335 accept any
-export:         to AS13335 announce AS47196
-import:         from AS12389 accept any
-export:         to AS12389 announce AS-GPI
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-notify:         info@parking.ru
-mnt-by:         Garant-Park-Internet-mnt
-mnt-by:         RIPE-NCC-END-MNT
-created:        2008-05-14T11:50:29Z
-last-modified:  2020-03-18T11:52:10Z
-source:         RIPE
-
-as-num:         AS47196
-country:        RU
-as-name:        Garant-Park-Internet Garant-Park-Internet LLC
-
-organisation:   ORG-GL395-RIPE
-org-name:       Garant-Park-Internet LLC
-country:        RU
-org-type:       LIR
-address:        Dummy address for ORG-GL395-RIPE
-e-mail:         unread@ripe.net
-abuse-c:        AR54892-RIPE
-mnt-ref:        mnt-ru-garant-park-internet-1
-mnt-by:         RIPE-NCC-HM-MNT
-mnt-by:         mnt-ru-garant-park-internet-1
-created:        2019-08-20T08:08:36Z
-last-modified:  2026-05-13T07:40:47Z
-source:         RIPE
-
-
+2026-07-08 01:13:47 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
+java.io.IOException: Недостатньо місця на пристрої
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:2861)
+	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:13:47 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
+java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1663)
+	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+2026-07-08 01:13:47 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
+java.sql.SQLException: Error opening connection
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
+	at org.sqlite.JDBC.createConnection(JDBC.java:106)
+	at org.sqlite.JDBC.connect(JDBC.java:79)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
+	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
+	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
+Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
+	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
+	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
+	... 10 common frames omitted
