@@ -1,0 +1,53 @@
+as-set:         AS41783:AS-CUSTOMERS
+descr:          ITaEC LLC customers
+members:        AS41783
+members:        AS9056
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         hostmaster@psn.ru
+mnt-by:         ITAEC-MNT
+mnt-lower:      ITAEC-MNT
+created:        2006-11-07T11:55:40Z
+last-modified:  2006-11-07T11:55:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS41783
+as-name:        ITAEC-AS
+org:            ORG-ITAE1-RIPE
+import:         from AS9056 action pref=1; accept AS9056
+import:         from AS16083 action pref=10; accept ANY and not fltr-bogons
+import:         from AS21453 action pref=10; accept ANY and not fltr-bogons
+export:         to AS16083 announce AS41783:AS-CUSTOMERS
+export:         to AS21453 announce AS41783:AS-CUSTOMERS
+export:         to AS9056 announce ANY
+mp-import:      afi ipv6.unicast from AS9056 action pref=1; accept AS9056
+mp-export:      afi ipv6.unicast to   AS9056 announce ANY
+mp-import:      afi ipv6.unicast from AS16083 action pref=10; accept ANY
+mp-export:      afi ipv6.unicast to   AS16083 announce AS41783:AS-CUSTOMERS
+mp-import:      afi ipv6.unicast from AS21453 action pref=10; accept ANY
+mp-export:      afi ipv6.unicast to   AS21453 announce AS41783:AS-CUSTOMERS
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ITAEC-MNT
+created:        2006-10-24T15:07:35Z
+last-modified:  2020-11-28T10:31:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+

@@ -1,0 +1,457 @@
+as-set:         AS-BAIKAL-IX-PEERS
+descr:          BAIKAL-IX peers
+members:        AS-BAIKAL-IX-TRANSIT
+members:        AS-ORTEL
+members:        AS-BAIKAL
+members:        AS201135
+members:        AS21087
+members:        AS8506
+members:        AS-BTP
+members:        AS49267
+members:        AS-ORIONNET
+members:        AS-IREN
+members:        AS-RTATELECOM
+members:        AS207228
+members:        AS56535
+members:        AS-CHTE
+members:        AS-LIFESTREAM
+members:        AS48586
+members:        AS49287
+members:        AS29182
+members:        AS25549
+members:        AS-SVOLS
+members:        AS-NSPLUS
+members:        AS25381
+members:        AS-TELEOS-1
+members:        AS-BASE
+members:        AS-AECC
+members:        AS211609
+members:        AS58304
+members:        AS-WEACOM
+members:        AS9049
+members:        AS-IRCN
+members:        AS-CDNNOW
+members:        AS-CDNETWORKSRU
+members:        AS214091
+members:        AS197911
+members:        AS59541
+members:        AS57629
+members:        AS208006
+members:        AS35608
+members:        AS50157
+members:        AS208087
+members:        AS15493
+members:        AS42971:AS-INTERFONICA
+members:        AS-UBN
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         dreamnet-mnt
+mnt-by:         baikalix-mnt
+created:        2016-03-17T07:50:03Z
+last-modified:  2026-03-30T12:18:08Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS-BAIKAL-IX-TRANSIT
+descr:          BAIKAL-IX AS-set for IP-transit
+members:        AS57277
+members:        AS48586
+members:        AS21087
+members:        AS61406
+members:        AS198086
+members:        AS201135
+members:        AS-ORTEL
+members:        AS-BAIKAL
+members:        AS42971
+members:        AS207228
+members:        AS56535
+members:        AS49287
+members:        AS-BTP
+members:        AS29182
+members:        AS58087
+members:        AS207353
+members:        AS-BASE
+members:        AS-AECC
+members:        AS211609
+members:        AS58304
+members:        AS48472
+members:        AS59541
+members:        AS197911
+members:        AS57629
+members:        AS208006
+members:        AS211291
+members:        AS42971:AS-INTERFONICA
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         dreamnet-mnt
+mnt-by:         baikalix-mnt
+created:        2018-01-10T10:11:08Z
+last-modified:  2026-03-30T12:16:51Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS201135
+as-name:        Dreamnet-AS
+org:            ORG-DNL11-RIPE
+import:         from AS57277 accept ANY
+export:         to AS57277 announce AS201135
+import:         from AS5547 accept ANY
+export:         to AS5547 announce AS201135
+export:         to AS48586 announce AS201135
+import:         from AS48586 accept AS-BAIKAL-IX-PEERS
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dreamnet-mnt
+created:        2015-01-20T09:07:16Z
+last-modified:  2020-07-28T06:07:10Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS211291
+as-name:        Tulun-TeleCom-AS
+org:            ORG-TL710-RIPE
+sponsoring-org: ORG-DNL11-RIPE
+import:         from AS48586 accept ANY
+export:         to AS48586 announce AS211291
+import:         from AS57277 accept ANY
+export:         to AS57277 announce AS211291
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS211291
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS211291
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dreamnet-mnt
+created:        2021-05-20T12:10:23Z
+last-modified:  2026-02-04T07:49:55Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS48586
+as-name:        BAIKAL-IX-AS
+org:            ORG-LA1006-RIPE
+remarks:        **** Zero Kilometer ****
+import:         from AS57277 accept ANY
+export:         to AS57277 announce AS-BAIKAL-IX-PEERS
+remarks:        ****** Lifestream ******
+import:         from AS200976 accept AS-LIFESTREAM
+export:         to AS200976 announce AS-BAIKAL-IX-PEERS
+remarks:        ******* Avantel ********
+import:         from AS25549 accept AS-AVANTEL
+export:         to AS25549 announce AS-BAIKAL-IX-PEERS
+remarks:        **** Chitatehenergy ****
+export:         to AS58067 announce AS-BAIKAL-IX-PEERS
+import:         from AS58067 accept AS-CHTE
+remarks:        ****** SWIFTYCDN *******
+import:         from AS49287 accept AS49287
+export:         to AS49287 announce AS-BAIKAL-IX-PEERS
+remarks:        **** BAIKAL TELECOM ****
+import:         from AS47909 accept AS-BAIKAL
+export:         to AS47909 announce AS-BAIKAL-IX-PEERS
+remarks:        **** ORIENT-TELECOM ****
+import:         from AS5547 accept AS-ORTEL
+export:         to AS5547 announce AS-BAIKAL-IX-PEERS
+remarks:        ** Irkutskenergosvyaz **
+import:         from AS44267 accept AS-IREN
+export:         to AS44267 announce AS-BAIKAL-IX-PEERS
+remarks:        *** Baikal Teleport ****
+import:         from AS59616 accept AS-BTP
+export:         to AS59616 announce AS-BAIKAL-IX-PEERS
+remarks:        * Institution of Russian Science Academy of Irkutsk Scientific Centre of Siberian Department of RAN *
+import:         from AS8506 accept AS8506
+export:         to AS8506 announce AS-BAIKAL-IX-PEERS
+remarks:        *** Electronniy gorod **
+import:         from AS21087 accept AS21087
+export:         to AS21087 announce AS-BAIKAL-IX-PEERS
+remarks:        ****** Dream Net *******
+import:         from AS201135 accept AS201135
+export:         to AS201135 announce AS-BAIKAL-IX-PEERS
+remarks:        *** Baikal Teleport ****
+import:         from AS49267 accept AS49267
+export:         to AS49267 announce AS-BAIKAL-IX-PEERS
+remarks:        ****** Zavod RTA *******
+import:         from AS61406 accept AS-RTATELECOM
+export:         to AS61406 announce AS-BAIKAL-IX-PEERS
+remarks:        * Teleradiocompany Teleos-1 *
+import:         from AS43274 accept AS-TELEOS-1
+export:         to AS43274 announce AS-BAIKAL-IX-PEERS
+remarks:        **** Orion Telecom *****
+import:         from AS31257 accept AS-ORIONNET
+export:         to AS31257 announce AS-BAIKAL-IX-PEERS
+remarks:        ******** Uplink ********
+import:         from AS207228 accept AS207228
+export:         to AS207228 announce AS-BAIKAL-IX-PEERS
+remarks:        ******** Alpari ********
+import:         from AS56535 accept AS56535
+export:         to AS56535 announce AS-BAIKAL-IX-PEERS
+remarks:        ********** IOT *********
+import:         from AS29182 accept AS29182
+export:         to AS29182 announce AS-BAIKAL-IX-PEERS
+remarks:        ******** SVOLS *********
+import:         from AS51028 accept AS-SVOLS
+export:         to AS51028 announce AS-BAIKAL-IX-PEERS
+remarks:        ******* NSPLUS ********
+import:         from AS42574 accept AS-NSPLUS
+export:         to AS42574 announce AS-BAIKAL-IX-PEERS
+remarks:        ********* SVT *********
+import:         from AS25381 accept AS-STRANZIT
+export:         to AS25381 announce AS-BAIKAL-IX-PEERS
+remarks:        *** RuForm (RuTube) ***
+import:         from AS207353 accept AS207353
+export:         to AS207353 announce AS-BAIKAL-IX-PEERS
+remarks:        ******** BASE *********
+import:         from AS47397 accept AS-BASE
+export:         to AS47397 announce AS-BAIKAL-IX-PEERS
+remarks:        ******** AECC *********
+import:         from AS57737 accept AS-AECC
+export:         to AS57737 announce AS-BAIKAL-IX-PEERS
+remarks:        ******** OKKO *********
+import:         from AS211609 accept AS211609
+export:         to AS211609 announce AS-BAIKAL-IX-PEERS
+remarks:        *** Telenet Sludyanka **
+import:         from AS58304 accept AS58304
+export:         to AS58304 announce AS-BAIKAL-IX-PEERS
+remarks:        ********* DSI **********
+import:         from AS51034 accept AS-WEACOM
+export:         to AS51034 announce AS-BAIKAL-IX-PEERS
+remarks:        ********* ERTH **********
+import:         from AS9049 accept AS-ERTH
+export:         to AS9049 announce AS-BAIKAL-IX-PEERS
+remarks:        ********* IRCN **********
+import:         from AS58187 accept AS-IRCN
+export:         to AS58187 announce AS-BAIKAL-IX-PEERS
+remarks:        ******** CDNNOW *********
+import:         from AS21030 accept AS-CDNNOW
+export:         to AS21030 announce AS-BAIKAL-IX-PEERS
+remarks:        ******* CDNVIDEO ********
+import:         from AS204720 accept AS-CDNETWORKSRU
+export:         to AS204720 announce AS-BAIKAL-IX-PEERS
+remarks:        ******* Nord.Com ********
+import:         from AS214091 accept AS214091
+export:         to AS214091 announce AS-BAIKAL-IX-PEERS
+remarks:        ** Technology Corporation **
+import:         from AS59541 accept AS59541
+export:         to AS59541 announce AS-BAIKAL-IX-PEERS
+remarks:        ********* IVI ***********
+import:         from AS57629 accept AS57629
+export:         to AS57629 announce AS-BAIKAL-IX-PEERS
+remarks:        ******* 10cloud *********
+import:         from AS208006 accept AS-ARVANCLOUD-CDN
+export:         to AS208006 announce AS-BAIKAL-IX-PEERS
+remarks:        ********* R-LINE 1 LLC ***********
+import:         from AS35608 accept AS35608
+export:         to AS35608 announce AS-BAIKAL-IX-PEERS
+remarks:        ************ INDATA **************
+import:         from AS50157 accept AS50157
+export:         to AS50157 announce AS-BAIKAL-IX-PEERS
+remarks:        ***** Ediniy Operator Svyazi *****
+import:         from AS208087 accept AS208087
+export:         to AS208087 announce AS-BAIKAL-IX-PEERS
+remarks:        ******* Russian company LLC ******
+import:         from AS15493 accept AS-RUSCOMP
+export:         to AS15493 announce AS-BAIKAL-IX-PEERS
+remarks:        *********** JSC Ufanet ***********
+import:         from AS24955 accept AS-UBN
+export:         to AS24955 announce AS-BAIKAL-IX-PEERS
+remarks:        *********** INTERFONICA***********
+import:         from AS42971 accept AS42971:AS-INTERFONICA
+export:         to AS42971 announce AS-BAIKAL-IX-PEERS
+remarks:        +============================+
+remarks:        BGP communities
+remarks:        +--------------------------------------------------+
+remarks:        Communities for prefix classification
+remarks:        +--------------------------------------------------+
+remarks:        All inbound prefixes are marked with BGP communities which describe their source.
+remarks:        not used
+remarks:        +--------------------------------------------------+
+remarks:        Communities for BAIKAL-IX members
+remarks:        +--------------------------------------------------+
+remarks:        if peer-as < 65535 (16-bit ASn):
+remarks:        0:peer-as - do not announce to peer with ASn=peer-as
+remarks:        48586:peer-as - announce to peer with ASn=peer-as
+remarks:        0:48586 - do not announce to all members
+remarks:        1:peer-as - prepend LAST {YOUR_AS} 1 times when announce to peer with ASn=peer-as
+remarks:        2:peer-as - prepend LAST {YOUR_AS} 2 times when announce to peer with ASn=peer-as
+remarks:        3:peer-as - prepend LAST {YOUR_AS} 3 times when announce to peer with ASn=peer-as
+remarks:        if peer-as > 65535 (32-bit ASn) use BGP-extended-community:
+remarks:        ro:0:peer-as - do not announce to peer with ASn=peer-as
+remarks:        ro:48586:peer-as - announce to peer with ASn=peer-as
+remarks:        ro:0:48586 - do not announce to all members
+remarks:        ro:1:peer-as - prepend LAST {YOUR_AS} 1 times when announce to peer with ASn=peer-as
+remarks:        ro:2:peer-as - prepend LAST {YOUR_AS} 2 times when announce to peer with ASn=peer-as
+remarks:        ro:3:peer-as - prepend LAST {YOUR_AS} 3 times when announce to peer with ASn=peer-as
+remarks:        Notes:
+remarks:        Any other 48586:*,0-3:*,ro:48586:* and ro:0-3:* community removed on input.
+remarks:        +============================+
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dreamnet-mnt
+mnt-by:         baikalix-mnt
+created:        2016-03-01T10:53:06Z
+last-modified:  2026-03-30T12:21:49Z
+source:         RIPE
+sponsoring-org: ORG-DNL11-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS49267
+as-name:        SIBCOM-AS
+org:            ORG-SL1305-RIPE
+export:         to AS59616 announce AS49267
+export:         to AS47909 announce AS49267
+import:         from AS59616 action pref=100; accept ANY
+import:         from AS47909 action pref=100; accept ANY
+sponsoring-org: ORG-DNL11-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-SIBCOM
+mnt-by:         MNT-BAIKAL-TELEPORT
+mnt-by:         dreamnet-mnt
+created:        2009-05-08T09:31:25Z
+last-modified:  2024-11-01T05:35:31Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS57277
+as-name:        BAIKAL-IX-TRANSIT-AS
+org:            ORG-LA1006-RIPE
+remarks:        +++ Uplinks +++
+import:         from AS48858 accept ANY
+export:         to AS48858 announce AS-BAIKAL-IX-TRANSIT
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-BAIKAL-IX-TRANSIT
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-BAIKAL-IX-TRANSIT
+import:         from AS51028 accept ANY
+export:         to AS51028 announce AS-BAIKAL-IX-TRANSIT
+remarks:        +++ Peerings +++
+import:         from AS48586 accept AS-BAIKAL-IX-PEERS
+export:         to AS48586 announce ANY
+import:         from AS13094 accept ANY
+export:         to AS13094 announce AS-BAIKAL-IX-TRANSIT
+import:         from AS49869 accept AS-PITER-IX-MSK
+export:         to AS49869 announce AS-BAIKAL-IX-TRANSIT
+import:         from AS50817 accept as-piter-ix
+export:         to AS50817 announce AS-BAIKAL-IX-TRANSIT
+import:         from AS60763 accept AS-SIBIR-IX
+export:         to AS60763 announce AS-BAIKAL-IX-TRANSIT
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-BAIKAL-IX-TRANSIT
+import:         from AS43213 accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS-BAIKAL-IX-TRANSIT
+import:         from AS42403 accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-BAIKAL-IX-TRANSIT
+remarks:        +++ Customers +++
+import:         from AS5547 accept AS-ORTEL
+export:         to AS5547 announce ANY
+import:         from AS47909 accept AS-BAIKAL
+export:         to AS47909 announce ANY
+import:         from AS201135 accept AS201135
+export:         to AS201135 announce ANY
+import:         from AS61406 accept AS61406
+export:         to AS61406 announce ANY
+import:         from AS21087 accept AS21087
+export:         to AS21087 announce ANY
+import:         from AS42971 accept AS42971:AS-INTERFONICA
+export:         to AS42971 announce ANY
+import:         from AS56535 accept AS56535
+export:         to AS56535 announce ANY
+import:         from AS207228 accept AS207228
+export:         to AS207228 announce ANY
+import:         from AS59616 accept AS-BTP
+export:         to AS59616 announce ANY
+import:         from AS49287 accept AS49287
+export:         to AS49287 announce ANY
+import:         from AS29182 accept AS29182
+export:         to AS29182 announce ANY
+import:         from AS207353 accept AS207353
+export:         to AS207353 announce ANY
+import:         from AS47397 accept AS-BASE
+export:         to AS47397 announce ANY
+import:         from AS57737 accept AS-AECC
+export:         to AS57737 announce ANY
+import:         from AS211609 accept AS211609
+export:         to AS211609 announce ANY
+import:         from AS58304 accept AS58304
+export:         to AS58304 announce ANY
+import:         from AS48472 accept AS58304
+export:         to AS48472 announce ANY
+import:         from AS59541 accept AS59541
+export:         to AS59541 announce ANY
+import:         from AS197911 accept AS197911
+export:         to AS197911 announce ANY
+import:         from AS57629 accept AS57629
+export:         to AS57629 announce ANY
+import:         from AS208006 accept AS-ARVANCLOUD-CDN
+export:         to AS208006 announce ANY
+import:         from AS211291 accept AS211291
+export:         to AS211291 announce ANY
+remarks:        +++
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dreamnet-mnt
+mnt-by:         baikalix-mnt
+created:        2018-01-11T15:14:42Z
+last-modified:  2026-03-30T12:18:58Z
+source:         RIPE
+sponsoring-org: ORG-DNL11-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+

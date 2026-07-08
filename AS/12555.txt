@@ -1,67 +1,105 @@
-2026-07-08 01:01:44 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:01:44 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:01:44 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS12555
+as-name:        IMAQLIQ
+descr:          https://iqdata.center
+org:            ORG-DIL32-RIPE
+remarks:        ============================================
+remarks:        ===== UPLINKS =====
+remarks:        ============================================
+remarks:        --- ReTN.net ---
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-IMAQLIQ
+remarks:        --- RASCOM ---
+import:         from AS20764 accept ANY
+export:         to AS20764 announce AS-IMAQLIQ
+remarks:        --- FILANKO ---
+import:         from AS29076 accept ANY
+export:         to AS29076 announce AS-IMAQLIQ
+remarks:        ============================================
+remarks:        ===== Internet eXchanges =====
+remarks:        ============================================
+remarks:        --- DATA-IX ---
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-IMAQLIQ
+remarks:        --- GLOBAL-IX ---
+import:         from AS31500 accept AS-GLOBAL-IX
+export:         to AS31500 announce AS-IMAQLIQ
+remarks:        --- PITER-IX ---
+import:         from AS50817 accept AS-PITERIX
+export:         to AS50817 announce AS-IMAQLIQ
+remarks:        ============================================
+remarks:        ===== DIRECT PEERS =====
+remarks:        ============================================
+remarks:        --- OBIT ---
+import:         from AS8492 accept AS-OBIT
+export:         to AS8492 announce AS-IMAQLIQ
+remarks:        --- SEVEREN ---
+import:         from AS24739 accept AS-SEVEREN-TELECOM
+export:         to AS24739 announce AS-IMAQLIQ
+remarks:        ============================================
+remarks:        ===== CUSTOMERS =====
+remarks:        ============================================
+remarks:        --- Git-In-Sky ---
+import:         from AS3227 accept AS3227
+export:         to AS3227 announce ANY
+remarks:        --- Autokontinent ---
+import:         from AS16222 accept AS16222
+export:         to AS16222 announce ANY
+remarks:        --- PUDLINK ---
+import:         from AS198070 accept AS198070
+export:         to AS198070 announce ANY
+remarks:        --- DEDIC-CENTER ---
+import:         from AS51783 accept as-dedic-center
+export:         to AS51783 announce ANY
+remarks:        --- AS-INTERA ---
+import:         from AS48876 accept as-intera
+export:         to AS48876 announce ANY
+remarks:        --- Kraud ---
+import:         from AS212278 accept AS212278
+export:         to AS212278 announce ANY
+remarks:        ============================================
+descr:          Link to Looking Glass: http://lg.iqdata.net/
+remarks:        ============================================
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ripe@iqdata.center
+notify:         noc@iqdata.center
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-imaqliq-1
+created:        2008-05-02T06:52:30Z
+last-modified:  2026-02-27T03:42:52Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS12555
+country:        RU
+as-name:        IMAQLIQ Data-center IMAQLIQ Ltd.
+
+organisation:   ORG-DIL32-RIPE
+org-name:       Data-center IMAQLIQ Ltd.
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-DIL32-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        AR54332-RIPE
+mnt-ref:        mnt-ru-imaqliq-1
+mnt-ref:        MICTIAN
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         mnt-ru-imaqliq-1
+created:        2019-07-29T13:38:42Z
+last-modified:  2026-05-13T07:40:38Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

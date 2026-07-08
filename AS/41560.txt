@@ -1,67 +1,89 @@
-2026-07-08 01:09:02 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:09:02 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:09:02 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS41560
+as-name:        UT-SVR
+org:            ORG-UL18-RIPE
+remarks:        -----Upstreams----
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-UT-SVR
+import:         from AS50928 accept ANY
+export:         to AS50928 announce AS41560
+import:         from AS5563 accept ANY
+export:         to AS5563 announce AS41560
+import:         from AS48858 accept ANY
+export:         to AS48858 announce ANY
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-UT-SVR
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-UT-SVR
+import:         from AS44056 accept ANY
+export:         to AS44056 announce ANY
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS-UT-SVR
+import:         from AS12722 accept ANY
+export:         to AS12722 announce AS41560
+remarks:        ----peers-IX----
+import:         from AS13094 accept AS-MILECOM-RS
+export:         to AS13094 announce AS-UT-SVR
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-UT-SVR
+import:         from AS43213 accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS41560
+import:         from AS8631 accept ANY
+export:         to AS8631 announce AS41560
+remarks:        ----peers----
+import:         from AS35154 accept ANY
+export:         to AS35154 announce AS41560
+import:         from AS201643 accept ANY
+export:         to AS201643 announce ANY
+import:         from AS48642 accept ANY
+export:         to AS48642 announce ANY
+remarks:        ----Customs----
+import:         from AS203493 accept ANY
+export:         to AS203493 announce ANY
+import:         from AS5468 action pref=100; accept AS-URFU
+export:         to AS5468 announce ANY
+import:         from AS201844 accept ANY
+export:         to AS201844 announce ANY
+import:         from AS56542 accept ANY
+export:         to AS56542 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-UGMK_TELECOM
+created:        2006-09-14T09:24:28Z
+last-modified:  2026-06-24T18:16:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS41560
+country:        RU
+as-name:        UT-SVR UGMK-Telecom LLC
+
+organisation:   ORG-UL18-RIPE
+org-name:       UGMK-Telecom LLC
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-UL18-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        AR17017-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        MNT-UGMK_TELECOM
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         MNT-UGMK_TELECOM
+created:        2006-08-09T15:53:54Z
+last-modified:  2026-05-13T07:17:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

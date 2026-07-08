@@ -1,67 +1,122 @@
-2026-07-08 01:09:12 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:09:12 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:09:12 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS41691
+as-name:        SUMTEL-AS-RIPE
+descr:          CJSC "Sumtel"
+org:            ORG-JR8-RIPE
+remarks:        ---------------------------------------------------------------
+remarks:        Uplinks
+remarks:        ---------------------------------------------------------------
+remarks:        ==== ROSTELECOM ====
+import:         from AS12389 accept ANY AND {0.0.0.0/0}
+export:         to AS12389 announce AS-SUMTEL
+remarks:        ---------------------------------------------------------------
+remarks:        misc peers
+remarks:        ---------------------------------------------------------------
+import:         from AS43975 accept AS43975 AND AS25405
+export:         to AS43975 announce AS-SUMTEL-2RT
+import:         from AS47626 accept AS-ARPNET61
+export:         to AS47626 announce AS-SUMTEL-MHL
+import:         from AS57766 accept AS-EI
+export:         to AS57766 announce AS-SUMTEL-MHL
+import:         from AS201826 accept AS-ERATEL
+export:         to AS201826 announce AS-SUMTEL
+import:         from AS13178 accept AS-DIGCOMM
+export:         to AS13178 announce AS-SUMTEL
+import:         from AS200976 accept AS200976
+export:         to AS200976 announce AS-SUMTEL
+import:         from AS47541 accept AS-VKONTAKTE
+export:         to AS47541 announce AS-SUMTEL
+import:         from AS13238 accept AS-YANDEX
+export:         to AS13238 announce AS-SUMTEL
+import:         from AS15169 accept AS-GOOGLE
+export:         to AS15169 announce AS-SUMTEL
+remarks:        ---------------------------------------------------------------
+remarks:        Customers
+remarks:        ---------------------------------------------------------------
+import:         from AS49679 accept AS49679
+export:         to AS49679 announce ANY
+import:         from AS12646 accept AS12646
+export:         to AS12646 announce ANY
+import:         from AS56634 accept AS56634
+export:         to AS56634 announce ANY
+import:         from AS48508 accept AS48508
+export:         to AS48508 announce ANY
+import:         from AS201901 accept AS201901
+export:         to AS201901 announce ANY
+import:         from AS34528 accept AS34528
+export:         to AS34528 announce ANY
+import:         from AS198580 accept AS198580
+export:         to AS198580 announce ANY
+import:         from AS49017 accept AS49017
+export:         to AS49017 announce ANY
+import:         from AS197987 accept AS197987
+export:         to AS197987 announce ANY
+import:         from AS35572 accept AS-CMTL
+export:         to AS35572 announce ANY
+import:         from AS202873 accept AS202873
+export:         to AS202873 announce ANY
+import:         from AS56483 accept AS56483
+export:         to AS56483 announce ANY
+import:         from AS50740 accept AS50740
+export:         to AS50740 announce ANY
+remarks:        --------------------------------------------------------------
+remarks:        COMMNUTIES ADVERTIZED TO NEIGHBOURS
+remarks:        41691:1NXX - Uplinks
+remarks:        41691:2NXX - Peers
+remarks:        41691:3NXX - IP-Transit customers
+remarks:        41691:4NXX - Own subscribers
+remarks:        where:
+remarks:        N - reserved
+remarks:        XX - for region code:
+remarks:        05 - Dagestan Republic
+remarks:        23 - Krasnodarskiy kray
+remarks:        36 - Voronezhskaya oblast
+remarks:        48 - Lipetskaya oblast
+remarks:        52 - Nizhegorodskaya oblast
+remarks:        61 - Rostovskaya oblast
+remarks:        69 - Tverskaya oblast
+remarks:        77 - Moscow
+remarks:        78 - St.Petersbourg
+remarks:        --------------------------------------------------------------
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2006-10-09T14:34:50Z
+last-modified:  2025-08-04T10:49:56Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS41691
+country:        RU
+as-name:        SUMTEL-AS-RIPE PJSC Rostelecom
+
+organisation:   ORG-JR8-RIPE
+org-name:       PJSC Rostelecom
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-JR8-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        RTNC-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        ROSTELECOM-MNT
+mnt-ref:        ROSNIIROS-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2005-03-22T11:11:20Z
+last-modified:  2026-05-13T07:30:23Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

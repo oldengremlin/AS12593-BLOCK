@@ -1,67 +1,698 @@
-2026-07-08 02:05:26 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-07-08 02:05:26 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-07-08 02:05:26 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          109.163.240.0/21
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2018-01-30T09:34:11Z
+last-modified:  2018-01-30T09:34:11Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.163.240.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2018-01-30T09:34:11Z
+last-modified:  2018-01-30T09:34:11Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.163.244.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2018-01-30T09:34:11Z
+last-modified:  2018-01-30T09:34:11Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.208.0/20
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-04-07T05:03:00Z
+last-modified:  2026-03-13T10:50:39Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.208.0/21
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-02-15T05:21:02Z
+last-modified:  2026-03-15T14:16:12Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.212.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2026-03-15T14:16:13Z
+last-modified:  2026-03-15T14:16:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.212.0/23
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2026-03-15T14:16:13Z
+last-modified:  2026-03-15T14:16:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.212.0/24
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-04-07T05:03:00Z
+last-modified:  2026-03-15T14:16:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.213.0/24
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-04-07T05:03:01Z
+last-modified:  2026-03-15T14:16:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.214.0/23
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2026-03-15T14:16:13Z
+last-modified:  2026-03-15T14:16:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.214.0/24
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-04-07T05:03:01Z
+last-modified:  2026-03-15T14:16:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.215.0/24
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-04-07T05:03:01Z
+last-modified:  2026-03-15T14:16:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.216.0/21
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2026-03-15T14:16:14Z
+last-modified:  2026-03-15T14:16:14Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.216.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2026-03-15T14:16:14Z
+last-modified:  2026-03-15T14:16:14Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.216.0/23
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-04-07T05:03:01Z
+last-modified:  2026-03-15T14:16:14Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.218.0/23
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-04-07T05:03:01Z
+last-modified:  2026-03-15T14:16:14Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.220.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2026-03-15T14:16:14Z
+last-modified:  2026-03-15T14:16:14Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.220.0/23
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-04-07T05:03:01Z
+last-modified:  2026-03-15T14:16:14Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          109.195.222.0/23
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-04-07T05:03:01Z
+last-modified:  2026-03-15T14:16:14Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          176.215.192.0/20
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-12-26T09:03:40Z
+last-modified:  2011-12-26T09:03:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          176.215.192.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-12-26T09:03:40Z
+last-modified:  2011-12-26T09:03:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          176.215.196.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-12-26T09:03:40Z
+last-modified:  2011-12-26T09:03:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          176.215.200.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-12-26T09:03:40Z
+last-modified:  2011-12-26T09:03:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          176.215.204.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2011-12-26T09:03:40Z
+last-modified:  2011-12-26T09:03:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          176.215.208.0/21
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-03-23T05:15:30Z
+last-modified:  2012-03-23T05:15:30Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          176.215.208.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-03-23T05:15:30Z
+last-modified:  2012-03-23T05:15:30Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          176.215.212.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-03-23T05:15:30Z
+last-modified:  2012-03-23T05:15:30Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          188.187.231.0/24
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+notify:         ripe@ertelecom.ru
+mnt-by:         RAID-MNT
+created:        2011-02-15T05:21:02Z
+last-modified:  2011-02-15T05:21:02Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a02:2698:4000::/38
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-10-16T10:54:56Z
+last-modified:  2012-10-16T10:54:56Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a03:1ac0:5a4:3000::/52
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2018-12-29T07:10:06Z
+last-modified:  2018-12-29T07:10:06Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a03:1ac0:6da3:f000::/53
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2018-12-29T07:10:06Z
+last-modified:  2018-12-29T07:10:06Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a03:1ac0:6dc3:d000::/52
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2018-12-29T07:10:06Z
+last-modified:  2018-12-29T07:10:06Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a03:1ac0:b0d7:c000::/52
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2018-12-29T07:10:06Z
+last-modified:  2018-12-29T07:10:06Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a03:1ac0:b0d7:d000::/53
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          JSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2018-12-29T07:10:06Z
+last-modified:  2018-12-29T07:10:06Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.164.48.0/20
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-08-05T10:49:21Z
+last-modified:  2012-08-05T10:49:21Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.164.48.0/21
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-08-05T10:49:21Z
+last-modified:  2012-08-05T10:49:21Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.164.48.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-08-05T10:49:21Z
+last-modified:  2012-08-05T10:49:21Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.164.52.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-08-05T10:49:22Z
+last-modified:  2012-08-05T10:49:22Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.164.56.0/21
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-08-05T10:49:22Z
+last-modified:  2012-08-05T10:49:22Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.164.56.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-08-05T10:49:22Z
+last-modified:  2012-08-05T10:49:22Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.164.60.0/22
+origin:         AS56377
+org:            ORG-CHMB1-RIPE
+descr:          CJSC "ER-Telecom Holding" Magnitogorsk branch
+descr:          Magnitogorsk, Russia
+mnt-by:         RAID-MNT
+created:        2012-08-05T10:49:22Z
+last-modified:  2012-08-05T10:49:22Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

@@ -1,67 +1,3124 @@
-2026-07-08 01:49:40 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-07-08 01:49:40 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-07-08 01:49:40 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          109.248.223.0/24
+descr:          PIN DC customer route
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T09:18:40Z
+last-modified:  2025-12-25T12:17:04Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          146.185.200.0/22
+origin:         AS16321
+created:        2026-05-28T10:23:18Z
+last-modified:  2026-05-28T10:23:47Z
+source:         RIPE
+mnt-by:         MNT-PIN
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          146.185.204.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-07-03T08:13:35Z
+last-modified:  2025-12-25T11:42:20Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          146.185.223.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T10:11:36Z
+last-modified:  2025-12-25T11:42:35Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          146.185.224.0/21
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T10:16:09Z
+last-modified:  2025-12-25T11:42:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          147.45.192.0/24
+origin:         AS34665
+mnt-by:         FREENET-MNT
+created:        2024-01-11T12:42:28Z
+last-modified:  2024-03-06T15:58:00Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          147.45.207.0/24
+origin:         AS34665
+mnt-by:         FREENET-MNT
+created:        2024-01-24T12:46:39Z
+last-modified:  2024-03-06T16:00:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          147.45.34.0/24
+origin:         AS34665
+mnt-by:         FREENET-MNT
+created:        2024-01-11T12:32:15Z
+last-modified:  2024-03-06T15:56:55Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          147.45.36.0/24
+origin:         AS34665
+mnt-by:         FREENET-MNT
+created:        2024-01-24T12:42:51Z
+last-modified:  2024-03-06T15:56:06Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          147.45.64.0/24
+origin:         AS34665
+mnt-by:         MNT-VNET-LLC
+created:        2025-04-11T17:12:51Z
+last-modified:  2025-04-11T17:13:27Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          185.156.75.0/24
+origin:         AS34665
+mnt-by:         ru-ip84-1-mnt
+created:        2021-08-19T14:22:15Z
+last-modified:  2021-08-19T14:22:15Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          185.162.233.0/24
+descr:          PIN DC customer route
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T09:18:40Z
+last-modified:  2025-12-25T11:51:48Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          188.143.232.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:59:31Z
+last-modified:  2025-12-25T11:50:11Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          188.143.232.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:59:31Z
+last-modified:  2025-12-25T11:50:04Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          188.143.232.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:59:31Z
+last-modified:  2025-12-25T11:49:56Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          188.143.233.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:59:32Z
+last-modified:  2025-12-25T11:49:48Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          188.143.234.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:59:31Z
+last-modified:  2025-12-25T11:49:00Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          188.143.234.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:59:32Z
+last-modified:  2025-12-25T11:48:50Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          188.143.235.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:59:32Z
+last-modified:  2025-12-25T11:48:43Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          193.233.197.0/24
+origin:         AS34665
+mnt-by:         mnt-ru-am-1
+created:        2023-11-26T15:08:10Z
+last-modified:  2025-03-17T14:19:58Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          193.233.234.0/24
+origin:         AS34665
+org:            ORG-VL90-RIPE
+notify:         tech@vnet.su
+mnt-by:         FREENET-MNT
+created:        2023-05-17T08:57:25Z
+last-modified:  2023-05-17T08:57:25Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          193.233.30.0/24
+origin:         AS34665
+mnt-by:         FREENET-MNT
+created:        2024-01-21T10:11:20Z
+last-modified:  2024-03-06T15:51:18Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          193.233.61.0/24
+org:            ORG-VL90-RIPE
+origin:         AS34665
+notify:         tech@vnet.su
+mnt-by:         FREENET-MNT
+created:        2023-06-05T21:43:14Z
+last-modified:  2023-06-05T21:43:14Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.150.179.0/24
+descr:          PIN DC customer route
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T09:18:41Z
+last-modified:  2025-12-25T11:51:59Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.156.1.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:44Z
+last-modified:  2023-04-25T08:47:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.242.124.0/23
+descr:          PIN DC customer route
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T09:18:41Z
+last-modified:  2025-12-25T11:50:43Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.242.126.0/24
+descr:          PIN DC customer route
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T09:18:41Z
+last-modified:  2025-12-25T11:50:32Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.28.208.0/22
+descr:          PIN DC customer route
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T09:18:41Z
+last-modified:  2025-12-25T11:50:23Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          195.2.240.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T12:27:48Z
+last-modified:  2025-12-25T11:47:27Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          195.2.240.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:55:29Z
+last-modified:  2025-12-25T11:47:21Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          195.2.240.0/27
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:55:29Z
+last-modified:  2025-12-25T11:47:15Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          195.2.241.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:55:29Z
+last-modified:  2025-12-25T11:47:07Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          195.2.241.0/27
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T06:55:29Z
+last-modified:  2025-12-25T11:46:59Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a00:1d78:100:1c0::/58
+remarks:        PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+created:        2021-07-26T10:51:15Z
+last-modified:  2021-07-26T10:51:15Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a06:35c1::/32
+origin:         AS34665
+mnt-by:         sc-rapidseedbox-1-mnt
+created:        2026-03-25T17:36:19Z
+last-modified:  2026-03-25T17:36:19Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a0a:e580::/29
+origin:         AS34665
+mnt-by:         racktech
+created:        2025-06-16T12:46:40Z
+last-modified:  2025-06-16T12:46:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a0b:d000::/29
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PINSUPPORT
+created:        2019-11-11T10:35:25Z
+last-modified:  2019-11-11T10:35:25Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a0c:6900::/29
+origin:         AS34665
+mnt-by:         Alliance64
+created:        2023-08-31T19:22:36Z
+last-modified:  2023-08-31T19:22:36Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a0e:e5c0::/29
+origin:         AS34665
+mnt-by:         ITDELUXE-MNT
+created:        2022-11-22T04:10:08Z
+last-modified:  2022-11-22T04:10:08Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a13:2980::/30
+origin:         AS34665
+created:        2026-03-18T10:15:01Z
+last-modified:  2026-03-18T10:15:01Z
+source:         RIPE
+mnt-by:         BorisG-MNT
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a13:8580::/32
+origin:         AS34665
+mnt-by:         IPMAGNAT-MNT
+mnt-by:         KINGSERVER-MNT
+created:        2024-11-21T12:22:25Z
+last-modified:  2024-11-21T12:22:37Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a13:8c80::/32
+origin:         AS34665
+mnt-by:         sc-rapidseedbox-1-mnt
+created:        2026-03-25T17:34:45Z
+last-modified:  2026-03-25T17:34:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.192.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:46:53Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.192.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:46:47Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.192.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:46:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.193.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:46:34Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.194.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:46:28Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.194.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:46:22Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.195.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:46:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.196.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:46:08Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.196.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:45:57Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.196.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:45:51Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.197.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:45:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.198.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:45:35Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.198.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:45:27Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.199.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T11:52:28Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.238.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2023-10-05T09:04:04Z
+last-modified:  2025-12-25T12:16:57Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.240.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-10-06T06:21:25Z
+last-modified:  2025-12-25T12:16:51Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.184.243.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T07:41:07Z
+last-modified:  2025-12-25T12:16:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.42.191.0/24
+origin:         AS34665
+mnt-by:         NETH-MNT
+mnt-by:         SHNEIDER-MNT
+created:        2020-07-27T20:14:06Z
+last-modified:  2020-07-27T20:14:06Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          31.44.188.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2021-11-25T07:23:48Z
+last-modified:  2025-12-25T12:16:39Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          37.139.53.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T10:11:36Z
+last-modified:  2025-12-25T12:16:33Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          37.139.56.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T12:16:25Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          37.139.56.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T12:16:20Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          37.139.56.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T12:16:12Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          37.139.57.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:31Z
+last-modified:  2025-12-25T12:16:06Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          37.139.58.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T12:16:00Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          37.139.58.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T12:15:55Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          37.139.59.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T12:15:49Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          37.9.48.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2021-06-01T04:46:48Z
+last-modified:  2025-12-25T12:15:42Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.128.128.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:45Z
+last-modified:  2023-04-25T08:47:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.129.1.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:45Z
+last-modified:  2023-04-25T08:47:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.137.191.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:45Z
+last-modified:  2023-04-25T08:47:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.137.52.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:45Z
+last-modified:  2023-04-25T08:47:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.137.55.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:44Z
+last-modified:  2023-04-25T08:47:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.138.156.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:44Z
+last-modified:  2023-04-25T08:47:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.139.28.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:45Z
+last-modified:  2023-04-25T08:47:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.139.31.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:45Z
+last-modified:  2023-04-25T08:47:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.140.171.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:44Z
+last-modified:  2023-04-25T08:47:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.143.202.0/24
+origin:         AS34665
+mnt-by:         ITDELUXE-MNT
+created:        2021-06-02T14:25:18Z
+last-modified:  2021-06-02T14:25:18Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.86.171.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:45Z
+last-modified:  2023-04-25T08:47:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          45.91.161.0/24
+origin:         AS202656
+mnt-by:         IP-RIPE
+created:        2023-04-25T08:47:45Z
+last-modified:  2023-04-25T08:47:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.10.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T07:41:08Z
+last-modified:  2025-12-25T11:54:38Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.14.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T07:41:08Z
+last-modified:  2025-12-25T11:54:31Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.2.0/23
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2023-08-07T04:16:20Z
+last-modified:  2025-12-25T11:54:25Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.20.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2024-03-14T06:29:45Z
+last-modified:  2025-12-25T11:54:19Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.28.0/22
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-04-08T05:48:26Z
+last-modified:  2025-12-25T11:54:12Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.32.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T07:41:08Z
+last-modified:  2025-12-25T11:54:05Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.44.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2023-06-14T06:38:19Z
+last-modified:  2025-12-25T11:53:58Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.48.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T11:53:51Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.48.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T11:53:43Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.48.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T11:53:36Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.49.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T11:53:30Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.50.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T11:53:23Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.50.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T11:53:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.51.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T11:53:08Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.161.8.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T07:41:08Z
+last-modified:  2025-12-25T12:15:37Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.0.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:15:30Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.0.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:15:24Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.0.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:15:17Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.1.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:15:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.2.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:20:11Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.2.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:20:03Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.3.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:19:56Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.32.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2022-01-31T08:12:47Z
+last-modified:  2025-12-25T12:19:50Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.32.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2022-01-31T08:12:47Z
+last-modified:  2025-12-25T12:19:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.32.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+created:        2021-08-20T16:39:44Z
+last-modified:  2025-12-25T11:59:34Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.33.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2021-08-20T16:39:44Z
+last-modified:  2025-12-25T11:59:42Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.34.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2022-01-31T08:12:47Z
+last-modified:  2025-12-25T11:59:48Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.34.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2021-08-20T16:39:44Z
+last-modified:  2025-12-25T11:59:55Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.35.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2021-08-20T16:39:44Z
+last-modified:  2025-12-25T12:00:03Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.4.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:00:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.4.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:00:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.4.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:00:23Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.5.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:19:29Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.6.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:26:45Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.6.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:26:38Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.64.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:26:31Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.64.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:26:25Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.64.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:26:18Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.65.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:26:12Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.66.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:26:05Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.66.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:25:58Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.67.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:25:52Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.7.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:05:01Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.101.90.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2023-08-16T16:04:12Z
+last-modified:  2025-12-25T12:19:23Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.204.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-05-26T05:14:16Z
+last-modified:  2025-12-25T12:04:49Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.208.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2023-10-05T09:04:04Z
+last-modified:  2025-12-25T12:04:43Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.210.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T07:41:06Z
+last-modified:  2025-12-25T12:04:37Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.211.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T07:41:06Z
+last-modified:  2025-12-25T12:04:31Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.216.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-05-26T05:06:40Z
+last-modified:  2025-12-25T12:04:24Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.223.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2021-04-09T11:29:57Z
+last-modified:  2025-12-25T12:04:02Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.233.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2021-04-21T11:35:50Z
+last-modified:  2025-12-25T12:03:14Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.44.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:03:07Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.44.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:03:01Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.44.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:02:55Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.45.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:02:48Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.46.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:02:42Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.46.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:02:36Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.47.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:30Z
+last-modified:  2025-12-25T12:02:30Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.48.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-06-16T14:38:04Z
+last-modified:  2025-12-25T12:02:23Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.188.51.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         MNT-PINSUPPORT
+created:        2026-06-01T15:10:13Z
+last-modified:  2026-06-01T15:10:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.189.248.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-05-26T05:14:16Z
+last-modified:  2025-12-25T12:07:31Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.0.0/22
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-02-26T17:28:24Z
+last-modified:  2025-12-25T12:11:47Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.10.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:07:20Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.10.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:07:12Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.11.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:07:04Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.12.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T10:11:35Z
+last-modified:  2025-12-25T12:06:57Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.16.0/24
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-02-18T09:06:53Z
+last-modified:  2025-12-25T12:06:51Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.48.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:06:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.48.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:06:37Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.48.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:06:31Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.49.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:06:24Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.50.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:06:17Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.50.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:06:10Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.51.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:09:52Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.52.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:13:20Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.52.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:05:41Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.52.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:11:22Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.53.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:11:15Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.54.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:11:07Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.54.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:11:00Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.55.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:29Z
+last-modified:  2025-12-25T12:10:52Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.60.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2021-06-18T07:03:42Z
+last-modified:  2025-12-25T12:19:15Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.65.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2021-06-04T11:36:22Z
+last-modified:  2025-12-25T12:19:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.8.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:18:56Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.8.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:18:49Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.8.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:18:42Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.8.9.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:28Z
+last-modified:  2025-12-25T12:18:34Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          80.66.77.0/24
+origin:         AS34665
+created:        2026-06-01T12:34:16Z
+last-modified:  2026-06-01T12:34:16Z
+source:         RIPE
+mnt-by:         DPCD-MNT
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          81.19.133.0/24
+origin:         AS34665
+mnt-by:         IVC-MNT
+created:        2021-10-01T14:11:03Z
+last-modified:  2021-10-01T14:11:03Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          88.218.72.0/22
+descr:          PIN DC customer route
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T09:18:39Z
+last-modified:  2025-12-25T12:27:36Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.19.218.0/24
+origin:         AS34665
+mnt-routes:     AM-VDS
+mnt-by:         AM-VDS
+created:        2023-05-16T12:28:28Z
+last-modified:  2023-05-16T12:28:28Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.231.8.0/24
+descr:          PIN DC customer route
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T09:18:39Z
+last-modified:  2025-12-25T12:21:51Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.241.46.0/24
+descr:          PIN DC customer route
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T09:18:40Z
+last-modified:  2025-12-25T12:22:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.32.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-06-05T10:47:32Z
+last-modified:  2025-12-25T12:18:15Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.44.0/22
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-04-08T05:48:26Z
+last-modified:  2025-12-25T12:18:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.48.0/22
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T12:18:03Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.48.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T12:17:57Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.48.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T12:25:39Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.49.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T12:25:33Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.50.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T12:25:27Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.50.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T12:25:21Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.51.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-07T13:35:32Z
+last-modified:  2025-12-25T12:25:15Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.52.0/22
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-04-08T05:48:26Z
+last-modified:  2025-12-25T12:25:10Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.56.0/22
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2025-04-08T05:48:26Z
+last-modified:  2025-12-25T12:25:02Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.60.0/23
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2020-01-23T07:22:48Z
+last-modified:  2025-12-25T12:24:56Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.60.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T10:11:36Z
+last-modified:  2025-12-25T12:24:50Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.243.61.0/24
+descr:          PIN DC
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-11T10:11:36Z
+last-modified:  2025-12-25T12:24:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          92.51.3.0/24
+origin:         AS34665
+mnt-by:         AM-VDS
+created:        2023-05-16T15:12:34Z
+last-modified:  2023-05-16T15:12:34Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          92.63.200.0/24
+origin:         AS34665
+mnt-by:         ITDELUXE-MNT
+created:        2023-09-01T09:33:29Z
+last-modified:  2023-09-01T09:33:29Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          92.63.202.0/24
+origin:         AS34665
+mnt-by:         ITDELUXE-MNT
+created:        2021-06-02T14:24:44Z
+last-modified:  2021-06-02T14:24:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          95.215.0.0/22
+origin:         AS34665
+mnt-by:         MNT-PIN
+created:        2025-10-10T15:46:36Z
+last-modified:  2025-10-10T15:46:36Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          95.215.0.0/23
+origin:         AS34665
+mnt-by:         MNT-PIN
+created:        2025-10-10T15:41:23Z
+last-modified:  2025-10-10T15:41:23Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          95.215.0.0/24
+origin:         AS34665
+mnt-by:         MNT-PIN
+created:        2025-10-10T15:40:26Z
+last-modified:  2025-10-10T15:40:26Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          95.215.0.0/27
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T12:09:23Z
+last-modified:  2025-12-25T12:24:37Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          95.215.1.0/24
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T12:09:23Z
+last-modified:  2025-12-25T12:24:32Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          95.215.1.0/27
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T12:09:23Z
+last-modified:  2025-12-25T12:21:08Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          95.215.2.0/23
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T12:12:46Z
+last-modified:  2025-12-25T12:21:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          95.215.2.0/24
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2019-11-08T12:12:46Z
+last-modified:  2025-12-25T12:21:20Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          95.215.3.224/27
+origin:         AS34665
+mnt-by:         MNT-PIN
+mnt-by:         PINDC-MNT
+created:        2020-12-23T09:35:17Z
+last-modified:  2025-12-25T12:21:25Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

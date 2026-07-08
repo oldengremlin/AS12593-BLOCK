@@ -1,67 +1,662 @@
-2026-07-08 01:47:30 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-07-08 01:47:30 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-07-08 01:47:30 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          185.4.108.0/22
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2012-11-19T05:35:29Z
+last-modified:  2012-11-19T05:35:29Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          193.124.88.0/24
+origin:         AS28890
+mnt-by:         interlir-mnt
+created:        2026-03-30T11:12:09Z
+last-modified:  2026-03-30T11:12:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.87.100.0/24
+origin:         AS28890
+mnt-by:         interlir-mnt
+created:        2026-03-30T11:11:38Z
+last-modified:  2026-03-30T11:11:38Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.87.15.0/24
+origin:         AS28890
+created:        2026-03-30T11:08:20Z
+last-modified:  2026-03-30T11:08:20Z
+source:         RIPE
+mnt-by:         interlir-mnt
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.87.173.0/24
+origin:         AS28890
+mnt-by:         interlir-mnt
+created:        2026-03-30T11:13:24Z
+last-modified:  2026-03-30T11:13:24Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.87.174.0/24
+origin:         AS28890
+mnt-by:         interlir-mnt
+created:        2026-03-30T11:13:41Z
+last-modified:  2026-03-30T11:13:41Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.87.175.0/24
+origin:         AS28890
+mnt-by:         interlir-mnt
+created:        2026-03-30T11:13:56Z
+last-modified:  2026-03-30T11:13:56Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          194.87.8.0/24
+origin:         AS28890
+mnt-by:         interlir-mnt
+created:        2026-03-30T11:12:32Z
+last-modified:  2026-03-30T11:12:32Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          195.133.89.0/24
+origin:         AS28890
+mnt-by:         interlir-mnt
+created:        2026-03-30T11:12:52Z
+last-modified:  2026-03-30T11:12:52Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          195.133.90.0/24
+origin:         AS28890
+mnt-by:         interlir-mnt
+created:        2026-03-30T11:14:18Z
+last-modified:  2026-03-30T11:14:18Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          195.133.91.0/24
+origin:         AS28890
+mnt-by:         interlir-mnt
+created:        2026-03-30T11:13:08Z
+last-modified:  2026-03-30T11:13:08Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          212.104.64.0/19
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2010-07-12T04:29:31Z
+last-modified:  2010-07-12T04:29:31Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          212.104.80.0/21
+descr:          INSYS Ekb (N_Tagil)
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2010-07-21T08:12:46Z
+last-modified:  2010-07-21T08:12:46Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          212.104.92.0/24
+descr:          Pervouralsk_Dedicated_Net
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2020-02-12T11:47:49Z
+last-modified:  2020-02-12T11:47:49Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          212.104.95.0/24
+descr:          INSYS to Asbest network 2
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2020-10-06T05:11:31Z
+last-modified:  2020-10-06T05:12:52Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          217.24.176.0/20
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2003-04-10T18:12:25Z
+last-modified:  2003-04-10T18:12:25Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a00:1c70::/32
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2011-06-03T12:54:52Z
+last-modified:  2011-06-03T12:54:52Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          46.163.128.0/18
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2011-03-03T05:31:01Z
+last-modified:  2011-03-03T05:31:01Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.102.152.0/21
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2012-08-02T06:09:56Z
+last-modified:  2012-08-02T06:09:56Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.172.0.0/19
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2012-08-02T06:13:11Z
+last-modified:  2012-08-02T06:13:11Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.172.19.0/24
+descr:          INSYS-HVD1
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2024-08-12T09:35:57Z
+last-modified:  2024-08-12T09:35:57Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          5.172.28.0/24
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2023-06-30T10:24:09Z
+last-modified:  2023-06-30T10:24:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          82.151.192.0/19
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2009-09-30T08:55:11Z
+last-modified:  2009-09-30T08:55:11Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          82.151.200.0/24
+descr:          INSYS-HVC1
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2024-08-12T09:37:38Z
+last-modified:  2024-08-12T09:37:38Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          82.151.204.0/22
+descr:          INSYS Ekb (N_Tagil)
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2010-03-01T05:26:59Z
+last-modified:  2010-03-01T05:26:59Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          83.167.0.0/20
+descr:          INSYS network in Ekaterinbrug
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2014-09-29T11:24:47Z
+last-modified:  2014-09-29T11:24:47Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          83.167.0.0/24
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2012-07-06T06:31:44Z
+last-modified:  2012-07-06T06:31:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          83.167.10.0/24
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2017-11-10T05:19:50Z
+last-modified:  2017-11-10T05:19:50Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          83.167.14.0/24
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2017-10-16T10:22:23Z
+last-modified:  2017-10-16T10:22:23Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          83.167.16.0/20
+descr:          INSYS network in Ekaterinbrug
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2005-03-11T09:53:16Z
+last-modified:  2005-03-11T09:53:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          85.12.192.0/18
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2007-04-26T11:03:38Z
+last-modified:  2014-10-14T10:38:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          85.12.197.0/24
+descr:          INSYS-HVH1
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2024-08-12T09:38:10Z
+last-modified:  2024-08-12T09:38:10Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          85.12.212.0/24
+descr:          INSYS Ekb (N_Tagil)
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2007-03-28T10:49:35Z
+last-modified:  2007-03-28T10:49:35Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          85.12.214.0/24
+descr:          INSYS Ekb (unlim)
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2007-05-07T12:18:57Z
+last-modified:  2007-05-07T12:18:57Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          85.12.215.0/24
+descr:          INSYS Ekb (unlim)
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2007-05-07T12:20:28Z
+last-modified:  2007-05-07T12:20:28Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          85.12.219.0/24
+descr:          INSYS Ekb (N_Tagil)
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2010-03-01T05:25:13Z
+last-modified:  2010-03-01T05:25:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          85.12.233.0/24
+descr:          INSYS Ekb (N_Tagil)
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2007-10-12T05:50:44Z
+last-modified:  2007-10-12T05:50:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          88.86.192.0/20
+descr:          INSYS Ekaterinburg
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2014-09-29T11:27:37Z
+last-modified:  2014-09-29T11:27:37Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          88.86.192.0/21
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2012-07-09T04:56:02Z
+last-modified:  2012-07-09T04:56:02Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          88.86.196.0/24
+descr:          INSYS to Asbest network 3
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2025-04-01T05:00:18Z
+last-modified:  2025-04-01T05:01:25Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          88.86.203.0/24
+descr:          INSYS to Asbest network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2018-09-18T08:05:50Z
+last-modified:  2020-10-06T05:13:20Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          88.86.208.0/20
+descr:          INSYS Ekaterinburg (ip addr part 3)
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2006-02-16T07:57:36Z
+last-modified:  2006-02-16T07:57:36Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          88.86.210.0/24
+descr:          INSYS Ekb (N_Tagil)
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2007-02-13T11:23:11Z
+last-modified:  2007-02-13T11:23:11Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          88.86.216.0/24
+descr:          INSYS EKB (Unlim)
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2006-04-22T01:01:34Z
+last-modified:  2006-04-22T01:01:34Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          91.143.160.0/20
+descr:          INSYS network
+origin:         AS28890
+mnt-by:         INSYS-MNT
+created:        2012-01-30T12:46:04Z
+last-modified:  2012-01-30T12:46:04Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

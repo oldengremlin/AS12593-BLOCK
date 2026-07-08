@@ -1,67 +1,308 @@
-2026-07-08 01:45:48 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-07-08 01:45:48 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-07-08 01:45:48 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          185.24.180.0/22
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2013-04-23T11:31:08Z
+last-modified:  2013-04-23T11:31:08Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          185.24.180.0/24
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2017-01-30T19:08:44Z
+last-modified:  2017-01-30T19:08:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route6:         2a00:65a0::/32
+descr:          WIPLINE, LLC.
+origin:         AS15930
+notify:         khabarov@wipline.ru
+notify:         denisov-rv@wipline.ru
+mnt-by:         WPL-MNT
+created:        2015-02-13T14:57:49Z
+last-modified:  2015-02-13T14:57:49Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.128.0/19
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         khabarov@wipline.ru
+notify:         denisov-rv@wipline.ru
+mnt-by:         WPL-MNT
+remarks:        major blocks
+created:        2006-08-14T09:49:03Z
+last-modified:  2015-07-14T14:34:50Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.128.0/21
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2009-02-25T14:52:11Z
+last-modified:  2009-09-14T11:04:29Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.131.0/24
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2012-10-04T10:56:52Z
+last-modified:  2012-10-04T10:56:52Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.134.0/24
+descr:          WIPLINE, Corp. VPN PPTP
+origin:         AS15930
+notify:         khabarov@wipline.ru
+notify:         denisov-rv@wipline.ru
+mnt-by:         WPL-MNT
+created:        2014-06-10T14:28:40Z
+last-modified:  2014-06-10T14:28:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.136.0/21
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2009-02-25T14:52:46Z
+last-modified:  2009-09-14T11:06:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.143.0/24
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2019-04-13T13:29:38Z
+last-modified:  2019-04-13T13:29:38Z
+source:         RIPE
+remarks:
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.144.0/21
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2009-02-25T14:53:19Z
+last-modified:  2009-09-14T11:16:18Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.146.0/23
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2012-10-04T10:57:53Z
+last-modified:  2012-10-04T10:57:53Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.148.0/24
+descr:          WIPLINE, Corp. Liski
+origin:         AS15930
+notify:         khabarov@wipline.ru
+notify:         denisov-rv@wipline.ru
+mnt-by:         WPL-MNT
+created:        2014-06-10T12:42:34Z
+last-modified:  2014-06-10T12:42:34Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.150.0/24
+descr:          WIPLINE, Corp. Rossosh
+origin:         AS15930
+notify:         khabarov@wipline.ru
+notify:         denisov-rv@wipline.ru
+mnt-by:         WPL-MNT
+created:        2014-06-10T12:36:02Z
+last-modified:  2014-06-10T12:36:02Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.151.0/24
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2012-10-04T10:57:36Z
+last-modified:  2012-10-04T10:57:36Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.152.0/21
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2009-02-25T14:53:42Z
+last-modified:  2009-09-14T11:18:48Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.153.0/24
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2012-10-04T10:55:44Z
+last-modified:  2012-10-04T10:55:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.156.0/24
+descr:          WIPLINE, Corp.
+origin:         AS15930
+notify:         denisov-rv@wipline.ru
+notify:         khabarov@wipline.ru
+mnt-by:         WPL-MNT
+created:        2019-04-15T19:21:08Z
+last-modified:  2019-04-15T19:21:08Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          89.18.159.0/24
+descr:          WIPLINE, Corp. PPPOE-pool ple
+origin:         AS15930
+notify:         khabarov@wipline.ru
+notify:         denisov-rv@wipline.ru
+mnt-by:         WPL-MNT
+created:        2014-06-10T13:18:54Z
+last-modified:  2014-06-10T13:18:54Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

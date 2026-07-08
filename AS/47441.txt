@@ -1,67 +1,149 @@
-2026-07-08 01:14:10 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:14:10 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:14:10 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS47441
+as-name:        TRUNKM
+org:            ORG-CL253-RIPE
+remarks:        Upstreams
+import:         from AS3216 accept any
+export:         to AS3216 announce AS-TRUNKMOBILE
+import:         from AS31133 accept any
+export:         to AS31133 announce AS-TRUNKMOBILE
+import:         from AS31500 accept any
+export:         to AS31500 announce AS-TRUNKMOBILE
+import:         from AS9002 accept any
+export:         to AS9002 announce AS-TRUNKMOBILE
+import:         from AS3356 accept any
+export:         to AS3356 announce AS-TRUNKMOBILE
+import:         from AS50509 accept any
+export:         to AS50509 announce AS-TRUNKMOBILE
+import:         from AS35598 accept any
+export:         to AS35598 announce AS-TRUNKMOBILE
+import:         from AS56534 accept any
+export:         to AS56534 announce AS-TRUNKMOBILE
+remarks:        Peers
+import:         from AS13328 accept AS-YANDEX
+export:         to AS13328 announce AS-TRUNKMOBILE
+import:         from AS47764 accept AS-MAILRU
+export:         to AS47764 announce AS-TRUNKMOBILE
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-TRUNKMOBILE
+import:         from AS13335 accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-TRUNKMOBILE
+import:         from AS12654 accept AS12654:RS-RIS
+export:         to AS12654 announce any
+import:         from AS20655 accept AS-EST
+export:         to AS20655 announce AS-TRUNKMOBILE
+import:         from AS35140 accept AS-SPINSATNET
+export:         to AS35140 announce AS-TRUNKMOBILE
+import:         from AS197140 accept AS197140
+export:         to AS197140 announce AS-TRUNKMOBILE
+import:         from AS50952 accept AS-DATAIX
+export:         to AS50952 announce AS-TRUNKMOBILE
+import:         from AS6939 accept AS-HURRICANE
+export:         to AS6939 announce AS-TRUNKMOBILE
+import:         from AS8595 accept AS-WESTCALL-MSK
+export:         to AS8595 announce AS-TRUNKMOBILE
+import:         from AS31500 accept AS-GLOBAL-NET
+export:         to AS31500 announce AS-TRUNKMOBILE
+import:         from AS47541 accept AS47541
+export:         to AS47541 announce AS-TRUNKMOBILE
+import:         from AS31261 accept AS-GARS
+export:         to AS31261 announce AS-TRUNKMOBILE
+import:         from AS198297 accept AS-UL-COM-Media
+export:         to AS198297 announce AS-TRUNKMOBILE
+remarks:        PITER-IX
+import:         from AS50817 accept AS-PITER-IX
+export:         to AS50817 announce AS-TRUNKMOBILE
+import:         from AS49869 accept AS-PITER-IX-MSK
+export:         to AS49869 announce AS-TRUNKMOBILE
+remarks:        DE-CIX peering
+import:         from AS6695 accept AS-DECIX
+export:         to AS6695 announce AS-TRUNKMOBILE
+import:         from AS714 accept AS-APPLE
+export:         to AS714 announce AS-TRUNKMOBILE
+import:         from AS56931 accept AS56931
+export:         to AS56931 announce AS-TRUNKMOBILE
+remarks:        AMS-IX peering
+import:         from AS6777 accept AS-AMS-IX-RS
+export:         to AS6777 announce AS-TRUNKMOBILE
+remarks:        PIRIX
+import:         from AS48625 accept AS-PIRIX
+export:         to AS48625 announce AS-TRUNKMOBILE
+remarks:        Clients
+import:         from AS60088 accept AS60088
+export:         to AS60088 announce any
+import:         from AS50471 accept AS50471
+export:         to AS50471 announce any
+import:         from AS35026 accept AS35026 AS198675
+export:         to AS35026 announce any
+import:         from AS25251 accept AS-ARTCON
+export:         to AS25251 announce any
+import:         from AS59653 accept AS-ALPHATEL
+export:         to AS59563 announce any
+import:         from AS60377 accept AS60377
+export:         to AS60377 announce any
+import:         from AS56794 accept AS56794
+export:         to AS56794 announce any
+import:         from AS3312 accept AS-ELEKTRA
+export:         to AS3312 announce any
+import:         from AS41359 accept AS-TELEFONZENTRALE
+export:         to AS41359 announce any
+import:         from AS50212 accept AS50212
+export:         to AS50212 announce any
+import:         from AS49385 accept AS49385
+export:         to AS49385 announce any
+import:         from AS8515 accept AS-DATAFORCE
+export:         to AS8515 announce any
+import:         from AS56534 accept AS-CMFT
+export:         to AS56534 announce any
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@trunkmobile.org
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         CMFT-MNT
+created:        2008-06-20T07:35:04Z
+last-modified:  2022-06-15T10:50:17Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS47441
+country:        RU
+as-name:        TRUNKM Comfortel Ltd.
+
+organisation:   ORG-CL253-RIPE
+org-name:       Comfortel Ltd.
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-CL253-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        CMFT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        CMFT-MNT
+mnt-ref:        CMFT-MNT
+mnt-ref:        MNT-PINSUPPORT
+mnt-ref:        ru-extatic-1-mnt
+mnt-ref:        QWARTA-MNT
+mnt-ref:        IP-RIPE
+mnt-ref:        OY-RR
+mnt-ref:        ROSNIIROS-MNT
+mnt-ref:        INFR-MNT
+mnt-ref:        mnt-ru-telecompas-1
+mnt-ref:        HOST-TELECOM-SRO-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         CMFT-MNT
+created:        2014-01-31T10:00:31Z
+last-modified:  2026-05-13T07:35:03Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

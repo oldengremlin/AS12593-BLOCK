@@ -1,67 +1,765 @@
-2026-07-08 01:53:01 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-07-08 01:53:01 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-2026-07-08 01:53:01 ERROR [main] [printRouteOrigin] n.u.whoislitelocal.WhoisLiteLocal - Failed to print RouteOrigin
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveRouteOrigin.printRouteOrigin(retrieveRouteOrigin.java:43)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRouteOrigin(WhoisLiteLocal.java:99)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:46)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+route:          147.45.113.0/24
+origin:         AS400992
+mnt-by:         mnt-ru-am-1
+created:        2025-03-14T11:56:08Z
+last-modified:  2025-03-14T11:56:08Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.192.0/19
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LLCF1-RIPE
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+notify:         noc@factorial.ru
+mnt-by:         FACTORIAL-MNT
+created:        2010-03-10T08:16:36Z
+last-modified:  2026-03-13T07:20:03Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.192.0/20
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2010-04-16T07:07:03Z
+last-modified:  2026-03-13T07:16:53Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.192.0/22
+descr:          Izet Telecom
+origin:         AS41925
+mnt-by:         FACTORIAL-MNT
+org:            ORG-LF4-RIPE
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+created:        2012-09-19T16:12:19Z
+last-modified:  2026-03-13T06:58:19Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.192.0/23
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------- A T T E N T I O N! -----------------
+remarks:        Please report SPAM and suspicious activity from
+remarks:        this network to abuse@454.ru only. Any messages
+remarks:        to any other address, relative SPAM or security remarks: issues, will not be concerned.
+remarks:        ------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2024-10-23T17:59:10Z
+last-modified:  2026-03-13T06:54:20Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.192.0/24
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2010-11-22T11:11:17Z
+last-modified:  2026-03-13T06:54:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.195.0/24
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------- A T T E N T I O N! -----------------
+remarks:        Please report SPAM and suspicious activity from
+remarks:        this network to abuse@454.ru only. Any messages
+remarks:        to any other address, relative SPAM or security remarks: issues, will not be concerned.
+remarks:        ------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2014-11-25T11:50:55Z
+last-modified:  2026-03-13T07:15:19Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.196.0/22
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------- A T T E N T I O N! -----------------
+remarks:        Please report SPAM and suspicious activity from
+remarks:        this network to abuse@454.ru only. Any messages
+remarks:        to any other address, relative SPAM or security remarks: issues, will not be concerned.
+remarks:        ------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2014-11-20T09:30:58Z
+last-modified:  2026-03-13T07:16:02Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.196.0/23
+descr:          Izet Telecom
+origin:         AS41925
+mnt-by:         FACTORIAL-MNT
+created:        2023-12-02T08:01:09Z
+last-modified:  2026-03-13T07:15:42Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.196.0/24
+descr:          Izet Telecom
+origin:         AS41925
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+org:            ORG-LF4-RIPE
+created:        2012-12-10T03:02:21Z
+last-modified:  2026-03-13T07:15:33Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.197.0/24
+descr:          Izet Telecom
+origin:         AS41925
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+org:            ORG-LF4-RIPE
+created:        2012-12-10T03:03:07Z
+last-modified:  2026-03-13T07:15:49Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.198.0/23
+descr:          Izet Telecom
+origin:         AS41925
+mnt-by:         FACTORIAL-MNT
+created:        2023-12-02T08:01:41Z
+last-modified:  2026-03-13T07:16:08Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.198.0/24
+descr:          Izet Telecom
+origin:         AS41925
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+org:            ORG-LF4-RIPE
+created:        2012-12-10T03:03:32Z
+last-modified:  2026-03-13T07:15:56Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.199.0/24
+descr:          Izet Telecom
+origin:         AS41925
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+org:            ORG-LF4-RIPE
+created:        2012-12-10T03:03:51Z
+last-modified:  2026-03-13T07:16:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.200.0/21
+descr:          Izet Telecom
+origin:         AS41925
+mnt-by:         FACTORIAL-MNT
+created:        2015-11-12T04:40:06Z
+last-modified:  2026-03-13T07:17:00Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.200.0/22
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------- A T T E N T I O N! -----------------
+remarks:        Please report SPAM and suspicious activity from
+remarks:        this network to abuse@454.ru only. Any messages
+remarks:        to any other address, relative SPAM or security remarks: issues, will not be concerned.
+remarks:        ------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2014-11-20T09:32:07Z
+last-modified:  2026-03-13T07:16:32Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.204.0/22
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------- A T T E N T I O N! -----------------
+remarks:        Please report SPAM and suspicious activity from
+remarks:        this network to abuse@454.ru only. Any messages
+remarks:        to any other address, relative SPAM or security remarks: issues, will not be concerned.
+remarks:        ------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2014-11-20T09:33:44Z
+last-modified:  2026-03-13T07:17:34Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.204.0/23
+descr:          Izet Telecom
+origin:         AS41925
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+org:            ORG-LF4-RIPE
+mnt-by:         FACTORIAL-MNT
+created:        2018-04-25T12:32:35Z
+last-modified:  2026-03-13T07:16:43Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.204.0/24
+descr:          Izet Telecom
+origin:         AS41925
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+org:            ORG-LF4-RIPE
+created:        2012-12-10T03:04:19Z
+last-modified:  2026-03-13T07:16:36Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.205.0/24
+descr:          Izet Telecom
+origin:         AS41925
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+org:            ORG-LF4-RIPE
+created:        2012-12-10T03:04:41Z
+last-modified:  2026-03-13T07:16:47Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.208.0/20
+descr:          Izet Telecom
+origin:         AS41925
+mnt-by:         FACTORIAL-MNT
+created:        2016-02-20T06:06:18Z
+last-modified:  2026-03-13T07:19:47Z
+source:         RIPE
+org:            ORG-LLCF1-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.208.0/21
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2010-04-16T07:06:14Z
+last-modified:  2026-03-13T07:18:22Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.208.0/22
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------- A T T E N T I O N! -----------------
+remarks:        Please report SPAM and suspicious activity from
+remarks:        this network to abuse@454.ru only. Any messages
+remarks:        to any other address, relative SPAM or security remarks: issues, will not be concerned.
+remarks:        ------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2014-11-20T09:34:03Z
+last-modified:  2026-03-13T07:17:58Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.208.0/24
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------- A T T E N T I O N! -----------------
+remarks:        Please report SPAM and suspicious activity from
+remarks:        this network to abuse@454.ru only. Any messages
+remarks:        to any other address, relative SPAM or security remarks: issues, will not be concerned.
+remarks:        ------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2014-11-20T09:18:52Z
+last-modified:  2026-03-13T07:17:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.209.0/24
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2012-11-14T09:14:05Z
+last-modified:  2026-03-13T07:17:48Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.210.0/24
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------- A T T E N T I O N! -----------------
+remarks:        Please report SPAM and suspicious activity from
+remarks:        this network to abuse@454.ru only. Any messages
+remarks:        to any other address, relative SPAM or security remarks: issues, will not be concerned.
+remarks:        ------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2014-11-20T09:34:24Z
+last-modified:  2026-03-13T07:17:53Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.211.0/24
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------- A T T E N T I O N! -----------------
+remarks:        Please report SPAM and suspicious activity from
+remarks:        this network to abuse@454.ru only. Any messages
+remarks:        to any other address, relative SPAM or security remarks: issues, will not be concerned.
+remarks:        ------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2014-11-20T09:34:41Z
+last-modified:  2026-03-13T07:18:03Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.212.0/22
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------- A T T E N T I O N! -----------------
+remarks:        Please report SPAM and suspicious activity from
+remarks:        this network to abuse@454.ru only. Any messages
+remarks:        to any other address, relative SPAM or security remarks: issues, will not be concerned.
+remarks:        ------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2014-11-20T09:35:18Z
+last-modified:  2026-03-13T07:18:27Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.212.0/24
+descr:          Izet Telecom
+origin:         AS41925
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+org:            ORG-LF4-RIPE
+created:        2014-05-29T10:21:35Z
+last-modified:  2026-03-13T07:18:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.213.0/24
+descr:          Izet Telecom
+origin:         AS41925
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+org:            ORG-LF4-RIPE
+created:        2015-08-04T17:26:36Z
+last-modified:  2026-03-13T07:18:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.215.0/24
+descr:          Izet Telecom
+origin:         AS41925
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+org:            ORG-LF4-RIPE
+created:        2015-08-04T17:27:52Z
+last-modified:  2026-03-13T07:18:32Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.216.0/22
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2025-10-17T05:33:48Z
+last-modified:  2026-03-13T07:18:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.216.0/23
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2010-03-15T11:41:46Z
+last-modified:  2026-03-13T07:18:38Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.220.0/22
+descr:          Izet Telecom
+origin:         AS41925
+org:            ORG-LF4-RIPE
+remarks:        ----------------- A T T E N T I O N! ------------------------
+remarks:        Please report SPAM and suspicious activity from this network
+remarks:        to abuse@454.ru only. Any messages to any other address,
+remarks:        relative SPAM or security issues, will not be concerned.
+remarks:        -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2011-10-20T10:37:54Z
+last-modified:  2026-03-13T07:19:52Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.220.0/24
+descr:          Izet Telecom
+origin:         AS41925
+mnt-by:         FACTORIAL-MNT
+created:        2012-07-25T04:56:20Z
+last-modified:  2026-03-13T07:18:52Z
+source:         RIPE
+descr:          ----------------- A T T E N T I O N! ------------------------
+descr:          Please report SPAM and suspicious activity from this network
+descr:          to abuse@454.ru only. Any messages to any other address,
+descr:          relative SPAM or security issues, will not be concerned.
+descr:          -------------------------------------------------------------
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.221.0/24
+descr:          Izet Telecom
+origin:         AS41925
+mnt-by:         FACTORIAL-MNT
+created:        2012-07-25T04:55:48Z
+last-modified:  2026-03-13T07:19:37Z
+source:         RIPE
+descr:          ----------------- A T T E N T I O N! ------------------------
+descr:          Please report SPAM and suspicious activity from this network
+descr:          to abuse@454.ru only. Any messages to any other address,
+descr:          relative SPAM or security issues, will not be concerned.
+descr:          -------------------------------------------------------------
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.222.0/24
+descr:          Izet Telecom
+origin:         AS41925
+descr:          ----------------- A T T E N T I O N! ------------------------
+descr:          Please report SPAM and suspicious activity from this network
+descr:          to abuse@454.ru only. Any messages to any other address,
+descr:          relative SPAM or security issues, will not be concerned.
+descr:          -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2012-02-14T06:50:23Z
+last-modified:  2026-03-13T07:19:42Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+route:          87.249.223.0/24
+descr:          Izet Telecom
+origin:         AS41925
+descr:          ----------------- A T T E N T I O N! ------------------------
+descr:          Please report SPAM and suspicious activity from this network
+descr:          to abuse@factorial.ru only. Any messages to any other address,
+descr:          relative SPAM or security issues, will not be concerned.
+descr:          -------------------------------------------------------------
+mnt-by:         FACTORIAL-MNT
+created:        2012-07-25T04:56:01Z
+last-modified:  2026-03-13T07:19:57Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

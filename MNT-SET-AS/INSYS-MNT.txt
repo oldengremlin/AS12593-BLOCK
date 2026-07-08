@@ -1,67 +1,216 @@
-2026-07-08 02:31:15 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-07-08 02:31:15 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-07-08 02:31:15 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+as-set:         AS-GARANT-MULTICOM
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         INSYS-MNT
+created:        2020-02-12T06:05:36Z
+last-modified:  2020-02-12T06:06:30Z
+source:         RIPE
+members:        AS28890
+members:        AS57123
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS-INSYS-EKB
+descr:          AS-INSYS-EKB
+members:        AS34869
+members:        AS49521
+members:        AS199120
+members:        AS59495
+members:        AS47974
+members:        AS44845
+members:        AS28890
+members:        AS44528
+members:        AS39073
+members:        AS41928
+members:        AS34322
+members:        AS41861
+members:        AS21275
+members:        AS39741
+members:        AS42776
+members:        AS50089
+members:        AS57200
+members:        AS57363
+members:        AS51690
+members:        AS61084
+members:        AS-GALAXYDATA
+members:        AS41578
+members:        AS51883
+members:        AS209666
+members:        AS44688
+members:        AS207967
+members:        AS206873
+members:        AS210499
+members:        AS215519
+members:        AS205194
+members:        AS51507
+members:        AS-URALTRANSCOM
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         INSYS-MNT
+created:        2007-06-27T14:37:46Z
+last-modified:  2026-03-20T11:21:37Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS-INSYS6-EKB
+descr:          AS-INSYS6-EKB
+members:        AS28890
+members:        AS206873
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         INSYS-MNT
+created:        2020-06-01T05:20:53Z
+last-modified:  2020-06-01T05:20:53Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS28890
+as-name:        INSYS-AS
+descr:          INSYS ISP
+descr:          INSYS Ekaterinburg,N-Tagil,Pervouralsk,Asbest,V-Pyshma,Sredneuralsk
+descr:          -------------------------------------------------------------
+descr:          EKATERINBURG UPLINKS
+descr:          -------------------------------------------------------------
+org:            ORG-IJ1-RIPE
+import:         from AS12389 action pref=75; accept ANY
+export:         to AS12389 announce AS-INSYS-EKB
+import:         from AS57304 action pref=75; accept ANY
+export:         to AS57304 announce AS-INSYS-EKB
+import:         from AS20485 action pref=75; accept ANY
+export:         to AS20485 announce AS-INSYS-EKB
+import:         from AS3216 action pref=75; accept ANY
+export:         to AS3216 announce AS-INSYS-EKB
+descr:          --------------------------------------------------------------
+descr:          INTERNET EXCHANGE
+descr:          --------------------------------------------------------------
+import:         from AS43213 action pref=100; accept AS-EKTROUTESERVER
+import:         from AS8631 action pref=75; accept AS-MSKROUTESERVER
+import:         from AS50952 action pref=75; accept AS-DATAIX
+export:         to AS43213 announce AS-INSYS-EKB
+export:         to AS8631 announce AS-INSYS-EKB
+export:         to AS50952 announce AS-INSYS-EKB
+descr:          ---------------------------------------------------------
+descr:          DIRECT PROVIDER EXCHANGE
+descr:          ---------------------------------------------------------
+import:         from AS9049 action pref=100; accept AS9049;
+descr:          ---------------------------------------------------------
+descr:          Customers
+descr:          ---------------------------------------------------------
+import:         from AS34869 action pref=500; accept AS34869;
+import:         from AS44528 action pref=500; accept AS44528;
+import:         from AS206873 action pref=500; accept AS-GALAXYDATA;
+export:         to AS206873 announce ANY
+descr:          +-------------------------------------------------------
+descr:          | FOR MORE INFO OF BGP
+descr:          | CONNECTIONS IN EKATERINBURG
+descr:          | CONTACT NOC
+descr:          | 911@profintel.ru
+descr:          +-------------------------------------------------------
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INSYS-MNT
+created:        2003-03-27T14:53:11Z
+last-modified:  2025-08-08T09:31:25Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS34869
+as-name:        EKANET-AS
+import:         from AS28890 accept ANY
+export:         to AS28890 announce AS34869
+org:            ORG-IJ1-RIPE
+status:         ASSIGNED
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         RIPE-NCC-END-MNT
+notify:         info@isnet.ru
+mnt-by:         INSYS-MNT
+created:        2005-04-21T09:36:08Z
+last-modified:  2023-05-10T10:57:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS44528
+as-name:        PKF-AZIMUT-AS
+org:            ORG-IJ1-RIPE
+import:         from AS28890 accept ANY
+export:         to AS28890 announce AS44528
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INSYS-MNT
+created:        2008-02-01T10:40:06Z
+last-modified:  2023-05-10T10:58:19Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS57123
+as-name:        Garant-AS
+org:            ORG-OG27-RIPE
+import:         from AS12389 action pref=100; accept ANY
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS12389 announce AS57123
+export:         to AS20485 announce AS57123
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         INSYS-MNT
+mnt-by:         OOOGarant-mnt
+created:        2011-07-25T14:33:09Z
+last-modified:  2024-03-29T09:16:14Z
+source:         RIPE
+sponsoring-org: ORG-IJ1-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+

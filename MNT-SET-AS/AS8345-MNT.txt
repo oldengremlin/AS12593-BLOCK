@@ -1,67 +1,180 @@
-2026-07-08 02:28:31 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-07-08 02:28:31 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-07-08 02:28:31 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+as-set:         AS-DSIEAS
+descr:          DSI EAS member list
+members:        AS51034
+members:        AS47398
+members:        AS-DSIJSC
+members:        AS197779
+members:        AS-SIBTELECOM
+members:        AS-EDINSTVOTELECOM
+members:        AS58189
+members:        AS59616
+members:        AS31257
+members:        AS-BAIKAL
+members:        AS56535
+members:        AS197779
+members:        AS61406
+members:        AS-BASE
+members:        AS202806
+members:        AS207228
+members:        AS29182
+members:        AS-AECC
+members:        AS198086
+members:        AS42971
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         AS8345-MNT
+created:        2018-04-10T02:16:12Z
+last-modified:  2023-07-13T00:50:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         as-dsijsc
+descr:          DSI customers AS list
+members:        AS8345
+members:        AS29182
+members:        AS47457
+members:        AS49267
+members:        AS196991
+members:        AS56959
+members:        AS50753
+members:        AS59541
+members:        AS42574
+members:        AS47342
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         AS8345-MNT
+notify:         ripe-ip-tech@dsi.ru
+created:        2003-07-02T08:11:57Z
+last-modified:  2019-05-29T07:23:43Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         as-weacom
+descr:          DSI EAS member list
+members:        AS51034
+members:        AS47398
+members:        AS-DSIJSC
+members:        AS197779
+members:        AS-SIBTELECOM
+members:        AS-EDINSTVOTELECOM
+members:        AS58189
+members:        AS59616
+members:        AS31257
+members:        AS-BAIKAL
+members:        AS56535
+members:        AS51645
+members:        AS58087
+members:        AS197779
+members:        AS61406
+members:        AS-BASE
+members:        AS-SKA
+members:        AS-HRTEL
+members:        AS207228
+members:        AS197911
+members:        AS-AECC
+members:        AS198086
+members:        AS42971
+members:        AS8506
+members:        AS12772
+members:        AS44345
+members:        AS62200
+members:        AS60452
+members:        AS44248
+members:        AS25381
+members:        AS48035
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         AS8345-MNT
+created:        2010-11-10T06:24:06Z
+last-modified:  2025-01-22T07:15:18Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS-WEACOMIX
+descr:          WEACOM Internet exchange
+members:        AS51034
+members:        AS-DSIJSC
+members:        AS56969
+members:        AS21442
+members:        AS-SIBTELECOM
+members:        AS-BAIKAL
+members:        AS56535
+members:        AS-EDINSTVOTELECOM
+members:        AS21087
+members:        AS58189
+members:        AS3216
+members:        AS-BASE
+members:        AS-ORTEL
+members:        AS-ORIONNET
+members:        AS-IRKUTSK
+members:        AS9049
+members:        AS197585
+members:        AS59616
+members:        AS61406
+members:        AS202806
+members:        AS61122
+members:        AS-TELEOS-1
+members:        AS-NSPLUS
+members:        AS-CHTE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         AS8345-MNT
+mnt-by:         AS51429-MNT
+created:        2011-12-28T03:13:35Z
+last-modified:  2017-12-19T06:52:35Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS211221
+as-name:        Stankomach-AS
+org:            ORG-SA4746-RIPE
+sponsoring-org: ORG-RA21-RIPE
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS211221
+import:         from AS21378 accept ANY
+export:         to AS21378 announce AS211221
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS8345-MNT
+created:        2021-06-04T08:29:31Z
+last-modified:  2021-06-04T08:29:31Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+

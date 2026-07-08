@@ -1,0 +1,64 @@
+as-set:         AS-FUTURES
+descr:          Macro for JSC "Futures Telecom" network
+members:        AS25520
+members:        AS43741
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         FT-MNT
+created:        2004-06-23T14:39:43Z
+last-modified:  2013-04-09T14:04:48Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS25520
+as-name:        FT-AS
+org:            ORG-JT1-RIPE
+descr:          ----------------------------------------------------------
+descr:          ----------------------------------------------------------
+descr:          --------------------- Uplinks ----------------------------
+import:         from AS196750 action pref=200; accept ANY
+import:         from AS35000 action pref=200; accept ANY
+import:         from AS31500 action pref=200; accept ANY
+mp-import:      afi ipv6.unicast from AS196750 accept ANY
+mp-import:      afi ipv6.unicast from AS35000 accept ANY
+mp-import:      afi ipv6.unicast from AS31500 accept ANY
+descr:          ----------------------------------------------------------
+descr:          --------------------- Customers ---------------------
+import:         from AS43741 action pref=500; accept AS43741
+descr:          ----------------------------------------------------------
+descr:          --------------------- Uplinks ----------------------------
+export:         to AS196750 announce AS-FUTURES
+export:         to AS35000 announce AS-FUTURES
+export:         to AS31500 announce AS-FUTURES
+mp-export:      afi ipv6.unicast to AS196750 announce AS-FUTURES
+mp-export:      afi ipv6.unicast to AS35000 announce AS-FUTURES
+mp-export:      afi ipv6.unicast to AS31500 announce AS-FUTURES
+descr:          ----------------------------------------------------------
+descr:          --------------------- Customers ---------------------
+export:         to AS43741 announce ANY
+descr:          ----------------------------------------------------------
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@futures.ru
+mnt-by:         FT-MNT
+created:        2002-12-18T14:41:30Z
+last-modified:  2026-06-08T10:22:35Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+

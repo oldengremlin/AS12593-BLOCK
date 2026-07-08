@@ -1,14 +1,3 @@
-% This is the RIPE Database query service.
-% The objects are in RPSL format.
-%
-% The RIPE Database is subject to Terms and Conditions.
-% See https://docs.db.ripe.net/terms-conditions.html
-
-% Note: this output has been filtered.
-%       To receive output for a database update, use the "-B" flag.
-
-% Information related to 'AS-NIXCZ-RSCLIENTS'
-
 as-set:         AS-NIXCZ-RSCLIENTS
 descr:          client networks of NIX.CZ routeserver
 members:        AS-2CONNECT
@@ -18,7 +7,6 @@ members:        AS-ANEXIA
 members:        AS-ANTIK
 members:        AS112
 members:        AS-IGNEMEA
-members:        AS-ASW
 members:        AS-AVONET-CZ
 members:        AS13119:AS-Szczecin-COM
 members:        AS-AKAMAI
@@ -28,14 +16,14 @@ members:        AS-ALLEGROGROUP
 members:        AS-ALLEGROGROUP
 members:        AS59970
 members:        AS1299
-members:        AS-A
-members:        AS208882
+members:        AS-SUPRO-CZ
 members:        AS197307
 members:        AS-BSO
 members:        AS-IXREACH
 members:        AS-BEYOND
 members:        AS-BEYOND
 members:        AS-PROZETA-NET
+members:        AS60606:AS-BLINDSPOT
 members:        AS56456
 members:        AS2852:AS-CESNET-NIX
 members:        AS-CETIN
@@ -57,13 +45,14 @@ members:        AS-CLOUD4COM
 members:        AS201730:AS-CZ-DS
 members:        AS-CLOUDFLARE
 members:        AS-8646
-members:        AS-COLTEU
+members:        AS8220:AS-COLT
 members:        AS-COMSOURCE
 members:        AS-CONNECTPLUS
 members:        AS-COOLHOUSING
 members:        AS-CORE-BACKBONE
+members:        AS199806
 members:        AS-DOL
-members:        AS61342
+members:        AS61241
 members:        AS-DOMATV
 members:        AS208060
 members:        AS15614:AS-DRAGON
@@ -88,6 +77,8 @@ members:        AS-GIGANET-CZ
 members:        AS-GITY
 members:        AS-GOOGLE
 members:        AS60592
+members:        AS-HAPPYPEERING
+members:        AS-HAWE-ALL
 members:        AS-HETZNER
 members:        AS40994:AS-ALWYZON
 members:        AS-HOSTVIRTUAL
@@ -99,26 +90,23 @@ members:        AS-LROOT
 members:        AS-INTERCONNECT-CZ
 members:        AS-INTERKVM
 members:        AS-INTCZ-NIX
-members:        AS-INEXT
 members:        AS-ISPALLIANCE-CZ
 members:        AS-ITS-NETWORKS
 members:        AS-INFTELE
-members:        AS5405:AS-INTERDOTLINK
-members:        AS206784
 members:        AS211826:AS-ISTQ
 members:        AS215582:AS-IPV6PROJECT-EU
-members:        AS-KLFNET
+members:        AS59984:AS-KLF-MEMBERS
 members:        AS-KAORA
 members:        AS201163
 members:        AS-KOOPERATIVA
 members:        AS56800
 members:        AS-LIGHTSTORM
-members:        AS-LLNW
 members:        AS-MSOFT-NETWORKS
 members:        AS-MERIT-NIX
 members:        AS34080
 members:        AS-NS9_RIPN_NET
 members:        AS24971:AS-MASTERCZ-CZNIX
+members:        AS204917
 members:        AS8075
 members:        AS209719
 members:        AS-MOPOS-NIX
@@ -126,7 +114,7 @@ members:        AS48298
 members:        AS206703
 members:        AS-NFX-NIX
 members:        AS215704
-members:        AS-NIX
+members:        AS6881:AS-NIX
 members:        AS-NETIX-INT
 members:        AS-NETXAS
 members:        AS210111
@@ -150,7 +138,6 @@ members:        AS6507
 members:        AS-SGGS
 members:        AS203165
 members:        AS49931
-members:        AS-SUPRO-CZ
 members:        AS-SWAN
 members:        AS-SEZNAM-CZ
 members:        AS59959:AS-SFERIA
@@ -171,75 +158,61 @@ members:        AS213387
 members:        as-techcom
 members:        AS39791:AS-TPS
 members:        AS209369:AS-TCPRO-NIX-CZ-IXP
+members:        AS-BYTEDANCE
 members:        AS212974
 members:        AS-TRESTEL-SK
 members:        AS-PANTEL
-members:        AS-SBB-RS
-members:        AS-SBB-V6
+members:        AS-UGNI
 members:        AS204384
 members:        AS202877
 members:        AS56344
 members:        AS50695
 members:        AS29405:AS-VNET
-members:        AS-VSHOSTING-CZ
+members:        AS43541:AS-VSHOSTING-CZ
 members:        AS-VALVE
 members:        AS-GTLD
 members:        AS-VODAFONE-CZ
+members:        AS1273:AS-CWW
+members:        AS1273:AS-CWW-V6
 members:        AS-IGNUM-NIX
 members:        AS-WIA-CUST
 members:        AS-WTUC
 members:        AS-WEB4U
 members:        AS-WEBSUPPORT
-members:        AS48689:AS-WEBGLOBE-OUT
 members:        AS205535
 members:        AS-YAHOO
 members:        AS206548
 members:        AS-MFNX
 members:        AS-NEOT
 members:        AS-NEOT6
+members:        AS47114
 members:        AS31349
 members:        AS-BNTS
 members:        AS-EHAMNET
+members:        AS-MEDIAINVENT
 members:        AS-SET-COOLN-NIX
 members:        AS-HA-VEL-CZNIX
 members:        as-hcncz
 members:        AS-INTERACTIVE3D
 members:        AS-NEXTLAYER
 members:        AS-CDT-NETWORKS
+members:        AS-INEXT
+members:        AS204949
 members:        AS-CRA-CZNIX
 members:        AS201594
 members:        AS204772
-admin-c:        NIX1-RIPE
-tech-c:         NIX1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         ripe@nix.cz
 mnt-by:         AS6881-MNT
 mnt-by:         NIXCZ_RS
 created:        2008-08-25T16:56:56Z
-last-modified:  2025-04-01T09:10:00Z
-source:         RIPE # Filtered
-
-role:           NIX.CZ comittee
-org:            ORG-Nz2-RIPE
-address:        NIX.CZ, z.s.p.o.
-address:        Milesovska 1136/5
-address:        Praha 3
-address:        130 00
-address:        Czech Republic
-phone:          +420 602 149 774
-abuse-mailbox:  abuse@nix.cz
-admin-c:        AG18479-RIPE
-admin-c:        ML7086-RIPE
-admin-c:        LET9-RIPE
-admin-c:        MR18435-RIPE
-tech-c:         AG18479-RIPE
-tech-c:         ML7086-RIPE
-tech-c:         LET9-RIPE
-tech-c:         MR18435-RIPE
-nic-hdl:        NIX1-RIPE
-mnt-by:         AS6881-MNT
-created:        1970-01-01T00:00:00Z
-last-modified:  2024-01-03T09:33:41Z
-source:         RIPE # Filtered
-
-% This query was served by the RIPE Database Query Service version 1.117 (SHETLAND)
-
-
+last-modified:  2026-03-09T15:29:51Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************

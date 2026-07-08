@@ -1,67 +1,190 @@
-2026-07-08 01:07:08 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:07:08 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:07:08 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS35641
+org:            ORG-CJSC19-RIPE
+as-name:        ELECTRO-COM-AS
+remarks:
+remarks:        ------------------------------------------------------
+remarks:        UPSTREAMS
+remarks:        ------------------------------------------------------
+remarks:        ***TTK***
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-ELECTROCOM
+remarks:        ------------------------------------------------------
+remarks:        PEERS
+remarks:        ------------------------------------------------------
+remarks:        MSK-IX
+remarks:        Moscow Internet Exchange
+import:         from AS8631 action pref=100; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-ELECTROCOM
+remarks:
+remarks:        RUNNet
+import:         from AS3267 action pref=100; accept AS-RUNNET
+export:         to AS3267 announce AS-ELECTROCOM
+remarks:
+remarks:        Macomnet
+import:         from AS8470 action pref=100; accept AS-MACOMNET
+export:         to AS8470 announce AS-ELECTROCOM
+remarks:
+remarks:        Peterstar
+import:         from AS35422 action pref=100; accept AS-PETERSTAR
+export:         to AS35422 announce AS-ELECTROCOM
+remarks:
+remarks:        INN
+import:         from AS49813 action pref=100; accept AS-INN
+export:         to AS49813 announce AS-ELECTROCOM
+remarks:
+remarks:        MasterHost
+import:         from AS35422 action pref=100; accept AS-MASTERHOST
+export:         to AS35422 announce AS-ELECTROCOM
+remarks:
+remarks:        NaukaNet
+import:         from AS28809 action pref=100; accept ANY
+export:         to AS28809 announce AS-ELECTROCOM
+remarks:
+remarks:        DATA-IX
+import:         from AS50952 action pref=100; accept AS-DATAIX
+export:         to AS50952 announce AS-ELECTROCOM
+remarks:
+remarks:        PROMETEY-PEERING
+import:         from AS47542 action pref=100; accept AS-PPEER
+export:         to AS475422 announce AS-ELECTROCOM
+remarks:
+remarks:        WIMAX
+import:         from AS8744 action pref=100; accept AS-WIMAX
+export:         to AS8744 announce AS-WIMAX
+remarks:
+remarks:        ------------------------------------------------------
+remarks:        Customers:
+remarks:        ------------------------------------------------------
+remarks:        Electro-Com Ryazan
+import:         from AS47313 action pref=200; accept AS-ECOM-RZN
+export:         to AS47313 announce ANY
+remarks:
+remarks:        Electro-Com Don
+import:         from AS44775 action pref=200; accept AS-ECOM-DON
+export:         to AS44775 announce ANY
+remarks:
+remarks:        Novtelecom
+import:         from AS47637 action pref=200; accept AS-NOVTELECOM
+export:         to AS47637 announce ANY
+remarks:
+remarks:        Electro-Com Kaluga
+import:         from AS21438 action pref=200; accept AS-ECOM-KALUGA
+export:         to AS21438 announce ANY
+remarks:
+remarks:        ZVI
+import:         from AS31626 action pref=200; accept AS31626
+export:         to AS31626 announce ANY
+remarks:
+remarks:        Foratelecom
+import:         from AS57420 action pref=200; accept AS-FORATELECOM
+export:         to AS57420 announce ANY
+remarks:
+remarks:        +-----------------------------------------------------
+remarks:        |
+remarks:        | External communities may be set by external peers
+remarks:        | when talking to AS35641. Communities accepted from
+remarks:        | customers are in range 35641:2000 - 35641:2999
+remarks:        |
+remarks:        | Upstreams
+remarks:        | 35641:200Y - when announcing to FREE-PLACE
+remarks:        | 35641:201Y - when announcing to RETN
+remarks:        | 35641:202Y - when announcing to FREE-PLACE
+remarks:        | 35641:203Y - when announcing to FIORD
+remarks:        |
+remarks:        | Any Upstream
+remarks:        | 35641:209Y - when announcing to any upstream
+remarks:        |
+remarks:        | National peers
+remarks:        | 35641:220Y - when announcing to MSK-IX
+remarks:        | 35641:221Y - when announcing to MasterHost
+remarks:        | 35641:222Y - when announcing to NaukaNet
+remarks:        | 35641:225Y - when announcing to DATA-IX
+remarks:        | 35641:226Y - when announcing to PROMETEY-PEERING
+remarks:        | 35641:227Y - when announcing to WIMAX
+remarks:        |
+remarks:        | Any Peer
+remarks:        | 35641:229Y - when announcing to any peer
+remarks:        |
+remarks:        | Y=0 - do not advertise
+remarks:        | Y=1,2,4 or 6 - prepend 35641 1,2,4 or 6 times
+remarks:        |
+remarks:        | 35641:28XX Set local preference to xx, where:
+remarks:        | XX=50 - the lowest value used in the network
+remarks:        | (BACKUP)
+remarks:        |
+remarks:        +---------------------------------------------------
+remarks:        | TAGGING COMMUNITIES
+remarks:        |
+remarks:        | Internal communities are assigned only internally.
+remarks:        | They may be used by peers to filter some prefixes.
+remarks:        |
+remarks:        | 35641:60XX
+remarks:        |
+remarks:        | XX =
+remarks:        |
+remarks:        | Local
+remarks:        | 01 - All customer and AS35641 routes
+remarks:        | 00 - Originated from AS35641
+remarks:        |
+remarks:        | Upstreams
+remarks:        | 11 - FREEPLACE
+remarks:        | 12 - TTK
+remarks:        | 13 - RETN
+remarks:        | 14 - FIORD
+remarks:        |
+remarks:        | National peers
+remarks:        | 20 - M9-IX
+remarks:        | 21 - MasterHost
+remarks:        | 22 - NaukaNet
+remarks:        | 25 - DATA-IX
+remarks:        | 26 - PROMETEY-PEERING
+remarks:        | 27 - WIMAX
+remarks:        |
+remarks:        |
+remarks:        +---------------------------------------------------
+remarks:        | Looking Glass: http://lg.electro-com.ru
+remarks:        +---------------------------------------------------
+remarks:        | NOC: network@electro-com.ru
+remarks:        +---------------------------------------------------
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TRANSTELECOM-MNT
+created:        2005-09-22T10:01:37Z
+last-modified:  2025-01-13T21:16:51Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS35641
+country:        RU
+as-name:        ELECTRO-COM-AS Joint Stock Company TransTeleCom
+
+organisation:   ORG-CJSC19-RIPE
+org-name:       Joint Stock Company TransTeleCom
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-CJSC19-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        KTTK-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        TRANSTELECOM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         TRANSTELECOM-MNT
+created:        2009-03-11T13:07:47Z
+last-modified:  2026-05-13T07:32:38Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

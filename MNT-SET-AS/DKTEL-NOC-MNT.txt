@@ -1,0 +1,360 @@
+as-set:         AS-PRIMELINK
+members:        AS49058
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@dktel.ru
+mnt-by:         dktel-noc-mnt
+created:        2011-08-04T14:55:30Z
+last-modified:  2023-12-28T18:31:42Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS199624:AS-DKTEL
+descr:          DK Svyaz OOO AS-SET
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         noc@dktel.ru
+mnt-by:         dktel-noc-mnt
+created:        2023-12-23T18:13:27Z
+last-modified:  2025-02-27T20:54:26Z
+source:         RIPE
+remarks:        == DK Svyaz==
+members:        AS199624
+members:        AS199623
+members:        AS199622
+members:        AS199647
+members:        AS47857
+members:        AS56857
+members:        AS57290
+members:        AS49058
+members:        AS204217
+remarks:        == Downlinks ==
+members:        AS-LIGALINK
+members:        AS44772:AS-INTSG
+members:        AS49929
+members:        AS197632
+members:        AS51578
+members:        AS44121
+members:        AS48477
+members:        AS202150
+members:        AS57867
+members:        AS57490
+members:        AS12456
+members:        AS199320
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS199622
+as-name:        DKTEL-USPENSKIY
+org:            ORG-DSO7-RIPE
+import:         from AS199624 accept ANY
+export:         to AS199624 announce AS199622
+import:         from AS15886 accept ANY
+export:         to AS15886 announce AS199622
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@dktel.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dktel-noc-mnt
+created:        2012-11-02T13:58:41Z
+last-modified:  2023-12-29T19:03:31Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS199623
+as-name:        DKTEL-SCHERBINKA
+org:            ORG-DSO7-RIPE
+import:         from AS199624 accept ANY
+export:         to AS199624 announce AS199623
+import:         from AS43404 accept ANY
+export:         to AS43404 announce AS199623
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@dktel.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dktel-noc-mnt
+created:        2012-11-02T13:56:35Z
+last-modified:  2023-12-29T19:03:43Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS199624
+as-name:        DKTEL-AS
+org:            ORG-DSO7-RIPE
+remarks:        -------------------------------------------------------------
+remarks:        == Uplinks ==
+remarks:        === NaukaNet ===
+import:         from AS8641 accept ANY
+export:         to AS8641 announce AS199624:AS-DKTEL
+remarks:        === Inetcom ===
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS199624:AS-DKTEL
+remarks:        === Transroute ===
+import:         from AS50509 accept ANY
+export:         to AS50509 announce AS199624:AS-DKTEL
+remarks:        === GlobalNet ===
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS199624:AS-DKTEL
+mp-import:      afi ipv6.unicast from AS31500 accept ANY
+mp-export:      afi ipv6.unicast to AS31500 announce AS199624:AS-DKTEL
+import:         from AS15169 action pref=200; accept AS15169
+export:         to AS15169 announce AS199624:AS-DKTEL
+remarks:        === Freeway ===
+import:         from AS62379 accept ANY
+export:         to AS62379 announce AS199624:AS-DKTEL
+remarks:        === Rostelecom===
+import:         from AS42861 accept ANY
+export:         to AS42861 announce AS199624:AS-DKTEL
+remarks:        -------------------------------------------------------------
+remarks:        == IXes ==
+remarks:        === MSK-IX ===
+import:         from AS8631 accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS199624:AS-DKTEL
+remarks:        === Global-IX ===
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS199624:AS-DKTEL
+remarks:        === Data-IX ===
+import:         from AS50952 accept ANY
+export:         to AS50952 announce AS199624:AS-DKTEL
+mp-import:      afi ipv6.unicast from AS50952 accept ANY
+mp-export:      afi ipv6.unicast to AS50952 announce AS199624:AS-DKTEL
+remarks:        === Eurasia-IX ===
+import:         from AS56931 accept ANY
+export:         to AS56931 announce AS199624:AS-DKTEL
+mp-import:      afi ipv6.unicast from AS56931 accept ANY
+mp-export:      afi ipv6.unicast to AS56931 announce AS199624:AS-DKTEL
+remarks:        === Piter-IX ===
+import:         from AS49869 accept as-piter-ix-msk
+export:         to AS49869 announce AS199624:AS-DKTEL
+remarks:        -------------------------------------------------------------
+remarks:        == Downlinks ==
+import:         from AS199624:AS-DKTEL action pref=200; accept PeerAS
+export:         to AS199624:AS-DKTEL announce ANY
+remarks:        -------------------------------------------------------------
+import:         from AS49058 action pref=200; accept AS49058
+export:         to AS49058 announce ANY
+mp-import:      afi ipv6.unicast from AS49058 action pref=200; accept AS49058
+mp-export:      afi ipv6.unicast to AS49058 announce ANY
+import:         from AS199622 action pref=200; accept AS199622
+export:         to AS199622 announce ANY
+import:         from AS199623 action pref=200; accept AS199623
+export:         to AS199623 announce ANY
+import:         from AS199647 action pref=200; accept AS199647
+export:         to AS199647 announce ANY
+import:         from AS56857 action pref=200; accept AS56857
+export:         to AS56857 announce ANY
+import:         from AS57290 action pref=200; accept AS57290
+export:         to AS57290 announce ANY
+import:         from AS47857 action pref=200; accept AS47857
+export:         to AS47857 announce ANY
+remarks:        -------------------------------------------------------------
+import:         from AS198185 action pref=200; accept AS-LIGALINK
+export:         to AS198185 announce ANY
+import:         from AS57867 action pref=200; accept AS57867
+export:         to AS57867 announce ANY
+import:         from AS197632 action pref=200; accept AS197632
+export:         to AS197632 announce ANY
+import:         from AS49929 action pref=200; accept AS49929
+export:         to AS49929 announce ANY
+import:         from AS201575 action pref=200; accept AS201575
+export:         to AS201575 announce ANY
+import:         from AS51578 action pref=200; accept AS51578
+export:         to AS51578 announce ANY
+import:         from AS44121 action pref=200; accept AS44121
+export:         to AS44121 announce ANY
+import:         from AS48477 action pref=200; accept AS48477
+export:         to AS48477 announce ANY
+import:         from AS202150 action pref=200; accept AS202150
+export:         to AS202150 announce ANY
+import:         from AS57490 action pref=200; accept AS57490
+export:         to AS57490 announce ANY
+import:         from AS44772 action pref=200; accept AS44772
+export:         to AS44772 announce ANY
+import:         from AS12456 action pref=200; accept AS12456
+export:         to AS12456 announce ANY
+import:         from AS199320 action pref=200; accept AS199320
+export:         to AS199320 announce ANY
+remarks:        -------------------------------------------------------------
+remarks:        == Advertising control communities ==
+remarks:        199624:50 -- set localpref to 50
+remarks:        199624:302x -- Transroute
+remarks:        199624:303x -- Nauka-Svyaz
+remarks:        199624:304x -- Freeway
+remarks:        199624:305x -- Inetcom
+remarks:        199624:306x -- Eurasia-IX
+remarks:        199624:307x -- Piter-IX MSK
+remarks:        199624:308x -- Global-IX
+remarks:        199624:309x -- MSK-IX
+remarks:        199624:312x -- Data-IX
+remarks:        199624:314x -- Rostelecom
+remarks:        x=0 means do not advertise
+remarks:        x=1, 2 or 4 means prepend 199624 1, 2 or 4 times
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@dktel.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dktel-noc-mnt
+created:        2012-11-02T13:50:42Z
+last-modified:  2026-06-04T07:59:12Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS199647
+as-name:        DKTEL-FEDERAL-BTI
+org:            ORG-DSO7-RIPE
+import:         from AS199624 accept ANY
+export:         to AS199624 announce AS199647
+import:         from AS15672 accept ANY
+export:         to AS15672 announce AS199647
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@dktel.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dktel-noc-mnt
+created:        2012-10-26T13:52:05Z
+last-modified:  2023-12-29T19:04:26Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS47857
+as-name:        COM-ON-AS
+org:            ORG-DSO7-RIPE
+import:         from AS199624 accept ANY
+export:         to AS199624 announce AS47857
+import:         from AS49058 accept ANY
+export:         to AS49058 announce AS47857
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@dktel.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dktel-noc-mnt
+created:        2008-09-05T10:31:21Z
+last-modified:  2023-12-29T19:04:43Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS49058
+as-name:        DKTEL-PLT-AS
+org:            ORG-DSO7-RIPE
+import:         from AS199624 accept ANY
+export:         to AS199624 announce AS49058
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@dktel.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dktel-noc-mnt
+created:        2009-04-01T14:29:56Z
+last-modified:  2023-12-29T19:01:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS56857
+as-name:        DKTEL-OPRF
+org:            ORG-DSO7-RIPE
+import:         from AS199624 accept ANY
+export:         to AS199624 announce AS56857
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS56857
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dktel-noc-mnt
+created:        2011-05-30T11:43:36Z
+last-modified:  2023-12-23T17:11:33Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS57290
+as-name:        MPROV-RU
+org:            ORG-DSO7-RIPE
+import:         from AS199624 accept ANY
+export:         to AS199624 announce AS57290
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS57290
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@dktel.ru
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         dktel-noc-mnt
+created:        2011-09-15T10:59:18Z
+last-modified:  2025-01-14T10:20:26Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+

@@ -1,67 +1,124 @@
-2026-07-08 01:08:31 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:08:31 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:08:31 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS41066
+as-name:        RTCOMM-SIBIR-AS
+org:            ORG-RA25-RIPE
+import:         from AS12389 action pref=501; accept ANY
+import:         from AS21127 action pref=501; accept ANY
+import:         from AS42403 action pref=700; accept ANY
+import:         from AS30871 accept AS30871
+import:         from AS35711 accept AS35711
+import:         from AS43208 accept AS43208
+import:         from AS50282 accept AS50282
+import:         from AS51213 accept AS51213
+import:         from AS51804 accept AS51804
+import:         from AS9006 accept AS9006
+import:         from AS30788 accept AS30788
+import:         from AS49764 accept AS49764
+import:         from AS197482 accept AS197482
+import:         from AS8848 accept AS8848
+import:         from AS60119 accept AS60119
+import:         from AS29547 accept AS-CENTRINFORM-NSK
+import:         from AS50166 accept AS50166
+import:         from AS43489 accept AS43489
+export:         to AS12389 announce AS-RTCSIB
+export:         to AS21127 announce AS-RTCSIB
+export:         to AS42403 announce AS-RTCSIB
+export:         to AS30871 announce ANY
+export:         to AS35711 announce ANY
+export:         to AS43208 announce ANY
+export:         to AS50282 announce ANY
+export:         to AS51213 announce ANY
+export:         to AS51804 announce ANY
+export:         to AS9006 announce ANY
+export:         to AS30788 announce ANY
+export:         to AS49764 announce { 0.0.0.0/0 }
+export:         to AS197482 announce ANY
+export:         to AS8848 announce ANY
+export:         to AS60119 announce ANY
+export:         to AS29547 announce ANY
+export:         to AS50166 announce ANY
+export:         to AS43489 announce ANY
+remarks:        +---------------------------------------------------------------
+remarks:        |
+remarks:        | External communities may be set by external peers when
+remarks:        | talking to AS41066.
+remarks:        |
+remarks:        | Community Meaning
+remarks:        |
+remarks:        | 41066:170x When advertising to any uplink
+remarks:        | 41066:171x When advertising to TTK uplink
+remarks:        | 41066:172x When advertising to Beeline uplink
+remarks:        |
+remarks:        | 41066:120x When advertising to any peering
+remarks:        | 41066:121x When advertising NSK-IX peering
+remarks:        | 41066:122x When advertising Rostelecom peering
+remarks:        |
+remarks:        | ...x=0 - do not advertise
+remarks:        | ...x=1,2,4 or 6 - prepend 41066 (1,2,4 or 6) times
+remarks:        |
+remarks:        | 41066:1900 BACKUP community. Local preference is set to 100,
+remarks:        | which is the lowest value used in the network.
+remarks:        | We DO NOT accept "no-export" community.
+remarks:        +---------------------------------------------------------------
+remarks:        | 41066:666 - blackhole (discard) traffic
+remarks:        +---------------------------------------------------------------
+remarks:        | Any other 41066:XXX communities are deleted.
+remarks:        |
+remarks:        | CUSTOMER - Peers routes are getting local preference of 1000.
+remarks:        | RUSSIAN - Peers routes are getting local preference of 700-740.
+remarks:        | INTERNATIONAL - Peers routes and UPLINKS
+remarks:        | are getting local preference in the range of 600-680
+remarks:        |
+remarks:        | We are using prefix-list filters that were built according
+remarks:        | to RIPE route-objects.
+remarks:        |
+remarks:        +---------------------------------------------------------------
+remarks:        | Routing policies are becoming so complex that a complete
+remarks:        | description is beyond the scope of this document.
+remarks:        +---------------------------------------------------------------
+remarks:        | NOTE - Filtering on /24 boundary is applied - we do not
+remarks:        | reannounce any route more specific than a /24.
+remarks:        +---------------------------------------------------------------
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         mc@rtcomm-sibir.ru
+notify:         lir@rtcomm.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AS8342-MNT
+created:        2006-06-08T08:10:17Z
+last-modified:  2024-02-15T05:20:54Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS41066
+country:        RU
+as-name:        RTCOMM-SIBIR-AS JSC RTComm.RU
+
+organisation:   ORG-RA25-RIPE
+org-name:       JSC RTComm.RU
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-RA25-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        RTC-RU
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        AS8342-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         AS8342-MNT
+created:        2004-04-17T11:57:36Z
+last-modified:  2026-05-13T07:31:01Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

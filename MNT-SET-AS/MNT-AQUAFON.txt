@@ -1,0 +1,175 @@
+as-set:         AS-SET-AQUAFON
+org:            ORG-ZA74-RIPE
+descr:          Aquafon JSC
+members:        AS51957
+members:        AS44491
+members:        AS51112
+members:        AS60465
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         lir@aquafon.com
+mnt-by:         MNT-AQUAFON
+created:        2008-06-23T09:46:53Z
+last-modified:  2022-11-09T21:07:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS-SET-AQUANETS
+descr:          AQUAFON-GSM NETS
+members:        AS44491
+members:        AS51112
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-AQUAFON
+created:        2008-06-23T10:15:11Z
+last-modified:  2018-07-12T17:43:42Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS-SET-OSS
+descr:          OSS-LTD-NET
+members:        AS51112
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mnt-by:         MNT-AQUAFON
+created:        2014-06-27T19:16:14Z
+last-modified:  2018-07-12T17:37:22Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS198201
+as-name:        SUKHUM-IX
+remarks:        Route Servers for Sukhum Internet Exchange
+org:            ORG-ZA74-RIPE
+import:         from AS51112 action pref=100; accept AS51112
+import:         from AS57354 action pref=100; accept AS57354
+import:         from AS44491 action pref=100; accept AS44491
+export:         to AS51112 announce AS198201
+export:         to AS57354 announce AS198201
+export:         to AS44491 announce AS198201
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         lir@aquafon.com
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-AQUAFON
+created:        2011-11-08T11:03:30Z
+last-modified:  2018-09-04T11:06:47Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS44491
+as-name:        AQUAFON-AS
+org:            ORG-ZA74-RIPE
+remarks:        --- Upstreams ---
+import:         from AS51957 accept ANY
+export:         to AS51957 announce AS44491
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         ddanko@aquafon.com
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-AQUAFON
+created:        2008-01-28T14:10:43Z
+last-modified:  2018-09-04T10:29:59Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS51957
+as-name:        AQUAFON-AS
+org:            ORG-ZA74-RIPE
+remarks:        --- Upstreams ---
+import:         from AS20485 accept ANY
+export:         to AS20485 announce AS-SET-AQUAFON
+import:         from AS25490 accept ANY
+export:         to AS25490 announce AS-SET-AQUAFON
+import:         from AS31133 accept ANY
+import:         from AS50257 accept ANY
+export:         to AS31133 announce AS-SET-AQUAFON
+export:         to AS50257 announce ANY
+remarks:        --- Clients ---
+import:         from AS44491 accept AS44491
+export:         to AS44491 announce ANY
+import:         from AS51112 accept AS51112
+export:         to AS51112 announce ANY
+import:         from AS60465 accept AS60465
+export:         to AS60465 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-AQUAFON
+created:        2010-12-06T16:57:23Z
+last-modified:  2022-11-09T21:06:38Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS60465
+as-name:        NBRA-AS
+org:            ORG-NBOR1-RIPE
+import:         from AS51957 action pref=100; accept ANY
+export:         to AS51957 announce AS60465
+import:         from AS57354 action pref=100; accept ANY
+export:         to AS57354 announce AS60465
+import:         from AS50257 action pref=100; accept ANY
+export:         to AS50257 announce AS60465
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         MNT-AQUAFON
+created:        2013-07-15T09:08:00Z
+last-modified:  2025-11-17T12:20:28Z
+source:         RIPE
+sponsoring-org: ORG-ZA74-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+

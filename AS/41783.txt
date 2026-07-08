@@ -1,0 +1,57 @@
+aut-num:        AS41783
+as-name:        ITAEC-AS
+org:            ORG-ITAE1-RIPE
+import:         from AS9056 action pref=1; accept AS9056
+import:         from AS16083 action pref=10; accept ANY and not fltr-bogons
+import:         from AS21453 action pref=10; accept ANY and not fltr-bogons
+export:         to AS16083 announce AS41783:AS-CUSTOMERS
+export:         to AS21453 announce AS41783:AS-CUSTOMERS
+export:         to AS9056 announce ANY
+mp-import:      afi ipv6.unicast from AS9056 action pref=1; accept AS9056
+mp-export:      afi ipv6.unicast to   AS9056 announce ANY
+mp-import:      afi ipv6.unicast from AS16083 action pref=10; accept ANY
+mp-export:      afi ipv6.unicast to   AS16083 announce AS41783:AS-CUSTOMERS
+mp-import:      afi ipv6.unicast from AS21453 action pref=10; accept ANY
+mp-export:      afi ipv6.unicast to   AS21453 announce AS41783:AS-CUSTOMERS
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ITAEC-MNT
+created:        2006-10-24T15:07:35Z
+last-modified:  2020-11-28T10:31:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS41783
+country:        RU
+as-name:        ITAEC-AS Informational technologies and electronic communications LLC
+
+organisation:   ORG-Itae1-RIPE
+org-name:       Informational technologies and electronic communications LLC
+country:        RU
+org-type:       LIR
+address:        Dummy address for ORG-Itae1-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        IL1635-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        ITAEC-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         ITAEC-MNT
+created:        2009-05-26T09:56:50Z
+last-modified:  2026-05-13T07:32:43Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

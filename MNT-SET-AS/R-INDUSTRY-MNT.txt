@@ -1,0 +1,62 @@
+as-set:         AS-R-INDUSTRY
+descr:          The "Korporatsiya R-Industriya LLC" as-set object
+org:            ORG-CRL7-RIPE
+members:        AS208511
+members:        AS42301
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+mnt-by:         R-INDUSTRY-MNT
+created:        2019-07-22T20:40:09Z
+last-modified:  2019-07-22T20:40:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS208511
+as-name:        R-INDUSTRY-AS
+org:            ORG-CRL7-RIPE
+remarks:        ===============================================================
+remarks:        -= IPv4 Routing Policy =-
+remarks:        ---------------------------------------------------------------
+remarks:        Upstreams
+remarks:        ---------------------------------------------------------------
+remarks:
+remarks:        Smart Telecom Limited
+import:         from AS31376 action pref=100; accept {0.0.0.0/0} AS31376
+export:         to AS31376 announce AS-R-INDUSTRY
+remarks:
+remarks:        JSC Avantel
+import:         from AS51178 action pref=100; accept {0.0.0.0/0} AS51178
+export:         to AS51178 announce AS-R-INDUSTRY
+remarks:        ---------------------------------------------------------------
+remarks:        Downstreams
+remarks:        ---------------------------------------------------------------
+remarks:
+remarks:        Radio Kozerog LLC
+import:         from AS42301 action pref=100; accept {193.200.239.0/24} AS42301
+export:         to AS42301 announce {0.0.0.0/0} AS208511
+remarks:        ===============================================================
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         R-INDUSTRY-MNT
+created:        2019-07-22T15:25:37Z
+last-modified:  2022-04-06T07:38:22Z
+source:         RIPE
+sponsoring-org: ORG-CL253-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+

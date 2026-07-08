@@ -1,0 +1,164 @@
+as-set:         AS-LRBS1
+descr:          RBS LLC ASNs
+members:        AS60544
+members:        AS60040
+members:        AS201204
+org:            ORG-LRBS1-RIPE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mbrs-by-ref:    RBS-MNT
+mnt-by:         RBS-MNT
+created:        2022-08-08T19:47:52Z
+last-modified:  2024-04-20T16:30:12Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS60544:AS-RBS
+descr:          RBS LLC ASNs
+members:        AS60544
+members:        AS60040
+members:        AS201204
+org:            ORG-LRBS1-RIPE
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+mbrs-by-ref:    RBS-MNT
+created:        2026-02-27T12:11:47Z
+last-modified:  2026-02-27T12:11:47Z
+source:         RIPE
+mnt-by:         RBS-MNT
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS201204
+as-name:        RBS-K
+org:            ORG-LRBS1-RIPE
+sponsoring-org: ORG-RRIf1-RIPE
+remarks:
+remarks:        ====================================
+remarks:        = RBS AS201204 IPv4 Routing Policy =
+remarks:        ====================================
+remarks:
+remarks:        ==== UPSTREAMS =====================
+export:         to AS198297 announce AS201204
+export:         to AS3216 announce AS201204
+default:        to AS3216 action pref=100;
+import:         from AS198297 accept ANY
+import:         from AS3216 accept ANY
+remarks:
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+member-of:      AS-LRBS1
+remarks:        194.85.102.0/24
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RBS-MNT
+created:        2023-07-12T16:19:50Z
+last-modified:  2026-02-23T19:06:53Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS60040
+as-name:        RBS-ITP
+org:            ORG-LRBS1-RIPE
+remarks:
+remarks:        ===================================
+remarks:        = RBS AS60040 IPv4 Routing Policy =
+remarks:        ===================================
+remarks:
+remarks:        ==== UPSTREAMS ====================
+export:         to AS3216 announce AS60040
+default:        to AS3216 action pref=200;
+export:         to AS60544 announce AS60040
+import:         from AS3216 action pref=200; accept ANY
+import:         from AS60544 accept ANY
+remarks:
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+member-of:      AS-LRBS1
+remarks:        194.226.174.0/24
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RBS-MNT
+created:        2014-06-18T12:52:01Z
+last-modified:  2026-02-17T10:07:30Z
+source:         RIPE
+sponsoring-org: ORG-RRIf1-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS60544
+as-name:        RBS
+org:            ORG-LRBS1-RIPE
+remarks:
+remarks:        ===================================
+remarks:        = RBS AS60544 IPv4 Routing Policy =
+remarks:        ===================================
+remarks:
+remarks:        ==== UPSTREAM =====================
+export:         to AS3216 announce AS60544
+export:         to AS210756 announce AS60544
+default:        to AS210756 action pref=50;
+import:         from AS8641 action pref=100; accept ANY
+import:         from AS3216 action pref=100; accept ANY
+import:         from AS210756 action pref=50; accept ANY
+remarks:
+remarks:        ==== IXP ==========================
+export:         to AS8631 announce AS60544
+import:         from AS8631 action pref=50; accept AS-MSKROUTESERVER
+import:         from AS6695 action pref=200; accept AS-DECIX
+remarks:
+remarks:        ==== PNI ==========================
+export:         to AS35237 announce AS60544
+import:         from AS35237 action pref=40; accept AS35237
+export:         to AS201606 announce AS60544
+import:         from AS201606 action pref=40; accept AS201606
+remarks:
+remarks:        = BPC = AS200627
+remarks:        = BPS = AS201312
+remarks:
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+member-of:      AS-LRBS1
+member-of:      AS60544:AS-RBS
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RBS-MNT
+created:        2013-06-28T08:51:43Z
+last-modified:  2026-03-26T09:43:37Z
+source:         RIPE
+sponsoring-org: ORG-RRIf1-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+

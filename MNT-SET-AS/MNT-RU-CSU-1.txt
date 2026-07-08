@@ -1,67 +1,444 @@
-2026-07-08 02:35:30 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-07-08 02:35:30 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-2026-07-08 02:35:30 ERROR [main] [printMntBy] n.u.whoislitelocal.WhoisLiteLocal - Failed to print MntBy
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntBy.printMntBy(retrieveMntBy.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntBy(WhoisLiteLocal.java:87)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:40)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+as-set:         AS-CNX-EKB
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS209307
+members:        AS35815
+members:        AS21275
+members:        AS38972
+members:        AS39406
+members:        AS209746
+members:        AS207103
+members:        AS49568
+members:        AS209788
+members:        AS56947
+members:        AS59559
+members:        AS51446
+members:        AS60005
+members:        AS28890
+members:        AS43237
+members:        AS61985
+members:        AS203844
+members:        AS49860
+members:        AS43403
+members:        AS12341
+members:        AS9041
+members:        AS48429
+members:        AS199619
+members:        AS44868
+members:        AS5468
+mnt-by:         mnt-ru-csu-1
+created:        2019-03-01T07:02:50Z
+last-modified:  2025-12-19T07:51:53Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS-CNX-NTAGIL
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS35815
+members:        AS21275
+members:        AS43237
+members:        AS209746
+members:        AS207103
+mnt-by:         mnt-ru-csu-1
+created:        2021-04-21T17:40:53Z
+last-modified:  2025-11-16T08:18:01Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS209746:AS-CNX-KIROVGRAD
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS209746
+members:        AS207103
+created:        2026-07-02T05:43:21Z
+last-modified:  2026-07-02T05:43:21Z
+source:         RIPE
+mnt-by:         mnt-ru-csu-1
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+as-set:         AS209746:AS-CNX-NOVOUR
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS209746
+members:        AS207103
+created:        2026-05-19T06:28:58Z
+last-modified:  2026-05-19T06:28:58Z
+source:         RIPE
+mnt-by:         mnt-ru-csu-1
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS199619
+as-name:        Intersvyaz
+org:            ORG-JI23-RIPE
+import:         from AS209307 action pref=100; accept ANY
+import:         from AS5563 action pref=100; accept ANY
+export:         to AS209307 announce AS199619
+export:         to AS5563 announce AS199619
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@convex.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+created:        2012-11-05T13:01:44Z
+last-modified:  2025-10-29T13:55:16Z
+source:         RIPE
+sponsoring-org: ORG-LCSU1-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS207103
+as-name:        CONVEX-KIROVGRAD
+org:            ORG-LCSU1-RIPE
+import:         from AS209307 accept ANY
+export:         to AS209307 announce AS207103
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+created:        2016-08-31T13:57:47Z
+last-modified:  2024-04-05T10:13:39Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS209307
+as-name:        CONVEX-EKB
+org:            ORG-LCSU1-RIPE
+remarks:        ===== Uplinks ====
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-CNX-EKB
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS-CNX-EKB
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS-CNX-EKB
+import:         from AS28917 accept ANY
+export:         to AS28917 announce AS-CNX-EKB
+remarks:        ===== IX's ====
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS-CNX-EKB
+import:         from AS50952 accept ANY
+export:         to AS50952 announce AS-CNX-EKB
+import:         from AS50384 accept ANY
+export:         to AS50384 announce AS-CNX-EKB
+import:         from AS43213 accept ANY
+export:         to AS43213 announce AS-CNX-EKB
+import:         from AS8631 accept ANY
+export:         to AS8631 announce AS-CNX-EKB
+import:         from AS43690 accept ANY
+export:         to AS43690 announce AS-CNX-EKB
+import:         from AS42403 accept ANY
+export:         to AS42403 announce AS-CNX-EKB
+import:         from AS29076 accept ANY
+export:         to AS29076 announce AS-CNX-EKB
+import:         from AS49869 accept ANY
+export:         to AS49869 announce AS-CNX-EKB
+import:         from AS8563  accept ANY
+export:         to AS8563 announce AS-CNX-EKB
+import:         from AS39607 accept ANY
+export:         to AS39607 announce AS-CNX-EKB
+import:         from AS49634 accept ANY
+export:         to AS49634  announce AS-CNX-EKB
+import:         from AS48193 accept ANY
+export:         to AS48193 announce AS-CNX-EKB
+import:         from AS57936 accept ANY
+export:         to AS57936 announce AS-CNX-EKB
+import:         from AS50817 accept ANY
+export:         to AS50817 announce AS-CNX-EKB
+remarks:        ===== Downlink's ====
+import:         from AS59559 accept AS59559
+export:         to AS59559 announce ANY
+import:         from AS49568 accept AS49568
+export:         to AS49568 announce ANY
+import:         from AS39406 accept AS39406
+export:         to AS39406 announce ANY
+import:         from AS38972 accept AS38972
+export:         to AS38972 announce ANY
+import:         from AS61985 accept AS61985
+export:         to AS61985 announce ANY
+import:         from AS35815 accept AS-CNX-NTAGIL
+export:         to AS35815 announce ANY
+import:         from AS209788 accept AS209788
+export:         to AS209788 announce ANY
+import:         from AS209746 accept AS209746
+export:         to AS209746 announce ANY
+import:         from AS207103 accept AS207103
+export:         to AS207103 announce ANY
+import:         from AS56947 accept AS56947
+export:         to AS56947 announce ANY
+import:         from AS28890 accept AS28890
+export:         to AS28890 announce ANY
+import:         from AS43403 accept AS43403
+export:         to AS43403 announce ANY
+import:         from AS41082 accept AS41082
+export:         to AS41082 announce ANY
+import:         from AS57526 accept AS57526
+export:         to AS57526 announce ANY
+import:         from AS60005 accept AS60005
+export:         to AS60005 announce ANY
+import:         from AS208955 accept AS208955
+export:         to AS208955 announce ANY
+import:         from AS51446 accept AS51446
+export:         to AS51446 announce ANY
+import:         from AS203844 accept AS203844
+export:         to AS203844 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+created:        2019-02-28T14:37:08Z
+last-modified:  2024-04-05T10:35:15Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS209746
+as-name:        CONVEX-NOVOURALSK
+org:            ORG-LCSU1-RIPE
+import:         from AS209307 accept ANY
+export:         to AS209307 announce AS209746
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+created:        2018-12-11T14:43:54Z
+last-modified:  2024-04-05T10:14:07Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS209788
+as-name:        CONVEX-REGIONS
+org:            ORG-LCSU1-RIPE
+import:         from AS209307 accept ANY
+export:         to AS209307 announce AS209788
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+created:        2018-12-03T14:09:55Z
+last-modified:  2024-04-05T10:14:29Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS35815
+as-name:        URALCOMSETI-AS
+descr:          ==== UPLINKS ====
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-CNX-NTAGIL
+import:         from AS209307 accept ANY
+export:         to AS209307 announce AS-CNX-NTAGIL
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS-CNX-NTAGIL
+descr:          === PEERINGS ===
+import:         from AS12668 accept AS12668
+export:         to AS12668 announce AS-CNX-NTAGIL
+import:         from AS49218 accept AS49218
+export:         to AS49218 announce AS-CNX-NTAGIL
+org:            ORG-LCSU1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+created:        2005-11-03T13:44:43Z
+last-modified:  2024-04-05T10:10:53Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS39406
+as-name:        Convex-Zarecny
+org:            ORG-LCSU1-RIPE
+import:         from AS209307 accept ANY
+export:         to AS209307 announce AS39406
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         noc@convex.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+created:        2009-02-26T15:23:29Z
+last-modified:  2024-04-05T10:12:24Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS43237
+as-name:        CONVEX-TELEPHONY
+org:            ORG-LT183-RIPE
+remarks:        ----------------------------------------------
+remarks:        Upstreams
+remarks:        ----------------------------------------------
+import:         from AS35815 accept ANY
+export:         to AS35815 announce AS43237
+remarks:        ----------------------------------------------
+sponsoring-org: ORG-LCSU1-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+created:        2007-07-02T07:32:44Z
+last-modified:  2022-06-20T06:10:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS49568
+as-name:        INFORMSYAZ-AS
+org:            ORG-LLCI6-RIPE
+import:         from AS16285 accept ANY
+import:         from AS5563 accept ANY
+import:         from AS39812 accept ANY
+export:         to AS16285 announce AS49568
+export:         to AS5563 announce AS49568
+export:         to AS39812 announce AS49568
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+mnt-by:         INFORMSV-MT
+created:        2009-07-06T11:39:32Z
+last-modified:  2021-10-11T13:30:29Z
+source:         RIPE
+sponsoring-org: ORG-LCSU1-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS56947
+as-name:        INTERNETSS-AS
+org:            ORG-LCSU1-RIPE
+import:         from AS209307 accept ANY
+export:         to AS209307 announce AS56947
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+created:        2011-06-20T15:36:17Z
+last-modified:  2024-04-05T10:12:59Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+aut-num:        AS9041
+as-name:        USPU
+org:            ORG-USPU1-RIPE
+import:         from AS5563 accept ANY
+import:         from AS28890 accept ANY
+export:         to AS5563 announce AS9041
+export:         to AS28890 announce AS9041
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-csu-1
+created:        2009-07-29T12:42:03Z
+last-modified:  2026-03-30T11:28:12Z
+source:         RIPE
+sponsoring-org: ORG-LCSU1-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+

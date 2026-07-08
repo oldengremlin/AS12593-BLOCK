@@ -5,63 +5,85 @@ descr:
 descr:          The following are AS'es and AS-SET's
 descr:          permitted to originate prefixes accepted
 descr:          from each route server customer. # from AS2854:
-# from AS2854:
+                # from AS2854:
 members:        AS-OBSRUSSIA6, AS-ROSPRINT
-# from AS6789:
+                # from AS6789:
 members:        AS-CRELCOM
-# from AS8359:
+                # from AS8359:
 members:        AS-MTU
-# from AS8985:
+                # from AS8985:
 members:        AS-MSK-IX-SERVICES
-# from AS9049:
+                # from AS9049:
 members:        AS-ERTH
-# from AS12418:
+                # from AS12418:
 members:        AS-QUANTUM
-# from AS21051:
+                # from AS21051:
 members:        AS21051
-# from AS25091:
+                # from AS25091:
 members:        AS-IP-MAX, AS-IP-MAX-V6
-# from AS28709:
+                # from AS28709:
 members:        AS-VKONTAKTE
-# from AS31133:
+                # from AS28917:
+members:        AS-FIORD
+                # from AS31133:
 members:        AS-CDN-MEGAFON
-# from AS39728:
-members:        AS-LUGANET
-# from AS42861:
-members:        AS-FOTONTELECOM
-# from AS44587:
+                # from AS44587:
 members:        AS-MEGACOM
-# from AS47445:
+                # from AS47445:
 members:        AS-NS9_RIPN_NET
-# from AS47626:
+                # from AS47626:
 members:        AS-ARPNET61
-# from AS51178:
+                # from AS51178:
 members:        AS-AVANTEL-SPB
-# from AS51200:
+                # from AS51200:
 members:        AS-DI-DI
-# from AS52091:
+                # from AS52091:
 members:        AS-LEVEL-MSK
-# from AS57629:
+                # from AS57629:
 members:        AS57629
-# from AS57724:
+                # from AS57724:
 members:        AS-DDOS-GUARD
-# from AS60246:
+                # from AS60246:
 members:        AS-PG19
-# from AS62040:
-members:        AS-ITK
-# from AS62261:
-members:        AS62261
-# from AS201119:
+                # from AS62261:
+members:        AS62261:AS-RND-MEDIAIX
+                # from AS201119:
 members:        AS201119
-# from AS204720:
+                # from AS201512:
+members:        AS201512
+                # from AS204720:
 members:        AS-CDNETWORKSRU
-# from AS210756:
+                # from AS210756:
 members:        AS-EDGECENTER
+remarks:        * -------------------------------------------------------------
+remarks:        AS48216 is used for the RND-IX Route Servers.
+remarks:        All ASes participating in the Route Servers peering
+remarks:        are grouped into the AS-SET: AS-RNDROUTESERVER
+remarks:
+remarks:        You may use communities to control outgoing information
+remarks:        via the route server. The meaning and order of evaluation is
+remarks:        important:
+remarks:
+remarks:        block announcement of a route to a certain peer 0:peer-as
+remarks:        announcement of a route to a certain peer 48216:peer-as
+remarks:        block announcement of a route to all peers 0:48216
+remarks:        announcement of a route to all peers 48216:48216
+remarks:
+remarks:        Please visit http://www.ix.ru/eng/rnd/routeserver.html
+remarks:        for more information on the RND-IX Route Servers
+remarks:        and for more filtering options.
+remarks:        * -------------------------------------------------------------
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2008-10-27T12:33:38Z
-last-modified:  2025-06-11T09:55:03Z
+last-modified:  2026-06-08T11:31:22Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************

@@ -1,29 +1,17 @@
-% This is the RIPE Database query service.
-% The objects are in RPSL format.
-%
-% The RIPE Database is subject to Terms and Conditions.
-% See https://docs.db.ripe.net/terms-conditions.html
-
-% Note: this output has been filtered.
-%       To receive output for a database update, use the "-B" flag.
-
-% Information related to 'AS-SERVERIUS'
-
 as-set:         AS-SERVERIUS
 descr:          Serverius AS members
 org:            ORG-SHB2-RIPE
-tech-c:         SN1
-admin-c:        SN1
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
 mnt-by:         SERVERIUS-MNT
 members:        AS-AHN
+members:        AS-BAKKER-IT
 members:        AS-CHEESEHOSTING
 members:        AS-CHRONO
 members:        AS-COFRACTAL
 members:        AS-DUOCAST
-members:        AS-ESTOXY
 members:        AS-FOXCLOUD
 members:        AS-FRC
-members:        AS-GBLICT
 members:        AS-GNX
 members:        AS-H2B
 members:        AS-HOSTINGER
@@ -36,16 +24,14 @@ members:        AS-ITLNL
 members:        AS-KODDOS
 members:        AS-LANCOM-GR
 members:        AS-LITESERVER
-members:        AS-MATRIXIT
 members:        AS-MAXITEL
-members:        AS-MIRHOSTING
+members:        AS-MAXKO
 members:        AS-NETOPS
 members:        AS-POSSIBLYLIZARDS
 members:        AS-PRIMECROWN
 members:        AS-PROMETEUS
 members:        AS-PTISP
 members:        AS-SBAG
-members:        AS-SCALEUP
 members:        AS-SERVPERSO
 members:        AS-SET-HETZNER-AFRICA
 members:        AS-SITBV
@@ -60,7 +46,7 @@ members:        AS16075
 members:        AS16376
 members:        AS196752
 members:        AS198037:AS-SPACECORE
-members:        AS198468:AS-DUTCHIS
+members:        AS198362
 members:        AS198651
 members:        AS198972
 members:        AS199393:AS-MAKEAPP
@@ -77,6 +63,7 @@ members:        AS202448
 members:        AS202675
 members:        AS203425
 members:        AS203557
+members:        AS203656
 members:        AS203815
 members:        AS203993:AS-ALL
 members:        AS204519
@@ -85,7 +72,6 @@ members:        AS204963
 members:        AS205668
 members:        AS206281
 members:        AS206446:AS-CLOUDLEASE
-members:        AS206521
 members:        AS206980
 members:        AS207491:AS-ALL
 members:        AS207595
@@ -93,12 +79,10 @@ members:        AS208425
 members:        AS208685
 members:        AS208864:AS-WESERVE
 members:        AS20926
-members:        AS209365
 members:        AS209604
 members:        AS209622
 members:        AS211043
 members:        AS211364
-members:        AS211381
 members:        AS211713
 members:        AS211895
 members:        AS212025
@@ -108,16 +92,13 @@ members:        AS21276
 members:        AS212911
 members:        AS212947
 members:        AS213192
-members:        AS213488
+members:        AS213615
 members:        AS213633
 members:        AS213697
-members:        AS213714
 members:        AS214128
 members:        AS214382
 members:        AS214790
 members:        AS215039
-members:        AS215419
-members:        AS215550:AS-ANETWORKS
 members:        AS216129
 members:        AS216151
 members:        AS216333:AS-NETDEV
@@ -129,14 +110,13 @@ members:        AS29869
 members:        AS31383
 members:        AS3185
 members:        AS34177
+members:        AS34612:AS-MATRIXDATA
 members:        AS34884
-members:        AS35277
 members:        AS35758
 members:        AS38965
 members:        AS39022
 members:        AS39114
 members:        AS39537
-members:        AS40987
 members:        AS41960:AS-NEXTPERTISE
 members:        AS42159
 members:        AS43056
@@ -153,11 +133,11 @@ members:        AS49614
 members:        AS50019
 members:        AS50381
 members:        AS50673
-members:        AS51247
+members:        AS51247:AS-SERVERIO
 members:        AS53334
-members:        AS56971
+members:        AS56971:AS-PEERS
 members:        AS57935
-members:        AS58061
+members:        AS58061:AS-SERV
 members:        AS59800
 members:        AS59802
 members:        AS59939
@@ -166,54 +146,17 @@ members:        AS60874
 members:        AS61272
 members:        AS62005:AS-BLUEVPS
 members:        AS62296
+members:        AS62425
 members:        AS64515
 members:        AS8587
 members:        as-set-dt-it
-members:        as-zenex5ive
 created:        2011-02-14T12:32:00Z
-last-modified:  2025-05-19T21:15:12Z
+last-modified:  2026-06-30T10:15:20Z
 source:         RIPE
-
-organisation:   ORG-SHB2-RIPE
-org-name:       Serverius Holding B.V.
-country:        NL
-org-type:       LIR
-address:        De Linge 26
-address:        8253 PJ
-address:        Dronten
-address:        NETHERLANDS
-phone:          +31887378374
-fax-no:         +31887378333
-admin-c:        GVG18-RIPE
-admin-c:        SN1
-tech-c:         GVG18-RIPE
-tech-c:         SP12137-RIPE
-abuse-c:        AS30540-RIPE
-mnt-ref:        RIPE-NCC-HM-MNT
-mnt-ref:        serverius-mnt
-mnt-by:         RIPE-NCC-HM-MNT
-mnt-by:         serverius-mnt
-created:        2010-02-24T12:39:54Z
-last-modified:  2020-12-16T12:36:47Z
-source:         RIPE # Filtered
-
-role:           Serverius NOC Role
-address:        Serverius
-address:        De Linge 26
-address:        8253 PJ Dronten
-address:        The Netherlands
-phone:          +31 (0)88 73 78 300
-abuse-mailbox:  abuse@serverius.net
-admin-c:        GVG18-RIPE
-tech-c:         GVG18-RIPE
-tech-c:         SP12137-RIPE
-tech-c:         BA5871-RIPE
-nic-hdl:        SN1
-mnt-by:         SERVERIUS-MNT
-created:        2011-02-11T15:12:50Z
-last-modified:  2017-10-02T07:52:23Z
-source:         RIPE # Filtered
-
-% This query was served by the RIPE Database Query Service version 1.117 (SHETLAND)
-
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************

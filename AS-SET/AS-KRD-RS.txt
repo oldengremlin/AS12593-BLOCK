@@ -1,5 +1,6 @@
 as-set:         AS-KRD-RS
 descr:          Krasnodar Internet Exchange
+remarks:        * -------------------------------------------------------------
 members:        AS59428
 members:        AS-KUBAN-TELECOM
 members:        AS-IRBISTELECOM
@@ -42,7 +43,6 @@ members:        AS50775
 members:        AS-ERTH
 members:        AS205781
 members:        AS208142
-members:        AS203730
 members:        AS34559
 members:        AS-RSVO_Mirit_Sochi
 members:        AS206011
@@ -72,11 +72,30 @@ members:        AS-YANDEX
 members:        AS215455
 members:        AS-YCCDN
 members:        AS201119
+remarks:        * -------------------------------------------------------------
 notify:         noc@sea-ix.ru
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-IPNETCOM
+remarks:        * -------------------------------------------------------------
+remarks:        AS59428 is used for the SEA-IX Route Servers.
+remarks:        All ASes participating in the Route Servers peering
+remarks:        are grouped into the AS-SET: AS-KRD-RS
+remarks:        You may use communities to control outgoing information
+remarks:        via the route server. The meaning and order of evaluation is
+remarks:        important:
+remarks:        block announcement of a route to a certain peer 0:peer-as
+remarks:        announcement of a route to a certain peer 59428:peer-as
+remarks:        block announcement of a route to all peers 0:59428
+remarks:        announcement of a route to all peers 59428:59428
+remarks:        * -------------------------------------------------------------
 created:        2012-11-09T11:42:27Z
-last-modified:  2024-11-04T06:16:55Z
+last-modified:  2025-06-27T05:08:27Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************

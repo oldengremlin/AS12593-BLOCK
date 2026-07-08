@@ -1,67 +1,160 @@
-2026-07-08 02:39:30 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntner.printMntner(retrieveMntner.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntner(WhoisLiteLocal.java:91)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:42)
-2026-07-08 02:39:30 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntner.printMntner(retrieveMntner.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntner(WhoisLiteLocal.java:91)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:42)
-2026-07-08 02:39:30 ERROR [main] [printMntner] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveMntner.printMntner(retrieveMntner.java:46)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveMntner(WhoisLiteLocal.java:91)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:42)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+mntner:         RUNIC-MNT
+admin-c:        DUMY-RIPE
+upd-to:         unread@ripe.net
+auth:           MD5-PW $1$SaltSalt$DummifiedMD5HashValue.   # Real value hidden for security
+mnt-by:         RUNIC-MNT
+created:        2004-08-26T14:17:57Z
+last-modified:  2026-05-08T17:57:02Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+role:           Abuse-C Role
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@marathonbetops.com
+nic-hdl:        AR80278-RIPE
+created:        2026-07-03T09:28:59Z
+last-modified:  2026-07-03T09:30:10Z
+source:         RIPE
+mnt-by:         RAPIDSWITCH-MNT
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+role:           FAITID ABUSE Handling
+address:        Dummy address for FAAH-RIPE
+phone:          +31205354444
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse.contact@faitid.org
+nic-hdl:        FAAH-RIPE
+mnt-by:         RUNIC-MNT
+created:        2014-07-23T12:06:20Z
+last-modified:  2014-07-23T14:55:56Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+role:           HCRU NOC
+address:        Dummy address for HCRU-RIPE
+phone:          +31205354444
+fax-no:         +31205354444
+abuse-mailbox:  abuse@hc.ru
+e-mail:         unread@ripe.net
+remarks:        ******************************************
+remarks:        Points of contact:
+remarks:        routing & peering noc@hc.ru
+remarks:        SPAM & network security abuse@hc.ru
+remarks:        mail & news postmaster@hc.ru
+remarks:        customer support support@hc.ru
+remarks:        ******************************************
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        HCRU-RIPE
+mnt-by:         HCRU-NOC
+mnt-by:         RUNIC-MNT
+created:        2008-02-20T10:51:26Z
+last-modified:  2018-07-04T14:46:40Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+role:           PETERHOST ABUSE Handling
+address:        Dummy address for PEAH-RIPE
+phone:          +31205354444
+fax-no:         +31205354444
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@peterhost.ru
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        PEAH-RIPE
+mnt-by:         RUNIC-MNT
+created:        2015-04-21T12:07:21Z
+last-modified:  2019-07-15T07:58:44Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+role:           RU-NIC NOC
+address:        Dummy address for RN331-RIPE
+phone:          +31205354444
+e-mail:         unread@ripe.net
+abuse-mailbox:  abuse@nic.ru
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        RN331-RIPE
+mnt-by:         RUNIC-MNT
+created:        2009-07-13T13:17:56Z
+last-modified:  2024-04-11T08:13:13Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+role:           RUNIC ABUSE Handling
+address:        Dummy address for RUAH-RIPE
+phone:          +31205354444
+abuse-mailbox:  abuse@nic.ru
+e-mail:         unread@ripe.net
+tech-c:         DUMY-RIPE
+nic-hdl:        RUAH-RIPE
+mnt-by:         RUNIC-MNT
+created:        2014-04-01T13:32:00Z
+last-modified:  2014-04-01T15:41:10Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+role:           SpaceWeb.Ru NOC
+address:        Dummy address for SWN-RIPE
+phone:          +31205354444
+e-mail:         unread@ripe.net
+org:            ORG-SW40-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+nic-hdl:        SWN-RIPE
+abuse-mailbox:  abuse@sweb.ru
+mnt-by:         RUNIC-MNT
+created:        2009-06-03T14:38:30Z
+last-modified:  2022-10-21T15:13:02Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

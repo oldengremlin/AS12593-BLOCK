@@ -1,67 +1,132 @@
-2026-07-08 01:19:04 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Unexpected IOException
-java.io.IOException: Недостатньо місця на пристрої
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.UnixFileDispatcherImpl.write(UnixFileDispatcherImpl.java:65)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:371)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:351)
-	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
-	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
-	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
-	at java.base/java.nio.file.Files.copy(Files.java:2861)
-	at org.sqlite.SQLiteJDBCLoader.extractAndLoadLibraryFile(SQLiteJDBCLoader.java:200)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:332)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:19:04 ERROR [main] [error] org.sqlite.SQLiteJDBCLoader - Failed to load native library through System.loadLibrary
-java.lang.UnsatisfiedLinkError: no sqlitejdbc in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
-	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
-	at java.base/java.lang.System.loadLibrary(System.java:1663)
-	at org.sqlite.SQLiteJDBCLoader.loadNativeLibraryJdk(SQLiteJDBCLoader.java:287)
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:356)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-2026-07-08 01:19:04 ERROR [main] [printAutNum] n.u.whoislitelocal.WhoisLiteLocal - Failed to retrieve AutNum
-java.sql.SQLException: Error opening connection
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:283)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:222)
-	at net.ukrcom.whoislitelocal.retrieve.retrieveAutNum.printAutNum(retrieveAutNum.java:44)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.executeRetrieveAutNum(WhoisLiteLocal.java:79)
-	at net.ukrcom.whoislitelocal.WhoisLiteLocal.main(WhoisLiteLocal.java:36)
-Caused by: org.sqlite.NativeLibraryNotFoundException: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-	at org.sqlite.SQLiteJDBCLoader.loadSQLiteNativeLibrary(SQLiteJDBCLoader.java:363)
-	at org.sqlite.SQLiteJDBCLoader.initialize(SQLiteJDBCLoader.java:76)
-	at org.sqlite.core.NativeDB.load(NativeDB.java:70)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:280)
-	... 10 common frames omitted
+aut-num:        AS50639
+as-name:        ARS-AS
+org:            ORG-ARSJ1-RIPE
+remarks:        ===================================================
+remarks:        Upstreams
+remarks:        ---------------------------------------------------
+import:         from AS12389 accept ANY;
+export:         to AS12389 announce AS-ARSNET;
+import:         from AS2854 accept ANY;
+export:         to AS2854 announce AS-ARSNET;
+import:         from AS29304 accept ANY;
+export:         to AS29304 announce AS-ARSNET;
+remarks:
+remarks:        ===================================================
+remarks:        Downstreams
+remarks:        ---------------------------------------------------
+import:         from AS41275 accept AS41275;
+export:         to AS41275 announce ANY;
+remarks:        ===================================================
+remarks:
+remarks:        ---------------------------------------------------
+remarks:        community applied on ingress
+remarks:        ---------------------------------------------------
+remarks:
+remarks:        50639:31XX - Origin from public peers
+remarks:        50639:32XX - Origin from private peers
+remarks:
+remarks:        50639:40XX - Origin from Upstreams
+remarks:        50639:4001 - AS29304 (Satis)
+remarks:        50639:4002 - AS12389 (Rostelecom)
+remarks:        50639:4003 - AS2854 (Equant)
+remarks:        50639:4004 - AS3216 (Beeline)
+remarks:
+remarks:
+remarks:        inside community coloring
+remarks:
+remarks:        50639:601 - local (point-to-point and etc.)
+remarks:        50639:605 - aggregatable
+remarks:        50639:608 - te-aggregate
+remarks:        50639:609 - aggregate
+remarks:        50639:620 - customers
+remarks:        50639:623 - peers
+remarks:        50639:626 - transit
+remarks:        50639:631 - bogus
+remarks:        50639:666 - blackhole in AS50639 and Upstreams
+remarks:        50639:667 - blackhole in Upstreams
+remarks:
+remarks:
+remarks:        advertising community:
+remarks:
+remarks:        50639:5ZZX
+remarks:        50639:6AAX
+remarks:
+remarks:        where X=0     - advertise with no changes
+remarks:        X=1,2,4 or 6  - set prepend AS50639 1,2,4 or 6 times
+remarks:        X=7     - advertise with community no-export
+remarks:        X=9     - do not advertise
+remarks:
+remarks:        ZZ=00    - Hole World
+remarks:        01    - all upstreams
+remarks:        02    - all customers
+remarks:        03    - all peers
+remarks:
+remarks:        AA=01    - AS29304 (Satis)
+remarks:        02    - AS12389 (Rostelecom)
+remarks:        03    - AS2854 (Equant)
+remarks:        04    - AS3216 (Beeline)
+remarks:
+remarks:        ------------------------------------------------------
+remarks:        local preference for routes:
+remarks:        ------------------------------------------------------
+remarks:        1000 - local routes to aggregate
+remarks:        710 - customer preffered
+remarks:        700 - customer (default)
+remarks:        690 - customer backup
+remarks:        400 - customer backup
+remarks:        400 - peer route
+remarks:        390 - peer backup
+remarks:        300 - customer superbackup
+remarks:        200 - transite
+remarks:        190 - transite backup
+remarks:
+remarks:        ------------------------------------------------------
+remarks:        local preference control accepted from customers
+remarks:        ------------------------------------------------------
+remarks:        50639:171 - set local pref = 710
+remarks:        50639:169 - set local pref = 690
+remarks:        50639:140 - set local pref = 400
+remarks:        50639:130 - set local pref = 300
+remarks:
+remarks:        ======================================================
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         ARSNET-MNT
+created:        2010-03-01T14:22:34Z
+last-modified:  2018-09-04T10:48:54Z
+source:         RIPE
+sponsoring-org: ORG-NGs2-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS50639
+country:        RU
+as-name:        ARS-AS Arctic Region Svyaz JSC
+
+organisation:   ORG-ARSJ1-RIPE
+org-name:       Arctic Region Svyaz JSC
+country:        RU
+org-type:       OTHER
+address:        Dummy address for ORG-ARSJ1-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        AR27450-RIPE
+mnt-ref:        ARSNET-MNT
+mnt-by:         ARSNET-MNT
+created:        2010-02-17T21:08:47Z
+last-modified:  2026-05-13T06:00:53Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

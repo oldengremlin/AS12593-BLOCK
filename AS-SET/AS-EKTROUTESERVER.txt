@@ -4,114 +4,138 @@ descr:          Route Server ASes
 descr:          The following are AS'es and AS-SET's
 descr:          permitted to originate prefixes accepted
 descr:          from each route server customer. # from AS2854: from AS2854: from AS2854:
-# from AS112:
+                # from AS112:
 members:        AS112
-# from AS2854:
+                # from AS2854:
 members:        AS-OBSRUSSIA6, AS-ROSPRINT
-# from AS5468:
+                # from AS5468:
 members:        AS-URFU
-# from AS8359:
+                # from AS8359:
 members:        AS-MTU
-# from AS8369:
+                # from AS8369:
 members:        AS-INTERSVYAZ
-# from AS8985:
+                # from AS8985:
 members:        AS-MSK-IX-SERVICES
-# from AS9049:
+                # from AS9049:
 members:        AS-ERTH
-# from AS12418:
+                # from AS12418:
 members:        AS-QUANTUM
-# from AS12668:
+                # from AS12668:
 members:        AS-MIRALOGIC
-# from AS21030:
+                # from AS21030:
 members:        AS21030
-# from AS25091:
+                # from AS25091:
 members:        AS-IP-MAX, AS-IP-MAX-V6
-# from AS28709:
+                # from AS28709:
 members:        AS-VKONTAKTE
-# from AS28890:
+                # from AS28890:
 members:        AS-INSYS-EKB
-# from AS28917:
+                # from AS28917:
 members:        AS-FIORD
-# from AS29076:
+                # from AS29076:
 members:        AS-CITYTELECOM
-# from AS31133:
+                # from AS31133:
 members:        AS-CDN-MEGAFON
-# from AS31359:
+                # from AS31359:
 members:        AS-FORATEC-EKT-IX
-# from AS31499:
+                # from AS31499:
 members:        AS-MOTIV
-# from AS34879:
+                # from AS34879:
 members:        AS-NGENIX-EKT
-# from AS36040:
+                # from AS36040:
 members:        AS-GOOGLE
-# from AS39684:
+                # from AS39684:
 members:        AS39684
-# from AS39728:
-members:        AS-LUGANET
-# from AS41082:
-members:        AS-URALTRANSCOM
-# from AS41560:
+                # from AS41034:
+members:        AS-IMPULS
+                # from AS41560:
 members:        AS41560
-# from AS42498:
+                # from AS42498:
 members:        AS-GERCON
-# from AS42728:
+                # from AS42728:
 members:        AS-NS9_RIPN_NET
-# from AS42861:
-members:        AS-FOTONTELECOM
-# from AS44128:
+                # from AS44128:
 members:        AS-CITY-EKT-IX, AS-INTERNET-PRO-EKT-IX, AS61276
-# from AS44587:
+                # from AS44587:
 members:        AS-MEGACOM
-# from AS44845:
+                # from AS44845:
 members:        AS44845
-# from AS47165:
+                # from AS47165:
 members:        AS-OMKC-SET
-# from AS47569:
+                # from AS47569:
 members:        as-erlang
-# from AS48642:
+                # from AS48642:
 members:        AS-KT-RU
-# from AS49218:
+                # from AS49218:
 members:        AS-NTKS
-# from AS49675:
+                # from AS49675:
 members:        AS-SET-LIR
-# from AS50916:
-members:        AS50916
-# from AS50923:
+                # from AS49954:
+members:        AS49954
+                # from AS50923:
 members:        AS-METRO-SET, AS-METRO-SET6
-# from AS51028:
+                # from AS51028:
 members:        AS-SVOLS
-# from AS51178:
+                # from AS51178:
 members:        AS-AVANTEL-SPB
-# from AS51515:
+                # from AS51515:
 members:        AS51515
-# from AS57277:
+                # from AS57277:
 members:        AS-BAIKAL-IX-TRANSIT
-# from AS57363:
+                # from AS57363:
 members:        AS-CDNVIDEO
-# from AS57629:
+                # from AS57629:
 members:        AS57629
-# from AS62261:
-members:        AS62261
-# from AS201119:
+                # from AS61964:
+members:        AS61964
+                # from AS62261:
+members:        AS62261:AS-EKT-MEDIAIX
+                # from AS201119:
 members:        AS201119
-# from AS202498:
+                # from AS201512:
+members:        AS201512
+                # from AS202498:
 members:        AS202498
-# from AS203118:
+                # from AS203118:
 members:        AS203118:AS-EZERDI
-# from AS205063:
+                # from AS205063:
 members:        AS-CORTEL
-# from AS209307:
+                # from AS209307:
 members:        AS-CNX-EKB
-# from AS210756:
+                # from AS210756:
 members:        AS-EDGECENTER
-# from AS211609:
+                # from AS211609:
 members:        AS211609
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
+remarks:        * -------------------------------------------------------------
+remarks:        AS43213 is used for the EKT-IX Route Servers.
+remarks:        All ASes participating in the Route Servers peering
+remarks:        are grouped into the AS-SET: AS-EKTROUTESERVER
+remarks:
+remarks:        You may use communities to control outgoing information
+remarks:        via the route server. The meaning and order of evaluation is
+remarks:        important:
+remarks:
+remarks:        block announcement of a route to a certain peer 0:peer-as
+remarks:        announcement of a route to a certain peer 43213:peer-as
+remarks:        block announcement of a route to all peers 0:43213
+remarks:        announcement of a route to all peers 43213:43213
+remarks:
+remarks:        Please visit http://www.ix.ru/eng/ekt/routeserver.html
+remarks:        for more information on the EKT-IX Route Servers
+remarks:        and for more filtering options.
+remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2025-06-11T12:11:10Z
+last-modified:  2026-07-03T07:39:32Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
