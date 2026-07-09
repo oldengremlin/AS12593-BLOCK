@@ -1,29 +1,16 @@
 aut-num:        AS43287
 as-name:        RU-VITNET-AS
 org:            ORG-CA1531-RIPE
-remarks:        ====================================
-remarks:        VITNET-AS IPv4 peers
-remarks:        ====================================
-remarks:        ========== FOTONTELECOM-AS ==========
 import:         from AS42861 action pref=100; accept ANY
 export:         to AS42861 announce AS-VITNET
-remarks:        ========== INETCOM-AS ==========
 import:         from AS35598 action pref=100; accept ANY
 export:         to AS35598 announce AS-VITNET
-remarks:        ====================================
-remarks:        == ARENTEL-AS ==
 import:         from AS57449 action pref=100; accept AS57449
 export:         to AS57449 announce ANY
-remarks:        ====================================
-remarks:        VITNET-AS IPv6 peers
-remarks:        ====================================
-remarks:        ======= ipv6.FOTONTEL-AS ==========
 mp-import:      afi ipv6.unicast from AS42861 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS42861 announce AS-VITNET
-remarks:        ======= ipv6.INETCOM-AS ==========
 mp-import:      afi ipv6.unicast from AS35598 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS35598 announce AS-VITNET
-remarks:        ====================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         ripenote@vit-net.ru
@@ -33,17 +20,13 @@ mnt-by:         VIT-RU-MNT
 created:        2007-07-09T11:21:34Z
 last-modified:  2025-06-25T10:03:23Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS43287
 country:        RU
 as-name:        RU-VITNET-AS OOO "VIT"
+as-num:         AS43287
+country:        RU
+as-name:        null
 
 organisation:   ORG-CA1531-RIPE
 org-name:       OOO "VIT"
@@ -59,11 +42,5 @@ mnt-by:         VIT-RU-MNT
 created:        2014-12-17T14:53:21Z
 last-modified:  2026-05-13T07:16:00Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

@@ -1,51 +1,31 @@
 as-set:         AS-NEVOD
 descr:          POWERNET ISP ASes
 org:            ORG-NL393-RIPE
-remarks:
-remarks:        +----------------------------------------------+
 members:        AS51032
 members:        AS47844
 members:        AS34804
 members:        AS39707
-remarks:        +----------------------------------------------+
-remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-NEVOD
 created:        2011-04-26T11:25:18Z
 last-modified:  2025-11-14T12:55:39Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
 
 as-set:         AS-NEVOD-U
 descr:          POWERNET ISP ASes union
 org:            ORG-NL393-RIPE
-remarks:
-remarks:        +----------------------------------------------+
 members:        AS-NEVOD
 members:        AS41344:AS-VISTCOM
-remarks:        +----------------------------------------------+
-remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-NEVOD
 created:        2016-02-11T12:56:51Z
 last-modified:  2024-07-09T13:41:19Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
 
 aut-num:        AS39707
@@ -72,39 +52,24 @@ created:        2006-04-12T13:59:01Z
 last-modified:  2026-05-28T11:34:53Z
 source:         RIPE
 sponsoring-org: ORG-LP174-RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
 
 aut-num:        AS51032
 as-name:        NEVOD-AS
 org:            ORG-LP174-RIPE
-remarks:        +----------------------------------------------+
-remarks:        ******** Upstreams IPv4 Routing Policy *********
-remarks:        +----------------------------------------------+
 import:         from AS31133 action pref=90;community={51032:11}; accept ANY
 export:         to AS31133 announce AS-NEVOD-U
 import:         from AS3216 action pref=90;community={51032:14}; accept ANY
 export:         to AS3216 announce AS-NEVOD-U
 import:         from AS50509 action pref=90;community={51032:15}; accept ANY
 export:         to AS50509 announce AS-NEVOD
-remarks:        +----------------------------------------------+
-remarks:        ******** Upstreams IPv6 Routing Policy *********
-remarks:        +----------------------------------------------+
 mp-import:      afi ipv6.unicast from AS31133 action pref=90;community={51032:11}; accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS51032
 mp-import:      afi ipv6.unicast from AS3216 action pref=90;community={51032:14}; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS51032
 mp-import:      afi ipv6.unicast from AS50509 action pref=90;community={51032:15}; accept ANY
 mp-export:      afi ipv6.unicast to AS50509 announce AS51032
-remarks:        +----------------------------------------------+
-remarks:        ******** Peers IPv4 Routing Policy *************
-remarks:        +----------------------------------------------+
 import:         from AS43801 action pref=110;community={51032:24}; accept AS-COMRISE
 export:         to AS43801 announce AS-NEVOD
 import:         from AS41344 action pref=90;community={51032:25}; accept AS41344:AS-VISTCOM
@@ -117,25 +82,18 @@ import:         from AS39607 action pref=90;community={51032:28}; accept AS-PITE
 export:         to AS39607 announce AS-NEVOD
 import:         from AS48193 action pref=90;community={51032:29}; accept as-piter-ix-fra
 export:         to AS48193 announce AS-NEVOD
-remarks:        +----------------------------------------------+
-remarks:        ******** Peers IPv6 Routing Policy *************
-remarks:        +----------------------------------------------+
 mp-import:      afi ipv6.unicast from AS49869 action pref=110;community={51032:26}; accept as-piter-ix-msk
 mp-export:      afi ipv6.unicast to AS49869 announce AS51032
 mp-import:      afi ipv6.unicast from AS50817 action pref=110;community={51032:27}; accept as-piter-ix
 mp-export:      afi ipv6.unicast to AS50817 announce AS51032
 mp-import:      afi ipv6.unicast from AS48193 action pref=110;community={51032:29}; accept as-piter-ix-fra
 mp-export:      afi ipv6.unicast to AS48193 announce AS51032
-remarks:        +----------------------------------------------+
-remarks:        ******** Clients IPv4 Routing Policy ***********
-remarks:        +----------------------------------------------+
 import:         from AS47844 action pref=110;community={51032:31}; accept AS-STARNET-VLZ
 export:         to AS47844 announce ANY
 import:         from AS34804 action pref=110;community={51032:30}; accept AS34804
 export:         to AS34804 announce ANY
 import:         from AS39707 action pref=110;community={51032:32}; accept AS39707
 export:         to AS39707 announce ANY
-remarks:        +----------------------------------------------+
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         admin@powernet.com.ru
@@ -145,12 +103,6 @@ mnt-by:         MNT-NEVOD
 created:        2010-05-20T08:08:45Z
 last-modified:  2026-02-13T13:24:04Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
 
