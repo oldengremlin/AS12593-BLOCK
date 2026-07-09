@@ -1,32 +1,57 @@
 aut-num:        AS39529
 as-name:        MTRX-ALCHEVSK-AS
 org:            ORG-OAN1-RIPE
+remarks:        ---------------
+remarks:        --- uplink ---
+remarks:        ---------------
+remarks:        --- LugaCom ---
 import:         from AS43201 accept ANY
 export:         to AS43201 announce ANY
+remarks:        --- Miranda ---
 import:         from AS201776 accept ANY
 export:         to AS201776 announce ANY
+remarks:        --- Optima-shid ---
 import:         from AS48882 accept ANY
 export:         to AS48882 announce ANY
+remarks:        --- MSK-IX ---
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS39529
+remarks:        --- PITER_IX_TRANSROUT ---
 import:         from AS50509 accept ANY
 export:         to AS50509 announce ANY
+remarks:        --- PITER_IX_RND ---
 import:         from AS59539 accept ANY
 export:         to AS59539 announce ANY
+remarks:        --- PITER_IX_MSK ---
 import:         from AS49869 accept ANY
 export:         to AS49869 announce ANY
+remarks:        --- PITER_IX_SPB ---
 import:         from AS50817 accept ANY
 export:         to AS50817 announce ANY
+remarks:        --- PITER_IX ---
 import:         from AS41039 accept ANY
 export:         to AS41039 announce ANY
+remarks:        --- DATA_IX ---
 import:         from AS50952 accept ANY
 export:         to AS50952 announce ANY
+remarks:        --- UA-IX ---
+remarks:        ---------------
+remarks:        --- Paritet ---
+remarks:        ---------------
+remarks:        --- ALNET ---
 import:         from AS35804 action pref=50; accept AS-ALCHEVSKNET
 export:         to AS35804 announce AS-M3X
+remarks:        --- Luganet ---
 import:         from AS39728 action pref=50; accept AS-LUGANET
 export:         to AS39728 announce AS-M3X
+remarks:        ---------------
+remarks:        --- Clients ---
+remarks:        ---------------
+remarks:        --- KTL ---
 import:         from AS44255 action pref=10; accept AS44255
 export:         to AS44255 announce ANY
+remarks:        ---------
+remarks:        --- Youtube ---
 import:         from AS11344 action pref=10; accept AS11344
 export:         to AS11344 announce ANY
 admin-c:        DUMY-RIPE
@@ -38,13 +63,17 @@ created:        2006-03-14T15:08:00Z
 last-modified:  2024-10-07T14:46:20Z
 source:         RIPE
 notify:         Korvin2000@gmail.com
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS39529
 country:        RU
 as-name:        MTRX-ALCHEVSK-AS Osipenko Alexander Nikolaevich
-as-num:         AS39529
-country:        RU
-as-name:        null
 
 organisation:   ORG-OAN1-RIPE
 org-name:       Osipenko Alexander Nikolaevich
@@ -59,5 +88,11 @@ mnt-by:         KOR4-MNT
 created:        2019-03-04T14:39:58Z
 last-modified:  2026-05-13T07:40:02Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

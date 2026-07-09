@@ -1,26 +1,52 @@
 aut-num:        AS48399
 as-name:        AS-LINXDATACENTER
 org:            ORG-SVL9-RIPE
+remarks:
+remarks:        *** Uplinks ***
+remarks:
+remarks:        *** CITIC ***
 import:         from AS3327 accept ANY
 export:         to AS3327 announce AS-LINXDATACENTER
+remarks:        *** Rascom ***
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS-LINXDATACENTER
+remarks:        *** ERTH ***
 import:         from AS9049 accept ANY
 export:         to AS9049 announce AS-LINXDATACENTER
+remarks:        *** STORMWALL ***
 export:         to AS59796 announce AS48399
 import:         from AS59796 accept ANY
+remarks:
+remarks:        **** Internet Exchanges ****
+remarks:
+remarks:        *** MSK-IX ***
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-LINXDATACENTER
+remarks:        *** SPB-IX ***
 import:         from AS43690 accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-LINXDATACENTER
+remarks:        *** DATA-IX ***
 import:         from AS50952 accept ANY
 export:         to AS50952 announce AS-LINXDATACENTER
+remarks:        *** GLOBAL-IX ***
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS-LINXDATACENTER
+remarks:        *** AMS-IX ***
 import:         from AS6777 accept ANY
 export:         to AS6777 announce AS-LINXDATACENTER
+remarks:        *** LINXDATACENTER-IX ***
 import:         from AS207362 accept ANY
 export:         to AS207362 announce AS-LINXDATACENTER
+remarks:
+remarks:
+remarks:        Community advertising:
+remarks:
+remarks:        48399:666 - blackhole
+remarks:
+remarks:        Peering issues - noc@linxdatacenter.com
+remarks:        Customer Service - support@linxdatacenter.com
+remarks:
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 abuse-c:        LXDC
@@ -32,13 +58,17 @@ created:        2018-07-06T11:25:47Z
 last-modified:  2023-08-31T08:01:00Z
 source:         RIPE
 notify:         noc@linxdatacenter.com
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS48399
 country:        RU
 as-name:        AS-LINXDATACENTER Svyaz VSD LLC
-as-num:         AS48399
-country:        RU
-as-name:        null
 
 organisation:   ORG-SVL9-RIPE
 org-name:       Svyaz VSD LLC
@@ -53,5 +83,11 @@ mnt-by:         ru-linxdatacenter-1-mnt
 created:        2018-07-05T08:48:38Z
 last-modified:  2026-05-13T07:39:20Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

@@ -1,6 +1,9 @@
 aut-num:        AS42514
 as-name:        SIGNAL-AS
 org:            ORG-SL188-RIPE
+remarks:
+remarks:        --- Upstreams ---
+remarks:
 import:         from AS20485 action pref=100; accept ANY
 export:         to AS20485 announce AS-SIGNALTV
 mp-import:      from AS20485 action pref=100; accept ANY
@@ -17,6 +20,9 @@ import:         from AS8359 action pref=100; accept ANY
 export:         to AS8359 announce AS-SIGNALTV
 mp-import:      from AS8359 action pref=100; accept ANY
 mp-export:      to AS8359 announce AS-SIGNALTV
+remarks:
+remarks:        --- Peers and IX ---
+remarks:
 import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-SIGNALTV
 mp-import:      from AS8631 action pref=200; accept AS-MSKROUTESERVER
@@ -53,8 +59,79 @@ import:         from AS210756 action pref=200; accept AS210756
 export:         to AS210756 announce AS-SIGNALTV
 mp-import:      from AS210756 action pref=200; accept AS210756
 mp-export:      to AS210756 announce AS-SIGNALTV
+remarks:
+remarks:        --- Customers ---
+remarks:
 import:         from AS197717 action pref=300; accept AS197717
 export:         to AS197717 announce ANY
+remarks:
+remarks:        ---
+remarks:
+remarks:        -----------------------------------------------------------
+remarks:        Community classificator
+remarks:        -----------------------------------------------------------
+remarks:
+remarks:        Upstreams:
+remarks:        42514:201 - TransTeleCom (AS20485)
+remarks:        42514:202 - Megafon (AS31133)
+remarks:        42514:203 - Rostelecom (AS12389)
+remarks:        42514:204 - MTS (AS8359)
+remarks:
+remarks:        Peers and IX:
+remarks:        42514:301 - MSK-IX (AS8631)
+remarks:        42514:302 - Amazon (AS16509)
+remarks:        42514:303 - Piter-IX SPB (AS50817)
+remarks:        42514:304 - Piter-IX MSK (AS49869)
+remarks:        42514:305 - Cloudflare (AS13335)
+remarks:        42514:306 - Piter-IX HEL (AS39607)
+remarks:        42514:307 - Piter-IX FRA (AS48193)
+remarks:        42514:308 - Google (AS15169)
+remarks:        42514:309 - Alibaba (AS45102)
+remarks:        42514:310 - EdgeCenter (AS210756)
+remarks:
+remarks:        Customers:
+remarks:        42514:401 - MGOK (AS197717)
+remarks:
+remarks:        -----------------------------------------------------------
+remarks:        Community to control
+remarks:        -----------------------------------------------------------
+remarks:
+remarks:        Upstreams:
+remarks:        42514:201x - TransTeleCom (AS20485)
+remarks:        42514:202x - Megafon (AS31133)
+remarks:        42514:203x - Rostelecom (AS12389)
+remarks:        42514:204x - MTS (AS8359)
+remarks:        42514:299x - All Upstreams
+remarks:
+remarks:        Peers and IX:
+remarks:        42514:301x - MSK-IX (AS8631)
+remarks:        42514:302x - Amazon (AS16509)
+remarks:        42514:303x - Piter-IX SPB (AS50817)
+remarks:        42514:304x - Piter-IX MSK (AS49869)
+remarks:        42514:305x - Cloudflare (AS13335)
+remarks:        42514:306x - Piter-IX HEL (AS39607)
+remarks:        42514:307x - Piter-IX FRA (AS48193)
+remarks:        42514:308x - Google (AS15169)
+remarks:        42514:309x - Alibaba (AS45102)
+remarks:        42514:310x - EdgeCenter (AS210756)
+remarks:        42514:399x - All IX and Peers
+remarks:
+remarks:        All:
+remarks:        42514:999x - All (Upstreams, IX and Peers)
+remarks:
+remarks:        x - action:
+remarks:        x = 0 - don't advertise
+remarks:        x = 1,2,3,4 or 5 - prepend 42514 (1,2,3,4 or 5) times
+remarks:
+remarks:
+remarks:        Contacts:
+remarks:
+remarks:        Web Site https://www.signaltv.net
+remarks:        Looking Glass https://www.signaltv.net/lg/
+remarks:        NOC noc@signaltv.net
+remarks:        Customer Support support@signaltv.net
+remarks:
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -63,13 +140,17 @@ mnt-by:         SIGNAL-MNT
 created:        2007-03-05T15:16:39Z
 last-modified:  2026-05-27T20:19:47Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS42514
 country:        RU
 as-name:        SIGNAL-AS Signal Service LLC
-as-num:         AS42514
-country:        RU
-as-name:        null
 
 organisation:   ORG-SL188-RIPE
 org-name:       Signal Service LLC
@@ -85,5 +166,11 @@ abuse-c:        SLLC-RIPE
 created:        2008-08-14T09:52:04Z
 last-modified:  2026-05-13T07:32:29Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

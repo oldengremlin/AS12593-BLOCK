@@ -41,6 +41,28 @@ import:         from AS201298 accept AS-STKTEL
 export:         to AS201298 announce ANY
 import:         from AS8592 accept AS-IMT
 export:         to AS8592 announce ANY
+remarks:        ------------------------------------------------------------------
+remarks:        NovitaTelecomm filters out inbound prefixes longer than /24
+remarks:        except for those marked by BlackHole community
+remarks:        ------------------------------------------------------------------
+remarks:        Community Description
+remarks:        59589:51x When advertising to INET2
+remarks:        59589:52x When advertising to WIX
+remarks:        59589:53x When advertising to Global Network
+remarks:        59589:54x When advertising to Globa-IX
+remarks:        59589:55x When advertising to DATA-IX
+remarks:        59589:69x When advertising to ALL Upstream and peers...
+remarks:        ...x=0 - do not advertise
+remarks:        ...x=1,2 or 3 - prepend 59589 1,2 or 3 times
+remarks:        59589:600 Discard all traffic (BlackHole)
+remarks:        Other 59589:* communities are deleted.
+remarks:        ------------------------------------------------------------------
+remarks:        Community Description
+remarks:        59589:0 - NovitaTelecom originated
+remarks:        59589:101 - Customers
+remarks:        59589:103 - Upstreams
+remarks:        59589:107 - Any IXs or Peers
+remarks:        ------------------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -49,13 +71,17 @@ mnt-by:         lir-ru-ka2-1-MNT
 created:        2020-03-16T14:47:55Z
 last-modified:  2025-07-20T11:05:44Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS59589
 country:        RU
 as-name:        KA2 LLC KA-2
-as-num:         AS59589
-country:        RU
-as-name:        null
 
 organisation:   ORG-LK160-RIPE
 org-name:       LLC KA-2
@@ -70,5 +96,11 @@ mnt-by:         lir-ru-ka2-1-MNT
 created:        2024-11-08T11:30:21Z
 last-modified:  2026-05-13T07:13:25Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

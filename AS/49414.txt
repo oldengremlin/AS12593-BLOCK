@@ -2,35 +2,52 @@ aut-num:        AS49414
 descr:          AS Tomsk Internet Exchange
 as-name:        TSK-IX-AS
 org:            ORG-LT19-RIPE
+remarks:        -= FROM CLIENT Tomsk Internet Exchange =-
+remarks:        === TOMICA AS31357 ===
 import:         from AS31357 action pref=50; accept ANY
+remarks:        === TOMGATE ==
 import:         from AS39701 action pref=50; accept AS39701;
 export:         to AS39701 announce as-tomica-ix;
+remarks:        === TGPU ===
 import:         from AS50433 action pref=50; accept AS50433;
 export:         to AS50433 announce as-tomica-ix;
+remarks:        === TPU ===
 import:         from AS5567 action pref=50; accept AS5567;
 export:         to AS5567 announce as-tomica-ix;
+remarks:        === NEOTELECOM ===
 import:         from AS44417 action pref=50; accept AS44417;
 export:         to AS44417 announce as-tomica-ix;
+remarks:        === TUSUR ===
 import:         from AS41566 action pref=50; accept AS41566;
 export:         to AS41566 announce as-tomica-ix;
+remarks:        === DIGITAL SERVICE ===
 import:         from AS31314 action pref=50; accept AS31314;
 export:         to AS31314 announce as-tomica-ix;
+remarks:        === ROSTELECOM ===
 import:         from AS12389 action pref=50; accept AS12389;
 export:         to AS12389 announce as-tomica-ix;
+remarks:        === KAPITAL SVYAZ ===
 import:         from AS51456 action pref=50; accept AS51456;
 export:         to AS51456 announce as-tomica-ix;
+remarks:        === ALLIANCE TELECOM
 import:         from AS49293 action pref=50; accept AS49293;
 export:         to AS49293 announce as-tomica-ix;
+remarks:        === ERTELECOM ===
 import:         from AS9049 action pref=50; accept AS-TOMSK;
 export:         to AS9049 announce as-tomica-ix;
+remarks:        === NETCOM ===
 import:         from AS56707 action pref=50; accept AS56707;
 export:         to AS56707 announce as-tomica-ix;
+remarks:        === TRANSTELECOM ===
 import:         from AS21127 action pref=50; accept AS21127;
 export:         to AS21127 announce as-tomica-ix;
+remarks:        === OCAIR ===
 import:         from AS48316 action pref=50; accept AS48316;
 export:         to AS48316 announce as-tomica-ix;
+remarks:        === SIBINET ===
 import:         from AS35411 action pref=50; accept AS35411;
 export:         to AS35411 announce as-tomica-ix;
+remarks:        === NETPOINT ===
 import:         from AS51740 action pref=50; accept AS51740;
 export:         to AS51740 announce as-tomica-ix;
 admin-c:        DUMY-RIPE
@@ -43,13 +60,17 @@ created:        2009-06-04T08:54:56Z
 last-modified:  2022-02-28T10:18:45Z
 source:         RIPE
 sponsoring-org: ORG-LCIA1-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS49414
 country:        RU
 as-name:        TSK-IX-AS LLC TOMIKA
-as-num:         AS49414
-country:        RU
-as-name:        null
 
 organisation:   ORG-LT19-RIPE
 org-name:       LLC TOMIKA
@@ -63,5 +84,11 @@ mnt-by:         TOMICA-MNT
 created:        2009-05-21T11:47:42Z
 last-modified:  2026-05-13T05:40:55Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
