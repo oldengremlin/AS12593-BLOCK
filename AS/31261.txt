@@ -3,10 +3,8 @@ org:            ORG-OM1-RIPE
 as-name:        GARS-AS
 descr:          Moscow, Russia
 descr:          www.garstelecom.ru
-remarks:        ---- UPLINKS --------------------------------
 import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-GARS
-remarks:        +--- IPv6 ----------------------------
 mp-import:      afi ipv6.unicast from AS9002 accept ANY
 mp-export:      afi ipv6.unicast to AS9002 announce AS-GARSV6
 mp-import:      afi ipv6.unicast from AS20764 accept ANY
@@ -29,7 +27,6 @@ mp-import:      afi ipv6.unicast from AS29329 accept AS-NODEX
 mp-export:      afi ipv6.unicast to AS29329 announce AS-GARSV6
 mp-import:      afi ipv6.unicast from AS34602 accept AS-STARLNK
 mp-export:      afi ipv6.unicast to AS34602 announce AS-GARSV6
-remarks:        ---- IPV6 DOWNLINKS ------------------------------
 mp-import:      afi ipv6.unicast from AS51219 action pref=250; accept AS-CROC
 mp-export:      afi ipv6.unicast to AS51219 announce ANY
 mp-import:      afi ipv6.unicast from AS51297 action pref=250; accept AS51297
@@ -42,16 +39,12 @@ mp-import:      afi ipv6.unicast from AS202344 action pref=250; accept AS202344
 mp-export:      afi ipv6.unicast to AS202344 announce ANY
 mp-import:      afi ipv6.unicast from AS60388 action pref=250; accept AS-SIGMA-TELECOM
 mp-export:      afi ipv6.unicast to AS60388 announce ANY
-remarks:        RAMBLER
 mp-import:      afi ipv6.unicast from AS24638 action pref=250; accept AS24638
 mp-export:      afi ipv6.unicast to AS24638 announce ANY
-remarks:        +-- DATA-IX PEERING --------------------------
 import:         from AS50952 action pref=160; accept AS-DATAIX
 export:         to AS50952 announce AS-GARS
-remarks:        +-- DEC-IX PEERING --------------------------
 import:         from AS6695 action pref=160; accept AS-DECIX
 export:         to AS6695 announce AS-GARS
-remarks:        +-- MSK-IX PEERING ---------------------------
 import:         from AS8641 action pref=160; accept AS-NAUKANET
 import:         from AS8492 action pref=160; accept AS-OBIT
 import:         from AS8631 action pref=160; accept AS-MSKROUTESERVER
@@ -72,28 +65,22 @@ export:         to AS13105 announce AS-GARS
 export:         to AS41095 announce AS-GARS
 export:         to AS41145 announce AS-GARS
 export:         to AS44050 announce AS-GARS
-remarks:        +--SPB-IX PEERING ---------------------------
 import:         from AS43690 action pref=160; accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-GARS
-remarks:        ----- EURASIAPEERING---------------------
 import:         from AS56931 action pref=160; accept ANY
 export:         to AS56931 announce AS-GARS
-remarks:        ----- PEERING -------------------------------
 import:         from AS8631 action pref=160; accept AS-NAUKANET
 import:         from AS13238 action pref=160; accept AS-YANDEX
 import:         from AS39134 action pref=160; accept AS-UNITEDNET
 import:         from AS29076 action pref=160; accept AS-CITYTELECOM
 import:         from AS39221 action pref=160; accept AS39221
 import:         from AS203921 action pref=160; accept AS-ELBA-IX-ROUTESERVER
-export:         to AS8631 announce AS-GARS
 export:         to AS13238 announce AS-GARS
 export:         to AS39134 announce AS-GARS
 export:         to AS29076 announce AS-GARSNW
 export:         to AS39221 announce AS-GARS
 export:         to AS203921 announce AS-GARS
 export:         to AS201706 announce AS-GARS-DDOS
-remarks:        ---- DOWNLINKS ------------------------------
-remarks:        RAMBLER
 import:         from AS24638 action pref=250; accept AS-RAMTEL
 export:         to AS24638 announce ANY
 import:         from AS30952 action pref=250; accept AS30952
@@ -192,7 +179,6 @@ import:         from AS198728 action pref=250; accept AS198728
 import:         from AS198762 action pref=250; accept AS198762
 import:         from AS198770 action pref=250; accept AS198770
 import:         from AS198821 action pref=250; accept AS198821
-import:         from AS198833 action pref=250; accept AS198833
 import:         from AS199072 action pref=250; accept AS199072
 import:         from AS204459 action pref=250; accept AS204459
 import:         from AS199420 action pref=250; accept as-flygroup
@@ -223,9 +209,7 @@ import:         from AS206850 action pref=250; accept AS206850
 import:         from AS51680 action pref=250; accept AS51680
 import:         from AS41122 action pref=250; accept AS41122
 import:         from AS58084 action pref=250; accept AS58084
-import:         from AS44900 action pref=250; accept AS44900
 import:         from AS201018 action pref=250; accept AS201018
-import:         from AS60062 action pref=250; accept AS-3DATA
 import:         from AS202857 action pref=250; accept AS202857
 import:         from AS43287 action pref=250; accept AS-VITNET
 import:         from AS42628 action pref=250; accept AS42628
@@ -268,7 +252,6 @@ import:         from AS56537 action pref=250; accept AS56537
 import:         from AS47470 action pref=250; accept AS47470
 import:         from AS216214 action pref=250; accept AS216214
 import:         from AS39678 action pref=250; accept AS39678
-import:         from AS210914 action pref=250; accept AS210914
 import:         from AS44102 action pref=250; accept AS44102
 import:         from AS197379 action pref=250; accept AS197379
 import:         from AS203203 action pref=250; accept AS203203
@@ -374,7 +357,6 @@ export:         to AS198762 announce ANY
 export:         to AS198770 announce ANY
 export:         to AS59935 announce ANY
 export:         to AS198821 announce ANY
-export:         to AS198833 announce ANY
 export:         to AS199072 announce ANY
 export:         to AS199420 announce ANY
 export:         to AS199546 announce ANY
@@ -404,7 +386,6 @@ export:         to AS206850 announce ANY
 export:         to AS51680 announce ANY
 export:         to AS41122 announce ANY
 export:         to AS58084 announce ANY
-export:         to AS44900 announce ANY
 export:         to AS201018 announce ANY
 export:         to AS-3DATA announce ANY
 export:         to AS202857 announce ANY
@@ -440,36 +421,10 @@ export:         to AS41388 announce ANY
 export:         to AS211532 announce ANY
 export:         to AS211247 announce ANY
 export:         to AS211076 announce ANY
-export:         to AS210914 announce ANY
 export:         to AS50024 announce ANY
 export:         to AS34910 announce ANY
 export:         to AS212764 announce ANY
 export:         to AS56537 announce ANY
-remarks:        ===================================================
-remarks:        Looking glass http://lg.garstelecom.ru
-remarks:        ===================================================
-remarks:        Community for prefix classification
-remarks:        31261:XYY
-remarks:        ---------------------------------------
-remarks:        X - type of prexif:
-remarks:        1 - UPSTREAM
-remarks:        2 - PEER
-remarks:        4 - DOWNSTREAM
-remarks:        ---------------------------------------
-remarks:        YY - PREFIX DESCRIPTION:
-remarks:        UPSTREAM:
-remarks:        01 - TTK AS20485
-remarks:        02 - RETN AS9002
-remarks:        03 - BEELINE AS3216
-remarks:        04 - COGENT AS174
-remarks:        05 - LEVEL3 AS3356
-remarks:        PEER:
-remarks:        01 - MSK-IX PEER
-remarks:        02 - DATAIX PEER
-remarks:        03 - PRIVATE PEER
-remarks:        DOWNLINK:
-remarks:        01 - ANY
-remarks:        ===================================================
 status:         ASSIGNED
 notify:         ripe-notify@ti.ru
 admin-c:        DUMY-RIPE
@@ -479,19 +434,15 @@ mnt-by:         MEGAFON-RIPE-MNT
 mnt-by:         GARS-MNT
 mnt-by:         TI-MNT
 created:        2004-04-01T09:50:34Z
-last-modified:  2026-02-20T11:13:22Z
+last-modified:  2026-07-08T07:32:08Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS31261
 country:        RU
 as-name:        GARS-AS PJSC MegaFon
+as-num:         AS31261
+country:        RU
+as-name:        null
 
 organisation:   ORG-OM1-RIPE
 org-name:       PJSC MegaFon
@@ -507,11 +458,5 @@ mnt-ref:        MEGAFON-RIPE-MNT
 created:        2004-04-17T11:55:06Z
 last-modified:  2026-05-13T05:58:58Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

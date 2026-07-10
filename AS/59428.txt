@@ -1,23 +1,7 @@
 aut-num:        AS59428
 as-name:        KRD-IX-AS
-remarks:        KRD IX AS
 org:            ORG-IL280-RIPE
-remarks:        **************************************
-remarks:        AS59428 is used for the SEA-IX Route Servers.
-remarks:        All ASes participating in the Route Servers peering
-remarks:        are grouped into the AS-SET: AS-KRD-RS
-remarks:        You may use communities to control outgoing information
-remarks:        via the route server.
-remarks:        The meaning and order of evaluation is important:
-remarks:        block announcement of a route to a certain peer ->
-remarks:        ---------- 0:peer-as
-remarks:        announcement of a route to a certain peer ->
-remarks:        ---------- 59428:peer-as
-remarks:        block announcement of a route to all peers ->
-remarks:        ---------- 0:59428
-remarks:        announcement of a route to all peers ->
 descr:          ---------- 59428:59428
-remarks:        ****************************************************
 import:         from AS48479 accept AS-KUBAN-TELECOM
 import:         from AS48129 accept AS-IRBISTELECOM
 import:         from AS34352 accept AS34352
@@ -154,7 +138,6 @@ export:         to AS13238 announce AS-KRD-AS
 export:         to AS215455 announce AS-KRD-AS
 export:         to AS201119 announce AS-KRD-AS
 export:         to AS215013 announce AS-KRD-AS
-remarks:        ****************************************************
 status:         ASSIGNED
 notify:         noc@sea-ix.ru
 admin-c:        DUMY-RIPE
@@ -166,17 +149,13 @@ created:        2012-07-10T09:44:05Z
 last-modified:  2025-06-27T05:07:24Z
 source:         RIPE
 sponsoring-org: ORG-KL75-RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS59428
 country:        RU
 as-name:        KRD-IX-AS IpNetcom LLC
+as-num:         AS59428
+country:        RU
+as-name:        null
 
 organisation:   ORG-IL280-RIPE
 org-name:       IpNetcom LLC
@@ -190,11 +169,5 @@ mnt-by:         MNT-IPNETCOM
 created:        2012-10-23T09:52:48Z
 last-modified:  2026-05-13T06:02:19Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
