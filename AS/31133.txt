@@ -2,12 +2,18 @@ aut-num:        AS31133
 as-name:        MF-MGSM-AS
 descr:          PJSC MegaFon
 org:            ORG-OM1-RIPE
+remarks:
+remarks:        --- Upstreams ---
+remarks:
 import:         from AS1299 accept ANY
 export:         to AS1299 announce AS-MF-MGSM
 import:         from AS6762 accept ANY
 export:         to AS6762 announce AS-MF-MGSM
 import:         from AS23764 accept ANY
 export:         to AS23764 announce AS-MF-MGSM
+remarks:
+remarks:        --- AMS-IX ---
+remarks:
 import:         from AS714 accept AS-APPLE
 export:         to AS714 announce AS-MF-MGSM
 import:         from AS1200 accept AS1200
@@ -37,6 +43,7 @@ export:         to AS6777 announce AS-MF-MGSM
 import:         from AS6939 accept AS-HURRICANE
 export:         to AS6939 announce AS-MF-MGSM
 import:         from AS6939 accept AS-HURRICANEV6
+export:         to AS6939 announce AS-MF-MGSM
 import:         from AS7342 accept AS-GTLD
 export:         to AS7342 announce AS-MF-MGSM
 import:         from AS8075 accept AS-MICROSOFT
@@ -62,6 +69,7 @@ export:         to AS10310 announce AS-MF-MGSM
 import:         from AS12779 accept AS12779:AS-CUSTOMERS
 export:         to AS12779 announce AS-MF-MGSM
 import:         from AS12779 accept AS12779:AS-CUSTOMERS-V6
+export:         to AS12779 announce AS-MF-MGSM
 import:         from AS13030 accept AS-INIT7
 export:         to AS13030 announce AS-MF-MGSM
 import:         from AS13122 accept AS-MANX
@@ -91,6 +99,7 @@ export:         to AS24940 announce AS-MF-MGSM
 import:         from AS25091 accept AS-IP-MAX
 export:         to AS25091 announce AS-MF-MGSM
 import:         from AS25091 accept AS-IP-MAX-V6
+export:         to AS25091 announce AS-MF-MGSM
 import:         from AS29990 accept AS-APPNEXUS
 export:         to AS29990 announce AS-MF-MGSM
 import:         from AS33891 accept AS-CORE-BACKBONE
@@ -112,6 +121,7 @@ export:         to AS43996 announce AS-MF-MGSM
 import:         from AS44788 accept AS-CRITEO-EU
 export:         to AS44788 announce AS-MF-MGSM
 import:         from AS44788 accept AS-CRITEO-EU-V6
+export:         to AS44788 announce AS-MF-MGSM
 import:         from AS47065 accept AS47065
 export:         to AS47065 announce AS-MF-MGSM
 import:         from AS50245 accept AS-SERVEREL
@@ -150,35 +160,72 @@ import:         from AS206264 accept AS-KODDOS
 export:         to AS206264 announce AS-MF-MGSM
 import:         from AS213449 accept AS213449:AS-JOW
 export:         to AS213449 announce AS-MF-MGSM
+remarks:
+remarks:        --- DE-CIX ---
+remarks:
 import:         from AS6695 accept AS-DECIX
 export:         to AS6695 announce AS-MF-MGSM
+remarks:
+remarks:        --- DATA-IX ---
+remarks:
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-MF-MGSM
+remarks:
+remarks:        --- MSK-IX ---
+remarks:
 import:         from AS7195 accept AS-EDGEUNO
 export:         to AS7195 announce AS-MF-MGSM
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-CDN-MEGAFON
+import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-MF-MGSM
 import:         from AS15835 accept AS-MAP
 export:         to AS15835 announce AS-MF-MGSM
 import:         from AS43832 accept AS-NS5_RIPN_NET
 export:         to AS43832 announce AS-MF-MGSM
+remarks:
+remarks:        --- NETNOD-IX ---
+remarks:
 import:         from AS52005 accept AS-NETNOD
 export:         to AS52005 announce AS-MF-MGSM
+remarks:
+remarks:        --- NSK-IX (for CDN MegaFon) ---
+remarks:
 import:         from AS42403 accept AS-NSKROUTESERVER
 export:         to AS42403 announce AS-CDN-MEGAFON
+remarks:
+remarks:        --- EKT-IX (for CDN MegaFon) ---
+remarks:
 import:         from AS43213 accept AS-EKTROUTESERVER
 export:         to AS43213 announce AS-CDN-MEGAFON
+remarks:
+remarks:        --- VLV-IX (for CDN MegaFon) ---
+remarks:
 import:         from AS48531 accept AS-VLVROUTESERVER
 export:         to AS48531 announce AS-CDN-MEGAFON
+remarks:
+remarks:        --- KZN-IX (for CDN MegaFon) ---
+remarks:
 import:         from AS50706 accept AS-KZNROUTESERVER
 export:         to AS50706 announce AS-CDN-MEGAFON
+remarks:
+remarks:        --- SMR-IX (for CDN MegaFon) ---
+remarks:
 import:         from AS47882 accept AS-SMRROUTESERVER
 export:         to AS47882 announce AS-CDN-MEGAFON
+remarks:
+remarks:        --- SPB-IX (for CDN MegaFon) ---
+remarks:
 import:         from AS43690 accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-CDN-MEGAFON
+remarks:
+remarks:        --- RND-IX (for CDN MegaFon) ---
+remarks:
 import:         from AS48216 accept AS-RNDROUTESERVER
 export:         to AS48216 announce AS-CDN-MEGAFON
+remarks:
+remarks:        --- Peers ---
+remarks:
 import:         from AS3216 accept AS-SOVAM
 export:         to AS3216 announce AS-MF-MGSM
 import:         from AS3267 accept AS-RUNNET
@@ -198,6 +245,7 @@ export:         to AS8732 announce AS-MF-MGSM
 import:         from AS9009 accept AS-GBXS
 export:         to AS9009 announce AS-MF-MGSM
 import:         from AS9009 accept AS-GBXS6
+export:         to AS9009 announce AS-MF-MGSM
 import:         from AS12389 accept AS-ROSTELECOM
 export:         to AS12389 announce AS-MF-MGSM
 import:         from AS13238 accept AS-YANDEX
@@ -224,6 +272,8 @@ import:         from AS21219 accept AS-FF-TRANSIT
 export:         to AS21219 announce AS-MF-MGSM
 import:         from AS22697 accept AS-ROBLOX
 export:         to AS22697 announce AS-MF-MGSM
+import:         from AS24940 accept AS-HETZNER
+export:         to AS24940 announce AS-MF-MGSM
 import:         from AS24961 accept AS-MYLOC
 export:         to AS24961 announce AS-MF-MGSM
 import:         from AS28917 accept AS28917
@@ -240,6 +290,8 @@ import:         from AS35320 accept AS-ETT
 export:         to AS35320 announce AS-MF-MGSM
 import:         from AS35662 accept AS35662:AS-ORIGINS
 export:         to AS35662 announce AS-MF-MGSM
+import:         from AS39832 accept AS-OPERA
+export:         to AS39832 announce AS-MF-MGSM
 import:         from AS42532 accept AS-VEESP
 export:         to AS42532 announce AS-MF-MGSM
 import:         from AS42610 accept AS-NCNET
@@ -255,12 +307,15 @@ export:         to AS48268 announce AS-MF-MGSM
 import:         from AS49453 accept AS-49453
 export:         to AS49453 announce AS-MF-MGSM
 import:         from AS54113 accept AS-FASTLY
+export:         to AS54113 announce AS-MF-MGSM
 import:         from AS56630 accept AS-MELBICOM
 export:         to AS56630 announce AS-MF-MGSM
 import:         from AS58073 accept AS-YISP
 export:         to AS58073 announce AS-MF-MGSM
 import:         from AS60068 accept AS-CDN77
 export:         to AS60068 announce AS-MF-MGSM
+import:         from AS139341 accept AS139341:AS-ACE
+export:         to AS139341 announce AS-MF-MGSM
 import:         from AS200350 accept AS-YACLOUD
 export:         to AS200350 announce AS-MF-MGSM
 import:         from AS210644 accept AS-AEZA
@@ -271,6 +326,9 @@ import:         from AS212236 accept AS-KINESCOPE
 export:         to AS212236 announce AS-MF-MGSM
 import:         from AS199524 accept AS-GCORE
 export:         to AS199524 announce AS-MF-MGSM
+remarks:
+remarks:        --- Clients ---
+remarks:
 import:         from AS2854 accept AS-ROSPRINT
 export:         to AS2854 announce ANY
 import:         from AS3168 accept AS3168
@@ -284,6 +342,7 @@ export:         to AS5572 announce ANY
 import:         from AS6789 accept AS-CRELCOM
 export:         to AS6789 announce ANY
 import:         from AS6789 accept AS-CRELCOM-v6
+export:         to AS6789 announce ANY
 import:         from AS6820 accept AS-LEIVO
 export:         to AS6820 announce ANY
 import:         from AS6850 accept AS-METROCOM
@@ -338,6 +397,7 @@ import:         from AS12999 accept AS12999
 export:         to AS12999 announce ANY
 import:         from AS13215 accept AS-CONVEYPLUS
 export:         to AS13215 announce ANY
+import:         from AS13238 accept AS-YANDEX
 export:         to AS13238 announce ANY
 import:         from AS13259 accept AS-DELTA-TELESYSTEMS
 export:         to AS13259 announce ANY
@@ -369,6 +429,7 @@ import:         from AS20848 accept AS20848
 export:         to AS20848 announce ANY
 import:         from AS20872 accept AS20872
 export:         to AS20872 announce ANY
+import:         from AS20940 accept AS-AKAMAI
 export:         to AS20940 announce ANY
 import:         from AS20919 accept AS-IBS
 export:         to AS20919 announce ANY
@@ -377,14 +438,17 @@ export:         to AS20985 announce ANY
 import:         from AS21135 accept AS-MTT
 export:         to AS21135 announce ANY
 import:         from AS21135 accept AS-MTT-OWN
+export:         to AS21135 announce ANY
 import:         from AS21480 accept AS-WBT
 export:         to AS21480 announce ANY
+import:         from AS21859 accept AS-ZENLAYER
 export:         to AS21859 announce ANY
 import:         from AS24602 accept AS-RADIONET-T
 export:         to AS24602 announce ANY
 import:         from AS24638 accept AS-RAMTEL
 export:         to AS24638 announce ANY
 import:         from AS24638 accept AS24638
+export:         to AS24638 announce ANY
 import:         from AS24658 accept AS24658
 export:         to AS24658 announce ANY
 import:         from AS24758 accept AS24758:AS-MICROEL
@@ -504,6 +568,7 @@ export:         to AS34901 announce ANY
 import:         from AS35000 accept AS-PROMETEY
 export:         to AS35000 announce ANY
 import:         from AS35000 accept AS-PROMETEY-V6
+export:         to AS35000 announce ANY
 import:         from AS35102 accept AS35102
 export:         to AS35102 announce ANY
 import:         from AS35104 accept AS-KTCPEERS
@@ -565,6 +630,7 @@ export:         to AS39493 announce ANY
 import:         from AS39775 accept AS-HYPERNET
 export:         to AS39775 announce ANY
 import:         from AS39775 accept AS-HYPERNET-V6
+export:         to AS39775 announce ANY
 import:         from AS39864 accept AS39864
 export:         to AS39864 announce ANY
 import:         from AS39927 accept AS-ELIGHT
@@ -586,6 +652,7 @@ export:         to AS41226 announce ANY
 import:         from AS41268 accept AS61436:AS-INTEX
 export:         to AS41268 announce ANY
 import:         from AS41268 accept AS61436:AS-INTEX-V6
+export:         to AS41268 announce ANY
 import:         from AS41302 accept AS-KVS
 export:         to AS41302 announce ANY
 import:         from AS41338 accept AS41338
@@ -871,6 +938,7 @@ export:         to AS48995 announce ANY
 import:         from AS49037 accept AS-MGL6
 export:         to AS49037 announce ANY
 import:         from AS49037 accept AS-MGL
+export:         to AS49037 announce ANY
 import:         from AS49055 accept AS-NEWIT
 export:         to AS49055 announce ANY
 import:         from AS49063 accept AS-DTLN
@@ -940,6 +1008,7 @@ export:         to AS49925 announce ANY
 import:         from AS49966 accept AS49966
 export:         to AS49966 announce ANY
 import:         from AS49988 accept AS49988
+export:         to AS49966 announce ANY
 import:         from AS50045 accept AS-MONNET
 export:         to AS50045 announce ANY
 import:         from AS50060 accept AS-ANNET
@@ -1111,6 +1180,7 @@ export:         to AS56528 announce ANY
 import:         from AS56534 accept AS-PIRIXINET
 export:         to AS56534 announce ANY
 import:         from AS56534 accept AS-CMFT
+export:         to AS56534 announce ANY
 import:         from AS56542 accept AS56542
 export:         to AS56542 announce ANY
 import:         from AS56562 accept AS56562
@@ -1198,6 +1268,7 @@ export:         to AS57808 announce ANY
 import:         from AS57842 accept AS-UCSCUST-MEG
 export:         to AS57842 announce ANY
 import:         from AS57842 accept AS57842
+export:         to AS57842 announce ANY
 import:         from AS57876 accept AS57876
 export:         to AS57876 announce ANY
 import:         from AS57884 accept AS57884
@@ -1279,6 +1350,7 @@ export:         to AS60165 announce ANY
 import:         from AS60245 accept AS60245
 export:         to AS60245 announce ANY
 import:         from AS60245 accept AS-23NET
+export:         to AS60245 announce ANY
 import:         from AS60280 accept AS-NTEC
 export:         to AS60280 announce ANY
 import:         from AS60162 accept AS60162
@@ -1376,6 +1448,7 @@ export:         to AS197204 announce ANY
 import:         from AS197068 accept AS-QRATOR
 export:         to AS197068 announce ANY
 import:         from AS197068 accept AS197068:AS-SET
+export:         to AS197068 announce ANY
 import:         from AS197311 accept AS197311
 export:         to AS197311 announce ANY
 import:         from AS197331 accept AS197331
@@ -1728,6 +1801,329 @@ import:         from AS216365 accept AS216365
 export:         to AS216365 announce ANY
 import:         from AS216379 accept AS216379
 export:         to AS216379 announce ANY
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community for Prefix Control
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Backup Community
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        |
+remarks:        | 31133:240 - Set local preference 240 (backup)
+remarks:        | 31133:250 - Set local preference 250 (like an Upstream)
+remarks:        | 31133:270 - Set local preference 270 (like a Peer)
+remarks:        |
+remarks:        | Default local preference for Customer is 300
+remarks:        |
+remarks:        | 31133:999 - blackhole traffic
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Geo-communities
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Prefixes received in Europe, Asia, America are marked geo-communities:
+remarks:        |
+remarks:        | Europe 31133:1100
+remarks:        | Amsterdam 31133:1101
+remarks:        | Frankfurt 31133:1102
+remarks:        | London 31133:1103
+remarks:        | Stockholm 31133:1104
+remarks:        | Warsaw 31133:1105
+remarks:        | Helsinki 31133:1106
+remarks:        |
+remarks:        | Asia 31133:1200
+remarks:        | Hong_Kong 31133:1201
+remarks:        |
+remarks:        | America 31133:1300
+remarks:        | New_York 31133:1301
+remarks:        |
+remarks:        | Prefixes received in Russian Federation are marked geo-community 31133:1000
+remarks:        | In addition:
+remarks:        | Capital branch 31133:177
+remarks:        |
+remarks:        | Moscow 31133:1077
+remarks:        |
+remarks:        | Center branch 31133:152
+remarks:        |
+remarks:        | Bryansk 31133:1032
+remarks:        | Vladimir 31133:1033
+remarks:        | Kaluga 31133:1040
+remarks:        | Kursk 31133:1046
+remarks:        | Nizhny Novgorod 31133:1052
+remarks:        | Orlovsk 31133:1057
+remarks:        | Ryazan 31133:1062
+remarks:        | Tula 31133:1071
+remarks:        |
+remarks:        | North-West branch 31133:178
+remarks:        |
+remarks:        | Ivanovo 31133:1037
+remarks:        | Kostroma 31133:1044
+remarks:        | Smolensk 31133:1067
+remarks:        | Tver 31133:1069
+remarks:        | Yaroslavl 31133:1076
+remarks:        | Arkhangelsk 31133:1029
+remarks:        | Vologda 31133:1035
+remarks:        | Kaliningrad 31133:1039
+remarks:        | Petrozavodsk 31133:1010
+remarks:        | Murmansk 31133:1051
+remarks:        | Velikiy Novgorod 31133:1053
+remarks:        | Pskov 31133:1060
+remarks:        | Saint-Petersburg 31133:1078
+remarks:        |
+remarks:        | Caucasian branch 31133:123
+remarks:        |
+remarks:        | Krasnodar 31133:1023
+remarks:        | Belgorod 31133:1031
+remarks:        | Voronezh 31133:1036
+remarks:        | Lipetsk 31133:1048
+remarks:        | Tambov 31133:1068
+remarks:        | Rostov-on-Don 31133:1061
+remarks:        | Makhachkala 31133:1005
+remarks:        | Nalchik 31133:1007
+remarks:        | Cherkessk 31133:1009
+remarks:        | Vladikavkaz 31133:1015
+remarks:        | Stavropol 31133:1026
+remarks:        | Grozny 31133:1095
+remarks:        |
+remarks:        | Volga region branch 31133:163
+remarks:        |
+remarks:        | Astrakhan 31133:1030
+remarks:        | Ufa 31133:1002
+remarks:        | Yoshkar-Ola 31133:1012
+remarks:        | Saransk 31133:1013
+remarks:        | Volgograd 31133:1034
+remarks:        | Elista 31133:1008
+remarks:        | Orenburg 31133:1056
+remarks:        | Penza 31133:1058
+remarks:        | Samara 31133:1063
+remarks:        | Saratov 31133:1064
+remarks:        | Kazan 31133:1016
+remarks:        | Ulyanovsk 31133:1073
+remarks:        | Cheboksary 31133:1021
+remarks:        |
+remarks:        | Ural branch 31133:166
+remarks:        |
+remarks:        | Syktyvkar 31133:1011
+remarks:        | Kirov 31133:1043
+remarks:        | Permian 31133:1059
+remarks:        | Izhevsk 31133:1018
+remarks:        | Kurgan 31133:1045
+remarks:        | Ekaterinburg 31133:1066
+remarks:        | Tyumen 31133:1072
+remarks:        | Khanty-Mansiysk 31133:1086
+remarks:        | Chelyabinsk 31133:1074
+remarks:        | Noyabrsk 31133:1089
+remarks:        |
+remarks:        | Siberia branch 31133:154
+remarks:        |
+remarks:        | Barnaul 31133:1022
+remarks:        | Kemerovo 31133:1042
+remarks:        | Krasnoyarsk 31133:1024
+remarks:        | Novosibirsk 31133:1054
+remarks:        | Omsk 31133:1055
+remarks:        | Tomsk 31133:1070
+remarks:        | Abakan 31133:1019
+remarks:        |
+remarks:        | Far east branch 31133:127
+remarks:        |
+remarks:        | Blagoveshchensk 31133:1028
+remarks:        | Chita 31133:1075
+remarks:        | Ulan-Ude 31133:1003
+remarks:        | Vladivostok 31133:1025
+remarks:        | Irkutsk 31133:1038
+remarks:        | Khabarovsk 31133:1027
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community to INTERNATIONAL UPSTREAMS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 31133:1000x - All international upstreams
+remarks:        | 31133:1101x - TeliaSonera (AS1299)
+remarks:        | 31133:1102x - Telecom Italia (AS6762)
+remarks:        | 31133:1108x - China Telecom (AS23764)
+remarks:        |
+remarks:        | x = 0 - advertise to this only (don't advertise to any Upstream)
+remarks:        | x = 1,2,3 or 5 - prepend 31133 (1,2,3 or 5) times
+remarks:        | x = 8 - prepend AS31133 3 times to all other International Upstreams
+remarks:        | x = 9 - don't advertise
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community to INTERNATIONAL PEERS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 31133:2000x - All International peers
+remarks:        | 31133:2101x - DE-CIX Frankfurt (AS6695)
+remarks:        | 31133:2102x - DE-CIX-DIRECT Frankfurt
+remarks:        | 31133:2104x - Netnod (AS52005)
+remarks:        | 31133:2105x - NetNod-DIRECT
+remarks:        | 31133:2106x - OVHCloud (AS16276)
+remarks:        | 31133:2107x - myLoc (AS24961)
+remarks:        | 31133:2108x - Hetzner (AS24940)
+remarks:        | 31133:2109x - Softlayer (AS36351)
+remarks:        | 31133:2201x - AMS-IX (AS1200)
+remarks:        | 31133:2202x - AMS-IX-DIRECT
+remarks:        | 31133:2208x - CloudFlare (AS13335)
+remarks:        | 31133:2303x - NL-IX-RS (AS34307)
+remarks:        | 31133:2304x - NL-IX-DIRECT
+remarks:        | 31133:2305x - IOMART (AS20860)
+remarks:        | 31133:2306x - Apple (AS714)
+remarks:        | 31133:2307x - Valve (AS32590)
+remarks:        | 31133:2308x - DE-CIX-DIRECT New-York
+remarks:        | 31133:2309x - Core-BackBone (AS33891)
+remarks:        | 31133:2310x - Facebook (AS32934)
+remarks:        | 31133:2311x - Amazon (AS16509)
+remarks:        | 31133:2313x - Hurricane Electric (AS6939)
+remarks:        | 31133:2314x - China Telecom (AS4134)
+remarks:        | 31133:2315x - Scaleway (AS12876)
+remarks:        | 31133:2316x - Aofei (AS135391)
+remarks:        | 31133:2317x - GTHost (AS63023)
+remarks:        | 31133:2321x - Telegram (AS62041)
+remarks:        | 31133:2322x - Akamai (AS20940)
+remarks:        | 31133:2323x - G-Core (AS199524)
+remarks:        | 31133:2325x - Melbicom (AS56630)
+remarks:        | 31133:2326x - Fastly (AS54113)
+remarks:        | 31133:2327x - Veesp (AS42532)
+remarks:        | 31133:2328x - Tencent (AS139341)
+remarks:        | 31133:2329x - FDCServers (AS30058)
+remarks:        | 31133:2330x - JOW (AS213449)
+remarks:        | x = 0 - advertise to this only (don't advertise to any other Peer)
+remarks:        | x = 1,2,3 or 5 - prepend 31133 (1,2,3 or 5) times
+remarks:        | x = 9 - don't advertise
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community to RUSSIAN PEERS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 31133:2500x - All russian peers
+remarks:        | 31133:2601x - MSK-IX (AS8631)
+remarks:        | 31133:2602x - MSK-IX ?DIRECT
+remarks:        | 31133:2603x - CloudFlare (AS13335)
+remarks:        | 31133:2605x - NCnet (AS42610)
+remarks:        | 31133:2606x - GlobalNet (AS31500)
+remarks:        | 31133:2607x - RETN (AS9002)
+remarks:        | 31133:2612x - Mail.ru (AS47764)
+remarks:        | 31133:2613x - Rostelecom (AS12389)
+remarks:        | 31133:2614x - Google (AS15169)
+remarks:        | 31133:2615x - Yandex (AS13238)
+remarks:        | 31133:2616x - Vkontakte (AS47541)
+remarks:        | 31133:2617x - Runnet (AS3267)
+remarks:        | 31133:2618x - Akado (AS8732)
+remarks:        | 31133:2619x - Vkontakte (AS47542)
+remarks:        | 31133:2620x - Corbina (AS8402)
+remarks:        | 31133:2621x - MTS (AS8359)
+remarks:        | 31133:2624x - Akamai (AS20940)
+remarks:        | 31133:2625x - TTK (AS20485)
+remarks:        | 31133:2626x - VimpelCom (AS3216)
+remarks:        | 31133:2627x - CDN77 (AS60068)
+remarks:        | 31133:2628x - Global Layer (AS49453)
+remarks:        | 31133:2629x - Roblox (AS22697)
+remarks:        | 31133:2630x - Aeza (AS210644)
+remarks:        | 31133:2631x - M247 (AS9009)
+remarks:        | 31133:2632x - EdgeNext (AS139057)
+remarks:        | 31133:2633x - KaopuCloud (AS138915)
+remarks:        | 31133:2634x - DataIX (AS50952)
+remarks:        | 31133:2901x - Vkontakte Regional (AS28709)
+remarks:        | 31133:2902x - Yandex Regional (AS13238)
+remarks:        | 31133:2903x - DataIX-DIRECT
+remarks:        |
+remarks:        | x = 0 - advertise to this only (don't advertise to any other Peer)
+remarks:        | x = 1,2,3 or 5 - prepend 31133 (1,2,3 or 5) times
+remarks:        | x = 9 - don't advertise
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community from INTERNATIONAL UPSTREAMS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 31133:30010 - TeliaSonera (AS1299)
+remarks:        | 31133:30020 - Telecom Italia (AS6762)
+remarks:        | 31133:30080 - China Telecom (AS23764)
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community from INTERNATIONAL PEERS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 31133:40010 - DE-CIX Frankfurt (AS6695)
+remarks:        | 31133:40011 - DE-CIX-DIRECT Frankfurt
+remarks:        | 31133:40030 - AMS-IX (AS1200)
+remarks:        | 31133:40031 - AMS-IX-DIRECT
+remarks:        | 31133:40041 - SoftLayer (AS36351)
+remarks:        | 31133:40050 - NL-IX-RS (AS34307)
+remarks:        | 31133:40051 - NL-IX-DIRECT
+remarks:        | 31133:40060 - NetNod (AS52005)
+remarks:        | 31133:40061 - NetNod-DIRECT
+remarks:        | 31133:40090 - Hetzner (AS24940)
+remarks:        | 31133:40110 - myLoc (AS24961)
+remarks:        | 31133:40120 - Scaleway (AS12876)
+remarks:        | 31133:40170 - CloudFlare (AS13335)
+remarks:        | 31133:40190 - Apple (AS714)
+remarks:        | 31133:40220 - IOMART (AS20860)
+remarks:        | 31133:40230 - Valve (AS32590)
+remarks:        | 31133:40240 - RETN (AS9002)
+remarks:        | 31133:40250 - Facebook (AS32934)
+remarks:        | 31133:40260 - DE-CIX-DIRECT New-York
+remarks:        | 31133:40270 - Core-BackBone (AS33891)
+remarks:        | 31133:40280 - Amazon (AS16509)
+remarks:        | 31133:40300 - Hurricane Electric (AS6939)
+remarks:        | 31133:40310 - China Telecom (AS4134)
+remarks:        | 31133:40330 - Aofei (AS135391)
+remarks:        | 31133:40340 - Telegram (AS62041)
+remarks:        | 31133:40350 - Akamai (AS20940)
+remarks:        | 31133:40360 - OVHCloud (AS16276)
+remarks:        | 31133:40370 - GTHost (AS63023)
+remarks:        | 31133:40380 - G-Core (AS199524)
+remarks:        | 31133:40400 - Melbicom (AS56630)
+remarks:        | 31133:40410 - Fastly (AS54113)
+remarks:        | 31133:40420 - Veesp (AS42532)
+remarks:        | 31133:40430 - Tencent (AS139341)
+remarks:        | 31133:40440 - FDCServers (AS30058)
+remarks:        | 31133:40450 - JOW (AS213449)
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community from RUSSIAN PEERS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 31133:45010 - MSK-IX (AS8631)
+remarks:        | 31133:45011 - MSK-IX-DIRECT
+remarks:        | 31133:45050 - NCnet (AS42610)
+remarks:        | 31133:45060 - GlobalNet (AS31500)
+remarks:        | 31133:46020 - Mail.ru (AS47764)
+remarks:        | 31133:46040 - Google (AS15169)
+remarks:        | 31133:46050 - Yandex (AS13238)
+remarks:        | 31133:46060 - CloudFlare (AS13335)
+remarks:        | 31133:46080 - Runnet (AS3267)
+remarks:        | 31133:46090 - TTK (AS20485)
+remarks:        | 31133:46130 - Corbina (AS8402)
+remarks:        | 31133:46160 - Vkontakte (AS47541)
+remarks:        | 31133:46161 - Vkontakte (AS47542)
+remarks:        | 31133:46163 - Vkontakte-Regional-CDN (AS28709)
+remarks:        | 31133:46170 - VimpelCom (AS3216)
+remarks:        | 31133:46180 - MTS (AS8359)
+remarks:        | 31133:46190 - Rostelecom (AS12389)
+remarks:        | 31133:46200 - Akado (AS8732)
+remarks:        | 31133:46240 - Akamai (AS20940)
+remarks:        | 31133:46250 - CDN77 (AS60068)
+remarks:        | 31133:46260 - Global Layer (AS49453)
+remarks:        | 31133:46270 - Roblox (AS22697)
+remarks:        | 31133:46280 - Aeza (AS210644)
+remarks:        | 31133:46290 - M247 (AS9009)
+remarks:        | 31133:46320 - RETN (AS9002)
+remarks:        | 31133:46330 - EdgeNext (AS139057)
+remarks:        | 31133:46340 - KaopuCloud (AS138915)
+remarks:        | 31133:46350 - DataIX (AS50952)
+remarks:        | 31133:46360 - DataIX-DIRECT
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Contacts
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Web Site http://www.megafon.ru
+remarks:        | NOC gnoceast_backbone@MegaFon.ru
+remarks:        | Customer Support GNOC_KeySupport_West@MegaFon.ru
+remarks:        | Peering Policy peering@megafon.ru
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -1737,13 +2133,17 @@ mnt-by:         MEGAFON-EAST-MNT
 created:        2004-03-05T14:46:40Z
 last-modified:  2026-07-08T13:19:27Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS31133
 country:        RU
 as-name:        MF-MGSM-AS PJSC MegaFon
-as-num:         AS31133
-country:        RU
-as-name:        null
 
 organisation:   ORG-OM1-RIPE
 org-name:       PJSC MegaFon
@@ -1759,5 +2159,11 @@ mnt-ref:        MEGAFON-RIPE-MNT
 created:        2004-04-17T11:55:06Z
 last-modified:  2026-05-13T05:58:58Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

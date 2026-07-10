@@ -1,18 +1,44 @@
 aut-num:        AS50596
 as-name:        ITNET33
 org:            ORG-ITL17-RIPE
+remarks:        itnet33.ru
+remarks:        abuse-mailbox: abuse@itnet33.ru
+remarks:        =========================================================
+remarks:        ---------------------------------------------------------
+remarks:        Upstreams IPv4
+remarks:        ---------------------------------------------------------
+remarks:        MF-MGSM-AS
 import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-ITNET33
+remarks:
+remarks:        SOVAM-AS
 import:         from AS3216 action pref=100; accept ANY
 export:         to AS3216 announce AS50596
+remarks:
+remarks:        MTS
 import:         from AS8359 action pref=100; accept ANY
 export:         to AS8359 announce AS-ITNET33
+remarks:        =========================================================
+remarks:        ---------------------------------------------------------
+remarks:        Upstreams IPv6
+remarks:        ---------------------------------------------------------
+remarks:        MF-MGSM-AS
 mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS-ITNET33
+remarks:
+remarks:        SOVAM-AS
 mp-import:      afi ipv6.unicast from AS3216 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS50596
+remarks:
+remarks:        MTS
 mp-import:      afi ipv6.unicast from AS8359 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS-ITNET33
+remarks:        ---------------------------------------------------------
+remarks:        Local preference values
+remarks:        ---------------------------------------------------------
+remarks:        100 - routes from Upstream
+remarks:        =========================================================
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -21,13 +47,17 @@ mnt-by:         MNT-MSG
 created:        2010-02-16T13:03:59Z
 last-modified:  2025-04-13T07:58:16Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS50596
 country:        RU
 as-name:        ITNET33 Informatsionnye Tekhnologii LLC
-as-num:         AS50596
-country:        RU
-as-name:        null
 
 organisation:   ORG-ITL17-RIPE
 org-name:       Informatsionnye Tekhnologii LLC
@@ -43,5 +73,11 @@ mnt-by:         MNT-MSG
 created:        2010-01-27T15:11:24Z
 last-modified:  2026-05-13T07:32:58Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

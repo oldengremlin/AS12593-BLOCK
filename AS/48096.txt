@@ -1,6 +1,9 @@
 aut-num:        AS48096
 as-name:        ITGRAD
 org:            ORG-ECL28-RIPE
+remarks:        --------------------------------------------------------
+remarks:        UPLINKS
+remarks:        --------------------------------------------------------
 import:         from AS9002 action pref=100; accept ANY
 export:         to AS9002 announce AS-ITGRAD
 import:         from AS35000 action pref=100; accept ANY
@@ -15,6 +18,9 @@ import:         from AS60330 action pref=100; accept ANY
 export:         to AS60330 announce AS-ITGRAD
 import:         from AS12406 action pref=100; accept ANY
 export:         to AS12406 announce AS-ITGRAD
+remarks:        --------------------------------------------------------
+remarks:        CUSTOMERS
+remarks:        --------------------------------------------------------
 import:         from AS51593 action pref=200; accept AS51593
 export:         to AS51593 announce ANY
 import:         from AS42219 action pref=200; accept AS42219
@@ -25,6 +31,7 @@ import:         from AS62382 action pref=200; accept AS62382
 export:         to AS62382 announce { 0.0.0.0/0 }
 import:         from AS215055 action pref=200; accept AS215055
 export:         to AS215055 announce { 0.0.0.0/0 }
+remarks:        --------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -33,13 +40,17 @@ mnt-by:         MNT-IT-GRAD
 created:        2008-10-13T12:19:19Z
 last-modified:  2024-11-15T10:35:10Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS48096
 country:        RU
 as-name:        ITGRAD Enterprise Cloud Ltd.
-as-num:         AS48096
-country:        RU
-as-name:        null
 
 organisation:   ORG-ECL28-RIPE
 org-name:       Enterprise Cloud Ltd.
@@ -54,5 +65,11 @@ mnt-by:         MNT-IT-GRAD
 created:        2018-07-25T08:00:32Z
 last-modified:  2026-05-18T08:54:39Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

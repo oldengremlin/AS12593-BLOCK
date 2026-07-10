@@ -1,15 +1,22 @@
 aut-num:        AS41938
 as-name:        RTComm-Volga-Ural-AS
+remarks:        Regional Network of Republic Bashkortostan, RTComm-Volga-Ural, LLC.
+remarks:        The Information & Communication Centre Express
 org:            ORG-BL69-RIPE
+remarks:        ----------------------- Upstreams ------------------------------
 import:         from AS12389 188.128.2.85 at 188.128.2.86 action pref=100; accept any
 export:         to AS12389 announce AS-BRTC
+remarks:        ---------------------------- ISP -------------------------------
 import:         from AS39379 94.229.20.90 at 94.229.20.91 action pref=500; accept AS39379
 export:         to AS39379 announce any
+remarks:        ------------------------ Peers ----------------------------
 import:         from AS59712 185.1.0.1 at 185.1.0.6 action pref=300; accept AS59712
 export:         to AS59712 announce AS41938
 import:         from AS59712 185.1.0.254 at 185.1.0.6 action pref=300; accept AS59712
+export:         to AS59712 announce AS41938
 import:         from AS196797 195.20.196.242 at 195.20.196.241 action pref=300; accept AS196797
 export:         to AS196797 announce AS41938
+remarks:        ------------------------ Customers ----------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -19,13 +26,17 @@ mnt-by:         BRTC-mnt
 created:        2006-11-21T13:14:21Z
 last-modified:  2020-04-27T08:09:02Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS41938
 country:        RU
 as-name:        RTComm-Volga-Ural-AS RTK-Volga-Ural LLC
-as-num:         AS41938
-country:        RU
-as-name:        null
 
 organisation:   ORG-BL69-RIPE
 org-name:       RTK-Volga-Ural LLC
@@ -41,5 +52,11 @@ mnt-by:         BRTC-mnt
 created:        2008-10-27T11:41:05Z
 last-modified:  2026-05-13T07:02:05Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

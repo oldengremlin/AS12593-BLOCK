@@ -3,11 +3,20 @@ as-name:        FORATEC-AS
 descr:          Foratec Net
 descr:          Yekaterinburg, Russia
 org:            ORG-ES15-RIPE
+remarks:        ------------------------------------------------------------
+remarks:        Upstreams:
+remarks:        ------------------------------------------------------------
 import:         from AS3216 action pref=400; accept ANY
 export:         to AS3216 announce AS31359 AS31359:AS-CUSTOMERS-YEK AS31359:AS-CUSTOMERS-TMN
+remarks:        ------------------------------------------------------------
+remarks:        Customers:
+remarks:        ------------------------------------------------------------
 import:         from AS31359:AS-CUSTOMERS-YEK action pref=100; accept <^AS31359:AS-CUSTOMERS-YEK+$>
 import:         from AS31359:AS-CUSTOMERS-TMN action pref=100; accept <^AS31359:AS-CUSTOMERS-TMN+$>
 export:         to AS-FORATEC announce ANY
+remarks:        ------------------------------------------------------------
+remarks:        Private peers:
+remarks:        ------------------------------------------------------------
 import:         from AS31425 action pref=100; accept ANY
 export:         to AS31425 announce AS31359 AS31359:AS-CUSTOMERS-YEK AS31359:AS-CUSTOMERS-TMN AS31359:AS-PEERING
 import:         from AS3253 action pref=150; accept AS3253
@@ -16,6 +25,9 @@ import:         from AS34038 action pref=100; accept AS34038
 export:         to AS34038 announce AS31359:AS-PEERING
 import:         from AS31359:AS-EIX at 194.226.255.235 action pref=200; accept ANY
 export:         to AS31359:AS-EIX announce AS31359 AS31359:AS-CUSTOMERS-YEK AS31359:AS-CUSTOMERS-TMN
+remarks:        ------------------------------------------------------------
+remarks:        EKT-IX peers:
+remarks:        ------------------------------------------------------------
 import:         from AS43213 194.85.107.100 at 194.85.107.60 action pref=150; accept AS-EKTROUTESERVER
 import:         from AS43213 194.85.107.200 at 194.85.107.60 action pref=150; accept AS-EKTROUTESERVER
 import:         from AS13238 194.85.107.57 at 194.85.107.60 action pref=150; accept AS-YANDEX
@@ -29,13 +41,17 @@ mnt-by:         FORATEC-MNT
 created:        2004-04-26T09:19:30Z
 last-modified:  2018-09-04T10:02:18Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS31359
 country:        RU
 as-name:        FORATEC-AS PJSC "Vimpelcom"
-as-num:         AS31359
-country:        RU
-as-name:        null
 
 organisation:   ORG-ES15-RIPE
 org-name:       PJSC "Vimpelcom"
@@ -52,5 +68,11 @@ abuse-c:        SVNT2-RIPE
 created:        2004-04-17T11:58:43Z
 last-modified:  2026-05-13T07:17:20Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

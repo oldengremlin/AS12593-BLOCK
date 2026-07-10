@@ -1,14 +1,25 @@
 aut-num:        AS8410
 as-name:        NIR-AS
+remarks:        ISP NIR-Telecom
+remarks:        http://www.nir-telecom.ru
 org:            ORG-LA157-RIPE
+remarks:        -------------------------------------------------------
+remarks:        Uplink
+remarks:        -------------------------------------------------------
 import:         from AS8359 action pref=100; accept ANY;
 import:         from AS48858 action pref=100; accept ANY;
 import:         from AS20485 action pref=100; accept ANY;
 export:         to AS8359 announce AS-NIR;
 export:         to AS48858 announce AS-NIR;
 export:         to AS20485 announce AS-NIR;
+remarks:        -------------------------------------------------------
+remarks:        Customers
+remarks:        -------------------------------------------------------
 import:         from AS35410 action pref=120; accept AS35410;
 export:         to AS35410 announce ANY;
+remarks:        -------------------------------------------------------
+remarks:        IX and Peering
+remarks:        -------------------------------------------------------
 import:         from AS42403 action pref=110; accept AS-NSKROUTESERVER;
 export:         to AS42403 announce AS-NIR;
 import:         from AS50952 action pref=110; accept AS-DATAIX;
@@ -21,6 +32,7 @@ import:         from AS43213 action pref=110; accept AS-EKTROUTESERVER;
 export:         to AS43213 announce AS-NIR;
 import:         from AS30871 action pref=120; accept AS30871;
 export:         to AS30871 announce AS8410;
+remarks:        -------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -29,13 +41,17 @@ mnt-by:         NIR-MNT
 created:        2003-09-19T10:22:27Z
 last-modified:  2022-07-12T08:44:25Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS8410
 country:        RU
 as-name:        NIR-AS NovInvestRezerv, LLC
-as-num:         AS8410
-country:        RU
-as-name:        null
 
 organisation:   ORG-LA157-RIPE
 org-name:       NovInvestRezerv, LLC
@@ -51,5 +67,11 @@ abuse-c:        NIR-RU
 created:        2008-06-02T09:58:04Z
 last-modified:  2026-05-13T07:32:18Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

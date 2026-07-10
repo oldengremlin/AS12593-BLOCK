@@ -1,18 +1,25 @@
 aut-num:        AS202181
 as-name:        TAMCOM-AS
 org:            ORG-TAML1-RIPE
+remarks:        ---------------------------------------------------------------
+remarks:        *************** IPv4 Routing Policy ***************
+remarks:        ---------------------------------------------------------------
 import:         from AS13215 action pref=100; accept ANY
 export:         to AS13215 announce AS202181
 import:         from AS31430 action pref=100; accept ANY
 export:         to AS31430 announce AS202181
 import:         from AS57681 action pref=100; accept ANY
 export:         to AS57681 announce AS202181
+remarks:        ---------------------------------------------------------------
+remarks:        *************** IPv6 Routing Policy ***************
+remarks:        ---------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS13215 accept ANY
 mp-export:      afi ipv6.unicast to AS13215 announce AS202181
 mp-import:      afi ipv6.unicast from AS31430 accept ANY
 mp-export:      afi ipv6.unicast to AS31430 announce AS202181
 mp-import:      afi ipv6.unicast from AS57681 accept ANY
 mp-export:      afi ipv6.unicast to AS57681 announce AS202181
+remarks:        ---------------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 abuse-c:        AR20560-RIPE
@@ -24,13 +31,17 @@ created:        2014-03-19T09:50:49Z
 last-modified:  2023-01-05T09:25:59Z
 source:         RIPE
 sponsoring-org: ORG-LL38-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS202181
 country:        RU
 as-name:        TAMCOM-AS Transportation Assets Management LLC
-as-num:         AS202181
-country:        RU
-as-name:        null
 
 organisation:   ORG-TAML1-RIPE
 org-name:       Transportation Assets Management LLC
@@ -44,5 +55,11 @@ mnt-by:         lidertelecom-mnt
 created:        2014-03-18T14:29:47Z
 last-modified:  2026-05-13T06:22:25Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

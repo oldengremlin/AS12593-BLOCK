@@ -37,6 +37,47 @@ export:         to AS60119 announce ANY
 export:         to AS29547 announce ANY
 export:         to AS50166 announce ANY
 export:         to AS43489 announce ANY
+remarks:        +---------------------------------------------------------------
+remarks:        |
+remarks:        | External communities may be set by external peers when
+remarks:        | talking to AS41066.
+remarks:        |
+remarks:        | Community Meaning
+remarks:        |
+remarks:        | 41066:170x When advertising to any uplink
+remarks:        | 41066:171x When advertising to TTK uplink
+remarks:        | 41066:172x When advertising to Beeline uplink
+remarks:        |
+remarks:        | 41066:120x When advertising to any peering
+remarks:        | 41066:121x When advertising NSK-IX peering
+remarks:        | 41066:122x When advertising Rostelecom peering
+remarks:        |
+remarks:        | ...x=0 - do not advertise
+remarks:        | ...x=1,2,4 or 6 - prepend 41066 (1,2,4 or 6) times
+remarks:        |
+remarks:        | 41066:1900 BACKUP community. Local preference is set to 100,
+remarks:        | which is the lowest value used in the network.
+remarks:        | We DO NOT accept "no-export" community.
+remarks:        +---------------------------------------------------------------
+remarks:        | 41066:666 - blackhole (discard) traffic
+remarks:        +---------------------------------------------------------------
+remarks:        | Any other 41066:XXX communities are deleted.
+remarks:        |
+remarks:        | CUSTOMER - Peers routes are getting local preference of 1000.
+remarks:        | RUSSIAN - Peers routes are getting local preference of 700-740.
+remarks:        | INTERNATIONAL - Peers routes and UPLINKS
+remarks:        | are getting local preference in the range of 600-680
+remarks:        |
+remarks:        | We are using prefix-list filters that were built according
+remarks:        | to RIPE route-objects.
+remarks:        |
+remarks:        +---------------------------------------------------------------
+remarks:        | Routing policies are becoming so complex that a complete
+remarks:        | description is beyond the scope of this document.
+remarks:        +---------------------------------------------------------------
+remarks:        | NOTE - Filtering on /24 boundary is applied - we do not
+remarks:        | reannounce any route more specific than a /24.
+remarks:        +---------------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -47,13 +88,17 @@ mnt-by:         AS8342-MNT
 created:        2006-06-08T08:10:17Z
 last-modified:  2024-02-15T05:20:54Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS41066
 country:        RU
 as-name:        RTCOMM-SIBIR-AS JSC RTComm.RU
-as-num:         AS41066
-country:        RU
-as-name:        null
 
 organisation:   ORG-RA25-RIPE
 org-name:       JSC RTComm.RU
@@ -69,5 +114,11 @@ mnt-by:         AS8342-MNT
 created:        2004-04-17T11:57:36Z
 last-modified:  2026-05-13T07:31:01Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

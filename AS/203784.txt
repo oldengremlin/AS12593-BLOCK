@@ -1,10 +1,16 @@
 aut-num:        AS203784
 as-name:        FiberTelecom-AS
 org:            ORG-FTL24-RIPE
+remarks:        -----------------------------------------
+remarks:        Uplinks
+remarks:        -----------------------------------------
 import:         from as50928 accept ANY
 import:         from as48858 accept ANY
 export:         to AS50928 announce AS203784
 export:         to as48858 announce AS203784
+remarks:        -----------------------------------------
+remarks:        IX
+remarks:        -----------------------------------------
 import:         from AS8631 action pref=460; accept AS8631
 import:         from AS13094 action pref=400; accept AS13094
 import:         from AS42403 action pref=470; accept AS42403
@@ -15,6 +21,9 @@ export:         to AS13094 announce AS203784
 export:         to AS42403 announce AS203784
 export:         to AS60763 announce AS203784
 export:         to AS43213 announce AS203784
+remarks:        -----------------------------------------
+remarks:        Peers
+remarks:        -----------------------------------------
 import:         from AS714 action pref=500; accept AS714
 import:         from AS3267 action pref=500; accept AS3267
 import:         from AS6939 action pref=500; accept AS6939
@@ -34,13 +43,17 @@ created:        2015-10-29T12:56:29Z
 last-modified:  2020-12-17T14:13:23Z
 source:         RIPE
 sponsoring-org: ORG-LL38-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS203784
 country:        RU
 as-name:        FiberTelecom-AS Fiber Telecom Ltd
-as-num:         AS203784
-country:        RU
-as-name:        null
 
 organisation:   ORG-FTL24-RIPE
 org-name:       Fiber Telecom Ltd
@@ -54,5 +67,11 @@ mnt-by:         lidertelecom-mnt
 created:        2015-10-28T13:32:56Z
 last-modified:  2026-05-13T06:21:24Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

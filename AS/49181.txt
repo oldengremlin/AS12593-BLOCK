@@ -5,26 +5,53 @@ admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-GCX
 notify:         noc@gsystem.ru
+remarks:        ---------------------------------------------------------------
+remarks:        ************************ Routing Policy ***********************
+remarks:        ---------------------------------------------------------------
+remarks:
+remarks:        ---------------------------------------------------------------
+remarks:        ************************** UPSTREAMS **************************
+remarks:        ---------------------------------------------------------------
 import:         from as3216 action pref=100; accept ANY
 export:         to as3216 announce AS-GCX
 import:         from as42861 action pref=500; accept ANY
 export:         to as42861 announce AS-GCX
+remarks:        ---------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS42861 action pref=500; accept ANY
 mp-import:      afi ipv6.unicast from AS3216 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS42861 announce AS-GCX
 mp-export:      afi ipv6.unicast to AS3216 announce AS-GCX
+remarks:
+remarks:        ---------------------------------------------------------------
+remarks:        ************************* CUSTOMERS ***************************
+remarks:        ---------------------------------------------------------------
+remarks:
+remarks:        ---------------------------------------------------------------
+remarks:        ********************* Contacts and URLs ***********************
+remarks:        ---------------------------------------------------------------
+remarks:        Routing issues noc at noc@gsystem.ru
+remarks:        Peering issues and requests peering at support@gsystem.ru
+remarks:        SPAM and security issues abuse at abuse@gsystem.ru
+remarks:        Web Site https://www.gsystem.ru
+remarks:        Looking Glass https://lg.gsystem.ru
+remarks:        ---------------------------------------------------------------
+remarks:
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 created:        2019-06-18T12:10:27Z
 last-modified:  2026-03-17T07:04:54Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS49181
 country:        RU
 as-name:        GCX-AS Limited Liability Company DZHISIIKS
-as-num:         AS49181
-country:        RU
-as-name:        null
 
 organisation:   ORG-LLCD3-RIPE
 org-name:       Limited Liability Company DZHISIIKS
@@ -48,5 +75,11 @@ mnt-by:         mnt-ru-gsystem-1
 created:        2019-08-21T07:04:42Z
 last-modified:  2026-05-13T07:40:15Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

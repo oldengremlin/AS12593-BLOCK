@@ -1,16 +1,39 @@
 aut-num:        AS197911
 as-name:        RU-JSCIOT
 org:            ORG-JI50-RIPE
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        *** eXchange Points ***
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
+remarks:        ******* BAIKAL-IX *******
 import:         from AS48586 action pref=100; accept ANY
 export:         to AS48586 announce AS197911
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        *** Uplinks ***
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
+remarks:        ******* DSI/Weacom Ltd *******
 import:         from AS51034 action pref=100; accept ANY
 export:         to AS51034 announce AS197911
+remarks:
+remarks:        ******* BaikalTeleCom *******
 import:         from AS57277 action pref=100; accept ANY
 export:         to AS57277 announce AS197911
+remarks:
+remarks:        ******* TTK ************
 import:         from AS20485 action pref=100; accept ANY
 export:         to AS20485 announce AS197911
+remarks:
+remarks:        ******* ROSTELECOM ************
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS197911
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        *** IPv6 neighbors, rpsl migrate ***
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:
 mp-import:      afi ipv6.unicast,ipv4 from AS57277 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS57277 announce AS197911
 mp-import:      afi ipv6.unicast,ipv4 from AS48586 accept ANY
@@ -21,6 +44,7 @@ mp-import:      afi ipv6.unicast,ipv4 from AS20485 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS20485 announce AS197911
 mp-import:      afi ipv6.unicast,ipv4 from AS12389 accept ANY
 mp-export:      afi ipv6.unicast,ipv4 to AS12389 announce AS197911
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -29,13 +53,17 @@ mnt-by:         mnt-ru-jsciot-1
 created:        2023-07-05T13:01:44Z
 last-modified:  2025-06-30T07:57:56Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS197911
 country:        RU
 as-name:        RU-JSCIOT JSC IOT
-as-num:         AS197911
-country:        RU
-as-name:        null
 
 organisation:   ORG-JI50-RIPE
 org-name:       JSC IOT
@@ -50,5 +78,11 @@ mnt-by:         mnt-ru-jsciot-1
 created:        2018-10-03T08:17:05Z
 last-modified:  2026-05-13T07:39:27Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
