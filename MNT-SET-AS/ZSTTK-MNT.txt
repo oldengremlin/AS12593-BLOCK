@@ -8,7 +8,13 @@ mnt-by:         ZSTTK-MNT
 created:        2019-07-08T09:05:39Z
 last-modified:  2019-07-08T09:05:39Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 as-set:         AS-ZSTTK-SET
@@ -118,6 +124,7 @@ members:        AS51574
 members:        AS44130
 members:        AS196986
 members:        AS51506
+members:        AS51574
 members:        AS51583
 members:        AS-MILECOM
 members:        AS47144
@@ -189,6 +196,7 @@ members:        AS59954
 members:        AS59957
 members:        AS198028
 members:        AS34671
+members:        AS12418
 members:        AS201065
 members:        AS50452
 members:        AS62128
@@ -240,7 +248,13 @@ mnt-by:         ZSTTK-MNT
 created:        2002-08-01T05:27:23Z
 last-modified:  2026-05-04T15:30:27Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 as-set:         AS-ZSTTK6-SET
@@ -268,15 +282,30 @@ mnt-by:         ZSTTK-MNT
 created:        2010-10-14T10:37:38Z
 last-modified:  2020-02-11T08:56:36Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS21127
 as-name:        ZSTTKAS
 org:            ORG-CJSC19-RIPE
 descr:          Novosibirsk, Russia
+remarks:
+remarks:        AS21127 Looking glass is available at http://lg.zsttk.net
+remarks:
+remarks:        ---------------------------------------------------------
+remarks:        IPv4 Routing Policy
+remarks:        ---------------------------------------------------------
+remarks:
+remarks:        Uplinks
 import:         from AS20485 action pref=100; accept ANY
 export:         to AS20485 announce AS-ZSTTK-SET
+remarks:        Customers
 import:         from AS8711 action pref=110; accept AS-MAGTEL;
 import:         from AS21311 action pref=110; accept AS21311;
 import:         from AS21365 action pref=110; accept AS21365;
@@ -365,6 +394,7 @@ import:         from AS51574 action pref=110; accept AS51574;
 import:         from AS44130 action pref=110; accept AS44130;
 import:         from AS196986 action pref=110; accept AS196986;
 import:         from AS51506 action pref=110; accept AS51506;
+import:         from AS51574 action pref=110; accept AS51574;
 import:         from AS51583 action pref=110; accept AS51583;
 import:         from AS48858 action pref=110; accept AS-MILECOM;
 import:         from AS47144 action pref=110; accept AS47144;
@@ -464,6 +494,7 @@ import:         from AS207373 action pref=110; accept AS207373;
 import:         from AS207340 action pref=110; accept AS207340;
 import:         from AS62382 action pref=110; accept AS62382;
 import:         from AS62382 action pref=110; accept AS-KDV-SET;
+remarks:        IX
 import:         from AS2854 action pref=105; accept AS-ROSPRINT;
 import:         from AS3267 action pref=105; accept AS-RUNNET;
 import:         from AS5387 action pref=105; accept AS5387 AS3335 AS8506 AS12828;
@@ -476,6 +507,7 @@ export:         to AS5387 announce AS-ZSTTK-SET;
 export:         to AS31200 announce AS-ZSTTK-SET;
 export:         to AS3216 announce AS-ZSTTK-SET;
 export:         to AS49414 announce AS-ZSTTK-SET;
+remarks:        Customers
 export:         to AS8711 announce ANY;
 export:         to AS21311 announce ANY;
 export:         to AS21365 announce ANY;
@@ -525,6 +557,7 @@ export:         to AS47530 announce ANY;
 export:         to AS44436 announce ANY;
 export:         to AS35711 announce ANY;
 export:         to AS47651 announce ANY;
+export:         to AS31357 announce ANY;
 export:         to AS48032 announce ANY;
 export:         to AS9177 announce ANY;
 export:         to AS8510 announce ANY;
@@ -564,6 +597,7 @@ export:         to AS51574 announce ANY;
 export:         to AS44130 announce ANY;
 export:         to AS196986 announce ANY;
 export:         to AS51506 announce ANY;
+export:         to AS51574 announce ANY;
 export:         to AS51583 announce ANY;
 export:         to AS49996 announce ANY;
 export:         to AS48858 announce ANY;
@@ -575,6 +609,7 @@ export:         to AS50001 announce ANY;
 export:         to AS197445 announce ANY;
 export:         to AS6683 announce ANY;
 export:         to AS52175 announce ANY;
+export:         to AS42187 announce ANY;
 export:         to AS15880 announce ANY;
 export:         to AS56341 announce ANY;
 export:         to AS39701 announce ANY;
@@ -594,6 +629,7 @@ export:         to AS56957 announce ANY;
 export:         to AS197880 announce ANY;
 export:         to AS197482 announce ANY;
 export:         to AS57575 announce ANY;
+export:         to AS43314 announce ANY;
 export:         to AS51245 announce ANY;
 export:         to AS56776 announce ANY;
 export:         to AS8279 announce ANY;
@@ -665,8 +701,20 @@ export:         to AS56810 announce ANY;
 export:         to AS207373 announce ANY;
 export:         to AS207340 announce ANY;
 export:         to AS62382 announce ANY;
+remarks:
+remarks:        ----------------------------------------------------------
+remarks:        IPv6 Routing Policy
+remarks:        ----------------------------------------------------------
+remarks:
+remarks:        ----------------------------------------------------------
+remarks:        Upstreams
+remarks:        ----------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-ZSTTK6-SET
+remarks:
+remarks:        ----------------------------------------------------------
+remarks:        Peers
+remarks:        ----------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS13238 action pref=105; accept AS-YANDEX
 mp-export:      afi ipv6.unicast to AS13238 announce AS-ZSTTK6-SET
 mp-import:      afi ipv6.unicast from AS3267 action pref=105; accept AS-RUNNET
@@ -675,6 +723,10 @@ mp-import:      afi ipv6.unicast from AS5387 action pref=105; accept AS5387
 mp-export:      afi ipv6.unicast to AS5387 announce AS-ZSTTK6-SET
 mp-import:      afi ipv6.unicast from AS48818 action pref=105; accept AS48818
 mp-export:      afi ipv6.unicast to AS48818 announce AS-ZSTTK6-SET
+remarks:
+remarks:        ---------------------------------------------------------
+remarks:        Customers
+remarks:        ---------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS8510 action pref=110; accept AS8510
 mp-export:      afi ipv6.unicast to AS8510 announce ANY
 mp-import:      afi ipv6.unicast from AS47530 action pref=110; accept AS47530
@@ -699,6 +751,97 @@ mp-import:      afi ipv6.unicast from AS49673 action pref=110; accept AS-TRUENET
 mp-export:      afi ipv6.unicast to AS49673 announce ANY
 mp-import:      afi ipv6.unicast from AS35029 action pref=110; accept AS-DNSTREE-SET
 mp-export:      afi ipv6.unicast to AS35029 announce ANY
+remarks:
+remarks:        +==============================================================+
+remarks:        BGP COMMUNITIES
+remarks:        +--------------------------------------------------------------+
+remarks:        Communities for prefix classification
+remarks:        +--------------------------------------------------------------+
+remarks:        All inbound prefixes are marked with BGP communities
+remarks:        which describe their source and geographical region.
+remarks:        The format for the second component of community
+remarks:        (number after 21127:) is set at five digits.
+remarks:        This format is 21127:AABBC where the fields are:
+remarks:
+remarks:        AA - source of the prefix:
+remarks:
+remarks:        49 - Peer
+remarks:
+remarks:        BB - Upstream, peer or customer number:
+remarks:
+remarks:        Peers:
+remarks:
+remarks:        01 - Megafon (AS50928)
+remarks:        02 - Er-Telecom (AS9049)
+remarks:        03 - Novotelecom (AS31200)
+remarks:        04 - OmskTranzitTelecom (AS47246)
+remarks:        05 - Pleksor-Telecom (AS56957)
+remarks:        06 - Tomica (AS49414)
+remarks:        99 - All Peers
+remarks:
+remarks:        C - Internal or Global:
+remarks:
+remarks:        0 - Internal
+remarks:        9 - Zapadnaya-Sibir
+remarks:
+remarks:        +--------------------------------------------------------------+
+remarks:        Communities for prefix control
+remarks:        +--------------------------------------------------------------+
+remarks:        | !!!ATTENTION!!! |
+remarks:        The using of this communities may cause connectivity
+remarks:        problems and you must clearly understand what you
+remarks:        are doing. TransTeleCom does not bear any responsibility
+remarks:        if there will be such troubles.
+remarks:        +--------------------------------------------------------------+
+remarks:        There are two predetermined eBGP session types
+remarks:        which customers may use:
+remarks:        1 - Global Internet Access. ZSTTK announce
+remarks:        customer's prefixes to all customers,
+remarks:        upstreams and peers.
+remarks:        BGP communities are available.
+remarks:
+remarks:        2 - Access to customers and Russian peers.
+remarks:
+remarks:        Customers with Global Internet Access may control
+remarks:        prefixes that they announce to ZSTTK by eBGP.
+remarks:        You can use communities that prepend prefix path
+remarks:        with additional AS hops or deny it announcement to
+remarks:        any Upstream or peer. The first digit of the second
+remarks:        part of control community (number after 21127:)
+remarks:        is 5 (five). Next four digits are:
+remarks:
+remarks:        - To prepand or deny prefix use 21127:5DNNA, where:
+remarks:
+remarks:        D - destination of the prepend or deny action:
+remarks:        2 - Upstreams
+remarks:        3 - Peers
+remarks:        9 - Upstreams and Peers
+remarks:
+remarks:        NN - Upstream or peer number:
+remarks:
+remarks:        Upstreams:
+remarks:
+remarks:        01 - TTK (AS20485)
+remarks:        99 - All Upstreams
+remarks:
+remarks:        Peers:
+remarks:
+remarks:        01 - Megafon (AS50928)
+remarks:        02 - Er-Telecom (AS9049)
+remarks:        03 - Novotelecom (AS31200)
+remarks:        04 - OmskTranzitTelecom (AS47246)
+remarks:        05 - Pleksor-Telecom (AS56957)
+remarks:        06 - Tomica (AS49414)
+remarks:        99 - All Peers
+remarks:
+remarks:        A - action:
+remarks:
+remarks:        0 - don't announce prefix
+remarks:        1 - announce with one prepend
+remarks:        2 - announce with two times prepend
+remarks:        3 - announce with three times prepend
+remarks:
+remarks:
 default:        to AS20485
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -710,7 +853,13 @@ notify:         noc@zsttk.ru
 created:        2002-08-01T05:43:11Z
 last-modified:  2025-07-22T04:24:06Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS42323
@@ -735,6 +884,12 @@ mnt-by:         ZSTTK-MNT
 created:        2008-02-21T09:57:26Z
 last-modified:  2025-01-14T10:29:18Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 

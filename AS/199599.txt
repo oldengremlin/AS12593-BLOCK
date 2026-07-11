@@ -1,6 +1,13 @@
 aut-num:        AS199599
 as-name:        CIREX
 org:            ORG-TL254-RIPE
+remarks:        Telecom Birzha, LLC
+remarks:        Moscow, Russia
+remarks:        =============================================
+remarks:        ************ IPv4 Routing Policy ************
+remarks:        =============================================
+remarks:        UPLINKS
+remarks:        ---------------------------------------------
 import:         from AS3216 accept ANY
 import:         from AS12389 accept ANY
 import:         from AS20485 accept ANY
@@ -13,6 +20,9 @@ export:         to AS20485 announce AS-CIREX
 export:         to AS9002 announce AS-CIREX
 export:         to AS201706 announce AS-CIREX
 export:         to AS20764 announce AS-CIREX
+remarks:        ---------------------------------------------
+remarks:        PEERS
+remarks:        ---------------------------------------------
 import:         from AS3216 accept AS-GLOBAL-IX
 import:         from AS50952 accept AS-DATA-IX
 import:         from AS8631 accept AS-MSK-IX
@@ -27,6 +37,9 @@ export:         to AS49869 announce AS-CIREX
 export:         to AS50817 announce AS-CIREX
 export:         to AS48193 announce AS-CIREX
 export:         to AS39607 announce AS-CIREX
+remarks:        ---------------------------------------------
+remarks:        CUSTOMERS
+remarks:        ---------------------------------------------
 import:         from AS219445 accept AS219445
 import:         from AS57304 accept AS57304
 import:         from AS200725 accept AS200725
@@ -132,6 +145,7 @@ import:         from AS212016 accept AS212016
 import:         from AS203203 accept AS203203
 import:         from AS49002 accept AS49002
 import:         from AS47354 accept AS47354
+import:         from AS49675 accept AS49675
 import:         from AS200637 accept AS200637
 import:         from AS61378 accept AS61378
 import:         from AS60544 accept AS60544
@@ -269,6 +283,7 @@ export:         to AS58341 announce ANY
 export:         to AS203203 announce ANY
 export:         to AS49002 announce ANY
 export:         to AS47354 announce ANY
+export:         to AS49675 announce ANY
 export:         to AS200637 announce ANY
 export:         to AS61378 announce ANY
 export:         to AS48197 announce ANY
@@ -285,18 +300,133 @@ export:         to AS48807 announce ANY
 export:         to AS209930 announce ANY
 export:         to AS60702 announce ANY
 export:         to AS43740 announce ANY
+remarks:        ============================================================
+remarks:        ******************** IPv6 Routing Policy *******************
+remarks:        ============================================================
+remarks:        UPSTREAMS
+remarks:        ------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS3216 action pref=50; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS-CIREX-IPV6
 mp-import:      afi ipv6.unicast from AS20485 action pref=50; accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-CIREX-IPV6
 mp-import:      afi ipv6.unicast from AS20764 action pref=50; accept ANY
 mp-export:      afi ipv6.unicast to AS20764 announce AS-CIREX-IPV6
+remarks:        --------------------------------------------------------------
+remarks:        PEERS
+remarks:        --------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS8631 action pref=120; accept AS-MSK-IX
 mp-export:      afi ipv6.unicast to AS8631 announce AS-CIREX-IPV6
+remarks:        --------------------------------------------------------------
+remarks:        CUSTOMERS
+remarks:        --------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS44704 action pref=200; accept AS44704
 mp-export:      afi ipv6.unicast to AS44704 announce ANY
 mp-import:      afi ipv6.unicast from AS48757 action pref=200; accept AS48757
 mp-export:      afi ipv6.unicast to AS48757 announce ANY
+remarks:        --------------------------------------------------------------
+remarks:        ===================================================
+remarks:        Looking glass - https://lg.cirex.ru/
+remarks:        Peeringdb - https://www.peeringdb.com/net/8506
+remarks:        ===================================================
+remarks:        ===================================================
+remarks:        Marking community for prefix classification
+remarks:        Communities we send to customers
+remarks:        ===================================================
+remarks:        64000:XYYZZ
+remarks:        ---------------------------------------
+remarks:        X - type of prexif
+remarks:        ---------------------------------------
+remarks:        1 - UPSTREAM
+remarks:        2 - RUSSIAN PEER
+remarks:        3 - INTERNATIONAL PEER
+remarks:        4 - DOWNSTREAM (CUSTOMER)
+remarks:        ---------------------------------------
+remarks:        YY - 1st LEVEL DESCRIPTION
+remarks:        ---------------------------------------
+remarks:        UPSTREAM:
+remarks:        01 - Rostelecom (AS12389)
+remarks:        02 - BEELINE (AS3216)
+remarks:        03 - Rascom (AS20764)
+remarks:        04 - TransTelecom (AS20485)
+remarks:        05 - Retn (AS9002)
+remarks:        06 - Cogent (AS174)
+remarks:        07 - Filanco (AS29076)
+remarks:        08 - ServicePipe (AS201706)
+remarks:        RUSSIAN PEERS:
+remarks:        02 - MSK-IX ROUTESERVER (8631)
+remarks:        04 - ELBAIX (AS203921)
+remarks:        05 - DATAIX (AS50952)
+remarks:        06 - GLOBALIX (AS31500)
+remarks:        07 - PITERIX (AS49869)
+remarks:        INTERNATIONAL PEERS:
+remarks:        01 - DE-CIX (AS6695)
+remarks:        02 - NL-IX (AS34307)
+remarks:        03 - AMS-IX (AS6777)
+remarks:        04 - PITERIX-HELSINKY (AS39607)
+remarks:        05 - PITERIX-FRANKFURT (AS48193)
+remarks:        DOWNSTREAM (CUSTOMER)
+remarks:        00 - Static routes from CIREX allocations
+remarks:        01 - BGP customer
+remarks:        ---------------------------------------
+remarks:        ZZ - REGIONAL CODE
+remarks:        ---------------------------------------
+remarks:        00 - Moscow
+remarks:        ===================================================
+remarks:        Control communities
+remarks:        Communities customers can use to control the behavior of our network
+remarks:        ===================================================
+remarks:        Prepend or deny 64000:5DNNA
+remarks:        ---------------------------------------
+remarks:        D - type of prexif
+remarks:        ---------------------------------------
+remarks:        1 - UPSTREAM
+remarks:        2 - RUSSIAN PEER
+remarks:        3 - INTERNATIONAL PEER
+remarks:        4 - EURASIA
+remarks:        ---------------------------------------
+remarks:        NN - 1st LEVEL DESCRIPTION
+remarks:        ---------------------------------------
+remarks:        UPSTREAM:
+remarks:        01 - Rostelecom (AS12389)
+remarks:        02 - BEELINE (AS3216)
+remarks:        03 - Rascom (AS20764)
+remarks:        04 - TransTelecom (AS20485)
+remarks:        05 - Retn (AS9002)
+remarks:        06 - Cogent (AS174)
+remarks:        07 - Filanco (AS29076)
+remarks:        08 - ServicePipe (AS201706)
+remarks:        RUSSIAN PEERS:
+remarks:        02 - MSK-IX ROUTESERVER (AS8631)
+remarks:        04 - ELBAIX (AS203921)
+remarks:        05 - DATAIX (AS50952)
+remarks:        06 - GLOBALIX (AS31500)
+remarks:        07 - PITERIX (AS49869)
+remarks:        INTERNATIONAL PEERS:
+remarks:        01 - DE-CIX (AS6695)
+remarks:        02 - NL-IX (AS34307)
+remarks:        03 - AMS-IX (AS6777)
+remarks:        04 - PITERIX-HELSINKY (AS39607)
+remarks:        05 - PITERIX-FRANKFURT (AS48193)
+remarks:        ---------------------------------------
+remarks:        A - action
+remarks:        ---------------------------------------
+remarks:        0 - don't announce prefix
+remarks:        1 - announce with one prepend
+remarks:        2 - announce with two times prepend
+remarks:        3 - announce with three times prepend
+remarks:        ===================================================
+remarks:        Community for blackhole
+remarks:        Drop all packets destined to the prefix (/32 IPv4 and /128 IPv6 only)
+remarks:        ===================================================
+remarks:        64000:666
+remarks:        ===================================================
+remarks:        Backup local-preference community
+remarks:        Allow to set local-preference for customer prefixes on Providers Edge lower than upstreams and peerings.
+remarks:        Available by request and requires configuration changes for import policy on Provider Edge
+remarks:        ===================================================
+remarks:        65000:XXXX
+remarks:        XXXX - Customer AS number
+remarks:        ---------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -306,13 +436,17 @@ notify:         noc@cirex.ru
 created:        2012-11-12T09:44:39Z
 last-modified:  2026-07-08T07:13:04Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS199599
 country:        RU
 as-name:        CIREX Telecom-Birzha, LLC
-as-num:         AS199599
-country:        RU
-as-name:        null
 
 organisation:   ORG-TL254-RIPE
 org-name:       Telecom-Birzha, LLC
@@ -329,5 +463,11 @@ mnt-by:         CIREX-MNT
 created:        2012-10-31T09:15:42Z
 last-modified:  2026-05-13T07:34:30Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

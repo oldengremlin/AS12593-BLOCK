@@ -2,16 +2,30 @@ aut-num:        AS2895
 as-name:        FREE-NET-AS
 descr:          FREEnet
 org:            ORG-FG2-RIPE
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Upstreams
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        --- Comcor ---
 mp-import:      afi ipv4.unicast, ipv6.unicast from AS8732 action pref=200; accept ANY
 mp-export:      afi ipv4.unicast, ipv6.unicast to AS8732 announce AS-FREENET
+remarks:        --- RUNNet ---
 mp-import:      afi ipv4.unicast, ipv6.unicast from AS3267 action pref=200; accept ANY
 mp-export:      afi ipv4.unicast, ipv6.unicast to AS3267 announce AS-FREENET
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Clients
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        ---GPNTB---
 mp-import:      afi ipv4.unicast from AS2587 action pref=80; accept AS2587
 mp-export:      afi ipv4.unicast to AS2587 announce ANY
+remarks:        ---RFBR---
 import:         from AS201842 action pref=80; accept {147.45.206.0/24, 193.233.79.0/24}
 export:         to AS201842 announce AS-FREENET {0.0.0.0/0}
+remarks:        --- Filanco-CL ---
 mp-import:      afi ipv4.unicast from AS204039 action pref=80; accept {31.28.22.0/24}
 mp-export:      afi ipv4.unicast to AS204039 announce {0.0.0.0/0}
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Peers
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 mp-import:      afi ipv4.unicast from AS3316 action pref=100; accept AS-RELARN
 mp-export:      afi ipv4.unicast to AS3316 announce AS-FREENET
 mp-import:      afi ipv4.unicast from AS45102 action pref=100; accept AS45102
@@ -39,18 +53,55 @@ mp-import:      afi ipv4.unicast from AS215182 action pref=100; accept AS-AVELAC
 mp-import:      afi ipv6.unicast from AS215182 action pref=100; accept AS-AVELACOM6
 import:         from AS43832 action pref=100; accept AS43832
 export:         to AS43832 announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX MSK
+remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast, ipv6.unicast AS49869 from AS-PITER-IX-MSK action pref=100; accept AS-PITER-IX-MSK
 export-via:     afi ipv4.unicast, ipv6.unicast AS49869 to AS-PITER-IX-MSK announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX SPB
+remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast, ipv6.unicast AS50817 from AS-PITER-IX action pref=100; accept AS-PITER-IX
 export-via:     afi ipv4.unicast, ipv6.unicast AS50817 to AS-PITER-IX announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX HEL
+remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast AS39607 from AS-PITER-IX-HELSINKI action pref=100; accept AS-PITER-IX-HELSINKI
 export-via:     afi ipv4.unicast AS39607 to AS-PITER-IX-HELSINKI announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX TLL
+remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast AS57936 from AS-PITER-IX-TLL action pref=100; accept AS-PITER-IX-TLL
 export-via:     afi ipv4.unicast AS57936 to AS-PITER-IX-TLL announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX RIX
+remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast AS49634 from AS-PITER-IX-RIGA action pref=100; accept AS-PITER-IX-RIGA
 export-via:     afi ipv4.unicast AS49634 to AS-PITER-IX-RIGA announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        PITER-IX FRA
+remarks:        ---------------------------------------------
 import-via:     afi ipv4.unicast AS48193 from AS-PITER-IX-FRA action pref=100; accept AS-PITER-IX-RIGA
 export-via:     afi ipv4.unicast AS48193 to AS-PITER-IX-FRA announce AS-FREENET
+remarks:        ---------------------------------------------
+remarks:        Communities for prefix advertisement control (accepted from clients)
+remarks:        ---------------------------------------------
+remarks:        2895:50xn Controls advertisement to
+remarks:        direction "x",where directions are:
+remarks:        x=0 All upstreams
+remarks:        x=1 All peers
+remarks:        x=2 All clients
+remarks:        x=3 Upstream AS3267 (RUNNet)
+remarks:        x=4 Upstream AS8732 (COMCOR)
+remarks:        x=7 MSK-IX Peers
+remarks:        x=8 PITER-IX Peers
+remarks:        and values of "n" define possible actions:
+remarks:        n=0 do not advertise
+remarks:        n=1,2,4,6 add n prepends
+remarks:        Less specific directions take precedence
+remarks:        over more specific directions. For given "x",
+remarks:        the least value of "n" takes precedence.
+remarks:        ---------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         LEGACY
@@ -60,13 +111,17 @@ mnt-by:         FREENET-MNT
 created:        2002-09-10T15:26:09Z
 last-modified:  2026-06-19T15:56:09Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS2895
 country:        RU
 as-name:        FREE-NET-AS OOO FREEnet Group
-as-num:         AS2895
-country:        RU
-as-name:        null
 
 organisation:   ORG-FG2-RIPE
 org-name:       OOO FREEnet Group
@@ -82,5 +137,11 @@ mnt-by:         FREENET-MNT
 created:        2004-04-17T11:52:42Z
 last-modified:  2026-05-13T07:13:22Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

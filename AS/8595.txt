@@ -1,6 +1,8 @@
 aut-num:        AS8595
 as-name:        WESTCALL-AS
 org:            ORG-WL4-RIPE
+remarks:        Moscow, Russia
+remarks:
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-WESTCALL-MSK
 import:         from AS20764 accept ANY
@@ -9,6 +11,7 @@ import:         from AS35598 accept ANY
 export:         to AS35598 announce AS-WESTCALL-MSK
 import:         from AS50509 accept ANY
 export:         to AS50509 announce AS-WESTCALL-MSK
+remarks:
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-WESTCALL-MSK
 import:         from AS3249 accept AS-ESTPAK
@@ -21,6 +24,7 @@ import:         from AS28917 accept AS-FIORD
 export:         to AS28917 announce AS-WESTCALL-MSK
 import:         from AS43727 accept AS-SETKT
 export:         to AS43727 announce AS-WESTCALL-MSK
+remarks:
 import:         from AS8641 accept AS-NAUKANET
 export:         to AS8641 announce AS-WESTCALL-MSK
 import:         from AS13094 accept AS-MILECOM-RS
@@ -29,6 +33,7 @@ import:         from AS15169 accept AS-GOOGLE
 export:         to AS15169 announce AS-WESTCALL-MSK
 import:         from AS39221 accept AS-ITOOLABS
 export:         to AS39221 announce AS-WESTCALL-MSK
+remarks:
 import:         from AS8241 accept AS8241
 export:         to AS8241 announce ANY
 import:         from AS12418 accept AS12418
@@ -145,6 +150,29 @@ import:         from AS210899 accept AS210899
 export:         to AS210899 announce ANY
 import:         from AS215074 accept AS215074
 export:         to AS215074 announce ANY
+remarks:
+remarks:        # BGP COMMUNITIES:
+remarks:
+remarks:        #   advertising prefix control
+remarks:        #     8595:300x  all upstreams and peers
+remarks:        #     8595:310x   all peers
+remarks:        #     8595:311x    msk-ix
+remarks:        #     8595:313x    peering
+remarks:        #     8595:317x    piter-ix
+remarks:        #     8595:350x   all upstreams
+remarks:        #     8595:352x    BEELINE
+remarks:        #     8595:355x    INETCOM
+remarks:        #     8595:357x    RASCOM
+remarks:        #     8595:358x    TRANSROUTE
+remarks:        #     where
+remarks:        #       x=0     - do not announce
+remarks:        #       x=1     - announce
+remarks:        #       x=2,3,4 - prepend 1,2,3 times
+remarks:
+remarks:        #   8595:666 blackholing for /32 prefixes.
+remarks:
+remarks:        # Inbound prefixes longer than /24 are not accepted.
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         o.blinov@westcall.ru
@@ -154,13 +182,17 @@ mnt-by:         AS8595-MNT
 created:        1970-01-01T00:00:00Z
 last-modified:  2026-07-09T11:50:26Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS8595
 country:        RU
 as-name:        WESTCALL-AS OOO WestCall Ltd.
-as-num:         AS8595
-country:        RU
-as-name:        null
 
 organisation:   ORG-WL4-RIPE
 org-name:       OOO WestCall Ltd.
@@ -177,5 +209,11 @@ created:        2004-04-17T12:00:52Z
 last-modified:  2026-05-21T16:19:42Z
 source:         RIPE
 mnt-ref:        ROSNIIROS-MNT
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

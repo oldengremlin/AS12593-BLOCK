@@ -1,12 +1,15 @@
 aut-num:        AS28884
 as-name:        MR-SIB-MTSAS
 descr:          MR Sibir
+remarks:        --- Upstreams ---
 import:         from AS8359 action pref=200; accept ANY
 export:         to AS8359 announce AS-SIBMTS
 mp-import:      afi ipv6.unicast from AS8359 action pref=200; accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS-SIBMTS-V6
+remarks:        --- Peering ---
 import:         from AS8848 action pref=500; accept AS8848
 export:         to AS8848 announce AS-SIBMTS
+remarks:        --- Clients ---
 import:         from AS41771 action pref=1000; accept AS-MKC-OMSK
 export:         to AS41771 announce ANY
 import:         from AS49154 action pref=1000; accept AS-STRKEM
@@ -93,6 +96,7 @@ import:         from AS210889 action pref=1000; accept AS210889
 export:         to AS210889 announce ANY
 import:         from AS42558 action pref=1000; accept AS42558
 export:         to AS42558 announce ANY
+remarks:        ---------------------------------------------------
 org:            ORG-ZM1-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -106,13 +110,17 @@ mnt-by:         MTU-NOC
 created:        2003-03-26T12:23:40Z
 last-modified:  2022-04-29T09:56:20Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS28884
 country:        RU
 as-name:        MR-SIB-MTSAS MTS PJSC
-as-num:         AS28884
-country:        RU
-as-name:        null
 
 organisation:   ORG-ZM1-RIPE
 org-name:       MTS PJSC
@@ -128,5 +136,11 @@ mnt-by:         MTU-NOC
 created:        2004-04-17T11:55:44Z
 last-modified:  2026-05-13T07:31:05Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

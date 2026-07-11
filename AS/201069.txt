@@ -1,21 +1,37 @@
 aut-num:        AS201069
 as-name:        APEX-ISP-AS
 org:            ORG-AGL44-RIPE
+remarks:        -------------------------------------------
 default:        to AS6789 action pref=100; networks ANY
+remarks:        -------------------------------------------
+remarks:        --=AS6789 CRELCOM-NET=--
 import:         from AS6789 action pref=100; accept ANY
 export:         to AS6789 announce AS-SET-APEX
+remarks:        -------------------------------------------
+remarks:        -=AS201776 Miranda-Media=-
 import:         from AS201776 action pref=500; accept ANY
 export:         to AS201776 announce AS-SET-APEX
+remarks:        -------------------------------------------
+remarks:        -=AS28761 CrimeaCom-LLC=-
 import:         from AS28761 action pref=200; accept ANY
 export:         to AS28761 announce AS-SET-APEX
+remarks:        -------------------------------------------
+remarks:        -=AS57982 AMIK-AS=-
 import:         from AS57982 action pref=600; accept AS57982
 export:         to AS57982 announce AS201069
+remarks:        -------------------------------------------
+remarks:        -=AS58271 AS-VSERVER=-
 import:         from AS58271 action pref=500; accept AS58271
 export:         to AS58271 announce AS201069
+remarks:        -------------------------------------------
+remarks:        -=AS43222 AS-CRIMEA-IX=-
 import:         from AS43222 action pref=50; accept AS43222
 export:         to AS43222 announce AS201069
+remarks:        -------------------------------------------
+remarks:        -=AS207979 AS-APEX-GROUP=-
 import:         from AS207979 action pref=600; accept AS207979
 export:         to AS207979 announce AS201069
+remarks:        -------------------------------------------
 sponsoring-org: ORG-ATS13-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -25,13 +41,17 @@ mnt-by:         RIPE-DB-MNT
 created:        2015-02-06T09:14:06Z
 last-modified:  2024-10-15T13:41:01Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS201069
 country:        RU
 as-name:        APEX-ISP-AS Apex Group LLC
-as-num:         AS201069
-country:        RU
-as-name:        null
 
 organisation:   ORG-AGL44-RIPE
 org-name:       Apex Group LLC
@@ -45,5 +65,11 @@ mnt-ref:        RIPE-DB-MNT
 created:        2024-10-14T10:45:56Z
 last-modified:  2026-05-13T05:48:11Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

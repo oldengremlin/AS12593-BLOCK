@@ -1,6 +1,7 @@
 aut-num:        AS47286
 as-name:        OTS-AS
 org:            ORG-OL39-RIPE
+remarks:        UPSTREAMS
 import:         from AS34123 accept ANY
 export:         to AS34123 announce AS-OTSNET
 import:         from AS31133 accept ANY
@@ -15,6 +16,7 @@ import:         from AS49869 accept ANY
 export:         to AS49869 announce AS-OTSNET
 import:         from AS50952 accept ANY
 export:         to AS50952 announce AS-OTSNET
+remarks:        PEERS
 import:         from AS49893 action pref=200; accept ANY
 export:         to AS49893 announce AS-OTSNET
 import:         from AS47764 action pref=200; accept AS-MAILRU
@@ -35,10 +37,62 @@ import:         from AS32934 action pref=200; accept ANY
 export:         to AS32934 announce AS-OTSNET
 import:         from AS211609 action pref=200; accept ANY
 export:         to AS211609 announce AS-OTSNET
+remarks:        CLIENTS
 import:         from AS50802 action pref=300; accept AS50802
 export:         to AS50802 announce ANY
 import:         from AS62340 action pref=300; accept AS-INFOTELECOM-SP
 export:         to AS62340 announce ANY
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community for Prefix Control (to UPSTREAMS)
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 47286:4199x - All upstreams
+remarks:        | 47286:4101x - Netorn (AS34123)
+remarks:        | 47286:4105x - Megafon (AS31133)
+remarks:        | 47286:4107x - TTK (AS20485)
+remarks:        | 47286:4108x - Inetcom (AS35598)
+remarks:        | 47286:4109x - Piter-IX MSK (AS49869)
+remarks:        | 47286:4110x - Transroute (AS50509)
+remarks:        | 47286:4111x - Data-IX (AS50952)
+remarks:        |
+remarks:        | x = 1,2,3 or 5 - prepend 47286 (1,2,3 or 5) times
+remarks:        | x = 9 - don't advertise
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community from UPSTREAMS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 47286:1299 - All upstreams
+remarks:        | 47286:1201 - Netorn (AS34123)
+remarks:        | 47286:1202 - Bitrace Telecom (AS49893)
+remarks:        | 47286:1205 - Megafon (AS31133)
+remarks:        | 47286:1207 - TTK (AS20485)
+remarks:        | 47286:1208 - Inetcom (AS35598)
+remarks:        | 47286:1209 - Piter-IX MSK (AS49869)
+remarks:        | 47286:1210 - Transroute (AS50509)
+remarks:        | 47286:1211 - Data-IX (AS50952)
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community from PEERS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 47286:3299 - All peers
+remarks:        | 47286:3202 - Bitrace Telecom (AS49893)
+remarks:        | 47286:3205 - BIS (AS50802)
+remarks:        | 47286:3208 - mail.ru (AS47764)
+remarks:        | 47286:3209 - Yandex (AS13238)
+remarks:        | 47286:3210 - Google (AS15169)
+remarks:        | 47286:3211 - Hurricane Electric (AS6939)
+remarks:        | 47286:3212 - Tricolor TV (AS209739)
+remarks:        | 47286:3213 - IVI (AS57629)
+remarks:        | 47286:3215 - Cloudflare (AS13335)
+remarks:        | 47286:3216 - Meta (AS32934)
+remarks:        | 47286:3217 - Okko (AS211609)
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community from CLIENTS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 47286:2299 - All clients
+remarks:        | 47286:2203 - BIS (AS50802)
+remarks:        | 47286:2204 - Infotelecom (AS62340)
+remarks:        +-------------------------------------------------------------------------------+
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -48,13 +102,17 @@ created:        2008-05-28T12:51:56Z
 last-modified:  2026-02-02T12:18:23Z
 source:         RIPE
 sponsoring-org: ORG-NL73-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS47286
 country:        RU
 as-name:        OTS-AS OTS Ltd.
-as-num:         AS47286
-country:        RU
-as-name:        null
 
 organisation:   ORG-OL39-RIPE
 org-name:       OTS Ltd.
@@ -69,5 +127,11 @@ mnt-by:         OTSNET-MNT
 created:        2008-05-24T19:08:38Z
 last-modified:  2026-05-13T20:07:14Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
