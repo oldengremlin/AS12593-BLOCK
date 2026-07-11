@@ -1,7 +1,5 @@
 aut-num:        AS31692
 as-name:        RAID-R-AS
-remarks:        --- Our IPv4 Routing Policy ---
-remarks:        UPSTREAMS:
 import:         from AS3216 action pref=350; accept ANY
 import:         from AS6874 action pref=300; accept ANY
 import:         from AS9049 action pref=350; accept ANY
@@ -10,7 +8,6 @@ export:         to AS3216 announce AS-SATURNNET
 export:         to AS6874 announce ANY
 export:         to AS9049 announce AS-SATURNNET
 export:         to AS16285 announce AS-SATURNNET
-remarks:        CUSTOMERS:
 import:         from AS60527 action pref=500; accept AS60527
 import:         from AS49530 action pref=500; accept AS49530
 import:         from AS198546 action pref=500; accept AS198546
@@ -26,7 +23,6 @@ export:         to AS199317 announce ANY
 export:         to AS56877 announce ANY
 export:         to AS51663 announce ANY
 export:         to AS51389 announce ANY
-remarks:        PEERING:
 import:         from AS41034 action pref=400; accept AS-IMPULS
 import:         from AS29648 action pref=350; accept AS29648
 import:         from AS57842 action pref=450; accept AS57842
@@ -39,8 +35,6 @@ export:         to AS57842 announce AS-SATURNNET
 export:         to AS41556 announce AS-SATURNNET
 export:         to AS8775 announce AS-SATURNNET
 export:         to AS29303 announce AS-SATURNNET
-remarks:        --- Our IPv6 Routing Policy ---
-remarks:        UPSTREAMS:
 mp-import:      afi ipv6 from AS3216 action pref=200; accept ANY
 mp-import:      afi ipv6 from AS6939 action pref=150; accept ANY
 mp-import:      afi ipv6 from AS9049 action pref=200; accept ANY
@@ -58,17 +52,13 @@ mnt-by:         RAID-MNT
 created:        2004-07-14T14:44:09Z
 last-modified:  2020-10-26T10:16:35Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS31692
 country:        RU
 as-name:        RAID-R-AS JSC "ER-Telecom Holding"
+as-num:         AS31692
+country:        RU
+as-name:        null
 
 organisation:   ORG-RA21-RIPE
 org-name:       JSC "ER-Telecom Holding"
@@ -87,11 +77,5 @@ mnt-by:         RAID-MNT
 created:        2004-04-17T11:56:55Z
 last-modified:  2026-05-13T07:07:54Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

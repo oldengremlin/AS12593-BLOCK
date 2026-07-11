@@ -26,17 +26,6 @@ export:         to AS8631 announce AS-TELEMAKS
 mp-import:      afi ipv6.unicast from AS8631 accept ANY
 mp-export:      afi ipv6.unicast to AS8631 announce AS-TELEMAKS
 descr:          -------------------COMMUNITY DESCRIPTION------------------
-remarks:        AS59428 ID=1, AS31133 ID=2, AS12389 ID=3, AS8631 ID=4, AS57304 ID=5, AS8359 ID=6,
-remarks:        AS31133(MEGAFON-IX) ID=7
-remarks:        1. Uplink management community have format 23456:*, where:
-remarks:        23456:9000 - announce any peer
-remarks:        23456:90XX - announce only XX peer. XX is peer ID
-remarks:        23456:8000 - deny announce any peer
-remarks:        23456:80XX - deny announce only XX peer. XX is peer ID
-remarks:        23456:7XXY - prepend announce to XX peer by Y. XX is peer ID. Y is number of prepends.
-remarks:        ----------------------------------------------------------------------
-remarks:        + Peers:
-remarks:        ----------------------------------------------------------------------
 import:         from AS51017 accept AS51017
 export:         to AS51017 announce ANY
 import:         from AS41106 accept AS41106
@@ -57,17 +46,13 @@ mnt-by:         MNT-TELEMAKS
 created:        2010-07-30T13:47:09Z
 last-modified:  2026-03-30T08:17:29Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS197204
 country:        RU
 as-name:        Telemaks TeleMaks Ltd
+as-num:         AS197204
+country:        RU
+as-name:        null
 
 organisation:   ORG-TL175-RIPE
 org-name:       TeleMaks Ltd
@@ -83,11 +68,5 @@ mnt-by:         MNT-TELEMAKS
 created:        2010-07-22T10:07:29Z
 last-modified:  2026-05-13T07:14:09Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
