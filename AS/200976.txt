@@ -1,14 +1,24 @@
 aut-num:        AS200976
 as-name:        Lifestream-AS
 org:            ORG-LL194-RIPE
+remarks:        ===================================================
+remarks:        Upstreams
+remarks:        ---------------------------------------------------
+remarks:        -- Dinet
 import:         from AS12695 accept ANY
 export:         to AS12695 announce AS-LIFESTREAM
+remarks:        -- Rascom
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS-LIFESTREAM
+remarks:        -- Cirex
 import:         from AS199599 accept ANY
 export:         to AS199599 announce AS-LIFESTREAM
+remarks:        -- Dataline
 import:         from AS49063 accept ANY
 export:         to AS49063 announce AS-LIFESTREAM
+remarks:        ===================================================
+remarks:        Peers:direct
+remarks:        ---------------------------------------------------
 import:         from AS29124 accept AS-7SKY
 export:         to AS29124 announce AS-LIFESTREAM
 import:         from AS50473 accept AS-ECO
@@ -51,16 +61,29 @@ import:         from AS28917 accept AS-FIORD
 export:         to AS28917 announce AS-LIFESTREAM
 import:         from AS31430 accept AS-TEL-NET
 export:         to  AS31430 announce AS-LIFESTREAM
+remarks:        ---------------------------------------------------
+remarks:        Peers:MSK-IX
+remarks:        ---------------------------------------------------
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-LIFESTREAM
 import:         from AS48166 accept AS-FORTEX
 export:         to AS48166 announce AS-LIFESTREAM
+remarks:        ---------------------------------------------------
+remarks:        Peers:DATA-IX
+remarks:        ---------------------------------------------------
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-LIFESTREAM
+remarks:        ---------------------------------------------------
+remarks:        Peers:CLOUD-IX
+remarks:        ---------------------------------------------------
 import:         from AS29076 accept AS-CITYTELECOM AND NOT AS-CLOUD-IX-M
 export:         to AS29076 announce AS-LIFESTREAM
+remarks:        ---------------------------------------------------
+remarks:        Peers:DTLN-IX
+remarks:        ---------------------------------------------------
 import:         from AS203921 accept AS-ELBA-IX-ROUTESERVER
 export:         to AS203921 announce AS-LIFESTREAM
+remarks:        ===================================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -70,13 +93,17 @@ created:        2015-03-02T08:41:28Z
 last-modified:  2023-12-15T11:39:21Z
 source:         RIPE
 sponsoring-org: ORG-FHL9-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS200976
 country:        RU
 as-name:        Lifestream-AS Lifestream Ltd
-as-num:         AS200976
-country:        RU
-as-name:        null
 
 organisation:   ORG-LL194-RIPE
 org-name:       Lifestream Ltd
@@ -90,5 +117,11 @@ mnt-by:         LIFESTREAM-MNT
 created:        2015-02-27T08:49:51Z
 last-modified:  2026-05-13T06:49:47Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

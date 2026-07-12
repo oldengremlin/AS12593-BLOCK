@@ -65,6 +65,7 @@ members:        AS-AEZA
 members:        AS-TUT
 members:        AS201327
 members:        AS-NTX
+members:        AS200993:AS-CORE
 members:        AS-BITERIKA
 members:        AS197080
 members:        AS-AVANTA
@@ -139,6 +140,7 @@ members:        AS200487
 members:        AS-RECONN
 members:        AS-STATION
 members:        AS199624:AS-DKTEL
+members:        AS-NEOCARRIER
 members:        AS214573
 members:        AS-VNET-LLC
 members:        AS57043:AS-HOSTKEY-FI
@@ -251,7 +253,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2008-08-19T12:40:08Z
-last-modified:  2026-07-08T09:13:20Z
+last-modified:  2026-07-10T14:01:47Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -296,6 +298,7 @@ members:        AS-AEZA
 members:        AS-TUT
 members:        AS-NTX
 members:        AS-BITERIKA
+members:        AS200993:AS-CORE
 members:        AS211609
 members:        AS215106:AS-SISZ
 members:        AS43317
@@ -323,6 +326,7 @@ members:        AS-RNET
 members:        AS-CASTLES
 members:        AS215102
 members:        AS200487
+members:        AS-NEOCARRIER
 members:        AS-VNET-LLC
 members:        AS57043:AS-HOSTKEY-FI
 members:        AS39101
@@ -368,7 +372,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2017-10-10T12:33:20Z
-last-modified:  2026-07-08T09:13:20Z
+last-modified:  2026-07-10T14:01:47Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1101,8 +1105,12 @@ import:         from AS35196   accept   AS-NETMAN
 export:         to   AS35196   announce ANY
 import:         from AS52091   accept   AS-LEVEL-MSK
 export:         to   AS52091   announce ANY
+import:         from AS200993  accept   AS200993:AS-CORE
+export:         to   AS200993  announce ANY
 import:         from AS47626   accept   AS-ARPNET61
 export:         to   AS47626   announce ANY
+import:         from AS48885   accept   AS-NEOCARRIER
+export:         to   AS48885   announce ANY
 import:         from AS216071  accept   AS-VDSINA
 export:         to   AS216071  announce ANY
 import:         from AS49403   accept   AS-AVK-WELLCOM
@@ -1363,6 +1371,10 @@ mp-import:      afi ipv6.unicast from AS38984   accept   AS38984
 mp-export:      afi ipv6.unicast to   AS38984   announce ANY
 mp-import:      afi ipv6.unicast from AS211027  accept   AS211027
 mp-export:      afi ipv6.unicast to   AS211027  announce ANY
+mp-import:      afi ipv6.unicast from AS200993  accept   AS200993:AS-CORE
+mp-export:      afi ipv6.unicast to   AS200993  announce ANY
+mp-import:      afi ipv6.unicast from AS48885   accept   AS-NEOCARRIER
+mp-export:      afi ipv6.unicast to   AS48885   announce ANY
 mp-import:      afi ipv6.unicast from AS201119  accept   AS-ICEWOOD
 mp-export:      afi ipv6.unicast to   AS201119  announce ANY
 mp-import:      afi ipv6.unicast from AS31376   accept   AS-SMART-V6
@@ -2938,7 +2950,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-07-01T06:31:05Z
+last-modified:  2026-07-10T14:01:46Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

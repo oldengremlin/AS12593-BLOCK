@@ -12,16 +12,47 @@ tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ROSTELECOM-MNT
+remarks:        ----------------------------------------------------------
+remarks:        Local preferences in AS3239
+remarks:        100 route from customer (default)
+remarks:        90 route from customer (backup)
+remarks:        85 route from prefered peering point
+remarks:        80 route from peering point
+remarks:        75 route from prefered upstream
+remarks:        70 route from upstream
+remarks:        60 lowest LP in the AS3239
+remarks:        BGP community list
+remarks:        Control localpref in the AS3239 backbone
+remarks:        3239:NN Set localpref to NN (60,70,90)
+remarks:        Do not announce route to upstream or peer
+remarks:        3239:1000
+remarks:        Control announces to upstream NN
+remarks:        x is number of prepends (1..4) or do not announce (0)
+remarks:        3239:1NNx
+remarks:        Route is learned from upstream or peering point NN
+remarks:        3239:2NN
+remarks:        NN is
+remarks:        01 RTcomm (AS8342)
+remarks:        03 Relcom (AS2118)
+remarks:        05 URC FreeNET (AS8324)
+remarks:        06 UUNET/MCI (AS702)
+remarks:        08 Comline (AS29648)
+remarks:        09 USI (AS35400)
+remarks:        ----------------------------------------------------------
 created:        2002-04-16T12:40:25Z
 last-modified:  2026-05-25T03:03:03Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS3239
 country:        RU
 as-name:        RU-SUrNet PJSC Rostelecom
-as-num:         AS3239
-country:        RU
-as-name:        null
 
 organisation:   ORG-JR8-RIPE
 org-name:       PJSC Rostelecom
@@ -38,5 +69,11 @@ mnt-by:         ROSTELECOM-MNT
 created:        2005-03-22T11:11:20Z
 last-modified:  2026-05-13T07:30:23Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

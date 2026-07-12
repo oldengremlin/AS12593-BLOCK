@@ -1,6 +1,8 @@
 as-set:         AS-IZHNET
 descr:          INT's customers
+remarks:        INT
 members:        AS35558
+remarks:        Elma
 members:        AS51494
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
@@ -8,7 +10,13 @@ mnt-by:         IZHNET-MNT
 created:        2009-07-29T09:04:02Z
 last-modified:  2022-05-17T08:33:15Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 as-set:         AS-IZHNET-RU
@@ -23,19 +31,28 @@ notify:         noc@izhnet.ru
 created:        2006-09-04T14:17:06Z
 last-modified:  2011-06-28T11:15:14Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS35558
 as-name:        IZHNET-AS
+remarks:        ---------------Uplinks---------------
 import:         from AS3216 action pref=100; accept ANY
 import:         from AS31133 action pref=100; accept ANY
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS3216 announce AS-IZHNET
 export:         to AS31133 announce AS-IZHNET
 export:         to AS12389 announce AS-IZHNET
+remarks:        ----------------Clients----------------
 import:         from AS51494 action pref=100; accept AS51494 AND NOT {0.0.0.0/0};
 export:         to AS51494 announce ANY
+remarks:        -------------------------------------
 org:            ORG-INTL2-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -46,6 +63,12 @@ mnt-by:         IZHNET-MNT
 created:        2005-09-05T11:38:48Z
 last-modified:  2026-02-06T05:33:41Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 

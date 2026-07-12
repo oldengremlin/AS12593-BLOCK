@@ -1,23 +1,39 @@
 aut-num:        AS31364
 as-name:        INTELBI-AS
 org:            ORG-CJSC19-RIPE
+remarks:
+remarks:        Uplinks
+remarks:        ---------------------------
 import:         from AS21127 accept ANY
 import:         from AS49451 accept ANY
 export:         to AS21127 announce AS-INTELBI-SET
 export:         to AS49451 announce AS-INTELBI-SET
 default:        to AS21127
+remarks:        ---------------------------
+remarks:
+remarks:        Local IX peering
+remarks:        ---------------------------
 import:         from AS43314 accept AS43314
 import:         from AS29581 accept AS29581
 import:         from AS30911 accept AS30911
 export:         to AS29581 announce AS-INTELBI-SET AS43314 AS30911
 export:         to AS43314 announce AS-INTELBI-SET AS29581 AS30911
 export:         to AS30911 announce AS-INTELBI-SET AS29581 AS43314
+remarks:        ---------------------------
+remarks:
+remarks:        Customers
+remarks:        ---------------------------
 import:         from AS51245 accept AS51245
 export:         to AS51245 announce ANY
+remarks:        ---------------------------
+remarks:
+remarks:        IPv6 uplinks
+remarks:        ---------------------------
 mp-import:      afi ipv6.unicast from AS6939 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS6939 announce AS31364
 mp-import:      afi ipv6.unicast from AS21127 action pref=105; accept ANY
 mp-export:      afi ipv6.unicast to AS21127 announce AS21127
+remarks:        ---------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -27,13 +43,17 @@ notify:         noc@intelbi.ru
 created:        2004-04-26T12:53:27Z
 last-modified:  2025-01-13T21:16:51Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS31364
 country:        RU
 as-name:        INTELBI-AS Joint Stock Company TransTeleCom
-as-num:         AS31364
-country:        RU
-as-name:        null
 
 organisation:   ORG-CJSC19-RIPE
 org-name:       Joint Stock Company TransTeleCom
@@ -49,5 +69,11 @@ mnt-by:         TRANSTELECOM-MNT
 created:        2009-03-11T13:07:47Z
 last-modified:  2026-05-13T07:32:38Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
