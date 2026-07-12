@@ -1,10 +1,8 @@
 aut-num:        AS25159
 as-name:        SONICDUO-AS
 org:            ORG-OM1-RIPE
-remarks:        --- UpStreams ---
 import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-MFMSK
-remarks:        --- Customers ---
 import:         from AS5467 accept AS-MIPT
 export:         to AS5467 announce ANY
 import:         from AS6854 accept {0.0.0.0/0};
@@ -152,7 +150,6 @@ export:         to AS15559 announce ANY
 import:         from AS15632 accept AS15632
 export:         to AS15632 announce ANY
 import:         from AS39266 accept AS39266
-export:         to AS39266 announce ANY
 import:         from AS57145 accept AS57145
 export:         to AS57145 announce ANY
 import:         from AS58094 accept AS58094
@@ -197,7 +194,6 @@ import:         from AS57268 accept AS57268
 export:         to AS57268 announce ANY
 import:         from AS60864 accept AS60864
 export:         to AS60864 announce ANY
-remarks:        --- for 4byte AS ---
 import:         from AS197453 accept AS197453
 export:         to AS197453 announce ANY
 import:         from AS199549 accept AS199549
@@ -249,7 +245,6 @@ export:         to AS41619 announce ANY
 import:         from AS204237 accept AS204237
 export:         to AS204237 announce ANY
 import:         from AS21287 accept AS-ITN
-export:         to AS21287 announce ANY
 import:         from AS200575 accept AS200575
 export:         to AS200575 announce ANY
 import:         from AS203269 accept AS203269
@@ -490,11 +485,8 @@ import:         from AS204474 accept AS204474
 export:         to AS204474 announce ANY
 import:         from AS43278 accept AS43278
 export:         to AS43278 announce ANY
-remarks:        MegaFonMoscow has PI addr. block= 193.201.228.0/22
-remarks:        ---------IPv6----------
 mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS25159
-remarks:        -------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -506,17 +498,13 @@ mnt-by:         MEGAFON-WEST-MNT
 created:        2002-08-13T09:32:19Z
 last-modified:  2026-05-21T07:42:36Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS25159
 country:        RU
 as-name:        SONICDUO-AS PJSC MegaFon
+as-num:         AS25159
+country:        RU
+as-name:        null
 
 organisation:   ORG-OM1-RIPE
 org-name:       PJSC MegaFon
@@ -532,11 +520,5 @@ mnt-ref:        MEGAFON-RIPE-MNT
 created:        2004-04-17T11:55:06Z
 last-modified:  2026-05-13T05:58:58Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

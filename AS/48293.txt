@@ -25,7 +25,6 @@ export:         to AS43690 announce AS-UNIONTEL-RU
 export:         to AS31210 announce AS-UNIONTEL-RU
 export:         to AS31133 announce AS-UNIONTEL-RU
 export:         to AS50509 announce AS-UNIONTEL-RU
-remarks:        CLIENTS
 export:         to AS51892 announce ANY
 export:         to AS44342 announce ANY
 export:         to AS211134 announce ANY
@@ -34,22 +33,18 @@ import:         from AS51892 accept AS-VOENTELECOM
 import:         from AS49357 accept AS-KLICK
 import:         from AS44342 accept AS44342:AS-MARUSHKINONET
 import:         from AS211134 accept AS-Intersys
-remarks:        --- IPv6 MSK-IX
 mp-import:      afi ipv6.unicast from AS8631 2001:7f8:20:101::244:100 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 2001:7f8:20:101::244:100 announce AS-UNIONTEL-RU-v6
 mp-import:      afi ipv6.unicast from AS8631 2001:7f8:20:102::246:100 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 2001:7f8:20:102::246:100 announce AS-UNIONTEL-RU-v6
-remarks:        --- IPv6 SPB-IX
 mp-export:      afi ipv6.unicast to AS43690 2001:7f8:20:201::100:100 announce AS-UNIONTEL-RU-v6
 mp-import:      afi ipv6.unicast from AS43690 2001:7f8:20:201::100:100 accept AS-SPBROUTESERVER
 mp-export:      afi ipv6.unicast to AS43690 2001:7f8:20:202::102:100 announce AS-UNIONTEL-RU-v6
 mp-import:      afi ipv6.unicast from AS43690 2001:7f8:20:202::102:100 accept AS-SPBROUTESERVER
-remarks:        DTEL-IX
 mp-export:      afi ipv6.unicast to AS31210 2001:7f8:63::ff announce AS-UNIONTEL-RU-v6
 mp-export:      afi ipv6.unicast to AS31210 2001:7f8:63::ffff announce AS-UNIONTEL-RU-v6
 mp-import:      afi ipv6.unicast from AS31210 2001:7f8:63::ff accept AS-DTEL-IX-V6
 mp-import:      afi ipv6.unicast from AS31210 2001:7f8:63::ffff accept AS-DTEL-IX-V6
-remarks:        AMS-IX
 import:         from AS1200 accept AS1200
 export:         to AS1200 announce AS-UNIONTEL-RU
 admin-c:        DUMY-RIPE
@@ -61,17 +56,13 @@ mnt-by:         RU-NNTL-MNT
 created:        2008-11-05T16:05:52Z
 last-modified:  2024-11-14T13:57:32Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS48293
 country:        RU
 as-name:        UNIONTEL-RU-AS Uniontel Ltd
+as-num:         AS48293
+country:        RU
+as-name:        null
 
 organisation:   ORG-UZ2-RIPE
 org-name:       Uniontel Ltd
@@ -87,11 +78,5 @@ mnt-by:         RIPE-NCC-HM-MNT
 created:        2008-10-27T11:51:00Z
 last-modified:  2026-05-13T07:32:34Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

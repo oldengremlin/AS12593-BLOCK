@@ -2,7 +2,6 @@ aut-num:        AS45054
 as-name:        Metrobit-AS
 status:         ASSIGNED
 org:            ORG-METR1-RIPE
-remarks:        -- uplinks --
 import:         from AS8744 action pref=150; accept AS-WIMAX
 import:         from AS8744 action pref=200; accept { 0.0.0.0/0 }
 export:         to AS8744 announce AS-DI-NET
@@ -12,11 +11,9 @@ export:         to AS31500 announce AS-DI-NET
 import:         from AS44050 action pref=150; accept AS-PIN
 import:         from AS44050 action pref=200; accept { 0.0.0.0/0 }
 export:         to AS44050 announce AS-DI-NET
-remarks:        -- proposed uplinks --
 import:         from AS29076 action pref=150; accept AS-CITYTELECOM
 import:         from AS29076 action pref=200; accept { 0.0.0.0/0 }
 export:         to AS29076 announce AS-DI-NET
-remarks:        -- peers --
 import:         from AS50952 action pref=150; accept AS-DATAIX
 import:         from AS50952 action pref=200; accept ANY AND NOT { 0.0.0.0/0 }
 export:         to AS50952 announce AS-DI-NET
@@ -33,17 +30,13 @@ created:        2008-04-25T13:28:59Z
 last-modified:  2019-11-20T14:36:07Z
 source:         RIPE
 sponsoring-org: ORG-PINl1-RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS45054
 country:        RU
 as-name:        Metrobit-AS METROBIT Ltd.
+as-num:         AS45054
+country:        RU
+as-name:        null
 
 organisation:   ORG-METR1-RIPE
 org-name:       METROBIT Ltd.
@@ -57,11 +50,5 @@ mnt-by:         METROBITRU-MNT
 created:        2014-11-17T18:06:30Z
 last-modified:  2026-05-13T05:36:36Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

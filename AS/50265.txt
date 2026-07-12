@@ -1,46 +1,28 @@
 aut-num:        AS50265
 as-name:        GT-AS
 org:            ORG-IML10-RIPE
-remarks:        ---------------------------------------------
-remarks:        IPv4 Routing Policy
-remarks:        ---------------------------------------------
-remarks:        Beeline
 import:         from AS3216 accept ANY;
 export:         to AS3216 announce AS-GT;
-remarks:        Nauka
 import:         from AS8641 accept ANY;
 export:         to AS8641 announce AS-GT;
-remarks:        Dinet
 import:         from AS12695 accept ANY;
 export:         to AS12695 announce AS-GT;
-remarks:        MSK-IX
 import:         from AS8631 accept AS-MSKROUTESERVER;
 export:         to AS8631 announce AS-GT;
-remarks:        SPB-IX
 import:         from AS43690 accept AS-SPBROUTESERVER;
 export:         to AS43690 announce AS-GT;
-remarks:        Piter-IX-MSK
 import:         from AS49869 accept as-piter-ix-msk;
 export:         to AS49869 announce AS-GT;
-remarks:        ATD
 import:         from AS43628 accept AS43628;
 export:         to AS43628 announce {0.0.0.0/0};
-remarks:        Mavotel
 import:         from AS61021 accept AS61021;
 export:         to AS61021 announce {0.0.0.0/0};
-remarks:        CKU-IT LLC
 import:         from AS210342 accept AS210342;
 export:         to AS210342 announce ANY;
-remarks:        ---------------------------------------------
-remarks:        IPv6 Routing Policy
-remarks:        ---------------------------------------------
-remarks:        Beeline
 mp-import:      afi ipv6.unicast from AS3216 accept ANY;
 mp-export:      afi ipv6.unicast to AS3216 announce AS-GT-IPV6;
-remarks:        Nauka
 mp-import:      afi ipv6.unicast from AS8641 accept ANY;
 mp-export:      afi ipv6.unicast to AS8641 announce AS-GTv6;
-remarks:        MSK-IX
 mp-import:      afi ipv6.unicast from AS8631 accept AS-MSKROUTESERVER;
 mp-export:      afi ipv6.unicast to AS8631 announce AS-GTv6;
 admin-c:        DUMY-RIPE
@@ -52,17 +34,13 @@ mnt-by:         MNT-GT
 created:        2009-12-11T14:25:00Z
 last-modified:  2026-06-16T09:05:55Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS50265
 country:        RU
 as-name:        GT-AS Invest Mobile LLC
+as-num:         AS50265
+country:        RU
+as-name:        null
 
 organisation:   ORG-IML10-RIPE
 org-name:       Invest Mobile LLC
@@ -78,11 +56,5 @@ mnt-by:         MNT-GT
 created:        2013-02-21T11:09:02Z
 last-modified:  2026-05-13T07:16:09Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

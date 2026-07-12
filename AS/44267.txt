@@ -1,7 +1,6 @@
 aut-num:        AS44267
 as-name:        ENPLUS-TELECOM
 org:            ORG-RL173-RIPE
-remarks:        Upstreams
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-IREN
 import:         from AS9049 accept ANY
@@ -10,11 +9,8 @@ import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-IREN
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-IREN
-remarks:        Communities
-remarks:        0:ASn - don`t advertise to upstream "ASn"
-remarks:        ASn:x - send community "x" to upstream "ASn"
-remarks:        ------------------
-remarks:        Peers
+import:         from AS25478 accept AS-IHOME
+export:         to AS25478 announce AS-IREN
 import:         from AS25381 accept AS25381
 export:         to AS25381 announce AS-IREN
 import:         from AS48586 accept AS-BAIKAL-IX-PEERS
@@ -31,10 +27,8 @@ import:         from AS13094 accept AS-MILECOM-RS
 export:         to AS13094 announce AS-IREN
 import:         from AS31500 accept AS-GLOBAL-NET
 export:         to AS31500 announce AS-IREN
-remarks:        Communities
-remarks:        0:ASn - don`t advertise to peer "ASn"
-remarks:        ------------------
-remarks:        Clients
+import:         from AS214091 accept AS214091
+export:         to AS214091 announce ANY
 import:         from AS35608 accept AS35608
 export:         to AS35608 announce ANY
 import:         from AS43274 accept AS-TELEOS-1
@@ -70,19 +64,15 @@ notify:         usov@ortel.ru
 mnt-by:         ORTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2007-12-14T09:19:09Z
-last-modified:  2024-09-13T07:37:47Z
+last-modified:  2026-07-10T06:13:12Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS44267
 country:        RU
 as-name:        ENPLUS-TELECOM EN+ TELECOM LLC
+as-num:         AS44267
+country:        RU
+as-name:        null
 
 organisation:   ORG-RL173-RIPE
 org-name:       EN+ TELECOM LLC
@@ -98,11 +88,5 @@ abuse-c:        NIT13-RIPE
 created:        2014-04-11T15:20:33Z
 last-modified:  2026-05-13T07:14:11Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

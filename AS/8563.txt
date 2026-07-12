@@ -38,26 +38,6 @@ import:         from AS62040 action pref=100; accept AS-ITK
 export:         to AS62040 announce ANY
 import:         from AS41500 action pref=100; accept AS41500
 export:         to AS41500 announce ANY
-remarks:        --------------------------------------------------------------
-remarks:        External communities may be set by external peers when
-remarks:        talking to AS8563. They are in range 8563:5000-8563:5999.
-remarks:        Community Meaning :
-remarks:        8563:501x When advertising to Telia partner...
-remarks:        8563:502x When advertising to PITER-IX partner...
-remarks:        8563:503x When advertising to DATAIX partner...
-remarks:        8563:504x When advertising to Rascom partner...
-remarks:        8563:505x When advertising to Cloud-IX partner...
-remarks:        8563:506x When advertising to Yandex partner...
-remarks:        8563:507x When advertising to CDN partner...
-remarks:        8563:508x When advertising to Telegram partner...
-remarks:        8563:509x When advertising to Vkontakte partner...
-remarks:        --------------------------------------------------------------
-remarks:        where :
-remarks:        ...x=0 - do not advertise
-remarks:        ...x=1,2,4 or 6 - prepend 8563 1,2,4 or 6 times
-remarks:        Other communities in range 8563:5000-8563:5999 are accepted
-remarks:        but ignored.
-remarks:        --------------------------------------------------------------
 org:            ORG-ES15-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -69,17 +49,13 @@ mnt-by:         AS3216-MNT
 created:        2002-06-24T12:11:39Z
 last-modified:  2025-11-11T11:49:06Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS8563
 country:        RU
 as-name:        DIRECTNET-AS PJSC "Vimpelcom"
+as-num:         AS8563
+country:        RU
+as-name:        null
 
 organisation:   ORG-ES15-RIPE
 org-name:       PJSC "Vimpelcom"
@@ -96,11 +72,5 @@ abuse-c:        SVNT2-RIPE
 created:        2004-04-17T11:58:43Z
 last-modified:  2026-05-13T07:17:20Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
