@@ -3,13 +3,10 @@ as-name:        TELESET-KAZAN
 org:            ORG-JR8-RIPE
 descr:          PJSC "Rostelecom". Kazan branch
 mnt-by:         ROSTELECOM-MNT
-remarks:        *** Upstreams ***
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS-TELESET
-remarks:        *** IX's public route servers ***
 import:         from AS50706 action pref=150; accept AS-KZNROUTESERVER
 export:         to AS50706 announce AS-TELESET
-remarks:        *** Private peering in Kazan ***
 import:         from AS29125 action pref=150; accept AS29125
 export:         to AS29125 announce AS-TELESET
 import:         from AS28840 action pref=150; accept AS28840
@@ -22,7 +19,6 @@ import:         from AS39613 action pref=150; accept AS39613
 export:         to AS39613 announce AS-TELESET
 import:         from AS29194 action pref=150; accept AS29194
 export:         to AS29194 announce AS-TELESET
-remarks:        *** Clients ***
 import:         from AS197873 action pref=200; accept AS197873
 export:         to AS197873 announce ANY
 import:         from AS12538 action pref=200; accept AS12538
@@ -38,21 +34,16 @@ tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TELESET-MNTNR
-mnt-by:         ROSTELECOM-MNT
 created:        2002-04-08T11:26:20Z
 last-modified:  2024-12-13T07:08:39Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS24810
 country:        RU
 as-name:        TELESET-KAZAN PJSC Rostelecom
+as-num:         AS24810
+country:        RU
+as-name:        null
 
 organisation:   ORG-JR8-RIPE
 org-name:       PJSC Rostelecom
@@ -69,11 +60,5 @@ mnt-by:         ROSTELECOM-MNT
 created:        2005-03-22T11:11:20Z
 last-modified:  2026-05-13T07:30:23Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

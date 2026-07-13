@@ -3,7 +3,6 @@ as-name:        ASN-POSTLTD
 status:         ASSIGNED
 mnt-by:         POSTLTD-MNT
 org:            ORG-Ol3-RIPE
-remarks:        UPSTREAMS
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-POSTLTD
 import:         from AS20485 accept ANY
@@ -16,14 +15,12 @@ default:        to AS3216 action pref=98; networks ANY
 default:        to AS20485 action pref=100; networks ANY
 default:        to AS31133 action pref=200; networks ANY
 default:        to AS8631 action pref=204; networks ANY
-remarks:        DIRECT PEERS
 import:         from AS51880 accept AS51880
 export:         to AS51880 announce AS-POSTLTD-PEERS
 import:         from AS41837 accept AS41837
 export:         to AS41837 announce AS-POSTLTD-PEERS
 import:         from AS57363 accept AS57363
 export:         to AS57363 announce AS-POSTLTD
-remarks:        CUSTOMERS
 import:         from AS12484 accept AS12484
 export:         to AS12484 announce ANY
 import:         from AS41816 accept AS41816
@@ -36,24 +33,19 @@ import:         from AS48530 accept AS48530
 export:         to AS48530 announce ANY
 import:         from AS57683 accept AS57683
 export:         to AS57683 announce ANY
-remarks:        Blackhole community 12494:6666
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 created:        2002-11-04T11:13:17Z
 last-modified:  2026-07-01T12:44:45Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS12494
 country:        RU
 as-name:        ASN-POSTLTD OOO "Post ltd"
+as-num:         AS12494
+country:        RU
+as-name:        null
 
 organisation:   ORG-Ol3-RIPE
 org-name:       OOO "Post ltd"
@@ -71,11 +63,5 @@ mnt-by:         POSTLTD-MNT
 created:        2004-04-17T11:56:42Z
 last-modified:  2026-05-13T07:26:25Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

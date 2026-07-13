@@ -1,94 +1,14 @@
 aut-num:        AS50639
 as-name:        ARS-AS
 org:            ORG-ARSJ1-RIPE
-remarks:        ===================================================
-remarks:        Upstreams
-remarks:        ---------------------------------------------------
 import:         from AS12389 accept ANY;
 export:         to AS12389 announce AS-ARSNET;
 import:         from AS2854 accept ANY;
 export:         to AS2854 announce AS-ARSNET;
 import:         from AS29304 accept ANY;
 export:         to AS29304 announce AS-ARSNET;
-remarks:
-remarks:        ===================================================
-remarks:        Downstreams
-remarks:        ---------------------------------------------------
 import:         from AS41275 accept AS41275;
 export:         to AS41275 announce ANY;
-remarks:        ===================================================
-remarks:
-remarks:        ---------------------------------------------------
-remarks:        community applied on ingress
-remarks:        ---------------------------------------------------
-remarks:
-remarks:        50639:31XX - Origin from public peers
-remarks:        50639:32XX - Origin from private peers
-remarks:
-remarks:        50639:40XX - Origin from Upstreams
-remarks:        50639:4001 - AS29304 (Satis)
-remarks:        50639:4002 - AS12389 (Rostelecom)
-remarks:        50639:4003 - AS2854 (Equant)
-remarks:        50639:4004 - AS3216 (Beeline)
-remarks:
-remarks:
-remarks:        inside community coloring
-remarks:
-remarks:        50639:601 - local (point-to-point and etc.)
-remarks:        50639:605 - aggregatable
-remarks:        50639:608 - te-aggregate
-remarks:        50639:609 - aggregate
-remarks:        50639:620 - customers
-remarks:        50639:623 - peers
-remarks:        50639:626 - transit
-remarks:        50639:631 - bogus
-remarks:        50639:666 - blackhole in AS50639 and Upstreams
-remarks:        50639:667 - blackhole in Upstreams
-remarks:
-remarks:
-remarks:        advertising community:
-remarks:
-remarks:        50639:5ZZX
-remarks:        50639:6AAX
-remarks:
-remarks:        where X=0     - advertise with no changes
-remarks:        X=1,2,4 or 6  - set prepend AS50639 1,2,4 or 6 times
-remarks:        X=7     - advertise with community no-export
-remarks:        X=9     - do not advertise
-remarks:
-remarks:        ZZ=00    - Hole World
-remarks:        01    - all upstreams
-remarks:        02    - all customers
-remarks:        03    - all peers
-remarks:
-remarks:        AA=01    - AS29304 (Satis)
-remarks:        02    - AS12389 (Rostelecom)
-remarks:        03    - AS2854 (Equant)
-remarks:        04    - AS3216 (Beeline)
-remarks:
-remarks:        ------------------------------------------------------
-remarks:        local preference for routes:
-remarks:        ------------------------------------------------------
-remarks:        1000 - local routes to aggregate
-remarks:        710 - customer preffered
-remarks:        700 - customer (default)
-remarks:        690 - customer backup
-remarks:        400 - customer backup
-remarks:        400 - peer route
-remarks:        390 - peer backup
-remarks:        300 - customer superbackup
-remarks:        200 - transite
-remarks:        190 - transite backup
-remarks:
-remarks:        ------------------------------------------------------
-remarks:        local preference control accepted from customers
-remarks:        ------------------------------------------------------
-remarks:        50639:171 - set local pref = 710
-remarks:        50639:169 - set local pref = 690
-remarks:        50639:140 - set local pref = 400
-remarks:        50639:130 - set local pref = 300
-remarks:
-remarks:        ======================================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -98,17 +18,13 @@ created:        2010-03-01T14:22:34Z
 last-modified:  2018-09-04T10:48:54Z
 source:         RIPE
 sponsoring-org: ORG-NGs2-RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS50639
 country:        RU
 as-name:        ARS-AS Arctic Region Svyaz JSC
+as-num:         AS50639
+country:        RU
+as-name:        null
 
 organisation:   ORG-ARSJ1-RIPE
 org-name:       Arctic Region Svyaz JSC
@@ -122,11 +38,5 @@ mnt-by:         ARSNET-MNT
 created:        2010-02-17T21:08:47Z
 last-modified:  2026-05-13T06:00:53Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

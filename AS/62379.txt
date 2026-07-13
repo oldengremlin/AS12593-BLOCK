@@ -1,57 +1,35 @@
 aut-num:        AS62379
 as-name:        FREEWAY
-remarks:        /****************************************
-remarks:        UPSTREAM'S
-remarks:        --Rostelecom--
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS62379:AS-FREEWAY
-remarks:        --RASCOM--
 import:         from AS20764 action pref=100; accept ANY
 export:         to AS20764 announce AS62379:AS-FREEWAY
-remarks:        --RETN--
 import:         from AS9002 action pref=100; accept ANY
 export:         to AS9002 announce AS62379:AS-FREEWAY
-remarks:        --WestCall--
 import:         from AS8595 action pref=100; accept ANY
 export:         to AS8595 announce AS62379:AS-FREEWAY
-remarks:        --iHOME--
 import:         from AS28917 action pref=100; accept ANY
 export:         to AS28917 announce AS62379:AS-FREEWAY
-remarks:        --Fiord--
 import:         from AS25478 action pref=100; accept ANY
 export:         to AS25478 announce AS62379:AS-FREEWAY
-remarks:        --INETCOM--
 import:         from AS35598 action pref=100; accept ANY
 export:         to AS35598 announce AS62379:AS-FREEWAY
-remarks:        --Transroute--
 import:         from AS50509 action pref=100; accept ANY
 export:         to AS50509 announce AS62379:AS-FREEWAY
-remarks:        /****************************************
-remarks:        INTERNET ExCHANGE
-remarks:        --MSK-IX--
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS62379:AS-FREEWAY
-remarks:        --PITER-IX_MSK---
 import:         from AS49869 accept AS49869:AS-PITER-IX-MSK
 export:         to AS49869 announce AS62379:AS-FREEWAY
-remarks:        --PITER-IX_SPB- --
 import:         from AS50817 accept AS50817:AS-PITER-IX-SPB
 export:         to AS50817 announce AS62379:AS-FREEWAY
-remarks:        --PITER-IX_FRANKFURT--
 import:         from AS48193 accept AS48193:AS-PITER-IX-FRA
 export:         to AS48193 announce AS62379:AS-FREEWAY
-remarks:        --PITER-IX_HELSINKI--
 import:         from AS39607 accept AS39607:AS-PITER-IX-HEL
 export:         to AS39607 announce AS62379:AS-FREEWAY
-remarks:        --iHome--
 import:         from AS50384 action pref=100; accept ANY
 export:         to AS50384 announce AS62379:AS-FREEWAY
-remarks:        --Filanco--
 import:         from AS29076 action pref=100; accept ANY
 export:         to AS29076 announce AS62379:AS-FREEWAY
-remarks:        /****************************************
-remarks:        Customers:
-remarks:        /****************************************
 import:         from AS50045 accept AS-MONNET
 export:         to AS50045 announce ANY
 import:         from AS200993 accept AS200993:AS-CORE
@@ -68,17 +46,13 @@ mnt-by:         FREEWAY_MNT
 created:        2021-04-19T14:12:38Z
 last-modified:  2025-10-29T07:59:18Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS62379
 country:        RU
 as-name:        FREEWAY FREEWAY LLC
+as-num:         AS62379
+country:        RU
+as-name:        null
 
 organisation:   ORG-FL255-RIPE
 org-name:       FREEWAY LLC
@@ -92,11 +66,5 @@ mnt-by:         FREEWAY_MNT
 created:        2019-03-13T07:34:11Z
 last-modified:  2026-05-13T06:47:30Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
