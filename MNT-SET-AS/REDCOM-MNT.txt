@@ -1,9 +1,12 @@
 as-set:         AS-REDCOM
 descr:          REDCOM customers AS list
 members:        AS8749
+remarks:        ------------------------
 members:        AS34709
 members:        AS44913
 members:        AS-ALTEGROSKY
+remarks:        ------------------------
+remarks:        ------------------------
 members:        AS201820
 members:        AS28709
 members:        AS21051
@@ -19,7 +22,13 @@ mnt-by:         REDCOM-MNT
 created:        1970-01-01T00:00:00Z
 last-modified:  2026-04-21T22:50:01Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS43600
@@ -40,13 +49,20 @@ created:        2007-08-30T08:38:11Z
 last-modified:  2022-10-21T00:59:17Z
 source:         RIPE
 sponsoring-org: ORG-RA23-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS8749
 org:            ORG-RA23-RIPE
 as-name:        REDCOM-AS
 descr:          Redcom, Khabarovsk, Russia
+remarks:        ---- Clients ----
 import:         from AS201820 action pref=100; accept AS201820;
 mp-import:      afi any.unicast from AS201820 action pref=100; accept AS201820;
 export:         to AS201820 announce ANY;
@@ -63,6 +79,7 @@ import:         from AS41002 action pref=200; accept AS41002;
 export:         to AS41002 announce ANY;
 import:         from AS12770 action pref=200; accept AS12770;
 export:         to AS12770 announce ANY;
+remarks:        ---- CDNs ----
 import:         from AS28709 accept AS28709;
 export:         to AS28709 announce AS-REDCOM;
 import:         from AS57363 accept AS57363;
@@ -70,12 +87,14 @@ export:         to AS57363 announce AS-REDCOM;
 import:         from AS207353 action pref=250; accept AS207353;
 export:         to AS207353 announce AS-REDCOM;
 import:         from AS215013 accept {188.72.103.0/24, 89.223.9.0/24};
+remarks:        --- IX and Peering ---
 import:         from AS6939 action pref=100; accept AS6939;
 export:         to AS6939 announce AS-REDCOM;
 import:         from AS211609 action pref=200; accept AS211609;
 export:         to AS211609 announce AS-REDCOM;
 import:         from AS39304 action pref=200; accept ANY;
 export:         to AS39304 announce AS-REDCOM;
+remarks:        ---- Upstreams ----
 import:         from AS12389 action pref=100; accept ANY;
 export:         to AS12389 announce AS-REDCOM;
 import:         from AS20485 action pref=100; accept ANY;
@@ -84,6 +103,7 @@ export:         to AS3216 announce AS-REDCOM;
 import:         from AS3216 action pref=100; accept ANY;
 export:         to AS31133 announce AS-REDCOM;
 import:         from AS31133 action pref=100; accept ANY;
+remarks:        ---- ---------- ----
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -93,6 +113,12 @@ mnt-by:         REDCOM-MNT
 created:        1970-01-01T00:00:00Z
 last-modified:  2026-04-21T22:40:59Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 

@@ -2,15 +2,33 @@ aut-num:        AS8915
 as-name:        DELFA-AS
 descr:          Company Delfa Co. Ltd.
 org:            ORG-FT7-RIPE
+remarks:
+remarks:        --- import ---
+remarks:
 import:         from AS3285  action pref=100; accept ANY
 import:         from AS12714 action pref=80; accept ANY
+remarks:
+remarks:        --- export ---
+remarks:
 export:         to AS3285  announce ANY
 export:         to AS12714 announce AS-DELFA
+remarks:
+remarks:
+remarks:        --- default ---
+remarks:
 default:        to AS3285
 default:        to AS12714
+remarks:
+remarks:        --- IPV6 ---
+remarks:
+remarks:
 mp-import:      afi ipv6.unicast from AS3285 accept ANY
 mp-export:      afi ipv6.unicast to AS3285 announce ANY
+remarks:
+remarks:
 mp-default:     afi ipv6.unicast to AS3285
+remarks:
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -22,13 +40,17 @@ mnt-by:         RIPE-NCC-END-MNT
 created:        2001-11-29T12:36:53Z
 last-modified:  2023-04-27T16:39:56Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS8915
 country:        RU
 as-name:        DELFA-AS Company Delfa Co. Ltd.
-as-num:         AS8915
-country:        RU
-as-name:        null
 
 organisation:   ORG-FT7-RIPE
 org-name:       Company Delfa Co. Ltd.
@@ -44,5 +66,11 @@ mnt-by:         MNT-FTCOM
 created:        2005-06-02T05:11:05Z
 last-modified:  2026-05-13T07:11:58Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

@@ -1,36 +1,56 @@
 aut-num:        AS199624
 as-name:        DKTEL-AS
 org:            ORG-DSO7-RIPE
+remarks:        -------------------------------------------------------------
+remarks:        == Uplinks ==
+remarks:        === NaukaNet ===
 import:         from AS8641 accept ANY
 export:         to AS8641 announce AS199624:AS-DKTEL
+remarks:        === Inetcom ===
 import:         from AS35598 accept ANY
 export:         to AS35598 announce AS199624:AS-DKTEL
+remarks:        === Transroute ===
 import:         from AS50509 accept ANY
 export:         to AS50509 announce AS199624:AS-DKTEL
+remarks:        === GlobalNet ===
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS199624:AS-DKTEL
 mp-import:      afi ipv6.unicast from AS31500 accept ANY
 mp-export:      afi ipv6.unicast to AS31500 announce AS199624:AS-DKTEL
 import:         from AS15169 action pref=200; accept AS15169
 export:         to AS15169 announce AS199624:AS-DKTEL
+remarks:        === Freeway ===
 import:         from AS62379 accept ANY
 export:         to AS62379 announce AS199624:AS-DKTEL
+remarks:        === Rostelecom===
 import:         from AS42861 accept ANY
 export:         to AS42861 announce AS199624:AS-DKTEL
+remarks:        -------------------------------------------------------------
+remarks:        == IXes ==
+remarks:        === MSK-IX ===
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS199624:AS-DKTEL
+remarks:        === Global-IX ===
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS199624:AS-DKTEL
+remarks:        === Data-IX ===
 import:         from AS50952 accept ANY
 export:         to AS50952 announce AS199624:AS-DKTEL
 mp-import:      afi ipv6.unicast from AS50952 accept ANY
 mp-export:      afi ipv6.unicast to AS50952 announce AS199624:AS-DKTEL
+remarks:        === Eurasia-IX ===
 import:         from AS56931 accept ANY
 export:         to AS56931 announce AS199624:AS-DKTEL
 mp-import:      afi ipv6.unicast from AS56931 accept ANY
 mp-export:      afi ipv6.unicast to AS56931 announce AS199624:AS-DKTEL
+remarks:        === Piter-IX ===
 import:         from AS49869 accept as-piter-ix-msk
 export:         to AS49869 announce AS199624:AS-DKTEL
+remarks:        -------------------------------------------------------------
+remarks:        == Downlinks ==
 import:         from AS199624:AS-DKTEL action pref=200; accept PeerAS
 export:         to AS199624:AS-DKTEL announce ANY
+remarks:        -------------------------------------------------------------
 import:         from AS49058 action pref=200; accept AS49058
 export:         to AS49058 announce ANY
 mp-import:      afi ipv6.unicast from AS49058 action pref=200; accept AS49058
@@ -47,6 +67,7 @@ import:         from AS57290 action pref=200; accept AS57290
 export:         to AS57290 announce ANY
 import:         from AS47857 action pref=200; accept AS47857
 export:         to AS47857 announce ANY
+remarks:        -------------------------------------------------------------
 import:         from AS198185 action pref=200; accept AS-LIGALINK
 export:         to AS198185 announce ANY
 import:         from AS57867 action pref=200; accept AS57867
@@ -73,6 +94,21 @@ import:         from AS12456 action pref=200; accept AS12456
 export:         to AS12456 announce ANY
 import:         from AS199320 action pref=200; accept AS199320
 export:         to AS199320 announce ANY
+remarks:        -------------------------------------------------------------
+remarks:        == Advertising control communities ==
+remarks:        199624:50 -- set localpref to 50
+remarks:        199624:302x -- Transroute
+remarks:        199624:303x -- Nauka-Svyaz
+remarks:        199624:304x -- Freeway
+remarks:        199624:305x -- Inetcom
+remarks:        199624:306x -- Eurasia-IX
+remarks:        199624:307x -- Piter-IX MSK
+remarks:        199624:308x -- Global-IX
+remarks:        199624:309x -- MSK-IX
+remarks:        199624:312x -- Data-IX
+remarks:        199624:314x -- Rostelecom
+remarks:        x=0 means do not advertise
+remarks:        x=1, 2 or 4 means prepend 199624 1, 2 or 4 times
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -82,13 +118,17 @@ mnt-by:         dktel-noc-mnt
 created:        2012-11-02T13:50:42Z
 last-modified:  2026-06-04T07:59:12Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS199624
 country:        RU
 as-name:        DKTEL-AS DK Svyaz OOO
-as-num:         AS199624
-country:        RU
-as-name:        null
 
 organisation:   ORG-DSO7-RIPE
 org-name:       DK Svyaz OOO
@@ -104,5 +144,11 @@ last-modified:  2026-05-13T07:08:57Z
 source:         RIPE
 mnt-ref:        dktel-noc-mnt
 mnt-ref:        ROSNIIROS-MNT
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

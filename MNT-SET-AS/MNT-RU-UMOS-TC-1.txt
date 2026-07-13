@@ -14,11 +14,21 @@ mnt-by:         mnt-ru-umos-tc-1
 created:        2003-07-04T08:49:25Z
 last-modified:  2019-11-11T12:33:57Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS5429
 as-name:        IIP-NET-AS5429
+remarks:        South Moscow Backbone Network
+remarks:        Telecommunication Center UMOS
+remarks:        --------------------------------------------
+remarks:        Uplinks
 export:         to AS47478 announce AS-IIPNET
 import:         from AS47478 action pref=100; accept ANY
 export:         to AS3267 announce AS-IIPNET
@@ -31,6 +41,8 @@ export:         to AS50384 announce AS-IIPNET
 import:         from AS50384 action pref=120; accept ANY
 export:         to AS29076 announce AS-IIPNET
 import:         from AS29076 action pref=120; accept ANY
+remarks:        --------------------------------------------
+remarks:        Peers
 export:         to AS8631 announce AS-IIPNET-MSK-IX
 import:         from AS8631 action pref=150; accept ANY
 import:         from AS13105 action pref=150; accept AS-LUKOIL
@@ -55,6 +67,8 @@ import:         from AS30733 action pref=150; accept AS-GLOBUS
 export:         to AS30733 announce AS-IIPNET-MSK-IX
 import:         from AS30733 action pref=200; accept ANY
 export:         to AS30733 announce AS-IIPNET
+remarks:        --------------------------------------------
+remarks:        Clients
 import:         from AS12724 action pref=300; accept AS12724
 import:         from AS34848 action pref=300; accept AS34848
 import:         from AS52184 action pref=300; accept AS52184
@@ -77,6 +91,23 @@ import:         from AS29233 action pref=300; accept AS29233
 export:         to AS29233 announce ANY
 import:         from AS199906 action pref=300; accept AS199906
 export:         to AS199906 announce ANY
+remarks:        ---------------------------------------------------
+remarks:        Looking glass: http://noc.iip.net/lg/
+remarks:        ---------------------------------------------------
+remarks:        Communities for prefix control
+remarks:        5429:100 Do not advertise to any uplink or peer.
+remarks:        This has priority over all the following communities.
+remarks:        5429:50xn Controls advertisement to direction "x"
+remarks:        where directions are:
+remarks:        x = 0 clients and peers
+remarks:        x = 1 uplink to AS3267 (RUNNet)
+remarks:        x = 2 uplink to AS8595 (WestCall)
+remarks:        x = 3 uplink to AS29076 (Filanco)
+remarks:        x = 4 uplink to AS50384 (W-IX)
+remarks:        x = 5 uplink to AS25478 (iHome)
+remarks:        and values of "n" define possible actions:
+remarks:        n = 0 do not advertise
+remarks:        n = 1,2,4,6 add n prepends
 org:            ORG-TCUL3-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -86,6 +117,12 @@ mnt-by:         mnt-ru-umos-tc-1
 created:        2002-05-08T12:08:37Z
 last-modified:  2023-01-09T09:00:58Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 

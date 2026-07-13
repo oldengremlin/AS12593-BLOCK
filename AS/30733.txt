@@ -1,10 +1,18 @@
 aut-num:        AS30733
 as-name:        GLOBUS-AS
 org:            ORG-GL4-RIPE
+remarks:        -------------------------------------------------------------------
+remarks:        ****************** IPv4 Routing Policy *******************
+remarks:        -------------------------------------------------------------------
+remarks:        Upstreams:
+remarks:        --------------------------------------------------------------
 import:         from AS12389 94.25.63.241 accept ANY
 export:         to AS12389 94.25.63.241 announce AS-GLOBUS
 import:         from AS12389 188.254.8.221 accept ANY
 export:         to AS12389 188.254.8.221 announce AS-GLOBUS
+remarks:        --------------------------------------------------------------
+remarks:        Customers:
+remarks:        --------------------------------------------------------------
 import:         from AS6870 178.255.238.28 at 82.198.160.249 action pref=100; accept AS6870
 export:         to AS6870 announce ANY
 import:         from AS8905 212.33.14.38 at 82.198.160.253 action pref=100; accept AS-SITEK
@@ -45,6 +53,7 @@ export:         to AS42787 announce ANY
 import:         from AS43149 212.33.6.82 at 82.198.160.252 action pref=100; accept AS43149
 export:         to AS43149 announce ANY
 import:         from AS43149 212.33.6.83 at 82.198.160.252 action pref=100; accept AS43149
+export:         to AS43149 announce ANY
 import:         from AS43670 212.33.15.18 at 82.198.160.252 action pref=100; accept AS43670
 export:         to AS43670 announce ANY
 import:         from AS44900 82.198.173.11 at 82.198.160.252 action pref=100; accept AS44900
@@ -93,6 +102,7 @@ export:         to AS201804 announce ANY
 import:         from AS61166 82.198.168.162 at 82.198.160.249 action pref=100; accept AS61166
 export:         to AS61166 announce ANY
 import:         from AS48739 178.255.238.188 at 82.198.160.248 action pref=100; accept AS48739
+export:         to AS48739 announce ANY
 import:         from AS25511 82.198.190.248 at 82.198.160.248 action pref=100; accept AS-NET21
 export:         to AS25511 announce ANY
 import:         from AS201812 178.255.238.116 action pref=100; accept AS201812
@@ -110,14 +120,55 @@ import:         from AS61991 178.255.238.165 at 82.198.160.249 action pref=100; 
 export:         to AS61991 announce ANY
 import:         from AS207321 accept AS207321
 export:         to AS207321 announce ANY
+remarks:        -------------------------------------------------------------------
+remarks:        ****************** IPv6 Routing Policy *******************
+remarks:        --------------------------------------------------------------
+remarks:        Upstreams:
+remarks:        --------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS12389 action pref=60; accept ANY
 mp-export:      afi ipv6.unicast to AS12389 announce AS-GLOBUSv6
+remarks:        --------------------------------------------------------------
+remarks:        Customers:
+remarks:        --------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS6870 action pref=100; accept AS6870
 mp-export:      afi ipv6.unicast to AS6870 announce ANY
 mp-import:      afi ipv6.unicast from AS51860 action pref=100; accept AS51860
 mp-export:      afi ipv6.unicast to AS51860 announce ANY
 mp-import:      afi ipv6.unicast from AS56477 action pref=100; accept AS56477
 mp-export:      afi ipv6.unicast to AS56477 announce ANY
+remarks:        +------------------------------------------------------------
+remarks:        |
+remarks:        | New-style communities (have to be used instead of old ones)
+remarks:        |
+remarks:        | External communities may be set by external peers when talking to AS30733.
+remarks:        | Communities accepted from customers are in range 30733:2000 - 30733:2999
+remarks:        |
+remarks:        | 30733:200y - when announcing to Rostelecom
+remarks:        |
+remarks:        | y=0 - do not advertise
+remarks:        | y=1,2,4 or 6 - prepend 30733 1,2,4 or 6 times
+remarks:        |
+remarks:        | 30733:28xx Set local preference to xx, where:
+remarks:        | xx=50 - the lowest value used in the network (BACKUP)
+remarks:        |
+remarks:        | 30733:2666 - BlackHole (discard) traffic
+remarks:        |
+remarks:        +------------------------------------------------------------
+remarks:        | TAGGING COMMUNITIES
+remarks:        |
+remarks:        | Internal communities are assigned only internally.
+remarks:        | They may be used by peers to filter some prefixes.
+remarks:        |
+remarks:        | 30733:60XX
+remarks:        |
+remarks:        | XX =
+remarks:        | 00 - All customer and AS30733 routes
+remarks:        | 01 - Originated from AS30733
+remarks:        |
+remarks:        | 60xx - National peers
+remarks:        | 11 - Rostelecom
+remarks:        | 14 - GT
+remarks:        +------------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -126,13 +177,17 @@ mnt-by:         GLOBUS-MNT
 created:        2003-11-20T12:02:37Z
 last-modified:  2025-06-18T09:12:26Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS30733
 country:        RU
 as-name:        GLOBUS-AS JSC "Globus-Telecom"
-as-num:         AS30733
-country:        RU
-as-name:        null
 
 organisation:   ORG-GL4-RIPE
 org-name:       JSC "Globus-Telecom"
@@ -148,5 +203,11 @@ mnt-by:         GLOBUS-MNT
 created:        2004-04-17T11:52:52Z
 last-modified:  2026-05-13T07:25:51Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

@@ -2,16 +2,25 @@ aut-num:        AS35539
 as-name:        INFOLINK-T-AS
 descr:          Moscow, Russia
 org:            ORG-OIT1-RIPE
+remarks:        --------
+remarks:        UPLINKS:
+remarks:        --------
 import:         from AS28917 action pref=110; accept ANY
 export:         to AS28917 announce AS-INFOLINK
 import:         from AS35598 action pref=110; accept ANY
 export:         to AS35598 announce AS-INFOLINK
 import:         from AS202984 action pref=110; accept ANY
 export:         to AS202984 announce AS-INFOLINK
+remarks:        -------------
+remarks:        IPv6 UPLINKS:
+remarks:        -------------
 mp-import:      afi ipv6.unicast from AS28917 action pref=110; accept ANY
 mp-export:      afi ipv6.unicast to AS28817 announce AS-INFOLINK
 mp-import:      afi ipv6.unicast from AS35598 action pref=110; accept ANY
 mp-export:      afi ipv6.unicast to AS35598 announce AS-INFOLINK
+remarks:        -------
+remarks:        MSK-IX:
+remarks:        -------
 import:         from AS8631 action pref=120; accept ANY
 export:         to AS8631 announce AS-INFOLINK
 import:         from AS16509 action pref=125; accept AS16509
@@ -22,10 +31,19 @@ import:         from AS136907 action pref=125; accept AS136907
 export:         to AS136907 announce AS-INFOLINK
 import:         from AS6939 action pref=125; accept AS6939
 export:         to AS6939 announce AS-INFOLINK
+remarks:        ----------
+remarks:        GLOBAL-IX
+remarks:        ----------
 import:         from AS50952 action pref=115; accept ANY
 export:         to AS50952 announce AS-INFOLINK
+remarks:        ----------
+remarks:        DATA-IX
+remarks:        ----------
 import:         from AS31500 action pref=115; accept ANY
 export:         to AS31500 announce AS-INFOLINK
+remarks:        ----------
+remarks:        CUSTOMERS:
+remarks:        ----------
 import:         from AS50553 action pref=130; accept AS50553
 export:         to AS50553 announce ANY
 import:         from AS197821 action pref=130; accept AS197821
@@ -38,6 +56,8 @@ import:         from AS60681 action pref=130; accept AS60681
 export:         to AS60681 announce ANY
 import:         from AS51147 action pref=130; accept AS51147
 export:         to AS51147 announce ANY
+remarks:        -----
+remarks:        -----
 notify:         it@infolink.ru
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -47,13 +67,17 @@ mnt-by:         OIT1-MNT
 created:        2005-08-30T15:50:21Z
 last-modified:  2025-11-20T08:33:45Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS35539
 country:        RU
 as-name:        INFOLINK-T-AS Information and Communication Technologies LLC
-as-num:         AS35539
-country:        RU
-as-name:        null
 
 organisation:   ORG-OIT1-RIPE
 org-name:       Information and Communication Technologies LLC
@@ -69,5 +93,11 @@ abuse-c:        AC30676-RIPE
 created:        2008-01-15T13:26:39Z
 last-modified:  2026-05-13T07:15:36Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
