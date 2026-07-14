@@ -2,18 +2,38 @@ aut-num:        AS50532
 as-name:        SKA-SPB-CORP-DC-AS
 descr:          SKA SPB CORP DC
 org:            ORG-SKA56-RIPE
+remarks:        +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+remarks:        |::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+remarks:        |::: +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+ :::|
+remarks:        |::: | ____[ SKA, LLC SPb DC Routing Policy ]____ | :::|
+remarks:        |::: | _________[ AS50532/AS-SKA|AS-SKA6 ]_______ | :::|
+remarks:        |::: +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+ :::|
+remarks:        |::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+remarks:        +::::::::::::::::::::::::::::::::::::::::::::::::::::::+
+remarks:        |-=================== [ IPv4/IPv6 ] ==================-|
+remarks:        +::::::::::::::::::::::::::::::::::::::::::::::::::::::+
+remarks:        -======================================================-
+remarks:        -==================== [ Uplinks: ] ====================-
+remarks:        -======================================================-
+remarks:        -=-=-=-=-=-=-=-=-=-=- [ -GBLNET- ] -=-=-=-=-=-=-=-=-=-=-
 import:         from AS31500 action pref=200; accept ANY
 export:         to AS31500 announce AS-SKA
 mp-import:      afi ipv6.unicast from AS31500 action pref=200; accept ANY
 mp-export:      afi ipv6.unicast to AS31500 announce AS-SKA6
+remarks:        -=-=-=-=-=-=-=-=-=-=-=- [ -TTK- ] =-=-=-=-=-=-=-=-=-=-=-
 import:         from AS20485 action pref=200; accept ANY
 export:         to AS20485 announce AS-SKA
 mp-import:      afi ipv6.unicast from AS20485 action pref=200; accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-SKA6
+remarks:        -=-=-=-=-=-=-=-=-=-=-=- [ -LINX- ] -=-=-=-=-=-=-=-=-=-=-
 import:         from AS48399 action pref=200; accept ANY
 export:         to AS48399 announce AS-SKA
 mp-import:      afi ipv6.unicast from AS48399 action pref=200; accept ANY
 mp-export:      afi ipv6.unicast to AS48399 announce AS-SKA6
+remarks:        -======================================================-
+remarks:        -==================== [ Downlinks: ] ==================-
+remarks:        -======================================================-
+remarks:        -=-=-=-=-=-=-=-=-= [ -SERGEY MUTIN- ] =-=-=-=-=-=-=-=-=-
 import:         from AS44303 action pref=500; accept AS44303
 export:         to AS44303 announce ANY
 mp-import:      afi ipv6.unicast from AS44303 action pref=500; accept AS44303
@@ -26,6 +46,31 @@ import:         from AS51631 action pref=500; accept AS51631
 export:         to AS51631 announce ANY
 mp-import:      afi ipv6.unicast from AS51631 action pref=500; accept AS51631
 mp-export:      afi ipv6.unicast to AS51631 announce ANY
+remarks:        +======================================================+
+remarks:        BGP communities accepted from IP Transit Customers
+remarks:        0:n - do not advertise to peer ASn
+remarks:        [1-5]:n - prepend 1-5 times when advertising to peer ASn
+remarks:        Where n is one of the following:
+remarks:        31500 - GBLNET
+remarks:        20485 - TTK
+remarks:        48399 - LINX
+remarks:        +======================================================+
+remarks:        +======================================================+
+remarks:        | -Inbound IPv4 prefixes longer than /24 are filtered- |
+remarks:        | -Inbound IPv6 prefixes longer than /48 are filtered- |
+remarks:        +======================================================+
+remarks:        +======================================================+
+remarks:        Website: http://ska.su/
+remarks:        Looking Glass: http://lg.ska.su/
+remarks:        Looking Glass: http://lg.as50532.net/
+remarks:        +======================================================+
+remarks:        |::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+remarks:        |::: +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+ :::|
+remarks:        |::: | ____[ SKA, LLC SPb DC Routing Policy ]____ | :::|
+remarks:        |::: | _________[ AS50532/AS-SKA|AS-SKA6 ]_______ | :::|
+remarks:        |::: +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+ :::|
+remarks:        |::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+remarks:        +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         mutin.sa@ska.su
@@ -36,13 +81,17 @@ created:        2022-08-05T15:37:06Z
 last-modified:  2024-11-09T20:06:49Z
 source:         RIPE
 sponsoring-org: ORG-JCS2-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS50532
 country:        RU
 as-name:        SKA-SPB-CORP-DC-AS LLC "SKA"
-as-num:         AS50532
-country:        RU
-as-name:        null
 
 organisation:   ORG-SKA56-RIPE
 org-name:       LLC "SKA"
@@ -58,5 +107,11 @@ mnt-by:         SKA-RIPE-MNT
 created:        2016-05-24T01:13:34Z
 last-modified:  2026-05-13T05:33:01Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

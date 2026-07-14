@@ -2,14 +2,31 @@ aut-num:        AS214656
 as-name:        MARAPHON-AS
 descr:          Moscow, Russia
 org:            ORG-MJ278-RIPE
+remarks:        =========================
+remarks:        IPv4 routing policy
+remarks:        =========================
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Upstreams
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        *******Mastertel *******
 import:         from AS29226 action pref=100; accept ANY;
 export:         to AS29226 announce AS214656:AS-MARAPHON
+remarks:
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Downstreams
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        DIGITALENERGY-AS
 import:         from AS43830 action pref=200; accept AS43830;
 export:         to AS43830 announce {0.0.0.0/0}
+remarks:
+remarks:        Oline-contact
 import:         from AS59663 action pref=200; accept AS59663;
 export:         to AS59663 announce {0.0.0.0/0}
+remarks:
+remarks:        New-IT-Project-AS
 import:         from AS214956 action pref=200; accept AS214956;
 export:         to AS214956 announce {0.0.0.0/0}
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -18,13 +35,17 @@ mnt-by:         MARAPHON-MNT
 created:        2024-06-20T11:55:53Z
 last-modified:  2024-09-02T08:49:48Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS214656
 country:        RU
 as-name:        MARAPHON-AS Maraphon JSC
-as-num:         AS214656
-country:        RU
-as-name:        null
 
 organisation:   ORG-MJ278-RIPE
 org-name:       Maraphon JSC
@@ -39,5 +60,11 @@ mnt-by:         MARAPHON-MNT
 created:        2022-06-25T07:31:47Z
 last-modified:  2026-05-13T07:02:14Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

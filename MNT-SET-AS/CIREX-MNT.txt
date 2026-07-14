@@ -28,6 +28,7 @@ members:        AS-LIFESTREAM
 members:        AS-NETCUBE
 members:        AS-SMARTLABS
 members:        AS-VDSINA
+members:        AS-SS
 members:        AS-CLODO
 members:        AS200725
 members:        AS8846
@@ -87,6 +88,7 @@ members:        AS200976
 members:        AS201012
 members:        AS201265
 members:        AS201138
+members:        AS201265
 members:        AS201726
 members:        AS50430
 members:        AS219259
@@ -182,7 +184,10 @@ members:        AS50878
 members:        AS56398
 members:        AS44102
 members:        AS210359
+members:        AS51811
+members:        AS201144
 members:        AS56842
+members:        AS43042
 members:        AS207059
 members:        AS215498
 members:        AS199424
@@ -220,7 +225,13 @@ mnt-by:         CIREX-MNT
 created:        2013-08-02T10:13:11Z
 last-modified:  2026-07-10T14:03:32Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 as-set:         AS-CIREX-DDOS
@@ -248,7 +259,13 @@ mnt-by:         CIREX-MNT
 created:        2016-05-13T13:35:50Z
 last-modified:  2021-10-15T11:39:11Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 as-set:         AS-CIREX-IPV6
@@ -272,7 +289,13 @@ mnt-by:         CIREX-MNT
 created:        2014-03-26T09:15:41Z
 last-modified:  2016-07-12T08:38:52Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS199424
@@ -293,7 +316,13 @@ mnt-by:         ROSTELECOM-MNT
 created:        2023-03-15T13:01:16Z
 last-modified:  2026-06-10T07:16:23Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS199582
@@ -312,12 +341,25 @@ mnt-by:         CIREX-MNT
 created:        2026-03-31T09:53:40Z
 last-modified:  2026-06-03T14:48:33Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS199599
 as-name:        CIREX
 org:            ORG-TL254-RIPE
+remarks:        Telecom Birzha, LLC
+remarks:        Moscow, Russia
+remarks:        =============================================
+remarks:        ************ IPv4 Routing Policy ************
+remarks:        =============================================
+remarks:        UPLINKS
+remarks:        ---------------------------------------------
 import:         from AS3216 accept ANY
 import:         from AS12389 accept ANY
 import:         from AS20485 accept ANY
@@ -330,6 +372,9 @@ export:         to AS20485 announce AS-CIREX
 export:         to AS9002 announce AS-CIREX
 export:         to AS201706 announce AS-CIREX
 export:         to AS20764 announce AS-CIREX
+remarks:        ---------------------------------------------
+remarks:        PEERS
+remarks:        ---------------------------------------------
 import:         from AS3216 accept AS-GLOBAL-IX
 import:         from AS50952 accept AS-DATA-IX
 import:         from AS8631 accept AS-MSK-IX
@@ -344,6 +389,9 @@ export:         to AS49869 announce AS-CIREX
 export:         to AS50817 announce AS-CIREX
 export:         to AS48193 announce AS-CIREX
 export:         to AS39607 announce AS-CIREX
+remarks:        ---------------------------------------------
+remarks:        CUSTOMERS
+remarks:        ---------------------------------------------
 import:         from AS219445 accept AS219445
 import:         from AS57304 accept AS57304
 import:         from AS200725 accept AS200725
@@ -449,6 +497,7 @@ import:         from AS212016 accept AS212016
 import:         from AS203203 accept AS203203
 import:         from AS49002 accept AS49002
 import:         from AS47354 accept AS47354
+import:         from AS49675 accept AS49675
 import:         from AS200637 accept AS200637
 import:         from AS61378 accept AS61378
 import:         from AS60544 accept AS60544
@@ -588,6 +637,7 @@ export:         to AS58341 announce ANY
 export:         to AS203203 announce ANY
 export:         to AS49002 announce ANY
 export:         to AS47354 announce ANY
+export:         to AS49675 announce ANY
 export:         to AS200637 announce ANY
 export:         to AS61378 announce ANY
 export:         to AS48197 announce ANY
@@ -604,18 +654,133 @@ export:         to AS48807 announce ANY
 export:         to AS209930 announce ANY
 export:         to AS60702 announce ANY
 export:         to AS43740 announce ANY
+remarks:        ============================================================
+remarks:        ******************** IPv6 Routing Policy *******************
+remarks:        ============================================================
+remarks:        UPSTREAMS
+remarks:        ------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS3216 action pref=50; accept ANY
 mp-export:      afi ipv6.unicast to AS3216 announce AS-CIREX-IPV6
 mp-import:      afi ipv6.unicast from AS20485 action pref=50; accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-CIREX-IPV6
 mp-import:      afi ipv6.unicast from AS20764 action pref=50; accept ANY
 mp-export:      afi ipv6.unicast to AS20764 announce AS-CIREX-IPV6
+remarks:        --------------------------------------------------------------
+remarks:        PEERS
+remarks:        --------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS8631 action pref=120; accept AS-MSK-IX
 mp-export:      afi ipv6.unicast to AS8631 announce AS-CIREX-IPV6
+remarks:        --------------------------------------------------------------
+remarks:        CUSTOMERS
+remarks:        --------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS44704 action pref=200; accept AS44704
 mp-export:      afi ipv6.unicast to AS44704 announce ANY
 mp-import:      afi ipv6.unicast from AS48757 action pref=200; accept AS48757
 mp-export:      afi ipv6.unicast to AS48757 announce ANY
+remarks:        --------------------------------------------------------------
+remarks:        ===================================================
+remarks:        Looking glass - https://lg.cirex.ru/
+remarks:        Peeringdb - https://www.peeringdb.com/net/8506
+remarks:        ===================================================
+remarks:        ===================================================
+remarks:        Marking community for prefix classification
+remarks:        Communities we send to customers
+remarks:        ===================================================
+remarks:        64000:XYYZZ
+remarks:        ---------------------------------------
+remarks:        X - type of prexif
+remarks:        ---------------------------------------
+remarks:        1 - UPSTREAM
+remarks:        2 - RUSSIAN PEER
+remarks:        3 - INTERNATIONAL PEER
+remarks:        4 - DOWNSTREAM (CUSTOMER)
+remarks:        ---------------------------------------
+remarks:        YY - 1st LEVEL DESCRIPTION
+remarks:        ---------------------------------------
+remarks:        UPSTREAM:
+remarks:        01 - Rostelecom (AS12389)
+remarks:        02 - BEELINE (AS3216)
+remarks:        03 - Rascom (AS20764)
+remarks:        04 - TransTelecom (AS20485)
+remarks:        05 - Retn (AS9002)
+remarks:        06 - Cogent (AS174)
+remarks:        07 - Filanco (AS29076)
+remarks:        08 - ServicePipe (AS201706)
+remarks:        RUSSIAN PEERS:
+remarks:        02 - MSK-IX ROUTESERVER (8631)
+remarks:        04 - ELBAIX (AS203921)
+remarks:        05 - DATAIX (AS50952)
+remarks:        06 - GLOBALIX (AS31500)
+remarks:        07 - PITERIX (AS49869)
+remarks:        INTERNATIONAL PEERS:
+remarks:        01 - DE-CIX (AS6695)
+remarks:        02 - NL-IX (AS34307)
+remarks:        03 - AMS-IX (AS6777)
+remarks:        04 - PITERIX-HELSINKY (AS39607)
+remarks:        05 - PITERIX-FRANKFURT (AS48193)
+remarks:        DOWNSTREAM (CUSTOMER)
+remarks:        00 - Static routes from CIREX allocations
+remarks:        01 - BGP customer
+remarks:        ---------------------------------------
+remarks:        ZZ - REGIONAL CODE
+remarks:        ---------------------------------------
+remarks:        00 - Moscow
+remarks:        ===================================================
+remarks:        Control communities
+remarks:        Communities customers can use to control the behavior of our network
+remarks:        ===================================================
+remarks:        Prepend or deny 64000:5DNNA
+remarks:        ---------------------------------------
+remarks:        D - type of prexif
+remarks:        ---------------------------------------
+remarks:        1 - UPSTREAM
+remarks:        2 - RUSSIAN PEER
+remarks:        3 - INTERNATIONAL PEER
+remarks:        4 - EURASIA
+remarks:        ---------------------------------------
+remarks:        NN - 1st LEVEL DESCRIPTION
+remarks:        ---------------------------------------
+remarks:        UPSTREAM:
+remarks:        01 - Rostelecom (AS12389)
+remarks:        02 - BEELINE (AS3216)
+remarks:        03 - Rascom (AS20764)
+remarks:        04 - TransTelecom (AS20485)
+remarks:        05 - Retn (AS9002)
+remarks:        06 - Cogent (AS174)
+remarks:        07 - Filanco (AS29076)
+remarks:        08 - ServicePipe (AS201706)
+remarks:        RUSSIAN PEERS:
+remarks:        02 - MSK-IX ROUTESERVER (AS8631)
+remarks:        04 - ELBAIX (AS203921)
+remarks:        05 - DATAIX (AS50952)
+remarks:        06 - GLOBALIX (AS31500)
+remarks:        07 - PITERIX (AS49869)
+remarks:        INTERNATIONAL PEERS:
+remarks:        01 - DE-CIX (AS6695)
+remarks:        02 - NL-IX (AS34307)
+remarks:        03 - AMS-IX (AS6777)
+remarks:        04 - PITERIX-HELSINKY (AS39607)
+remarks:        05 - PITERIX-FRANKFURT (AS48193)
+remarks:        ---------------------------------------
+remarks:        A - action
+remarks:        ---------------------------------------
+remarks:        0 - don't announce prefix
+remarks:        1 - announce with one prepend
+remarks:        2 - announce with two times prepend
+remarks:        3 - announce with three times prepend
+remarks:        ===================================================
+remarks:        Community for blackhole
+remarks:        Drop all packets destined to the prefix (/32 IPv4 and /128 IPv6 only)
+remarks:        ===================================================
+remarks:        64000:666
+remarks:        ===================================================
+remarks:        Backup local-preference community
+remarks:        Allow to set local-preference for customer prefixes on Providers Edge lower than upstreams and peerings.
+remarks:        Available by request and requires configuration changes for import policy on Provider Edge
+remarks:        ===================================================
+remarks:        65000:XXXX
+remarks:        XXXX - Customer AS number
+remarks:        ---------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -625,7 +790,13 @@ notify:         noc@cirex.ru
 created:        2012-11-12T09:44:39Z
 last-modified:  2026-07-10T14:02:26Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS200928
@@ -643,7 +814,13 @@ created:        2015-03-10T14:18:25Z
 last-modified:  2023-10-23T10:01:25Z
 source:         RIPE
 sponsoring-org: ORG-TL254-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS201752
@@ -662,14 +839,22 @@ mnt-by:         CIREX-MNT
 created:        2022-11-01T11:39:08Z
 last-modified:  2023-08-30T12:14:02Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS202824
 as-name:        ATS-AS
 org:            ORG-OA775-RIPE
+remarks:        ============CIREX=============
 import:         from AS199599 accept ANY
 export:         to AS199599 announce AS202824
+remarks:        ==========MASTERTEL==========
 import:         from AS29226 accept ANY
 export:         to AS29226 announce AS202824
 import:         from AS3312 accept ANY
@@ -683,7 +868,13 @@ created:        2016-05-25T11:53:04Z
 last-modified:  2020-11-16T17:51:18Z
 source:         RIPE
 sponsoring-org: ORG-TL254-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS203749
@@ -702,7 +893,13 @@ mnt-by:         CIREX-MNT
 created:        2022-10-24T07:41:17Z
 last-modified:  2022-10-24T07:41:17Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS203870
@@ -721,7 +918,13 @@ mnt-by:         CIREX-MNT
 created:        2022-07-14T13:41:59Z
 last-modified:  2024-07-18T14:53:26Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS207692
@@ -742,7 +945,13 @@ created:        2019-12-13T12:43:40Z
 last-modified:  2026-06-18T07:16:35Z
 source:         RIPE
 sponsoring-org: ORG-TL254-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS208047
@@ -761,7 +970,13 @@ mnt-by:         CIREX-MNT
 created:        2019-10-11T09:09:02Z
 last-modified:  2021-05-20T08:56:38Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS208577
@@ -782,7 +997,13 @@ mnt-by:         CIREX-MNT
 created:        2025-09-18T13:34:35Z
 last-modified:  2026-02-03T18:52:41Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS211446
@@ -802,7 +1023,13 @@ mnt-by:         CIREX-MNT
 created:        2021-04-20T14:11:24Z
 last-modified:  2024-08-27T09:01:03Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS211530
@@ -820,7 +1047,13 @@ mnt-by:         CIREX-MNT
 created:        2021-03-31T14:34:30Z
 last-modified:  2022-06-28T09:21:59Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS212277
@@ -830,10 +1063,13 @@ import:         from AS199599 accept ANY
 export:         to AS199599 announce AS212277
 import:         from AS201706 accept ANY
 export:         to AS201706 announce AS212277
+remarks:        ISP DTLN
 import:         from AS49063 accept ANY
 export:         to AS49063 announce AS212277
+remarks:        ISP RT
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS212277
+remarks:        ISP MT
 import:         from AS29226 accept ANY
 export:         to AS29226 announce AS212277
 admin-c:        DUMY-RIPE
@@ -846,7 +1082,13 @@ created:        2020-11-26T08:37:55Z
 last-modified:  2022-03-03T14:03:27Z
 source:         RIPE
 sponsoring-org: ORG-TL254-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS214283
@@ -872,7 +1114,13 @@ mnt-by:         JSCTOCHKA-MNT
 created:        2024-08-29T14:15:55Z
 last-modified:  2024-10-15T13:00:49Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS216317
@@ -891,7 +1139,13 @@ mnt-by:         CIREX-MNT
 created:        2023-09-13T06:19:22Z
 last-modified:  2023-09-13T06:19:22Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS50040
@@ -912,14 +1166,22 @@ created:        2009-10-30T14:52:37Z
 last-modified:  2023-10-23T09:59:48Z
 source:         RIPE
 sponsoring-org: ORG-TL254-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS58229
 as-name:        Scoring
 org:            ORG-JBOC1-RIPE
+remarks:        =======CIREX============
 import:         from AS199599 accept ANY
 export:         to AS199599 announce AS58229
+remarks:        =======Mastertel========
 import:         from AS29226 accept ANY
 export:         to AS29226 announce AS58229
 sponsoring-org: ORG-TL254-RIPE
@@ -932,7 +1194,13 @@ mnt-by:         CIREX-MNT
 created:        2012-05-30T12:00:25Z
 last-modified:  2024-11-21T09:13:04Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS59673
@@ -951,7 +1219,13 @@ created:        2018-06-06T15:23:58Z
 last-modified:  2020-11-16T18:04:33Z
 source:         RIPE
 sponsoring-org: ORG-TL254-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS60944
@@ -976,6 +1250,12 @@ mnt-by:         CIREX-MNT
 created:        2013-04-05T13:01:15Z
 last-modified:  2025-06-02T14:19:28Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 

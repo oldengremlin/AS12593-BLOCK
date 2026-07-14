@@ -1,6 +1,9 @@
 aut-num:        AS199546
 as-name:        MOSCOMNET-AS
 org:            ORG-ML464-RIPE
+remarks:        ==========================================================
+remarks:        // UPSTREAM //
+remarks:        ==========================================================
 descr:          ===NetOne Rus JSC (IPv4/IPv6)===
 import:         from AS196695 accept ANY
 export:         to AS196695 announce AS-MOSCOMNET
@@ -16,16 +19,66 @@ import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-MOSCOMNET
 mp-import:      afi ipv6.unicast from AS8359 accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS-MOSCOMNET
+remarks:        ==========================================================
+remarks:        //PUBLIC PEERING//
+remarks:        ==========================================================
+remarks:        ===CLOUD-IX (IPv4/IPv6)===
 import:         from AS29076 accept ANY
 export:         to AS29076 announce AS-MOSCOMNET
 mp-import:      afi ipv6.unicast from AS29076 accept ANY
 mp-export:      afi ipv6.unicast to AS29076 announce AS-MOSCOMNET
+remarks:        ==========================================================
+remarks:        // CUSTOMERS //
+remarks:        ==========================================================
 import:         from AS57906 accept AS57906
 export:         to AS57906 announce ANY
+remarks:        ==========================================================
 import:         from AS213853 accept AS213853
 export:         to AS213853 announce ANY
+remarks:        ==========================================================
 import:         from AS201794 accept AS201794
 export:         to AS201794 announce ANY
+remarks:        ==========================================================
+remarks:        BGP community for announce control
+remarks:        ==========================================================
+remarks:        // Black Hole community //
+remarks:        19954:666
+remarks:        ==========================================================
+remarks:        // All no announce //
+remarks:        19954:00000
+remarks:        ==========================================================
+remarks:        // Customer backup community (LP=50) //
+remarks:        19954:65050
+remarks:        ==========================================================
+remarks:        // UPSTREAM //
+remarks:        !!! 19954:11XXY - TAGS !!!
+remarks:        XX - Number of Upstream
+remarks:        00 - ALL UPSTREAM
+remarks:        01 - NETONE RUS
+remarks:        02 - MTS
+remarks:        03 - RASCOM
+remarks:
+remarks:        Y - tag for action
+remarks:        0 - no announce
+remarks:        1 - One prepend
+remarks:        2 - Two prepend
+remarks:        4 - Four prepend
+remarks:        8 - Eight prepend
+remarks:        ==========================================================
+remarks:        // PEERS //
+remarks:        !!! 19954:12XXY - TAGS !!!
+remarks:        XX - Number of Peer
+remarks:        00 - ALL PEERS
+remarks:        01 - MSK-IX
+remarks:        02 - CLOUD-IX
+remarks:
+remarks:        Y - tag for action
+remarks:        0 - no announce
+remarks:        1 - One prepend
+remarks:        2 - Two prepend
+remarks:        4 - Four prepend
+remarks:        8 - Eight prepend
+remarks:        ==========================================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -35,13 +88,17 @@ mnt-by:         ru-moscomnet-2-mnt
 created:        2012-11-30T08:54:33Z
 last-modified:  2026-06-10T14:10:23Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS199546
 country:        RU
 as-name:        MOSCOMNET-AS Moscomnet LLC
-as-num:         AS199546
-country:        RU
-as-name:        null
 
 organisation:   ORG-ML464-RIPE
 org-name:       Moscomnet LLC
@@ -58,5 +115,11 @@ source:         RIPE
 mnt-ref:        ru-moscomnet-2-mnt
 mnt-ref:        ru-mostelecom-1-mnt
 mnt-ref:        ROSNIIROS-MNT
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

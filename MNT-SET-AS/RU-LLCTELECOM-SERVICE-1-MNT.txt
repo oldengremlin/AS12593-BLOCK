@@ -1,24 +1,39 @@
 as-set:         AS-SAMTELECOM
 descr:          ASes routed by LLC Samtelecom.
+remarks:        ----------- Samtelecom ------------
 members:        AS31275
+remarks:        ------------ Customers ------------
 members:        AS51523
 members:        AS205773
+remarks:        -----------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         ru-llctelecom-service-1-mnt
 created:        2005-02-01T10:39:16Z
 last-modified:  2026-02-25T17:03:42Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS205773
 as-name:        Telecom-Service-AS
 org:            ORG-LT130-RIPE
+remarks:        UPSTREAMS:
+remarks:        --------------------------------------------
 import:         from AS31275 action pref=100; accept ANY
 export:         to AS31275 announce AS205773
+remarks:        --------------------------------------------
+remarks:        UPSTREAMS:
+remarks:        --------------------------------------------
 mp-import:      afi ipv6.unicast from AS31275 accept any
 mp-export:      afi ipv6.unicast to AS31275 announce AS205773
+remarks:        --------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -27,12 +42,21 @@ mnt-by:         ru-llctelecom-service-1-mnt
 created:        2018-06-27T06:32:04Z
 last-modified:  2022-08-03T10:38:30Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS31275
 as-name:        Samtelecom-AS
 org:            ORG-LT130-RIPE
+remarks:        --------------------------------------------
+remarks:        UPSTREAMS IPv4 :
+remarks:        --------------------------------------------
 import:         from AS50509 action pref=100; accept ANY
 export:         to AS50509 announce AS-SAMTELECOM
 import:         from AS49869 action pref=100; accept ANY
@@ -55,10 +79,16 @@ import:         from AS29076 action pref=100; accept ANY
 export:         to AS29076 announce AS-SAMTELECOM
 import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-SAMTELECOM
+remarks:        ---------------------------------------------
+remarks:        CUSTOMERS IPv4 :
+remarks:        ---------------------------------------------
 import:         from AS51523 action pref=100; accept AS51523
 export:         to AS51523 announce {0.0.0.0/0}
 import:         from AS205773 action pref=100; accept AS205773
 export:         to AS205773 announce ANY
+remarks:        ---------------------------------------------
+remarks:        UPSTREAMS IPv6 :
+remarks:        ---------------------------------------------
 mp-import:      afi ipv6.unicast from AS50509 accept any
 mp-export:      afi ipv6.unicast to AS50509 announce AS-SAMTELECOM
 mp-import:      afi ipv6.unicast from AS49869 accept any
@@ -75,10 +105,22 @@ mp-import:      afi ipv6.unicast from AS31500 accept any
 mp-export:      afi ipv6.unicast to AS31500 announce AS-SAMTELECOM
 mp-import:      afi ipv6.unicast from AS29076 accept any
 mp-export:      afi ipv6.unicast to AS29076 announce AS-SAMTELECOM
+remarks:        ---------------------------------------------
+remarks:        CUSTOMERS IPv6 :
+remarks:        ---------------------------------------------
 mp-import:      afi ipv6.unicast from AS51523 accept AS51523
 mp-export:      afi ipv6.unicast to AS51523 announce {::/0}
 mp-import:      afi ipv6.unicast from AS205773 accept AS205773
 mp-export:      afi ipv6.unicast to AS205773 announce ANY
+remarks:        ---------------------------------------------
+remarks:        Communities :
+remarks:        ---------------------------------------------
+remarks:        31275:666 - Blackhole
+remarks:        ---------------------------------------------
+remarks:        Looking Glass :
+remarks:        ---------------------------------------------
+remarks:        https://lg.sam-isp.net
+remarks:        ---------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -87,6 +129,12 @@ mnt-by:         ru-llctelecom-service-1-mnt
 created:        2004-04-05T08:19:40Z
 last-modified:  2026-07-03T12:42:22Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 

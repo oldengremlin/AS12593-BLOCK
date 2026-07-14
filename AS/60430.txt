@@ -149,6 +149,33 @@ export:         to AS48158 announce AS-RED-IX-PEERS
 export:         to AS52091 announce AS-RED-IX-PEERS
 export:         to AS50157 announce AS-RED-IX-PEERS
 export:         to AS201512 announce AS-RED-IX-PEERS
+remarks:        -----------------------------------------------------------
+remarks:        Informational communities
+remarks:
+remarks:        60430:2001 - prefix received in Krasnoyarsk
+remarks:        60430:2002 - prefix received in Novosibirsk
+remarks:        60430:2003 - prefix received in Achinsk
+remarks:        60430:2004 - prefix received in Irkutsk
+remarks:        60430:2005 - prefix received in Abakan
+remarks:        60430:2006 - prefix received in Khabarovsk
+remarks:        -----------------------------------------------------------
+remarks:        BGP communities for control route advertisement
+remarks:
+remarks:        0:$peer-as, rt:0:$peer-as - Do not announce prefix to a peer with AS $peer-as
+remarks:        60430:$peer-as, rt:60430:$peer-as - Announce prefix to a peer with AS $peer-as
+remarks:        0:60430 - Do not announce prefix to anyone
+remarks:
+remarks:        1:$peer-as, rt,1,$peer-as - Prepend once when announcing this prefix to AS $peer-as
+remarks:        2:$peer-as, rt,2,$peer-as - Prepend twice when announcing this prefix to AS $peer-as
+remarks:        3:$peer-as, rt,3,$peer-as - Prepend three times when announcing this prefix to AS $peer-as
+remarks:
+remarks:        60430:0 - Set local preference 0
+remarks:        60430:50 - Set local preference 50
+remarks:        60430:100 - Set local preference 100
+remarks:        -----------------------------------------------------------
+remarks:        Looking glass
+remarks:        http://lg.red-ix.ru/
+remarks:        -----------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -158,13 +185,17 @@ mnt-by:         ERTH-MAGISTR
 created:        2013-07-18T14:45:21Z
 last-modified:  2025-02-26T06:54:34Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS60430
 country:        RU
 as-name:        REDIX JSC "ER-Telecom Holding"
-as-num:         AS60430
-country:        RU
-as-name:        null
 
 organisation:   ORG-RA21-RIPE
 org-name:       JSC "ER-Telecom Holding"
@@ -183,5 +214,11 @@ mnt-by:         RAID-MNT
 created:        2004-04-17T11:56:55Z
 last-modified:  2026-05-13T07:07:54Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
