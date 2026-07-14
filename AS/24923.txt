@@ -1,28 +1,10 @@
 aut-num:        AS24923
 as-name:        SETTC
 org:            ORG-CJSC19-RIPE
-remarks:        +[AS24923 AS-SETTC AS-SETTC-V6]--------------[_][o][X]
-remarks:        | ________________________________________________ |
-remarks:        | / _____/\_ _____/\__ ___/\__ ___/\_ ___ \ |
-remarks:        | \_____ \ | __)_ | | | | / \ \/ |
-remarks:        | / \ | \ | | | | \ \____|
-remarks:        |/_______ //______ / |___| |___| \______ /|
-remarks:        | \/ \/ \/ |
-remarks:        |----------------------------------------------------|
-remarks:        | General questions: noc@uvttk.ru |
-remarks:        | Spam & Abuse: abuse@uvttk.ru |
-remarks:        | Looking glass: http://lg.as24923.net |
-remarks:        |----------------------------------------------------|
-remarks:        |Use abuse@uvttk.ru e-mail address for spam and abuse|
-remarks:        |complaints.Mails for other addresses will be ignored|
-remarks:        +----------------------------------------------------
-remarks:        -----------UP Stream------------
 import:         from AS20485 action pref=100 ; accept ANY
 export:         to AS20485 announce AS-SETTC
-remarks:        -----------PEER Stream------------
 import:         from AS43727 action pref=100 ; accept AS-SETKT
 export:         to AS43727 announce AS-SETTC
-remarks:        -----------DOWN Stream------------
 import:         from AS49963 action pref=100; accept AS-BELRTS
 export:         to AS49963 announce ANY
 import:         from AS42368 action pref=100; accept AS42368
@@ -57,15 +39,12 @@ import:         from AS59557 action pref=100; accept AS59557
 export:         to AS59557 announce ANY
 import:         from AS199427 action pref=100; accept AS199427
 export:         to AS199427 announce ANY
-import:         from AS196991 action pref=100; accept AS196991
-export:         to AS196991 announce ANY
 import:         from AS198076 action pref=100; accept AS-LITEGROUP
 export:         to AS198076 announce ANY
 import:         from AS197349 action pref=100; accept AS197349
 export:         to AS197349 announce ANY
 import:         from AS62130 action pref=100; accept AS162130
 export:         to AS62130 announce ANY
-remarks:        -----------IPv6 Stream------------
 mp-import:      afi ipv6.unicast from AS20485 accept ANY
 mp-export:      afi ipv6.unicast to AS20485 announce AS-SETTC-V6
 mp-import:      afi ipv6.unicast from AS43727 accept ANY
@@ -81,17 +60,13 @@ mnt-by:         TRANSTELECOM-MNT
 created:        2002-05-23T11:27:05Z
 last-modified:  2025-01-13T21:16:51Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS24923
 country:        RU
 as-name:        SETTC Joint Stock Company TransTeleCom
+as-num:         AS24923
+country:        RU
+as-name:        null
 
 organisation:   ORG-CJSC19-RIPE
 org-name:       Joint Stock Company TransTeleCom
@@ -107,11 +82,5 @@ mnt-by:         TRANSTELECOM-MNT
 created:        2009-03-11T13:07:47Z
 last-modified:  2026-05-13T07:32:38Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
