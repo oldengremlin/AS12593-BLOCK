@@ -805,6 +805,7 @@ members:        AS199651:AS-CLOUDTRANSIT
 members:        AS47122:AS-CYBERFIRST
 members:        AS57073
 members:        AS-GT
+members:        AS210063
 members:        AS57113
 members:        AS57246
 members:        AS57456
@@ -1331,13 +1332,15 @@ members:        AS208541
 members:        AS8801:AS-ROCKET
 members:        AS215296:AS-RAOULBROUNS
 members:        AS-COMCOR
+members:        AS35026
+members:        AS198675
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2023-08-15T18:17:57Z
-last-modified:  2026-07-07T12:11:14Z
+last-modified:  2026-07-13T12:48:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -4732,6 +4735,10 @@ import:         from AS208541 action pref=100; accept AS208541
 export:         to AS208541 announce as-piter-ix-msk
 import:         from AS8732 action pref=100; accept AS-COMCOR
 export:         to AS8732 announce as-piter-ix-msk
+import:         from AS35026 action pref=100; accept AS35026
+export:         to AS35026 announce as-piter-ix-msk
+import:         from AS198675 action pref=100; accept AS198675
+export:         to AS198675 announce as-piter-ix-msk
 remarks:        ~~~~~~~~~~~~~~ BGP communities ~~~~~~~~~~~~~~
 remarks:        * see whois for RIPE/AS50817
 remarks:        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -4744,7 +4751,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2026-07-07T12:12:14Z
+last-modified:  2026-07-13T10:05:25Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5896,7 +5903,7 @@ remarks:        213409 64725 208541 64726 212895 64727
 remarks:        213449 64728 200236 64729 199651 64730
 remarks:        214022 64731 206673 64732 199081 64733
 remarks:        202831 64734 216198 64735 216456 64736
-remarks:        205941 64737
+remarks:        205941 64737 210063 64738
 remarks:        }
 remarks:        [65100-65535] GID - group id
 remarks:        {
@@ -5936,7 +5943,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2026-07-01T02:42:03Z
+last-modified:  2026-07-13T12:56:00Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

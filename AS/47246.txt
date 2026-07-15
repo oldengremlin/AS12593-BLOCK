@@ -45,10 +45,20 @@ import:         from AS57411 action pref=100; accept AS57411
 export:         to AS57411 announce AS-OMTT-SET
 import:         from AS50775 action pref=100; accept AS50775
 export:         to AS50775 announce AS-OMTT-SET
+import:         from AS57411 action pref=100; accept AS57411
+export:         to AS57411 announce AS-OMTT-SET
 import:         from AS43882 action pref=100; accept AS43882
 export:         to AS43882 announce AS-OMTT-SET
 mp-import:      afi ipv6.unicast from AS47165 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS47165 announce AS47246
+remarks:        ********************************************************
+remarks:        You may use communities to control outgoing information
+remarks:        via the route server. The meaning and order of remarks: evaluation is important:
+remarks:        block announcement of a route to a certain peer 0:peer-as
+remarks:        announcement of a route to a certain peer 47246:peer-as
+remarks:        block announcement of a route to all peers 0:47246
+remarks:        announcement of a route to all peers 47246:47246
+remarks:        ********************************************************
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -59,34 +69,17 @@ created:        2008-05-23T12:08:09Z
 last-modified:  2022-04-06T09:09:09Z
 source:         RIPE
 sponsoring-org: ORG-OksL1-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS47246
 country:        RU
 as-name:        OmskTransitTelecom Omskie telekomunikacii Ltd.
-as-num:         AS47246
-country:        RU
-as-name:        null
-as-num:         AS47246
-country:        RU
-as-name:        null
-as-num:         AS47246
-country:        RU
-as-name:        null
-as-num:         AS47246
-country:        RU
-as-name:        null
-as-num:         AS47246
-country:        RU
-as-name:        null
-as-num:         AS47246
-country:        RU
-as-name:        null
-as-num:         AS47246
-country:        RU
-as-name:        null
-as-num:         AS47246
-country:        RU
-as-name:        null
 
 organisation:   ORG-OL37-RIPE
 org-name:       Omskie telekomunikacii Ltd.
@@ -100,5 +93,11 @@ abuse-c:        AO3605-RIPE
 created:        2008-04-14T12:53:48Z
 last-modified:  2026-05-13T05:38:45Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

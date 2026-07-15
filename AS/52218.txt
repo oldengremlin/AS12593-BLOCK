@@ -1,8 +1,10 @@
 aut-num:        AS52218
 as-name:        CHYUS-NET-AS
 org:            ORG-PCYS1-RIPE
+remarks:        ==== IX`s====
 import:         from AS43222 action pref=50; accept ANY
 export:         to AS43222 announce AS-CHYUS-NET
+remarks:        ==== UpStreams ====
 import:         from AS28761 action pref=90; accept ANY
 export:         to AS28761 announce AS-CHYUS-NET
 import:         from AS8359 action pref=100; accept ANY
@@ -24,10 +26,12 @@ export:         to AS42896 announce AS-CHYUS-NET
 import:         from AS50949 action pref=120; accept ANY
 export:         to AS50949 announce AS-CHYUS-NET
 import:         from AS42896 action pref=120; accept ANY
+export:         to AS42896 announce AS-CHYUS-NET
 import:         from AS21011 action pref=100; accept ANY
 export:         to AS21011 announce AS-CHYUS-NET
 import:         from AS48004 action pref=100; accept ANY
 export:         to AS48004 announce AS-CHYUS-NET
+remarks:        ==== DownStreams ====
 import:         from AS50949 action pref=100; accept AS-AGRONET
 export:         to AS50949 announce ANY
 import:         from AS51917 action pref=100; accept AS-ICENET-UA
@@ -43,13 +47,17 @@ mnt-by:         MNT-CYS
 created:        2011-01-27T15:52:27Z
 last-modified:  2025-06-16T08:46:17Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS52218
 country:        RU
 as-name:        CHYUS-NET-AS Cherkasov Yuriy Sergiyovuch
-as-num:         AS52218
-country:        RU
-as-name:        null
 
 organisation:   ORG-PCYS1-RIPE
 org-name:       Cherkasov Yuriy Sergiyovuch
@@ -63,5 +71,11 @@ mnt-by:         MNT-CYS
 created:        2011-01-21T18:20:21Z
 last-modified:  2026-05-13T06:09:33Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

@@ -2,6 +2,7 @@ as-set:         AS-DINET
 descr:          DINET downstreams
 members:        AS12695
 members:        AS201186
+remarks:        Downstreams
 members:        AS-BYTESERVICE
 members:        AS-GLOBAL-CONSULT
 members:        AS-GT
@@ -24,6 +25,7 @@ members:        AS-SIRIUS
 members:        AS-SRVCORE
 members:        AS-SUPPORTIT
 members:        AS-THEFIRST
+members:        AS-THEFIRST
 members:        AS-TTS
 members:        AS-VOXYS
 members:        AS-ZVEZDA
@@ -35,6 +37,7 @@ members:        AS34121
 members:        AS34192
 members:        AS42151:AS-P24-CLOUD
 members:        AS42661
+members:        AS43297
 members:        AS43297
 members:        AS43696
 members:        AS43912
@@ -84,13 +87,20 @@ members:        AS213787:AS-CLOUDRACK
 members:        AS214881
 members:        AS215096
 members:        AS206224
+members:        AS42151:AS-P24-CLOUD
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 created:        2002-08-06T10:31:28Z
 last-modified:  2026-07-06T10:46:21Z
 source:         RIPE
 mnt-by:         DN-MNT
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 as-set:         AS-DINET-V6
@@ -105,6 +115,7 @@ members:        AS41323
 members:        AS44555
 members:        AS47501
 members:        AS49352
+members:        AS49352
 members:        AS56504
 members:        AS-BITERIKA
 members:        AS199386
@@ -117,6 +128,7 @@ members:        AS-NTX
 members:        AS205125
 members:        AS211849
 members:        AS213787
+remarks:        VISIUM MEDIA LLC
 members:        AS50619
 members:        AS42151:AS-P24-CLOUD
 admin-c:        DUMY-RIPE
@@ -125,7 +137,13 @@ mnt-by:         DN-MNT
 created:        2010-04-05T09:26:07Z
 last-modified:  2025-12-05T13:41:28Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 as-set:         AS-MXTEL
@@ -140,7 +158,13 @@ mnt-by:         RIPE-DB-MNT
 created:        2009-07-30T07:29:10Z
 last-modified:  2020-02-19T09:16:07Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 as-set:         AS-NTP
@@ -153,7 +177,13 @@ mnt-by:         DN-MNT
 created:        2019-09-16T08:18:11Z
 last-modified:  2019-09-16T08:18:11Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 as-set:         AS-SLAVIYA
@@ -167,24 +197,68 @@ mnt-by:         DN-MNT
 created:        2020-01-21T14:25:23Z
 last-modified:  2020-01-21T15:56:02Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS12695
 as-name:        DINET-AS
 org:            ORG-DNJ1-RIPE
+remarks:        Moscow, Russia
+remarks:        http://www.di-net.ru
+remarks:
+remarks:        ---------------------------------------------
+remarks:
+remarks:        IPv4 Routing Policy
+remarks:        ---------------------------------------------
+remarks:
+remarks:        ============================================
+remarks:        Upstreams
+remarks:        --------------------------------------------
 import:         { from AS3216 action pref=200; from AS8359 action pref=200; from AS8732 action pref=200; from AS31133 action pref=200; accept ANY; }
 export:         { to AS3216 to AS8359 to AS8732 to AS31133 announce AS-DINET^+; }
+remarks:
+remarks:        =============================================
+remarks:        MSK-IX Peers
+remarks:        ---------------------------------------------
 import:         { from AS12695:PRNG-MSK-IX action pref=400; accept AS12695:FLTR-PEERS-IN; }
 export:         { to AS8631 announce AS-DINET; to AS12695:PRNG-MSK-IX announce AS-DINET^+; }
+remarks:
+remarks:        =============================================
+remarks:        PITER-IX Peers
+remarks:        ---------------------------------------------
 import:         { from AS12695:PRNG-PITER-IX action pref=400; accept AS12695:FLTR-PEERS-IN; }
 export:         { to AS49869 announce AS-DINET; to AS12695:PRNG-PITER-IX announce AS-DINET^+; }
+remarks:
+remarks:        =============================================
+remarks:
+remarks:        ===============================================
+remarks:        Peers
+remarks:        -----------------------------------------------
+remarks:
 import:         from AS6777 action pref=390; accept ANY AND NOT <^[AS21414]>
 export:         to AS6777 action community .= { 6777:6777, 6777:21414, 6777:20485 }; announce AS-DINET
+remarks:
+remarks:        ==============================================
+remarks:        IPv6 Routing Policy
+remarks:        ----------------------------------------------
+remarks:
+remarks:        ===============================================
+remarks:        Upstreams
+remarks:        -----------------------------------------------
 mp-import:      afi ipv6.unicast from AS9002 action pref=340; accept ANY
 mp-export:      afi ipv6.unicast to AS9002 announce AS-DINET-V6
 mp-import:      afi ipv6.unicast from AS6939 action pref=340; accept ANY
 mp-export:      afi ipv6.unicast to AS6939 announce AS-DINET-V6
+remarks:
+remarks:        ===============================================
+remarks:        Peers
+remarks:        -----------------------------------------------
 mp-import:      afi ipv6.unicast from AS13030 action pref=400; accept ANY
 mp-export:      afi ipv6.unicast to AS13030 announce AS-DINET-V6
 mp-import:      afi ipv6.unicast from AS1764 action pref=400; accept ANY
@@ -215,10 +289,112 @@ mp-import:      afi ipv6.unicast from AS8631 action pref=400; accept AS-MSKROUTE
 mp-export:      afi ipv6.unicast to AS8631 announce AS-DINET-V6
 mp-import:      afi ipv6.unicast from AS43690 action pref=400; accept AS-SPBROUTESERVER
 mp-export:      afi ipv6.unicast to AS43690 announce AS-DINET-V6
+remarks:
+remarks:        ==============================================
+remarks:        Downstreams
+remarks:        ----------------------------------------------
 mp-import:      afi ipv6.unicast from AS29182 action pref=700; accept AS29182
 mp-export:      afi ipv6.unicast to AS29182 announce ANY
 mp-import:      afi ipv6.unicast from AS34123 action pref=700; accept AS-NETORN
 mp-export:      afi ipv6.unicast to AS34123 announce ANY
+remarks:        ===============================================
+remarks:
+remarks:        Communities are accepted only to customers
+remarks:
+remarks:        ----------------------------------------------
+remarks:        Advertisement scope control
+remarks:        ----------------------------------------------
+remarks:
+remarks:        6550x:<ASN> - do action 'x' for AS<ASN>
+remarks:        6551x:<z> - do action 'x' for zone<z>
+remarks:
+remarks:        here 'x' may be:
+remarks:        x=0 - advertise with no changes
+remarks:        x=1,2,3,5 - advertise with 1,2,3,5 prepends
+remarks:        x=7 - advertise with no-export community
+remarks:        x=9 - do not advertise
+remarks:
+remarks:        Valid zones:
+remarks:        0 - the whole world
+remarks:        1 - all customers
+remarks:        2 - all upstreams
+remarks:        3 - all peers
+remarks:        4 - MSK-IX RS/peers
+remarks:        5 - DE-CIX RS/peers
+remarks:        6 - AMS-IX RS/peers
+remarks:        7 - DATA-IX RS
+remarks:
+remarks:        Valid<ASN>
+remarks:        Upstreams:
+remarks:        3216 - Beeline
+remarks:        8732 - COMCOR
+remarks:        8359 - MTS
+remarks:        31133 - MEGAFON
+remarks:        Peers:
+remarks:        50952 - DATA-IX RS
+remarks:        47764 - Mail.ru
+remarks:        47541 - VKontakte
+remarks:        42861 - Prime Line
+remarks:        31500 - GlobalNet
+remarks:        29076 - Filanko
+remarks:        13238 - Yandex
+remarks:        200350 - Yandex.Cloud (use 64815 for community)
+remarks:        200976 - Smotreshka (use 65100 for community)
+remarks:        9049 - ER-Telecom
+remarks:        15169 - Google
+remarks:        48347 - MTW
+remarks:        28917 - Fiord
+remarks:        41722 - Miran
+remarks:        21011 - TopNet
+remarks:        20392 - DataLine (AS203921)
+remarks:        29124 - Iskratelecom
+remarks:        8641 - Nauka Svyaz
+remarks:        50473 - Eco Telecom
+remarks:        210756 - G-CORE (use 64769 for community)
+remarks:        39153 - ALMATEL
+remarks:        35598-INETCOM
+remarks:        200976 - SMOTRESHKA
+remarks:        57629 - IVI.RU
+remarks:        29319 - IMSYS
+remarks:        49869 - PITER-IX (one community for all PITER-IX RS's [MSK,SPb,HEL,FRA]
+remarks:
+remarks:        ----------------------------------------------
+remarks:        Local preference control
+remarks:        ----------------------------------------------
+remarks:
+remarks:        12695:11 - decrease local preference by 100
+remarks:        12695:13 - decrease local preference by 300
+remarks:        12695:14 - decrease local preference by 400
+remarks:        12695:16 - decrease local preference by 600
+remarks:        12695:666 - blackhole
+remarks:
+remarks:        ----------------------------------------------
+remarks:        Local preference used within AS12695
+remarks:        ----------------------------------------------
+remarks:
+remarks:        1000 - locally originated aggregate route
+remarks:        900 - locally originated specific route
+remarks:        800 - more preferred customer route
+remarks:        700 - regular customer route
+remarks:        600 - customer backup # 1 route
+remarks:        400 - customer backup # 2 route
+remarks:        400 - peer route
+remarks:        300 - customer fallback
+remarks:        200 - transit route
+remarks:        100 - backup route
+remarks:        1 - bogus route
+remarks:
+remarks:        ----------------------------------------------
+remarks:        Notes
+remarks:        ----------------------------------------------
+remarks:
+remarks:        Any other 12695:*, 6540x:*, 6541x:*, 6550x:* and 6551x:*
+remarks:        communities are removed on input.
+remarks:        All other *:* communities are passed intact.
+remarks:        None of own communities are accepted to peers/upstreams
+remarks:        We do accept MED attribute.
+remarks:
+remarks:        ===============================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         ncc@tech.ru
@@ -228,7 +404,13 @@ mnt-by:         DN-MNT
 created:        2002-08-06T10:41:40Z
 last-modified:  2025-12-24T15:23:43Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS197468
@@ -246,7 +428,13 @@ mnt-by:         DN-MNT
 created:        2010-12-14T09:36:24Z
 last-modified:  2022-05-05T15:35:02Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS198615
@@ -265,7 +453,13 @@ mnt-by:         DN-MNT
 created:        2012-03-23T13:47:31Z
 last-modified:  2026-07-03T11:51:59Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS200524
@@ -287,7 +481,13 @@ mnt-by:         DN-MNT
 created:        2015-06-16T09:06:24Z
 last-modified:  2022-05-05T15:35:02Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS201186
@@ -303,7 +503,13 @@ mnt-by:         DN-MNT
 created:        2015-01-02T08:39:18Z
 last-modified:  2021-06-28T11:59:44Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS201564
@@ -326,7 +532,13 @@ created:        2014-09-22T09:57:39Z
 last-modified:  2018-09-04T11:28:56Z
 source:         RIPE
 sponsoring-org: ORG-DNJ1-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS201974
@@ -346,7 +558,13 @@ mnt-by:         DN-MNT
 created:        2022-10-21T14:36:53Z
 last-modified:  2026-04-08T11:07:39Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS202432
@@ -361,7 +579,13 @@ created:        2018-05-17T08:29:09Z
 last-modified:  2025-09-09T21:50:43Z
 source:         RIPE
 sponsoring-org: ORG-DNJ1-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS204217
@@ -382,7 +606,13 @@ created:        2016-02-08T10:03:45Z
 last-modified:  2020-11-16T17:52:05Z
 source:         RIPE
 sponsoring-org: ORG-DNJ1-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS204525
@@ -401,28 +631,57 @@ created:        2018-02-23T08:45:34Z
 last-modified:  2020-11-16T17:52:16Z
 source:         RIPE
 sponsoring-org: ORG-DNJ1-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS204941
 as-name:        TGS-AS
 org:            ORG-TGS20-RIPE
+remarks:        TGS uplinks/connected-ixs/customers:
+remarks:        -------------------------------------------------------
+remarks:
+remarks:        ---------------- UPLINKS: -----------------------------
+remarks:        -------------------------------------------------------
+remarks:        .................NAUKANET..............................
 import:         from AS8641 action pref=210; accept ANY
 export:         to AS8641 announce AS-CGNET
+remarks:        .................GLOBALNET.............................
 import:         from AS31500 action pref=180; accept AS-GLOBAL-NET
 export:         to AS31500 announce AS-CGNET
+remarks:        .................TRANSROUTE............................
 import:         from AS50509 action pref=140; accept ANY
 export:         to AS50509 announce AS-CGNET
+remarks:        -------------------------------------------------------
+remarks:        ----------------- IXs: --------------------------------
+remarks:        -------------------------------------------------------
+remarks:        .................msk-piterix...........................
 import:         from AS49869 action pref=300; accept ANY
 export:         to AS49869 announce AS-CGNET
+remarks:        -------------------------------------------------------
+remarks:        -------------- CUSTOMERS: -----------------------------
+remarks:        -------------------------------------------------------
+remarks:        TELEMEDNET
 import:         from AS41109 accept AS41109
 export:         to AS41109 announce ANY
+remarks:        EPL
 import:         from AS43714 accept AS43714
+export:         to AS41109 announce ANY
+remarks:        RU-SHARK-AS
 import:         from AS49371 accept AS49371
 export:         to AS49371 announce ANY
+remarks:        INET-RU
 import:         from AS59734 accept AS59734
+remarks:        INET-TELECOM-AS
 import:         from AS197971 accept AS197971
+remarks:        BEST-LINE
 import:         from AS207676 accept AS207676
+remarks:        COMPANY-TELECOM
 import:         from AS210063 accept AS210063
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -434,7 +693,13 @@ created:        2017-12-04T10:57:56Z
 last-modified:  2025-05-20T13:36:26Z
 source:         RIPE
 sponsoring-org: ORG-DNJ1-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS208252
@@ -453,7 +718,13 @@ mnt-by:         DN-MNT
 created:        2026-05-21T08:50:48Z
 last-modified:  2026-05-21T08:50:48Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS210725
@@ -477,7 +748,13 @@ mnt-by:         DN-MNT
 created:        2021-09-23T08:16:56Z
 last-modified:  2021-09-29T13:37:57Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS214362
@@ -497,7 +774,13 @@ mnt-by:         MYGAMES-MENA-MNT
 created:        2026-05-18T07:58:54Z
 last-modified:  2026-05-18T07:58:54Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS219405
@@ -517,7 +800,13 @@ mnt-by:         BKGARANTIYA-MNT
 created:        2026-06-18T12:23:51Z
 last-modified:  2026-06-18T12:23:51Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS24684
@@ -538,7 +827,13 @@ created:        2005-07-20T11:52:06Z
 last-modified:  2026-01-19T08:45:51Z
 source:         RIPE
 sponsoring-org: ORG-DNJ1-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS48946
@@ -561,7 +856,13 @@ created:        2009-03-04T10:54:16Z
 last-modified:  2026-02-09T11:25:46Z
 source:         RIPE
 sponsoring-org: ORG-DNJ1-RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 
 aut-num:        AS57639
@@ -580,6 +881,12 @@ mnt-by:         MNT-NTP
 created:        2011-12-22T12:37:37Z
 last-modified:  2022-05-05T15:35:02Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 

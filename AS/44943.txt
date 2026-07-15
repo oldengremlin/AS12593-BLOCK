@@ -2,6 +2,7 @@ aut-num:        AS44943
 as-name:        RAMNET-AS
 descr:          Internet Service Provider "RamNet"
 org:            ORG-RL79-RIPE
+remarks:        --------- IPv4 UPSTREAMS ------------
 import:         from AS57304 action pref=100; accept ANY # RETN
 export:         to AS57304 announce AS-RAMNET
 import:         from AS20485 action pref=100; accept ANY # TTK
@@ -10,8 +11,10 @@ import:         from AS31500 action pref=100; accept ANY # GLOBALNET
 export:         to AS31500 announce AS-RAMNET
 import:         from AS3216 action pref=100; accept ANY # BeeLine
 export:         to AS3216 announce AS-RAMNET
+remarks:        -------- IPv6 UPSTREAMS ---------
 mp-import:      afi ipv6.unicast from AS57304 action pref=100; accept ANY # RETN v6
 mp-export:      afi ipv6.unicast to AS57304 announce AS-RAMNET6 # RETN v6
+remarks:        -------- IPv4 PEERINGS ----------
 import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER # MSK-IX
 export:         to AS8631 announce AS-RAMNET
 import:         from AS50952 action pref=200; accept AS-DATAIX # Data-IX
@@ -24,6 +27,7 @@ import:         from AS47764 action pref=300; accept AS-MAILRU # Mail.RU
 export:         to AS47764 announce AS-RAMNET
 import:         from AS48061 action pref=300; accept AS48061 # Gazprom Media
 export:         to AS48061 announce AS-RAMNET
+remarks:        -------- IPv6 PEERINGS ----------
 mp-import:      afi ipv6.unicast from AS8631 action pref=300; accept ANY # MSK-IX
 mp-export:      afi ipv6.unicast to AS8631 announce AS-RAMNET6 # MSK-IX
 mp-import:      afi ipv6.unicast from AS50952 action pref=300; accept AS-DATAIX # Data-IX
@@ -34,6 +38,7 @@ mp-import:      afi ipv6.unicast from AS13238 action pref=300; accept AS-YANDEX 
 mp-export:      afi ipv6.unicast to AS13238 announce AS-RAMNET6 # Yandex
 mp-import:      afi ipv6.unicast from AS47764 action pref=300; accept AS-MAILRU6 # Mail.RU
 mp-export:      afi ipv6.unicast to AS47764 announce AS-RAMNET6 # Mail.RU
+remarks:        ---------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -43,13 +48,17 @@ mnt-by:         RIPE-NCC-END-MNT
 created:        2008-04-04T12:31:41Z
 last-modified:  2025-09-18T13:08:57Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS44943
 country:        RU
 as-name:        RAMNET-AS Ramtel Ltd.
-as-num:         AS44943
-country:        RU
-as-name:        null
 
 organisation:   ORG-RL79-RIPE
 org-name:       Ramtel Ltd.
@@ -65,5 +74,11 @@ abuse-c:        RNOC7-RIPE
 created:        2010-02-22T16:25:37Z
 last-modified:  2026-05-13T07:33:00Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

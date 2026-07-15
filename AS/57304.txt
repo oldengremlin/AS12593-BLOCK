@@ -1,6 +1,11 @@
 aut-num:        AS57304
 as-name:        RETNRU-AS
 org:            ORG-CA1293-RIPE
+remarks:
+remarks:        ---------------------------------------------------------------
+remarks:        ****************** ReTN IPv4 Routing Policy *******************
+remarks:        ---------------------------------------------------------------
+remarks:
 import:         from   AS1299 action pref=200; accept   AS1299:AS-TWELVE99-V4
 export:         to     AS1299                  announce AS57304:AS-RETN-RU
 import:         from   AS2854 action pref=100; accept   AS-ROSPRINT
@@ -1075,6 +1080,11 @@ import:         from AS219516 action pref=100; accept   AS219516
 export:         to   AS219516                  announce ANY
 import:         from AS273045 action pref=100; accept   AS273045
 export:         to   AS273045                  announce ANY
+remarks:
+remarks:        ---------------------------------------------------------------
+remarks:        ****************** ReTN IPv6 Routing Policy *******************
+remarks:        ---------------------------------------------------------------
+remarks:
 mp-import:      afi ipv6.unicast from   AS1299 action pref=200; accept   AS1299:AS-TWELVE99-V6
 mp-export:      afi ipv6.unicast to     AS1299                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from   AS2854 action pref=100; accept   AS-OBSRUSSIA6
@@ -1633,6 +1643,40 @@ mp-import:      afi ipv6.unicast from AS216262 action pref=100; accept   AS21626
 mp-export:      afi ipv6.unicast to   AS216262                  announce ANY
 mp-import:      afi ipv6.unicast from AS216365 action pref=100; accept   AS216365
 mp-export:      afi ipv6.unicast to   AS216365                  announce ANY
+remarks:
+remarks:        ---------------------------------------------------------------
+remarks:        ****************** ReTN bgp confederation *********************
+remarks:        ---------------------------------------------------------------
+remarks:        -  AS9002
+remarks:        -  AS14947
+remarks:        -  AS25462
+remarks:        -  AS28886
+remarks:        -  AS29470
+remarks:        -  AS44877
+remarks:        -  AS51327
+remarks:        -  AS57304
+remarks:        -  AS60392
+remarks:        -  AS133405
+remarks:        -  AS134518
+remarks:        -  AS139903
+remarks:        -  AS150003
+remarks:        -  AS198947
+remarks:        -  AS209447
+remarks:        -  AS210203
+remarks:        -  AS214455
+remarks:        -  AS214845
+remarks:        ---------------------------------------------------------------
+remarks:        ********************* Contacts and URLs ***********************
+remarks:        ---------------------------------------------------------------
+remarks:        Routing issues                   ncc at retn.ru
+remarks:        Peering issues and requests      peering at retn.ru
+remarks:        SPAM and security issues         abuse at retn.ru
+remarks:        Web Site                         http://retn.ru
+remarks:        Looking Glass                    http://lg.retn.ru
+remarks:        BGP communities list             http://retn.ru/bgp-communities
+remarks:        or                       http://lg.retn.ru/bgp-communities.html
+remarks:        ---------------------------------------------------------------
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -1642,13 +1686,17 @@ notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
 last-modified:  2026-07-10T19:59:09Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS57304
 country:        RU
 as-name:        RETNRU-AS JSC "RetnNet"
-as-num:         AS57304
-country:        RU
-as-name:        null
 
 organisation:   ORG-CA1293-RIPE
 org-name:       JSC "RetnNet"
@@ -1665,5 +1713,11 @@ mnt-by:         MNT-RETNRU
 created:        2013-03-21T10:46:45Z
 last-modified:  2026-05-13T07:34:47Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

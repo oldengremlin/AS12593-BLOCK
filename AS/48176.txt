@@ -1,8 +1,47 @@
 aut-num:        AS48176
 as-name:        OOOSET-AS
 org:            ORG-ZM1-RIPE
+remarks:        +--------------------------------------------------------------------------------+
+remarks:        | Community
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Local PEERs
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        |
+remarks:        | 48176:500 - Set local preference 150
+remarks:        | 48176:600 - Set local preference 200
+remarks:        | 48176:900 - Set local preference 50
+remarks:        |
+remarks:        | Default local preference for Customer is 100
+remarks:        |
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Community to UPLINKS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 48176:400x - Google Global Cache
+remarks:        | 48176:500x - MTS (AS8359)
+remarks:        |
+remarks:        | x = 0 - don't advertise
+remarks:        | x = 1 - advertise
+remarks:        | x = 3,5 - prepend (3 or 5) times
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 48176:0 - local peering (don't any advertise)
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Default community: 48176:4001 48176:5000
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | UPLINKS
+remarks:        +-------------------------------------------------------------------------------+
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-OOO-NET
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | DOWNLINKS
+remarks:        +-------------------------------------------------------------------------------+
 import:         from AS57579 accept AS57579
 import:         from AS50671 accept AS50671
 import:         from AS204169 accept AS204169
@@ -17,6 +56,10 @@ export:         to AS208991 announce ANY
 export:         to AS21030 announce ANY
 export:         to AS44963 announce {0.0.0.0/0}
 export:         to AS204495 announce ANY
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | LOCAL PEERs
+remarks:        +-------------------------------------------------------------------------------+
 import:         from AS49325 accept AS49325
 export:         to AS49325 announce AS-OOO-NET
 import:         from AS13077 accept AS13077
@@ -29,6 +72,8 @@ import:         from AS49107 accept AS49107
 export:         to AS49107 announce AS-OOO-NET
 import:         from AS202852 accept AS202852
 export:         to AS202852 announce AS-OOO-NET
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -38,13 +83,17 @@ mnt-by:         OOOSET-MNT
 created:        2008-10-22T08:59:01Z
 last-modified:  2026-01-22T08:49:39Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS48176
 country:        RU
 as-name:        OOOSET-AS MTS PJSC
-as-num:         AS48176
-country:        RU
-as-name:        null
 
 organisation:   ORG-ZM1-RIPE
 org-name:       MTS PJSC
@@ -60,5 +109,11 @@ mnt-by:         MTU-NOC
 created:        2004-04-17T11:55:44Z
 last-modified:  2026-05-13T07:31:05Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
