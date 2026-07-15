@@ -1,26 +1,49 @@
 aut-num:        AS21140
 as-name:        FLY-TELECOM-AS
 org:            ORG-FTL25-RIPE
+remarks:        ---------------------------------------------------
+remarks:        Upstreams v4
+remarks:        ---------------------------------------------------
+remarks:        RETN
 import:         from AS9002 accept ANY
 export:         to AS9002 announce AS-FLYTELECOM
+remarks:        NAUKANET
 import:         from AS8641 accept ANY
 export:         to AS8641 announce AS-FLYTELECOM
+remarks:        INETCOM
 import:         from AS35598 accept ANY
 export:         to AS35598 announce AS-FLYTELECOM
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Peering v4
+remarks:        ---------------------------------------------------
+remarks:        PITER-IX
 import:         from AS49869 accept ANY
 export:         to AS49869 announce AS-FLYTELECOM
+remarks:        DATA-IX
 import:         from AS50952 accept ANY
 export:         to AS50952 announce AS-FLYTELECOM
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Upstreams v6
+remarks:        ---------------------------------------------------
+remarks:        RETN
 mp-import:      afi ipv6.unicast from AS9002 accept ANY
 mp-export:      afi ipv6.unicast to AS9002 announce AS-FLYTELECOM
+remarks:        NAUKANET
 mp-import:      afi ipv6.unicast from AS8641 accept ANY
 mp-export:      afi ipv6.unicast to AS8641 announce AS-FLYTELECOM
+remarks:        INETCOM
 mp-import:      afi ipv6.unicast from AS35598 accept ANY
 mp-export:      afi ipv6.unicast to AS35598 announce AS-FLYTELECOM
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+remarks:        Peering v6
+remarks:        ---------------------------------------------------
+remarks:        Piter-IX
 mp-import:      afi ipv6.unicast from AS49869 accept ANY
 mp-export:      afi ipv6.unicast to AS49869 announce AS-FLYTELECOM
+remarks:        DATA-IX
 mp-import:      afi ipv6.unicast from AS50952 accept ANY
 mp-export:      afi ipv6.unicast to AS50952 announce AS-FLYTELECOM
+remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -30,6 +53,13 @@ mnt-by:         MNT-FLY-TELECOM
 created:        2015-07-23T15:19:58Z
 last-modified:  2025-09-15T03:06:25Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS21140
 country:        RU
@@ -50,5 +80,11 @@ mnt-by:         ru-fly-tel-net-1-mnt
 created:        2017-07-10T17:44:18Z
 last-modified:  2026-05-13T07:38:16Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

@@ -2,6 +2,9 @@ aut-num:        AS47989
 as-name:        MOSINFOCOM-AS
 descr:          Mosinfocom Llc
 org:            ORG-ML104-RIPE
+remarks:        --------------------------------------------
+remarks:        UPSTREAMS
+remarks:        --------------------------------------------
 import:         from AS20485 action pref=100; accept ANY
 export:         to AS20485 announce AS-MOSINFOCOM
 import:         from AS31133 action pref=100; accept ANY
@@ -12,18 +15,81 @@ import:         from AS47747 action pref=100; accept ANY
 export:         to AS47747 announce AS-MOSINFOCOM
 descr:          ---
 descr:          PEERING at MSK-IX, SPB-IX and direct links:
+descr:          ---
 import:         from AS8631 action pref=50; accept ANY
 export:         to AS8631 announce AS-MOSINFOCOM
+remarks:        --------------------------------------------
+remarks:        Customers
+remarks:        --------------------------------------------
 import:         from AS56555 action pref=20; accept ANY
 export:         to AS56555 announce AS-MOSINFOCOM
+remarks:        --------------------------------------------
+remarks:        ***************************
+remarks:        +-------------------------------------------------------
+remarks:        | MANAGEMENT COMMUNITIES
+remarks:        |
+remarks:        | New-style communities
+remarks:        |
+remarks:        | 47989:2XXY
+remarks:        | XX - Where to manage
+remarks:        | Y - Action
+remarks:        |
+remarks:        | XX =
+remarks:        | 00 - inside AS47989 (Y=0 and Y=9 is only applicable values)
+remarks:        | 01 - Reserved
+remarks:        | 02 - Reserved
+remarks:        | 03 - Reserved
+remarks:        | 04 - Reserved
+remarks:        | 06 - Megafon AS31133
+remarks:        | 09 - CloudFlare AS13335
+remarks:        | 10 - Rostelecom AS12389
+remarks:        | 11 - Transtelecom AS20485
+remarks:        | 12 - Google AS15169
+remarks:        | 13 - Microsoft AS8075
+remarks:        | Y =
+remarks:        | 0 - Don't announce (47989:2000 - do not announce to any upstream and customer)
+remarks:        | 1,2,3,4 - Set AS path prepend 1,2,3,4 times
+remarks:        | 9 - set the lowest Localpref(only inside AS47989)
+remarks:        +-------------------------------------------------------
+remarks:        | ROUTE ORIGIN TAGGING COMMUNITIES
+remarks:        |
+remarks:        | New-style communities
+remarks:        |
+remarks:        | 47989:10XX - AS47989 and BGP customer routes
+remarks:        |
+remarks:        | XX =
+remarks:        | 00 - All upstream operators
+remarks:        | 01 - Reserved
+remarks:        | 02 - Reserved
+remarks:        | 03 - Reserved
+remarks:        | 04 - Reserved
+remarks:        | 06 - Originated from AS31133
+remarks:        | 09 - Originated from as13335
+remarks:        | 10 - Originated from AS12389
+remarks:        | 11 - Originated from AS20485
+remarks:        | 55 - Obtained from BGP customer
+remarks:        +-------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
+remarks:        ------------------------------------------
+remarks:        We are filtering prefixes longer than /24
+remarks:        ------------------------------------------
+remarks:        ------------------------------------------
+remarks:        General questions: support@mosinfocom.ru<mailto:support@mosinfocom.ru> Spam, abuse: abuse@mosinfocom.ru<mailto:abuse@mosinfocom.ru> Routing, DNS, security: noc@mosinfocom.ru<mailto:noc@mosinfocom.ru>
+remarks:        ------------------------------------------
 mnt-by:         MOSINFOCOM-MNT
 created:        2008-09-25T11:44:26Z
 last-modified:  2025-02-12T13:39:49Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS47989
 country:        RU
@@ -43,5 +109,11 @@ mnt-by:         MOSINFOCOM-MNT
 created:        2008-08-19T11:20:23Z
 last-modified:  2026-05-13T07:21:53Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

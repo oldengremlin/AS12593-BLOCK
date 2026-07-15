@@ -3,6 +3,9 @@ org:            ORG-FTL2-RIPE
 as-name:        FTELECOM-AS
 descr:          Vorontsovskaya str., 35b, building 2
 descr:          Moscow, Russia
+remarks:        --------------------------------
+remarks:        Uplinks
+remarks:        --------------------------------
 import:         from AS28917 93.191.9.232 at 93.191.9.233 action pref=90; accept ANY
 export:         to AS28917 93.191.9.232 at 93.191.9.233 announce AS-FTELECOM
 import:         from AS28917 93.191.9.234 at 93.191.9.235 action pref=90; accept ANY
@@ -17,6 +20,9 @@ import:         from AS31500 109.239.137.254 at 109.239.136.128 action pref=140;
 export:         to AS31500 109.239.137.254 at 109.239.136.128 announce AS-FTELECOM
 mp-import:      afi ipv6.unicast from AS28917 2a02:2518:0:25:0:3:9156:1 at 2a02:2518:0:25:0:3:9156:2 action pref=140; accept ANY
 mp-export:      afi ipv6.unicast to AS28917 2a02:2518:0:25:0:3:9156:1 at 2a02:2518:0:25:0:3:9156:2 announce AS-FTELECOM
+remarks:        -----------------------------
+remarks:        Customers
+remarks:        -----------------------------
 import:         from AS31183 action pref=50; accept AS31183
 export:         to AS31183 announce ANY AND {0.0.0.0/0}
 import:         from AS198819 action pref=50; accept AS198819
@@ -31,6 +37,7 @@ import:         from AS207024 action pref=50; accept AS207024
 export:         to AS207024 announce ANY
 mp-import:      afi ipv6.unicast from AS207024 action pref=50; accept AS207024
 mp-export:      afi ipv6.unicast to AS207024 announce ANY
+remarks:        -----------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -40,6 +47,13 @@ mnt-by:         FTELECOM-MNT
 created:        2005-12-23T08:40:50Z
 last-modified:  2019-06-25T14:45:13Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS39156
 country:        RU
@@ -59,5 +73,11 @@ mnt-by:         FTELECOM-MNT
 created:        2005-12-15T14:32:10Z
 last-modified:  2026-05-13T07:31:13Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

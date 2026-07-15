@@ -1,6 +1,7 @@
 aut-num:        AS49722
 as-name:        SP-LINE-AS
 org:            ORG-SLL10-RIPE
+remarks:        ******* UPLINKS *******
 import:         from AS35598 action pref=100; accept ANY
 import:         from AS31133 action pref=100; accept ANY
 import:         from AS31500 action pref=100; accept ANY
@@ -11,14 +12,19 @@ export:         to AS31133 announce AS-SP-LINE
 export:         to AS31500 announce AS-SP-LINE
 export:         to AS8641 announce AS-SP-LINE
 export:         to AS50509 announce AS-SP-LINE
+remarks:        ******* DataIX *******
 import:         from AS50952 action pref=150; accept AS-DATAIX
 export:         to AS50952 announce AS-SP-LINE
+remarks:        ******* PITER-IX SPB *******
 import:         from AS50817 action pref=150; accept AS-PITER-IX
 export:         to AS50817 announce AS-SP-LINE
+remarks:        ******* PITER-IX MSK *******
 import:         from AS49869 action pref=150; accept AS-PITER-IX
 export:         to AS49869 announce AS-SP-LINE
+remarks:        ******* CLIENTS *******
 import:         from AS51093 action pref=200; accept AS-VMCITY
 export:         to AS51093 announce ANY
+remarks:        ******* *******
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -30,6 +36,13 @@ created:        2009-08-27T15:36:00Z
 last-modified:  2023-03-28T07:30:56Z
 source:         RIPE
 sponsoring-org: ORG-VL328-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS49722
 country:        RU
@@ -48,5 +61,11 @@ mnt-by:         MNT-VMCITY
 created:        2009-07-07T07:56:18Z
 last-modified:  2026-05-13T05:41:19Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

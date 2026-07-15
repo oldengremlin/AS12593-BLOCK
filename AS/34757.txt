@@ -1,10 +1,12 @@
 aut-num:        AS34757
 as-name:        SIBSET-NSK-AS
 org:            ORG-CNL7-RIPE
+remarks:        ----- Upstreams -----
 import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-SIBSET
 import:         from AS3216 action pref=100; accept ANY
 export:         to AS3216 announce AS-SIBSET
+remarks:        ------ Customers -------
 import:         from AS15508 action pref=200; accept AS15508
 export:         to AS15508 announce ANY
 import:         from AS60119 action pref=200; accept AS60119
@@ -21,8 +23,10 @@ import:         from AS201037 action pref=200; accept AS201037
 export:         to AS201037 announce ANY
 import:         from AS3335 action pref=200; accept AS3335
 export:         to AS3335 announce ANY
+remarks:        ------ Peers -------
 import:         from AS28709 action pref=200; accept AS-VKONTAKTE
 export:         to AS28709 announce AS-SIBSET
+remarks:        ------ NSK-IX -------
 import:         from AS42403 action pref=200; accept AS-NSKROUTESERVER
 export:         to AS42403 announce AS-SIBSET
 import:         from AS5387 action pref=200; accept AS-NSC-NSKIX-SET
@@ -35,10 +39,17 @@ import:         from AS31738 action pref=200; accept AS-NSTU
 export:         to AS31738 announce AS-SIBSET
 import:         from AS31200 action pref=200; accept AS-RUNTK-SET
 export:         to AS31200 announce AS-SIBSET
+remarks:        ------ IPv6 -------
+remarks:        ----- Upstreams -----
 mp-import:      afi ipv6.unicast from AS31133 accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS-SIBSET
+remarks:        ------ Peers -------
 mp-import:      afi ipv6.unicast from as42403 action pref=200; accept AS-NSKROUTESERVER
 mp-export:      afi ipv6.unicast to as42403 announce AS-SIBSET
+remarks:        ----- BGP communities -----
+remarks:        34757:65535 blackhole community
+remarks:        Export your blackhole prefixes from /24 to /32
+remarks:        --------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -47,6 +58,13 @@ mnt-by:         SIBSET-MNT
 created:        2005-03-30T11:11:43Z
 last-modified:  2026-06-05T04:38:48Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS34757
 country:        RU
@@ -66,5 +84,11 @@ mnt-by:         SIBSET-MNT
 created:        2006-05-23T10:11:04Z
 last-modified:  2026-05-13T07:13:06Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

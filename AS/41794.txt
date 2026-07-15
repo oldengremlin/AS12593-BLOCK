@@ -1,15 +1,19 @@
 aut-num:        AS41794
 as-name:        SIBSET-BARN-AS
+remarks:        ----- Upstreams -----
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-SIBSET-BARN
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-SIBSET-BARN
+remarks:        ------ Customers -------
 import:         from AS209067 accept AS-AVIVA-TELECOM
 export:         to AS209067 announce ANY
 import:         from AS212022 accept AS212022
 export:         to AS212022 announce ANY
+remarks:        ------ NSK-IX -------
 import:         from AS42403 action pref=900; accept AS-NSKROUTESERVER
 export:         to AS42403 announce AS-SIBSET-BARN
+remarks:        ------ KRS-IX -------
 import:         from AS60430 action pref=900; accept AS-RED-IX-PEERS
 export:         to AS60430 announce AS-SIBSET-BARN
 org:            ORG-CNL7-RIPE
@@ -21,6 +25,13 @@ mnt-by:         SIBSET-MNT
 created:        2006-10-25T15:08:09Z
 last-modified:  2026-04-09T01:26:51Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS41794
 country:        RU
@@ -40,5 +51,11 @@ mnt-by:         SIBSET-MNT
 created:        2006-05-23T10:11:04Z
 last-modified:  2026-05-13T07:13:06Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

@@ -1,18 +1,32 @@
 aut-num:        AS42765
 as-name:        LINER
 org:            ORG-ESL29-RIPE
+remarks:        ------------------ Uplinks (localpref=100) ------------------
+remarks:        Name: GLOBALNET
 import:         from AS31500 action pref=100; accept ANY;
 export:         to AS31500 announce AS-LINER;
+remarks:        ------------------ CLOUD-IX (localpref=150) ------------------
+remarks:        Name: Route-Server
 import:         from AS29076 action pref=150; accept ANY;
 export:         to AS29076 announce AS-LINER;
+remarks:        ------------------ DATA-IX (localpref=210) ------------------
+remarks:        Name: Route-Server
 import:         from AS50952 action pref=210; accept AS-DATAIX;
 export:         to AS50952 announce AS-LINER;
+remarks:        ------------------ SPB-IX (localpref=210) ------------------
+remarks:        Name: Route-Server
 import:         from AS43690 action pref=210; accept AS-SPBROUTESERVER;
 export:         to AS43690 announce AS-LINER;
+remarks:        ------------------ MSK-IX (localpref=210) ------------------
+remarks:        Name: Route-Server
 import:         from AS8631 action pref=210; accept AS-MSKROUTESERVER;
 export:         to AS8631 announce AS-LINER;
+remarks:        ------------------ PIRIX (localpref=220) ------------------
+remarks:        Name: Route-Server
 import:         from AS48625 action pref=220; accept AS-PIRIX;
 export:         to AS48625 announce AS-LINER;
+remarks:        ------------------ YN (localpref=230) ------------------
+remarks:        Name: Customer Yournet
 import:         from AS47459 action pref=230; accept AS47459;
 export:         to AS47459 announce ANY;
 sponsoring-org: ORG-GNMI1-RIPE
@@ -26,6 +40,13 @@ mnt-by:         mnt-ag-globalnet-1
 created:        2007-04-12T14:47:27Z
 last-modified:  2026-04-13T13:43:34Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS42765
 country:        RU
@@ -44,5 +65,11 @@ mnt-by:         mnt-ag-globalnet-1
 created:        2024-02-08T12:03:48Z
 last-modified:  2026-05-13T06:04:51Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

@@ -5,30 +5,108 @@ descr:          141407, Russia,
 descr:          Moscow region, Khimki,
 descr:          Panfilova St., 19/1
 descr:          Internet Service Provider
+remarks:        ---------------------
+remarks:        MSK-IX Route Server
+remarks:        --------------------
 import:         from AS8631 action pref=900; accept not AS20483:RS-DEFAULT
 export:         to AS8631 action med=100; announce AS20483:AS-ECNET
 import:         from AS8631 action pref=880; accept not AS20483:RS-DEFAULT
 export:         to AS8631 action med=120; announce AS20483:AS-ECNET
+remarks:
+remarks:        *** PEERS ***
+remarks:        ***************
+remarks:        name: FOTONTELECOM
 import:         from AS42861 action pref=800; accept not AS20483:RS-DEFAULT
 export:         to AS42861 action med=120; announce AS20483:AS-ECNET
+remarks:        ***************
+remarks:        name: CLOUDFLARE
 import:         from AS13335 action pref=900; accept not AS20483:RS-DEFAULT
 export:         to AS13335 announce AS20483:AS-ECNET
+remarks:        ***************
+remarks:        name: GOOGLE
 import:         from AS15169 action pref=901; accept not AS20483:RS-DEFAULT
 export:         to AS15169 action med=100; announce AS20483:AS-ECNET
+remarks:        ***************
+remarks:        name: GOOGLE
 import:         from AS15169 action pref=881; accept not AS20483:RS-DEFAULT
 export:         to AS15169 action med=120; announce AS20483:AS-ECNET
+remarks:        ***************
+remarks:        --------------------
+remarks:        COMCOR
+remarks:        --------------------
 import:         from AS8732 action pref=850; accept not AS20483:RS-DEFAULT
 export:         to AS8732 announce AS20483:AS-ECNET
+remarks:        --------------------
+remarks:        RETN
+remarks:        --------------------
 import:         from AS57304 action pref=850; accept not AS20483:RS-DEFAULT
 export:         to AS9002 announce AS20483:AS-ECNET
+remarks:        --------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         EUROCOM-MNT
+remarks:        ---------------------------------------------
+remarks:        !
+remarks:        ! as-set macros, used in AS20483:
+remarks:        !
+remarks:        ! - AS-EURO-COM and AS-EUROCOM
+remarks:        ! EUROCOM ASes
+remarks:        !
+remarks:        ! - AS-ECNET and AS-RTNET
+remarks:        ! EUROCOM and its customers ASes
+remarks:        !
+remarks:        ---------------------------------------------
+remarks:        ---------------------------------------------
+remarks:        !
+remarks:        ! Communities, used for route origin tagging:
+remarks:        !
+remarks:        ! 20483:ABCD
+remarks:        !
+remarks:        ! A:
+remarks:        ! 1 - customers
+remarks:        ! 2 - peers
+remarks:        ! 3 - upstream
+remarks:        ! 4 - ECNET
+remarks:        !
+remarks:        ! B:
+remarks:        ! 0 - RU
+remarks:        ! 1 - INTL
+remarks:        !
+remarks:        ! C:
+remarks:        ! 0 - Type F peer
+remarks:        ! 1 - Type R peer
+remarks:        ! 2 - Type P peer
+remarks:        ! 4 - Type C peer
+remarks:        !
+remarks:        ! D:
+remarks:        ! 0 - KIAE MSK-IX
+remarks:        ! 1 - LYNX
+remarks:        ! 2 - M10
+remarks:        !
+remarks:        ! Communities, currently in use:
+remarks:        !
+remarks:        ! 20483:1040 - KIAE customer peers
+remarks:        ! 20483:2000 - KIAE IX F type peers
+remarks:        ! 20483:2010 - KIAE IX RS peers
+remarks:        ! 20483:2020 - KIAE IX P type peers
+remarks:        ! 20483:2022 - M10 P type peers
+remarks:        ! 20483:3021 - LYNX RU
+remarks:        ! 20483:3121 - LYNX INTL
+remarks:        ! 20483:4000 - ECNET
+remarks:        !
+remarks:        ---------------------------------------------
 created:        2002-09-17T13:51:29Z
 last-modified:  2025-09-30T10:40:14Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS20483
 country:        RU
@@ -48,5 +126,11 @@ mnt-by:         EUROCOM-MNT
 created:        2005-06-27T12:53:23Z
 last-modified:  2026-05-13T07:25:28Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

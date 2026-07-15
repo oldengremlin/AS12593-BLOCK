@@ -1,9 +1,12 @@
 aut-num:        AS31208
 as-name:        MF-CENTER-AS
+remarks:        Central branch of OJSC Megafon
 org:            ORG-OM1-RIPE
+remarks:        -- Upstreams
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS31208
 export:         to AS31133 announce AS-MF-CENTER
+remarks:        -- Clients
 import:         from AS202925 accept AS202925
 export:         to AS31133 announce AS202925
 export:         to AS202925 announce ANY
@@ -52,6 +55,8 @@ export:         to AS44115 announce ANY
 import:         from AS204102 accept AS204102
 export:         to AS31133 announce AS204102
 export:         to AS204102 announce ANY
+export:         to AS31133 announce AS61123
+export:         to AS61123 announce ANY
 import:         from AS52197 accept AS52197
 export:         to AS31133 announce AS52197
 export:         to AS52197 announce ANY
@@ -90,6 +95,8 @@ import:         from AS209794 accept AS209794
 export:         to AS209794 announce ANY
 import:         from AS213681 accept AS213681
 export:         to AS213681 announce ANY
+import:         from AS35479 accept AS35479
+export:         to AS35479 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -101,6 +108,13 @@ mnt-by:         MF-CENTER-MNT
 created:        2004-03-23T09:41:56Z
 last-modified:  2026-05-22T13:14:38Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS31208
 country:        RU
@@ -120,5 +134,11 @@ mnt-ref:        MEGAFON-RIPE-MNT
 created:        2004-04-17T11:55:06Z
 last-modified:  2026-05-13T05:58:58Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

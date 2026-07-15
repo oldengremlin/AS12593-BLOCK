@@ -4,6 +4,9 @@ as-name:        CTCNET-AS
 descr:          PJSC "Rostelecom". Moscow branch
 descr:          29/2 Narodnogo Opolcheniya str.,
 descr:          123154, Moscow, Russia
+remarks:        ----------------------------------------------------
+remarks:        Routing Policy
+remarks:        ----------------------------------------------------
 import:         from AS6863 action pref=100; accept AS-ROSNET
 import:         from AS44237 action pref=100; accept ANY
 import:         from AS12389 action pref=100; accept ANY
@@ -29,6 +32,7 @@ import:         from AS52006 action pref=100; accept AS52006
 import:         from AS196667 action pref=100; accept AS196667
 import:         from AS49261 action pref=100; accept AS49261
 import:         from AS49261 action pref=100; accept AS197821
+import:         from AS49261 action pref=100; accept AS49261
 export:         to AS6863 announce ANY
 export:         to AS44237 announce AS-CTC
 export:         to AS12389 announce AS-CTC
@@ -52,6 +56,7 @@ export:         to AS201092 announce ANY
 export:         to AS52006 announce ANY
 export:         to AS49261 announce ANY
 export:         to AS197821 announce ANY
+export:         to AS49261 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -60,6 +65,13 @@ mnt-by:         ROSTELECOM-MNT
 created:        2002-12-18T09:00:24Z
 last-modified:  2026-05-25T07:55:30Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS25515
 country:        RU
@@ -80,5 +92,11 @@ mnt-by:         ROSTELECOM-MNT
 created:        2005-03-22T11:11:20Z
 last-modified:  2026-05-13T07:30:23Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

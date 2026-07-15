@@ -1,14 +1,23 @@
 aut-num:        AS212670
 as-name:        DataFort
 org:            ORG-IDL11-RIPE
+remarks:        ----------------------------------------------------------------------------------------------------------------
+remarks:        UPSTREAMS:
+remarks:        -----------------------------------------------------------------------------------------------------------------
+remarks:        Delete from AS3216 accept ANY; to AS3216 announce AS212670
+remarks:        Delete from AS2854 accept ANY; to AS2854 announce AS212670
 import:         from AS25549 action pref=350; accept ANY
 export:         to AS25549 announce AS-DataFort-NSK
 import:         from AS60797 action pref=50; accept ANY
 export:         to AS60797 announce AS-DataFort-NSK
 import:         from AS3216 action pref=200; accept ANY
 export:         to AS3216 announce AS-DataFort-NSK
+remarks:        ------------------------------------------------------------------------------------------------------------------
+remarks:        CUSTOMERS:
+remarks:        ------------------------------------------------------------------------------------------------------------------
 import:         from AS208981 action pref=350; accept AS208981
 export:         to AS208981 announce ANY
+remarks:        ------------------------------------------------------------------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -17,6 +26,13 @@ mnt-by:         ru-datafort-mnt
 created:        2020-09-11T11:03:21Z
 last-modified:  2026-02-09T07:52:16Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS212670
 country:        RU
@@ -35,5 +51,11 @@ created:        2020-08-25T08:11:34Z
 last-modified:  2026-05-13T07:27:04Z
 source:         RIPE
 mnt-ref:        ru-datafort-mnt
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

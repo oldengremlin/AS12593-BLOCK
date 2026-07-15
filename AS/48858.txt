@@ -1,6 +1,20 @@
 aut-num:        AS48858
 as-name:        Milecom-as
 org:            ORG-RA21-RIPE
+remarks:        -----------------------------------------
+remarks:        ----- Traffic managment communities -----
+remarks:        ---------- only uplinks & IX ------------
+remarks:        -----------------------------------------
+remarks:        65001:X - 1 prepend to "X"
+remarks:        65002:X - 2 prepend to "X"
+remarks:        65003:X - 3 prepend to "X"
+remarks:        65005:X - 5 prepend to "X"
+remarks:        "X" - any uplink ASN
+remarks:        -----------------------------------------
+remarks:        65535:666 - Blackhole community
+remarks:        -----------------------------------------
+remarks:        ---------------- uplinks ----------------
+remarks:        -----------------------------------------
 import:         from AS13094 accept ANY
 export:         to AS13094 announce AS-MILECOM
 import:         from AS20485 accept AS-TTK
@@ -21,6 +35,9 @@ import:         from AS9049 accept AS-ERTH
 export:         to AS9049 announce AS-MILECOM
 import:         from AS9002 accept AS-RETN
 export:         to AS9002 announce AS-MILECOM
+remarks:        -----------------------------------------
+remarks:        ------------------ IX -------------------
+remarks:        -----------------------------------------
 import:         from AS6695 accept AS-DECIX AS-DECIX-V6
 export:         to AS6695 announce AS-MILECOM
 import:         from AS6777 accept AS-AMS-IX-RS AS-AMS-IX-RS-V6
@@ -29,6 +46,9 @@ import:         from AS42403 accept AS-NSKROUTESERVER
 export:         to AS42403 announce AS-MILECOM
 import:         from AS62261 accept AS-NSK-MEDIAIX
 export:         to AS62261 announce AS-MILECOM
+remarks:        -----------------------------------------
+remarks:        --------------- customers ---------------
+remarks:        -----------------------------------------
 import:         from AS197888 accept AS197888
 export:         to AS197888 announce ANY
 import:         from AS12418 accept AS-QUANTUM
@@ -132,6 +152,7 @@ export:         to AS52175 announce ANY
 import:         from AS47530 accept AS47530
 export:         to AS47530 announce ANY
 import:         from AS51078 accept AS-ITEL
+export:         to AS51078 announce ANY
 import:         from AS47909 accept AS-BAIKAL
 export:         to AS47909 announce ANY
 import:         from AS58067 accept AS-CHTE
@@ -196,6 +217,8 @@ import:         from AS31036 accept AS-NEWTELESYSTEMS
 export:         to AS31036 announce ANY
 import:         from AS33894 accept AS33894
 export:         to AS33894 announce ANY
+import:         from AS47486 accept AS47486
+export:         to AS47486 announce ANY
 import:         from AS50433 accept AS50433
 export:         to AS50433 announce ANY
 import:         from AS43274 accept AS-TELEOS-1
@@ -272,6 +295,7 @@ import:         from as25446 accept as25446
 export:         to as25446 announce ANY
 import:         from AS60625 accept AS60625
 export:         to AS60625 announce ANY
+remarks:        -----------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -281,6 +305,13 @@ mnt-by:         LLCMILECOM-MNT
 created:        2009-02-19T08:31:34Z
 last-modified:  2026-05-21T06:29:36Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS48858
 country:        RU
@@ -303,5 +334,11 @@ mnt-by:         RAID-MNT
 created:        2004-04-17T11:56:55Z
 last-modified:  2026-05-13T07:07:54Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

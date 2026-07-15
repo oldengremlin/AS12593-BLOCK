@@ -1,5 +1,6 @@
 aut-num:        AS41854
 as-name:        NLINK-AS
+remarks:        ;upstream
 import:         from AS9049 accept ANY;
 export:         to AS9049 announce AS-NLINK;
 import:         from AS28917 action pref=900; accept ANY
@@ -14,8 +15,10 @@ mp-import:      afi ipv6.unicast from AS47659 accept ANY;
 mp-export:      afi ipv6.unicast to AS47659 announce AS-NLINK-V6;
 import:         from AS8359 action pref=900; accept ANY;
 export:         to AS8359 announce AS-NLINK;
+remarks:        ;downstreams
 import:         from AS47124 action pref=500; accept AS47124;
 export:         to AS47124 announce ANY;
+remarks:        ;peers
 import:         from AS47659 action pref=700; accept AS-INTERTELRZN;
 export:         to AS47659 announce ANY;
 mp-import:      afi ipv6.unicast from AS47659 accept AS47659;
@@ -26,6 +29,7 @@ import:         from AS34467 action pref=700; accept AS34467 AND AS39724;
 export:         to AS34467 announce AS41854;
 import:         from AS47313 action pref=700; accept AS-ELECTROCOM;
 export:         to AS47313 announce AS-NLINK;
+remarks:
 org:            ORG-RA21-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -36,6 +40,13 @@ notify:         ripe@ertelecom.ru
 created:        2006-11-02T16:57:28Z
 last-modified:  2022-08-26T05:06:35Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS41854
 country:        RU
@@ -58,5 +69,11 @@ mnt-by:         RAID-MNT
 created:        2004-04-17T11:56:55Z
 last-modified:  2026-05-13T07:07:54Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

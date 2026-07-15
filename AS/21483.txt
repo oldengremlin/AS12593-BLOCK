@@ -1,7 +1,9 @@
 aut-num:        AS21483
 as-name:        TEL-AS
+remarks:        == UPLINKS ==
 import:         from AS3216 action pref=100; accept ANY
 export:         to AS3216 announce AS-SOVINTEL-KRSK
+remarks:        == CLIENTS ==
 import:         from AS50443 action pref=100; accept AS50443
 export:         to AS50443 announce AS-SOVINTEL-KRSK
 import:         from AS50787 action pref=100; accept AS50787
@@ -24,6 +26,24 @@ import:         from AS205720 action pref=100; accept AS205720
 export:         to AS205720 announce AS-SOVINTEL-KRSK
 import:         from AS51536 action pref=100; accept AS51536
 export:         to AS51536 announce AS-SOVINTEL-KRSK
+remarks:        -------------------------------------------------------+
+remarks:        | We are using following communities for our customers:
+remarks:        -------------------------------------------------------+
+remarks:        | 21483:80 Set local preference to 80 (below default)
+remarks:        | 21483:120 Set local preference to 120 (above default)
+remarks:        | 21483:1000 Do not export to UPLINKS
+remarks:        | 21483:1001 Prepend once to UPLINKS
+remarks:        | 21483:1002 Prepend twice to UPLINKS
+remarks:        | 21483:1003 Prepend thrice to UPLINKS
+remarks:        -------------------------------------------------------+
+remarks:        | 21483:3000 Do not export to CUSTOMERS
+remarks:        | 21483:3001 Prepend once to CUSTOMERS
+remarks:        | 21483:3002 Prepend twice to CUSTOMERS
+remarks:        | 21483:3003 Prepend thrice to CUSTOMERS
+remarks:        -------------------------------------------------------+
+remarks:        | 21483:9999 Blackhole (discard) traffic
+remarks:        -------------------------------------------------------
+remarks:
 org:            ORG-ES15-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -33,6 +53,13 @@ mnt-by:         TEL-MNT
 created:        2001-12-28T11:31:29Z
 last-modified:  2018-09-04T09:53:08Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS21483
 country:        RU
@@ -53,5 +80,11 @@ abuse-c:        SVNT2-RIPE
 created:        2004-04-17T11:58:43Z
 last-modified:  2026-05-13T07:17:20Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

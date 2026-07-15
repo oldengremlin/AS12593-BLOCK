@@ -2,21 +2,39 @@ aut-num:        AS199651
 as-name:        CLOUDTRANSIT-AS
 descr:          Internet Network Services
 descr:          https://cloudrack.ru
+remarks:        =========================================
+remarks:        AS-SET: AS199651:AS-CLOUDTRANSIT
+remarks:        =========================================
+remarks:        Routing and peering issue: noc@cloudrack.ru
+remarks:        Customer's support: noc@cloudrack.ru
+remarks:        Spam abuse: abuse@cloudrack.ru
 org:            ORG-IEMG1-RIPE
 sponsoring-org: ORG-LI85-RIPE
+remarks:        Uplinks:
+remarks:        === RASCOM ===
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS199651:AS-CLOUDTRANSIT
+remarks:        === INETCOM ===
 import:         from AS35598 accept ANY
 export:         to AS35598 announce AS199651:AS-CLOUDTRANSIT
+remarks:        === GLOBALNET ===
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS199651:AS-CLOUDTRANSIT
+remarks:        === TRANSROUTE ===
 import:         from AS50509 accept ANY
 export:         to AS50509 announce AS199651:AS-CLOUDTRANSIT
+remarks:        *********************************
+remarks:        Internet-Exchange:
+remarks:        === MSK-IX ===
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS199651:AS-CLOUDTRANSIT
+remarks:        === Piter-IX ===
 import:         from AS49869 accept AS-PITER-IX-MSK
 export:         to AS49869 announce AS199651:AS-CLOUDTRANSIT
+remarks:        === GLOBAL-IX ===
 import:         from AS49869 accept AS-DATAIX
+export:         to AS49869 announce AS199651:AS-CLOUDTRANSIT
+remarks:        *********************************
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -25,6 +43,13 @@ mnt-by:         CLOUDRACK-MNT
 created:        2026-03-27T13:31:51Z
 last-modified:  2026-05-25T14:38:06Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS199651
 country:        RU
@@ -44,5 +69,11 @@ mnt-by:         CLOUDRACK-MNT
 created:        2023-09-26T17:32:25Z
 last-modified:  2026-05-19T13:15:48Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

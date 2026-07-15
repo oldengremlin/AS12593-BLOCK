@@ -172,6 +172,9 @@ export:         to AS50509 announce AS-NETONERUS
 remarks:        --ServicePipe-for-Zetta--
 import:         from AS201706 accept ANY
 export:         to AS201706 announce AS-NETONERUS
+remarks:        --RT--
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-NETONERUS
 remarks:        ==================================================
 remarks:
 remarks:        ---=====BGP community for announce control=====---
@@ -186,6 +189,7 @@ remarks:        - 05 - TRANSROUTE(PiterIX-FV)
 remarks:        - 06 - MASTERTEL
 remarks:
 remarks:        - 08 - DATALINE
+remarks:        - 09 - RT
 remarks:        Y - tag for action:
 remarks:        - 0 - no announce
 remarks:
@@ -357,7 +361,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         NETONERUS-MNT
 created:        2009-08-10T13:48:47Z
-last-modified:  2026-07-06T06:21:34Z
+last-modified:  2026-07-14T14:27:35Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

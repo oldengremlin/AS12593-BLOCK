@@ -1,36 +1,79 @@
 aut-num:        AS212236
 as-name:        KINESCOPE-AS
 org:            ORG-KL315-RIPE
+remarks:        -------------------------------------------------------
+remarks:        IPv4 routing policy
+remarks:        -------------------------------------------------------
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        UPLINKS:
+remarks:        -------------------------------------------------------
+remarks:
+remarks:        MEGAFON
+remarks:        --------------
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-KINESCOPE
+remarks:
+remarks:        BEELINE
+remarks:        --------------
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-KINESCOPE
+remarks:
+remarks:        IPTP
+remarks:        --------------
 import:         from AS41095 accept ANY
 export:         to AS41095 announce AS-KINESCOPE
+remarks:
+remarks:        TransRoute
+remarks:        --------------
 import:         from AS50509 accept ANY
 export:         to AS50509 announce AS-KINESCOPE
+remarks:
+remarks:        NetRack
+remarks:        --------------
 import:         from AS61400 accept ANY
 export:         to AS61400 announce AS-KINESCOPE
+remarks:
+remarks:        INETCOM
+remarks:        --------------
 import:         from AS35598 accept ANY
 export:         to AS35598 announce AS-KINESCOPE
+remarks:
+remarks:        YISP
+remarks:        --------------
 import:         from AS58073 accept ANY
 export:         to AS58073 announce AS-KINESCOPE
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        IXs:
+remarks:        -------------------------------------------------------
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-KINESCOPE
+remarks:
 import:         from AS56931 accept ANY
 export:         to AS56931 announce AS-KINESCOPE
+remarks:
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-KINESCOPE
+remarks:
 import:         from AS29076 accept AS-CLOUD-IX-PRO
 export:         to AS29076 announce AS-KINESCOPE
+remarks:
 import:         from AS49869 accept as-piter-ix-msk
 export:         to AS49869 announce AS-KINESCOPE
+remarks:
 import:         from AS57936 accept as-piter-ix-tll
 export:         to AS57936 announce AS-KINESCOPE
+remarks:
 import:         from AS49634 accept as-piter-ix-riga
 export:         to AS49634 announce AS-KINESCOPE
+remarks:
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS-KINESCOPE
+remarks:        -------------------------------------------------------
+remarks:        DIRECT PEERS:
+remarks:        -------------------------------------------------------
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -39,6 +82,13 @@ mnt-by:         KINESCOPE-MNT
 created:        2020-12-02T12:32:21Z
 last-modified:  2022-12-08T10:14:07Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS212236
 country:        RU
@@ -57,5 +107,11 @@ created:        2020-09-04T09:41:45Z
 last-modified:  2026-05-13T07:27:04Z
 source:         RIPE
 mnt-ref:        KINESCOPE-MNT
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

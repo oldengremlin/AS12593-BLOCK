@@ -1,18 +1,21 @@
 aut-num:        AS47895
 as-name:        R-LINE-AS
 org:            ORG-LA640-RIPE
+remarks:        ======== Uplinks ========
 import:         from AS12389 action pref=100; accept ANY
 export:         to AS12389 announce AS-R-LINE
 import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-R-LINE
 import:         from AS3216 action pref=100; accept ANY
 export:         to AS3216 announce AS-R-LINE
+remarks:        ======== Peers ========
 import:         from AS57227 action pref=100; accept AS57227
 export:         to AS57227 announce AS-R-LINE
 import:         from AS48369 action pref=100; accept AS48369
 export:         to AS48369 announce AS47895
 import:         from AS42922 action pref=100; accept AS42922
 export:         to AS42922 announce AS47895
+remarks:        ======== Customers ========
 import:         from AS39131 action pref=100; accept AS39131
 export:         to AS39131 announce {0.0.0.0/0}
 import:         from AS201147 action pref=100; accept AS201147
@@ -33,6 +36,7 @@ import:         from AS211609 action pref=100; accept AS211609
 export:         to AS211609 announce ANY
 import:         from AS49854 action pref=100; accept AS49854
 export:         to AS49854 announce {0.0.0.0/0}
+remarks:        =============================
 status:         ASSIGNED
 mnt-by:         MNT-R-LINE
 admin-c:        DUMY-RIPE
@@ -43,6 +47,13 @@ mnt-by:         RLINE-MNT
 created:        2008-09-11T13:36:49Z
 last-modified:  2026-06-23T12:38:07Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS47895
 country:        RU
@@ -62,5 +73,11 @@ created:        2013-08-19T12:52:18Z
 last-modified:  2026-05-13T07:15:24Z
 source:         RIPE
 e-mail:         unread@ripe.net
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

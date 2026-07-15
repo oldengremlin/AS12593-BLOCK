@@ -1,15 +1,70 @@
 aut-num:        AS16020
 as-name:        TASCOM
 org:            ORG-OMct1-RIPE
+remarks:
+remarks:        ---------------------------------------------
+remarks:
+remarks:        UPLINKS:
+remarks:
+remarks:        PAO MGTS
 import:         from AS25513 94.29.127.153 at 217.26.6.14 action pref=90; accept AS25513 OR  {0.0.0.0/0}
 import:         from AS25513 94.29.127.157 at 217.26.6.15 action pref=120; accept AS25513 OR {0.0.0.0/0}
 export:         to AS25513 announce AS-TASCOM
+remarks:
+remarks:        ---------------------------------------------
+remarks:
+remarks:        PEERING PARTNERS:
+remarks:
+remarks:        RUNNET
 import:         from AS3267 action pref=500; accept AS-RUNNET
 export:         to AS3267 announce AS-TASCOM
+remarks:
+remarks:        ---------------------------------------------
+remarks:
+remarks:        CUSTOMERS:
+remarks:
+remarks:        GUM-AS (OJSC TRADING HOUSE GUM)
 import:         from AS49246 action pref=1000; accept AS49246
 export:         to AS49246 announce {0.0.0.0/0}
+remarks:
+remarks:        Green Telecom, LLC
 import:         from AS199502 action pref=1000; accept AS199502
 export:         to AS199502 announce {0.0.0.0/0}
+remarks:
+remarks:        ---------------------------------------------
+remarks:
+remarks:        NOTE: We drop all prefixes more specific then /25
+remarks:
+remarks:        NOTE: We remove all communities from incoming  announces except 25513:.*
+remarks:        and communities which describes below:
+remarks:
+remarks:        External communities which may be set by external peers when
+remarks:        talking to AS16020.
+remarks:
+remarks:        Community meaning:
+remarks:        -----
+remarks:        16020:8000 - BLACKHOLE - accept prefixes longer then /24
+remarks:        but forward traffic to Null 0.
+remarks:        Available only to AS16020 customers.
+remarks:
+remarks:        16020:8030 - BACKUP - set local preference to 30,
+remarks:        lowest value used in the network.
+remarks:        -----
+remarks:        16020:900x - when advertising to all uplinks
+remarks:        16020:910x - when advertising to all IXs
+remarks:        where
+remarks:        x=0 - do not advertise
+remarks:        x=1,2,3,4 or 5 - prepend 16020 1,2,3,4 or 5 times
+remarks:        -----
+remarks:
+remarks:        -----
+remarks:        Uplinks
+remarks:        16020:1xx00 - do not advertise...
+remarks:        16020:1xx0[1-5] - prepend 16020 1-5 times...
+remarks:
+remarks:        ...xx=00 - to PAO MGTS
+remarks:        -----
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -18,6 +73,13 @@ mnt-by:         MGTS-USPD-MNT
 created:        2002-05-18T05:40:53Z
 last-modified:  2018-09-04T09:49:46Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS16020
 country:        RU
@@ -37,5 +99,11 @@ e-mail:         unread@ripe.net
 created:        2004-04-17T11:55:11Z
 last-modified:  2026-05-13T07:26:26Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

@@ -119,6 +119,20 @@ import:         from AS203139 action pref=100; accept AS203139
 export:         to AS203139 announce AS-PIRIX
 import:         from AS207056 action pref=100; accept AS207056
 export:         to AS207056 announce AS-PIRIX
+remarks:        -----------------------------------
+remarks:        BGP communities accepted from peers:
+remarks:        -----------------------------------
+remarks:        0:48625 - do not advertise to any peers
+remarks:        0:peer-as - do not advertise to certain peer AS
+remarks:        48625:65281 - announce prefix with community "no-export" to all peers
+remarks:        48625:666 - blackhole community
+remarks:        48625:0 - set "local-preference 0" on prefix
+remarks:        48625:50 - set "local-preference 50" on prefix
+remarks:        48625:100 - set "local-preference 100" on prefix
+remarks:        -----------------------------------
+remarks:        -----------------------------------
+remarks:        Looking Glass: http://lg.pirix.ru
+remarks:        -----------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -128,6 +142,13 @@ notify:         noc@comfortel.pro
 created:        2008-12-18T14:55:37Z
 last-modified:  2025-01-28T09:23:31Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS48625
 country:        RU
@@ -141,6 +162,7 @@ address:        Dummy address for ORG-CL253-RIPE
 e-mail:         unread@ripe.net
 abuse-c:        CMFT
 mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        CMFT-MNT
 mnt-ref:        CMFT-MNT
 mnt-ref:        MNT-PINSUPPORT
 mnt-ref:        ru-extatic-1-mnt
@@ -156,5 +178,11 @@ mnt-by:         CMFT-MNT
 created:        2014-01-31T10:00:31Z
 last-modified:  2026-05-13T07:35:03Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

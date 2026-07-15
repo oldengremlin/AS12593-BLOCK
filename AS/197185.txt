@@ -1,14 +1,28 @@
 aut-num:        AS197185
 as-name:        ASTLAN
 org:            ORG-TLAN1-RIPE
+remarks:        ---------------------------------------------------
+remarks:        Uplinks
+remarks:        ---------------------------------------------------
+remarks:        *** Innovative telecommunications ***
 import:         from AS62040 action pref=120; accept ANY
 export:         to AS62040 announce AS-FS
+remarks:
+remarks:        *** ArpNet LLC ***
 import:         from AS47626 action pref=120; accept ANY
 export:         to AS47626 announce AS-FS
+remarks:
+remarks:        ---------------------------------------------------
+remarks:        IPv6
+remarks:        ---------------------------------------------------
+remarks:        *** Innovative telecommunications ***
 mp-import:      afi ipv6.unicast from AS62040 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS62040 announce AS-FS-V6
+remarks:
+remarks:        *** ArpNet LLC ***
 mp-import:      afi ipv6.unicast from AS47626 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS47626 announce AS-FS
+remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -18,6 +32,13 @@ created:        2010-07-16T09:54:49Z
 last-modified:  2019-06-09T21:06:09Z
 source:         RIPE
 sponsoring-org: ORG-Vs35-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS197185
 country:        RU
@@ -35,5 +56,11 @@ mnt-by:         TLANROSTOV-MNT
 created:        2010-07-09T12:22:53Z
 last-modified:  2026-05-13T05:15:17Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

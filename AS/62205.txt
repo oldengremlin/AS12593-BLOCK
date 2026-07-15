@@ -2,6 +2,7 @@ aut-num:        AS62205
 as-name:        UNITEL
 descr:          Saint-Petersburg, Russia, LLC Unitel
 org:            ORG-UL92-RIPE
+remarks:        --------------------------- UPSTREAMS IPv4----------------------------
 import:         from AS57304 action pref=100; accept ANY
 export:         to AS57304 announce AS-UNITELECOM-NET
 import:         from AS20764 action pref=100; accept ANY
@@ -15,6 +16,7 @@ mp-import:      afi ipv6.unicast from AS57304 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS57304 announce AS62205:AS-UNITELECOM-NET-V6
 mp-import:      afi ipv6.unicast from AS31500 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS31500 announce AS62205:AS-UNITELECOM-NET-V6
+remarks:        -------------------------- PEERING IX IPv4----------------------------
 import:         from AS8631 action pref=200; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-UNITELECOM-NET
 import:         from AS43690 action pref=200; accept AS-SPBROUTESERVER
@@ -22,8 +24,10 @@ export:         to AS43690 announce AS-UNITELECOM-NET
 import:         from AS50817 action pref=200; accept AS-PITER-IX
 export:         to AS50817 announce AS-UNITELECOM-NET
 import:         from AS43690 action pref=200; accept AS-PITER-IX-MSK
+export:         to AS43690 announce AS-UNITELECOM-NET
 import:         from AS50952 action pref=200; accept AS-DATAIX
 export:         to AS50952 announce AS-UNITELECOM-NET
+remarks:        -------------------------- CUSTOMERS IPv4 ----------------------------
 import:         from AS41377 action pref=300; accept AS41377
 export:         to AS41377 announce ANY
 import:         from AS202650 action pref=300; accept AS202650
@@ -38,6 +42,7 @@ import:         from AS47168 action pref=300; accept AS47168
 export:         to AS47168 announce ANY
 import:         from AS197905 action pref=300; accept AS197905
 export:         to AS197905 announce ANY
+remarks:        --------------------------END Routing Policy-------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -46,6 +51,13 @@ mnt-by:         MNT-UNITELECOM
 created:        2013-12-27T11:10:35Z
 last-modified:  2026-02-17T08:40:45Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS62205
 country:        RU
@@ -65,5 +77,11 @@ created:        2013-12-13T11:29:24Z
 last-modified:  2026-05-13T07:17:08Z
 source:         RIPE
 e-mail:         unread@ripe.net
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

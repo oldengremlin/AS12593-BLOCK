@@ -2,16 +2,22 @@ aut-num:        AS8905
 as-name:        DIGIT1-AS
 descr:          Digit One Moscow Network
 org:            ORG-TJ2-RIPE
+remarks:        ============== UPSTREAMS ==============
+remarks:        ==Rascom (AS20764)==
 import:         from AS20764 action pref=360; accept ANY
 export:         to AS20764 announce AS-DIGIT1
+remarks:        ==Fiord (AS28917)==
 import:         from AS28917 action pref=360; accept ANY
 export:         to AS28917 announce AS-DIGIT1
+remarks:        ==SETEL (AS39153)==
 import:         from AS39153 action pref=360; accept ANY
 export:         to AS39153 announce AS-DIGIT1
+remarks:        ============== CUSTOMERS ==============
 import:         from AS-VIP-TELECOM-SERVICE action pref=500; accept AS-VIP-TELECOM-SERVICE
 export:         to AS-VIP-TELECOM-SERVICE announce ANY
 import:         from AS-RADIONET action pref=500; accept AS-RADIONET
 export:         to AS-RADIONET announce ANY
+remarks:        =======================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -20,6 +26,13 @@ mnt-by:         SITEK1-MNT
 created:        2002-05-31T07:14:52Z
 last-modified:  2022-06-22T21:54:41Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS8905
 country:        RU
@@ -39,5 +52,11 @@ mnt-by:         MNT-DIGIT1
 created:        2004-04-17T11:59:40Z
 last-modified:  2026-05-13T07:16:51Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

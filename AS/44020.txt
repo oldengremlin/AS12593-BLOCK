@@ -1,6 +1,9 @@
 aut-num:        AS44020
 as-name:        CLN-AS
 org:            ORG-CA889-RIPE
+remarks:        ---------------------------------------------
+remarks:        (( UPSTREAMS ))
+remarks:        ---------------------------------------------
 import:         from AS8641 action pref=100; accept ANY
 export:         to AS8641 announce AS-CLN
 import:         from AS12389 action pref=100; accept ANY
@@ -11,14 +14,29 @@ import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-CLN
 import:         from AS35598 action pref=100; accept ANY
 export:         to AS35598 announce AS-CLN
+remarks:        ---------------------------------------------
+remarks:        (( MSK-IX ))
+remarks:        ---------------------------------------------
 import:         from AS8631 action pref=120; accept ANY
 export:         to AS8631 announce AS-CLN
+remarks:        ---------------------------------------------
+remarks:        (( Data-IX ))
+remarks:        ---------------------------------------------
 import:         from AS50952 action pref=120; accept ANY
 export:         to AS50952 announce AS-CLN
+remarks:        ---------------------------------------------
+remarks:        (( Global-IX ))
+remarks:        ---------------------------------------------
 import:         from AS31500 action pref=120; accept ANY
 export:         to AS31500 announce AS-CLN
+remarks:        ---------------------------------------------
+remarks:        (( Piter-IX ))
+remarks:        ---------------------------------------------
 import:         from AS49869 action pref=120; accept ANY
 export:         to AS49869 announce AS-CLN
+remarks:        ---------------------------------------------
+remarks:        (( CUSTOMERS ))
+remarks:        ---------------------------------------------
 import:         from AS30833 action pref=150; accept AS-TNC
 export:         to AS30833 announce ANY
 import:         from AS35768 action pref=150; accept AS-MSLINK
@@ -33,6 +51,7 @@ import:         from AS57174 action pref=150; accept AS-SSERV-RU
 export:         to AS57174 announce ANY
 import:         from AS61326 action pref=150; accept AS61326
 export:         to AS61326 announce ANY
+remarks:        ---------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -42,6 +61,13 @@ mnt-by:         GIZ
 created:        2007-11-05T10:06:19Z
 last-modified:  2026-05-06T08:35:09Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS44020
 country:        RU
@@ -61,5 +87,11 @@ abuse-c:        AD10941-RIPE
 created:        2007-10-15T10:09:22Z
 last-modified:  2026-05-13T07:14:53Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 

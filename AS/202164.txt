@@ -2,6 +2,10 @@ aut-num:        AS202164
 as-name:        NETCUBE
 descr:          NETCUBE LLC
 org:            ORG-NL220-RIPE
+remarks:        ===================================================
+remarks:        ======== IPV4 POLICY ==============================
+remarks:        UPLINKS
+remarks:        ---------------------------------------------------
 import:         from AS199599 accept ANY
 import:         from AS200161 accept ANY
 import:         from AS3216 accept ANY
@@ -10,12 +14,29 @@ export:         to AS199599 announce AS-NETCUBE
 export:         to AS200161 announce AS-NETCUBE
 export:         to AS3216 announce AS-NETCUBE
 export:         to AS6863 announce AS-NETCUBE
+remarks:        ---------------------------------------------------
+remarks:        PEERS
+remarks:        ---------------------------------------------------
 import:         from AS29076 accept AS-CLOUD-IX-LOCAL
 export:         to AS29076 announce AS-NETCUBE
+remarks:        ---------------------------------------------------
+remarks:        DOWNLINKS
+remarks:        ---------------------------------------------------
 import:         from AS61293 accept AS61293
 export:         to AS61293 announce ANY
+remarks:        ---------------------------------------------------
+remarks:        ===================================================
+remarks:        ======== IPV6 POLICY ==============================
+remarks:        UPLINKS
+remarks:        ---------------------------------------------------
 mp-import:      afi ipv6.unicast from AS199599 accept ANY
 mp-export:      afi ipv6.unicast to AS199599 announce AS-NETCUBE-IPV6
+remarks:        ---------------------------------------------------
+remarks:        ===================================================
+remarks:        ======= BLACKHOLE COMMUNITY =======================
+remarks:        ===================================================
+remarks:        1:666
+remarks:        ===================================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -25,6 +46,13 @@ mnt-by:         NETCUBE-MNT
 created:        2014-03-21T10:52:18Z
 last-modified:  2018-06-15T09:14:57Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
 as-num:         AS202164
 country:        RU
@@ -44,5 +72,11 @@ mnt-by:         NETCUBE-MNT
 created:        2014-03-20T08:36:53Z
 last-modified:  2026-05-13T07:17:16Z
 source:         RIPE
-
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
 
