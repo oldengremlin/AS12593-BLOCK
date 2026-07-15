@@ -6,23 +6,6 @@ tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
-remarks:        * -------------------------------------------------------------
-remarks:        AS8631 is used for the MSK-IX Route Servers.
-remarks:        All ASes participating in the Route Servers peering
-remarks:        are grouped into the AS-SET: AS-MSKROUTESERVER
-remarks:        This AS has no route policy registered
-remarks:        due the nature of how the route servers operate.
-remarks:        You may use communities to control outgoing information
-remarks:        via the route server. The meaning and order of evaluation is
-remarks:        important:
-remarks:        block announcement of a route to a certain peer 0:peer-as
-remarks:        announcement of a route to a certain peer 8631:peer-as
-remarks:        block announcement of a route to all peers 0:8631
-remarks:        announcement of a route to all peers 8631:8631
-remarks:        Please visit http://www.msk-ix.ru/eng/routeserver.html
-remarks:        for more information on the MSK-IX Route Servers
-remarks:        and for more filtering options.
-remarks:        * -------------------------------------------------------------
 import:         from AS112
                 action pref=100;
                 accept AS112
@@ -2701,13 +2684,6 @@ export:         to AS266925
 created:        2002-09-10T12:10:00Z
 last-modified:  2026-07-06T13:52:05Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS8631
 country:        RU
@@ -2726,11 +2702,5 @@ mnt-by:         RUIX-MNT
 created:        2018-11-16T14:06:09Z
 last-modified:  2026-05-13T07:11:35Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

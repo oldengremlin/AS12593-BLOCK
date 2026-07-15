@@ -1,10 +1,6 @@
 aut-num:        AS202486
 as-name:        SKYTELECOM
 org:            ORG-TL643-RIPE
-remarks:        +------------------------------------------------------------------------+
-remarks:        +
-remarks:        + Upstreams:
-remarks:        +
 descr:          +--- PAO VimpelCom ------------------------------------------------------+
 import:         from AS3216 accept ANY
 export:         to AS3216 announce AS-SKYTELECOM_TSK
@@ -14,26 +10,18 @@ descr:          +
 descr:          +--- Mobile TeleSystems PJSC --------------------------------------------+
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-SKYTELECOM_TSK
-descr:          +
-remarks:        +--- ROSTELECOM ---------------------------------------------------------+
 import:         from AS12389 accept ANY
 export:         to AS12389 announce AS-SKYTELECOM_TSK
 mp-import:      afi ipv6.unicast from AS12389 accept ANY
 mp-export:      afi ipv6.unicast to AS12389 announce AS-SKYTELECOM_TSK
-remarks:        +------------------------------------------------------------------------+
-remarks:        +
-remarks:        + Peers:
-remarks:        +
 descr:          +--- SEA-IX -------------------------------------------------------------+
 import:         from AS59428 action pref=100; accept ANY
 export:         to AS59428 announce AS-SKYTELECOM_TSK
-descr:          +
 descr:          +--- MSK-IX -------------------------------------------------------------+
 import:         from AS8631 action pref=100; accept ANY
 export:         to AS8631 announce AS-SKYTELECOM_TSK
 mp-import:      afi ipv6.unicast from AS8631 accept ANY
 mp-export:      afi ipv6.unicast to AS8631 announce AS-SKYTELECOM_TSK
-descr:          +
 descr:          +--- SKYTELECOM ---------------------------------------------------------+
 mp-import:      afi ipv6 from AS207954 accept AS207954
 mp-export:      afi ipv6 to AS207954 announce ANY
@@ -43,19 +31,8 @@ mp-import:      afi ipv6 from AS209112 accept AS209112
 mp-export:      afi ipv6 to AS209112 announce ANY
 mp-import:      afi ipv6 from AS209289 accept AS209289
 mp-export:      afi ipv6 to AS209289 announce ANY
-remarks:        +------------------------------------------------------------------------+
-remarks:        +
-remarks:        + Customers:
-remarks:        +
 import:         from AS215455 action pref=100; accept AS215455
 export:         to AS215455 announce ANY
-remarks:        +------------------------------------------------------------------------+
-remarks:        Peering requests: noc@telecomsky.ru
-remarks:        Sales: sales@telecomsky.ru
-remarks:        +------------------------------------------------------------------------+
-remarks:        To watch for your announces you can use looking glass at
-remarks:        http://lg.telecomsky.ru
-remarks:        +------------------------------------------------------------------------+
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -64,13 +41,6 @@ mnt-by:         mnt-ru-skytelecom-1
 created:        2018-05-08T07:18:10Z
 last-modified:  2024-10-07T15:45:20Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS202486
 country:        RU
@@ -89,11 +59,5 @@ mnt-by:         mnt-ru-skytelecom-1
 created:        2019-10-25T07:13:32Z
 last-modified:  2026-05-13T07:41:05Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

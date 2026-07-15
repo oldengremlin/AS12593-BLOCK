@@ -1,9 +1,6 @@
 aut-num:        AS61400
 as-name:        NETRACK-AS
 org:            ORG-SL744-RIPE
-remarks:        ---------------------------------------------------
-remarks:        Uplinks
-remarks:        ---------------------------------------------------
 import:         from AS9002 accept ANY
 export:         to AS9002 announce AS-NETRACK
 import:         from AS3356 accept ANY
@@ -18,11 +15,7 @@ import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-NETRACK
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS-NETRACK
-remarks:        ---------------------------------------------------
-remarks:        Peers:
-remarks:        ---------------------------------------------------
 import:         from AS9002 action pref=150; accept AS-RETN
-export:         to AS9002 announce AS-NETRACK
 import:         from AS31500 action pref=150; accept AS-GLOBALNET
 import:         from AS8631 action pref=150; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-NETRACK
@@ -35,10 +28,6 @@ export:         to AS714 announce AS-NETRACK
 import:         from AS8732 action pref=150; accept AS-COMCOR
 export:         to AS8732 announce AS-NETRACK
 import:         from AS8631 accept AS-MSKROUTESERVER
-export:         to AS8631 announce AS-NETRACK
-remarks:        ---------------------------------------------------
-remarks:        Downstreams
-remarks:        ---------------------------------------------------
 import:         from AS8603 action pref=200; accept AS-MODERNIT
 import:         from AS9210 action pref=200; accept AS9210
 import:         from AS21030 action pref=200; accept AS21030
@@ -73,7 +62,6 @@ import:         from AS200430 action pref=200; accept AS200430
 import:         from AS200457 action pref=200; accept AS200457
 import:         from AS200815 action pref=200; accept AS200815
 import:         from AS200952 action pref=200; accept AS200952
-import:         from AS200952 action pref=200; accept AS200952
 import:         from AS202532 action pref=200; accept AS202532
 import:         from AS205387 action pref=200; accept AS205387
 import:         from AS198562 action pref=200; accept AS198562
@@ -98,7 +86,6 @@ import:         from AS212940 action pref=200; accept AS212940
 import:         from AS212737 action pref=200; accept AS212737
 import:         from AS212742 action pref=200; accept AS212742
 import:         from AS214664 action pref=200; accept AS214664
-remarks:        _____________________________________________________
 export:         to AS8603 announce ANY
 export:         to AS9210 announce ANY
 export:         to AS21030 announce ANY
@@ -137,7 +124,6 @@ export:         to AS202532 announce ANY
 export:         to AS198562 announce ANY
 export:         to AS196780 announce ANY
 export:         to AS199280 announce ANY
-export:         to AS59730 announce ANY
 export:         to AS200993 announce ANY
 export:         to AS204703 announce ANY
 export:         to AS204720 announce ANY
@@ -156,10 +142,6 @@ export:         to AS212737 announce ANY
 export:         to AS212742 announce ANY
 export:         to AS212940 announce ANY
 export:         to AS214664 announce ANY
-remarks:        ___________________________________________________
-remarks:        __________IPV4$___________________________________
-remarks:        __________^IPv6___________________________________
-remarks:        ___________________________________________________
 mp-import:      afi ipv6.unicast from AS8939 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS8939 announce AS-NETRACK
 mp-import:      afi ipv6.unicast from AS9002 action pref=100; accept ANY
@@ -170,12 +152,10 @@ mp-import:      afi ipv6.unicast from AS31500 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS31500 announce AS-NETRACK
 mp-import:      afi ipv6.unicast from AS31133 action pref=100; accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS-NETRACK
-remarks:        ___________________________________________________
 mp-import:      afi ipv6.unicast from AS50592 action pref=150; accept ANY
 mp-export:      afi ipv6.unicast to AS50592 announce AS-NETRACK
 mp-import:      afi ipv6.unicast from AS8631 action pref=150; accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 announce AS-NETRACK
-remarks:        ___________________________________________________
 mp-import:      afi ipv6.unicast from AS201183 action pref=200; accept AS201183
 mp-export:      afi ipv6.unicast to AS201183 announce ANY
 mp-import:      afi ipv6.unicast from AS196678 action pref=200; accept AS196678
@@ -198,43 +178,6 @@ mp-import:      afi ipv6.unicast from AS203410 action pref=200; accept AS203410
 mp-export:      afi ipv6.unicast to AS203410 announce ANY
 mp-import:      afi ipv6.unicast from AS207353 action pref=200; accept AS207353
 mp-export:      afi ipv6.unicast to AS207353 announce ANY
-remarks:        __________________________________________________
-remarks:        RTBH Community: 61400:666
-remarks:        Accepted /32 routes from downstreams with RTBH community
-remarks:        ___________________________________________________
-remarks:        advertising community (available for customers):
-remarks:        ___________________________________________________
-remarks:        to zone:
-remarks:
-remarks:        61400:5ZZX where
-remarks:        ZZ=00 - Whole World
-remarks:        ZZ=01 - all upstreams
-remarks:        ZZ=03 - all peers
-remarks:        ZZ=04 - MSK-IX
-remarks:        ZZ=05 - DATA-IX
-remarks:        ZZ=06 - he.net
-remarks:        ZZ=07 - EURASIA-IX
-remarks:        ZZ=08 - AS60299
-remarks:
-remarks:        to ASN
-remarks:
-remarks:        61400:6AAX where
-remarks:        AA=01 - AS31133 (Megafon)
-remarks:        AA=02 - AS8359 (MTS)
-remarks:        AA=05 - AS9002 (ReTN)
-remarks:        AA=06 - 202984 (Teamhost)
-remarks:        AA=07 - 12389 (Rostelecom)
-remarks:
-remarks:        X=0 - advertise with no changes
-remarks:        X=1,2,4 or 6 - set prepend AS61400 1,2,4 or 6 times
-remarks:        X=7 - advertise with community no-export
-remarks:        X=9 - do not advertise
-remarks:
-remarks:        Example: Community 61400:6014 will prepend AS61400 4 times to AS31133
-remarks:        Example: Community 61400:5039 will deny advertising of prefix to all
-remarks:        peers and exchanges
-remarks:
-remarks:        ___________________________________________________
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -243,13 +186,6 @@ mnt-by:         NETRACK-MNT
 created:        2012-10-25T07:55:22Z
 last-modified:  2026-04-20T16:49:20Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS61400
 country:        RU
@@ -268,11 +204,5 @@ created:        2018-06-15T10:57:24Z
 last-modified:  2026-05-13T07:12:37Z
 source:         RIPE
 mnt-ref:        NETRACK-MNT
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

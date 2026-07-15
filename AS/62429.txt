@@ -1,49 +1,22 @@
 aut-num:        AS62429
 as-name:        CSTNET
 org:            ORG-ONTL1-RIPE
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Uplinks
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        +--Filanco--+
-remarks:        ---------------------
 import:         from AS29076 action pref=201; accept ANY;
 export:         to AS29076 announce AS-CSTNET;
 mp-import:      afi ipv6.unicast from AS29076 action pref=201; accept ANY;
 mp-export:      afi ipv6.unicast to AS29076 announce AS-CSTNET;
-remarks:        ==============
-remarks:        +--Naukanet--+
-remarks:        ---------------------
 import:         from AS8641 action pref=201; accept ANY;
 export:         to AS8641 announce AS-CSTNET;
 mp-import:      afi ipv6.unicast from AS8641 action pref=201; accept ANY;
 mp-export:      afi ipv6.unicast to AS8641 announce AS-CSTNET;
-remarks:        ==============
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        IX
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        +--Piter-IX--+
-remarks:        ---------------------
 import:         from AS49869 action pref=280; accept as-piter-ix-msk;
 export:         to AS49869 announce AS-CSTNET;
-remarks:        ==============
-remarks:        +--Eurasia-Peering--+
-remarks:        ---------------------
 import:         from AS56931 action pref=280; accept AS56931;
 export:         to AS56931 announce AS-CSTNET;
 mp-import:      afi ipv6.unicast from AS56931 action pref=280; accept ANY;
 mp-export:      afi ipv6.unicast to AS56931 announce AS-CSTNET;
-remarks:        ==============
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        Customers(Downlinks)
-remarks:        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        +--Ecoconnect--+
-remarks:        ---------------------
 import:         from AS210281 action pref=201; accept as210281:AS-EcoConnect;
 export:         to AS210281 announce {0.0.0.0/0};
-remarks:        ==============
-remarks:        +=================================+
-remarks:        https://www.peeringdb.com/asn/62429
-remarks:        +=================================+
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -52,13 +25,6 @@ mnt-by:         CSTNET-MNT
 created:        2013-09-24T11:24:34Z
 last-modified:  2025-05-12T16:40:57Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS62429
 country:        RU
@@ -79,11 +45,5 @@ mnt-by:         CSTNET-MNT
 created:        2013-07-03T08:18:22Z
 last-modified:  2026-05-13T07:14:45Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

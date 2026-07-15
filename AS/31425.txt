@@ -5,23 +5,14 @@ descr:          at Khanty-Mansiyskiy AO-Yugra
 descr:          and Yamalo-Nenetskiy AO
 descr:          Surgut, Russia
 org:            ORG-ES15-RIPE
-remarks:        ------------------------------------------------------------
-remarks:        Upstreams:
-remarks:        ------------------------------------------------------------
 import:         from AS12389 action pref=400; accept ANY
 export:         to AS12389 announce AS31425 AS31425:AS-CUSTOMERS-SRG
 import:         from AS20485 action pref=400; accept ANY
 export:         to AS20485 announce AS31425 AS31425:AS-CUSTOMERS-SRG
 import:         from AS3216 action pref=400; accept ANY
 export:         to AS3216 announce AS31425 AS31425:AS-CUSTOMERS-SRG
-remarks:        ------------------------------------------------------------
-remarks:        Customers:
-remarks:        ------------------------------------------------------------
 import:         from AS31425:AS-CUSTOMERS-SRG action pref=100; accept <^AS31425:AS-CUSTOMERS-SRG+$>
 export:         to AS31425:AS-CUSTOMERS-SRG announce ANY
-remarks:        ------------------------------------------------------------
-remarks:        Private peers:
-remarks:        ------------------------------------------------------------
 import:         from AS31359 action pref=100; accept ANY
 export:         to AS31359 announce AS31425 AS31425:AS-CUSTOMERS-SRG AS31425:AS-PEERING
 admin-c:        DUMY-RIPE
@@ -32,13 +23,6 @@ mnt-by:         FORATEC-MNT
 created:        2004-05-13T08:59:05Z
 last-modified:  2018-09-04T10:02:35Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS31425
 country:        RU
@@ -59,11 +43,5 @@ abuse-c:        SVNT2-RIPE
 created:        2004-04-17T11:58:43Z
 last-modified:  2026-05-13T07:17:20Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

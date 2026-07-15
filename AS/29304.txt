@@ -2,71 +2,28 @@ aut-num:        AS29304
 as-name:        SATISNET-AS
 descr:          JSC Satis-TL-94 is a full-scale satellite service ISP with channel and IP service
 org:            ORG-JS3-RIPE
-remarks:        ------------------------------------------------------------------
-remarks:
-remarks:
-remarks:        The pref attribute is the inverse of the local-pref attribute
-remarks:        In our case (in AS29304): "pref = 200 - local-pref"
-remarks:        ------------------------------------------------------------------
-remarks:        !--------------------- Peers ---------------------!
-remarks:        ------------------------------------------------------------------
-remarks:        *** IKS ***
 import:         from AS42742 action pref=100; accept AS-INTERKAMSERVICE
 export:         to AS42742 announce ANY
-remarks:        *** Uztel ***
 import:         from AS28910 action pref=100; accept AS28910
 export:         to AS28910 announce ANY
-remarks:        ------------------------------------------------------------------
-remarks:        !------------------ Upstreams --------------------!
-remarks:        ------------------------------------------------------------------
-remarks:        *** Russia, Rostelecom ***
 import:         from AS12389 action pref=120; accept ANY
 export:         to AS12389 announce AS-SATISNET-KHB
-remarks:        *** Russia, Megafon ***
 import:         from AS31133 action pref=110; accept ANY
 export:         to AS31133 announce AS-SATISNET-MSK
-remarks:        *** Russia, KA-2 ***
 import:         from AS59589 action pref=110; accept ANY
 export:         to AS59589 announce AS-SATISNET-MSK
-remarks:        *** Russia, TTK ***
 import:         from AS20485 action pref=110; accept ANY
 export:         to AS20485 announce AS-SATISNET-KHB
-remarks:        *** Russia, TTK-DV ***
 import:         from AS49301 action pref=110; accept ANY
 export:         to AS49301 announce AS-SATISNET-KHB
-remarks:        ------------------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
-remarks:        ------------------------------------------------------------------
-remarks:        SatisNet filters out inbound prefixes longer than /24
-remarks:        ------------------------------------------------------------------
-remarks:        External communities may be set by external peers when
-remarks:        talking to AS29304. They are in range 29304:500-29304:699.
-remarks:
-remarks:        Community Description
-remarks:
-remarks:        29304:500 Set local-pref 50 within AS29304
-remarks:        (lowest value for BackUp)
-remarks:        29304:590 Set local-pref 150 within AS29304
-remarks:        29304:599 When advertising to AS-SATISNET members only.
-remarks:
-remarks:        Other communities in range 29304:500-29304:699
-remarks:        are accepted but ignored.
-remarks:        Other 29304:* communities are deleted.
-remarks:        ------------------------------------------------------------------
 mnt-by:         SATIS-TL-94-MNT
 created:        2003-07-28T09:54:53Z
 last-modified:  2025-12-12T10:55:28Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS29304
 country:        RU
@@ -86,11 +43,5 @@ abuse-c:        STL29304-RIPE
 created:        2004-04-17T11:58:08Z
 last-modified:  2026-05-13T07:15:24Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

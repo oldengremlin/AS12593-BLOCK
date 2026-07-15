@@ -1,24 +1,12 @@
 aut-num:        AS13095
 as-name:        CTK-NET-AS
 org:            ORG-ES15-RIPE
-remarks:        -----------------------------------------------
-remarks:        UPSTREAMS
-remarks:        -----------------------------------------------
 import:         { from AS8402  action pref=50; accept ANY; } #CORBINA
 export:         { to AS8402 announce AS-CTK; }
-remarks:        -----------------------------------------------
-remarks:        PEERING
-remarks:        -----------------------------------------------
 import:         { from AS25592 action pref=100; accept AS25592; from AS43903 action pref=100; accept AS43903; from AS30881 action pref=100; accept AS30881; from AS197078 action pref=100; accept AS197078; } #NETIS MEDIAN TensorTelecom YarNET
 export:         { to AS25592 announce AS-CTK; to AS43903 announce AS-CTK; to AS197078 announce AS-CTK; to AS30881 announce AS-CTK; }
-remarks:        -----------------------------------------------
-remarks:        CUSTOMERS
-remarks:        -----------------------------------------------
 import:         { from AS31480 action pref=10; accept AS-GLOBALTS; from AS47911 action pref=10; accept AS47911; }
 export:         { to AS31480 announce ANY; to AS47911 announce ANY; }
-remarks:        -----------------------------------------------
-remarks:        DEFAULTS
-remarks:        -----------------------------------------------
 default:        to AS8402 action pref=200; networks ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -29,13 +17,6 @@ mnt-by:         SOVINTEL-MNT
 created:        2002-08-12T11:13:39Z
 last-modified:  2017-11-15T09:16:09Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS13095
 country:        RU
@@ -56,11 +37,5 @@ abuse-c:        SVNT2-RIPE
 created:        2004-04-17T11:58:43Z
 last-modified:  2026-05-13T07:17:20Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

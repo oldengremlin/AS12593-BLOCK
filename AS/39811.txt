@@ -3,7 +3,6 @@ as-name:        MTSNET-FAR-EAST-AS
 org:            ORG-ZM1-RIPE
 descr:          An Autonomous System for the Far East divisions
 descr:          of Mobile TeleSystems PJSC
-remarks:        --- Upstreams ---
 import:         from AS20485 accept ANY
 export:         to AS20485 announce AS-MTSDV
 import:         from AS12389 accept ANY
@@ -12,12 +11,8 @@ import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-MTSDV
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS-MTSDV
-remarks:        -- Peering --
-remarks:        -- MTS --
 import:         from AS21103 accept AS-MTS-SAKH
 export:         to AS21103 announce ANY
-remarks:        -- Clients --
-remarks:        - Vladivostok -
 import:         from AS213117 accept AS213117
 export:         to AS213117 announce ANY
 import:         from AS56437 accept AS56437
@@ -54,7 +49,6 @@ import:         from AS209217 accept AS209217
 export:         to AS209217 announce ANY
 import:         from AS213304 accept AS213304
 export:         to AS213304 announce ANY
-remarks:        -Irkutsk-
 import:         from AS13155 accept AS-SIBRON-TELECOM
 export:         to AS13155 announce ANY
 import:         from AS56959 accept AS56959
@@ -87,24 +81,12 @@ export:         to AS56581 announce ANY
 descr:          -Buryatia-
 import:         from AS206134 accept AS206134
 export:         to AS206134 announce ANY
-remarks:        ---Yakutiya(Sakha)---
 import:         from AS196648 accept AS196648
 export:         to AS196648 announce ANY
-remarks:        - Kamchatka -
 import:         from AS47375 accept AS47375
 export:         to AS47375 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
-remarks:        -----------------------------------------------------------
-remarks:        Communities
-remarks:        -----------------------------------------------------------
-remarks:        39811:1000 - do not advertise to all upstreams
-remarks:        39811:201x - MTS
-remarks:        39822:202x - TTK
-remarks:        39811:203x - RTK
-remarks:        x:
-remarks:        0 - do not advertise
-remarks:        1..6 - prepend N times
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 notify:         lir@mtu.ru
@@ -113,13 +95,6 @@ mnt-by:         MTU-NOC
 created:        2006-04-27T12:23:32Z
 last-modified:  2024-02-14T07:34:58Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS39811
 country:        RU
@@ -139,11 +114,5 @@ mnt-by:         MTU-NOC
 created:        2004-04-17T11:55:44Z
 last-modified:  2026-05-13T07:31:05Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

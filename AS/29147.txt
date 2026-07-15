@@ -1,7 +1,6 @@
 aut-num:        AS29147
 as-name:        NSTU-AS
 org:            ORG-NSTU1-RIPE
-remarks:        === Uplinks ===
 import:         from AS3267 action pref=100; accept ANY;
 export:         to AS3267 announce AS-NSTU;
 mp-import:      afi ipv6 from AS3267 action pref=100; accept ANY;
@@ -11,7 +10,6 @@ export:         to AS28884 announce AS-NSTU;
 mp-import:      afi ipv6 from AS28884 action pref=100; accept ANY;
 mp-export:      afi ipv6 to AS28884 announce AS29147;
 default:        to AS3267 action pref=100; networks ANY
-remarks:        === Local,NSK-IX ===
 import:         from AS31738 action pref=120; accept AS31738;
 export:         to AS31738 announce AS29147;
 import:         from AS31738 accept AS31738;
@@ -29,13 +27,6 @@ created:        2003-06-16T12:52:42Z
 last-modified:  2026-06-22T05:17:01Z
 source:         RIPE
 sponsoring-org: ORG-CR1-RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS29147
 country:        RU
@@ -53,11 +44,5 @@ mnt-by:         NSTU-MNT
 created:        2006-09-29T08:49:33Z
 last-modified:  2026-06-22T05:20:57Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

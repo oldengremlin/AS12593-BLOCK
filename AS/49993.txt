@@ -1,27 +1,6 @@
 aut-num:        AS49993
 as-name:        NOVOCOM-AS
 descr:          JSC Novocom, ISP
-remarks:        BGP Communities we accept:
-remarks:
-remarks:        49993:612y When advertising to Telia Sonera (AS1299)
-remarks:        49993:799y When advertising to any INTERNATIONAL peer
-remarks:        49993:899y When advertising to any RUSSIAN peer
-remarks:
-remarks:        y=9 - advertise without prepends
-remarks:        y=0 - do not advertise
-remarks:        y=1,2,3 or 5 - prepend 49993 (1,2,3 or 5) times
-remarks:        WARN: We don't accept prefixes longer than /24!!
-remarks:
-remarks:        49993:2800 - set local-pref=800
-remarks:        49993:2100 - set local-pref=100
-remarks:        Default local-pref:
-remarks:        850 - Customer
-remarks:        250-500 - Peer
-remarks:        200 - Upstream
-remarks:
-remarks:        49993:55555 - blackhole (RFC7999)
-remarks:
-remarks:        Peers:
 import:         from AS28917 accept ANY
 export:         to AS28917 announce AS49993
 import:         from AS212461 accept ANY
@@ -36,13 +15,6 @@ mnt-by:         JSC-NOVOCOM-MNT
 created:        2023-12-27T16:39:35Z
 last-modified:  2025-06-03T11:59:12Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS49993
 country:        RU
@@ -62,11 +34,5 @@ mnt-by:         JSC-NOVOCOM-MNT
 created:        2023-11-26T00:16:37Z
 last-modified:  2026-05-13T06:24:31Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

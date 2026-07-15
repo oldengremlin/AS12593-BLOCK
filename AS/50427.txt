@@ -1,9 +1,6 @@
 aut-num:        AS50427
 as-name:        ORIONNET-ABK
 org:            ORG-MNL1-RIPE
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | UPSTREAMS
-remarks:        +-------------------------------------------------------------------------------+
 import:         from AS31257 accept ANY
 mp-import:      afi ipv6.unicast from AS31257 accept ANY;
 import:         from AS12389 accept ANY
@@ -24,16 +21,10 @@ export:         to AS31133 announce AS-ABAKANNET
 mp-export:      afi ipv6.unicast to AS31133 announce AS-ABAKANNET;
 export:         to AS3216 announce AS-ABAKANNET
 mp-export:      afi ipv6.unicast to AS3216 announce AS-ABAKANNET;
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | IX
-remarks:        +-------------------------------------------------------------------------------+
 import:         from AS13094 accept ANY
 mp-import:      afi ipv6.unicast from AS13094 accept ANY;
 export:         to AS13094 announce AS-ABAKANNET
 mp-export:      afi ipv6.unicast to AS13094 announce AS-ABAKANNET;
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | PEERINGS
-remarks:        +-------------------------------------------------------------------------------+
 import:         from AS49932 accept AS49932
 export:         to AS49932 announce AS-ABAKANNET
 import:         from AS51086 accept AS-Scatplus
@@ -42,80 +33,10 @@ import:         from AS56451 accept AS56451
 export:         to AS56451 announce AS-ABAKANNET
 import:         from AS41311 accept AS-CSIT
 export:         to AS41311 announce AS-ABAKANNET
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | CUSTOMERS
-remarks:        +-------------------------------------------------------------------------------+
 import:         from AS50022 accept AS50022
 mp-import:      afi ipv6.unicast from AS50022 accept AS50022;
 export:         to AS50022 announce ANY
 mp-export:      afi ipv6.unicast to AS50022 announce ANY;
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix classification (Intro)
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Classification prefix (Upstream, IX, Clients and Others)
-remarks:        | 1 - Upstreams
-remarks:        | 2 - IX
-remarks:        | 3 - Peerings
-remarks:        | 5 - Customers
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix classification from UPSTREAMS
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 50427:1001 - Orion Telecom Krk (AS31257)
-remarks:        | 50427:1002 - Megafon (AS31133)
-remarks:        | 50427:1003 - Milecom (AS48858)
-remarks:        | 50427:1004 - RTK (AS12389)
-remarks:        | 50427:1005 - Beeline (AS3216)
-remarks:        | 50427:1000 - All Upstreams
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix classification from IX
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 50427:2001 - SFO-IX (AS13094)
-remarks:        | 50427:2000 - All IX
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix control (Intro)
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Customers may control prefixes that they announce
-remarks:        | to Orion telecom by eBGP.
-remarks:        | You can use communities that prepend prefix path
-remarks:        | with additional AS hops or deny it announcement to
-remarks:        | any Upstream or Peer. To prepand or deny prefix
-remarks:        | use 50427:DNNA, where:
-remarks:        | D - destination of the prepend or deny action:
-remarks:        | 1 - Upstreams, 2 - IX, 3 - Peerings, 5 - Customers
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix control to UPSTREAMS
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 50427:101x - Orion Telecom Krk (AS31257)
-remarks:        | 50427:102x - Megafon (AS31133)
-remarks:        | 50427:103x - Milecom (AS48858)
-remarks:        | 50427:104x - RTK (AS12389)
-remarks:        | 50427:105x - Beeline (AS3216)
-remarks:        | 50427:199x - All Upstreams
-remarks:        | x = 0 - do not announce
-remarks:        | x = 1 to 6 - prepend 50427 (1 to 6) times
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Communities for prefix control to IX
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 50427:201X - SFO-IX (AS13094)
-remarks:        | 50427:299X - All IX
-remarks:        | x = 0 - do not announce
-remarks:        | x = 1 to 6 - prepend 50427 (1 to 6) times
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | Backup Community
-remarks:        +-------------------------------------------------------------------------------+
-remarks:        | 50427:666 - Blackhole
-remarks:        +-------------------------------------------------------------------------------+
-remarks:
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -124,13 +45,6 @@ mnt-by:         MNT-ABAKANNET
 created:        2010-01-14T13:20:46Z
 last-modified:  2025-02-26T03:28:59Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS50427
 country:        RU
@@ -152,11 +66,5 @@ mnt-by:         MORNING-MNT
 created:        2004-04-17T11:55:20Z
 last-modified:  2026-05-13T07:30:13Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

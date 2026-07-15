@@ -1,33 +1,19 @@
 aut-num:        AS25490
 org:            ORG-JR8-RIPE
 as-name:        STC-AS
-remarks:        |--------------------------------------------
 descr:          OJSC "Southern Telecommunications Company"
-remarks:        | AS12389 - ROSTELECOM
-remarks:        | AS8342 - RTComm
-remarks:        | AS20485 - Transtelecom
-remarks:        | AS6854 - SYNTERRA JSC
-remarks:        | AS44467 - Inter Regional Network (IRN) STC
-remarks:        | AS31133 - OJSC MegaFon Network
-remarks:        | -------------------------------------------
-remarks:        | Import, Upstreams
-remarks:        |--------------------------------------------
 import:         from AS12389 action pref=10; accept ANY
 import:         from AS8342 action pref=100; accept ANY
 import:         from AS20485 action pref=100; accept ANY
 import:         from AS44467 action pref=100; accept ANY
 import:         from AS6854 action pref=100; accept ANY
 import:         from AS31133 action pref=100; accept ANY
-remarks:        |--------------------------------------------
-remarks:        | Export
-remarks:        |--------------------------------------------
 export:         to AS8342 announce AS-STC
 export:         to AS20485 announce AS-STC
 export:         to AS12389 announce AS-STC
 export:         to AS44467 announce AS-STC
 export:         to AS6854 announce AS-STC
 export:         to AS31133 announce AS-STC
-remarks:        |-------------------------------------------
 default:        to AS12389 action pref=10; networks ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -37,13 +23,6 @@ mnt-by:         ROSTELECOM-MNT
 created:        2002-12-09T12:44:11Z
 last-modified:  2024-12-10T09:58:34Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS25490
 country:        RU
@@ -64,11 +43,5 @@ mnt-by:         ROSTELECOM-MNT
 created:        2005-03-22T11:11:20Z
 last-modified:  2026-05-13T07:30:23Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

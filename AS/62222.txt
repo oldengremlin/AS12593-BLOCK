@@ -1,22 +1,15 @@
 aut-num:        AS62222
 as-name:        QS-AS
 org:            ORG-QL35-RIPE
-remarks:        ---------------------------------------------------
-remarks:        Uplinks
-remarks:        ---------------------------------------------------
 mp-import:      afi any.unicast from AS9002 accept ANY
 mp-export:      afi any.unicast to AS9002 announce AS62222
 mp-import:      afi any.unicast from AS31500 accept ANY
 mp-export:      afi any.unicast to AS31500 announce AS62222
 mp-import:      afi any.unicast from AS50509 accept ANY
 mp-export:      afi any.unicast to AS50509 announce AS62222
-remarks:        ---------------------------------------------------
-remarks:        IXPs
-remarks:        ---------------------------------------------------
 mp-import:      afi any.unicast from AS50952 action pref=200; accept AS-DATAIX
 mp-export:      afi any.unicast to AS50952 announce AS62222
 mp-import:      afi any.unicast from AS31500 action pref=200; accept AS-GLOBAL-IX
-mp-export:      afi any.unicast to AS31500 announce AS62222
 mp-import:      afi any.unicast from AS49869 action pref=200; accept AS-PITER-IX-MSK
 mp-export:      afi any.unicast to AS49869 announce AS62222
 mp-import:      afi any.unicast from AS50817 action pref=200; accept AS-PITER-IX
@@ -27,7 +20,6 @@ mp-import:      afi any.unicast from AS39607 action pref=200; accept AS-PITER-IX
 mp-export:      afi any.unicast to AS39607 announce AS62222
 mp-import:      afi any.unicast from AS8631 action pref=200; accept AS-MSKROUTESERVER
 mp-export:      afi any.unicast to AS8631 announce AS62222
-remarks:        ---------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -36,13 +28,6 @@ mnt-by:         QS-MNT
 created:        2013-12-17T13:27:41Z
 last-modified:  2024-10-05T00:04:58Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS62222
 country:        RU
@@ -62,11 +47,5 @@ mnt-by:         QS-MNT
 created:        2014-10-22T13:02:28Z
 last-modified:  2026-05-13T07:16:28Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

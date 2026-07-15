@@ -2,38 +2,19 @@ aut-num:        AS208177
 as-name:        AS-CENTRINVEST
 org:            ORG-PJCC2-RIPE
 descr:          Center-invest Bank Networks Autonomous System
-remarks:        Website: https://centrinvest.com/about/bank-details
-remarks:        +---------------------------------------------------------------------+
-remarks:        + Active Upstreams (stub-AS: no transit, only redundancy):
-remarks:        + AS12389 - PJSC Rostelecom   || (AS-ROSTELECOM)
-remarks:        + AS20485 - PJSC TransTeleCom || (AS-TTK)
-remarks:        + AS3216  - PJSC Vimpelcom    || (AS-SOVAM)
-remarks:        +---------------------------------------------------------------------+
-remarks:        + _ _ _ _ AS-ROSTELECOM (AS12389):
-remarks:        +
 import:         from AS12389 accept ANY
 mp-import:      afi ipv4.unicast from AS-ROSTELECOM accept ANY
 export:         to AS12389 announce RS-CENTRINVEST-AS208177
 mp-export:      afi ipv4.unicast to AS-ROSTELECOM announce RS-CENTRINVEST-AS208177
-remarks:        +---------------------------------------------------------------------+
-remarks:        + _ _ _ _ AS-TTK (AS20485):
-remarks:        +
 import:         from AS20485 accept ANY
 mp-import:      afi ipv4.unicast from AS-TTK accept ANY
 export:         to AS20485 announce RS-CENTRINVEST-AS208177
 mp-export:      afi ipv4.unicast to AS-TTK announce RS-CENTRINVEST-AS208177
-remarks:        +---------------------------------------------------------------------+
-remarks:        + _ _ _ _ AS-SOVAM (AS3216):
-remarks:        +
 import:         from AS3216 accept ANY
 mp-import:      afi ipv4.unicast from AS-SOVAM accept ANY
 export:         to AS3216 announce RS-CENTRINVEST-AS208177
 mp-export:      afi ipv4.unicast to AS-SOVAM announce RS-CENTRINVEST-AS208177
-remarks:        +---------------------------------------------------------------------+
-remarks:        + _ _ _ _ Default export for backups:
-remarks:        +
 mp-default:     to AS-ANY action pref=200; networks RS-CENTRINVEST-AS208177
-remarks:        +---------------------------------------------------------------------+
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -42,29 +23,6 @@ mnt-by:         CENTRINVEST-MNT
 created:        2019-09-19T13:38:29Z
 last-modified:  2026-01-12T09:15:41Z
 source:         RIPE
-remarks:        +---------------------------------------------------------------------+
-remarks:        + Stub AS for banking networks (45.155.92.0/22). No transit/peering.
-remarks:        + RPKI protected. Complies with DORA regulations (*).
-remarks:        + RPKI validation (ROV) enforced on routers: accept only rpki valid routes.
-remarks:        + Implemented via route-maps/filters (not in RPSL).
-remarks:        +---------------------------------------------------------------------+
-remarks:        + (*) ---
-remarks:        + Instead of a single "DORA law" compliance is achieved through the
-remarks:        + simultaneous application of Federal Law 161-FZ, the STO BR IBBS-1.0
-remarks:        + standard, and the Critical Information Infrastructure (CII) regime,
-remarks:        + all supervised and enforced by the Bank of Russia. This framework
-remarks:        + ensures a focus on operational resilience, incident management,
-remarks:        + and the protection of critical systems.
-remarks:        +
-remarks:        + Updated policies for upstream redundancy.
-remarks:        +---------------------------------------------------------------------+
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS208177
 country:        RU
@@ -83,11 +41,5 @@ mnt-by:         CENTRINVEST-MNT
 created:        2019-09-17T08:04:01Z
 last-modified:  2026-05-13T07:05:27Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

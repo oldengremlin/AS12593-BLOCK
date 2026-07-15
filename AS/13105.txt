@@ -1,14 +1,12 @@
 aut-num:        AS13105
 as-name:        LUKOIL-INFORM-AS
 org:            ORG-IL903-RIPE
-remarks:        -------------- Uplinks
 mp-import:      afi ipv4.unicast from AS8359 action pref=100; accept ANY
 mp-export:      afi ipv4.unicast to AS8359 announce AS-LUKOIL
 mp-import:      afi ipv4.unicast from AS3216 action pref=100; accept ANY
 mp-export:      afi ipv4.unicast to AS3216 announce AS-LUKOIL
 mp-import:      afi ipv4.unicast from AS30733 action pref=100; accept ANY
 mp-export:      afi ipv4.unicast to AS30733 announce AS-LUKOIL
-remarks:        -------------- Msk-ix Peers
 mp-import:      afi ipv4.unicast from AS35422 action pref=140; accept AS-PETERSTAR
 mp-export:      afi ipv4.unicast to AS35422 announce AS-LUKOIL
 mp-import:      afi ipv4.unicast from AS5467 action pref=140; accept AS-MIPT
@@ -133,7 +131,6 @@ mp-import:      afi ipv4.unicast from AS34602 action pref=140; accept AS-STARLNK
 mp-export:      afi ipv4.unicast to AS34602 announce AS-LUKOIL
 mp-import:      afi ipv6.unicast from AS8629 action pref=140; accept AS-MCNTT
 mp-export:      afi ipv6.unicast to AS8629 announce AS-LUKOIL
-remarks:        -------------- Regional Uplinks
 mp-import:      afi ipv4.unicast from AS44436 action pref=200; accept { 0.0.0.0/0 }
 mp-export:      afi ipv4.unicast to AS44436 announce { 82.118.134.0/24 }
 mp-import:      afi ipv4.unicast from AS20632 action pref=300; accept { 0.0.0.0/0 }
@@ -146,7 +143,6 @@ mp-import:      afi ipv4.unicast from AS20485 action pref=300; accept { 0.0.0.0/
 mp-export:      afi ipv4.unicast to AS20485 announce { 82.118.135.0/24 }
 mp-import:      afi ipv4.unicast from AS3216 action pref=300; accept { 0.0.0.0/0 }
 mp-export:      afi ipv4.unicast to AS3216 announce { 82.118.149.0/24 }
-mp-import:      afi ipv4.unicast from AS3216 action pref=300; accept { 0.0.0.0/0 }
 mp-export:      afi ipv4.unicast to AS3216 announce { 95.171.248.0/24 }
 mp-import:      afi ipv4.unicast from AS24896 action pref=300; accept { 0.0.0.0/0 }
 mp-export:      afi ipv4.unicast to AS24896 announce { 82.118.148.0/24 }
@@ -160,26 +156,6 @@ mp-import:      afi ipv4.unicast from AS43712 action pref=300; accept { 0.0.0.0/
 mp-export:      afi ipv4.unicast to AS43712 announce { 95.171.227.0/24 }
 mp-import:      afi ipv4.unicast from AS25490 action pref=300; accept { 0.0.0.0/0 }
 mp-export:      afi ipv4.unicast to AS25490 announce { 95.171.227.0/24 }
-remarks:        ----------------------------------------------------------------
-remarks:        Communities may be used by peers when talking to AS13105
-remarks:
-remarks:        13105:102X - Ruscomnet, as21414
-remarks:        13105:103X - MTU-Intel, as8359
-remarks:        13105:105X - MSK-IX Peers
-remarks:        13105:106x - Rostelecom, as12389
-remarks:
-remarks:        13105:203X - IPv6 MTU-Intel
-remarks:        13105:205X - IPv6 MSK-IX Peers
-remarks:
-remarks:        X = 1,2,4 or 6 - prepend 13105 (1,2,4 or 6) times
-remarks:        0 - do not advertise
-remarks:        Any other community 13105:* are deleted.
-remarks:
-remarks:        Markers:
-remarks:        13105:124 - RusComNet Paths
-remarks:        13105:126 - MSK-IX Paths
-remarks:        13105:128 - Rostelecom Paths
-remarks:        ----------------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -188,13 +164,6 @@ mnt-by:         lir-ru-rtk-inform-1-MNT
 created:        2001-12-04T11:27:03Z
 last-modified:  2025-01-29T11:40:53Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS13105
 country:        RU
@@ -213,11 +182,5 @@ mnt-by:         lir-ru-rtk-inform-1-MNT
 created:        2025-01-14T13:25:17Z
 last-modified:  2026-05-13T07:15:08Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

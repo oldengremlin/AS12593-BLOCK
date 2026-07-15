@@ -1,23 +1,16 @@
 aut-num:        AS60346
 as-name:        V_F_Tanker-AS
 org:            ORG-AKP2-RIPE
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv4 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 import:         from AS8359 action pref=100; accept ANY
 export:         to AS8359 announce AS60346
 import:         from AS31208 action pref=100; accept ANY
 export:         to AS31208 announce AS60346
-remarks:        ---------------------------------------------------------------
-remarks:        *************** IPv6 Routing Policy ***************
-remarks:        ---------------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS8359 accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS60346
 mp-import:      afi ipv6.unicast from AS13215 accept ANY
 mp-export:      afi ipv6.unicast to AS13215 announce AS60346
 mp-import:      afi ipv6.unicast from AS31208 accept ANY
 mp-export:      afi ipv6.unicast to AS31208 announce AS60346
-remarks:        ---------------------------------------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -28,13 +21,6 @@ created:        2013-08-07T06:45:00Z
 last-modified:  2022-10-22T23:26:25Z
 source:         RIPE
 sponsoring-org: ORG-LL38-RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS60346
 country:        RU
@@ -52,11 +38,5 @@ mnt-by:         LIDERTELECOM-mnt
 created:        2019-03-13T16:04:55Z
 last-modified:  2026-05-13T05:51:46Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
