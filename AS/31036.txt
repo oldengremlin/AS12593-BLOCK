@@ -1,13 +1,5 @@
 aut-num:        AS31036
 as-name:        NEWTELESYSTEMS
-remarks:        Russia, Tomsk
-remarks:        -
-remarks:        -
-remarks:        *******************************************
-remarks:        ****************** IPv4 *******************
-remarks:        *******************************************
-remarks:        -
-remarks:        -
 import:         from AS48858 accept ANY AND NOT <^[AS12389]>
 export:         to AS48858 announce AS-NEWTELESYSTEMS
 import:         from AS8359 accept ANY
@@ -39,13 +31,6 @@ export:         to AS56707 announce ANY
 export:         to AS9049 announce AS-NEWTELESYSTEMS
 import:         from AS9049 accept ANY
 default:        to AS8359
-remarks:        -
-remarks:        -
-remarks:        *******************************************
-remarks:        ****************** IPv6 *******************
-remarks:        *******************************************
-remarks:        -
-remarks:        -
 mp-import:      afi ipv6.unicast from AS8359 accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS31036
 mp-import:      afi ipv6.unicast from AS31133 accept ANY
@@ -54,38 +39,6 @@ mp-import:      afi ipv6.unicast from AS48858 accept ANY
 mp-export:      afi ipv6.unicast to AS48858 announce AS31036
 mp-import:      afi ipv6.unicast from AS13094 accept ANY
 mp-export:      afi ipv6.unicast to AS13094 announce AS31036
-remarks:        -
-remarks:        -
-remarks:        ********************************************
-remarks:        ************* BGP-Communities **************
-remarks:        ********************************************
-remarks:        -
-remarks:        -
-remarks:        Information community meaning:
-remarks:        -
-remarks:        31036:8359 - routes received from AS8359
-remarks:        31036:31133 - routes received from AS31133
-remarks:        31036:13094 - routes received from SFO-IX (AS13094)
-remarks:        31036:48858 - routes received from AS48858
-remarks:        31036:62399 - routes received from TSKIX (AS62399)
-remarks:        -
-remarks:        -
-remarks:        Prefix management communities:
-remarks:        -
-remarks:        31036:x - all upstreams
-remarks:        8359:x - to MTS (AS8359)
-remarks:        13094:x - to SFO-IX (AS13094)
-remarks:        31133:x - to Megafon (AS31133)
-remarks:        48858:x - to Milecom (AS48858)
-remarks:        -
-remarks:        x = 0 - do not announce
-remarks:        x = 1, 2, 3, 5 - prepend 31036 1, 2, 3 or 5 times
-remarks:        -
-remarks:        -
-remarks:        Blackhole Community:
-remarks:        -
-remarks:        31036:666 - only /32 prefixes are accepted
-remarks:        -
 org:            ORG-RA21-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -96,17 +49,13 @@ mnt-by:         RAID-MNT
 created:        2004-02-12T10:35:33Z
 last-modified:  2022-03-22T06:28:59Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS31036
 country:        RU
 as-name:        NEWTELESYSTEMS JSC "ER-Telecom Holding"
+as-num:         AS31036
+country:        RU
+as-name:        null
 
 organisation:   ORG-RA21-RIPE
 org-name:       JSC "ER-Telecom Holding"
@@ -125,11 +74,5 @@ mnt-by:         RAID-MNT
 created:        2004-04-17T11:56:55Z
 last-modified:  2026-05-13T07:07:54Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

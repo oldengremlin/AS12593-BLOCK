@@ -2,18 +2,12 @@ aut-num:        AS206810
 as-name:        UGLETELECOM
 org:            ORG-USTA2-RIPE
 sponsoring-org: ORG-OAN1-RIPE
-remarks:        ------------------------------------------------------------------------
-remarks:        -- Providers
-remarks:        ------------------------------------------------------------------------
 import:         from AS48084 accept ANY
 export:         to AS48084 announce AS206810:AS-CUSTOMERS
 import:         from AS52091 accept ANY
 export:         to AS52091 announce AS206810:AS-CUSTOMERS
 import:         from AS31133 accept ANY
 export:         to AS31133 announce AS206810:AS-CUSTOMERS
-remarks:        ------------------------------------------------------------------------
-remarks:        -- Peerings
-remarks:        ------------------------------------------------------------------------
 import:         from AS8631 accept ANY
 export:         to AS8631 announce AS206810:AS-CUSTOMERS
 import:         from AS39607 accept ANY
@@ -26,11 +20,6 @@ import:         from AS50817 accept ANY
 export:         to AS50817 announce AS206810:AS-CUSTOMERS
 import:         from AS59539 accept ANY
 export:         to AS59539 announce AS206810:AS-CUSTOMERS
-import:         from AS8631 accept ANY
-export:         to AS8631 announce AS206810:AS-CUSTOMERS
-remarks:        ------------------------------------------------------------------------
-remarks:        -- Customers
-remarks:        ------------------------------------------------------------------------
 import:         from AS213694 at cr1-60 accept AS213694
 export:         to AS213694 at cr1-60 announce ANY
 import:         from AS215503 accept AS215503
@@ -83,11 +72,9 @@ import:         from AS56915 accept AS56915
 export:         to AS56915 announce { 0.0.0.0/0 }
 import:         from AS57164 at cr1-60 accept AS-HELITELE
 export:         to AS57164 at cr1-60 announce ANY
-import:         from AS57164 at cr1-60 accept AS-HELITELE
 export:         to AS57164 at cr1-60 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS57164 at cr1-89 accept AS-HELITELE
 export:         to AS57164 at cr1-89 announce ANY
-import:         from AS57164 at cr1-89 accept AS-HELITELE
 export:         to AS57164 at cr1-89 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS57460 accept AS-LINKNET
 export:         to AS57460 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
@@ -97,7 +84,6 @@ import:         from AS59392 accept AS59392
 export:         to AS59392 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS59815 accept AS-TRKMETRO
 export:         to AS59815 announce ANY
-import:         from AS59815 accept AS-TRKMETRO
 export:         to AS59815 announce { 0.0.0.0/0 }
 import:         from AS59867 accept AS59867
 export:         to AS59867 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
@@ -145,17 +131,13 @@ created:        2022-03-24T13:12:47Z
 last-modified:  2026-02-10T13:20:25Z
 source:         RIPE
 abuse-c:        ACRO47149-RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS206810
 country:        RU
 as-name:        UGLETELECOM GUP DNR "UGLETELECOM"
+as-num:         AS206810
+country:        RU
+as-name:        null
 
 organisation:   ORG-USTA2-RIPE
 org-name:       GUP DNR "UGLETELECOM"
@@ -169,11 +151,5 @@ mnt-by:         MIV-MNT
 created:        2022-03-15T21:45:03Z
 last-modified:  2026-05-13T06:06:15Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

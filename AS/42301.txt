@@ -1,41 +1,18 @@
 aut-num:        AS42301
 as-name:        RADIO-CAPRICORN-AS
 org:            ORG-RKL2-RIPE
-remarks:        ================================================================
-remarks:        -= IPv4 Routing Policy =-
-remarks:        ----------------------------------------------------------------
-remarks:        Upstreams
-remarks:        ----------------------------------------------------------------
-remarks:
-remarks:        Smart Telecom Limited
 import:         from AS31376 accept ANY
 export:         to AS31376 announce AS-RADIO-CAPRICORN AND {193.200.239.0/24}
-remarks:
-remarks:        JSC Avantel
 import:         from AS51178 accept ANY
 export:         to AS51178 announce AS-RADIO-CAPRICORN AND {193.200.239.0/24}
-remarks:
-remarks:        Korporatsiya R-Industriya LLC
 import:         from AS208511 accept {0.0.0.0/0} AS208511
 export:         to AS208511 announce AS-RADIO-CAPRICORN AND {193.200.239.0/24}
-remarks:        ================================================================
-remarks:        -= IPv6 Routing Policy =-
-remarks:        ----------------------------------------------------------------
-remarks:        Upstreams
-remarks:        ----------------------------------------------------------------
-remarks:
-remarks:        Smart Telecom Limited
 mp-import:      from AS31376 accept ANY
 mp-export:      to AS31376 announce AS-RADIO-CAPRICORN AND {2001:67c:2568::/48}
-remarks:
-remarks:        JSC Avantel
 mp-import:      from AS51178 accept ANY
 mp-export:      to AS51178 announce AS-RADIO-CAPRICORN AND {2001:67c:2568::/48}
-remarks:
-remarks:        Johannes Ernst
 mp-import:      from AS212895 accept ANY
 mp-export:      to AS212895 announce AS-RADIO-CAPRICORN AND {2001:67c:2568::/48}
-remarks:        ================================================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -44,19 +21,14 @@ mnt-by:         AS42301-MNT
 created:        2007-01-29T15:32:49Z
 last-modified:  2026-07-12T12:00:00Z
 source:         RIPE
-remarks:        region-id = Russia, Leningrad district, Saint-Petersburg
 sponsoring-org: ORG-IL934-RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS42301
 country:        RU
 as-name:        RADIO-CAPRICORN-AS Radio Kozerog LLC
+as-num:         AS42301
+country:        RU
+as-name:        null
 
 organisation:   ORG-RKL2-RIPE
 org-name:       Radio Kozerog LLC
@@ -70,11 +42,5 @@ abuse-c:        RKAH2-RIPE
 created:        2013-05-16T21:46:46Z
 last-modified:  2026-05-13T06:00:50Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 

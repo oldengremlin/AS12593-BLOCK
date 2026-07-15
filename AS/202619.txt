@@ -1,8 +1,6 @@
 aut-num:        AS202619
 as-name:        DOVECOM
 org:            ORG-DL321-RIPE
-remarks:        ****************** IPv4 Routing Policy ************************
-remarks:        ****************** UpLinks ************************************
 import:         from AS57304 accept ANY
 import:         from AS201776 accept ANY
 import:         from AS199961 accept ANY
@@ -18,13 +16,10 @@ export:         to AS50817 announce AS-DOVECOM-RU
 default:        to AS57304 action pref=100; networks AS-DOVECOM-RU
 default:        to AS201776 action pref=100; networks AS-DOVECOM-RU
 default:        to AS199961 action pref=100; networks AS-DOVECOM-RU
-remarks:        ****************** Clients ************************************
 import:         from AS50015 accept AS50015
 import:         from AS214081 accept AS214081
 export:         to AS50015 announce ANY
 export:         to AS214081 announce ANY
-remarks:        ****************** IPv6 Routing Policy ************************
-remarks:        ****************** UpLinks ************************************
 mp-import:      afi ipv6.unicast from AS57304 action pref=100; accept ANY
 mp-import:      afi ipv6.unicast from AS201776 action pref=100; accept ANY
 mp-import:      afi ipv6.unicast from AS199961 action pref=100; accept ANY
@@ -35,9 +30,6 @@ mp-export:      afi ipv6.unicast to AS201776 announce AS-DOVECOM-RU
 mp-export:      afi ipv6.unicast to AS199961 announce AS-DOVECOM-RU
 mp-export:      afi ipv6.unicast to AS48869 announce AS-DOVECOM-RU
 mp-export:      afi ipv6.unicast to AS50817 announce AS-DOVECOM-RU
-remarks:        ********************* Contacts and URLs ***********************
-remarks:        SPAM and security issues abuse@lds.online
-remarks:        Web Site https://lds.online
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -46,17 +38,13 @@ mnt-by:         ru-dovecom-1-mnt
 created:        2022-09-28T13:08:43Z
 last-modified:  2025-12-22T13:20:46Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
 
 as-num:         AS202619
 country:        RU
 as-name:        DOVECOM Dovecom LLC
+as-num:         AS202619
+country:        RU
+as-name:        null
 
 organisation:   ORG-DL321-RIPE
 org-name:       Dovecom LLC
@@ -71,11 +59,5 @@ mnt-by:         ru-dovecom-1-mnt
 created:        2018-08-06T14:59:01Z
 last-modified:  2026-05-13T07:39:24Z
 source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
+
 
