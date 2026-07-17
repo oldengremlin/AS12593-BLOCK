@@ -1374,10 +1374,6 @@ export:         to AS1299 announce AS-VK
 import:         from AS1299 accept ANY
 mp-export:      afi ipv6.unicast to AS1299 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS1299 accept ANY;
-export:         to AS5511 announce AS-VK
-import:         from AS5511 accept ANY
-mp-export:      afi ipv6.unicast to AS5511 announce AS-VK;
-mp-import:      afi ipv6.unicast from AS5511 accept ANY;
 export:         to AS6762 announce AS-VK
 import:         from AS6762 accept ANY
 mp-export:      afi ipv6.unicast to AS6762 announce AS-VK;
@@ -1888,7 +1884,6 @@ remarks:
 remarks:        47764:1110x When advertising to ANY International uplink, specifically:
 remarks:
 remarks:        47764:1111x When advertising to Telia (AS1299) uplink...
-remarks:        47764:1113x When advertising to Orange (AS5511) uplink...
 remarks:        47764:1114x When advertising to Seabone (AS6762) uplink...
 remarks:
 remarks:        47764:2100x When advertising to ANY peer or IX, specifically:
@@ -2114,7 +2109,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2026-07-13T08:17:15Z
+last-modified:  2026-07-15T08:01:47Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

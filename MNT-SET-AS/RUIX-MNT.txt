@@ -8,8 +8,6 @@ descr:          from each route server customer. # from AS2854: from AS2854: fro
 members:        AS112
                 # from AS2854:
 members:        AS-OBSRUSSIA6, AS-ROSPRINT
-                # from AS5468:
-members:        AS-URFU
                 # from AS8359:
 members:        AS-MTU
                 # from AS8369:
@@ -130,7 +128,7 @@ remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2026-07-03T07:39:32Z
+last-modified:  2026-07-15T07:39:58Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -620,6 +618,8 @@ members:        AS31174
 members:        AS-TISDIALOG
                 # from AS31257:
 members:        AS-ORIONNET
+                # from AS31275:
+members:        AS-SAMTELECOM
                 # from AS31294:
 members:        AS-LANTECH
                 # from AS31370:
@@ -1465,7 +1465,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-07-06T13:52:01Z
+last-modified:  2026-07-15T13:53:04Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3467,9 +3467,6 @@ import:         from AS112
 import:         from AS2854
                 action pref=100;
                 accept AS-OBSRUSSIA6 AS-ROSPRINT
-import:         from AS5468
-                action pref=100;
-                accept AS-URFU
 import:         from AS8359
                 action pref=100;
                 accept AS-MTU
@@ -3618,8 +3615,6 @@ export:         to AS112
                 announce AS-EKTROUTESERVER
 export:         to AS2854
                 announce AS-EKTROUTESERVER
-export:         to AS5468
-                announce AS-EKTROUTESERVER
 export:         to AS8359
                 announce AS-EKTROUTESERVER
 export:         to AS8369
@@ -3738,7 +3733,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2026-07-03T07:39:35Z
+last-modified:  2026-07-15T07:40:01Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5732,6 +5727,9 @@ import:         from AS31214
 import:         from AS31257
                 action pref=100;
                 accept AS-ORIONNET
+import:         from AS31275
+                action pref=100;
+                accept AS-SAMTELECOM
 import:         from AS31294
                 action pref=100;
                 accept AS-LANTECH
@@ -7213,6 +7211,8 @@ export:         to AS31214
                 announce AS-MSKROUTESERVER
 export:         to AS31257
                 announce AS-MSKROUTESERVER
+export:         to AS31275
+                announce AS-MSKROUTESERVER
 export:         to AS31294
                 announce AS-MSKROUTESERVER
 export:         to AS31370
@@ -8036,7 +8036,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-07-06T13:52:05Z
+last-modified:  2026-07-15T13:53:09Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

@@ -114,6 +114,7 @@ members:        AS-DOCKER
 members:        AS-UNETCOMRU
 members:        AS-AVIEL
 members:        AS-NETRACK2
+members:        AS202963
 members:        AS-CROC
 members:        AS-ATLEX
 members:        AS-BEGET
@@ -232,6 +233,7 @@ members:        AS-GORSETI
 members:        AS-ENTERRA
 members:        AS-SET-CL
 members:        AS208117
+members:        AS-CREANOVA
 members:        AS205432
 members:        AS-NOVOSYSTEM
 members:        AS-MMTS
@@ -253,7 +255,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2008-08-19T12:40:08Z
-last-modified:  2026-07-10T14:01:47Z
+last-modified:  2026-07-15T14:01:50Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -359,6 +361,7 @@ members:        AS-ALFACOM
 members:        AS3267:AS-CUSTOMERS
 members:        AS216334:AS-NHT
 members:        AS44534
+members:        AS-CREANOVA
 members:        AS-NOVOSYSTEM
 members:        AS-BIGTELECOM
 members:        AS59504
@@ -372,7 +375,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2017-10-10T12:33:20Z
-last-modified:  2026-07-10T14:01:47Z
+last-modified:  2026-07-15T14:01:50Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -881,6 +884,8 @@ import:         from AS47133   accept   AS-PL-NET
 export:         to   AS47133   announce ANY
 import:         from AS198324  accept   AS198324
 export:         to   AS198324  announce ANY
+import:         from AS202963  accept   AS202963
+export:         to   AS202963  announce ANY
 import:         from AS62272   accept   AS62272
 export:         to   AS62272   announce ANY
 import:         from AS57363   accept   AS-CDNETWORKSRU
@@ -1111,6 +1116,8 @@ import:         from AS47626   accept   AS-ARPNET61
 export:         to   AS47626   announce ANY
 import:         from AS48885   accept   AS-NEOCARRIER
 export:         to   AS48885   announce ANY
+import:         from AS51765   accept   AS-CREANOVA
+export:         to   AS51765   announce ANY
 import:         from AS216071  accept   AS-VDSINA
 export:         to   AS216071  announce ANY
 import:         from AS49403   accept   AS-AVK-WELLCOM
@@ -1375,6 +1382,8 @@ mp-import:      afi ipv6.unicast from AS200993  accept   AS200993:AS-CORE
 mp-export:      afi ipv6.unicast to   AS200993  announce ANY
 mp-import:      afi ipv6.unicast from AS48885   accept   AS-NEOCARRIER
 mp-export:      afi ipv6.unicast to   AS48885   announce ANY
+mp-import:      afi ipv6.unicast from AS51765   accept   AS-CREANOVA
+mp-export:      afi ipv6.unicast to   AS51765   announce ANY
 mp-import:      afi ipv6.unicast from AS201119  accept   AS-ICEWOOD
 mp-export:      afi ipv6.unicast to   AS201119  announce ANY
 mp-import:      afi ipv6.unicast from AS31376   accept   AS-SMART-V6
@@ -2950,7 +2959,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-07-10T14:01:46Z
+last-modified:  2026-07-15T14:01:49Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -2975,47 +2984,6 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2005-09-02T08:39:06Z
 last-modified:  2026-07-14T10:00:18Z
-source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
-
-
-aut-num:        AS39102
-as-name:        AS-ATHM
-descr:          brand At Home
-org:            ORG-GNMI1-RIPE
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         mnt-ag-globalnet-1
-created:        2005-12-14T13:55:08Z
-last-modified:  2026-07-14T06:47:55Z
-source:         RIPE
-remarks:        ****************************
-remarks:        * THIS OBJECT IS MODIFIED
-remarks:        * Please note that all data that is generally regarded as personal
-remarks:        * data has been removed from this object.
-remarks:        * To view the original object, please query the RIPE Database at:
-remarks:        * http://www.ripe.net/whois
-remarks:        ****************************
-
-
-aut-num:        AS39598
-org:            ORG-GNMI1-RIPE
-as-name:        TIERA-AS
-admin-c:        DUMY-RIPE
-tech-c:         DUMY-RIPE
-status:         ASSIGNED
-mnt-by:         RIPE-NCC-END-MNT
-mnt-by:         mnt-ag-globalnet-1
-created:        2006-03-23T10:04:05Z
-last-modified:  2026-07-14T08:19:47Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3466,7 +3434,8 @@ remarks:        207113 - 64680
 remarks:        208951 - 64681
 remarks:        198324 - 64666
 remarks:        214481 - 64682
-remarks:        216345 - 64683
+remarks:        216456 - 64683
+remarks:        204144 - 64684
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -4982,8 +4951,10 @@ import:         from AS214481  accept   AS214481:AS-WCZAPKOWICZ
 export:         to   AS214481  announce AS-DATAIX
 import:         from AS56654   accept   AS-INFINITYTELECOM
 export:         to   AS56654   announce AS-DATAIX
-import:         from AS216345  accept   AS-DCENT
-export:         to   AS216345  announce AS-DATAIX
+import:         from AS216456  accept   AS216456:AS-DCENT
+export:         to   AS216456  announce AS-DATAIX
+import:         from AS204144  accept   AS-CXXI
+export:         to   AS204144  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6512,8 +6483,10 @@ mp-import:      afi ipv6.unicast from AS214481  accept   AS214481:AS-WCZAPKOWICZ
 mp-export:      afi ipv6.unicast to   AS214481  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS56654   accept   AS-INFINITYTELECOM
 mp-export:      afi ipv6.unicast to   AS56654   announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS216345  accept   AS-DCENT
-mp-export:      afi ipv6.unicast to   AS216345  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS216456  accept   AS216456:AS-DCENT
+mp-export:      afi ipv6.unicast to   AS216456  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS204144  accept   AS-CXXI
+mp-export:      afi ipv6.unicast to   AS204144  announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6521,7 +6494,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-07-09T14:01:43Z
+last-modified:  2026-07-15T14:01:46Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
