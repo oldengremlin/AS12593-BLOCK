@@ -1,0 +1,11 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp dependency-graph.html .public/index.html
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main # або master, залежно від вашої гілки за замовчуванням
