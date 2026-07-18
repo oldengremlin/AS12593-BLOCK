@@ -180,12 +180,14 @@ import:         from AS57304 accept AS-RETN
 export:         to AS57304 announce AS57629
 import:         from AS41330 accept AS41330
 export:         to AS41330 announce AS57629
+import:         from AS202683 accept AS202683:AS-ONEHOP
+export:         to AS202683 announce AS57629
 mp-export:      afi ipv6.unicast to AS42403 announce AS57629
 mp-import:      afi ipv6.unicast from AS42403 accept AS-NSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS31133 announce AS57629
-mp-import:      afi ipv6.unicast from AS31133 accept any
+mp-import:      afi ipv6.unicast from AS31133 accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS57629
-mp-import:      afi ipv6.unicast from AS8359 accept any
+mp-import:      afi ipv6.unicast from AS8359 accept ANY
 mp-export:      afi ipv6.unicast to AS50384 announce AS57629
 mp-import:      afi ipv6.unicast from AS50384 accept any
 mp-export:      afi ipv6.unicast to AS20485 announce AS57629
@@ -572,7 +574,7 @@ export:         to AS12714 announce AS57629
 remarks:        ----RECONN----
 import:         from AS12722 accept AS-RECONN
 export:         to AS12722 announce AS57629
-remarks:        ----TELE2----
+remarks:        ----Tele2----
 import:         from AS12958 accept AS-T2RU-MR-MOSCOW
 export:         to AS12958 announce AS57629
 remarks:        ----Milecom----
@@ -676,7 +678,7 @@ mp-export:      afi ipv6.unicast to AS3216 announce AS57629
 mp-import:      afi ipv6.unicast from AS3216 accept ANY
 remarks:        ------MTS------
 mp-export:      afi ipv6.unicast to AS8359 announce AS57629
-mp-import:      afi ipv6.unicast from AS8359 accept any
+mp-import:      afi ipv6.unicast from AS8359 accept ANY
 remarks:        ------Obit------
 mp-export:      afi ipv6.unicast to AS8492 announce AS57629
 mp-import:      afi ipv6.unicast from AS8492 accept AS-OBIT
@@ -827,7 +829,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-ivi-1-mnt
 notify:         noc@ivi.ru
 created:        2011-12-19T11:32:01Z
-last-modified:  2026-03-16T12:57:31Z
+last-modified:  2026-07-16T12:35:33Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
