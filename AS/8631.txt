@@ -1271,6 +1271,9 @@ import:         from AS61111
 import:         from AS61121
                 action pref=100;
                 accept AS-ODTV
+import:         from AS61223
+                action pref=100;
+                accept AS61223
 import:         from AS61237
                 action pref=100;
                 accept AS61237
@@ -2463,6 +2466,8 @@ export:         to AS61111
                 announce AS-MSKROUTESERVER
 export:         to AS61121
                 announce AS-MSKROUTESERVER
+export:         to AS61223
+                announce AS-MSKROUTESERVER
 export:         to AS61237
                 announce AS-MSKROUTESERVER
 export:         to AS61280
@@ -2704,7 +2709,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-07-16T13:53:34Z
+last-modified:  2026-07-17T09:53:55Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

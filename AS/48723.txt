@@ -2,10 +2,16 @@ aut-num:        AS48723
 as-name:        RT-INFORM
 org:            ORG-LR156-RIPE
 sponsoring-org: ORG-RRIf1-RIPE
-import:         from AS56931 accept ANY
-export:         to AS56931 announce AS48723:AS-RTI
-import:         from AS5467 accept ANY
-export:         to AS5467 announce AS48723:AS-RTI
+remarks:
+remarks:        --- Upstreams ---
+remarks:
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS48723:AS-RTI
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS48723:AS-RTI
+remarks:
+remarks:        --- Clients ---
+remarks:
 import:         from AS43526 accept AS43526
 export:         to AS43526 announce ANY
 admin-c:        DUMY-RIPE
@@ -14,7 +20,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RT-INFORM-MNT
 created:        2021-09-23T06:47:38Z
-last-modified:  2026-07-10T07:10:56Z
+last-modified:  2026-07-17T16:30:14Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
