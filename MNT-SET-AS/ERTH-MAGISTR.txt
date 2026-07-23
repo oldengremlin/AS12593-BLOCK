@@ -11,6 +11,7 @@ members:        AS-CSIT
 members:        AS-AVIVA-TELECOM
 members:        AS51245
 members:        AS12418
+members:        AS203163
 members:        AS-NSC-SET
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
@@ -18,7 +19,7 @@ mnt-by:         RAID-MNT
 mnt-by:         ERTH-MAGISTR
 notify:         ripe@ertelecom.ru
 created:        2010-01-29T13:14:56Z
-last-modified:  2025-04-14T08:47:43Z
+last-modified:  2026-07-21T08:33:44Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -38,6 +39,7 @@ members:        AS-BSTV
 members:        AS49184
 members:        AS62006
 members:        AS210778
+members:        AS219341
 members:        AS-LIFETELECOM
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
@@ -45,7 +47,7 @@ mnt-by:         RAID-MNT
 mnt-by:         ERTH-MAGISTR
 notify:         ripe@ertelecom.ru
 created:        2011-07-04T12:06:12Z
-last-modified:  2026-05-18T13:03:24Z
+last-modified:  2026-07-21T11:51:01Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -4491,6 +4493,12 @@ export:         to AS197268 announce ANY
 remarks:        -DOWNSTREAM-BASIS-IT-
 export:         to AS207473 announce ANY
 remarks:        -DOWNSTREAM-VATS-ON-
+import:         from AS203163 accept AS203163
+export:         to AS203163 announce ANY
+remarks:        -DOWNSTREAM-INTERNET-04-
+import:         from AS219341 accept AS219341
+export:         to AS219341 announce ANY
+remarks:        -DOWNSTREAM-CHALET-LIFE-
 remarks:        ========================================================
 remarks:        Control community for Customers
 remarks:
@@ -4651,7 +4659,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ERTH-MAGISTR
 created:        2011-10-13T07:43:18Z
-last-modified:  2026-07-07T10:08:14Z
+last-modified:  2026-07-21T11:50:20Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

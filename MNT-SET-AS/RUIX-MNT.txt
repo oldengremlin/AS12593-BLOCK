@@ -1781,6 +1781,8 @@ members:        AS-VKONTAKTE
 members:        AS-FIORD
                 # from AS31133:
 members:        AS-CDN-MEGAFON
+                # from AS39728:
+members:        AS-LUGANET
                 # from AS40966:
 members:        as40966:AS-BIGWEB
                 # from AS44587:
@@ -1834,7 +1836,7 @@ admin-c:        DUMY-RIPE
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2008-10-27T12:33:38Z
-last-modified:  2026-07-13T14:37:12Z
+last-modified:  2026-07-21T14:37:45Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -4503,7 +4505,6 @@ import:         from AS6850 action pref=100; accept AS-METROCOM
 import:         from AS12389 action pref=100; accept AS-ROSTELECOM
 import:         from AS12418 action pref=100; accept AS-QUANTUM
 import:         from AS28968 action pref=100; accept AS-EUT
-import:         from AS39102 action pref=100; accept AS-ATHM
 import:         from AS39792 action pref=100; accept AS-ANDERS
 import:         from AS41145 action pref=100; accept AS-TELIX
 import:         from AS42668 action pref=100; accept AS42668
@@ -4516,7 +4517,6 @@ export:         to AS6850 announce AS-NS9_RIPN_NET
 export:         to AS12389 announce AS-NS9_RIPN_NET
 export:         to AS12418 announce AS-NS9_RIPN_NET
 export:         to AS28968 announce AS-NS9_RIPN_NET
-export:         to AS39102 announce AS-NS9_RIPN_NET
 export:         to AS39792 announce AS-NS9_RIPN_NET
 export:         to AS41145 announce AS-NS9_RIPN_NET
 export:         to AS42668 announce AS-NS9_RIPN_NET
@@ -4529,7 +4529,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-04-23T09:08:34Z
-last-modified:  2023-10-02T12:36:08Z
+last-modified:  2026-07-21T14:55:18Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -4753,6 +4753,9 @@ import:         from AS28917
 import:         from AS31133
                 action pref=100;
                 accept AS-CDN-MEGAFON
+import:         from AS39728
+                action pref=100;
+                accept AS-LUGANET
 import:         from AS40966
                 action pref=100;
                 accept as40966:AS-BIGWEB
@@ -4818,6 +4821,8 @@ export:         to AS28917
                 announce AS-RNDROUTESERVER
 export:         to AS31133
                 announce AS-RNDROUTESERVER
+export:         to AS39728
+                announce AS-RNDROUTESERVER
 export:         to AS40966
                 announce AS-RNDROUTESERVER
 export:         to AS44587
@@ -4870,7 +4875,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2008-10-27T08:45:37Z
-last-modified:  2026-07-13T14:37:11Z
+last-modified:  2026-07-21T14:37:40Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

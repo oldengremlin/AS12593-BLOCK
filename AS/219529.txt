@@ -3,22 +3,43 @@ as-name:        PODRIL1AK2-AS
 org:            ORG-YK37-RIPE
 sponsoring-org: ORG-EAI4-RIPE
 remarks:
+remarks:        ============================================================
+remarks:        IPv6 Transit
+remarks:        ============================================================
+remarks:
 remarks:        Awas
-import:         from AS201279 accept ANY
-export:         to AS201279 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS201279 accept ANY
+mp-export:      afi ipv6.unicast to AS201279 announce AS219529:AS-PODRIL1AK2
 remarks:
 remarks:        Tizian Maxime Weigt
-import:         from AS215828 accept ANY
-export:         to AS215828 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS215828 accept ANY
+mp-export:      afi ipv6.unicast to AS215828 announce AS219529:AS-PODRIL1AK2
 remarks:
-remarks:        Khinkali Industries
-import:         from AS219299 accept ANY
-export:         to AS219299 announce AS219529:AS-PODRIL1AK2
+remarks:        ============================================================
+remarks:        IPv4 and IPv6 Transit
+remarks:        ============================================================
 remarks:
 remarks:        Valor Holdings
 import:         from AS33755 accept ANY
 export:         to AS33755 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS33755 accept ANY
+mp-export:      afi ipv6.unicast to AS33755 announce AS219529:AS-PODRIL1AK2
 remarks:
+remarks:        ============================================================
+remarks:        Internet Exchanges
+remarks:        ============================================================
+remarks:
+remarks:        BGP.Exchange - Frankfurt and Kansas City
+import:         from AS24381 accept AS-BGPExchange-PEERS
+export:         to AS24381 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS24381 accept AS-BGPExchange-PEERS
+mp-export:      afi ipv6.unicast to AS24381 announce AS219529:AS-PODRIL1AK2
+remarks:
+remarks:        Lynqia IX Riga
+mp-import:      afi ipv6.unicast from PRNG-LYNQIA-IX-RIGAv6 accept RS-LYNQIA-IX-RIGA
+mp-export:      afi ipv6.unicast to PRNG-LYNQIA-IX-RIGAv6 announce AS219529:AS-PODRIL1AK2
+remarks:
+remarks:        ============================================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -26,7 +47,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-06-04T12:29:38Z
-last-modified:  2026-07-20T11:34:20Z
+last-modified:  2026-07-21T21:09:14Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
