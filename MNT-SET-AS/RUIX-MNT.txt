@@ -1608,6 +1608,8 @@ members:        AS43330
 members:        AS-INTERNET-PRO-EKT-IX
                 # from AS44206:
 members:        AS-SIBSET-KRS
+                # from AS44267:
+members:        AS-IREN
                 # from AS44587:
 members:        AS-MEGACOM
                 # from AS47117:
@@ -1702,7 +1704,7 @@ remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2026-07-03T05:42:33Z
+last-modified:  2026-07-22T10:14:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3144,6 +3146,9 @@ import:         from AS44128
 import:         from AS44206
                 action pref=100;
                 accept AS-SIBSET-KRS
+import:         from AS44267
+                action pref=100;
+                accept AS-IREN
 import:         from AS44587
                 action pref=100;
                 accept AS-MEGACOM
@@ -3325,6 +3330,8 @@ export:         to AS44128
                 announce AS-NSKROUTESERVER
 export:         to AS44206
                 announce AS-NSKROUTESERVER
+export:         to AS44267
+                announce AS-NSKROUTESERVER
 export:         to AS44587
                 announce AS-NSKROUTESERVER
 export:         to AS47117
@@ -3415,7 +3422,7 @@ remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-07-03T05:42:29Z
+last-modified:  2026-07-22T10:14:04Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
