@@ -280,14 +280,6 @@ aut-num:        AS207567
 as-name:        INTEZIONET-AS
 org:            ORG-INZO2-RIPE
 sponsoring-org: ORG-DAI3-RIPE
-import:         from AS213529 accept ANY
-export:         to AS213529 announce AS207567
-import:         from AS213893 accept ANY
-export:         to AS213893 announce AS207567
-import:         from AS215443 accept ANY
-export:         to AS215443 announce AS207567
-mp-import:      afi ipv6.unicast from AS206604:AS-FOXDEVLAB accept ANY
-mp-export:      afi ipv6.unicast to AS206604:AS-FOXDEVLAB announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -295,7 +287,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         intezio-mnt
 created:        2025-06-02T13:17:17Z
-last-modified:  2026-06-12T06:34:03Z
+last-modified:  2026-07-23T07:33:22Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -547,6 +539,32 @@ remarks:        * http://www.ripe.net/whois
 remarks:        ****************************
 
 
+aut-num:        AS219147
+as-name:        RAWI-NETWORK-AS
+org:            ORG-MG419-RIPE
+sponsoring-org: ORG-EAI4-RIPE
+import:         from AS213529 accept ANY
+export:         to AS213529 announce AS219147
+import:         from AS212895 accept ANY
+export:         to AS212895 announce AS219147
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         RIT-ECODE-MNT
+mnt-by:         RAWI-NET-MNT
+created:        2026-07-23T09:59:39Z
+last-modified:  2026-07-23T09:59:39Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
 aut-num:        AS219227
 as-name:        VANISH-CLOUD-AS
 org:            ORG-VCL32-RIPE
@@ -555,6 +573,8 @@ import:         from AS214309 accept ANY
 export:         to AS214309 announce AS219227
 import:         from AS216039 accept ANY
 export:         to AS216039 announce AS219227
+import:         from AS214243 accept ANY
+export:         to AS214243 announce AS219227
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -562,7 +582,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         VANISHCLOUD-MNT
 created:        2026-07-13T09:25:57Z
-last-modified:  2026-07-13T09:25:57Z
+last-modified:  2026-07-23T16:36:19Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -791,6 +811,10 @@ mp-import:      afi ipv6.unicast from AS24381 accept AS-BGPExchange-PEERS
 mp-export:      afi ipv6.unicast to AS24381 announce AS219529:AS-PODRIL1AK2
 remarks:
 remarks:        Lynqia IX Riga
+import:         from PRNG-LYNQIA-IX-RIGAv4 accept RS-LYNQIA-IX-RIGA
+export:         to PRNG-LYNQIA-IX-RIGAv4 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv4.unicast from PRNG-LYNQIA-IX-RIGAv4 accept RS-LYNQIA-IX-RIGA
+mp-export:      afi ipv4.unicast to PRNG-LYNQIA-IX-RIGAv4 announce AS219529:AS-PODRIL1AK2
 mp-import:      afi ipv6.unicast from PRNG-LYNQIA-IX-RIGAv6 accept RS-LYNQIA-IX-RIGA
 mp-export:      afi ipv6.unicast to PRNG-LYNQIA-IX-RIGAv6 announce AS219529:AS-PODRIL1AK2
 remarks:
@@ -802,7 +826,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-06-04T12:29:38Z
-last-modified:  2026-07-22T13:29:32Z
+last-modified:  2026-07-23T08:27:21Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
