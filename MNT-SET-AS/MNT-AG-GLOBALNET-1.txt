@@ -3279,7 +3279,7 @@ remarks:        209116 - 64571
 remarks:        209307 - 64570
 remarks:        209739 - 64563
 remarks:        209821 - 64573
-remarks:        211609 - 65514
+remarks:        211609 - 64688
 remarks:        211613 - 64507
 remarks:        212566 - 64503
 remarks:        213075 - 64578
@@ -3288,6 +3288,7 @@ remarks:        197275 - 64603
 remarks:        207911 - 64606
 remarks:        199524 - 64513
 remarks:        206926 - 64609
+remarks:        197563 - 64685
 remarks:        210644 - 64611
 remarks:        197888 - 64506
 remarks:        216071 - 64504
@@ -3295,15 +3296,14 @@ remarks:        200052 - 64534
 remarks:        196726 - 64515
 remarks:        203473 - 64525
 remarks:        196719 - 64530
-remarks:        211826 - 65515
-remarks:        213035 - 65519
-remarks:        206810 - 65520
-remarks:        199995 - 65521
+remarks:        211826 - 64689
+remarks:        213035 - 64690
+remarks:        206810 - 64687
+remarks:        199995 - 64686
 remarks:        138915 - 64512
 remarks:        264409 - 64508
 remarks:        196705 - 64528
 remarks:        200612 - 64535
-remarks:        197563 - 65530
 remarks:        211157 - 64544
 remarks:        198044 - 64546
 remarks:        206383 - 64548
@@ -3428,6 +3428,7 @@ remarks:        198324 - 64666
 remarks:        214481 - 64682
 remarks:        216456 - 64683
 remarks:        204144 - 64684
+remarks:        214205 - 64691
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -4951,6 +4952,14 @@ import:         from AS56447   accept   AS56447
 export:         to   AS56447   announce AS-DATAIX
 import:         from AS44923   accept   AS44923
 export:         to   AS44923   announce AS-DATAIX
+import:         from AS35100   accept   AS-PATRIKWEB
+export:         to   AS35100   announce AS-DATAIX
+import:         from AS214205  accept   AS214205:AS-ZVSHOSTING
+export:         to   AS214205  announce AS-DATAIX
+import:         from AS16003   accept   AS16003:AS-FORNEX-NL
+export:         to   AS16003   announce AS-DATAIX
+import:         from AS48040   accept   AS48040:AS-FORNEX-SE
+export:         to   AS48040   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6489,6 +6498,14 @@ mp-import:      afi ipv6.unicast from AS8926    accept   AS-MOLDTELECOM-V6
 mp-export:      afi ipv6.unicast to   AS8926    announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS44923   accept   AS44923
 mp-export:      afi ipv6.unicast to   AS44923   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS35100   accept   AS-PATRIKWEB
+mp-export:      afi ipv6.unicast to   AS35100   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS214205  accept   AS214205:AS-ZVSHOSTING
+mp-export:      afi ipv6.unicast to   AS214205  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS16003   accept   AS16003:AS-FORNEX-NL-V6
+mp-export:      afi ipv6.unicast to   AS16003   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS48040   accept   AS48040:AS-FORNEX-NL-V6
+mp-export:      afi ipv6.unicast to   AS48040   announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6496,7 +6513,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-07-23T14:01:42Z
+last-modified:  2026-07-24T14:01:45Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
