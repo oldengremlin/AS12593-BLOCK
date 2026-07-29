@@ -58,10 +58,6 @@ export:         to AS45758 announce AS-MYCOM
 import:         from AS45758 accept AS-TRIPLETNET
 mp-export:      afi ipv6.unicast to AS45758 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS45758 accept AS-TRIPLETNET;
-export:         to AS9050 announce AS-MYCOM
-import:         from AS9050 accept AS-RTD
-mp-export:      afi ipv6.unicast to AS9050 announce AS-MYCOM;
-mp-import:      afi ipv6.unicast from AS9050 accept AS-RTD;
 export:         to AS8708 announce AS-MYCOM
 import:         from AS8708 accept AS-RDSNET
 mp-export:      afi ipv6.unicast to AS8708 announce AS-MYCOM;
@@ -452,7 +448,6 @@ remarks:        ...x=1, 2 - prepend 60476 1 or 2 times
 remarks:
 remarks:        PeerID:NNN is:
 remarks:
-remarks:        161 ROMTEL (AS9050)
 remarks:        165 Tripletnet (AS45758)
 remarks:        169 FPT (AS18403)
 remarks:        184 RDSNET (AS8708)
@@ -502,7 +497,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-07-12T09:26:04Z
-last-modified:  2026-07-15T08:03:08Z
+last-modified:  2026-07-27T12:29:30Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

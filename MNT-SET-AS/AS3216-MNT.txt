@@ -478,6 +478,7 @@ members:        AS56845
 members:        AS48035
 members:        AS57783
 members:        AS199365
+members:        AS28712
 members:        AS200122
 members:        AS-KVANT
 members:        AS-ATEL-LTD
@@ -1646,6 +1647,7 @@ members:        AS50105
 members:        AS201137
 members:        AS-JSCBIS
 members:        AS210113
+members:        AS-EVROKONTAKT
 members:        AS204507
 members:        AS210284
 members:        AS42151
@@ -1692,7 +1694,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-07-24T06:41:19Z
+last-modified:  2026-07-27T10:31:40Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -2108,12 +2110,13 @@ members:        AS-DL-V6
 members:        AS49395:AS-RTCLOUD-3RD
 members:        AS-WBT
 members:        AS-CDNNOW
+members:        AS-EVROKONTAKT
 remarks:
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-07-13T08:52:37Z
+last-modified:  2026-07-27T10:22:52Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5525,6 +5528,8 @@ import:         from AS52222 action pref=100; accept AS52222
 export:         to AS52222 announce {0.0.0.0/0}
 import:         from AS216290 action pref=100; accept AS216290
 export:         to AS216290 announce ANY
+import:         from AS28712 action pref=100; accept AS28712
+export:         to AS28712 announce ANY
 import:         from AS51612 action pref=100; accept AS51612
 export:         to AS51612 announce ANY
 import:         from AS48035 action pref=100; accept AS48035
@@ -9172,6 +9177,10 @@ import:         from AS50105 action pref=100; accept AS50105^+
 export:         to AS50105 announce ANY
 import:         from AS210113 action pref=100; accept AS210113
 export:         to AS210113 announce ANY
+import:         from AS52193 action pref=100; accept AS-EVROKONTAKT
+export:         to AS52193 announce ANY
+mp-import:      from AS52193 action pref=100; accept AS-EVROKONTAKT
+mp-export:      to AS52193 announce ANY
 import:         from AS210284 action pref=100; accept AS210284
 export:         to AS210284 announce {0.0.0.0/0}
 import:         from AS8492 action pref=100; accept AS-OBIT
@@ -9734,7 +9743,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-07-24T06:41:05Z
+last-modified:  2026-07-27T10:30:54Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
