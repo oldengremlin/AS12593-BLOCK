@@ -1397,6 +1397,9 @@ import:         from AS199651
 import:         from AS199669
                 action pref=100;
                 accept AS-ATLEX
+import:         from AS199730
+                action pref=100;
+                accept AS12389
 import:         from AS199961
                 action pref=100;
                 accept AS199961:AS-MULTSYS
@@ -2550,6 +2553,8 @@ export:         to AS199651
                 announce AS-MSKROUTESERVER
 export:         to AS199669
                 announce AS-MSKROUTESERVER
+export:         to AS199730
+                announce AS-MSKROUTESERVER
 export:         to AS199961
                 announce AS-MSKROUTESERVER
 export:         to AS200044
@@ -2709,7 +2714,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-07-27T09:55:24Z
+last-modified:  2026-07-28T13:47:50Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
