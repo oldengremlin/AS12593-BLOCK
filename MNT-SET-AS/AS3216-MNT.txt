@@ -463,6 +463,8 @@ members:        AS-WBT
 remarks:
 remarks:        Moscow and other regs Nets
 remarks:
+members:        AS50396
+members:        AS-BESTCOM
 members:        AS44627
 members:        AS39604
 members:        AS12958
@@ -1695,7 +1697,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-07-28T07:11:28Z
+last-modified:  2026-07-29T12:47:13Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5499,6 +5501,10 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS50396 action pref=100; accept AS50396
+export:         to AS50396 announce ANY
+import:         from AS29388 action pref=100; accept AS-BESTCOM
+export:         to AS29388 announce ANY
 import:         from AS44627 action pref=100; accept AS44627
 export:         to AS44627 announce {0.0.0.0/0}
 import:         from AS39604 action pref=100; accept AS39604
@@ -9746,7 +9752,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-07-28T07:11:00Z
+last-modified:  2026-07-29T12:46:40Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
