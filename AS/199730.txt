@@ -7,16 +7,16 @@ remarks:        UPSTREAMS
 remarks:        ========================================================
 remarks:        -- Telecom Samara LLC --
 import:         from AS60764 accept ANY
-export:         to AS60764 announce AS199730
+export:         to AS60764 announce AS199730:AS-MSTLC
 remarks:        -- ROSTELECOM--
 import:         from AS12389 accept ANY
-export:         to AS12389 announce AS199730
+export:         to AS12389 announce AS199730:AS-MSTLC
 remarks:        --- MskIX-AS ---
 import:         from AS8631 accept ANY
-export:         to AS8631 announce AS12389
+export:         to AS8631 announce AS199730:AS-MSTLC
 remarks:        --- DataIX-AS ---
 import:         from AS50952 accept ANY
-export:         to AS50952 announce AS12389
+export:         to AS50952 announce AS199730:AS-MSTLC
 remarks:        ========================================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -25,7 +25,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MSTLC-MNT
 mnt-by:         mnt-ru-telecomsamara-1
 created:        2023-02-23T13:29:01Z
-last-modified:  2026-07-28T10:32:07Z
+last-modified:  2026-07-30T06:48:17Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

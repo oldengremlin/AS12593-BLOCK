@@ -177,7 +177,6 @@ members:        AS-BITECOM
 members:        AS-EVROKONTAKT
 members:        AS199651:AS-CLOUDTRANSIT
 members:        AS-CNX-EKB
-members:        AS209133
 members:        AS206407:AS-RECONN-SPB
 members:        AS-MTTELECOM
 members:        AS-ETELRU
@@ -245,12 +244,13 @@ members:        AS200487
 members:        AS-MS-S
 members:        AS-AEZA
 members:        AS47122:AS-CYBERFIRST
+members:        AS48511
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2008-08-19T12:40:08Z
-last-modified:  2026-07-28T06:31:02Z
+last-modified:  2026-07-30T14:01:50Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -363,12 +363,13 @@ members:        AS211609
 members:        AS200487
 members:        AS-ATMOSPHERICA
 members:        AS-AEZA
+members:        AS48511
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2017-10-10T12:33:20Z
-last-modified:  2026-07-28T06:31:02Z
+last-modified:  2026-07-30T14:01:50Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -888,6 +889,8 @@ import:         from AS198324  accept   AS198324
 export:         to   AS198324  announce ANY
 import:         from AS202963  accept   AS202963
 export:         to   AS202963  announce ANY
+import:         from AS48511   accept   AS48511
+export:         to   AS48511   announce ANY
 import:         from AS62272   accept   AS62272
 export:         to   AS62272   announce ANY
 import:         from AS57363   accept   AS-CDNETWORKSRU
@@ -1126,8 +1129,6 @@ import:         from AS59574   accept   AS-STUPINO-NET
 export:         to   AS59574   announce ANY
 import:         from AS47481   accept   AS-LMHD
 export:         to   AS47481   announce ANY
-import:         from AS209133  accept   AS209133
-export:         to   AS209133  announce ANY
 import:         from AS52193   accept   AS-EVROKONTAKT
 export:         to   AS52193   announce ANY
 import:         from AS214697  accept   AS214697
@@ -1306,6 +1307,8 @@ mp-import:      afi ipv6.unicast from AS204720  accept   AS-CDNETWORKSRU
 mp-export:      afi ipv6.unicast to   AS204720  announce ANY
 mp-import:      afi ipv6.unicast from AS198324  accept   AS198324
 mp-export:      afi ipv6.unicast to   AS198324  announce ANY
+mp-import:      afi ipv6.unicast from AS48511   accept   AS48511
+mp-export:      afi ipv6.unicast to   AS48511   announce ANY
 mp-import:      afi ipv6.unicast from AS57363   accept   AS-CDNETWORKSRU
 mp-export:      afi ipv6.unicast to   AS57363   announce ANY
 mp-import:      afi ipv6.unicast from AS199020  accept   AS-AVANTRU
@@ -2947,7 +2950,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-07-27T16:28:51Z
+last-modified:  2026-07-30T14:01:48Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -4965,6 +4968,8 @@ import:         from AS214052  accept   AS214052
 export:         to   AS214052  announce AS-DATAIX
 import:         from AS49592   accept   AS49592:AS-PIPE
 export:         to   AS49592   announce AS-DATAIX
+import:         from AS48511   accept   AS48511
+export:         to   AS48511   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6521,6 +6526,8 @@ mp-import:      afi ipv6.unicast from AS214052  accept   AS214052
 mp-export:      afi ipv6.unicast to   AS214052  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS49592   accept   AS49592:AS-PIPE
 mp-export:      afi ipv6.unicast to   AS49592   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS48511   accept   AS48511
+mp-export:      afi ipv6.unicast to   AS48511   announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6528,7 +6535,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-07-29T06:31:05Z
+last-modified:  2026-07-30T14:01:47Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
