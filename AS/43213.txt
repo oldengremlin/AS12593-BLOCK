@@ -56,6 +56,9 @@ import:         from AS31359
 import:         from AS31499
                 action pref=100;
                 accept AS-MOTIV
+import:         from AS34503
+                action pref=100;
+                accept AS34503
 import:         from AS34879
                 action pref=100;
                 accept AS-NGENIX-EKT
@@ -189,6 +192,8 @@ export:         to AS31359
                 announce AS-EKTROUTESERVER
 export:         to AS31499
                 announce AS-EKTROUTESERVER
+export:         to AS34503
+                announce AS-EKTROUTESERVER
 export:         to AS34879
                 announce AS-EKTROUTESERVER
 export:         to AS36040
@@ -277,7 +282,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2026-07-16T12:09:33Z
+last-modified:  2026-07-31T12:08:09Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

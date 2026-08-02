@@ -38,6 +38,8 @@ members:        AS-CDN-MEGAFON
 members:        AS-FORATEC-EKT-IX
                 # from AS31499:
 members:        AS-MOTIV
+                # from AS34503:
+members:        AS34503
                 # from AS34879:
 members:        AS-NGENIX-EKT
                 # from AS36040:
@@ -128,7 +130,7 @@ remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2026-07-16T12:09:28Z
+last-modified:  2026-07-31T12:08:09Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1117,8 +1119,6 @@ members:        AS57214:AS-VID
 members:        AS57233:AS-KOMPA
                 # from AS57277:
 members:        AS-BAIKAL-IX-TRANSIT
-                # from AS57304:
-members:        AS-RETN6
                 # from AS57363:
 members:        AS-CDNVIDEO
                 # from AS57463:
@@ -1470,7 +1470,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-07-30T09:47:39Z
+last-modified:  2026-07-31T13:45:16Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3526,6 +3526,9 @@ import:         from AS31359
 import:         from AS31499
                 action pref=100;
                 accept AS-MOTIV
+import:         from AS34503
+                action pref=100;
+                accept AS34503
 import:         from AS34879
                 action pref=100;
                 accept AS-NGENIX-EKT
@@ -3659,6 +3662,8 @@ export:         to AS31359
                 announce AS-EKTROUTESERVER
 export:         to AS31499
                 announce AS-EKTROUTESERVER
+export:         to AS34503
+                announce AS-EKTROUTESERVER
 export:         to AS34879
                 announce AS-EKTROUTESERVER
 export:         to AS36040
@@ -3747,7 +3752,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2026-07-16T12:09:33Z
+last-modified:  2026-07-31T12:08:09Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -6491,9 +6496,6 @@ import:         from AS57233
 import:         from AS57277
                 action pref=100;
                 accept AS-BAIKAL-IX-TRANSIT
-import:         from AS57304
-                action pref=100;
-                accept AS-RETN6
 import:         from AS57363
                 action pref=100;
                 accept AS-CDNVIDEO
@@ -7732,8 +7734,6 @@ export:         to AS57233
                 announce AS-MSKROUTESERVER
 export:         to AS57277
                 announce AS-MSKROUTESERVER
-export:         to AS57304
-                announce AS-MSKROUTESERVER
 export:         to AS57363
                 announce AS-MSKROUTESERVER
 export:         to AS57463
@@ -8063,7 +8063,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-07-30T09:47:43Z
+last-modified:  2026-07-31T13:45:12Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

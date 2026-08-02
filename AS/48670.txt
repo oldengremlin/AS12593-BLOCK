@@ -8,6 +8,9 @@ export:         to AS3267 announce AS48670
 remarks:        ---
 import:         from AS31500 accept ANY
 export:         to AS31500 announce AS48670
+remarks:        ---
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS48670
 remarks:        ====== IPV4 ======
 remarks:        ---
 remarks:        ====== IPV6 ======
@@ -16,6 +19,9 @@ mp-export:      afi ipv6.unicast to AS3267 announce AS48670
 remarks:        ---
 mp-import:      afi ipv6.unicast from AS31500 accept ANY
 mp-export:      afi ipv6.unicast to AS31500 announce AS48670
+remarks:        ---
+mp-import:      afi ipv6.unicast from AS31133 accept ANY
+mp-export:      afi ipv6.unicast to AS31133 announce AS48670
 remarks:        ====== IPV6 ======
 remarks:        ---
 admin-c:        DUMY-RIPE
@@ -24,7 +30,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-UNIS
 created:        2008-12-30T08:00:54Z
-last-modified:  2017-11-15T09:53:45Z
+last-modified:  2026-07-31T09:23:33Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

@@ -3427,6 +3427,7 @@ remarks:        216456 - 64683
 remarks:        204144 - 64684
 remarks:        214205 - 64691
 remarks:        214052 - 64702
+remarks:        213438 - 64703
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -4970,6 +4971,8 @@ import:         from AS49592   accept   AS49592:AS-PIPE
 export:         to   AS49592   announce AS-DATAIX
 import:         from AS48511   accept   AS48511
 export:         to   AS48511   announce AS-DATAIX
+import:         from AS213438  accept   AS213438:AS-CLTEL
+export:         to   AS213438  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6528,6 +6531,8 @@ mp-import:      afi ipv6.unicast from AS49592   accept   AS49592:AS-PIPE
 mp-export:      afi ipv6.unicast to   AS49592   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS48511   accept   AS48511
 mp-export:      afi ipv6.unicast to   AS48511   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS213438  accept   AS213438:AS-CLTEL
+mp-export:      afi ipv6.unicast to   AS213438  announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6535,7 +6540,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-07-30T14:01:47Z
+last-modified:  2026-07-31T06:31:07Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

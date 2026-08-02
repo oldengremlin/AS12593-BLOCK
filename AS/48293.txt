@@ -30,10 +30,12 @@ export:         to AS51892 announce ANY
 export:         to AS44342 announce ANY
 export:         to AS211134 announce ANY
 export:         to AS49357 announce ANY
+export:         to AS211114 announce ANY
 import:         from AS51892 accept AS-VOENTELECOM
 import:         from AS49357 accept AS-KLICK
 import:         from AS44342 accept AS44342:AS-MARUSHKINONET
 import:         from AS211134 accept AS-Intersys
+import:         from AS211114 accept AS211114:AS-DC
 remarks:        --- IPv6 MSK-IX
 mp-import:      afi ipv6.unicast from AS8631 2001:7f8:20:101::244:100 accept AS-MSKROUTESERVER
 mp-export:      afi ipv6.unicast to AS8631 2001:7f8:20:101::244:100 announce AS-UNIONTEL-RU-v6
@@ -59,7 +61,7 @@ mnt-by:         RIPE-NCC-END-MNT
 notify:         ripe@iflat.ru
 mnt-by:         RU-NNTL-MNT
 created:        2008-11-05T16:05:52Z
-last-modified:  2024-11-14T13:57:32Z
+last-modified:  2026-07-31T11:18:37Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
