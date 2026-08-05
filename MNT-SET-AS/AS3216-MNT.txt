@@ -462,6 +462,7 @@ members:        AS-WBT
 remarks:
 remarks:        Moscow and other regs Nets
 remarks:
+members:        AS203597
 members:        AS50396
 members:        AS-BESTCOM
 members:        AS44627
@@ -1537,6 +1538,7 @@ members:        AS56580
 members:        AS50159
 members:        AS-TZTELECOM
 members:        AS44417
+members:        AS49987
 members:        AS-TKTEL
 members:        AS201285
 members:        AS206631
@@ -1697,7 +1699,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-07-30T08:31:03Z
+last-modified:  2026-08-03T08:14:59Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1733,6 +1735,7 @@ remarks:        ****************************
 as-set:         AS-SOVAM-V6
 descr:          Sovintel IPv6 customers
 remarks:
+members:        AS203597
 members:        AS203753:AS-VOLGADC
 members:        AS-R-LINE
 members:        AS-OBERON
@@ -2118,7 +2121,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-07-30T08:31:36Z
+last-modified:  2026-08-03T06:28:35Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5483,6 +5486,10 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS203597 action pref=100; accept AS203597
+export:         to AS203597 announce ANY
+mp-import:      from AS203597 action pref=100; accept AS203597
+mp-export:      to AS203597 announce ANY
 import:         from AS50396 action pref=100; accept AS50396
 export:         to AS50396 announce ANY
 import:         from AS29388 action pref=100; accept AS-BESTCOM
@@ -9736,7 +9743,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-07-30T08:29:32Z
+last-modified:  2026-08-03T06:27:21Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
