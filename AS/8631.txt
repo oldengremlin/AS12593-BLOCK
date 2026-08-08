@@ -728,6 +728,9 @@ import:         from AS44772
 import:         from AS44843
                 action pref=100;
                 accept AS-MALOCO
+import:         from AS44845
+                action pref=100;
+                accept AS44845
 import:         from AS44927
                 action pref=100;
                 accept AS-TMPK
@@ -2098,6 +2101,8 @@ export:         to AS44772
                 announce AS-MSKROUTESERVER
 export:         to AS44843
                 announce AS-MSKROUTESERVER
+export:         to AS44845
+                announce AS-MSKROUTESERVER
 export:         to AS44927
                 announce AS-MSKROUTESERVER
 export:         to AS44943
@@ -2699,7 +2704,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-08-04T13:46:04Z
+last-modified:  2026-08-05T13:42:45Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

@@ -92,29 +92,33 @@ export:         to   AS198310                  announce AS-LUGANET
 import:         from AS201706 action pref=100; accept   ANY
 export:         to   AS201706                  announce AS-LUGANET
 remarks:        ----------------------------------------------
-import:         from AS8631   action pref=120; accept   AS-MSKROUTESERVER
+import:         from AS8631   action pref=120; accept   AS-MSKROUTESERVER AND community (11:8631)
+import:         from AS8631   action pref=105; accept   AS-MSKROUTESERVER AND NOT community (11:8631)
 export:         to   AS8631                    announce AS-LUGANET
-import:         from AS31500  action pref=120; accept   AS-DATAIX
+import:         from AS31500  action pref=135; accept   AS-DATAIX AND community (50952:21001)
+import:         from AS31500  action pref=125; accept   AS-DATAIX AND NOT community (50952:21001)
 export:         to   AS31500                   announce AS-LUGANET
-import:         from AS39607  action pref=120; accept   AS-PITER-IX-HEL
+import:         from AS39607  action pref=130; accept   AS-PITER-IX-HEL AND community (50817:65499)
 export:         to   AS39607                   announce AS-LUGANET
-import:         from AS39751  action pref=120; accept   AS-M-IX
+import:         from AS39751  action pref=140; accept   AS-M-IX
 export:         to   AS39751                   announce AS-LUGANET
-import:         from AS43690  action pref=120; accept   AS-SPBROUTESERVER
+import:         from AS43690  action pref=110; accept   AS-SPBROUTESERVER AND community (11:43690)
 export:         to   AS43690                   announce AS-LUGANET
-import:         from AS48193  action pref=120; accept   AS-PITER-IX-FRA
+import:         from AS48193  action pref=130; accept   AS-PITER-IX-FRA AND community (50817:65499)
 export:         to   AS48193                   announce AS-LUGANET
-import:         from AS48216  action pref=120; accept   AS-RNDROUTESERVER
+import:         from AS48216  action pref=115; accept   AS-RNDROUTESERVER AND community (11:48216)
 export:         to   AS48216                   announce AS-LUGANET
-import:         from AS49869  action pref=120; accept   AS-PITER-IX-MSK
+import:         from AS49869  action pref=135; accept   AS-PITER-IX-MSK AND community (50817:65499)
+import:         from AS49869  action pref=125; accept   AS-PITER-IX-MSK AND NOT community (50817:65499)
 export:         to   AS49869                   announce AS-LUGANET
-import:         from AS50817  action pref=120; accept   AS-PITER-IX
+import:         from AS50817  action pref=130; accept   AS-PITER-IX AND community (50817:65499)
 export:         to   AS50817                   announce AS-LUGANET
-import:         from AS50952  action pref=120; accept   AS-GLOBAL-IX
+import:         from AS50952  action pref=135; accept   AS-GLOBAL-IX AND community (31500:65101)
+import:         from AS50952  action pref=125; accept   AS-GLOBAL-IX AND NOT community (31500:65101)
 export:         to   AS50952                   announce AS-LUGANET
-import:         from AS59428  action pref=120; accept   AS-KRD-RS
+import:         from AS59428  action pref=140; accept   AS-KRD-RS
 export:         to   AS59428                   announce AS-LUGANET
-import:         from AS59539  action pref=120; accept   AS-PITER-IX-ROV
+import:         from AS59539  action pref=140; accept   AS-PITER-IX-ROV AND community (50817:65499)
 export:         to   AS59539                   announce AS-LUGANET
 remarks:        ----------------------------------------------
 import:         from AS41039  action pref=400; accept   AS-DON
@@ -146,7 +150,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         mnt-ru-likhno-1
 mnt-by:         ARTA-MNT
 created:        2006-04-18T13:04:02Z
-last-modified:  2026-07-23T11:13:14Z
+last-modified:  2026-08-05T16:11:06Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

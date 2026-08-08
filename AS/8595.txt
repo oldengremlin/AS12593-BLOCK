@@ -140,8 +140,6 @@ import:         from AS206630 accept AS206630
 export:         to AS206630 announce ANY
 import:         from AS207457 accept AS-AT-Telecom
 export:         to AS207457 announce ANY
-import:         from AS208003 accept AS208003
-export:         to AS208003 announce ANY
 import:         from AS208047 accept AS208047
 export:         to AS208047 announce ANY
 import:         from AS208587 accept AS-ZVITELECOM
@@ -152,6 +150,10 @@ import:         from AS210899 accept AS210899
 export:         to AS210899 announce ANY
 import:         from AS215074 accept AS215074
 export:         to AS215074 announce ANY
+mp-import:      afi ipv6.unicast from AS208003 accept AS208003
+mp-export:      afi ipv6.unicast to AS208003 announce ANY
+mp-import:      afi ipv6.unicast from AS213220 accept AS16262:AS-DELTAIPv6
+mp-export:      afi ipv6.unicast to AS213220 announce ANY
 remarks:
 remarks:        # BGP COMMUNITIES:
 remarks:
@@ -182,7 +184,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS8595-MNT
 created:        1970-01-01T00:00:00Z
-last-modified:  2026-08-04T17:17:19Z
+last-modified:  2026-08-06T08:49:33Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

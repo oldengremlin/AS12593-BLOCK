@@ -31,10 +31,10 @@ export:         to AS45758 announce AS-MYCOM
 import:         from AS45758 accept AS-TRIPLETNET
 mp-export:      afi ipv6.unicast to AS45758 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS45758 accept AS-TRIPLETNET;
-export:         to AS8708 announce AS-MYCOM
-import:         from AS8708 accept AS-RDSNET
-mp-export:      afi ipv6.unicast to AS8708 announce AS-MYCOM;
-mp-import:      afi ipv6.unicast from AS8708 accept AS-RDSNET6;
+export:         to AS6910 announce AS-MYCOM
+import:         from AS6910 accept AS-RDSNET
+mp-export:      afi ipv6.unicast to AS6910 announce AS-MYCOM;
+mp-import:      afi ipv6.unicast from AS6910 accept AS-RDSNET6;
 export:         to AS18403 announce AS-MYCOM
 import:         from AS18403 accept AS-FPT
 mp-export:      afi ipv6.unicast to AS18403 announce AS-MYCOM;
@@ -78,8 +78,8 @@ mp-export:      afi ipv6.unicast to AS8365 announce AS-MYCOM;
 mp-import:      afi ipv6.unicast from AS8365 accept AS-MANDA;
 export:         to AS8657 announce AS-MYCOM
 import:         from AS8657 accept AS-CPRM
-export:         to AS8708 announce AS-MYCOM
-import:         from AS8708 accept AS-RDSNET
+export:         to AS6910 announce AS-MYCOM
+import:         from AS6910 accept AS-RDSNET
 export:         to AS8859 announce AS-MYCOM
 import:         from AS8859 accept AS-OSN
 export:         to AS9044 announce AS-MYCOM
@@ -423,7 +423,7 @@ remarks:        PeerID:NNN is:
 remarks:
 remarks:        165 Tripletnet (AS45758)
 remarks:        169 FPT (AS18403)
-remarks:        184 RDSNET (AS8708)
+remarks:        184 RDSNET (AS6910)
 remarks:        -------------------------------------------------------------
 remarks:
 remarks:        Other 60476:* communities are deleted.
@@ -470,7 +470,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         DTP-MNT
 created:        2013-07-12T09:26:04Z
-last-modified:  2026-07-27T12:29:30Z
+last-modified:  2026-08-05T10:48:03Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
