@@ -34,11 +34,11 @@ export:         to AS3356 announce AS-SOVAM
 mp-import:      afi ipv6 from AS3356 action pref=77; accept ANY
 mp-export:      afi ipv6 to AS3356 announce AS-SOVAM-V6
 remarks:
-remarks:        Opentransit (Orange)
-import:         from AS5511 action pref=77; accept ANY
-export:         to AS5511 announce AS-SOVAM
-mp-import:      afi ipv6 from AS5511 action pref=77; accept ANY
-mp-export:      afi ipv6 to AS5511 announce AS-SOVAM-V6
+remarks:        GTT (Tiscali)
+import:         from AS3257 action pref=77; accept ANY
+export:         to AS3257 announce AS-SOVAM
+mp-import:      afi ipv6 from AS3257 action pref=77; accept ANY
+mp-export:      afi ipv6 to AS3257 announce AS-SOVAM-V6
 remarks:
 remarks:        SEABONE-NET (Telecom Italia Sparkle)
 import:         from AS6762 action pref=77; accept ANY
@@ -4599,8 +4599,6 @@ mp-import:      afi ipv6 from AS43299 action pref=100; accept AS43299
 mp-export:      afi ipv6 to AS43299 announce ANY
 import:         from AS60177 action pref=100; accept AS60177
 export:         to AS60177 announce ANY
-import:         from AS39264 action pref=100; accept AS-METROMAX
-export:         to AS39264 announce ANY
 import:         from AS41389 action pref=100; accept AS41389
 export:         to AS41389 announce ANY
 import:         from AS44172 action pref=100; accept AS-COURIER-PLUS
@@ -5580,7 +5578,7 @@ remarks:        3216:503x When advertising to PCCW Global uplink...
 remarks:        3216:504x When advertising to Telia Global uplink...
 remarks:        3216:505x When advertising to Turk Telekom uplink...
 remarks:        3216:506x When advertising to TATA Communications uplink...
-remarks:        3216:508x When advertising to Orange uplink...
+remarks:        3216:508x When advertising to GTT AS3257 uplink...
 remarks:        3216:509x When advertising to Cogent uplink...
 remarks:        -----------------------------------------------------------------
 remarks:        3216:510x When advertising to any DE-CIX peer...
@@ -5769,7 +5767,7 @@ remarks:        3216:3007 Level 3 Communications
 remarks:        3216:3008 Cogent
 remarks:        3216:3009 PCCW Global
 remarks:        3216:3010 China Telecom
-remarks:        3216:3011 Orange Worldwide IP Backbone
+remarks:        3216:3011 GTT
 remarks:        3216:3012 Turk Telecom
 remarks:        3216:3013 Hutchison Global Communications
 remarks:        --------- Internet exchange  ------------------------------------
@@ -6065,7 +6063,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-08-10T06:23:07Z
+last-modified:  2026-08-12T17:45:50Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
