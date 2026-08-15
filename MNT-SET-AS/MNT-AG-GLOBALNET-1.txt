@@ -3416,6 +3416,8 @@ remarks:        214205 - 64691
 remarks:        214052 - 64702
 remarks:        213438 - 64703
 remarks:        207208 - 64704
+remarks:        201398 - 64705
+remarks:        219070 - 64706
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -4957,6 +4959,12 @@ import:         from AS213438  accept   AS213438:AS-CLTEL
 export:         to   AS213438  announce AS-DATAIX
 import:         from AS207208  accept   AS207208:AS-CLIENTS
 export:         to   AS207208  announce AS-DATAIX
+import:         from AS201398  accept   AS201398:AS-DOWNSTREAM
+export:         to   AS201398  announce AS-DATAIX
+import:         from AS219070  accept   AS219070:AS-EVM
+export:         to   AS219070  announce AS-DATAIX
+import:         from AS33991   accept   AS-IGRA
+export:         to   AS33991   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6513,6 +6521,12 @@ mp-import:      afi ipv6.unicast from AS213438  accept   AS213438:AS-CLTEL
 mp-export:      afi ipv6.unicast to   AS213438  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS207208  accept   AS207208:AS-CLIENTS
 mp-export:      afi ipv6.unicast to   AS207208  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS201398  accept   AS201398:AS-DOWNSTREAM
+mp-export:      afi ipv6.unicast to   AS201398  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS219070  accept   AS219070:AS-EVM
+mp-export:      afi ipv6.unicast to   AS219070  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS33991   accept   AS-IGRA
+mp-export:      afi ipv6.unicast to   AS33991   announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6520,7 +6534,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-08-11T14:01:45Z
+last-modified:  2026-08-13T14:01:48Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
