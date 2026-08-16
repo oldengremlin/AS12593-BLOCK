@@ -2,10 +2,10 @@ aut-num:        AS200954
 as-name:        alterra-as
 org:            ORG-AS1362-RIPE
 sponsoring-org: ORG-DAI3-RIPE
-import:         from AS207567 accept ANY
-export:         to AS207567 announce AS200954
-import:         from AS212112 accept ANY
-export:         to AS212112 announce AS200954
+import:         from AS207208 accept ANY
+export:         to AS207208 announce AS200954:AS-ALTERRA
+mp-import:      afi ipv6.unicast from AS207208 accept ANY
+mp-export:      afi ipv6.unicast to AS207208 announce AS200954:AS-ALTERRA
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -13,8 +13,39 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lir-ru-prefixlabs-1-MNT
 mnt-by:         ALTERRA-MNT
 created:        2026-02-16T09:48:23Z
-last-modified:  2026-06-28T02:13:47Z
+last-modified:  2026-08-13T22:58:14Z
 source:         RIPE
+remarks:        ----------------------------------------------------------------
+remarks:        AS200954 BGP large communities   200954:function:parameter
+remarks:
+remarks:        200954:4:x     do not announce to x
+remarks:        200954:6:x     prepend 1x to x
+remarks:        200954:62:x    prepend 2x to x
+remarks:        200954:63:x    prepend 3x to x
+remarks:
+remarks:        x = 0        all neighbours
+remarks:        x = 201814   MEVSPACE, entire transit
+remarks:        x = 174      Cogent              via AS201814
+remarks:        x = 1299     Arelion             via AS201814
+remarks:        x = 6939     Hurricane Electric  via AS201814
+remarks:        x = 9002     RETN                via AS201814
+remarks:        x = 29535    TPIX                via AS201814
+remarks:        x = 50263    1-IX EU             via AS201814
+remarks:        x = 50952    GNM-IX              via AS201814
+remarks:        x = 59613    Giganet IXN         via AS201814
+remarks:
+remarks:        200954:8:0     local-pref 550   normal
+remarks:        200954:9:0     local-pref 450   backup, default
+remarks:        200954:10:0    local-pref 200   as peering
+remarks:        200954:11:0    local-pref 100   as upstream
+remarks:        200954:12:0    local-pref 50    fallback only
+remarks:
+remarks:        65535:666      blackhole, IPv4 /24-/32, IPv6 /48-/128
+remarks:
+remarks:        Set by AS200954, stripped from customers:
+remarks:        200954:3:1/2/3/4   own / customer / peer / upstream
+remarks:        200954:40:0/1/2    RPKI invalid / valid / not-found
+remarks:        ----------------------------------------------------------------
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
 remarks:        * Please note that all data that is generally regarded as personal
