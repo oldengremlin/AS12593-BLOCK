@@ -418,16 +418,17 @@ remarks:        ****************************
 
 as-set:         AS50952:AS-GNMIX-US
 descr:          GNMIX Internet Exchange USA customers
+members:        AS49418:AS-NETSHIELD
+members:        AS-GLOBAL-NET
 members:        AS59930
 members:        AS30058:AS-FDCSERVERS
 members:        AS-GLOBAL-NET-V6
-members:        AS-GLOBAL-NET
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2026-06-23T10:03:32Z
-last-modified:  2026-08-14T14:01:51Z
+last-modified:  2026-08-17T06:31:12Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3471,6 +3472,8 @@ import:         from AS59930   accept   AS59930
 export:         to   AS59930   announce AS-DATAIX
 import:         from AS30058   accept   AS30058:AS-FDCSERVERS
 export:         to   AS30058   announce AS-DATAIX
+import:         from AS49418   accept   AS49418:AS-NETSHIELD
+export:         to   AS49418   announce AS-DATAIX
 import:         from AS24955   accept   AS-UBN
 export:         to   AS24955   announce AS-DATAIX
 import:         from AS62041   accept   AS62041
@@ -4269,8 +4272,6 @@ import:         from AS48642   accept   AS-KT-RU
 export:         to   AS48642   announce AS-DATAIX
 import:         from AS34757   accept   AS-SIBSET
 export:         to   AS34757   announce AS-DATAIX
-import:         from AS49418   accept   AS49418:AS-NETSHIELD
-export:         to   AS49418   announce AS-DATAIX
 import:         from AS52008   accept   AS52008
 export:         to   AS52008   announce AS-DATAIX
 import:         from AS211157  accept   AS211157:AS-TELEGRAM-CDN
@@ -4969,6 +4970,8 @@ import:         from AS33991   accept   AS-IGRA
 export:         to   AS33991   announce AS-DATAIX
 import:         from AS60245   accept   AS-23NET
 export:         to   AS60245   announce AS-DATAIX
+import:         from AS24663   accept   AS-COMPLAT
+export:         to   AS24663   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -5011,6 +5014,8 @@ mp-import:      afi ipv6.unicast from AS59930   accept   AS59930
 mp-export:      afi ipv6.unicast to   AS59930   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS30058   accept   AS30058:AS-FDCSERVERS
 mp-export:      afi ipv6.unicast to   AS30058   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS49418   accept   AS49418:AS-NETSHIELD
+mp-export:      afi ipv6.unicast to   AS49418   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS24955   accept   AS-UBN
 mp-export:      afi ipv6.unicast to   AS24955   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62041   accept   AS62041
@@ -5819,8 +5824,6 @@ mp-import:      afi ipv6.unicast from AS48642   accept   AS-KT-RU
 mp-export:      afi ipv6.unicast to   AS48642   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS34757   accept   AS-SIBSET
 mp-export:      afi ipv6.unicast to   AS34757   announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS49418   accept   AS49418:AS-NETSHIELD
-mp-export:      afi ipv6.unicast to   AS49418   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS52008   accept   AS52008
 mp-export:      afi ipv6.unicast to   AS52008   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS28910   accept   AS-INTAL-V6
@@ -6535,6 +6538,8 @@ mp-import:      afi ipv6.unicast from AS33991   accept   AS-IGRA
 mp-export:      afi ipv6.unicast to   AS33991   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS60245   accept   AS-23NET
 mp-export:      afi ipv6.unicast to   AS60245   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS24663   accept   AS-COMPLAT
+mp-export:      afi ipv6.unicast to   AS24663   announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6542,7 +6547,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-08-14T14:01:48Z
+last-modified:  2026-08-17T06:31:09Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

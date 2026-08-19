@@ -1,12 +1,13 @@
 as-set:         AS-CYBETECH-1
 members:        AS44881
+members:        AS47645
 members:        AS64433
 members:        AS204735
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         CYBERTECH-MNT
 created:        2022-09-16T19:28:43Z
-last-modified:  2022-09-16T19:28:43Z
+last-modified:  2026-08-17T06:45:24Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -75,20 +76,23 @@ remarks:        * To view the original object, please query the RIPE Database at
 remarks:        * http://www.ripe.net/whois
 remarks:        ****************************
 
+
 aut-num:        AS44881
 as-name:        CYBERTECH-AS
 org:            ORG-CL85-RIPE
+import:         from AS8641 accept ANY
 import:         from AS64433 accept ANY
 import:         from AS204735 accept ANY
-export:         to AS64433 announce AS-CYBETECH-1
-export:         to AS204735 announce AS-CYBETECH-1
+export:         to AS8641 announce AS44881:AS-CYBERTECH
+export:         to AS64433 announce AS44881:AS-CYBERTECH
+export:         to AS204735 announce AS44881:AS-CYBERTECH
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CYBERTECH-MNT
 created:        2008-03-26T15:14:55Z
-last-modified:  2022-09-16T19:28:57Z
+last-modified:  2026-08-17T11:17:41Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
