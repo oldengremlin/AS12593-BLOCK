@@ -1490,6 +1490,9 @@ import:         from AS206011
 import:         from AS206295
                 action pref=100;
                 accept AS206295
+import:         from AS206649
+                action pref=100;
+                accept AS206649:AS-MSK-SET
 import:         from AS206805
                 action pref=100;
                 accept AS-SET-TCLOUD
@@ -2612,6 +2615,8 @@ export:         to AS206011
                 announce AS-MSKROUTESERVER
 export:         to AS206295
                 announce AS-MSKROUTESERVER
+export:         to AS206649
+                announce AS-MSKROUTESERVER
 export:         to AS206805
                 announce AS-MSKROUTESERVER
 export:         to AS206810
@@ -2709,7 +2714,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-08-12T13:45:06Z
+last-modified:  2026-08-19T09:45:58Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

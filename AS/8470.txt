@@ -144,6 +144,8 @@ import:         from AS51230 action pref=120; accept AS-ROSINTEH
 export:         to AS51230 announce AS-MACOMNET
 import:         from AS47586 action pref=120; accept AS-BISV
 export:         to AS47586 announce AS-MACOMNET
+import:         from AS44845 action pref=120; accept AS44845
+export:         to AS44845 announce AS-MACOMNET
 remarks:        -------------------cust-----------------------------
 import:         from  AS213478 action pref=120; accept  AS213478
 export:         to  AS213478 announce ANY
@@ -264,6 +266,8 @@ remarks:        msk ix peers
 remarks:        -------------------------------------------------------
 mp-import:      afi ipv6.unicast from AS54994 action pref=120; accept AS54994
 mp-export:      afi ipv6.unicast to AS54994 announce AS-MACOMNET
+mp-import:      afi ipv6.unicast from AS44845 action pref=120; accept AS44845
+mp-export:      afi ipv6.unicast to AS44845 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS2854 action pref=120; accept AS-RoSprint
 mp-export:      afi ipv6.unicast to AS2854 announce AS-MACOMNET
 mp-import:      afi ipv6.unicast from AS136907 action pref=120; accept AS136907
@@ -360,7 +364,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MACOMNET-MNT
 created:        2002-09-10T13:31:17Z
-last-modified:  2026-08-17T09:08:22Z
+last-modified:  2026-08-19T07:15:42Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
