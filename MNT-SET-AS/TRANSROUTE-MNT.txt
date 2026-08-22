@@ -13,6 +13,7 @@ members:        AS41849
 members:        AS-PETROSVYAZ
 members:        AS-MIGRAPH
 members:        AS196879
+members:        AS48108:AS-VIRTUALDC-RU
 members:        AS57045
 members:        AS-AVANTEL-SPB
 members:        AS-GCOM
@@ -237,12 +238,13 @@ members:        AS-LEVEL-MSK
 members:        AS57661
 members:        AS-TMPK
 members:        AS215013:AS-YCCDN
+members:        AS-OBLTELECOM
 remarks:        * * * * * * * * * * * * *
 members:        AS-TRANSROUTE-QUICKFIX
 members:        AS-TRANSROUTE-SPEC
 members:        AS-IPTP:AS-51601-RU
 created:        2019-10-25T12:31:32Z
-last-modified:  2026-08-12T10:44:03Z
+last-modified:  2026-08-20T15:19:15Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -20818,6 +20820,9 @@ export:         to AS215247 announce ANY
 remarks:        * airnet *
 import:         from AS44923 accept AS44923
 export:         to AS44923 announce ANY
+remarks:        * vdc *
+import:         from AS48108 accept AS48108:AS-VIRTUALDC-RU
+export:         to AS48108 announce ANY
 remarks:        * yunta *
 import:         from AS47363 accept AS47363
 export:         to AS47363 announce ANY
@@ -21460,6 +21465,9 @@ export:         to AS57661 announce ANY
 remarks:        * tmpk *
 import:         from AS44927 accept AS-TMPK
 export:         to AS44927 announce ANY
+remarks:        * obltel *
+import:         from AS41601 accept AS-OBLTELECOM
+export:         to AS41601 announce ANY
 remarks:        +==============================================================+
 remarks:        | Some BGP COMMUNITIES of Transroute |
 remarks:        +--------------------------------------------------------------+
@@ -21563,7 +21571,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRSUPPORT-MNT
 created:        2019-10-22T14:34:02Z
-last-modified:  2026-08-17T11:27:50Z
+last-modified:  2026-08-20T15:19:52Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
