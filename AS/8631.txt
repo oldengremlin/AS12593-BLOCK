@@ -536,6 +536,9 @@ import:         from AS39728
 import:         from AS39821
                 action pref=100;
                 accept AS-CANMOS
+import:         from AS39927
+                action pref=100;
+                accept AS-ELIGHT
 import:         from AS40676
                 action pref=100;
                 accept AS-40676
@@ -1979,6 +1982,8 @@ export:         to AS39728
                 announce AS-MSKROUTESERVER
 export:         to AS39821
                 announce AS-MSKROUTESERVER
+export:         to AS39927
+                announce AS-MSKROUTESERVER
 export:         to AS40676
                 announce AS-MSKROUTESERVER
 export:         to AS40966
@@ -2714,7 +2719,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-08-19T09:45:58Z
+last-modified:  2026-08-21T09:45:20Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

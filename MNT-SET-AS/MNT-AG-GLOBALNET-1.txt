@@ -385,31 +385,30 @@ remarks:        ****************************
 
 as-set:         AS50952:AS-DATAIX-SG
 descr:          DataIX Singapore customers
-members:        AS139341:AS-ACE
-members:        AS64096:AS-BIH
-members:        AS-CDN77
-members:        AS-HURRICANEV6
-members:        AS-SGGS
-members:        AS-OVH
-members:        AS-CITRANET
-members:        AS-AKAMAI
-members:        AS131711:AS-ORANGE-ISP
-members:        AS47311:AS-ATHARVA
-members:        AS-HURRICANE
 members:        AS54994:AS-ALL
+members:        AS131711:AS-ORANGE-ISP
+members:        AS-OVH
+members:        AS139341:AS-ACE
 members:        AS-HERZA
-members:        AS62005:AS-BLUEVPS
-members:        AS62014
-members:        AS-ZENLAYER
-members:        AS30058:AS-CONE
+members:        AS-CITRANET
 members:        AS13335:AS-CLOUDFLARE
 members:        AS-00NET
+members:        AS-CDN77
+members:        AS-HURRICANEV6
+members:        AS62005:AS-BLUEVPS
+members:        AS47311:AS-ATHARVA
+members:        AS-AKAMAI
+members:        AS62014
+members:        AS-ZENLAYER
+members:        AS-SGGS
+members:        AS-HURRICANE
+members:        AS30058:AS-CONE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2023-07-17T11:20:29Z
-last-modified:  2026-08-07T14:01:49Z
+last-modified:  2026-08-21T14:01:52Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -422,6 +421,7 @@ remarks:        ****************************
 as-set:         AS50952:AS-GNMIX-US
 descr:          GNMIX Internet Exchange USA customers
 members:        AS49418:AS-NETSHIELD
+members:        AS201814:AS-CLIENTS
 members:        AS-GLOBAL-NET
 members:        AS59930
 members:        AS30058:AS-FDCSERVERS
@@ -431,7 +431,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2026-06-23T10:03:32Z
-last-modified:  2026-08-17T06:31:12Z
+last-modified:  2026-08-21T06:31:25Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3224,6 +3224,7 @@ remarks:        32Bit ASN - 16Bit ASN for BGP community:
 remarks:        139341 - 64625
 remarks:        140443 - 64700
 remarks:        131711 - 64701
+remarks:        201814 - 64674
 remarks:        196695 - 64601
 remarks:        196739 - 64502
 remarks:        196750 - 64501
@@ -3392,7 +3393,6 @@ remarks:        209451 - 64669
 remarks:        216265 - 64670
 remarks:        209393 - 64671
 remarks:        214749 - 64673
-remarks:        201814 - 64674
 remarks:        207168 - 64537
 remarks:        200841 - 64629
 remarks:        214891 - 64645
@@ -3449,8 +3449,6 @@ import:         from AS16276   accept   AS-OVH
 export:         to   AS16276   announce AS-DATAIX
 import:         from AS13335   accept   AS13335:AS-CLOUDFLARE
 export:         to   AS13335   announce AS-DATAIX
-import:         from AS64096   accept   AS64096:AS-BIH
-export:         to   AS64096   announce AS-DATAIX
 import:         from AS60068   accept   AS-CDN77
 export:         to   AS60068   announce AS-DATAIX
 import:         from AS20940   accept   AS-AKAMAI
@@ -3475,6 +3473,8 @@ import:         from AS30058   accept   AS30058:AS-FDCSERVERS
 export:         to   AS30058   announce AS-DATAIX
 import:         from AS49418   accept   AS49418:AS-NETSHIELD
 export:         to   AS49418   announce AS-DATAIX
+import:         from AS201814  accept   AS201814:AS-CLIENTS
+export:         to   AS201814  announce AS-DATAIX
 import:         from AS24955   accept   AS-UBN
 export:         to   AS24955   announce AS-DATAIX
 import:         from AS62041   accept   AS62041
@@ -4853,8 +4853,6 @@ import:         from AS214749  accept   AS214749:AS-PAW
 export:         to   AS214749  announce AS-DATAIX
 import:         from AS19255   accept   AS-YOURORG-TRANSIT
 export:         to   AS19255   announce AS-DATAIX
-import:         from AS201814  accept   AS201814:AS-CLIENTS
-export:         to   AS201814  announce AS-DATAIX
 import:         from AS20590   accept   AS-ENTELE
 export:         to   AS20590   announce AS-DATAIX
 import:         from AS47764   accept   AS-VK
@@ -4989,8 +4987,6 @@ mp-import:      afi ipv6.unicast from AS16276   accept   AS-OVH
 mp-export:      afi ipv6.unicast to   AS16276   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS13335   accept   AS13335:AS-CLOUDFLARE
 mp-export:      afi ipv6.unicast to   AS13335   announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS64096   accept   AS64096:AS-BIH
-mp-export:      afi ipv6.unicast to   AS64096   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS60068   accept   AS-CDN77
 mp-export:      afi ipv6.unicast to   AS60068   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS20940   accept   AS-AKAMAI
@@ -5015,6 +5011,8 @@ mp-import:      afi ipv6.unicast from AS30058   accept   AS30058:AS-FDCSERVERS
 mp-export:      afi ipv6.unicast to   AS30058   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS49418   accept   AS49418:AS-NETSHIELD
 mp-export:      afi ipv6.unicast to   AS49418   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS201814  accept   AS201814:AS-CLIENTS
+mp-export:      afi ipv6.unicast to   AS201814  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS24955   accept   AS-UBN
 mp-export:      afi ipv6.unicast to   AS24955   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62041   accept   AS62041
@@ -6417,8 +6415,6 @@ mp-import:      afi ipv6.unicast from AS214749  accept   AS214749:AS-PAW
 mp-export:      afi ipv6.unicast to   AS214749  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS19255   accept   AS-YOURORG-TRANSIT
 mp-export:      afi ipv6.unicast to   AS19255   announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS201814  accept   AS201814:AS-CLIENTS
-mp-export:      afi ipv6.unicast to   AS201814  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS20590   accept   AS-ENTELE
 mp-export:      afi ipv6.unicast to   AS20590   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS47764   accept   AS-VK
@@ -6544,7 +6540,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-08-20T14:01:49Z
+last-modified:  2026-08-21T14:01:50Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

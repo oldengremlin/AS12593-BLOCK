@@ -277,7 +277,6 @@ members:        AS50029
 members:        AS-TELECOMUNION
 members:        AS-ZAO-KES
 members:        AS-SIBSET-KRS
-members:        AS-VNET-PEERS
 members:        AS215244
 members:        AS56977
 members:        AS-MELBICOM
@@ -478,6 +477,7 @@ members:        AS61400
 members:        AS51612
 members:        AS216290
 members:        AS60642
+members:        AS41465
 members:        AS-ROSINTEH
 members:        AS-R-LINE
 members:        AS205711
@@ -1701,7 +1701,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-08-20T10:00:10Z
+last-modified:  2026-08-21T16:04:55Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5418,6 +5418,10 @@ import:         from AS16265 action pref=87; accept AS-LEASEWEB
 export:         to AS16265 announce AS-SOVAM
 mp-import:      afi ipv6 from AS16265 action pref=87; accept AS-LEASEWEB
 mp-export:      afi ipv6 to AS16265 announce AS-SOVAM-V6
+import:         from AS48729 action pref=87; accept AS48729:AS-SERVERKING
+export:         to AS48729 announce AS-SOVAM
+mp-import:      afi ipv6 from AS48729 action pref=87; accept AS48729:AS-SERVERKING
+mp-export:      afi ipv6 to AS48729 announce AS-SOVAM-V6
 remarks:
 remarks:
 remarks:        private peering in Helsinki
@@ -5493,6 +5497,8 @@ import:         from AS211825 action pref=100; accept AS211825
 export:         to AS211825 announce {0.0.0.0/0}
 import:         from AS61400 action pref=100; accept AS61400
 export:         to AS61400 announce ANY
+import:         from AS41465 action pref=100; accept AS41465
+export:         to AS41465 announce ANY
 import:         from AS205711 action pref=100; accept AS205711
 export:         to AS205711 announce ANY
 import:         from AS50396 action pref=100; accept AS50396
@@ -6291,8 +6297,6 @@ import:         from AS208838 action pref=100; accept AS-DOMSET
 export:         to AS208838 announce ANY
 import:         from AS214631 action pref=100; accept AS214631
 export:         to AS214631 announce ANY
-import:         from AS47864 action pref=100; accept AS-VNET-PEERS
-export:         to AS47864 announce ANY
 import:         from AS207353 action pref=100; accept AS207353
 export:         to AS207353 announce ANY
 mp-import:      from AS207353 action pref=100; accept AS207353
@@ -9316,7 +9320,7 @@ remarks:        3216:566x When advertising to China Telecom private peer...
 remarks:        3216:567x When advertising to Hetzner private peer...
 remarks:        3216:568x When advertising to CLOUVIDER private peer...
 remarks:        3216:569x When advertising to EDGENEXT private peer...
-remarks:        3216:580x When advertising to MIRHOSTING private peer
+remarks:        3216:580x When advertising to Serverking private peer
 remarks:        3216:581x When advertising to CLOUDFLARE private peer (Frankfurt)...
 remarks:        3216:583x When advertising to OVHcloud private peer (Frankfurt)...
 remarks:        3216:584x When advertising to Telegram private peer...
@@ -9477,7 +9481,7 @@ remarks:        3216:3219 Blizzard (Amsterdam)
 remarks:        3216:3220 Blizzard (Frankfurt)
 remarks:        3216:3221 China Unicom
 remarks:        3216:3222 ROBLOX (Frankfurt)
-remarks:        3216:3223 MIRHOSTING
+remarks:        3216:3223 Serverking
 remarks:        3216:3224 Melbikomas UAB
 remarks:        3216:3225 Akamai (Stockholm)
 remarks:        3216:3226 Fastly (Stockholm)
@@ -9736,7 +9740,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-08-20T07:59:16Z
+last-modified:  2026-08-21T16:04:35Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
