@@ -749,9 +749,29 @@ org:            ORG-YK37-RIPE
 sponsoring-org: ORG-EAI4-RIPE
 remarks:
 remarks:        ============================================================
-remarks:        Free IPv6 Transit
-remarks:        Contact: as219529.com
+remarks:        AS219529 - podril1ak2
 remarks:        ============================================================
+remarks:
+remarks:        Website:  https://as219529.com
+remarks:        NOC:      noc@as219529.com
+remarks:        Abuse:    abuse@as219529.com
+remarks:
+remarks:        ------------------------------------------------------------
+remarks:        FREE IPv6 TRANSIT
+remarks:        ------------------------------------------------------------
+remarks:
+remarks:        We provide free IPv6 transit to networks that need it.
+remarks:        Available at Frankfurt and London, over GRE, IP6TNL,
+remarks:        IPIP/SIT or VXLAN tunnels, or at any of the exchanges
+remarks:        listed below.
+remarks:
+remarks:        Full IPv6 table, RPKI and IRR filtering on all sessions,
+remarks:        BGP communities for prepending and selective announcement,
+remarks:        BFD and RFC 9234 roles on request.
+remarks:
+remarks:        To request transit, mail noc@as219529.com or message
+remarks:        https://t.me/ponchek1337 with your ASN, AS-SET, prefixes
+remarks:        and preferred location.
 remarks:
 remarks:        ============================================================
 remarks:        IPv6 Transit
@@ -777,6 +797,10 @@ remarks:        V6Direct
 mp-import:      afi ipv6.unicast from AS199746 accept ANY
 mp-export:      afi ipv6.unicast to AS199746 announce AS219529:AS-PODRIL1AK2
 remarks:
+remarks:        Nesox Network
+mp-import:      afi ipv6.unicast from AS215685 accept ANY
+mp-export:      afi ipv6.unicast to AS215685 announce AS219529:AS-PODRIL1AK2
+remarks:
 remarks:        ============================================================
 remarks:        IPv4 and IPv6 Transit
 remarks:        ============================================================
@@ -800,6 +824,14 @@ mp-import:      afi ipv6.unicast from AS52025 accept ANY
 mp-export:      afi ipv6.unicast to AS52025 announce AS219529:AS-PODRIL1AK2
 remarks:
 remarks:        ============================================================
+remarks:        Downstreams
+remarks:        ============================================================
+remarks:
+remarks:        Lynqia
+mp-import:      afi ipv6.unicast from AS213409 accept AS213409:AS-LYNQIA
+mp-export:      afi ipv6.unicast to AS213409 announce AS52025:AS-ALL
+remarks:
+remarks:        ============================================================
 remarks:        Internet Exchanges
 remarks:        ============================================================
 remarks:
@@ -821,7 +853,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-06-04T12:29:38Z
-last-modified:  2026-08-10T19:06:55Z
+last-modified:  2026-08-23T17:50:59Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
