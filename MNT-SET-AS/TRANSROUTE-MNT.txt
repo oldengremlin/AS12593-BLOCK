@@ -49,6 +49,7 @@ members:        AS199651:AS-CLOUDTRANSIT
 members:        AS48763
 members:        AS-MIGRAPH
 members:        AS47363
+members:        AS34550
 members:        AS13002
 members:        AS198580
 members:        AS-GET-NET
@@ -212,6 +213,7 @@ members:        AS205638
 members:        AS-LINKTELECOM
 members:        AS61360
 members:        AS198610
+members:        AS-IPTP:AS51601
 members:        AS56592
 members:        AS44532
 members:        AS60771
@@ -242,9 +244,8 @@ members:        AS-OBLTELECOM
 remarks:        * * * * * * * * * * * * *
 members:        AS-TRANSROUTE-QUICKFIX
 members:        AS-TRANSROUTE-SPEC
-members:        AS-IPTP:AS-51601-RU
 created:        2019-10-25T12:31:32Z
-last-modified:  2026-08-20T15:19:15Z
+last-modified:  2026-08-24T15:50:33Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -547,7 +548,7 @@ mnt-by:         TRANSROUTE-DAEMON-MNT
 mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRSUPPORT-MNT
 created:        2022-07-06T08:20:35Z
-last-modified:  2026-08-11T16:30:17Z
+last-modified:  2026-08-23T22:32:35Z
 source:         RIPE
 members:        AS100
 members:        AS1001
@@ -9266,7 +9267,6 @@ members:        AS214419
 members:        AS214431
 members:        AS214432
 members:        AS214443
-members:        AS214449
 members:        AS214456
 members:        AS214466
 members:        AS21447
@@ -20811,6 +20811,9 @@ export:         to AS43106 announce ANY
 remarks:        * itregion *
 import:         from AS43966 accept AS-ITREGION
 export:         to AS43966 announce ANY
+remarks:        * intercon *
+import:         from AS34550 accept AS34550
+export:         to AS34550 announce ANY
 remarks:        * vsevnet *
 import:         from AS44882 accept AS44882
 export:         to AS44882 announce ANY
@@ -21205,7 +21208,7 @@ remarks:        * melbicom *
 import:         from AS56630 accept AS-MELBICOM
 export:         to AS56630 announce ANY
 remarks:        * iptp *
-import:         from AS51601 accept AS-IPTP:AS-51601-RU
+import:         from AS51601 accept AS-IPTP:AS51601
 export:         to AS51601 announce ANY
 remarks:        * biterika *
 import:         from AS35048 accept AS-BITERIKA
@@ -21571,7 +21574,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRSUPPORT-MNT
 created:        2019-10-22T14:34:02Z
-last-modified:  2026-08-20T15:19:52Z
+last-modified:  2026-08-24T15:50:59Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
