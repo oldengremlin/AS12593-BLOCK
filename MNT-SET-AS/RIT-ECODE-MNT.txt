@@ -528,6 +528,8 @@ import:         from AS213529 accept ANY
 export:         to AS213529 announce AS219147
 import:         from AS212895 accept ANY
 export:         to AS212895 announce AS219147
+import:         from AS202759 accept ANY
+export:         to AS202759 announce AS219147
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -535,7 +537,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         RAWI-NET-MNT
 created:        2026-07-23T09:59:39Z
-last-modified:  2026-07-23T09:59:39Z
+last-modified:  2026-08-24T22:35:48Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -607,6 +609,8 @@ import:         from AS213529 accept ANY
 export:         to AS213529 announce AS219288
 import:         from AS49581 accept ANY
 export:         to AS49581 announce AS219288
+import:         from AS201814 accept ANY
+export:         to AS201814 announce AS219288
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -614,7 +618,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         SOULFUL-MNT
 created:        2026-07-02T12:53:37Z
-last-modified:  2026-07-02T12:53:37Z
+last-modified:  2026-08-25T12:21:45Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -777,10 +781,6 @@ remarks:        ============================================================
 remarks:        IPv6 Transit
 remarks:        ============================================================
 remarks:
-remarks:        Awas
-mp-import:      afi ipv6.unicast from AS201279 accept ANY
-mp-export:      afi ipv6.unicast to AS201279 announce AS219529:AS-PODRIL1AK2
-remarks:
 remarks:        Tizian Maxime Weigt
 mp-import:      afi ipv6.unicast from AS215828 accept ANY
 mp-export:      afi ipv6.unicast to AS215828 announce AS219529:AS-PODRIL1AK2
@@ -800,6 +800,10 @@ remarks:
 remarks:        Nesox Network
 mp-import:      afi ipv6.unicast from AS215685 accept ANY
 mp-export:      afi ipv6.unicast to AS215685 announce AS219529:AS-PODRIL1AK2
+remarks:
+remarks:        GuwinUS
+mp-import:      afi ipv6.unicast from AS201398 accept ANY
+mp-export:      afi ipv6.unicast to AS201398 announce AS219529:AS-PODRIL1AK2
 remarks:
 remarks:        ============================================================
 remarks:        IPv4 and IPv6 Transit
@@ -824,10 +828,24 @@ mp-import:      afi ipv6.unicast from AS52025 accept ANY
 mp-export:      afi ipv6.unicast to AS52025 announce AS219529:AS-PODRIL1AK2
 remarks:
 remarks:        ============================================================
+remarks:        Peering
+remarks:        ============================================================
+remarks:
+remarks:        Jurrian van Iersel
+mp-import:      afi ipv6.unicast from AS212635 accept AS212635:AS-212635
+mp-export:      afi ipv6.unicast to AS212635 announce AS219529:AS-PODRIL1AK2
+remarks:
+remarks:        ============================================================
 remarks:        Downstreams
 remarks:        ============================================================
 remarks:
+remarks:        Awas
+mp-import:      afi ipv6.unicast from AS201279 accept AS201279:AS-DOWNSTREAMS
+mp-export:      afi ipv6.unicast to AS201279 announce ANY
+remarks:
 remarks:        Lynqia
+import:         from AS213409 accept AS213409:AS-LYNQIA
+export:         to AS213409 announce AS52025:AS-ALL
 mp-import:      afi ipv6.unicast from AS213409 accept AS213409:AS-LYNQIA
 mp-export:      afi ipv6.unicast to AS213409 announce AS52025:AS-ALL
 remarks:
@@ -846,6 +864,22 @@ mp-import:      afi ipv6.unicast from AS35708 accept AS-4IXP
 mp-export:      afi ipv6.unicast to AS35708 announce AS219529:AS-PODRIL1AK2
 remarks:
 remarks:        ============================================================
+remarks:        Route Collectors
+remarks:        ============================================================
+remarks:
+remarks:        bgp.tools
+import:         from AS212232 accept NOT ANY
+export:         to AS212232 announce ANY
+mp-import:      afi ipv6.unicast from AS212232 accept NOT ANY
+mp-export:      afi ipv6.unicast to AS212232 announce ANY
+remarks:
+remarks:        Hurricane Electric Route Collector
+import:         from AS393338 accept NOT ANY
+export:         to AS393338 announce ANY
+mp-import:      afi ipv6.unicast from AS393338 accept NOT ANY
+mp-export:      afi ipv6.unicast to AS393338 announce ANY
+remarks:
+remarks:        ============================================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -853,7 +887,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-06-04T12:29:38Z
-last-modified:  2026-08-23T17:50:59Z
+last-modified:  2026-08-25T15:07:30Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

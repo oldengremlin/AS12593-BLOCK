@@ -353,6 +353,8 @@ mp-export:      afi ipv6.unicast to AS44020 announce AS-VK;
 mp-import:      afi ipv6.unicast from AS44020 accept AS-CLN;
 export:         to AS39709 announce AS-VK
 import:         from AS39709 accept AS-MARYNONET
+export:         to AS12668 announce AS-VK
+import:         from AS12668 accept AS-MIRALOGIC
 remarks:
 remarks:        =========================================
 remarks:        MSK-IX Peers
@@ -694,6 +696,7 @@ remarks:        233 Gigacom (AS51341)
 remarks:        234 STARLINK (AS34602)
 remarks:        235 SVYAZINFORM (AS58002)
 remarks:        236 MARYNONET (AS39709)
+remarks:        237 KomTehCentr (AS12668)
 remarks:        -------------------------------------------------------------
 remarks:
 remarks:        Other 47764:* communities are deleted.
@@ -765,7 +768,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2008-08-15T07:37:11Z
-last-modified:  2026-07-15T08:01:47Z
+last-modified:  2026-08-25T09:23:48Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

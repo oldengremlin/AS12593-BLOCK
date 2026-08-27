@@ -274,6 +274,11 @@ import:         from AS202498 accept AS202498
 remarks:        -- TKTELECOM
 export:         to AS60764 announce AS-VKONTAKTE
 import:         from AS60764 accept AS-TKTEL
+remarks:        -- KomTehCentr
+export:         to AS12668 announce AS-VKONTAKTE
+import:         from AS12668 accept AS-MIRALOGIC
+mp-export:      afi ipv6.unicast to AS12668 announce AS-VKONTAKTE;
+mp-import:      afi ipv6.unicast from AS12668 accept AS-MIRALOGIC;
 remarks:
 remarks:        =========================================
 remarks:        Partners
@@ -315,7 +320,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         VKCOMPANY-MNT
 created:        2009-08-05T11:34:14Z
-last-modified:  2026-08-19T09:44:59Z
+last-modified:  2026-08-25T09:29:23Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
