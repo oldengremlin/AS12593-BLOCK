@@ -3329,7 +3329,6 @@ remarks:        213922 - 64531
 remarks:        215638 - 64595
 remarks:        214707 - 64621
 remarks:        203380 - 64622
-remarks:        216262 - 64623
 remarks:        216139 - 64624
 remarks:        212372 - 64626
 remarks:        215248 - 64593
@@ -3406,6 +3405,7 @@ remarks:        209870 - 64707
 remarks:        207883 - 64708
 remarks:        211448 - 64709
 remarks:        199546 - 64710
+remarks:        204208 - 64711
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -4605,8 +4605,6 @@ import:         from AS214707  accept   AS214707:AS-RCELL
 export:         to   AS214707  announce AS-DATAIX
 import:         from AS203380  accept   AS203380:AS-DAGROUP
 export:         to   AS203380  announce AS-DATAIX
-import:         from AS216262  accept   AS216262
-export:         to   AS216262  announce AS-DATAIX
 import:         from AS216139  accept   AS216139:AS-IRONHOST
 export:         to   AS216139  announce AS-DATAIX
 import:         from AS35773   accept   AS-ICONNECT-BG
@@ -4949,6 +4947,8 @@ import:         from AS211448  accept   AS-WEBCONEX
 export:         to   AS211448  announce AS-DATAIX
 import:         from AS199546  accept   AS-MOSCOMNET
 export:         to   AS199546  announce AS-DATAIX
+import:         from AS204208  accept   AS204208:AS-ALL
+export:         to   AS204208  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6161,8 +6161,6 @@ mp-import:      afi ipv6.unicast from AS214707  accept   AS214707:AS-RCELL
 mp-export:      afi ipv6.unicast to   AS214707  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS203380  accept   AS203380:AS-DAGROUP
 mp-export:      afi ipv6.unicast to   AS203380  announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS216262  accept   AS216262
-mp-export:      afi ipv6.unicast to   AS216262  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS216139  accept   AS216139:AS-IRONHOST
 mp-export:      afi ipv6.unicast to   AS216139  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS35773   accept   AS-ICONNECT-BG
@@ -6507,6 +6505,8 @@ mp-import:      afi ipv6.unicast from AS211448  accept   AS-WEBCONEX
 mp-export:      afi ipv6.unicast to   AS211448  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS199546  accept   AS-MOSCOMNET
 mp-export:      afi ipv6.unicast to   AS199546  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS204208  accept   AS204208:AS-ALL
+mp-export:      afi ipv6.unicast to   AS204208  announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6514,7 +6514,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-08-24T14:01:49Z
+last-modified:  2026-08-26T14:01:49Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
