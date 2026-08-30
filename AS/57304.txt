@@ -456,6 +456,8 @@ import:         from  AS48158 action pref=100; accept   AS-DIGITALONE
 export:         to    AS48158                  announce ANY
 import:         from  AS48166 action pref=100; accept   AS-FORTEX
 export:         to    AS48166                  announce ANY
+import:         from  AS48219 action pref=100; accept   AS48219
+export:         to    AS48219                  announce ANY
 import:         from  AS48226 action pref=100; accept   AS48226
 export:         to    AS48226                  announce ANY
 import:         from  AS48282 action pref=100; accept   AS-VDSINA
@@ -812,6 +814,8 @@ import:         from AS199430 action pref=100; accept   AS199430
 export:         to   AS199430                  announce ANY
 import:         from AS199599 action pref=100; accept   AS-CIREX
 export:         to   AS199599                  announce ANY
+import:         from AS199651 action pref=100; accept   AS199651:AS-CLOUDTRANSIT
+export:         to   AS199651                  announce ANY
 import:         from AS199669 action pref=100; accept   AS-ATLEX
 export:         to   AS199669                  announce ANY
 import:         from AS199805 action pref=100; accept   AS-UGO
@@ -1690,7 +1694,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-08-27T19:59:08Z
+last-modified:  2026-08-28T19:59:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

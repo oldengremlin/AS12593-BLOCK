@@ -558,6 +558,7 @@ members:        AS-IPTP
 members:        AS201851:AS-PIK
 members:        AS213922:AS-VOLTA
 members:        AS139057:AS-CONE
+members:        AS28917:AS-FIORD-SMALL
 members:        AS-INDIKOM
 members:        AS200627
 members:        AS214317
@@ -1704,7 +1705,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-08-26T13:15:21Z
+last-modified:  2026-08-28T09:30:42Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -2040,6 +2041,8 @@ members:        AS205642
 members:        AS-SELECTEL-MSK
 members:        AS197793
 members:        AS-STM-NVR
+members:        AS213922:AS-VOLTA
+members:        AS12958
 remarks:
 remarks:        SPB cust Nets
 remarks:
@@ -2124,7 +2127,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-08-13T07:26:34Z
+last-modified:  2026-08-28T08:17:51Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5522,6 +5525,8 @@ import:         from AS60642 action pref=100; accept AS60642
 export:         to AS60642 announce ANY
 import:         from AS12958 action pref=100; accept AS12958
 export:         to AS12958 announce ANY
+mp-import:      from AS12958 action pref=100; accept AS12958
+mp-export:      to AS12958 announce ANY
 import:         from AS35580 action pref=100; accept AS35580
 export:         to AS35580 announce {0.0.0.0/0}
 import:         from AS51230 action pref=100; accept AS-ROSINTEH
@@ -5940,6 +5945,8 @@ import:         from AS201851 action pref=100; accept AS201851:AS-PIK
 export:         to AS201851 announce ANY
 import:         from AS213922 action pref=100; accept AS213922:AS-VOLTA
 export:         to AS213922 announce ANY
+mp-import:      from AS213922 action pref=100; accept AS213922:AS-VOLTA
+mp-export:      to AS213922 announce ANY
 import:         from AS139057 action pref=100; accept AS139057:AS-CONE
 export:         to AS139057 announce ANY
 mp-import:      from AS139057 action pref=100; accept AS139057:AS-CONE
@@ -6518,7 +6525,7 @@ import:         from AS61052 action pref=100; accept AS61052
 export:         to AS61052 announce {0.0.0.0/0}
 import:         from AS35119 action pref=100; accept AS35119
 export:         to AS35119 announce {0.0.0.0/0}
-import:         from AS28917 action pref=100; accept AS-FIORD
+import:         from AS28917 action pref=100; accept AS28917:AS-FIORD-SMALL
 export:         to AS28917 announce ANY
 import:         from AS200687 action pref=100; accept AS200687
 export:         to AS200687 announce {0.0.0.0/0}
@@ -9749,7 +9756,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-08-26T13:14:54Z
+last-modified:  2026-08-28T09:30:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
