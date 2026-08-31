@@ -1,31 +1,18 @@
 aut-num:        AS49993
 as-name:        NOVOCOM-AS
 descr:          JSC Novocom, ISP
-remarks:        BGP Communities we accept:
-remarks:
-remarks:        49993:612y When advertising to Telia Sonera (AS1299)
-remarks:        49993:799y When advertising to any INTERNATIONAL peer
-remarks:        49993:899y When advertising to any RUSSIAN peer
-remarks:
-remarks:        y=9 - advertise without prepends
-remarks:        y=0 - do not advertise
-remarks:        y=1,2,3 or 5 - prepend 49993 (1,2,3 or 5) times
-remarks:        WARN: We don't accept prefixes longer than /24!!
-remarks:
-remarks:        49993:2800 - set local-pref=800
-remarks:        49993:2100 - set local-pref=100
-remarks:        Default local-pref:
-remarks:        850 - Customer
-remarks:        250-500 - Peer
-remarks:        200 - Upstream
-remarks:
-remarks:        49993:55555 - blackhole (RFC7999)
-remarks:
-remarks:        Peers:
-import:         from AS28917 accept ANY
-export:         to AS28917 announce AS49993
-import:         from AS212461 accept ANY
-export:         to AS212461 announce AS49993
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS49993:AS-NOVOCOM
+import:         from AS215439 accept ANY
+export:         to AS215439 announce AS49993:AS-NOVOCOM
+import:         from AS50817 accept ANY
+export:         to AS50817 announce AS49993:AS-NOVOCOM
+import:         from AS49869 accept ANY
+export:         to AS49869 announce AS49993:AS-NOVOCOM
+import:         from AS13335 accept ANY
+export:         to AS13335 announce AS49993:AS-NOVOCOM
+import:         from AS215881 accept AS215881:AS-ELYTRIUM
+export:         to AS215881 announce ANY
 org:            ORG-NOVO2-RIPE
 sponsoring-org: ORG-PMAV1-RIPE
 admin-c:        DUMY-RIPE
@@ -34,7 +21,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         JSC-NOVOCOM-MNT
 created:        2023-12-27T16:39:35Z
-last-modified:  2025-06-03T11:59:12Z
+last-modified:  2026-08-29T06:33:07Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
