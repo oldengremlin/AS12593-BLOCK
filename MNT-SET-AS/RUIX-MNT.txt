@@ -494,6 +494,8 @@ members:        AS13335:AS-CLOUDFLARE
 members:        AS-GOOGLE
                 # from AS15428:
 members:        AS-DAGNET
+                # from AS15493:
+members:        AS15493
                 # from AS15599:
 members:        AS-SET-AS15599
                 # from AS15672:
@@ -1467,7 +1469,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-08-28T13:47:32Z
+last-modified:  2026-08-31T09:47:36Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -2026,6 +2028,8 @@ members:        AS-LENTEL
 members:        AS-INTERNET-PRO-EKT-IX
                 # from AS44587:
 members:        AS-MEGACOM
+                # from AS44845:
+members:        AS44845
                 # from AS45029:
 members:        AS-NS9_RIPN_NET
                 # from AS47211:
@@ -2140,7 +2144,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2026-06-16T14:04:09Z
+last-modified:  2026-08-31T10:05:32Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3897,6 +3901,9 @@ import:         from AS44128
 import:         from AS44587
                 action pref=100;
                 accept AS-MEGACOM
+import:         from AS44845
+                action pref=100;
+                accept AS44845
 import:         from AS45029
                 action pref=100;
                 accept AS-NS9_RIPN_NET
@@ -4126,6 +4133,8 @@ export:         to AS44128
                 announce AS-SPBROUTESERVER
 export:         to AS44587
                 announce AS-SPBROUTESERVER
+export:         to AS44845
+                announce AS-SPBROUTESERVER
 export:         to AS45029
                 announce AS-SPBROUTESERVER
 export:         to AS47211
@@ -4219,7 +4228,7 @@ export:         to AS215182
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2026-06-16T14:04:14Z
+last-modified:  2026-08-31T10:05:32Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5523,6 +5532,9 @@ import:         from AS15169
 import:         from AS15428
                 action pref=100;
                 accept AS-DAGNET
+import:         from AS15493
+                action pref=100;
+                accept AS15493
 import:         from AS15599
                 action pref=100;
                 accept AS-SET-AS15599
@@ -7076,6 +7088,8 @@ export:         to AS15169
                 announce AS-MSKROUTESERVER
 export:         to AS15428
                 announce AS-MSKROUTESERVER
+export:         to AS15493
+                announce AS-MSKROUTESERVER
 export:         to AS15599
                 announce AS-MSKROUTESERVER
 export:         to AS15672
@@ -8027,7 +8041,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-08-28T13:47:28Z
+last-modified:  2026-08-31T09:47:32Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

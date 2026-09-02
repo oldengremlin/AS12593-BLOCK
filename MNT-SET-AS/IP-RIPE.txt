@@ -12,17 +12,16 @@ members:        AS213780:AS-ARKCORE
 members:        AS42151:AS-P24-CLOUD
 members:        AS206247
 members:        AS48925
-members:        AS203753:AS-FIRSTUNIT
 members:        AS214987
 members:        AS213606
-members:        AS203753:AS-CLOUDPROTECT
 members:        AS213787:AS-CLOUDRACK
 members:        AS206247:AS-MATVINE
+members:        AS199651:AS-CLOUDTRANSIT
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         IP-RIPE
 created:        2022-02-11T12:28:41Z
-last-modified:  2026-06-08T14:35:54Z
+last-modified:  2026-08-31T10:40:44Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -4097,18 +4096,9 @@ org:            ORG-CL628-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 remarks:        ---------- Upstreams and IX -------------
-remarks:        ---EdgeCenter
-import:         from AS210756 accept ANY
-export:         to AS210756 announce AS-CASTLES
-remarks:        ---TEAM-HOST
-import:         from AS202984 accept ANY
-export:         to AS202984 announce AS-CASTLES
 remarks:        ---SELECTEL
 import:         from AS49505 accept ANY
 export:         to AS49505 announce AS-CASTLES
-remarks:        ---SERVICEPIPE
-import:         from AS201706 accept ANY
-export:         to AS201706 announce AS-CASTLES
 remarks:        ---STORMWALL
 import:         from AS59796 accept ANY
 export:         to AS59796 announce AS-CASTLES
@@ -4139,9 +4129,6 @@ export:         to AS8631 announce AS-CASTLES
 remarks:        ---ADMAN
 import:         from AS57494 accept ANY
 export:         to AS57494 announce AS-CASTLES
-remarks:        ---AEZA
-import:         from AS216246 accept AS-AEZA
-export:         to AS216246 announce ANY
 remarks:        ----VIBEGAMES
 import:         from AS48925 accept AS48925
 export:         to AS48925 announce ANY
@@ -4151,19 +4138,16 @@ export:         to AS30823 announce AS-CASTLES
 remarks:        ----FIRSTUNIT
 import:         from AS203753 accept AS203753:AS-FIRSTUNIT
 export:         to AS203753 announce ANY
-remarks:        ----CLOUDPROTECT
-import:         from AS203753 accept AS203753:AS-CLOUDPROTECT
-export:         to AS203753 announce ANY
-remarks:        ----CLOUDRACK
-import:         from AS206247 accept AS206247:AS-MATVINE
-export:         to AS206247 announce ANY
+remarks:        ---CLOUDTRANSIT
+import:         from AS199651 accept AS-CLOUDTRANSIT
+export:         to AS199651 announce ANY
 remarks:        -----------------------------------------
 sponsoring-org: ORG-IL934-RIPE
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         IP-RIPE
 status:         ASSIGNED
 created:        2018-07-19T12:43:40Z
-last-modified:  2026-06-08T14:35:35Z
+last-modified:  2026-08-31T10:42:06Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
