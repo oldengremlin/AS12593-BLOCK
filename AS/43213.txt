@@ -29,6 +29,9 @@ import:         from AS12418
 import:         from AS12668
                 action pref=100;
                 accept AS-MIRALOGIC
+import:         from AS15493
+                action pref=100;
+                accept AS15493
 import:         from AS21030
                 action pref=100;
                 accept AS21030
@@ -174,6 +177,8 @@ export:         to AS12418
                 announce AS-EKTROUTESERVER
 export:         to AS12668
                 announce AS-EKTROUTESERVER
+export:         to AS15493
+                announce AS-EKTROUTESERVER
 export:         to AS21030
                 announce AS-EKTROUTESERVER
 export:         to AS25091
@@ -282,7 +287,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2026-07-31T12:08:09Z
+last-modified:  2026-09-01T12:08:16Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

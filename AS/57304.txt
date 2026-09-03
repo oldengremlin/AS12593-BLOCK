@@ -128,6 +128,8 @@ import:         from  AS24689 action pref=100; accept   AS-ROSINTEL
 export:         to    AS24689                  announce ANY
 import:         from  AS24739 action pref=100; accept   AS-SEVEREN-TELECOM
 export:         to    AS24739                  announce ANY
+import:         from  AS24875 action pref=200; accept   AS-NOVOSERVE
+export:         to    AS24875                  announce AS57304:AS-RETN-RU
 import:         from  AS24955 action pref=100; accept   AS-UBN
 export:         to    AS24955                  announce ANY
 import:         from  AS25189 action pref=100; accept   AS-COUNTRY
@@ -268,6 +270,8 @@ import:         from  AS39741 action pref=100; accept   AS-RUSCOM
 export:         to    AS39741                  announce ANY
 import:         from  AS39821 action pref=100; accept   AS-CANMOS
 export:         to    AS39821                  announce ANY
+import:         from  AS39889 action pref=200; accept   AS-I2B
+export:         to    AS39889                  announce AS57304:AS-RETN-RU
 import:         from  AS41185 action pref=100; accept   AS41185
 export:         to    AS41185                  announce ANY
 import:         from  AS41187 action pref=100; accept   AS41187
@@ -534,6 +538,8 @@ import:         from  AS49892 action pref=100; accept   AS-TETATELECOM
 export:         to    AS49892                  announce ANY
 import:         from  AS49951 action pref=100; accept   AS-DFW
 export:         to    AS49951                  announce ANY
+import:         from  AS49981 action pref=200; accept   AS-WORLDSTREAM
+export:         to    AS49981                  announce AS57304:AS-RETN-RU
 import:         from  AS49988 action pref=100; accept   AS49988
 export:         to    AS49988                  announce ANY
 import:         from  AS50038 action pref=100; accept   AS-SIRENA-TRAVEL
@@ -1191,6 +1197,8 @@ mp-import:      afi ipv6.unicast from  AS24638 action pref=100; accept   AS-RAMT
 mp-export:      afi ipv6.unicast to    AS24638                  announce ANY
 mp-import:      afi ipv6.unicast from  AS24739 action pref=100; accept   AS-SEVEREN-TELECOM-V6
 mp-export:      afi ipv6.unicast to    AS24739                  announce ANY
+mp-import:      afi ipv6.unicast from  AS24875 action pref=200; accept   AS-NOVOSERVE
+mp-export:      afi ipv6.unicast to    AS24875                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS24955 action pref=100; accept   AS-UBN
 mp-export:      afi ipv6.unicast to    AS24955                  announce ANY
 mp-import:      afi ipv6.unicast from  AS25451 action pref=100; accept   AS25451
@@ -1267,6 +1275,8 @@ mp-import:      afi ipv6.unicast from  AS39735 action pref=100; accept   AS-TMPE
 mp-export:      afi ipv6.unicast to    AS39735                  announce ANY
 mp-import:      afi ipv6.unicast from  AS39741 action pref=100; accept   AS-RUSCOM
 mp-export:      afi ipv6.unicast to    AS39741                  announce ANY
+mp-import:      afi ipv6.unicast from  AS39889 action pref=200; accept   AS-I2B
+mp-export:      afi ipv6.unicast to    AS39889                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS41275 action pref=100; accept   AS-TUT
 mp-export:      afi ipv6.unicast to    AS41275                  announce ANY
 mp-import:      afi ipv6.unicast from  AS41302 action pref=100; accept   AS-KVS
@@ -1409,6 +1419,8 @@ mp-import:      afi ipv6.unicast from  AS49776 action pref=100; accept   AS49776
 mp-export:      afi ipv6.unicast to    AS49776                  announce ANY
 mp-import:      afi ipv6.unicast from  AS49892 action pref=100; accept   AS-TETATELECOM
 mp-export:      afi ipv6.unicast to    AS49892                  announce ANY
+mp-import:      afi ipv6.unicast from  AS49981 action pref=200; accept   AS-WORLDSTREAM
+mp-export:      afi ipv6.unicast to    AS49981                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS49988 action pref=100; accept   AS49988
 mp-export:      afi ipv6.unicast to    AS49988                  announce ANY
 mp-import:      afi ipv6.unicast from  AS50038 action pref=100; accept   AS-SIRENA-TRAVEL
@@ -1694,7 +1706,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-08-28T19:59:08Z
+last-modified:  2026-09-01T19:59:09Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

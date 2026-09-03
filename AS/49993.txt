@@ -1,18 +1,75 @@
 aut-num:        AS49993
 as-name:        NOVOCOM-AS
-descr:          JSC Novocom, ISP
+descr:          JSC Novocom
+remarks:        +-------------------------+
+remarks:        | AS49993 BGP COMMUNITIES |
+remarks:        +-------------------------+
+remarks:
+remarks:        Format: 49993:XYYZ
+remarks:
+remarks:        X   region      1 = EU, 2 = RU
+remarks:        YY  neighbour   see the table below
+remarks:        Z   action      0 = do not announce
+remarks:        1 = prepend AS49993 once
+remarks:        2 = prepend AS49993 twice
+remarks:        3 = prepend AS49993 three times
+remarks:
+remarks:        Two group selectors replace XYY:
+remarks:
+remarks:        990   all peers and downstreams, upstreams excluded
+remarks:        999   all upstreams, peers and downstreams
+remarks:
+remarks:        SET BY AS49993 ON ROUTES IT ANNOUNCES: 49993:1XYY0
+remarks:
+remarks:        65535:666    RTBH, discard traffic towards this prefix
+remarks:        (RFC 7999). IPv4 /32 only, within address
+remarks:        space announced by AS49993.
+remarks:
+remarks:        +------------+
+remarks:        | Neighbours |
+remarks:        +------------+
+remarks:
+remarks:        XYY  neighbour                     type      region
+remarks:        101  Play2GO PL, AS215439          upstream  EU
+remarks:        102  Play2GO DE, AS215439          upstream  EU
+remarks:        201  Inetcom, AS35598              upstream  RU
+remarks:        202  Piter-IX Moscow               peer      RU
+remarks:        203  Piter-IX St Petersburg        peer      RU
+remarks:        204  Cloudflare, AS13335           peer      RU
+remarks:
+remarks:        +----------+
+remarks:        | Upstream |
+remarks:        +----------+
+remarks:        [ Inetcom ]
 import:         from AS35598 accept ANY
 export:         to AS35598 announce AS49993:AS-NOVOCOM
+remarks:        [ Play2GO ]
 import:         from AS215439 accept ANY
 export:         to AS215439 announce AS49993:AS-NOVOCOM
+remarks:        +-------+
+remarks:        | Peers |
+remarks:        +-------+
+remarks:        [ Piter-IX SPb ]
 import:         from AS50817 accept ANY
 export:         to AS50817 announce AS49993:AS-NOVOCOM
+remarks:        [ Piter-IX Msk ]
 import:         from AS49869 accept ANY
 export:         to AS49869 announce AS49993:AS-NOVOCOM
+remarks:        [ Cloudflare ]
 import:         from AS13335 accept ANY
 export:         to AS13335 announce AS49993:AS-NOVOCOM
+remarks:        +------------+
+remarks:        | Downstream |
+remarks:        +------------+
+remarks:        [ Elytrium ]
 import:         from AS215881 accept AS215881:AS-ELYTRIUM
 export:         to AS215881 announce ANY
+remarks:        [ Matvine ]
+import:         from AS206247 accept AS206247:AS-MATVINE
+export:         to AS206247 announce ANY
+remarks:        [ Sculk ]
+import:         from AS213529 accept AS213529
+export:         to AS213529 announce ANY
 org:            ORG-NOVO2-RIPE
 sponsoring-org: ORG-PMAV1-RIPE
 admin-c:        DUMY-RIPE
@@ -21,7 +78,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         JSC-NOVOCOM-MNT
 created:        2023-12-27T16:39:35Z
-last-modified:  2026-08-29T06:33:07Z
+last-modified:  2026-09-01T16:19:51Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

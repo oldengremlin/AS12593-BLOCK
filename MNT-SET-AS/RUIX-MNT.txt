@@ -20,6 +20,8 @@ members:        AS-ERTH
 members:        AS-QUANTUM
                 # from AS12668:
 members:        AS-MIRALOGIC
+                # from AS15493:
+members:        AS15493
                 # from AS21030:
 members:        AS21030
                 # from AS25091:
@@ -130,7 +132,7 @@ remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2026-07-31T12:08:09Z
+last-modified:  2026-09-01T12:08:11Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1280,8 +1282,6 @@ members:        AS-AVANTRU
 members:        AS-CIREX
                 # from AS199624:
 members:        AS199624:AS-DKTEL
-                # from AS199651:
-members:        AS199651:AS-CLOUDTRANSIT
                 # from AS199669:
 members:        AS-ATLEX
                 # from AS199730:
@@ -1469,7 +1469,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-08-31T09:47:36Z
+last-modified:  2026-09-01T09:47:07Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3471,6 +3471,9 @@ import:         from AS12418
 import:         from AS12668
                 action pref=100;
                 accept AS-MIRALOGIC
+import:         from AS15493
+                action pref=100;
+                accept AS15493
 import:         from AS21030
                 action pref=100;
                 accept AS21030
@@ -3616,6 +3619,8 @@ export:         to AS12418
                 announce AS-EKTROUTESERVER
 export:         to AS12668
                 announce AS-EKTROUTESERVER
+export:         to AS15493
+                announce AS-EKTROUTESERVER
 export:         to AS21030
                 announce AS-EKTROUTESERVER
 export:         to AS25091
@@ -3724,7 +3729,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2026-07-31T12:08:09Z
+last-modified:  2026-09-01T12:08:16Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -6711,9 +6716,6 @@ import:         from AS199599
 import:         from AS199624
                 action pref=100;
                 accept AS199624:AS-DKTEL
-import:         from AS199651
-                action pref=100;
-                accept AS199651:AS-CLOUDTRANSIT
 import:         from AS199669
                 action pref=100;
                 accept AS-ATLEX
@@ -7874,8 +7876,6 @@ export:         to AS199599
                 announce AS-MSKROUTESERVER
 export:         to AS199624
                 announce AS-MSKROUTESERVER
-export:         to AS199651
-                announce AS-MSKROUTESERVER
 export:         to AS199669
                 announce AS-MSKROUTESERVER
 export:         to AS199730
@@ -8041,7 +8041,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-08-31T09:47:32Z
+last-modified:  2026-09-01T09:47:07Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
