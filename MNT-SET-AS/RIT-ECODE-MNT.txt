@@ -221,13 +221,17 @@ org:            ORG-SCLK2-RIPE
 sponsoring-org: ORG-EAI4-RIPE
 import:         from AS56694 accept ANY
 export:         to AS56694 announce AS205421
+import:         from AS35598 accept ANY
+export:         to AS35598 announce AS205421
+import:         from AS62255 accept ANY
+export:         to AS62255 announce AS205421
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 created:        2025-08-14T13:33:03Z
-last-modified:  2025-08-14T15:26:39Z
+last-modified:  2026-09-02T17:46:27Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -791,9 +795,9 @@ remarks:        FREE IPv6 TRANSIT
 remarks:        ------------------------------------------------------------
 remarks:
 remarks:        We provide free IPv6 transit to networks that need it.
-remarks:        Available at Frankfurt and London, over GRE, IP6TNL,
-remarks:        IPIP/SIT or VXLAN tunnels, or at any of the exchanges
-remarks:        listed below.
+remarks:        Available at Frankfurt, Amsterdam and St. Louis, over GRE,
+remarks:        IP6TNL, IPIP/SIT or VXLAN tunnels, or at any of the
+remarks:        exchanges listed below.
 remarks:
 remarks:        Full IPv6 table, RPKI and IRR filtering on all sessions,
 remarks:        BGP communities for prepending and selective announcement,
@@ -811,10 +815,6 @@ remarks:        Tizian Maxime Weigt
 mp-import:      afi ipv6.unicast from AS215828 accept ANY
 mp-export:      afi ipv6.unicast to AS215828 announce AS219529:AS-PODRIL1AK2
 remarks:
-remarks:        VDSok
-mp-import:      afi ipv6.unicast from AS202831 accept ANY
-mp-export:      afi ipv6.unicast to AS202831 announce AS219529:AS-PODRIL1AK2
-remarks:
 remarks:        PPNetworks
 mp-import:      afi ipv6.unicast from AS211358 accept ANY
 mp-export:      afi ipv6.unicast to AS211358 announce AS219529:AS-PODRIL1AK2
@@ -826,6 +826,10 @@ remarks:
 remarks:        Nesox Network
 mp-import:      afi ipv6.unicast from AS215685 accept ANY
 mp-export:      afi ipv6.unicast to AS215685 announce AS219529:AS-PODRIL1AK2
+remarks:
+remarks:        Cristian Tudor Marcus
+mp-import:      afi ipv6.unicast from AS214205 accept ANY
+mp-export:      afi ipv6.unicast to AS214205 announce AS219529:AS-PODRIL1AK2
 remarks:
 remarks:        GuwinUS
 mp-import:      afi ipv6.unicast from AS201398 accept ANY
@@ -841,12 +845,6 @@ export:         to AS33755 announce AS219529:AS-PODRIL1AK2
 mp-import:      afi ipv6.unicast from AS33755 accept ANY
 mp-export:      afi ipv6.unicast to AS33755 announce AS219529:AS-PODRIL1AK2
 remarks:
-remarks:        Cristian Tudor Marcus
-import:         from AS214205 accept ANY
-export:         to AS214205 announce AS219529:AS-PODRIL1AK2
-mp-import:      afi ipv6.unicast from AS214205 accept ANY
-mp-export:      afi ipv6.unicast to AS214205 announce AS219529:AS-PODRIL1AK2
-remarks:
 remarks:        Paradox Networks
 import:         from AS52025 accept ANY
 export:         to AS52025 announce AS219529:AS-PODRIL1AK2
@@ -857,19 +855,21 @@ remarks:        ============================================================
 remarks:        Peering
 remarks:        ============================================================
 remarks:
-remarks:        Jurrian van Iersel
-mp-import:      afi ipv6.unicast from AS212635 accept AS212635:AS-212635
-mp-export:      afi ipv6.unicast to AS212635 announce AS219529:AS-PODRIL1AK2
+remarks:        Lynqia - Amsterdam
+import:         from AS213409 accept AS213409:AS-LYNQIA
+export:         to AS213409 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS213409 accept AS213409:AS-LYNQIA
+mp-export:      afi ipv6.unicast to AS213409 announce AS219529:AS-PODRIL1AK2
 remarks:
 remarks:        ============================================================
 remarks:        Downstreams
 remarks:        ============================================================
 remarks:
 remarks:        Awas
-mp-import:      afi ipv6.unicast from AS201279 accept AS201279:AS-DOWNSTREAMS
+mp-import:      afi ipv6.unicast from AS201279 accept AS201279
 mp-export:      afi ipv6.unicast to AS201279 announce ANY
 remarks:
-remarks:        Lynqia
+remarks:        Lynqia - Frankfurt
 import:         from AS213409 accept AS213409:AS-LYNQIA
 export:         to AS213409 announce ANY
 mp-import:      afi ipv6.unicast from AS213409 accept AS213409:AS-LYNQIA
@@ -913,7 +913,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-06-04T12:29:38Z
-last-modified:  2026-09-01T17:56:54Z
+last-modified:  2026-09-02T07:32:42Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

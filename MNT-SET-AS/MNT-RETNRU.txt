@@ -332,6 +332,7 @@ members:        AS213452:AS-INFRACOM
 members:        AS215037:AS-CUSTOMERS
 members:        AS215307:AS-MOVETEL-CUSTOMERS
 members:        AS215601:AS-ALLHOSTINGS
+members:        AS218884:AS-DSTEP-NET
 members:        AS29426:AS-CONNECTO
 members:        AS34492:AS-MEDIALIFE
 members:        AS42291:AS-ISTRANET
@@ -576,7 +577,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2026-08-28T19:59:08Z
+last-modified:  2026-09-02T19:59:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -762,6 +763,7 @@ members:        AS208677:AS-CLOUDRU
 members:        AS21051:AS-ASTRUM
 members:        AS215307:AS-MOVETEL-CUSTOMERS
 members:        AS215601:AS-ALLHOSTINGS
+members:        AS218884:AS-DSTEP-NET
 members:        AS47502:AS-OPTIMATELECOM-NET
 members:        AS48108:AS-VIRTUALDC-RU
 members:        AS48610:AS-OFORO
@@ -844,7 +846,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2026-08-27T19:59:08Z
+last-modified:  2026-09-02T19:59:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -2579,6 +2581,8 @@ import:         from AS216246 action pref=100; accept   AS-AEZA
 export:         to   AS216246                  announce ANY
 import:         from AS216365 action pref=100; accept   AS216365
 export:         to   AS216365                  announce ANY
+import:         from AS218884 action pref=100; accept   AS218884:AS-DSTEP-NET
+export:         to   AS218884                  announce ANY
 import:         from AS219120 action pref=100; accept   AS219120
 export:         to   AS219120                  announce ANY
 import:         from AS219516 action pref=100; accept   AS219516
@@ -3158,6 +3162,8 @@ mp-import:      afi ipv6.unicast from AS216246 action pref=100; accept   AS-AEZA
 mp-export:      afi ipv6.unicast to   AS216246                  announce ANY
 mp-import:      afi ipv6.unicast from AS216365 action pref=100; accept   AS216365
 mp-export:      afi ipv6.unicast to   AS216365                  announce ANY
+mp-import:      afi ipv6.unicast from AS218884 action pref=100; accept   AS218884:AS-DSTEP-NET
+mp-export:      afi ipv6.unicast to   AS218884                  announce ANY
 remarks:
 remarks:        ---------------------------------------------------------------
 remarks:        ****************** ReTN bgp confederation *********************
@@ -3199,7 +3205,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-09-01T19:59:09Z
+last-modified:  2026-09-02T19:59:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

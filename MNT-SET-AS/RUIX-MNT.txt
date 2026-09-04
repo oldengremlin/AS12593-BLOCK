@@ -1424,6 +1424,8 @@ members:        AS212232
 members:        AS-KINESCOPE
                 # from AS212456:
 members:        AS212456
+                # from AS212600:
+members:        AS212600
                 # from AS213075:
 members:        AS-STARTFILM, AS213075
                 # from AS213348:
@@ -1469,7 +1471,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-09-01T09:47:07Z
+last-modified:  2026-09-02T09:47:53Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -6929,6 +6931,9 @@ import:         from AS212236
 import:         from AS212456
                 action pref=100;
                 accept AS212456
+import:         from AS212600
+                action pref=100;
+                accept AS212600
 import:         from AS213075
                 action pref=100;
                 accept AS-STARTFILM AS213075
@@ -8018,6 +8023,8 @@ export:         to AS212236
                 announce AS-MSKROUTESERVER
 export:         to AS212456
                 announce AS-MSKROUTESERVER
+export:         to AS212600
+                announce AS-MSKROUTESERVER
 export:         to AS213075
                 announce AS-MSKROUTESERVER
 export:         to AS213348
@@ -8041,7 +8048,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-09-01T09:47:07Z
+last-modified:  2026-09-02T09:47:53Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
