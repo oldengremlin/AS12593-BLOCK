@@ -120,6 +120,8 @@ import:         from  AS21453 action pref=100; accept   AS-FLEX
 export:         to    AS21453                  announce ANY
 import:         from  AS21859 action pref=200; accept   AS-ZENLAYER
 export:         to    AS21859                  announce AS57304:AS-RETN-RU
+import:         from  AS22697 action pref=200; accept   AS-ROBLOX
+export:         to    AS22697                  announce AS57304:AS-RETN-RU
 import:         from  AS24429 action pref=100; accept   AS24429
 export:         to    AS24429                  announce ANY
 import:         from  AS24638 action pref=100; accept   AS-RAMTEL
@@ -1193,6 +1195,8 @@ mp-import:      afi ipv6.unicast from  AS21453 action pref=100; accept   AS-FLEX
 mp-export:      afi ipv6.unicast to    AS21453                  announce ANY
 mp-import:      afi ipv6.unicast from  AS21859 action pref=200; accept   AS-ZENLAYER
 mp-export:      afi ipv6.unicast to    AS21859                  announce AS57304:AS-RETN6-RU
+mp-import:      afi ipv6.unicast from  AS22697 action pref=200; accept   AS-ROBLOX
+mp-export:      afi ipv6.unicast to    AS22697                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS24429 action pref=100; accept   AS24429
 mp-export:      afi ipv6.unicast to    AS24429                  announce ANY
 mp-import:      afi ipv6.unicast from  AS24638 action pref=100; accept   AS-RAMTEL6
@@ -1497,6 +1501,8 @@ mp-import:      afi ipv6.unicast from  AS59624 action pref=100; accept   AS-KIAE
 mp-export:      afi ipv6.unicast to    AS59624                  announce ANY
 mp-import:      afi ipv6.unicast from  AS59848 action pref=100; accept   AS-LUREIT
 mp-export:      afi ipv6.unicast to    AS59848                  announce ANY
+mp-import:      afi ipv6.unicast from  AS60042 action pref=100; accept   AS-ONTELECOM
+mp-export:      afi ipv6.unicast to    AS60042                  announce ANY
 mp-import:      afi ipv6.unicast from  AS60246 action pref=100; accept   AS-PG19
 mp-export:      afi ipv6.unicast to    AS60246                  announce ANY
 mp-import:      afi ipv6.unicast from  AS60280 action pref=100; accept   AS-NTEC
@@ -1710,7 +1716,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-09-02T19:59:08Z
+last-modified:  2026-09-03T19:59:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

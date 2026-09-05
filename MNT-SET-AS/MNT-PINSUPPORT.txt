@@ -668,13 +668,14 @@ members:        AS59734
 members:        AS-SENATOR
 members:        AS197243
 members:        AS207676
+members:        AS-TRANCOM
 remarks:        ***********************************************************************************
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2017-11-18T18:58:06Z
-last-modified:  2026-09-02T11:13:57Z
+last-modified:  2026-09-03T09:36:22Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1251,13 +1252,14 @@ members:        AS201379:AS-CHOFSTEDE
 members:        AS219079:AS-ALL
 members:        AS214205:AS-ZVSHOSTING
 members:        AS209870:AS-CYLO
+members:        AS-TRANCOM
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:05:11Z
-last-modified:  2026-09-01T10:52:25Z
+last-modified:  2026-09-03T09:38:51Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -4354,6 +4356,8 @@ import:         from AS205941 action pref=100; accept AS205941:AS-STEFAN
 export:         to AS205941 announce as-piter-ix-fra
 import:         from AS209870 action pref=100; accept AS209870:AS-CYLO
 export:         to AS209870 announce as-piter-ix-fra
+import:         from AS47181 action pref=100; accept AS-TRANCOM
+export:         to AS47181 announce as-piter-ix
 remarks:
 remarks:        ----- BGP Communities, etc. -----
 remarks:        -> see whois for AS50817
@@ -4365,7 +4369,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T08:46:05Z
-last-modified:  2026-09-01T10:46:41Z
+last-modified:  2026-09-03T09:40:24Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -6721,6 +6725,8 @@ import:         from AS197243 action pref=100; accept AS197243
 export:         to AS197243 announce as-piter-ix
 import:         from AS207676 action pref=100; accept AS-BEST-LINE
 export:         to AS207676 announce as-piter-ix
+import:         from AS47181 action pref=100; accept AS-TRANCOM
+export:         to AS47181 announce as-piter-ix
 remarks:
 remarks:        --------------- PiterIXPs ASNs --------------
 remarks:        spb 50817 msk 49869 rnd 59539 hls 39607
@@ -6853,7 +6859,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2026-09-02T09:41:16Z
+last-modified:  2026-09-03T09:38:10Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
