@@ -86,6 +86,8 @@ import:         from  AS13238 action pref=100; accept   AS-YANDEX
 export:         to    AS13238                  announce ANY
 import:         from  AS13238 action pref=200; accept   AS-YANDEX
 export:         to    AS13238                  announce AS57304:AS-RETN-RU
+import:         from  AS13335 action pref=200; accept   AS13335:AS-CLOUDFLARE
+export:         to    AS13335                  announce AS57304:AS-RETN-RU
 import:         from  AS14576 action pref=100; accept   AS-KSNL
 export:         to    AS14576                  announce ANY
 import:         from  AS15169 action pref=200; accept   AS-GOOGLE
@@ -194,6 +196,8 @@ import:         from  AS31566 action pref=100; accept   AS-SKYNETWORK
 export:         to    AS31566                  announce ANY
 import:         from  AS31690 action pref=100; accept   AS-GTSS
 export:         to    AS31690                  announce ANY
+import:         from  AS32590 action pref=200; accept   AS-VALVE
+export:         to    AS32590                  announce AS57304:AS-RETN-RU
 import:         from  AS33902 action pref=100; accept   AS33902
 export:         to    AS33902                  announce ANY
 import:         from  AS33936 action pref=100; accept   AS33936
@@ -1167,6 +1171,8 @@ mp-import:      afi ipv6.unicast from  AS13238 action pref=100; accept   AS-YAND
 mp-export:      afi ipv6.unicast to    AS13238                  announce ANY
 mp-import:      afi ipv6.unicast from  AS13238 action pref=200; accept   AS-YANDEX
 mp-export:      afi ipv6.unicast to    AS13238                  announce AS57304:AS-RETN6-RU
+mp-import:      afi ipv6.unicast from  AS13335 action pref=200; accept   AS13335:AS-CLOUDFLARE
+mp-export:      afi ipv6.unicast to    AS13335                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS14576 action pref=100; accept   AS-KSNL
 mp-export:      afi ipv6.unicast to    AS14576                  announce ANY
 mp-import:      afi ipv6.unicast from  AS15169 action pref=200; accept   AS-GOOGLE
@@ -1243,6 +1249,8 @@ mp-import:      afi ipv6.unicast from  AS31444 action pref=100; accept   AS31444
 mp-export:      afi ipv6.unicast to    AS31444                  announce ANY
 mp-import:      afi ipv6.unicast from  AS31566 action pref=100; accept   AS-SKYNETWORK
 mp-export:      afi ipv6.unicast to    AS31566                  announce ANY
+mp-import:      afi ipv6.unicast from  AS32590 action pref=200; accept   AS-VALVE
+mp-export:      afi ipv6.unicast to    AS32590                  announce AS57304:AS-RETN6-RU
 mp-import:      afi ipv6.unicast from  AS34545 action pref=100; accept   AS34545
 mp-export:      afi ipv6.unicast to    AS34545                  announce ANY
 mp-import:      afi ipv6.unicast from  AS34574 action pref=100; accept   AS34574
@@ -1716,7 +1724,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-09-03T19:59:08Z
+last-modified:  2026-09-04T19:59:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

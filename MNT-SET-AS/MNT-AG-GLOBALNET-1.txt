@@ -155,6 +155,7 @@ members:        AS198953
 members:        AS44534
 members:        AS-VDSINA
 members:        AS-RECONN
+members:        AS42954
 members:        AS-ATLEX
 members:        AS216139:AS-IRONHOST
 members:        AS-SMART-C
@@ -255,7 +256,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2008-08-19T12:40:08Z
-last-modified:  2026-09-02T14:01:51Z
+last-modified:  2026-09-04T14:01:53Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -333,6 +334,7 @@ members:        AS-TEL-NET-V6
 members:        AS-BIGTELECOM
 members:        AS44534
 members:        AS-VDSINA
+members:        AS42954
 members:        AS-ATLEX
 members:        AS216139:AS-IRONHOST
 members:        AS-DOCKER
@@ -376,7 +378,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2017-10-10T12:33:20Z
-last-modified:  2026-09-01T06:31:07Z
+last-modified:  2026-09-04T14:01:53Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -929,6 +931,8 @@ import:         from AS51219   accept   AS51219:AS-K2INT
 export:         to   AS51219   announce ANY
 import:         from AS41718   accept   AS41718
 export:         to   AS41718   announce ANY
+import:         from AS42954   accept   AS42954
+export:         to   AS42954   announce ANY
 import:         from AS211613  accept   AS-MS-S
 export:         to   AS211613  announce ANY
 import:         from AS215106  accept   AS215106:AS-SISZ
@@ -1339,6 +1343,8 @@ mp-import:      afi ipv6.unicast from AS51219   accept   AS51219:AS-K2INT
 mp-export:      afi ipv6.unicast to   AS51219   announce ANY
 mp-import:      afi ipv6.unicast from AS200302  accept   AS-RNET
 mp-export:      afi ipv6.unicast to   AS200302  announce ANY
+mp-import:      afi ipv6.unicast from AS42954   accept   AS42954
+mp-export:      afi ipv6.unicast to   AS42954   announce ANY
 mp-import:      afi ipv6.unicast from AS59627   accept   AS-DOCKER
 mp-export:      afi ipv6.unicast to   AS59627   announce ANY
 mp-import:      afi ipv6.unicast from AS57043   accept   AS57043:AS-HOSTKEY-FI
@@ -2944,7 +2950,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-09-02T14:01:50Z
+last-modified:  2026-09-04T14:01:51Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3422,6 +3428,7 @@ remarks:        211448 - 64709
 remarks:        199546 - 64710
 remarks:        204208 - 64711
 remarks:        197152 - 64712
+remarks:        204297 - 64713
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -4969,6 +4976,10 @@ import:         from AS49724   accept   AS-VTKNET
 export:         to   AS49724   announce AS-DATAIX
 import:         from AS197152  accept   AS-CXXI
 export:         to   AS197152  announce AS-DATAIX
+import:         from AS42954   accept   AS42954
+export:         to   AS42954   announce AS-DATAIX
+import:         from AS204297  accept   AS204297
+export:         to   AS204297  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6531,6 +6542,10 @@ mp-import:      afi ipv6.unicast from AS49724   accept   AS-VTKNET
 mp-export:      afi ipv6.unicast to   AS49724   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS197152  accept   AS-CXXI
 mp-export:      afi ipv6.unicast to   AS197152  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS42954   accept   AS42954
+mp-export:      afi ipv6.unicast to   AS42954   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS204297  accept   AS204297
+mp-export:      afi ipv6.unicast to   AS204297  announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6538,7 +6553,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-09-02T06:31:08Z
+last-modified:  2026-09-04T14:01:49Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
