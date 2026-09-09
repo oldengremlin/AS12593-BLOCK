@@ -106,6 +106,7 @@ members:        AS-QUANTUM
 members:        AS-INFOLAN
 members:        AS-SVOLS
 members:        AS-ATMOSPHERICA
+members:        AS204297
 members:        AS57528
 members:        AS207168:AS-BTTELECOM
 members:        AS56741
@@ -256,7 +257,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2008-08-19T12:40:08Z
-last-modified:  2026-09-04T14:01:53Z
+last-modified:  2026-09-07T06:31:14Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -933,6 +934,8 @@ import:         from AS41718   accept   AS41718
 export:         to   AS41718   announce ANY
 import:         from AS42954   accept   AS42954
 export:         to   AS42954   announce ANY
+import:         from AS204297  accept   AS204297
+export:         to   AS204297  announce ANY
 import:         from AS211613  accept   AS-MS-S
 export:         to   AS211613  announce ANY
 import:         from AS215106  accept   AS215106:AS-SISZ
@@ -2950,7 +2953,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-09-04T14:01:51Z
+last-modified:  2026-09-07T06:31:13Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3429,6 +3432,7 @@ remarks:        199546 - 64710
 remarks:        204208 - 64711
 remarks:        197152 - 64712
 remarks:        204297 - 64713
+remarks:        215366 - 64714
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -4980,6 +4984,8 @@ import:         from AS42954   accept   AS42954
 export:         to   AS42954   announce AS-DATAIX
 import:         from AS204297  accept   AS204297
 export:         to   AS204297  announce AS-DATAIX
+import:         from AS215366  accept   AS215366:AS-BGN
+export:         to   AS215366  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6546,6 +6552,8 @@ mp-import:      afi ipv6.unicast from AS42954   accept   AS42954
 mp-export:      afi ipv6.unicast to   AS42954   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS204297  accept   AS204297
 mp-export:      afi ipv6.unicast to   AS204297  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS215366  accept   AS215366:AS-BGN
+mp-export:      afi ipv6.unicast to   AS215366  announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6553,7 +6561,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-09-04T14:01:49Z
+last-modified:  2026-09-07T14:01:51Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

@@ -7,13 +7,10 @@ import:         from AS8631 action pref=200; accept ANY
 import:         from AS8641 action pref=200; accept ANY
 import:         from AS9002 action pref=200; accept ANY
 import:         from AS31133 action pref=200; accept ANY
-import:         from AS39191 action pref=200; accept AS39191
-import:         from AS197757 action pref=200; accept AS197757
 mp-import:      afi ipv6.unicast from AS1299 accept ANY
 mp-import:      afi ipv6.unicast from AS8631 accept ANY
 mp-import:      afi ipv6.unicast from AS8641 accept ANY
 mp-import:      afi ipv6.unicast from AS9002 accept ANY
-mp-import:      afi ipv6.unicast from AS39191 accept AS39191
 remarks:        Upstreams Peers Clients export
 export:         to AS1299 announce AS-EST
 export:         to AS8470 announce AS-EST
@@ -22,13 +19,10 @@ export:         to AS8631 announce AS-EST
 export:         to AS8641 announce AS-EST
 export:         to AS9002 announce AS-EST
 export:         to AS31133 announce AS-EST
-export:         to AS39191 announce ANY
-export:         to AS197757 announce ANY
 mp-export:      afi ipv6.unicast to AS1299 announce AS-EST
 mp-export:      afi ipv6.unicast to AS8631 announce AS-EST
 mp-export:      afi ipv6.unicast to AS8641 announce AS-EST
 mp-export:      afi ipv6.unicast to AS9002 announce AS-EST
-mp-export:      afi ipv6.unicast to AS39191 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -36,7 +30,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SUNET2000-MNT
 notify:         noc@estt.ru
 created:        2002-07-03T16:30:31Z
-last-modified:  2025-08-20T08:32:05Z
+last-modified:  2026-09-07T08:23:09Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

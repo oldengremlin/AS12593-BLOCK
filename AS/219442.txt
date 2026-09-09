@@ -13,13 +13,19 @@ import:         from AS209533 accept ANY
 export:         to AS209533 announce AS219442
 import:         from AS215730 accept ANY
 export:         to AS215730 announce AS219442
+import:         from AS219529 accept ANY
+export:         to AS219529 announce AS219442
+mp-import:      afi ipv4.unicast from AS41051 accept ANY
+mp-import:      afi ipv6.unicast from AS41051 accept ANY
+mp-export:      afi ipv4.unicast to AS41051 announce AS219442
+mp-export:      afi ipv6.unicast to AS41051 announce AS219442
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PMV1SHH-MNT
 created:        2026-06-15T07:51:20Z
-last-modified:  2026-08-23T08:17:03Z
+last-modified:  2026-09-07T14:54:22Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

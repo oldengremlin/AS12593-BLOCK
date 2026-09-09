@@ -9,24 +9,34 @@ import:         from AS196695 accept ANY
 export:         to AS196695 announce AS-MOSCOMNET
 mp-import:      afi ipv6.unicast from AS196695 accept ANY
 mp-export:      afi ipv6.unicast to AS196695 announce AS-MOSCOMNET
-descr:          ===CJSC RASCOM (IPv4/IPv6)===
+descr:          ===RASCOM CJSC (IPv4/IPv6)===
 import:         from AS20764 accept ANY
 export:         to AS20764 announce AS-MOSCOMNET
 mp-import:      afi ipv6.unicast from AS20764 accept ANY
 mp-export:      afi ipv6.unicast to AS20764 announce AS-MOSCOMNET
-descr:          ===PJSC MTS (IPv4/IPv6)===
+descr:          ===MTS PJSC (IPv4/IPv6)===
 import:         from AS8359 accept ANY
 export:         to AS8359 announce AS-MOSCOMNET
 mp-import:      afi ipv6.unicast from AS8359 accept ANY
 mp-export:      afi ipv6.unicast to AS8359 announce AS-MOSCOMNET
+descr:          ===GLOBALNET JSC (IPv4/IPv6)===
+import:         from AS31500 accept ANY
+export:         to AS31500 announce AS-MOSCOMNET
+mp-import:      afi ipv6.unicast from AS31500 accept ANY
+mp-export:      afi ipv6.unicast to AS31500 announce AS-MOSCOMNET
 remarks:        ==========================================================
 remarks:        //PUBLIC PEERING//
 remarks:        ==========================================================
-remarks:        ===CLOUD-IX (IPv4/IPv6)===
+descr:          ===CLOUD-IX (IPv4/IPv6)===
 import:         from AS29076 accept ANY
 export:         to AS29076 announce AS-MOSCOMNET
 mp-import:      afi ipv6.unicast from AS29076 accept ANY
 mp-export:      afi ipv6.unicast to AS29076 announce AS-MOSCOMNET
+descr:          ===DATA-IX (IPv4/IPv6)===
+import:         from AS50952 accept ANY
+export:         to AS50952 announce AS-MOSCOMNET
+mp-import:      afi ipv6.unicast from AS50952 accept ANY
+mp-export:      afi ipv6.unicast to AS50952 announce AS-MOSCOMNET
 remarks:        ==========================================================
 remarks:        // CUSTOMERS //
 remarks:        ==========================================================
@@ -57,6 +67,7 @@ remarks:        00 - ALL UPSTREAM
 remarks:        01 - NETONE RUS
 remarks:        02 - MTS
 remarks:        03 - RASCOM
+remarks:        04 - GLOBALNET
 remarks:
 remarks:        Y - tag for action
 remarks:        0 - no announce
@@ -65,12 +76,13 @@ remarks:        2 - Two prepend
 remarks:        4 - Four prepend
 remarks:        8 - Eight prepend
 remarks:        ==========================================================
-remarks:        // PEERS //
+remarks:        // PUBLIC PEERS //
 remarks:        !!! 19954:12XXY - TAGS !!!
 remarks:        XX - Number of Peer
 remarks:        00 - ALL PEERS
 remarks:        01 - MSK-IX
 remarks:        02 - CLOUD-IX
+remarks:        03 - DATA-IX
 remarks:
 remarks:        Y - tag for action
 remarks:        0 - no announce
@@ -86,7 +98,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ru-mostelecom-1-mnt
 mnt-by:         ru-moscomnet-2-mnt
 created:        2012-11-30T08:54:33Z
-last-modified:  2026-06-10T14:10:23Z
+last-modified:  2026-09-07T08:47:39Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

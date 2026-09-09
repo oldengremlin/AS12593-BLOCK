@@ -461,6 +461,7 @@ members:        AS-WBT
 remarks:
 remarks:        Moscow and other regs Nets
 remarks:
+members:        AS-KOVROV
 members:        AS203597
 members:        AS50396
 members:        AS-BESTCOM
@@ -1705,7 +1706,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-08-28T09:30:42Z
+last-modified:  2026-09-07T14:21:39Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -2564,7 +2565,6 @@ members:        AS-ARTX
 members:        AS-MERCUR
 members:        AS-ASTEIS
 members:        AS12668
-members:        AS44670
 members:        AS-OST-TELECOM
 members:        AS44223
 members:        AS-INSYS-EKB
@@ -2711,7 +2711,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2011-05-25T11:58:20Z
-last-modified:  2026-03-24T09:21:50Z
+last-modified:  2026-09-07T06:55:27Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5495,6 +5495,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS44988 action pref=100; accept AS-KOVROV
+export:         to AS44988 announce ANY
 import:         from AS203597 action pref=100; accept AS203597
 export:         to AS203597 announce ANY
 mp-import:      from AS203597 action pref=100; accept AS203597
@@ -9756,7 +9758,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-08-28T09:30:08Z
+last-modified:  2026-09-07T14:21:15Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

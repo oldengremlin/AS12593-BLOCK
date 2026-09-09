@@ -57,6 +57,10 @@ remarks:        GuwinUS
 mp-import:      afi ipv6.unicast from AS201398 accept ANY
 mp-export:      afi ipv6.unicast to AS201398 announce AS219529:AS-PODRIL1AK2
 remarks:
+remarks:        Hurricane Electric
+mp-import:      afi ipv6.unicast from AS6939 accept ANY
+mp-export:      afi ipv6.unicast to AS6939 announce AS219529:AS-PODRIL1AK2
+remarks:
 remarks:        ============================================================
 remarks:        IPv4 and IPv6 Transit
 remarks:        ============================================================
@@ -101,6 +105,22 @@ remarks:        ============================================================
 remarks:        Internet Exchanges
 remarks:        ============================================================
 remarks:
+remarks:        NINE IX - Amsterdam
+import:         from AS31561 accept AS31561:AS-MEMBERS
+export:         to AS31561 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS31561 accept AS31561:AS-MEMBERS
+mp-export:      afi ipv6.unicast to AS31561 announce AS219529:AS-PODRIL1AK2
+remarks:
+remarks:        EVIX - Amsterdam and Fremont
+import:         from AS137933 accept AS-EVIX
+export:         to AS137933 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS137933 accept AS-EVIX
+mp-export:      afi ipv6.unicast to AS137933 announce AS219529:AS-PODRIL1AK2
+import:         from AS209762 accept AS-EVIX
+export:         to AS209762 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS209762 accept AS-EVIX
+mp-export:      afi ipv6.unicast to AS209762 announce AS219529:AS-PODRIL1AK2
+remarks:
 remarks:        BGP.Exchange - Frankfurt, Amsterdam and Kansas City
 import:         from AS24381 accept AS-BGPExchange-PEERS
 export:         to AS24381 announce AS219529:AS-PODRIL1AK2
@@ -135,7 +155,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-06-04T12:29:38Z
-last-modified:  2026-09-02T07:32:42Z
+last-modified:  2026-09-07T08:08:21Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
