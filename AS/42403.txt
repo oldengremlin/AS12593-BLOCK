@@ -43,9 +43,6 @@ import:         from AS12418
 import:         from AS12668
                 action pref=100;
                 accept AS-MIRALOGIC
-import:         from AS12737
-                action pref=100;
-                accept AS-KPS
 import:         from AS13094
                 action pref=100;
                 accept AS-MILECOM-RS
@@ -253,8 +250,6 @@ export:         to AS12418
                 announce AS-NSKROUTESERVER
 export:         to AS12668
                 announce AS-NSKROUTESERVER
-export:         to AS12737
-                announce AS-NSKROUTESERVER
 export:         to AS13094
                 announce AS-NSKROUTESERVER
 export:         to AS21030
@@ -397,7 +392,7 @@ remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-07-22T10:14:04Z
+last-modified:  2026-09-08T05:42:12Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
