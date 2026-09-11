@@ -76,12 +76,16 @@ import:         from AS49880 action pref=300; accept AS49880
 export:         to AS49880 announce ANY
 import:         from AS198384 action pref=300; accept AS198384
 export:         to AS198384 announce ANY
+import:         from AS218762 action pref=300; accept AS218762
+export:         to AS218762 announce ANY
 mp-import:      afi ipv6.unicast from AS15870 action pref=300; accept AS15870
 mp-export:      afi ipv6.unicast to AS15870 announce ANY
 mp-import:      afi ipv6.unicast from AS47246 action pref=300; accept AS47246
 mp-export:      afi ipv6.unicast to AS47246 announce ANY
 mp-import:      afi ipv6.unicast from AS57629 action pref=300; accept AS57629
 mp-export:      afi ipv6.unicast to AS57629 announce ANY
+mp-import:      afi ipv6.unicast from AS218762 action pref=300; accept AS218762
+mp-export:      afi ipv6.unicast to AS218762 announce ANY
 remarks:        +-------------------------------------------------------------+
 remarks:        | Community for Customers |
 remarks:        +-------------------------------------------------------------+
@@ -108,7 +112,7 @@ mnt-by:         RIPE-NCC-END-MNT
 notify:         lir@omkc.ru
 mnt-by:         MNT-OMKC
 created:        2008-05-07T12:53:33Z
-last-modified:  2025-12-15T10:31:35Z
+last-modified:  2026-09-09T04:06:39Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

@@ -842,6 +842,18 @@ remarks:        ============================================================
 remarks:        IPv4 and IPv6 Transit
 remarks:        ============================================================
 remarks:
+remarks:        LowPing NL
+import:         from AS215296 accept ANY
+export:         to AS215296 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS215296 accept ANY
+mp-export:      afi ipv6.unicast to AS215296 announce AS219529:AS-PODRIL1AK2
+remarks:
+remarks:        Lungu Stefan - INTERIX
+import:         from AS205941 accept ANY
+export:         to AS205941 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS205941 accept ANY
+mp-export:      afi ipv6.unicast to AS205941 announce AS219529:AS-PODRIL1AK2
+remarks:
 remarks:        Valor Holdings
 import:         from AS33755 accept ANY
 export:         to AS33755 announce AS219529:AS-PODRIL1AK2
@@ -857,6 +869,16 @@ remarks:
 remarks:        ============================================================
 remarks:        Peering
 remarks:        ============================================================
+remarks:
+remarks:        Hurricane Electric - NINE IX and INTERIX (IPv4)
+import:         from AS6939 accept AS-HURRICANE
+export:         to AS6939 announce AS219529:AS-PODRIL1AK2
+remarks:
+remarks:        Konstantin Beug - INTERIX
+import:         from AS197658 accept AS197658:AS-KBEUG
+export:         to AS197658 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS197658 accept AS197658:AS-KBEUG
+mp-export:      afi ipv6.unicast to AS197658 announce AS219529:AS-PODRIL1AK2
 remarks:
 remarks:        Lynqia - Amsterdam
 import:         from AS213409 accept AS213409:AS-LYNQIA
@@ -885,6 +907,12 @@ remarks:
 remarks:        ============================================================
 remarks:        Internet Exchanges
 remarks:        ============================================================
+remarks:
+remarks:        INTERIX - Amsterdam (RS1 and RS2)
+import:         from AS56584 accept AS56584:AS-INTERIX
+export:         to AS56584 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS56584 accept AS56584:AS-INTERIX
+mp-export:      afi ipv6.unicast to AS56584 announce AS219529:AS-PODRIL1AK2
 remarks:
 remarks:        NINE IX - Amsterdam
 import:         from AS31561 accept AS31561:AS-MEMBERS
@@ -936,7 +964,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-06-04T12:29:38Z
-last-modified:  2026-09-08T12:23:43Z
+last-modified:  2026-09-09T11:20:42Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
