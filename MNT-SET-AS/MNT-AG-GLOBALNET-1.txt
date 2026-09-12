@@ -192,6 +192,7 @@ members:        AS-DHUB
 members:        AS49418:AS-NETSHIELD
 members:        AS56534
 members:        AS199651:AS-CLOUDTRANSIT
+members:        AS-TESLATEL
 members:        AS-KRASNET-G2
 members:        AS42893
 members:        AS202963
@@ -258,7 +259,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2008-08-19T12:40:08Z
-last-modified:  2026-09-09T14:01:51Z
+last-modified:  2026-09-10T14:01:51Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -283,6 +284,7 @@ members:        AS-BIGTELECOM
 members:        AS-VNET-LLC
 members:        AS200487
 members:        AS60212
+members:        AS43133:AS-CUSTOMERS
 members:        AS44923
 members:        AS-CASTLES
 members:        AS-VDSINA
@@ -356,6 +358,7 @@ members:        AS-BEGET
 members:        AS-TVIPMEDIA
 members:        AS-DHUB
 members:        AS49418:AS-NETSHIELD
+members:        AS-TESLATEL
 members:        AS199651:AS-CLOUDTRANSIT
 members:        AS34527
 members:        AS-SETKT
@@ -381,7 +384,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2017-10-10T12:33:20Z
-last-modified:  2026-09-09T14:01:53Z
+last-modified:  2026-09-10T14:01:52Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -936,6 +939,8 @@ import:         from AS41718   accept   AS41718
 export:         to   AS41718   announce ANY
 import:         from AS42954   accept   AS42954
 export:         to   AS42954   announce ANY
+import:         from AS50313   accept   AS-TESLATEL
+export:         to   AS50313   announce ANY
 import:         from AS204297  accept   AS204297
 export:         to   AS204297  announce ANY
 import:         from AS211613  accept   AS-MS-S
@@ -1306,6 +1311,8 @@ mp-import:      afi ipv6.unicast from AS6768    accept   AS-EUROTELE
 mp-export:      afi ipv6.unicast to   AS6768    announce ANY
 mp-import:      afi ipv6.unicast from AS199995  accept   AS199995:AS-EXT
 mp-export:      afi ipv6.unicast to   AS199995  announce ANY
+mp-import:      afi ipv6.unicast from AS43133   accept   AS43133:AS-CUSTOMERS
+mp-export:      afi ipv6.unicast to   AS43133   announce ANY
 mp-import:      afi ipv6.unicast from AS34527   accept   AS34527
 mp-export:      afi ipv6.unicast to   AS34527   announce ANY
 mp-import:      afi ipv6.unicast from AS50581   accept   AS-UTG-V6
@@ -1352,6 +1359,8 @@ mp-import:      afi ipv6.unicast from AS200302  accept   AS-RNET
 mp-export:      afi ipv6.unicast to   AS200302  announce ANY
 mp-import:      afi ipv6.unicast from AS42954   accept   AS42954
 mp-export:      afi ipv6.unicast to   AS42954   announce ANY
+mp-import:      afi ipv6.unicast from AS50313   accept   AS-TESLATEL
+mp-export:      afi ipv6.unicast to   AS50313   announce ANY
 mp-import:      afi ipv6.unicast from AS59627   accept   AS-DOCKER
 mp-export:      afi ipv6.unicast to   AS59627   announce ANY
 mp-import:      afi ipv6.unicast from AS48467   accept   AS-PRANET6
@@ -2959,7 +2968,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-09-09T14:01:50Z
+last-modified:  2026-09-10T14:01:49Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -4997,6 +5006,8 @@ import:         from AS48467   accept   AS-PRANET
 export:         to   AS48467   announce AS-DATAIX
 import:         from AS44772   accept   AS44772:AS-INTSG
 export:         to   AS44772   announce AS-DATAIX
+import:         from AS50313   accept   AS-TESLATEL
+export:         to   AS50313   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6571,6 +6582,8 @@ mp-import:      afi ipv6.unicast from AS48467   accept   AS-PRANET6
 mp-export:      afi ipv6.unicast to   AS48467   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS44772   accept   AS44772:AS-INTSG
 mp-export:      afi ipv6.unicast to   AS44772   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS50313   accept   AS-TESLATEL
+mp-export:      afi ipv6.unicast to   AS50313   announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6578,7 +6591,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-09-09T14:01:49Z
+last-modified:  2026-09-10T14:01:48Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

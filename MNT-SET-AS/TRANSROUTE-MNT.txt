@@ -240,11 +240,13 @@ members:        AS57661
 members:        AS-TMPK
 members:        AS215013:AS-YCCDN
 members:        AS-OBLTELECOM
+members:        AS-TRANCOM
+members:        AS50577
 remarks:        * * * * * * * * * * * * *
 members:        AS-TRANSROUTE-QUICKFIX
 members:        AS-TRANSROUTE-SPEC
 created:        2019-10-25T12:31:32Z
-last-modified:  2026-08-27T16:14:00Z
+last-modified:  2026-09-10T18:00:01Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -552,7 +554,7 @@ mnt-by:         TRANSROUTE-DAEMON-MNT
 mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRSUPPORT-MNT
 created:        2022-07-06T08:20:35Z
-last-modified:  2026-09-06T06:06:37Z
+last-modified:  2026-09-09T22:05:24Z
 source:         RIPE
 members:        AS100
 members:        AS1001
@@ -18444,7 +18446,6 @@ members:        AS57406
 members:        AS57421
 members:        AS57422
 members:        AS57424
-members:        AS57430
 members:        AS57441
 members:        AS57449
 members:        AS57456
@@ -21466,7 +21467,13 @@ import:         from AS44927 accept AS-TMPK
 export:         to AS44927 announce ANY
 remarks:        * obltel *
 import:         from AS41601 accept AS-OBLTELECOM
+remarks:        * trancom *
 export:         to AS41601 announce ANY
+import:         from AS47181 accept AS-TRANCOM
+export:         to AS47181 announce ANY
+remarks:        * intelsc *
+import:         from AS50577 accept AS50577
+export:         to AS50577 announce ANY
 remarks:        +==============================================================+
 remarks:        | Some BGP COMMUNITIES of Transroute |
 remarks:        +--------------------------------------------------------------+
@@ -21532,6 +21539,7 @@ remarks:        | 33 - Cloudflare |
 remarks:        | 34 - Clouvider |
 remarks:        | 35 - YandexCDN-RnD |
 remarks:        | 36 - Valve |
+remarks:        | 37 - Digitsuisse |
 remarks:        |..............................................................|
 remarks:        | Customers (C=4): |
 remarks:        | 10 - Russian |
@@ -21570,7 +21578,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRSUPPORT-MNT
 created:        2019-10-22T14:34:02Z
-last-modified:  2026-08-27T16:13:40Z
+last-modified:  2026-09-10T18:01:42Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

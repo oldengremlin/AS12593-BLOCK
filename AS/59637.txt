@@ -13,9 +13,29 @@ export:         to AS20485 announce AS59637
 remarks:        # RETN.NET
 import:         from AS57304 action pref=90; accept ANY
 export:         to AS57304 announce AS59637
+remarks:        # NAUKANET
+import:         from AS8641 action pref=100; accept ANY
+export:         to AS8641 announce AS59637
 remarks:        # FotonTelecom
 import:         from AS42861 action pref=90; accept ANY
 export:         to AS42861 announce AS59637
+remarks:        # TRANSROUTE-MSK
+import:         from AS50509 action pref=100; accept ANY
+export:         to AS50509 announce AS59637
+remarks:        ----------------------------------END----------------------------------
+remarks:        ----------------------------------PIRING----------------------------------
+remarks:        # PiterIX-SPB
+import:         from AS50817 action pref=10; accept ANY
+export:         to AS50817 announce ANY
+remarks:        # PiterIX-MSK
+import:         from AS49869 action pref=10; accept ANY
+export:         to AS49869 announce ANY
+remarks:        # PiterIX-HEL
+import:         from AS39607 action pref=10; accept ANY
+export:         to AS39607 announce ANY
+remarks:        # PiterIX-FRA
+import:         from AS48193 action pref=10; accept ANY
+export:         to AS48193 announce ANY
 remarks:        ----------------------------------END----------------------------------
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -24,7 +44,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RSINET-MNT
 mnt-by:         mnt-ru-rsinet-1
 created:        2012-08-31T13:55:24Z
-last-modified:  2025-02-08T23:12:37Z
+last-modified:  2026-09-10T19:11:25Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
