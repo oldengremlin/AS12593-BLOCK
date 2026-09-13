@@ -64,12 +64,13 @@ members:        AS57629
 members:        AS207353
 members:        AS31643
 members:        AS218762
+members:        AS218704
 members:        AS-PROMOBIT
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-OMKC
 created:        2009-07-06T10:17:52Z
-last-modified:  2026-09-09T04:07:44Z
+last-modified:  2026-09-11T03:26:10Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -111,13 +112,15 @@ import:         from AS47165 accept ANY
 export:         to AS47165 announce AS218704
 import:         from AS47246 accept ANY
 export:         to AS47246 announce AS218704
+mp-import:      afi ipv6.unicast from AS47165 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS47165 announce AS218704
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-OMKC
 created:        2026-09-10T12:25:41Z
-last-modified:  2026-09-10T12:25:41Z
+last-modified:  2026-09-11T03:27:25Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -241,6 +244,8 @@ mp-import:      afi ipv6.unicast from AS57629 action pref=300; accept AS57629
 mp-export:      afi ipv6.unicast to AS57629 announce ANY
 mp-import:      afi ipv6.unicast from AS218762 action pref=300; accept AS218762
 mp-export:      afi ipv6.unicast to AS218762 announce ANY
+mp-import:      afi ipv6.unicast from AS218704 action pref=300; accept AS218704
+mp-export:      afi ipv6.unicast to AS218704 announce ANY
 remarks:        +-------------------------------------------------------------+
 remarks:        | Community for Customers |
 remarks:        +-------------------------------------------------------------+
@@ -267,7 +272,7 @@ mnt-by:         RIPE-NCC-END-MNT
 notify:         lir@omkc.ru
 mnt-by:         MNT-OMKC
 created:        2008-05-07T12:53:33Z
-last-modified:  2026-09-09T04:06:39Z
+last-modified:  2026-09-11T03:25:50Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

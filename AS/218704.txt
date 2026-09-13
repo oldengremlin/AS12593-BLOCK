@@ -6,13 +6,15 @@ import:         from AS47165 accept ANY
 export:         to AS47165 announce AS218704
 import:         from AS47246 accept ANY
 export:         to AS47246 announce AS218704
+mp-import:      afi ipv6.unicast from AS47165 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS47165 announce AS218704
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-OMKC
 created:        2026-09-10T12:25:41Z
-last-modified:  2026-09-10T12:25:41Z
+last-modified:  2026-09-11T03:27:25Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -24,7 +26,7 @@ remarks:        ****************************
 
 as-num:         AS218704
 country:        RU
-as-name:        null
+as-name:        VSTelecom VS.Telecom ltd
 
 organisation:   ORG-VL495-RIPE
 org-name:       VS.Telecom ltd
