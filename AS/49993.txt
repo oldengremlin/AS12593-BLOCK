@@ -36,10 +36,14 @@ remarks:        201  Inetcom, AS35598              upstream  RU
 remarks:        202  Piter-IX Moscow               peer      RU
 remarks:        203  Piter-IX St Petersburg        peer      RU
 remarks:        204  Cloudflare, AS13335           peer      RU
+remarks:        205  Rascom, AS20764               upstream  RU
 remarks:
 remarks:        +----------+
 remarks:        | Upstream |
 remarks:        +----------+
+remarks:        [ Rascom ]
+import:         from AS20764 accept ANY
+export:         to AS20764 announce AS49993:AS-NOVOCOM
 remarks:        [ Inetcom ]
 import:         from AS35598 accept ANY
 export:         to AS35598 announce AS49993:AS-NOVOCOM
@@ -78,7 +82,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         JSC-NOVOCOM-MNT
 created:        2023-12-27T16:39:35Z
-last-modified:  2026-09-01T16:19:51Z
+last-modified:  2026-09-14T21:40:09Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
