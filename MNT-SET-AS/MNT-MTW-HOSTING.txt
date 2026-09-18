@@ -63,12 +63,14 @@ members:        AS216218
 remarks:        -- RUVDS LLC --
 members:        AS214822
 members:        AS215346
+remarks:        -- Redway --
+members:        AS219477
 remarks:        ====================
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-MTW-HOSTING
 created:        2008-11-14T10:36:21Z
-last-modified:  2026-08-03T18:19:36Z
+last-modified:  2026-09-16T16:24:11Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -112,11 +114,13 @@ members:        AS201131
 members:        AS204623
 remarks:        -- RUVDS LLC --
 members:        AS214822
+remarks:        -- Redway --
+members:        AS219477
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         MNT-MTW-HOSTING
 created:        2014-03-19T11:01:39Z
-last-modified:  2026-04-28T18:43:54Z
+last-modified:  2026-09-16T16:25:01Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -319,6 +323,12 @@ export:         to AS215346 announce ANY
 mp-import:      afi ipv6.unicast from AS215346 action pref=250; accept AS215346
 mp-export:      afi ipv6.unicast to AS215346 announce ANY
 remarks:
+remarks:        -- Redway --
+import:         from AS219477 action pref=250; accept AS219477
+export:         to AS219477 announce ANY
+mp-import:      afi ipv6.unicast from AS219477 action pref=250; accept AS219477
+mp-export:      afi ipv6.unicast to AS219477 announce ANY
+remarks:
 remarks:        =============================================
 remarks:        IX
 remarks:        =============================================
@@ -457,7 +467,7 @@ notify:         noc@mtw.ru
 mnt-by:         MTW-MNT
 mnt-by:         MNT-MTW-HOSTING
 created:        2008-11-17T11:11:49Z
-last-modified:  2026-08-03T18:20:50Z
+last-modified:  2026-09-16T16:27:19Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

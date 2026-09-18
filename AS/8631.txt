@@ -1256,6 +1256,9 @@ import:         from AS60459
 import:         from AS60544
                 action pref=100;
                 accept AS60544
+import:         from AS60554
+                action pref=100;
+                accept AS-MLINK
 import:         from AS60764
                 action pref=100;
                 accept AS-TKTEL
@@ -1418,6 +1421,9 @@ import:         from AS200847
 import:         from AS200976
                 action pref=100;
                 accept AS-LIFESTREAM
+import:         from AS201012
+                action pref=100;
+                accept AS201012
 import:         from AS201119
                 action pref=100;
                 accept AS201119
@@ -2465,6 +2471,8 @@ export:         to AS60459
                 announce AS-MSKROUTESERVER
 export:         to AS60544
                 announce AS-MSKROUTESERVER
+export:         to AS60554
+                announce AS-MSKROUTESERVER
 export:         to AS60764
                 announce AS-MSKROUTESERVER
 export:         to AS60840
@@ -2572,6 +2580,8 @@ export:         to AS200487
 export:         to AS200847
                 announce AS-MSKROUTESERVER
 export:         to AS200976
+                announce AS-MSKROUTESERVER
+export:         to AS201012
                 announce AS-MSKROUTESERVER
 export:         to AS201119
                 announce AS-MSKROUTESERVER
@@ -2724,7 +2734,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-09-02T09:47:53Z
+last-modified:  2026-09-16T09:47:51Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
