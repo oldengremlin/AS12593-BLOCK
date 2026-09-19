@@ -19,6 +19,8 @@ import:         from AS35104 accept ANY
 export:         to AS35104 announce AS201817
 import:         from AS51878 accept ANY
 export:         to AS51878 announce AS201817
+import:         from AS207446 accept ANY
+export:         to AS207446 announce AS201817
 remarks:
 remarks:        =========================================
 remarks:        BGP Policy
@@ -43,6 +45,7 @@ remarks:
 remarks:        large:201817:1100x When advertising to uplink, specifically:
 remarks:        large:201817:1103x When advertising to KAZTRANSCOM (AS35104) uplink...
 remarks:        large:201817:1104x When advertising to KDS (AS51878) uplink...
+remarks:        large:201817:1105x When advertising to KAZTEELEPORT (AS207446) uplink...
 remarks:
 remarks:        ...x=0 - do not advertise
 remarks:        ...x=1, 2 - prepend 201817 1 or 2 times
@@ -71,6 +74,7 @@ remarks:
 remarks:        201817:41100 Receieved from Uplink, specifically:
 remarks:        201817:41103 Receieved from KAZTRANSCOM
 remarks:        201817:41104 Receieved from KDS
+remarks:        201817:41105 Receieved from KAZTEELEPORT
 remarks:
 remarks:        201817:50103 Receieved in Astana
 remarks:
@@ -83,7 +87,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-NETBRIDGE
 created:        2022-10-28T08:58:45Z
-last-modified:  2026-06-03T11:34:55Z
+last-modified:  2026-09-17T15:17:58Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
