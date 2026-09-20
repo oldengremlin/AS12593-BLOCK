@@ -1430,6 +1430,10 @@ remarks:        Cifrovoy svod LLC
 import:         from AS219120 action pref=200; accept AS219120
 export:         to AS219120 announce ANY
 remarks:
+remarks:        Softline_DC
+import:         from AS47723 action pref=200; accept AS-SLCLOUD
+export:         to AS47723 announce ANY
+remarks:
 remarks:        =========================
 remarks:        IPv6 routing policy
 remarks:        =========================
@@ -1444,7 +1448,6 @@ remarks:
 remarks:        *******Retn.net*******
 mp-import:      afi ipv6 from AS9002 accept ANY;
 mp-export:      afi ipv6 to AS9002 announce AS-MASTERTEL6;
-remarks:
 remarks:
 remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 remarks:        RUSSIAN PEERS
@@ -1467,7 +1470,6 @@ remarks:
 remarks:        ----- Softline Trade CJSC -----
 mp-import:      afi ipv6 from AS48839 accept AS48839;
 mp-export:      afi ipv6 to AS48839 announce {0.0.0.0/0};
-remarks:
 remarks:
 remarks:        ----- LTD Santekhkomplekt -----
 mp-import:      afi ipv6 from AS8742 accept AS8742;
@@ -1577,6 +1579,10 @@ remarks:        H-R JSC
 mp-import:      afi ipv6 from AS205642 action pref=200; accept AS205642
 mp-export:      afi ipv6 to AS205642 announce ANY
 remarks:
+remarks:        Softline_DC
+mp-import:      afi ipv6 from AS47723 action pref=200; accept AS-SLCLOUD
+mp-export:      afi ipv6 to AS47723 announce ANY
+remarks:
 remarks:        ========================================================
 remarks:        BGP community accepted only from customers
 remarks:        ========================================================
@@ -1663,7 +1669,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2026-08-31T08:16:09Z
+last-modified:  2026-09-18T14:28:59Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
