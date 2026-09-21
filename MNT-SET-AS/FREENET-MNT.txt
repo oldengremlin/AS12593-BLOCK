@@ -22,12 +22,11 @@ members:        AS2587
 members:        AS201842
 members:        AS20549
 members:        AS5431
-members:        AS204039
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         FREENET-MNT
 created:        2001-09-26T17:48:35Z
-last-modified:  2024-09-16T17:21:29Z
+last-modified:  2026-09-19T16:38:36Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -41,13 +40,13 @@ as-set:         AS-FREENET-GREAT
 descr:          All FREEnet ASes
 members:        AS-FREENET
 members:        AS6869
-members:        AS8480
+members:        AS8325
 org:            ORG-FG2-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         FREENET-MNT
 created:        2003-01-22T17:26:31Z
-last-modified:  2005-11-27T19:04:59Z
+last-modified:  2026-09-19T16:36:23Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -396,12 +395,9 @@ remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 remarks:        ---GPNTB---
 mp-import:      afi ipv4.unicast from AS2587 action pref=80; accept AS2587
 mp-export:      afi ipv4.unicast to AS2587 announce ANY
-remarks:        ---RFBR---
+remarks:        ---RCSI--
 import:         from AS201842 action pref=80; accept {147.45.206.0/24, 193.233.79.0/24}
 export:         to AS201842 announce AS-FREENET {0.0.0.0/0}
-remarks:        --- Filanco-CL ---
-mp-import:      afi ipv4.unicast from AS204039 action pref=80; accept {31.28.22.0/24}
-mp-export:      afi ipv4.unicast to AS204039 announce {0.0.0.0/0}
 remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 remarks:        Peers
 remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -427,6 +423,8 @@ mp-import:      afi ipv4.unicast, ipv6.unicast from AS13238 action pref=100; acc
 mp-export:      afi ipv4.unicast, ipv6.unicast to AS13238 announce AS-FREENET
 mp-import:      afi ipv4.unicast from AS30124 action pref=90; accept {192.5.5.0/24}
 mp-import:      afi ipv6.unicast from AS30124 action pref=90; accept {2001:500:2f::/48}
+mp-import:      afi ipv4.unicast, ipv6.unicast from AS136907 action pref=100; accept AS136907
+mp-export:      afi ipv4.unicast, ipv6.unicast to AS136907 announce AS-FREENET
 mp-export:      afi ipv4.unicast, ipv6.unicast to AS215182 announce AS-FREENET
 mp-import:      afi ipv4.unicast from AS215182 action pref=100; accept AS-AVELACOM
 mp-import:      afi ipv6.unicast from AS215182 action pref=100; accept AS-AVELACOM6
@@ -488,7 +486,7 @@ mnt-by:         RIPE-NCC-LEGACY-MNT
 mnt-by:         AS2895-MNT
 mnt-by:         FREENET-MNT
 created:        2002-09-10T15:26:09Z
-last-modified:  2026-06-19T15:56:09Z
+last-modified:  2026-09-19T17:30:26Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
