@@ -100,8 +100,6 @@ members:        AS201512
 members:        AS202498
                 # from AS203118:
 members:        AS203118:AS-EZERDI
-                # from AS205063:
-members:        AS-CORTEL
                 # from AS209307:
 members:        AS-CNX-EKB
                 # from AS210756:
@@ -132,7 +130,7 @@ remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2026-09-01T12:08:11Z
+last-modified:  2026-09-21T12:08:31Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -708,6 +706,8 @@ members:        AS39360
 members:        AS39529
                 # from AS39684:
 members:        AS39684
+                # from AS39688:
+members:        AS39688
                 # from AS39728:
 members:        AS-LUGANET
                 # from AS39821:
@@ -840,8 +840,6 @@ members:        AS-MEGACOM
 members:        AS44772:AS-INTSG
                 # from AS44843:
 members:        AS-MALOCO
-                # from AS44845:
-members:        AS44845
                 # from AS44927:
 members:        AS-TMPK
                 # from AS44943:
@@ -1342,8 +1340,6 @@ members:        AS204600
 members:        AS-CDNETWORKSRU
                 # from AS205022:
 members:        AS205022
-                # from AS205063:
-members:        AS-CORTEL
                 # from AS205530:
 members:        AS-DECIX-RND
                 # from AS205638:
@@ -1475,7 +1471,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-09-16T09:47:47Z
+last-modified:  2026-09-21T13:51:33Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -2034,8 +2030,6 @@ members:        AS-LENTEL
 members:        AS-INTERNET-PRO-EKT-IX
                 # from AS44587:
 members:        AS-MEGACOM
-                # from AS44845:
-members:        AS44845
                 # from AS45029:
 members:        AS-NS9_RIPN_NET
                 # from AS47211:
@@ -2108,8 +2102,6 @@ members:        AS201119
 members:        AS201512
                 # from AS204600:
 members:        AS204600
-                # from AS205063:
-members:        AS-CORTEL
                 # from AS205638:
 members:        AS205638
                 # from AS206295:
@@ -2150,7 +2142,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2026-08-31T10:05:32Z
+last-modified:  2026-09-21T14:05:29Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3597,9 +3589,6 @@ import:         from AS202498
 import:         from AS203118
                 action pref=100;
                 accept AS203118:AS-EZERDI
-import:         from AS205063
-                action pref=100;
-                accept AS-CORTEL
 import:         from AS209307
                 action pref=100;
                 accept AS-CNX-EKB
@@ -3705,8 +3694,6 @@ export:         to AS202498
                 announce AS-EKTROUTESERVER
 export:         to AS203118
                 announce AS-EKTROUTESERVER
-export:         to AS205063
-                announce AS-EKTROUTESERVER
 export:         to AS209307
                 announce AS-EKTROUTESERVER
 export:         to AS210756
@@ -3735,7 +3722,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2026-09-01T12:08:16Z
+last-modified:  2026-09-21T12:08:27Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3912,9 +3899,6 @@ import:         from AS44128
 import:         from AS44587
                 action pref=100;
                 accept AS-MEGACOM
-import:         from AS44845
-                action pref=100;
-                accept AS44845
 import:         from AS45029
                 action pref=100;
                 accept AS-NS9_RIPN_NET
@@ -4023,9 +4007,6 @@ import:         from AS201512
 import:         from AS204600
                 action pref=100;
                 accept AS204600
-import:         from AS205063
-                action pref=100;
-                accept AS-CORTEL
 import:         from AS205638
                 action pref=100;
                 accept AS205638
@@ -4144,8 +4125,6 @@ export:         to AS44128
                 announce AS-SPBROUTESERVER
 export:         to AS44587
                 announce AS-SPBROUTESERVER
-export:         to AS44845
-                announce AS-SPBROUTESERVER
 export:         to AS45029
                 announce AS-SPBROUTESERVER
 export:         to AS47211
@@ -4218,8 +4197,6 @@ export:         to AS201512
                 announce AS-SPBROUTESERVER
 export:         to AS204600
                 announce AS-SPBROUTESERVER
-export:         to AS205063
-                announce AS-SPBROUTESERVER
 export:         to AS205638
                 announce AS-SPBROUTESERVER
 export:         to AS206295
@@ -4239,7 +4216,7 @@ export:         to AS215182
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2026-08-31T10:05:32Z
+last-modified:  2026-09-21T14:05:34Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5861,6 +5838,9 @@ import:         from AS39529
 import:         from AS39684
                 action pref=100;
                 accept AS39684
+import:         from AS39688
+                action pref=100;
+                accept AS39688
 import:         from AS39728
                 action pref=100;
                 accept AS-LUGANET
@@ -6059,9 +6039,6 @@ import:         from AS44772
 import:         from AS44843
                 action pref=100;
                 accept AS-MALOCO
-import:         from AS44845
-                action pref=100;
-                accept AS44845
 import:         from AS44927
                 action pref=100;
                 accept AS-TMPK
@@ -6812,9 +6789,6 @@ import:         from AS204720
 import:         from AS205022
                 action pref=100;
                 accept AS205022
-import:         from AS205063
-                action pref=100;
-                accept AS-CORTEL
 import:         from AS205530
                 action pref=100;
                 accept AS-DECIX-RND
@@ -7317,6 +7291,8 @@ export:         to AS39529
                 announce AS-MSKROUTESERVER
 export:         to AS39684
                 announce AS-MSKROUTESERVER
+export:         to AS39688
+                announce AS-MSKROUTESERVER
 export:         to AS39728
                 announce AS-MSKROUTESERVER
 export:         to AS39821
@@ -7448,8 +7424,6 @@ export:         to AS44587
 export:         to AS44772
                 announce AS-MSKROUTESERVER
 export:         to AS44843
-                announce AS-MSKROUTESERVER
-export:         to AS44845
                 announce AS-MSKROUTESERVER
 export:         to AS44927
                 announce AS-MSKROUTESERVER
@@ -7951,8 +7925,6 @@ export:         to AS204720
                 announce AS-MSKROUTESERVER
 export:         to AS205022
                 announce AS-MSKROUTESERVER
-export:         to AS205063
-                announce AS-MSKROUTESERVER
 export:         to AS205530
                 announce AS-MSKROUTESERVER
 export:         to AS205638
@@ -8062,7 +8034,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-09-16T09:47:51Z
+last-modified:  2026-09-21T13:51:29Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
