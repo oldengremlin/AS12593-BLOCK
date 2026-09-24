@@ -703,7 +703,7 @@ members:        AS-CORPSOFT
                 # from AS39360:
 members:        AS39360
                 # from AS39529:
-members:        AS39529
+members:        AS-M3X
                 # from AS39684:
 members:        AS39684
                 # from AS39688:
@@ -1471,7 +1471,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-09-21T13:51:33Z
+last-modified:  2026-09-22T13:46:18Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1667,8 +1667,6 @@ members:        AS-SERVICEPIPE
 members:        AS202498
                 # from AS204720:
 members:        AS-CDNETWORKSRU
-                # from AS205063:
-members:        AS-CORTEL
                 # from AS206768:
 members:        AS206768
                 # from AS207785:
@@ -1705,7 +1703,7 @@ remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-26T17:18:56Z
-last-modified:  2026-09-14T10:12:27Z
+last-modified:  2026-09-22T05:42:07Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3208,9 +3206,6 @@ import:         from AS202498
 import:         from AS204720
                 action pref=100;
                 accept AS-CDNETWORKSRU
-import:         from AS205063
-                action pref=100;
-                accept AS-CORTEL
 import:         from AS206768
                 action pref=100;
                 accept AS206768
@@ -3363,8 +3358,6 @@ export:         to AS202498
                 announce AS-NSKROUTESERVER
 export:         to AS204720
                 announce AS-NSKROUTESERVER
-export:         to AS205063
-                announce AS-NSKROUTESERVER
 export:         to AS206768
                 announce AS-NSKROUTESERVER
 export:         to AS207785
@@ -3397,7 +3390,7 @@ remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-02-16T08:08:53Z
-last-modified:  2026-09-14T10:12:22Z
+last-modified:  2026-09-22T05:42:03Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5834,7 +5827,7 @@ import:         from AS39360
                 accept AS39360
 import:         from AS39529
                 action pref=100;
-                accept AS39529
+                accept AS-M3X
 import:         from AS39684
                 action pref=100;
                 accept AS39684
@@ -8034,7 +8027,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-09-21T13:51:29Z
+last-modified:  2026-09-22T13:46:13Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

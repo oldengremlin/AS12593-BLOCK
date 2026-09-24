@@ -13,7 +13,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lir-ru-prefixlabs-1-MNT
 mnt-by:         ALTERRA-MNT
 created:        2026-02-16T09:48:23Z
-last-modified:  2026-08-13T22:58:14Z
+last-modified:  2026-09-22T11:55:06Z
 source:         RIPE
 remarks:        ----------------------------------------------------------------
 remarks:        AS200954 BGP large communities   200954:function:parameter
@@ -28,7 +28,6 @@ remarks:        x = 201814   MEVSPACE, entire transit
 remarks:        x = 174      Cogent              via AS201814
 remarks:        x = 1299     Arelion             via AS201814
 remarks:        x = 6939     Hurricane Electric  via AS201814
-remarks:        x = 9002     RETN                via AS201814
 remarks:        x = 29535    TPIX                via AS201814
 remarks:        x = 50263    1-IX EU             via AS201814
 remarks:        x = 50952    GNM-IX              via AS201814
@@ -40,11 +39,16 @@ remarks:        200954:10:0    local-pref 200   as peering
 remarks:        200954:11:0    local-pref 100   as upstream
 remarks:        200954:12:0    local-pref 50    fallback only
 remarks:
-remarks:        65535:666      blackhole, IPv4 /24-/32, IPv6 /48-/128
+remarks:        65535:666      blackhole (RFC 7999)
+remarks:        IPv4 /24-/32, IPv6 /48-/128 within AS200954
+remarks:        IPv4 /32, IPv6 /128 also propagated to AS201814
+remarks:
+remarks:        RPKI ROV enforced on customer sessions: invalid rejected
 remarks:
 remarks:        Set by AS200954, stripped from customers:
 remarks:        200954:3:1/2/3/4   own / customer / peer / upstream
 remarks:        200954:40:0/1/2    RPKI invalid / valid / not-found
+remarks:        200954:43:0        blackhole, kept within AS200954
 remarks:        ----------------------------------------------------------------
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
