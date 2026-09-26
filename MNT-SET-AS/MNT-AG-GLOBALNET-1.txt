@@ -3456,6 +3456,7 @@ remarks:        204297 - 64713
 remarks:        215366 - 64714
 remarks:        202486 - 64715
 remarks:        199081 - 64716
+remarks:        201624 - 64717
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -5025,6 +5026,10 @@ import:         from AS42532   accept   AS-VEESP
 export:         to   AS42532   announce AS-DATAIX
 import:         from AS25437   accept   AS25437
 export:         to   AS25437   announce AS-DATAIX
+import:         from AS201624  accept   AS201624
+export:         to   AS201624  announce AS-DATAIX
+import:         from AS57045   accept   AS-SSP
+export:         to   AS57045   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6611,6 +6616,10 @@ mp-import:      afi ipv6.unicast from AS42532   accept   AS-VEESP
 mp-export:      afi ipv6.unicast to   AS42532   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS25437   accept   AS25437
 mp-export:      afi ipv6.unicast to   AS25437   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS201624  accept   AS201624
+mp-export:      afi ipv6.unicast to   AS201624  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS57045   accept   AS-SSP
+mp-export:      afi ipv6.unicast to   AS57045   announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6618,7 +6627,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-09-21T14:01:51Z
+last-modified:  2026-09-24T14:01:51Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

@@ -3584,12 +3584,15 @@ members:        AS-NETRACK
 members:        as-tomica
 members:        as-vlant
 members:        as43434
+members:        as-tomica
+members:        as-vlant
+members:        as43434
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         ROSTELECOM-MNT
 mnt-by:         SAVRI-MNT
 created:        2005-12-26T14:46:41Z
-last-modified:  2026-09-23T15:45:31Z
+last-modified:  2026-09-24T15:45:30Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -11323,6 +11326,12 @@ import:         from AS43434 accept as43434
 export:         to AS43434 announce ANY
 import:         from AS61400 accept AS-NETRACK
 export:         to AS61400 announce ANY
+import:         from AS9113 accept as-vlant
+export:         to AS9113 announce ANY
+import:         from AS31357 accept as-tomica
+export:         to AS31357 announce ANY
+import:         from AS43434 accept as43434
+export:         to AS43434 announce ANY
 org:            ORG-JR8-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -11331,7 +11340,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SAVRI-MNT
 status:         ASSIGNED
 created:        2005-07-01T14:26:50Z
-last-modified:  2026-09-23T12:20:35Z
+last-modified:  2026-09-24T12:20:33Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
