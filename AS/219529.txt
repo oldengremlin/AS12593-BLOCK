@@ -67,9 +67,9 @@ remarks:        ============================================================
 remarks:
 remarks:        Axivora Connect Ltd - INTERIX, Amsterdam
 import:         from AS204539 accept ANY
-export:         to AS204539 announce AS219529:AS-PODRIL1AK2
+export:         to AS204539 announce AS219529
 mp-import:      afi ipv6.unicast from AS204539 accept ANY
-mp-export:      afi ipv6.unicast to AS204539 announce AS219529:AS-PODRIL1AK2
+mp-export:      afi ipv6.unicast to AS204539 announce AS219529
 remarks:
 remarks:        LowPing NL
 import:         from AS215296 accept ANY
@@ -109,6 +109,12 @@ export:         to AS13335 announce AS219529:AS-PODRIL1AK2
 mp-import:      afi ipv6.unicast from AS13335 accept AS13335:AS-CLOUDFLARE
 mp-export:      afi ipv6.unicast to AS13335 announce AS219529:AS-PODRIL1AK2
 remarks:
+remarks:        Lynqia - Amsterdam
+import:         from AS213409 accept AS213409:AS-LYNQIA
+export:         to AS213409 announce AS219529:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS213409 accept AS213409:AS-LYNQIA
+mp-export:      afi ipv6.unicast to AS213409 announce AS219529:AS-PODRIL1AK2
+remarks:
 remarks:        ============================================================
 remarks:        Downstreams
 remarks:        ============================================================
@@ -117,7 +123,7 @@ remarks:        Awas
 mp-import:      afi ipv6.unicast from AS201279 accept AS201279
 mp-export:      afi ipv6.unicast to AS201279 announce ANY
 remarks:
-remarks:        Lynqia - Frankfurt and Amsterdam
+remarks:        Lynqia - Frankfurt
 import:         from AS213409 accept AS213409:AS-LYNQIA
 export:         to AS213409 announce ANY
 mp-import:      afi ipv6.unicast from AS213409 accept AS213409:AS-LYNQIA
@@ -195,7 +201,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RIT-ECODE-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-06-04T12:29:38Z
-last-modified:  2026-09-21T12:17:43Z
+last-modified:  2026-09-26T09:08:27Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
