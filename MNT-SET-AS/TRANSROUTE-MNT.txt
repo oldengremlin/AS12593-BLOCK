@@ -5,6 +5,7 @@ mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRSUPPORT-MNT
 members:        AS50509
 members:        AS214069
+members:        AS205429
 members:        AS-PINDC
 members:        AS-PIN
 remarks:        * AS41909 - PINVDS
@@ -39,6 +40,7 @@ members:        AS-DOMOLAN
 members:        AS47845
 members:        AS44640
 members:        AS197243
+members:        AS-GORSETI
 members:        AS-MASTERHOST
 members:        AS-REGIONSV
 members:        AS-VSEVNET
@@ -246,7 +248,7 @@ remarks:        * * * * * * * * * * * * *
 members:        AS-TRANSROUTE-QUICKFIX
 members:        AS-TRANSROUTE-SPEC
 created:        2019-10-25T12:31:32Z
-last-modified:  2026-09-23T15:36:14Z
+last-modified:  2026-09-28T18:13:39Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -20822,6 +20824,9 @@ export:         to AS215247 announce ANY
 remarks:        * airnet *
 import:         from AS44923 accept AS44923
 export:         to AS44923 announce ANY
+remarks:        * omega *
+import:         from AS212487 accept AS-GORSETI
+export:         to AS212487 announce ANY
 remarks:        * vdc *
 import:         from AS48108 accept AS48108:AS-VIRTUALDC-RU
 export:         to AS48108 announce ANY
@@ -21471,6 +21476,9 @@ export:         to AS50577 announce ANY
 remarks:        * rsinet *
 import:         from AS59637 accept AS59637
 export:         to AS59637 announce ANY
+remarks:        * bridgeline *
+import:         from AS205429  accept AS205429
+export:         to AS205429  announce ANY
 remarks:        +==============================================================+
 remarks:        | Some BGP COMMUNITIES of Transroute |
 remarks:        +--------------------------------------------------------------+
@@ -21575,7 +21583,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRSUPPORT-MNT
 created:        2019-10-22T14:34:02Z
-last-modified:  2026-09-24T09:30:44Z
+last-modified:  2026-09-28T18:13:03Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

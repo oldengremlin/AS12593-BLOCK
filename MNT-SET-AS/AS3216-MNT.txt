@@ -204,6 +204,7 @@ members:        AS-TUT
 members:        AS50425
 members:        AS57614
 members:        AS-UMLC
+members:        AS41718
 members:        AS47530
 members:        AS58006
 members:        AS41616
@@ -464,7 +465,9 @@ remarks:
 members:        AS-KOVROV
 members:        AS219081
 members:        AS197420
+members:        AS206181
 members:        AS203597
+members:        AS-SIBMEDIAFON
 members:        AS50396
 members:        AS-BESTCOM
 members:        AS211825
@@ -1708,7 +1711,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-09-18T11:54:52Z
+last-modified:  2026-09-29T09:35:18Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -2379,7 +2382,6 @@ members:        AS39850
 members:        AS-DATAGRUPARU
 members:        AS31174
 members:        AS39711
-members:        AS41377
 members:        AS39749
 members:        AS-HOSTER
 members:        AS41212
@@ -2713,7 +2715,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2011-05-25T11:58:20Z
-last-modified:  2026-09-07T06:55:27Z
+last-modified:  2026-09-29T16:26:39Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3549,7 +3551,6 @@ members:        AS213250
 members:        AS213413
 members:        AS213438
 members:        AS213493
-members:        AS213636
 members:        AS213661
 members:        AS213693
 members:        AS213790
@@ -3596,7 +3597,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2026-03-16T07:10:02Z
-last-modified:  2026-08-13T07:42:14Z
+last-modified:  2026-09-29T16:30:19Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5497,6 +5498,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS41718 action pref=100; accept AS41718
+export:         to AS41718 announce ANY
 import:         from AS44988 action pref=100; accept AS-KOVROV
 export:         to AS44988 announce ANY
 import:         from AS203597 action pref=100; accept AS203597
@@ -5509,12 +5512,18 @@ import:         from AS197420 action pref=100; accept AS197420
 export:         to AS197420 announce {0.0.0.0/0}
 import:         from AS219081 action pref=100; accept AS219081
 export:         to AS219081 announce ANY
+import:         from AS206181 action pref=100; accept AS206181
+export:         to AS206181 announce ANY
 import:         from AS61400 action pref=100; accept AS61400
 export:         to AS61400 announce ANY
 import:         from AS41465 action pref=100; accept AS41465
 export:         to AS41465 announce ANY
 import:         from AS205711 action pref=100; accept AS205711
 export:         to AS205711 announce ANY
+import:         from AS48507 action pref=100; accept AS-SIBMEDIAFON
+export:         to AS48507 announce ANY
+mp-import:      from AS48507 action pref=100; accept AS-SIBMEDIAFON
+mp-export:      to AS48507 announce ANY
 import:         from AS50396 action pref=100; accept AS50396
 export:         to AS50396 announce ANY
 import:         from AS29388 action pref=100; accept AS-BESTCOM
@@ -8858,8 +8867,6 @@ import:         from AS30924 action pref=100; accept AS30924
 export:         to AS30924 announce AS-SOVAM
 import:         from AS34042 action pref=100; accept AS34042
 export:         to AS34042 announce ANY
-import:         from AS41377 action pref=100; accept AS41377^+
-export:         to AS41377 announce ANY
 import:         from AS12418 action pref=100; accept AS-QUANTUM
 export:         to AS12418 announce ANY
 import:         from AS42339 action pref=100; accept AS-CHTP
@@ -8986,8 +8993,6 @@ import:         from AS62272 action pref=100; accept AS62272
 export:         to AS62272 announce ANY
 import:         from AS15556 action pref=100; accept AS15556
 export:         to AS15556 announce {0.0.0.0/0}
-import:         from AS47963 action pref=100; accept AS-INTRALINE
-export:         to AS47963 announce ANY
 import:         from AS61964 action pref=100; accept AS61964
 export:         to AS61964 announce {0.0.0.0/0}
 import:         from AS61960 action pref=100; accept AS61960
@@ -9766,7 +9771,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-09-18T11:52:24Z
+last-modified:  2026-09-29T16:26:16Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

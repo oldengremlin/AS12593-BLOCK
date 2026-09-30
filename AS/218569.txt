@@ -1,0 +1,250 @@
+aut-num:        AS218569
+as-name:        PODRIL1AK2-AS
+org:            ORG-VN97-RIPE
+sponsoring-org: ORG-NL600-RIPE
+remarks:
+remarks:        ============================================================
+remarks:        AS218569 - podril1ak2
+remarks:        ============================================================
+remarks:
+remarks:        Website: https://as218569.net
+remarks:        NOC: noc@as218569.net
+remarks:        Abuse: abuse@as218569.net
+remarks:
+remarks:        ------------------------------------------------------------
+remarks:        FREE IPv6 TRANSIT
+remarks:        ------------------------------------------------------------
+remarks:
+remarks:        We provide free IPv6 transit to networks that need it.
+remarks:        Available at Frankfurt and Amsterdam, over GRE,
+remarks:        IP6TNL, IPIP/SIT or VXLAN tunnels, or at any of the
+remarks:        exchanges listed below.
+remarks:
+remarks:        Full IPv6 table, RPKI and IRR filtering on all sessions,
+remarks:        BGP communities for prepending and selective announcement,
+remarks:        BFD and RFC 9234 roles on request.
+remarks:
+remarks:        To request transit, mail noc@as218569.net or message
+remarks:        https://t.me/ponchek1337 with your ASN, AS-SET, prefixes
+remarks:        and preferred location.
+remarks:
+remarks:        ============================================================
+remarks:        IPv6 Transit
+remarks:        ============================================================
+remarks:
+remarks:        Nesox Network - Frankfurt and INTERIX
+mp-import:      afi ipv6.unicast from AS215685 accept ANY
+mp-export:      afi ipv6.unicast to AS215685 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        GuwinUS
+mp-import:      afi ipv6.unicast from AS201398 accept ANY
+mp-export:      afi ipv6.unicast to AS201398 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        Hurricane Electric - NINE IX and INTERIX
+mp-import:      afi ipv6.unicast from AS6939 accept ANY
+mp-export:      afi ipv6.unicast to AS6939 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        ============================================================
+remarks:        IPv4 and IPv6 Transit
+remarks:        ============================================================
+remarks:
+remarks:        Tizian Maxime Weigt - Frankfurt, NINE IX and INTERIX
+import:         from AS215828 accept ANY
+export:         to AS215828 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS215828 accept ANY
+mp-export:      afi ipv6.unicast to AS215828 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        Cristian Tudor Marcus - NINE IX
+import:         from AS214205 accept ANY
+export:         to AS214205 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS214205 accept ANY
+mp-export:      afi ipv6.unicast to AS214205 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        Axivora Connect Ltd - INTERIX, Amsterdam
+import:         from AS204539 accept ANY
+export:         to AS204539 announce AS218569
+mp-import:      afi ipv6.unicast from AS204539 accept ANY
+mp-export:      afi ipv6.unicast to AS204539 announce AS218569
+remarks:
+remarks:        LowPing NL
+import:         from AS215296 accept ANY
+export:         to AS215296 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS215296 accept ANY
+mp-export:      afi ipv6.unicast to AS215296 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        Lungu Stefan - INTERIX
+import:         from AS205941 accept ANY
+export:         to AS205941 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS205941 accept ANY
+mp-export:      afi ipv6.unicast to AS205941 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        Paradox Networks - Frankfurt
+import:         from AS52025 accept ANY
+export:         to AS52025 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS52025 accept ANY
+mp-export:      afi ipv6.unicast to AS52025 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        Yanislav Basiuk (nyanet) - Moscow
+import:         from AS200993 accept ANY
+export:         to AS200993 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS200993 accept ANY
+mp-export:      afi ipv6.unicast to AS200993 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        ============================================================
+remarks:        IPv4 Transit
+remarks:        ============================================================
+remarks:
+remarks:        Awas - Frankfurt
+import:         from AS201279 accept ANY
+export:         to AS201279 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        ============================================================
+remarks:        Peering
+remarks:        ============================================================
+remarks:
+remarks:        Hurricane Electric - NINE IX and INTERIX (IPv4)
+import:         from AS6939 accept AS-HURRICANE
+export:         to AS6939 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        Konstantin Beug - INTERIX
+import:         from AS197658 accept AS197658:AS-KBEUG
+export:         to AS197658 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS197658 accept AS197658:AS-KBEUG
+mp-export:      afi ipv6.unicast to AS197658 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        Cloudflare - INTERIX, Amsterdam
+import:         from AS13335 accept AS13335:AS-CLOUDFLARE
+export:         to AS13335 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS13335 accept AS13335:AS-CLOUDFLARE
+mp-export:      afi ipv6.unicast to AS13335 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        Lynqia - Amsterdam
+import:         from AS213409 accept AS213409:AS-LYNQIA
+export:         to AS213409 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS213409 accept AS213409:AS-LYNQIA
+mp-export:      afi ipv6.unicast to AS213409 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        ============================================================
+remarks:        Downstreams
+remarks:        ============================================================
+remarks:
+remarks:        Awas - Frankfurt
+mp-import:      afi ipv6.unicast from AS201279 accept AS201279:AS-DOWNSTREAMS
+mp-export:      afi ipv6.unicast to AS201279 announce ANY
+remarks:
+remarks:        Lynqia - Frankfurt
+import:         from AS213409 accept AS213409:AS-LYNQIA
+export:         to AS213409 announce ANY
+mp-import:      afi ipv6.unicast from AS213409 accept AS213409:AS-LYNQIA
+mp-export:      afi ipv6.unicast to AS213409 announce ANY
+remarks:
+remarks:        Petr Buzikov - Frankfurt
+mp-import:      afi ipv6.unicast from AS219442 accept AS219442
+mp-export:      afi ipv6.unicast to AS219442 announce ANY
+remarks:
+remarks:        Aria Jahangiri Far - Amsterdam
+mp-import:      afi ipv6.unicast from AS57027 accept AS57027:AS-BASE
+mp-export:      afi ipv6.unicast to AS57027 announce ANY
+remarks:
+remarks:        Kai Liu - Frankfurt and Amsterdam
+mp-import:      afi ipv6.unicast from AS39753 accept AS-LIUXYON
+mp-export:      afi ipv6.unicast to AS39753 announce ANY
+remarks:
+remarks:        AS218750 - INTERIX, Amsterdam
+mp-import:      afi ipv6.unicast from AS218750 accept AS218750:AS-CHEESE
+mp-export:      afi ipv6.unicast to AS218750 announce ANY
+remarks:
+remarks:        Yanislav Basiuk - INTERIX, Amsterdam
+import:         from AS200993 accept AS200993:AS-POP:AS-AMS
+export:         to AS200993 announce ANY
+mp-import:      afi ipv6.unicast from AS200993 accept AS200993:AS-POP:AS-AMS
+mp-export:      afi ipv6.unicast to AS200993 announce ANY
+remarks:
+remarks:        ============================================================
+remarks:        Internet Exchanges
+remarks:        ============================================================
+remarks:
+remarks:        INTERIX - Amsterdam (RS1 and RS2)
+import:         from AS56584 accept AS56584:AS-INTERIX
+export:         to AS56584 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS56584 accept AS56584:AS-INTERIX
+mp-export:      afi ipv6.unicast to AS56584 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        NINE IX - Amsterdam
+import:         from AS31561 accept AS31561:AS-MEMBERS
+export:         to AS31561 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS31561 accept AS31561:AS-MEMBERS
+mp-export:      afi ipv6.unicast to AS31561 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        EVIX - Amsterdam and Fremont
+import:         from AS137933 accept AS-EVIX
+export:         to AS137933 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS137933 accept AS-EVIX
+mp-export:      afi ipv6.unicast to AS137933 announce AS218569:AS-PODRIL1AK2
+import:         from AS209762 accept AS-EVIX
+export:         to AS209762 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS209762 accept AS-EVIX
+mp-export:      afi ipv6.unicast to AS209762 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        4IXP - Zurich (RS1, RS2 and RS3)
+mp-import:      afi ipv6.unicast from AS35708 accept AS-4IXP
+mp-export:      afi ipv6.unicast to AS35708 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        ============================================================
+remarks:        Route Collectors
+remarks:        ============================================================
+remarks:
+remarks:        bgp.tools
+import:         from AS212232 accept NOT ANY
+export:         to AS212232 announce ANY
+mp-import:      afi ipv6.unicast from AS212232 accept NOT ANY
+mp-export:      afi ipv6.unicast to AS212232 announce ANY
+remarks:
+remarks:        Hurricane Electric Route Collector
+import:         from AS393338 accept NOT ANY
+export:         to AS393338 announce ANY
+mp-import:      afi ipv6.unicast from AS393338 accept NOT ANY
+mp-export:      afi ipv6.unicast to AS393338 announce ANY
+remarks:
+remarks:        ============================================================
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+notify:         noc@as218569.net
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         PODRIL1AK2-MNT
+created:        2026-09-28T06:20:55Z
+last-modified:  2026-09-28T19:54:50Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS218569
+country:        RU
+as-name:        null
+
+organisation:   ORG-VN97-RIPE
+org-name:       Viktor Nesmeianov
+org-type:       OTHER
+address:        Dummy address for ORG-VN97-RIPE
+country:        RU
+e-mail:         unread@ripe.net
+abuse-c:        PC21869-RIPE
+mnt-ref:        PODRIL1AK2-MNT
+created:        2026-09-24T10:30:02Z
+last-modified:  2026-09-28T15:41:32Z
+source:         RIPE
+mnt-by:         PODRIL1AK2-MNT
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+

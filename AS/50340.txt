@@ -51,6 +51,10 @@ export:         to AS8075 announce AS-SELECTEL-MSK
 remarks:        MSK-IX
 import:         from AS8631 accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-SELECTEL-MSK
+remarks:        Nauka-Svyaz
+remarks:        https://lg.naukanet.ru
+import:         from AS8641 accept AS-NaukaNet
+export:         to AS8641 announce AS-SELECTEL-MSK
 remarks:        Intersvyaz
 remarks:        https://lg.is74.ru/
 import:         from AS8369 accept AS-INTERSVYAZ
@@ -74,6 +78,9 @@ remarks:        Fiord
 remarks:        https://lg.fiord.net/
 import:         from AS28917 accept AS-FIORD
 export:         to AS28917 announce AS-SELECTEL-MSK
+remarks:        Megafon
+import:         from AS31133 accept AS-MF-MGSM
+export:         to AS31133 announce AS-SELECTEL-MSK
 remarks:        Global-IX
 import:         from AS31500 accept AS-GLOBAL-NET
 export:         to AS31500 announce AS-SELECTEL-MSK
@@ -83,58 +90,54 @@ export:         to AS32934 announce AS-SELECTEL-MSK
 remarks:        Sberbank
 import:         from AS35237 accept AS-SBRF
 export:         to AS35237 announce AS-SELECTEL-MSK
+remarks:        Inetcom
+import:         from AS35598 accept AS35598
+export:         to AS35598 announce AS-SELECTEL-MSK
 remarks:        SPB-IX
 import:         from AS43690 accept AS-SPBROUTESERVER
 export:         to AS43690 announce AS-SELECTEL-MSK
 remarks:        Kvant-Telecom
 import:         from AS43727 accept AS-SETKT
 export:         to AS43727 announce AS-SELECTEL-MSK
+remarks:        VK
+import:         from AS47764 accept AS-VK
+export:         to AS47764 announce AS-SELECTEL-MSK
 remarks:        SKBKONTUR
 import:         from AS49675 accept AS49675
 export:         to AS49675 announce AS-SELECTEL-MSK
+remarks:        Piter-IX
+import:         from AS49869 accept AS-PITER-IX-MSK
+export:         to AS49869 announce AS-SELECTEL-MSK
 remarks:        W-IX
 import:         from AS50384 accept AS-W-IX
 export:         to AS50384 announce AS-SELECTEL-MSK
+remarks:        TRANSROUTE
+import:         from AS50509 accept AS-TRANSROUTE
+export:         to AS50509 announce AS-SELECTEL-MSK
 remarks:        DATAIX
 import:         from AS50952 accept AS-DATAIX
 export:         to AS50952 announce AS-SELECTEL-MSK
+remarks:        DDoS-Guard
+import:         from AS57724 accept AS-DDOS-GUARD
+export:         to AS57724 announce AS-SELECTEL
 remarks:        StormWall
 import:         from AS59796 accept AS-STORMWALL-SET
 export:         to AS59796 announce AS-SELECTEL-MSK
 remarks:        Telegram
 import:         from AS62041 accept AS62041
 export:         to AS62041 announce AS-SELECTEL-MSK
-remarks:        EdgeCenter
-import:         from AS210756 accept AS210756
-export:         to AS210756 announce AS-SELECTEL-MSK
-remarks:        Inetcom
-import:         from AS35598 accept AS35598
-export:         to AS35598 announce AS-SELECTEL-MSK
 remarks:        Qrator
 import:         from AS197068 accept AS197068
 export:         to AS197068 announce AS-SELECTEL-MSK
 remarks:        YandexCloud
 import:         from AS200350 accept AS-YACLOUD
 export:         to AS200350 announce AS-SELECTEL-MSK
-remarks:        Megafon
-import:         from AS31133 accept AS-MF-MGSM
-export:         to AS31133 announce AS-SELECTEL-MSK
-remarks:        Nauka-Svyaz
-remarks:        https://lg.naukanet.ru/
-import:         from AS8641 accept AS-NaukaNet
-export:         to AS8641 announce AS-SELECTEL-MSK
-remarks:        TRANSROUTE
-import:         from AS50509 accept AS-TRANSROUTE
-export:         to AS50509 announce AS-SELECTEL-MSK
-remarks:        VK
-import:         from AS47764 accept AS-VK
-export:         to AS47764 announce AS-SELECTEL-MSK
 remarks:        Lemanapro
 import:         from AS208008 accept AS208008
 export:         to AS208008 announce AS-SELECTEL-MSK
-remarks:        Piter-IX
-import:         from AS49869 accept AS-PITER-IX-MSK
-export:         to AS49869 announce AS-SELECTEL-MSK
+remarks:        EdgeCenter
+import:         from AS210756 accept AS210756
+export:         to AS210756 announce AS-SELECTEL-MSK
 remarks:        ---------------------------------------------------------------
 remarks:        -------------------- CLIENTS (CUSTOMERS): ---------------------
 remarks:        ---------------------------------------------------------------
@@ -232,6 +235,9 @@ remarks:        102 Rascom / AS20764
 remarks:        103 Telia / AS1299
 remarks:        104 TTK / AS20485
 remarks:        105 Rostelecom / AS12389
+remarks:        164 DDoS-Guard / AS57724
+remarks:        165 Kvant-Telecom / AS43727
+remarks:        166 MTS / AS8359
 remarks:        167 Lemanapro / AS208008
 remarks:        168 VK / AS47764
 remarks:        169 TRANSROUTE / AS50509
@@ -267,7 +273,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-SELECTEL
 notify:         noc@selectel.ru
 created:        2017-10-16T13:23:55Z
-last-modified:  2026-09-16T11:58:16Z
+last-modified:  2026-09-28T16:38:43Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

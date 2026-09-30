@@ -104,6 +104,8 @@ import:         from  AS20485 action pref=200; accept   AS-TTK
 export:         to    AS20485                  announce AS57304:AS-RETN-RU
 import:         from  AS20655 action pref=100; accept   AS-EST
 export:         to    AS20655                  announce ANY
+import:         from  AS20698 action pref=100; accept   AS-AVTODOR
+export:         to    AS20698                  announce ANY
 import:         from  AS20919 action pref=100; accept   AS-DATAFORT
 export:         to    AS20919                  announce ANY
 import:         from  AS20940 action pref=100; accept   AS-AKAMAI
@@ -764,8 +766,6 @@ import:         from  AS62314 action pref=100; accept   AS-ATMOSPHERICA
 export:         to    AS62314                  announce ANY
 import:         from  AS62316 action pref=100; accept   AS-GRAN-CALL
 export:         to    AS62316                  announce ANY
-import:         from  AS62379 action pref=100; accept   AS62379:AS-FREEWAY
-export:         to    AS62379                  announce ANY
 import:         from  AS62382 action pref=100; accept   AS62382
 export:         to    AS62382                  announce ANY
 import:         from  AS62404 action pref=100; accept   AS62404
@@ -906,7 +906,7 @@ import:         from AS202696 action pref=100; accept   AS-TRUSTEDNETWORK
 export:         to   AS202696                  announce ANY
 import:         from AS202952 action pref=100; accept   AS202952
 export:         to   AS202952                  announce ANY
-import:         from AS203273 action pref=100; accept   AS203273
+import:         from AS203273 action pref=100; accept   AS203273:AS-NETCRAFTERS
 export:         to   AS203273                  announce ANY
 import:         from AS203456 action pref=100; accept   AS203456:AS-BORK
 export:         to   AS203456                  announce ANY
@@ -1615,6 +1615,8 @@ mp-import:      afi ipv6.unicast from AS202629 action pref=100; accept   AS20262
 mp-export:      afi ipv6.unicast to   AS202629                  announce ANY
 mp-import:      afi ipv6.unicast from AS202952 action pref=100; accept   AS202952
 mp-export:      afi ipv6.unicast to   AS202952                  announce ANY
+mp-import:      afi ipv6.unicast from AS203273 action pref=100; accept   AS203273:AS-NETCRAFTERS
+mp-export:      afi ipv6.unicast to   AS203273                  announce ANY
 mp-import:      afi ipv6.unicast from AS203597 action pref=100; accept   AS203597
 mp-export:      afi ipv6.unicast to   AS203597                  announce ANY
 mp-import:      afi ipv6.unicast from AS204576 action pref=100; accept   AS204576
@@ -1722,7 +1724,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-09-22T19:59:08Z
+last-modified:  2026-09-29T19:59:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

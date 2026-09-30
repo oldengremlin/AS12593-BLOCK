@@ -416,7 +416,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         LIDERTELECOM-mnt
 created:        2021-02-04T08:04:22Z
-last-modified:  2025-04-14T08:44:00Z
+last-modified:  2026-09-29T07:42:52Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -453,6 +453,23 @@ mnt-by:         LIDERTELECOM-mnt
 created:        2018-08-24T14:11:47Z
 last-modified:  2018-08-24T14:11:47Z
 source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-set:         AS199901:AS-SET-TKGEPARD
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+members:        AS199901
+members:        AS52086
+created:        2026-09-29T07:41:47Z
+last-modified:  2026-09-29T07:41:47Z
+source:         RIPE
+mnt-by:         LIDERTELECOM-mnt
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
 remarks:        * Please note that all data that is generally regarded as personal
@@ -1665,11 +1682,11 @@ as-name:        GEPARD-AS
 org:            ORG-LC277-RIPE
 remarks:        =Uplinks=
 import:         from AS9049 action pref=100;accept ANY
-export:         to AS9049 announce AS-SET-S-Telecom
+export:         to AS9049 announce AS199901:AS-SET-TKGEPARD
 import:         from AS12389 action pref=100;accept ANY
 export:         to AS12389 announce AS-SET-S-Telecom
-import:         from AS52086 accept AS52086
-export:         to AS52086 announce ANY
+import:         from AS52086 action pref=100;accept ANY
+export:         to AS52086 announce AS199901:AS-SET-TKGEPARD
 sponsoring-org: ORG-LL38-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -1677,7 +1694,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LIDERTELECOM-mnt
 created:        2013-12-13T10:25:23Z
-last-modified:  2026-08-18T10:12:17Z
+last-modified:  2026-09-29T09:05:49Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

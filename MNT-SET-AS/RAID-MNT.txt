@@ -2646,6 +2646,57 @@ remarks:        * To view the original object, please query the RIPE Database at
 remarks:        * http://www.ripe.net/whois
 remarks:        ****************************
 
+aut-num:        AS197235
+as-name:        AVANTEL-SAMARA
+remarks:        AVANTEL
+remarks:        Samara, Russia
+org:            ORG-RA21-RIPE
+remarks:        --------------------------------------------------------
+remarks:
+remarks:        UPSTREAMS
+remarks:        --------------------------------------------------------
+remarks:        -- iHome --
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS-SEVEREN-VOLGA
+remarks:        -- ER-Telecom --
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS-SEVEREN-VOLGA
+remarks:        --------------------------------------------------------
+remarks:        PEERINGS
+remarks:        --------------------------------------------------------
+remarks:        -- AVANTEL-MSK --
+import:         from AS25227 accept AS25227
+export:         to AS25227 announce AS-SEVEREN-VOLGA
+remarks:        --------------------------------------------------------
+remarks:        SUBSCRIBERS
+remarks:        --------------------------------------------------------
+remarks:        -- MVD --
+import:         from AS56506 action pref=200; accept AS56506
+export:         to AS56506 announce ANY
+remarks:        -- Sibintek --
+import:         from AS50691 accept AS-SIBINTEK-SAMARA
+export:         to AS50691 announce ANY
+remarks:        -- VITA --
+import:         from AS42996 action pref=200; accept AS42996
+export:         to AS42996 announce ANY
+remarks:        --------------------------------------------------------
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         SEVEREN_VOLGA-MNT
+mnt-by:         RAID-MNT
+created:        2010-08-25T05:59:32Z
+last-modified:  2026-09-28T09:27:35Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
 aut-num:        AS197585
 as-name:        TELENET-USIB-AS
 org:            ORG-RA21-RIPE
@@ -3931,6 +3982,270 @@ mnt-by:         RAID-MNT
 mnt-by:         CLOUDS-MNT
 created:        2002-11-25T15:53:35Z
 last-modified:  2025-06-20T15:56:07Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+aut-num:        AS25549
+as-name:        AVANTEL-AS
+org:            ORG-RA21-RIPE
+remarks:        -----------------------------------
+remarks:        Upstreams
+remarks:        -----------------------------------
+import:         from AS9049 accept ANY
+export:         to AS9049 announce AS-AVANTEL
+import:         from AS12389 accept ANY
+export:         to AS12389 announce AS-AVANTEL
+import:         from AS9002 accept ANY
+export:         to AS9002 announce AS-AVANTEL
+import:         from AS28884 accept ANY
+export:         to AS28884 announce AS-AVANTEL
+import:         from AS13002 accept ANY
+export:         to AS13002 announce AS-AVANTEL
+import:         from AS21127 accept ANY
+export:         to AS21127 announce AS-AVANTEL
+import:         from AS6854 accept ANY
+export:         to AS6854 announce AS-AVANTEL
+import:         from AS48858 accept ANY
+export:         to AS48858 announce AS-AVANTEL
+import:         from AS31133 accept ANY
+export:         to AS31133 announce AS-AVANTEL
+import:         from AS50928 accept ANY
+export:         to AS50928 announce AS-AVANTEL
+import:         from AS25478 accept ANY
+export:         to AS25478 announce AS-AVANTEL
+import:         from AS48586 accept ANY
+export:         to AS48586 announce AS-AVANTEL
+import:         from AS201706 accept ANY
+export:         to AS201706 announce AS-AVANTEL
+import:         from AS31200 accept ANY
+export:         to AS31200 announce AS-AVANTEL
+mp-import:      from AS25478 accept ANY
+mp-export:      to AS25478 announce AS-AVANTEL
+import:         from AS3216 accept ANY
+export:         to AS3216 announce AS-AVANTEL
+mp-import:      from AS3216 accept ANY
+mp-export:      to AS3216 announce AS-AVANTEL
+remarks:        -----------------------------------
+remarks:        Peers Novosibirsk
+remarks:        -----------------------------------
+import:         from AS35711 accept AS35711
+export:         to AS35711 announce AS-AVANTEL
+import:         from AS15508 accept AS15508
+export:         to AS15508 announce AS-AVANTEL
+import:         from AS5568 accept AS5568
+export:         to AS5568 announce AS-AVANTEL
+import:         from AS31738 accept AS31738
+export:         to AS31738 announce AS-AVANTEL
+import:         from AS3267 accept AS3267
+export:         to AS3267 announce AS-AVANTEL
+import:         from AS42403 accept AS42403
+export:         to AS42403 announce AS-AVANTEL
+import:         from AS8631 accept AS8631
+export:         to AS8631 announce AS-AVANTEL
+import:         from AS43690 accept AS43690
+export:         to AS43690 announce AS-AVANTEL
+import:         from AS43213 accept AS43213
+export:         to AS43213 announce AS-AVANTEL
+import:         from AS9107 accept AS9107
+export:         to AS9107 announce AS-AVANTEL
+import:         from AS12499 accept AS12499
+export:         to AS12499 announce AS-AVANTEL
+import:         from AS13238 accept AS13238
+export:         to AS13238 announce AS-AVANTEL
+import:         from AS29407 accept AS29407
+export:         to AS29407 announce AS-AVANTEL
+import:         from AS29175 accept AS29175
+export:         to AS29175 announce AS-AVANTEL
+import:         from AS20803 accept AS20803
+export:         to AS20803 announce AS-AVANTEL
+import:         from AS44310 accept AS44310
+export:         to AS44310 announce AS-AVANTEL
+remarks:        -----------------------------------
+remarks:        Peers Tomsk
+remarks:        -----------------------------------
+import:         from AS13094 accept ANY
+export:         to AS13094 announce AS-AVANTEL
+import:         from AS41566 accept AS41566
+export:         to AS41566 announce AS-AVANTEL
+import:         from AS48679 accept AS48679
+export:         to AS48679 announce AS-AVANTEL
+remarks:        -----------------------------------
+remarks:        Customers Novosibirsk
+remarks:        -----------------------------------
+import:         from AS214149 accept AS214149
+export:         to AS214149 announce ANY
+import:         from AS214597 accept AS214597
+export:         to AS214597 announce ANY
+import:         from AS214395 accept AS214395
+export:         to AS214395 announce ANY
+import:         from AS204678 accept AS204678
+export:         to AS204678 announce ANY
+import:         from AS207883 accept AS207883
+export:         to AS207883 announce ANY
+import:         from AS50889 accept AS50889
+export:         to AS50889 announce ANY
+import:         from AS62331 accept AS62331
+export:         to AS62331 announce ANY
+import:         from AS212670 accept AS-DataFort-NSK
+export:         to AS212670 announce ANY
+import:         from AS49063 accept AS49063
+export:         to AS49063 announce ANY
+import:         from AS203660 accept AS203660
+export:         to AS203660 announce ANY
+import:         from AS59850 accept AS59850
+export:         to AS59850 announce ANY
+import:         from AS197200 accept AS197200
+export:         to AS197200 announce ANY
+import:         from AS207361 accept AS207361
+export:         to AS207361 announce ANY
+import:         from AS198181 accept AS198181
+export:         to AS198181 announce ANY
+import:         from AS59957 accept AS59957
+export:         to AS59957 announce ANY
+import:         from AS61985 accept AS61985
+export:         to AS61985 announce ANY
+import:         from AS206115 accept AS206115
+export:         to AS206115 announce ANY
+import:         from AS47905 accept AS47905
+export:         to AS47905 announce ANY
+import:         from AS62331 accept AS62331
+export:         to AS62331 announce ANY
+import:         from AS198716 accept AS198716
+export:         to AS198716 announce ANY
+import:         from AS62036 accept AS62036
+export:         to AS62036 announce ANY
+import:         from AS61193 accept AS61193
+export:         to AS61193 announce ANY
+import:         from AS203514 accept AS203514
+export:         to AS203514 announce ANY
+import:         from AS203599 accept AS203599
+export:         to AS203599 announce ANY
+import:         from AS8848 accept AS8848
+export:         to AS8848 announce ANY
+import:         from AS60878 accept AS60878
+export:         to AS60878 announce ANY
+import:         from AS198981 accept AS198981
+export:         to AS198981 announce ANY
+import:         from AS201037 accept AS201037
+export:         to AS201037 announce ANY
+import:         from AS201065 accept AS201065
+export:         to AS201065 announce ANY
+import:         from AS197482 accept AS197482
+export:         to AS197482 announce ANY
+import:         from AS41143 accept AS41143
+export:         to AS41143 announce ANY
+import:         from AS59973 accept AS59973
+export:         to AS59973 announce ANY
+import:         from AS60108 accept AS60108
+export:         to AS60108 announce ANY
+import:         from AS62036 accept AS62036
+export:         to AS62036 announce ANY
+import:         from AS60835 accept AS60835
+export:         to AS60835 announce ANY
+import:         from AS200021 accept AS200021
+export:         to AS200021 announce ANY
+import:         from AS61069 accept AS61069
+export:         to AS61069 announce ANY
+import:         from AS199049 accept AS199049
+export:         to AS4199049 announce ANY
+import:         from AS43552 accept AS43552
+export:         to AS43552 announce ANY
+import:         from AS58027 accept AS58027
+export:         to AS58027 announce ANY
+import:         from AS44310 accept AS44310
+export:         to AS44310 announce ANY
+import:         from AS51213 accept AS51213
+export:         to AS51213 announce ANY
+import:         from AS39258 accept AS39258
+export:         to AS39258 announce ANY
+import:         from AS39530 accept AS39530
+export:         to AS39530 announce ANY
+import:         from AS35410 accept AS35410
+export:         to AS35410 announce ANY
+import:         from AS48107 accept AS48107
+export:         to AS48107 announce ANY
+import:         from AS48236 accept AS48236
+export:         to AS48236 announce ANY
+import:         from AS44634 accept AS44634
+export:         to AS44634 announce ANY
+import:         from AS47280 accept AS47280
+export:         to AS50486 announce ANY
+import:         from AS50486 accept AS50486
+export:         to AS47280 announce ANY
+import:         from AS5387 accept AS5387
+export:         to AS5387 announce ANY
+import:         from AS50085 accept AS50085
+export:         to AS50085 announce ANY
+import:         from AS49547 accept AS49547
+export:         to AS49547 announce ANY
+import:         from AS57494 accept AS57494
+export:         to AS57494 announce ANY
+import:         from AS3335 accept AS3335
+export:         to AS3335 announce ANY
+import:         from AS50001 accept AS50001
+export:         to AS50001 announce ANY
+import:         from AS211730 accept AS211730
+export:         to AS211730 announce ANY
+import:         from AS212264 accept AS212264
+export:         to AS212264 announce ANY
+import:         from AS211343 accept AS211343
+export:         to AS211343 announce ANY
+remarks:        -----------------------------------
+remarks:        Customers Omsk
+remarks:        -----------------------------------
+remarks:        ------
+import:         from AS8817 accept AS8817
+export:         to AS8817 announce ANY
+remarks:        -----------------------------------
+remarks:        Customers Tomsk
+remarks:        -----------------------------------
+import:         from AS49977 accept AS49977
+export:         to AS49977 announce ANY
+import:         from AS35411 accept AS35411
+export:         to AS35411 announce ANY
+import:         from AS39701 accept AS39701
+export:         to AS39701 announce ANY
+import:         from AS29047 accept AS-STACKLTD
+export:         to AS29047 announce ANY
+import:         from AS199778 accept AS199778
+export:         to AS199778 announce ANY
+import:         from AS56957 accept AS56957
+export:         to AS56957 announce ANY
+import:         from AS48784 accept AS48784
+export:         to AS48784 announce ANY
+import:         from AS47938 accept AS47938
+export:         to AS47938 announce ANY
+import:         from AS49369 accept AS49369
+export:         to AS49369 announce ANY
+import:         from AS48120 accept AS48120
+export:         to AS48120 announce ANY
+import:         from AS49987 accept AS49987
+export:         to AS49987 announce ANY
+import:         from AS51740 accept AS51740
+export:         to AS51740 announce ANY
+import:         from AS51256 accept AS51256
+export:         to AS51256 announce ANY
+import:         from AS35722 accept AS35722
+export:         to AS35722 announce ANY
+import:         from AS34479 accept AS34479
+export:         to AS34479 announce ANY
+remarks:        -----------------------------------
+default:        to AS12389 networks ANY
+remarks:        -----------------------------------
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AVANTEL-MNT
+mnt-by:         RAID-MNT
+created:        2003-01-06T10:19:24Z
+last-modified:  2026-09-29T10:47:54Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -6901,6 +7216,47 @@ remarks:        * To view the original object, please query the RIPE Database at
 remarks:        * http://www.ripe.net/whois
 remarks:        ****************************
 
+aut-num:        AS43550
+as-name:        DSC-AS
+org:            ORG-RA21-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+import:         from AS21103 accept ANY
+import:         from AS199992 accept ANY
+import:         from AS198960 accept ANY
+import:         from AS20485 accept ANY
+import:         from AS48566 accept ANY
+import:         from AS29425 accept ANY
+import:         from AS12389 accept ANY
+export:         to AS21103 announce AS43550
+export:         to AS3216 announce AS198960
+export:         to AS3216 announce AS43550
+export:         to AS8359 announce AS43550
+export:         to AS20485 announce AS43550
+export:         to AS48566 announce ANY
+export:         to AS29425 announce AS43550
+export:         to AS12389 announce AS43550
+export:         to AS21103 announce AS48566
+export:         to AS12389 announce AS48566
+export:         to AS3216 announce AS199992
+export:         to AS8359 announce AS199992
+export:         to AS12389 announce AS199992
+export:         to AS12389 announce AS30745
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AVANTEL-MNT
+mnt-by:         RAID-MNT
+created:        2007-08-21T08:33:56Z
+last-modified:  2026-09-29T10:47:54Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
 aut-num:        AS44126
 as-name:        terralink-as
 org:            ORG-TA303-RIPE
@@ -8078,6 +8434,200 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RAID-MNT
 created:        2010-06-03T11:48:16Z
 last-modified:  2021-10-07T09:44:37Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+aut-num:        AS51178
+as-name:        AVANTEL-SPB-AS
+descr:          St.Petersburg branch
+org:            ORG-RA21-RIPE
+remarks:        ----------------------------------------------
+import:         from AS3267 action pref=300; accept as3267:as-customers
+export:         to AS3267 announce AS-AVANTEL-SPB
+import:         from AS6939 action pref=100; accept AS-HURRICANE
+export:         to AS6939 announce AS-AVANTEL-SPB
+import:         from AS8631 action pref=120; accept AS-MSKROUTESERVER
+export:         to AS8631 announce AS-AVANTEL-SPB
+import:         from AS9049 action pref=100; accept ANY
+export:         to AS9049 announce AS-AVANTEL-SPB
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS-AVANTEL-SPB
+import:         from AS13238 action pref=400; accept AS-YANDEX
+export:         to AS13238 announce AS-AVANTEL-SPB
+import:         from AS13335 action pref=300; accept AS-CLOUDFLARE
+export:         to AS13335 announce AS-AVANTEL-SPB
+import:         from AS15169 action pref=400; accept AS-GOOGLE
+export:         to AS15169 announce AS-AVANTEL-SPB
+import:         from AS16276 action pref=300; accept AS-OVH
+export:         to AS16276 announce AS-AVANTEL-SPB
+import:         from AS16509 action pref=300; accept AS-AMAZON
+export:         to AS16509 announce AS-AVANTEL-SPB
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS-AVANTEL-SPB
+import:         from AS20764 action pref=100; accept ANY
+export:         to AS20764 announce AS-AVANTEL-SPB
+import:         from AS24940 action pref=300; accept AS-HETZNER
+export:         to AS24940 announce AS-AVANTEL-SPB
+import:         from AS25227 action pref=400; accept AS-AVANTEL-MSK
+export:         to AS25227 announce AS-AVANTEL-SPB
+import:         from AS29076 action pref=100; accept ANY
+export:         to AS29076 announce AS-AVANTEL-SPB
+import:         from AS31500 action pref=120; accept AS-GLOBAL-IX
+export:         to AS31500 announce AS-AVANTEL-SPB
+import:         from AS32590 action pref=300; accept AS-VALVE
+export:         to AS32590 announce AS-AVANTEL-SPB
+import:         from AS32934 action pref=300; accept AS-FACEBOOK
+export:         to AS32934 announce AS-AVANTEL-SPB
+import:         from AS41625 action pref=500; accept AS41625
+export:         to AS39033 announce AS-AVANTEL-SPB
+import:         from AS39033 action pref=400; accept AS39033
+export:         to AS41625 announce ANY
+import:         from AS42301 action pref=500; accept AS42301
+export:         to AS42301 announce ANY
+import:         from AS42403 action pref=120; accept AS-NSKROUTESERVER
+export:         to AS42403 announce AS-AVANTEL-SPB
+import:         from AS43690 action pref=140; accept AS-SPBROUTESERVER
+export:         to AS43690 announce AS-AVANTEL-SPB
+import:         from AS43213 action pref=120; accept AS-EKTROUTESERVER
+export:         to AS43213 announce AS-AVANTEL-SPB
+import:         from AS46489 action pref=300; accept AS-TWITCH
+export:         to AS46489 announce AS-AVANTEL-SPB
+import:         from AS48102 action pref=500; accept AS48102
+export:         to AS48102 announce ANY
+import:         from AS48216 action pref=120; accept AS-RNDROUTESERVER
+export:         to AS48216 announce AS-AVANTEL-SPB
+import:         from AS49544 action pref=300; accept AS-INTERACTIVE3D
+export:         to AS49544 announce AS-AVANTEL-SPB
+import:         from AS49869 action pref=120; accept as-piter-ix-msk
+export:         to AS49869 announce AS-AVANTEL-SPB
+import:         from AS50384 action pref=120; accept ANY
+export:         to AS50384 announce AS-AVANTEL-SPB
+import:         from AS50509 action pref=100; accept ANY
+export:         to AS50509 announce AS-AVANTEL-SPB
+import:         from AS50817 action pref=140; accept as-piter-ix
+export:         to AS50817 announce AS-AVANTEL-SPB
+import:         from AS50952 action pref=120; accept AS-DATAIX
+export:         to AS50952 announce AS-AVANTEL-SPB
+import:         from AS56534 action pref=400; accept AS-CMFT
+export:         to AS56534 announce AS-AVANTEL-SPB
+import:         from AS57304 action pref=100; accept ANY
+export:         to AS57304 announce AS-AVANTEL-SPB
+import:         from AS57976 action pref=300; accept AS-BLIZZARD
+export:         to AS57976 announce AS-AVANTEL-SPB
+import:         from AS57724 action pref=100; accept ANY
+export:         to AS57724 announce AS-AVANTEL-SPB
+import:         from AS59399 action pref=500; accept AS59399
+export:         to AS59399 announce ANY
+import:         from AS61152 action pref=500; accept AS61152
+export:         to AS61152 announce ANY
+import:         from AS62330 action pref=500; accept AS62330
+export:         to AS62330 announce ANY
+import:         from AS197303 action pref=500; accept AS197303
+export:         to AS197303 announce ANY
+import:         from AS198062 action pref=500; accept AS198062
+export:         to AS198062 announce ANY
+import:         from AS199072 action pref=500; accept AS199072
+export:         to AS199072 announce ANY
+import:         from AS200015 action pref=500; accept AS-LIVETEX
+export:         to AS200015 announce ANY
+import:         from AS200563 action pref=500; accept AS200563
+export:         to AS200563 announce ANY
+import:         from AS201706 action pref=100; accept ANY
+export:         to AS201706 announce AS-AVANTEL-SPB
+import:         from AS202082 action pref=500; accept AS202082
+export:         to AS202082 announce ANY
+import:         from AS202537 action pref=500; accept AS202537
+export:         to AS202537 announce ANY
+import:         from AS203597 action pref=500; accept AS203597
+export:         to AS203597 announce ANY
+import:         from AS204272 action pref=500; accept AS204272:AS-ASARTA-SPB
+export:         to AS204272 announce ANY
+import:         from AS204891 action pref=500; accept AS204891
+export:         to AS204891 announce ANY
+import:         from AS207176 action pref=300; accept AS207176
+export:         to AS207176 announce AS-AVANTEL-SPB
+import:         from AS207056 action pref=400; accept AS-BONCH-IT
+export:         to AS207056 announce AS-AVANTEL-SPB
+import:         from AS208511 action pref=500; accept AS-R-INDUSTRY
+export:         to AS208511 announce ANY
+import:         from AS209655 action pref=500; accept AS209655
+export:         to AS209655 announce ANY
+import:         from AS210787 action pref=500; accept AS210787
+export:         to AS210787 announce ANY
+import:         from AS215456 action pref=500; accept AS215456
+export:         to AS215456 announce ANY
+remarks:        ----------------------------------------------
+mp-import:      afi ipv6.unicast from AS3267 action pref=300; accept as3267:as-customers
+mp-export:      afi ipv6.unicast to AS3267 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS6939 action pref=100; accept AS-HURRICANEV6
+mp-export:      afi ipv6.unicast to AS6939 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS8631 action pref=120; accept AS-MSKROUTESERVER
+mp-export:      afi ipv6.unicast to AS8631 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS9049 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS9049 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS13238 action pref=400; accept AS-YANDEX
+mp-export:      afi ipv6.unicast to AS13238 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS13335 action pref=300; accept AS-CLOUDFLARE
+mp-export:      afi ipv6.unicast to AS13335 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS15169 action pref=400; accept AS-GOOGLE
+mp-export:      afi ipv6.unicast to AS15169 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS16276 action pref=300; accept AS-OVH
+mp-export:      afi ipv6.unicast to AS16276 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS16509 action pref=300; accept AS-AMAZON
+mp-export:      afi ipv6.unicast to AS16509 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS20485 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS20485 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS20764 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS20764 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS24940 action pref=300; accept AS-HETZNER
+mp-export:      afi ipv6.unicast to AS24940 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS29076 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS29076 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS31500 action pref=120; accept AS-GLOBAL-IX
+mp-export:      afi ipv6.unicast to AS31500 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS32590 action pref=300; accept AS-VALVE
+mp-export:      afi ipv6.unicast to AS32590 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS32934 action pref=300; accept AS-FACEBOOK
+mp-export:      afi ipv6.unicast to AS32934 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS43690 action pref=140; accept AS-SPBROUTESERVER
+mp-export:      afi ipv6.unicast to AS43690 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS49544 action pref=300; accept AS-INTERACTIVE3D
+mp-export:      afi ipv6.unicast to AS49544 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS46489 action pref=300; accept AS-TWITCH
+mp-export:      afi ipv6.unicast to AS46489 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS49869 action pref=120; accept as-piter-ix
+mp-export:      afi ipv6.unicast to AS49869 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS50384 action pref=120; accept ANY
+mp-export:      afi ipv6.unicast to AS50384 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS50509 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS50509 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS50817 action pref=140; accept as-piter-ix
+mp-export:      afi ipv6.unicast to AS50817 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS50952 action pref=120; accept AS-DATA-IX
+mp-export:      afi ipv6.unicast to AS50952 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS57304 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS57976 action pref=300; accept AS-BLIZZARD
+mp-export:      afi ipv6.unicast to AS57976 announce AS-AVANTEL-SPB
+mp-import:      afi ipv6.unicast from AS199072 action pref=500; accept AS199072
+mp-export:      afi ipv6.unicast to AS199072 announce ANY
+mp-import:      afi ipv6.unicast from AS204272 action pref=500; accept AS204272
+mp-export:      afi ipv6.unicast to AS204272 announce ANY
+remarks:        ----------------------------------------------
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         mnt-ru-avantelspb-1
+mnt-by:         RAID-MNT
+created:        2010-09-27T12:57:12Z
+last-modified:  2026-09-28T09:45:52Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -9384,6 +9934,49 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RAID-MNT
 created:        1970-01-01T00:00:00Z
 last-modified:  2026-05-19T13:34:09Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+aut-num:        AS8711
+as-name:        AVANTEL-BARNAUL-AS
+descr:          BARNAUL, Russia
+org:            ORG-RA21-RIPE
+remarks:        ---------------------------------------------
+remarks:        Upstreams
+remarks:        ---------------------------------------------
+import:         from AS12389 action pref=100; accept ANY
+export:         to AS12389 announce AS-AVANTEL-BARNAUL
+import:         from AS25549 action pref=100; accept ANY
+export:         to AS25549 announce AS-AVANTEL-BARNAUL
+import:         from AS43314 action pref=100; accept ANY
+export:         to AS43314 announce AS-AVANTEL-BARNAUL
+import:         from AS41794 action pref=100; accept ANY
+export:         to AS41794 announce AS-AVANTEL-BARNAUL
+import:         from AS9049 action pref=100; accept ANY
+export:         to AS9049 announce AS-AVANTEL-BARNAUL
+remarks:        ---------------------------------------------
+remarks:        ---------------------------------------------
+remarks:        Customers
+remarks:        ---------------------------------------------
+import:         from AS206572 accept AS206572
+export:         to AS206572 announce ANY
+import:         from AS197878 accept AS197878
+export:         to AS197878 announce ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         AVANTEL-MNT
+mnt-by:         MAGTEL-MNT
+mnt-by:         RAID-MNT
+created:        2002-01-16T14:28:35Z
+last-modified:  2026-09-29T10:47:53Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
