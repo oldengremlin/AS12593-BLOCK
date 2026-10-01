@@ -380,6 +380,7 @@ members:        AS47363
 members:        AS57583
 members:        AS-QUARTZ
 members:        AS61433
+members:        AS-VLAN
 members:        AS39493
 members:        AS49418:AS-NETSHIELD
 members:        AS49813
@@ -407,6 +408,7 @@ members:        AS205553
 members:        AS-Luganet
 members:        AS-ASVT
 members:        AS-DINET
+members:        AS-CNX-EKB
 members:        AS-SAMTELECOM
 members:        AS-SGGS
 members:        AS57113
@@ -580,7 +582,7 @@ mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:05:11Z
-last-modified:  2026-09-29T14:22:35Z
+last-modified:  2026-09-30T14:02:53Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -602,6 +604,7 @@ members:        AS205226
 members:        AS-LANTA
 members:        AS-TMPK
 members:        AS-LENTEL
+members:        AS-CNX-EKB
 members:        AS42291:AS-ISTRANET
 members:        AS50538
 members:        AS57583
@@ -611,6 +614,7 @@ members:        AS-COMITEN
 members:        AS-OBLNET
 members:        AS-YACLOUD
 members:        AS-SKY-EN
+members:        AS-VLAN
 members:        AS-AVANTEL-SPB
 members:        AS-IVSTAR
 members:        AS-MARYNONET
@@ -713,7 +717,7 @@ mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2020-11-06T12:10:10Z
-last-modified:  2026-09-29T14:23:09Z
+last-modified:  2026-09-30T13:33:41Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -2654,6 +2658,8 @@ import:         from AS44391 accept AS-ESD
 export:         to AS44391 announce AS-PITER-IX-HELSINKI
 import:         from AS50538 accept AS50538
 export:         to AS50538 announce AS-PITER-IX-HELSINKI
+import:         from AS209307 action pref=100; accept AS-CNX-EKB
+export:         to AS209307 announce AS-PITER-IX-HEL
 import:         from AS60771 accept AS-COMITEN
 export:         to AS60771 announce AS-PITER-IX-HELSINKI
 import:         from AS56534 accept AS-PIRIXINET
@@ -2726,6 +2732,8 @@ import:         from AS49588 accept AS-SDS
 export:         to AS49588 announce AS-PITER-IX-HELSINKI
 import:         from AS61230 accept AS-IPTT
 export:         to AS61230 announce AS-PITER-IX-HELSINKI
+import:         from AS43031 action pref=100; accept AS-VLAN
+export:         to AS43031 announce AS-PITER-IX-HEL
 import:         from AS34602 accept AS-STARLNK
 export:         to AS34602 announce AS-PITER-IX-HELSINKI
 import:         from AS47441 action pref=100; accept AS-TRUNKMOBILE
@@ -2968,7 +2976,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-10-08T08:51:37Z
-last-modified:  2026-09-29T14:24:17Z
+last-modified:  2026-09-30T14:03:20Z
 source:         RIPE
 sponsoring-org: ORG-PCL30-RIPE
 remarks:        ****************************
@@ -3027,6 +3035,8 @@ import:         from AS197868 action pref=100; accept AS197868
 export:         to AS197868 announce as-piter-ix-fra
 import:         from AS59574 action pref=100; accept AS59574
 export:         to AS59574 announce as-piter-ix-fra
+import:         from AS209307 action pref=100; accept AS-CNX-EKB
+export:         to AS209307 announce as-piter-ix-fra
 import:         from AS51178 action pref=100; accept AS-AVANTEL-SPB
 export:         to AS51178 announce as-piter-ix-fra
 import:         from AS41268 action pref=100; accept AS-LANTA
@@ -3051,6 +3061,8 @@ import:         from AS39709 action pref=100; accept AS-MARYNONET
 export:         to AS39709 announce as-piter-ix-fra
 import:         from AS57393 action pref=100; accept AS-VIVA-LLC
 export:         to AS57393 announce as-piter-ix-fra
+import:         from AS43031 action pref=100; accept AS-VLAN
+export:         to AS43031 announce as-piter-ix-fra
 import:         from AS29588 action pref=100; accept AS-IVSTAR
 export:         to AS29588 announce as-piter-ix-fra
 import:         from AS60771 action pref=100; accept AS-COMITEN
@@ -3304,7 +3316,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T08:46:05Z
-last-modified:  2026-09-29T14:25:16Z
+last-modified:  2026-09-30T14:06:25Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

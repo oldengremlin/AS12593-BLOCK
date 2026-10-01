@@ -244,11 +244,12 @@ members:        AS215013:AS-YCCDN
 members:        AS-OBLTELECOM
 members:        AS-TRANCOM
 members:        AS50577
+members:        AS59653:AS-AOL
 remarks:        * * * * * * * * * * * * *
 members:        AS-TRANSROUTE-QUICKFIX
 members:        AS-TRANSROUTE-SPEC
 created:        2019-10-25T12:31:32Z
-last-modified:  2026-09-28T18:13:39Z
+last-modified:  2026-09-30T09:56:25Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -390,7 +391,7 @@ mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRANSROUTE-DAEMON-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-07-02T13:14:13Z
-last-modified:  2026-09-21T16:34:32Z
+last-modified:  2026-09-30T16:32:44Z
 source:         RIPE
 members:        AS12365
 members:        AS12389
@@ -453,6 +454,7 @@ members:        AS214813
 members:        AS216025
 members:        AS216139
 members:        AS216334
+members:        AS218706
 members:        AS219081
 members:        AS24663
 members:        AS25308
@@ -21479,6 +21481,9 @@ export:         to AS59637 announce ANY
 remarks:        * bridgeline *
 import:         from AS205429  accept AS205429
 export:         to AS205429  announce ANY
+remarks:        * AlphaOnline *
+import:         from AS59653 accept AS59653:AS-AOL
+export:         to AS59653 announce ANY
 remarks:        +==============================================================+
 remarks:        | Some BGP COMMUNITIES of Transroute |
 remarks:        +--------------------------------------------------------------+
@@ -21583,7 +21588,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         TRANSROUTE-MNT
 mnt-by:         TRSUPPORT-MNT
 created:        2019-10-22T14:34:02Z
-last-modified:  2026-09-28T18:13:03Z
+last-modified:  2026-09-30T09:57:48Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
