@@ -608,6 +608,8 @@ import:         from  AS51343 action pref=100; accept   AS-FORCELINE
 export:         to    AS51343                  announce ANY
 import:         from  AS51352 action pref=100; accept   AS51352
 export:         to    AS51352                  announce ANY
+import:         from  AS51408 action pref=100; accept   AS-SIRIUS
+export:         to    AS51408                  announce ANY
 import:         from  AS51444 action pref=100; accept   AS51444:AS-ITLITE
 export:         to    AS51444                  announce ANY
 import:         from  AS51498 action pref=100; accept   AS51498
@@ -1465,6 +1467,8 @@ mp-import:      afi ipv6.unicast from  AS51297 action pref=100; accept   AS-ONED
 mp-export:      afi ipv6.unicast to    AS51297                  announce ANY
 mp-import:      afi ipv6.unicast from  AS51352 action pref=100; accept   AS51352
 mp-export:      afi ipv6.unicast to    AS51352                  announce ANY
+mp-import:      afi ipv6.unicast from  AS51408 action pref=100; accept   AS-SIRIUS
+mp-export:      afi ipv6.unicast to    AS51408                  announce ANY
 mp-import:      afi ipv6.unicast from  AS51698 action pref=100; accept   AS51698
 mp-export:      afi ipv6.unicast to    AS51698                  announce ANY
 mp-import:      afi ipv6.unicast from  AS51789 action pref=100; accept   AS-TIMEWEB
@@ -1724,7 +1728,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-09-29T19:59:08Z
+last-modified:  2026-10-01T19:59:09Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

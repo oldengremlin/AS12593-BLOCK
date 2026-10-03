@@ -3,30 +3,28 @@ as-name:        ASVT-NETWORK
 descr:          Russia
 descr:          Moscow
 descr:          Yablochkova 19b
-import:         from AS8631 action pref=80; accept AS-MSKROUTESERVER
-import:         from AS6777 action pref=90; accept AS6777:AS-AMS-IX-RS
-import:         from AS49869 action pref=80; accept AS-PITER-IX-MSK
-import:         from AS50817 action pref=90; accept as-piter-ix
-import:         from AS48166 action pref=110; accept ANY
-import:         from AS48193 action pref=90; accept AS-PITER-IX-FRA
-import:         from AS39607 action pref=90; accept AS-PITER-IX-HELSINKI
-import:         from AS57304 action pref=100; accept ANY
-import:         from AS59796 action pref=100; accept ANY
-import:         from AS32934 action pref=90; accept ANY
-import:         from AS1200 action pref=90; accept ANY
-import:         from AS46489 action pref=90; accept ANY
+import:         from AS8631 action pref=90; accept AS-MSKROUTESERVER
 export:         to AS8631 announce AS-ASVT
-export:         to AS6777 announce AS-ASVT
+import:         from AS16509 action pref=90; accept AS16509:AS-AMAZON
+export:         to AS16509 announce AS-ASVT
+import:         from AS49869 action pref=90; accept AS-PITER-IX-MSK
 export:         to AS49869 announce AS-ASVT
+import:         from AS50817 action pref=88; accept as-piter-ix
 export:         to AS50817 announce AS-ASVT
+import:         from AS48166 action pref=110; accept ANY
 export:         to AS48166 announce AS-ASVT
+import:         from AS48193 action pref=80; accept AS-PITER-IX-FRA
 export:         to AS48193 announce AS-ASVT
+import:         from AS39607 action pref=80; accept AS-PITER-IX-HELSINKI
 export:         to AS39607 announce AS-ASVT
+import:         from AS57304 action pref=105; accept ANY
 export:         to AS57304 announce AS-ASVT
-export:         to AS32934 announce AS-ASVT
-export:         to AS1200 announce AS-ASVT
-export:         to AS46489 announce AS-ASVT
+import:         from AS59796 action pref=100; accept ANY
 export:         to AS59796 announce AS-ASVT
+import:         from AS32934 action pref=80; accept AS-FACEBOOK
+export:         to AS32934 announce AS-ASVT
+import:         from AS46489 action pref=80; accept AS-TWITCH
+export:         to AS46489 announce AS-ASVT
 org:            ORG-ZA2-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -34,7 +32,7 @@ status:         ASSIGNED
 mnt-by:         AS8752-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2002-06-03T07:32:24Z
-last-modified:  2026-01-23T12:03:21Z
+last-modified:  2026-10-01T21:14:42Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
