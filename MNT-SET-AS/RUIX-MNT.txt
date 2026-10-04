@@ -474,6 +474,8 @@ members:        AS-POSTLTD
 members:        AS-MIRALOGIC
                 # from AS12695:
 members:        AS-DINET, AS-DINET-V6
+                # from AS12739:
+members:        AS-NETLINE
                 # from AS12741:
 members:        AS-NETIA-MSK-IX
                 # from AS12976:
@@ -1469,7 +1471,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-10-01T13:45:44Z
+last-modified:  2026-10-02T13:45:28Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5481,6 +5483,9 @@ import:         from AS12668
 import:         from AS12695
                 action pref=100;
                 accept AS-DINET AS-DINET-V6
+import:         from AS12739
+                action pref=100;
+                accept AS-NETLINE
 import:         from AS12741
                 action pref=100;
                 accept AS-NETIA-MSK-IX
@@ -7047,6 +7052,8 @@ export:         to AS12668
                 announce AS-MSKROUTESERVER
 export:         to AS12695
                 announce AS-MSKROUTESERVER
+export:         to AS12739
+                announce AS-MSKROUTESERVER
 export:         to AS12741
                 announce AS-MSKROUTESERVER
 export:         to AS12976
@@ -8020,7 +8027,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-10-01T13:45:44Z
+last-modified:  2026-10-02T13:45:28Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
