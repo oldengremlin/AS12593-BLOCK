@@ -32,10 +32,6 @@ remarks:        ============================================================
 remarks:        IPv6 Transit
 remarks:        ============================================================
 remarks:
-remarks:        Nesox Network - Frankfurt and INTERIX
-mp-import:      afi ipv6.unicast from AS215685 accept ANY
-mp-export:      afi ipv6.unicast to AS215685 announce AS218569:AS-PODRIL1AK2
-remarks:
 remarks:        GuwinUS
 mp-import:      afi ipv6.unicast from AS201398 accept ANY
 mp-export:      afi ipv6.unicast to AS201398 announce AS218569:AS-PODRIL1AK2
@@ -48,17 +44,23 @@ remarks:        ============================================================
 remarks:        IPv4 and IPv6 Transit
 remarks:        ============================================================
 remarks:
+remarks:        Nesox Network - Frankfurt and INTERIX
+import:         from AS215685 accept ANY
+export:         to AS215685 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS215685 accept ANY
+mp-export:      afi ipv6.unicast to AS215685 announce AS218569:AS-PODRIL1AK2
+remarks:
 remarks:        Tizian Maxime Weigt - Frankfurt, NINE IX and INTERIX
 import:         from AS215828 accept ANY
 export:         to AS215828 announce AS218569:AS-PODRIL1AK2
 mp-import:      afi ipv6.unicast from AS215828 accept ANY
 mp-export:      afi ipv6.unicast to AS215828 announce AS218569:AS-PODRIL1AK2
 remarks:
-remarks:        Cristian Tudor Marcus - NINE IX
-import:         from AS214205 accept ANY
-export:         to AS214205 announce AS218569:AS-PODRIL1AK2
-mp-import:      afi ipv6.unicast from AS214205 accept ANY
-mp-export:      afi ipv6.unicast to AS214205 announce AS218569:AS-PODRIL1AK2
+remarks:        AS219529 - NINE IX (towards Cristian Tudor Marcus)
+import:         from AS219529 accept ANY
+export:         to AS219529 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS219529 accept ANY
+mp-export:      afi ipv6.unicast to AS219529 announce AS218569:AS-PODRIL1AK2
 remarks:
 remarks:        Axivora Connect Ltd - INTERIX, Amsterdam
 import:         from AS204539 accept ANY
@@ -94,9 +96,9 @@ remarks:        ============================================================
 remarks:        IPv4 Transit
 remarks:        ============================================================
 remarks:
-remarks:        Awas - Frankfurt
-import:         from AS201279 accept ANY
-export:         to AS201279 announce AS218569:AS-PODRIL1AK2
+remarks:        On1x - Amsterdam
+import:         from AS203534 accept ANY
+export:         to AS203534 announce AS218569:AS-PODRIL1AK2
 remarks:
 remarks:        ============================================================
 remarks:        Peering
@@ -138,7 +140,7 @@ export:         to AS213409 announce ANY
 mp-import:      afi ipv6.unicast from AS213409 accept AS213409:AS-LYNQIA
 mp-export:      afi ipv6.unicast to AS213409 announce ANY
 remarks:
-remarks:        Petr Buzikov - Frankfurt
+remarks:        Petr Buzikov - Frankfurt and Amsterdam
 mp-import:      afi ipv6.unicast from AS219442 accept AS219442
 mp-export:      afi ipv6.unicast to AS219442 announce ANY
 remarks:
@@ -159,6 +161,12 @@ import:         from AS200993 accept AS200993:AS-POP:AS-AMS
 export:         to AS200993 announce ANY
 mp-import:      afi ipv6.unicast from AS200993 accept AS200993:AS-POP:AS-AMS
 mp-export:      afi ipv6.unicast to AS200993 announce ANY
+remarks:
+remarks:        Vadim Deynichenko - Amsterdam
+import:         from AS219297 accept AS219297
+export:         to AS219297 announce ANY
+mp-import:      afi ipv6.unicast from AS219297 accept AS219297
+mp-export:      afi ipv6.unicast to AS219297 announce ANY
 remarks:
 remarks:        ============================================================
 remarks:        Internet Exchanges
@@ -214,7 +222,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-09-28T06:20:55Z
-last-modified:  2026-09-28T19:54:50Z
+last-modified:  2026-10-03T09:00:45Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
