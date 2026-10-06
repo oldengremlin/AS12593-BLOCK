@@ -3467,6 +3467,7 @@ remarks:        199081 - 64716
 remarks:        201624 - 64717
 remarks:        198037 - 64718
 remarks:        219121 - 64719
+remarks:        154320 - 64720
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -5050,6 +5051,8 @@ import:         from AS8860    accept   AS8860:AS-DELTABG
 export:         to   AS8860    announce AS-DATAIX
 import:         from AS219121  accept   AS219121:AS-CLOUFINITY
 export:         to   AS219121  announce AS-DATAIX
+import:         from AS154320  accept   AS154320:AS-ARRIGA-CDN
+export:         to   AS154320  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6652,6 +6655,8 @@ mp-import:      afi ipv6.unicast from AS57073   accept   AS57073:AS-WILDBERRIES
 mp-export:      afi ipv6.unicast to   AS57073   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS219121  accept   AS219121:AS-CLOUFINITY
 mp-export:      afi ipv6.unicast to   AS219121  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS154320  accept   AS154320:AS-ARRIGA-CDN
+mp-export:      afi ipv6.unicast to   AS154320  announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6659,7 +6664,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-10-02T14:01:57Z
+last-modified:  2026-10-05T14:01:53Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
