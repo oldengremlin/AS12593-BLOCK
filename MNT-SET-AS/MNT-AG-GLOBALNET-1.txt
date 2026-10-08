@@ -227,6 +227,7 @@ members:        AS-OBLNET
 members:        AS62272
 members:        AS51219:AS-K2INT
 members:        AS-HSTLND
+members:        AS201097
 members:        AS-SEANET
 members:        AS61436:AS-INTEX
 members:        AS48989
@@ -261,7 +262,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2008-08-19T12:40:08Z
-last-modified:  2026-09-30T14:01:55Z
+last-modified:  2026-10-06T14:01:57Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -368,6 +369,7 @@ members:        AS-SVOLS
 members:        AS200993:AS-CORE
 members:        AS48610:AS-OFORO
 members:        AS216071:AS-SERVERS-TECH
+members:        AS201097
 members:        AS61436:AS-INTEX
 members:        AS-TUT
 members:        AS-PETROSVYAZ
@@ -387,7 +389,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2017-10-10T12:33:20Z
-last-modified:  2026-09-30T06:31:07Z
+last-modified:  2026-10-06T14:01:57Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -959,6 +961,8 @@ import:         from AS57363   accept   AS-CDNVIDEO
 export:         to   AS57363   announce ANY
 import:         from AS57073   accept   AS57073:AS-WILDBERRIES
 export:         to   AS57073   announce ANY
+import:         from AS201097  accept   AS201097
+export:         to   AS201097  announce ANY
 import:         from AS205717  accept   AS-DENGA
 export:         to   AS205717  announce ANY
 import:         from AS31444   accept   AS-SEANET
@@ -1375,6 +1379,8 @@ mp-import:      afi ipv6.unicast from AS57363   accept   AS-CDNVIDEO
 mp-export:      afi ipv6.unicast to   AS57363   announce ANY
 mp-import:      afi ipv6.unicast from AS57073   accept   AS57073:AS-WILDBERRIES
 mp-export:      afi ipv6.unicast to   AS57073   announce ANY
+mp-import:      afi ipv6.unicast from AS201097  accept   AS201097
+mp-export:      afi ipv6.unicast to   AS201097  announce ANY
 mp-import:      afi ipv6.unicast from AS48467   accept   AS-PRANET6
 mp-export:      afi ipv6.unicast to   AS48467   announce ANY
 mp-import:      afi ipv6.unicast from AS57043   accept   AS57043:AS-HOSTKEY-FI
@@ -2982,7 +2988,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-09-30T14:01:54Z
+last-modified:  2026-10-06T14:01:55Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3468,6 +3474,7 @@ remarks:        201624 - 64717
 remarks:        198037 - 64718
 remarks:        219121 - 64719
 remarks:        154320 - 64720
+remarks:        201097 - 64721
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -5053,6 +5060,10 @@ import:         from AS219121  accept   AS219121:AS-CLOUFINITY
 export:         to   AS219121  announce AS-DATAIX
 import:         from AS154320  accept   AS154320:AS-ARRIGA-CDN
 export:         to   AS154320  announce AS-DATAIX
+import:         from AS201097  accept   AS201097
+export:         to   AS201097  announce AS-DATAIX
+import:         from AS51032   accept   AS-NEVOD
+export:         to   AS51032   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6657,6 +6668,10 @@ mp-import:      afi ipv6.unicast from AS219121  accept   AS219121:AS-CLOUFINITY
 mp-export:      afi ipv6.unicast to   AS219121  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS154320  accept   AS154320:AS-ARRIGA-CDN
 mp-export:      afi ipv6.unicast to   AS154320  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS201097  accept   AS201097
+mp-export:      afi ipv6.unicast to   AS201097  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS51032   accept   AS-NEVOD
+mp-export:      afi ipv6.unicast to   AS51032   announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6664,7 +6679,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-10-05T14:01:53Z
+last-modified:  2026-10-06T14:01:54Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

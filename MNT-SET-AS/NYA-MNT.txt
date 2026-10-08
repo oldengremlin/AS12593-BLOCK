@@ -58,6 +58,25 @@ remarks:        * To view the original object, please query the RIPE Database at
 remarks:        * http://www.ripe.net/whois
 remarks:        ****************************
 
+as-set:         AS200993:AS-OUR
+descr:          AS-SET for our core networks (for downstreams, please, call AS200993:AS-POP:AS-{iata}).
+members:        AS200993
+members:        AS199133
+tech-c:         DUMY-RIPE
+admin-c:        DUMY-RIPE
+notify:         ripe@nya.team
+mnt-by:         nya-mnt
+created:        2026-10-06T05:12:00Z
+last-modified:  2026-10-06T05:12:00Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
 as-set:         AS200993:AS-POP:AS-AMS
 tech-c:         DUMY-RIPE
 remarks:        /-/-/-/-/ Our AS /-/-/-/-/
@@ -107,8 +126,10 @@ mnt-by:         nya-mnt
 remarks:        Downstreams in Moscow, Russia (DME).
 members:        AS200993
 members:        AS199580
+members:        AS219297
+members:        AS218569:AS-PODRIL1AK2
 created:        2025-12-27T16:25:17Z
-last-modified:  2026-07-07T09:19:42Z
+last-modified:  2026-10-06T05:14:17Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -155,29 +176,31 @@ remarks:        ****************************
 
 aut-num:        AS199133
 as-name:        NyaEU
-descr:          NyaInfra - EU Zone
-remarks:        NyaInfra - EU Zone
-remarks:        Something for fun, no issues at all.
-remarks:        If you have some issues, contact abuse@nyanet.ru or your imposter.
-remarks:        Geofeed https://opengeofeed.org/feed/as199133.csv
+descr:          NyaStream
 org:            ORG-YB31-RIPE
 sponsoring-org: ORG-IL934-RIPE
-remarks:        =-=-=-=-=-=-=-=-=-=import, export, some stuffs=-=-=-=-=-=-=-=-=-=
+remarks:        /* NyaNet - downstreams */
+remarks:        /* This AS is used ONLY for downstreaming and cannot be an independent network. */
+remarks:        /* We strictly follow ASPA. If you receive a route leaked via this AS, please check that your ASPA does not authorize AS199133 as a provider and that ASPA validation is enabled on your side, then contact us with the prefix and the BGP large communities you see. */
+remarks:        /* If you see a prefix with AS199133 in the path that does not belong to this AS or its customers (not covered by AS199133:AS-NYAIP), it may mean our filters were not updated in time. Please contact us with the prefix and the AS path you see. */
+remarks:        /* ---------- Routing policy ---------- */
 import:         from AS200993 accept ANY
 export:         to AS200993 announce AS199133:AS-NYAIP
 mp-import:      afi ipv6.unicast from AS200993 accept ANY
 mp-export:      afi ipv6.unicast to AS200993 announce AS199133:AS-NYAIP
+remarks:        /* ---------- Abuse ---------- */
 abuse-c:        ACRO64200-RIPE
-remarks:        Use abuse-c for abuse reports instead of admin-c or tech-c.
-remarks:        Correspondence from traffic resellers may be ignored at all contact levels (abuse-c, admin-c, tech-c).
-remarks:        =-=-=-=-=-=-=-=-=-=END=-=-=-=-=-=-=-=-=-=
+remarks:        /* Use abuse-c for abuse reports instead of admin-c or tech-c. */
+remarks:        /* Correspondence from traffic resellers may be ignored at all contact levels (abuse-c, admin-c, tech-c). */
+remarks:        /* ---------- */
+remarks:        Geofeed https://opengeofeed.org/feed/as199133.csv
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         nya-mnt
 created:        2026-04-10T14:51:11Z
-last-modified:  2026-07-21T11:19:13Z
+last-modified:  2026-10-06T05:37:43Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -190,36 +213,45 @@ remarks:        ****************************
 aut-num:        AS200993
 as-name:        NyaCore
 descr:          NyaInfra - Core
-remarks:        NyaInfra - Core
-remarks:        Geofeed https://opengeofeed.org/feed/as200993.csv
 org:            ORG-YB31-RIPE
-remarks:        Upstreams (RU) // Live
-export:         to AS35598 announce AS200993:AS-POP:AS-DME
-export:         to AS61400 announce AS200993:AS-POP:AS-DME
-remarks:        Upstreams (BY) // ETA Unknown
-export:         to AS56740 announce AS200993:AS-POP:AS-MSQ
-remarks:        Upstreams (SE) // Live
-export:         to AS62255 announce AS200993:AS-POP:AS-ARN
-export:         to AS31500 announce AS200993:AS-POP:AS-ARN
-export:         to AS6939 announce AS200993:AS-POP:AS-ARN
-remarks:        Upstreams (NL) // Live
-export:         to AS213753 announce AS200993:AS-POP:AS-AMS
-remarks:        ---
-remarks:        ---
-remarks:        Downstreams (all)
-mp-import:      afi any.unicast from AS200993:AS-CORE accept AS200993:AS-CORE
-mp-export:      afi any.unicast to AS200993:AS-CORE announce ANY
-remarks:        ---
 sponsoring-org: ORG-IL934-RIPE
+remarks:
+remarks:        /* This network is the core for our downstreams. */
+remarks:        /* We control AS200993 (Core) and AS199133 (Edge / BYoIP / BYoAS zone). */
+remarks:        /* All other downstreams are in a free-transit zone. We do not judge their traffic unless we receive a court order or a letter from law enforcement agencies (Russia, Sweden). */
+remarks:
+remarks:        /* ---------- Upstreams (RU) // Live ---------- */
+export:         to AS35598 announce AS200993:AS-POP:AS-DME
+mp-export:      afi any.unicast to AS35598 announce AS200993:AS-POP:AS-DME
+export:         to AS61400 announce AS200993:AS-POP:AS-DME
+mp-export:      afi any.unicast to AS61400 announce AS200993:AS-POP:AS-DME
+remarks:        /* ---------- Upstreams (BY) // ETA Unknown ---------- */
+export:         to AS56740 announce AS200993:AS-POP:AS-MSQ
+mp-export:      afi any.unicast to AS56740 announce AS200993:AS-POP:AS-MSQ
+remarks:        /* ---------- Upstreams (SE) // Live ---------- */
+export:         to AS62255 announce AS200993:AS-POP:AS-ARN
+mp-export:      afi any.unicast to AS62255 announce AS200993:AS-POP:AS-ARN
+export:         to AS6939 announce AS200993:AS-POP:AS-ARN
+mp-export:      afi any.unicast to AS6939 announce AS200993:AS-POP:AS-ARN
+export:         to AS3399 announce AS200993:AS-POP:AS-ARN
+mp-export:      afi any.unicast to AS3399 announce AS200993:AS-POP:AS-ARN
+remarks:        /* ---------- Upstreams (NL) // Live ---------- */
+export:         to AS213753 announce AS200993:AS-POP:AS-AMS
+mp-export:      afi any.unicast to AS213753 announce AS200993:AS-POP:AS-AMS
+remarks:        /* ---------- Our ASNs ---------- */
+mp-import:      afi any.unicast from AS200993:AS-OUR accept AS200993:AS-OUR
+mp-export:      afi any.unicast to AS200993:AS-OUR announce ANY
+remarks:        /* ---------- */
+remarks:        Geofeed: https://opengeofeed.org/feed/as200993.csv
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 abuse-c:        ACRO60235-RIPE
-notify:         noc@nya.team
+notify:         ripe@nya.team
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         nya-mnt
 created:        2022-12-01T13:59:14Z
-last-modified:  2026-07-21T11:19:28Z
+last-modified:  2026-10-06T05:09:01Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

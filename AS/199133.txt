@@ -1,28 +1,30 @@
 aut-num:        AS199133
 as-name:        NyaEU
-descr:          NyaInfra - EU Zone
-remarks:        NyaInfra - EU Zone
-remarks:        Something for fun, no issues at all.
-remarks:        If you have some issues, contact abuse@nyanet.ru or your imposter.
-remarks:        Geofeed https://opengeofeed.org/feed/as199133.csv
+descr:          NyaStream
 org:            ORG-YB31-RIPE
 sponsoring-org: ORG-IL934-RIPE
-remarks:        =-=-=-=-=-=-=-=-=-=import, export, some stuffs=-=-=-=-=-=-=-=-=-=
+remarks:        /* NyaNet - downstreams */
+remarks:        /* This AS is used ONLY for downstreaming and cannot be an independent network. */
+remarks:        /* We strictly follow ASPA. If you receive a route leaked via this AS, please check that your ASPA does not authorize AS199133 as a provider and that ASPA validation is enabled on your side, then contact us with the prefix and the BGP large communities you see. */
+remarks:        /* If you see a prefix with AS199133 in the path that does not belong to this AS or its customers (not covered by AS199133:AS-NYAIP), it may mean our filters were not updated in time. Please contact us with the prefix and the AS path you see. */
+remarks:        /* ---------- Routing policy ---------- */
 import:         from AS200993 accept ANY
 export:         to AS200993 announce AS199133:AS-NYAIP
 mp-import:      afi ipv6.unicast from AS200993 accept ANY
 mp-export:      afi ipv6.unicast to AS200993 announce AS199133:AS-NYAIP
+remarks:        /* ---------- Abuse ---------- */
 abuse-c:        ACRO64200-RIPE
-remarks:        Use abuse-c for abuse reports instead of admin-c or tech-c.
-remarks:        Correspondence from traffic resellers may be ignored at all contact levels (abuse-c, admin-c, tech-c).
-remarks:        =-=-=-=-=-=-=-=-=-=END=-=-=-=-=-=-=-=-=-=
+remarks:        /* Use abuse-c for abuse reports instead of admin-c or tech-c. */
+remarks:        /* Correspondence from traffic resellers may be ignored at all contact levels (abuse-c, admin-c, tech-c). */
+remarks:        /* ---------- */
+remarks:        Geofeed https://opengeofeed.org/feed/as199133.csv
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         nya-mnt
 created:        2026-04-10T14:51:11Z
-last-modified:  2026-07-21T11:19:13Z
+last-modified:  2026-10-06T05:37:43Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -38,17 +40,17 @@ as-name:        NyaEU Yanislav Basiuk
 
 organisation:   ORG-YB31-RIPE
 org-name:       Yanislav Basiuk
-country:        RU
 org-type:       OTHER
+country:        RU
 address:        Dummy address for ORG-YB31-RIPE
 e-mail:         unread@ripe.net
+abuse-c:        ACRO60235-RIPE
 mnt-ref:        SBMT
 mnt-ref:        IP-RIPE
-abuse-c:        ACRO60235-RIPE
 mnt-ref:        nya-mnt
 mnt-by:         nya-mnt
 created:        2022-11-26T20:44:36Z
-last-modified:  2026-06-18T12:45:20Z
+last-modified:  2026-10-06T04:49:05Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
