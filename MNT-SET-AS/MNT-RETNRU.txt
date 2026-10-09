@@ -303,7 +303,6 @@ members:        AS-UCANET
 members:        AS-UGO
 members:        AS-UMLC
 members:        AS-UNETCOMRU
-members:        AS-UNITEDNET
 members:        AS-UNITEDNETS
 members:        AS-UNITELECOM-NET
 members:        AS-UNIVERSUMNET
@@ -329,6 +328,7 @@ members:        AS203273:AS-NETCRAFTERS
 members:        AS203456:AS-BORK
 members:        AS205014:AS-ITSAT
 members:        AS207239:AS-GIGNET
+members:        AS208502:AS-JSCDSC
 members:        AS208677:AS-CLOUDRU
 members:        AS21051:AS-ASTRUM
 members:        AS211914:AS-AERCA
@@ -577,7 +577,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:18:00Z
-last-modified:  2026-10-04T19:59:08Z
+last-modified:  2026-10-07T19:59:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -595,6 +595,7 @@ members:        AS-AEZA
 members:        AS-AKAMAI
 members:        AS-ARPNET61
 members:        AS-ARTPLANET
+members:        AS-ASVT
 members:        AS-ATLEX
 members:        AS-AVANTEL-SPB
 members:        AS-AVGA-TERRA
@@ -745,7 +746,6 @@ members:        AS-UBN
 members:        AS-UCANETV6
 members:        AS-UGO
 members:        AS-UMLC-V6
-members:        AS-UNITEDNET
 members:        AS-UNITEDNETS
 members:        AS-UNIVERSUMNET-V6
 members:        AS-UTEL-K
@@ -761,6 +761,7 @@ members:        AS-ZVEZDATEL
 members:        AS139057:AS-CONE
 members:        AS198310:AS-MOLNIYA
 members:        AS203273:AS-NETCRAFTERS
+members:        AS208502:AS-JSCDSC
 members:        AS208677:AS-CLOUDRU
 members:        AS21051:AS-ASTRUM
 members:        AS215307:AS-MOVETEL-CUSTOMERS
@@ -847,7 +848,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2024-07-26T16:19:58Z
-last-modified:  2026-10-01T19:59:09Z
+last-modified:  2026-10-07T19:59:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1748,8 +1749,6 @@ import:         from  AS39087 action pref=100; accept   AS-PAKT
 export:         to    AS39087                  announce ANY
 import:         from  AS39092 action pref=100; accept   AS39092
 export:         to    AS39092                  announce ANY
-import:         from  AS39134 action pref=100; accept   AS-UNITEDNET
-export:         to    AS39134                  announce ANY
 import:         from  AS39143 action pref=100; accept   AS-BSH2
 export:         to    AS39143                  announce ANY
 import:         from  AS39317 action pref=100; accept   AS39317
@@ -2494,6 +2493,8 @@ import:         from AS208349 action pref=100; accept   AS-O2CLOUD
 export:         to   AS208349                  announce ANY
 import:         from AS208411 action pref=100; accept   AS208411
 export:         to   AS208411                  announce ANY
+import:         from AS208502 action pref=100; accept   AS208502:AS-JSCDSC
+export:         to   AS208502                  announce ANY
 import:         from AS208577 action pref=100; accept   AS208577
 export:         to   AS208577                  announce ANY
 import:         from AS208640 action pref=100; accept   AS208640
@@ -2643,6 +2644,8 @@ mp-import:      afi ipv6.unicast from   AS8641 action pref=100; accept   AS-NAUK
 mp-export:      afi ipv6.unicast to     AS8641                  announce ANY
 mp-import:      afi ipv6.unicast from   AS8732 action pref=100; accept   AS-COMCOR
 mp-export:      afi ipv6.unicast to     AS8732                  announce ANY
+mp-import:      afi ipv6.unicast from   AS8752 action pref=100; accept   AS-ASVT
+mp-export:      afi ipv6.unicast to     AS8752                  announce ANY
 mp-import:      afi ipv6.unicast from   AS8985 action pref=100; accept   AS-MSK-IX-SERVICES
 mp-export:      afi ipv6.unicast to     AS8985                  announce ANY
 mp-import:      afi ipv6.unicast from   AS9002 action pref=200; accept   ANY
@@ -2773,8 +2776,6 @@ mp-import:      afi ipv6.unicast from  AS39046 action pref=100; accept   AS-THEO
 mp-export:      afi ipv6.unicast to    AS39046                  announce ANY
 mp-import:      afi ipv6.unicast from  AS39087 action pref=100; accept   AS39087
 mp-export:      afi ipv6.unicast to    AS39087                  announce ANY
-mp-import:      afi ipv6.unicast from  AS39134 action pref=100; accept   AS-UNITEDNET
-mp-export:      afi ipv6.unicast to    AS39134                  announce ANY
 mp-import:      afi ipv6.unicast from  AS39143 action pref=100; accept   AS-BSH2
 mp-export:      afi ipv6.unicast to    AS39143                  announce ANY
 mp-import:      afi ipv6.unicast from  AS39577 action pref=100; accept   AS39577
@@ -3145,6 +3146,8 @@ mp-import:      afi ipv6.unicast from AS208349 action pref=100; accept   AS-O2CL
 mp-export:      afi ipv6.unicast to   AS208349                  announce ANY
 mp-import:      afi ipv6.unicast from AS208411 action pref=100; accept   AS208411
 mp-export:      afi ipv6.unicast to   AS208411                  announce ANY
+mp-import:      afi ipv6.unicast from AS208502 action pref=100; accept   AS208502:AS-JSCDSC
+mp-export:      afi ipv6.unicast to   AS208502                  announce ANY
 mp-import:      afi ipv6.unicast from AS208640 action pref=100; accept   AS208640
 mp-export:      afi ipv6.unicast to   AS208640                  announce ANY
 mp-import:      afi ipv6.unicast from AS208677 action pref=100; accept   AS208677:AS-CLOUDRU
@@ -3220,7 +3223,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-10-04T19:59:08Z
+last-modified:  2026-10-07T19:59:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

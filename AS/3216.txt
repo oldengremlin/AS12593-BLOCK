@@ -1814,6 +1814,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS218566 action pref=100; accept AS218566:AS-VFBANK
+export:         to AS218566 announce {0.0.0.0/0}
 import:         from AS41718 action pref=100; accept AS41718
 export:         to AS41718 announce ANY
 import:         from AS44988 action pref=100; accept AS-KOVROV
@@ -4899,8 +4901,6 @@ import:         from AS59667 action pref=100; accept AS59667
 export:         to AS59667 announce ANY
 import:         from AS42526 action pref=100; accept AS-COMCOMSYS
 export:         to AS42526 announce ANY
-import:         from AS50671 action pref=100; accept AS50671
-export:         to AS50671 announce ANY
 import:         from AS34639 action pref=100; accept AS34639
 export:         to AS34639 announce ANY
 import:         from AS31503 action pref=100; accept AS31503
@@ -6089,7 +6089,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-10-05T10:20:04Z
+last-modified:  2026-10-07T12:37:36Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
