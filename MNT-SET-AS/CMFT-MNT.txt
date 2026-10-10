@@ -158,12 +158,13 @@ members:        AS213922
 members:        AS214887
 members:        AS215425
 members:        AS216236
+members:        AS218492
 tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 notify:         noc@comfortel.pro
 mnt-by:         CMFT-MNT
 created:        2021-04-20T09:21:21Z
-last-modified:  2026-09-28T06:44:23Z
+last-modified:  2026-10-08T08:23:22Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -258,6 +259,7 @@ remarks:        56534:1070 Receieved from Kazakhtelecom
 remarks:        56534:9900 Recieved from Downlinks in KZ
 remarks:        56534:9000 Origin in KZ
 remarks:        Blackhole community for downstreams peers 56534:6666
+remarks:        Backup community for downstreams peers 56534:9966 set minimum local-pref for our network
 remarks:        Other communities are accepted but ignored.
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -265,7 +267,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
 created:        2023-07-03T11:11:42Z
-last-modified:  2026-08-25T07:59:32Z
+last-modified:  2026-10-08T07:38:07Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1183,6 +1185,8 @@ import:         from AS215425 action pref=130; accept AS215425
 export:         to AS215425 announce ANY
 import:         from AS216236 action pref=130; accept AS216236
 export:         to AS216236 announce ANY
+import:         from AS218492 action pref=130; accept AS218492
+export:         to AS218492 announce ANY
 remarks:        --- IPv6 Routing Policy ---
 remarks:        --- UPSTREAMS ---
 mp-import:      afi ipv6.unicast from AS3267 action pref=105; accept AS-ANY
@@ -1280,7 +1284,7 @@ notify:         noc@comfortel.pro
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CMFT-MNT
 created:        2011-03-11T14:49:01Z
-last-modified:  2026-09-28T06:45:11Z
+last-modified:  2026-10-08T08:24:50Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
