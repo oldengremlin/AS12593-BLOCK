@@ -15,6 +15,56 @@ export:         to AS3216 announce AS50022:AS-ORIONNET
 mp-export:      afi ipv6.unicast to AS3216 announce AS50022:AS-ORIONNET;
 mp-export:      afi ipv6.unicast to AS50427 announce AS50022;
 mp-export:      afi ipv6.unicast to AS50427 announce AS50022:AS-ORIONNET;
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Communities for prefix classification (Intro)
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Classification prefix (Upstream and Clients)
+remarks:        | 1 - Upstreams
+remarks:        | 5 - Customers
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Communities for prefix classification from UPSTREAMS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 50022:1001 - TTK (AS20485)
+remarks:        | 50022:1002 - Orionnet ABK (AS50427)
+remarks:        | 50022:1003 - Beeline (AS3216)
+remarks:        | 50022:1000 - All Upstreams
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Communities for prefix control (Intro)
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Customers may control prefixes that they announce
+remarks:        | to Orion telecom by eBGP.
+remarks:        | You can use communities that prepend prefix path
+remarks:        | with additional AS hops or deny it announcement to
+remarks:        | any Upstream or Peer. To prepand or deny prefix
+remarks:        | use 50022:DNNA, where:
+remarks:        | D - destination of the prepend or deny action:
+remarks:        | 1 - Upstreams, 2 - IX, 3 - Peerings, 5 - Customers
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Communities for prefix control to UPSTREAMS
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | 50022:101x - TTK (AS20485)
+remarks:        | 50022:102x - Orionnet ABK (AS50427)
+remarks:        | 50022:103x - Beeline (AS3216)
+remarks:        | 50022:199x - All Upstreams
+remarks:        | x = 0 - do not announce
+remarks:        | x = 1 to 6 - prepend 50022 (1 to 6) times
+remarks:        +-------------------------------------------------------------------------------+
+remarks:
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Backup Community
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | Default local preference is 110
+remarks:        | 50022:666 - Blackhole
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        +-------------------------------------------------------------------------------+
+remarks:        | We filter inbound prefixes smaller than /24
+remarks:        | Looking-glass: https://lg.orionnet.ru/
+remarks:        +-------------------------------------------------------------------------------+
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -22,7 +72,7 @@ notify:         hostmanager@orionnet.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ORIONMNSK-MNT
 created:        2009-10-28T09:59:05Z
-last-modified:  2026-01-20T08:25:23Z
+last-modified:  2026-10-09T06:30:11Z
 source:         RIPE
 sponsoring-org: ORG-MNL1-RIPE
 remarks:        ****************************
