@@ -1000,6 +1000,8 @@ members:        AS50015
 members:        AS-ANNET
                 # from AS50157:
 members:        AS50157
+                # from AS50158:
+members:        AS50158
                 # from AS50187:
 members:        AS-BWC
                 # from AS50241:
@@ -1471,7 +1473,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-10-02T13:45:28Z
+last-modified:  2026-10-12T10:11:15Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -6270,6 +6272,9 @@ import:         from AS50060
 import:         from AS50157
                 action pref=100;
                 accept AS50157
+import:         from AS50158
+                action pref=100;
+                accept AS50158
 import:         from AS50187
                 action pref=100;
                 accept AS-BWC
@@ -7576,6 +7581,8 @@ export:         to AS50060
                 announce AS-MSKROUTESERVER
 export:         to AS50157
                 announce AS-MSKROUTESERVER
+export:         to AS50158
+                announce AS-MSKROUTESERVER
 export:         to AS50187
                 announce AS-MSKROUTESERVER
 export:         to AS50241
@@ -8025,7 +8032,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-10-02T13:45:28Z
+last-modified:  2026-10-12T10:11:16Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
