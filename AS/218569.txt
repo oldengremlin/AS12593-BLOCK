@@ -152,17 +152,11 @@ export:         to AS200993 announce ANY
 mp-import:      afi ipv6.unicast from AS200993 accept AS200993:AS-POP:AS-AMS
 mp-export:      afi ipv6.unicast to AS200993 announce ANY
 remarks:
-remarks:        Verkut - Amsterdam
-import:         from AS218464 accept AS218464
-export:         to AS218464 announce ANY
-mp-import:      afi ipv6.unicast from AS218464 accept AS218464
-mp-export:      afi ipv6.unicast to AS218464 announce ANY
-remarks:
 remarks:        ============================================================
 remarks:        Internet Exchanges
 remarks:        ============================================================
 remarks:
-remarks:        INTERIX - Amsterdam (RS1 and RS2)
+remarks:        INTERIX - Amsterdam
 import:         from AS56584 accept AS56584:AS-INTERIX
 export:         to AS56584 announce AS218569:AS-PODRIL1AK2
 mp-import:      afi ipv6.unicast from AS56584 accept AS56584:AS-INTERIX
@@ -173,6 +167,12 @@ import:         from AS31561 accept AS31561:AS-MEMBERS
 export:         to AS31561 announce AS218569:AS-PODRIL1AK2
 mp-import:      afi ipv6.unicast from AS31561 accept AS31561:AS-MEMBERS
 mp-export:      afi ipv6.unicast to AS31561 announce AS218569:AS-PODRIL1AK2
+remarks:
+remarks:        Kawaii IX - Amsterdam
+import:         from AS203023 accept ANY
+export:         to AS203023 announce AS218569:AS-PODRIL1AK2
+mp-import:      afi ipv6.unicast from AS203023 accept ANY
+mp-export:      afi ipv6.unicast to AS203023 announce AS218569:AS-PODRIL1AK2
 remarks:
 remarks:        EVIX - Amsterdam and Fremont
 import:         from AS137933 accept AS-EVIX
@@ -212,7 +212,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-09-28T06:20:55Z
-last-modified:  2026-10-11T11:29:30Z
+last-modified:  2026-10-13T17:14:47Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

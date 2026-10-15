@@ -1290,6 +1290,8 @@ members:        AS199624:AS-DKTEL
 members:        AS-ATLEX
                 # from AS199730:
 members:        AS199730:AS-MSTLC
+                # from AS199820:
+members:        AS199820
                 # from AS199961:
 members:        AS199961:AS-MULTSYS
                 # from AS200044:
@@ -1473,7 +1475,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-10-12T10:11:15Z
+last-modified:  2026-10-13T10:10:56Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -6707,6 +6709,9 @@ import:         from AS199669
 import:         from AS199730
                 action pref=100;
                 accept AS199730:AS-MSTLC
+import:         from AS199820
+                action pref=100;
+                accept AS199820
 import:         from AS199961
                 action pref=100;
                 accept AS199961:AS-MULTSYS
@@ -7871,6 +7876,8 @@ export:         to AS199669
                 announce AS-MSKROUTESERVER
 export:         to AS199730
                 announce AS-MSKROUTESERVER
+export:         to AS199820
+                announce AS-MSKROUTESERVER
 export:         to AS199961
                 announce AS-MSKROUTESERVER
 export:         to AS200044
@@ -8032,7 +8039,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-10-12T10:11:16Z
+last-modified:  2026-10-13T10:10:57Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
