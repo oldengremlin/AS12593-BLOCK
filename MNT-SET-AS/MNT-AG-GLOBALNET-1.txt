@@ -115,10 +115,8 @@ members:        AS201097
 members:        AS-UNITELECOM-NET
 members:        AS41718
 members:        AS-CREANOVA
-members:        AS215106:AS-SISZ
 members:        AS-PROXIMANET-RU
 members:        AS203273:AS-NETCRAFTERS
-members:        AS215167:AS-LAHTAINET
 members:        AS-DOCKER
 members:        AS38984
 members:        AS-BIZTEL
@@ -265,7 +263,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2008-08-19T12:40:08Z
-last-modified:  2026-10-13T14:01:58Z
+last-modified:  2026-10-14T14:01:57Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -330,7 +328,6 @@ members:        AS-DHUB
 members:        AS50952
 members:        AS201097
 members:        AS-CREANOVA
-members:        AS215106:AS-SISZ
 members:        AS-DOCKER
 members:        AS38984
 members:        AS-BIZTEL
@@ -393,7 +390,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2017-10-10T12:33:20Z
-last-modified:  2026-10-13T14:01:59Z
+last-modified:  2026-10-14T14:01:58Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -899,6 +896,8 @@ import:         from AS48989   accept   AS48989:AS-IQM
 export:         to   AS48989   announce ANY
 import:         from AS207168  accept   AS207168:AS-BTTELECOM
 export:         to   AS207168  announce ANY
+import:         from AS44927   accept   AS-TMPK
+export:         to   AS44927   announce ANY
 import:         from AS47122   accept   AS47122:AS-CYBERFIRST
 export:         to   AS47122   announce ANY
 import:         from AS202486  accept   AS-SKYTELECOM_TSK
@@ -959,8 +958,6 @@ import:         from AS211613  accept   AS-MS-S
 export:         to   AS211613  announce ANY
 import:         from AS43278   accept   AS43278
 export:         to   AS43278   announce ANY
-import:         from AS215106  accept   AS215106:AS-SISZ
-export:         to   AS215106  announce ANY
 import:         from AS25437   accept   AS25437
 export:         to   AS25437   announce ANY
 import:         from AS57363   accept   AS-CDNVIDEO
@@ -1003,8 +1000,6 @@ import:         from AS43317   accept   AS-RNET
 export:         to   AS43317   announce ANY
 import:         from AS57583   accept   AS57583
 export:         to   AS57583   announce ANY
-import:         from AS215167  accept   AS215167:AS-LAHTAINET
-export:         to   AS215167  announce ANY
 import:         from AS50538   accept   AS-PETROSVYAZ
 export:         to   AS50538   announce ANY
 import:         from AS35807   accept   AS-SKYNET
@@ -1229,8 +1224,6 @@ import:         from AS47196   accept   AS47196
 export:         to   AS47196   announce ANY
 import:         from AS43521   accept   AS43521
 export:         to   AS43521   announce ANY
-import:         from AS44927   accept   AS-TMPK
-export:         to   AS44927   announce ANY
 import:         from AS51219   accept   AS-CROC
 export:         to   AS51219   announce ANY
 import:         from AS207353  accept   AS207353
@@ -1311,8 +1304,6 @@ mp-import:      afi ipv6.unicast from AS47481   accept   AS-LMHD
 mp-export:      afi ipv6.unicast to   AS47481   announce ANY
 mp-import:      afi ipv6.unicast from AS47481   accept   AS47481
 mp-export:      afi ipv6.unicast to   AS47481   announce ANY
-mp-import:      afi ipv6.unicast from AS215106  accept   AS215106:AS-SISZ
-mp-export:      afi ipv6.unicast to   AS215106  announce ANY
 mp-import:      afi ipv6.unicast from AS50113   accept   AS-NTX
 mp-export:      afi ipv6.unicast to   AS50113   announce ANY
 mp-import:      afi ipv6.unicast from AS51092   accept   AS-TVIPMEDIA
@@ -1681,8 +1672,6 @@ import:         from AS47542 accept   AS47542
 export:         to   AS47542   announce AS-GLOBAL-IX
 import:         from AS48257   accept   AS-SATNETSPB
 export:         to   AS48257   announce AS-GLOBAL-IX
-import:         from AS215106  accept   AS215106:AS-SISZ
-export:         to   AS215106  announce AS-GLOBAL-IX
 import:         from AS42632   accept   AS-MNOGOBYTE
 export:         to   AS42632   announce AS-GLOBAL-IX
 import:         from AS47211   accept   AS-KOLPINONET
@@ -1981,8 +1970,6 @@ import:         from AS39102   accept   AS42065
 export:         to   AS39102   announce AS-GLOBAL-IX
 import:         from AS43727   accept   AS-SETKT
 export:         to   AS43727   announce AS-GLOBAL-IX
-import:         from AS50304   accept   AS-BLIX
-export:         to   AS50304   announce AS-GLOBAL-IX
 import:         from AS57354   accept   AS-SYSTEMA
 export:         to   AS57354   announce AS-GLOBAL-IX
 import:         from AS22697   accept   AS-ROBLOX
@@ -2335,8 +2322,6 @@ mp-import:      afi ipv6.unicast from AS47542   accept   AS47542
 mp-export:      afi ipv6.unicast to   AS47542   announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS48257   accept   AS-SATNETSPB
 mp-export:      afi ipv6.unicast to   AS48257   announce AS-GLOBAL-IX
-mp-import:      afi ipv6.unicast from AS215106  accept   AS215106:AS-SISZ
-mp-export:      afi ipv6.unicast to   AS215106  announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS42632   accept   AS-MNOGOBYTE
 mp-export:      afi ipv6.unicast to   AS42632   announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS47211   accept   AS-KOLPINONET
@@ -2635,8 +2620,6 @@ mp-import:      afi ipv6.unicast from AS39102   accept   AS42065
 mp-export:      afi ipv6.unicast to   AS39102   announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS43727   accept   AS-SETKT
 mp-export:      afi ipv6.unicast to   AS43727   announce AS-GLOBAL-IX
-mp-import:      afi ipv6.unicast from AS50304   accept   AS-BLIX
-mp-export:      afi ipv6.unicast to   AS50304   announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS57354   accept   AS-SYSTEMA
 mp-export:      afi ipv6.unicast to   AS57354   announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS22697   accept   AS-ROBLOX
@@ -3000,7 +2983,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-10-13T06:31:08Z
+last-modified:  2026-10-14T14:01:56Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3490,6 +3473,7 @@ remarks:        213461 - 64722
 remarks:        203597 - 64723
 remarks:        218764 - 64724
 remarks:        198358 - 64725
+remarks:        218798 - 64726
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -3725,8 +3709,6 @@ import:         from AS39087   accept   AS-PAKT
 export:         to   AS39087   announce AS-DATAIX
 import:         from AS39102   accept   AS-ATHM
 export:         to   AS39102   announce AS-DATAIX
-import:         from AS39134   accept   AS-UNITEDNET
-export:         to   AS39134   announce AS-DATAIX
 import:         from AS39493   accept   AS-KSTV
 export:         to   AS39493   announce AS-DATAIX
 import:         from AS39785   accept   AS-MULTINET
@@ -3859,8 +3841,6 @@ import:         from AS48399   accept   AS-LINXDATACENTER
 export:         to   AS48399   announce AS-DATAIX
 import:         from AS48416   accept   AS-INFOLAN
 export:         to   AS48416   announce AS-DATAIX
-import:         from AS48648   accept   AS-KLNK
-export:         to   AS48648   announce AS-DATAIX
 import:         from AS48654   accept   AS-BALNET
 export:         to   AS48654   announce AS-DATAIX
 import:         from AS48919   accept   AS-UACITY
@@ -3873,8 +3853,6 @@ import:         from AS49136   accept   AS-TELENET-NET
 export:         to   AS49136   announce AS-DATAIX
 import:         from AS49218   accept   AS-NTKS
 export:         to   AS49218   announce AS-DATAIX
-import:         from AS215106  accept   AS215106:AS-SISZ
-export:         to   AS215106  announce AS-DATAIX
 import:         from AS49368   accept   AS-DOMOLAN
 export:         to   AS49368   announce AS-DATAIX
 import:         from AS49505   accept   AS-SELECTEL
@@ -4465,6 +4443,8 @@ import:         from AS16342   accept   AS-TOYA
 export:         to   AS16342   announce AS-DATAIX
 import:         from AS211399  accept   AS211399
 export:         to   AS211399  announce AS-DATAIX
+import:         from AS48648   accept   AS-KLNK
+export:         to   AS48648   announce AS-DATAIX
 import:         from AS62206   accept   AS-PITLINE
 export:         to   AS62206   announce AS-DATAIX
 import:         from AS202838  accept   AS-ICOM
@@ -4789,8 +4769,6 @@ import:         from AS202799  accept   AS202799:AS-MDLD
 export:         to   AS202799  announce AS-DATAIX
 import:         from AS49641   accept   AS-ALFACOM
 export:         to   AS49641   announce AS-DATAIX
-import:         from AS46427   accept   AS-SFINNOV
-export:         to   AS46427   announce AS-DATAIX
 import:         from AS51592   accept   AS51592
 export:         to   AS51592   announce AS-DATAIX
 import:         from AS212781  accept   AS212781:AS-HYPERCON
@@ -4887,8 +4865,6 @@ import:         from AS202831  accept   AS202831:AS-ALL
 export:         to   AS202831  announce AS-DATAIX
 import:         from AS50538   accept   AS-PETROSVYAZ
 export:         to   AS50538   announce AS-DATAIX
-import:         from AS34565   accept   AS34565:AS-TURKIX
-export:         to   AS34565   announce AS-DATAIX
 import:         from AS56741   accept   AS56741
 export:         to   AS56741   announce AS-DATAIX
 import:         from AS211101  accept   AS211101:AS-TERCOMRU
@@ -5089,6 +5065,8 @@ import:         from AS198358  accept   AS198358:AS-KAT
 export:         to   AS198358  announce AS-DATAIX
 import:         from AS34832   accept   AS-NOVOSYSTEM
 export:         to   AS34832   announce AS-DATAIX
+import:         from AS218798  accept   AS218798
+export:         to   AS218798  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -5315,8 +5293,6 @@ mp-import:      afi ipv6.unicast from AS39087   accept   AS-PAKT
 mp-export:      afi ipv6.unicast to   AS39087   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS39102   accept   AS-ATHM
 mp-export:      afi ipv6.unicast to   AS39102   announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS39134   accept   AS-UNITEDNET
-mp-export:      afi ipv6.unicast to   AS39134   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS39493   accept   AS-KSTV
 mp-export:      afi ipv6.unicast to   AS39493   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS39785   accept   AS-MULTINET
@@ -5449,8 +5425,6 @@ mp-import:      afi ipv6.unicast from AS48399   accept   AS-LINXDATACENTER
 mp-export:      afi ipv6.unicast to   AS48399   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS48416   accept   AS-INFOLAN
 mp-export:      afi ipv6.unicast to   AS48416   announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS48648   accept   AS-KLNK-V6
-mp-export:      afi ipv6.unicast to   AS48648   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS48654   accept   AS-BALNET
 mp-export:      afi ipv6.unicast to   AS48654   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS48919   accept   AS-UACITY
@@ -5463,8 +5437,6 @@ mp-import:      afi ipv6.unicast from AS49136   accept   AS-TELENET-NET
 mp-export:      afi ipv6.unicast to   AS49136   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS49218   accept   AS-NTKS
 mp-export:      afi ipv6.unicast to   AS49218   announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS215106  accept   AS215106:AS-SISZ
-mp-export:      afi ipv6.unicast to   AS215106  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS49368   accept   AS-DOMOLAN
 mp-export:      afi ipv6.unicast to   AS49368   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS49505   accept   AS-SELECTEL
@@ -5919,8 +5891,6 @@ mp-import:      afi ipv6.unicast from AS49770   accept   AS49770
 mp-export:      afi ipv6.unicast to   AS49770   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS9123    accept   AS-TIMEWEB
 mp-export:      afi ipv6.unicast to   AS9123    announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS48648   accept   AS-KLNK
-mp-export:      afi ipv6.unicast to   AS48648   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS56690   accept   AS-VNET-LLC
 mp-export:      afi ipv6.unicast to   AS56690   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS200612  accept   AS-SETGBI
@@ -6065,6 +6035,8 @@ mp-import:      afi ipv6.unicast from AS16342   accept   AS-TOYA
 mp-export:      afi ipv6.unicast to   AS16342   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS211399  accept   AS211399
 mp-export:      afi ipv6.unicast to   AS211399  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS48648   accept   AS-KLNK-V6
+mp-export:      afi ipv6.unicast to   AS48648   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62206   accept   AS-PITLINE-V6
 mp-export:      afi ipv6.unicast to   AS62206   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS202838  accept   AS-ICOM
@@ -6401,8 +6373,6 @@ mp-import:      afi ipv6.unicast from AS202799  accept   AS202799:AS-MDLD
 mp-export:      afi ipv6.unicast to   AS202799  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS49641   accept   AS-ALFACOM
 mp-export:      afi ipv6.unicast to   AS49641   announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS46427   accept   AS-SFINNOV
-mp-export:      afi ipv6.unicast to   AS46427   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS51592   accept   AS51592
 mp-export:      afi ipv6.unicast to   AS51592   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS212781  accept   AS212781:AS-HYPERCON
@@ -6499,8 +6469,6 @@ mp-import:      afi ipv6.unicast from AS202831  accept   AS202831:AS-ALL
 mp-export:      afi ipv6.unicast to   AS202831  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS50538   accept   AS-PETROSVYAZ
 mp-export:      afi ipv6.unicast to   AS50538   announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS34565   accept   AS34565:AS-TURKIX
-mp-export:      afi ipv6.unicast to   AS34565   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS56741   accept   AS56741
 mp-export:      afi ipv6.unicast to   AS56741   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS211101  accept   AS211101:AS-TERCOMRU
@@ -6707,6 +6675,8 @@ mp-import:      afi ipv6.unicast from AS198358  accept   AS198358:AS-KAT
 mp-export:      afi ipv6.unicast to   AS198358  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS34832   accept   AS-NOVOSYSTEM
 mp-export:      afi ipv6.unicast to   AS34832   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS218798  accept   AS218798
+mp-export:      afi ipv6.unicast to   AS218798  announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6714,7 +6684,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-10-13T14:01:56Z
+last-modified:  2026-10-14T14:01:54Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

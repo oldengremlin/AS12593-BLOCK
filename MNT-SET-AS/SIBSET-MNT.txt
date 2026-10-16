@@ -352,6 +352,8 @@ import:         from AS31133 action pref=100; accept ANY
 export:         to AS31133 announce AS-SIBSET
 import:         from AS3216 action pref=100; accept ANY
 export:         to AS3216 announce AS-SIBSET
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS-SIBSET
 remarks:        ------ Customers -------
 import:         from AS15508 action pref=200; accept AS15508
 export:         to AS15508 announce ANY
@@ -389,6 +391,8 @@ remarks:        ------ IPv6 -------
 remarks:        ----- Upstreams -----
 mp-import:      afi ipv6.unicast from AS31133 accept ANY
 mp-export:      afi ipv6.unicast to AS31133 announce AS-SIBSET
+mp-import:      afi ipv6.unicast from AS3216 accept ANY
+mp-export:      afi ipv6.unicast to AS3216 announce AS-SIBSET
 remarks:        ------ Peers -------
 mp-import:      afi ipv6.unicast from as42403 action pref=200; accept AS-NSKROUTESERVER
 mp-export:      afi ipv6.unicast to as42403 announce AS-SIBSET
@@ -402,7 +406,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SIBSET-MNT
 created:        2005-03-30T11:11:43Z
-last-modified:  2026-06-05T04:38:48Z
+last-modified:  2026-10-14T01:53:41Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
