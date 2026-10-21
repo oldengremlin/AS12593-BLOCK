@@ -463,6 +463,7 @@ members:        AS-WBT
 remarks:
 remarks:        Moscow and other regs Nets
 remarks:
+members:        AS51685:AS-Micron-Media
 members:        AS34887
 members:        AS-KOVROV
 members:        AS3335
@@ -1715,7 +1716,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-10-13T09:12:31Z
+last-modified:  2026-10-19T08:34:34Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1751,6 +1752,7 @@ remarks:        ****************************
 as-set:         AS-SOVAM-V6
 descr:          Sovintel IPv6 customers
 remarks:
+members:        AS51685:AS-Micron-Media-V6
 members:        AS203597
 members:        AS203753:AS-VOLGADC
 members:        AS-R-LINE
@@ -2138,7 +2140,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-10-05T10:19:23Z
+last-modified:  2026-10-19T08:35:05Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5502,6 +5504,10 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS51685 action pref=100; accept AS51685:AS-Micron-Media
+export:         to AS51685 announce ANY
+mp-import:      from AS51685 action pref=100; accept AS51685:AS-Micron-Media-V6
+mp-export:      to AS51685 announce ANY
 import:         from AS34887 action pref=100; accept AS34887
 export:         to AS34887 announce ANY
 import:         from AS218566 action pref=100; accept AS218566:AS-VFBANK
@@ -9785,7 +9791,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-10-13T09:11:19Z
+last-modified:  2026-10-19T08:33:47Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

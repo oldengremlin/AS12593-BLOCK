@@ -1814,6 +1814,10 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS51685 action pref=100; accept AS51685:AS-Micron-Media
+export:         to AS51685 announce ANY
+mp-import:      from AS51685 action pref=100; accept AS51685:AS-Micron-Media-V6
+mp-export:      to AS51685 announce ANY
 import:         from AS34887 action pref=100; accept AS34887
 export:         to AS34887 announce ANY
 import:         from AS218566 action pref=100; accept AS218566:AS-VFBANK
@@ -6097,7 +6101,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-10-13T09:11:19Z
+last-modified:  2026-10-19T08:33:47Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
