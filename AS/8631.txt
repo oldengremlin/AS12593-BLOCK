@@ -1178,6 +1178,9 @@ import:         from AS57614
 import:         from AS57629
                 action pref=100;
                 accept AS57629
+import:         from AS57711
+                action pref=100;
+                accept AS57711
 import:         from AS57724
                 action pref=100;
                 accept AS-DDOS-GUARD
@@ -2428,6 +2431,8 @@ export:         to AS57614
                 announce AS-MSKROUTESERVER
 export:         to AS57629
                 announce AS-MSKROUTESERVER
+export:         to AS57711
+                announce AS-MSKROUTESERVER
 export:         to AS57724
                 announce AS-MSKROUTESERVER
 export:         to AS57753
@@ -2749,7 +2754,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-10-19T13:42:24Z
+last-modified:  2026-10-20T09:42:01Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
