@@ -158,6 +158,9 @@ members:        AS196750
 members:        AS198580
 members:        AS201499
 members:        AS203387
+members:        AS202425
+members:        AS218916
+members:        AS44854
 members:        AS-MNT
 members:        AS199651:AS-CLOUDTRANSIT
 members:        AS207056
@@ -187,6 +190,7 @@ members:        AS51596
 members:        AS-RSMEDIA
 members:        AS-CASTLES
 members:        AS-IFOG
+members:        AS62403:AS-PLETX
 members:        AS54985
 members:        AS47122:AS-CYBERFIRST
 members:        AS57073
@@ -675,7 +679,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 created:        2017-11-18T18:58:06Z
-last-modified:  2026-10-19T14:36:23Z
+last-modified:  2026-10-22T15:16:19Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1069,6 +1073,7 @@ members:        AS-QUARTZ
 members:        AS61433
 members:        AS-IPV
 members:        AS55285:AS-ALL
+members:        AS62403:AS-PLETX
 members:        AS213641:AS-ALL
 members:        AS-VLAN
 members:        AS39493
@@ -1129,6 +1134,7 @@ members:        AS-MELBICOM
 members:        AS-MASTERHOST-TRANSIT
 members:        AS42291:AS-ISTRANET
 members:        AS206810:AS-CUSTOMERS
+members:        AS218569:AS-PODRIL1AK2
 members:        AS-ERITAP
 members:        AS-AVK-COM
 members:        AS-UBN
@@ -1280,7 +1286,7 @@ mnt-by:         ru-piter-ix-1-mnt
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T23:05:11Z
-last-modified:  2026-10-21T17:28:55Z
+last-modified:  2026-10-22T15:17:19Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1524,8 +1530,12 @@ members:        AS203004
 members:        AS204720
 members:        AS205216
 members:        AS205226
+members:        AS44854
+members:        AS218916
+members:        AS202425
 members:        AS-C-CORP
 members:        AS207353
+members:        AS62403:AS-PLETX
 members:        AS-TMPK
 members:        AS47240
 members:        AS-ISP-EXSTREAM
@@ -2091,7 +2101,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2023-08-15T18:17:57Z
-last-modified:  2026-10-21T17:40:03Z
+last-modified:  2026-10-22T15:15:40Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -4172,6 +4182,8 @@ import:         from AS43278 action pref=100; accept AS-CASTLES
 export:         to AS43278 announce as-piter-ix-fra
 import:         from AS61307 action pref=100; accept AS61307
 export:         to AS61307 announce as-piter-ix-fra
+import:         from AS62403 action pref=100; accept AS62403:AS-PLETX
+export:         to AS62403 announce as-piter-ix-fra
 import:         from AS39709 action pref=100; accept AS-MARYNONET
 export:         to AS39709 announce as-piter-ix-fra
 import:         from AS57393 action pref=100; accept AS-VIVA-LLC
@@ -4224,6 +4236,8 @@ import:         from AS210552 action pref=100; accept AS210552
 export:         to AS210552 announce as-piter-ix-fra
 import:         from AS204576 action pref=100; accept AS204576
 export:         to AS204576 announce as-piter-ix-fra
+import:         from AS218569 action pref=100; accept AS218569:AS-PODRIL1AK2
+export:         to AS218569 announce as-piter-ix-fra
 import:         from AS204272 action pref=100; accept AS204272
 export:         to AS204272 announce as-piter-ix-fra
 import:         from AS48347 action pref=100; accept AS-MTW
@@ -4447,7 +4461,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 created:        2022-02-09T08:46:05Z
-last-modified:  2026-10-21T10:56:16Z
+last-modified:  2026-10-22T15:17:38Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -4793,6 +4807,8 @@ import:         from AS198610 action pref=100; accept AS-BEGET
 export:         to AS198610 announce as-piter-ix-msk
 import:         from AS6697 action pref=100; accept AS-BELPAK
 export:         to AS6697 announce as-piter-ix-msk
+import:         from AS62403 action pref=100; accept AS62403:AS-PLETX
+export:         to AS62403 announce as-piter-ix-msk
 import:         from AS51478 action pref=100; accept AS51478
 export:         to AS51478 announce as-piter-ix-msk
 import:         from AS35810 action pref=100; accept AS-BIGTELECOM
@@ -5763,7 +5779,7 @@ mnt-by:         PITER-IX-MNT
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         MNT-PIN
 created:        2020-01-15T13:11:49Z
-last-modified:  2026-10-19T14:38:04Z
+last-modified:  2026-10-22T15:16:00Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5791,6 +5807,8 @@ import:         from AS49732 action pref=100; accept AS49732
 export:         to AS49732 announce as-piter-ix
 import:         from AS198610 action pref=100; accept AS-BEGET
 export:         to AS198610 announce as-piter-ix
+import:         from AS62403 action pref=100; accept AS62403:AS-PLETX
+export:         to AS62403 announce as-piter-ix
 import:         from AS393905 action pref=100; accept AS55285:AS-ALL
 export:         to AS393905 announce as-piter-ix
 import:         from AS51478 action pref=100; accept AS51478
@@ -6898,7 +6916,7 @@ remarks:        201379 64743 214205 64744 215685 64745
 remarks:        219079 64746 210825 64747 209870 64748
 remarks:        218916 64749 210880 64750 213641 64751
 remarks:        213624 64752 202425 64753 202585 64754
-remarks:        214630 64755 203410 64756
+remarks:        214630 64755 203410 64756 218569 64757
 remarks:        }
 remarks:        [65100-65535] GID - group id
 remarks:        {
@@ -6938,7 +6956,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2026-10-19T14:36:48Z
+last-modified:  2026-10-22T15:16:58Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

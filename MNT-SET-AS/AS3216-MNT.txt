@@ -1,5 +1,6 @@
 as-set:         AS-DIRECTNET
 descr:          DirectNet Customers ASes
+members:        AS-23NET
 members:        AS43728
 members:        AS57214:AS-VID
 members:        AS-ATEL-LTD
@@ -92,7 +93,7 @@ notify:         noc@sovintel.ru
 mnt-by:         AS8563-MNT
 mnt-by:         AS3216-MNT
 created:        2001-10-22T07:11:15Z
-last-modified:  2026-10-21T09:45:51Z
+last-modified:  2026-10-22T13:12:35Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -306,6 +307,7 @@ members:        AS38928
 members:        AS211164
 members:        AS62293
 members:        AS206396
+members:        AS202248
 members:        AS-OLIMP
 members:        AS57073:AS-WILDBERRIES
 members:        AS60544
@@ -465,6 +467,8 @@ members:        AS-WBT
 remarks:
 remarks:        Moscow and other regs Nets
 remarks:
+members:        AS199184
+members:        AS198764
 members:        AS51685:AS-Micron-Media
 members:        AS34887
 members:        AS-KOVROV
@@ -888,6 +892,7 @@ members:        AS209684
 members:        AS31336
 members:        AS51213
 members:        AS12418
+members:        AS-ZL
 members:        as-ontelecom
 members:        AS200907
 members:        AS34479
@@ -1719,7 +1724,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-10-21T11:09:04Z
+last-modified:  2026-10-22T14:33:17Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5507,6 +5512,10 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS199183 action pref=100; accept AS199184
+export:         to AS199184 announce {0.0.0.0/0}
+import:         from AS198764 action pref=100; accept AS198764
+export:         to AS198764 announce AS-SOVAM
 import:         from AS51685 action pref=100; accept AS51685:AS-Micron-Media
 export:         to AS51685 announce ANY
 mp-import:      from AS51685 action pref=100; accept AS51685:AS-Micron-Media-V6
@@ -7269,6 +7278,8 @@ mp-import:      afi ipv6 from AS47764 action pref=100; accept AS-MAILRU6
 mp-export:      afi ipv6 to AS47764 announce ANY
 mp-import:      afi ipv6 from AS12418 action pref=100; accept AS12418
 mp-export:      afi ipv6 to AS12418 announce ANY
+import:         from AS41148 action pref=100; accept AS-ZL
+export:         to AS41148 announce ANY
 mp-import:      afi ipv6 from AS39150 action pref=100; accept AS-TRANSITTELECOM-V6
 mp-export:      afi ipv6 to AS39150 announce ANY
 mp-import:      afi ipv6 from AS56361 action pref=100; accept AS56361
@@ -8164,6 +8175,8 @@ import:         from AS200513 action pref=100; accept AS-STM-NVR
 export:         to AS200513 announce ANY
 mp-import:      from AS200513 action pref=100; accept AS-STM-NVR
 mp-export:      to AS200513 announce ANY
+import:         from AS202248 action pref=100; accept AS202248
+export:         to AS202248 announce ANY
 import:         from AS34777 action pref=100; accept AS34777
 export:         to AS34777 announce {0.0.0.0/0}
 import:         from AS199833 action pref=100; accept AS199833
@@ -9796,7 +9809,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-10-21T11:08:41Z
+last-modified:  2026-10-22T14:32:31Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
