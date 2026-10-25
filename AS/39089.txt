@@ -40,6 +40,10 @@ import:         from AS202279 accept AS202279:AS-KOMTEL
 export:         to AS202279 announce ANY
 import:         from AS20590 accept AS-ENTELE
 export:         to AS20590 announce ANY
+import:         from AS39529 at cr1-60 accept as-m3x
+export:         to AS39529 announce AS39089:AS-CUSTOMERS
+import:         from AS209747 at cr1-60 accept AS209747
+export:         to AS209747 announce { 0.0.0.0/0 } AND AS39089:AS-CUSTOMERS
 remarks:        -------------------------------------------
 remarks:        -=-=-=-CUSTOMERS END-=-=-=-
 remarks:        -------------------------------------------
@@ -50,7 +54,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         UGT-MNT
 mnt-by:         LEVEL-MSK-MNT
 created:        2018-08-21T12:12:33Z
-last-modified:  2026-07-21T11:01:31Z
+last-modified:  2026-10-23T12:11:31Z
 source:         RIPE
 sponsoring-org: ORG-LL304-RIPE
 remarks:        ****************************

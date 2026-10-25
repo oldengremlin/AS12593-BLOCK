@@ -222,9 +222,6 @@ remarks:
 import:         from AS28761 accept AS28761:AS-CUSTOMERS
 export:         to AS28761 announce AS-CRIMEA-IX
 remarks:
-import:         from AS6789 accept AS-CRELCOM
-export:         to AS6789 announce AS-CRIMEA-IX
-remarks:
 import:         from AS12507 accept AS-SWIFT-TRACE
 export:         to AS12507 announce AS-CRIMEA-IX
 remarks:
@@ -245,6 +242,12 @@ export:         to AS196705 announce AS-CRIMEA-IX
 remarks:
 import:         from AS48330 accept AS48330
 export:         to AS48330 announce AS-CRIMEA-IX
+remarks:
+import:         from AS50654 accept AS50654
+export:         to AS50654 announce AS-CRIMEA-IX
+remarks:
+import:         from AS214767 accept AS214767
+export:         to AS214767 announce AS-CRIMEA-IX
 remarks:
 import:         from AS43400 accept AS43400
 export:         to AS43400 announce AS-CRIMEA-IX
@@ -278,9 +281,6 @@ export:         to AS197152 announce AS-CRIMEA-IX
 remarks:
 import:         from AS204259 accept AS204259
 export:         to AS204259 announce AS-CRIMEA-IX
-remarks:
-import:         from AS196665 accept AS196665
-export:         to AS196665 announce AS-CRIMEA-IX
 remarks:
 import:         from AS35381 accept AS35381
 export:         to AS35381 announce AS-CRIMEA-IX
@@ -405,9 +405,6 @@ remarks:
 import:         from AS25591 accept AS25591
 export:         to AS25591 announce AS-CRIMEA-IX
 remarks:
-import:         from AS41430 accept AS41430
-export:         to AS41430 announce AS-CRIMEA-IX
-remarks:
 import:         from AS51092 accept AS51092
 export:         to AS51092 announce AS-CRIMEA-IX
 remarks:
@@ -428,9 +425,6 @@ export:         to AS34879 announce AS-CRIMEA-IX
 remarks:
 import:         from AS44341 accept AS44341
 export:         to AS44341 announce AS-CRIMEA-IX
-remarks:
-import:         from AS47203 accept AS47203
-export:         to AS47203 announce AS-CRIMEA-IX
 remarks:
 import:         from AS47939 accept AS47939
 export:         to AS47939 announce AS-CRIMEA-IX
@@ -480,13 +474,12 @@ remarks:        1. 0:43222 Do not announce prefix to anyone
 remarks:        2. 0:<peer-as> Do not announce prefix to a peer with AS <peer-as>
 remarks:        3. 43222:43222 Announce prefix to everyone (default)
 remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-remarks:        32Bit ASN - 16Bit ASN for BGP commumity
+remarks:        32Bit ASN - 16Bit ASN for BGP community
 remarks:        196705 - 64520
 remarks:        201776 - 64521
 remarks:        201069 - 64522
 remarks:        197152 - 64523
-remarks:        204161 - 64524
-remarks:        198293 - 64525https://www.ripe.net/publications/news/announcements/ripe-database-webupdates
+remarks:        198293 - 64525
 remarks:        198669 - 64526
 remarks:        206448 - 64527
 remarks:        204259 - 64528
@@ -494,16 +487,25 @@ remarks:        200922 - 64529
 remarks:        205515 - 64530
 remarks:        200702 - 64531
 remarks:        205236 - 64532
-remarks:        197171 - 64533
 remarks:        204791 - 64534
-remarks:        196665 - 64535
-remarks:        200420 - 64536
-remarks:        197335 - 64537
-remarks:        213258 - 64538
-remarks:        203451 - 64539
-remarks:        211382 - 64540
-remarks:        211245 - 64541
-remarks:        211867 - 64542
+remarks:        197159 - 64538
+remarks:        204144 - 64539
+remarks:        207235 - 64540
+remarks:        203561 - 64541
+remarks:        209789 - 64542
+remarks:        207909 - 64543
+remarks:        208397 - 64544
+remarks:        213258 - 64545
+remarks:        203451 - 64546
+remarks:        208701 - 64547
+remarks:        211382 - 64548
+remarks:        208456 - 64549
+remarks:        211867 - 64551
+remarks:        214767 - 64552
+remarks:        215721 - 64553
+remarks:        196716 - 64554
+remarks:        198338 - 64555
+remarks:        200441 - 65330
 remarks:        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -512,7 +514,7 @@ notify:         noc@crimea-ix.net
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lir-ru-sergienko-1-MNT
 created:        2007-06-27T09:14:02Z
-last-modified:  2026-10-22T10:03:23Z
+last-modified:  2026-10-23T07:57:21Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -523,13 +525,11 @@ remarks:        * http://www.ripe.net/whois
 remarks:        ****************************
 
 aut-num:        AS44341
-as-name:        SEVONLINE
-remarks:        ISP SEVONLINE
-remarks:        Uplinks
-import:         from AS43802 action pref=100; accept ANY
-export:         to AS43802 announce AS-SEVONLINE
+as-name:        MAXIMUS
 import:         from AS28761 action pref=100; accept ANY
-export:         to AS28761 announce AS-SEVONLINE
+export:         to AS28761 announce AS44341
+import:         from AS43222 accept AS-CRIMEA-IX
+export:         to AS43222 announce AS44341
 org:            ORG-NS573-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -537,7 +537,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lir-ru-sergienko-1-MNT
 created:        2007-12-27T17:07:56Z
-last-modified:  2022-02-03T08:30:45Z
+last-modified:  2026-10-23T13:07:19Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -552,13 +552,15 @@ as-name:        TRK555-AS
 org:            ORG-NS573-RIPE
 import:         from AS28761 action pref=100; accept ANY
 export:         to AS28761 announce AS48086
+import:         from AS43222 accept AS-CRIMEA-IX
+export:         to AS43222 announce AS48086
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lir-ru-sergienko-1-MNT
 created:        2008-10-10T12:20:19Z
-last-modified:  2022-03-09T12:27:01Z
+last-modified:  2026-10-23T13:05:24Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -595,17 +597,19 @@ remarks:        * http://www.ripe.net/whois
 remarks:        ****************************
 
 aut-num:        AS50140
-as-name:        YALTA-AS
+as-name:        TIKO-AS
 org:            ORG-NS573-RIPE
-import:         from AS12507 accept ANY
-export:         to AS12507 announce AS50140
+import:         from AS43222 accept AS-CRIMEA-IX
+export:         to AS43222 announce AS50140
+import:         from AS28761 accept ANY
+export:         to AS28761 announce AS50140
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lir-ru-sergienko-1-MNT
 created:        2009-11-20T15:53:28Z
-last-modified:  2025-01-13T12:32:17Z
+last-modified:  2026-10-23T13:04:08Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -642,17 +646,17 @@ remarks:        ****************************
 aut-num:        AS58000
 as-name:        MTN-NET-AS
 org:            ORG-NS573-RIPE
-import:         from AS42896 accept ANY
-import:         from AS48004 accept ANY
-export:         to AS42896 announce AS58000
-export:         to AS48004 announce AS58000
+import:         from AS43222 accept AS-CRIMEA-IX
+export:         to AS43222 announce AS58000
+import:         from AS28761 accept ANY
+export:         to AS28761 announce AS58000
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         lir-ru-sergienko-1-MNT
 created:        2012-03-29T13:37:44Z
-last-modified:  2024-12-04T09:17:55Z
+last-modified:  2026-10-23T13:02:13Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

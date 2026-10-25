@@ -137,6 +137,10 @@ import:         from AS43201 accept AS-SET-TELE-MATIKA
 export:         to AS43201 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 import:         from AS20590 at cr1-60 accept AS-ENTELE
 export:         to AS20590 at cr1-60 announce ANY
+import:         from AS39529 at cr1-60 accept as-m3x
+export:         to AS39529 announce  AS206810:AS-CUSTOMERS
+import:         from AS209747 at cr1-60 accept AS209747
+export:         to AS209747 announce { 0.0.0.0/0 } AND AS206810:AS-CUSTOMERS
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -144,7 +148,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MIV-MNT
 mnt-by:         IRA35-MNT
 created:        2022-03-24T13:12:47Z
-last-modified:  2026-07-21T10:54:44Z
+last-modified:  2026-10-23T12:05:10Z
 source:         RIPE
 abuse-c:        ACRO47149-RIPE
 remarks:        ****************************

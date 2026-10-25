@@ -1,8 +1,5 @@
 as-set:         AS218569:AS-PODRIL1AK2
 members:        AS218569
-members:        AS219529
-members:        AS213409
-members:        AS213409:AS-LYNQIA
 members:        AS219442
 members:        AS57027
 members:        AS57027:AS-BASE
@@ -20,7 +17,7 @@ tech-c:         DUMY-RIPE
 notify:         noc@as219529.com
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-09-28T12:53:11Z
-last-modified:  2026-10-16T12:45:43Z
+last-modified:  2026-10-23T11:09:41Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -63,9 +60,8 @@ remarks:        FREE IPv6 TRANSIT
 remarks:        ------------------------------------------------------------
 remarks:
 remarks:        We provide free IPv6 transit to networks that need it.
-remarks:        Available at Frankfurt and Amsterdam, over GRE,
-remarks:        IP6TNL, IPIP/SIT or VXLAN tunnels, or at any of the
-remarks:        exchanges listed below.
+remarks:        Available at Amsterdam, over GRE, IP6TNL, IPIP/SIT
+remarks:        or VXLAN tunnels, or at any of the exchanges listed below.
 remarks:
 remarks:        Full IPv6 table, RPKI and IRR filtering on all sessions,
 remarks:        BGP communities for prepending and selective announcement,
@@ -91,13 +87,7 @@ remarks:        ============================================================
 remarks:        IPv4 and IPv6 Transit
 remarks:        ============================================================
 remarks:
-remarks:        Nesox Network - Frankfurt and INTERIX
-import:         from AS215685 accept ANY
-export:         to AS215685 announce AS218569:AS-PODRIL1AK2
-mp-import:      afi ipv6.unicast from AS215685 accept ANY
-mp-export:      afi ipv6.unicast to AS215685 announce AS218569:AS-PODRIL1AK2
-remarks:
-remarks:        Tizian Maxime Weigt - Frankfurt, NINE IX and INTERIX
+remarks:        Tizian Maxime Weigt - NINE IX and INTERIX
 import:         from AS215828 accept ANY
 export:         to AS215828 announce AS218569:AS-PODRIL1AK2
 mp-import:      afi ipv6.unicast from AS215828 accept ANY
@@ -115,23 +105,17 @@ export:         to AS204539 announce AS218569
 mp-import:      afi ipv6.unicast from AS204539 accept ANY
 mp-export:      afi ipv6.unicast to AS204539 announce AS218569
 remarks:
+remarks:        Freetransit Project - INTERIX, Amsterdam
+mp-import:      afi ipv4.unicast from AS41051 accept ANY
+mp-import:      afi ipv6.unicast from AS41051 accept ANY
+mp-export:      afi ipv4.unicast to AS41051 announce AS218569
+mp-export:      afi ipv6.unicast to AS41051 announce AS218569
+remarks:
 remarks:        LowPing NL
 import:         from AS215296 accept ANY
 export:         to AS215296 announce AS218569:AS-PODRIL1AK2
 mp-import:      afi ipv6.unicast from AS215296 accept ANY
 mp-export:      afi ipv6.unicast to AS215296 announce AS218569:AS-PODRIL1AK2
-remarks:
-remarks:        Paradox Networks - Frankfurt
-import:         from AS52025 accept ANY
-export:         to AS52025 announce AS218569:AS-PODRIL1AK2
-mp-import:      afi ipv6.unicast from AS52025 accept ANY
-mp-export:      afi ipv6.unicast to AS52025 announce AS218569:AS-PODRIL1AK2
-remarks:
-remarks:        Freetransit Project
-mp-import:      afi ipv4.unicast from AS41051 accept ANY
-mp-import:      afi ipv6.unicast from AS41051 accept ANY
-mp-export:      afi ipv4.unicast to AS41051 announce AS218569
-mp-export:      afi ipv6.unicast to AS41051 announce AS218569
 remarks:
 remarks:        Yanislav Basiuk (nyanet) - Moscow
 import:         from AS200993 accept ANY
@@ -163,13 +147,7 @@ remarks:        ============================================================
 remarks:        Downstreams
 remarks:        ============================================================
 remarks:
-remarks:        Lynqia - Frankfurt
-import:         from AS213409 accept AS213409:AS-LYNQIA
-export:         to AS213409 announce ANY
-mp-import:      afi ipv6.unicast from AS213409 accept AS213409:AS-LYNQIA
-mp-export:      afi ipv6.unicast to AS213409 announce ANY
-remarks:
-remarks:        Petr Buzikov - Frankfurt and Amsterdam
+remarks:        Petr Buzikov - Amsterdam
 mp-import:      afi ipv6.unicast from AS219442 accept AS219442
 mp-export:      afi ipv6.unicast to AS219442 announce ANY
 remarks:
@@ -177,7 +155,7 @@ remarks:        Aria Jahangiri Far - Amsterdam
 mp-import:      afi ipv6.unicast from AS57027 accept AS57027:AS-BASE
 mp-export:      afi ipv6.unicast to AS57027 announce {::/0}
 remarks:
-remarks:        Kai Liu - Frankfurt and Amsterdam
+remarks:        Kai Liu - Amsterdam
 mp-import:      afi ipv6.unicast from AS39753 accept AS-LIUXYON
 mp-export:      afi ipv6.unicast to AS39753 announce ANY
 remarks:
@@ -191,7 +169,7 @@ export:         to AS197324 announce ANY
 mp-import:      afi ipv6.unicast from AS197324 accept AS197324:AS-BGP43
 mp-export:      afi ipv6.unicast to AS197324 announce ANY
 remarks:
-remarks:        Vadim Deynichenko - Frankfurt and Amsterdam
+remarks:        Vadim Deynichenko - Amsterdam
 import:         from AS219297 accept AS219297
 export:         to AS219297 announce ANY
 mp-import:      afi ipv6.unicast from AS219297 accept AS219297
@@ -261,7 +239,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PODRIL1AK2-MNT
 created:        2026-09-28T06:20:55Z
-last-modified:  2026-10-21T16:44:37Z
+last-modified:  2026-10-23T11:33:38Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
