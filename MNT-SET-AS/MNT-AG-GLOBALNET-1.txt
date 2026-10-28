@@ -1601,7 +1601,6 @@ remarks:        198580   - 64544
 remarks:        205717   - 64547
 remarks:        205569   - 64553
 remarks:        197482   - 64532
-remarks:        199599   - 64516
 remarks:        205460   - 64539
 remarks:        208954   - 64528
 remarks:        202984   - 64564
@@ -1630,6 +1629,7 @@ remarks:        196726   - 64577
 remarks:        203473   - 64578
 remarks:        196719   - 64579
 remarks:        200052   - 64537
+remarks:        199599   - 64516
 remarks:        206810   - 64581
 remarks:        138915   - 64542
 remarks:        264409   - 64543
@@ -1837,8 +1837,6 @@ import:         from AS57583   accept   AS57583
 export:         to   AS57583   announce AS-GLOBAL-IX
 import:         from AS24940   accept   AS-HETZNER
 export:         to   AS24940   announce AS-GLOBAL-IX
-import:         from AS199599  accept   AS-CIREX
-export:         to   AS199599  announce AS-GLOBAL-IX
 import:         from AS43404   accept   AS-UCANET
 export:         to   AS43404   announce AS-GLOBAL-IX
 import:         from AS16302   accept   AS-SUOMICOM
@@ -2093,6 +2091,8 @@ import:         from AS58349   accept   AS-INNETRA
 export:         to   AS58349   announce AS-GLOBAL-IX
 import:         from AS44901   accept   AS-BELCLOUD
 export:         to   AS44901   announce AS-GLOBAL-IX
+import:         from AS199599  accept   AS-CIREX
+export:         to   AS199599  announce AS-GLOBAL-IX
 import:         from AS39521   accept   AS-TNGNET
 export:         to   AS39521   announce AS-GLOBAL-IX
 import:         from AS213075  accept   AS-STARTFILM
@@ -2477,8 +2477,6 @@ mp-import:      afi ipv6.unicast from AS57583   accept   AS57583
 mp-export:      afi ipv6.unicast to   AS57583   announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS24940   accept   AS-HETZNER
 mp-export:      afi ipv6.unicast to   AS24940   announce AS-GLOBAL-IX
-mp-import:      afi ipv6.unicast from AS199599  accept   AS-CIREX
-mp-export:      afi ipv6.unicast to   AS199599  announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS43404   accept   AS-UCANET
 mp-export:      afi ipv6.unicast to   AS43404   announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS16302   accept   AS-SUOMICOM
@@ -2733,6 +2731,8 @@ mp-import:      afi ipv6.unicast from AS58349   accept   AS-INNETRA
 mp-export:      afi ipv6.unicast to   AS58349   announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS44901   accept   AS-BELCLOUD
 mp-export:      afi ipv6.unicast to   AS44901   announce AS-GLOBAL-IX
+mp-import:      afi ipv6.unicast from AS199599  accept   AS-CIREX
+mp-export:      afi ipv6.unicast to   AS199599  announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS39521   accept   AS-TNGNET
 mp-export:      afi ipv6.unicast to   AS39521   announce AS-GLOBAL-IX
 mp-import:      afi ipv6.unicast from AS213075  accept   AS-STARTFILM
@@ -2966,7 +2966,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-10-23T14:01:58Z
+last-modified:  2026-10-26T06:31:07Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5057,8 +5057,6 @@ import:         from AS206404  accept   AS206404
 export:         to   AS206404  announce AS-DATAIX
 import:         from AS2728    accept   AS2728:AS-ALL
 export:         to   AS2728    announce AS-DATAIX
-import:         from AS206400  accept   AS206400
-export:         to   AS206400  announce AS-DATAIX
 import:         from AS5089    accept   AS-NTLI
 export:         to   AS5089    announce AS-DATAIX
 import:         from AS203597  accept   AS203597
@@ -6685,8 +6683,6 @@ mp-import:      afi ipv6.unicast from AS206404  accept   AS206404
 mp-export:      afi ipv6.unicast to   AS206404  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS2728    accept   AS2728:AS-ALL
 mp-export:      afi ipv6.unicast to   AS2728    announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS206400  accept   AS206400
-mp-export:      afi ipv6.unicast to   AS206400  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS5089    accept   AS-NTLI
 mp-export:      afi ipv6.unicast to   AS5089    announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS203597  accept   AS203597
@@ -6702,7 +6698,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-10-22T06:31:10Z
+last-modified:  2026-10-26T14:01:54Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

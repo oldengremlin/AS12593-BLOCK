@@ -14,6 +14,10 @@ import:         from AS49403 action pref=100; accept AS-AVK-WELLCOM
 export:         to AS49403 announce as-piter-ix
 import:         from AS49732 action pref=100; accept AS49732
 export:         to AS49732 announce as-piter-ix
+import:         from AS50477 action pref=100; accept AS-SET-SVEN
+export:         to AS50477 announce as-piter-ix
+import:         from AS50477 action pref=100; accept AS-SET-IPV6-SVEN
+export:         to AS50477 announce as-piter-ix
 import:         from AS198610 action pref=100; accept AS-BEGET
 export:         to AS198610 announce as-piter-ix
 import:         from AS62403 action pref=100; accept AS62403:AS-PLETX
@@ -840,8 +844,6 @@ import:         from AS13178 action pref=100; accept AS-DIGCOMM
 export:         to AS13178 announce as-piter-ix
 import:         from AS60119 action pref=100; accept AS60119
 export:         to AS60119 announce as-piter-ix
-import:         from AS31275 action pref=100; accept AS-SAMTELECOM
-export:         to AS31275 announce as-piter-ix
 import:         from AS47236 action pref=100; accept AS-SET-CL
 export:         to AS47236 announce as-piter-ix
 import:         from AS197080 action pref=100; accept AS-RAGRAD
@@ -1165,7 +1167,7 @@ mnt-by:         MNT-PIN
 mnt-by:         MNT-PINSUPPORT
 mnt-by:         PITER-IX-MNT
 created:        2010-03-30T12:19:53Z
-last-modified:  2026-10-22T15:16:58Z
+last-modified:  2026-10-26T14:40:47Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
