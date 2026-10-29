@@ -48,6 +48,8 @@ members:        AS-NGENIX-EKT
 members:        AS-GOOGLE
                 # from AS39684:
 members:        AS39684
+                # from AS40966:
+members:        as40966:AS-BIGWEB
                 # from AS41034:
 members:        AS-IMPULS
                 # from AS41560:
@@ -132,7 +134,7 @@ remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 notify:         noc-ip@msk-ix.ru
 created:        2007-08-18T00:43:40Z
-last-modified:  2026-10-20T07:37:58Z
+last-modified:  2026-10-27T12:07:02Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3517,6 +3519,9 @@ import:         from AS36040
 import:         from AS39684
                 action pref=100;
                 accept AS39684
+import:         from AS40966
+                action pref=100;
+                accept as40966:AS-BIGWEB
 import:         from AS41034
                 action pref=100;
                 accept AS-IMPULS
@@ -3651,6 +3656,8 @@ export:         to AS36040
                 announce AS-EKTROUTESERVER
 export:         to AS39684
                 announce AS-EKTROUTESERVER
+export:         to AS40966
+                announce AS-EKTROUTESERVER
 export:         to AS41034
                 announce AS-EKTROUTESERVER
 export:         to AS41560
@@ -3733,7 +3740,7 @@ notify:         noc-ip@msk-ix.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-06-26T10:37:14Z
-last-modified:  2026-10-20T07:37:58Z
+last-modified:  2026-10-27T12:07:02Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

@@ -1438,6 +1438,10 @@ remarks:        Unittel Ltd
 import:         from AS50241 action pref=200; accept AS50241
 export:         to AS50241 announce ANY
 remarks:
+remarks:        BI GROUP LLC
+import:         from AS218900 action pref=200; accept AS218900
+export:         to AS218900 announce ANY
+remarks:
 remarks:        =========================
 remarks:        IPv6 routing policy
 remarks:        =========================
@@ -1587,6 +1591,10 @@ remarks:        Softline_DC
 mp-import:      afi ipv6 from AS47723 action pref=200; accept AS-SLCLOUD
 mp-export:      afi ipv6 to AS47723 announce ANY
 remarks:
+remarks:        BI GROUP LLC
+mp-import:      afi ipv6 from AS218900 action pref=200; accept AS218900
+mp-export:      afi ipv6 to AS218900 announce ANY
+remarks:
 remarks:        ========================================================
 remarks:        BGP community accepted only from customers
 remarks:        ========================================================
@@ -1673,7 +1681,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2026-10-21T08:07:55Z
+last-modified:  2026-10-27T13:22:28Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

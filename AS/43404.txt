@@ -10,6 +10,10 @@ remarks:        TTK
 import:         from AS20485 accept ANY;
 export:         to AS20485 announce AS-UCANET;
 remarks:
+remarks:        Reset
+import:         from AS49830 accept ANY;
+export:         to AS49830 announce AS-UCANET;
+remarks:
 remarks:        CITYTELECOM (Filanco)
 import:         from AS29076 accept ANY;
 export:         to AS29076 announce AS-UCANET;
@@ -109,7 +113,7 @@ remarks:        ---------------------------------------------
 remarks:        IPv6 Routing Policy
 remarks:        ---------------------------------------------
 remarks:
-remarks:        Retn
+remarks:        RETN
 mp-import:      afi ipv6.unicast from AS57304 accept ANY
 mp-export:      afi ipv6.unicast to AS57304 announce AS-UCANETv6
 remarks:
@@ -221,7 +225,7 @@ remarks:        | Private peers:
 remarks:        | 00 - MSK-IX (AS8631)
 remarks:        | 06 - Inetcom (AS35598)
 remarks:        | 11 - Dataline (AS35297)
-remarks:        | 12 - Data-ix (AS50952)
+remarks:        | 12 - Data-IX (AS50952)
 remarks:        | 14 - Global-IX (AS31500)
 remarks:        | 15 - Google (AS15169)
 remarks:        | 16 - Mail.ru (AS47764)
@@ -247,7 +251,7 @@ notify:         noc@mega-net.ru
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         UCARU-MNT
 created:        2007-07-26T11:43:21Z
-last-modified:  2024-11-29T12:48:40Z
+last-modified:  2026-10-27T14:25:09Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
