@@ -2058,6 +2058,8 @@ import:         from AS206465 action pref=100; accept AS206465
 export:         to AS206465 announce ANY
 import:         from AS218523 action pref=100; accept AS218523
 export:         to AS218523 announce {0.0.0.0/0}
+mp-import:      from AS218523 action pref=100; accept AS218523
+mp-export:      to AS218523 announce ANY
 import:         from AS43197 action pref=100; accept AS-TT-Mobile
 export:         to AS43197 announce ANY
 mp-import:      from AS43197 action pref=100; accept AS-TT-Mobile
@@ -3296,6 +3298,8 @@ import:         from AS48365 action pref=100; accept AS48365
 export:         to AS48365 announce {0.0.0.0/0}
 import:         from AS42842 action pref=100; accept AS42842
 export:         to AS42842 announce ANY
+import:         from AS203382 action pref=100; accept AS203382
+export:         to AS203382 announce ANY
 import:         from AS199782 action pref=100; accept AS-TTNET-TELETIME
 export:         to AS199782 announce ANY
 import:         from AS50760 action pref=100; accept AS50760
@@ -6107,7 +6111,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-10-23T07:26:36Z
+last-modified:  2026-10-28T08:48:19Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

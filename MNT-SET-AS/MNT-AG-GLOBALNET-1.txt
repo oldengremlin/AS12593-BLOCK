@@ -861,6 +861,8 @@ import:         from AS34832   accept   AS-NOVOSYSTEM
 export:         to   AS34832   announce ANY
 import:         from AS28968   accept   AS-EUT
 export:         to   AS28968   announce ANY
+import:         from AS207168  accept   AS207168:AS-BTTELECOM
+export:         to   AS207168  announce ANY
 import:         from AS60913   accept   AS60913
 export:         to   AS60913   announce ANY
 import:         from AS62222   accept   AS62222
@@ -895,8 +897,6 @@ import:         from AS198610  accept   AS-BEGET
 export:         to   AS198610  announce ANY
 import:         from AS48989   accept   AS48989:AS-IQM
 export:         to   AS48989   announce ANY
-import:         from AS207168  accept   AS207168:AS-BTTELECOM
-export:         to   AS207168  announce ANY
 import:         from AS44927   accept   AS-TMPK
 export:         to   AS44927   announce ANY
 import:         from AS216334  accept   AS216334:AS-NHT
@@ -2966,7 +2966,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-10-27T06:31:09Z
+last-modified:  2026-10-28T14:02:01Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5069,6 +5069,14 @@ import:         from AS29084   accept   AS-COMNET-BG
 export:         to   AS29084   announce AS-DATAIX
 import:         from AS34372   accept   AS-VEGA-TRANSIT
 export:         to   AS34372   announce AS-DATAIX
+import:         from AS213624  accept   AS213624
+export:         to   AS213624  announce AS-DATAIX
+import:         from AS60441   accept   AS60441:AS-ELITCOM
+export:         to   AS60441   announce AS-DATAIX
+import:         from AS212683  accept   AS212683:AS-OLILO
+export:         to   AS212683  announce AS-DATAIX
+import:         from AS214218  accept   AS214218
+export:         to   AS214218  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6699,6 +6707,14 @@ mp-import:      afi ipv6.unicast from AS29084   accept   AS-COMNET-BG
 mp-export:      afi ipv6.unicast to   AS29084   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS34372   accept   AS-VEGA-TRANSIT
 mp-export:      afi ipv6.unicast to   AS34372   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS213624  accept   AS213624
+mp-export:      afi ipv6.unicast to   AS213624  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS60441   accept   AS60441:AS-ELITCOM
+mp-export:      afi ipv6.unicast to   AS60441   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS212683  accept   AS212683:AS-OLILO
+mp-export:      afi ipv6.unicast to   AS212683  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS214218  accept   AS214218
+mp-export:      afi ipv6.unicast to   AS214218  announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6706,7 +6722,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-10-27T14:02:00Z
+last-modified:  2026-10-28T14:02:00Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

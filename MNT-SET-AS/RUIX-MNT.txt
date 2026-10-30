@@ -1156,6 +1156,8 @@ members:        AS-BLIZZARD
 members:        AS-SI
                 # from AS58067:
 members:        AS-CHTE
+                # from AS58096:
+members:        AS-ELIT-TV
                 # from AS58136:
 members:        AS58136
                 # from AS58310:
@@ -1485,7 +1487,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-10-20T09:42:01Z
+last-modified:  2026-10-28T09:40:42Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -6525,6 +6527,9 @@ import:         from AS58002
 import:         from AS58067
                 action pref=100;
                 accept AS-CHTE
+import:         from AS58096
+                action pref=100;
+                accept AS-ELIT-TV
 import:         from AS58136
                 action pref=100;
                 accept AS58136
@@ -7770,6 +7775,8 @@ export:         to AS58002
                 announce AS-MSKROUTESERVER
 export:         to AS58067
                 announce AS-MSKROUTESERVER
+export:         to AS58096
+                announce AS-MSKROUTESERVER
 export:         to AS58136
                 announce AS-MSKROUTESERVER
 export:         to AS58310
@@ -8077,7 +8084,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-10-20T09:42:01Z
+last-modified:  2026-10-28T09:40:42Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
