@@ -1,0 +1,500 @@
+aut-num:        AS12586
+as-name:        ASGHOSTNET
+remarks:
+remarks:        +-------------------------------+
+remarks:        | GHOSTnet AS 12586 |
+remarks:        +-------------------------------+
+remarks:        | Contact Information: |
+remarks:        | |
+remarks:        | GHOSTnet GmbH |
+remarks:        | Network Operation Center |
+remarks:        | Am Dachsbau 17 |
+remarks:        | D-65812 Bad Soden a.Ts. |
+remarks:        | |
+remarks:        | Tel. +49 (0) 6172 - 185025 |
+remarks:        | Fax: +49 (0) 6172 - 185029 |
+remarks:        | mail: noc@ghostnet.de |
+remarks:        | http://www.ghostnet.de |
+remarks:        +-------------------------------+
+remarks:
+remarks:
+remarks:        Upstreams
+remarks:
+remarks:        --- Telia
+mp-import:      afi ipv4.unicast from AS1299 accept ANY
+mp-export:      afi ipv4.unicast to AS1299 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS1299 accept ANY
+mp-export:      afi ipv6.unicast to AS1299 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- GTT
+mp-import:      afi ipv4.unicast from AS3257 accept ANY
+mp-export:      afi ipv4.unicast to AS3257 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS3257 accept ANY
+mp-export:      afi ipv6.unicast to AS3257 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- DTAG
+mp-import:      afi ipv4.unicast from AS3320 accept ANY
+mp-export:      afi ipv4.unicast to AS3320 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS3320 accept ANY
+mp-export:      afi ipv6.unicast to AS3320 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- IAG
+mp-import:      afi ipv4.unicast from AS31025 accept ANY
+mp-export:      afi ipv4.unicast to AS31025 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS31025 accept ANY
+mp-export:      afi ipv6.unicast to AS31025 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:
+remarks:
+remarks:        Peerings
+remarks:
+remarks:        --- Hurricane Electric
+mp-import:      afi ipv4.unicast from AS6939 accept AS-HURRICANE
+mp-export:      afi ipv4.unicast to AS6939 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS6939 accept ANY
+mp-export:      afi ipv6.unicast to AS6939 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- RETN
+mp-import:      afi ipv4.unicast from AS9002 accept AS-RETN
+mp-export:      afi ipv4.unicast to AS9002 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS9002 accept AS-RETN6
+mp-export:      afi ipv6.unicast to AS9002 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- QSC
+mp-import:      afi ipv4.unicast from AS20676 accept AS-QSC
+mp-export:      afi ipv4.unicast to AS20676 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS20676 accept AS-QSC
+mp-export:      afi ipv6.unicast to AS20676 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- KleyReX RS1
+mp-import:      afi ipv4.unicast from AS31142 accept AS-KLEYREX-RS
+mp-export:      afi ipv4.unicast to AS31142 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS31142 accept AS-KLEYREX-RS
+mp-export:      afi ipv6.unicast to AS31142 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- KleyReX RS2
+mp-import:      afi ipv4.unicast from AS31142 accept AS-KLEYREX-RS
+mp-export:      afi ipv4.unicast to AS31142 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS31142 accept AS-KLEYREX-RS
+mp-export:      afi ipv6.unicast to AS31142 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- KleyReX RS3
+mp-import:      afi ipv4.unicast from AS31142 accept AS-KLEYREX-RS
+mp-export:      afi ipv4.unicast to AS31142 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS31142 accept AS-KLEYREX-RS
+mp-export:      afi ipv6.unicast to AS31142 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- Cloudflare
+mp-import:      afi ipv4.unicast from AS13335 accept AS-CLOUDFLARE
+mp-export:      afi ipv4.unicast to AS13335 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS13335 accept AS-CLOUDFLARE
+mp-export:      afi ipv6.unicast to AS13335 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- Google
+mp-import:      afi ipv4.unicast from AS15169 accept AS-GOOGLE
+mp-export:      afi ipv4.unicast to AS15169 announce AS-GHOSTNET
+mp-import:      afi ipv6.unicast from AS15169 accept AS-GOOGLE
+mp-export:      afi ipv6.unicast to AS15169 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:        --- Probe-Networks
+mp-import:      afi ipv4.unicast from AS29686 accept AS-PROBENETWORKS
+mp-export:      afi ipv4.unicast to AS29686 announce AS-GHOSTNET
+remarks:        -------------------------------------------------------
+remarks:
+remarks:
+remarks:        Customers
+remarks:
+remarks:        --- Funke Internet Services
+mp-import:      afi ipv4.unicast from AS25484 accept AS-FISDE
+mp-export:      afi ipv4.unicast to AS25484 announce { 0.0.0.0/0 }
+remarks:        -------------------------------------------------------
+remarks:        --- Milde Software Solutions (MSS)
+mp-import:      afi ipv4.unicast from AS61430 accept AS205680
+mp-export:      afi ipv4.unicast to AS61430 announce AS-MILDE
+mp-import:      afi ipv6.unicast from AS61430 accept AS-MILDE-V6
+mp-export:      afi ipv6.unicast to AS61430 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Antilo
+mp-import:      afi ipv4.unicast from AS42596 accept AS-ANTILO
+mp-export:      afi ipv4.unicast to AS42596 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Broadcore/ITS AG
+mp-import:      afi ipv4.unicast from AS49296 accept AS49296
+mp-export:      afi ipv4.unicast to AS49296 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Intercolo
+mp-import:      afi ipv4.unicast from AS57433 accept AS57433
+mp-export:      afi ipv4.unicast to AS57433 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Oblcom Swiss AG
+mp-import:      afi ipv4.unicast from AS47194 accept AS47194
+mp-export:      afi ipv4.unicast to AS47194 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- RDNS Networks
+mp-import:      afi ipv4.unicast from AS51058 accept AS-RDNS
+mp-export:      afi ipv4.unicast to AS51058 announce AS-ANY
+mp-import:      afi ipv6.unicast from AS51058 accept AS-RDNS
+mp-export:      afi ipv6.unicast to AS51058 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Binsec GmbH
+mp-import:      afi ipv4.unicast from AS206423 accept AS206423
+mp-export:      afi ipv4.unicast to AS206423 announce { 0.0.0.0/0 }
+mp-import:      afi ipv6.unicast from AS206423 accept AS206423
+mp-export:      afi ipv6.unicast to AS206423 announce { 0::0/0 }
+remarks:        -------------------------------------------------------
+remarks:        --- NONATTACHED-AS
+mp-import:      afi ipv4.unicast from AS57821 accept AS-NONATTACHED
+mp-export:      afi ipv4.unicast to AS57821 announce AS-ANY
+mp-import:      afi ipv6.unicast from AS57821 accept AS-NONATTACHED
+mp-export:      afi ipv6.unicast to AS57821 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- active-servers.com
+mp-import:      afi ipv4.unicast from AS197071 accept AS-IWERK
+mp-export:      afi ipv4.unicast to AS197071 announce AS-ANY
+mp-import:      afi ipv6.unicast from AS197071 accept AS-IWERK
+mp-export:      afi ipv6.unicast to AS197071 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- PLANINTERNET
+mp-import:      afi ipv4.unicast from AS47138 accept AS-PLANINTERNET
+mp-export:      afi ipv4.unicast to AS47138 announce AS-ANY
+mp-import:      afi ipv6.unicast from AS47138 accept AS-PLANINTERNET
+mp-export:      afi ipv6.unicast to AS47138 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Travel Communication SIA
+mp-import:      afi ipv4.unicast from AS205680 accept AS205680
+mp-export:      afi ipv4.unicast to AS205680 announce AS-ANY
+mp-import:      afi ipv6.unicast from AS205680 accept AS205680
+mp-export:      afi ipv6.unicast to AS205680 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Photonium NetSolutions GmbH
+mp-import:      afi ipv4.unicast from AS31572 accept AS-PHOTONIUM
+mp-export:      afi ipv4.unicast to AS31572 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- netShelter
+mp-import:      afi ipv4.unicast from AS49697 accept AS-NETSHELTER
+mp-export:      afi ipv4.unicast to AS49697 announce AS-ANY
+mp-import:      afi ipv6.unicast from AS49697 accept AS-NETSHELTER
+mp-export:      afi ipv6.unicast to AS49697 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Jens Christian Schneeweiss Technische Systemprogrammierung
+mp-import:      afi ipv4.unicast from AS41723 accept AS41723
+mp-export:      afi ipv4.unicast to AS41723 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Photonium NetSolutions GmbH
+mp-import:      afi ipv4.unicast from AS31572 accept AS-PHOTONIUM
+mp-export:      afi ipv4.unicast to AS31572 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Systemgemisch / SysG GmbH
+mp-import:      afi ipv4.unicast from AS44496 accept AS44496
+mp-export:      afi ipv4.unicast to AS44496 announce AS-ANY
+mp-import:      afi ipv6.unicast from AS44496 accept AS44496
+mp-export:      afi ipv6.unicast to AS44496 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Cool Messages Ltd.
+mp-import:      afi ipv4.unicast from AS39119 accept AS39119
+mp-export:      afi ipv4.unicast to AS39119 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- JSC Multiregional Transittelecom
+mp-import:      afi ipv4.unicast from AS49476 accept AS-MTT
+mp-export:      afi ipv4.unicast to AS49476 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Haase IT
+mp-import:      afi ipv4.unicast from AS57222 accept AS57222
+mp-export:      afi ipv4.unicast to AS57222 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Denis Dmitrievich Galyamin
+mp-import:      afi ipv4.unicast from AS208649 accept AS208649
+mp-export:      afi ipv4.unicast to AS208649 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- PCS Professional Communication Systems GmbH
+mp-import:      afi ipv4.unicast from AS196609 accept AS196609
+mp-export:      afi ipv4.unicast to AS196609 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Layer7 Networks GmbH
+mp-import:      afi ipv4.unicast from AS211179 accept AS211179
+mp-export:      afi ipv4.unicast to AS211179 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Bakker-IT
+mp-import:      afi ipv4.unicast from AS44103 accept AS-BAKKER-IT
+mp-export:      afi ipv4.unicast to AS44103 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Ian David Klemm
+mp-import:      afi ipv4.unicast from AS200461 accept AS200461:AS-V6NODE
+mp-export:      afi ipv4.unicast to AS200461 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- Collin Schneeweiss
+mp-import:      afi ipv4.unicast from AS211301 accept AS211301:AS-UNESTY
+mp-export:      afi ipv4.unicast to AS211301 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- purTel GmbH
+mp-import:      afi ipv4.unicast from AS62336 accept AS-PURTEL
+mp-export:      afi ipv4.unicast to AS62336 announce AS-ANY
+mp-import:      afi ipv6.unicast from AS62336 accept AS-PURTEL
+mp-export:      afi ipv6.unicast to AS62336 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:        --- BUNGATEL Pte. Ltd.
+mp-import:      afi ipv4.unicast from AS211103 accept AS211103
+mp-export:      afi ipv4.unicast to AS211103 announce AS-ANY
+mp-import:      afi ipv6.unicast from AS211103 accept AS211103
+mp-export:      afi ipv6.unicast to AS211103 announce AS-ANY
+remarks:        -------------------------------------------------------
+remarks:
+remarks:        1. Origin BGP Communities
+remarks:        (communities relayed from AS12586 to peers)
+remarks:
+remarks:        12586:100 GHOSTnet own route
+remarks:        12586:200 peering route
+remarks:        12586:300 customer route
+remarks:
+remarks:        12586:1XXXX route learned @ Location
+remarks:        12586:11000 NewColo
+remarks:        12586:12000 Equinix FR5
+remarks:        12586:13000 Interxion
+remarks:        12586:14000 Itenos
+remarks:        12586:15000 Das Werkhaus
+remarks:        12586:16000 Internic
+remarks:        12586:17000 Colofabrik
+remarks:        12586:18000 Interwerk
+remarks:        12586:19000 Telehouse
+remarks:
+remarks:        12586:2XXXX route learned @ Exchange
+remarks:        12586:21000 KleyReX
+remarks:        12586:22000 DE-CIX
+remarks:
+remarks:
+remarks:        2. Ingress BGP Communities
+remarks:        (communities accepted from customers)
+remarks:
+remarks:        65535:65281 NO_EXPORT (RFC1997)
+remarks:        65535:65282 NO_ADVERTISE (RFC1997)
+remarks:        65535:65283 NO_EXPORT_SUBCONFED (RFC1997)
+remarks:        65535:65284 NO_PEER (RFC3765)
+remarks:        65535:0 GRACEFUL_SHUTDOWN (RFC8326)
+remarks:
+remarks:        12586:9999 blackhole (only IPv4 /32 or IPv6 /128)
+remarks:
+remarks:        12586:110X X = prepends to DTAG (1,2 or 3) or do NOT announce 9
+remarks:        12586:120X X = prepends to GTT (1,2 or 3) or do NOT announce 9
+remarks:        12586:130X X = prepends to Telia (1,2 or 3) or do NOT announce 9
+remarks:        12586:160X X = prepends to Kleyrex (1,2 or 3) or do NOT announce 9
+remarks:        12586:190X X = prepends to DE-CIX via AS31025 (1,2 or 3) or do NOT announce 9
+remarks:        -------------------------------------------------------
+remarks:
+remarks:        3. Routing Policy
+remarks:
+remarks:        We filter routes smaller then /24 (IPv4) and /48 (IPv6).
+remarks:        We filter private and reserved prefixes according to RFC3330.
+remarks:        We filter incoming prefixes originating in AS12586.
+remarks:        We filter private and reserved ASN.
+remarks:        We filter excessive AS-Path prepending.
+remarks:        We validate ROA records and reject invalid.
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        -------------------------------------------------------
+remarks:
+remarks:        Spam, abuse, security issues: ....... abuse@ghostnet.de
+remarks:
+remarks:        Technical, operational issues: ........ noc@ghostnet.de
+remarks:
+remarks:        Peering requests: ................. peering@ghostnet.de
+remarks:
+remarks:        Contact for any legal/law enforcement inquiries
+remarks:        send email to: .........................noc@ghostnet.de
+remarks:        (IP address and file reference in subject line)
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        -------------------------------------------------------
+remarks:
+remarks:
+remarks:        If not otherwise specified, please use our
+remarks:        AS-Set for filtering: AS-GHOSTNET
+remarks:
+remarks:
+remarks:        You may get connectivity from GHOSTnet GmbH
+remarks:        at the following sites:
+remarks:
+remarks:        - Colofabrik
+remarks:        -> Rebstoecker 55, 60326 Frankfurt, DE
+remarks:
+remarks:        - NewColo GmbH
+remarks:        -> Mainzer Landstrasse 351-353, 60326 Frankfurt, DE
+remarks:
+remarks:        - NewTelco GmbH
+remarks:        -> Rebstoecker 25-31, 60326 Frankfurt, DE
+remarks:
+remarks:        - Internet AG (Internic)
+remarks:        -> Wiesenhuettenplatz 26, 60329 Frankfurt, DE
+remarks:
+remarks:        - Interxion (FRA01)
+remarks:        -> Hanauer Landstrasse 302, 60314 Frankfurt, DE
+remarks:
+remarks:        - Interxion (FRA02)
+remarks:        -> Hanauer Landstrasse 304 A, 60314 Frankfurt, DE
+remarks:
+remarks:        - Interxion (FRA03)
+remarks:        -> Weissmuellerstr. 21, 60314 Frankfurt, DE
+remarks:
+remarks:        - Interxion (FRA04)
+remarks:        -> Weissmuellerstr. 19, 60314 Frankfurt, DE
+remarks:
+remarks:        - I.T.E.N.O.S.
+remarks:        -> Rebstoecker 25-31, 60326 Frankfurt, DE
+remarks:
+remarks:        - Telehouse North
+remarks:        -> Kleyerstrasse 79, 60326 Frankfurt, DE
+remarks:
+remarks:        - Equinix FR2
+remarks:        -> Kruppstrasse 121-127, 60388 Frankfurt, DE
+remarks:
+remarks:        - Ancotel (Equinix FR5)
+remarks:        -> Kleyerstrasse 88-90, 60326 Frankfurt, DE
+remarks:
+remarks:        - Equinix FR7
+remarks:        -> Gutleutstrasse 310, 60327 Frankfurt, DE
+remarks:
+remarks:        - eShelter
+remarks:        -> Hanauer Landstr. 320, 60314 Frankfurt, DE
+remarks:
+remarks:        - eShelter Eschborn
+remarks:        -> Eschborner Landstr. 100, 60489 Frankfurt, DE
+remarks:
+remarks:        - Das Werkhaus / Accelerated IT Services / Firstcolo
+remarks:        -> Kruppstr. 105, 60388 Frankfurt, DE
+remarks:
+remarks:        - Interwerk
+remarks:        -> Dieselstr. 37-41, 60314 Frankfurt, DE
+remarks:
+remarks:        - MK Netzdienste
+remarks:        -> Wilhelm-Fay-Stra�e 23, 65936 Frankfurt, DE
+remarks:
+remarks:        - TBD: Maincubes FRA01
+remarks:        -> Goethering 29, 63067 Offenbach, DE
+remarks:
+remarks:        - I/P/B/
+remarks:        -> Luetzowstr. 105, 10785 Berlin, DE
+remarks:
+remarks:        - Global Connect HAM2
+remarks:        -> Wendenstra�e 377, 20537 Hamburg, DE
+remarks:
+remarks:        - Interxion Amsterdam Science Park AMS9 (formerly Vancis / SARA)
+remarks:        -> Science Park 121, 1098 XG Amsterdam, NL
+remarks:
+remarks:        - Interxion Duesseldorf
+remarks:        -> In der Steele 29, 40599 Duesseldorf, DE
+remarks:
+remarks:
+remarks:
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        -------------------------------------------------------
+remarks:
+remarks:        ....... Free and open peering policy at KleyReX .......
+remarks:        ............. (https://www.kleyrex.net) ...............
+remarks:        ............. (https://www.peeringdb.com/ix/123) ......
+remarks:        ........ Get your own 100Mbit/s port for free .........
+remarks:
+remarks:        .................. info@kleyrex.net ...................
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        -------------------------------------------------------
+remarks:
+remarks:        .. We also operate AS31025, connected to DE-CIX........
+remarks:        ..... If you want to peer with it, please contact:.....
+remarks:
+remarks:        .....................noc@as31025.net...................
+remarks:        ..............(https://www.peeringdb.com/net/2558).....
+remarks:
+remarks:        -------------------------------------------------------
+remarks:        -------------------------------------------------------
+member-of:      AS-GHOSTNET
+org:            ORG-GG3-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         GHOSTNET-MNT
+mnt-by:         RIPE-NCC-END-MNT
+notify:         ripe@ghostnet.de
+created:        2002-06-04T08:46:38Z
+last-modified:  2025-02-17T15:24:16Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS12586
+country:        DE
+as-name:        ASGHOSTNET GHOSTnet GmbH
+
+organisation:   ORG-GG3-RIPE
+org-name:       GHOSTnet GmbH
+country:        DE
+org-type:       LIR
+address:        Dummy address for ORG-GG3-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        GN-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        GHOSTNET-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         GHOSTNET-MNT
+created:        2004-04-17T11:07:35Z
+last-modified:  2026-05-13T07:30:26Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+% ASBlockWar: блокування за покривним inetnum, а не за country: цієї AS.
+% Нижче — об'єкти, з яких узято країну.
+
+% 94.249.158.0/24 — RU, DE
+inetnum:        94.249.158.0 - 94.249.158.255
+netname:        noezIplease
+descr:          noezIplease
+country:        RU
+org:            ORG-GG3-RIPE
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED PA
+mnt-by:         GHOSTNET-MNT
+geofeed:        https://gist.githubusercontent.com/Yuanyiis/6649274a6748b82c86c15cfc2f0e6cfb/raw/geofeed.csv
+created:        2026-09-29T05:28:33Z
+last-modified:  2026-09-29T06:13:12Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+organisation:   ORG-GG3-RIPE
+org-name:       GHOSTnet GmbH
+country:        DE
+org-type:       LIR
+address:        Dummy address for ORG-GG3-RIPE
+e-mail:         unread@ripe.net
+abuse-c:        GN-RIPE
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        GHOSTNET-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         GHOSTNET-MNT
+created:        2004-04-17T11:07:35Z
+last-modified:  2026-05-13T07:30:26Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
