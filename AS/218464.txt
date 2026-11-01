@@ -3,13 +3,19 @@ as-name:        Verkut
 org:            ORG-VA33583-RIPE
 remarks:        Verkut.su - virtual servers
 remarks:        Website: https://verkut.su
+remarks:        t.me/bgp_robot:5578683922
 sponsoring-org: ORG-DAI3-RIPE
 import:         from AS201279 accept ANY
 export:         to AS201279 announce AS218464:AS-ALL
+import:         from AS215730 accept ANY
+export:         to AS215730 announce AS218464
+export:         to AS215730 announce AS218464:AS-ALL
 mp-import:      afi ipv6.unicast from AS201279 accept ANY
 mp-export:      afi ipv6.unicast to AS201279 announce AS218464:AS-ALL
 mp-import:      afi ipv6.unicast from AS212895 accept ANY
 mp-export:      afi ipv6.unicast to AS212895 announce AS218464:AS-ALL
+mp-import:      afi ipv6.unicast from AS215730 accept ANY
+mp-export:      afi ipv6.unicast to AS215730 announce AS218464:AS-ALL
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -18,7 +24,7 @@ mnt-by:         lir-ru-prefixlabs-1-MNT
 mnt-by:         VERKUT-MNT
 descr:          -----BEGIN TOKEN-----3fd55684980d9b5fa7bdc359c6fee383d6afe14acb2824efa4db66b0a9855785edde4d802283edb8811857214449f8255c29c5e2c33a18c0ff3fab04becc11f9-----END TOKEN-----
 created:        2026-10-08T08:31:43Z
-last-modified:  2026-10-19T13:42:16Z
+last-modified:  2026-10-30T14:43:32Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
