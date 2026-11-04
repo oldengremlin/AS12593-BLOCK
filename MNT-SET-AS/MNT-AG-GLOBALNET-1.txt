@@ -3461,6 +3461,8 @@ remarks:        203597 - 64723
 remarks:        213624 - 64692
 remarks:        212683 - 64693
 remarks:        214218 - 64694
+remarks:        218880 - 64695
+remarks:        218805 - 64696
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -5086,6 +5088,12 @@ import:         from AS54634   accept   AS54634
 export:         to   AS54634   announce AS-DATAIX
 import:         from AS36388   accept   AS36388
 export:         to   AS36388   announce AS-DATAIX
+import:         from AS218880  accept   AS218880
+export:         to   AS218880  announce AS-DATAIX
+import:         from AS43248   accept   AS-ISPER
+export:         to   AS43248   announce AS-DATAIX
+import:         from AS218805  accept   AS218805:AS-CUSTOMERS
+export:         to   AS218805  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6728,6 +6736,12 @@ mp-import:      afi ipv6.unicast from AS54634   accept   AS54634
 mp-export:      afi ipv6.unicast to   AS54634   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS36388   accept   AS36388
 mp-export:      afi ipv6.unicast to   AS36388   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS218880  accept   AS218880
+mp-export:      afi ipv6.unicast to   AS218880  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS43248   accept   AS-ISPER
+mp-export:      afi ipv6.unicast to   AS43248   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS218805  accept   AS218805:AS-CUSTOMERS
+mp-export:      afi ipv6.unicast to   AS218805  announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6735,7 +6749,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-10-30T14:02:03Z
+last-modified:  2026-11-02T06:31:14Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

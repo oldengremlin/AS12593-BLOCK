@@ -1108,6 +1108,8 @@ members:        AS56679
 members:        AS-DHUB
                 # from AS56701:
 members:        AS-AVANTA
+                # from AS56707:
+members:        AS56707
                 # from AS56814:
 members:        AS56814
                 # from AS56864:
@@ -1487,7 +1489,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-10-28T09:40:42Z
+last-modified:  2026-11-02T13:41:12Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -6455,6 +6457,9 @@ import:         from AS56694
 import:         from AS56701
                 action pref=100;
                 accept AS-AVANTA
+import:         from AS56707
+                action pref=100;
+                accept AS56707
 import:         from AS56814
                 action pref=100;
                 accept AS56814
@@ -7727,6 +7732,8 @@ export:         to AS56694
                 announce AS-MSKROUTESERVER
 export:         to AS56701
                 announce AS-MSKROUTESERVER
+export:         to AS56707
+                announce AS-MSKROUTESERVER
 export:         to AS56814
                 announce AS-MSKROUTESERVER
 export:         to AS56864
@@ -8084,7 +8091,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-10-28T09:40:42Z
+last-modified:  2026-11-02T13:41:12Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

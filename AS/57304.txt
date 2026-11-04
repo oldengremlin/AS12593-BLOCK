@@ -3,7 +3,7 @@ as-name:        RETNRU-AS
 org:            ORG-CA1293-RIPE
 remarks:
 remarks:        ---------------------------------------------------------------
-remarks:        ****************** ReTN IPv4 Routing Policy *******************
+remarks:        ***************** RETNRU IPv4 Routing Policy ******************
 remarks:        ---------------------------------------------------------------
 remarks:
 import:         from   AS1299 action pref=200; accept   AS1299:AS-TWELVE99-V4
@@ -658,8 +658,6 @@ import:         from  AS56923 action pref=100; accept   AS56923
 export:         to    AS56923                  announce ANY
 import:         from  AS57073 action pref=100; accept   AS57073:AS-WILDBERRIES
 export:         to    AS57073                  announce ANY
-import:         from  AS57128 action pref=100; accept   AS57128
-export:         to    AS57128                  announce ANY
 import:         from  AS57354 action pref=100; accept   AS-SYSTEMA
 export:         to    AS57354                  announce ANY
 import:         from  AS57503 action pref=100; accept   AS57503
@@ -1096,7 +1094,7 @@ import:         from AS273045 action pref=100; accept   AS273045
 export:         to   AS273045                  announce ANY
 remarks:
 remarks:        ---------------------------------------------------------------
-remarks:        ****************** ReTN IPv6 Routing Policy *******************
+remarks:        ***************** RETNRU IPv6 Routing Policy ******************
 remarks:        ---------------------------------------------------------------
 remarks:
 mp-import:      afi ipv6.unicast from   AS1299 action pref=200; accept   AS1299:AS-TWELVE99-V6
@@ -1487,8 +1485,6 @@ mp-import:      afi ipv6.unicast from  AS56864 action pref=100; accept   AS-WELL
 mp-export:      afi ipv6.unicast to    AS56864                  announce ANY
 mp-import:      afi ipv6.unicast from  AS57073 action pref=100; accept   AS57073:AS-WILDBERRIES
 mp-export:      afi ipv6.unicast to    AS57073                  announce ANY
-mp-import:      afi ipv6.unicast from  AS57128 action pref=100; accept   AS57128
-mp-export:      afi ipv6.unicast to    AS57128                  announce ANY
 mp-import:      afi ipv6.unicast from  AS57354 action pref=100; accept   AS-SYSTEMA
 mp-export:      afi ipv6.unicast to    AS57354                  announce ANY
 mp-import:      afi ipv6.unicast from  AS57503 action pref=100; accept   AS57503
@@ -1679,26 +1675,11 @@ mp-import:      afi ipv6.unicast from AS218884 action pref=100; accept   AS21888
 mp-export:      afi ipv6.unicast to   AS218884                  announce ANY
 remarks:
 remarks:        ---------------------------------------------------------------
-remarks:        ****************** ReTN bgp confederation *********************
+remarks:        ***************** RETNRU bgp confederation ********************
 remarks:        ---------------------------------------------------------------
-remarks:        -  AS9002
-remarks:        -  AS14947
-remarks:        -  AS25462
-remarks:        -  AS28886
 remarks:        -  AS29470
-remarks:        -  AS44877
-remarks:        -  AS51327
 remarks:        -  AS57304
-remarks:        -  AS60392
-remarks:        -  AS133405
-remarks:        -  AS134518
-remarks:        -  AS139903
-remarks:        -  AS150003
 remarks:        -  AS198947
-remarks:        -  AS209447
-remarks:        -  AS210203
-remarks:        -  AS214455
-remarks:        -  AS214845
 remarks:        ---------------------------------------------------------------
 remarks:        ********************* Contacts and URLs ***********************
 remarks:        ---------------------------------------------------------------
@@ -1718,7 +1699,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-RETNRU
 notify:         mntrdb@retn.ru
 created:        2022-10-25T12:28:34Z
-last-modified:  2026-10-15T19:59:08Z
+last-modified:  2026-11-02T19:59:13Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

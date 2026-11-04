@@ -1,0 +1,251 @@
+aut-num:        AS50867
+as-name:        ORG-LVA15-AS
+org:            ORG-HB14-RIPE
+remarks:        abuse-mailbox: abuse@hostkey.ru
+remarks:        ==================================================
+remarks:        --------------------------------------------------
+remarks:        Upstreams IPv4
+remarks:        --------------------------------------------------
+remarks:        RETN Limited
+import:         from AS57304 action pref=100; accept ANY
+export:         to AS57304 announce AS-NCONNECT
+remarks:        TRANSTELECOM
+import:         from AS20485 action pref=100; accept ANY
+export:         to AS20485 announce AS-NCONNECT
+remarks:        FILANCO LTD
+import:         from AS29076 action pref=100; accept ANY
+export:         to AS29076 announce AS-NCONNECT
+remarks:        MMTS
+import:         from AS60299 action pref=100; accept ANY
+export:         to AS60299 announce AS-NCONNECT
+remarks:        DDOS-GUARD
+import:         from AS57724 action pref=100; accept ANY
+export:         to AS57724 announce AS-NCONNECT
+remarks:        TEAMHOST
+import:         from AS202984 action pref=100; accept ANY
+export:         to AS202984 announce AS-NCONNECT
+remarks:        --------------------------------------------------
+remarks:        Peering IPv4
+remarks:        --------------------------------------------------
+remarks:        W-IX
+import:         from AS50384 action pref=150; accept AS-W-IX;
+export:         to AS50384 announce AS-NCONNECT;
+remarks:        iHOME-IX
+import:         from AS25478 action pref=150; accept AS-IHOME;
+export:         to AS25478 announce AS-NCONNECT;
+remarks:        DATA-IX
+import:         from AS50952 action pref=150; accept AS-DATAIX;
+export:         to AS50952 announce AS-NCONNECT;
+remarks:        GLOBAL-IX
+import:         from AS31500 action pref=150; accept ANY;
+export:         to AS31500 announce AS-NCONNECT;
+remarks:        PITER-IX
+import:         from AS49869 action pref=150; accept ANY;
+export:         to AS49869 announce AS-NCONNECT;
+remarks:        ==================================================
+remarks:        --------------------------------------------------
+remarks:        Downstreams IPv4
+remarks:        --------------------------------------------------
+remarks:        CentralNic Ltd
+import:         from AS199330 action pref=200; accept AS199330 AND AS201304 AND AS204055
+export:         to AS199330 announce { 0.0.0.0/0 }
+import:         from AS60890 action pref=200; accept AS60890 AND AS201303 AND AS203961
+export:         to AS60890 announce { 0.0.0.0/0 }
+remarks:        GAZTEL Ltd.
+import:         from AS60960 action pref=200; accept {93.170.102.0/24} AND {93.170.74.0/24}
+export:         to AS60960 announce { 0.0.0.0/0 }
+remarks:        LLC F1F2.RU
+import:         from AS201566 action pref=200; accept AS201566
+export:         to AS201566 announce { 0.0.0.0/0 }
+remarks:        EDSI-Tech Sarl
+import:         from AS204248 action pref=200; accept AS201566
+export:         to AS204248 announce { 0.0.0.0/0 }
+remarks:        ServiceCloud Ltd.
+import:         from AS3284 action pref=200; accept AS3284
+export:         to AS3284 announce { 0.0.0.0/0 }
+remarks:        Cloud DNS Ltd
+import:         from AS203391 action pref=200; accept AS203391
+export:         to AS203391 announce { 0.0.0.0/0 }
+remarks:        OOO "Contact-center GRAN"
+import:         from AS62316 action pref=200; accept AS62316
+export:         to AS62316 announce { 0.0.0.0/0 }
+remarks:        INTELSOFT-AS
+import:         from AS25534 action pref=200; accept AS25534
+export:         to AS25534 announce ANY
+remarks:        Sipuni/BetaVoip-AS
+import:         from AS200662 action pref=200; accept AS200662
+export:         to AS200662 announce ANY
+remarks:        Velocityscape Services, LLC
+import:         from AS39619 action pref=200; accept AS39619
+export:         to AS39619 announce {0.0.0.0/0}
+remarks:        ArcticVPN
+import:         from AS47285 action pref=200; accept AS47285
+export:         to AS47285 announce { 0.0.0.0/0 }
+import:         from AS209605 action pref=200; accept AS209605
+export:         to AS209605 announce {0.0.0.0/0}
+remarks:        Chang Way Technologies Co. Limited
+import:         from AS57523 action pref=200; accept AS-SET-ChangWay
+export:         to AS57523 announce ANY
+remarks:        Flyservers S.A.
+import:         from AS209588 action pref=200; accept AS209588
+export:         to AS209588 announce {0.0.0.0/0}
+import:         from AS142464 action pref=200; accept AS142464
+export:         to AS142464 announce {0.0.0.0/0}
+remarks:        --------------------------------------------------
+remarks:        ==================================================
+remarks:        --------------------------------------------------
+remarks:        Upstreams ^IPv6
+remarks:        --------------------------------------------------
+remarks:        Upstreams
+mp-import:      afi ipv6.unicast from AS57304 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS57304 announce AS-NCONNECT-V6
+mp-import:      afi ipv6.unicast from AS29076 action pref=100; accept ANY
+mp-export:      afi ipv6.unicast to AS29076 announce AS-NCONNECT
+remarks:        --------------------------------------------------
+remarks:        Downstreams IPv6
+remarks:        --------------------------------------------------
+mp-import:      afi ipv6.unicast from AS199330 action pref=200; accept AS199330 AND AS201304
+mp-export:      afi ipv6.unicast to AS199330 announce ANY
+mp-import:      afi ipv6.unicast from AS60890 action pref=200; accept AS60890 AND AS201303 AND AS203961
+mp-export:      afi ipv6.unicast to AS199330 announce ANY
+mp-import:      afi ipv6.unicast from AS204248 action pref=200; accept AS204248
+mp-export:      afi ipv6.unicast to AS204248 announce ANY
+mp-import:      afi ipv6.unicast from AS203391 action pref=200; accept AS203391
+mp-export:      afi ipv6.unicast to AS203391 announce ANY
+mp-import:      afi ipv6.unicast from AS200430 action pref=200; accept AS200430
+mp-export:      afi ipv6.unicast to AS200430 announce ANY
+mp-import:      afi ipv6.unicast from AS39619 action pref=200; accept AS39619
+mp-export:      afi ipv6.unicast to AS39619 announce ANY
+mp-import:      afi ipv6.unicast from AS47285 action pref=200; accept AS47285
+mp-export:      afi ipv6.unicast to AS47285 announce ANY
+remarks:        --------------------IPv6$-------------------------
+remarks:        ==================================================
+remarks:        RTBH Community: 50867:666
+remarks:        Accepted /32 routes from downstreams with RTBH community
+remarks:        ==================================================
+remarks:        advertising community (available for customers):
+remarks:        ==================================================
+remarks:        to Zone:
+remarks:        50867:5ZZX where
+remarks:        ZZ=00 - Whole World
+remarks:        ZZ=01 - all upstreams
+remarks:        ZZ=02 - all peers
+remarks:        ZZ=04 - W-IX
+remarks:        ZZ=05 - iHOME-IX
+remarks:        ZZ=06 - DATA-IX
+remarks:        ZZ=07 - GLOBAL-IX
+remarks:        ZZ=08 - he.net
+remarks:        ZZ=09 - PITER-IX
+remarks:        ZZ=10 - AS60299
+remarks:        to ASN
+remarks:        50867:6AAX where
+remarks:        AA=01 - AS57304 (Retn.net)
+remarks:        AA=02 - AS29076 (Filanco LTD)
+remarks:        AA=03 - AS20485 (TTK)
+remarks:        AA=04 - AS202984(TEAMHOST)
+remarks:        X=0 - advertise with no changes
+remarks:        X=1,2,4 or 6 - set prepend AS50867 1,2,4 or 6 times
+remarks:        X=9 - do not advertise
+remarks:        Example: Community 50867:6014 will prepend AS50867 4 times to AS9002
+remarks:        Example: Community 50867:5009 will deny advertising of prefix to all
+remarks:        peers and exchanges
+remarks:        ==================================================
+remarks:        ==================================================
+remarks:        Looking Glass http://lg.hostkey.net
+remarks:        ==================================================
+remarks:        --------------------------------------------------
+remarks:        Local preference values
+remarks:        --------------------------------------------------
+remarks:        200 - routes from Downstream
+remarks:        150 - routes from Internet eXchange
+remarks:        100 - routes from Upstream
+remarks:        50 - backup routes
+remarks:        ==================================================
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         HOSTKEY-MNT
+created:        2020-12-30T11:42:39Z
+last-modified:  2024-07-02T12:26:50Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+as-num:         AS50867
+country:        NL
+as-name:        ORG-LVA15-AS HOSTKEY B.V.
+
+organisation:   ORG-HB14-RIPE
+org-name:       HOSTKEY B.V.
+country:        NL
+org-type:       LIR
+address:        Dummy address for ORG-HB14-RIPE
+e-mail:         unread@ripe.net
+mnt-ref:        HOSTKEY-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-ref:        HOSTKEY-RU-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-by:         HOSTKEY-MNT
+abuse-c:        HA2801-RIPE
+created:        2011-06-16T09:42:19Z
+last-modified:  2026-05-13T07:25:11Z
+source:         RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+
+% ASBlockWar: блокування за покривним inetnum, а не за country: цієї AS.
+% Нижче — об'єкти, з яких узято країну.
+
+% 77.105.146.0/24 — RU, NL
+inetnum:        77.105.146.0 - 77.105.146.255
+netname:        Hostkey5
+country:        RU
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         SUB-ALLOCATED PA
+created:        2026-11-02T11:52:21Z
+last-modified:  2026-11-02T11:52:44Z
+source:         RIPE
+mnt-by:         lir-ru-ooomir-1-MNT
+mnt-by:         HOSTKEY-RU-MNT
+mnt-by:         ALB-MNT
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+% 77.105.147.0/24 — RU, NL
+inetnum:        77.105.147.0 - 77.105.147.255
+netname:        Hostkey5
+country:        RU
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         SUB-ALLOCATED PA
+created:        2026-11-02T11:53:48Z
+last-modified:  2026-11-02T11:54:19Z
+source:         RIPE
+mnt-by:         lir-ru-ooomir-1-MNT
+mnt-by:         HOSTKEY-RU-MNT
+mnt-by:         ALB-MNT
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
