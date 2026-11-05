@@ -207,7 +207,9 @@ export:         to AS40997 announce ANY
 import:         from AS41428 action pref=400; accept AS-BINBANK
 export:         to AS41428 announce ANY
 import:         from AS41462 action pref=400; accept AS-EXE
-export:         to AS41462 announce ANY
+export:         to AS41560 announce ANY
+import:         from AS41560 action pref=400; accept AS-UT-SVR
+export:         to AS41802 announce ANY
 import:         from AS41802 action pref=400; accept AS-KVIDEX
 export:         to AS41802 announce ANY
 import:         from AS42561 action pref=400; accept AS42561
@@ -659,7 +661,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS8732-MNT
 created:        2002-08-01T12:18:18Z
-last-modified:  2026-10-12T11:06:52Z
+last-modified:  2026-11-03T07:26:18Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
