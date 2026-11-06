@@ -1565,6 +1565,9 @@ import:         from AS209030
 import:         from AS209141
                 action pref=100;
                 accept AS209141:AS-RUCUST
+import:         from AS209219
+                action pref=100;
+                accept AS209219
 import:         from AS209307
                 action pref=100;
                 accept AS-CNX-EKB
@@ -2695,6 +2698,8 @@ export:         to AS209030
                 announce AS-MSKROUTESERVER
 export:         to AS209141
                 announce AS-MSKROUTESERVER
+export:         to AS209219
+                announce AS-MSKROUTESERVER
 export:         to AS209307
                 announce AS-MSKROUTESERVER
 export:         to AS209393
@@ -2764,7 +2769,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-11-02T13:41:12Z
+last-modified:  2026-11-04T09:42:35Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
