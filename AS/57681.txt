@@ -128,6 +128,8 @@ import:         from AS2122114 action pref=100; accept {176.100.252.0/24}
 export:         to AS212114 announce {0.0.0.0/0}
 import:         from AS48096 action pref=100; accept AS48096
 export:         to AS48096 announce ANY
+import:         from AS24823 action pref=100; accept AS24823
+export:         to AS24823 announce ANY
 remarks:
 remarks:        ---------------------------------------------
 remarks:        IPv6 import/export policy expression
@@ -163,7 +165,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MGTS-USPD-MNT
 created:        2012-01-12T10:42:42Z
-last-modified:  2026-06-05T08:26:33Z
+last-modified:  2026-11-05T17:43:31Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

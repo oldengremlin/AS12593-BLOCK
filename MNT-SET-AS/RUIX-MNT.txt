@@ -1170,6 +1170,8 @@ members:        AS-58715
 members:        AS59424
                 # from AS59533:
 members:        AS59533
+                # from AS59595:
+members:        AS-TENTEL
                 # from AS59600:
 members:        AS59600:AS-CUSTOMERS
                 # from AS59624:
@@ -1491,7 +1493,7 @@ remarks:        for more information on the MSK-IX Route Servers
 remarks:        and for more filtering options.
 remarks:        * -------------------------------------------------------------
 created:        2002-09-10T12:09:58Z
-last-modified:  2026-11-04T09:42:35Z
+last-modified:  2026-11-05T13:41:31Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -6552,6 +6554,9 @@ import:         from AS59424
 import:         from AS59533
                 action pref=100;
                 accept AS59533
+import:         from AS59595
+                action pref=100;
+                accept AS-TENTEL
 import:         from AS59600
                 action pref=100;
                 accept AS59600:AS-CUSTOMERS
@@ -7799,6 +7804,8 @@ export:         to AS59424
                 announce AS-MSKROUTESERVER
 export:         to AS59533
                 announce AS-MSKROUTESERVER
+export:         to AS59595
+                announce AS-MSKROUTESERVER
 export:         to AS59600
                 announce AS-MSKROUTESERVER
 export:         to AS59624
@@ -8098,7 +8105,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-11-04T09:42:35Z
+last-modified:  2026-11-05T13:41:31Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

@@ -1814,6 +1814,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS214052 action pref=100; accept AS214052
+export:         to AS214052 announce ANY
 import:         from AS199183 action pref=100; accept AS199184
 export:         to AS199184 announce {0.0.0.0/0}
 import:         from AS198764 action pref=100; accept AS198764
@@ -4480,6 +4482,8 @@ mp-import:      from AS200513 action pref=100; accept AS-STM-NVR
 mp-export:      to AS200513 announce ANY
 import:         from AS202248 action pref=100; accept AS202248
 export:         to AS202248 announce ANY
+import:         from AS215115 action pref=100; accept AS215115
+export:         to AS215115 announce ANY
 import:         from AS34777 action pref=100; accept AS34777
 export:         to AS34777 announce {0.0.0.0/0}
 import:         from AS199833 action pref=100; accept AS199833
@@ -5092,6 +5096,10 @@ mp-import:      afi ipv6 from AS12737 action pref=100; accept AS-SET-RIGHTSIDE
 mp-export:      afi ipv6 to AS12737 announce {::/0}
 import:         from AS57753 action pref=100; accept AS-RADIST
 export:         to AS57753 announce ANY
+import:         from AS210171 action pref=100; accept AS210171
+export:         to AS210171 announce ANY
+mp-import:      from AS210171 action pref=100; accept AS210171
+mp-export:      to AS210171 announce ANY
 import:         from AS208977 action pref=100; accept AS208977
 export:         to AS208977 announce ANY
 import:         from AS42269 action pref=100; accept AS42269
@@ -6112,7 +6120,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-10-29T12:47:18Z
+last-modified:  2026-11-05T13:32:43Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

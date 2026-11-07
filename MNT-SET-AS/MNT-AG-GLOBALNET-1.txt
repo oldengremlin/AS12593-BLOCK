@@ -3464,6 +3464,8 @@ remarks:        214218 - 64694
 remarks:        218880 - 64695
 remarks:        218805 - 64696
 remarks:        201556 - 64697
+remarks:        152848 - 64698
+remarks:        203862 - 64699
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -3601,8 +3603,6 @@ import:         from AS21030   accept   AS-CDNNOW
 export:         to   AS21030   announce AS-DATAIX
 import:         from AS21140   accept   AS-FLYTELECOM
 export:         to   AS21140   announce AS-DATAIX
-import:         from AS21357   accept   AS21357
-export:         to   AS21357   announce AS-DATAIX
 import:         from AS21453   accept   AS-FLEX
 export:         to   AS21453   announce AS-DATAIX
 import:         from AS21497   accept   AS-UMC-CUSTOMERS
@@ -5099,6 +5099,10 @@ import:         from AS218805  accept   AS218805:AS-CUSTOMERS
 export:         to   AS218805  announce AS-DATAIX
 import:         from AS201556  accept   AS201556
 export:         to   AS201556  announce AS-DATAIX
+import:         from AS152848  accept   AS152848:AS-ASDFHK
+export:         to   AS152848  announce AS-DATAIX
+import:         from AS203862  accept   AS203862:AS-FIBERSPEED
+export:         to   AS203862  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -5227,8 +5231,6 @@ mp-import:      afi ipv6.unicast from AS21030   accept   AS-CDNNOW
 mp-export:      afi ipv6.unicast to   AS21030   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS21140   accept   AS-FLYTELECOM
 mp-export:      afi ipv6.unicast to   AS21140   announce AS-DATAIX
-mp-import:      afi ipv6.unicast from AS21357   accept   AS21357
-mp-export:      afi ipv6.unicast to   AS21357   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS21453   accept   AS-FLEXV6
 mp-export:      afi ipv6.unicast to   AS21453   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS21497   accept   AS-UMC-CUSTOMERS
@@ -6751,6 +6753,10 @@ mp-import:      afi ipv6.unicast from AS218805  accept   AS218805:AS-CUSTOMERS
 mp-export:      afi ipv6.unicast to   AS218805  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS201556  accept   AS201556
 mp-export:      afi ipv6.unicast to   AS201556  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS152848  accept   AS152848:AS-ASDFHK
+mp-export:      afi ipv6.unicast to   AS152848  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS203862  accept   AS203862:AS-FIBERSPEED
+mp-export:      afi ipv6.unicast to   AS203862  announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6758,7 +6764,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-11-03T14:01:56Z
+last-modified:  2026-11-05T14:01:51Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

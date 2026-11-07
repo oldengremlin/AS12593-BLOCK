@@ -308,6 +308,7 @@ members:        AS211164
 members:        AS62293
 members:        AS206396
 members:        AS202248
+members:        AS215115
 members:        AS-OLIMP
 members:        AS57073:AS-WILDBERRIES
 members:        AS60544
@@ -467,6 +468,7 @@ members:        AS-WBT
 remarks:
 remarks:        Moscow and other regs Nets
 remarks:
+members:        AS214052
 members:        AS199184
 members:        AS198764
 members:        AS51685:AS-Micron-Media
@@ -1307,6 +1309,7 @@ members:        AS57629
 members:        AS43793
 members:        AS57781
 members:        AS-RADIST
+members:        AS210171
 members:        AS-IGRA
 members:        AS-STARTEL-KUBAN
 members:        AS199063
@@ -1725,7 +1728,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-10-29T12:48:19Z
+last-modified:  2026-11-05T13:33:34Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -2065,6 +2068,7 @@ members:        AS213922:AS-VOLTA
 members:        AS12958
 members:        AS57724:AS-DDOS-GUARD-v6
 members:        AS218523
+members:        AS210171
 remarks:
 remarks:        SPB cust Nets
 remarks:
@@ -2149,7 +2153,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-10-28T07:18:19Z
+last-modified:  2026-11-05T13:34:07Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5512,6 +5516,8 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS214052 action pref=100; accept AS214052
+export:         to AS214052 announce ANY
 import:         from AS199183 action pref=100; accept AS199184
 export:         to AS199184 announce {0.0.0.0/0}
 import:         from AS198764 action pref=100; accept AS198764
@@ -8178,6 +8184,8 @@ mp-import:      from AS200513 action pref=100; accept AS-STM-NVR
 mp-export:      to AS200513 announce ANY
 import:         from AS202248 action pref=100; accept AS202248
 export:         to AS202248 announce ANY
+import:         from AS215115 action pref=100; accept AS215115
+export:         to AS215115 announce ANY
 import:         from AS34777 action pref=100; accept AS34777
 export:         to AS34777 announce {0.0.0.0/0}
 import:         from AS199833 action pref=100; accept AS199833
@@ -8790,6 +8798,10 @@ mp-import:      afi ipv6 from AS12737 action pref=100; accept AS-SET-RIGHTSIDE
 mp-export:      afi ipv6 to AS12737 announce {::/0}
 import:         from AS57753 action pref=100; accept AS-RADIST
 export:         to AS57753 announce ANY
+import:         from AS210171 action pref=100; accept AS210171
+export:         to AS210171 announce ANY
+mp-import:      from AS210171 action pref=100; accept AS210171
+mp-export:      to AS210171 announce ANY
 import:         from AS208977 action pref=100; accept AS208977
 export:         to AS208977 announce ANY
 import:         from AS42269 action pref=100; accept AS42269
@@ -9810,7 +9822,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-10-29T12:47:18Z
+last-modified:  2026-11-05T13:32:43Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
