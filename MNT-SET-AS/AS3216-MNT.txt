@@ -86,6 +86,7 @@ members:        AS-41500
 members:        AS13238
 members:        AS47118
 members:        AS207320
+members:        AS-EXPORT-SET
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 notify:         noc@beeline.ru
@@ -93,7 +94,7 @@ notify:         noc@sovintel.ru
 mnt-by:         AS8563-MNT
 mnt-by:         AS3216-MNT
 created:        2001-10-22T07:11:15Z
-last-modified:  2026-10-22T13:12:35Z
+last-modified:  2026-11-06T11:22:27Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -468,6 +469,7 @@ members:        AS-WBT
 remarks:
 remarks:        Moscow and other regs Nets
 remarks:
+members:        AS-RTCLOUD-4
 members:        AS214052
 members:        AS199184
 members:        AS198764
@@ -1448,6 +1450,7 @@ members:        AS41118
 members:        AS-CITICTEL-CPC-RU
 members:        AS-ITTITT
 members:        AS201556
+members:        AS-EXPORT-SET
 members:        AS58112
 members:        AS204231
 members:        AS61326
@@ -1728,7 +1731,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2009-09-08T09:31:23Z
-last-modified:  2026-11-05T13:33:34Z
+last-modified:  2026-11-06T11:17:41Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -1764,6 +1767,7 @@ remarks:        ****************************
 as-set:         AS-SOVAM-V6
 descr:          Sovintel IPv6 customers
 remarks:
+members:        AS-RTCLOUD-4
 members:        AS51685:AS-Micron-Media-V6
 members:        AS203597
 members:        AS203753:AS-VOLGADC
@@ -2153,7 +2157,7 @@ tech-c:         DUMY-RIPE
 admin-c:        DUMY-RIPE
 mnt-by:         AS3216-MNT
 created:        2010-07-29T10:51:20Z
-last-modified:  2026-11-05T13:34:07Z
+last-modified:  2026-11-06T09:25:21Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -5516,6 +5520,10 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS60876 action pref=100; accept AS-RTCLOUD-4
+export:         to AS60878 announce ANY
+mp-import:      from AS60878 action pref=100; accept AS-RTCLOUD-4
+mp-export:      to AS60878 announce ANY
 import:         from AS214052 action pref=100; accept AS214052
 export:         to AS214052 announce ANY
 import:         from AS199183 action pref=100; accept AS199184
@@ -8210,6 +8218,8 @@ mp-import:      from AS3327 action pref=100; accept AS-CITICTEL-CPC-RU
 mp-export:      to AS3327 announce ANY
 import:         from AS201556 action pref=100; accept AS201556
 export:         to AS201556 announce ANY
+import:         from AS43598 action pref=100; accept AS-EXPORT-SET
+export:         to AS43598 announce ANY
 import:         from AS58112 action pref=100; accept AS58112
 export:         to AS58112 announce ANY
 import:         from AS41816 action pref=100; accept AS41816
@@ -9822,7 +9832,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-11-05T13:32:43Z
+last-modified:  2026-11-06T11:17:20Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

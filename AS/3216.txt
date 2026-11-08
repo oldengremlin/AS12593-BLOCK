@@ -1814,6 +1814,10 @@ remarks:
 remarks:
 remarks:        Full-transit customers
 remarks:        ++
+import:         from AS60876 action pref=100; accept AS-RTCLOUD-4
+export:         to AS60878 announce ANY
+mp-import:      from AS60878 action pref=100; accept AS-RTCLOUD-4
+mp-export:      to AS60878 announce ANY
 import:         from AS214052 action pref=100; accept AS214052
 export:         to AS214052 announce ANY
 import:         from AS199183 action pref=100; accept AS199184
@@ -4508,6 +4512,8 @@ mp-import:      from AS3327 action pref=100; accept AS-CITICTEL-CPC-RU
 mp-export:      to AS3327 announce ANY
 import:         from AS201556 action pref=100; accept AS201556
 export:         to AS201556 announce ANY
+import:         from AS43598 action pref=100; accept AS-EXPORT-SET
+export:         to AS43598 announce ANY
 import:         from AS58112 action pref=100; accept AS58112
 export:         to AS58112 announce ANY
 import:         from AS41816 action pref=100; accept AS41816
@@ -6120,7 +6126,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-11-05T13:32:43Z
+last-modified:  2026-11-06T11:17:20Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
