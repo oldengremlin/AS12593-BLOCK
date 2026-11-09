@@ -1,18 +1,32 @@
 aut-num:        AS219123
 as-name:        DesendNetwork
-descr:          DESEND EXTENDED NETWORK
+descr:          Desend network: protected transit and peering
 org:            ORG-OA1477-RIPE
 sponsoring-org: ORG-MF214-RIPE
 remarks:        ===========================================
 remarks:        AS219123 | Desend network
-remarks:        IPv4 Transit / BGP / Peering
+remarks:        IPv4/IPv6 Transit / BGP / Peering
+remarks:        ===========================================
+import:         from AS51765 accept ANY
+export:         to AS51765 announce AS219123:AS-DESEND
+import:         from AS34927 accept ANY
+export:         to AS34927 announce AS219123:AS-DESEND
+import:         from AS219297 accept AS219297:AS-ALL
+export:         to AS219297 announce ANY
+mp-import:      afi ipv6 from AS51765 accept ANY
+mp-export:      afi ipv6 to AS51765 announce AS219123:AS-DESEND
+mp-import:      afi ipv6 from AS34927 accept ANY
+mp-export:      afi ipv6 to AS34927 announce AS219123:AS-DESEND
+mp-import:      afi ipv6 from AS219297 accept AS219297:AS-ALL
+mp-export:      afi ipv6 to AS219297 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OLEGNOV-MNT
+mnt-by:         C0REDEV-MNT
 created:        2026-07-28T08:28:12Z
-last-modified:  2026-10-31T13:49:51Z
+last-modified:  2026-11-07T06:00:27Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
