@@ -1,48 +1,33 @@
 aut-num:        AS42301
 as-name:        RADIO-CAPRICORN-AS
 org:            ORG-RKL2-RIPE
-remarks:        ================================================================
-remarks:        -= IPv4 Routing Policy =-
-remarks:        ----------------------------------------------------------------
+remarks:        ================================================
+remarks:        .       -= IPv4 & IPv6 Routing Policy =-       .
+remarks:        ================================================
 remarks:        Upstreams
-remarks:        ----------------------------------------------------------------
+remarks:        ------------------------------------------------
 remarks:
 remarks:        Smart Telecom Limited
 import:         from AS31376 accept ANY
-export:         to AS31376 announce AS-RADIO-CAPRICORN AND {193.200.239.0/24}
+export:         to AS31376 announce AS-RADIO-CAPRICORN
+mp-import:      afi ipv6 from AS31376 accept ANY
+mp-export:      afi ipv6 to AS31376 announce AS-RADIO-CAPRICORN
 remarks:
 remarks:        JSC Avantel
 import:         from AS51178 accept ANY
-export:         to AS51178 announce AS-RADIO-CAPRICORN AND {193.200.239.0/24}
-remarks:
-remarks:        Korporatsiya R-Industriya LLC
-import:         from AS208511 accept {0.0.0.0/0} AS208511
-export:         to AS208511 announce AS-RADIO-CAPRICORN AND {193.200.239.0/24}
-remarks:        ================================================================
-remarks:        -= IPv6 Routing Policy =-
-remarks:        ----------------------------------------------------------------
-remarks:        Upstreams
-remarks:        ----------------------------------------------------------------
-remarks:
-remarks:        Smart Telecom Limited
-mp-import:      from AS31376 accept ANY
-mp-export:      to AS31376 announce AS-RADIO-CAPRICORN AND {2001:67c:2568::/48}
-remarks:
-remarks:        JSC Avantel
-mp-import:      from AS51178 accept ANY
-mp-export:      to AS51178 announce AS-RADIO-CAPRICORN AND {2001:67c:2568::/48}
+export:         to AS51178 announce AS-RADIO-CAPRICORN
 remarks:
 remarks:        Johannes Ernst
-mp-import:      from AS212895 accept ANY
-mp-export:      to AS212895 announce AS-RADIO-CAPRICORN AND {2001:67c:2568::/48}
-remarks:        ================================================================
+mp-import:      afi ipv6 from AS212895 accept ANY
+mp-export:      afi ipv6 to AS212895 announce AS-RADIO-CAPRICORN
+remarks:        ================================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS42301-MNT
 created:        2007-01-29T15:32:49Z
-last-modified:  2026-07-12T12:00:00Z
+last-modified:  2026-11-08T11:35:00Z
 source:         RIPE
 remarks:        region-id = Russia, Leningrad district, Saint-Petersburg
 sponsoring-org: ORG-IL934-RIPE
