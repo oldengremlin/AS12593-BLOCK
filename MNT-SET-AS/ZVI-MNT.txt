@@ -125,16 +125,22 @@ as-name:        ZVITELECOM-AS
 import:         from AS57420 action pref=100; accept ANY
 import:         from AS197453 action pref=100; accept ANY
 import:         from AS35377 action pref=100; accept ANY
+import:         from AS50241 accept AS50241
+import:         from AS208587 accept AS208587
+import:         from AS12456 accept AS12456
 export:         to AS57420 announce AS31626
 export:         to AS197453 announce AS31626
 export:         to AS35377 announce AS31626
+export:         to AS50241 announce ANY
+export:         to AS208587 announce ANY
+export:         to AS12456 announce ANY
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         ZVI-MNT
 created:        2004-06-25T10:11:38Z
-last-modified:  2022-04-18T11:47:33Z
+last-modified:  2026-11-09T13:18:52Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
