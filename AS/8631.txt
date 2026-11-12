@@ -200,6 +200,9 @@ import:         from AS12993
 import:         from AS13094
                 action pref=100;
                 accept AS-MILECOM-RS
+import:         from AS13178
+                action pref=100;
+                accept AS-DIGCOMM
 import:         from AS13215
                 action pref=100;
                 accept AS-CONVEYPLUS
@@ -1791,6 +1794,8 @@ export:         to AS12993
                 announce AS-MSKROUTESERVER
 export:         to AS13094
                 announce AS-MSKROUTESERVER
+export:         to AS13178
+                announce AS-MSKROUTESERVER
 export:         to AS13215
                 announce AS-MSKROUTESERVER
 export:         to AS13238
@@ -2774,7 +2779,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-11-05T13:41:31Z
+last-modified:  2026-11-10T09:40:04Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
