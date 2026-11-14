@@ -1589,6 +1589,10 @@ import:         from AS60345 action pref=87; accept AS-IXNT
 export:         to AS60345 announce AS-SOVAM
 mp-import:      afi ipv6 from AS60345 action pref=87; accept AS-IXNT
 mp-export:      afi ipv6 to AS60345 announce AS-SOVAM-V6
+import:         from AS3399 action pref=87; accept AS-OBE
+export:         to AS3399 announce AS-SOVAM
+mp-import:      afi ipv6 from AS3399 action pref=87; accept AS-OBE
+mp-export:      afi ipv6 to AS3399 announce AS-SOVAM-V6
 remarks:
 remarks:        endof(Netnod Stockholm)
 remarks:
@@ -6124,7 +6128,7 @@ status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         AS3216-MNT
 created:        2002-09-03T14:49:17Z
-last-modified:  2026-11-11T06:15:12Z
+last-modified:  2026-11-12T13:09:32Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

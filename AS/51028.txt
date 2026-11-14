@@ -131,9 +131,6 @@ export:         to AS50817 announce AS-SVOLS
 remarks:        -----------NSK-IX-----------
 import:         from AS42403 action pref=160; accept AS-NSKROUTESERVER
 export:         to AS42403 announce AS-SVOLS
-remarks:        -----------Google-----------
-import:         from AS15169 action pref=200; accept AS15169
-export:         to AS15169 announce AS-SVOLS
 remarks:        -----------LLC Cifrovie Seti Urala-----------
 import:         from AS209307 action pref=150; accept AS-CNX-EKB
 export:         to AS209307 announce AS-SVOLS
@@ -144,7 +141,7 @@ remarks:        -----------JSC "Ufanet"-----------
 import:         from AS24955 action pref=165; accept AS-UBN
 export:         to AS24955 announce AS-SVOLS
 remarks:        -----------SEA-IX (IpNetcom LLC)-----------
-import:         from AS59428 action pref=160; accept AS-KRD-RS
+import:         from AS59428 action pref=165; accept AS-KRD-RS
 export:         to AS59428 announce AS-SVOLS
 remarks:        ====================================================
 remarks:        BGP communities accepted from downstream
@@ -171,11 +168,7 @@ remarks:        3. Specific, prepending to all peers
 remarks:        51028:6100X, where:
 remarks:        X = 0 - do not announce
 remarks:        0 < X < 6 - prepend X times 51028
-remarks:        4. Specific, prepending to Google
-remarks:        51028:6110X, where:
-remarks:        X = 0 - do not announce
-remarks:        0 < X < 6 - prepend X times 51028
-remarks:        5. Blackhole
+remarks:        4. Blackhole
 remarks:        51028:666, /25-/32 prefixes accepted
 remarks:        For /32 prefixes with community blackhole (51028:666), we add community Blackhole for some of our Uplinks and announce them.
 remarks:        In order not to announce the /32 blackhole Uplink, also use the community on point 2 (51028:60NN0)
@@ -189,8 +182,8 @@ remarks:        All inbound prefixes are marked with BGP communities
 remarks:        which describe which node the announcement was received from
 remarks:        This format is 51028:300NN where the fields are:
 remarks:        NN - number of node:
-remarks:        01 - cr01.msk (Moscow)
-remarks:        02 - cr02.msk (Moscow)
+remarks:        01 - cr01.m9.msk (Moscow M9)
+remarks:        02 - cr02.m9.msk (Moscow M9)
 remarks:        03 - cr01.nnv (N.Novgorod)
 remarks:        04 - cr01.yekt (Yekaterinburg)
 remarks:        05 - cr01.chl (Chelyabinsk)
@@ -203,6 +196,8 @@ remarks:        11 - cr01.nvt (Nijnevartovsk)
 remarks:        12 - cr01.nur (N.Urengoy)
 remarks:        13 - cr01.ndm (Nadym)
 remarks:        14 - cr01.nyg (Nyagan)
+remarks:        15 - cr01.msk (Moscow TehnoGorod)
+remarks:        16 - cr01.krr (Krasnodar)
 remarks:        ====================================================
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -211,7 +206,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         LIDERTELECOM-mnt
 mnt-by:         SVOLS-MNT
 created:        2010-05-19T10:19:23Z
-last-modified:  2026-11-11T03:36:10Z
+last-modified:  2026-11-12T09:09:21Z
 source:         RIPE
 sponsoring-org: ORG-LL38-RIPE
 remarks:        ****************************
