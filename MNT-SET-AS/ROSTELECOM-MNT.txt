@@ -3723,12 +3723,15 @@ members:        as43434
 members:        as-tomica
 members:        as-vlant
 members:        as43434
+members:        as-tomica
+members:        as-vlant
+members:        as43434
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 mnt-by:         ROSTELECOM-MNT
 mnt-by:         SAVRI-MNT
 created:        2005-12-26T14:46:41Z
-last-modified:  2026-11-12T15:45:34Z
+last-modified:  2026-11-13T15:45:32Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -11722,6 +11725,12 @@ import:         from AS33892 accept AS33892:AS-SELS
 export:         to AS33892 announce ANY
 import:         from AS43434 accept as43434
 export:         to AS43434 announce ANY
+import:         from AS9113 accept as-vlant
+export:         to AS9113 announce ANY
+import:         from AS31357 accept as-tomica
+export:         to AS31357 announce ANY
+import:         from AS43434 accept as43434
+export:         to AS43434 announce ANY
 org:            ORG-JR8-RIPE
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
@@ -11730,7 +11739,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         SAVRI-MNT
 status:         ASSIGNED
 created:        2005-07-01T14:26:50Z
-last-modified:  2026-11-06T12:22:09Z
+last-modified:  2026-11-13T12:20:40Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -12693,6 +12702,35 @@ remarks:        * To view the original object, please query the RIPE Database at
 remarks:        * http://www.ripe.net/whois
 remarks:        ****************************
 
+aut-num:        AS20872
+as-name:        URALSIB-AS
+org:            ORG-OA372-RIPE
+import:         from AS20485 action pref=100;accept ANY
+import:         from AS3216 action pref=100;accept ANY
+import:         from AS12389 action pref=100;accept ANY
+export:         to AS20485 announce AS20872
+export:         to AS3216 announce AS20872
+export:         to AS12389 announce AS20872
+default:        to AS20485 action pref=100;
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+notify:         wanadmin@uralsibbank.ru
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         URALSIB-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2002-11-05T12:21:36Z
+last-modified:  2026-11-13T09:29:16Z
+source:         RIPE
+sponsoring-org: ORG-JR8-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
 aut-num:        AS208945
 as-name:        Ustek-Chelyabinsk
 org:            ORG-UJ14-RIPE
@@ -12780,6 +12818,37 @@ mnt-by:         ROSTELECOM-MNT
 mnt-by:         danfoss-mnt
 created:        2020-12-18T08:54:42Z
 last-modified:  2020-12-18T18:05:46Z
+source:         RIPE
+sponsoring-org: ORG-JR8-RIPE
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+
+aut-num:        AS21252
+as-name:        NIKOIL-AS
+descr:          Bank IT Departament
+descr:          Moscow, Russia
+org:            ORG-OA372-RIPE
+import:         from AS2854 action pref=100; accept ANY
+import:         from AS6863 action pref=10; accept ANY
+import:         from AS8629 action pref=5; accept ANY
+export:         to AS2854 announce AS21252
+export:         to AS6863 announce AS21252
+export:         to AS8629 announce AS21252
+default:        to AS2854 action pref=100; networks ANY
+admin-c:        DUMY-RIPE
+tech-c:         DUMY-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         URALSIB-MNT
+mnt-by:         ROSNIIROS-MNT
+mnt-by:         ROSTELECOM-MNT
+created:        2001-10-08T09:07:08Z
+last-modified:  2026-11-13T09:29:16Z
 source:         RIPE
 sponsoring-org: ORG-JR8-RIPE
 remarks:        ****************************
