@@ -2003,8 +2003,6 @@ members:        AS-AKAMAI
 members:        AS-CDNNOW
                 # from AS25091:
 members:        AS-IP-MAX, AS-IP-MAX-V6
-                # from AS25408:
-members:        AS-WESTCALLSPB
                 # from AS28917:
 members:        AS-FIORD
                 # from AS29076:
@@ -2167,7 +2165,7 @@ mnt-by:         AS3316-MNT
 mnt-by:         RUIX-MNT
 notify:         noc-ip@msk-ix.ru
 created:        2007-10-10T18:03:25Z
-last-modified:  2026-09-21T14:05:29Z
+last-modified:  2026-11-16T14:04:46Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3856,9 +3854,6 @@ import:         from AS21030
 import:         from AS25091
                 action pref=100;
                 accept AS-IP-MAX AS-IP-MAX-V6
-import:         from AS25408
-                action pref=100;
-                accept AS-WESTCALLSPB
 import:         from AS28917
                 action pref=100;
                 accept AS-FIORD
@@ -4108,8 +4103,6 @@ export:         to AS21030
                 announce AS-SPBROUTESERVER
 export:         to AS25091
                 announce AS-SPBROUTESERVER
-export:         to AS25408
-                announce AS-SPBROUTESERVER
 export:         to AS28917
                 announce AS-SPBROUTESERVER
 export:         to AS29076
@@ -4251,7 +4244,7 @@ export:         to AS215182
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         RUIX-MNT
 created:        2007-09-13T13:39:57Z
-last-modified:  2026-09-21T14:05:34Z
+last-modified:  2026-11-16T14:04:46Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED

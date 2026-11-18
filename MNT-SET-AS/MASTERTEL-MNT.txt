@@ -529,17 +529,20 @@ remarks:        ****************************
 aut-num:        AS205567
 as-name:        GEMOTEST-AS
 org:            ORG-GL281-RIPE
-import:         from AS20485 accept ANY
-export:         to AS20485 announce AS205567
-import:         from AS31133 accept ANY
-export:         to AS31133 announce AS205567
+import:         from AS29226 accept ANY
+export:         to AS29226 announce AS205567
+import:         from AS47440 accept ANY
+export:         to AS47440 announce AS205567
+import:         from AS209024 accept ANY
+export:         to AS209024 announce AS205567
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
 mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MASTERTEL-MNT
+mnt-by:         Gemotest_Laboratories
 created:        2017-07-20T08:11:57Z
-last-modified:  2020-11-16T17:52:59Z
+last-modified:  2026-11-16T15:47:22Z
 source:         RIPE
 sponsoring-org: ORG-JM2-RIPE
 remarks:        ****************************
@@ -2231,6 +2234,11 @@ remarks:        BI GROUP LLC
 mp-import:      afi ipv6 from AS218900 action pref=200; accept AS218900
 mp-export:      afi ipv6 to AS218900 announce ANY
 remarks:
+remarks:        OBLAKA-AS
+mp-import:      afi ipv6 from AS51076 accept AS51076;
+mp-export:      afi ipv6 to AS51076 announce ANY;
+remarks:
+remarks:
 remarks:        ========================================================
 remarks:        BGP community accepted only from customers
 remarks:        ========================================================
@@ -2317,7 +2325,7 @@ status:         ASSIGNED
 mnt-by:         MASTERTEL-MNT
 mnt-by:         RIPE-NCC-END-MNT
 created:        2003-07-03T09:16:45Z
-last-modified:  2026-11-11T18:06:47Z
+last-modified:  2026-11-16T13:03:56Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
