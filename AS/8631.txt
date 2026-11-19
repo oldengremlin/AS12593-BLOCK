@@ -425,9 +425,6 @@ import:         from AS31500
 import:         from AS32590
                 action pref=100;
                 accept AS-VALVE
-import:         from AS34098
-                action pref=100;
-                accept AS34098
 import:         from AS34102
                 action pref=100;
                 accept AS-AWANTI
@@ -521,9 +518,6 @@ import:         from AS39087
 import:         from AS39089
                 action pref=100;
                 accept AS39089:AS-CUSTOMERS
-import:         from AS39134
-                action pref=100;
-                accept AS-UNITEDNET
 import:         from AS39264
                 action pref=100;
                 accept AS-METROMAX
@@ -1944,8 +1938,6 @@ export:         to AS31500
                 announce AS-MSKROUTESERVER
 export:         to AS32590
                 announce AS-MSKROUTESERVER
-export:         to AS34098
-                announce AS-MSKROUTESERVER
 export:         to AS34102
                 announce AS-MSKROUTESERVER
 export:         to AS34123
@@ -2007,8 +1999,6 @@ export:         to AS39063
 export:         to AS39087
                 announce AS-MSKROUTESERVER
 export:         to AS39089
-                announce AS-MSKROUTESERVER
-export:         to AS39134
                 announce AS-MSKROUTESERVER
 export:         to AS39264
                 announce AS-MSKROUTESERVER
@@ -2779,7 +2769,7 @@ export:         to AS216334
 export:         to AS266925
                 announce AS-MSKROUTESERVER
 created:        2002-09-10T12:10:00Z
-last-modified:  2026-11-10T09:40:04Z
+last-modified:  2026-11-17T09:39:23Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
