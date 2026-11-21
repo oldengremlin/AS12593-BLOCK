@@ -6,7 +6,6 @@ members:        AS34527
 members:        AS206810:AS-CUSTOMERS
 members:        AS-NETFORT
 members:        AS-STARTFILM
-members:        AS218764
 members:        AS-R-LINE
 members:        AS-NETMAN
 members:        AS-NEVACOM
@@ -203,7 +202,6 @@ members:        AS213624
 members:        AS47122:AS-CYBERFIRST
 members:        AS-QUANTUM
 members:        AS-UTG-UA
-members:        AS49418:AS-NETSHIELD
 members:        AS48670
 members:        AS49747:AS-CUST
 members:        AS39578
@@ -254,7 +252,6 @@ members:        AS-STUPINO-NET
 members:        AS-BIZTEL
 members:        AS-ICEWOOD
 members:        AS-MTTELECOM
-members:        AS57043:AS-HOSTKEY-FI
 members:        AS-TIERA
 members:        AS-TESLATEL
 members:        AS48989
@@ -265,7 +262,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2008-08-19T12:40:08Z
-last-modified:  2026-11-18T06:31:06Z
+last-modified:  2026-11-19T14:01:54Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -280,7 +277,6 @@ descr:          Global v6 IPT Customers
 members:        AS50952
 members:        AS34527
 members:        AS-NETFORT
-members:        AS218764
 members:        AS43317
 members:        AS60212
 members:        AS39101
@@ -366,7 +362,6 @@ members:        AS198324
 members:        AS-CASTLES
 members:        AS214697
 members:        AS211027
-members:        AS49418:AS-NETSHIELD
 members:        AS205569
 members:        AS-EVROKONTAKT
 members:        AS-BITERIKA
@@ -384,7 +379,6 @@ members:        AS208541
 members:        AS-NTX
 members:        AS-BIZTEL
 members:        AS-ICEWOOD
-members:        AS57043:AS-HOSTKEY-FI
 members:        AS-TESLATEL
 members:        AS200487
 admin-c:        DUMY-RIPE
@@ -392,7 +386,7 @@ tech-c:         DUMY-RIPE
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2017-10-10T12:33:20Z
-last-modified:  2026-11-16T06:31:07Z
+last-modified:  2026-11-19T14:01:55Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -986,8 +980,6 @@ import:         from AS47845   accept   AS47845
 export:         to   AS47845   announce ANY
 import:         from AS21314   accept   AS21314
 export:         to   AS21314   announce ANY
-import:         from AS57043   accept   AS57043:AS-HOSTKEY-FI
-export:         to   AS57043   announce ANY
 import:         from AS42065   accept   AS42065
 export:         to   AS42065   announce ANY
 import:         from AS49954   accept   AS49954
@@ -1072,8 +1064,6 @@ import:         from AS215102  accept   AS215102
 export:         to   AS215102  announce ANY
 import:         from AS216139  accept   AS216139:AS-IRONHOST
 export:         to   AS216139  announce ANY
-import:         from AS218764  accept   AS218764
-export:         to   AS218764  announce ANY
 import:         from AS43106   accept   AS-NEVACOM
 export:         to   AS43106   announce ANY
 import:         from AS49722   accept   AS49722
@@ -1284,8 +1274,6 @@ import:         from AS210644  accept   AS-AEZA
 export:         to   AS210644  announce ANY
 import:         from AS34907   accept   AS-IP-SERVICES
 export:         to   AS34907   announce ANY
-import:         from AS49418   accept   AS49418:AS-NETSHIELD
-export:         to   AS49418   announce ANY
 import:         from AS28712   accept   AS28712
 export:         to   AS28712   announce ANY
 import:         from AS50952   accept   AS50952
@@ -1392,8 +1380,6 @@ mp-import:      afi ipv6.unicast from AS34832   accept   AS-NOVOSYSTEM
 mp-export:      afi ipv6.unicast to   AS34832   announce ANY
 mp-import:      afi ipv6.unicast from AS48467   accept   AS-PRANET6
 mp-export:      afi ipv6.unicast to   AS48467   announce ANY
-mp-import:      afi ipv6.unicast from AS57043   accept   AS57043:AS-HOSTKEY-FI
-mp-export:      afi ipv6.unicast to   AS57043   announce ANY
 mp-import:      afi ipv6.unicast from AS206407  accept   AS206407:AS-RECONN-SPB
 mp-export:      afi ipv6.unicast to   AS206407  announce ANY
 mp-import:      afi ipv6.unicast from AS211609  accept   AS211609
@@ -1414,8 +1400,6 @@ mp-import:      afi ipv6.unicast from AS216071  accept   AS216071:AS-SERVERS-TEC
 mp-export:      afi ipv6.unicast to   AS216071  announce ANY
 mp-import:      afi ipv6.unicast from AS215102  accept   AS215102
 mp-export:      afi ipv6.unicast to   AS215102  announce ANY
-mp-import:      afi ipv6.unicast from AS218764  accept   AS218764
-mp-export:      afi ipv6.unicast to   AS218764  announce ANY
 mp-import:      afi ipv6.unicast from AS47133   accept   AS-PL-NET
 mp-export:      afi ipv6.unicast to   AS47133   announce ANY
 mp-import:      afi ipv6.unicast from AS39101   accept   AS39101
@@ -1508,8 +1492,6 @@ mp-import:      afi ipv6.unicast from AS41275   accept   AS-TUT
 mp-export:      afi ipv6.unicast to   AS41275   announce ANY
 mp-import:      afi ipv6.unicast from AS5495    accept   AS5495
 mp-export:      afi ipv6.unicast to   AS5495    announce ANY
-mp-import:      afi ipv6.unicast from AS49418   accept   AS49418:AS-NETSHIELD
-mp-export:      afi ipv6.unicast to   AS49418   announce ANY
 mp-import:      afi ipv6.unicast from AS216139  accept   AS216139:AS-IRONHOST
 mp-export:      afi ipv6.unicast to   AS216139  announce ANY
 mp-import:      afi ipv6.unicast from AS50952   accept   AS50952
@@ -2966,7 +2948,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         MNT-GLOBAL-NET
 mnt-by:         mnt-ag-globalnet-1
 created:        2004-05-28T15:16:04Z
-last-modified:  2026-11-18T06:31:05Z
+last-modified:  2026-11-19T14:01:53Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -3474,6 +3456,7 @@ remarks:        218639 - 64728
 remarks:        219062 - 64729
 remarks:        197195 - 64730
 remarks:        197145 - 64731
+remarks:        211134 - 64732
 remarks:
 remarks:
 remarks:        -- Uplinks(technical usage)
@@ -5125,6 +5108,10 @@ import:         from AS197145  accept   AS197145
 export:         to   AS197145  announce AS-DATAIX
 import:         from AS59833   accept   AS59833
 export:         to   AS59833   announce AS-DATAIX
+import:         from AS211134  accept   AS211134:AS-INTERSYS
+export:         to   AS211134  announce AS-DATAIX
+import:         from AS49357   accept   AS49357:AS-UTECH
+export:         to   AS49357   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS54994   accept   AS54994:AS-ALL
 mp-export:      afi ipv6.unicast to   AS54994   announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS62014   accept   AS62014
@@ -6793,6 +6780,10 @@ mp-import:      afi ipv6.unicast from AS197145  accept   AS197145
 mp-export:      afi ipv6.unicast to   AS197145  announce AS-DATAIX
 mp-import:      afi ipv6.unicast from AS59833   accept   AS59833
 mp-export:      afi ipv6.unicast to   AS59833   announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS211134  accept   AS211134:AS-INTERSYS
+mp-export:      afi ipv6.unicast to   AS211134  announce AS-DATAIX
+mp-import:      afi ipv6.unicast from AS49357   accept   AS49357:AS-UTECH
+mp-export:      afi ipv6.unicast to   AS49357   announce AS-DATAIX
 admin-c:        DUMY-RIPE
 tech-c:         DUMY-RIPE
 status:         ASSIGNED
@@ -6800,7 +6791,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         PEERING-MNT
 mnt-by:         mnt-ag-globalnet-1
 created:        2010-04-29T11:00:51Z
-last-modified:  2026-11-18T14:01:50Z
+last-modified:  2026-11-19T06:31:03Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
