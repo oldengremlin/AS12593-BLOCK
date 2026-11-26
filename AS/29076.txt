@@ -139,6 +139,9 @@ remarks:
 import:         from AS201119 action pref=50; accept AS201119;
 export:         to AS201119 announce ANY;
 remarks:
+import:         from AS203498 action pref=50; accept AS203498;
+export:         to AS203498 announce ANY;
+remarks:
 import:         from AS203907 action pref=50; accept AS203907;
 export:         to AS203907 announce {0.0.0.0/0};
 remarks:
@@ -195,6 +198,9 @@ export:         to AS216334 announce ANY;
 remarks:
 import:         from AS216366 action pref=50; accept AS216366:AS-SMART-TEL;
 export:         to AS216366 announce ANY;
+remarks:
+import:         from AS218962 action pref=50; accept AS218962;
+export:         to AS218962 announce ANY;
 remarks:
 import:         from AS28761 action pref=50; accept AS28761:AS-CUSTOMERS;
 export:         to AS28761 announce ANY;
@@ -356,7 +362,7 @@ import:         from AS42244 action pref=50; accept AS-ESERVER;
 export:         to AS42244 announce {0.0.0.0/0};
 remarks:
 import:         from AS210079 action pref=50; accept AS-EUROBYTE;
-export:         to AS210079 announce {0.0.0.0/0};
+export:         to AS210079 announce ANY;
 remarks:
 import:         from AS28968 action pref=50; accept AS-EUT;
 export:         to AS28968 announce ANY;
@@ -785,6 +791,9 @@ remarks:
 mp-import:      afi ipv6.unicast from AS201119 action pref=50; accept AS201119;
 mp-export:      afi ipv6.unicast to AS201119 announce any;
 remarks:
+mp-import:      afi ipv6.unicast from AS203498 action pref=50; accept AS203498;
+mp-export:      afi ipv6.unicast to AS203498 announce any;
+remarks:
 mp-import:      afi ipv6.unicast from AS203907 action pref=50; accept AS203907;
 mp-export:      afi ipv6.unicast to AS203907 announce any;
 remarks:
@@ -841,6 +850,9 @@ mp-export:      afi ipv6.unicast to AS216334 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS216366 action pref=50; accept AS216366:AS-SMART-TEL;
 mp-export:      afi ipv6.unicast to AS216366 announce any;
+remarks:
+mp-import:      afi ipv6.unicast from AS218962 action pref=50; accept AS218962;
+mp-export:      afi ipv6.unicast to AS218962 announce any;
 remarks:
 mp-import:      afi ipv6.unicast from AS28761 action pref=50; accept AS28761;
 mp-export:      afi ipv6.unicast to AS28761 announce any;
@@ -1521,7 +1533,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         CITYTELECOM-RIPE-MNT
 notify:         registry@citytelecom.ru
 created:        2011-01-08T19:33:27Z
-last-modified:  2026-11-05T21:00:02Z
+last-modified:  2026-11-24T21:00:02Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
