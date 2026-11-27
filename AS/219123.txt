@@ -13,6 +13,12 @@ import:         from AS34927 accept ANY
 export:         to AS34927 announce AS219123:AS-DESEND
 import:         from AS219297 accept AS219297:AS-ALL
 export:         to AS219297 announce ANY
+import:         from AS197324 accept ANY
+export:         to AS197324 announce AS219123
+import:         from AS212895 accept ANY
+export:         to AS212895 announce AS219123
+mp-import:      afi ipv6.unicast from AS212895 accept ANY
+mp-export:      afi ipv6.unicast to AS212895 announce AS219123
 mp-import:      afi ipv6 from AS51765 accept ANY
 mp-export:      afi ipv6 to AS51765 announce AS219123:AS-DESEND
 mp-import:      afi ipv6 from AS34927 accept ANY
@@ -26,7 +32,7 @@ mnt-by:         RIPE-NCC-END-MNT
 mnt-by:         OLEGNOV-MNT
 mnt-by:         C0REDEV-MNT
 created:        2026-07-28T08:28:12Z
-last-modified:  2026-11-07T06:00:27Z
+last-modified:  2026-11-25T16:02:59Z
 source:         RIPE
 remarks:        ****************************
 remarks:        * THIS OBJECT IS MODIFIED
@@ -48,9 +54,10 @@ country:        RU
 e-mail:         unread@ripe.net
 abuse-c:        AA47212-RIPE
 mnt-ref:        OLEGNOV-MNT
+mnt-ref:        BGP43-MNT
 mnt-ref:        SCULK-FREEV6-MNT
 created:        2026-07-22T00:31:45Z
-last-modified:  2026-08-03T18:53:18Z
+last-modified:  2026-11-25T18:21:04Z
 source:         RIPE
 mnt-by:         OLEGNOV-MNT
 remarks:        ****************************
